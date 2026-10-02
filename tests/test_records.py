@@ -19,6 +19,7 @@ class IntegrityTests(unittest.TestCase):
         self.file = self.root / 'records/reef/docs/old.md'
         self.file.parent.mkdir(parents=True)
         self.file.write_bytes(b'original\r\n')
+        (self.root / '.gitattributes').write_text('records/** -text\n')
         (self.root / 'manifests').mkdir()
         self.manifest = self.root / 'manifests/import.json'
         self.data = {'schema_version': 1, 'source_repository': 'https://github.com/dills122/reef', 'source_commit': 'a' * 40, 'selection_policy': 'superseded', 'files': [{'source_path': 'docs/old.md', 'archive_path': 'records/reef/docs/old.md', 'bytes': 10, 'sha256': hashlib.sha256(self.file.read_bytes()).hexdigest(), 'reason': 'historic'}]}
