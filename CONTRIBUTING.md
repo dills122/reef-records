@@ -2,6 +2,8 @@
 
 Use feature branches and pull requests. Keep records byte-identical and add provenance before publishing. Follow [archive policy](docs/ARCHIVE_POLICY.md).
 
+Reef completion order: implementation/tests/contracts/docs/latest evidence, affected guidance/overviews, then supersession/archive pass. Keep current planning/session/ramp-up and pertinent system/design information in Reef. Historical context is searched and parsed here with source/commit/scope citations. Import PR records selection reasons, current replacements and companion/dependency checks; source-removal PR cites landed archive and verification, or explicit retention no-op reason.
+
 Run:
 
 ```sh
