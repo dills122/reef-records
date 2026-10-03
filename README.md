@@ -1,6 +1,6 @@
 # Reef Records
 
-Historical documents, research, plans and run evidence from [Reef](https://github.com/dills122/reef). Current code, contracts, operating docs and latest complete evidence bundles belong in Reef.
+Historical documents, research, plans and run evidence from [Reef](https://github.com/dills122/reef). Current code, contracts, operating docs and focused current verification summaries and executable fixtures belong in Reef; bulk evidence belongs here.
 
 ## Browse and verify
 

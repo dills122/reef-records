@@ -1,5 +1,11 @@
 # Archive index
 
+## October 3, 2026 — Calcify E0 complete evidence
+
+97 exact-byte files (300,129 bytes), source [`41bb17dcb5e9`](https://github.com/dills122/reef/tree/41bb17dcb5e93b7bce9444dd7f597c90ea01a3e1).
+
+[Full checkpoint and next-slice details](records/reef/docs/evidence/calcify-financial-sprint1/README.md), [review2](records/reef/docs/evidence/calcify-financial-sprint1/reviews/instance-2.md), [runtime/source manifest](records/reef/docs/evidence/calcify-financial-sprint1/environment.json), [attempt ledger](records/reef/docs/evidence/calcify-financial-sprint1/raw/attempts.jsonl), [original checksums](records/reef/docs/evidence/calcify-financial-sprint1/SHA256SUMS), [import manifest](manifests/2026-10-03-calcify-e0.json). All successful and failed attempts preserved. E0 language-server and Docker gates remain blocked; E1-E4 unrun. Reef retains concise checkpoint and current script fixtures.
+
 ## October 2, 2026 — Reef history
 
 386 unchanged files, 39.36 MiB. Source: [`f8d905a83966`](https://github.com/dills122/reef/tree/f8d905a83966658ade3723d1ded3b36cb468e223).
