@@ -1,12 +1,12 @@
 # Archive policy
 
-Reef keeps current code, contracts, accepted decisions, operational docs, active plans and latest complete evidence bundle per topic. Older attempts, superseded plans, dated audits and historic reports move here. A latest bundle includes required fixtures, manifests, correction notes and run companions; retain failures when latest attempt failed. Age alone does not identify superseded active work.
+Reef keeps current code, contracts, accepted decisions, operational docs, active plans and focused current verification summaries and executable fixtures. Complete bulk evidence lives here, linked from Reef. Older attempts, superseded plans, dated audits and historic reports move here. A latest bundle includes required fixtures, manifests, correction notes and run companions; retain failures when latest attempt failed. Age alone does not identify superseded active work.
 
 ## Import protocol
 
 Import is completion step for each Reef feature, fix, refactor or code-working session, after implementation/tests/contracts/docs/latest evidence and affected guidance/overview updates. Review touched topic for superseded plans, reports, research, handoffs and older evidence. No-op pass records why nothing is superseded; no artificial snapshot of continuously maintained code/docs is required.
 
-Before import, extract still-live tasks and current-system facts from mixed records into Reef owners. Reef keeps only material needed for active planning, session understanding, onboarding, current system/design, operations and latest complete verification. Preserve latest failed attempt, necessary fixtures and correction companions; do not select only favorable results or archive active dependencies by age alone.
+Before import, extract still-live tasks and current-system facts from mixed records into Reef owners. Reef keeps only material needed for active planning, session understanding, onboarding, current system/design, operations and focused latest verification with immutable links to complete evidence here. Preserve latest failed attempt, necessary fixtures and correction companions; do not select only favorable results or archive active dependencies by age alone.
 
 1. Check source Git state; select tracked historical files and inspect active references and script consumers. Do not sweep ignored local directories.
 2. Copy exact bytes to `records/reef/<original-path>`. Existing destination with different hash is a conflict, not an overwrite.
