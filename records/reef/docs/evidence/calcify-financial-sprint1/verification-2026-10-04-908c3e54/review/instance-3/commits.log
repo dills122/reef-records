@@ -1,0 +1,5 @@
+908c3e54 fix(calcify): validate independent execution locator semantics
+226a1716 fix(calcify): preserve rejected input identity and durable staging
+5843ad5b fix(calcify): align financial oracle boundaries and retain broker proof
+35a20cc9 Record fresh recovery verification and remote source checkpoint
+06911bcf Recover Calcify sprint1 source and durable handoff checkpoint

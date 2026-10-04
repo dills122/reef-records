@@ -1,0 +1,23 @@
+ .github/workflows/ci.yml                           |   3 +
+ Makefile                                           |   1 +
+ docs/WORK_PLAN.md                                  |  17 +
+ docs/evidence/calcify-financial-sprint1/README.md  |   9 +
+ .../calcify-financial-sprint1/recovery.json        | 123 ++++++
+ ...026-10-04-calcify-financial-sprint1-recovery.md |  99 +++++
+ .../calcify-sprint1-unfinished-heap-guard.patch    |  32 ++
+ scripts/dev/calcify-financial/broker-proof.mjs     | 169 ++++++++
+ scripts/dev/calcify-financial/freeze-fixtures.mjs  |   2 +-
+ scripts/dev/calcify-financial/gate-model.mjs       | 291 +++++++++++++
+ scripts/dev/calcify-financial/gate-model.test.mjs  | 143 +++++++
+ scripts/dev/calcify-financial/rate-proof.mjs       | 212 +++++++++
+ scripts/dev/calcify-financial/rate-proof.test.mjs  | 131 ++++++
+ .../dev/calcify-financial/reservation-model.mjs    |  69 +++
+ .../calcify-financial/reservation-model.test.mjs   |  61 +++
+ scripts/dev/script-surface-check.mjs               |   2 +-
+ .../calcify/financial/FinancialBrokerProbe.kt      | 474 +++++++++++++++++++++
+ .../platform/calcify/financial/FinancialKernel.kt  | 412 ++++++++++++++++++
+ .../calcify/financial/FinancialKernelTest.kt       | 238 +++++++++++
+ .../platform/calcify/financial/FinancialOracle.kt  | 245 +++++++++++
+ .../calcify/financial/FinancialOracleTest.kt       | 264 ++++++++++++
+ .../calcify/financial/FinancialRateProbe.kt        | 333 +++++++++++++++
+ 22 files changed, 3328 insertions(+), 2 deletions(-)

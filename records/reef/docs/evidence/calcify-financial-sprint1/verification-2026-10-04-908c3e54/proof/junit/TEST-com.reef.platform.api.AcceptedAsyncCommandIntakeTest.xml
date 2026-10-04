@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.api.AcceptedAsyncCommandIntakeTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:37:38.822Z" hostname="Dylans-MacBook-Pro.local" time="2.333">
+  <properties/>
+  <testcase name="offerTimeoutMsAcceptsImmediatelyWhenLaneHasCapacity()" classname="com.reef.platform.api.AcceptedAsyncCommandIntakeTest" time="0.063"/>
+  <testcase name="terminalStatusesExpireByRetentionTtl()" classname="com.reef.platform.api.AcceptedAsyncCommandIntakeTest" time="0.057"/>
+  <testcase name="offerTimeoutMsBulkheadFailsFastPastMaxConcurrencyInsteadOfQueueing()" classname="com.reef.platform.api.AcceptedAsyncCommandIntakeTest" time="2.01"/>
+  <testcase name="sameLaneCommandsDoNotSubmitSecondCommandBeforeFirstCompletes()" classname="com.reef.platform.api.AcceptedAsyncCommandIntakeTest" time="0.116"/>
+  <testcase name="evictsOldTerminalStatusesWhenRetentionWindowIsFull()" classname="com.reef.platform.api.AcceptedAsyncCommandIntakeTest" time="0.043"/>
+  <testcase name="sameLanePipelineSubmitsUpToWindowButPersistsInIntakeOrder()" classname="com.reef.platform.api.AcceptedAsyncCommandIntakeTest" time="0.043"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

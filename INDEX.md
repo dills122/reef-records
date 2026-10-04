@@ -1,5 +1,11 @@
 # Archive index
 
+## October 4, 2026 — Calcify sprint1 review and post-signoff proof
+
+256 exact-byte files (1,342,028 bytes). Local-only source provenance `fa442bbc5ef9fa7ab33e8ae4e6f128e364a30a95`; [published reviewed code](https://github.com/dills122/reef/tree/908c3e54583cb812b074fe66160c42f0bcbd4921). Bulk publishes solely here.
+
+[Bundle](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/README.md), [closure and limits](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/closure.json), [final review](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/report.md), [RF3 failure](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/failure.json), [checksums](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/SHA256SUMS), [import manifest](manifests/2026-10-04-calcify-sprint1-review-proof.json), [publication provenance](docs/imports/2026-10-04-calcify-sprint1-provenance.md). All failed attempts and skipped scopes retained. E1/E2 checks pass; E3/E4 continuation blocked. No database integration or throughput/capacity qualification.
+
 ## October 3, 2026 — Calcify E0 complete evidence
 
 97 exact-byte files (300,129 bytes), source [`41bb17dcb5e9`](https://github.com/dills122/reef/tree/41bb17dcb5e93b7bce9444dd7f597c90ea01a3e1).

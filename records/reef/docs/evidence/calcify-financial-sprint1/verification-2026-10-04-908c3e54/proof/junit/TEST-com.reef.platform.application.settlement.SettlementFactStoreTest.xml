@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.application.settlement.SettlementFactStoreTest" tests="36" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:38:00.084Z" hostname="Dylans-MacBook-Pro.local" time="0.015">
+  <properties/>
+  <testcase name="rejectsAttemptWithWrongStateOrAttemptNumber()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="rejectsResolutionWhoseObligationDoesNotMatchRepair()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="appendsAndReadsP2SettlementChainByScenarioRunId()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.001"/>
+  <testcase name="rejectsResolutionWithoutRepair()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="rejectsResolutionWhoseBreakDoesNotMatchRepair()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="rejectsClearingFactsWithoutRequiredParents()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.001"/>
+  <testcase name="rejectsSettlementWithoutLegAndLedgerProof()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="acceptsSecurityRepairForSecurityBreak()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.001"/>
+  <testcase name="rejectsSettlementWhenLedgerProofDoesNotBalance()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="rejectsFactWithBlankCorrelationOrCausationId()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="rejectsResolutionWithWrongSettlementOrExceptionState()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.001"/>
+  <testcase name="appendsAndReadsInstantSettlementFinalityProof()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="rejectsInstructionWithWrongTypeOrState()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="appendFactsSkipsValidationForEmptyBundle()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="rejectsObligationWithBlankRequiredFields()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.002"/>
+  <testcase name="rejectsBreakWithWrongReasonOrState()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.001"/>
+  <testcase name="appendsAndReadsClearingAndNovationFacts()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="rejectsInvalidClearingRejectionShape()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.001"/>
+  <testcase name="blankPostgresSettlementSchemaFallsBackToSettlement()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.002"/>
+  <testcase name="rejectsFactWithScenarioRunIdMismatch()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="rejectsRepairWithWrongActionActorTypeOrBlankActorId()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="rejectsUnsafePostgresSettlementSchema()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="storesPostTradeProfileEvidenceAcrossSettlementChain()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="factsByScenarioRunIdRejectsBlankId()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="duplicateAppendKeepsFactsIdempotent()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="rejectsDuplicateFactIdWithDifferentPayload()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="rejectsRepairWithoutBreak()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="appendsAndReadsOperatorActionFacts()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.001"/>
+  <testcase name="rejectsMixedPostTradeProfileEvidenceInScenarioRun()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="defaultsPostgresSettlementNamesToSettlementSchema()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="appendsAndReadsClearingRejectedFact()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="rejectsInstructionWithoutObligation()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="rejectsCrossRunFactIdCollisionBeforeWritingAnyFacts()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="rejectsBreakWithoutObligation()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="rejectsAttemptWithoutObligation()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <testcase name="rejectsRepairWhoseObligationDoesNotMatchBreak()" classname="com.reef.platform.application.settlement.SettlementFactStoreTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

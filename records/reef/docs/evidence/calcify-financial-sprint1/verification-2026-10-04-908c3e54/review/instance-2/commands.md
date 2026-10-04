@@ -1,0 +1,6 @@
+# Reviewer commands
+- git status --short; git rev-parse HEAD; git diff --stat 97924e15642826a687db935a219d7927ae649ac8..HEAD
+- node --test scripts/dev/calcify-financial/reservation-model.test.mjs scripts/dev/calcify-financial/gate-model.test.mjs scripts/dev/calcify-financial/rate-proof.test.mjs (node-tests.log / node-tests.exit)
+- node scripts/dev/calcify-financial/freeze-fixtures.mjs --check (fixture-check.log / fixture-check.exit)
+- JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home ./gradlew test --tests 'com.reef.platform.calcify.financial.FinancialOracleTest.malformed identical retry preserves first context and all business state' --tests 'com.reef.platform.calcify.financial.FinancialOracleTest.funding checks exact credit and opening debit boundaries for both assets' --tests 'com.reef.platform.calcify.financial.FinancialOracleTest.synthetic capture accepts zero and positive price and refuses negative price' --console=plain (gradle-focused.log / gradle-focused.exit; XML copied; junit-summary.json)
+- /Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/java -cp 'build/classes/kotlin/test:build/classes/kotlin/main:build/classes/java/main:build/resolver-probe-deps/*' ../../.planning/sprint1-review/instance-2/BoundaryCheck.java (boundary-final.log / boundary-final.exit; cwd services/platform-runtime)

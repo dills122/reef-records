@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.application.settlement.SettlementObligationProjectionTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:38:00.101Z" hostname="Dylans-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="projectsClearingAndNovationStateBeforeInstruction()" classname="com.reef.platform.application.settlement.SettlementObligationProjectionTest" time="0.0"/>
+  <testcase name="projectsClearingRejectionAsOpenException()" classname="com.reef.platform.application.settlement.SettlementObligationProjectionTest" time="0.0"/>
+  <testcase name="projectsAttemptStartedStateBeforeBreaksOrResolution()" classname="com.reef.platform.application.settlement.SettlementObligationProjectionTest" time="0.0"/>
+  <testcase name="projectsSettledStateOnlyFromFinalityProof()" classname="com.reef.platform.application.settlement.SettlementObligationProjectionTest" time="0.001"/>
+  <testcase name="projectsUnbrokenObligationWithNoExceptionState()" classname="com.reef.platform.application.settlement.SettlementObligationProjectionTest" time="0.0"/>
+  <testcase name="projectsCurrentObligationStateFromFactBundle()" classname="com.reef.platform.application.settlement.SettlementObligationProjectionTest" time="0.0"/>
+  <testcase name="projectsSettledFinalityAndResolvedExceptionIndependently()" classname="com.reef.platform.application.settlement.SettlementObligationProjectionTest" time="0.0"/>
+  <testcase name="projectsInstructionCreatedStateBeforeAttempt()" classname="com.reef.platform.application.settlement.SettlementObligationProjectionTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

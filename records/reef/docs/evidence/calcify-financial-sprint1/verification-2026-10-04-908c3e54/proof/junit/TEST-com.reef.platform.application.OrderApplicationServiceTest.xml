@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.application.OrderApplicationServiceTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:38:00.053Z" hostname="Dylans-MacBook-Pro.local" time="0.006">
+  <properties/>
+  <testcase name="submitOrderPersistsRejectedOrderAsLifecycleStateButNoFillArtifacts()" classname="com.reef.platform.application.OrderApplicationServiceTest" time="0.0"/>
+  <testcase name="submitOrderDelegatesToEngineGatewayAndPersistsAcceptedArtifacts()" classname="com.reef.platform.application.OrderApplicationServiceTest" time="0.0"/>
+  <testcase name="submitOrderReusesReferenceDataCacheForSameTriple()" classname="com.reef.platform.application.OrderApplicationServiceTest" time="0.001"/>
+  <testcase name="submitOrderReusesAuthorizationCacheForSameActor()" classname="com.reef.platform.application.OrderApplicationServiceTest" time="0.0"/>
+  <testcase name="submitOrderRejectsWhenReferenceDataMissing()" classname="com.reef.platform.application.OrderApplicationServiceTest" time="0.0"/>
+  <testcase name="submitOrderTraceEventsFollowExpectedSequence()" classname="com.reef.platform.application.OrderApplicationServiceTest" time="0.0"/>
+  <testcase name="directIntakeRejectsInvalidCurrencyWithoutCallingEngine()" classname="com.reef.platform.application.OrderApplicationServiceTest" time="0.001"/>
+  <testcase name="referenceDataWritesInvalidateReferenceDataCache()" classname="com.reef.platform.application.OrderApplicationServiceTest" time="0.0"/>
+  <testcase name="assignRoleInvalidatesAuthorizationCache()" classname="com.reef.platform.application.OrderApplicationServiceTest" time="0.0"/>
+  <testcase name="submitOrderIsIdempotentByCommandId()" classname="com.reef.platform.application.OrderApplicationServiceTest" time="0.0"/>
+  <testcase name="submitOrderRejectsUnauthorizedActorBeforeEngineCall()" classname="com.reef.platform.application.OrderApplicationServiceTest" time="0.001"/>
+  <testcase name="submitOrderRejectsWhenAccountDoesNotBelongToParticipantBeforeEngineCall()" classname="com.reef.platform.application.OrderApplicationServiceTest" time="0.0"/>
+  <testcase name="cancelAndModifyRejectUnauthorizedActorsBeforeEngineCall()" classname="com.reef.platform.application.OrderApplicationServiceTest" time="0.0"/>
+  <testcase name="iocCancellationClosesParticipantOrderAfterPartialFillAndRetry()" classname="com.reef.platform.application.OrderApplicationServiceTest" time="0.001"/>
+  <testcase name="cancelOrderPersistsLifecycleEvent()" classname="com.reef.platform.application.OrderApplicationServiceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

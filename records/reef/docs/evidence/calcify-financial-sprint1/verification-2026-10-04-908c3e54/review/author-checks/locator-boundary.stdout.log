@@ -1,0 +1,8 @@
+numeric-execution kernel="INVALID_INPUT" oracle="SETTLED"
+parity=false
+partial-tuple kernel="SETTLED" oracle="INVALID_INPUT"
+parity=false
+numeric-clock-action kernel="INVALID_INPUT" oracle="SETTLED"
+parity=false
+numeric-work-id kernel="INVALID_INPUT" oracle="SETTLED"
+parity=false

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.infrastructure.persistence.MatchingFactsReconciliationIntegrationTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2026-10-04T22:40:23.280Z" hostname="Dylans-MacBook-Pro.local" time="0.0">
+  <properties/>
+  <testcase name="realMatchingFactsSurviveDurableRetryAndSettlementReplay()" classname="com.reef.platform.infrastructure.persistence.MatchingFactsReconciliationIntegrationTest" time="0.0">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres and matching engine" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres and matching engine
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at com.reef.platform.infrastructure.persistence.MatchingFactsReconciliationIntegrationTest.realMatchingFactsSurviveDurableRetryAndSettlementReplay(MatchingFactsReconciliationIntegrationTest.kt:20)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

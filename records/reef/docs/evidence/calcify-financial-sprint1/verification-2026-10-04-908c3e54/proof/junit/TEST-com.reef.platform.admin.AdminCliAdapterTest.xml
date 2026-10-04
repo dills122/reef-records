@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.admin.AdminCliAdapterTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:37:38.510Z" hostname="Dylans-MacBook-Pro.local" time="0.309">
+  <properties/>
+  <testcase name="rejectsInvalidPriceCollarCliBands()" classname="com.reef.platform.admin.AdminCliAdapterTest" time="0.102"/>
+  <testcase name="executesReferenceDataUpsertCommands()" classname="com.reef.platform.admin.AdminCliAdapterTest" time="0.179"/>
+  <testcase name="returnsUsageForUnknownCommand()" classname="com.reef.platform.admin.AdminCliAdapterTest" time="0.001"/>
+  <testcase name="cliJsonResponsesEscapeStringFieldsWithJsonCodec()" classname="com.reef.platform.admin.AdminCliAdapterTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

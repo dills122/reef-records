@@ -1,0 +1,15 @@
+attempt-overflow kernel="AMOUNT_OVERFLOW" oracle="AMOUNT_OVERFLOW"
+parity=true
+due-overflow kernel="AMOUNT_OVERFLOW" oracle="AMOUNT_OVERFLOW"
+parity=true
+fund-overflow kernel="AMOUNT_OVERFLOW" oracle="AMOUNT_OVERFLOW"
+parity=true
+missing-action-id kernel="INVALID_INPUT" oracle="INVALID_INPUT"
+parity=true
+clock-overflow kernel="AMOUNT_OVERFLOW" oracle="AMOUNT_OVERFLOW"
+parity=true
+invalid-with-missing-policy kernel="INVALID_INPUT" oracle="INVALID_INPUT"
+parity=true
+staged-malformed oracle="STAGED"
+staged-malformed kernel="STAGED" oracle="STAGED"
+parity=true

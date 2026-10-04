@@ -1,0 +1,12 @@
+{
+  "tests": "3",
+  "failures": "0",
+  "errors": "0",
+  "skipped": "0",
+  "time": "3.0",
+  "cases": [
+    "malformed identical retry preserves first context and all business state()",
+    "funding checks exact credit and opening debit boundaries for both assets()",
+    "synthetic capture accepts zero and positive price and refuses negative price()"
+  ]
+}
