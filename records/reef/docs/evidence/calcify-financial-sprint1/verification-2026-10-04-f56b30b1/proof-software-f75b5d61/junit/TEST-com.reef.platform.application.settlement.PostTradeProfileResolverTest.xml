@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.application.settlement.PostTradeProfileResolverTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:16:39.021Z" hostname="Dylans-MacBook-Pro.local" time="0.004">
+  <properties/>
+  <testcase name="resolvesScenarioRunBeforeVenueAndPlatformDefaults()" classname="com.reef.platform.application.settlement.PostTradeProfileResolverTest" time="0.0"/>
+  <testcase name="rejectsUnknownExplicitOverride()" classname="com.reef.platform.application.settlement.PostTradeProfileResolverTest" time="0.0"/>
+  <testcase name="environmentDefaultKeepsKnownProfileMode()" classname="com.reef.platform.application.settlement.PostTradeProfileResolverTest" time="0.0"/>
+  <testcase name="resolvesPersistedPlatformDefaultBeforeEnvironmentDefault()" classname="com.reef.platform.application.settlement.PostTradeProfileResolverTest" time="0.0"/>
+  <testcase name="resolvesVenueBeforePlatformDefault()" classname="com.reef.platform.application.settlement.PostTradeProfileResolverTest" time="0.0"/>
+  <testcase name="resolvesHardDefaultWhenNothingConfigured()" classname="com.reef.platform.application.settlement.PostTradeProfileResolverTest" time="0.0"/>
+  <testcase name="resolvesEnvironmentDefaultBeforeHardDefault()" classname="com.reef.platform.application.settlement.PostTradeProfileResolverTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

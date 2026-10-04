@@ -1,0 +1,23 @@
+{
+  "reason": "10GiB experiment disk budget stop; default segment allocation too large for full planned arms",
+  "wrapperPids": [
+    5266,
+    5270
+  ],
+  "ownedNodePidsStopped": [
+    5267,
+    5271
+  ],
+  "ownedFinancialJavaPidsStopped": [
+    5562,
+    5567,
+    5568
+  ],
+  "cleanup": "Only registered project stopped, owned probe tree signaled; volumes/topics preserved; no global prune",
+  "scope": "Partial arm passes retained; no full core/golden pass claimed",
+  "lastMeasuredActiveAllocatedBytes": 9114636288,
+  "stoppedAllocatedBytes": 13537280,
+  "activePeakUnmeasured": "Last active sample is not guaranteed peak; concurrent next arms may allocate further before stop",
+  "correction": "Clean broker shutdown reclaimed segment preallocation; stopped13.2MiB does not refute prior active8.49GiB sample",
+  "nextAction": "Fresh isolated broker profile with16MiB log/compacted/transaction coordinator segments; config review6 then proof"
+}

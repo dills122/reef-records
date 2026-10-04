@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.infrastructure.persistence.PostgresSchemaValidatorTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:19:16.365Z" hostname="Dylans-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="validateThrowsWithMissingFunctionName()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaValidatorTest" time="0.0"/>
+  <testcase name="validatePassesSilentlyWhenAllTablesFunctionsAndColumnsExist()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaValidatorTest" time="0.0"/>
+  <testcase name="validateThrowsWithExpectedTypeSuffixWhenColumnTypeMismatches()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaValidatorTest" time="0.0"/>
+  <testcase name="validateThrowsWithMissingTableName()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaValidatorTest" time="0.0"/>
+  <testcase name="validateThrowsWithMissingColumnName()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaValidatorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.api.PlatformHttpServerHelpersTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:16:38.826Z" hostname="Dylans-MacBook-Pro.local" time="0.006">
+  <properties/>
+  <testcase name="rootCauseReturnsInputWhenNotWrapped()" classname="com.reef.platform.api.PlatformHttpServerHelpersTest" time="0.001"/>
+  <testcase name="boundedQueryLimitClampsCallerSuppliedValueAboveMax()" classname="com.reef.platform.api.PlatformHttpServerHelpersTest" time="0.0"/>
+  <testcase name="requiredIntThrowsOnMissingOrInvalidValue()" classname="com.reef.platform.api.PlatformHttpServerHelpersTest" time="0.0"/>
+  <testcase name="boundedQueryLimitUsesDefaultWhenParamIsInvalid()" classname="com.reef.platform.api.PlatformHttpServerHelpersTest" time="0.001"/>
+  <testcase name="rootCauseUnwrapsNestedCompletionAndExecutionExceptions()" classname="com.reef.platform.api.PlatformHttpServerHelpersTest" time="0.0"/>
+  <testcase name="boundedQueryLimitUsesDefaultWhenParamIsAbsent()" classname="com.reef.platform.api.PlatformHttpServerHelpersTest" time="0.0"/>
+  <testcase name="rootMessageFallsBackToUnknownWhenMessageIsNull()" classname="com.reef.platform.api.PlatformHttpServerHelpersTest" time="0.0"/>
+  <testcase name="requiredLongThrowsOnMissingOrInvalidValue()" classname="com.reef.platform.api.PlatformHttpServerHelpersTest" time="0.0"/>
+  <testcase name="serverBoundaryDepsDerivesDefaultsFromMinimalConstructorArgs()" classname="com.reef.platform.api.PlatformHttpServerHelpersTest" time="0.003"/>
+  <testcase name="boundedQueryLimitUsesDefaultWhenParamIsZeroOrNegative()" classname="com.reef.platform.api.PlatformHttpServerHelpersTest" time="0.0"/>
+  <testcase name="requiredLongParsesValidInteger()" classname="com.reef.platform.api.PlatformHttpServerHelpersTest" time="0.0"/>
+  <testcase name="rootMessageReturnsRootCauseMessage()" classname="com.reef.platform.api.PlatformHttpServerHelpersTest" time="0.0"/>
+  <testcase name="boundedQueryLimitPassesThroughValidPositiveValue()" classname="com.reef.platform.api.PlatformHttpServerHelpersTest" time="0.0"/>
+  <testcase name="rootCauseStopsAtWrapperWithNoCause()" classname="com.reef.platform.api.PlatformHttpServerHelpersTest" time="0.0"/>
+  <testcase name="booleanParsesCaseInsensitiveTrueAndFalse()" classname="com.reef.platform.api.PlatformHttpServerHelpersTest" time="0.0"/>
+  <testcase name="requiredIntParsesValidInteger()" classname="com.reef.platform.api.PlatformHttpServerHelpersTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

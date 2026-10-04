@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.api.StreamCommandWorkerTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:16:38.871Z" hostname="Dylans-MacBook-Pro.local" time="0.01">
+  <properties/>
+  <testcase name="redeliveryAfterPublicationMarkerFailureDoesNotDuplicateCanonicalOutcome()" classname="com.reef.platform.api.StreamCommandWorkerTest" time="0.001"/>
+  <testcase name="modifyWorkerPersistsCanonicalOutcomeBeforeAck()" classname="com.reef.platform.api.StreamCommandWorkerTest" time="0.001"/>
+  <testcase name="submitWorkerNaksDeliveryWhenPublicationMarkerCannotRepair()" classname="com.reef.platform.api.StreamCommandWorkerTest" time="0.0"/>
+  <testcase name="canonicalProjectorMaterializesNormalizedSubmitOutcomesAndWatermarks()" classname="com.reef.platform.api.StreamCommandWorkerTest" time="0.001"/>
+  <testcase name="cancelWorkerPersistsCanonicalOutcomeBeforeAck()" classname="com.reef.platform.api.StreamCommandWorkerTest" time="0.001"/>
+  <testcase name="unsupportedStreamCommandIsTerminated()" classname="com.reef.platform.api.StreamCommandWorkerTest" time="0.001"/>
+  <testcase name="submitWorkerAcceptsIdempotentBatchPublicationMarkerCounts()" classname="com.reef.platform.api.StreamCommandWorkerTest" time="0.0"/>
+  <testcase name="submitWorkerPersistsFetchedSubmitBatchBeforeAckingDeliveries()" classname="com.reef.platform.api.StreamCommandWorkerTest" time="0.001"/>
+  <testcase name="submitWorkerPersistsCanonicalOutcomeBeforeAck()" classname="com.reef.platform.api.StreamCommandWorkerTest" time="0.0"/>
+  <testcase name="workerMetricsTrackPartitionCountersAndConsumerSnapshots()" classname="com.reef.platform.api.StreamCommandWorkerTest" time="0.0"/>
+  <testcase name="workerStopInterruptsEmptyPollSleepAndStopsThread()" classname="com.reef.platform.api.StreamCommandWorkerTest" time="0.001"/>
+  <testcase name="canonicalProjectorOnlyProjectsOwnedPartitions()" classname="com.reef.platform.api.StreamCommandWorkerTest" time="0.001"/>
+  <testcase name="redeliveryAfterPersistBeforeAckDoesNotCallEngineAgain()" classname="com.reef.platform.api.StreamCommandWorkerTest" time="0.0"/>
+  <testcase name="submitWorkerRepairsPublishedMarkerBeforeAckingDelivery()" classname="com.reef.platform.api.StreamCommandWorkerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

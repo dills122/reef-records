@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.infrastructure.engine.EngineTransportTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:19:16.208Z" hostname="Dylans-MacBook-Pro.local" time="0.09">
+  <properties/>
+  <testcase name="grpcTransportCallsSubmitOrderOverGrpc()" classname="com.reef.platform.infrastructure.engine.EngineTransportTest" time="0.008"/>
+  <testcase name="grpcTransportClosesManagedChannel()" classname="com.reef.platform.infrastructure.engine.EngineTransportTest" time="0.003"/>
+  <testcase name="grpcTransportMapsHiddenLimitOrdersToLimitProtoType()" classname="com.reef.platform.infrastructure.engine.EngineTransportTest" time="0.007"/>
+  <testcase name="grpcTransportRejectsInvalidEnumValuesBeforeCallingEngine()" classname="com.reef.platform.infrastructure.engine.EngineTransportTest" time="0.001"/>
+  <testcase name="grpcStreamTransportCallsSubmitOrderOverPersistentStream()" classname="com.reef.platform.infrastructure.engine.EngineTransportTest" time="0.013"/>
+  <testcase name="grpcTransportUsesConfiguredDeadline()" classname="com.reef.platform.infrastructure.engine.EngineTransportTest" time="0.057"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
