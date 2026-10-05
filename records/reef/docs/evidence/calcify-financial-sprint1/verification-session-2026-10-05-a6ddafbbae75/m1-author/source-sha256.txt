@@ -1,0 +1,5 @@
+ecf9fb4eb70b874b1f32614c1f64234289b95ef8779fcf0070dca247d9af8ade  services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbe.kt
+88da44c0b64daba9d131d9953739ebed4bf1b39b44149a50b0fe0a7142e1e8af  services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbeTest.kt
+c60b13b2e381eec543d32eb179c3640f228824d87ed4d77ab0466cc963400180  scripts/dev/calcify-financial/broker-proof.mjs
+21ac0dea9e1b2a470b7bf47cd3e82abe5ebbc2b0c0b149efe20fd1f5790677ef  scripts/dev/calcify-financial/broker-proof.test.mjs
+b06166162092f476aa6848a1c4eefd59ea443b44999f0c719c49a5373f38e1f9  scripts/dev/calcify-financial/lib/external-faults.mjs

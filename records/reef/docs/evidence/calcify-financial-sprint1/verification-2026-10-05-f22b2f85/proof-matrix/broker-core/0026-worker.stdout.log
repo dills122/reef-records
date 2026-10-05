@@ -1,0 +1,4 @@
+{"processStarted":true,"guarantee":"exactly_once_v2","commitIntervalMs":60000,"stateDir":"/var/folders/lg/j56llg991d1gpjvtjh8l9gbh0000gn/T/reef-financial-e3-RTbUCz"}
+{"certifiedCatchupDomains":0,"partitionCut":null}
+{"frameworkRunningMs":1291}
+{"injectedMutation":2,"key":"s/[\"B\",\"balances\",\"sellerCash\"]"}

@@ -1,0 +1,8 @@
+{
+  "suites": 3,
+  "tests": 27,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "note": "Gradle log BUILD SUCCESSFUL; exit-capture wrapper failed after Gradle because zsh status is read-only; XML copied after completion."
+}

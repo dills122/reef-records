@@ -1,0 +1,26 @@
+{
+  "head": "f22b2f852a3aa1b14bd52a36f828f3e5cceb351f",
+  "base": "97924e15642826a687db935a219d7927ae649ac8",
+  "operationalWorkingTree": [
+    {
+      "path": ".planning/sprint1-proof-bounded/resource_watchdog.py",
+      "sha256": "9a27f1c6a2c5633718b11e572d17407504c3205bff99550b5576dbf7f21c545c"
+    },
+    {
+      "path": ".planning/sprint1-proof-bounded/supervise_checks.py",
+      "sha256": "12155edc5be4ac0b10a24669d6ae8b39a398dde056dac8a1264f7cb4c7a1561b"
+    },
+    {
+      "path": ".planning/sprint1-proof-bounded/run_checks.py",
+      "sha256": "88e90c2f68299b0e7dcbbfa960829adfbd6616cfa91d148d230d5eb5082ada30"
+    },
+    {
+      "path": ".planning/sprint1-proof-bounded/watchdog_controls.py",
+      "sha256": "9867e4f29f9cf430da88abc3b29aeaf806b1e426362fcd9e01573fac35ad6a65"
+    },
+    {
+      "path": ".planning/sprint1-proof-bounded/guard_process_tree_controls.py",
+      "sha256": "452b37d4263443bb273b31da01e73195c8ea6149768680acb78ffdc2b7befb4f"
+    }
+  ]
+}

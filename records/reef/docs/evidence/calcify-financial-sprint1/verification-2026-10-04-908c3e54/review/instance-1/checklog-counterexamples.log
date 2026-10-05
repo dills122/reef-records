@@ -1,0 +1,8 @@
+zero-price attempt=0 kernel="CAPTURED" oracle="INVALID_INPUT"
+parity=false
+invalid-retry attempt=0 kernel="INVALID_INPUT" oracle="INVALID_INPUT"
+parity=true
+invalid-retry attempt=1 kernel="PRIOR_RESULT" oracle="ACTION_CONFLICT"
+parity=false
+opening-overflow attempt=0 kernel="BALANCE_OVERFLOW" oracle="FUNDED"
+parity=false

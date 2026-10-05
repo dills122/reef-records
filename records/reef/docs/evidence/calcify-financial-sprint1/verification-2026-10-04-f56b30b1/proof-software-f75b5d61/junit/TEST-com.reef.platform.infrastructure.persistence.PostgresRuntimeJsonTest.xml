@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:19:16.341Z" hostname="Dylans-MacBook-Pro.local" time="0.011">
+  <properties/>
+  <testcase name="persistableSubmitOutcomeSerializesRejectedResultWithNullAcceptedOrder()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest" time="0.0"/>
+  <testcase name="toJsonArraySerializesMultipleElements()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest" time="0.0"/>
+  <testcase name="persistedOrderSerializesAllFields()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest" time="0.0"/>
+  <testcase name="tradeCreatedSerializesAllFields()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest" time="0.0"/>
+  <testcase name="venueEventBatchFactSerializesOutcomes()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest" time="0.0"/>
+  <testcase name="canonicalSubmitOutcomeSerializesEnvelopeFields()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest" time="0.001"/>
+  <testcase name="jsonObjectBuildsFromVarargPairs()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest" time="0.0"/>
+  <testcase name="executionCreatedSerializesAllFields()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest" time="0.0"/>
+  <testcase name="persistableSubmitOutcomeSerializesAcceptedResult()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest" time="0.001"/>
+  <testcase name="venueCommandOutcomeFactFallsBackToEmptyObjectWhenResultPayloadBlank()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest" time="0.0"/>
+  <testcase name="escapeJsonEscapesControlCharactersAndQuotes()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest" time="0.0"/>
+  <testcase name="toJsonArrayReturnsEmptyArrayForEmptyList()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest" time="0.0"/>
+  <testcase name="escapeJsonLeavesPlainTextUnchanged()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest" time="0.0"/>
+  <testcase name="runtimeEventSerializesWithPayload()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest" time="0.0"/>
+  <testcase name="runtimeEventFallsBackToEmptyObjectWhenPayloadBlank()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

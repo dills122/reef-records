@@ -1,0 +1,14 @@
+{
+  "tests": 214,
+  "pass": 214,
+  "fail": 0,
+  "skipped": 0,
+  "cancelled": 0,
+  "sourceHashesMatch": true,
+  "sourceBoundary": "Post-run source hashes match worker freeze; source mtimes precede attempt. No pre-run hash capture; original attribution corrected separately.",
+  "attemptStartedUtc": "2026-10-05T04:51:15.406Z",
+  "attemptFinishedUtc": "2026-10-05T04:51:24.682Z",
+  "sourceMtimesPrecedeAttempt": true,
+  "actualExitCode": 0,
+  "correction": "source-boundary-correction.json"
+}

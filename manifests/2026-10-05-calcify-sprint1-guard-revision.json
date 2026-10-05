@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/dills122/reef",
+  "source_commit": "fedb554b811559596d32a084451d9af60e021ca8",
+  "selection_policy": "Complete tracked local-only provenance bundle fedb554b811559596d32a084451d9af60e021ca8. Bulk publishes solely Reef Records; reviewed product source f56b30b19d00a1033abae44a75435a4e771990e9 is published separately. Preserve byte-identical originals including failures; excludes caches, binaries, private sessions and live state. Final review6 Not ready; no independent guard remediation sign-off or bounded/full E3/E4/capacity qualification.",
+  "files": [
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/README.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/README.md",
+      "bytes": 858,
+      "sha256": "0e4c70a90117308ee6907311548ce5d8a580fb19c6fd9b9549dd285cb309fdc4",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/SHA256SUMS",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/SHA256SUMS",
+      "bytes": 2418,
+      "sha256": "513b88cc4bcbb5223582bb405492db37963f89a20bbb1b25fad8fea9efb765fb",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/attempts.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/attempts.jsonl",
+      "bytes": 6161,
+      "sha256": "64e45add331d705b73e84198e7baacf6cfb2a2f9a430642bfeb4e1e33896c159",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/bundle-manifest.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/bundle-manifest.json",
+      "bytes": 6464,
+      "sha256": "2b1b6a0568f60a647d919a64427c1cd52fe9b64615bd039462dd738343ea89d5",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/completion-race-counterexample.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/completion-race-counterexample.json",
+      "bytes": 554,
+      "sha256": "636a51d86d333630388a04e63b22f4ef38fab6b8b140508344fd908ec3cbf865",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/handshake-author-note.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/handshake-author-note.md",
+      "bytes": 1959,
+      "sha256": "53a835d8a56633b3fa82fa3574c55eab4cbb01b1f4e97ec97c7c5d67ab7609ea",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/handshake-remediation-manifest.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/handshake-remediation-manifest.json",
+      "bytes": 1841,
+      "sha256": "0a28320c51586203c3e14f6d45d0333f6ae27287c181681559174c4871681cc6",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/resource_watchdog.py",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/resource_watchdog.py",
+      "bytes": 5320,
+      "sha256": "8e63a35ec9733c62728d6a25069d45de6903f543222ed78f47cf3ba2cbf5955f",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervise_checks.pre-handshake.py",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervise_checks.pre-handshake.py",
+      "bytes": 4072,
+      "sha256": "f516f6b3b8d2583e996a2e8787fa80188ead877263278e8d0cf51a87bac33985",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervise_checks.pre-reap.py",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervise_checks.pre-reap.py",
+      "bytes": 4384,
+      "sha256": "f38e22e3b6a43ddaaf01b8f2e06803737e30aff27493a86f67ee0396255dd687",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervise_checks.py",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervise_checks.py",
+      "bytes": 4544,
+      "sha256": "12155edc5be4ac0b10a24669d6ae8b39a398dde056dac8a1264f7cb4c7a1561b",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervisor-real-process-control-final.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervisor-real-process-control-final.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervisor-real-process-control-final.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervisor-real-process-control-final.stdout.log",
+      "bytes": 600,
+      "sha256": "def63205538dd1a8bb04276d07e0fdb0323562ba422eb02b057397440da087da",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervisor-real-process-control-reap.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervisor-real-process-control-reap.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervisor-real-process-control-reap.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervisor-real-process-control-reap.stdout.log",
+      "bytes": 600,
+      "sha256": "d070edfb11fa5c33ce1a646b3fd39f3a184e57c41a47d6cd7955d2d7698d1c10",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervisor-real-process-control-unsandboxed.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervisor-real-process-control-unsandboxed.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervisor-real-process-control-unsandboxed.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervisor-real-process-control-unsandboxed.stdout.log",
+      "bytes": 746,
+      "sha256": "b584e67e41d9a6e72d3c7d3f680c4b79f43005f1d5a86018c6ac0bf8226306d9",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervisor-real-process-control.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervisor-real-process-control.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervisor-real-process-control.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervisor-real-process-control.stdout.log",
+      "bytes": 746,
+      "sha256": "d9f07500768edd59db9f023e1e66d71efcba364da779fb3057914b29ce946c94",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervisor_process_control.py",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/supervisor_process_control.py",
+      "bytes": 2109,
+      "sha256": "56ebfa3d8af099dddb7eec140c304db2ef4d3210ec8a1d7ef29aa91cd78edda5",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/watchdog-controls-handshake.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/watchdog-controls-handshake.stderr.log",
+      "bytes": 1550,
+      "sha256": "85567edf56d72c4cd61bebd51a37b48903398409e04b2e4ce7a5b23a274b093b",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/watchdog-controls-handshake.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/watchdog-controls-handshake.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/watchdog-controls-reap.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/watchdog-controls-reap.stderr.log",
+      "bytes": 1550,
+      "sha256": "5ce92a97aaf0a25f1f7573da8ae56aa5424ff770aae53080b95ce0ee3113b5fe",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/watchdog-controls-reap.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/watchdog-controls-reap.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/watchdog_controls.py",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/watchdog_controls.py",
+      "bytes": 8492,
+      "sha256": "fdf37e233256baa6696f89c312cb4c4b6225092b440c9c4be5dc6e6769475b3b",
+      "reason": "Extended review and runtime history; preserve successful, failed and aborted attempts. Current product code and safe continuation remain Reef; no sign-off implied."
+    }
+  ]
+}

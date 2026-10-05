@@ -1,0 +1,13 @@
+{
+  "milestone": "M2 bounded E3 certified partition cut",
+  "baseline": "a6ddafbbae750693e227985f054be2d26716ae84",
+  "ownedFiles": ["FinancialPartitionCut.kt", "FinancialPartitionCutTest.kt"],
+  "graphProject": "reef-calcify-session-8c6f",
+  "graphGeneration": "2026-10-05T03:05:23Z",
+  "graphTier": "Verify",
+  "coverage": "FinancialBrokerProbe.kt, FinancialKernel.kt, FinancialKernelTest.kt metadata_match; task docs read directly",
+  "serena": "exact project activated; manual read; Kotlin unavailable, graph/source/compiler fallback",
+  "redState": "11 executable tests with deliberately permissive stub; build shared slot held by M1",
+  "redFixtureCorrectionQueued": "Pending fixture has no persisted deliveryCursor delta; inject unexpected nonzero cursor instead of deleting absent row",
+  "scope": "Test-only verifier and fixtures. Parent owns actual worker startup invocation, actual group resume vector, live broker proof and no-republish assertions. Pure tests do not close full E3."
+}

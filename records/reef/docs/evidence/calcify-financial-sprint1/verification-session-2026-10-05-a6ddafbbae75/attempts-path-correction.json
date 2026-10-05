@@ -1,0 +1,215 @@
+{
+  "reason": "Current session recorder recreated historical archived raw/attempts.jsonl. Preserve exact current bytes in session namespace; recorder default moves to ignored active proof attempts; no historical original altered or restored.",
+  "files": [
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-committed-cut-green1.stderr.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-committed-cut-green1.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-recorder-path-red.stdout.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-recorder-path-red.stdout.log",
+      "bytes": 1264,
+      "sha256": "1f8e76f1dc7255f51ad4464b84300a0b05d8e9fadc77e6ea36c903959c27b1b7"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-m1-green.stdout.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-m1-green.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-m1-red.stdout.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-m1-red.stdout.log",
+      "bytes": 856,
+      "sha256": "7180b3702da64940e19b8a73f6ddf7df7cb0f8e33028de16aa7d6aab0ff5eba3"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-broker-up-explicit-subnet.stderr.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-broker-up-explicit-subnet.stderr.log",
+      "bytes": 1372,
+      "sha256": "47f4d767d6774c9cab1265fc1a29a3a6c83896fb61e18986ee3d10cdf9bf2418"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-m2-red2.stderr.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-m2-red2.stderr.log",
+      "bytes": 397,
+      "sha256": "537df7295aa7bdd4f2bf9c327e30853e734f48be599c455e3424595abd82d9d0"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-financial-integrated-green2.stdout.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-financial-integrated-green2.stdout.log",
+      "bytes": 1006,
+      "sha256": "fb8095818d67e2855b8dbb1b6340e3648dd7b4e53b54a8befae8040cc1af5151"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-dynamic-startup-green.stdout.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-dynamic-startup-green.stdout.log",
+      "bytes": 1395,
+      "sha256": "b1e417431f5ea853b857aa391c118368870f4247bc2cf312f3c134df4f838869"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-m2-green1.stdout.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-m2-green1.stdout.log",
+      "bytes": 957,
+      "sha256": "42c814f08af8384faf733674cf5f5b16ebf2c59fd4d5227c4f73d92219755693"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-financial-integrated-green1.stderr.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-financial-integrated-green1.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-m1-ready-green.stdout.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-m1-ready-green.stdout.log",
+      "bytes": 2943,
+      "sha256": "1b1952cdfaa7b16311997d9d4ff3d5a57128a080d80763b837e54de2bb8d07f0"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-m1-ready-red.stdout.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-m1-ready-red.stdout.log",
+      "bytes": 3504,
+      "sha256": "5cefbefe0e8386c8dfab982f83c11b5300b68f8e14c9fde2df095adead11b911"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-committed-cut-red.stderr.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-committed-cut-red.stderr.log",
+      "bytes": 394,
+      "sha256": "b121dc5aa5d4f8486d93d2a3cef17de9f8cf1d7d2181adf86950c8a7d9ad2fff"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-m1-green-escalated.stderr.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-m1-green-escalated.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-dynamic-startup-red.stdout.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-dynamic-startup-red.stdout.log",
+      "bytes": 1060,
+      "sha256": "1d6e1a9a9823163018a558345aca2d3c59152c8a43a6c30df2f1ee9374605430"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-broker-up.stdout.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-broker-up.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-m2-red.stdout.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-m2-red.stdout.log",
+      "bytes": 3315,
+      "sha256": "d5d310b727a66026f81881b8b2c2927275127ba2a18f60abe15bb05182c121ff"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-recorder-path-red.stderr.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-recorder-path-red.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-committed-cut-green1.stdout.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-committed-cut-green1.stdout.log",
+      "bytes": 947,
+      "sha256": "170c06be15dc05a30c2818118ea81820c0ab3c679242d73576b30c210cf6b7ae"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-broker-up-explicit-subnet.stdout.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-broker-up-explicit-subnet.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-financial-integrated-green2.stderr.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-financial-integrated-green2.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-m2-red2.stdout.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-m2-red2.stdout.log",
+      "bytes": 3660,
+      "sha256": "77048d556ce675f071521320fed1189d5a75f774f9204e360bcdf630946e5eb5"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-m1-green.stderr.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-m1-green.stderr.log",
+      "bytes": 662,
+      "sha256": "29ead19a22200f14d99085c59a29685aeffcd927150ecec8fb9b065e543cbc86"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-m1-red.stderr.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-m1-red.stderr.log",
+      "bytes": 1817,
+      "sha256": "b9802604f385cef7fdfaefd789a9f398c170e2a3a010a25a0d78b2f37cd6d55b"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-committed-cut-red.stdout.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-committed-cut-red.stdout.log",
+      "bytes": 1481,
+      "sha256": "3478134651b5dbba511088e37afec43ec8bded8b509fdec848bdd8c08af26841"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-m1-ready-red.stderr.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-m1-ready-red.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-dynamic-startup-red.stderr.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-dynamic-startup-red.stderr.log",
+      "bytes": 394,
+      "sha256": "9484d62bcbed645a86fab5fad209d3a8ca989bd00401adab03b14507e573cbc8"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-m1-green-escalated.stdout.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-m1-green-escalated.stdout.log",
+      "bytes": 726,
+      "sha256": "948c8d74eb17531da35fa01e5c554aefd41c5053fefa38d3067bb44802e1240e"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-m1-ready-green.stderr.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-m1-ready-green.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-financial-integrated-green1.stdout.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-financial-integrated-green1.stdout.log",
+      "bytes": 1444,
+      "sha256": "0f86d6cf91d5853c146fc4483d91b91831a63c8422bcff9f1ea6dc848dfbd028"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-dynamic-startup-green.stderr.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-dynamic-startup-green.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-m2-green1.stderr.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-m2-green1.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/attempts.jsonl",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/attempts.jsonl",
+      "bytes": 11037,
+      "sha256": "54c6a75a4fb72a6c2bda23e48d1bd0eb636dcc002dab730ae91ef2f0d8816f6c"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-m2-red.stderr.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-m2-red.stderr.log",
+      "bytes": 397,
+      "sha256": "5d08e523afbd95309b2a054ba76e4149adbc22613f19a5027fea6bde456a339c"
+    },
+    {
+      "originalPath": "docs/evidence/calcify-financial-sprint1/raw/session8c6f-broker-up.stderr.log",
+      "preservedPath": ".planning/calcify-session-2026-10-04/attempts-legacy/session8c6f-broker-up.stderr.log",
+      "bytes": 1927,
+      "sha256": "40f704185d4c74c725c540ee0a223617e2024eb7aae9f3c6823e40a471545bd1"
+    }
+  ]
+}

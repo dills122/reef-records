@@ -1,0 +1,854 @@
+{
+  "totals": {
+    "tests": 794,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 20,
+    "suites": 103,
+    "financial": [
+      {
+        "suite": "com.reef.platform.calcify.financial.FinancialKernelTest",
+        "tests": 14,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "timeSeconds": 117.749
+      },
+      {
+        "suite": "com.reef.platform.calcify.financial.FinancialOracleTest",
+        "tests": 12,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "timeSeconds": 22.2
+      }
+    ],
+    "scope": "Offline local full module; external database TEST env not configured, guarded integration tests may return without assertions. No database integration claim."
+  },
+  "suites": [
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresVenueEventBatchMaterializationIntegrationTest",
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.admin.AdminCliAdapterTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.309
+    },
+    {
+      "suite": "com.reef.platform.admin.AdminCliIntegrationTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.002
+    },
+    {
+      "suite": "com.reef.platform.api.AcceptedAsyncCommandIntakeTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 2.333
+    },
+    {
+      "suite": "com.reef.platform.api.AccountRiskCheckExtensionTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.003
+    },
+    {
+      "suite": "com.reef.platform.api.AdminJsonValidationTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.184
+    },
+    {
+      "suite": "com.reef.platform.api.BotRuntimeOrderClientTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.06
+    },
+    {
+      "suite": "com.reef.platform.api.CommandCaptureStoreTest",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.022
+    },
+    {
+      "suite": "com.reef.platform.api.CommandLogStoreTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.007
+    },
+    {
+      "suite": "com.reef.platform.api.CommandProcessingModeTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.api.DownstreamProjectionInstrumentationTest",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.015
+    },
+    {
+      "suite": "com.reef.platform.api.ExternalApiBoundaryTest",
+      "tests": 31,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.028
+    },
+    {
+      "suite": "com.reef.platform.api.InMemoryIdempotencyStoreTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.006
+    },
+    {
+      "suite": "com.reef.platform.api.JsonCodecTest",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.042
+    },
+    {
+      "suite": "com.reef.platform.api.KafkaStreamCommandPublisherTest",
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.015
+    },
+    {
+      "suite": "com.reef.platform.api.MarketDataProjectionWorkerTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.02
+    },
+    {
+      "suite": "com.reef.platform.api.MaterializerTimingJournalTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.01
+    },
+    {
+      "suite": "com.reef.platform.api.OrderLifecycleProjectionWorkerGroupTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.21
+    },
+    {
+      "suite": "com.reef.platform.api.OrderLifecycleProjectionWorkerTest",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.329
+    },
+    {
+      "suite": "com.reef.platform.api.PlatformAdminDataRoutesTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.api.PlatformApiTest",
+      "tests": 19,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.03
+    },
+    {
+      "suite": "com.reef.platform.api.PlatformCommandParsersTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.002
+    },
+    {
+      "suite": "com.reef.platform.api.PlatformHttpServerBoundaryTest",
+      "tests": 130,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 17.765
+    },
+    {
+      "suite": "com.reef.platform.api.PlatformHttpServerHelpersTest",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.012
+    },
+    {
+      "suite": "com.reef.platform.api.PlatformRuntimePartitionsTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.api.PlatformRuntimeProfileValidationTest",
+      "tests": 27,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.012
+    },
+    {
+      "suite": "com.reef.platform.api.PostgresBoundarySqlNamesTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.api.PostgresCommandLogCaptureIntegrationTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.0
+    },
+    {
+      "suite": "com.reef.platform.api.PostgresCommandLogStoreIntegrationTest",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.004
+    },
+    {
+      "suite": "com.reef.platform.api.PostgresIdempotencyStoreIntegrationTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 3,
+      "timeSeconds": 0.012
+    },
+    {
+      "suite": "com.reef.platform.api.SettlementAdminGatewayParsingTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.002
+    },
+    {
+      "suite": "com.reef.platform.api.StreamCommandDrainBackpressureTest",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.005
+    },
+    {
+      "suite": "com.reef.platform.api.StreamCommandIntakeTest",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.007
+    },
+    {
+      "suite": "com.reef.platform.api.StreamCommandWorkerTest",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.008
+    },
+    {
+      "suite": "com.reef.platform.api.StreamIngressSubmitHandlerTest",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.002
+    },
+    {
+      "suite": "com.reef.platform.api.VenueEventBatchMaterializerTest",
+      "tests": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.034
+    },
+    {
+      "suite": "com.reef.platform.application.OrderApplicationServicePerfGuardrailTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.035
+    },
+    {
+      "suite": "com.reef.platform.application.OrderApplicationServiceTest",
+      "tests": 15,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.006
+    },
+    {
+      "suite": "com.reef.platform.application.admin.AdminApplicationServiceTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.002
+    },
+    {
+      "suite": "com.reef.platform.application.admin.AdminAuthServiceTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.002
+    },
+    {
+      "suite": "com.reef.platform.application.admin.AdminIdentityServiceTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.003
+    },
+    {
+      "suite": "com.reef.platform.application.admin.PostgresAdminAuthSqlNamesTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.002
+    },
+    {
+      "suite": "com.reef.platform.application.admin.PostgresAdminIdentitySqlNamesTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.application.analytics.SimulationRunExportStoreTest",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.01
+    },
+    {
+      "suite": "com.reef.platform.application.settlement.PostTradeProfileResolverTest",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.003
+    },
+    {
+      "suite": "com.reef.platform.application.settlement.PostgresSettlementFactStoreIntegrationTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.application.settlement.SettlementExceptionProjectionTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.application.settlement.SettlementFactStoreTest",
+      "tests": 36,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.015
+    },
+    {
+      "suite": "com.reef.platform.application.settlement.SettlementLedgerProjectionTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.application.settlement.SettlementObligationProjectionTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.application.settlement.SettlementScenarioProofProjectionTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.002
+    },
+    {
+      "suite": "com.reef.platform.application.settlement.SettlementScoreProjectionTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.002
+    },
+    {
+      "suite": "com.reef.platform.application.settlement.TradeSettlementObligationMaterializerTest",
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.005
+    },
+    {
+      "suite": "com.reef.platform.calcify.ActualMeasureCompletionTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.calcify.BoundedSourceAcknowledgementsTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.057
+    },
+    {
+      "suite": "com.reef.platform.calcify.CalcifyActualFullFactObserverTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.114
+    },
+    {
+      "suite": "com.reef.platform.calcify.CalcifyContractTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.003
+    },
+    {
+      "suite": "com.reef.platform.calcify.CalcifyExtractorPollBatchTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.063
+    },
+    {
+      "suite": "com.reef.platform.calcify.CalcifyPipelineConfigTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.calcify.CalcifyReceiptBatchTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.005
+    },
+    {
+      "suite": "com.reef.platform.calcify.CalcifyReceiptStoreTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.0
+    },
+    {
+      "suite": "com.reef.platform.calcify.CalcifyResolverProcessorTest",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 1.79
+    },
+    {
+      "suite": "com.reef.platform.calcify.CalcifyRunNamespaceTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.759
+    },
+    {
+      "suite": "com.reef.platform.calcify.CalcifySourceRegistrationTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.calcify.CalcifyVerifiedVisibilityObserverTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.003
+    },
+    {
+      "suite": "com.reef.platform.calcify.CalcifyVerifierBatchTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.003
+    },
+    {
+      "suite": "com.reef.platform.calcify.MatchContextResolverTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.056
+    },
+    {
+      "suite": "com.reef.platform.calcify.ResolverConsumerGateTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.003
+    },
+    {
+      "suite": "com.reef.platform.calcify.ResolverTopicDurabilityTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.002
+    },
+    {
+      "suite": "com.reef.platform.calcify.financial.FinancialKernelTest",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 117.749
+    },
+    {
+      "suite": "com.reef.platform.calcify.financial.FinancialOracleTest",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 22.2
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.config.RuntimeEnvTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.005
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.engine.EngineClientIntegrationTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.007
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.engine.EngineClientTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.005
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.engine.EngineTransportParityTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.235
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.engine.EngineTransportTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.08
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.partition.PartitionLaneHashTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.009
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 11,
+      "timeSeconds": 0.009
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.MatchingFactsReconciliationIntegrationTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 1,
+      "timeSeconds": 0.0
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.NoopRuntimePersistenceTest",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.003
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresBootstrapModeTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresCanonicalIndexConsolidationIntegrationTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresCanonicalSequencePrefixGuardIntegrationTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.0
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresCommittedProjectionFrontierIntegrationTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.0
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresDirtyProjectionConcurrencyIntegrationTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.0
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresLifecycleNumericParityIntegrationTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresMarketDataIndexedProjectionIntegrationTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.0
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresProjectionBatchClaimIntegrationTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresProjectionStatusIntegrationTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresRunOrderIdentityMigrationIntegrationTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 2,
+      "timeSeconds": 0.0
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresRunOrderIsolationIntegrationTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 3,
+      "timeSeconds": 0.0
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresRuntimeEventReplayIntegrationTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.0
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest",
+      "tests": 15,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.004
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresRuntimePersistenceTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresRuntimeSqlNamesTest",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresSchemaRequirementsTest",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.009
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresSchemaValidatorTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresSubmitResultReplayIntegrationTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.001
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresTradeReplayIntegrationTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.0
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.PostgresVenueBatchOutcomeReuseIntegrationTest",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.002
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.ProjectionBatchClaimBootstrapTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.01
+    },
+    {
+      "suite": "com.reef.platform.infrastructure.persistence.ProjectionBatchIdentityV1Test",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "timeSeconds": 0.003
+    }
+  ]
+}

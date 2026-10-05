@@ -1,0 +1,23 @@
+[
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialBrokerProbeTest",
+    "tests": "1",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialKernelTest",
+    "tests": "14",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialOracleTest",
+    "tests": "12",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  }
+]

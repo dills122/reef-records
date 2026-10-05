@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.api.KafkaStreamCommandPublisherTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:37:41.526Z" hostname="Dylans-MacBook-Pro.local" time="0.015">
+  <properties/>
+  <testcase name="kafkaPublisherBackpressuresAtConfiguredWindowAndReleasesSlotAfterAck()" classname="com.reef.platform.api.KafkaStreamCommandPublisherTest" time="0.006"/>
+  <testcase name="kafkaPublisherDoesNotApplicationResendRetriableCallbackFailure()" classname="com.reef.platform.api.KafkaStreamCommandPublisherTest" time="0.001"/>
+  <testcase name="kafkaPublisherReportsAcceptedSourceFrontiersPerPartition()" classname="com.reef.platform.api.KafkaStreamCommandPublisherTest" time="0.002"/>
+  <testcase name="kafkaPublisherReleasesSlotWhenCallbackOmitsMetadata()" classname="com.reef.platform.api.KafkaStreamCommandPublisherTest" time="0.001"/>
+  <testcase name="kafkaPublisherDoesNotRetryNonRetriablePublishFailure()" classname="com.reef.platform.api.KafkaStreamCommandPublisherTest" time="0.001"/>
+  <testcase name="kafkaCommitCandidateSkipsControlOffsetsButStopsBeforeUnacknowledgedVisibleRecords()" classname="com.reef.platform.api.KafkaStreamCommandPublisherTest" time="0.0"/>
+  <testcase name="kafkaPublisherSupportsBatchesWithoutSendingEmptyBatch()" classname="com.reef.platform.api.KafkaStreamCommandPublisherTest" time="0.001"/>
+  <testcase name="kafkaSourcePositionsUseExclusiveOffsetsWithoutCrossPartitionSubtraction()" classname="com.reef.platform.api.KafkaStreamCommandPublisherTest" time="0.001"/>
+  <testcase name="kafkaPublisherBuildsPartitionedRecordAndReturnsDurableSequence()" classname="com.reef.platform.api.KafkaStreamCommandPublisherTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

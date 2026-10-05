@@ -1,0 +1,134 @@
+{
+  "schema": "calcify-proof-supervisor-v1",
+  "registeredResources": {
+    "project": "reef-calcify-review",
+    "containers": [
+      {
+        "id": "1111111111111111111111111111111111111111111111111111111111111111",
+        "imageId": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-review",
+          "com.docker.compose.service": "rp0",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "volumes": [
+          {
+            "name": "review-0",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "2222222222222222222222222222222222222222222222222222222222222222",
+        "imageId": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-review",
+          "com.docker.compose.service": "rp1",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "volumes": [
+          {
+            "name": "review-1",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "3333333333333333333333333333333333333333333333333333333333333333",
+        "imageId": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-review",
+          "com.docker.compose.service": "rp2",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "volumes": [
+          {
+            "name": "review-2",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      }
+    ]
+  },
+  "wrapper": {
+    "argv": [
+      "/usr/bin/true",
+      "--fault-phase-directory",
+      "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-session-2026-10-04/reviews/m0-attempt2-cycle1/final-peer-failure-28800/broker-fault"
+    ],
+    "cwd": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-session-2026-10-04/reviews/m0-attempt2-cycle1",
+    "outputDir": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-session-2026-10-04/reviews/m0-attempt2-cycle1/final-peer-failure-28800",
+    "timeoutMs": 60000
+  },
+  "externalBrokerFault": {
+    "composeProject": "reef-calcify-review",
+    "containers": [
+      "1111111111111111111111111111111111111111111111111111111111111111",
+      "2222222222222222222222222222222222222222222222222222222222222222",
+      "3333333333333333333333333333333333333333333333333333333333333333"
+    ],
+    "targetContainer": "1111111111111111111111111111111111111111111111111111111111111111",
+    "resources": [
+      {
+        "id": "1111111111111111111111111111111111111111111111111111111111111111",
+        "imageId": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-review",
+          "com.docker.compose.service": "rp0",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "volumes": [
+          {
+            "name": "review-0",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "2222222222222222222222222222222222222222222222222222222222222222",
+        "imageId": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-review",
+          "com.docker.compose.service": "rp1",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "volumes": [
+          {
+            "name": "review-1",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "3333333333333333333333333333333333333333333333333333333333333333",
+        "imageId": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-review",
+          "com.docker.compose.service": "rp2",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "volumes": [
+          {
+            "name": "review-2",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      }
+    ],
+    "stoppedAllocatedBytesUpperBound": 3221225472,
+    "evidence": "Injected exclusive-writer review control",
+    "phaseProtocol": {
+      "schema": "calcify-broker-fault-phase-v1",
+      "runId": "review-adversarial",
+      "maxCycles": 1,
+      "recoveryTimeoutMs": 30000,
+      "stopTimeoutMs": 30000,
+      "directory": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-session-2026-10-04/reviews/m0-attempt2-cycle1/final-peer-failure-28800/broker-fault",
+      "clock": {
+        "platform": "darwin",
+        "node": "22.22.1",
+        "uv": "1.51.0"
+      }
+    }
+  }
+}

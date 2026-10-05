@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.api.DownstreamProjectionInstrumentationTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:37:41.434Z" hostname="Dylans-MacBook-Pro.local" time="0.015">
+  <properties/>
+  <testcase name="busyQueuesCoverOlderPrefixesAfterSeparateLifecycleAndMarketBarriers()" classname="com.reef.platform.api.DownstreamProjectionInstrumentationTest" time="0.008"/>
+  <testcase name="restartOrReadPairGenerationMismatchPermanentlyInvalidatesCoverage()" classname="com.reef.platform.api.DownstreamProjectionInstrumentationTest" time="0.001"/>
+  <testcase name="projectionWideErrorRowFailsClosedBeforeFilteringPartitions()" classname="com.reef.platform.api.DownstreamProjectionInstrumentationTest" time="0.0"/>
+  <testcase name="markerFailsClosedForMissingPartitionsErrorsAndBackwardObservationClock()" classname="com.reef.platform.api.DownstreamProjectionInstrumentationTest" time="0.001"/>
+  <testcase name="marketMarkerRequiresLifecycleAndMarketQueuesToBeCovered()" classname="com.reef.platform.api.DownstreamProjectionInstrumentationTest" time="0.0"/>
+  <testcase name="equalOldestTimestampCannotCoverEarlierSourceObservation()" classname="com.reef.platform.api.DownstreamProjectionInstrumentationTest" time="0.001"/>
+  <testcase name="lifecycleMarkerCoversCommittedPrefixEvenWithActiveNewerCaller()" classname="com.reef.platform.api.DownstreamProjectionInstrumentationTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.application.admin.PostgresAdminAuthSqlNamesTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:38:00.066Z" hostname="Dylans-MacBook-Pro.local" time="0.002">
+  <properties/>
+  <testcase name="rejectsUnsafeSchemaName()" classname="com.reef.platform.application.admin.PostgresAdminAuthSqlNamesTest" time="0.0"/>
+  <testcase name="defaultsAuthTablesToAdminSchema()" classname="com.reef.platform.application.admin.PostgresAdminAuthSqlNamesTest" time="0.0"/>
+  <testcase name="blankSchemaNameFallsBackToAdminSchema()" classname="com.reef.platform.application.admin.PostgresAdminAuthSqlNamesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

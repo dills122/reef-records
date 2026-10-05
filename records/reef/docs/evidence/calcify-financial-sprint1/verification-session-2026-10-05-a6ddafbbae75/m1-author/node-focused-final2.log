@@ -1,0 +1,400 @@
+TAP version 13
+# Subtest: external plan freezes four executable trigger/barrier definitions
+ok 1 - external plan freezes four executable trigger/barrier definitions
+  ---
+  duration_ms: 0.888417
+  type: 'test'
+  ...
+# Subtest: broker registration refuses missing, malformed, duplicate and unregistered IDs
+ok 2 - broker registration refuses missing, malformed, duplicate and unregistered IDs
+  ---
+  duration_ms: 0.992625
+  type: 'test'
+  ...
+# Subtest: daemon inspection requires exact IDs, owned labels and two live peers
+ok 3 - daemon inspection requires exact IDs, owned labels and two live peers
+  ---
+  duration_ms: 3.627625
+  type: 'test'
+  ...
+# Subtest: restoration validates ownership even when peer health fails after outage
+ok 4 - restoration validates ownership even when peer health fails after outage
+  ---
+  duration_ms: 0.202375
+  type: 'test'
+  ...
+# Subtest: recovery requires identical physical prefix and exact stable end for idle restart
+ok 5 - recovery requires identical physical prefix and exact stable end for idle restart
+  ---
+  duration_ms: 1.233333
+  type: 'test'
+  ...
+# Subtest: idle restart refuses checkpoint divergence despite unchanged economic output
+ok 6 - idle restart refuses checkpoint divergence despite unchanged economic output
+  ---
+  duration_ms: 0.2195
+  type: 'test'
+  ...
+# Subtest: stale owner requires observed broker fencing, never generic error or elapsed time
+ok 7 - stale owner requires observed broker fencing, never generic error or elapsed time
+  ---
+  duration_ms: 0.391125
+  type: 'test'
+  ...
+# Subtest: producer failure arm invokes actual producer seam, observes zero abort outputs then restores
+ok 8 - producer failure arm invokes actual producer seam, observes zero abort outputs then restores
+  ---
+  duration_ms: 0.452709
+  type: 'test'
+  ...
+# Subtest: committed-before-ACK arm kills after read-committed barrier and persists ACK only after stable recovery
+ok 9 - committed-before-ACK arm kills after read-committed barrier and persists ACK only after stable recovery
+  ---
+  duration_ms: 0.402209
+  type: 'test'
+  ...
+# Subtest: stale-owner arm freezes before forward, takes over, resumes and demands fencing before end-offset proof
+ok 10 - stale-owner arm freezes before forward, takes over, resumes and demands fencing before end-offset proof
+  ---
+  duration_ms: 0.462167
+  type: 'test'
+  ...
+# Subtest: majority outage proves fresh outputs while target stopped and restores target on failure
+ok 11 - majority outage proves fresh outputs while target stopped and restores target on failure
+  ---
+  duration_ms: 0.688625
+  type: 'test'
+  ...
+# Subtest: prefix: complete manifest, duplicate and out-of-order members close once
+ok 12 - prefix: complete manifest, duplicate and out-of-order members close once
+  ---
+  duration_ms: 5.230708
+  type: 'test'
+  ...
+# Subtest: prefix: unresolved prior fill prevents opening until dependency closure
+ok 13 - prefix: unresolved prior fill prevents opening until dependency closure
+  ---
+  duration_ms: 0.470708
+  type: 'test'
+  ...
+# Subtest: prefix: zero-trade amendment/cancel are explicit coverage members
+ok 14 - prefix: zero-trade amendment/cancel are explicit coverage members
+  ---
+  duration_ms: 0.276625
+  type: 'test'
+  ...
+# Subtest: prefix: high water leaves fetched suffix in separate bounded budget
+ok 15 - prefix: high water leaves fetched suffix in separate bounded budget
+  ---
+  duration_ms: 0.217708
+  type: 'test'
+  ...
+# Subtest: prefix: reassignment preserves grant membership; timeout never reclaims
+ok 16 - prefix: reassignment preserves grant membership; timeout never reclaims
+  ---
+  duration_ms: 1.259459
+  type: 'test'
+  ...
+# Subtest: prefix: closed tombstone rejects late old duplicate without extra capacity
+ok 17 - prefix: closed tombstone rejects late old duplicate without extra capacity
+  ---
+  duration_ms: 0.142834
+  type: 'test'
+  ...
+# Subtest: prefix: missing source fact remains waiting, not algorithmic deadlock
+ok 18 - prefix: missing source fact remains waiting, not algorithmic deadlock
+  ---
+  duration_ms: 0.152375
+  type: 'test'
+  ...
+# Subtest: credit: complete manifest, duplicate and out-of-order members close once
+ok 19 - credit: complete manifest, duplicate and out-of-order members close once
+  ---
+  duration_ms: 0.223167
+  type: 'test'
+  ...
+# Subtest: credit: unresolved prior fill prevents opening until dependency closure
+ok 20 - credit: unresolved prior fill prevents opening until dependency closure
+  ---
+  duration_ms: 0.374583
+  type: 'test'
+  ...
+# Subtest: credit: zero-trade amendment/cancel are explicit coverage members
+ok 21 - credit: zero-trade amendment/cancel are explicit coverage members
+  ---
+  duration_ms: 0.469541
+  type: 'test'
+  ...
+# Subtest: credit: high water leaves fetched suffix in separate bounded budget
+ok 22 - credit: high water leaves fetched suffix in separate bounded budget
+  ---
+  duration_ms: 0.204042
+  type: 'test'
+  ...
+# Subtest: credit: reassignment preserves grant membership; timeout never reclaims
+ok 23 - credit: reassignment preserves grant membership; timeout never reclaims
+  ---
+  duration_ms: 0.1545
+  type: 'test'
+  ...
+# Subtest: credit: closed tombstone rejects late old duplicate without extra capacity
+ok 24 - credit: closed tombstone rejects late old duplicate without extra capacity
+  ---
+  duration_ms: 0.080458
+  type: 'test'
+  ...
+# Subtest: credit: missing source fact remains waiting, not algorithmic deadlock
+ok 25 - credit: missing source fact remains waiting, not algorithmic deadlock
+  ---
+  duration_ms: 0.06075
+  type: 'test'
+  ...
+# Subtest: source-prefix refuses B grant while ungranted A occupies FIFO; credits need bounded bypass
+ok 26 - source-prefix refuses B grant while ungranted A occupies FIFO; credits need bounded bypass
+  ---
+  duration_ms: 0.570084
+  type: 'test'
+  ...
+# Subtest: seal behind future burst: prefix excludes ordering, credit reserved bypass reaches closure
+ok 27 - seal behind future burst: prefix excludes ordering, credit reserved bypass reaches closure
+  ---
+  duration_ms: 0.352375
+  type: 'test'
+  ...
+# Subtest: future burst beyond bypass envelope produces retained counterexample, no lost admitted membership
+ok 28 - future burst beyond bypass envelope produces retained counterexample, no lost admitted membership
+  ---
+  duration_ms: 0.111708
+  type: 'test'
+  ...
+# Subtest: declared fanout overflow rejected before opening; unknown membership faults without release
+ok 29 - declared fanout overflow rejected before opening; unknown membership faults without release
+  ---
+  duration_ms: 3.27375
+  type: 'test'
+  ...
+# Subtest: bounded exhaustive and seeded schedule families close all supplied facts within resources
+ok 30 - bounded exhaustive and seeded schedule families close all supplied facts within resources
+  ---
+  duration_ms: 138.989375
+  type: 'test'
+  ...
+# Subtest: healthy credit rejects unproved closure path before reserving capacity
+ok 31 - healthy credit rejects unproved closure path before reserving capacity
+  ---
+  duration_ms: 0.28675
+  type: 'test'
+  ...
+# Subtest: cyclic or forward prefix dependency manifests fail preflight instead of creating deadlock
+ok 32 - cyclic or forward prefix dependency manifests fail preflight instead of creating deadlock
+  ---
+  duration_ms: 0.223
+  type: 'test'
+  ...
+# Subtest: prefix: checkpoint schema and required state reject truncated or mixed cuts
+ok 33 - prefix: checkpoint schema and required state reject truncated or mixed cuts
+  ---
+  duration_ms: 2.504083
+  type: 'test'
+  ...
+# Subtest: credit: checkpoint schema and required state reject truncated or mixed cuts
+ok 34 - credit: checkpoint schema and required state reject truncated or mixed cuts
+  ---
+  duration_ms: 1.928959
+  type: 'test'
+  ...
+# Subtest: preparation stops until E3 correctness and real calibration plus indexed/bounded adapter exist
+ok 35 - preparation stops until E3 correctness and real calibration plus indexed/bounded adapter exist
+  ---
+  duration_ms: 0.967417
+  type: 'test'
+  ...
+# Subtest: source/fixture mismatches and fabricated zero-byte calibration cannot freeze runnable policy
+ok 36 - source/fixture mismatches and fabricated zero-byte calibration cannot freeze runnable policy
+  ---
+  duration_ms: 0.161791
+  type: 'test'
+  ...
+# Subtest: aged estimate retains proposed 1m identities; over-budget case explicitly shrinks diagnostic only
+ok 37 - aged estimate retains proposed 1m identities; over-budget case explicitly shrinks diagnostic only
+  ---
+  duration_ms: 0.149625
+  type: 'test'
+  ...
+# Subtest: disk space gate and exact prefunding bound all declared timed plus pending work
+ok 38 - disk space gate and exact prefunding bound all declared timed plus pending work
+  ---
+  duration_ms: 0.421333
+  type: 'test'
+  ...
+# Subtest: measurement separates stage rates; complete parity and all telemetry permit diagnostic pass
+ok 39 - measurement separates stage rates; complete parity and all telemetry permit diagnostic pass
+  ---
+  duration_ms: 2.531417
+  type: 'test'
+  ...
+# Subtest: producer duration miss fails even when output is exact after drain
+ok 40 - producer duration miss fails even when output is exact after drain
+  ---
+  duration_ms: 0.77175
+  type: 'test'
+  ...
+# Subtest: late drain cannot be counted as deadline output or settled financial throughput
+ok 41 - late drain cannot be counted as deadline output or settled financial throughput
+  ---
+  duration_ms: 0.214292
+  type: 'test'
+  ...
+# Subtest: cumulative offered cannot roll back between deadline and final cuts
+ok 42 - cumulative offered cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.1525
+  type: 'test'
+  ...
+# Subtest: cumulative admitted cannot roll back between deadline and final cuts
+ok 43 - cumulative admitted cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.31875
+  type: 'test'
+  ...
+# Subtest: cumulative decided cannot roll back between deadline and final cuts
+ok 44 - cumulative decided cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.544625
+  type: 'test'
+  ...
+# Subtest: cumulative settled cannot roll back between deadline and final cuts
+ok 45 - cumulative settled cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.175709
+  type: 'test'
+  ...
+# Subtest: deadline offers cannot exceed frozen expected workload even if final agrees
+ok 46 - deadline offers cannot exceed frozen expected workload even if final agrees
+  ---
+  duration_ms: 0.113042
+  type: 'test'
+  ...
+# Subtest: each cut rejects admission ordering and settlement accounting violations
+ok 47 - each cut rejects admission ordering and settlement accounting violations
+  ---
+  duration_ms: 0.644417
+  type: 'test'
+  ...
+# Subtest: pending may decrease during drain; only missed deadline settlement fails
+ok 48 - pending may decrease during drain; only missed deadline settlement fails
+  ---
+  duration_ms: 0.457709
+  type: 'test'
+  ...
+# Subtest: missing accounting or resource metrics are explicit limited attempt; count inconsistency fails
+ok 49 - missing accounting or resource metrics are explicit limited attempt; count inconsistency fails
+  ---
+  duration_ms: 0.199208
+  type: 'test'
+  ...
+# Subtest: lag growth, over-budget disk and unsupported latency clock cannot silently pass
+ok 50 - lag growth, over-budget disk and unsupported latency clock cannot silently pass
+  ---
+  duration_ms: 0.093708
+  type: 'test'
+  ...
+# Subtest: highest stable measured arm creates fresh/aged 300s pair with same business workload
+ok 51 - highest stable measured arm creates fresh/aged 300s pair with same business workload
+  ---
+  duration_ms: 0.101042
+  type: 'test'
+  ...
+# Subtest: missing restore cost, partial monitoring and observer slowdown remain limited preflight
+ok 52 - missing restore cost, partial monitoring and observer slowdown remain limited preflight
+  ---
+  duration_ms: 0.09825
+  type: 'test'
+  ...
+# Subtest: load and calibration entrypoints refuse before filesystem or adapter work without authorization
+ok 53 - load and calibration entrypoints refuse before filesystem or adapter work without authorization
+  ---
+  duration_ms: 0.382625
+  type: 'test'
+  ...
+# Subtest: calibration overrides cannot undercut measured physical byte budget or use invalid numbers
+ok 54 - calibration overrides cannot undercut measured physical byte budget or use invalid numbers
+  ---
+  duration_ms: 0.748917
+  type: 'test'
+  ...
+# Subtest: valid byte override preserves conservative floor and may increase budget only
+ok 55 - valid byte override preserves conservative floor and may increase budget only
+  ---
+  duration_ms: 0.095083
+  type: 'test'
+  ...
+# Subtest: derived per-trade budget must remain safe integer before policy freezes
+ok 56 - derived per-trade budget must remain safe integer before policy freezes
+  ---
+  duration_ms: 0.079625
+  type: 'test'
+  ...
+# Subtest: invalid telemetry produces null derived metrics instead of non-finite values
+ok 57 - invalid telemetry produces null derived metrics instead of non-finite values
+  ---
+  duration_ms: 0.312375
+  type: 'test'
+  ...
+# Subtest: invalid duration and zero trades cannot publish non-finite derived metrics
+ok 58 - invalid duration and zero trades cannot publish non-finite derived metrics
+  ---
+  duration_ms: 0.225958
+  type: 'test'
+  ...
+# Subtest: stdout and stderr retain split UTF-8 and invalid bytes exactly
+ok 59 - stdout and stderr retain split UTF-8 and invalid bytes exactly
+  ---
+  duration_ms: 1.579458
+  type: 'test'
+  ...
+# Subtest: recorder persists binary output, failures and separate spawn diagnostics
+ok 60 - recorder persists binary output, failures and separate spawn diagnostics
+  ---
+  duration_ms: 297.431958
+  type: 'test'
+  ...
+# Subtest: USD_NANO: own hold consumption and competing withdrawal stay bounded
+ok 61 - USD_NANO: own hold consumption and competing withdrawal stay bounded
+  ---
+  duration_ms: 0.953666
+  type: 'test'
+  ...
+# Subtest: ACME_SHARE: own hold consumption and competing withdrawal stay bounded
+ok 62 - ACME_SHARE: own hold consumption and competing withdrawal stay bounded
+  ---
+  duration_ms: 0.206041
+  type: 'test'
+  ...
+# Subtest: cancel releases unmatched order only; captured obligation stays owned
+ok 63 - cancel releases unmatched order only; captured obligation stays owned
+  ---
+  duration_ms: 0.075125
+  type: 'test'
+  ...
+# Subtest: creation priority uses acceptance then stable owner ID; competing owner cannot spend hold
+ok 64 - creation priority uses acceptance then stable owner ID; competing owner cannot spend hold
+  ---
+  duration_ms: 0.809375
+  type: 'test'
+  ...
+# Subtest: exact-unit/range errors and conflicting transfers make no changes
+ok 65 - exact-unit/range errors and conflicting transfers make no changes
+  ---
+  duration_ms: 0.331458
+  type: 'test'
+  ...
+1..65
+# tests 65
+# suites 0
+# pass 65
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 369.000792

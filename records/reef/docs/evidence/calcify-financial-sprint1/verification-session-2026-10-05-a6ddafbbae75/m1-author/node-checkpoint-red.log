@@ -1,0 +1,90 @@
+TAP version 13
+# Subtest: external plan freezes four executable trigger/barrier definitions
+ok 1 - external plan freezes four executable trigger/barrier definitions
+  ---
+  duration_ms: 0.826334
+  type: 'test'
+  ...
+# Subtest: broker registration refuses missing, malformed, duplicate and unregistered IDs
+ok 2 - broker registration refuses missing, malformed, duplicate and unregistered IDs
+  ---
+  duration_ms: 0.80425
+  type: 'test'
+  ...
+# Subtest: daemon inspection requires exact IDs, owned labels and two live peers
+ok 3 - daemon inspection requires exact IDs, owned labels and two live peers
+  ---
+  duration_ms: 1.248958
+  type: 'test'
+  ...
+# Subtest: restoration validates ownership even when peer health fails after outage
+ok 4 - restoration validates ownership even when peer health fails after outage
+  ---
+  duration_ms: 0.245375
+  type: 'test'
+  ...
+# Subtest: recovery requires identical physical prefix and exact stable end for idle restart
+ok 5 - recovery requires identical physical prefix and exact stable end for idle restart
+  ---
+  duration_ms: 0.626125
+  type: 'test'
+  ...
+# Subtest: idle restart refuses checkpoint divergence despite unchanged economic output
+not ok 6 - idle restart refuses checkpoint divergence despite unchanged economic output
+  ---
+  duration_ms: 0.122584
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/broker-proof.test.mjs:36:1'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected exception.'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  operator: 'throws'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/broker-proof.test.mjs:37:9)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: stale owner requires observed broker fencing, never generic error or elapsed time
+ok 7 - stale owner requires observed broker fencing, never generic error or elapsed time
+  ---
+  duration_ms: 0.342166
+  type: 'test'
+  ...
+# Subtest: producer failure arm invokes actual producer seam, observes zero abort outputs then restores
+ok 8 - producer failure arm invokes actual producer seam, observes zero abort outputs then restores
+  ---
+  duration_ms: 0.382792
+  type: 'test'
+  ...
+# Subtest: committed-before-ACK arm kills after read-committed barrier and persists ACK only after stable recovery
+ok 9 - committed-before-ACK arm kills after read-committed barrier and persists ACK only after stable recovery
+  ---
+  duration_ms: 0.376625
+  type: 'test'
+  ...
+# Subtest: stale-owner arm freezes before forward, takes over, resumes and demands fencing before end-offset proof
+ok 10 - stale-owner arm freezes before forward, takes over, resumes and demands fencing before end-offset proof
+  ---
+  duration_ms: 0.462375
+  type: 'test'
+  ...
+# Subtest: majority outage proves fresh outputs while target stopped and restores target on failure
+ok 11 - majority outage proves fresh outputs while target stopped and restores target on failure
+  ---
+  duration_ms: 1.3605
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 10
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 58.285792

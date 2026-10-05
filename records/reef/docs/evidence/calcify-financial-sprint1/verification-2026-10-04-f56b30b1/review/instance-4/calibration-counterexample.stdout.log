@@ -1,0 +1,5 @@
+{"override":"absent","status":"BLOCKED","gaps":["Timed+pending cohort alone exceeds10GiB; no arm permitted.","GUEST_SPACE_INSUFFICIENT"],"estimated":60002001024,"perTrade":400000}
+{"override":0,"status":"FROZEN","gaps":[],"estimated":102001024,"perTrade":0,"policy":"4101c4deb7b54e17ef4a62b16fe4183e6b3b416f3294fb8fc45fd2ab1e3c1f81"}
+{"override":-1,"status":"FROZEN","gaps":[],"estimated":101851024,"perTrade":-1,"policy":"6f4abd8aba7b59f60ae0ea4d2059f23e52245920ce710b2fc22e2804ee9c9bd0"}
+{"override":1,"status":"FROZEN","gaps":[],"estimated":102151024,"perTrade":1,"policy":"6466ec210adfbf4d8dd1e94c132e24178f9a0f6d481b9ecc526ea97190de8d95"}
+{"override":"bogus","status":"FROZEN","gaps":[],"estimated":null,"perTrade":"bogus","policy":"92a9ed79678bdd0479e4a5ae407c136b3e259f97842bc3e556e2aba089615a09"}

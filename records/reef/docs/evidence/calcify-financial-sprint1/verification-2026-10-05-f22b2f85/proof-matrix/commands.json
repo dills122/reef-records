@@ -1,0 +1,30 @@
+[
+  [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-proof-bounded/run_checks.py",
+    "broker-core",
+    "--",
+    "env",
+    "JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home",
+    "CALCIFY_FINANCIAL_PROOF_DIR=/Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-proof-bounded/broker-core",
+    "CALCIFY_FINANCIAL_RUN_ID=bounded-f56b30b1-core",
+    "CALCIFY_FINANCIAL_PREFLIGHT=/Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-proof-bounded/preflight.json",
+    "node",
+    "/Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/scripts/dev/calcify-financial/broker-proof.mjs",
+    "run-core"
+  ],
+  [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-proof-bounded/run_checks.py",
+    "broker-golden",
+    "--",
+    "env",
+    "JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home",
+    "CALCIFY_FINANCIAL_PROOF_DIR=/Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-proof-bounded/broker-golden",
+    "CALCIFY_FINANCIAL_RUN_ID=bounded-f56b30b1-golden",
+    "CALCIFY_FINANCIAL_PREFLIGHT=/Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-proof-bounded/preflight.json",
+    "node",
+    "/Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/scripts/dev/calcify-financial/broker-proof.mjs",
+    "run-golden"
+  ]
+]

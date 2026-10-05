@@ -1,0 +1,7 @@
+{
+  "path": ".planning/calcify-session-2026-10-04/freeze_supervisor.py",
+  "bootstrapSha256": "6fd17ff2528edd3353fb2c2b42d49cea35704f829b6c809c72ed970f76326e97",
+  "currentSha256": "07a4f112f956f4aa2a5e2290ec94d3674e0f8699497303113c318321b3b4500c",
+  "onlyEvidenceStringDelta": true,
+  "scopeNotice": "Root declared one evidence-description update during review; operational fields/commands unchanged."
+}

@@ -1,0 +1,28 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :verifyRuntimeOrderIdentityMigration
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :processTestResources UP-TO-DATE
+> Task :verifyNoTestSourceExclusions
+> Task :compileTestKotlin
+> Task :compileTestJava NO-SOURCE
+> Task :testClasses UP-TO-DATE
+
+> Task :test FAILED
+
+FinancialCommittedCutTest > committed outputs must match actual accepted physical source membership() FAILED
+    org.opentest4j.AssertionFailedError at FinancialCommittedCutTest.kt:37
+        Caused by: kotlin.NotImplementedError at FinancialCommittedCutTest.kt:37
+
+FinancialCommittedCutTest > committed quartet proves exact mixed balances refusal and complete activation() FAILED
+    kotlin.NotImplementedError at FinancialCommittedCutTest.kt:19
+
+FinancialCommittedCutTest > committed cut rejects economically wrong but structurally valid output() FAILED
+    org.opentest4j.AssertionFailedError at FinancialCommittedCutTest.kt:46
+        Caused by: kotlin.NotImplementedError at FinancialCommittedCutTest.kt:46
+9 actionable tasks: 4 executed, 5 up-to-date

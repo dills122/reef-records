@@ -1,0 +1,18 @@
+test_dead_observer_rejected (__main__.Controls.test_dead_observer_rejected) ... ok
+test_df_parse_failure (__main__.Controls.test_df_parse_failure) ... ok
+test_group_term_escalates_kill (__main__.Controls.test_group_term_escalates_kill) ... ok
+test_observer_waits_for_supervisor_completion_handshake (__main__.Controls.test_observer_waits_for_supervisor_completion_handshake) ... ok
+test_one_group_cleanup_failure_does_not_skip_other_groups_or_brokers (__main__.Controls.test_one_group_cleanup_failure_does_not_skip_other_groups_or_brokers) ... ok
+test_ps_failure_still_attempts_broker_stop (__main__.Controls.test_ps_failure_still_attempts_broker_stop) ... ok
+test_sampling_command_failure (__main__.Controls.test_sampling_command_failure) ... ok
+test_sampling_parse_failure (__main__.Controls.test_sampling_parse_failure) ... ok
+test_sampling_timeout (__main__.Controls.test_sampling_timeout) ... ok
+test_stale_heartbeat_rejected (__main__.Controls.test_stale_heartbeat_rejected) ... ok
+test_stop_failure_preserves_abort_and_owned_signals (__main__.Controls.test_stop_failure_preserves_abort_and_owned_signals) ... ok
+test_supervisor_releases_observer_only_after_both_wrapper_exits (__main__.Controls.test_supervisor_releases_observer_only_after_both_wrapper_exits) ... ok
+test_watcher_disappearance_stops_registered_groups_even_ps_and_docker_fail (__main__.Controls.test_watcher_disappearance_stops_registered_groups_even_ps_and_docker_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.017s
+
+OK

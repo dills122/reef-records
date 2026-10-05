@@ -1,0 +1,35 @@
+{
+  "schema": "calcify-postsignoff-proof-v1",
+  "sourceHead": "f75b5d6187b631d5d608a24b883df6c57478b151",
+  "reviewInstance": 5,
+  "reviewMax": 6,
+  "verdict": "Ready with non-blocking follow-ups",
+  "scope": "E1/E2 and implemented bounded E3 correctness controls",
+  "exclusions": [
+    "FullE3RFCacceptance",
+    "E4load/calibration/capacity",
+    "ExternalSQLintegration"
+  ],
+  "brokerPreflight": "broker-preflight-f75b5d61.json",
+  "runtimeProject": "reef-calcify-financial-s1-3435d7b0",
+  "runIds": [
+    "postf75b5d61-happy",
+    "postf75b5d61-core",
+    "postf75b5d61-golden"
+  ],
+  "tests": [
+    "ExactNodeCI31files",
+    "FullPlatformRuntimeJava21offline",
+    "GateReport",
+    "FrozenFixtures",
+    "ScriptSurface",
+    "RateSelfcheck",
+    "RF3happyThenCoreAndGolden"
+  ],
+  "parallelism": "Node/module independent; broker arms after build frozen, separate namespaces allowed concurrently for correctness only; no concurrent capacity loads",
+  "budgets": {
+    "guestFreeFloorBytes": 21474836480,
+    "projectDiskBytes": 10737418240,
+    "rawProofBytes": 268435456
+  }
+}

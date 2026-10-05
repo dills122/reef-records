@@ -1,0 +1,8 @@
+{"kind":"optionalOverride","override":"absent","status":"BLOCKED","gaps":["Timed+pending cohort alone exceeds10GiB; no arm permitted.","GUEST_SPACE_INSUFFICIENT"],"estimated":60002001024,"perTrade":400000}
+{"kind":"optionalOverride","override":0,"status":"BLOCKED","gaps":["PHYSICAL_TRADE_BUDGET_INVALID"]}
+{"kind":"optionalOverride","override":-1,"status":"BLOCKED","gaps":["PHYSICAL_TRADE_BUDGET_INVALID"]}
+{"kind":"optionalOverride","override":1,"status":"BLOCKED","gaps":["PHYSICAL_TRADE_BUDGET_INVALID"]}
+{"kind":"optionalOverride","override":"bogus","status":"BLOCKED","gaps":["PHYSICAL_TRADE_BUDGET_INVALID"]}
+{"kind":"optionalOverride","override":0.5,"status":"BLOCKED","gaps":["PHYSICAL_TRADE_BUDGET_INVALID"]}
+{"kind":"optionalOverride","override":null,"status":"BLOCKED","gaps":["PHYSICAL_TRADE_BUDGET_INVALID"]}
+{"numericFamilyRequiredControls":"PASS","checks":53,"fabricated":true,"benchmark":false}

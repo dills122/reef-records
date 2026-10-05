@@ -1,0 +1,20 @@
+{
+  "scenario": "Observer finishes successfully after attempts appended while wrapper still flushing stdout/exiting",
+  "exitCode": 1,
+  "rows": [
+    {
+      "result": "SUPERVISOR_ABORT",
+      "error": "RuntimeError('observer exited before proof finished')",
+      "utc": "2026-10-04T23:57:21.508729+00:00"
+    },
+    {
+      "result": "SUPERVISOR_CLEANUP",
+      "groupErrors": [],
+      "cleanup": {
+        "errors": []
+      },
+      "utc": "2026-10-04T23:57:21.509049+00:00"
+    }
+  ],
+  "scope": "Mock-only; no process/Docker actions executed"
+}

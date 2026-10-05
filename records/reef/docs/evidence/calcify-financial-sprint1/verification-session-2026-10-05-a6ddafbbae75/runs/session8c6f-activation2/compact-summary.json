@@ -1,0 +1,387 @@
+{
+  "attempt": "session8c6f-activation2-supervised",
+  "scope": "Isolated mixed snapshot refusal and actual new-directory changelog restore; no injected mixed managed store",
+  "localStateLost": true,
+  "before": {
+    "pass": true,
+    "coveredInputs": 4,
+    "resultOffsets": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "initialCommittedEndOffset": 6,
+    "finalCommittedEndOffset": 6,
+    "inputGroupCheckpoint": 9,
+    "inputReadCommittedEndOffset": 9,
+    "lastInputOffset": 7,
+    "ownerCuts": {
+      "A": {
+        "sequence": 3,
+        "checksum": "33d09e41e5066bd28022322dca3db842098e10cad5eb40e465a44e799e42289c"
+      },
+      "B": {
+        "sequence": 3,
+        "checksum": "779fafe81cd9ddc3ef88cf581c692542c23139144537d19286d6b371f738c756"
+      }
+    },
+    "scope": "certified prefix including pending phases",
+    "balances": {
+      "A": "15",
+      "B": "27"
+    }
+  },
+  "idle": {
+    "pass": true,
+    "coveredInputs": 4,
+    "resultOffsets": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "initialCommittedEndOffset": 6,
+    "finalCommittedEndOffset": 6,
+    "inputGroupCheckpoint": 9,
+    "inputReadCommittedEndOffset": 9,
+    "lastInputOffset": 7,
+    "ownerCuts": {
+      "A": {
+        "sequence": 3,
+        "checksum": "33d09e41e5066bd28022322dca3db842098e10cad5eb40e465a44e799e42289c"
+      },
+      "B": {
+        "sequence": 3,
+        "checksum": "779fafe81cd9ddc3ef88cf581c692542c23139144537d19286d6b371f738c756"
+      }
+    },
+    "scope": "certified prefix including pending phases",
+    "balances": {
+      "A": "15",
+      "B": "27"
+    }
+  },
+  "after": {
+    "pass": true,
+    "coveredInputs": 6,
+    "resultOffsets": [
+      1,
+      2,
+      3,
+      4,
+      7,
+      8
+    ],
+    "initialCommittedEndOffset": 10,
+    "finalCommittedEndOffset": 10,
+    "inputGroupCheckpoint": 13,
+    "inputReadCommittedEndOffset": 13,
+    "lastInputOffset": 11,
+    "ownerCuts": {
+      "A": {
+        "sequence": 4,
+        "checksum": "651a2f644d345dd44cf1e731e462a94ad1eb74b2efb81a22ef4620dfee4e986a"
+      },
+      "B": {
+        "sequence": 4,
+        "checksum": "2ae9ff98ed42db4880203026033e306f81abc00add36b55fdf957f787d15805b"
+      }
+    },
+    "scope": "full input/phase completion",
+    "balances": {
+      "A": "16",
+      "B": "28"
+    }
+  },
+  "isolated": [
+    {
+      "isolatedReconstruction": {
+        "inputPartitionOrdinal": 3,
+        "inputPartitionOffset": 7,
+        "capturedInputGroupCheckpoint": 9,
+        "inputReadCommittedEndOffset": 9,
+        "sourceDerivedCertificate": {
+          "ordinal": 3,
+          "offset": 7,
+          "sourceUuid": "npG7R1UhRpmwWMbSR89Tiw",
+          "authoritySha256": "5294a76e8dbbfa97be3f6dd16c17d01797d4080c3a97d0fce5f0bc26b6f71309",
+          "owners": {
+            "A": {
+              "sequence": 3,
+              "checksum": "33d09e41e5066bd28022322dca3db842098e10cad5eb40e465a44e799e42289c"
+            },
+            "B": {
+              "sequence": 3,
+              "checksum": "779fafe81cd9ddc3ef88cf581c692542c23139144537d19286d6b371f738c756"
+            }
+          }
+        },
+        "mixedAgeRefused": true,
+        "missingHistoryRefused": true,
+        "repairFromCompleteHistory": true,
+        "exactQuartetA15B27": true,
+        "committedEndBeforeReconstruction": 6,
+        "scope": "isolated activation request from actual read_committed outputs; same mandatory startup verifier; no injected mixed RocksDB/changelog restore"
+      }
+    },
+    {
+      "result": {
+        "initialCommittedEndOffset": 6,
+        "finalCommittedEndOffset": 6,
+        "resultOffsets": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ownerSnapshots": {
+          "A": {
+            "balances": {
+              "buyerCash": "15",
+              "sellerCash": "0",
+              "buyerShares": "0",
+              "sellerShares": "0",
+              "openingCash": "-15",
+              "openingShares": "0"
+            },
+            "executions": {},
+            "obligations": {},
+            "workflows": {},
+            "instructions": {},
+            "attempts": {},
+            "exceptions": {},
+            "reservations": {},
+            "dedup": {
+              "[\"activation-quartet\",\"A\",\"fund-0\"]": {
+                "digest": "f53abaa496cf49ab7a34364df884272f90b794efd14028e9d93fcca6150485b1",
+                "context": {
+                  "kernel": "e1-gross-v1",
+                  "schema": "e1-v1",
+                  "policy": "gross-p1",
+                  "reference": "assets-r1",
+                  "rounding": "EXACT",
+                  "fees": "NONE",
+                  "reservation": "UNRESERVED",
+                  "logicalTick": "0",
+                  "domain": "A"
+                },
+                "disposition": "FUNDED"
+              },
+              "[\"activation-quartet\",\"A\",\"fund-2\"]": {
+                "digest": "764cdb76e836c2dd49dbbd290ae180f4e0d456b9070d5d66c2ce4c7a7a5da893",
+                "context": {
+                  "kernel": "e1-gross-v1",
+                  "schema": "e1-v1",
+                  "policy": "gross-p1",
+                  "reference": "assets-r1",
+                  "rounding": "EXACT",
+                  "fees": "NONE",
+                  "reservation": "UNRESERVED",
+                  "logicalTick": "0",
+                  "domain": "A"
+                },
+                "disposition": "FUNDED"
+              }
+            },
+            "effects": {
+              "[\"activation-quartet\",\"A\",\"fund-0\"]": [
+                {
+                  "asset": "USD_NANO",
+                  "account": "opening",
+                  "amount": "-10"
+                },
+                {
+                  "asset": "USD_NANO",
+                  "account": "buyer",
+                  "amount": "10"
+                }
+              ],
+              "[\"activation-quartet\",\"A\",\"fund-2\"]": [
+                {
+                  "asset": "USD_NANO",
+                  "account": "opening",
+                  "amount": "-5"
+                },
+                {
+                  "asset": "USD_NANO",
+                  "account": "buyer",
+                  "amount": "5"
+                }
+              ]
+            },
+            "versions": {
+              "buyerCash": 2,
+              "sellerCash": 0,
+              "buyerShares": 0,
+              "sellerShares": 0,
+              "openingCash": 2,
+              "openingShares": 0
+            },
+            "dueQueue": {},
+            "stagedInputs": {},
+            "policy": {
+              "kernel": "e1-gross-v1",
+              "schema": "e1-v1",
+              "policy": "gross-p1",
+              "reference": "assets-r1",
+              "rounding": "EXACT",
+              "fees": "NONE",
+              "reservation": "UNRESERVED"
+            },
+            "logicalTick": "0",
+            "businessSeq": 2,
+            "historySeq": 3,
+            "deliveryCursor": 0,
+            "nextDelivery": 0,
+            "continuation": null,
+            "lastDecisionId": "[\"activation-quartet\",\"A\",\"fund-2\"]",
+            "semanticDigest": "e1270f1db085c0529a9e1752d0817eec3530b4d0cccd4fb2f615d96dd3082bf4",
+            "activePolicy": "gross-p1"
+          },
+          "B": {
+            "balances": {
+              "buyerCash": "27",
+              "sellerCash": "0",
+              "buyerShares": "0",
+              "sellerShares": "0",
+              "openingCash": "-27",
+              "openingShares": "0"
+            },
+            "executions": {},
+            "obligations": {},
+            "workflows": {},
+            "instructions": {},
+            "attempts": {},
+            "exceptions": {},
+            "reservations": {},
+            "dedup": {
+              "[\"activation-quartet\",\"B\",\"fund-1\"]": {
+                "digest": "8a429c0c56ef194f67ed910be55622b84466c45a7df464fd1efc963125cbedca",
+                "context": {
+                  "kernel": "e1-gross-v1",
+                  "schema": "e1-v1",
+                  "policy": "gross-p1",
+                  "reference": "assets-r1",
+                  "rounding": "EXACT",
+                  "fees": "NONE",
+                  "reservation": "UNRESERVED",
+                  "logicalTick": "0",
+                  "domain": "B"
+                },
+                "disposition": "FUNDED"
+              },
+              "[\"activation-quartet\",\"B\",\"fund-3\"]": {
+                "digest": "7d64e32340fdc91faefa991e3fe812eebcdbd57b695e7d230edac5722751d3be",
+                "context": {
+                  "kernel": "e1-gross-v1",
+                  "schema": "e1-v1",
+                  "policy": "gross-p1",
+                  "reference": "assets-r1",
+                  "rounding": "EXACT",
+                  "fees": "NONE",
+                  "reservation": "UNRESERVED",
+                  "logicalTick": "0",
+                  "domain": "B"
+                },
+                "disposition": "FUNDED"
+              }
+            },
+            "effects": {
+              "[\"activation-quartet\",\"B\",\"fund-1\"]": [
+                {
+                  "asset": "USD_NANO",
+                  "account": "opening",
+                  "amount": "-20"
+                },
+                {
+                  "asset": "USD_NANO",
+                  "account": "buyer",
+                  "amount": "20"
+                }
+              ],
+              "[\"activation-quartet\",\"B\",\"fund-3\"]": [
+                {
+                  "asset": "USD_NANO",
+                  "account": "opening",
+                  "amount": "-7"
+                },
+                {
+                  "asset": "USD_NANO",
+                  "account": "buyer",
+                  "amount": "7"
+                }
+              ]
+            },
+            "versions": {
+              "buyerCash": 2,
+              "sellerCash": 0,
+              "buyerShares": 0,
+              "sellerShares": 0,
+              "openingCash": 2,
+              "openingShares": 0
+            },
+            "dueQueue": {},
+            "stagedInputs": {},
+            "policy": {
+              "kernel": "e1-gross-v1",
+              "schema": "e1-v1",
+              "policy": "gross-p1",
+              "reference": "assets-r1",
+              "rounding": "EXACT",
+              "fees": "NONE",
+              "reservation": "UNRESERVED"
+            },
+            "logicalTick": "0",
+            "businessSeq": 2,
+            "historySeq": 3,
+            "deliveryCursor": 0,
+            "nextDelivery": 0,
+            "continuation": null,
+            "lastDecisionId": "[\"activation-quartet\",\"B\",\"fund-3\"]",
+            "semanticDigest": "e4f4c8f94bc9f3c2db877f2a5355075aaa6e6c749d786a8f999a97f0a22dd758",
+            "activePolicy": "gross-p1"
+          }
+        },
+        "scope": "certified prefix including pending phases",
+        "consecutiveResultOffsets": true,
+        "coveredInputs": 4,
+        "lastInputOffset": 7,
+        "inputGroupCheckpoint": 9,
+        "inputReadCommittedEndOffset": 9,
+        "ownerCuts": {
+          "A": {
+            "sequence": 3,
+            "checksum": "33d09e41e5066bd28022322dca3db842098e10cad5eb40e465a44e799e42289c"
+          },
+          "B": {
+            "sequence": 3,
+            "checksum": "779fafe81cd9ddc3ef88cf581c692542c23139144537d19286d6b371f738c756"
+          }
+        },
+        "expectedInputs": 4,
+        "businessDecisions": 4,
+        "settlements": 0,
+        "domains": 2,
+        "readCommittedOracle": true,
+        "pass": true
+      }
+    }
+  ],
+  "supervisor": {
+    "ok": true,
+    "error": null,
+    "wrapperStatus": {
+      "code": 0,
+      "signal": null
+    },
+    "cleanupErrors": [],
+    "volumesPreserved": true
+  },
+  "finalSample": {
+    "projectAllocatedBytes": 2497560576,
+    "guestFreeBytes": 95034560512,
+    "rawProofBytes": 902494,
+    "scope": "5-second maximum sample-start/freshness window (200ms early start); RECOVERING-only nominal1-second cadence; allocated broker-directory/guest-free/raw-output samples; VM overhead excluded; not continuous peak"
+  }
+}

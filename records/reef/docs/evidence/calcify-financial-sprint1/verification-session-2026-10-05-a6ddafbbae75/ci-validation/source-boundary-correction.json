@@ -1,0 +1,7 @@
+{
+  "kind": "CI-source-boundary-attribution-correction",
+  "originalPath": "ci-validation/current-source-boundary.json",
+  "originalSha256": "7d81cee28797400bcb22d79c333a1fbca49b36082d74c6578e7d8ceb6458982a",
+  "originalPreserved": true,
+  "correction": "CapturedUtc04:51:42 is afterCIfinished04:51:24; capturedwhileCIrunning claim unsupported. Actual post-run sourcehashes match workerfreeze, mtimesprecedeCIstart, CLI214/214actualexit0. No pre-run hash capture claimed."
+}

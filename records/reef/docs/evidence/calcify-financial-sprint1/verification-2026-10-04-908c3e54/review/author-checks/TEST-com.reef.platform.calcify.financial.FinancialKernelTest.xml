@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialKernelTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:20:23.472Z" hostname="Dylans-MacBook-Pro.local" time="0.537">
+  <properties/>
+  <testcase name="envelopeIdentityTypesCannotConflateValidAndRejectedActions()" classname="com.reef.platform.calcify.financial.FinancialKernelTest" time="0.233"/>
+  <testcase name="clockBarrierDurablyStagesMalformedInputsUntilTerminalRejection()" classname="com.reef.platform.calcify.financial.FinancialKernelTest" time="0.088"/>
+  <testcase name="invalidEnvelopeIdentityRejectsAndIdenticalRetryReturnsPriorResult()" classname="com.reef.platform.calcify.financial.FinancialKernelTest" time="0.015"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

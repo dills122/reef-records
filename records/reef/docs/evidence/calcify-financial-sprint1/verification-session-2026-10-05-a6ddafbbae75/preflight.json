@@ -1,0 +1,50 @@
+{
+  "repository": "/Users/dsteele/.codex/worktrees/8c6f/reef",
+  "branch": "codex/calcify-planning-readiness",
+  "baseline": "a6ddafbbae750693e227985f054be2d26716ae84",
+  "workingTree": "EXISTING CHANGES PRESENT",
+  "existingChanges": [
+    "docs/CALCIFY_PHASES_OVERVIEW.md",
+    "docs/README.md",
+    "docs/WORK_PLAN.md",
+    "docs/work/CALCIFY_DISCOVERY.md",
+    "docs/work/CALCIFY_SYSTEM_ARCHITECTURE_RFC.md",
+    "docs/work/handoffs/2026-10-04-calcify-financial-sprint1-recovery.md"
+  ],
+  "startedUtc": "2026-10-05T03:04:50Z",
+  "targetEndUtc": "2026-10-05T10:04:50Z",
+  "multipleWorktrees": true,
+  "codebaseMemory": {
+    "status": "REFRESHED",
+    "project": "reef-calcify-session-8c6f",
+    "generation": "2026-10-05T03:05:23Z",
+    "nodes": 14445,
+    "retrieval": "FinancialKernel outline returned; three financial Kotlin files metadata_match; docs/scripts excluded, source fallback required"
+  },
+  "serena": {
+    "status": "DEGRADED",
+    "root": "8c6f/reef",
+    "js": "GateModel definition/references/diagnostics pass",
+    "go": "Service definition pass after dashboard add_language",
+    "yaml": "loaded",
+    "kotlin": "safe reactivation/add_language attempted; expired262.9593.0 build fails initialize; Java21 compiler and graph/source fallback"
+  },
+  "tooling": {
+    "Java21": "compileTestKotlin PASS52s",
+    "node": "22.22.1,54 focused tests PASS",
+    "bun": "1.3.14",
+    "go": "1.26.5",
+    "protoc": "33.2",
+    "ast-grep": "0.45.3",
+    "docker": "29.7.2 daemon healthy; elevated access required",
+    "compose": "5.4.0",
+    "diskHostFreeGiB": 371,
+    "psql": "not on PATH,not needed for synthetic E3"
+  },
+  "limitations": [
+    "Kotlin semantic server expired; no source-failure inference",
+    "No build artifacts initially; rebuilt locally",
+    "Docker/Gradle shared caches require escalation",
+    "No new broker load until pinned isolated profile and resource guard preflight"
+  ]
+}

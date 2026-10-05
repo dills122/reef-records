@@ -1,0 +1,23 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :verifyRuntimeOrderIdentityMigration
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :processTestResources UP-TO-DATE
+> Task :verifyNoTestSourceExclusions
+> Task :compileTestKotlin
+> Task :compileTestJava NO-SOURCE
+> Task :testClasses UP-TO-DATE
+
+> Task :test
+
+FinancialBrokerProbeTest > empty cold startup permits rate probe dynamic acknowledged membership() FAILED
+    org.apache.kafka.streams.errors.StreamsException at FinancialBrokerProbeTest.kt:22
+        Caused by: java.lang.NullPointerException at FinancialBrokerProbeTest.kt:22
+
+> Task :test FAILED
+9 actionable tasks: 4 executed, 5 up-to-date

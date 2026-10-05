@@ -1,0 +1,82 @@
+TAP version 13
+# Subtest: readiness rejects signal-terminated worker despite retained startup receipts
+ok 1 - readiness rejects signal-terminated worker despite retained startup receipts
+  ---
+  duration_ms: 4.135625
+  type: 'test'
+  ...
+# Subtest: external plan freezes four executable trigger/barrier definitions
+ok 2 - external plan freezes four executable trigger/barrier definitions
+  ---
+  duration_ms: 0.476083
+  type: 'test'
+  ...
+# Subtest: broker registration refuses missing, malformed, duplicate and unregistered IDs
+ok 3 - broker registration refuses missing, malformed, duplicate and unregistered IDs
+  ---
+  duration_ms: 0.626167
+  type: 'test'
+  ...
+# Subtest: daemon inspection requires exact IDs, owned labels and two live peers
+ok 4 - daemon inspection requires exact IDs, owned labels and two live peers
+  ---
+  duration_ms: 1.418708
+  type: 'test'
+  ...
+# Subtest: restoration validates ownership even when peer health fails after outage
+ok 5 - restoration validates ownership even when peer health fails after outage
+  ---
+  duration_ms: 0.349208
+  type: 'test'
+  ...
+# Subtest: recovery requires identical physical prefix and exact stable end for idle restart
+ok 6 - recovery requires identical physical prefix and exact stable end for idle restart
+  ---
+  duration_ms: 0.616708
+  type: 'test'
+  ...
+# Subtest: idle restart refuses checkpoint divergence despite unchanged economic output
+ok 7 - idle restart refuses checkpoint divergence despite unchanged economic output
+  ---
+  duration_ms: 0.116708
+  type: 'test'
+  ...
+# Subtest: stale owner requires observed broker fencing, never generic error or elapsed time
+ok 8 - stale owner requires observed broker fencing, never generic error or elapsed time
+  ---
+  duration_ms: 0.267333
+  type: 'test'
+  ...
+# Subtest: producer failure arm invokes actual producer seam, observes zero abort outputs then restores
+ok 9 - producer failure arm invokes actual producer seam, observes zero abort outputs then restores
+  ---
+  duration_ms: 0.5735
+  type: 'test'
+  ...
+# Subtest: committed-before-ACK arm kills after read-committed barrier and persists ACK only after stable recovery
+ok 10 - committed-before-ACK arm kills after read-committed barrier and persists ACK only after stable recovery
+  ---
+  duration_ms: 0.414625
+  type: 'test'
+  ...
+# Subtest: stale-owner arm freezes before forward, takes over, resumes and demands fencing before end-offset proof
+ok 11 - stale-owner arm freezes before forward, takes over, resumes and demands fencing before end-offset proof
+  ---
+  duration_ms: 0.312584
+  type: 'test'
+  ...
+# Subtest: majority outage proves fresh outputs while target stopped and restores target on failure
+ok 12 - majority outage proves fresh outputs while target stopped and restores target on failure
+  ---
+  duration_ms: 0.231917
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 59.684625

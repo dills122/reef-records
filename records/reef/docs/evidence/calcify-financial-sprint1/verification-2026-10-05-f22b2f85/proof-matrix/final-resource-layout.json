@@ -1,0 +1,9 @@
+{
+  "allocatedBytesPerReplica": [
+    1579892736,
+    1585119232,
+    1587384320
+  ],
+  "totalAllocatedBytes": 4752396288,
+  "scope": "Live allocatedbrokerdirs afterallarms whileclusterup; distinctfromsamplemaximum and stoppedfootprint"
+}

@@ -1,0 +1,15 @@
+{
+  "nodeCi": {
+    "tests": 154,
+    "passed": 154,
+    "failed": 0,
+    "skipped": 0,
+    "files": 31
+  },
+  "e4CountControl": "Valid fake unit control still passes; impossible cut rejected with all5expected failures",
+  "e4ByteControl": "All invalid/undersized overrides BLOCKED;53othernumericcontrols reject",
+  "controlScope": "Fabricated validation controls, not measured benchmarks",
+  "gateModel": "156finite+128seeded,0failures",
+  "fixture": "Unchanged20cases52inputs",
+  "scriptSurface": "PASS"
+}

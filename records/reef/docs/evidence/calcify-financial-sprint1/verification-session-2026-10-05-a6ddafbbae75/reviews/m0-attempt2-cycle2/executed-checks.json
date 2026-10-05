@@ -1,0 +1,24 @@
+[
+  {
+    "name": "focused",
+    "command": [
+      "node",
+      "--test",
+      "scripts/dev/calcify-financial/proof-supervisor.test.mjs",
+      "scripts/dev/calcify-financial/broker-proof.test.mjs"
+    ],
+    "startedUtc": "2026-10-05T05:09:00.759236+00:00",
+    "finishedUtc": "2026-10-05T05:09:10.177571+00:00",
+    "actualExitCode": 0
+  },
+  {
+    "name": "smoke-controls",
+    "command": [
+      "node",
+      ".planning/calcify-session-2026-10-04/smoke-driver-controls.mjs"
+    ],
+    "startedUtc": "2026-10-05T05:09:10.177727+00:00",
+    "finishedUtc": "2026-10-05T05:09:10.335740+00:00",
+    "actualExitCode": 0
+  }
+]

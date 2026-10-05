@@ -1,0 +1,17 @@
+TAP version 13
+# {"control":"healthy-only-restriction-mutant","orderedObservations":["healthy","stopped","starting"],"rejectedAt":"starting","scope":"single predicate restriction mutation; not complete old source"}
+# Subtest: Attempt2 healthy-only restriction mutant reaches STOP then rejects actual adapter starting observation
+ok 1 - Attempt2 healthy-only restriction mutant reaches STOP then rejects actual adapter starting observation
+  ---
+  duration_ms: 8.639
+  type: 'test'
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 1
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 58.445083

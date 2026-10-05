@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.api.StreamCommandDrainBackpressureTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:37:59.960Z" hostname="Dylans-MacBook-Pro.local" time="0.005">
+  <properties/>
+  <testcase name="rejectsWhenWorkerStreamLagReachesThreshold()" classname="com.reef.platform.api.StreamCommandDrainBackpressureTest" time="0.001"/>
+  <testcase name="allowsIntakeWhenDrainLagIsBelowThresholds()" classname="com.reef.platform.api.StreamCommandDrainBackpressureTest" time="0.0"/>
+  <testcase name="derivesBackpressureWorkerDurablesFromPartitionsAndWorkerCount()" classname="com.reef.platform.api.StreamCommandDrainBackpressureTest" time="0.002"/>
+  <testcase name="allowsProjectorLagWhenVenueCorePolicyIsConfigured()" classname="com.reef.platform.api.StreamCommandDrainBackpressureTest" time="0.001"/>
+  <testcase name="rejectsWhenProjectorLagReachesThreshold()" classname="com.reef.platform.api.StreamCommandDrainBackpressureTest" time="0.001"/>
+  <testcase name="parsesBackpressurePolicyAliases()" classname="com.reef.platform.api.StreamCommandDrainBackpressureTest" time="0.0"/>
+  <testcase name="explicitBackpressureWorkerDurablesOverrideDerivedNames()" classname="com.reef.platform.api.StreamCommandDrainBackpressureTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

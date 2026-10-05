@@ -1,0 +1,116 @@
+TAP version 13
+# Subtest: monitor plus journal elapsed time cannot launch with stale initial sample
+not ok 1 - monitor plus journal elapsed time cannot launch with stale initial sample
+  ---
+  duration_ms: 2.938167
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:152:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    true !== false
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: false
+  actual: true
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:157:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: slow initial monitor anchors first and later sample starts to sample timestamp
+not ok 2 - slow initial monitor anchors first and later sample starts to sample timestamp
+  ---
+  duration_ms: 2.317375
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:160:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly deep-equal:
+    + actual - expected
+    
+      [
+        10000,
+    +   19000,
+    +   24000
+    -   15000,
+    -   20000
+      ]
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+    0: 10000
+    1: 15000
+    2: 20000
+  actual:
+    0: 10000
+    1: 19000
+    2: 24000
+  operator: 'deepStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:165:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: polling clock jump past heartbeat deadline stops owned wrapper before new sample
+not ok 3 - polling clock jump past heartbeat deadline stops owned wrapper before new sample
+  ---
+  duration_ms: 0.840916
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:167:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /stale/. Input:
+    
+    'Error: wrapper deadline exceeded'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: 'Error: wrapper deadline exceeded'
+  operator: 'match'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:171:95)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: elapsed launch time cannot continue with stale heartbeat
+ok 4 - elapsed launch time cannot continue with stale heartbeat
+  ---
+  duration_ms: 0.445708
+  type: 'test'
+  ...
+# Subtest: hanging or throwing completion write returns failure after bounded cleanup
+not ok 5 - hanging or throwing completion write returns failure after bounded cleanup
+  ---
+  duration_ms: 101.994084
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:180:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected "actual" to be strictly unequal to:
+    
+    'still pending'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'still pending'
+  actual: 'still pending'
+  operator: 'notStrictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:185:12)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..5
+# tests 5
+# suites 0
+# pass 1
+# fail 4
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 160.07975

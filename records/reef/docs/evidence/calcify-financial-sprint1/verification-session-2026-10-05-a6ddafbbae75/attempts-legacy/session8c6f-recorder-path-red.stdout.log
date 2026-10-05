@@ -1,0 +1,32 @@
+TAP version 13
+# Subtest: stdout and stderr retain split UTF-8 and invalid bytes exactly
+ok 1 - stdout and stderr retain split UTF-8 and invalid bytes exactly
+  ---
+  duration_ms: 1.731292
+  type: 'test'
+  ...
+# Subtest: recorder persists binary output, failures and separate spawn diagnostics
+not ok 2 - recorder persists binary output, failures and separate spawn diagnostics
+  ---
+  duration_ms: 142.851833
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/record-attempt.test.mjs:26:1'
+  failureType: 'testCodeFailure'
+  error: "ENOENT: no such file or directory, open '/var/folders/lg/j56llg991d1gpjvtjh8l9gbh0000gn/T/calcify-recorder-test-C3MUu0/selected-attempts/binary.stdout.log'"
+  code: 'ENOENT'
+  stack: |-
+    async open (node:internal/fs/promises:636:25)
+    async readFile (node:internal/fs/promises:1235:14)
+    async TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/record-attempt.test.mjs:41:20)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 1
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 192.02875

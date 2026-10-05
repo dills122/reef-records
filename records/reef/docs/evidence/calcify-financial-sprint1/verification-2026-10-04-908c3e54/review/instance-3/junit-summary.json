@@ -1,0 +1,27 @@
+{
+  "sourceHead": "908c3e54583cb812b074fe66160c42f0bcbd4921",
+  "suites": [
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialKernelTest",
+      "tests": "14",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "114.901"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialOracleTest",
+      "tests": "12",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "22.299"
+    }
+  ],
+  "totals": {
+    "tests": 26,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+}

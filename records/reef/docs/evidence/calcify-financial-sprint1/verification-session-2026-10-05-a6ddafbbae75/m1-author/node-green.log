@@ -1,0 +1,64 @@
+TAP version 13
+# Subtest: external plan freezes four executable trigger/barrier definitions
+ok 1 - external plan freezes four executable trigger/barrier definitions
+  ---
+  duration_ms: 0.914916
+  type: 'test'
+  ...
+# Subtest: broker registration refuses missing, malformed, duplicate and unregistered IDs
+ok 2 - broker registration refuses missing, malformed, duplicate and unregistered IDs
+  ---
+  duration_ms: 1.240834
+  type: 'test'
+  ...
+# Subtest: daemon inspection requires exact IDs, owned labels and two live peers
+ok 3 - daemon inspection requires exact IDs, owned labels and two live peers
+  ---
+  duration_ms: 1.271583
+  type: 'test'
+  ...
+# Subtest: recovery requires identical physical prefix and exact stable end for idle restart
+ok 4 - recovery requires identical physical prefix and exact stable end for idle restart
+  ---
+  duration_ms: 0.789291
+  type: 'test'
+  ...
+# Subtest: stale owner requires observed broker fencing, never generic error or elapsed time
+ok 5 - stale owner requires observed broker fencing, never generic error or elapsed time
+  ---
+  duration_ms: 0.327083
+  type: 'test'
+  ...
+# Subtest: producer failure arm invokes actual producer seam, observes zero abort outputs then restores
+ok 6 - producer failure arm invokes actual producer seam, observes zero abort outputs then restores
+  ---
+  duration_ms: 0.438958
+  type: 'test'
+  ...
+# Subtest: committed-before-ACK arm kills after read-committed barrier and persists ACK only after stable recovery
+ok 7 - committed-before-ACK arm kills after read-committed barrier and persists ACK only after stable recovery
+  ---
+  duration_ms: 0.219833
+  type: 'test'
+  ...
+# Subtest: stale-owner arm freezes before forward, takes over, resumes and demands fencing before end-offset proof
+ok 8 - stale-owner arm freezes before forward, takes over, resumes and demands fencing before end-offset proof
+  ---
+  duration_ms: 0.22775
+  type: 'test'
+  ...
+# Subtest: majority outage proves fresh outputs while target stopped and restores target on failure
+ok 9 - majority outage proves fresh outputs while target stopped and restores target on failure
+  ---
+  duration_ms: 0.718291
+  type: 'test'
+  ...
+1..9
+# tests 9
+# suites 0
+# pass 9
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 58.316334

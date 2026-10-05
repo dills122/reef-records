@@ -1,0 +1,1037 @@
+TAP version 13
+# Subtest: recognizes observed Maven request throttling and plugin-portal equivalent
+ok 1 - recognizes observed Maven request throttling and plugin-portal equivalent
+  ---
+  duration_ms: 1.068583
+  type: 'test'
+  ...
+# Subtest: successful first build runs once without waiting
+ok 2 - successful first build runs once without waiting
+  ---
+  duration_ms: 0.389958
+  type: 'test'
+  ...
+# Subtest: throttled builds retry with bounded backoff and require actual success
+ok 3 - throttled builds retry with bounded backoff and require actual success
+  ---
+  duration_ms: 0.711667
+  type: 'test'
+  ...
+# Subtest: persistent throttling stays red after three attempts
+ok 4 - persistent throttling stays red after three attempts
+  ---
+  duration_ms: 0.14475
+  type: 'test'
+  ...
+# Subtest: compile errors, interrupted builds and spawn errors do not retry
+ok 5 - compile errors, interrupted builds and spawn errors do not retry
+  ---
+  duration_ms: 0.458333
+  type: 'test'
+  ...
+# build output
+# dependency error
+# Subtest: subprocess runner captures both streams and preserves exit code
+ok 6 - subprocess runner captures both streams and preserves exit code
+  ---
+  duration_ms: 67.904667
+  type: 'test'
+  ...
+# Subtest: accepts a successful full CI run
+ok 7 - accepts a successful full CI run
+  ---
+  duration_ms: 2.81875
+  type: 'test'
+  ...
+# Subtest: accepts intentionally skipped full jobs for a bot-only pull request
+ok 8 - accepts intentionally skipped full jobs for a bot-only pull request
+  ---
+  duration_ms: 0.099791
+  type: 'test'
+  ...
+# Subtest: accepts an intentionally skipped replay on a human pull request
+ok 9 - accepts an intentionally skipped replay on a human pull request
+  ---
+  duration_ms: 0.087209
+  type: 'test'
+  ...
+# Subtest: rejects any failed full-CI job
+ok 10 - rejects any failed full-CI job
+  ---
+  duration_ms: 0.834833
+  type: 'test'
+  ...
+# Subtest: rejects a replay skip when replay is required
+ok 11 - rejects a replay skip when replay is required
+  ---
+  duration_ms: 0.228417
+  type: 'test'
+  ...
+# Subtest: rejects a failed scope classifier even when full CI is skipped
+ok 12 - rejects a failed scope classifier even when full CI is skipped
+  ---
+  duration_ms: 0.089083
+  type: 'test'
+  ...
+# arena actor diagnostics checks passed
+# Subtest: scripts/dev/analyze-arena-actor-diagnostics.test.mjs
+ok 3 - scripts/dev/analyze-arena-actor-diagnostics.test.mjs
+  ---
+  duration_ms: 86.060375
+  type: 'test'
+  ...
+# arena score breakdown checks passed
+# Subtest: scripts/dev/arena-score-breakdown.test.mjs
+ok 4 - scripts/dev/arena-score-breakdown.test.mjs
+  ---
+  duration_ms: 79.313917
+  type: 'test'
+  ...
+# bot submission merged registry sync checks passed
+# Subtest: scripts/dev/bot-submission-register-merged.test.mjs
+ok 5 - scripts/dev/bot-submission-register-merged.test.mjs
+  ---
+  duration_ms: 541.318125
+  type: 'test'
+  ...
+# Subtest: qualifies trade contexts/s and reports distinct order units
+ok 16 - qualifies trade contexts/s and reports distinct order units
+  ---
+  duration_ms: 0.962583
+  type: 'test'
+  ...
+# Subtest: after-deadline observation cannot rescue failed sustained throughput
+ok 17 - after-deadline observation cannot rescue failed sustained throughput
+  ---
+  duration_ms: 0.251834
+  type: 'test'
+  ...
+# Subtest: preflight does not contribute to measured throughput
+ok 18 - preflight does not contribute to measured throughput
+  ---
+  duration_ms: 1.182333
+  type: 'test'
+  ...
+# Subtest: missing baseline, verified count, or full-fact proof fails closed
+ok 19 - missing baseline, verified count, or full-fact proof fails closed
+  ---
+  duration_ms: 0.181834
+  type: 'test'
+  ...
+# Subtest: drain bound starts from HTTP completion, not later report receipt
+ok 20 - drain bound starts from HTTP completion, not later report receipt
+  ---
+  duration_ms: 0.072583
+  type: 'test'
+  ...
+# Subtest: short diagnostic cannot qualify
+ok 21 - short diagnostic cannot qualify
+  ---
+  duration_ms: 0.062209
+  type: 'test'
+  ...
+# Subtest: Go omits the disabled receipt-generation field
+ok 22 - Go omits the disabled receipt-generation field
+  ---
+  duration_ms: 0.084042
+  type: 'test'
+  ...
+# Subtest: direct config defaults to no preflight and distinct path units
+ok 23 - direct config defaults to no preflight and distinct path units
+  ---
+  duration_ms: 0.490083
+  type: 'test'
+  ...
+# Subtest: aggressor counts one timed order per trade and excludes 64 seeded makers
+ok 24 - aggressor counts one timed order per trade and excludes 64 seeded makers
+  ---
+  duration_ms: 0.110917
+  type: 'test'
+  ...
+# Subtest: aggressor report must agree with configured mode and trade aliases
+ok 25 - aggressor report must agree with configured mode and trade aliases
+  ---
+  duration_ms: 0.081708
+  type: 'test'
+  ...
+# Subtest: zero-trade maker baseline requires exactly the configured accepted orders
+ok 26 - zero-trade maker baseline requires exactly the configured accepted orders
+  ---
+  duration_ms: 0.07425
+  type: 'test'
+  ...
+# Subtest: prefix: complete manifest, duplicate and out-of-order members close once
+ok 27 - prefix: complete manifest, duplicate and out-of-order members close once
+  ---
+  duration_ms: 3.149125
+  type: 'test'
+  ...
+# Subtest: prefix: unresolved prior fill prevents opening until dependency closure
+ok 28 - prefix: unresolved prior fill prevents opening until dependency closure
+  ---
+  duration_ms: 0.285084
+  type: 'test'
+  ...
+# Subtest: prefix: zero-trade amendment/cancel are explicit coverage members
+ok 29 - prefix: zero-trade amendment/cancel are explicit coverage members
+  ---
+  duration_ms: 0.152417
+  type: 'test'
+  ...
+# Subtest: prefix: high water leaves fetched suffix in separate bounded budget
+ok 30 - prefix: high water leaves fetched suffix in separate bounded budget
+  ---
+  duration_ms: 1.120709
+  type: 'test'
+  ...
+# Subtest: prefix: reassignment preserves grant membership; timeout never reclaims
+ok 31 - prefix: reassignment preserves grant membership; timeout never reclaims
+  ---
+  duration_ms: 0.683666
+  type: 'test'
+  ...
+# Subtest: prefix: closed tombstone rejects late old duplicate without extra capacity
+ok 32 - prefix: closed tombstone rejects late old duplicate without extra capacity
+  ---
+  duration_ms: 0.485458
+  type: 'test'
+  ...
+# Subtest: prefix: missing source fact remains waiting, not algorithmic deadlock
+ok 33 - prefix: missing source fact remains waiting, not algorithmic deadlock
+  ---
+  duration_ms: 0.164958
+  type: 'test'
+  ...
+# Subtest: credit: complete manifest, duplicate and out-of-order members close once
+ok 34 - credit: complete manifest, duplicate and out-of-order members close once
+  ---
+  duration_ms: 0.278916
+  type: 'test'
+  ...
+# Subtest: credit: unresolved prior fill prevents opening until dependency closure
+ok 35 - credit: unresolved prior fill prevents opening until dependency closure
+  ---
+  duration_ms: 0.195417
+  type: 'test'
+  ...
+# Subtest: credit: zero-trade amendment/cancel are explicit coverage members
+ok 36 - credit: zero-trade amendment/cancel are explicit coverage members
+  ---
+  duration_ms: 0.110125
+  type: 'test'
+  ...
+# Subtest: credit: high water leaves fetched suffix in separate bounded budget
+ok 37 - credit: high water leaves fetched suffix in separate bounded budget
+  ---
+  duration_ms: 0.252917
+  type: 'test'
+  ...
+# Subtest: credit: reassignment preserves grant membership; timeout never reclaims
+ok 38 - credit: reassignment preserves grant membership; timeout never reclaims
+  ---
+  duration_ms: 0.157375
+  type: 'test'
+  ...
+# Subtest: credit: closed tombstone rejects late old duplicate without extra capacity
+ok 39 - credit: closed tombstone rejects late old duplicate without extra capacity
+  ---
+  duration_ms: 0.104167
+  type: 'test'
+  ...
+# Subtest: credit: missing source fact remains waiting, not algorithmic deadlock
+ok 40 - credit: missing source fact remains waiting, not algorithmic deadlock
+  ---
+  duration_ms: 1.208917
+  type: 'test'
+  ...
+# Subtest: source-prefix refuses B grant while ungranted A occupies FIFO; credits need bounded bypass
+ok 41 - source-prefix refuses B grant while ungranted A occupies FIFO; credits need bounded bypass
+  ---
+  duration_ms: 0.373959
+  type: 'test'
+  ...
+# Subtest: seal behind future burst: prefix excludes ordering, credit reserved bypass reaches closure
+ok 42 - seal behind future burst: prefix excludes ordering, credit reserved bypass reaches closure
+  ---
+  duration_ms: 1.058333
+  type: 'test'
+  ...
+# Subtest: future burst beyond bypass envelope produces retained counterexample, no lost admitted membership
+ok 43 - future burst beyond bypass envelope produces retained counterexample, no lost admitted membership
+  ---
+  duration_ms: 0.181833
+  type: 'test'
+  ...
+# Subtest: declared fanout overflow rejected before opening; unknown membership faults without release
+ok 44 - declared fanout overflow rejected before opening; unknown membership faults without release
+  ---
+  duration_ms: 0.162834
+  type: 'test'
+  ...
+# Subtest: bounded exhaustive and seeded schedule families close all supplied facts within resources
+ok 45 - bounded exhaustive and seeded schedule families close all supplied facts within resources
+  ---
+  duration_ms: 140.218375
+  type: 'test'
+  ...
+# Subtest: healthy credit rejects unproved closure path before reserving capacity
+ok 46 - healthy credit rejects unproved closure path before reserving capacity
+  ---
+  duration_ms: 0.510541
+  type: 'test'
+  ...
+# Subtest: cyclic or forward prefix dependency manifests fail preflight instead of creating deadlock
+ok 47 - cyclic or forward prefix dependency manifests fail preflight instead of creating deadlock
+  ---
+  duration_ms: 0.165791
+  type: 'test'
+  ...
+# Subtest: preparation stops until E3 correctness and real calibration plus indexed/bounded adapter exist
+ok 48 - preparation stops until E3 correctness and real calibration plus indexed/bounded adapter exist
+  ---
+  duration_ms: 5.150541
+  type: 'test'
+  ...
+# Subtest: source/fixture mismatches and fabricated zero-byte calibration cannot freeze runnable policy
+ok 49 - source/fixture mismatches and fabricated zero-byte calibration cannot freeze runnable policy
+  ---
+  duration_ms: 0.18925
+  type: 'test'
+  ...
+# Subtest: aged estimate retains proposed 1m identities; over-budget case explicitly shrinks diagnostic only
+ok 50 - aged estimate retains proposed 1m identities; over-budget case explicitly shrinks diagnostic only
+  ---
+  duration_ms: 0.163417
+  type: 'test'
+  ...
+# Subtest: disk space gate and exact prefunding bound all declared timed plus pending work
+ok 51 - disk space gate and exact prefunding bound all declared timed plus pending work
+  ---
+  duration_ms: 0.391125
+  type: 'test'
+  ...
+# Subtest: measurement separates stage rates; complete parity and all telemetry permit diagnostic pass
+ok 52 - measurement separates stage rates; complete parity and all telemetry permit diagnostic pass
+  ---
+  duration_ms: 0.471083
+  type: 'test'
+  ...
+# Subtest: producer duration miss fails even when output is exact after drain
+ok 53 - producer duration miss fails even when output is exact after drain
+  ---
+  duration_ms: 0.129667
+  type: 'test'
+  ...
+# Subtest: late drain cannot be counted as deadline output or settled financial throughput
+ok 54 - late drain cannot be counted as deadline output or settled financial throughput
+  ---
+  duration_ms: 0.1175
+  type: 'test'
+  ...
+# Subtest: cumulative offered cannot roll back between deadline and final cuts
+ok 55 - cumulative offered cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.212167
+  type: 'test'
+  ...
+# Subtest: cumulative admitted cannot roll back between deadline and final cuts
+ok 56 - cumulative admitted cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.100292
+  type: 'test'
+  ...
+# Subtest: cumulative decided cannot roll back between deadline and final cuts
+ok 57 - cumulative decided cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.099333
+  type: 'test'
+  ...
+# Subtest: cumulative settled cannot roll back between deadline and final cuts
+ok 58 - cumulative settled cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.095167
+  type: 'test'
+  ...
+# Subtest: deadline offers cannot exceed frozen expected workload even if final agrees
+ok 59 - deadline offers cannot exceed frozen expected workload even if final agrees
+  ---
+  duration_ms: 0.124208
+  type: 'test'
+  ...
+# Subtest: each cut rejects admission ordering and settlement accounting violations
+ok 60 - each cut rejects admission ordering and settlement accounting violations
+  ---
+  duration_ms: 0.508291
+  type: 'test'
+  ...
+# Subtest: pending may decrease during drain; only missed deadline settlement fails
+ok 61 - pending may decrease during drain; only missed deadline settlement fails
+  ---
+  duration_ms: 0.555
+  type: 'test'
+  ...
+# Subtest: missing accounting or resource metrics are explicit limited attempt; count inconsistency fails
+ok 62 - missing accounting or resource metrics are explicit limited attempt; count inconsistency fails
+  ---
+  duration_ms: 0.219042
+  type: 'test'
+  ...
+# Subtest: lag growth, over-budget disk and unsupported latency clock cannot silently pass
+ok 63 - lag growth, over-budget disk and unsupported latency clock cannot silently pass
+  ---
+  duration_ms: 0.123541
+  type: 'test'
+  ...
+# Subtest: highest stable measured arm creates fresh/aged 300s pair with same business workload
+ok 64 - highest stable measured arm creates fresh/aged 300s pair with same business workload
+  ---
+  duration_ms: 0.2085
+  type: 'test'
+  ...
+# Subtest: missing restore cost, partial monitoring and observer slowdown remain limited preflight
+ok 65 - missing restore cost, partial monitoring and observer slowdown remain limited preflight
+  ---
+  duration_ms: 0.194125
+  type: 'test'
+  ...
+# Subtest: load and calibration entrypoints refuse before filesystem or adapter work without authorization
+ok 66 - load and calibration entrypoints refuse before filesystem or adapter work without authorization
+  ---
+  duration_ms: 0.571416
+  type: 'test'
+  ...
+# Subtest: calibration overrides cannot undercut measured physical byte budget or use invalid numbers
+ok 67 - calibration overrides cannot undercut measured physical byte budget or use invalid numbers
+  ---
+  duration_ms: 0.317292
+  type: 'test'
+  ...
+# Subtest: valid byte override preserves conservative floor and may increase budget only
+ok 68 - valid byte override preserves conservative floor and may increase budget only
+  ---
+  duration_ms: 0.2055
+  type: 'test'
+  ...
+# Subtest: derived per-trade budget must remain safe integer before policy freezes
+ok 69 - derived per-trade budget must remain safe integer before policy freezes
+  ---
+  duration_ms: 0.111875
+  type: 'test'
+  ...
+# Subtest: stdout and stderr retain split UTF-8 and invalid bytes exactly
+ok 70 - stdout and stderr retain split UTF-8 and invalid bytes exactly
+  ---
+  duration_ms: 1.84325
+  type: 'test'
+  ...
+# Subtest: recorder persists binary output, failures and separate spawn diagnostics
+ok 71 - recorder persists binary output, failures and separate spawn diagnostics
+  ---
+  duration_ms: 481.188958
+  type: 'test'
+  ...
+# Subtest: USD_NANO: own hold consumption and competing withdrawal stay bounded
+ok 72 - USD_NANO: own hold consumption and competing withdrawal stay bounded
+  ---
+  duration_ms: 3.12625
+  type: 'test'
+  ...
+# Subtest: ACME_SHARE: own hold consumption and competing withdrawal stay bounded
+ok 73 - ACME_SHARE: own hold consumption and competing withdrawal stay bounded
+  ---
+  duration_ms: 0.19675
+  type: 'test'
+  ...
+# Subtest: cancel releases unmatched order only; captured obligation stays owned
+ok 74 - cancel releases unmatched order only; captured obligation stays owned
+  ---
+  duration_ms: 0.08375
+  type: 'test'
+  ...
+# Subtest: creation priority uses acceptance then stable owner ID; competing owner cannot spend hold
+ok 75 - creation priority uses acceptance then stable owner ID; competing owner cannot spend hold
+  ---
+  duration_ms: 0.167459
+  type: 'test'
+  ...
+# Subtest: exact-unit/range errors and conflicting transfers make no changes
+ok 76 - exact-unit/range errors and conflicting transfers make no changes
+  ---
+  duration_ms: 0.21725
+  type: 'test'
+  ...
+# CI pull request change-scope checks passed
+# Subtest: scripts/dev/ci-pr-change-scope.test.mjs
+ok 11 - scripts/dev/ci-pr-change-scope.test.mjs
+  ---
+  duration_ms: 70.69825
+  type: 'test'
+  ...
+# CI workflow hardening guard checks passed
+# Subtest: scripts/dev/ci-workflow-hardening.test.mjs
+ok 12 - scripts/dev/ci-workflow-hardening.test.mjs
+  ---
+  duration_ms: 113.286667
+  type: 'test'
+  ...
+# Subtest: parses archive partition month bounds
+ok 79 - parses archive partition month bounds
+  ---
+  duration_ms: 1.337917
+  type: 'test'
+  ...
+# Subtest: builds archive partition list SQL
+ok 80 - builds archive partition list SQL
+  ---
+  duration_ms: 0.133292
+  type: 'test'
+  ...
+# Subtest: builds monthly archive partition create SQL
+ok 81 - builds monthly archive partition create SQL
+  ---
+  duration_ms: 0.197208
+  type: 'test'
+  ...
+# Subtest: builds monthly archive partition drop SQL
+ok 82 - builds monthly archive partition drop SQL
+  ---
+  duration_ms: 0.199083
+  type: 'test'
+  ...
+# Subtest: builds monthly archive partition export SQL
+ok 83 - builds monthly archive partition export SQL
+  ---
+  duration_ms: 0.095584
+  type: 'test'
+  ...
+# Subtest: builds archive eligible count SQL
+ok 84 - builds archive eligible count SQL
+  ---
+  duration_ms: 0.843833
+  type: 'test'
+  ...
+# Subtest: builds bounded archive batch SQL
+ok 85 - builds bounded archive batch SQL
+  ---
+  duration_ms: 0.133833
+  type: 'test'
+  ...
+# Subtest: builds archive vacuum commands
+ok 86 - builds archive vacuum commands
+  ---
+  duration_ms: 0.085792
+  type: 'test'
+  ...
+# Subtest: builds command-log integrity summary SQL
+ok 87 - builds command-log integrity summary SQL
+  ---
+  duration_ms: 0.740208
+  type: 'test'
+  ...
+# Subtest: parses integrity summary rows
+ok 88 - parses integrity summary rows
+  ---
+  duration_ms: 0.840833
+  type: 'test'
+  ...
+# Subtest: finds nonzero integrity violations
+ok 89 - finds nonzero integrity violations
+  ---
+  duration_ms: 0.107
+  type: 'test'
+  ...
+# Subtest: normalizes supported retention pin selector types
+ok 90 - normalizes supported retention pin selector types
+  ---
+  duration_ms: 1.6585
+  type: 'test'
+  ...
+# Subtest: builds upsert pin SQL with escaped values
+ok 91 - builds upsert pin SQL with escaped values
+  ---
+  duration_ms: 0.195458
+  type: 'test'
+  ...
+# Subtest: builds list and delete pin SQL
+ok 92 - builds list and delete pin SQL
+  ---
+  duration_ms: 0.083167
+  type: 'test'
+  ...
+# Subtest: parses prune duration values
+ok 93 - parses prune duration values
+  ---
+  duration_ms: 0.886459
+  type: 'test'
+  ...
+# Subtest: builds terminal-only eligible count SQL
+ok 94 - builds terminal-only eligible count SQL
+  ---
+  duration_ms: 0.161417
+  type: 'test'
+  ...
+# Subtest: builds batched delete for terminal command history
+ok 95 - builds batched delete for terminal command history
+  ---
+  duration_ms: 0.092709
+  type: 'test'
+  ...
+# Subtest: builds command-log orphan diagnostics and cleanup SQL
+ok 96 - builds command-log orphan diagnostics and cleanup SQL
+  ---
+  duration_ms: 0.086208
+  type: 'test'
+  ...
+# Subtest: builds active queue count SQL
+ok 97 - builds active queue count SQL
+  ---
+  duration_ms: 0.134584
+  type: 'test'
+  ...
+# Subtest: builds low-shared-memory vacuum commands
+ok 98 - builds low-shared-memory vacuum commands
+  ---
+  duration_ms: 0.069834
+  type: 'test'
+  ...
+# Subtest: builds retention pin exclusion predicate
+ok 99 - builds retention pin exclusion predicate
+  ---
+  duration_ms: 0.059708
+  type: 'test'
+  ...
+# arena score-v1 proof comparison checks passed
+# Subtest: scripts/dev/compare-arena-score-v1-proof.test.mjs
+ok 18 - scripts/dev/compare-arena-score-v1-proof.test.mjs
+  ---
+  duration_ms: 144.72275
+  type: 'test'
+  ...
+# arena scoring calibration comparison checks passed
+# Subtest: scripts/dev/compare-arena-scoring-calibration.test.mjs
+ok 19 - scripts/dev/compare-arena-scoring-calibration.test.mjs
+  ---
+  duration_ms: 56.829042
+  type: 'test'
+  ...
+# container image workflow guard checks passed
+# Subtest: scripts/dev/container-images-workflow.test.mjs
+ok 20 - scripts/dev/container-images-workflow.test.mjs
+  ---
+  duration_ms: 61.683125
+  type: 'test'
+  ...
+# Subtest: discovers deterministic domain migrations
+ok 103 - discovers deterministic domain migrations
+  ---
+  duration_ms: 189.162917
+  type: 'test'
+  ...
+# Subtest: venue event batch integrity migration removes duplicate index and rejects conflicts
+ok 104 - venue event batch integrity migration removes duplicate index and rejects conflicts
+  ---
+  duration_ms: 43.130083
+  type: 'test'
+  ...
+# Subtest: audit hardening migration preserves first command outcome and counts actual canonical inserts
+ok 105 - audit hardening migration preserves first command outcome and counts actual canonical inserts
+  ---
+  duration_ms: 19.885709
+  type: 'test'
+  ...
+# Subtest: command-log integrity audit migration replaces dropped hot-path foreign key checks
+ok 106 - command-log integrity audit migration replaces dropped hot-path foreign key checks
+  ---
+  duration_ms: 23.579792
+  type: 'test'
+  ...
+# Subtest: typed top-of-book migration adds native numeric facts and indexes
+ok 107 - typed top-of-book migration adds native numeric facts and indexes
+  ---
+  duration_ms: 23.204709
+  type: 'test'
+  ...
+# Subtest: typed runtime event migration adds native UUID and timestamp facts
+ok 108 - typed runtime event migration adds native UUID and timestamp facts
+  ---
+  duration_ms: 21.033416
+  type: 'test'
+  ...
+# Subtest: typed submit result migration adds native audit facts
+ok 109 - typed submit result migration adds native audit facts
+  ---
+  duration_ms: 21.029333
+  type: 'test'
+  ...
+# Subtest: typed execution and trade migration adds native market facts
+ok 110 - typed execution and trade migration adds native market facts
+  ---
+  duration_ms: 17.672
+  type: 'test'
+  ...
+# Subtest: execution liquidity-role migration preserves canonical maker/taker attribution
+ok 111 - execution liquidity-role migration preserves canonical maker/taker attribution
+  ---
+  duration_ms: 18.678875
+  type: 'test'
+  ...
+# Subtest: execution replay migration rejects conflicting immutable facts
+ok 112 - execution replay migration rejects conflicting immutable facts
+  ---
+  duration_ms: 15.775583
+  type: 'test'
+  ...
+# Subtest: projection batch claim migration guards effects on both projection paths
+ok 113 - projection batch claim migration guards effects on both projection paths
+  ---
+  duration_ms: 15.725667
+  type: 'test'
+  ...
+# Subtest: typed order migration adds native order facts
+ok 114 - typed order migration adds native order facts
+  ---
+  duration_ms: 20.313042
+  type: 'test'
+  ...
+# Subtest: typed canonical time migration adds native audit timestamps
+ok 115 - typed canonical time migration adds native audit timestamps
+  ---
+  duration_ms: 23.746166
+  type: 'test'
+  ...
+# Subtest: batch payload gin index is removed from hot canonical materialization
+ok 116 - batch payload gin index is removed from hot canonical materialization
+  ---
+  duration_ms: 15.748
+  type: 'test'
+  ...
+# Subtest: command-log archive migration creates partitioned terminal result archive
+ok 117 - command-log archive migration creates partitioned terminal result archive
+  ---
+  duration_ms: 18.638334
+  type: 'test'
+  ...
+# Subtest: runtime archive migrations create partitioned cold-history targets
+ok 118 - runtime archive migrations create partitioned cold-history targets
+  ---
+  duration_ms: 18.796542
+  type: 'test'
+  ...
+# Subtest: runtime projection lock-order migration hardens dirty queues
+ok 119 - runtime projection lock-order migration hardens dirty queues
+  ---
+  duration_ms: 15.85625
+  type: 'test'
+  ...
+# Subtest: runtime dirty queue migration moves rebuildable queues out of WAL
+ok 120 - runtime dirty queue migration moves rebuildable queues out of WAL
+  ---
+  duration_ms: 20.702041
+  type: 'test'
+  ...
+# Subtest: runtime event payload migration moves event JSON off hot rows
+ok 121 - runtime event payload migration moves event JSON off hot rows
+  ---
+  duration_ms: 15.891417
+  type: 'test'
+  ...
+# Subtest: idempotent lifecycle projection migration skips no-op row rewrites
+ok 122 - idempotent lifecycle projection migration skips no-op row rewrites
+  ---
+  duration_ms: 15.30275
+  type: 'test'
+  ...
+# Subtest: runtime event index migration drops legacy all-event indexes
+ok 123 - runtime event index migration drops legacy all-event indexes
+  ---
+  duration_ms: 21.458958
+  type: 'test'
+  ...
+# Subtest: command outcome projection preserves command correlation metadata
+ok 124 - command outcome projection preserves command correlation metadata
+  ---
+  duration_ms: 19.497417
+  type: 'test'
+  ...
+# Subtest: submit outcome projection migration splits command-status and timeline stages
+ok 125 - submit outcome projection migration splits command-status and timeline stages
+  ---
+  duration_ms: 23.166666
+  type: 'test'
+  ...
+# Subtest: wraps migration SQL with checksum ledger insert
+ok 126 - wraps migration SQL with checksum ledger insert
+  ---
+  duration_ms: 26.550542
+  type: 'test'
+  ...
+# Subtest: routes arena migrations only to arena database target
+ok 127 - routes arena migrations only to arena database target
+  ---
+  duration_ms: 21.791
+  type: 'test'
+  ...
+# deploy receiver tests passed
+# Subtest: scripts/dev/deploy-receiver.test.mjs
+ok 22 - scripts/dev/deploy-receiver.test.mjs
+  ---
+  duration_ms: 250.138792
+  type: 'test'
+  ...
+# Subtest: builds run export payload from stress report and artifact directory
+ok 129 - builds run export payload from stress report and artifact directory
+  ---
+  duration_ms: 7.362208
+  type: 'test'
+  ...
+# Subtest: extracts counts and latency from KPI report shape
+ok 130 - extracts counts and latency from KPI report shape
+  ---
+  duration_ms: 0.202791
+  type: 'test'
+  ...
+# Subtest: extracts counts, latency, and summary from arena local tick report
+ok 131 - extracts counts, latency, and summary from arena local tick report
+  ---
+  duration_ms: 5.053333
+  type: 'test'
+  ...
+# Subtest: parses cli flags
+ok 132 - parses cli flags
+  ---
+  duration_ms: 0.240417
+  type: 'test'
+  ...
+# dev profile checks passed
+# Subtest: scripts/dev/lib/dev-profiles.test.mjs
+ok 24 - scripts/dev/lib/dev-profiles.test.mjs
+  ---
+  duration_ms: 103.509875
+  type: 'test'
+  ...
+# Subtest: devUp starts postgres, runs migrations, then starts full stack
+ok 134 - devUp starts postgres, runs migrations, then starts full stack
+  ---
+  duration_ms: 1.746084
+  type: 'test'
+  ...
+# Subtest: devUp fails before full stack when migrations fail
+ok 135 - devUp fails before full stack when migrations fail
+  ---
+  duration_ms: 0.882
+  type: 'test'
+  ...
+# Subtest: devReset wipes volumes, migrates, starts stack, and can run smoke
+ok 136 - devReset wipes volumes, migrates, starts stack, and can run smoke
+  ---
+  duration_ms: 0.372834
+  type: 'test'
+  ...
+# Subtest: devReset skips smoke by default
+ok 137 - devReset skips smoke by default
+  ---
+  duration_ms: 0.173041
+  type: 'test'
+  ...
+# Subtest: devUp starts Arena storage only when the Arena overlay is selected
+ok 138 - devUp starts Arena storage only when the Arena overlay is selected
+  ---
+  duration_ms: 0.244541
+  type: 'test'
+  ...
+# Subtest: end-to-end guardrail includes expected business rejects
+ok 139 - end-to-end guardrail includes expected business rejects
+  ---
+  duration_ms: 6.215917
+  type: 'test'
+  ...
+# Subtest: valid-intent guardrail excludes expected business rejects
+ok 140 - valid-intent guardrail excludes expected business rejects
+  ---
+  duration_ms: 0.115541
+  type: 'test'
+  ...
+# Subtest: valid-intent guardrail still exposes system failures
+ok 141 - valid-intent guardrail still exposes system failures
+  ---
+  duration_ms: 3.715333
+  type: 'test'
+  ...
+# Subtest: end-to-end guardrail supports older reports without quality metrics
+ok 142 - end-to-end guardrail supports older reports without quality metrics
+  ---
+  duration_ms: 0.124416
+  type: 'test'
+  ...
+# Subtest: rejects unknown guardrail metrics
+ok 143 - rejects unknown guardrail metrics
+  ---
+  duration_ms: 0.36875
+  type: 'test'
+  ...
+# Subtest: stableStringify canonicalizes object key order
+ok 144 - stableStringify canonicalizes object key order
+  ---
+  duration_ms: 9.265083
+  type: 'test'
+  ...
+# Subtest: assertStableProjectionReplaySnapshot accepts identical stable read output
+ok 145 - assertStableProjectionReplaySnapshot accepts identical stable read output
+  ---
+  duration_ms: 0.431083
+  type: 'test'
+  ...
+# Subtest: assertStableProjectionReplaySnapshot rejects duplicate replay rows
+ok 146 - assertStableProjectionReplaySnapshot rejects duplicate replay rows
+  ---
+  duration_ms: 0.426583
+  type: 'test'
+  ...
+# Subtest: assertStableProjectionReplaySnapshot rejects API freshness drift
+ok 147 - assertStableProjectionReplaySnapshot rejects API freshness drift
+  ---
+  duration_ms: 0.166959
+  type: 'test'
+  ...
+# Subtest: assertClaimGuardedProjectionReplay accepts an exact duplicate blocked by its completed claim
+ok 148 - assertClaimGuardedProjectionReplay accepts an exact duplicate blocked by its completed claim
+  ---
+  duration_ms: 0.200542
+  type: 'test'
+  ...
+# Subtest: assertClaimGuardedProjectionReplay rejects a replay without an exact completed claim
+ok 149 - assertClaimGuardedProjectionReplay rejects a replay without an exact completed claim
+  ---
+  duration_ms: 0.084083
+  type: 'test'
+  ...
+# Subtest: assertClaimGuardedProjectionReplay rejects duplicate effects
+ok 150 - assertClaimGuardedProjectionReplay rejects duplicate effects
+  ---
+  duration_ms: 0.114416
+  type: 'test'
+  ...
+# arena actor calibration matrix checks passed
+# Subtest: scripts/dev/run-arena-actor-calibration-matrix.test.mjs
+ok 28 - scripts/dev/run-arena-actor-calibration-matrix.test.mjs
+  ---
+  duration_ms: 78.28875
+  type: 'test'
+  ...
+# arena economic policy matrix checks passed
+# Subtest: scripts/dev/run-arena-economic-policy-matrix.test.mjs
+ok 29 - scripts/dev/run-arena-economic-policy-matrix.test.mjs
+  ---
+  duration_ms: 64.030833
+  type: 'test'
+  ...
+# arena scoring calibration matrix checks passed
+# Subtest: scripts/dev/run-arena-scoring-calibration-matrix.test.mjs
+ok 30 - scripts/dev/run-arena-scoring-calibration-matrix.test.mjs
+  ---
+  duration_ms: 58.539833
+  type: 'test'
+  ...
+# stream profile warning: stream-direct-nodb projector enabled for projection proof; do not use as no-DB throughput claim
+# stream profile warning: noop-ceiling is API-front-door isolation only; 202 does not prove broker append
+# stream profile guard checks passed
+# Subtest: scripts/dev/stream-profile-guard.test.mjs
+ok 31 - scripts/dev/stream-profile-guard.test.mjs
+  ---
+  duration_ms: 79.32825
+  type: 'test'
+  ...
+1..154
+# tests 154
+# suites 0
+# pass 154
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1044.533959
+# start of coverage report
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# file                                              | line % | branch % | funcs % | uncovered lines
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# infra                                             |        |          |         | 
+#  hetzner-core                                     |        |          |         | 
+#   server                                          |        |          |         | 
+#    deploy-receiver                                |        |          |         | 
+#     server.mjs                                    |  56.30 |    75.00 |   58.33 | 37 48-55 57-60 62-71 73-91 93-116 136-137 139-140 142-143 145-146 149-153 155-159 161-165 199-200 213-214 216-217 221-244 246-250 271-278 286-287 291-292 304-305 318-320 375-376 387-389 406-458 460-469 472-477
+# scripts                                           |        |          |         | 
+#  ci                                               |        |          |         | 
+#   build-container.mjs                             |  86.00 |    89.47 |   87.50 | 44-50
+#   build-container.test.mjs                        | 100.00 |   100.00 |   83.33 | 
+#   check-required-results.mjs                      |  79.37 |    73.33 |   50.00 | 25-26 51-59 62-63
+#   check-required-results.test.mjs                 | 100.00 |   100.00 |  100.00 | 
+#  dev                                              |        |          |         | 
+#   analyze-arena-actor-diagnostics.mjs             |  95.49 |    55.93 |   95.77 | 53-62 153-154 157-158 325-326 408-410
+#   analyze-arena-actor-diagnostics.test.mjs        | 100.00 |   100.00 |  100.00 | 
+#   arena-score-breakdown.test.mjs                  | 100.00 |   100.00 |  100.00 | 
+#   bot-submission-register-merged.mjs              |  78.95 |    32.00 |   95.00 | 18-20 24-25 28-29 46-47 70-72 90-92 107-108 138-141 143-144 151-152 157-158 166-167 169-170 172-173 183-184 186-187 214 225 249-250 259-272 274-276 284-285 288-289 296-297 320-323
+#   bot-submission-register-merged.test.mjs         |  96.17 |    95.45 |   88.89 | 85-89 136-137 202 217
+#   calcify-direct-capacity.mjs                     |  42.64 |    90.57 |   90.00 | 83-195
+#   calcify-direct-capacity.test.mjs                | 100.00 |   100.00 |  100.00 | 
+#   calcify-financial                               |        |          |         | 
+#    gate-model.mjs                                 |  95.19 |    90.83 |   98.67 | 276-285 288-291
+#    gate-model.test.mjs                            | 100.00 |   100.00 |  100.00 | 
+#    lib                                            |        |          |         | 
+#     output-capture.mjs                            | 100.00 |   100.00 |  100.00 | 
+#    rate-proof.mjs                                 |  71.86 |    82.39 |   78.57 | 150-170 174-179 187 189-190 192-210 213-214 217-225 227-231
+#    rate-proof.test.mjs                            | 100.00 |   100.00 |  100.00 | 
+#    record-attempt.test.mjs                        | 100.00 |   100.00 |  100.00 | 
+#    reservation-model.mjs                          |  97.10 |    76.27 |  100.00 | 63-64
+#    reservation-model.test.mjs                     | 100.00 |   100.00 |  100.00 | 
+#   ci-pr-change-scope.mjs                          |  71.43 |    78.79 |   77.78 | 20-21 39-40 77-97 101-105
+#   ci-pr-change-scope.test.mjs                     | 100.00 |   100.00 |  100.00 | 
+#   ci-workflow-hardening.test.mjs                  | 100.00 |    82.76 |  100.00 | 
+#   command-log-archive-partitions.mjs              |  37.44 |    87.50 |   41.67 | 80-84 86-149 151-168 170-178 180-215 217-223 225-227
+#   command-log-archive-partitions.test.mjs         | 100.00 |   100.00 |  100.00 | 
+#   command-log-archive.mjs                         |  35.63 |    80.00 |   27.27 | 113-117 119-245 247-262 264-267 269-277 279-319 321-326 328-334
+#   command-log-archive.test.mjs                    | 100.00 |   100.00 |  100.00 | 
+#   command-log-integrity-check.mjs                 |  27.43 |    75.00 |   62.50 | 30-34 36-73 75-113
+#   command-log-integrity-check.test.mjs            | 100.00 |   100.00 |  100.00 | 
+#   command-log-pin.mjs                             |  32.73 |    80.00 |   55.56 | 48-52 54-113 115-150 152-161
+#   command-log-pin.test.mjs                        | 100.00 |   100.00 |  100.00 | 
+#   command-log-prune.mjs                           |  42.48 |    84.62 |   50.00 | 169-173 175-322 324-341 343-346 348-355 357-397 399-404 406-412
+#   command-log-prune.test.mjs                      | 100.00 |   100.00 |  100.00 | 
+#   compare-arena-score-v1-proof.mjs                |  85.14 |    40.26 |   94.44 | 9-21 118-119 173-190
+#   compare-arena-score-v1-proof.test.mjs           | 100.00 |   100.00 |  100.00 | 
+#   compare-arena-scoring-calibration.mjs           |  91.43 |    62.00 |  100.00 | 5-13
+#   compare-arena-scoring-calibration.test.mjs      | 100.00 |   100.00 |  100.00 | 
+#   container-images-workflow.test.mjs              | 100.00 |   100.00 |  100.00 | 
+#   db                                              |        |          |         | 
+#    migrate.mjs                                    |  34.74 |    76.19 |   64.71 | 33-35 61-62 71-72 93-110 112-152 154-192 202-239 241-278 281-285
+#    migrate.test.mjs                               | 100.00 |   100.00 |  100.00 | 
+#   deploy-receiver.test.mjs                        | 100.00 |   100.00 |  100.00 | 
+#   export-simulation-run.mjs                       |  82.82 |    44.60 |   86.11 | 79-84 107-108 117-138 152-162 167-183 191 400-408 413-414 435 444 471-476 479-483
+#   export-simulation-run.test.mjs                  | 100.00 |   100.00 |  100.00 | 
+#   lib                                             |        |          |         | 
+#    arena-score-breakdown.mjs                      |  99.59 |    66.92 |   96.08 | 441-442
+#    bot-submission-contract.mjs                    |  66.67 |    45.45 |   80.00 | 8-9 14-18 27-28 30-31 36-37 39-40 42-43
+#    compose-utils.mjs                              | 100.00 |   100.00 |  100.00 | 
+#    db-diagnostics.mjs                             |   6.35 |   100.00 |    0.00 | 12-17 20-46 49-338 341-354 357-391 394-418 421-427 429-431 433-461 463-498 500-508 510-514 516-519 521-533 535-543 545-550 552-560 562-566 568-574 576-579 581-583
+#    dev-profiles.test.mjs                          | 100.00 |   100.00 |  100.00 | 
+#    dev-stack-profiles.mjs                         |  77.78 |    60.53 |   78.26 | 15-21 24-30 33-35 40 48-49 55 197-198 260-261 264 316-364 366-389 394
+#    dev-stack.mjs                                  | 100.00 |    76.47 |  100.00 | 
+#    dev-stack.test.mjs                             | 100.00 |   100.00 |   84.21 | 
+#    dev-stress-profiles.mjs                        |  67.95 |    63.64 |   50.00 | 13-17 22-23 25-26 34 38-40 42-66 68-79
+#    dev-utils.mjs                                  |  24.26 |    90.91 |   44.44 | 24-42 46-52 55-82 85-104 107-108 110-136
+#    projection-replay-proof.mjs                    |  91.04 |    90.48 |  100.00 | 31-34 47-48
+#    stream-profile-guard.mjs                       |  93.46 |    77.50 |   90.91 | 15-17 32 72-76 89
+#    stress-session-config.mjs                      | 100.00 |    62.50 |  100.00 | 
+#    stress-success-guardrail.mjs                   | 100.00 |    71.43 |  100.00 | 
+#    stress-success-guardrail.test.mjs              | 100.00 |   100.00 |  100.00 | 
+#   projection-replay-proof.test.mjs                | 100.00 |   100.00 |  100.00 | 
+#   run-arena-actor-calibration-matrix.mjs          |  69.64 |    57.80 |   81.25 | 104-106 109-198 397-407 459-469 471-477 484-491 493-515 517-529 543-545 547-549 555 576-579
+#   run-arena-actor-calibration-matrix.test.mjs     | 100.00 |   100.00 |  100.00 | 
+#   run-arena-economic-policy-matrix.mjs            |  54.55 |    66.67 |   60.00 | 13-19 22-55 58-77 79-97 135-136 145-146 149-150 152-153 165-166 171-173 176-177 183-184 187-188 229 234-255 276-279 281-283 285-287 289-291
+#   run-arena-economic-policy-matrix.test.mjs       | 100.00 |   100.00 |  100.00 | 
+#   run-arena-scoring-calibration-matrix.mjs        |  54.24 |    84.38 |   66.67 | 21-24 27-64 107-129 131-143 162-164
+#   run-arena-scoring-calibration-matrix.test.mjs   | 100.00 |   100.00 |  100.00 | 
+#   stream-profile-guard.test.mjs                   | 100.00 |   100.00 |  100.00 | 
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# all files                                         |  76.55 |    73.81 |   86.03 | 
+# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# end of coverage report
