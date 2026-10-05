@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialBootstrapProbeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-05T14:02:30.356Z" hostname="Dylans-MacBook-Pro.local" time="0.022">
+  <properties/>
+  <testcase name="result byte bound precedes decoded JSON and checksum expansion is covered()" classname="com.reef.platform.calcify.financial.FinancialBootstrapProbeTest" time="0.002"/>
+  <testcase name="bootstrap freezes effective Kafka client buffers including restore consumers()" classname="com.reef.platform.calcify.financial.FinancialBootstrapProbeTest" time="0.018"/>
+  <testcase name="bootstrap counts cannot expand or enter conventional rate scope()" classname="com.reef.platform.calcify.financial.FinancialBootstrapProbeTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

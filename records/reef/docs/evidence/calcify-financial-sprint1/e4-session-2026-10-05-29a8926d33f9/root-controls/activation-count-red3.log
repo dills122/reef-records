@@ -1,0 +1,42 @@
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :verifyRuntimeOrderIdentityMigration
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :processTestResources UP-TO-DATE
+> Task :verifyNoTestSourceExclusions
+
+> Task :compileTestKotlin
+w: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt:46:25 'fun fields(): (Mutable)Iterator<(Mutable)Map.(Mutable)Entry<String!, JsonNode!>!>!' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt:55:46 'fun fields(): (Mutable)Iterator<(Mutable)Map.(Mutable)Entry<String!, JsonNode!>!>!' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt:128:37 'fun fields(): (Mutable)Iterator<(Mutable)Map.(Mutable)Entry<String!, JsonNode!>!>!' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt:708:173 Cast is redundant.
+w: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt:779:53 Unnecessary non-null assertion (!!) on a non-null receiver of type 'ObjectNode'.
+w: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt:821:590 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Pair<Long, Long>'.
+w: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt:821:612 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Pair<Long, Long>'.
+
+> Task :compileTestJava NO-SOURCE
+> Task :testClasses UP-TO-DATE
+
+> Task :test FAILED
+
+FinancialBootstrapProbeTest > managed activation count survives actual Long to raw JSON round trip() FAILED
+    java.lang.IllegalArgumentException at FinancialBootstrapProbeTest.kt:40
+
+9 tests completed, 1 failed
+
+[Incubating] Problems report is available at: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':test'.
+> There were failing tests. See the report at: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/reports/tests/test/index.html
+
+* Try:
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 3s
+9 actionable tasks: 4 executed, 5 up-to-date

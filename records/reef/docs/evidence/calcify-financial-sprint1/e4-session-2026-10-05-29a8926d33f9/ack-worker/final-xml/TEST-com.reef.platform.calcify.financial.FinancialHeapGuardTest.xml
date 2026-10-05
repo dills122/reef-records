@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialHeapGuardTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2026-10-05T13:11:01.992Z" hostname="Dylans-MacBook-Pro.local" time="0.074">
+  <properties/>
+  <testcase name="jsonNumbersCannotBeStringsDecimalsNegativeUnsafeOrUnknown()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.002"/>
+  <testcase name="actualBlockedWaitAbortsOnDedicatedSensorFailureAndInterruptsOwnedOperation()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.033"/>
+  <testcase name="actualLifecycleFailureAtEveryPhaseCannotPublishAfterward()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.002"/>
+  <testcase name="checkedLongOverflowAndUnknownOrUnauthorizedMaximumRefuse()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.0"/>
+  <testcase name="warmedBaselineRefusalPreventsAnySendThroughActualLifecycle()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.001"/>
+  <testcase name="finiteEstimateCountsTimedAndAgedIdentitiesPlusPendingAndBothReserves()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.0"/>
+  <testcase name="staleFutureAndMissingSnapshotRefuseSticky()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.002"/>
+  <testcase name="breachSticksAfterGcAndMaximumCannotChange()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.001"/>
+  <testcase name="prematureCloseBeforeActualReplayCannotSucceed()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.003"/>
+  <testcase name="successfulActualReplayLifecyclePublishesOnlyAfterFinalGuardClose()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.002"/>
+  <testcase name="parityAndMeasurementAreBothAbsentWhenFinalStagedSampleBreaches()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.002"/>
+  <testcase name="sensorThrowUnknownMaximumAndInvalidUsedRefuseSticky()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.001"/>
+  <testcase name="actualReplayBatchFailureAfterWorkersCloseBlocksArtifactAndStopsSensor()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.001"/>
+  <testcase name="actualSmallerMaximumRecomputesLimitAndEqualityRejects()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.001"/>
+  <testcase name="finalSampleFailureLeavesNoArtifactAndExceptionalBodyClosesGuard()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.002"/>
+  <testcase name="beforeSetupBaselineRefusalPreventsAnyClientOrTopicSetup()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.0"/>
+  <testcase name="sensorRemainsIndependentWhilePhysicalCollectorStalls()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.007"/>
+  <testcase name="actualMainMissingHeapContractRejectsBeforeConfigStateDirOrBrokerSetup()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.002"/>
+  <testcase name="artifactPeakScopeExplainsFinalHealthySamplesExcludedFromExportedPeak()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.006"/>
+  <system-out><![CDATA[{"validationOnly":true,"mode":"calibrate","exportedArtifact":{"heapObservation":{"schema":"financial-heap-observation-v1","guardOutcome":"PASS_SAMPLED","actualMaxHeapBytes":1000,"admissionLimitBytes":800,"estimatedHeapBytes":172,"heapPeakBytes":50,"baselineObservations":[{"stage":"before-setup","sampledAtNano":0,"usedHeapBytes":50,"maxHeapBytes":1000}],"pollMillis":250,"maxSampleAgeNanos":5000000000,"sampled":true,"limitation":"Sudden allocation may outrun sampled protection; native/RSS memory unbounded; no OOM guarantee","reportedPeakScope":"Sampled through result assembly snapshot; final serialization and staged writes excluded"}},"finalHealthySamplePeakBytes":700}
+{"validationOnly":true,"mode":"run","exportedArtifact":{"heapObservation":{"schema":"financial-heap-observation-v1","guardOutcome":"PASS_SAMPLED","actualMaxHeapBytes":1000,"admissionLimitBytes":800,"estimatedHeapBytes":172,"heapPeakBytes":50,"baselineObservations":[{"stage":"before-setup","sampledAtNano":0,"usedHeapBytes":50,"maxHeapBytes":1000}],"pollMillis":250,"maxSampleAgeNanos":5000000000,"sampled":true,"limitation":"Sudden allocation may outrun sampled protection; native/RSS memory unbounded; no OOM guarantee","reportedPeakScope":"Sampled through result assembly snapshot; final serialization and staged writes excluded"},"resources":{"heapPeakBytes":50,"heapPeakScope":"Sampled through result assembly snapshot; final serialization and staged writes excluded"}},"finalHealthySamplePeakBytes":700}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

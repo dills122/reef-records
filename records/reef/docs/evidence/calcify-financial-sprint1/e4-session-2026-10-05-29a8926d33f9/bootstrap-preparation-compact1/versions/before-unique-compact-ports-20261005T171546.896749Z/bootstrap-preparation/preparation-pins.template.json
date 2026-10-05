@@ -1,0 +1,27 @@
+{
+  "schema": "calcify-bootstrap-preparation-pins-v1",
+  "acceptedCandidate": false,
+  "sourceRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef",
+  "sourceHead": null,
+  "sourceSha256": {
+    "scripts/dev/calcify-financial/rate-proof.mjs": null,
+    "scripts/dev/calcify-financial/bootstrap-calibration.mjs": null,
+    "scripts/dev/calcify-financial/rate-supervision.mjs": null,
+    "scripts/dev/calcify-financial/broker-proof.mjs": null,
+    "scripts/dev/calcify-financial/proof-supervisor.mjs": null,
+    "scripts/dev/calcify-financial/physical-evidence.mjs": null,
+    "scripts/dev/calcify-financial/physical-adapter.mjs": null,
+    "scripts/dev/calcify-financial/lib/external-faults.mjs": null
+  },
+  "candidateSha256": null,
+  "sourceFreezePath": null,
+  "reviewReportPath": null,
+  "freezeSha256": null,
+  "capabilitySha256": null,
+  "reviewReportSha256": null,
+  "executionManifestSha256": null,
+  "buildSha256": null,
+  "classpathSha256": null,
+  "financialSourceSelection": "All current Financial*.kt, sorted filenames, then fixed eight Node helper order",
+  "frozenSourcePaths": null
+}

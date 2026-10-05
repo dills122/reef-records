@@ -1,0 +1,14 @@
+{
+  "schema": "calcify-compact-metadata-restart-authority-v1",
+  "createdUtc": "2026-10-05T17:59:44.880591+00:00",
+  "rootAuthorization": "Explicit root metadataPermit after fullfinancial109 terminal exit0 plus fresh bounded exactcompact3 restart; no workload/build",
+  "priorTimeoutClosurePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-compact1/actual-setup-timeout-closed.json",
+  "priorTimeoutClosureSha256": "61e0ab26fec1b1dfbe72f976c7342b411607993fe579203fc0e34b101a8266c2",
+  "sourceTemplatePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/restart-before-e3/restart-watch.mjs",
+  "sourceTemplateSha256": "53554fc0e1d4390878a255f424877ef2bec30167c27ebfa4bf250af880242a31",
+  "newWatchPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/restart-metadata-after-timeout1/restart-watch.mjs",
+  "watchTimeoutMs": 1200000,
+  "wholeCodeReviewCounterCorrection": "Current whole Attempt3 cycle1; old template Attempt2cycle3 historical unchanged",
+  "baselineClasspathCapabilityReference": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/capability.json",
+  "capacityQualification": false
+}

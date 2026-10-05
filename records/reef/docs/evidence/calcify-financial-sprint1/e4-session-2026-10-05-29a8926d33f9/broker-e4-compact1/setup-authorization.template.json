@@ -1,0 +1,11 @@
+{
+  "schema": "calcify-owned-setup-authorization-v1",
+  "accepted": false,
+  "baselineClosed": false,
+  "cleanupVerified": false,
+  "project": "reef-calcify-e4-compact1-8c6f",
+  "scope": "Create/start only after actual successful baseline root acceptance and explicit setup authorization; all prior twelve exited; preserve all volumes",
+  "rootClosurePath": null,
+  "rootClosureSha256": null,
+  "successfulBaselineClosed": false
+}

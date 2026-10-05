@@ -1,0 +1,4 @@
+{"processStarted":true,"guarantee":"exactly_once_v2","commitIntervalMs":60000,"transactionTimeoutMs":120000,"stateDir":"/private/tmp/reef-financial-e3-hw6wjN"}
+{"certifiedCatchupDomains":0,"partitionCut":null}
+{"frameworkRunningMs":1358}
+{"injectedMutation":6,"key":"s/[\"B\",\"balances\",\"sellerShares\"]"}

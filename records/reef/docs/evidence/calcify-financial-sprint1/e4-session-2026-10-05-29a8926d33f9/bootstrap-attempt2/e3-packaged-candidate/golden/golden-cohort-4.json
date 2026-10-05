@@ -1,0 +1,154 @@
+{
+  "schema": "financial-e3-cohort-v1",
+  "commitIntervalMs": 60000,
+  "maxPollRecords": 128,
+  "caseId": "changed-request-same-key",
+  "policy": {
+    "kernel": "e1-gross-v1",
+    "schema": "e1-v1",
+    "policy": "gross-p1",
+    "reference": "assets-r1",
+    "rounding": "EXACT",
+    "fees": "NONE",
+    "reservation": "UNRESERVED"
+  },
+  "genesis": {
+    "A": {
+      "balances": {
+        "buyerCash": "100000000000",
+        "sellerCash": "0",
+        "buyerShares": "0",
+        "sellerShares": "10"
+      }
+    },
+    "B": {
+      "balances": {
+        "buyerCash": "100000000000",
+        "sellerCash": "0",
+        "buyerShares": "0",
+        "sellerShares": "10"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "domain": "A",
+      "mode": "EXECUTE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "A",
+        "actionId": "capture-1",
+        "kind": "CAPTURE",
+        "payload": {
+          "executionId": "exec-synthetic-1",
+          "runId": "run-é",
+          "venueSessionId": "session-1",
+          "instrumentId": "ACME",
+          "buyOrderId": "a-b",
+          "sellOrderId": "c",
+          "buyerAccount": "buyer",
+          "sellerAccount": "seller",
+          "cashAsset": "USD_NANO",
+          "securityAsset": "ACME_SHARE",
+          "quantity": "5",
+          "priceNanos": "10000000000",
+          "dueTick": "0"
+        }
+      },
+      "inputOrdinal": 0,
+      "commit": false
+    },
+    {
+      "domain": "A",
+      "mode": "EXECUTE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "A",
+        "actionId": "settle-1",
+        "kind": "SETTLE",
+        "payload": {
+          "executionId": "exec-synthetic-1",
+          "attempt": "1"
+        }
+      },
+      "inputOrdinal": 1,
+      "commit": false
+    },
+    {
+      "domain": "A",
+      "mode": "EXECUTE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "A",
+        "actionId": "settle-1",
+        "kind": "SETTLE",
+        "payload": {
+          "executionId": "exec-synthetic-1",
+          "attempt": "2"
+        }
+      },
+      "inputOrdinal": 2,
+      "commit": false
+    },
+    {
+      "domain": "B",
+      "mode": "EXECUTE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "B",
+        "actionId": "capture-1",
+        "kind": "CAPTURE",
+        "payload": {
+          "executionId": "exec-synthetic-1",
+          "runId": "run-é",
+          "venueSessionId": "session-1",
+          "instrumentId": "ACME",
+          "buyOrderId": "a-b",
+          "sellOrderId": "c",
+          "buyerAccount": "buyer",
+          "sellerAccount": "seller",
+          "cashAsset": "USD_NANO",
+          "securityAsset": "ACME_SHARE",
+          "quantity": "5",
+          "priceNanos": "10000000000",
+          "dueTick": "0"
+        }
+      },
+      "inputOrdinal": 3,
+      "commit": false
+    },
+    {
+      "domain": "B",
+      "mode": "EXECUTE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "B",
+        "actionId": "settle-1",
+        "kind": "SETTLE",
+        "payload": {
+          "executionId": "exec-synthetic-1",
+          "attempt": "1"
+        }
+      },
+      "inputOrdinal": 4,
+      "commit": false
+    },
+    {
+      "domain": "B",
+      "mode": "EXECUTE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "B",
+        "actionId": "settle-1",
+        "kind": "SETTLE",
+        "payload": {
+          "executionId": "exec-synthetic-1",
+          "attempt": "2"
+        }
+      },
+      "inputOrdinal": 5,
+      "commit": true
+    }
+  ],
+  "scope": "synthetic unreserved gross DvP; two declared domains, one shared input partition"
+}

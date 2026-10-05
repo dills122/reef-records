@@ -1,0 +1,87 @@
+--- a/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt
++++ b/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt
+@@ -77,11 +77,11 @@
+ 
+     /** Independent fixed gross-DvP reference: BigInteger economics, known-key deltas.
+      * No kernel economics, per-input full state scans or snapshots. */
+-    private class Reference(private val balances: JsonNode, private val policy: JsonNode) {
+-        val owner = emptyOwner()
++    internal class Reference(private val balances: JsonNode, private val policy: JsonNode) {
++        private val owner = FinancialCanonicalLeafOwner(emptyOwner())
+         var chain = "GENESIS"
+         var historyRecords = 0L
+-        private fun get(path: List<String>): JsonNode = path.fold(owner as JsonNode?) { v, key -> v?.get(key) } ?: nullNode
++        private fun get(path: List<String>): JsonNode = owner.get(path)
+         fun accept(record: JsonNode) {
+             val writes = linkedMapOf<List<String>, JsonNode>()
+             fun put(root: String, key: String?, value: JsonNode) { writes[if (key == null) listOf(root) else listOf(root, key)] = value }
+@@ -105,18 +105,18 @@
+                 require(kind in setOf("CAPTURE", "SETTLE"))
+                 val execution = frame("e4", "venue", "ACME", payload["executionId"].asText())
+                 val decision = frame("financial-e4", "hot", input["actionId"].asText())
+-                require(!owner["dedup"].has(decision)) { "duplicate timed economic action" }
++                require(!owner.contains("dedup", decision)) { "duplicate timed economic action" }
+                 val disposition: String
+                 if (kind == "CAPTURE") {
+-                    require(!owner["executions"].has(execution)); require(payload["quantity"].asText() == "1" && payload["priceNanos"].asText() == PRICE.toString())
++                    require(!owner.contains("executions", execution)); require(payload["quantity"].asText() == "1" && payload["priceNanos"].asText() == PRICE.toString())
+                     put("executions", execution, payload); put("obligations", execution, node(mapOf("status" to "PENDING", "cashResidual" to PRICE.toString(), "shareResidual" to "1")))
+                     put("workflows", execution, node("PENDING")); put("instructions", execution, node("READY"))
+                     put("dueQueue", execution, node(mapOf("tick" to "0", "priority" to 0, "workId" to payload["executionId"].asText())))
+                     increment("versions", execution); disposition = "CAPTURED"
+                 } else {
+-                    require(owner["obligations"][execution]["status"].asText() == "PENDING")
++                    require(get(listOf("obligations", execution))["status"].asText() == "PENDING")
+                     for ((field, delta) in listOf("buyerCash" to -PRICE, "sellerCash" to PRICE, "buyerShares" to 1L, "sellerShares" to -1L)) {
+-                        val next = BigInteger(owner["balances"][field].asText()) + BigInteger.valueOf(delta)
++                        val next = BigInteger(get(listOf("balances", field)).asText()) + BigInteger.valueOf(delta)
+                         require(next.signum() >= 0 && next <= BigInteger.valueOf(Long.MAX_VALUE)); put("balances", field, node(next.toString())); increment("versions", field)
+                     }
+                     leg("USD_NANO", "buyer", BigInteger.valueOf(-PRICE)); leg("USD_NANO", "seller", BigInteger.valueOf(PRICE)); leg("ACME_SHARE", "seller", -BigInteger.ONE); leg("ACME_SHARE", "buyer", BigInteger.ONE)
+@@ -142,13 +142,12 @@
+             require(record["sequence"].asLong() == historyRecords + 1 && record["priorSequence"].asLong() == historyRecords && record["priorChecksum"].asText() == chain)
+             val unsigned = record.deepCopy<ObjectNode>().apply { remove("checksum") }
+             require(record["checksum"].asText() == digest(unsigned)) { "history checksum" }
+-            writes.forEach { (p, value) ->
+-                val parent = if (p.size == 1) owner else owner[p[0]] as ObjectNode
+-                if (value.isNull && p.size > 1) parent.remove(p.last()) else parent.set<JsonNode>(p.last(), value.deepCopy())
+-            }
++            writes.forEach { (p, value) -> owner.write(p, value) }
+             historyRecords++; chain = record["checksum"].asText()
+         }
+-        fun businessView() = owner.deepCopy().apply {
++        fun ownerDigest() = owner.ownerDigest()
++        fun clear() = owner.clear()
++        fun businessView() = owner.materialize().apply {
+             listOf("policy", "historySeq", "deliveryCursor", "nextDelivery", "stagedInputs").forEach { remove(it) }; set<JsonNode>("dueWork", node(emptyList<String>()))
+         }
+     }
+@@ -163,7 +162,7 @@
+             val input = action(id.toLong(), "timed", kind); kernel.execute(input, detailed = false); reference.accept(kernel.lastRecord()!!); histories.add(kernel.lastRecord()!!)
+             oracle.execute(input); oracle.assertMatches(reference.businessView(), "rate reference prefix=$id $kind")
+         } }
+-        require(digest(kernel.ownerView()) == digest(reference.owner))
++        require(digest(kernel.ownerView()) == reference.ownerDigest())
+         val bad = kernel.lastRecord()!!.deepCopy<ObjectNode>(); (bad["journalGroups"] as ObjectNode).remove("ACME_SHARE")
+         val beforeLast = Reference(balances, policy); histories.dropLast(1).forEach { beforeLast.accept(it) }
+         require(runCatching { beforeLast.accept(bad) }.exceptionOrNull()?.message?.contains("journal mismatch") == true)
+@@ -827,8 +826,8 @@
+             }
+             guard.refresh("workers-closed"); checkWorkers()
+             physicalCheckpoint("workers-closed")
+-            guard.refresh("before-owner-digest"); val expectedOwner = digest(reference.owner); val expectedChain = reference.chain; val expectedHistory = reference.historyRecords
+-            guard.refresh("after-owner-digest"); reference.owner.removeAll(); System.gc(); guard.refresh("before-result-only-replay")
++            guard.refresh("before-owner-digest"); val expectedOwner = reference.ownerDigest(); val expectedChain = reference.chain; val expectedHistory = reference.historyRecords
++            guard.refresh("after-owner-digest"); reference.clear(); System.gc(); guard.refresh("before-result-only-replay")
+             var managedRecovery: JsonNode? = null
+             var managedRecoveryProcess: JsonNode? = null
+             if (bootstrap) {
+@@ -886,7 +885,7 @@
+                 } }
+                 require(consumer.position(tp) == resultCut) { "COMPLETE_COMMITTED_RESULT_CUT_TIMEOUT" }
+             }
+-            guard.refresh("result-only-replay-complete"); require(restoreInputs == ordinal.get() && expectedHistory == restored.historyRecords && expectedChain == restored.chain && expectedOwner == digest(restored.owner)) { "complete result-only restore mismatch" }
++            guard.refresh("result-only-replay-complete"); require(restoreInputs == ordinal.get() && expectedHistory == restored.historyRecords && expectedChain == restored.chain && expectedOwner == restored.ownerDigest()) { "complete result-only restore mismatch" }
+             val restoreMs = (System.nanoTime() - restoreStart) / 1_000_000
+             physicalCheckpoint("after-result-replay")
+             val parityPath = outPath.parent.resolve("parity.json")

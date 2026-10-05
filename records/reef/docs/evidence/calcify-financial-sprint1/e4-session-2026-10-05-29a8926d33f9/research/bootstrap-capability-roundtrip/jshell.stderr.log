@@ -1,0 +1,57 @@
+Exception java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/ObjectMapper
+      at do_it$Aux (#3:1)
+      at (#3:1)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.ObjectMapper
+      at URLClassLoader.findClass (URLClassLoader.java:445)
+      at DefaultLoaderDelegate$RemoteClassLoader.findClass (DefaultLoaderDelegate.java:154)
+      at ClassLoader.loadClass (ClassLoader.java:593)
+      at ClassLoader.loadClass (ClassLoader.java:526)
+      ...
+Exception java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/ObjectMapper
+      at (#4:1)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.ObjectMapper
+      at URLClassLoader.findClass (URLClassLoader.java:445)
+      at DefaultLoaderDelegate$RemoteClassLoader.findClass (DefaultLoaderDelegate.java:154)
+      at ClassLoader.loadClass (ClassLoader.java:593)
+      at ClassLoader.loadClass (ClassLoader.java:526)
+      ...
+Exception java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/ObjectMapper
+      at (#5:1)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.ObjectMapper
+      at URLClassLoader.findClass (URLClassLoader.java:445)
+      at DefaultLoaderDelegate$RemoteClassLoader.findClass (DefaultLoaderDelegate.java:154)
+      at ClassLoader.loadClass (ClassLoader.java:593)
+      at ClassLoader.loadClass (ClassLoader.java:526)
+      ...
+Exception java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/JsonNode
+      at (#6:1)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.JsonNode
+      at URLClassLoader.findClass (URLClassLoader.java:445)
+      at DefaultLoaderDelegate$RemoteClassLoader.findClass (DefaultLoaderDelegate.java:154)
+      at ClassLoader.loadClass (ClassLoader.java:593)
+      at ClassLoader.loadClass (ClassLoader.java:526)
+      ...
+Exception java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/JsonNode
+      at (#7:1)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.JsonNode
+      at URLClassLoader.findClass (URLClassLoader.java:445)
+      at DefaultLoaderDelegate$RemoteClassLoader.findClass (DefaultLoaderDelegate.java:154)
+      at ClassLoader.loadClass (ClassLoader.java:593)
+      at ClassLoader.loadClass (ClassLoader.java:526)
+      ...
+Exception java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/JsonNode
+      at (#8:1)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.JsonNode
+      at URLClassLoader.findClass (URLClassLoader.java:445)
+      at DefaultLoaderDelegate$RemoteClassLoader.findClass (DefaultLoaderDelegate.java:154)
+      at ClassLoader.loadClass (ClassLoader.java:593)
+      at ClassLoader.loadClass (ClassLoader.java:526)
+      ...
+Exception java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/JsonNode
+      at (#9:1)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.JsonNode
+      at URLClassLoader.findClass (URLClassLoader.java:445)
+      at DefaultLoaderDelegate$RemoteClassLoader.findClass (DefaultLoaderDelegate.java:154)
+      at ClassLoader.loadClass (ClassLoader.java:593)
+      at ClassLoader.loadClass (ClassLoader.java:526)
+      ...

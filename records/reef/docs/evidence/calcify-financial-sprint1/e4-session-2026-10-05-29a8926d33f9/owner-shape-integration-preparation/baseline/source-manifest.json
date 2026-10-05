@@ -1,0 +1,5 @@
+{
+  "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt",
+  "sha256": "3189cc005f9b58631a67c9cee0b1ec338b6fb075b48befbdec60f50c564b1aae",
+  "scope": "current numeric-bootstrap-fix main source; source only snapshot, no compilation"
+}

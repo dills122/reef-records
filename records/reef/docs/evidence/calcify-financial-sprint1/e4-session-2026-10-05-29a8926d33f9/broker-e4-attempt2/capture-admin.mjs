@@ -1,0 +1,14 @@
+import {execFile} from 'node:child_process';
+import {promisify} from 'node:util';
+import {readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {resolve,join} from 'node:path';
+const dir=resolve(import.meta.dirname),exec=promisify(execFile),sha=b=>createHash('sha256').update(b).digest('hex');
+const capPath=resolve(dir,'../bootstrap-attempt1/frozen/capability.json'),capRaw=await readFile(capPath),cap=JSON.parse(capRaw),registration=JSON.parse(await readFile(join(dir,'registration.json')));
+const executable='/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/java',args=['-Xms128m','-Xmx768m','-cp',cap.classpathEntries.join(':'),'com.reef.platform.calcify.financial.FinancialRateProbe','broker-scope',registration.bootstrapServers];
+const environment={PATH:'/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin',JAVA_HOME:'/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home',TMPDIR:'/private/tmp',LANG:'C',LC_ALL:'C'},clock=()=>Number(process.hrtime.bigint()/1000000n);
+const classFile=join(cap.classpathEntries[0],'com/reef/platform/calcify/financial/FinancialRateProbe.class'),classBefore=sha(await readFile(classFile));
+const r={schema:'calcify-broker-admin-readonly-receipt-v1',executable,args,environment,startedAtMs:clock(),startedUtc:new Date().toISOString(),inputSha256:sha(JSON.stringify({executable,args,environment})),classpathCapabilityReference:{path:capPath,sha256:sha(capRaw),scope:'Explicit ordered existing CP path only; no final Attempt2 build/capability authority'},classBeforeSha256:classBefore,scope:'Read-only actual AdminClient describeCluster; no topic/init/payload'};
+try{const result=await exec(executable,args,{env:environment,timeout:15000,maxBuffer:1048576,killSignal:'SIGKILL'});Object.assign(r,result,{exitCode:0});const scope=JSON.parse(result.stdout);const expected=registration.registeredResources.containers.map(c=>({id:c.brokerId,host:c.hostKafkaEndpoint.host,port:c.hostKafkaEndpoint.port}));if(scope.schema!=='financial-broker-scope-v1'||scope.metadataSource!=='actual AdminClient describeCluster'||scope.bootstrapServers!==registration.bootstrapServers||JSON.stringify(scope.brokers)!==JSON.stringify(expected)||!scope.clusterId)throw Error('actual Admin endpoint/node/cluster mismatch');await writeFile(join(dir,'broker-scope.json'),JSON.stringify(scope,null,2)+'\n',{flag:'wx'});}
+catch(error){Object.assign(r,{stdout:error.stdout??r.stdout??'',stderr:error.stderr??r.stderr??'',exitCode:error.code??1,error:error.message});throw error;}
+finally{r.completedAtMs=clock();r.completedUtc=new Date().toISOString();r.stdoutSha256=sha(r.stdout??'');r.stderrSha256=sha(r.stderr??'');r.classAfterSha256=sha(await readFile(classFile));r.sourceClassStable=r.classBeforeSha256===r.classAfterSha256;await writeFile(join(dir,'admin-readonly-receipt.json'),JSON.stringify(r,null,2)+'\n',{flag:'wx'});if(!r.sourceClassStable)throw Error('read-only Admin class drift');}

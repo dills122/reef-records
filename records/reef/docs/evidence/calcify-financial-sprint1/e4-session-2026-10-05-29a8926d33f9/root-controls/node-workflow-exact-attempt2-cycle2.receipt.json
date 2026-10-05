@@ -1,0 +1,12 @@
+{
+  "tests": 274,
+  "pass": 274,
+  "fail": 0,
+  "scope": "Exact37 workflowtestfiles Node22.22.1 with experimental-test-coverage",
+  "sourceStable": true,
+  "argvPath": "root-controls/node-workflow-exact-attempt2-cycle2.argv.json",
+  "logPath": "root-controls/node-workflow-exact-attempt2-cycle2-escalated.log",
+  "logSha256": "03a2371dd3a23e2b04dee6dafc4fb0ab8177122594f2471f9ebb294c88bbc7d7",
+  "priorFailure": "Exactsameargv sandboxlocalhostmock EPERM273/274 original preserved",
+  "actualQualification": false
+}

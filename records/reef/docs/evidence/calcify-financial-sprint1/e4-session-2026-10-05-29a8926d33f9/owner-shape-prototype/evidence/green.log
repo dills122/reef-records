@@ -1,0 +1,29 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :processResources NO-SOURCE
+
+> Task :compileKotlin FAILED
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/owner-shape-prototype/src/main/kotlin/com/reef/platform/calcify/financial/PrototypeChecks.kt:51:75 Unresolved reference 'textNode' on receiver of type 'ObjectMapper'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/owner-shape-prototype/src/main/kotlin/com/reef/platform/calcify/financial/PrototypeChecks.kt:143:68 Unresolved reference 'textNode' on receiver of type 'ObjectMapper'.
+
+[Incubating] Problems report is available at: file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/owner-shape-prototype/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileKotlin' (registered by plugin 'org.jetbrains.kotlin.jvm').
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.btapi.BuildToolsApiCompilationWork
+   > Kotlin compiler: UNRESOLVED_REFERENCE
+       Kotlin compiler error
+         Unresolved reference 'textNode' on receiver of type 'ObjectMapper'.
+         Location: /Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/owner-shape-prototype/src/main/kotlin/com/reef/platform/calcify/financial/PrototypeChecks.kt:51
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 7s
+1 actionable task: 1 executed

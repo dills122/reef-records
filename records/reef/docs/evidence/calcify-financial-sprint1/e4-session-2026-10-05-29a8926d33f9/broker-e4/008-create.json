@@ -1,0 +1,29 @@
+{
+  "name": "create",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "compose",
+    "--project-name",
+    "reef-calcify-e4-session-8c6f",
+    "-f",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/broker.compose.yml",
+    "create",
+    "--pull",
+    "never",
+    "--no-build",
+    "rp0",
+    "rp1",
+    "rp2"
+  ],
+  "startedAtMs": 59293437,
+  "startedUtc": "2026-10-05T14:00:59.031Z",
+  "stdout": "",
+  "stderr": " Network reef-calcify-e4-session-8c6f_default Creating \n Volume reef-calcify-e4-session-8c6f_rp1-data Creating \n Network reef-calcify-e4-session-8c6f_default Creating \n Volume reef-calcify-e4-session-8c6f_rp1-data Creating \n Volume reef-calcify-e4-session-8c6f_rp0-data Creating \n Volume reef-calcify-e4-session-8c6f_rp0-data Creating \n Volume reef-calcify-e4-session-8c6f_rp2-data Creating \n Volume reef-calcify-e4-session-8c6f_rp2-data Creating \n Network reef-calcify-e4-session-8c6f_default Error Error response from daemon: all predefined address pools have been fully subnetted\n network:default failed to create network reef-calcify-e4-session-8c6f_default: Error response from daemon: all predefined address pools have been fully subnetted \n Volume reef-calcify-e4-session-8c6f_rp0-data Error error during connect: Post \"http://%2FUsers%2Fdsteele%2F.docker%2Frun%2Fdocker.sock/v1.55/volumes/create\": failed to create network reef-calcify-e4-session-8c6f_default: Error response from daemon: all predefined address pools have been fully subnetted\n Volume reef-calcify-e4-session-8c6f_rp2-data Error error during connect: Post \"http://%2FUsers%2Fdsteele%2F.docker%2Frun%2Fdocker.sock/v1.55/volumes/create\": failed to create network reef-calcify-e4-session-8c6f_default: Error response from daemon: all predefined address pools have been fully subnetted\n Volume reef-calcify-e4-session-8c6f_rp1-data Error error during connect: Post \"http://%2FUsers%2Fdsteele%2F.docker%2Frun%2Fdocker.sock/v1.55/volumes/create\": failed to create network reef-calcify-e4-session-8c6f_default: Error response from daemon: all predefined address pools have been fully subnetted\nfailed to create network reef-calcify-e4-session-8c6f_default: Error response from daemon: all predefined address pools have been fully subnetted\n",
+  "exitCode": 1,
+  "error": "Command failed: /usr/local/bin/docker compose --project-name reef-calcify-e4-session-8c6f -f /Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/broker.compose.yml create --pull never --no-build rp0 rp1 rp2\n Network reef-calcify-e4-session-8c6f_default Creating \n Volume reef-calcify-e4-session-8c6f_rp1-data Creating \n Network reef-calcify-e4-session-8c6f_default Creating \n Volume reef-calcify-e4-session-8c6f_rp1-data Creating \n Volume reef-calcify-e4-session-8c6f_rp0-data Creating \n Volume reef-calcify-e4-session-8c6f_rp0-data Creating \n Volume reef-calcify-e4-session-8c6f_rp2-data Creating \n Volume reef-calcify-e4-session-8c6f_rp2-data Creating \n Network reef-calcify-e4-session-8c6f_default Error Error response from daemon: all predefined address pools have been fully subnetted\n network:default failed to create network reef-calcify-e4-session-8c6f_default: Error response from daemon: all predefined address pools have been fully subnetted \n Volume reef-calcify-e4-session-8c6f_rp0-data Error error during connect: Post \"http://%2FUsers%2Fdsteele%2F.docker%2Frun%2Fdocker.sock/v1.55/volumes/create\": failed to create network reef-calcify-e4-session-8c6f_default: Error response from daemon: all predefined address pools have been fully subnetted\n Volume reef-calcify-e4-session-8c6f_rp2-data Error error during connect: Post \"http://%2FUsers%2Fdsteele%2F.docker%2Frun%2Fdocker.sock/v1.55/volumes/create\": failed to create network reef-calcify-e4-session-8c6f_default: Error response from daemon: all predefined address pools have been fully subnetted\n Volume reef-calcify-e4-session-8c6f_rp1-data Error error during connect: Post \"http://%2FUsers%2Fdsteele%2F.docker%2Frun%2Fdocker.sock/v1.55/volumes/create\": failed to create network reef-calcify-e4-session-8c6f_default: Error response from daemon: all predefined address pools have been fully subnetted\nfailed to create network reef-calcify-e4-session-8c6f_default: Error response from daemon: all predefined address pools have been fully subnetted\n",
+  "completedAtMs": 59293528,
+  "completedUtc": "2026-10-05T14:00:59.122Z",
+  "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderrSha256": "f89673cf4117302d1da67a6cfdbe7acff12ea8a45f361bee4161a47c8b8beb73",
+  "inputSha256": "3a5ce2edb44b6dfc218d9e5d53d4be6fa9c4ebd448bfa7517ea6f2938c36ce58"
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-05T13:30:59.744Z" hostname="Dylans-MacBook-Pro.local" time="3.806">
+  <properties/>
+  <testcase name="finite raw metadata bound includes foreign rows()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.203"/>
+  <testcase name="clock drift process errors output overrun and hang refuse bounded()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="3.139"/>
+  <testcase name="UUID recreation assignment drift and missing topics refuse()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.019"/>
+  <testcase name="actual log errors future negative unsafe partition path refuse with raw()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.046"/>
+  <testcase name="RF2 broker drift missing and duplicate replicas refuse()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.008"/>
+  <testcase name="actual RF3 replies bind raw receipts and normalized identities()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.012"/>
+  <testcase name="actual pinned Node clock either verifies direct bracket or preserves explicit drift refusal()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.044"/>
+  <testcase name="actual Admin API exception retains request and failure receipt()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.032"/>
+  <testcase name="actual API sizes and foreign rows retained without ownership()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.004"/>
+  <testcase name="unsafe reversed or overlong clocks refuse()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.003"/>
+  <system-out><![CDATA[{"jvmStartedAtMs":55978161,"jvmCompletedAtMs":55978202,"sample":{"clockScope":"host-monotonic-ms","sampledAtMs":57497949,"node":"22.22.1","uv":"1.51.0","platform":"darwin"},"process":{"argv":["/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node","/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/physical-adapter.mjs","--clock"],"startedAtMs":55978165,"completedAtMs":55978201,"exitCode":0,"stdout":"{\"clockScope\":\"host-monotonic-ms\",\"sampledAtMs\":57497949,\"node\":\"22.22.1\",\"uv\":\"1.51.0\",\"platform\":\"darwin\"}\n","stderr":"","error":null}}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

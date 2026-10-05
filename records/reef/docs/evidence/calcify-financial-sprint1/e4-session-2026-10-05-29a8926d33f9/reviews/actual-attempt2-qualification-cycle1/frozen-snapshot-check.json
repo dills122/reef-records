@@ -1,0 +1,7 @@
+{
+  "pass": true,
+  "sourceSnapshots": 33,
+  "compiledFinancialSnapshots": 92,
+  "candidateSha256": "ff091a94a9b826b34010f9245719d14e13b53eb82f4fa4e721743ff31df3db8f",
+  "scope": "Actual frozen source/class snapshots verified; later working-tree edits outside this review boundary"
+}

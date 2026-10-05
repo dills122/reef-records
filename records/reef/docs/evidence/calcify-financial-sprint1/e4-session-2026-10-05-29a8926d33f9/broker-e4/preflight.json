@@ -1,0 +1,96 @@
+{
+  "schema": "calcify-e4-broker-preflight-v1",
+  "createdUtc": "2026-10-05T14:03:15.018Z",
+  "registeredResources": {
+    "project": "reef-calcify-e4-session-8c6f",
+    "containers": [
+      {
+        "id": "e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af",
+        "brokerId": 0,
+        "name": "reef-calcify-e4-session-8c6f-rp0-1",
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-session-8c6f",
+          "com.docker.compose.service": "rp0",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-session-8c6f_rp0-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e",
+        "brokerId": 1,
+        "name": "reef-calcify-e4-session-8c6f-rp1-1",
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-session-8c6f",
+          "com.docker.compose.service": "rp1",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-session-8c6f_rp1-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "841231db0a0bd1bde6b7a33976f43f7950753c9bbc91782c7675b97a384de81f",
+        "brokerId": 2,
+        "name": "reef-calcify-e4-session-8c6f-rp2-1",
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-session-8c6f",
+          "com.docker.compose.service": "rp2",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-session-8c6f_rp2-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      }
+    ]
+  },
+  "bootstrapServers": "127.0.0.1:39492,127.0.0.1:39592,127.0.0.1:39692",
+  "composePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/broker.compose.yml",
+  "composeSha256": "e2f91e4aed12abd6eab58210e89a77e460b2b7f0f9ed5a9ea4b49eb45e11e8bd",
+  "profilePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/profile.json",
+  "profileSha256": "86d60d158a1aa6e91c3589347e1b02d17fbe3a337a5847a6c0f1f73ae36d22ff",
+  "state": "HEALTHY_PROFILE_READ_BACK",
+  "guestFreeBytes": 97316110336,
+  "utc": "2026-10-05T14:06:47.146Z",
+  "clusterProperties": {
+    "log_segment_size": 8388608,
+    "compacted_log_segment_size": 8388608,
+    "transaction_coordinator_log_segment_size": 8388608
+  },
+  "clusterInfo": "CLUSTER\n=======\nredpanda.1c792c9e-2f81-49d9-891a-23069d3e144d\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\n",
+  "clusterConfigStatus": "NODE  CONFIG-VERSION  NEEDS-RESTART  INVALID  UNKNOWN\n0     5               false          []       []\n1     5               false          []       []\n2     5               false          []       []\n",
+  "transactionMaxTimeoutMs": 900000,
+  "baselineAllocatedBytes": 151179264,
+  "rawProofBytes": 1624404,
+  "bootstrapException": {
+    "startupDeadlineMs": 59659940,
+    "firstObservedRunningAtMs": 59631071,
+    "firstGuestAtMs": 59631119,
+    "firstGuestDelayMs": 48,
+    "scope": "setup-only approved initial unknown; no topics or payload workload"
+  },
+  "budgets": {
+    "abortAllocatedBytes": 9663676416,
+    "hardAllocatedBytes": 10737418240,
+    "guestFreeBytesFloor": 21474836480,
+    "rawProofBytes": 268435456,
+    "sampleIntervalMs": 5000
+  },
+  "pinnedNetworkPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/pinned-network.compose.yml",
+  "pinnedNetworkSha256": "071afbfa845441579bedcc103ea3859d90c1c70eb3aba9f20c661090058e9965",
+  "priorRigPreserved": true,
+  "watchHandoffPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/watch-handoff.json"
+}

@@ -1,0 +1,16 @@
+Compiled from "LinkedHashMap.java"
+class java.util.LinkedHashMap$Entry<K, V> extends java.util.HashMap$Node<K, V> {
+  java.util.LinkedHashMap$Entry<K, V> before;
+
+  java.util.LinkedHashMap$Entry<K, V> after;
+
+  java.util.LinkedHashMap$Entry(int, K, V, java.util.HashMap$Node<K, V>);
+    Code:
+       0: aload_0
+       1: iload_1
+       2: aload_2
+       3: aload_3
+       4: aload         4
+       6: invokespecial #1                  // Method java/util/HashMap$Node."<init>":(ILjava/lang/Object;Ljava/lang/Object;Ljava/util/HashMap$Node;)V
+       9: return
+}

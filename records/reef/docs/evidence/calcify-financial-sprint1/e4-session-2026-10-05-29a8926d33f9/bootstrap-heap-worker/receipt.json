@@ -1,0 +1,16 @@
+{
+  "scope": "broker-free validation only; no measured heap/capacity evidence",
+  "red": "missing diagnosticBootstrap compiler failure, red.log",
+  "green": {
+    "tests": "25",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0"
+  },
+  "sourceSha256": {
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt": "06e673ff1b8428a755485313e5514f43ed9635594f62fc23259248fe7a9f484d",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt": "b398ecd7e41473abe0c4e3930add848d1c37107ada6d0f0ffecf9c3d64d7ddff"
+  },
+  "command": "cd services/platform-runtime && JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home env -u JAVA_TOOL_OPTIONS -u _JAVA_OPTIONS -u JDK_JAVA_OPTIONS -u CLASSPATH ./gradlew test --tests com.reef.platform.calcify.financial.FinancialHeapGuardTest --console=plain",
+  "initialSandboxAttempt": "Before semantic RED, default wrapper attempt refused writing existing ~/.gradle wrapper lock; retried approved cache access, no dependency changes."
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-10-05T13:29:55.827Z" hostname="Dylans-MacBook-Pro.local" time="0.316">
+  <properties/>
+  <testcase name="actual pinned Node clock falls inside JVM bracket()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.125">
+    <failure message="com.reef.platform.calcify.financial.FinancialPhysicalInventory$Failure: PHYSICAL_ADMIN_REFUSED" type="com.reef.platform.calcify.financial.FinancialPhysicalInventory$Failure">com.reef.platform.calcify.financial.FinancialPhysicalInventory$Failure: PHYSICAL_ADMIN_REFUSED
+	at com.reef.platform.calcify.financial.FinancialPhysicalInventory.verifyHostClock(FinancialPhysicalInventory.kt:174)
+	at com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest.actual pinned Node clock falls inside JVM bracket(FinancialPhysicalInventoryTest.kt:97)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.IllegalStateException: PHYSICAL_CLOCK_BRACKET_DRIFT
+	... 5 more
+</failure>
+  </testcase>
+  <system-out><![CDATA[{"jvmStartedAtMs":55910722,"jvmCompletedAtMs":55910807,"sample":{"clockScope":"host-monotonic-ms","sampledAtMs":57430510,"node":"22.22.1","uv":"1.51.0","platform":"darwin"},"process":{"argv":["/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node","/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/physical-adapter.mjs","--clock"],"startedAtMs":55910731,"completedAtMs":55910763,"exitCode":0,"stdout":"{\"clockScope\":\"host-monotonic-ms\",\"sampledAtMs\":57430510,\"node\":\"22.22.1\",\"uv\":\"1.51.0\",\"platform\":\"darwin\"}\n","stderr":"","error":null}}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

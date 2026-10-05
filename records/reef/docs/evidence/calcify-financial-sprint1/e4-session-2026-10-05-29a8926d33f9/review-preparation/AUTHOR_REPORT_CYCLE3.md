@@ -1,0 +1,10 @@
+# Attempt 1 cycle 3 author report
+Final whole review cycle; source-first preliminary required before reading.
+
+Cycle2 endpoint P1 corrected generically: mandatory E4 frozen literal bootstrap endpoints + exactly three brokerID hostKafkaEndpoint pins; live raw Docker NetworkSettings.Ports checked before launch and every monitored sample. Node arguments/config/registry endpoint equality before dependencies. Kotlin independently reads actual AdminClient describeCluster cluster ID/nodes before topic creation or recovery, checks frozen config brokerScope metadata and replica endpoints. E3 selected raw plan broker now matches planned actual endpoint scope in Node and Kotlin. Legacy E3 fault supervision keeps previous scope; no E4 endpoint qualification transferred from it.
+
+Full gates retained: exact watched local resources, current candidate/fixture/build/classpath raw49 E3 prerequisite, durable bounded ACK membership, strict diagnostic heap, seven physical raw snapshots, separately launched actual Java recovery and complete committed result replay. No actual E3 or E4 payload yet. Runtime/operator pins refresh after final compilation; acceptance only after Ready. Ordinary 150k retained-trade arm refused by independently established structural lower bound; diagnostic is 1000 settled +100 pending, not capacity or upper-bound evidence.
+
+Meaningful negative controls: foreign broker argument, foreign raw E3 plan broker with recomputed outer hashes, moved Docker published port, foreign cluster ID/observed node port. Node125 controls PASS; Kotlin focused7 PASS on final source. Previous corrected whole financial96 and Node269 PASS precede endpoint changes; current whole suites requested and will be bound separately.
+
+Monitor extension startup failure retained: root precreated unique output path, prepare EEXIST caused strict owned-broker cleanup. All three stopped, no payload. Restart under supervision before correctness experiment. No readiness inferred from idle or metadata reads.

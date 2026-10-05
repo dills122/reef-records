@@ -1,0 +1,40 @@
+{
+  "schema": "financial-bootstrap-runtime-v1",
+  "policy": {
+    "kernel": "e1-gross-v1",
+    "schema": "e1-v1",
+    "policy": "gross-p1",
+    "reference": "assets-r1",
+    "rounding": "EXACT",
+    "fees": "NONE",
+    "reservation": "UNRESERVED"
+  },
+  "ownedRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt2",
+  "stateDir": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt2/store",
+  "ackJournalDir": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt2/journal",
+  "nodeExecutable": "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+  "physicalAdapterScript": "/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/physical-adapter.mjs",
+  "registeredResources": {
+    "project": "reef-calcify-e4-attempt2-8c6f",
+    "containers": [],
+    "bootstrapServers": "127.0.0.1:39792,127.0.0.1:39892,127.0.0.1:39992"
+  },
+  "localResources": [
+    {
+      "id": "store",
+      "category": "localStore",
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt2/store"
+    },
+    {
+      "id": "journal",
+      "category": "controllerJournal",
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt2/journal"
+    },
+    {
+      "id": "proof",
+      "category": "proof",
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt2/proof"
+    }
+  ],
+  "proofDir": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt2/proof"
+}

@@ -1,0 +1,88 @@
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :verifyRuntimeOrderIdentityMigration
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :processTestResources UP-TO-DATE
+> Task :verifyNoTestSourceExclusions
+
+> Task :compileTestKotlin FAILED
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:33:17 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:34:39 Unresolved reference 'size' on receiver of type 'MatchGroup?'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:34:81 Unresolved reference 'sumOf' on receiver of type 'MatchGroup?'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:34:89 Unresolved reference 'it'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:34:105 Unresolved reference 'intValue' on receiver of type 'MatchGroup?'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:35:84 Unresolved reference 'map' on receiver of type 'MatchGroup?'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:35:90 Unresolved reference 'it'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:35:106 Unresolved reference 'asText' on receiver of type 'MatchGroup?'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:36:26 Unresolved reference 'forEach' on receiver of type 'MatchGroup?'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:36:36 Cannot infer type for value parameter 'receipt'. Specify it explicitly.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:37:44 Unresolved reference 'asText' on receiver of type 'MatchGroup?'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:38:140 Unresolved reference 'asText' on receiver of type 'MatchGroup?'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:39:55 Unresolved reference 'asText' on receiver of type 'MatchGroup?'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:46:17 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:47:41 Unresolved reference 'first' on receiver of type 'MatchGroup?'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:47:49 Unresolved reference 'it'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:47:64 Unresolved reference 'asInt' on receiver of type 'MatchGroup?'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:47:78 Unresolved reference 'it'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:47:90 Unresolved reference 'asText' on receiver of type 'MatchGroup?'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:47:124 Unresolved reference 'asInt' on receiver of type 'MatchGroup?'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:48:38 Unresolved reference 'size' on receiver of type 'MatchGroup?'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:48:74 No 'get' operator method providing array access.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:48:89 Unresolved reference 'asText' on receiver of type 'MatchGroup?'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:53:25 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:53:61 Argument type mismatch: actual type is '() -> Any?', but '() -> Any?' was expected.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:53:63 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:55:25 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:55:61 Argument type mismatch: actual type is '() -> Any?', but '() -> Any?' was expected.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:55:63 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:56:53 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:61:25 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:61:61 Argument type mismatch: actual type is '() -> Any?', but '() -> Any?' was expected.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:61:63 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:62:53 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:64:25 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:64:61 Argument type mismatch: actual type is '() -> Any?', but '() -> Any?' was expected.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:64:63 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:66:25 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:66:61 Argument type mismatch: actual type is '() -> Any?', but '() -> Any?' was expected.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:66:63 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:72:40 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:72:76 Argument type mismatch: actual type is '() -> Any?', but '() -> Any?' was expected.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:72:78 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:72:161 Unresolved reference 'evidence'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:72:185 Unresolved reference 'size' on receiver of type 'MatchGroup?'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:76:29 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:76:65 Argument type mismatch: actual type is '() -> Any?', but '() -> Any?' was expected.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:76:67 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:79:37 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:79:73 Argument type mismatch: actual type is '() -> Any?', but '() -> Any?' was expected.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:79:75 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:80:28 Unresolved reference 'evidence'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:80:51 No 'get' operator method providing array access.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:80:66 Unresolved reference 'asText' on receiver of type 'MatchGroup?'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:84:57 Unresolved reference 'FinancialPhysicalInventory'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:89:53 Unresolved reference 'FinancialPhysicalInventory'.
+
+[Incubating] Problems report is available at: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileTestKotlin' (registered by plugin 'org.jetbrains.kotlin.jvm').
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.btapi.BuildToolsApiCompilationWork
+   > Kotlin compiler: UNRESOLVED_REFERENCE
+       Kotlin compiler error
+         Unresolved reference 'FinancialPhysicalInventory'.
+         Location: /Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt:33
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 944ms
+8 actionable tasks: 3 executed, 5 up-to-date

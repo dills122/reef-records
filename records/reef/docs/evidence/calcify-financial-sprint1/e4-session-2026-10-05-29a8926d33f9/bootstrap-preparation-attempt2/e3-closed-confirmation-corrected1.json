@@ -1,0 +1,16 @@
+{
+  "schema": "calcify-e3-closed-confirmation-v1",
+  "confirmedBy": "root",
+  "utc": "2026-10-05T16:27:55.115647+00:00",
+  "cliExitCode": 0,
+  "writersClosed": true,
+  "cleanupClosed": true,
+  "proofRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt2/e3-current-candidate",
+  "executionManifestSha256": "31c0322a96d8c4793711c86960279344e5a2b53416e9cda37aa7ba321fdc823d",
+  "supervisorFinishedSha256": "97a665679a425ba1d2cdedd01e6bf14eaa26388771066d016a3abab9a1b844de",
+  "wrapperStatusSha256": "747d87d87dfacff8749eeddc8f63661767fd8e6129e0a7366b7dbb4b63408de8",
+  "cleanupInspectionSha256": "403a55ce18944eddd0216585208bd7fc5412dde7a65f830d565993c755d9b854",
+  "cleanupInspectionPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt2/e3-cleanup-inspect.raw.json",
+  "scope": "Actualchangedcandidate49 RF3/EOS correctness; originalrawwriters+cleanupclosed/exited3volumespreserved; no bootstrap/rate/costupper acceptance; corrected raw Docker array extracted byteexact from preserved actualstdout receipt; priorwrongformatbinding preserved",
+  "receiptEnvelopePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt2/e3-cleanup-inspect.json"
+}

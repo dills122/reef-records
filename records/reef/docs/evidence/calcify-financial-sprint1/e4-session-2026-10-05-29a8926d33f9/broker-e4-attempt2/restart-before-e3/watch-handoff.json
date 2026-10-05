@@ -1,0 +1,8 @@
+{
+  "accepted": true,
+  "by": "root",
+  "utc": "2026-10-05T16:09:29.384397+00:00",
+  "strictResourceSamplePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt2/e3-current-candidate/resource-samples.jsonl",
+  "firstSampleSha256": "1df8f5e9fa49711f786b9634de7b085b7604d574eac7a52d7e41a1f7e4a43ae4",
+  "scope": "Actual strict supervisor firstsample observed; startupwatch handoff only, no correctness or capacity claim"
+}

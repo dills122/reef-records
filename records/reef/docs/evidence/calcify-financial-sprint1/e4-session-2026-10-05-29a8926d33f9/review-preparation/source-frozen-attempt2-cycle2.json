@@ -1,0 +1,31 @@
+{
+  "base": "29a8926d33f9e2dc7278a1676a6fa3272628de3c",
+  "attempt": 2,
+  "cycle": 2,
+  "paths": {
+    ".github/workflows/ci.yml": "de1a802e302ccb54274b89ca504db0c74e9bcda573d14f2f22ce78c38c810755",
+    "scripts/dev/calcify-financial/bootstrap-calibration.mjs": "b2aaf95fc6a72dafee15c98b2c50f18adb13e74096f0ac06d6e046c3bac12ece",
+    "scripts/dev/calcify-financial/bootstrap-calibration.test.mjs": "a0958bb84316233adff57ecc1d8bbf0490eb8009d57ad7dd03a73731b0e480e7",
+    "scripts/dev/calcify-financial/broker-proof.mjs": "5e508882336f939cb6ed2c15dfbe38c4a4fa7228266a405d7bb8a2b17ac61680",
+    "scripts/dev/calcify-financial/physical-adapter.mjs": "302747923f526e73c10207c6e173871029b118a6592feb688d2653b5306ced8d",
+    "scripts/dev/calcify-financial/physical-adapter.test.mjs": "d39a7fa466a8cd766165afd3f7880e61247bcd611c3acbaede43541dfc542bf1",
+    "scripts/dev/calcify-financial/physical-evidence.mjs": "3591634ab38f7a6d6e65663ba14d1a2a99641549e04777010ecf7e3c42672a54",
+    "scripts/dev/calcify-financial/physical-evidence.test.mjs": "52c69bc8d10e305abb64e9c575c7de3e8806d6cd6ea1edb735b9b130366ad865",
+    "scripts/dev/calcify-financial/proof-supervisor.mjs": "a5ec54bb9a1eca13e4d321872523565d0770b435836f18ec873eb95882832425",
+    "scripts/dev/calcify-financial/proof-supervisor.test.mjs": "2751f488f2c30d1f670234cb943f4b352d9bcbd0eff2afa6ce179f1292b97b3a",
+    "scripts/dev/calcify-financial/rate-proof.mjs": "c067b36d4551f279a98e15029081374c4b84a88643857a666699bfce19d9e24e",
+    "scripts/dev/calcify-financial/rate-proof.test.mjs": "8188a8203a264022e6486380151153e8cc53a4a8c4ad62ce0d6945812aca3ec4",
+    "scripts/dev/calcify-financial/rate-supervision.mjs": "f7fdcddabe4f00cacb37d386785c8dedf53529c76a50bd11081a67022510110c",
+    "scripts/dev/calcify-financial/rate-supervision.test.mjs": "89841f9c35e3f78bd3525ad17845a1a4cb6e14b274d3691e630182965ac4686e",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialAckJournal.kt": "a1600cadef1962822ea5d7bcbe32436ce5133d685f22624faa61f83a590fc933",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialAckJournalTest.kt": "85127a857336a2f42193083354e7fb2533e22f1595392b38aa117a1a9e1d6a08",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBootstrapProbeTest.kt": "d3426cec77e988e0b18be658e3b1fedc9060c03d93b5511d67e230b4492956a0",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbe.kt": "6f7d89934d01a79e54b68ced230adc2d341076573cdd7fa0ca36408b767ae778",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbeTest.kt": "33f641de586b7aef69d9bf1028a4978d070301cabaa2060508fe7ab71b490d2a",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt": "06e673ff1b8428a755485313e5514f43ed9635594f62fc23259248fe7a9f484d",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt": "b398ecd7e41473abe0c4e3930add848d1c37107ada6d0f0ffecf9c3d64d7ddff",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventory.kt": "984d21564e57472525c28ddd72668645be76dd5f1e10e7e70c968dec68256c2c",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt": "8a7045d480d55538ed162dc316e593205932eeaa987a529e3bc20bf43e34fb3c",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt": "c08719bb0f179aac6538ee09c6d9041432264ed3f8ebbe5361668a54246c724e"
+  }
+}

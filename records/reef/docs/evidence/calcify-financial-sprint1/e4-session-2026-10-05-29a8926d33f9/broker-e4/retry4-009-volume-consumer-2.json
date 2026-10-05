@@ -1,0 +1,22 @@
+{
+  "name": "volume-consumer-2",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "ps",
+    "-a",
+    "--filter",
+    "volume=reef-calcify-e4-session-8c6f_rp2-data",
+    "--format",
+    "{{json .}}"
+  ],
+  "startedAtMs": 59429067,
+  "startedUtc": "2026-10-05T14:03:14.662Z",
+  "stdout": "",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 59429088,
+  "completedUtc": "2026-10-05T14:03:14.684Z",
+  "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputSha256": "da1a91b7cda1457e4fbf183559c174a93be188ca41990e88b7a1a78efcda1747"
+}

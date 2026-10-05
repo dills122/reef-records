@@ -1,0 +1,34 @@
+TAP version 13
+# Subtest: finite bootstrap freeze remains empirical and never manufactures heap costs
+ok 1 - finite bootstrap freeze remains empirical and never manufactures heap costs
+  ---
+  duration_ms: 1.239584
+  type: 'test'
+  ...
+# Subtest: bootstrap refuses cohort expansion, changed caps, conventional arms and mismatched review
+ok 2 - bootstrap refuses cohort expansion, changed caps, conventional arms and mismatched review
+  ---
+  duration_ms: 0.975416
+  type: 'test'
+  ...
+# Subtest: executable bootstrap binds raw review, fixture, config and complete source bytes
+ok 3 - executable bootstrap binds raw review, fixture, config and complete source bytes
+  ---
+  duration_ms: 22.14725
+  type: 'test'
+  ...
+# Subtest: bootstrap measured validator binds counts recovery heap raw bytes and all physical receipts
+ok 4 - bootstrap measured validator binds counts recovery heap raw bytes and all physical receipts
+  ---
+  duration_ms: 38.274208
+  type: 'test'
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 4
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 122.036417

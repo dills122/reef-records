@@ -1,0 +1,21 @@
+{
+  "schema": "independent-current-compact-prerequisites-v1",
+  "pass": true,
+  "sourceFreezePaths": 27,
+  "candidateSourcePaths": 29,
+  "snapshotSource": 36,
+  "compiledClasses": 97,
+  "classpathEntries": 51,
+  "candidateSha256": "cd50045bb09f0faba60179a1f7ed0295c968dfb94823e8ee58e6e82fb3ca65be",
+  "buildSha256": "bf04ead83d8be2864231b95720190b109c9d31e09ed585f01791947520337b53",
+  "classpathSha256": "b05ea2145b1a90bd78f61cfc605df6ea3534030535e809f58b4895ceb7fa2c14",
+  "configSha256": "7e16459f4bbacabc7e5832bb90b038d92cf97dfd041d66a970f09bab89a009f1",
+  "fixtureSha256": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+  "financialTests": {
+    "tests": 109,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "scope": "Independent current source/snapshot/compiled/build/ordered classpath/config/fixture/XML reconciliation; actual new49 and bootstrap gates pending"
+}

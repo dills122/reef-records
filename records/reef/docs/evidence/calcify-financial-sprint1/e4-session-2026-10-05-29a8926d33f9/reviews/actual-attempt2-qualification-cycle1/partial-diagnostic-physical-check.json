@@ -1,0 +1,182 @@
+{
+  "pass": true,
+  "retainedPartialCheckpoints": 5,
+  "scope": "Historical snapshot-window/raw-identity validation; no complete seven-checkpoint or recovery qualification",
+  "checkpoints": [
+    {
+      "file": "after-pending-ec8b7427-fbeb-4528-83a0-2c5a62674108-physical.json",
+      "stage": "complete",
+      "brokerAllocatedBytes": 5276295168,
+      "localCategoryAllocatedBytes": {
+        "localStore": {
+          "status": "measured",
+          "allocatedBytes": 36864
+        },
+        "controllerJournal": {
+          "status": "measured",
+          "allocatedBytes": 3207168
+        },
+        "proof": {
+          "status": "measured",
+          "allocatedBytes": 8781824
+        }
+      },
+      "logicalReplicaBytes": 54053316,
+      "telemetry": {
+        "rss": {
+          "status": "unknown",
+          "reason": "No process-scoped raw telemetry supplied"
+        },
+        "native": {
+          "status": "unknown",
+          "reason": "No process-scoped raw telemetry supplied"
+        },
+        "cpu": {
+          "status": "unknown",
+          "reason": "No process-scoped raw telemetry supplied"
+        }
+      },
+      "rawReceipts": 7
+    },
+    {
+      "file": "after-settled-361da9e4-ef0d-4c07-9dca-c4f8297d80ab-physical.json",
+      "stage": "complete",
+      "brokerAllocatedBytes": 5277057024,
+      "localCategoryAllocatedBytes": {
+        "localStore": {
+          "status": "measured",
+          "allocatedBytes": 36864
+        },
+        "controllerJournal": {
+          "status": "measured",
+          "allocatedBytes": 3203072
+        },
+        "proof": {
+          "status": "measured",
+          "allocatedBytes": 8343552
+        }
+      },
+      "logicalReplicaBytes": 53010561,
+      "telemetry": {
+        "rss": {
+          "status": "unknown",
+          "reason": "No process-scoped raw telemetry supplied"
+        },
+        "native": {
+          "status": "unknown",
+          "reason": "No process-scoped raw telemetry supplied"
+        },
+        "cpu": {
+          "status": "unknown",
+          "reason": "No process-scoped raw telemetry supplied"
+        }
+      },
+      "rawReceipts": 7
+    },
+    {
+      "file": "before-settled-d0181152-38ed-43e5-aa78-d0196a7d82c3-physical.json",
+      "stage": "complete",
+      "brokerAllocatedBytes": 5252505600,
+      "localCategoryAllocatedBytes": {
+        "localStore": {
+          "status": "measured",
+          "allocatedBytes": 36864
+        },
+        "controllerJournal": {
+          "status": "measured",
+          "allocatedBytes": 4096
+        },
+        "proof": {
+          "status": "measured",
+          "allocatedBytes": 720896
+        }
+      },
+      "logicalReplicaBytes": 1395,
+      "telemetry": {
+        "rss": {
+          "status": "unknown",
+          "reason": "No process-scoped raw telemetry supplied"
+        },
+        "native": {
+          "status": "unknown",
+          "reason": "No process-scoped raw telemetry supplied"
+        },
+        "cpu": {
+          "status": "unknown",
+          "reason": "No process-scoped raw telemetry supplied"
+        }
+      },
+      "rawReceipts": 7
+    },
+    {
+      "file": "warmed-8f918660-95d1-4dd4-be39-1b988af8fc15-physical.json",
+      "stage": "complete",
+      "brokerAllocatedBytes": 5252505600,
+      "localCategoryAllocatedBytes": {
+        "localStore": {
+          "status": "measured",
+          "allocatedBytes": 36864
+        },
+        "controllerJournal": {
+          "status": "measured",
+          "allocatedBytes": 4096
+        },
+        "proof": {
+          "status": "measured",
+          "allocatedBytes": 286720
+        }
+      },
+      "logicalReplicaBytes": 1395,
+      "telemetry": {
+        "rss": {
+          "status": "unknown",
+          "reason": "No process-scoped raw telemetry supplied"
+        },
+        "native": {
+          "status": "unknown",
+          "reason": "No process-scoped raw telemetry supplied"
+        },
+        "cpu": {
+          "status": "unknown",
+          "reason": "No process-scoped raw telemetry supplied"
+        }
+      },
+      "rawReceipts": 7
+    },
+    {
+      "file": "workers-closed-34598513-0f52-4309-a78f-11e7caa53749-physical.json",
+      "stage": "complete",
+      "brokerAllocatedBytes": 5276344320,
+      "localCategoryAllocatedBytes": {
+        "localStore": {
+          "status": "measured",
+          "allocatedBytes": 9170944
+        },
+        "controllerJournal": {
+          "status": "measured",
+          "allocatedBytes": 3207168
+        },
+        "proof": {
+          "status": "measured",
+          "allocatedBytes": 9060352
+        }
+      },
+      "logicalReplicaBytes": 54053316,
+      "telemetry": {
+        "rss": {
+          "status": "unknown",
+          "reason": "No process-scoped raw telemetry supplied"
+        },
+        "native": {
+          "status": "unknown",
+          "reason": "No process-scoped raw telemetry supplied"
+        },
+        "cpu": {
+          "status": "unknown",
+          "reason": "No process-scoped raw telemetry supplied"
+        }
+      },
+      "rawReceipts": 7
+    }
+  ]
+}

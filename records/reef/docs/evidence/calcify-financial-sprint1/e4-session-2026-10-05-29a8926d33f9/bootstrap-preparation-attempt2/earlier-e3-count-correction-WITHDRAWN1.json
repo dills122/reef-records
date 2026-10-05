@@ -1,0 +1,15 @@
+{
+  "schema": "calcify-e3-sample-count-correction-v1",
+  "utc": "2026-10-05T16:30:15.920703+00:00",
+  "originalMeasurementPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation/e3-current-measurement.json",
+  "originalMeasurementSha256": "274a93dbab8ad74d39b9ef25d74d541bd1dc8324521e230de5128cd88706b302",
+  "rawJournalSha256": "a0fcf47b9bc108ba83c92acb5bcaa85b4d664c29b8e29b2dffe8c733d79b8480",
+  "originalRetainedUnchanged": true,
+  "correctedCounts": {
+    "journalRows": 238,
+    "sampleObservations": 233,
+    "nonmeasurementLifecycleRows": 5,
+    "fullyMeasuredAll3BrokerObservations": 228
+  },
+  "reason": "Earlier resourceSamples countedalljournalrows incl4fault-phase grants and1closure; earlierfullyMeasuredBrokerSamples countincluded3stoppedtargetreservation observations. Rawallocationmax/min/timing remain unchanged; newscopedcounts must be cited separately."
+}

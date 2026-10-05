@@ -1,0 +1,8 @@
+{
+  "source": "scripts/dev/calcify-financial/bootstrap-calibration.mjs",
+  "sha256": "b2aaf95fc6a72dafee15c98b2c50f18adb13e74096f0ac06d6e046c3bac12ece",
+  "sourceScope": "verifyCurrentE3Evidence finite raw-file and plan/result gates, direct frozen source read",
+  "operatorObservation": "Root reports monitor resource-samples.jsonl 14493749 bytes at122rows, proof still running; worker did not inspect or transform active file",
+  "originalProofClosed": false,
+  "transformationExecuted": false
+}

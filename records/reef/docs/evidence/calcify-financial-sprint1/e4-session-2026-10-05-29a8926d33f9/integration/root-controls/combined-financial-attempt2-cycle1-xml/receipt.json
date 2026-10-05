@@ -1,0 +1,62 @@
+{
+  "tests": 98,
+  "failures": 0,
+  "errors": 0,
+  "suites": [
+    {
+      "path": "TEST-com.reef.platform.calcify.financial.FinancialBrokerProbeTest.xml",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "path": "TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "path": "TEST-com.reef.platform.calcify.financial.FinancialBootstrapProbeTest.xml",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "path": "TEST-com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest.xml",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "path": "TEST-com.reef.platform.calcify.financial.FinancialPartitionCutTest.xml",
+      "tests": 13,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "path": "TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "path": "TEST-com.reef.platform.calcify.financial.FinancialHeapGuardTest.xml",
+      "tests": 25,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "path": "TEST-com.reef.platform.calcify.financial.FinancialAckJournalTest.xml",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "path": "TEST-com.reef.platform.calcify.financial.FinancialCommittedCutTest.xml",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0
+    }
+  ],
+  "sourceStable": true
+}

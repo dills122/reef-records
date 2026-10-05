@@ -1,0 +1,328 @@
+TAP version 13
+# Subtest: finite bootstrap freeze remains empirical and never manufactures heap costs
+ok 1 - finite bootstrap freeze remains empirical and never manufactures heap costs
+  ---
+  duration_ms: 1.384542
+  type: 'test'
+  ...
+# Subtest: bootstrap refuses cohort expansion, changed caps, conventional arms and mismatched review
+ok 2 - bootstrap refuses cohort expansion, changed caps, conventional arms and mismatched review
+  ---
+  duration_ms: 1.031166
+  type: 'test'
+  ...
+# Subtest: executable bootstrap binds raw review, fixture, config and complete source bytes
+ok 3 - executable bootstrap binds raw review, fixture, config and complete source bytes
+  ---
+  duration_ms: 125.083834
+  type: 'test'
+  ...
+# Subtest: bootstrap measured validator binds counts recovery heap raw bytes and all physical receipts
+ok 4 - bootstrap measured validator binds counts recovery heap raw bytes and all physical receipts
+  ---
+  duration_ms: 28.512875
+  type: 'test'
+  ...
+# Subtest: bootstrap result refuses scope inflation identity drift incomplete counts and recovered fake timing
+ok 5 - bootstrap result refuses scope inflation identity drift incomplete counts and recovered fake timing
+  ---
+  duration_ms: 20.17425
+  type: 'test'
+  ...
+# Subtest: primary and recovery sampled heap both require actual pin strict80percent and finite observations
+ok 6 - primary and recovery sampled heap both require actual pin strict80percent and finite observations
+  ---
+  duration_ms: 18.167083
+  type: 'test'
+  ...
+# Subtest: retained encoded recovery and collector raw evidence reject byte hash ownership and checkpoint mutations
+ok 7 - retained encoded recovery and collector raw evidence reject byte hash ownership and checkpoint mutations
+  ---
+  duration_ms: 32.412083
+  type: 'test'
+  ...
+# Subtest: valid recomputed hashes cannot authorize fake JVM command or inconsistent physical measurements
+ok 8 - valid recomputed hashes cannot authorize fake JVM command or inconsistent physical measurements
+  ---
+  duration_ms: 14.749375
+  type: 'test'
+  ...
+# Subtest: capacity lock has fixed shared name in platform temporary directory
+ok 9 - capacity lock has fixed shared name in platform temporary directory
+  ---
+  duration_ms: 0.773334
+  type: 'test'
+  ...
+# Subtest: deadline CAPTURE decision may precede paired SETTLE durable admission
+ok 10 - deadline CAPTURE decision may precede paired SETTLE durable admission
+  ---
+  duration_ms: 1.09225
+  type: 'test'
+  ...
+# Subtest: stage counts reject decided beyond offered and settled beyond admission
+ok 11 - stage counts reject decided beyond offered and settled beyond admission
+  ---
+  duration_ms: 1.171375
+  type: 'test'
+  ...
+# Subtest: preparation stops until E3 correctness and real calibration plus indexed/bounded adapter exist
+ok 12 - preparation stops until E3 correctness and real calibration plus indexed/bounded adapter exist
+  ---
+  duration_ms: 0.196083
+  type: 'test'
+  ...
+# Subtest: source/fixture mismatches and fabricated zero-byte calibration cannot freeze runnable policy
+ok 13 - source/fixture mismatches and fabricated zero-byte calibration cannot freeze runnable policy
+  ---
+  duration_ms: 0.165167
+  type: 'test'
+  ...
+# Subtest: aged estimate retains proposed 1m identities; over-budget case explicitly shrinks diagnostic only
+ok 14 - aged estimate retains proposed 1m identities; over-budget case explicitly shrinks diagnostic only
+  ---
+  duration_ms: 0.072833
+  type: 'test'
+  ...
+# Subtest: disk space gate and exact prefunding bound all declared timed plus pending work
+ok 15 - disk space gate and exact prefunding bound all declared timed plus pending work
+  ---
+  duration_ms: 0.147459
+  type: 'test'
+  ...
+# Subtest: measurement separates stage rates; complete parity and all telemetry permit diagnostic pass
+ok 16 - measurement separates stage rates; complete parity and all telemetry permit diagnostic pass
+  ---
+  duration_ms: 0.1725
+  type: 'test'
+  ...
+# Subtest: producer duration miss fails even when output is exact after drain
+ok 17 - producer duration miss fails even when output is exact after drain
+  ---
+  duration_ms: 0.391
+  type: 'test'
+  ...
+# Subtest: late drain cannot be counted as deadline output or settled financial throughput
+ok 18 - late drain cannot be counted as deadline output or settled financial throughput
+  ---
+  duration_ms: 0.575542
+  type: 'test'
+  ...
+# Subtest: cumulative offered cannot roll back between deadline and final cuts
+ok 19 - cumulative offered cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.263375
+  type: 'test'
+  ...
+# Subtest: cumulative admitted cannot roll back between deadline and final cuts
+ok 20 - cumulative admitted cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.145917
+  type: 'test'
+  ...
+# Subtest: cumulative decided cannot roll back between deadline and final cuts
+ok 21 - cumulative decided cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.131833
+  type: 'test'
+  ...
+# Subtest: cumulative settled cannot roll back between deadline and final cuts
+ok 22 - cumulative settled cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.135833
+  type: 'test'
+  ...
+# Subtest: deadline offers cannot exceed frozen expected workload even if final agrees
+ok 23 - deadline offers cannot exceed frozen expected workload even if final agrees
+  ---
+  duration_ms: 0.150875
+  type: 'test'
+  ...
+# Subtest: each cut rejects admission ordering and settlement accounting violations
+ok 24 - each cut rejects admission ordering and settlement accounting violations
+  ---
+  duration_ms: 0.81375
+  type: 'test'
+  ...
+# Subtest: pending may decrease during drain; only missed deadline settlement fails
+ok 25 - pending may decrease during drain; only missed deadline settlement fails
+  ---
+  duration_ms: 0.468708
+  type: 'test'
+  ...
+# Subtest: missing accounting or resource metrics are explicit limited attempt; count inconsistency fails
+ok 26 - missing accounting or resource metrics are explicit limited attempt; count inconsistency fails
+  ---
+  duration_ms: 0.355
+  type: 'test'
+  ...
+# Subtest: lag growth, over-budget disk and unsupported latency clock cannot silently pass
+ok 27 - lag growth, over-budget disk and unsupported latency clock cannot silently pass
+  ---
+  duration_ms: 0.152792
+  type: 'test'
+  ...
+# Subtest: highest stable measured arm creates fresh/aged 300s pair with same business workload
+ok 28 - highest stable measured arm creates fresh/aged 300s pair with same business workload
+  ---
+  duration_ms: 0.097708
+  type: 'test'
+  ...
+# Subtest: missing restore cost, partial monitoring and observer slowdown remain limited preflight
+ok 29 - missing restore cost, partial monitoring and observer slowdown remain limited preflight
+  ---
+  duration_ms: 0.154958
+  type: 'test'
+  ...
+# Subtest: load and calibration entrypoints refuse before filesystem or adapter work without authorization
+ok 30 - load and calibration entrypoints refuse before filesystem or adapter work without authorization
+  ---
+  duration_ms: 0.361417
+  type: 'test'
+  ...
+# Subtest: calibration overrides cannot undercut measured physical byte budget or use invalid numbers
+ok 31 - calibration overrides cannot undercut measured physical byte budget or use invalid numbers
+  ---
+  duration_ms: 0.4635
+  type: 'test'
+  ...
+# Subtest: valid byte override preserves conservative floor and may increase budget only
+ok 32 - valid byte override preserves conservative floor and may increase budget only
+  ---
+  duration_ms: 0.493416
+  type: 'test'
+  ...
+# Subtest: derived per-trade budget must remain safe integer before policy freezes
+ok 33 - derived per-trade budget must remain safe integer before policy freezes
+  ---
+  duration_ms: 0.094
+  type: 'test'
+  ...
+# Subtest: invalid telemetry produces null derived metrics instead of non-finite values
+ok 34 - invalid telemetry produces null derived metrics instead of non-finite values
+  ---
+  duration_ms: 0.882333
+  type: 'test'
+  ...
+# Subtest: invalid duration and zero trades cannot publish non-finite derived metrics
+ok 35 - invalid duration and zero trades cannot publish non-finite derived metrics
+  ---
+  duration_ms: 0.664875
+  type: 'test'
+  ...
+# Subtest: M3H missing conservative heap evidence blocks legacy real calibration
+ok 36 - M3H missing conservative heap evidence blocks legacy real calibration
+  ---
+  duration_ms: 0.073792
+  type: 'test'
+  ...
+# Subtest: M3H oversized retained heap cannot freeze despite fitting physical budget
+ok 37 - M3H oversized retained heap cannot freeze despite fitting physical budget
+  ---
+  duration_ms: 0.072584
+  type: 'test'
+  ...
+# Subtest: M3H finite checked formula includes timed+aged identities, pending and both reserves
+ok 38 - M3H finite checked formula includes timed+aged identities, pending and both reserves
+  ---
+  duration_ms: 0.1895
+  type: 'test'
+  ...
+# Subtest: M3H numeric controls reject missing, string, negative, NaN, infinity, unsafe and fractional values
+ok 39 - M3H numeric controls reject missing, string, negative, NaN, infinity, unsafe and fractional values
+  ---
+  duration_ms: 1.733
+  type: 'test'
+  ...
+# Subtest: M3H child lower max recomputes limit, higher unauthorized max cannot raise request cap
+ok 40 - M3H child lower max recomputes limit, higher unauthorized max cannot raise request cap
+  ---
+  duration_ms: 0.184625
+  type: 'test'
+  ...
+# Subtest: M3H equality, unsupported counts and multiplication/addition overflow refuse
+ok 41 - M3H equality, unsupported counts and multiplication/addition overflow refuse
+  ---
+  duration_ms: 0.221709
+  type: 'test'
+  ...
+# Subtest: M3H fresh and aged overrun block without silently shrinking original heap workload
+ok 42 - M3H fresh and aged overrun block without silently shrinking original heap workload
+  ---
+  duration_ms: 0.169625
+  type: 'test'
+  ...
+# Subtest: M3H candidate/config/fixture/build/VM/review mismatch or legacy averages refuse
+ok 43 - M3H candidate/config/fixture/build/VM/review mismatch or legacy averages refuse
+  ---
+  duration_ms: 0.508292
+  type: 'test'
+  ...
+# Subtest: M3H executable raw bound/capability/review/fixture bytes hash and exact scope verified before adapter read
+ok 44 - M3H executable raw bound/capability/review/fixture bytes hash and exact scope verified before adapter read
+  ---
+  duration_ms: 21.342333
+  type: 'test'
+  ...
+# Subtest: M3H synthetic evidence and unpinned launcher cannot authorize executable load
+ok 45 - M3H synthetic evidence and unpinned launcher cannot authorize executable load
+  ---
+  duration_ms: 4.09025
+  type: 'test'
+  ...
+# Subtest: M3H runtime guard failure or missing lifecycle observation cannot publish diagnostic success
+ok 46 - M3H runtime guard failure or missing lifecycle observation cannot publish diagnostic success
+  ---
+  duration_ms: 0.807708
+  type: 'test'
+  ...
+# Subtest: M3H capability timeout escalates TERM to KILL with bounded output and retained process error
+ok 47 - M3H capability timeout escalates TERM to KILL with bounded output and retained process error
+  ---
+  duration_ms: 16.989333
+  type: 'test'
+  ...
+# Subtest: M3H symlink outside policy ownership and valid hash with changed raw identity refuse
+ok 48 - M3H symlink outside policy ownership and valid hash with changed raw identity refuse
+  ---
+  duration_ms: 3.249083
+  type: 'test'
+  ...
+# Subtest: rate supervision binds exact command, output, allocation categories and finite timeout
+ok 49 - rate supervision binds exact command, output, allocation categories and finite timeout
+  ---
+  duration_ms: 2.908084
+  type: 'test'
+  ...
+# Subtest: actual financial runtime directories and full registry must match supervised resource identity
+ok 50 - actual financial runtime directories and full registry must match supervised resource identity
+  ---
+  duration_ms: 1.188583
+  type: 'test'
+  ...
+# Subtest: supervisor evidence mismatch refuses before dependency setup; failed supervision still closes
+ok 51 - supervisor evidence mismatch refuses before dependency setup; failed supervision still closes
+  ---
+  duration_ms: 6.391083
+  type: 'test'
+  ...
+# Subtest: actual supervised child receives frozen environment through owned launch
+ok 52 - actual supervised child receives frozen environment through owned launch
+  ---
+  duration_ms: 287.813834
+  type: 'test'
+  ...
+# Subtest: all actual financial modes reject raw unregistered config before dependency setup
+ok 53 - all actual financial modes reject raw unregistered config before dependency setup
+  ---
+  duration_ms: 4.293042
+  type: 'test'
+  ...
+1..53
+# tests 53
+# suites 0
+# pass 53
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 361.354375

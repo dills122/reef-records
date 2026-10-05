@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-05T18:30:18.048874+00:00",
+  "argv": [
+    "/bin/ps",
+    "-axo",
+    "pid=,ppid=,pgid=,stat=,comm="
+  ],
+  "code": 0,
+  "stderr": "",
+  "selectedPidAndGroupLines": [],
+  "parentPid": 82795,
+  "childPid": 83139,
+  "ownedGroupId": 82795,
+  "selection": "PID in82795,83139 or PGID82795; unrelated process rows omitted; complete snapshot stdout hashed only",
+  "completeStdoutSha256": "533b32a7796efd420e2a18bfa9e707dba95e36cff7a4fe27fb7f905622689bb5",
+  "observedOwnedProcessesClosed": true
+}

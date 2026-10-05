@@ -1,0 +1,21 @@
+{
+  "seq": 4,
+  "name": "start",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "start",
+    "b3c49cb7544c501fa3e8a764571cdc705ca04d10c82ffcb0cbf400032ebaf33c",
+    "8bcac17db63ad1d6767999fa5eb1e1454d2534cdd27584432e51af5a20f4921d",
+    "a7fad66030855c9ae5e9b942c13c128e7151db37356b18b64d43e730efbf7b0f"
+  ],
+  "startedAtMs": 72257285,
+  "startedUtc": "2026-10-05T17:37:02.914Z",
+  "stdout": "b3c49cb7544c501fa3e8a764571cdc705ca04d10c82ffcb0cbf400032ebaf33c\n8bcac17db63ad1d6767999fa5eb1e1454d2534cdd27584432e51af5a20f4921d\na7fad66030855c9ae5e9b942c13c128e7151db37356b18b64d43e730efbf7b0f\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 72257544,
+  "completedUtc": "2026-10-05T17:37:03.174Z",
+  "stdoutSha256": "7a30420e1aa49137dc1a490e0b1b78369805f30f12e365933ac6cf12c5db14fb",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputSha256": "179d5c1611b76bcda1d461bc7fb6bc1657e019f929f57c7957173a1db0d503b4"
+}

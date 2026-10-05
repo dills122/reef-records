@@ -1,0 +1,20 @@
+{
+  "pass": true,
+  "checks": [
+    {
+      "arm": "attempt2-cycle2",
+      "sourceAndCompiledSnapshotUnchanged": true,
+      "sourceCount": 33,
+      "compiledCount": 92
+    },
+    {
+      "arm": "attempt3-cycle1",
+      "sourceAndCompiledSnapshotUnchanged": true,
+      "sourceCount": 36,
+      "compiledCount": 97
+    }
+  ],
+  "jarsUnchanged": true,
+  "javaPath": "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/java",
+  "javaSha256": "8a0ccbcc399a0eac0a89ea47307af07db2f4c686974b846cef56a175caed99df"
+}

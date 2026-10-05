@@ -1,0 +1,17 @@
+{
+  "scope": "Fresh setup only; no E3/economic workload until new source review Ready",
+  "oldRegistryPaths": [
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/registration.json"
+  ],
+  "originalsPreserved": true,
+  "project": "reef-calcify-e4-attempt2-8c6f",
+  "ports": [
+    39792,
+    39892,
+    39992
+  ],
+  "proposedSubnet": "10.254.248.0/24",
+  "subnetAuthority": "Docker compose network create overlap refusal then exact own network IPAM readback; no broad host sweep",
+  "stateAndJournal": "Fresh empty owned directories created",
+  "proofDirAbsent": true
+}

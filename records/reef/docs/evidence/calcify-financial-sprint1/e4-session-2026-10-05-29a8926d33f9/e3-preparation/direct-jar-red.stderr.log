@@ -1,0 +1,14 @@
+node:internal/fs/promises:952
+  const result = await PromisePrototypeThen(
+                 ^
+
+Error: ENOTDIR: not a directory, scandir '/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/HikariCP-7.1.0.jar/com/reef/platform/calcify/financial'
+    at async readdir (node:internal/fs/promises:952:18)
+    at async file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/broker-proof.mjs:255:27 {
+  errno: -20,
+  code: 'ENOTDIR',
+  syscall: 'scandir',
+  path: '/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/HikariCP-7.1.0.jar/com/reef/platform/calcify/financial'
+}
+
+Node.js v22.22.1

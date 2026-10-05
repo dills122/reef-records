@@ -1,0 +1,45 @@
+TAP version 13
+# Subtest: subnet exact, supernet and contained overlap refused; adjacent accepted
+ok 1 - subnet exact, supernet and contained overlap refused; adjacent accepted
+  ---
+  duration_ms: 1.148958
+  type: 'test'
+  ...
+# Subtest: raw cleanup array exact identities and all stopped; envelope is rejected
+ok 2 - raw cleanup array exact identities and all stopped; envelope is rejected
+  ---
+  duration_ms: 1.141167
+  type: 'test'
+  ...
+# Subtest: Docker built-in host and none have no bridge IPAM; arbitrary missing IPAM still fails
+not ok 3 - Docker built-in host and none have no bridge IPAM; arbitrary missing IPAM still fails
+  ---
+  duration_ms: 0.177209
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/operator-safety.test.mjs:5:1'
+  failureType: 'testCodeFailure'
+  error: 'network IPAM unknown'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    assertSubnetUnused (file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/operator-safety.mjs:3:152)
+    TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/operator-safety.test.mjs:5:99)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..3
+# tests 3
+# suites 0
+# pass 2
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 48.121417

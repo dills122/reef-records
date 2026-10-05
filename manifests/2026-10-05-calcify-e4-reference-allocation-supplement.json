@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/dills122/reef",
+  "source_commit": "2b78445d614f0ff6b8917a65a78fdf8cc737d2d2",
+  "selection_policy": "Append-only distinct isolated allocation supplement: exact25 original files including initial failure and unchanged proposal; local-only Reef source checkpoint, product/index/HEAD preserved; allocation evidence only, no broker workload/capacity/upper proof",
+  "files": [
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/Profile.java",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/Profile.java",
+      "source_blob_oid": "2c0175f66e9f68bf48e29fbf3d442e2053d6cfb0",
+      "bytes": 4640,
+      "sha256": "c8b54f87141a3a7e051f5edbe935572eaeee91ebd4173194d7d9b38edc539b4d",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/SHA256SUMS",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/SHA256SUMS",
+      "source_blob_oid": "917f791c070e63ec26ee4fb301bed332d97a5cee",
+      "bytes": 2183,
+      "sha256": "bd6a10f083cbefbfd01f7f63a32cf6bf577bdd4e3b82b3130f977c1b90c3042a",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/argv.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/argv.json",
+      "source_blob_oid": "bdcd2ca119b815629988fcda9f410a1c47a24b9f",
+      "bytes": 6036,
+      "sha256": "e9fe2e5c64be0257084b29312ba4499a7d66425d633f5652305be8a36da2bcb5",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/classmaps.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/classmaps.json",
+      "source_blob_oid": "e7a15d70110565420379a42a4cf861b8c93f9240",
+      "bytes": 54240,
+      "sha256": "88025c11a20fba44fc23bdd22243646e6f5b3c80f35fba6efb6ec9113558bb9b",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/close.py",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/close.py",
+      "source_blob_oid": "e15cddaaeda30e5093169f1070d51152fa75c279",
+      "bytes": 2712,
+      "sha256": "bb3520cbaed593319f139bb51edecc23cfc483530ef8ddfbba6aa542e07bbaa5",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/cp.txt",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/cp.txt",
+      "source_blob_oid": "1ccf5aa10f6f4a52470b7196626398030e7978dc",
+      "bytes": 5780,
+      "sha256": "573b22a0bcb80d64aa014cea466ee7e6d7be3fe429a07c4f7f45d2e7dc5e991c",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/exit.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/exit.json",
+      "source_blob_oid": "424a3e5c0dcca1120e32b86ffe981b066db93967",
+      "bytes": 52,
+      "sha256": "ff403a000d04901ba5650e661aa2d1fce9a20b018b836ec780d38647157c0428",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/extract.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/extract.mjs",
+      "source_blob_oid": "dbda161f9e3fcaca38e0ba4fb084bc4688a466f1",
+      "bytes": 988,
+      "sha256": "6d964531173a0e7c7296727aed3b29607f06919c3290ae9bf056e0240ceff2fa",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/extract.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/extract.stderr.log",
+      "source_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/extract.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/extract.stdout.log",
+      "source_blob_oid": "bf613edf6c7286d3ac6a7a685179da42838487a7",
+      "bytes": 668,
+      "sha256": "03118808c48f15b99842c9eb299346d9a0d264ca22f0ccda78ffab68bedc7054",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/failed1-Profile.java",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/failed1-Profile.java",
+      "source_blob_oid": "02cdf5183ba785002d5e95c94fea13e827186555",
+      "bytes": 4203,
+      "sha256": "7e4ef8dde9aae7b0c40c434bbbb298ee892ebe82acc644d1ab7a937b25f2682a",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/failed1-exit.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/failed1-exit.json",
+      "source_blob_oid": "742f4cd9df87477d6b37476b513ff77655182280",
+      "bytes": 51,
+      "sha256": "81f7166b10d30ca6374496ba84b66c97183e6e900257a3e7a62721afeaeb01fa",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/failed1-profile.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/failed1-profile.stderr.log",
+      "source_blob_oid": "c32f574fb124790339a96ee4cbb5a7f555dd6dae",
+      "bytes": 238,
+      "sha256": "027b7ccf814da094ef747c263e20318c24e73f9abc8ec30626df3ec7de04e0a3",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/failed1-profile.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/failed1-profile.stdout.log",
+      "source_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/history.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/history.json",
+      "source_blob_oid": "eba1d0df55b8c4cdd6f19e3767099f3d0b2684fc",
+      "bytes": 5817782,
+      "sha256": "45b6d99ced630ac6ced5c2eb8646168bbbc7544107cd0db961576a933432ae4a",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/inputs.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/inputs.json",
+      "source_blob_oid": "7e9ceaec57e5b8bb28bb9d5df15fd1fc65c87e4c",
+      "bytes": 418,
+      "sha256": "8892775e593a2a1e2f58057236428d73fd3d177d69ab5254884ed496da7ee2aa",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/jar-sha256.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/jar-sha256.json",
+      "source_blob_oid": "f694432c19770e5f897e4b095f98dcd593af99b6",
+      "bytes": 10823,
+      "sha256": "166b469f49c1288a0582028485b8cd5f0fd82e480800219559f3d1f85eb10203",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/pair-validation.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/pair-validation.json",
+      "source_blob_oid": "7c2e3dd73301baaff67a61c7d8b5c2dba5212702",
+      "bytes": 762,
+      "sha256": "795e65caddf6f0143a4166bc0944e9e29a8c98054eaa81dc76b332fead21b0f2",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/post-snapshot-validation.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/post-snapshot-validation.json",
+      "source_blob_oid": "7f8d46d619552ee3a54dd633cbfea33358e22be9",
+      "bytes": 522,
+      "sha256": "2604d7503300b8353d284f8ae54210bae55f329443be8f232228afa82f9d86c1",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/pre-snapshot-validation.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/pre-snapshot-validation.json",
+      "source_blob_oid": "e6515a2c6ae626e32da5d3d9d8b9bc3d42258ea0",
+      "bytes": 1080,
+      "sha256": "2fd1c70bed0bbeaa2be1f312065096de88fb19ca32448f63d19ea9e7d3d66291",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/prepare.py",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/prepare.py",
+      "source_blob_oid": "530016f4b234aed5436e708601009a32d7889728",
+      "bytes": 1332,
+      "sha256": "ace01999c5a8f6cf69ea05b578742ff1ea9fe3a02ae19ccda454dc0eeec7fbd9",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/profile-result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/profile-result.json",
+      "source_blob_oid": "8d4d69cfab286956b8fdb34ed115667a21d52e78",
+      "bytes": 7031,
+      "sha256": "1accc2d192bf346f0cc968f7d619c506cacbffc1fa2821ec1364814a9fbafeb4",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/profile.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/profile.stderr.log",
+      "source_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/profile.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/profile.stdout.log",
+      "source_blob_oid": "af5f374b2d4fd7c6cc36828830ef1e9dd8a8eb39",
+      "bytes": 5955,
+      "sha256": "5d6deec86f6c6eef1473ca0ac0ac41114ee0185cb061aad031614e6d5090a487",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/source-provenance.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/source-provenance.json",
+      "source_blob_oid": "410426dd31b3566852e28627d3ba5f1540a8285e",
+      "bytes": 9431,
+      "sha256": "f3ee2e731610ce088db54d8325d7a2624a19ed7efe370673feebc41974a46d33",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/summary.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/summary.json",
+      "source_blob_oid": "5698c4c30bbebdef76ca660c6872ccec84de89f8",
+      "bytes": 2973,
+      "sha256": "1a80a3c1bf6ddde6bbcff38d629052c2e2bbbeae7f18032ba5c83e2e595c9438",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/supplement-manifest-proposal.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/supplement-manifest-proposal.json",
+      "source_blob_oid": "18a4f1942f431696bd458f61e6a1022f3da1de5f",
+      "bytes": 3954,
+      "sha256": "cefe7cf2852a054e919b769d39d36ef42dfc451dc09a3368fd28f3af30ddf78d",
+      "reason": "Exact closed isolated reference allocation profile original/failure or source provenance/checksum companion; no capacity or upper-bound claim"
+    }
+  ]
+}

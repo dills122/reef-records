@@ -1,0 +1,12 @@
+{
+  "schema": "financial-retained-owner-shape-proposal-v1",
+  "planSha256": "614f1f382ee5087ab7ae3743dbb90f2121e96e6f3bb98952160f671e7d592bb0",
+  "selectedSlice": "Independent immutable canonical leaf String storage in test-only E4 Reference",
+  "implementationPerformed": false,
+  "workloadPerformed": false,
+  "measuredRateConclusion": false,
+  "ordinary150000ArmFeasible": false,
+  "diagnosticEvidenceInspected": false,
+  "requiresNewCandidateModelAndProof": true,
+  "ordinaryRawModeDistinction": "RAW_CAP encoded file calibration-only; ACK default cap ordinary256MiB"
+}

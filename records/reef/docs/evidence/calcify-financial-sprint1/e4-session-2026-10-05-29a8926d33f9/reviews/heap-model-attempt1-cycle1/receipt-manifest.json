@@ -1,0 +1,10 @@
+{
+  "jackson-bytecode.txt": "be36e9d5501280f507bf25acc9c5d735493072e62e62c277c0b108ecb3bccafe",
+  "jdk-entry-fields.txt": "77f0bd1bd457ce8d6af431c785213712c9d3dc15bb4dc6a52e5b3b26f439c140",
+  "jdk21-flags.txt": "f89324bead0ae0f61b27b0a1ec6ff1b8340fc98482f58e78e50c68d89a6ff2ad",
+  "kafka-processor-bytecode.txt": "bffee28f0c002441798a3b8e35c4606ccd8242e2debcf5dbb95083ae494de7df",
+  "preliminary.md": "1931e902ab5399b4d73190b2d481eb7eb17b94a47a096d7c3b9d74ad70815224",
+  "report.md": "d2da03af5b34fb3de9a6bc65ae3c6caf8663ee1b4106f66aba404335dba5df97",
+  "source-runtime-sha256.txt": "6426f16f69fe186de7ecaeb93e34b5b81629728aa22e396c2d3342aaf05396aa",
+  "verdict.json": "eb457aa024404effa8f8fbba4f9e3aede8a185f2c803f2f1b54619d87ebefc00"
+}

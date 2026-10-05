@@ -1,0 +1,172 @@
+{
+  "schema": "calcify-owned-compact-setup-timeout-closed-v1",
+  "createdUtc": "2026-10-05T17:58:37.964466+00:00",
+  "scope": "Setup-only exact RF3 resources created/started/readiness profile checked, then bounded timeout before metadata permit; no workload/candidate qualification",
+  "watcherSession": 50119,
+  "watcherExitCode": 1,
+  "failureReason": "setup watch20-minute timeout while explicit compiler metadata permit remained held",
+  "allOwnedExited": true,
+  "restartCountZero": true,
+  "volumesPreserved": true,
+  "priorTwelvePreserved": true,
+  "adminJavaExecuted": false,
+  "economicWorkloadExecuted": false,
+  "configBound": false,
+  "registeredResources": {
+    "project": "reef-calcify-e4-compact1-8c6f",
+    "containers": [
+      {
+        "id": "b3c49cb7544c501fa3e8a764571cdc705ca04d10c82ffcb0cbf400032ebaf33c",
+        "brokerId": 0,
+        "name": "reef-calcify-e4-compact1-8c6f-rp0-1",
+        "hostKafkaEndpoint": {
+          "host": "127.0.0.1",
+          "port": 40392,
+          "containerPort": "40392/tcp"
+        },
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-compact1-8c6f",
+          "com.docker.compose.service": "rp0",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-compact1-8c6f_rp0-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "8bcac17db63ad1d6767999fa5eb1e1454d2534cdd27584432e51af5a20f4921d",
+        "brokerId": 1,
+        "name": "reef-calcify-e4-compact1-8c6f-rp1-1",
+        "hostKafkaEndpoint": {
+          "host": "127.0.0.1",
+          "port": 40492,
+          "containerPort": "40492/tcp"
+        },
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-compact1-8c6f",
+          "com.docker.compose.service": "rp1",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-compact1-8c6f_rp1-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "a7fad66030855c9ae5e9b942c13c128e7151db37356b18b64d43e730efbf7b0f",
+        "brokerId": 2,
+        "name": "reef-calcify-e4-compact1-8c6f-rp2-1",
+        "hostKafkaEndpoint": {
+          "host": "127.0.0.1",
+          "port": 40592,
+          "containerPort": "40592/tcp"
+        },
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-compact1-8c6f",
+          "com.docker.compose.service": "rp2",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-compact1-8c6f_rp2-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      }
+    ],
+    "bootstrapServers": "127.0.0.1:40392,127.0.0.1:40492,127.0.0.1:40592"
+  },
+  "preflightPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/preflight.json",
+  "preflightSha256": "cf804a779edfa0722631330e0e2f05a472537e004bd11798368ee7649df2f5a3",
+  "lastDatedSample": {
+    "schema": "calcify-e4-bootstrap-sample-v1",
+    "sampledAtMs": 73457733,
+    "completedAtMs": 73457939,
+    "clockScope": "host-monotonic-ms",
+    "utc": "2026-10-05T17:57:03.560Z",
+    "runningIds": [
+      "b3c49cb7544c501fa3e8a764571cdc705ca04d10c82ffcb0cbf400032ebaf33c",
+      "8bcac17db63ad1d6767999fa5eb1e1454d2534cdd27584432e51af5a20f4921d",
+      "a7fad66030855c9ae5e9b942c13c128e7151db37356b18b64d43e730efbf7b0f"
+    ],
+    "allocations": [
+      {
+        "id": "8bcac17db63ad1d6767999fa5eb1e1454d2534cdd27584432e51af5a20f4921d",
+        "allocatedBytes": 25399296
+      },
+      {
+        "id": "b3c49cb7544c501fa3e8a764571cdc705ca04d10c82ffcb0cbf400032ebaf33c",
+        "allocatedBytes": 25468928
+      },
+      {
+        "id": "a7fad66030855c9ae5e9b942c13c128e7151db37356b18b64d43e730efbf7b0f",
+        "allocatedBytes": 25317376
+      }
+    ],
+    "allocatedBytes": 76185600,
+    "partialMeasuredAllocatedBytes": 76185600,
+    "guestFreeBytes": 97146093568,
+    "rawProofBytes": 105872660,
+    "unmeasuredIds": [],
+    "startupUnknown": false,
+    "scope": "Approved setup-only startup exception<=30s; actual running du/df; not strict runtime supervisor or capacity evidence",
+    "healthyIds": [
+      "b3c49cb7544c501fa3e8a764571cdc705ca04d10c82ffcb0cbf400032ebaf33c",
+      "8bcac17db63ad1d6767999fa5eb1e1454d2534cdd27584432e51af5a20f4921d",
+      "a7fad66030855c9ae5e9b942c13c128e7151db37356b18b64d43e730efbf7b0f"
+    ]
+  },
+  "sampleCount": 1026,
+  "observedAllocatedPeakBytes": 151179264,
+  "peakScope": "Maximum among recorded setup samples only; no continuous peak or capacity authority",
+  "finalStoppedAllocatedBytes": null,
+  "stoppedAllocationScope": "unknown; no execution in stopped containers",
+  "failurePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/bootstrap-failure.json",
+  "failureSha256": "105df60e6a5bd95024512ec21222331d518246a2f816c6defef1ff5ab2d1c9e0",
+  "orchestratorFailurePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/bootstrap-orchestrator-failure.json",
+  "orchestratorFailureSha256": "105df60e6a5bd95024512ec21222331d518246a2f816c6defef1ff5ab2d1c9e0",
+  "cleanupInspectionPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/post-timeout-inspect.raw.json",
+  "cleanupInspectionSha256": "cb755ef8c72a0f907e27189172743629cb4a8e03d07edf262eadcb795cabcce1",
+  "cleanupCommandReceiptPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/post-timeout-inspect.command.json",
+  "cleanupCommandReceiptSha256": "61c44904471bce8c49db2b6ac45e8a4de244f4456e82a3e512ecb6fb0617e95f",
+  "missingActualPaths": [
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/broker-scope.json",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/config.json",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/capability.json",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/store",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/journal",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/proof"
+  ],
+  "rawTreeBytesBeforeClosure": 106059985,
+  "largestFiles": [
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/bootstrap-receipts.jsonl",
+      "sizeBytes": 51590878
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/bootstrap-samples.jsonl",
+      "sizeBytes": 1224916
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/receipts.jsonl",
+      "sizeBytes": 535730
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/bootstrap-00001-old-before.json",
+      "sizeBytes": 421737
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/bootstrap-00075-old-after.json",
+      "sizeBytes": 421737
+    }
+  ],
+  "over50MiB": []
+}

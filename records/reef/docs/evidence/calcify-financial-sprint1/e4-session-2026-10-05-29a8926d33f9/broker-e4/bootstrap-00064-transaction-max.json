@@ -1,0 +1,24 @@
+{
+  "seq": 64,
+  "name": "transaction-max",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "exec",
+    "e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af",
+    "rpk",
+    "cluster",
+    "config",
+    "get",
+    "transaction_max_timeout_ms"
+  ],
+  "startedAtMs": 59641355,
+  "startedUtc": "2026-10-05T14:06:46.934Z",
+  "stdout": "900000\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 59641419,
+  "completedUtc": "2026-10-05T14:06:46.998Z",
+  "stdoutSha256": "a5c233fc8876fdfc1122e15d13fc8430f9bbcbd60ac2f8ae15012d6d2715e71a",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputSha256": "28971adc40fd9baa762176a5076d855a8edefa374f562a2bd7565d49c0bbdece"
+}

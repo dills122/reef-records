@@ -1,0 +1,19 @@
+{
+  "executable": "/usr/local/bin/docker",
+  "argv": [
+    "exec",
+    "e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af",
+    "df",
+    "-Pk",
+    "/var/lib/redpanda/data"
+  ],
+  "startedAtMs": 61452416,
+  "clockScope": "host-monotonic-ms",
+  "inputSha256": "805ceda8a97e5b2eae2c9671ed0bdc48d1fc2469d38e40f1cfd19b0200d95a20",
+  "stdout": "Filesystem     1024-blocks     Used Available Capacity Mounted on\n/dev/vda1        156558308 53463692  95109112      36% /var/lib/redpanda/data\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 61452463,
+  "stdoutSha256": "90f4a00af20039edf7168a57e12bbd65021848f5f79781d813900e5f93ebc29b",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

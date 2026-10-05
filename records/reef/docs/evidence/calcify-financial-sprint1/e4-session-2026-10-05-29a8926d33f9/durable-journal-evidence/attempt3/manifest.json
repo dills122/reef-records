@@ -1,0 +1,69 @@
+{
+  "schema": "calcify-closed-journal-snapshot-v1",
+  "scope": "Exact synthetic successful Attempt3 bounded diagnostic durable ACK bytes; failure preserved, no success/capacity claim",
+  "confirmedBy": "root explicit closed-successful-attempt3 authorization plus independently rechecked closure/raw cleanup",
+  "journalWritersClosed": true,
+  "allSessionWritersClosed": false,
+  "sourceRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/journal",
+  "snapshotRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/durable-journal-evidence/attempt3",
+  "runId": "financial-s1-e4-bootstrap-attempt3",
+  "topicUuid": "YjGXHkb4RXm-JR0SAQcqwA",
+  "scopeSha256": "949adc15575d6c8f8b1107c628eb1626327eccf27aee53094fa5a7ac5f39d4bc",
+  "buildSha256": "a9bf0d4330ac290647046026453d1e8d024398cc4af5eb2d46f11cb7da5de74e",
+  "classpathSha256": "5c0a4e8722f050d96723db9a4a11cedad113ad305ce58afcb1418cfad463dc34",
+  "candidateConfigSha256": "4a396265d14af57c557a00ecca19b6f4a4d7c3721005c346e7f4216e6cbec8f9",
+  "cleanupInspectionPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/bootstrap-cleanup-inspect.raw.json",
+  "cleanupInspectionSha256": "dfa0668bdc4aa280881ff2feddc351659345443bc2cb97773b629804a59df87a",
+  "sourceCompanions": {
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/config.json": {
+      "sizeBytes": 4635,
+      "sha256": "4a396265d14af57c557a00ecca19b6f4a4d7c3721005c346e7f4216e6cbec8f9"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/capability.json": {
+      "sizeBytes": 7243,
+      "sha256": "e99c7a9690bdbacfba18246cc3fff4dfbc226ae42c9ab4c094ea93fb9c0da7a4"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/bootstrap-cleanup-inspect.raw.json": {
+      "sizeBytes": 101261,
+      "sha256": "dfa0668bdc4aa280881ff2feddc351659345443bc2cb97773b629804a59df87a"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/bootstrap-successful-closure.json": {
+      "sizeBytes": 1654,
+      "sha256": "2774bf7d2d2caa6f6efc3e0070cebeb6bd8ca6d12df90b07fd38fbfba5b9f459"
+    }
+  },
+  "excludedOperationalLock": "writer.lock; zero-byte operational advisory lock, no durable acceptance facts",
+  "originalBytesUnchanged": true,
+  "files": [
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/journal/members.bin",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/durable-journal-evidence/attempt3/members.bin",
+      "sizeBytes": 2336633,
+      "sha256": "e4a67ee37d2c5147bb1d61b88195616aeaaa5fdeb2463b584322501d81aa3071"
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/journal/ordinal-index.bin",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/durable-journal-evidence/attempt3/ordinal-index.bin",
+      "sizeBytes": 33600,
+      "sha256": "5fede3bf16b25041709a4ee87061c07a3ad1c1f0762fba93b90bdc3129e07370"
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/journal/publication-witness.bin",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/durable-journal-evidence/attempt3/publication-witness.bin",
+      "sizeBytes": 4477,
+      "sha256": "8f698dcb09a6655d0a1e61811b37c7a6d8216413f8e9d189b1e061466237e09a"
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/journal/publications.bin",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/durable-journal-evidence/attempt3/publications.bin",
+      "sizeBytes": 4477,
+      "sha256": "8f698dcb09a6655d0a1e61811b37c7a6d8216413f8e9d189b1e061466237e09a"
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/journal/scope.json",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/durable-journal-evidence/attempt3/scope.json",
+      "sizeBytes": 290,
+      "sha256": "70ffbe2be1c2401a195228070b4888ddd5a1bd9373d1680379c7a1dcb63c7c80"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "compiledClass": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateReferenceTest.class",
+  "sha256": "367dfc5ef1f4abdb26880571aa43daac96e90d7fc1b16ff872fb84face131922",
+  "plusMethodReferences": [
+    {
+      "constantPoolIndex": 872,
+      "owner": "kotlin/collections/CollectionsKt",
+      "name": "plus",
+      "descriptor": "(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;"
+    }
+  ],
+  "scope": "Constant-pool method references in compiled frozen FinancialRateReferenceTest; no JVM execution"
+}

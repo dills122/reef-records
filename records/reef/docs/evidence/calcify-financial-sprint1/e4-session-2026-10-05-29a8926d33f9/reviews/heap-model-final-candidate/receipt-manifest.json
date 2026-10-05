@@ -1,0 +1,25 @@
+{
+  "schema": "financial-retained-lower-rebind-artifacts-v1",
+  "files": {
+    "BaseJsonNode.javap.txt": "8afa1b0e8aa4ba23edd59eb4c60e88ad01868a35547ad6f6d03e8d34ba6ddacf",
+    "ContainerNode.javap.txt": "74cf0202ca6ac3acad1b4af7f14be4458773dc472b2506a6f1346e29c5e25341",
+    "FinancialBrokerProbe$FinancialProcessor.javap.txt": "2781bf9df6f0824011bac6ca3da4e0133240af0e76fb61a16b4529d826a37b81",
+    "FinancialBrokerProbe.kt.source-lines.txt": "761f598fe75c4582ddfab618355bdef32c97eb595f01b5fbb3a5db71e741b50e",
+    "FinancialKernel$Changes.javap.txt": "bcf301a15341c98ca7c58fc1196bc535c6a274b5ba199cfa99028d09b08b4dc8",
+    "FinancialKernel.javap.txt": "9b897906615a82bb285bd5ab1607c8366157e0c8db74af333f1e1e74b43a530b",
+    "FinancialKernel.kt.source-lines.txt": "62b8691fb1182ac3939f4608586a8cd9457f93875934a7074f69e4283967c940",
+    "FinancialRateProbe$Reference.javap.txt": "a4153cba4682b9d6482c09820e63b13d98c94ebdb951a521ad67e5fefc952189",
+    "FinancialRateProbe.javap.txt": "674c2738eb2b54afab3252fedd2752bcd80a182935b9421f8822d0e09f156bc7",
+    "FinancialRateProbe.kt.source-lines.txt": "3043369e6a86935caed6029c7e99774154548778b528e5424292c3aaff7d1158",
+    "HashMap$Node.javap.txt": "09ee2f40cfa4ca713c3bd3f23a069caa5993f2b1f3a2c1638ad27f84f95c54fd",
+    "JsonNode.javap.txt": "36cf4fd3170344e3472cc58e9bbd827af4000d37f088f8387e231e06fbfd749f",
+    "LinkedHashMap$Entry.javap.txt": "c00a4ee5f1c210fe0afefc0915ee2e08a5d6fb62ad435ea59698c8bfb9ce7eb9",
+    "ObjectNode.javap.txt": "b54e8849926f7607b17a6c9cf5130f3526f610b5c78350d50da0c8aeed65355b",
+    "candidate-source.json": "8c52a7612f7167fbb2468dd25f9c1270305d83218579fd235765dc65e83a1f3b",
+    "identity.json": "5a10947221bfbdd7b3839f48a26eed3ca471f6f1d8de17de328a71fe70e7c79c",
+    "jdk21-flags.txt": "d9123015825c7336fd92532eeec0ee52eb9fb3c18d97dadf5f3a9b3f8e1c062f",
+    "rebind.py": "6737cac73002ccb0d620ace2762de81ebec96e0dfbabee1206e8b19cd1125c5b",
+    "refusal.json": "af93d2a13160239ed937dd097d239cd47730a79657418c62559bf0f863b2f516",
+    "report.md": "91f6a716d42c30bc9d069deae4ecd500d57017138d958346bfc1c0114940ac94"
+  }
+}

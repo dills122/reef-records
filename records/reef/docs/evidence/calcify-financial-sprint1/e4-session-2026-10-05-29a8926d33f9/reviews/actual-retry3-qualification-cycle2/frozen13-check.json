@@ -1,0 +1,87 @@
+{
+  "schema": "independent-frozen13-bytecheck-v1",
+  "files": [
+    {
+      "name": "bootstrap-candidate.json",
+      "sizeBytes": 4502,
+      "sha256": "8ec7aa8629c7b100cd863b117d4223afcdb42cc3ac3291c47237fd77ea37e13f",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/bootstrap-candidate.json"
+    },
+    {
+      "name": "bootstrap-review.json",
+      "sizeBytes": 974,
+      "sha256": "bc9bbbf868e39bd43c13339d4074bf69833fa38de35701b6ddedf25c652f0797",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/bootstrap-review.json"
+    },
+    {
+      "name": "bootstrap-attempt3-review-report.md",
+      "sizeBytes": 10078,
+      "sha256": "41595550917e9a407cc66db169d0201073e1f5898aa6b30741bb0ea37db95d84",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/bootstrap-attempt3-review-report.md"
+    },
+    {
+      "name": "capability.json",
+      "sizeBytes": 7243,
+      "sha256": "e99c7a9690bdbacfba18246cc3fff4dfbc226ae42c9ab4c094ea93fb9c0da7a4",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/capability.json"
+    },
+    {
+      "name": "bootstrap-fixtures.json",
+      "sizeBytes": 90325,
+      "sha256": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/bootstrap-fixtures.json"
+    },
+    {
+      "name": "e3-current-proof-manifest.json",
+      "sizeBytes": 242193,
+      "sha256": "5dd306a0ebd18c326ab2840f3199df252b272c029db773ebd8318d3e3085206a",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/e3-current-proof-manifest.json"
+    },
+    {
+      "name": "e3-current-correctness.json",
+      "sizeBytes": 2113,
+      "sha256": "d3a7edd70c375bd4aba8886c35097467e319b2892fb27d797c3420f925201f6f",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/e3-current-correctness.json"
+    },
+    {
+      "name": "e3-current-outer-closure.json",
+      "sizeBytes": 1235,
+      "sha256": "61ffb0fb1ff6bb4d10871869d34bafd10c025c42f5c402cabe069b766d02ba21",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/e3-current-outer-closure.json"
+    },
+    {
+      "name": "e3-closed-confirmation.json",
+      "sizeBytes": 1232,
+      "sha256": "20fda7a744449f12f41afa666bf66ad93018632c4650b26929dd00f26d62851a",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/e3-closed-confirmation.json"
+    },
+    {
+      "name": "e3-lossless-package-verification.json",
+      "sizeBytes": 1070,
+      "sha256": "d890ad092392956ba7f1031a6121c05682f9e4b2c0d74432ff7853e2b375e356",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/e3-lossless-package-verification.json"
+    },
+    {
+      "name": "bootstrap-request.json",
+      "sizeBytes": 12824,
+      "sha256": "fd9776a5c382a7fcca97c5ecb7b97da125f384dd3d74458e840b9f9241eaec08",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/bootstrap-request.json"
+    },
+    {
+      "name": "bootstrap-supervisor.json",
+      "sizeBytes": 10814,
+      "sha256": "79376d5855e7456f12bbef633aaa84534d9f2e9f8a578639c0309c3b2767659e",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/bootstrap-supervisor.json"
+    },
+    {
+      "name": "bootstrap-adapter.json",
+      "sizeBytes": 6682,
+      "sha256": "7ddc0d5dd1c06e45b59329644f5aeb7994744aeadb8b1af53751775cf2080cbc",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/bootstrap-adapter.json"
+    }
+  ],
+  "bootstrapSha256": "12ff77ea79e806bcc18abf76fc676cf9ccf4f54c8c0b7b2afe082503bf127514",
+  "combinedRawUpperBytes": 80881512,
+  "actualBootstrapExecuted": false,
+  "pass": true
+}

@@ -1,0 +1,13 @@
+{
+  "pid": 46907,
+  "argv": [
+    "node",
+    ".planning/calcify-e4-session-2026-10-05/broker-e4/bootstrap-watch.mjs"
+  ],
+  "agentSessionId": 12150,
+  "sessionScope": "worker agent; root uses targeted PID/artifact checks",
+  "deadlineMs": 60829940,
+  "clockScope": "host-monotonic-ms",
+  "handoffPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/watch-handoff.json",
+  "latestConfirmedSampleUtc": "2026-10-05T14:12:09.224Z"
+}

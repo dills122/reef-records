@@ -1,0 +1,23 @@
+{
+  "schema": "calcify-e3-verified-sample-count-comparison-v1",
+  "utc": "2026-10-05T16:31:00.553509+00:00",
+  "actualCounts": {
+    "bootstrap-attempt1": {
+      "journalRows": 238,
+      "sampleObservations": 233,
+      "nonmeasurementLifecycleRows": 5,
+      "fullyMeasuredAll3BrokerObservations": 228,
+      "rawJournalSha256": "a0fcf47b9bc108ba83c92acb5bcaa85b4d664c29b8e29b2dffe8c733d79b8480"
+    },
+    "bootstrap-attempt2": {
+      "journalRows": 233,
+      "sampleObservations": 228,
+      "nonmeasurementLifecycleRows": 5,
+      "fullyMeasuredAll3BrokerObservations": 225,
+      "rawJournalSha256": "2229ebaf6faf183432c7a00cfdb4d7b46a02e7e7c42f4c44540da27e309081a7"
+    }
+  },
+  "earlierMeasurementCorrect": true,
+  "withdrawnProposal": "earlier-e3-count-correction-WITHDRAWN1.json",
+  "withdrawalReason": "Root incorrectly presumed originalproof shared revisedproof rowcounts; direct bothoriginalrawjournals show previous233observations/228fullyobserved was correct. Prior report+rawtree untouched; falsecorrectionproposal retained with explicit withdrawal. Newproof228observations/225fullyobserved needs its ownscope; no causalratecomparison."
+}

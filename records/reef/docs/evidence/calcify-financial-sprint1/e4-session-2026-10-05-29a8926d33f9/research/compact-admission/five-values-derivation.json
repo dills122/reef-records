@@ -1,0 +1,39 @@
+{
+  "conditionalOnly": true,
+  "currentCandidateRefusalIssued": false,
+  "scope": "closed hot gross DvP timed IDs0..149999 quantity1 price10000000 attempt1 exact7key policy; independent object/array joinToString results; no String dedup",
+  "rows": [
+    {
+      "name": "execution",
+      "minimumCanonicalAscii": "{\"buyOrderId\":\"buyer-timed-0\",\"buyerAccount\":\"buyer\",\"cashAsset\":\"USD_NANO\",\"dueTick\":\"0\",\"executionId\":\"timed-0\",\"instrumentId\":\"ACME\",\"priceNanos\":\"10000000\",\"quantity\":\"1\",\"runId\":\"e4\",\"securityAsset\":\"ACME_SHARE\",\"sellOrderId\":\"seller-timed-0\",\"sellerAccount\":\"seller\",\"venueSessionId\":\"venue\"}",
+      "minimumBytes": 298,
+      "stringAndArrayLowerBytes": 344
+    },
+    {
+      "name": "obligation",
+      "minimumCanonicalAscii": "{\"cashResidual\":\"0\",\"shareResidual\":\"0\",\"status\":\"SETTLED\"}",
+      "minimumBytes": 59,
+      "stringAndArrayLowerBytes": 104
+    },
+    {
+      "name": "CAPTUREdedup",
+      "minimumCanonicalAscii": "{\"context\":{\"domain\":\"hot\",\"fees\":\"NONE\",\"kernel\":\"e1-gross-v1\",\"logicalTick\":\"0\",\"policy\":\"gross-p1\",\"reference\":\"assets-r1\",\"reservation\":\"UNRESERVED\",\"rounding\":\"EXACT\",\"schema\":\"e1-v1\"},\"digest\":\"0000000000000000000000000000000000000000000000000000000000000000\",\"disposition\":\"CAPTURED\"}",
+      "minimumBytes": 291,
+      "stringAndArrayLowerBytes": 336
+    },
+    {
+      "name": "SETTLEdedup",
+      "minimumCanonicalAscii": "{\"context\":{\"domain\":\"hot\",\"fees\":\"NONE\",\"kernel\":\"e1-gross-v1\",\"logicalTick\":\"0\",\"policy\":\"gross-p1\",\"reference\":\"assets-r1\",\"reservation\":\"UNRESERVED\",\"rounding\":\"EXACT\",\"schema\":\"e1-v1\"},\"digest\":\"0000000000000000000000000000000000000000000000000000000000000000\",\"disposition\":\"SETTLED\"}",
+      "minimumBytes": 290,
+      "stringAndArrayLowerBytes": 336
+    },
+    {
+      "name": "effects",
+      "minimumCanonicalAscii": "[{\"account\":\"buyer\",\"amount\":\"-10000000\",\"asset\":\"USD_NANO\"},{\"account\":\"seller\",\"amount\":\"10000000\",\"asset\":\"USD_NANO\"},{\"account\":\"seller\",\"amount\":\"-1\",\"asset\":\"ACME_SHARE\"},{\"account\":\"buyer\",\"amount\":\"1\",\"asset\":\"ACME_SHARE\"}]",
+      "minimumBytes": 231,
+      "stringAndArrayLowerBytes": 272
+    }
+  ],
+  "sumStringAndArrayLowerBytes": 1392,
+  "bothRetainedLowerBytesAt150000": 664800000
+}

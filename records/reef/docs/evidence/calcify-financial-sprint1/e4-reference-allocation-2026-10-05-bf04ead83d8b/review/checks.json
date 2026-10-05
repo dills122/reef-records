@@ -1,0 +1,124 @@
+{
+  "supplementHashes": {
+    "Profile.java": true,
+    "argv.json": true,
+    "classmaps.json": true,
+    "close.py": true,
+    "cp.txt": true,
+    "exit.json": true,
+    "extract.mjs": true,
+    "extract.stderr.log": true,
+    "extract.stdout.log": true,
+    "failed1-Profile.java": true,
+    "failed1-exit.json": true,
+    "failed1-profile.stderr.log": true,
+    "failed1-profile.stdout.log": true,
+    "history.json": true,
+    "inputs.json": true,
+    "jar-sha256.json": true,
+    "pair-validation.json": true,
+    "post-snapshot-validation.json": true,
+    "pre-snapshot-validation.json": true,
+    "prepare.py": true,
+    "profile-result.json": true,
+    "profile.stderr.log": true,
+    "profile.stdout.log": true,
+    "summary.json": true
+  },
+  "snapshots": [
+    {
+      "arm": "attempt2-cycle2",
+      "sourceCount": 33,
+      "compiledCount": 92,
+      "mapExactAndNoSimpleNameCollisions": true,
+      "allHashesAndSizesMatch": true
+    },
+    {
+      "arm": "attempt3-cycle1",
+      "sourceCount": 36,
+      "compiledCount": 97,
+      "mapExactAndNoSimpleNameCollisions": true,
+      "allHashesAndSizesMatch": true
+    }
+  ],
+  "classpathJarsVerified": 48,
+  "javaBinaryHashMatches": true,
+  "independentHistoryReconstruction": {
+    "count": 2101,
+    "chain": "27d2d99c876edc961958133c9a9317a2baa7b12c78efd8a589af92c2b20ab5ae",
+    "ownerSha256": "96da35188859915ebb3061691644e114021e8eb033e2f8865065fae4b7901db1",
+    "completeBeforeDeltasMatch": true,
+    "recordChecksumsMatch": true,
+    "reviewCheckCorrection": "First reviewer check omitted empty-owner initial fields; failed before-delta assertion. Corrected initializer to frozen source/raw verifier initial owner; no target changes."
+  },
+  "readOnlyRawPairAndExactExtractedHistory": {
+    "schema": "independent-actual-raw-owner-history-pair-v1",
+    "pass": true,
+    "sourceEnvelopes": 2100,
+    "historyRecords": 2101,
+    "settled": 1000,
+    "pending": 100,
+    "openingCashNanos": "11000000000",
+    "openingShares": "1100",
+    "ownerSha256": "96da35188859915ebb3061691644e114021e8eb033e2f8865065fae4b7901db1",
+    "historyChecksum": "27d2d99c876edc961958133c9a9317a2baa7b12c78efd8a589af92c2b20ab5ae",
+    "baselineJournal": {
+      "members": 2100,
+      "publicationBatches": 9,
+      "lastOffset": 2099
+    },
+    "compactJournal": {
+      "members": 2100,
+      "publicationBatches": 9,
+      "lastOffset": 2099
+    },
+    "normalization": "none; exact deep equality of all source envelopes, full committed history records, opening resources, policy and reconstructed owner"
+  },
+  "measurementsAndSummaryVerified": true,
+  "stats": {
+    "ordinary-reference": {
+      "acceptMedianBytes": 2244541400,
+      "digestMedianBytes": 66991464,
+      "totalMedianBytes": 2311532864,
+      "totalAllBytes": [
+        2311572672,
+        2311572672,
+        2311532864,
+        2311505472,
+        2311505472
+      ]
+    },
+    "canonical-leaf-reference": {
+      "acceptMedianBytes": 2370007696,
+      "digestMedianBytes": 7431576,
+      "totalMedianBytes": 2377439272,
+      "totalAllBytes": [
+        2377439272,
+        2377439272,
+        2377439272,
+        2377417888,
+        2377415272
+      ]
+    }
+  },
+  "arithmetic": {
+    "acceptMedianBytes": {
+      "compactMinusOrdinaryBytes": 125466296,
+      "compactToOrdinaryRatio": 1.055898410249862,
+      "percentChange": 5.5898410249862085
+    },
+    "digestMedianBytes": {
+      "compactMinusOrdinaryBytes": -59559888,
+      "compactToOrdinaryRatio": 0.11093317799413967,
+      "percentChange": -88.90668220058603
+    },
+    "totalMedianBytes": {
+      "compactMinusOrdinaryBytes": 65906408,
+      "compactToOrdinaryRatio": 1.0285119926376267,
+      "percentChange": 2.8511992637626715
+    }
+  },
+  "scope": "pure reference allocation research; no qualification, capacity, heap bound or causal inference",
+  "pass": true,
+  "checkedUtc": "2026-10-05T19:15:16.929407+00:00"
+}

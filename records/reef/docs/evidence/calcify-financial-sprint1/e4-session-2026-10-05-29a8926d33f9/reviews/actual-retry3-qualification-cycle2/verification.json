@@ -1,0 +1,96 @@
+{
+  "schema": "independent-actual-retry3-final-verification-v1",
+  "reviewInstance": "2of3",
+  "sourceAttempt": 2,
+  "sourceCycle": 2,
+  "operatorRun": "bootstrap-attempt3",
+  "verdict": "Ready",
+  "scope": "Actual successful1000settled+100pending/0aged empirical diagnostic",
+  "candidateSha256": "709dc3a7fe61df4acffae4fa3e16b260989ac4197f7826578fcfdee1bea514bc",
+  "bootstrapSha256": "12ff77ea79e806bcc18abf76fc676cf9ccf4f54c8c0b7b2afe082503bf127514",
+  "sourceFrozen24Stable": true,
+  "capacityQualification": false,
+  "heapConservativeBound": false,
+  "files": [
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/reviews/actual-retry3-qualification-cycle2/bootstrap-resources.json",
+      "sizeBytes": 789,
+      "sha256": "74a07ad1d6049a75fb06e5796cb57ce64ca32f1eb33441ff5515a11edb748a2b"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/reviews/actual-retry3-qualification-cycle2/claims-interim.md",
+      "sizeBytes": 2219,
+      "sha256": "5b9fb1bcc04800c16fb7eaf007e4bc138135563dc3acd3d8b078715fcf2f0bb5"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/reviews/actual-retry3-qualification-cycle2/closure-check.json",
+      "sizeBytes": 1290,
+      "sha256": "26fc86e7847652014282f75b456aa24f8decba37be9d67abc06857dd71f1fb10"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/reviews/actual-retry3-qualification-cycle2/e3-resources.json",
+      "sizeBytes": 801,
+      "sha256": "ce9fcdd4c57bf7848fa770245c5a2f7e80cc20d2c61a6fdbee16b01130580481"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/reviews/actual-retry3-qualification-cycle2/encoded-check.json",
+      "sizeBytes": 541,
+      "sha256": "2a88e0971cc48afee138ee5bccdd91d2f8be888b0b80a9becf8684806aaa84f9"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/reviews/actual-retry3-qualification-cycle2/frozen13-check.json",
+      "sizeBytes": 4397,
+      "sha256": "42bd89650ee81f9222d8eac5ccd6412739a43b6441c1f687cd2e417b719e32cb"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/reviews/actual-retry3-qualification-cycle2/pins-before.json",
+      "sizeBytes": 1667,
+      "sha256": "79bbeb74d77aadd6e29026e9b5c29fccb04bc9fca2d01d95727b1e313c586a0b"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/reviews/actual-retry3-qualification-cycle2/pins-prerequisite-after.json",
+      "sizeBytes": 1667,
+      "sha256": "3cde65129fd32fab25fe55bf6be7950b669807e586ea455a5b2f8d57d1870930"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/reviews/actual-retry3-qualification-cycle2/pins-qualification-after.json",
+      "sizeBytes": 1667,
+      "sha256": "1473f1795b6e8a30de38e3cb3ba9465d9a3ec9e72c78cc18fdf8958fb76d6b28"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/reviews/actual-retry3-qualification-cycle2/preliminary.md",
+      "sizeBytes": 2264,
+      "sha256": "cb0eb462d73235f489d6e1e9a1615e9c7a512c32835361bee1a887204d1571bc"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/reviews/actual-retry3-qualification-cycle2/prerequisite-clearance.json",
+      "sizeBytes": 2117,
+      "sha256": "3fb3ced8f8014b679c89c2451bed0ed01c5b285c955aee67c1b06dc1b745020f"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/reviews/actual-retry3-qualification-cycle2/prerequisite-report.md",
+      "sizeBytes": 3025,
+      "sha256": "631a97951d41fa7162ee7f3d25248adf62ee4039f94c549782ce8888847647d7"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/reviews/actual-retry3-qualification-cycle2/report.md",
+      "sizeBytes": 12606,
+      "sha256": "890f832565f8910bec9aa49f4660684029fce14c87e7716efcffcd677913cbd9"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/reviews/actual-retry3-qualification-cycle2/result-check.json",
+      "sizeBytes": 18232,
+      "sha256": "fcdb41714eed2d4cd0f252592dd45b71346f6b99ce47c4625e26c2c728f5363b"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/reviews/actual-retry3-qualification-cycle2/setup-check.json",
+      "sizeBytes": 3497,
+      "sha256": "3550046983607d825222fa1e8f201ef5d5ef3654192113af81a0ca1c835e6651"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/reviews/actual-retry3-qualification-cycle2/watch-handoff-check.json",
+      "sizeBytes": 437,
+      "sha256": "c7234b37555a04dfdd6866a7be5e17e5901aaea75891271e5212474011f1a1a0"
+    }
+  ]
+}

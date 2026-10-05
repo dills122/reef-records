@@ -1,0 +1,796 @@
+{
+  "schema": "calcify-measured-candidate-snapshot-v1",
+  "capturedUtc": "2026-10-05T16:21:07.036941+00:00",
+  "sourceHead": "29a8926d33f9e2dc7278a1676a6fa3272628de3c",
+  "candidateSha256": "ff091a94a9b826b34010f9245719d14e13b53eb82f4fa4e721743ff31df3db8f",
+  "buildSha256": "6b75608d82ab7e952dc27fdd38783b993740ae0d5d0810142c193bc4fea405d2",
+  "classpathSha256": "2c18b7a673503c831d0d8f5c009ba36a717e02251c6e273ff81c54ca069d19c2",
+  "source": [
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.github/workflows/ci.yml",
+      "relativePath": ".github/workflows/ci.yml",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/.github/workflows/ci.yml",
+      "sha256": "de1a802e302ccb54274b89ca504db0c74e9bcda573d14f2f22ce78c38c810755",
+      "sizeBytes": 31149
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/bootstrap-calibration.mjs",
+      "relativePath": "scripts/dev/calcify-financial/bootstrap-calibration.mjs",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/scripts/dev/calcify-financial/bootstrap-calibration.mjs",
+      "sha256": "b2aaf95fc6a72dafee15c98b2c50f18adb13e74096f0ac06d6e046c3bac12ece",
+      "sizeBytes": 29387
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/bootstrap-calibration.test.mjs",
+      "relativePath": "scripts/dev/calcify-financial/bootstrap-calibration.test.mjs",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/scripts/dev/calcify-financial/bootstrap-calibration.test.mjs",
+      "sha256": "a0958bb84316233adff57ecc1d8bbf0490eb8009d57ad7dd03a73731b0e480e7",
+      "sizeBytes": 29883
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/broker-proof.mjs",
+      "relativePath": "scripts/dev/calcify-financial/broker-proof.mjs",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/scripts/dev/calcify-financial/broker-proof.mjs",
+      "sha256": "5e508882336f939cb6ed2c15dfbe38c4a4fa7228266a405d7bb8a2b17ac61680",
+      "sizeBytes": 21520
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/physical-adapter.mjs",
+      "relativePath": "scripts/dev/calcify-financial/physical-adapter.mjs",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/scripts/dev/calcify-financial/physical-adapter.mjs",
+      "sha256": "302747923f526e73c10207c6e173871029b118a6592feb688d2653b5306ced8d",
+      "sizeBytes": 3010
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/physical-adapter.test.mjs",
+      "relativePath": "scripts/dev/calcify-financial/physical-adapter.test.mjs",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/scripts/dev/calcify-financial/physical-adapter.test.mjs",
+      "sha256": "d39a7fa466a8cd766165afd3f7880e61247bcd611c3acbaede43541dfc542bf1",
+      "sizeBytes": 2220
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/physical-evidence.mjs",
+      "relativePath": "scripts/dev/calcify-financial/physical-evidence.mjs",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/scripts/dev/calcify-financial/physical-evidence.mjs",
+      "sha256": "3591634ab38f7a6d6e65663ba14d1a2a99641549e04777010ecf7e3c42672a54",
+      "sizeBytes": 21784
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/physical-evidence.test.mjs",
+      "relativePath": "scripts/dev/calcify-financial/physical-evidence.test.mjs",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/scripts/dev/calcify-financial/physical-evidence.test.mjs",
+      "sha256": "52c69bc8d10e305abb64e9c575c7de3e8806d6cd6ea1edb735b9b130366ad865",
+      "sizeBytes": 16608
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.mjs",
+      "relativePath": "scripts/dev/calcify-financial/proof-supervisor.mjs",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/scripts/dev/calcify-financial/proof-supervisor.mjs",
+      "sha256": "a5ec54bb9a1eca13e4d321872523565d0770b435836f18ec873eb95882832425",
+      "sizeBytes": 35754
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs",
+      "relativePath": "scripts/dev/calcify-financial/proof-supervisor.test.mjs",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/scripts/dev/calcify-financial/proof-supervisor.test.mjs",
+      "sha256": "2751f488f2c30d1f670234cb943f4b352d9bcbd0eff2afa6ce179f1292b97b3a",
+      "sizeBytes": 55739
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/rate-proof.mjs",
+      "relativePath": "scripts/dev/calcify-financial/rate-proof.mjs",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/scripts/dev/calcify-financial/rate-proof.mjs",
+      "sha256": "c067b36d4551f279a98e15029081374c4b84a88643857a666699bfce19d9e24e",
+      "sizeBytes": 32518
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/rate-proof.test.mjs",
+      "relativePath": "scripts/dev/calcify-financial/rate-proof.test.mjs",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/scripts/dev/calcify-financial/rate-proof.test.mjs",
+      "sha256": "8188a8203a264022e6486380151153e8cc53a4a8c4ad62ce0d6945812aca3ec4",
+      "sizeBytes": 29439
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/rate-supervision.mjs",
+      "relativePath": "scripts/dev/calcify-financial/rate-supervision.mjs",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/scripts/dev/calcify-financial/rate-supervision.mjs",
+      "sha256": "f7fdcddabe4f00cacb37d386785c8dedf53529c76a50bd11081a67022510110c",
+      "sizeBytes": 5594
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/rate-supervision.test.mjs",
+      "relativePath": "scripts/dev/calcify-financial/rate-supervision.test.mjs",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/scripts/dev/calcify-financial/rate-supervision.test.mjs",
+      "sha256": "89841f9c35e3f78bd3525ad17845a1a4cb6e14b274d3691e630182965ac4686e",
+      "sizeBytes": 16579
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialAckJournal.kt",
+      "relativePath": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialAckJournal.kt",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialAckJournal.kt",
+      "sha256": "a1600cadef1962822ea5d7bcbe32436ce5133d685f22624faa61f83a590fc933",
+      "sizeBytes": 21909
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialAckJournalTest.kt",
+      "relativePath": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialAckJournalTest.kt",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialAckJournalTest.kt",
+      "sha256": "85127a857336a2f42193083354e7fb2533e22f1595392b38aa117a1a9e1d6a08",
+      "sizeBytes": 13348
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBootstrapProbeTest.kt",
+      "relativePath": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBootstrapProbeTest.kt",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBootstrapProbeTest.kt",
+      "sha256": "6367a75ebb8cbcfd34bf7257692c2c7221663ee7f4d2c75246bc32a5cfa0e413",
+      "sizeBytes": 15616
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbe.kt",
+      "relativePath": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbe.kt",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbe.kt",
+      "sha256": "6f7d89934d01a79e54b68ced230adc2d341076573cdd7fa0ca36408b767ae778",
+      "sizeBytes": 44111
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbeTest.kt",
+      "relativePath": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbeTest.kt",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbeTest.kt",
+      "sha256": "33f641de586b7aef69d9bf1028a4978d070301cabaa2060508fe7ab71b490d2a",
+      "sizeBytes": 4189
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt",
+      "relativePath": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt",
+      "sha256": "06e673ff1b8428a755485313e5514f43ed9635594f62fc23259248fe7a9f484d",
+      "sizeBytes": 12715
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt",
+      "relativePath": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt",
+      "sha256": "b398ecd7e41473abe0c4e3930add848d1c37107ada6d0f0ffecf9c3d64d7ddff",
+      "sizeBytes": 22373
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventory.kt",
+      "relativePath": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventory.kt",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventory.kt",
+      "sha256": "984d21564e57472525c28ddd72668645be76dd5f1e10e7e70c968dec68256c2c",
+      "sizeBytes": 18526
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt",
+      "relativePath": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.kt",
+      "sha256": "8a7045d480d55538ed162dc316e593205932eeaa987a529e3bc20bf43e34fb3c",
+      "sizeBytes": 13281
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt",
+      "relativePath": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt",
+      "sha256": "3189cc005f9b58631a67c9cee0b1ec338b6fb075b48befbdec60f50c564b1aae",
+      "sizeBytes": 92087
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialCommittedCut.kt",
+      "relativePath": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialCommittedCut.kt",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialCommittedCut.kt",
+      "sha256": "543a31445992e4e33b0c8518df6d21f66689dba2dc850effe6e73080ddd236a6",
+      "sizeBytes": 4616
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialCommittedCutTest.kt",
+      "relativePath": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialCommittedCutTest.kt",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialCommittedCutTest.kt",
+      "sha256": "a2f6485d28625502fbaf1edfc029d01f093b9918c6b9265baa69996ecde0f716",
+      "sizeBytes": 5303
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialKernel.kt",
+      "relativePath": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialKernel.kt",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialKernel.kt",
+      "sha256": "9f76e87940d7600dac11bb26aba9ad40e39e7fbf41ec28dc8ab990790f0e637e",
+      "sizeBytes": 30486
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialKernelTest.kt",
+      "relativePath": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialKernelTest.kt",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialKernelTest.kt",
+      "sha256": "c45298ccfdc257c0c77ddd153e09e0eaf6849a4ec8d086cd2ea3e8544cf5d1ac",
+      "sizeBytes": 24397
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialOracle.kt",
+      "relativePath": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialOracle.kt",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialOracle.kt",
+      "sha256": "8c96181409d813876a6be78fed286064070f05f9cc1a5e67729927145c931012",
+      "sizeBytes": 20825
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialOracleTest.kt",
+      "relativePath": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialOracleTest.kt",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialOracleTest.kt",
+      "sha256": "7ecca8b421f9936845bdc235bb3e36e6a779b23a55b3761d6fa992a71fa532e7",
+      "sizeBytes": 33307
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPartitionCut.kt",
+      "relativePath": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPartitionCut.kt",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPartitionCut.kt",
+      "sha256": "b24893cbf315171652c2d18cb9cb343f1c1f906d9263d5d6ea2262e90a3161bc",
+      "sizeBytes": 9158
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPartitionCutTest.kt",
+      "relativePath": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPartitionCutTest.kt",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPartitionCutTest.kt",
+      "sha256": "609e09025939987d83fa0a6a7b3b78fe6de54bc6dc11266a6c2296f4c130cd2c",
+      "sizeBytes": 16854
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/lib/external-faults.mjs",
+      "relativePath": "scripts/dev/calcify-financial/lib/external-faults.mjs",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/source/scripts/dev/calcify-financial/lib/external-faults.mjs",
+      "sha256": "c62bb2ce1e71fa2cfe345e9419fa678404eb273f32a3e1a0a8a24954e2df429f",
+      "sizeBytes": 17059
+    }
+  ],
+  "compiledFinancial": [
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialAckJournal$Callback.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialAckJournal$Callback.class",
+      "sha256": "7d527a2e7b069f8fb5e1fba8783c9febf15b8ed0dfe518844c23efc0f8e4c755",
+      "sizeBytes": 5325
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialAckJournal$Companion.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialAckJournal$Companion.class",
+      "sha256": "009b0b7cdfd97257d4049d922d397f1a9ddb4c4b112fe413b4d9a536a7a71c9f",
+      "sizeBytes": 1099
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialAckJournal$Frame.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialAckJournal$Frame.class",
+      "sha256": "d6331ed7e03fccb901f3cbcecd90bfe231823b0b7cc29632294e67d9e7737398",
+      "sizeBytes": 3738
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialAckJournal$Scope.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialAckJournal$Scope.class",
+      "sha256": "3e56c6249f675a2ee1b69f682ad659eeb16b0ff18258e3f9e9fa60c9f10896fe",
+      "sizeBytes": 4606
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialAckJournal.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialAckJournal.class",
+      "sha256": "89fb1afe907a7afe34fd48f8de76eba587b5518511bc5d92f30443e39a9befc8",
+      "sizeBytes": 42492
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialAckJournalCrashProcess.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialAckJournalCrashProcess.class",
+      "sha256": "1416bc33179b149405c031bfb8c89d0fd8059863bf964e477739ffd3f22d5f02",
+      "sizeBytes": 4487
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialAckJournalTest.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialAckJournalTest.class",
+      "sha256": "b02b1a4252b01b667f74406a71d6c0d3ecf70ef4b86a2b01540de28dbb7628d1",
+      "sizeBytes": 33082
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBootstrapProbeTest$sam$java_util_function_Function$0.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialBootstrapProbeTest$sam$java_util_function_Function$0.class",
+      "sha256": "29bcf8bad3c2b09b835aa6ae0d47e8e1ed756c8921522bd3925d9ba6f8c7d4c5",
+      "sizeBytes": 1133
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBootstrapProbeTest.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialBootstrapProbeTest.class",
+      "sha256": "a2515df33ed0dc73bbeb51721afa30daf5f9a8ce3a5796ef90f2df1105ad0deb",
+      "sizeBytes": 35396
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$FinancialProcessor.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialBrokerProbe$FinancialProcessor.class",
+      "sha256": "ba2b88c4217409eec4052c8d1891875877f24037c7f33c042179fe66eb1cd92f",
+      "sizeBytes": 27665
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$OutputVerifier$Staged.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialBrokerProbe$OutputVerifier$Staged.class",
+      "sha256": "578295265e913253abe1d09b1b80e48e1c770a92025859c0df37abaa0393c12d",
+      "sizeBytes": 3935
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$OutputVerifier.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialBrokerProbe$OutputVerifier.class",
+      "sha256": "4327782ab2d3b270ef32cfe979400befd75537fc43d0f354dfa1c56637dbfdaf",
+      "sizeBytes": 24057
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$activationMembership$2.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialBrokerProbe$activationMembership$2.class",
+      "sha256": "55b3f3d127765beca5f7a3f2c152b7955acc17c1d8365cad9283354aec3edf98",
+      "sizeBytes": 3580
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$businessView$lambda$0$$inlined$compareBy$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialBrokerProbe$businessView$lambda$0$$inlined$compareBy$1.class",
+      "sha256": "a0fc95e86cde3e574b34d1448bbc7a0c7b8073aa940de0825f91260ae4376228",
+      "sizeBytes": 2635
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$businessView$lambda$0$$inlined$thenBy$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialBrokerProbe$businessView$lambda$0$$inlined$thenBy$1.class",
+      "sha256": "0fcb39c8196b4f7d33f6184d2dfbdfeb16a8c11a3748fff7b2cc0b5d830f379d",
+      "sizeBytes": 2613
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$businessView$lambda$0$$inlined$thenBy$2.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialBrokerProbe$businessView$lambda$0$$inlined$thenBy$2.class",
+      "sha256": "21a909a9576889cf671e08220ce0841f5d4a65485cd48ac1fa0523c9d2afd1a0",
+      "sizeBytes": 2408
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$topology$4.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialBrokerProbe$topology$4.class",
+      "sha256": "190324fac3fc892be287d45f65d6c19545b6d5171039dcd3e5f6a13e8fbc8b16",
+      "sizeBytes": 1800
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$worker$clients$1$getProducer$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialBrokerProbe$worker$clients$1$getProducer$1.class",
+      "sha256": "87d0ea1a8cb5f7f67eef29050cde3f4ff06aa9292b5a73b737a194fa01b2e5c7",
+      "sizeBytes": 7370
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$worker$clients$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialBrokerProbe$worker$clients$1.class",
+      "sha256": "57906c710905e69998637157804355e14f8f39b7c11a020e0a9bffc7662dcb5d",
+      "sizeBytes": 1951
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialBrokerProbe.class",
+      "sha256": "fb356e52479d876bf1318e02374c9d8bcd0716477e24ba0fe3ee291a8573f1cf",
+      "sizeBytes": 70905
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbeTest.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialBrokerProbeTest.class",
+      "sha256": "6bc14cfb31f6fef7ed94d7cacc0fcdbba9efb4c083b8d5afe50257b059cb4bf9",
+      "sizeBytes": 13199
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialCommittedCut$Cut.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialCommittedCut$Cut.class",
+      "sha256": "0b3bb7e2550534433d3967d354da9a1bb2da73d0fb41b1b4cb27ccc126628552",
+      "sizeBytes": 5672
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialCommittedCut.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialCommittedCut.class",
+      "sha256": "b641dc0ceee6bc45824918c4bbd99f33220933c92398d0527d69fd45af448083",
+      "sizeBytes": 14956
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialCommittedCutTest$Fixture.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialCommittedCutTest$Fixture.class",
+      "sha256": "8e2cae5e86702e0d11fc6c58446d524cbf7d5d7b102970925d8e7dd7f6fb0b81",
+      "sizeBytes": 4534
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialCommittedCutTest.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialCommittedCutTest.class",
+      "sha256": "23dacde9abf3e4625b35469bfc4fbc6016bb2bdea6316baf1ffad88250295dea",
+      "sizeBytes": 20209
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapBounds$Companion.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapBounds$Companion.class",
+      "sha256": "951121778969dc8f2c883ee65a663cb81e0c97f2700d07fb1b9216d68cb4f030",
+      "sizeBytes": 4427
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapBounds.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapBounds.class",
+      "sha256": "9df336cf26452616f07f3681d67c01076110952ff440c4c69ddefc6dc8132916",
+      "sizeBytes": 7532
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuard$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuard$1.class",
+      "sha256": "3faecdd9f1273bac1aa663059a205c95ed7e8087f65609975003e4002e570957",
+      "sizeBytes": 1750
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuard$2.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuard$2.class",
+      "sha256": "c055f11968fb8872dc51badef683bb2dae9a298bbdddaa555f5e3afdf8e9b644",
+      "sizeBytes": 1419
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuard$Companion$diagnosticBootstrap$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuard$Companion$diagnosticBootstrap$1.class",
+      "sha256": "6abde96ba4e89e2858b097a045f2425aed7a117922c9e86b3b7b515d4a6689a0",
+      "sizeBytes": 1916
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuard$Companion$diagnosticBootstrap$2.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuard$Companion$diagnosticBootstrap$2.class",
+      "sha256": "5f5f89f2a00469489003c1dcde170234122d5a38c9b5457fcf7138fe681b441b",
+      "sizeBytes": 1675
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuard$Companion.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuard$Companion.class",
+      "sha256": "bb97e07c8e9530eff74e7b65da1073b11571d72ea8552b21ec3b7fa8b1fc832e",
+      "sizeBytes": 6061
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuard$Profile$Conservative.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuard$Profile$Conservative.class",
+      "sha256": "3997b12c80da9fc361ddbc19e3b17388ef1d7b1d2fe75f2fbcf6bce95adc7771",
+      "sizeBytes": 3612
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuard$Profile$DiagnosticBootstrap.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuard$Profile$DiagnosticBootstrap.class",
+      "sha256": "17ebd6a0ce47ae231dd6e541cbc47932946d02a7a9230d1917ba1f907087e5eb",
+      "sizeBytes": 2980
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuard$Profile.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuard$Profile.class",
+      "sha256": "169b9204b190126cdefb732bc902f0174391b1a425ab7f184c536da0747417a7",
+      "sizeBytes": 1001
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuard.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuard.class",
+      "sha256": "4be6290e58c94dd10a2f041e4000d71dedc01fbf83c5378e03aa927386257b68",
+      "sizeBytes": 20281
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$actualLifecycleFailureAtEveryPhaseCannotPublishAfterward$g$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuardTest$actualLifecycleFailureAtEveryPhaseCannotPublishAfterward$g$1.class",
+      "sha256": "cc9b796fdda7dc8d39e2766e6f02eb32f2ab528ba04b6c72267c5cc590216bb5",
+      "sizeBytes": 1473
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$actualReplayBatchFailureAfterWorkersCloseBlocksArtifactAndStopsSensor$g$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuardTest$actualReplayBatchFailureAfterWorkersCloseBlocksArtifactAndStopsSensor$g$1.class",
+      "sha256": "fba0ce516a0499970937f9ab23ee5869236bc439f010715dc08270f4d12704b8",
+      "sizeBytes": 1512
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$artifactPeakScopeExplainsFinalHealthySamplesExcludedFromExportedPeak$g$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuardTest$artifactPeakScopeExplainsFinalHealthySamplesExcludedFromExportedPeak$g$1.class",
+      "sha256": "73d4b7d0861d2b8848e73e650a6604979f43f0578706f81636f185bb45c7a22a",
+      "sizeBytes": 1509
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$breachSticksAfterGcAndMaximumCannotChange$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuardTest$breachSticksAfterGcAndMaximumCannotChange$1.class",
+      "sha256": "557d4f635016d9b3faf1a31524bb2419a241f7340fafce2826b11ffff3a44d9c",
+      "sizeBytes": 1424
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$breachSticksAfterGcAndMaximumCannotChange$2.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuardTest$breachSticksAfterGcAndMaximumCannotChange$2.class",
+      "sha256": "ae88d3bfa51459fcdbe308042d90d3ba4c88e9e034ea91ec76841368fd0edeef",
+      "sizeBytes": 1424
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$diagnosticBreachSensorErrorStaleAndMaximumChangeRemainSticky$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuardTest$diagnosticBreachSensorErrorStaleAndMaximumChangeRemainSticky$1.class",
+      "sha256": "f28fc0f970895140bbfeb36e2333c262404b298fc634dc5587c74da60fa38c79",
+      "sizeBytes": 1481
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$diagnosticBreachSensorErrorStaleAndMaximumChangeRemainSticky$2.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuardTest$diagnosticBreachSensorErrorStaleAndMaximumChangeRemainSticky$2.class",
+      "sha256": "c8442c38ac90d688d777f0de8a7183192e82f6ad2364b0b2e3c978aa71fdb9c8",
+      "sizeBytes": 1481
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$diagnosticBreachSensorErrorStaleAndMaximumChangeRemainSticky$3.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuardTest$diagnosticBreachSensorErrorStaleAndMaximumChangeRemainSticky$3.class",
+      "sha256": "8c52ea2c439a54ecb5dd50f534fa6724cc514ea17de9b55b2027653033ed32c5",
+      "sizeBytes": 1481
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$finalSampleFailureLeavesNoArtifactAndExceptionalBodyClosesGuard$3$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuardTest$finalSampleFailureLeavesNoArtifactAndExceptionalBodyClosesGuard$3$1.class",
+      "sha256": "0df6e17b5eff13a476355329c723c517e50607db4d38f0f0113ed9bd0b246647",
+      "sizeBytes": 1565
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$finalSampleFailureLeavesNoArtifactAndExceptionalBodyClosesGuard$g$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuardTest$finalSampleFailureLeavesNoArtifactAndExceptionalBodyClosesGuard$g$1.class",
+      "sha256": "27ed4da9162b041d99b03b481ff3bc0b0cff29f7066ed1cdc809043829562723",
+      "sizeBytes": 1494
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$staleFutureAndMissingSnapshotRefuseSticky$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuardTest$staleFutureAndMissingSnapshotRefuseSticky$1.class",
+      "sha256": "ca622b4e45fc32ad0d429f21e43a8a847ea89669fa96f455db1e37428b4f40b3",
+      "sizeBytes": 1424
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$warmedBaselineRefusalPreventsAnySendThroughActualLifecycle$g$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuardTest$warmedBaselineRefusalPreventsAnySendThroughActualLifecycle$g$1.class",
+      "sha256": "72e9c87b73e2ef1d54c5bea5abc72ff3bd47192dd0424c0ef0ea5109f8584d62",
+      "sizeBytes": 1479
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapGuardTest.class",
+      "sha256": "9145e8644b11fe23a872598dc146e2b71bb188c23691179d035f251cdc8c2feb",
+      "sizeBytes": 67381
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapSnapshot.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialHeapSnapshot.class",
+      "sha256": "9b22133c881a5c2c73f86f2a84fd1925cd91280f2c99dc72d699aba2b345fd1f",
+      "sizeBytes": 2939
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Changes.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialKernel$Changes.class",
+      "sha256": "b43eff5c6943dcd26dbcbb9b06a1bdf953f5f0e651a6127bd27f204994d500b3",
+      "sizeBytes": 6436
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Companion$canonical$$inlined$sortedBy$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialKernel$Companion$canonical$$inlined$sortedBy$1.class",
+      "sha256": "44af03f200d3ab3e252da479efc4ad2e1a59b8f670888a882132042da0e33876",
+      "sizeBytes": 2174
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Companion$normalize$$inlined$sortedBy$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialKernel$Companion$normalize$$inlined$sortedBy$1.class",
+      "sha256": "e4f5c0e4f91bf7b8dca7f887418fd6a7ab84cc5858c0dc6ccaee7a9c71e3d9da",
+      "sizeBytes": 2174
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Companion$normalizePayload$lambda$0$$inlined$sortedBy$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialKernel$Companion$normalizePayload$lambda$0$$inlined$sortedBy$1.class",
+      "sha256": "4596dc96023fdbb9aa922ae91a6b5ddd649979e1dd99c63030bff52754248152",
+      "sizeBytes": 2252
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Companion$semantic$$inlined$sortedBy$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialKernel$Companion$semantic$$inlined$sortedBy$1.class",
+      "sha256": "16d602a8437df407f626cfc7ec824e74fa32b8eb7da05ee1d50ff5276109a8c1",
+      "sizeBytes": 2823
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Companion.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialKernel$Companion.class",
+      "sha256": "e01f75b62811f7f273a74358068db1a9f26c4a0ff117417be79ce011e5a51a4e",
+      "sizeBytes": 30586
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Due.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialKernel$Due.class",
+      "sha256": "6abc89477f2f82e6729ac4be5f35425731f6d38a0d7499ee75a7881fdc64ad50",
+      "sizeBytes": 5114
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$drainStaged$$inlined$sortedBy$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialKernel$drainStaged$$inlined$sortedBy$1.class",
+      "sha256": "bd706d768796dcd5c55f39b13c611dba6e2b4fe82133f0dae7668e20941d7474",
+      "sizeBytes": 2316
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialKernel.class",
+      "sha256": "7a27cbb18cb93f2f78b5f8c9aa40d1b2c762bd2bf88bd0d204905aa867b95c46",
+      "sizeBytes": 55577
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernelTest$brokerModeRetainsOnlyLatestBoundedRecordAndReplaysStreamingHistory$stream$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialKernelTest$brokerModeRetainsOnlyLatestBoundedRecordAndReplaysStreamingHistory$stream$1.class",
+      "sha256": "ca5fdbdf978ff6aff0e3adcb0daf0e3bcd37731373c743b00f4a3bccd8ffda07",
+      "sizeBytes": 1694
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernelTest$missingStagingDeltaMutantCannotReconstructPendingOwnerState$canonical$$inlined$sortedBy$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialKernelTest$missingStagingDeltaMutantCannotReconstructPendingOwnerState$canonical$$inlined$sortedBy$1.class",
+      "sha256": "8f052a8e22a3a83eec1e774d5b1e243d39386e10cd0cfd2dfa6f836e23f8225b",
+      "sizeBytes": 2386
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernelTest.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialKernelTest.class",
+      "sha256": "2dff392f6332d4270732331750882635e8a7786b934478e03eb94e166576fced",
+      "sizeBytes": 44706
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracle$eligible$$inlined$compareBy$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialOracle$eligible$$inlined$compareBy$1.class",
+      "sha256": "9be63b83e411f2abf2c9e90149129da90915fb9eab9e7897971ee1212b14d679",
+      "sizeBytes": 2545
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracle$eligible$$inlined$thenBy$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialOracle$eligible$$inlined$thenBy$1.class",
+      "sha256": "17a7e17309f31dc104a06d83d19e9b9fefbb7d039d2ec2aed43cf5ae6896d85d",
+      "sizeBytes": 2817
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracle$eligible$$inlined$thenBy$2.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialOracle$eligible$$inlined$thenBy$2.class",
+      "sha256": "9cbae8e3509c1638c09c0f631c875bd582fda75613e7712c9da9d3727a1a2ed5",
+      "sizeBytes": 2197
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracle$semanticChanges$$inlined$sortedBy$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialOracle$semanticChanges$$inlined$sortedBy$1.class",
+      "sha256": "7f7a6fd7e5e8dad7c641de020fcf1c3c75e575be1163c9b315536eb44f7538e5",
+      "sizeBytes": 2586
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracle.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialOracle.class",
+      "sha256": "85e43579069dd8f5a6e3c8583f0dc4679d26450dbbd7b576135cd3065b800532",
+      "sizeBytes": 52988
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracleTest$XorShift32.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialOracleTest$XorShift32.class",
+      "sha256": "398a99618e9f5c82fc80974c8c14088ed6c3f07ddd0cb779d48b805d41c3f829",
+      "sizeBytes": 1882
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracleTest$consumed signed64 bounds reject before effects and preserve rejection retries$Boundary.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialOracleTest$consumed signed64 bounds reject before effects and preserve rejection retries$Boundary.class",
+      "sha256": "55c453d19d66006742eaa94db07e4134162fa45a231d671ebaaff3af99880ba6",
+      "sizeBytes": 4154
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracleTest$generatedTraces$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialOracleTest$generatedTraces$1.class",
+      "sha256": "a45cd11ae9ac6bd3fd4d2dae8858eca412bbf8a89309e3f5cecc8a03cd7a72d1",
+      "sizeBytes": 6332
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracleTest.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialOracleTest.class",
+      "sha256": "f8013512ef4afddb7b93d73203f440245ccb3af8096cb0fe9bbae9f6dd97d848",
+      "sizeBytes": 56076
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPartitionCut$ReconstructedCut.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialPartitionCut$ReconstructedCut.class",
+      "sha256": "32637957cb4a7d9605d0407befebd2929f71f9b5bad0511f0d94114e31121eb2",
+      "sizeBytes": 5357
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPartitionCut$reconstruct$$inlined$sortedBy$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialPartitionCut$reconstruct$$inlined$sortedBy$1.class",
+      "sha256": "ec1ad3307903cf6f7a47ec11a3dccdd27c04d731a35404855c9d1a1401f9004a",
+      "sizeBytes": 2638
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPartitionCut.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialPartitionCut.class",
+      "sha256": "b3ab48c9b1250099e79969a63b5836074a2bbc52e4a7109c210b807686366b8c",
+      "sizeBytes": 28206
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPartitionCutTest$FixtureCut.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialPartitionCutTest$FixtureCut.class",
+      "sha256": "d3a9278a12d74619ef66b159e495bc57624bde99f8dc2536fa63dd9987f569e9",
+      "sizeBytes": 6994
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPartitionCutTest.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialPartitionCutTest.class",
+      "sha256": "9ed5e20b1eed1063d1ba7c9ce927484ead6d6bdc0dec85d27d2dc065527593bb",
+      "sizeBytes": 48416
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPhysicalInventory$Failure.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialPhysicalInventory$Failure.class",
+      "sha256": "8e4a793046972c51af4953c7ff7249a6411313ca3557691ecddaceeac10d1649",
+      "sizeBytes": 1558
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPhysicalInventory$OwnedTopic.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialPhysicalInventory$OwnedTopic.class",
+      "sha256": "6d0dcb67dc217da995cab17f6d939c4bc0f3c7a44c79cce8dfb03741dcf97b04",
+      "sizeBytes": 3206
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPhysicalInventory$topics$lambda$1$$inlined$sortedBy$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialPhysicalInventory$topics$lambda$1$$inlined$sortedBy$1.class",
+      "sha256": "bbe513f55d8a21b4f3624aee7bfa70c48f1057521de443f080cd39f628f01955",
+      "sizeBytes": 2270
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPhysicalInventory.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialPhysicalInventory.class",
+      "sha256": "51ada9100a062509d64c7647e85ad870b49f77eaa9ab3e837fcaebcd089798c2",
+      "sizeBytes": 56335
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialPhysicalInventoryTest.class",
+      "sha256": "38e5325aa1deb1d2169bbe0b85b08381b014a50f2873d1985987a628386497fe",
+      "sizeBytes": 39014
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$HeapArtifactSnapshot.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialRateProbe$HeapArtifactSnapshot.class",
+      "sha256": "87d9fe9c759acc31c0913294d8a5a1744d8c7a3b0267ff8ca32b76b7be85f45e",
+      "sizeBytes": 4154
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$1.class",
+      "sha256": "2bd209d67c506f0fac587695c94f4261b108dbe9d9b1efb5c3e514986ea21b71",
+      "sizeBytes": 2175
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$2.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$2.class",
+      "sha256": "defbb1879910593c147d56991a5f656970a238049becb39f05c2cdf9340a9584",
+      "sizeBytes": 2614
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$3.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$3.class",
+      "sha256": "c9d8fe960ea09bb81e664d38223607499d5be96e67aad463f4e1f4b2c10e7b1b",
+      "sizeBytes": 2681
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$4.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$4.class",
+      "sha256": "e5cfd921f5dda8812a3c19f49c9868c29dc372c13d7dc0f500ae8637bd7c08fc",
+      "sizeBytes": 2615
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$Reference.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialRateProbe$Reference.class",
+      "sha256": "c8b52f113f939fd52037b3d4d3b415f2b947507b15b0c5c5424ad09208397917",
+      "sizeBytes": 23824
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$brokerScope$$inlined$sortedBy$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialRateProbe$brokerScope$$inlined$sortedBy$1.class",
+      "sha256": "cfca777170320403ada178e040872b40931995c6ad16a5b2d70dd6c7591e3ff0",
+      "sizeBytes": 2237
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$canonical$$inlined$sortedBy$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialRateProbe$canonical$$inlined$sortedBy$1.class",
+      "sha256": "2104794cdee7f2318d7108147a9eeb57606d46d348725d221ebeb220ab829d32",
+      "sizeBytes": 2136
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$digest$walk$$inlined$sortedBy$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialRateProbe$digest$walk$$inlined$sortedBy$1.class",
+      "sha256": "8752b97824649706bb2dfa37ca7ec631165dccd792d8485d7efa2d83ad1c8afd",
+      "sizeBytes": 2156
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$validateBootstrapBrokerScope$$inlined$sortedBy$1.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialRateProbe$validateBootstrapBrokerScope$$inlined$sortedBy$1.class",
+      "sha256": "f51c7afa985c666dd952084dee2f5fe93f28baf714806d5831172740da632700",
+      "sizeBytes": 2452
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe.class",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle1/compiled-financial/FinancialRateProbe.class",
+      "sha256": "c56382e3230787919d9d1c4b27924d17e2ce5f07d17122f302d175d61fb16f14",
+      "sizeBytes": 201495
+    }
+  ],
+  "scope": "Actual frozen current source and Financial compiled bytes; other full CP entries pinned by hashes, not vendored; no build or executable mutation"
+}

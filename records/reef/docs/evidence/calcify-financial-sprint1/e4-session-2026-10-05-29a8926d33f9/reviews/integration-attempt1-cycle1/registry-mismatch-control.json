@@ -1,0 +1,8 @@
+{
+  "control": "runtime paths differ from supervised paths",
+  "runtimeStateDir": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt1/store",
+  "watchedStateDir": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt1/unrelated-store",
+  "runtimeJournal": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt1/journal",
+  "watchedJournal": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt1/unrelated-journal",
+  "accepted": true
+}

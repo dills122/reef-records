@@ -1,0 +1,9 @@
+{
+  "purpose": "Restart same owned stopped IDs under existing approved <=30s setup-only unknown exception. Preserve all volumes, no topics or payload. Strict handoff required before workload.",
+  "changes": [
+    "Allow exact initial exited state",
+    "Raw proof count covers whole parent broker-e4 directory",
+    "Unique restart output names",
+    "Pinned network source parent path"
+  ]
+}

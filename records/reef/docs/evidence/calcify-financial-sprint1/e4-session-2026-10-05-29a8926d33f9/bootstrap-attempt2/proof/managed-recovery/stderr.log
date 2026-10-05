@@ -1,0 +1,25 @@
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.IllegalStateException: managed recovery failed
+	at com.reef.platform.calcify.financial.FinancialRateProbe.bootstrapRecovery$lambda$1(FinancialRateProbe.kt:600)
+	at com.reef.platform.calcify.financial.FinancialRateProbe.withHeapProtection$platform_runtime_test(FinancialRateProbe.kt:480)
+	at com.reef.platform.calcify.financial.FinancialRateProbe.bootstrapRecovery(FinancialRateProbe.kt:570)
+	at com.reef.platform.calcify.financial.FinancialRateProbe.main(FinancialRateProbe.kt:622)
+Caused by: org.apache.kafka.streams.errors.StreamsException: failed to initialize processor financial
+	at org.apache.kafka.streams.processor.internals.ProcessorNode.init(ProcessorNode.java:132)
+	at org.apache.kafka.streams.processor.internals.ProcessorNode.init(ProcessorNode.java:141)
+	at org.apache.kafka.streams.processor.internals.StreamTask.initializeTopology(StreamTask.java:1124)
+	at org.apache.kafka.streams.processor.internals.StreamTask.completeRestoration(StreamTask.java:299)
+	at org.apache.kafka.streams.processor.internals.TaskManager.transitRestoredTaskToRunning(TaskManager.java:913)
+	at org.apache.kafka.streams.processor.internals.TaskManager.handleRestoredTasksFromStateUpdater(TaskManager.java:1004)
+	at org.apache.kafka.streams.processor.internals.TaskManager.checkStateUpdater(TaskManager.java:853)
+	at org.apache.kafka.streams.processor.internals.StreamThread.checkStateUpdater(StreamThread.java:1409)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnceWithoutProcessingThreads(StreamThread.java:1235)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:956)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:916)
+Caused by: java.lang.IllegalArgumentException: BOOTSTRAP_MANAGED_ACTIVATION_PARITY
+	at com.reef.platform.calcify.financial.FinancialRateProbe.bootstrapRecovery$lambda$1$1$1$2(FinancialRateProbe.kt:587)
+	at com.reef.platform.calcify.financial.FinancialBrokerProbe$FinancialProcessor.init(FinancialBrokerProbe.kt:238)
+	at org.apache.kafka.streams.processor.internals.ProcessorNode.init(ProcessorNode.java:124)
+	... 10 more

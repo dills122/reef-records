@@ -1,0 +1,22 @@
+[
+  {
+    "arm": "attempt2-cycle2",
+    "manifestPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt2-cycle2/manifest.json",
+    "manifestSha256": "4056b8b2c59aa4c91a8c0267bbf9cf8ba9f4ae212188382098083f02f39fe3de",
+    "buildSha256": "a9bf0d4330ac290647046026453d1e8d024398cc4af5eb2d46f11cb7da5de74e",
+    "candidateSha256": "709dc3a7fe61df4acffae4fa3e16b260989ac4197f7826578fcfdee1bea514bc",
+    "sourceCount": 33,
+    "compiledCount": 92,
+    "validated": true
+  },
+  {
+    "arm": "attempt3-cycle1",
+    "manifestPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/candidate-source-snapshots/attempt3-cycle1/manifest.json",
+    "manifestSha256": "d11b046a53cc14635495e3976aee4be883bed9369e30b0f57ace8672529d65af",
+    "buildSha256": "bf04ead83d8be2864231b95720190b109c9d31e09ed585f01791947520337b53",
+    "candidateSha256": "cd50045bb09f0faba60179a1f7ed0295c968dfb94823e8ee58e6e82fb3ca65be",
+    "sourceCount": 36,
+    "compiledCount": 97,
+    "validated": true
+  }
+]

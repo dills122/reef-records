@@ -1,0 +1,19 @@
+{
+  "name": "volume-absence-2",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "volume",
+    "inspect",
+    "reef-calcify-e4-session-8c6f_rp2-data"
+  ],
+  "startedAtMs": 59429039,
+  "startedUtc": "2026-10-05T14:03:14.634Z",
+  "stdout": "[\n    {\n        \"CreatedAt\": \"2026-10-05T14:00:59Z\",\n        \"Driver\": \"local\",\n        \"Labels\": {\n            \"com.docker.compose.config-hash\": \"9e084dc63636aa3fa1da99deb88912bb0288fa82b9b3a658d86f6994567b9ef3\",\n            \"com.docker.compose.project\": \"reef-calcify-e4-session-8c6f\",\n            \"com.docker.compose.version\": \"5.4.0\",\n            \"com.docker.compose.volume\": \"rp2-data\",\n            \"reef.test\": \"calcify-financial-sprint1\"\n        },\n        \"Mountpoint\": \"/var/lib/docker/volumes/reef-calcify-e4-session-8c6f_rp2-data/_data\",\n        \"Name\": \"reef-calcify-e4-session-8c6f_rp2-data\",\n        \"Options\": null,\n        \"Scope\": \"local\"\n    }\n]\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 59429062,
+  "completedUtc": "2026-10-05T14:03:14.658Z",
+  "stdoutSha256": "167849bb56bc24a1144ee55393630d8622c55735ad29cf6412f0619b37ad22df",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputSha256": "f1d0bdd37d90e90e6ceb00553b312bc90d16a59d1590efb76e70149a520e21af"
+}

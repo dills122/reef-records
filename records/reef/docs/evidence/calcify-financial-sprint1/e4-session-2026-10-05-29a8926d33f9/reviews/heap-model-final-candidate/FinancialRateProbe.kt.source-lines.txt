@@ -1,0 +1,924 @@
+1: package com.reef.platform.calcify.financial
+2: 
+3: import com.fasterxml.jackson.databind.JsonNode
+4: import com.fasterxml.jackson.databind.ObjectMapper
+5: import com.fasterxml.jackson.databind.node.ObjectNode
+6: import java.io.File
+7: import java.lang.management.ManagementFactory
+8: import java.math.BigInteger
+9: import java.nio.file.Files
+10: import java.nio.file.Path
+11: import java.security.MessageDigest
+12: import java.time.Duration
+13: import java.util.HexFormat
+14: import java.util.Properties
+15: import java.util.concurrent.CountDownLatch
+16: import java.util.concurrent.Semaphore
+17: import java.util.concurrent.TimeUnit
+18: import java.util.concurrent.FutureTask
+19: import java.util.concurrent.TimeoutException
+20: import java.util.concurrent.atomic.AtomicLong
+21: import java.util.concurrent.atomic.AtomicReference
+22: import java.util.concurrent.locks.LockSupport
+23: import org.apache.kafka.clients.admin.AdminClient
+24: import org.apache.kafka.clients.admin.NewTopic
+25: import org.apache.kafka.clients.consumer.KafkaConsumer
+26: import org.apache.kafka.clients.producer.KafkaProducer
+27: import org.apache.kafka.clients.producer.ProducerRecord
+28: import org.apache.kafka.common.TopicPartition
+29: import org.apache.kafka.common.config.ConfigResource
+30: import org.apache.kafka.common.serialization.StringDeserializer
+31: import org.apache.kafka.common.serialization.StringSerializer
+32: import org.apache.kafka.streams.KafkaStreams
+33: import org.apache.kafka.streams.StreamsConfig
+34: import org.apache.kafka.streams.errors.StreamsUncaughtExceptionHandler
+35: 
+36: /** Real test-only financial capacity diagnostic. No source gateway or live authority. */
+37: object FinancialRateProbe {
+38:     private val json = ObjectMapper()
+39:     private const val PRICE = 10_000_000L
+40:     private const val RAW_CAP = 256L * 1024 * 1024
+41:     private const val DISK_CAP = 10L * 1024 * 1024 * 1024
+42:     private val nullNode get() = json.nullNode()
+43:     private fun node(value: Any?): JsonNode = json.valueToTree(value)
+44:     private fun sha(bytes: ByteArray) = HexFormat.of().formatHex(MessageDigest.getInstance("SHA-256").digest(bytes))
+45:     private fun canonical(n: JsonNode): String = when {
+46:         n.isObject -> n.fields().asSequence().sortedBy { it.key }.joinToString(",", "{", "}") { json.writeValueAsString(it.key) + ":" + canonical(it.value) }
+47:         n.isArray -> n.joinToString(",", "[", "]") { canonical(it) }
+48:         else -> n.toString()
+49:     }
+50:     private fun digest(n: JsonNode): String {
+51:         val md = MessageDigest.getInstance("SHA-256")
+52:         fun part(s: String) { md.update(s.toByteArray()) }
+53:         fun walk(v: JsonNode) {
+54:             when {
+55:                 v.isObject -> { part("{"); v.fields().asSequence().sortedBy { it.key }.forEachIndexed { i, entry -> if (i > 0) part(","); part(json.writeValueAsString(entry.key)); part(":"); walk(entry.value) }; part("}") }
+56:                 v.isArray -> { part("["); v.forEachIndexed { i, child -> if (i > 0) part(","); walk(child) }; part("]") }
+57:                 else -> part(v.toString())
+58:             }
+59:         }
+60:         walk(n); return HexFormat.of().formatHex(md.digest())
+61:     }
+62:     private fun shaFile(path: Path): String { val md = MessageDigest.getInstance("SHA-256"); Files.newInputStream(path).use { stream -> val buffer = ByteArray(65536); while (true) { val n = stream.read(buffer); if (n < 0) break; md.update(buffer, 0, n) } }; return HexFormat.of().formatHex(md.digest()) }
+63:     private fun frame(vararg ids: String) = json.writeValueAsString(ids.toList())
+64:     private fun action(id: Long, phase: String, kind: String): JsonNode {
+65:         val execution = "$phase-$id"
+66:         val payload = if (kind == "CAPTURE") mapOf("executionId" to execution, "runId" to "e4", "venueSessionId" to "venue", "instrumentId" to "ACME",
+67:             "buyOrderId" to "buyer-$execution", "sellOrderId" to "seller-$execution", "buyerAccount" to "buyer", "sellerAccount" to "seller",
+68:             "cashAsset" to "USD_NANO", "securityAsset" to "ACME_SHARE", "quantity" to "1", "priceNanos" to PRICE.toString(), "dueTick" to "0")
+69:         else mapOf("executionId" to execution, "runId" to "e4", "venueSessionId" to "venue", "instrumentId" to "ACME", "attempt" to "1")
+70:         return node(mapOf("namespace" to "financial-e4", "domain" to "hot", "actionId" to "$execution-$kind", "kind" to kind, "payload" to payload))
+71:     }
+72:     private fun emptyOwner(): ObjectNode = json.createObjectNode().apply {
+73:         listOf("balances", "executions", "obligations", "workflows", "instructions", "attempts", "exceptions", "reservations", "dedup", "effects", "versions", "dueQueue", "stagedInputs", "policy").forEach { set<JsonNode>(it, json.createObjectNode()) }
+74:         put("logicalTick", "0"); listOf("businessSeq", "historySeq", "deliveryCursor", "nextDelivery").forEach { put(it, 0L) }
+75:         listOf("continuation", "lastDecisionId", "semanticDigest", "activePolicy").forEach { putNull(it) }
+76:     }
+77: 
+78:     /** Independent fixed gross-DvP reference: BigInteger economics, known-key deltas.
+79:      * No kernel economics, per-input full state scans or snapshots. */
+80:     private class Reference(private val balances: JsonNode, private val policy: JsonNode) {
+81:         val owner = emptyOwner()
+82:         var chain = "GENESIS"
+83:         var historyRecords = 0L
+84:         private fun get(path: List<String>): JsonNode = path.fold(owner as JsonNode?) { v, key -> v?.get(key) } ?: nullNode
+85:         fun accept(record: JsonNode) {
+86:             val writes = linkedMapOf<List<String>, JsonNode>()
+87:             fun put(root: String, key: String?, value: JsonNode) { writes[if (key == null) listOf(root) else listOf(root, key)] = value }
+88:             fun increment(root: String, key: String? = null) { val p = if (key == null) listOf(root) else listOf(root, key); writes[p] = node(get(p).asLong() + 1) }
+89:             val legs = mutableListOf<Map<String, String>>()
+90:             fun leg(asset: String, account: String, amount: BigInteger) { legs.add(mapOf("asset" to asset, "account" to account, "amount" to amount.toString())) }
+91:             if (historyRecords == 0L) {
+92:                 require(record["kind"].asText() == "GENESIS")
+93:                 listOf("buyerCash", "sellerCash", "buyerShares", "sellerShares").forEach { put("balances", it, balances[it]) }
+94:                 for ((asset, suffix) in listOf("USD_NANO" to "Cash", "ACME_SHARE" to "Shares")) {
+95:                     val opening = -(BigInteger(balances["buyer$suffix"].asText()) + BigInteger(balances["seller$suffix"].asText()))
+96:                     put("balances", "opening$suffix", node(opening.toString())); leg(asset, "opening", opening)
+97:                     listOf("buyer", "seller").forEach { account -> leg(asset, account, BigInteger(balances[account + suffix].asText())) }
+98:                 }
+99:                 listOf("buyerCash", "sellerCash", "buyerShares", "sellerShares", "openingCash", "openingShares").forEach { put("versions", it, node(0L)) }
+100:                 put("policy", null, policy); put("activePolicy", null, policy["policy"]); put("semanticDigest", null, node(sha("GENESIS".toByteArray())))
+101:             } else {
+102:                 require(record["kind"].asText() == "BUSINESS")
+103:                 val input = record["input"]; val kind = input["kind"].asText(); val payload = input["payload"]
+104:                 require(input["namespace"].asText() == "financial-e4" && input["domain"].asText() == "hot")
+105:                 require(kind in setOf("CAPTURE", "SETTLE"))
+106:                 val execution = frame("e4", "venue", "ACME", payload["executionId"].asText())
+107:                 val decision = frame("financial-e4", "hot", input["actionId"].asText())
+108:                 require(!owner["dedup"].has(decision)) { "duplicate timed economic action" }
+109:                 val disposition: String
+110:                 if (kind == "CAPTURE") {
+111:                     require(!owner["executions"].has(execution)); require(payload["quantity"].asText() == "1" && payload["priceNanos"].asText() == PRICE.toString())
+112:                     put("executions", execution, payload); put("obligations", execution, node(mapOf("status" to "PENDING", "cashResidual" to PRICE.toString(), "shareResidual" to "1")))
+113:                     put("workflows", execution, node("PENDING")); put("instructions", execution, node("READY"))
+114:                     put("dueQueue", execution, node(mapOf("tick" to "0", "priority" to 0, "workId" to payload["executionId"].asText())))
+115:                     increment("versions", execution); disposition = "CAPTURED"
+116:                 } else {
+117:                     require(owner["obligations"][execution]["status"].asText() == "PENDING")
+118:                     for ((field, delta) in listOf("buyerCash" to -PRICE, "sellerCash" to PRICE, "buyerShares" to 1L, "sellerShares" to -1L)) {
+119:                         val next = BigInteger(owner["balances"][field].asText()) + BigInteger.valueOf(delta)
+120:                         require(next.signum() >= 0 && next <= BigInteger.valueOf(Long.MAX_VALUE)); put("balances", field, node(next.toString())); increment("versions", field)
+121:                     }
+122:                     leg("USD_NANO", "buyer", BigInteger.valueOf(-PRICE)); leg("USD_NANO", "seller", BigInteger.valueOf(PRICE)); leg("ACME_SHARE", "seller", -BigInteger.ONE); leg("ACME_SHARE", "buyer", BigInteger.ONE)
+123:                     put("obligations", execution, node(mapOf("status" to "SETTLED", "cashResidual" to "0", "shareResidual" to "0")))
+124:                     put("workflows", execution, node("SETTLED")); put("instructions", execution, node("SETTLED")); put("attempts", frame("e4", "venue", "ACME", payload["executionId"].asText(), "1"), node("SETTLED"))
+125:                     increment("versions", execution); put("dueQueue", execution, nullNode); disposition = "SETTLED"
+126:                 }
+127:                 increment("businessSeq"); put("lastDecisionId", null, node(decision))
+128:                 val pairs = payload.fields().asSequence().sortedBy { it.key }.map { listOf(it.key, it.value.asText()) }.toList()
+129:                 val requestDigest = sha(json.writeValueAsBytes(listOf(kind, null, pairs)))
+130:                 val context = policy.deepCopy<ObjectNode>().apply { put("logicalTick", "0"); put("domain", "hot") }
+131:                 put("dedup", decision, node(mapOf("digest" to requestDigest, "context" to context, "disposition" to disposition)))
+132:                 if (legs.isNotEmpty()) put("effects", decision, node(legs))
+133:                 val semanticChanges = writes.entries.filter { it.key[0] !in setOf("historySeq", "deliveryCursor", "nextDelivery", "stagedInputs", "policy", "semanticDigest") && canonical(get(it.key)) != canonical(it.value) }
+134:                     .sortedBy { canonical(node(it.key)) }.map { mapOf("path" to it.key, "before" to get(it.key), "after" to it.value) }
+135:                 put("semanticDigest", null, node(sha(canonical(node(mapOf("decisionId" to decision, "disposition" to disposition, "input" to requestDigest, "context" to context, "journalLegs" to legs, "semanticChanges" to semanticChanges))).toByteArray())))
+136:             }
+137:             increment("historySeq")
+138:             val expected = writes.map { (p, value) -> mapOf("path" to p, "before" to get(p), "after" to value) }
+139:             val actual = record["changes"].map { it }.sortedBy { canonical(it["path"]) }
+140:             require(canonical(node(expected.sortedBy { canonical(node(it["path"])) })) == canonical(node(actual))) { "independent complete semantic delta mismatch" }
+141:             require(canonical(record["journalGroups"]) == canonical(node(legs.groupBy { it.getValue("asset") }))) { "independent journal mismatch" }
+142:             require(record["sequence"].asLong() == historyRecords + 1 && record["priorSequence"].asLong() == historyRecords && record["priorChecksum"].asText() == chain)
+143:             val unsigned = record.deepCopy<ObjectNode>().apply { remove("checksum") }
+144:             require(record["checksum"].asText() == digest(unsigned)) { "history checksum" }
+145:             writes.forEach { (p, value) ->
+146:                 val parent = if (p.size == 1) owner else owner[p[0]] as ObjectNode
+147:                 if (value.isNull && p.size > 1) parent.remove(p.last()) else parent.set<JsonNode>(p.last(), value.deepCopy())
+148:             }
+149:             historyRecords++; chain = record["checksum"].asText()
+150:         }
+151:         fun businessView() = owner.deepCopy().apply {
+152:             listOf("policy", "historySeq", "deliveryCursor", "nextDelivery", "stagedInputs").forEach { remove(it) }; set<JsonNode>("dueWork", node(emptyList<String>()))
+153:         }
+154:     }
+155: 
+156:     private fun selfCheck(policy: JsonNode) {
+157:         val balances = node(mapOf("buyerCash" to "1000000000", "sellerCash" to "0", "buyerShares" to "0", "sellerShares" to "100"))
+158:         val kernel = FinancialKernel(balances, policy, retainHistory = false)
+159:         val reference = Reference(balances, policy); reference.accept(kernel.lastRecord()!!)
+160:         val oracle = FinancialOracle(balances, policy)
+161:         val histories = mutableListOf(kernel.lastRecord()!!)
+162:         repeat(20) { id -> listOf("CAPTURE", "SETTLE").forEach { kind ->
+163:             val input = action(id.toLong(), "timed", kind); kernel.execute(input, detailed = false); reference.accept(kernel.lastRecord()!!); histories.add(kernel.lastRecord()!!)
+164:             oracle.execute(input); oracle.assertMatches(reference.businessView(), "rate reference prefix=$id $kind")
+165:         } }
+166:         require(digest(kernel.ownerView()) == digest(reference.owner))
+167:         val bad = kernel.lastRecord()!!.deepCopy<ObjectNode>(); (bad["journalGroups"] as ObjectNode).remove("ACME_SHARE")
+168:         val beforeLast = Reference(balances, policy); histories.dropLast(1).forEach { beforeLast.accept(it) }
+169:         require(runCatching { beforeLast.accept(bad) }.exceptionOrNull()?.message?.contains("journal mismatch") == true)
+170:         println(json.writeValueAsString(mapOf("selfCheck" to true, "prefixes" to 40, "independentFullOracle" to true, "oneLegMutationRejected" to true)))
+171:     }
+172: 
+173:     // Build identity covers every compiled Financial*.class, including nested classes,
+174:     // in this test-only code-source directory. Classpath identity covers ordered actual
+175:     // entries: streamed jar/file bytes and every regular directory file sorted by relative
+176:     // path, including resources. Config/fixture identity covers raw file bytes.
+177:     internal fun heapCapability(sourceHead: String, fixturePath: Path, configPath: Path): JsonNode {
+178:         val root = Path.of(FinancialRateProbe::class.java.protectionDomain.codeSource.location.toURI())
+179:         require(Files.isDirectory(root)) { "HEAP_DIRECTORY_BUILD_REQUIRED" }
+180:         val dir = root.resolve("com/reef/platform/calcify/financial")
+181:         val md = MessageDigest.getInstance("SHA-256")
+182:         Files.list(dir).use { paths -> paths.filter { it.fileName.toString().startsWith("Financial") && it.fileName.toString().endsWith(".class") }
+183:             .sorted().forEach { file -> md.update(file.fileName.toString().toByteArray()); md.update(0.toByte()); md.update(Files.readAllBytes(file)) } }
+184:         val classpathDigest = MessageDigest.getInstance("SHA-256")
+185:         fun classpathPart(value: String) { classpathDigest.update(value.toByteArray()); classpathDigest.update(0.toByte()) }
+186:         val classpathEntries = System.getProperty("java.class.path").split(File.pathSeparator).map { Path.of(it).toAbsolutePath().normalize().toString() }
+187:         classpathEntries.forEach { entry ->
+188:             val path = Path.of(entry).toAbsolutePath().normalize(); require(Files.exists(path)) { "HEAP_CLASSPATH_ENTRY_MISSING" }
+189:             classpathPart(path.toString())
+190:             if (Files.isDirectory(path)) Files.walk(path).use { paths -> paths.filter { Files.isRegularFile(it) }.sorted().forEach { file ->
+191:                 classpathPart(path.relativize(file).toString()); classpathPart(shaFile(file))
+192:             } } else classpathPart(shaFile(path))
+193:         }
+194:         return node(mapOf("schema" to "financial-heap-capability-v1", "maxHeapBytes" to Runtime.getRuntime().maxMemory(),
+195:             "usedHeapBytes" to ManagementFactory.getMemoryMXBean().heapMemoryUsage.used,
+196:             "vmArguments" to ManagementFactory.getRuntimeMXBean().inputArguments,
+197:             "javaVersion" to System.getProperty("java.version"), "javaVendor" to System.getProperty("java.vendor"),
+198:             "sourceHead" to sourceHead, "fixtureSha256" to shaFile(fixturePath), "configSha256" to shaFile(configPath),
+199:             "buildSha256" to HexFormat.of().formatHex(md.digest()), "classpathSha256" to HexFormat.of().formatHex(classpathDigest.digest()), "classpathEntries" to classpathEntries,
+200:             "classIdentityScope" to "All compiled Financial*.class including nested classes; ordered classpath entries with streamed jar/file bytes and sorted directory resources"))
+201:     }
+202: 
+203:     internal fun heapGuard(spec: JsonNode, specPath: Path, configPath: Path, timed: Long, aged: Long, pending: Long): FinancialHeapGuard {
+204:         val h = requireNotNull(spec["heap"]) { "HEAP_CONSERVATIVE_EVIDENCE_REQUIRED" }
+205:         val b = requireNotNull(h["bounds"]); val c = requireNotNull(h["capability"])
+206:         require(h["schema"]?.asText() == "financial-heap-admission-v1" && b["schema"]?.asText() == "financial-heap-bounds-v1"
+207:             && c["schema"]?.asText() == "financial-heap-capability-v1") { "HEAP_CONSERVATIVE_EVIDENCE_REQUIRED" }
+208:         require(FinancialHeapBounds.integer(h["authorizedMaxHeapBytes"], "authorizedMaxHeapBytes") == FinancialHeapBounds.AUTHORIZED_MAX)
+209:         require(b["validationOnly"]?.isBoolean == true && !b["validationOnly"].booleanValue()) { "HEAP_VALIDATION_ONLY_EVIDENCE" }
+210:         for (field in listOf("derivation", "scope")) require(b[field]?.isTextual == true && b[field].asText().isNotBlank())
+211:         val review = requireNotNull(h["review"]) { "HEAP_REVIEW_EVIDENCE_REQUIRED" }
+212:         require(review["schema"]?.asText() == "financial-heap-bounds-review-v1"
+213:             && review["verdict"]?.asText() == "READY_CONSERVATIVE_BOUND"
+214:             && review["validationOnly"]?.isBoolean == true && !review["validationOnly"].booleanValue()) { "HEAP_REVIEW_EVIDENCE_REQUIRED" }
+215:         require(review["boundsEvidenceSha256"] == h["boundsEvidenceSha256"]) { "HEAP_REVIEW_SCOPE_MISMATCH" }
+216:         for (field in listOf("sourceHead", "fixtureSha256", "configSha256", "buildSha256", "classpathSha256", "supportedIdentities", "supportedPendingItems", "derivation", "scope"))
+217:             require(review[field] != null && review[field] == b[field]) { "HEAP_REVIEW_SCOPE_MISMATCH field=$field" }
+218:         val root = specPath.toAbsolutePath().normalize().parent.toRealPath()
+219:         for ((kind, expected) in listOf("bounds" to b, "capability" to c, "review" to review)) {
+220:             require(h["${kind}EvidencePath"]?.isTextual == true)
+221:             val file = root.resolve(h["${kind}EvidencePath"].asText()).normalize().toRealPath()
+222:             require(file.startsWith(root) && file != root) { "HEAP_EVIDENCE_MUST_BE_OWNED_BY_POLICY" }
+223:             require(shaFile(file) == h["${kind}EvidenceSha256"]?.asText()) { "HEAP_RAW_EVIDENCE_HASH_MISMATCH" }
+224:             require(json.readTree(Files.readString(file)) == expected) { "HEAP_RAW_EVIDENCE_IDENTITY_MISMATCH" }
+225:         }
+226:         require(h["fixtureEvidencePath"]?.isTextual == true)
+227:         val fixturePath = root.resolve(h["fixtureEvidencePath"].asText()).normalize().toRealPath()
+228:         require(fixturePath.startsWith(root) && fixturePath != root && shaFile(fixturePath) == b["fixtureSha256"].asText()) { "HEAP_FIXTURE_IDENTITY_MISMATCH" }
+229:         val actual = heapCapability(spec["sourceHead"].asText(), fixturePath, configPath)
+230:         require(spec["fixtureSha256"] == actual["fixtureSha256"]) { "HEAP_FIXTURE_IDENTITY_MISMATCH" }
+231:         for (field in listOf("sourceHead", "fixtureSha256", "configSha256", "buildSha256", "classpathSha256")) {
+232:             val pattern = if (field == "sourceHead") "(?:[a-f0-9]{40}|[a-f0-9]{64})" else "[a-f0-9]{64}"
+233:             require(b[field]?.isTextual == true && b[field].asText().matches(Regex(pattern))
+234:                 && b[field] == c[field] && b[field] == actual[field]) { "HEAP_IDENTITY_MISMATCH field=$field" }
+235:         }
+236:         val vmArgs = node(listOf("-Xms128m", "-Xmx768m"))
+237:         require(c["vmArguments"] == vmArgs && actual["vmArguments"] == vmArgs) { "HEAP_PINNED_VM_ARGUMENTS_REQUIRED" }
+238:         for (field in listOf("javaVersion", "javaVendor")) require(c[field]?.isTextual == true && c[field].asText().isNotBlank() && c[field] == actual[field])
+239:         val bounds = FinancialHeapBounds.from(b)
+240:         val capabilityMax = FinancialHeapBounds.integer(c["maxHeapBytes"], "maxHeapBytes")
+241:         val capabilityUsed = FinancialHeapBounds.integer(c["usedHeapBytes"], "usedHeapBytes", false)
+242:         val estimated = bounds.estimate(timed, aged, pending)
+243:         require(estimated <= FinancialHeapBounds.MAX_SAFE_INTEGER && estimated < FinancialHeapBounds.limit(capabilityMax)
+244:             && capabilityUsed <= bounds.baselineHeapBytesUpper && capabilityUsed < FinancialHeapBounds.limit(capabilityMax)) { "HEAP_ADMISSION_LIMIT" }
+245:         return FinancialHeapGuard(bounds, estimated, capabilityMax)
+246:     }
+247: 
+248:     internal fun validateBootstrapCounts(spec: JsonNode) {
+249:         require(spec["schema"]?.asText() == "financial-calibration-bootstrap-v1"
+250:             && spec["purpose"]?.asText() == "EMPIRICAL_BOUNDED_DIAGNOSTIC"
+251:             && spec["status"]?.asText() == "FROZEN_DIAGNOSTIC"
+252:             && spec["capacityQualification"]?.isBoolean == true && !spec["capacityQualification"].booleanValue()
+253:             && spec["heapConservativeBound"]?.isBoolean == true && !spec["heapConservativeBound"].booleanValue()
+254:             && spec["estimatedHeapBytes"]?.isNull == true && !spec.has("arm") && !spec.has("heap")) { "BOOTSTRAP_DIAGNOSTIC_SCOPE" }
+255:         for ((field, expected) in mapOf("sampleTrades" to 1000L, "pendingSample" to 100L, "agedIdentities" to 0L,
+256:             "sourceActions" to 2100L, "historyRecords" to 2101L))
+257:             require(FinancialHeapBounds.integer(spec[field], field, false) == expected) { "BOOTSTRAP_FIXED_COUNTS field=$field" }
+258:     }
+259: 
+260:     private fun bootstrapLimits(): JsonNode = json.readTree("""{
+261:       "sourceRecordMaxBytes":1024,"unsignedHistoryMaxBytes":65536,"historyChangesMax":64,
+262:       "checksummedHistoryMaxBytes":65614,"resultMaxBytes":135324,"sourceActions":2100,"historyRecords":2101,
+263:       "maxPollRecords":16,"maxPartitionFetchBytes":262144,"fetchMaxBytes":524288,
+264:       "producerBufferBytes":4194304,"producerBatchBytes":65536,"maxRequestBytes":262144,
+265:       "bufferedRecordsPerPartition":16,"topicMaxMessageBytes":262144,
+266:       "ackJournalMaxBytes":33554432,"rawEncodedMaxBytes":150994944
+267:     }""")
+268: 
+269:     internal fun parseBootstrapResult(bytes: ByteArray): JsonNode {
+270:         require(bytes.size <= 135324) { "BOOTSTRAP_RESULT_BYTE_BOUND" }
+271:         return json.readTree(bytes).also { value ->
+272:             require(value["records"]?.isArray == true && value["records"].size() <= 2) { "BOOTSTRAP_RESULT_SHAPE_BOUND" }
+273:             value["records"].forEach { require(json.writeValueAsBytes(it).size <= 65614
+274:                 && it["changes"]?.isArray == true && it["changes"].size() <= 64) { "BOOTSTRAP_HISTORY_BOUND" } }
+275:         }
+276:     }
+277: 
+278:     internal fun validateBootstrapRuntimePaths(config: JsonNode) {
+279:         val owned = Path.of(requireNotNull(config["ownedRoot"]).asText()).toRealPath()
+280:         val resources = requireNotNull(config["localResources"]); require(resources.isArray && resources.size() == 3) { "BOOTSTRAP_LOCAL_RESOURCE_SET" }
+281:         require(resources.map { it["id"]?.asText() }.let { ids -> ids.all { !it.isNullOrBlank() } && ids.distinct().size == 3 }) { "BOOTSTRAP_LOCAL_RESOURCE_IDS" }
+282:         val paths = mutableListOf<Path>()
+283:         for ((field, category) in listOf("stateDir" to "localStore", "ackJournalDir" to "controllerJournal", "proofDir" to "proof")) {
+284:             val value = requireNotNull(config[field]) { "BOOTSTRAP_LOCAL_RESOURCE_FIELD $field" }.asText()
+285:             val path = Path.of(value).toRealPath()
+286:             require(path.toString() == value && path.startsWith(owned) && path != owned && Files.isDirectory(path)) { "BOOTSTRAP_OWNED_LOCAL_PATH" }
+287:             val rows = resources.filter { it["category"]?.asText() == category }; require(rows.size == 1 && rows.single()["path"]?.asText() == value) { "BOOTSTRAP_LOCAL_RESOURCE_BINDING $field" }
+288:             require(paths.none { it.startsWith(path) || path.startsWith(it) }) { "BOOTSTRAP_LOCAL_RESOURCE_OVERLAP" }; paths.add(path)
+289:         }
+290:     }
+291: 
+292:     internal fun validateBootstrapBrokerScope(config: JsonNode, bootstrapServers: String, observed: JsonNode) {
+293:         val registry = requireNotNull(config["registeredResources"]) { "BOOTSTRAP_BROKER_REGISTRY_REQUIRED" }
+294:         val expected = requireNotNull(config["brokerScope"]) { "BOOTSTRAP_BROKER_SCOPE_REQUIRED" }
+295:         require(registry["bootstrapServers"]?.asText() == bootstrapServers && expected["bootstrapServers"]?.asText() == bootstrapServers
+296:             && expected["schema"]?.asText() == "financial-broker-scope-v1" && expected["metadataSource"]?.asText() == "actual AdminClient describeCluster"
+297:             && expected["clusterId"]?.isTextual == true && expected["clusterId"].asText().isNotBlank() && expected == observed) { "BOOTSTRAP_BROKER_ENDPOINT_OR_CLUSTER_MISMATCH" }
+298:         val containers = requireNotNull(registry["containers"]); require(containers.isArray && containers.size() == 3) { "BOOTSTRAP_BROKER_RESOURCE_SET" }
+299:         val nodes = containers.sortedBy { it["brokerId"].asInt() }.map { c ->
+300:             val endpoint = requireNotNull(c["hostKafkaEndpoint"]); require(endpoint["host"]?.asText() == "127.0.0.1"
+301:                 && endpoint["port"]?.isIntegralNumber == true && endpoint["port"].asInt() in 1..65535) { "BOOTSTRAP_BROKER_ENDPOINT_PIN" }
+302:             mapOf("id" to c["brokerId"].asInt(), "host" to endpoint["host"].asText(), "port" to endpoint["port"].asInt())
+303:         }
+304:         require(nodes.map { it["id"] } == listOf(0, 1, 2) && observed["brokers"] == node(nodes)
+305:             && bootstrapServers == nodes.joinToString(",") { "${it["host"]}:${it["port"]}" }) { "BOOTSTRAP_BROKER_NODE_MAPPING" }
+306:     }
+307: 
+308:     private fun brokerScope(admin: AdminClient, bootstrapServers: String): JsonNode {
+309:         val description = admin.describeCluster(); val end = System.nanoTime() + TimeUnit.SECONDS.toNanos(3)
+310:         val clusterId = description.clusterId().get(maxOf(1L, end - System.nanoTime()), TimeUnit.NANOSECONDS)
+311:         val brokers = description.nodes().get(maxOf(1L, end - System.nanoTime()), TimeUnit.NANOSECONDS).sortedBy { it.id() }
+312:         require(clusterId.isNotBlank() && brokers.size == 3) { "BROKER_SCOPE_EXACT_RF3_CLUSTER_REQUIRED" }
+313:         return node(mapOf("schema" to "financial-broker-scope-v1", "bootstrapServers" to bootstrapServers, "clusterId" to clusterId,
+314:             "brokers" to brokers.map { mapOf("id" to it.id(), "host" to it.host(), "port" to it.port()) }, "metadataSource" to "actual AdminClient describeCluster"))
+315:     }
+316: 
+317:     internal fun validateBootstrapCorrectness(spec: JsonNode, specPath: Path, expectedBootstrapServers: String) {
+318:         val evidence = requireNotNull(spec["correctness"]) { "BOOTSTRAP_E3_RAW_REQUIRED" }
+319:         val root = specPath.toAbsolutePath().parent.toRealPath()
+320:         fun raw(field: String): Path {
+321:             require(spec[field]?.isTextual == true) { "BOOTSTRAP_E3_RAW_REQUIRED" }
+322:             val planned = root.resolve(spec[field].asText()).normalize()
+323:             require(Files.isRegularFile(planned)) { "BOOTSTRAP_E3_RAW_REQUIRED" }
+324:             val file = planned.toRealPath()
+325:             require(file == planned && file.startsWith(root) && file != root && Files.size(file) <= 1024L * 1024) { "BOOTSTRAP_E3_RAW_SCOPE" }
+326:             return file
+327:         }
+328:         val markerPath = raw("correctnessEvidencePath")
+329:         require(shaFile(markerPath) == evidence["evidenceSha256"]?.asText()) { "BOOTSTRAP_E3_RAW_HASH" }
+330:         val marker = json.readTree(Files.readString(markerPath))
+331:         val declared = evidence.deepCopy<ObjectNode>().apply { remove("evidenceSha256") }
+332:         require(marker == declared && marker["schema"]?.asText() == "financial-e3-correctness-binding-v1" && marker["result"]?.asText() == "PASS") { "BOOTSTRAP_E3_RAW_IDENTITY" }
+333:         for (field in listOf("sourceHead", "fixtureSha256", "candidateSha256")) require(marker[field] != null && marker[field] == spec[field]) { "BOOTSTRAP_E3_CANDIDATE_BINDING $field" }
+334:         for (field in listOf("buildSha256", "classpathSha256")) require(marker[field] != null && marker[field] == spec["capability"][field]) { "BOOTSTRAP_E3_BUILD_BINDING $field" }
+335:         require(marker["plannedBootstrapConfigSha256"] == spec["capability"]["configSha256"] && marker["sourceCandidateEvidenceSha256"] == spec["candidateEvidenceSha256"]) { "BOOTSTRAP_E3_PLANNED_CONFIG_BINDING" }
+336:         require(marker["arms"] == node(mapOf("core" to 24, "golden" to 20, "external" to 4, "activation" to 1))
+337:             && marker["scope"]?.asText() == "Actual same-candidate RF3/EOS financial proof: core24 + golden20 + external4 + activation1; E3 configuration and plan identities retained separately from planned bootstrap configuration.") { "BOOTSTRAP_E3_PROOF_SCOPE" }
+338:         val manifestPath = raw("correctnessProofManifestEvidencePath")
+339:         require(shaFile(manifestPath) == marker["proofManifestSha256"]?.asText()) { "BOOTSTRAP_E3_MANIFEST_HASH" }
+340:         val manifest = json.readTree(Files.readString(manifestPath)); require(manifest["schema"]?.asText() == "financial-e3-proof-manifest-v1") { "BOOTSTRAP_E3_MANIFEST_SCHEMA" }
+341:         for (field in listOf("sourceHead", "fixtureSha256", "candidateSha256", "buildSha256", "classpathSha256", "plannedBootstrapConfigSha256", "arms", "e3PlanSha256"))
+342:             require(manifest[field] != null && manifest[field] == marker[field]) { "BOOTSTRAP_E3_MANIFEST_IDENTITY $field" }
+343:         val proofRoot = Path.of(requireNotNull(spec["correctnessProofRoot"]).asText()).toRealPath()
+344:         require(proofRoot.startsWith(root.parent) && proofRoot != root.parent && manifest["proofRoot"]?.asText() == proofRoot.toString()) { "BOOTSTRAP_E3_PROOF_ROOT" }
+345:         val files = requireNotNull(manifest["files"]); require(files.isArray && files.size() in 1..4096) { "BOOTSTRAP_E3_FILE_SET" }
+346:         val names = mutableListOf<String>(); var total = 0L
+347:         for (row in files) {
+348:             val planned = Path.of(row["path"].asText()); val file = planned.toRealPath(); val size = Files.size(file)
+349:             require(file == planned && file.startsWith(proofRoot) && Files.isRegularFile(file) && size in 0..8L * 1024 * 1024
+350:                 && row["sizeBytes"]?.isIntegralNumber == true && row["sizeBytes"].asLong() == size && shaFile(file) == row["sha256"]?.asText()) { "BOOTSTRAP_E3_FILE_HASH" }
+351:             total = Math.addExact(total, size); require(total <= 256L * 1024 * 1024) { "BOOTSTRAP_E3_RAW_BOUND" }; names.add(file.toString())
+352:         }
+353:         val actualFiles = mutableListOf<String>()
+354:         Files.walk(proofRoot, 65).use { paths ->
+355:             val iterator = paths.iterator(); var entries = 0
+356:             while (iterator.hasNext()) {
+357:                 val file = iterator.next(); entries++
+358:                 require(entries <= 65536 && proofRoot.relativize(file).nameCount <= 64 && !Files.isSymbolicLink(file)) { "BOOTSTRAP_E3_TREE_BOUND_OR_SYMLINK" }
+359:                 if (!Files.isDirectory(file)) {
+360:                     require(Files.isRegularFile(file) && actualFiles.size < 4096) { "BOOTSTRAP_E3_FILE_SET" }; actualFiles.add(file.toString())
+361:                 }
+362:             }
+363:         }
+364:         require(names == names.sorted() && names.distinct().size == names.size && names == actualFiles.sorted()) { "BOOTSTRAP_E3_COMPLETE_FILE_SET" }
+365:         val candidate = json.readTree(Files.readString(raw("candidateEvidencePath")))
+366:         require(shaFile(raw("candidateEvidencePath")) == spec["candidateEvidenceSha256"]?.asText()) { "BOOTSTRAP_E3_SOURCE_RAW_HASH" }
+367:         val sourceHashes = candidate["sourceSha256"]
+368:         val compiled = linkedMapOf<String, String>()
+369:         val classpath = spec["capability"]["classpathEntries"].map { it.asText() }
+370:         for (entry in classpath) {
+371:             val path = Path.of(entry)
+372:             if (Files.isRegularFile(path)) compiled[path.toString()] = shaFile(path)
+373:             else {
+374:                 val dir = path.resolve("com/reef/platform/calcify/financial")
+375:                 if (Files.isDirectory(dir)) Files.list(dir).use { paths -> paths.filter { it.fileName.toString().startsWith("Financial") && it.fileName.toString().endsWith(".class") }
+376:                     .sorted().forEach { compiled[it.toString()] = shaFile(it) } }
+377:             }
+378:         }
+379:         require(compiled.keys.any { Path.of(it).fileName.toString() == "FinancialKernel.class" }) { "BOOTSTRAP_E3_COMPILED_COVERAGE" }
+380:         for (arm in listOf("core", "golden", "external", "activation")) {
+381:             val planHash = marker["e3PlanSha256"]?.get(arm)?.asText()
+382:             val selected = files.filter { Path.of(it["path"].asText()).fileName.toString() == "plan.json" && it["sha256"].asText() == planHash }
+383:             require(planHash?.matches(Regex("[a-f0-9]{64}")) == true && selected.size == 1) { "BOOTSTRAP_E3_PLAN_BINDING" }
+384:             val planPath = Path.of(selected.single()["path"].asText()); val plan = json.readTree(Files.readString(planPath))
+385:             require(plan["schema"]?.asText() == "financial-e3-plan-v1" && plan["fixtureSha256"] == spec["fixtureSha256"]
+386:                 && plan["classpath"]?.asText() == classpath.joinToString(File.pathSeparator) && plan["compiledHashes"] == node(compiled)) { "BOOTSTRAP_E3_ACTUAL_BUILD_BINDING" }
+387:             require(plan["broker"]?.asText() == expectedBootstrapServers) { "BOOTSTRAP_E3_BROKER_ENDPOINT_BINDING" }
+388:             val financial = "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/"
+389:             sourceHashes.properties().filter { it.key.startsWith(financial) && it.key.endsWith(".kt") }.forEach { (name, value) ->
+390:                 require(plan["sourceHashes"]?.get(name.removePrefix(financial)) == value) { "BOOTSTRAP_E3_ACTUAL_SOURCE_BINDING" }
+391:             }
+392:             for (name in listOf("scripts/dev/calcify-financial/broker-proof.mjs", "scripts/dev/calcify-financial/lib/external-faults.mjs", "scripts/dev/calcify-financial/proof-supervisor.mjs"))
+393:                 require(sourceHashes[name] != null && plan["runnerHashes"]?.get(name) == sourceHashes[name]) { "BOOTSTRAP_E3_RUNNER_BINDING" }
+394:             val resultPath = planPath.parent.resolve("results.json"); require(names.contains(resultPath.toString())) { "BOOTSTRAP_E3_RESULTS_REQUIRED" }
+395:             val results = json.readTree(Files.readString(resultPath))["results"]
+396:             val expectedNames = when (arm) {
+397:                 "core" -> listOf("happy") + plan["mutationBoundaries"].map { "mutation-${it["index"].asInt()}" } + listOf("forward", "serialization", "local-state-loss", "staged-phase-loss")
+398:                 "golden" -> (0..19).map { "golden-$it" }
+399:                 "external" -> listOf("producer-failure", "committed-output-before-controller-ack", "stale-owner-resume-after-takeover", "majority-one-broker-unavailable")
+400:                 else -> listOf("activation-quartet")
+401:             }
+402:             require(results != null && results.isArray && results.size() == marker["arms"][arm].asInt()
+403:                 && results.map { it["name"].asText() }.sorted() == expectedNames.sorted()
+404:                 && results.all { it["after"]?.get("pass")?.isBoolean == true && it["after"]["pass"].booleanValue() }) { "BOOTSTRAP_E3_ACTUAL_PASS_SET" }
+405:             if (arm == "activation") require(results.all { it["before"]["pass"].asBoolean() && it["idle"]["pass"].asBoolean() }) { "BOOTSTRAP_E3_ACTIVATION_PREFIX" }
+406:         }
+407:     }
+408: 
+409:     /** Finite empirical entry point. Never construct a placeholder conservative bound. */
+410:     internal fun bootstrapGuard(spec: JsonNode, specPath: Path, configPath: Path): FinancialHeapGuard {
+411:         validateBootstrapCounts(spec)
+412:         require(spec["sourceHead"]?.asText()?.matches(Regex("[a-f0-9]{40}")) == true) { "BOOTSTRAP_SOURCE_HEAD" }
+413:         require(spec["limits"] == bootstrapLimits()) { "BOOTSTRAP_LIMITS_DRIFT" }
+414:         val unsigned = spec.deepCopy<ObjectNode>().apply { remove("bootstrapSha256") }
+415:         require(sha(json.writeValueAsBytes(unsigned)) == spec["bootstrapSha256"]?.asText()) { "BOOTSTRAP_FROZEN_HASH" }
+416:         val root = specPath.toAbsolutePath().parent.toRealPath()
+417:         fun raw(name: String, maximum: Long = 1024L * 1024): Path {
+418:             require(spec[name]?.isTextual == true) { "BOOTSTRAP_RAW_EVIDENCE_REQUIRED" }
+419:             val file = root.resolve(spec[name].asText()).normalize().toRealPath()
+420:             require(file.startsWith(root) && file != root && Files.isRegularFile(file) && Files.size(file) <= maximum) { "BOOTSTRAP_RAW_EVIDENCE_SCOPE" }
+421:             return file
+422:         }
+423:         val capability = requireNotNull(spec["capability"]); val review = requireNotNull(spec["review"])
+424:         var candidate: JsonNode? = null
+425:         for (kind in listOf("capability", "review", "candidate")) {
+426:             val file = raw("${kind}EvidencePath")
+427:             require(shaFile(file) == spec["${kind}EvidenceSha256"]?.asText()) { "BOOTSTRAP_RAW_EVIDENCE_HASH" }
+428:             val value = json.readTree(Files.readString(file))
+429:             if (kind == "candidate") candidate = value else require(value == spec[kind]) { "BOOTSTRAP_RAW_EVIDENCE_IDENTITY" }
+430:         }
+431:         val fixture = raw("fixtureEvidencePath")
+432:         require(shaFile(fixture) == spec["fixtureSha256"]?.asText() && Files.size(configPath) <= 1024L * 1024
+433:             && shaFile(configPath) == capability["configSha256"]?.asText()) { "BOOTSTRAP_FIXTURE_CONFIG_HASH" }
+434:         val actual = heapCapability(spec["sourceHead"].asText(), fixture, configPath)
+435:         require(actual["vmArguments"] == node(listOf("-Xms128m", "-Xmx768m"))) { "BOOTSTRAP_PINNED_VM_REQUIRED" }
+436:         for (field in listOf("sourceHead", "fixtureSha256", "configSha256", "buildSha256", "classpathSha256", "javaVersion", "javaVendor", "classpathEntries", "maxHeapBytes"))
+437:             require(capability[field] != null && capability[field] == actual[field]) { "BOOTSTRAP_CAPABILITY_DRIFT field=$field" }
+438:         require(actual["maxHeapBytes"].asLong() == FinancialHeapBounds.AUTHORIZED_MAX) { "BOOTSTRAP_PINNED_MAX_REQUIRED" }
+439:         val source = requireNotNull(candidate)
+440:         require(source["schema"]?.asText() == "financial-candidate-source-v1" && source["sourceHead"] == spec["sourceHead"]
+441:             && source["candidateSha256"] == spec["candidateSha256"] && sha(json.writeValueAsBytes(source["sourceSha256"])) == spec["candidateSha256"].asText()) { "BOOTSTRAP_CANDIDATE_HASH" }
+442:         val sourceRoot = Path.of(source["sourceRoot"].asText()).toRealPath()
+443:         val classes = sourceRoot.resolve("services/platform-runtime/build/classes/kotlin/test")
+444:         require(actual["classpathEntries"].any { it.asText() == classes.toString() }) { "BOOTSTRAP_SOURCE_BUILD_ROOT" }
+445:         val financialPath = "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial"
+446:         val required = Files.list(sourceRoot.resolve(financialPath)).use { paths -> paths.filter {
+447:             it.fileName.toString().startsWith("Financial") && it.fileName.toString().endsWith(".kt")
+448:         }.map { "$financialPath/${it.fileName}" }.toList() }
+449:         require(required.isNotEmpty() && required.all { source["sourceSha256"].has(it) }) { "BOOTSTRAP_SOURCE_COVERAGE" }
+450:         for (name in listOf("broker-proof.mjs", "rate-proof.mjs", "bootstrap-calibration.mjs", "rate-supervision.mjs", "proof-supervisor.mjs",
+451:             "physical-evidence.mjs", "physical-adapter.mjs", "lib/external-faults.mjs"))
+452:             require(source["sourceSha256"].has("scripts/dev/calcify-financial/$name")) { "BOOTSTRAP_SOURCE_COVERAGE" }
+453:         source["sourceSha256"].properties().forEach { (name, expected) ->
+454:             val file = sourceRoot.resolve(name).normalize().toRealPath()
+455:             require(file.startsWith(sourceRoot) && Files.isRegularFile(file) && Files.size(file) <= 1024L * 1024
+456:                 && shaFile(file) == expected.asText()) { "BOOTSTRAP_SOURCE_DRIFT" }
+457:         }
+458:         require(review["schema"]?.asText() == "financial-bootstrap-review-v1" && review["verdict"]?.asText() == "READY_BOUNDED_DIAGNOSTIC"
+459:             && review["candidateSha256"] == spec["candidateSha256"] && review["limitsSha256"]?.asText() == sha(json.writeValueAsBytes(spec["limits"]))) { "BOOTSTRAP_REVIEW_REQUIRED" }
+460:         for (field in listOf("fixtureSha256", "configSha256", "buildSha256", "classpathSha256")) require(review[field] == capability[field]) { "BOOTSTRAP_REVIEW_SCOPE" }
+461:         for (field in listOf("sampleTrades", "pendingSample", "agedIdentities")) require(review[field] == spec[field]) { "BOOTSTRAP_REVIEW_COUNTS" }
+462:         val config = json.readTree(Files.readString(configPath))
+463:         validateBootstrapCorrectness(spec, specPath, requireNotNull(config["registeredResources"]?.get("bootstrapServers")).asText())
+464:         require(config["policy"] == json.readTree(Files.readString(fixture))["policy"]) { "BOOTSTRAP_POLICY_FIXTURE" }
+465:         validateBootstrapRuntimePaths(config)
+466:         return FinancialHeapGuard.diagnosticBootstrap(1000, 100, 0, actual["maxHeapBytes"].asLong(),
+467:             spec["preloadOperationalCeilingBytes"]?.let { FinancialHeapBounds.integer(it, "preloadOperationalCeilingBytes") })
+468:     }
+469: 
+470:     /** Actual caller seam: guard starts before setup and closes on every exceptional path.
+471:      * Body retains guard through worker close, result-only replay and atomic result publication. */
+472:     internal fun <T> withHeapProtection(guard: FinancialHeapGuard, body: (FinancialHeapGuard) -> T): T {
+473:         try { guard.start(); return body(guard).also { if (guard.isClosed) guard.checkpoint("lifecycle-return") else guard.refresh("lifecycle-return") } }
+474:         finally { guard.close() }
+475:     }
+476: 
+477:     /** Shared actual result-only replay batch boundary, independently injectable without a broker. */
+478:     internal fun <T> heapReplayBatch(guard: FinancialHeapGuard, records: Iterable<T>, applyRecord: (T) -> Unit) {
+479:         guard.checkpoint("result-only-replay-batch")
+480:         records.forEach { record -> guard.checkpoint("result-only-replay-record"); applyRecord(record); guard.checkpoint("result-only-replay-record-applied") }
+481:     }
+482: 
+483:     /** Main thread polls heap failure during interruptible blocking producer operations. */
+484:     internal fun <T> heapAwait(guard: FinancialHeapGuard, stage: String, timeoutMillis: Long, action: () -> T): T {
+485:         guard.checkpoint("$stage-before-operation")
+486:         val task = FutureTask<T> { action() }
+487:         val thread = Thread(task, "financial-$stage").apply { isDaemon = true; start() }
+488:         val end = System.nanoTime() + TimeUnit.MILLISECONDS.toNanos(timeoutMillis)
+489:         try {
+490:             while (true) {
+491:                 guard.checkpoint(stage)
+492:                 require(System.nanoTime() < end) { "rate operation timeout stage=$stage" }
+493:                 try { return task.get(25, TimeUnit.MILLISECONDS).also { guard.refresh("$stage-complete") } }
+494:                 catch (_: TimeoutException) { /* Keep heap checkpoint separate from blocked operation. */ }
+495:             }
+496:         } finally { if (!task.isDone) task.cancel(true); thread.join(500) }
+497:     }
+498: 
+499:     internal data class HeapArtifactSnapshot(val observation: Map<String, Any?>, val resourcePeakBytes: Long, val peakScope: String)
+500: 
+501:     /** Reporting cutoff only: guard continues sampling through serialization and staged writes. */
+502:     internal fun heapArtifactSnapshot(guard: FinancialHeapGuard, physicalSamplerPeakBytes: Long): HeapArtifactSnapshot {
+503:         val observation = guard.telemetry()
+504:         val scope = "Sampled through result assembly snapshot; final serialization and staged writes excluded"
+505:         return HeapArtifactSnapshot(observation + ("reportedPeakScope" to scope),
+506:             maxOf(physicalSamplerPeakBytes, observation["heapPeakBytes"] as Long), scope)
+507:     }
+508: 
+509:     /** Same provider serves hot input and cold activation; historical lookup stays disk-backed. */
+510:     internal fun acknowledgedMember(journal: FinancialAckJournal, index: Long, checkpoint: () -> Unit = {}): JsonNode {
+511:         val end = System.nanoTime() + TimeUnit.SECONDS.toNanos(10)
+512:         while (System.nanoTime() < end) {
+513:             journal.checkHealthy(); checkpoint(); journal.member(index)?.let { return it }; LockSupport.parkNanos(100_000)
+514:         }
+515:         error("ACK membership wait expired index=$index")
+516:     }
+517: 
+518:     internal fun streamProperties(base: Properties, prefix: String, stateDir: Path, bootstrap: Boolean) = Properties().apply {
+519:         putAll(base); put(StreamsConfig.APPLICATION_ID_CONFIG, "$prefix-streams"); put(StreamsConfig.STATE_DIR_CONFIG, stateDir.toString())
+520:         put(StreamsConfig.PROCESSING_GUARANTEE_CONFIG, StreamsConfig.EXACTLY_ONCE_V2); put(StreamsConfig.REPLICATION_FACTOR_CONFIG, 3)
+521:         put(StreamsConfig.NUM_STREAM_THREADS_CONFIG, 1); put(StreamsConfig.COMMIT_INTERVAL_MS_CONFIG, 2000)
+522:         put("topic.min.insync.replicas", 2); put("topic.write.caching", false); put("consumer.max.poll.records", if (bootstrap) 16 else 128)
+523:         put("consumer.max.poll.interval.ms", 30000)
+524:         put("default.deserialization.exception.handler", "org.apache.kafka.streams.errors.LogAndFailExceptionHandler")
+525:         put("default.production.exception.handler", "org.apache.kafka.streams.errors.DefaultProductionExceptionHandler")
+526:         put("processing.exception.handler", "org.apache.kafka.streams.errors.LogAndFailProcessingExceptionHandler")
+527:         if (bootstrap) {
+528:             put("topic.max.message.bytes", 262144); put(StreamsConfig.BUFFERED_RECORDS_PER_PARTITION_CONFIG, 16)
+529:             put("consumer.fetch.max.bytes", 524288); put("consumer.max.partition.fetch.bytes", 262144)
+530:             put("producer.buffer.memory", 4194304L); put("producer.batch.size", 65536); put("producer.max.request.size", 262144)
+531:             put("producer.max.in.flight.requests.per.connection", 1); put("producer.compression.type", "none")
+532:             put("producer.max.block.ms", 10000L); put("producer.request.timeout.ms", 10000); put("producer.delivery.timeout.ms", 30000)
+533:         }
+534:     }
+535: 
+536:     private fun consumerProperties(base: Properties, bootstrap: Boolean) = Properties().apply {
+537:         putAll(base); put("enable.auto.commit", false); put("auto.offset.reset", "earliest"); put("isolation.level", "read_committed")
+538:         if (bootstrap) { put("max.poll.records", 16); put("fetch.max.bytes", 524288); put("max.partition.fetch.bytes", 262144) }
+539:     }
+540: 
+541:     internal fun bootstrapClientConfiguration(properties: Properties): JsonNode {
+542:         val streams = StreamsConfig(properties)
+543:         fun finite(values: Map<String, Any>, expected: Map<String, Any>): Map<String, Any> {
+544:             for ((key, wanted) in expected) require(values[key].toString() == wanted.toString()) { "BOOTSTRAP_EFFECTIVE_CONFIG_MISMATCH $key" }
+545:             return expected.keys.associateWith { values.getValue(it) }
+546:         }
+547:         val consumers = mapOf("max.poll.records" to 16, "fetch.max.bytes" to 524288, "max.partition.fetch.bytes" to 262144, "isolation.level" to "read_committed")
+548:         return node(mapOf("schema" to "financial-bootstrap-effective-clients-v1",
+549:             "producer" to finite(streams.getProducerConfigs("finite-producer"), mapOf("buffer.memory" to 4194304L, "batch.size" to 65536,
+550:                 "max.request.size" to 262144, "max.in.flight.requests.per.connection" to 1, "compression.type" to "none", "max.block.ms" to 10000L,
+551:                 "request.timeout.ms" to 10000, "delivery.timeout.ms" to 30000)),
+552:             "mainConsumer" to finite(streams.getMainConsumerConfigs("finite-group", "finite-main", 0), consumers),
+553:             "restoreConsumer" to finite(streams.getRestoreConsumerConfigs("finite-restore"), consumers),
+554:             "bufferedRecordsPerPartition" to streams.getInt(StreamsConfig.BUFFERED_RECORDS_PER_PARTITION_CONFIG)))
+555:     }
+556: 
+557:     private fun bootstrapRecovery(args: Array<String>) {
+558:         require(args.size == 7 && args[2].startsWith("financial-s1-")) { "bootstrap-recover broker prefix config spec recovery-request result" }
+559:         val configPath = Path.of(args[3]); val specPath = Path.of(args[4]); val requestPath = Path.of(args[5]); val resultPath = Path.of(args[6])
+560:         require(Files.size(specPath) <= 1024L * 1024 && Files.size(requestPath) <= 1024L * 1024)
+561:         val spec = json.readTree(Files.readString(specPath)); val config = json.readTree(Files.readString(configPath)); val request = json.readTree(Files.readString(requestPath))
+562:         val guard = bootstrapGuard(spec, specPath, configPath)
+563:         withHeapProtection(guard) { heap ->
+564:             val start = System.nanoTime(); val prefix = args[2]; val props = Properties().apply { put("bootstrap.servers", args[1]) }
+565:             val balances = node(mapOf("buyerCash" to "11000000000", "sellerCash" to "0", "buyerShares" to "0", "sellerShares" to "1100"))
+566:             AdminClient.create(props).use { admin ->
+567:                 validateBootstrapBrokerScope(config, args[1], brokerScope(admin, args[1]))
+568:                 val uuid = admin.describeTopics(listOf("$prefix-input")).allTopicNames().get(3, TimeUnit.SECONDS).getValue("$prefix-input").topicId().toString()
+569:                 require(uuid == request["sourceUuid"].asText() && request["bootstrapSha256"] == spec["bootstrapSha256"]) { "BOOTSTRAP_RECOVERY_SCOPE" }
+570:                 FinancialAckJournal(Path.of(config["ackJournalDir"].asText()), FinancialAckJournal.Scope(prefix, "$prefix-input", uuid), maxBytes = 33554432).use { journal ->
+571:                     require(journal.recoveredCount == 2100L && journal.publishedCount == 2100L) { "BOOTSTRAP_RECOVERY_JOURNAL_COUNT" }
+572:                     val activation = AtomicReference<JsonNode>(); val failure = AtomicReference<Throwable>(); val running = CountDownLatch(1)
+573:                     val workerConfig = node(mapOf("genesis" to mapOf("hot" to mapOf("balances" to balances)), "policy" to config["policy"], "acceptedManifest" to mapOf("inputTopicId" to uuid)))
+574:                     val topology = FinancialBrokerProbe.topology(workerConfig, "", prefix,
+575:                         { index -> acknowledgedMember(journal, index) { heap.checkpoint("managed-recovery-membership") } }, uuid,
+576:                         onActivation = { cut ->
+577:                             heap.refresh("managed-activation-cut"); val owner = requireNotNull(cut.owners["hot"]) { "BOOTSTRAP_RECOVERY_OWNER_MISSING" }
+578:                             val summary = node(mapOf("ownerSha256" to digest(owner.ownerView()), "historyChecksum" to owner.lastRecord()!!["checksum"].asText(),
+579:                                 "historyRecords" to owner.historySequence(), "ordinal" to cut.ordinal, "offset" to cut.offset))
+580:                             require(summary["ownerSha256"] == request["ownerSha256"] && summary["historyChecksum"] == request["historyChecksum"]
+581:                                 && summary["historyRecords"] == request["historyRecords"] && cut.ordinal == 2099L
+582:                                 && cut.offset == journal.member(2099)!!["offset"].asLong()) { "BOOTSTRAP_MANAGED_ACTIVATION_PARITY" }
+583:                             activation.set(summary); heap.refresh("managed-activation-parity")
+584:                         })
+585:                     val effectiveProperties = streamProperties(props, prefix, Path.of(config["stateDir"].asText()), true)
+586:                     bootstrapClientConfiguration(effectiveProperties)
+587:                     val streams = KafkaStreams(topology, effectiveProperties)
+588:                     streams.setStateListener { next, _ -> if (next == KafkaStreams.State.RUNNING) running.countDown() }
+589:                     streams.setUncaughtExceptionHandler { error -> failure.compareAndSet(null, error); StreamsUncaughtExceptionHandler.StreamThreadExceptionResponse.SHUTDOWN_CLIENT }
+590:                     try {
+591:                         streams.start(); val end = System.nanoTime() + TimeUnit.SECONDS.toNanos(60)
+592:                         while (running.count > 0 && System.nanoTime() < end && failure.get() == null) { heap.checkpoint("managed-startup-wait"); running.await(25, TimeUnit.MILLISECONDS) }
+593:                         failure.get()?.let { throw IllegalStateException("managed recovery failed", it) }
+594:                         require(running.count == 0L && activation.get() != null) { "BOOTSTRAP_MANAGED_STARTUP_TIMEOUT" }
+595:                     } finally { require(streams.close(Duration.ofSeconds(15))) { "BOOTSTRAP_MANAGED_CLOSE_TIMEOUT" } }
+596:                     journal.checkHealthy(); heap.refresh("managed-recovery-closed")
+597:                     val result = mapOf("schema" to "financial-bootstrap-process-recovery-v1", "bootstrapSha256" to spec["bootstrapSha256"].asText(),
+598:                         "processId" to ProcessHandle.current().pid(), "sourceUuid" to uuid, "recoveredMembers" to journal.recoveredCount,
+599:                         "controllerAdmissionsReplayed" to 0, "oldControllerAdmissionTimes" to "unknown", "activation" to activation.get(),
+600:                         "elapsedMs" to (System.nanoTime() - start) / 1_000_000, "heapObservation" to heapArtifactSnapshot(heap, 0).observation,
+601:                         "firstFreshResult" to null, "scope" to "actual new JVM and KafkaStreams instance; complete certified activation; no new economic inputs")
+602:                     heap.publish(resultPath, json.writerWithDefaultPrettyPrinter().writeValueAsString(result) + "\n")
+603:                 }
+604:             }
+605:         }
+606:     }
+607: 
+608:     @JvmStatic fun main(args: Array<String>) {
+609:         if (args.firstOrNull() == "broker-scope") {
+610:             require(args.size == 2) { "broker-scope exact-bootstrap-endpoints" }
+611:             val admin = AdminClient.create(Properties().apply { put("bootstrap.servers", args[1]); put("default.api.timeout.ms", 3000); put("request.timeout.ms", 3000) })
+612:             try { println(json.writeValueAsString(brokerScope(admin, args[1]))) } finally { admin.close(Duration.ofSeconds(2)) }
+613:             return
+614:         }
+615:         if (args.firstOrNull() == "bootstrap-recover") { bootstrapRecovery(args); return }
+616:         if (args.firstOrNull() == "heap-capability") {
+617:             require(args.size == 4) { "heap-capability source-head fixture-path config-path" }
+618:             println(json.writeValueAsString(heapCapability(args[1], Path.of(args[2]), Path.of(args[3])))); return
+619:         }
+620:         if (args.firstOrNull() == "self-check") { selfCheck(json.readTree(Files.readString(Path.of(args[1])))["policy"]); return }
+621:         require(args.size >= 4) { "calibrate|run bootstrap financial-s1-prefix config-file --financial-rate-* PATH" }
+622:         val mode = args[0]; val broker = args[1]; val prefix = args[2]
+623:         require(mode in setOf("calibrate", "run", "bootstrap-calibrate") && prefix.startsWith("financial-s1-"))
+624:         val bootstrap = mode == "bootstrap-calibrate"; val calibrationMode = mode != "run"
+625:         val configPath = Path.of(args[3])
+626:         fun flag(name: String): Path = Path.of(args[args.indexOf(name).also { require(it >= 0) } + 1])
+627:         val specPath = flag(if (bootstrap) "--financial-calibration-bootstrap-request" else if (calibrationMode) "--financial-rate-calibration-request" else "--financial-rate-policy")
+628:         val spec = json.readTree(Files.readString(specPath))
+629:         val outPath = flag(if (bootstrap) "--financial-calibration-bootstrap" else if (calibrationMode) "--financial-rate-calibration" else "--financial-rate-measurement")
+630:         require(if (calibrationMode) spec["correctness"]["result"].asText() == "PASS" else spec["status"].asText() == "FROZEN") { "E3/frozen load gate" }
+631:         if (mode == "run") {
+632:             val frozen = spec.deepCopy<ObjectNode>().apply { remove("policySha256") }
+633:             require(sha(json.writeValueAsBytes(frozen)) == spec["policySha256"]?.asText()) { "FROZEN_POLICY_HASH_MISMATCH" }
+634:         }
+635:         val count = FinancialHeapBounds.integer(spec[if (calibrationMode) "sampleTrades" else "expectedTimedTrades"], "timedTrades")
+636:         require(count in 1L..3_000_000L)
+637:         val rate = if (calibrationMode) 0L else spec["arm"]["rate"].asLong()
+638:         val seconds = if (calibrationMode) 0L else spec["arm"]["seconds"].asLong()
+639:         val aged = if (mode == "run" && spec["arm"]["state"].asText() == "aged") FinancialHeapBounds.integer(spec["aged"]["identities"], "agedIdentities", false) else 0L
+640:         val pending = if (calibrationMode) FinancialHeapBounds.integer(spec["pendingSample"], "pendingSample", false) else if (spec["arm"]["state"].asText() == "aged") FinancialHeapBounds.integer(spec["aged"]["pendingItems"], "pendingItems", false) else 0L
+641:         val heap = if (bootstrap) bootstrapGuard(spec, specPath, configPath) else heapGuard(spec, specPath, configPath, count, aged, pending)
+642:         withHeapProtection(heap) { guard ->
+643:         val config = json.readTree(Files.readString(configPath))
+644:         require(config["registeredResources"]?.get("bootstrapServers")?.asText() == broker) { "RATE_BROKER_ARGUMENT_NOT_REGISTERED" }
+645:         val opening = Math.addExact(Math.addExact(aged, pending), count)
+646:         val balances = node(mapOf("buyerCash" to Math.multiplyExact(opening, PRICE).toString(), "sellerCash" to "0", "buyerShares" to "0", "sellerShares" to opening.toString()))
+647:         if (mode == "run") require(spec["openingResources"]["cashNanos"].asText() == balances["buyerCash"].asText() && spec["openingResources"]["shares"].asText() == balances["sellerShares"].asText()) { "frozen genesis resource mismatch" }
+648:         val stateDir = Path.of(config.path("stateDir").asText("/tmp/$prefix-state")); Files.createDirectories(stateDir)
+649:         val props = Properties().apply { put("bootstrap.servers", broker) }
+650:         val capacity = Semaphore(16384)
+651:         val stageLock = Any()
+652:         val fatal = AtomicReference<Throwable>(); val done = AtomicReference(false)
+653:         val ordinal = AtomicLong(); val covered = AtomicLong(); val offered = AtomicLong(); val admitted = AtomicLong(); val captured = AtomicLong(); val settled = AtomicLong()
+654:         val deadlineOffered = AtomicLong(); val deadlineAdmitted = AtomicLong(); val deadlineCaptured = AtomicLong(); val deadlineSettled = AtomicLong()
+655:         val callbackSuccess = AtomicLong(); val deadlineCallbackSuccess = AtomicLong()
+656:         val timedStart = AtomicLong()
+657:         fun beforeDeadline(now: Long = System.nanoTime()) = timedStart.get() > 0 && (seconds == 0L || now - timedStart.get() <= seconds * 1_000_000_000L)
+658:         val inputBytes = AtomicLong(); val outputBytes = AtomicLong(); val keys = AtomicLong()
+659:         val latency = mutableListOf<Long>(); val lag = mutableListOf<Map<String, Long>>()
+660:         val rawPath = outPath.parent.resolve("encoded-records.bin"); val raw = if (calibrationMode) Files.newOutputStream(rawPath) else null
+661:         val rawEncodedCap = if (bootstrap) 150994944L else RAW_CAP
+662:         var rawBytes = 0L
+663:         fun retain(bytes: ByteArray) { if (raw != null) synchronized(raw) { require(rawBytes + bytes.size <= rawEncodedCap); raw.write(bytes); rawBytes += bytes.size } }
+664:         val reference = Reference(balances, config["policy"])
+665:         try {
+666:         guard.refresh("before-client-topic-setup")
+667:         AdminClient.create(props).use { admin ->
+668:             validateBootstrapBrokerScope(config, broker, brokerScope(admin, broker))
+669:             admin.createTopics(listOf("input", "results").map { NewTopic("$prefix-$it", 1, 3.toShort()).configs(mapOf("cleanup.policy" to "delete", "write.caching" to "false", "min.insync.replicas" to "2")
+670:                 + if (bootstrap) mapOf("max.message.bytes" to "262144") else emptyMap()) }).all().get(30, TimeUnit.SECONDS)
+671:             val uuid = admin.describeTopics(listOf("$prefix-input")).allTopicNames().get().getValue("$prefix-input").topicId().toString()
+672:             val journalDir = Path.of(config.path("ackJournalDir").asText(outPath.parent.resolve("ack-journal").toString()))
+673:             val journalCap = if (bootstrap) spec["limits"]["ackJournalMaxBytes"].asLong() else spec.get("ackJournalMaxBytes")?.let { FinancialHeapBounds.integer(it, "ackJournalMaxBytes") } ?: RAW_CAP
+674:             if (bootstrap) require(journalCap == 33554432L) { "BOOTSTRAP_JOURNAL_CAP" }
+675:             FinancialAckJournal(journalDir, FinancialAckJournal.Scope(prefix, "$prefix-input", uuid), maxBytes = journalCap,
+676:                 onPublished = { member, _ -> synchronized(stageLock) {
+677:                     val admissionNano = System.nanoTime()
+678:                     if (member["phase"].asText() == "timed" && member["kind"].asText() == "SETTLE") {
+679:                         admitted.incrementAndGet(); if (beforeDeadline(admissionNano)) deadlineAdmitted.incrementAndGet()
+680:                     }
+681:                 } }).use { journal ->
+682:             fun checkWorkers() { journal.checkHealthy(); fatal.get()?.let { throw IllegalStateException("worker/observer failure", it) } }
+683:             val workerConfig = node(mapOf("genesis" to mapOf("hot" to mapOf("balances" to balances)), "policy" to config["policy"], "acceptedManifest" to mapOf("inputTopicId" to uuid)))
+684:             val topology = FinancialBrokerProbe.topology(workerConfig, "", prefix, { index ->
+685:                 acknowledgedMember(journal, index) { guard.checkpoint("ACK-membership"); checkWorkers() }
+686:             }, uuid)
+687:             val effectiveProperties = streamProperties(props, prefix, stateDir, bootstrap)
+688:             val effectiveClients = if (bootstrap) bootstrapClientConfiguration(effectiveProperties) else null
+689:             val streams = KafkaStreams(topology, effectiveProperties)
+690:             var physicalManifest: JsonNode? = null; var clockReceipt: JsonNode? = null
+691:             var effectiveTopics: JsonNode? = null
+692:             val physicalCheckpoints = mutableListOf<JsonNode>()
+693:             fun physicalCheckpoint(stage: String) {
+694:                 if (bootstrap) {
+695:                     val checkpoint = FinancialPhysicalInventory.collectCheckpoint(guard, admin, requireNotNull(physicalManifest),
+696:                         Path.of(config["nodeExecutable"].asText()), Path.of(config["physicalAdapterScript"].asText()), outPath.parent, stage, requireNotNull(clockReceipt)) as ObjectNode
+697:                     for (kind in listOf("manifest", "inventory", "artifact")) checkpoint.put("${kind}Sha256", shaFile(Path.of(checkpoint["${kind}Path"].asText())))
+698:                     physicalCheckpoints.add(checkpoint)
+699:                 }
+700:             }
+701:             val running = CountDownLatch(1)
+702:             streams.setStateListener { next, _ -> if (next == KafkaStreams.State.RUNNING) running.countDown() }
+703:             streams.setUncaughtExceptionHandler { error -> fatal.compareAndSet(null, error); StreamsUncaughtExceptionHandler.StreamThreadExceptionResponse.SHUTDOWN_CLIENT }
+704:             fun counts() = synchronized(stageLock) { mapOf("offered" to offered.get(), "callbackSuccess" to callbackSuccess.get(), "admitted" to admitted.get(), "decided" to captured.get(), "settled" to settled.get(), "pending" to captured.get() - settled.get()) }
+705:             fun physical(): Pair<Long, Long>? = runCatching {
+706:                 val brokers = admin.describeCluster().nodes().get(10, TimeUnit.SECONDS).map { it.id() }; var ordinary = 0L; var changelog = 0L
+707:                 admin.describeLogDirs(brokers).allDescriptions().get(10, TimeUnit.SECONDS).values.forEach { dirs -> dirs.values.forEach { dir -> dir.replicaInfos().forEach { (tp, info) -> if (tp.topic().startsWith(prefix)) { if (tp.topic().endsWith("-changelog")) changelog += info.size() else ordinary += info.size() } } } }; ordinary to changelog
+708:             }.getOrNull()
+709:             fun localBytes() = Files.walk(stateDir).use { paths -> paths.filter { Files.isRegularFile(it) }.mapToLong { Files.size(it) }.sum() }
+710:             fun rss(): Long? = runCatching { Files.readAllLines(Path.of("/proc/self/status")).first { it.startsWith("VmRSS:") }.trim().split(Regex("\\s+"))[1].toLong() * 1024 }.getOrNull() ?: runCatching {
+711:                 val process = ProcessBuilder("/bin/ps", "-o", "rss=", "-p", ProcessHandle.current().pid().toString()).start()
+712:                 require(process.waitFor(2, TimeUnit.SECONDS)); require(process.exitValue() == 0); process.inputStream.bufferedReader().readText().trim().toLong() * 1024
+713:             }.getOrNull()
+714:             val os = ManagementFactory.getOperatingSystemMXBean() as com.sun.management.OperatingSystemMXBean
+715:             val observer = Thread {
+716:                 try { KafkaConsumer(consumerProperties(props, bootstrap), StringDeserializer(), StringDeserializer()).use { consumer ->
+717:                     val tp = TopicPartition("$prefix-results", 0); consumer.assign(listOf(tp)); consumer.seekToBeginning(listOf(tp))
+718:                     while (!done.get()) for (record in consumer.poll(Duration.ofMillis(50))) {
+719:                         guard.checkpoint("observer-record"); checkWorkers(); val bytes = record.value().toByteArray()
+720:                         val value = if (bootstrap) parseBootstrapResult(bytes) else json.readTree(bytes); val index = value["inputOrdinal"].asLong(); require(index == covered.get())
+721:                         val member = requireNotNull(journal.member(index)) { "missing durable acknowledged member" }; require(value["inputOffset"].asLong() == member["offset"].asLong())
+722:                         retain(bytes); outputBytes.addAndGet(bytes.size.toLong())
+723:                         val histories = value["records"]
+724:                         require(histories.size() == if (index == 0L) 2 else 1) { "unique EXECUTE missing business history" }
+725:                         if (index == 0L) require(histories[0]["kind"].asText() == "GENESIS" && histories[0]["input"].isNull)
+726:                         val business = histories.last(); require(business["kind"].asText() == "BUSINESS" && canonical(business["input"]) == canonical(member["input"])) { "business input/source mismatch" }
+727:                         histories.forEach { history -> reference.accept(history); keys.addAndGet(history["changes"].size().toLong() + 1) }; keys.addAndGet(2)
+728:                         synchronized(stageLock) { if (member["phase"].asText() == "timed") {
+729:                             val kind = member["kind"].asText(); require(value["disposition"].asText() == if (kind == "CAPTURE") "CAPTURED" else "SETTLED")
+730:                             if (kind == "CAPTURE") { captured.incrementAndGet(); if (beforeDeadline()) deadlineCaptured.incrementAndGet() } else { settled.incrementAndGet(); if (beforeDeadline()) deadlineSettled.incrementAndGet(); if (member["trade"].asLong() % 1000 == 0L) synchronized(latency) { latency.add((System.nanoTime() - member["offeredNano"].asLong()) / 1_000_000) } }
+731:                         } }
+732:                         covered.incrementAndGet(); capacity.release()
+733:                     }
+734:                 } } catch (error: Throwable) { fatal.compareAndSet(null, error) }
+735:             }
+736:             fun waitCovered(timeoutMs: Long = 120000) { val end = System.nanoTime() + timeoutMs * 1_000_000; while (covered.get() < ordinal.get() && System.nanoTime() < end && fatal.get() == null) { guard.checkpoint("drain"); checkWorkers(); Thread.sleep(10) }; guard.refresh("drain-complete"); checkWorkers(); require(covered.get() == ordinal.get() && journal.publishedCount == ordinal.get()) { "coverage/durable-membership/drain timeout" } }
+737:             var heapPeak = 0L; var rssPeak: Long? = null; var diskPeak = 0L
+738:             val start = timedStart; val deadline = AtomicReference<Map<String, Long>>()
+739:             val sampler = Thread {
+740:                 try { while (!done.get()) {
+741:                     val now = System.nanoTime(); if (start.get() > 0) { val elapsed = (now - start.get()) / 1_000_000; val cap = elapsed
+742:                         synchronized(lag) { if ((seconds == 0L || cap < seconds * 1000) && (lag.isEmpty() || lag.last()["elapsedMs"] != cap)) lag.add(mapOf("elapsedMs" to cap, "lag" to maxOf(0L, admitted.get() - settled.get()))) }
+743:                         // Deadline counts updated at individual event times, never credited from late sample.
+744:                     }
+745:                     heapPeak = maxOf(heapPeak, ManagementFactory.getMemoryMXBean().heapMemoryUsage.used); rss()?.let { rssPeak = maxOf(rssPeak ?: 0, it) }
+746:                     val snapshot = requireNotNull(physical()) { "physical broker budget monitoring unavailable" }; val disk = localBytes() + snapshot.first + snapshot.second; diskPeak = maxOf(diskPeak, disk); require(disk <= DISK_CAP) { "10GiB budget exceeded" }; Thread.sleep(1000)
+747:                 } } catch (error: Throwable) { if (!done.get()) fatal.compareAndSet(null, error) }
+748:             }
+749:             var producerMs = 0L; var observerMs = 0L; var drainMs = 0L; var cpuMs = 0L; var bytesPhysical = 0L; var pendingPhysical = 0L; var identityHeap = 0L
+750:             var physicalEnd: Pair<Long, Long>? = null; var txnMs: Double? = null
+751:             val workload = MessageDigest.getInstance("SHA-256")
+752:             try {
+753:                 guard.refresh("startup"); observer.start(); streams.start()
+754:                 val startupEnd = System.nanoTime() + TimeUnit.SECONDS.toNanos(60)
+755:                 while (running.count > 0 && System.nanoTime() < startupEnd) { guard.checkpoint("startup-wait"); running.await(25, TimeUnit.MILLISECONDS) }
+756:                 require(running.count == 0L); guard.baseline("warmed-before-aging"); sampler.start()
+757:                 if (bootstrap) {
+758:                     clockReceipt = FinancialPhysicalInventory.captureHostClock(Path.of(config["nodeExecutable"].asText()), Path.of(config["physicalAdapterScript"].asText()))
+759:                     val provenance = node(mapOf("sourceCommit" to spec["sourceHead"], "candidateSha256" to spec["candidateSha256"],
+760:                         "configSha256" to spec["capability"]["configSha256"], "fixtureSha256" to spec["fixtureSha256"],
+761:                         "buildSha256" to spec["capability"]["buildSha256"], "classpathSha256" to spec["capability"]["classpathSha256"],
+762:                         "imageDigest" to config["registeredResources"]["containers"][0]["imageId"]))
+763:                     physicalManifest = FinancialPhysicalInventory.freezeManifest(admin, prefix, provenance, config["registeredResources"],
+764:                         Path.of(config["ownedRoot"].asText()), config["localResources"], listOf(
+765:                             FinancialPhysicalInventory.OwnedTopic("$prefix-input", "source"), FinancialPhysicalInventory.OwnedTopic("$prefix-results", "output"),
+766:                             FinancialPhysicalInventory.OwnedTopic("$prefix-streams-financial-state-changelog", "changelog")))
+767:                     val resources = physicalManifest!!["topics"].map { ConfigResource(ConfigResource.Type.TOPIC, it["name"].asText()) }
+768:                     val configs = heapAwait(guard, "effective-topic-configs", 5000) { admin.describeConfigs(resources).all().get(3, TimeUnit.SECONDS) }
+769:                     effectiveTopics = node(resources.map { resource ->
+770:                         val values = configs.getValue(resource).entries().associate { it.name() to it.value() }
+771:                         require(values["max.message.bytes"] == "262144" && values["write.caching"] == "false") { "BOOTSTRAP_EFFECTIVE_TOPIC_CONFIG_MISMATCH" }
+772:                         mapOf("topic" to resource.name(), "maxMessageBytes" to values["max.message.bytes"], "writeCaching" to values["write.caching"],
+773:                             "requestedMinimumISR" to 2, "observedMinimumISR" to values["min.insync.replicas"], "minimumISRScope" to "null means unsupported readback; requested config is not empirical majority-outage proof", "rawConfigs" to values)
+774:                     })
+775:                     physicalCheckpoint("warmed")
+776:                 }
+777:                 val producer = KafkaProducer(Properties().apply {
+778:                     putAll(props); put("acks", "all"); put("enable.idempotence", true); put("linger.ms", 2); put("batch.size", 65536)
+779:                     put("buffer.memory", if (bootstrap) 4194304L else 16L * 1024 * 1024)
+780:                     if (bootstrap) { put("max.request.size", 262144); put("compression.type", "none"); put("max.in.flight.requests.per.connection", 1)
+781:                         put("max.block.ms", 10000L); put("request.timeout.ms", 10000); put("delivery.timeout.ms", 30000) }
+782:                 }, StringSerializer(), StringSerializer())
+783:                 try {
+784:                     guard.baseline("producer-warmed-before-aging")
+785:                     fun send(id: Long, phase: String, kind: String) {
+786:                         guard.checkpoint("send"); checkWorkers(); val acquireEnd = System.nanoTime() + TimeUnit.SECONDS.toNanos(10)
+787:                         var acquired = capacity.tryAcquire()
+788:                         while (!acquired && System.nanoTime() < acquireEnd) { guard.checkpoint("send-capacity"); checkWorkers(); acquired = capacity.tryAcquire(25, TimeUnit.MILLISECONDS) }
+789:                         require(acquired) { "bounded source suffix exhausted" }
+790:                         val index = ordinal.getAndIncrement(); val input = action(id, phase, kind); val bytes = json.writeValueAsBytes(node(mapOf("domain" to "hot", "mode" to "EXECUTE", "inputOrdinal" to index, "input" to input)))
+791:                         require(bytes.size <= 1024) { "source record exceeds pinned1KiB bound" }; retain(bytes); inputBytes.addAndGet(bytes.size.toLong()); if (phase == "timed") workload.update(json.writeValueAsBytes(input)); val offeredNano = System.nanoTime()
+792:                         producer.send(ProducerRecord("$prefix-input", 0, "hot", String(bytes, Charsets.UTF_8))) { metadata, error -> if (error != null) fatal.compareAndSet(null, error) else { try {
+793:                             val callbackNano = System.nanoTime()
+794:                             require(metadata.partition() == journal.scope.partition && metadata.topic() == journal.scope.topic) { "ACK callback topic/partition mismatch" }
+795:                             synchronized(stageLock) { if (phase == "timed" && kind == "SETTLE") { callbackSuccess.incrementAndGet(); if (beforeDeadline(callbackNano)) deadlineCallbackSuccess.incrementAndGet() } }
+796:                             journal.callback(index, metadata.offset(), bytes, phase, kind, id, offeredNano, callbackNano)
+797:                         } catch (failure: Throwable) { fatal.compareAndSet(null, failure) }
+798:                         } }
+799:                     }
+800:                     for (id in 0 until aged) { send(id, "aged", "CAPTURE"); send(id, "aged", "SETTLE") }; if (mode == "run") for (id in 0 until pending) send(id, "pending", "CAPTURE")
+801:                     guard.checkpoint("flush-before"); heapAwait(guard, "producer-flush", 120000) { producer.flush() }; guard.refresh("flush-after"); waitCovered(); System.gc(); Thread.sleep(100)
+802:                     guard.refresh("before-timed-load"); val heapBefore = ManagementFactory.getMemoryMXBean().heapMemoryUsage.used; val before = physical(); val localBefore = localBytes(); val cpuBefore = os.processCpuTime
+803:                     physicalCheckpoint("before-settled")
+804:                     start.set(System.nanoTime()); synchronized(lag) { lag.add(mapOf("elapsedMs" to 0L, "lag" to 0L)) }
+805:                     for (id in 0 until count) { if (rate > 0) { val due = start.get() + id * 1_000_000_000L / rate; while (System.nanoTime() < due) { guard.checkpoint("pacing"); checkWorkers(); LockSupport.parkNanos(100_000) } }; synchronized(stageLock) { offered.incrementAndGet(); if (beforeDeadline()) deadlineOffered.incrementAndGet() }; send(id, "timed", "CAPTURE"); send(id, "timed", "SETTLE") }
+806:                     if (seconds > 0) while (System.nanoTime() < start.get() + seconds * 1_000_000_000) { guard.checkpoint("deadline-wait"); LockSupport.parkNanos(100_000) }
+807:                     guard.checkpoint("timed-flush"); heapAwait(guard, "producer-flush", 120000) { producer.flush() }; guard.refresh("timed-flush-complete"); val producerEnd = System.nanoTime(); producerMs = maxOf(1L, (producerEnd - start.get()) / 1_000_000); waitCovered(); val observerEnd = System.nanoTime()
+808:                     observerMs = maxOf(1L, (observerEnd - start.get()) / 1_000_000); drainMs = maxOf(0L, (observerEnd - producerEnd) / 1_000_000); cpuMs = (os.processCpuTime - cpuBefore) / 1_000_000
+809:                     synchronized(stageLock) { deadline.set(mapOf("offered" to deadlineOffered.get(), "callbackSuccess" to deadlineCallbackSuccess.get(), "admitted" to deadlineAdmitted.get(), "decided" to deadlineCaptured.get(), "settled" to deadlineSettled.get(), "pending" to deadlineCaptured.get() - deadlineSettled.get())) }; synchronized(lag) { if (seconds > 0) lag.add(mapOf("elapsedMs" to seconds * 1000, "lag" to maxOf(0L, deadlineAdmitted.get() - deadlineSettled.get()))) }; physicalEnd = physical(); bytesPhysical = if (before != null && physicalEnd != null) maxOf(0L, physicalEnd!!.first + physicalEnd!!.second - before.first - before.second + localBytes() - localBefore) else 0
+810:                     System.gc(); Thread.sleep(100); identityHeap = maxOf(0L, (ManagementFactory.getMemoryMXBean().heapMemoryUsage.used - heapBefore) / count)
+811:                     physicalCheckpoint("after-settled")
+812:                     if (calibrationMode && pending > 0) { val pBefore = physical(); val lBefore = localBytes(); for (id in 0 until pending) send(id, "pending", "CAPTURE"); heapAwait(guard, "producer-flush", 120000) { producer.flush() }; waitCovered(); val pAfter = physical(); pendingPhysical = if (pBefore != null && pAfter != null) maxOf(0L, (pAfter.first + pAfter.second - pBefore.first - pBefore.second + localBytes() - lBefore) / pending) else 0 }
+813:                     physicalCheckpoint("after-pending")
+814:                     txnMs = streams.metrics().filterKeys { it.name() == "txn-commit-time-ns-total" }.values.mapNotNull { (it.metricValue() as? Number)?.toDouble() }.takeIf { it.isNotEmpty() }?.sum()?.div(1_000_000)
+815:                 } finally { producer.close(if (guard.failure != null) Duration.ZERO else Duration.ofSeconds(15)) }
+816:             } finally {
+817:                 done.set(true); observer.join(5000); sampler.interrupt(); sampler.join(15000); raw?.close()
+818:                 val closed = streams.close(Duration.ofSeconds(15)); journal.close()
+819:                 if (bootstrap) require(closed && !observer.isAlive && !sampler.isAlive) { "BOOTSTRAP_WORKERS_CLOSE_TIMEOUT" }
+820:             }
+821:             guard.refresh("workers-closed"); checkWorkers()
+822:             physicalCheckpoint("workers-closed")
+823:             guard.refresh("before-owner-digest"); val expectedOwner = digest(reference.owner); val expectedChain = reference.chain; val expectedHistory = reference.historyRecords
+824:             guard.refresh("after-owner-digest"); reference.owner.removeAll(); System.gc(); guard.refresh("before-result-only-replay")
+825:             var managedRecovery: JsonNode? = null
+826:             var managedRecoveryProcess: JsonNode? = null
+827:             if (bootstrap) {
+828:                 require(ordinal.get() == 2100L && expectedHistory == 2101L && counts()["settled"] == 1000L) { "BOOTSTRAP_COMPLETE_INPUT_CUT" }
+829:                 val recoveryDir = outPath.parent.resolve("managed-recovery"); Files.createDirectory(recoveryDir)
+830:                 val recoveryRequest = recoveryDir.resolve("request.json"); val recoveryResult = recoveryDir.resolve("result.json")
+831:                 Files.writeString(recoveryRequest, json.writeValueAsString(mapOf("bootstrapSha256" to spec["bootstrapSha256"],
+832:                     "sourceUuid" to uuid, "ownerSha256" to expectedOwner, "historyChecksum" to expectedChain, "historyRecords" to expectedHistory)), java.nio.file.StandardOpenOption.CREATE_NEW)
+833:                 val command = listOf(Path.of(System.getProperty("java.home"), "bin", "java").toString(), "-Xms128m", "-Xmx768m", "-cp", System.getProperty("java.class.path"),
+834:                     FinancialRateProbe::class.java.name, "bootstrap-recover", broker, prefix, configPath.toString(), specPath.toString(), recoveryRequest.toString(), recoveryResult.toString())
+835:                 Files.writeString(recoveryDir.resolve("command.json"), json.writeValueAsString(command), java.nio.file.StandardOpenOption.CREATE_NEW)
+836:                 val stdout = recoveryDir.resolve("stdout.log"); val stderr = recoveryDir.resolve("stderr.log")
+837:                 val builder = ProcessBuilder(command).redirectOutput(stdout.toFile()).redirectError(stderr.toFile())
+838:                 listOf("JAVA_TOOL_OPTIONS", "_JAVA_OPTIONS", "JDK_JAVA_OPTIONS", "CLASSPATH").forEach { builder.environment().remove(it) }
+839:                 val child = builder.start(); val childStart = System.nanoTime()
+840:                 try {
+841:                     while (!child.waitFor(25, TimeUnit.MILLISECONDS)) {
+842:                         guard.checkpoint("managed-restart-wait")
+843:                         require(System.nanoTime() - childStart < TimeUnit.SECONDS.toNanos(120)) { "BOOTSTRAP_MANAGED_PROCESS_TIMEOUT" }
+844:                         require(Files.size(stdout) + Files.size(stderr) <= 64L * 1024 * 1024) { "BOOTSTRAP_MANAGED_LOG_CAP" }
+845:                     }
+846:                     require(child.exitValue() == 0 && Files.isRegularFile(recoveryResult) && Files.size(recoveryResult) <= 1024 * 1024) { "BOOTSTRAP_MANAGED_PROCESS_FAILED" }
+847:                     managedRecovery = json.readTree(Files.readString(recoveryResult))
+848:                     require(managedRecovery["schema"].asText() == "financial-bootstrap-process-recovery-v1" && managedRecovery["processId"].asLong() == child.pid()
+849:                         && child.pid() != ProcessHandle.current().pid() && managedRecovery["bootstrapSha256"] == spec["bootstrapSha256"]
+850:                         && managedRecovery["recoveredMembers"].asLong() == 2100L && managedRecovery["controllerAdmissionsReplayed"].asLong() == 0L
+851:                         && managedRecovery["activation"]["ownerSha256"].asText() == expectedOwner
+852:                         && managedRecovery["activation"]["historyChecksum"].asText() == expectedChain
+853:                         && managedRecovery["activation"]["historyRecords"].asLong() == expectedHistory) { "BOOTSTRAP_MANAGED_PROCESS_PARITY" }
+854:                     managedRecoveryProcess = node(mapOf("processId" to child.pid(), "parentProcessId" to ProcessHandle.current().pid(), "exitCode" to child.exitValue(),
+855:                         "newJvm" to true, "commandEvidencePath" to "managed-recovery/command.json", "commandEvidenceSha256" to shaFile(recoveryDir.resolve("command.json"))))
+856:                 } finally { if (child.isAlive) { child.destroyForcibly(); require(child.waitFor(5, TimeUnit.SECONDS)) { "BOOTSTRAP_MANAGED_PROCESS_REAP" } } }
+857:                 physicalCheckpoint("after-managed-restart")
+858:             }
+859:             val restored = Reference(balances, config["policy"]); val restoreStart = System.nanoTime(); var restoreBytes = 0L; var restoreInputs = 0L
+860:             fun expectedInput(index: Long): JsonNode {
+861:                 if (calibrationMode) return if (index < count * 2) action(index / 2, "timed", if (index % 2 == 0L) "CAPTURE" else "SETTLE") else action(index - count * 2, "pending", "CAPTURE")
+862:                 return when {
+863:                     index < aged * 2 -> action(index / 2, "aged", if (index % 2 == 0L) "CAPTURE" else "SETTLE")
+864:                     index < aged * 2 + pending -> action(index - aged * 2, "pending", "CAPTURE")
+865:                     else -> { val timed = index - aged * 2 - pending; action(timed / 2, "timed", if (timed % 2 == 0L) "CAPTURE" else "SETTLE") }
+866:                 }
+867:             }
+868:             var resultCut = 0L
+869:             KafkaConsumer(consumerProperties(props, bootstrap), StringDeserializer(), StringDeserializer()).use { consumer ->
+870:                 val tp = TopicPartition("$prefix-results", 0); consumer.assign(listOf(tp)); consumer.seekToBeginning(listOf(tp))
+871:                 resultCut = consumer.endOffsets(listOf(tp), Duration.ofSeconds(10)).getValue(tp)
+872:                 val end = restoreStart + TimeUnit.MINUTES.toNanos(5)
+873:                 while (consumer.position(tp) < resultCut && System.nanoTime() < end) { guard.checkpoint("result-only-replay-poll"); heapReplayBatch(guard, consumer.poll(Duration.ofMillis(100))) { record ->
+874:                     val bytes = record.value().toByteArray(); val value = if (bootstrap) parseBootstrapResult(bytes) else json.readTree(bytes)
+875:                     require(record.offset() < resultCut && restoreInputs < ordinal.get() && value["inputOrdinal"].asLong() == restoreInputs)
+876:                     val rows = value["records"]; require(rows.size() == if (restoreInputs == 0L) 2 else 1)
+877:                     require(rows.last()["kind"].asText() == "BUSINESS" && canonical(rows.last()["input"]) == canonical(expectedInput(restoreInputs)))
+878:                     rows.forEach { restored.accept(it) }; restoreBytes += record.value().toByteArray().size; restoreInputs++
+879:                 } }
+880:                 require(consumer.position(tp) == resultCut) { "COMPLETE_COMMITTED_RESULT_CUT_TIMEOUT" }
+881:             }
+882:             guard.refresh("result-only-replay-complete"); require(restoreInputs == ordinal.get() && expectedHistory == restored.historyRecords && expectedChain == restored.chain && expectedOwner == digest(restored.owner)) { "complete result-only restore mismatch" }
+883:             val restoreMs = (System.nanoTime() - restoreStart) / 1_000_000
+884:             physicalCheckpoint("after-result-replay")
+885:             val parityPath = outPath.parent.resolve("parity.json")
+886:             val parityContent = json.writeValueAsString(mapOf("ownerSha256" to expectedOwner, "historyChecksum" to expectedChain, "historyRecords" to expectedHistory, "sourceUuid" to uuid, "readCommitted" to true, "independentCompleteDeltas" to true)) + "\n"
+887:             val heapArtifact = heapArtifactSnapshot(guard, heapPeak)
+888:             val result = if (bootstrap) mapOf(
+889:                 "schema" to "financial-bootstrap-calibration-v1", "purpose" to "EMPIRICAL_BOUNDED_DIAGNOSTIC", "capacityQualification" to false,
+890:                 "heapConservativeBound" to false, "estimatedHeapBytes" to null, "bootstrapSha256" to spec["bootstrapSha256"],
+891:                 "processId" to ProcessHandle.current().pid(), "agedIdentities" to 0,
+892:                 "sourceHead" to spec["sourceHead"], "fixtureSha256" to spec["fixtureSha256"], "candidateSha256" to spec["candidateSha256"], "capability" to spec["capability"],
+893:                 "sampleTrades" to count, "pendingSample" to pending, "sourceActions" to ordinal.get(), "historyRecords" to expectedHistory,
+894:                 "final" to counts(), "sourceTopicUuid" to uuid, "ackJournal" to journal.telemetry(), "heapObservation" to heapArtifact.observation,
+895:                 "realRecordEvidencePath" to "encoded-records.bin", "realRecordEvidenceSha256" to shaFile(rawPath), "encodedBytes" to rawBytes,
+896:                 "encodedInputBytes" to inputBytes.get(), "encodedResultBytes" to outputBytes.get(),
+897:                 "managedRestartVerified" to true, "managedRecovery" to managedRecovery, "resultOnlyReplayVerified" to true,
+898:                 "managedRecoveryEvidencePath" to "managed-recovery/result.json", "managedRecoveryEvidenceSha256" to shaFile(outPath.parent.resolve("managed-recovery/result.json")),
+899:                 "managedRecoveryProcess" to managedRecoveryProcess,
+900:                 "resultOnlyReplay" to mapOf("records" to expectedHistory, "inputs" to restoreInputs, "bytes" to restoreBytes, "elapsedMs" to restoreMs, "committedResultOffsetExclusive" to resultCut,
+901:                     "ownerSha256" to expectedOwner, "historyChecksum" to expectedChain, "sourceUuid" to uuid, "readCommitted" to true, "completeCommittedCut" to true),
+902:                 "parity" to mapOf("ownerSha256" to expectedOwner, "historyChecksum" to expectedChain, "historyRecords" to expectedHistory, "sourceUuid" to uuid,
+903:                     "readCommitted" to true, "independentCompleteDeltas" to true),
+904:                 "physicalCheckpoints" to physicalCheckpoints,
+905:                 "effectiveClients" to effectiveClients,
+906:                 "effectiveTopics" to effectiveTopics,
+907:                 "producerElapsedMs" to producerMs, "observerElapsedMs" to observerMs, "drainMs" to drainMs,
+908:                 "gaps" to listOf("Finite empirical sample; no retained-heap upper bound or rate qualification", "Physical allocated category attribution unknown unless raw mapping proves it", "Broker/native/child aggregate CPU unmeasured"))
+909:             else if (mode == "calibrate") mapOf(
+910:                 "schema" to "financial-rate-calibration-v1", "sourceHead" to spec["sourceHead"].asText(), "fixtureSha256" to spec["fixtureSha256"].asText(), "realRecordEvidencePath" to "encoded-records.bin", "realRecordEvidenceSha256" to shaFile(rawPath), "sampleTrades" to count, "encodedBytes" to rawBytes,
+911:                 "physicalBytes" to bytesPhysical, "physicalReplicationIncluded" to true, "identityPhysicalBytes" to if (bytesPhysical > 0) maxOf(1L, bytesPhysical / count) else 0, "pendingPhysicalBytes" to pendingPhysical, "identityHeapBytes" to identityHeap, "heapObservation" to heapArtifact.observation,
+912:                 "producer" to mapOf("completedTrades" to admitted.get(), "callbackSuccessTrades" to callbackSuccess.get(), "elapsedMs" to producerMs), "observer" to mapOf("completedTrades" to settled.get(), "elapsedMs" to observerMs, "exactParity" to true), "sourceTopicUuid" to uuid, "ackJournal" to journal.telemetry())
+913:             else mapOf("schema" to "financial-rate-measurement-v1", "policySha256" to spec["policySha256"].asText(), "sourceHead" to spec["sourceHead"].asText(), "fixtureSha256" to spec["fixtureSha256"].asText(), "workloadSha256" to HexFormat.of().formatHex(workload.digest()), "units" to "unique timed executions; preflight/aged rows excluded", "producerElapsedMs" to producerMs, "drainMs" to drainMs, "deadline" to deadline.get(), "final" to counts(),
+914:                 "parity" to mapOf("completeJournal" to true, "completeOwnerState" to true, "independentOracle" to true, "evidenceSha256" to sha(parityContent.toByteArray())), "lagSamples" to lag,
+915:                 "resources" to mapOf("processCpuMs" to cpuMs, "heapPeakBytes" to heapArtifact.resourcePeakBytes, "heapPeakScope" to heapArtifact.peakScope, "rssPeakBytes" to rssPeak, "diskPeakBytes" to diskPeak, "encodedInputBytes" to inputBytes.get(), "encodedResultBytes" to outputBytes.get(), "encodedTechnicalBytes" to null, "physicalBrokerBytes" to physicalEnd?.first, "physicalChangelogBytes" to physicalEnd?.second, "touchedKeys" to keys.get(), "technicalRecords" to covered.get(), "transactionWaitMs" to txnMs),
+916:                 "heapObservation" to heapArtifact.observation, "stageLatency" to synchronized(latency) { val sorted = latency.sorted(); mapOf("kind" to "sampled-individual", "stage" to "offer-to-read-committed-settlement", "clockDomain" to "same-monotonic", "samples" to sorted.size, "p95Ms" to sorted.getOrNull((sorted.size * .95).toInt()), "p99Ms" to sorted.getOrNull((sorted.size * .99).toInt())) },
+917:                 "restore" to mapOf("kind" to "result-only-replay", "records" to expectedHistory, "bytes" to restoreBytes, "elapsedMs" to restoreMs, "verifiedCut" to true), "ackJournal" to journal.telemetry(), "gaps" to listOf("Actual managed restart remains separate from result-only replay and broker-free journal process-crash controls", "Encoded technical store bytes uninstrumented", "CPU scope same-JVM worker+producer+observer; broker CPU unmeasured", "Touched keys = emitted state/history/coverage/cert writes; framework reads excluded"), "capacityQualification" to false)
+918:             journal.checkHealthy(); guard.publish(outPath, json.writerWithDefaultPrettyPrinter().writeValueAsString(result) + "\n", parityPath to parityContent); println(json.writeValueAsString(mapOf("artifact" to outPath.toString(), "offered" to offered.get(), "admitted" to admitted.get(), "settled" to settled.get())))
+919:             }
+920:         }
+921:         } finally { raw?.close() }
+922:         }
+923:     }
+924: }

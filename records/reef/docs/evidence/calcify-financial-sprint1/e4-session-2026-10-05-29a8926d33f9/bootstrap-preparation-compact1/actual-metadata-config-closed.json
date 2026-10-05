@@ -1,0 +1,120 @@
+{
+  "schema": "calcify-compact-metadata-config-preparation-closed-v1",
+  "createdUtc": "2026-10-05T18:02:14.167410+00:00",
+  "watcherSession": 76847,
+  "watcherExitCode": 0,
+  "allOwnedExited": true,
+  "restartCountZero": true,
+  "volumesPreserved": true,
+  "priorTwelvePreserved": true,
+  "metadataPermitAuthority": "Root confirmed fullfinancial109 compilation terminal exit0 and explicitly authorized fresh bounded restart/Admin/config binding; no load/build",
+  "economicWorkloadExecuted": false,
+  "wholeCodeReviewCounter": "Whole Attempt3 cycle1; prior templatecounter historical correctedcompanion retained",
+  "previousTimeoutClosurePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-compact1/actual-setup-timeout-closed.json",
+  "previousTimeoutClosureSha256": "61e0ab26fec1b1dfbe72f976c7342b411607993fe579203fc0e34b101a8266c2",
+  "registeredResources": {
+    "project": "reef-calcify-e4-compact1-8c6f",
+    "containers": [
+      {
+        "id": "b3c49cb7544c501fa3e8a764571cdc705ca04d10c82ffcb0cbf400032ebaf33c",
+        "brokerId": 0,
+        "name": "reef-calcify-e4-compact1-8c6f-rp0-1",
+        "hostKafkaEndpoint": {
+          "host": "127.0.0.1",
+          "port": 40392,
+          "containerPort": "40392/tcp"
+        },
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-compact1-8c6f",
+          "com.docker.compose.service": "rp0",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-compact1-8c6f_rp0-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "8bcac17db63ad1d6767999fa5eb1e1454d2534cdd27584432e51af5a20f4921d",
+        "brokerId": 1,
+        "name": "reef-calcify-e4-compact1-8c6f-rp1-1",
+        "hostKafkaEndpoint": {
+          "host": "127.0.0.1",
+          "port": 40492,
+          "containerPort": "40492/tcp"
+        },
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-compact1-8c6f",
+          "com.docker.compose.service": "rp1",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-compact1-8c6f_rp1-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "a7fad66030855c9ae5e9b942c13c128e7151db37356b18b64d43e730efbf7b0f",
+        "brokerId": 2,
+        "name": "reef-calcify-e4-compact1-8c6f-rp2-1",
+        "hostKafkaEndpoint": {
+          "host": "127.0.0.1",
+          "port": 40592,
+          "containerPort": "40592/tcp"
+        },
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-compact1-8c6f",
+          "com.docker.compose.service": "rp2",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-compact1-8c6f_rp2-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      }
+    ],
+    "bootstrapServers": "127.0.0.1:40392,127.0.0.1:40492,127.0.0.1:40592"
+  },
+  "configPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/config.json",
+  "configSha256": "7e16459f4bbacabc7e5832bb90b038d92cf97dfd041d66a970f09bab89a009f1",
+  "fixturePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/bootstrap-fixtures.json",
+  "fixtureSha256": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+  "currentRestartPreflightPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/restart-metadata-after-timeout1/preflight.json",
+  "currentRestartPreflightSha256": "855a598c6282388c896992ec040b01cd43f36fb2d460174bf521b0ca158b43b3",
+  "initialProfileFactsPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/preflight.json",
+  "initialProfileFactsSha256": "cf804a779edfa0722631330e0e2f05a472537e004bd11798368ee7649df2f5a3",
+  "profileBindingScope": "Initial immutable sourceID/image/mount/profile facts retained; actual fresh restart health/config/du/df from currentRestartPreflight. Future strict runtime health freshly resampled; neither datedsample grants payload authority.",
+  "adminScopePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/broker-scope.json",
+  "adminScopeSha256": "77bec054333162c08f9a7899cda421df610378597cec322201b23475432f22f3",
+  "adminCommandPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/admin-readonly-receipt.json",
+  "adminCommandSha256": "7c06a083d819d2740f97296a8eb8fd31ddb2faf9f8613a22718e4334ef0189d1",
+  "adminClasspathScope": "Baseline ordered CP path reference only; actual current mainclass before/after SHA stable, no final compact candidate/capability authority",
+  "readySample": {
+    "allocatedBytes": 75497472,
+    "guestFreeBytes": 97145860096
+  },
+  "stateJournalEmpty": true,
+  "proofAbsent": true,
+  "watchFinishedPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/restart-metadata-after-timeout1/watch-finished.json",
+  "watchFinishedSha256": "68bd21844ec1c19a030d9d45d7fd43c24d904e464f69edb1da762d0457504356",
+  "cleanupInspectionPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/restart-metadata-after-timeout1/stopped-inspect.raw.json",
+  "cleanupInspectionSha256": "e536a16670ff86a1e8ed044fb8ca9a2c1f375928dc61f6b8c14d8c83b5dd459e",
+  "cleanupCommandReceiptPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/restart-metadata-after-timeout1/bootstrap-00188-stopped-confirm.json",
+  "cleanupCommandReceiptSha256": "8881a6453c97c9c625fa7cebc05c942f36f73b3007ea5bc5987938cc5c04e81c",
+  "setupRawBytesBeforeClosure": 111532306,
+  "largestSetupFile": {
+    "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/bootstrap-receipts.jsonl",
+    "sizeBytes": 51590878
+  },
+  "over50MiB": [],
+  "scope": "Actual setup metadata/config preparation complete and brokers stopped; no candidate/49/pairedperformance/capacity/retainedheapupper qualification"
+}

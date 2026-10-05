@@ -1,0 +1,16 @@
+{
+  "schema": "financial-bootstrap-review-v1",
+  "verdict": "READY_BOUNDED_DIAGNOSTIC",
+  "candidateSha256": "cd50045bb09f0faba60179a1f7ed0295c968dfb94823e8ee58e6e82fb3ca65be",
+  "limitsSha256": "bd956c5ecaad82bf8ffd318aa66209a3297a3301bc2ef3f4c5ea6ded25b56a18",
+  "fixtureSha256": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+  "configSha256": "7e16459f4bbacabc7e5832bb90b038d92cf97dfd041d66a970f09bab89a009f1",
+  "buildSha256": "bf04ead83d8be2864231b95720190b109c9d31e09ed585f01791947520337b53",
+  "classpathSha256": "b05ea2145b1a90bd78f61cfc605df6ea3534030535e809f58b4895ceb7fa2c14",
+  "sampleTrades": 1000,
+  "pendingSample": 100,
+  "agedIdentities": 0,
+  "reportEvidencePath": "bootstrap-compact1-review-report.md",
+  "reportEvidenceSha256": "d96dcfe01a3f59f5c98a6231056ef63a8040cfef0d9bbfff1d146d10458810a9",
+  "scope": "Bounded1000+100 empirical diagnostic; actual raw49 prerequisite, no capacity or conservative retained heap qualification"
+}

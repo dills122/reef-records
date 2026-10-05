@@ -1,0 +1,16 @@
+{
+  "schema": "calcify-e3-closed-confirmation-v1",
+  "confirmedBy": "root",
+  "utc": "2026-10-05T17:25:53.171315+00:00",
+  "cliExitCode": 0,
+  "writersClosed": true,
+  "cleanupClosed": true,
+  "proofRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/e3-current-candidate",
+  "executionManifestSha256": "22b2593b57922707cc532600adce2750827c67730bebc370861312ba5f73edd1",
+  "supervisorFinishedSha256": "60df0acdf2a19e230a59b3875de5ca75d8c69ba147a90137f801b058a707c581",
+  "wrapperStatusSha256": "912a9b6a6b0acf5412f14f80704c06028346880a4dcd145fccf9ee425f1701c5",
+  "cleanupInspectionSha256": "0942fb8ac00d9e31a51970a71a2130601067f1d931b347713613474450f3ea92",
+  "cleanupInspectionPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/e3-cleanup-inspect.raw.json",
+  "receiptEnvelopePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/e3-cleanup-inspect.command.json",
+  "scope": "Actual corrected candidate49 RF3/EOS correctness; all original writers closed and exact3 exited volumes preserved; no bootstrap,rate,costupper qualification"
+}

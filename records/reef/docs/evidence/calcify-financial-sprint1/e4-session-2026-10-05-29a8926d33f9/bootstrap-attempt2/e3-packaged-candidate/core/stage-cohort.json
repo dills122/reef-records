@@ -1,0 +1,438 @@
+{
+  "schema": "financial-e3-cohort-v1",
+  "commitIntervalMs": 60000,
+  "maxPollRecords": 1,
+  "caseId": "due-order-and-staging",
+  "policy": {
+    "kernel": "e1-gross-v1",
+    "schema": "e1-v1",
+    "policy": "gross-p1",
+    "reference": "assets-r1",
+    "rounding": "EXACT",
+    "fees": "NONE",
+    "reservation": "UNRESERVED"
+  },
+  "genesis": {
+    "A": {
+      "balances": {
+        "buyerCash": "100000000000",
+        "sellerCash": "0",
+        "buyerShares": "0",
+        "sellerShares": "10"
+      }
+    },
+    "B": {
+      "balances": {
+        "buyerCash": "100000000000",
+        "sellerCash": "0",
+        "buyerShares": "0",
+        "sellerShares": "10"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "domain": "A",
+      "mode": "STAGE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "A",
+        "actionId": "due-a",
+        "kind": "CAPTURE",
+        "payload": {
+          "executionId": "due-a",
+          "runId": "run-é",
+          "venueSessionId": "session-1",
+          "instrumentId": "ACME",
+          "buyOrderId": "a-b",
+          "sellOrderId": "c",
+          "buyerAccount": "buyer",
+          "sellerAccount": "seller",
+          "cashAsset": "USD_NANO",
+          "securityAsset": "ACME_SHARE",
+          "quantity": "5",
+          "priceNanos": "10000000000",
+          "dueTick": "10"
+        }
+      },
+      "inputOrdinal": 0,
+      "commit": true
+    },
+    {
+      "domain": "A",
+      "mode": "STAGE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "A",
+        "actionId": "due-b",
+        "kind": "CAPTURE",
+        "payload": {
+          "executionId": "due-b",
+          "runId": "run-é",
+          "venueSessionId": "session-1",
+          "instrumentId": "ACME",
+          "buyOrderId": "a-b",
+          "sellOrderId": "c",
+          "buyerAccount": "buyer",
+          "sellerAccount": "seller",
+          "cashAsset": "USD_NANO",
+          "securityAsset": "ACME_SHARE",
+          "quantity": "6",
+          "priceNanos": "10000000000",
+          "dueTick": "10"
+        }
+      },
+      "inputOrdinal": 1,
+      "commit": true
+    },
+    {
+      "domain": "A",
+      "mode": "STAGE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "A",
+        "actionId": "clock-10",
+        "kind": "CLOCK",
+        "payload": {
+          "tick": "10"
+        }
+      },
+      "inputOrdinal": 2,
+      "commit": true
+    },
+    {
+      "domain": "A",
+      "mode": "STAGE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "A",
+        "actionId": "continue-a",
+        "kind": "CONTINUE",
+        "payload": {
+          "clockAction": "clock-10",
+          "workId": "due-a"
+        }
+      },
+      "inputOrdinal": 3,
+      "commit": true
+    },
+    {
+      "domain": "A",
+      "mode": "STAGE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "A",
+        "actionId": "continue-b",
+        "kind": "CONTINUE",
+        "payload": {
+          "clockAction": "clock-10",
+          "workId": "due-b"
+        }
+      },
+      "inputOrdinal": 4,
+      "commit": true
+    },
+    {
+      "domain": "A",
+      "mode": "STAGE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "A",
+        "actionId": "later-funding",
+        "kind": "FUND",
+        "payload": {
+          "account": "buyer",
+          "asset": "USD_NANO",
+          "amount": "20000000000",
+          "authority": "opening-resource-owner"
+        }
+      },
+      "inputOrdinal": 5,
+      "commit": true
+    },
+    {
+      "domain": "A",
+      "mode": "STAGE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "A",
+        "actionId": "later-shares",
+        "kind": "FUND",
+        "payload": {
+          "account": "seller",
+          "asset": "ACME_SHARE",
+          "amount": "2",
+          "authority": "opening-resource-owner"
+        }
+      },
+      "inputOrdinal": 6,
+      "commit": true
+    },
+    {
+      "domain": "A",
+      "mode": "STAGE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "A",
+        "actionId": "repair-due-b",
+        "kind": "SETTLE",
+        "payload": {
+          "executionId": "due-b",
+          "attempt": "2"
+        }
+      },
+      "inputOrdinal": 7,
+      "commit": true
+    },
+    {
+      "domain": "B",
+      "mode": "STAGE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "B",
+        "actionId": "due-a",
+        "kind": "CAPTURE",
+        "payload": {
+          "executionId": "due-a",
+          "runId": "run-é",
+          "venueSessionId": "session-1",
+          "instrumentId": "ACME",
+          "buyOrderId": "a-b",
+          "sellOrderId": "c",
+          "buyerAccount": "buyer",
+          "sellerAccount": "seller",
+          "cashAsset": "USD_NANO",
+          "securityAsset": "ACME_SHARE",
+          "quantity": "5",
+          "priceNanos": "10000000000",
+          "dueTick": "10"
+        }
+      },
+      "inputOrdinal": 8,
+      "commit": true
+    },
+    {
+      "domain": "B",
+      "mode": "STAGE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "B",
+        "actionId": "due-b",
+        "kind": "CAPTURE",
+        "payload": {
+          "executionId": "due-b",
+          "runId": "run-é",
+          "venueSessionId": "session-1",
+          "instrumentId": "ACME",
+          "buyOrderId": "a-b",
+          "sellOrderId": "c",
+          "buyerAccount": "buyer",
+          "sellerAccount": "seller",
+          "cashAsset": "USD_NANO",
+          "securityAsset": "ACME_SHARE",
+          "quantity": "6",
+          "priceNanos": "10000000000",
+          "dueTick": "10"
+        }
+      },
+      "inputOrdinal": 9,
+      "commit": true
+    },
+    {
+      "domain": "B",
+      "mode": "STAGE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "B",
+        "actionId": "clock-10",
+        "kind": "CLOCK",
+        "payload": {
+          "tick": "10"
+        }
+      },
+      "inputOrdinal": 10,
+      "commit": true
+    },
+    {
+      "domain": "B",
+      "mode": "STAGE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "B",
+        "actionId": "continue-a",
+        "kind": "CONTINUE",
+        "payload": {
+          "clockAction": "clock-10",
+          "workId": "due-a"
+        }
+      },
+      "inputOrdinal": 11,
+      "commit": true
+    },
+    {
+      "domain": "B",
+      "mode": "STAGE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "B",
+        "actionId": "continue-b",
+        "kind": "CONTINUE",
+        "payload": {
+          "clockAction": "clock-10",
+          "workId": "due-b"
+        }
+      },
+      "inputOrdinal": 12,
+      "commit": true
+    },
+    {
+      "domain": "B",
+      "mode": "STAGE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "B",
+        "actionId": "later-funding",
+        "kind": "FUND",
+        "payload": {
+          "account": "buyer",
+          "asset": "USD_NANO",
+          "amount": "20000000000",
+          "authority": "opening-resource-owner"
+        }
+      },
+      "inputOrdinal": 13,
+      "commit": true
+    },
+    {
+      "domain": "B",
+      "mode": "STAGE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "B",
+        "actionId": "later-shares",
+        "kind": "FUND",
+        "payload": {
+          "account": "seller",
+          "asset": "ACME_SHARE",
+          "amount": "2",
+          "authority": "opening-resource-owner"
+        }
+      },
+      "inputOrdinal": 14,
+      "commit": true
+    },
+    {
+      "domain": "B",
+      "mode": "STAGE",
+      "input": {
+        "namespace": "sprint1",
+        "domain": "B",
+        "actionId": "repair-due-b",
+        "kind": "SETTLE",
+        "payload": {
+          "executionId": "due-b",
+          "attempt": "2"
+        }
+      },
+      "inputOrdinal": 15,
+      "commit": true
+    },
+    {
+      "domain": "A",
+      "mode": "DRAIN",
+      "inputOrdinal": 16,
+      "commit": true
+    },
+    {
+      "domain": "A",
+      "mode": "DRAIN",
+      "inputOrdinal": 17,
+      "commit": true
+    },
+    {
+      "domain": "A",
+      "mode": "DRAIN",
+      "inputOrdinal": 18,
+      "commit": true
+    },
+    {
+      "domain": "A",
+      "mode": "DRAIN",
+      "inputOrdinal": 19,
+      "commit": true
+    },
+    {
+      "domain": "A",
+      "mode": "DRAIN",
+      "inputOrdinal": 20,
+      "commit": true
+    },
+    {
+      "domain": "A",
+      "mode": "DRAIN",
+      "inputOrdinal": 21,
+      "commit": true
+    },
+    {
+      "domain": "A",
+      "mode": "DRAIN",
+      "inputOrdinal": 22,
+      "commit": true
+    },
+    {
+      "domain": "A",
+      "mode": "DRAIN",
+      "inputOrdinal": 23,
+      "commit": true
+    },
+    {
+      "domain": "B",
+      "mode": "DRAIN",
+      "inputOrdinal": 24,
+      "commit": true
+    },
+    {
+      "domain": "B",
+      "mode": "DRAIN",
+      "inputOrdinal": 25,
+      "commit": true
+    },
+    {
+      "domain": "B",
+      "mode": "DRAIN",
+      "inputOrdinal": 26,
+      "commit": true
+    },
+    {
+      "domain": "B",
+      "mode": "DRAIN",
+      "inputOrdinal": 27,
+      "commit": true
+    },
+    {
+      "domain": "B",
+      "mode": "DRAIN",
+      "inputOrdinal": 28,
+      "commit": true
+    },
+    {
+      "domain": "B",
+      "mode": "DRAIN",
+      "inputOrdinal": 29,
+      "commit": true
+    },
+    {
+      "domain": "B",
+      "mode": "DRAIN",
+      "inputOrdinal": 30,
+      "commit": true
+    },
+    {
+      "domain": "B",
+      "mode": "DRAIN",
+      "inputOrdinal": 31,
+      "commit": true
+    }
+  ],
+  "scope": "synthetic unreserved gross DvP; two declared domains, one shared input partition"
+}

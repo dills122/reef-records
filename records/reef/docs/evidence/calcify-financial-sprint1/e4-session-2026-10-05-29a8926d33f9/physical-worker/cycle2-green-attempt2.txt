@@ -1,0 +1,118 @@
+TAP version 13
+# Subtest: exact owned RF3 logical replicas distinct from measured broker/local allocation and unknown categories
+ok 1 - exact owned RF3 logical replicas distinct from measured broker/local allocation and unknown categories
+  ---
+  duration_ms: 12.172084
+  type: 'test'
+  ...
+# Subtest: manifest freezes clone and rejects prefix authority, nonRF3, duplicate topics/partitions/brokers/local paths
+ok 2 - manifest freezes clone and rejects prefix authority, nonRF3, duplicate topics/partitions/brokers/local paths
+  ---
+  duration_ms: 1.01175
+  type: 'test'
+  ...
+# Subtest: replica missing duplicate extra identity range API errors and unsafe integers fail with retained raw evidence
+ok 3 - replica missing duplicate extra identity range API errors and unsafe integers fail with retained raw evidence
+  ---
+  duration_ms: 4.269125
+  type: 'test'
+  ...
+# Subtest: stale future and spanning sample windows fail
+ok 4 - stale future and spanning sample windows fail
+  ---
+  duration_ms: 1.723625
+  type: 'test'
+  ...
+# Subtest: Docker exact ownership image mount drift stops before any exec; stopped broker never executed
+ok 5 - Docker exact ownership image mount drift stops before any exec; stopped broker never executed
+  ---
+  duration_ms: 1.560166
+  type: 'test'
+  ...
+# Subtest: strict du KiB conversion rejects unit path numeric errors; raw receipt hashes validated
+ok 6 - strict du KiB conversion rejects unit path numeric errors; raw receipt hashes validated
+  ---
+  duration_ms: 0.612125
+  type: 'test'
+  ...
+# Subtest: collector command failures, output overrun and hang have bounded failure evidence
+ok 7 - collector command failures, output overrun and hang have bounded failure evidence
+  ---
+  duration_ms: 11.087042
+  type: 'test'
+  ...
+# Subtest: signed deltas retain decreasing allocations as reclamation and keep baseline separate
+ok 8 - signed deltas retain decreasing allocations as reclamation and keep baseline separate
+  ---
+  duration_ms: 2.639167
+  type: 'test'
+  ...
+# Subtest: receipt unit and executable mutations fail even with recomputed input hash
+ok 9 - receipt unit and executable mutations fail even with recomputed input hash
+  ---
+  duration_ms: 1.608041
+  type: 'test'
+  ...
+# Subtest: actual local symlink escape rejected before host du
+ok 10 - actual local symlink escape rejected before host du
+  ---
+  duration_ms: 2.73725
+  type: 'test'
+  ...
+# Subtest: opaque category path mapping never authorizes category allocation
+ok 11 - opaque category path mapping never authorizes category allocation
+  ---
+  duration_ms: 0.292791
+  type: 'test'
+  ...
+# Subtest: raw actual operation JSON must semantically derive exact inventory sizes and topic incarnation
+ok 12 - raw actual operation JSON must semantically derive exact inventory sizes and topic incarnation
+  ---
+  duration_ms: 1.663292
+  type: 'test'
+  ...
+# Subtest: unregistered local categories remain explicitly unknown, registered zero allocation measured
+ok 13 - unregistered local categories remain explicitly unknown, registered zero allocation measured
+  ---
+  duration_ms: 1.404625
+  type: 'test'
+  ...
+# Subtest: unsupported measured missing and invented telemetry cannot enter validated evidence
+ok 14 - unsupported measured missing and invented telemetry cannot enter validated evidence
+  ---
+  duration_ms: 3.380208
+  type: 'test'
+  ...
+# Subtest: explicit lower frozen raw budget refuses actual output overflow without raising existing cap
+ok 15 - explicit lower frozen raw budget refuses actual output overflow without raising existing cap
+  ---
+  duration_ms: 0.609166
+  type: 'test'
+  ...
+# Subtest: timeout never resumes later Docker/local commands from late executor completion
+ok 16 - timeout never resumes later Docker/local commands from late executor completion
+  ---
+  duration_ms: 47.460875
+  type: 'test'
+  ...
+# Subtest: metadata raw hash and normalized snapshot mutations, extra mounts and missing API receipts rejected
+ok 17 - metadata raw hash and normalized snapshot mutations, extra mounts and missing API receipts rejected
+  ---
+  duration_ms: 2.437792
+  type: 'test'
+  ...
+# Subtest: actual raw requests broker identity partition duplicates and registered ranges all fail closed
+ok 18 - actual raw requests broker identity partition duplicates and registered ranges all fail closed
+  ---
+  duration_ms: 2.404791
+  type: 'test'
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 18
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 154.964125

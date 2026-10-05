@@ -1,0 +1,39 @@
+{
+  "pass": true,
+  "status": "VALIDATED_BOUNDED_DIAGNOSTIC",
+  "sourceActions": 2100,
+  "historyRecords": 2101,
+  "parentPid": 82795,
+  "childPid": 83139,
+  "activationOrdinal": 2099,
+  "activationOffset": 2099,
+  "resultReplay": {
+    "records": 2101,
+    "inputs": 2100,
+    "bytes": 6007761,
+    "elapsedMs": 1773,
+    "committedResultOffsetExclusive": 2106,
+    "ownerSha256": "96da35188859915ebb3061691644e114021e8eb033e2f8865065fae4b7901db1",
+    "historyChecksum": "27d2d99c876edc961958133c9a9317a2baa7b12c78efd8a589af92c2b20ab5ae",
+    "sourceUuid": "vQgpzpyWQHyUVj7vYqiVMg",
+    "readCommitted": true,
+    "completeCommittedCut": true
+  },
+  "encodedBytes": 6784151,
+  "physicalStages": [
+    "warmed",
+    "before-settled",
+    "after-settled",
+    "after-pending",
+    "workers-closed",
+    "after-managed-restart",
+    "after-result-replay"
+  ],
+  "supervisionJournalRows": 13,
+  "fullyActualAll3Samples": 12,
+  "cleanupPinnedStoppedBrokers": 3,
+  "parentHeapPeakBytes": 214017080,
+  "childHeapPeakBytes": 219456064,
+  "baselineParentHeapPeakBytes": 198005296,
+  "baselineChildHeapPeakBytes": 179424816
+}

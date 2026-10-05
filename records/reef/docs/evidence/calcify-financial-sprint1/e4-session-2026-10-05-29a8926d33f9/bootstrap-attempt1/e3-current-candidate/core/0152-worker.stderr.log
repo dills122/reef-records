@@ -1,0 +1,6 @@
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.IllegalStateException: financial worker failed; caches discarded
+	at com.reef.platform.calcify.financial.FinancialBrokerProbe.worker(FinancialBrokerProbe.kt:174)
+	at com.reef.platform.calcify.financial.FinancialBrokerProbe.main(FinancialBrokerProbe.kt:114)

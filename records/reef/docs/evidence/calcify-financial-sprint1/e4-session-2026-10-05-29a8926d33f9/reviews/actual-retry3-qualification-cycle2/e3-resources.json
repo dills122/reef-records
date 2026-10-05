@@ -1,0 +1,18 @@
+{
+  "schema": "independent-actual-resource-check-v1",
+  "reviewInstance": "2of3",
+  "proofRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/e3-current-candidate",
+  "preflightSha256": "fee8aeb874053d3dda95c7bee7efe2ffef288c320c91df31c41ea06b23128944",
+  "samplesSha256": "df7b574645b1724c3ce7466e31861b097a3a17e3bb1f8ad0d1c7e6f6f8bf71d5",
+  "finishedSha256": "60df0acdf2a19e230a59b3875de5ca75d8c69ba147a90137f801b058a707c581",
+  "journalRows": 237,
+  "samples": 232,
+  "maxSampleGapMs": 4813,
+  "maxProjectAllocatedBytes": 6657753088,
+  "maxActuallyMeasuredBrokerBytes": 5073129472,
+  "minGuestFreeBytes": 92242239488,
+  "maxRawProofBytes": 39000506,
+  "hasHostResources": false,
+  "faultTargetReservationBytes": 3221225472,
+  "pass": true
+}

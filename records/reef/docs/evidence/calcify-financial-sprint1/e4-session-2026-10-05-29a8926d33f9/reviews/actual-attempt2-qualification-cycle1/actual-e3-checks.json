@@ -1,0 +1,43 @@
+{
+  "pass": true,
+  "scope": "Actual closed current49 identity/arm/oracle declarations, cleanup raw receipt, resource samples; no capacity qualification",
+  "arms": [
+    {
+      "kind": "external",
+      "count": 4,
+      "allPass": true,
+      "readCommittedOracle": true,
+      "completeCoveredInputs": true
+    },
+    {
+      "kind": "core",
+      "count": 24,
+      "allPass": true,
+      "readCommittedOracle": true,
+      "completeCoveredInputs": true
+    },
+    {
+      "kind": "golden",
+      "count": 20,
+      "allPass": true,
+      "readCommittedOracle": true,
+      "completeCoveredInputs": true
+    },
+    {
+      "kind": "activation",
+      "count": 1,
+      "allPass": true,
+      "readCommittedOracle": true,
+      "completeCoveredInputs": true
+    }
+  ],
+  "compiledArtifacts": 140,
+  "elapsedMs": 1054051,
+  "journalRows": 233,
+  "sampleObservations": 228,
+  "fullyMeasuredSamples": 225,
+  "maxChargedProjectBytes": 6671249408,
+  "maxMeasuredBrokerSum": 5104246784,
+  "minGuestFreeBytes": 92310630400,
+  "maxRawProofBytes": 38363872
+}

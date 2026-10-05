@@ -1,0 +1,140 @@
+TAP version 13
+# Subtest: exact owned RF3 logical replicas distinct from measured broker/local allocation and unknown categories
+ok 1 - exact owned RF3 logical replicas distinct from measured broker/local allocation and unknown categories
+  ---
+  duration_ms: 12.1945
+  type: 'test'
+  ...
+# Subtest: manifest freezes clone and rejects prefix authority, nonRF3, duplicate topics/partitions/brokers/local paths
+ok 2 - manifest freezes clone and rejects prefix authority, nonRF3, duplicate topics/partitions/brokers/local paths
+  ---
+  duration_ms: 1.225208
+  type: 'test'
+  ...
+# Subtest: replica missing duplicate extra identity range API errors and unsafe integers fail with retained raw evidence
+ok 3 - replica missing duplicate extra identity range API errors and unsafe integers fail with retained raw evidence
+  ---
+  duration_ms: 3.712416
+  type: 'test'
+  ...
+# Subtest: stale future and spanning sample windows fail
+ok 4 - stale future and spanning sample windows fail
+  ---
+  duration_ms: 1.756167
+  type: 'test'
+  ...
+# Subtest: Docker exact ownership image mount drift stops before any exec; stopped broker never executed
+ok 5 - Docker exact ownership image mount drift stops before any exec; stopped broker never executed
+  ---
+  duration_ms: 1.277208
+  type: 'test'
+  ...
+# Subtest: strict du KiB conversion rejects unit path numeric errors; raw receipt hashes validated
+ok 6 - strict du KiB conversion rejects unit path numeric errors; raw receipt hashes validated
+  ---
+  duration_ms: 0.608375
+  type: 'test'
+  ...
+# Subtest: collector command failures, output overrun and hang have bounded failure evidence
+ok 7 - collector command failures, output overrun and hang have bounded failure evidence
+  ---
+  duration_ms: 11.539416
+  type: 'test'
+  ...
+# Subtest: signed deltas retain decreasing allocations as reclamation and keep baseline separate
+ok 8 - signed deltas retain decreasing allocations as reclamation and keep baseline separate
+  ---
+  duration_ms: 2.368125
+  type: 'test'
+  ...
+# Subtest: receipt unit and executable mutations fail even with recomputed input hash
+ok 9 - receipt unit and executable mutations fail even with recomputed input hash
+  ---
+  duration_ms: 1.369542
+  type: 'test'
+  ...
+# Subtest: actual local symlink escape rejected before host du
+ok 10 - actual local symlink escape rejected before host du
+  ---
+  duration_ms: 2.124959
+  type: 'test'
+  ...
+# Subtest: opaque category path mapping never authorizes category allocation
+ok 11 - opaque category path mapping never authorizes category allocation
+  ---
+  duration_ms: 0.301167
+  type: 'test'
+  ...
+# Subtest: raw actual operation JSON must semantically derive exact inventory sizes and topic incarnation
+ok 12 - raw actual operation JSON must semantically derive exact inventory sizes and topic incarnation
+  ---
+  duration_ms: 1.706209
+  type: 'test'
+  ...
+# Subtest: unregistered local categories remain explicitly unknown, registered zero allocation measured
+ok 13 - unregistered local categories remain explicitly unknown, registered zero allocation measured
+  ---
+  duration_ms: 0.718375
+  type: 'test'
+  ...
+# Subtest: unsupported measured missing and invented telemetry cannot enter validated evidence
+ok 14 - unsupported measured missing and invented telemetry cannot enter validated evidence
+  ---
+  duration_ms: 2.535584
+  type: 'test'
+  ...
+# Subtest: explicit lower frozen raw budget refuses actual output overflow without raising existing cap
+ok 15 - explicit lower frozen raw budget refuses actual output overflow without raising existing cap
+  ---
+  duration_ms: 0.380584
+  type: 'test'
+  ...
+# Subtest: timeout never resumes later Docker/local commands from late executor completion
+ok 16 - timeout never resumes later Docker/local commands from late executor completion
+  ---
+  duration_ms: 47.213458
+  type: 'test'
+  ...
+# Subtest: metadata raw hash and normalized snapshot mutations, extra mounts and missing API receipts rejected
+not ok 17 - metadata raw hash and normalized snapshot mutations, extra mounts and missing API receipts rejected
+  ---
+  duration_ms: 2.055875
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/physical-evidence.test.mjs:157:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /HASH/. Input:
+    
+    'Error: PHYSICAL_RAW_REPLICA_BINDING_DRIFT'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+  error: 'PHYSICAL_RAW_REPLICA_BINDING_DRIFT'
+  stack: |-
+    fail (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/physical-evidence.mjs:18:62)
+    exact (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/physical-evidence.mjs:25:29)
+    validateInventory (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/physical-evidence.mjs:139:3)
+    validatePhysicalEvidence (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/physical-evidence.mjs:168:49)
+    file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/physical-evidence.test.mjs:161:112
+    getActual (node:assert:609:5)
+    Function.throws (node:assert:757:24)
+    TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/physical-evidence.test.mjs:161:101)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  operator: 'throws'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/physical-evidence.test.mjs:161:101)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..17
+# tests 17
+# suites 0
+# pass 16
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 140.757958

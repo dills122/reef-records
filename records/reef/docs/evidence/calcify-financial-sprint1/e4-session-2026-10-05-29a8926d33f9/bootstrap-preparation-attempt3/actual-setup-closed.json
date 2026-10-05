@@ -1,0 +1,1362 @@
+{
+  "schema": "calcify-owned-rig-preparation-closed-v1",
+  "createdUtc": "2026-10-05T16:59:02.702013+00:00",
+  "project": "reef-calcify-e4-attempt3-8c6f",
+  "watcherSession": 6462,
+  "watcherExitCode": 0,
+  "allOwnedExited": true,
+  "priorNinePreserved": true,
+  "volumesPreserved": true,
+  "actualWorkloadExecuted": false,
+  "actualSetupExecuted": true,
+  "registeredResources": {
+    "project": "reef-calcify-e4-attempt3-8c6f",
+    "containers": [
+      {
+        "id": "45a7adb373fa7914cc16a1d58f4dd44a3d811259e7c097c119ee725129f2c893",
+        "brokerId": 0,
+        "name": "reef-calcify-e4-attempt3-8c6f-rp0-1",
+        "hostKafkaEndpoint": {
+          "host": "127.0.0.1",
+          "port": 40092,
+          "containerPort": "40092/tcp"
+        },
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-attempt3-8c6f",
+          "com.docker.compose.service": "rp0",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-attempt3-8c6f_rp0-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "e98481cf469c0cabac43873dfb732fac89f2c4a912e02604a2df888d05e77149",
+        "brokerId": 1,
+        "name": "reef-calcify-e4-attempt3-8c6f-rp1-1",
+        "hostKafkaEndpoint": {
+          "host": "127.0.0.1",
+          "port": 40192,
+          "containerPort": "40192/tcp"
+        },
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-attempt3-8c6f",
+          "com.docker.compose.service": "rp1",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-attempt3-8c6f_rp1-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "5226066cada82643c4333341a25db1a50674d02574e8d3d1deb5e1dd89a65c54",
+        "brokerId": 2,
+        "name": "reef-calcify-e4-attempt3-8c6f-rp2-1",
+        "hostKafkaEndpoint": {
+          "host": "127.0.0.1",
+          "port": 40292,
+          "containerPort": "40292/tcp"
+        },
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-attempt3-8c6f",
+          "com.docker.compose.service": "rp2",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-attempt3-8c6f_rp2-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      }
+    ],
+    "bootstrapServers": "127.0.0.1:40092,127.0.0.1:40192,127.0.0.1:40292"
+  },
+  "bootstrapServers": "127.0.0.1:40092,127.0.0.1:40192,127.0.0.1:40292",
+  "scope": "Setup-only actual RF3 health/image/mount/nodeid/config/du/df readiness, now stopped; not capacity or workload qualification",
+  "readinessSample": {
+    "allocatedBytes": 151179264,
+    "guestFreeBytes": 97170444288,
+    "startupException": {
+      "startupDeadlineMs": 69875345,
+      "firstObservedRunningAtMs": 69846494,
+      "firstGuestAtMs": 69846539,
+      "firstGuestDelayMs": 45,
+      "scope": "setup-only approved initial unknown; no topics or payload workload"
+    }
+  },
+  "configPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/config.json",
+  "configSha256": "4a396265d14af57c557a00ecca19b6f4a4d7c3721005c346e7f4216e6cbec8f9",
+  "fixturePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/bootstrap-fixtures.json",
+  "fixtureSha256": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+  "preflightPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/preflight.json",
+  "preflightSha256": "98ce2e1ce2fb514d846071f4972b1a5f77fe69b3bdf6356c19d834e7ce08a9f3",
+  "adminScopePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/broker-scope.json",
+  "adminScopeSha256": "b1f4682bc29387c3b8552e2316fa291912473cd3f07d2f78eaa1e48298cd2ee0",
+  "watchFinishedPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/watch-finished.json",
+  "watchFinishedSha256": "a1235709d452863a2939b439c6206b14a3e750c6fe9f39940bb1ff537c979df1",
+  "cleanupInspectionPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/stopped-inspect.raw.json",
+  "cleanupInspectionSha256": "d5b820d2b1aa8776f720219fe440662b5e0e048c477a98c4c2337b8fb6472071",
+  "cleanupCommandReceiptPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00253-stopped-confirm.json",
+  "cleanupCommandReceiptSha256": "11807d2428a326e44125a473795e460c31c638ac0a9b5bc5533b315cac64a9bc",
+  "stateJournalEmpty": true,
+  "proofAbsent": true,
+  "rawBytesBeforeReceipt": 7875993,
+  "files": {
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00218-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "d91d55d8e514aa65665e0ef53b5334ffda38bb2a5c092fde7e424cf1e414202b"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00152-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "817d26711c7b11d4db119693e0520ef157c6698c79f1100d4ea0284a9694acf3"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00230-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "abb6573e124d8f58e866e78477f8a566f1575cbf055c3179d22d8f2fc747d985"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00234-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "451c2ad10356d7a044f6f530df89e0e343dbc6f2321e349a5a5cda311796384e"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00098-du-45a7adb3.json": {
+      "sizeBytes": 716,
+      "sha256": "10946d1cf4e14d069881b9024e60018d46164154bd4b6d5ae04e20c94827b7ce"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00243-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "50ab0c070f336d76a73f187e743db97dc7b020eb7f2fb24132a02bfa5b13f3eb"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00158-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "800d8bbd5878e4c28e50a155b14123876a0e5ef18ac70a05e439452ca9636116"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-011-create.json": {
+      "sizeBytes": 2245,
+      "sha256": "5639804b7a3fc641514b52339e4922a9f7c4ce2f5af3699a891562823756d128"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00028-du-e98481cf.json": {
+      "sizeBytes": 713,
+      "sha256": "ee4988e5ae7cbe046cfc5ed7f0890ca32d2fb896065dbe068a5cd1577f20245a"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00082-guest-df.json": {
+      "sizeBytes": 828,
+      "sha256": "2490b0165e9e24dffcb7ca295ebf536c2b64f57c3cdbce8393653114c68ff54f"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00115-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "71f32582fe590b0c77cea146f42e68da05658e006f36f497e98b14fd9156c7c7"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00049-du-5226066c.json": {
+      "sizeBytes": 716,
+      "sha256": "d9c4ae781ce275531f7dc02beba620199de8aa9fea30e841c17c90328a6f9708"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00011-guest-df.json": {
+      "sizeBytes": 828,
+      "sha256": "95a74e3356a6a079e06234d43ff2b45435815dffdcfe8553e24255f776f6b4ba"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00073-du-e98481cf.json": {
+      "sizeBytes": 716,
+      "sha256": "df366f62c3f868f2955a6ce53b8e19d820b91338856bce9660c199ad0bfd13e5"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00174-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "f08eafef4ce990e5e440038cbaf3d4b2061aceeb412eb3818c4b8e8d8af4f7b7"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00170-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "4e9cddea8f298327d4e72de98973eb2483315cf554343189d9684a53a9a951d3"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00103-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "c13e59f6e849ae595a88412f093629cd3d3662a1864db3dd6564b9db6c9d967f"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00006-guest-df.json": {
+      "sizeBytes": 827,
+      "sha256": "bf0e3368a3eb79843c75aa04cd40389d8a9eff918a3e359c589a0bbd980d0b21"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00205-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "94d6d608d08321402f7cf708bb12a7cb339493ef63daa5ca9a4100b704b9dbba"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00248-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "b6d34d4021148656c412c94b55cfc0cb5a083b9fdb090ddd0f289aca31485e9c"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00093-du-45a7adb3.json": {
+      "sizeBytes": 716,
+      "sha256": "6f0af885503fa926acf66f37ee0691d3b3af4205d046b186a41cbd967aed8584"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-008-network-inventory.json": {
+      "sizeBytes": 1089,
+      "sha256": "e7d4152ab8ccdc34f0e7736fa1b0c5c8dccb8795f3e7713e171c5b316fe307f6"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/pinned-network.compose.yml": {
+      "sizeBytes": 79,
+      "sha256": "eb9b66ed23d16eb7d96adb6ba2fc628e23a90529a36a62209daa4703139f8347"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/receipts.jsonl": {
+      "sizeBytes": 428740,
+      "sha256": "c57649fc1f9bbd2041d9a6561799e58a1f02f062b6d344ba43e26927e5ec7ae1"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00217-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "dcbd8d5f65233d483914d35459e21912a44f3e627e7c4730271ce214e3e4cad8"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00213-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "5122a075efe4af770f5a4534dd6b7d3f10a192fca02cd98eda0404281ab5d8a3"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00226-inspect.json": {
+      "sizeBytes": 46916,
+      "sha256": "0e3134705371602045d2a0c8ef0a627001902ce94b1ce368ffb20ee4b6239d14"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00054-set-compacted_log_segment_size.json": {
+      "sizeBytes": 822,
+      "sha256": "0c00819b1b51931d7f279462cbde3a3c1914a8bfc5762835095dca980ae7811a"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00085-du-5226066c.json": {
+      "sizeBytes": 716,
+      "sha256": "f7a61b47ba1712ff7f9b254f07742b3a3eb0914e1177214ca5460938461210c1"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00221-inspect.json": {
+      "sizeBytes": 47184,
+      "sha256": "c6469b62110d49f293470f9afbbe946b2be89f2c3d0fa5ef4ea7597942ac6ab8"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00122-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "70b713b549ff71619b9e95e0bf3e20acaa33994d5d5d305e55e452c9f1530984"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-012-created-inspect.json": {
+      "sizeBytes": 36312,
+      "sha256": "27186831112f646d7bd25d4f149d93895abe152b116b2dd49fbd0a7b6a4cbb54"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00086-inspect.json": {
+      "sizeBytes": 45301,
+      "sha256": "63683ca2b98df5fd78c9eab945d5344759258e7da9016ecb707e552dcce6c147"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00199-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "9e3ae6b9a2780ef74ee5562cfe1a56b767dc09d8092b63a81536a3e0ebb6b9ba"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00145-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "b0090d92d9530cbf186cba96c89e497c88833f28651f83b3a7ee4af367c7cb5f"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00108-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "f3e9acb35eee98b010dec67eba9c8636ff4145dc60208c11b0c609425c7c6fa6"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00081-inspect.json": {
+      "sizeBytes": 45301,
+      "sha256": "215750d3b668b744f54000a9a02b380585035e7a8bf65c3b502b13323a1af2f9"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00153-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "148da77c30a47c937a5b18ff998a678290f6e33b584b4a5d5d79fa8928d91b06"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00023-du-e98481cf.json": {
+      "sizeBytes": 713,
+      "sha256": "a0cd95b0c0f51eb00a96a12db4b1c6b544d70982ff2287a526c3ab88bc4b3d40"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00019-du-5226066c.json": {
+      "sizeBytes": 713,
+      "sha256": "f6cfa14cf50821d2d29b88d97709914692d8e369553f0992af6c6f57ce91326b"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00120-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "a38ae39a245b6cd3942ae7b2dbbc81ef7c85ad2a4d2a67340cca6b2c391c6f26"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00124-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "5b10943a53dd3c1a5edd80c915089f646c719cc21db1d4e911cde7bace577e09"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00208-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "4ba1d85ecf336794cccd8407cfb42c2e9a2cf474bbac46bdc8fed3c6056e6152"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00181-inspect.json": {
+      "sizeBytes": 47184,
+      "sha256": "f87de8d41897ebcd525f8013ea0b002793cdf0b22e05c6b3b393688fdb5960bc"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/setup-authorization.json": {
+      "sizeBytes": 673,
+      "sha256": "e8494f8ec1d4a38b807705cd71107476716c12dd8760d409ce35c2c63fb9c24f"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00186-inspect.json": {
+      "sizeBytes": 46915,
+      "sha256": "bce0c711e1e20c1a97f8968a149bc28249971af9ec7de9eb79aecf8de842ce86"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00253-stopped-confirm.json": {
+      "sizeBytes": 45698,
+      "sha256": "11807d2428a326e44125a473795e460c31c638ac0a9b5bc5533b315cac64a9bc"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00245-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "b76619dcd41d989bf19c756a4b4f03f894d0779f5ce56f2017e3470f8af07e89"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00211-inspect.json": {
+      "sizeBytes": 46914,
+      "sha256": "748a91308ea724ec1e23eb3fccae8d4f62d64f083ab3ff3899b0bbcc6837a3ad"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00224-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "791c97f5c5621d73d30a2cd8a270e5fcbe0b26a10fb08d4a5f06cea3f3f18084"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00220-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "6a918027ecc6ea3586fdf62e2f4a250380c5fc29e932a48198b71cb5cd5a4747"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00216-inspect.json": {
+      "sizeBytes": 46914,
+      "sha256": "9046981e0ba85c6203dd63a2763facbf30dd002eb7cdedaa31a41251793d5c48"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00088-du-45a7adb3.json": {
+      "sizeBytes": 716,
+      "sha256": "01f96fd9e687d83ea8ae3a3b6f299f80b5d75ea46d010ef14cebb6ce2b414027"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/watch-finished.json": {
+      "sizeBytes": 1605,
+      "sha256": "a1235709d452863a2939b439c6206b14a3e750c6fe9f39940bb1ff537c979df1"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00207-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "0b89d191d7bdd3443f53a5a8a743759fcdedfa484c6d837ed6f6eaa4a5406d2b"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00148-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "13957a2261534ab6aafdcb1f542ab8a63df8d7f0cc61a44dc9bd8288ae9b78ba"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00038-du-e98481cf.json": {
+      "sizeBytes": 716,
+      "sha256": "8636d143d57613d6d94d6313651e08def4424845c4ec2d3c1fc68e156a439a35"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00105-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "f86ad9e8e130e3f09d44069a6a8168c7d22d63cc62947bd0bbe9247aec47ab91"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00052-get-log_segment_size-rp1.json": {
+      "sizeBytes": 731,
+      "sha256": "e8e06c5257b3efd69fe5e60c2683fa4d3a2cc51675d2e288c7782b4b5080514c"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00132-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "882cc9bed8ca03b2e9a4ec394295d2cf060ebf5bde529901c26ae39e5d609555"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-001-prior-nine-stopped.json": {
+      "sizeBytes": 316407,
+      "sha256": "4f16574dd65d273f1b39dd079c1f9f60e98786e7b82b54dd1df92b0c66e434ec"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00160-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "869c7e04d69de977ebba136467d70d499554263282cc6885fc502528b0bfafc0"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00164-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "9e2fd3353716597253301f8b642b9b258ceeb646259983c7eaf98644f4482f24"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00113-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "f86e435979c7618a5a72ed656cb9b2fb8558e6d1cf15fcd749f0f4b46a60600b"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-005-volume-absence-0.json": {
+      "sizeBytes": 905,
+      "sha256": "7be32a3df33571ce207e3faf331e607c3dc0c2d86ee371e9b2a5150fe8ceb75c"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00092-guest-df.json": {
+      "sizeBytes": 828,
+      "sha256": "c016a06b535f1fdb59088c167e26791263da272f59c563ffe4dfa1ae0cf1bb56"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00215-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "b69a637a1cfc99d5164944a542d4e17a76af04fdc25218bbdf5b28f9ff987c2d"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00083-du-45a7adb3.json": {
+      "sizeBytes": 716,
+      "sha256": "ce2125b5acc916dce772f0853da4daf6fc32b62ecd2fbcbbe2446aeffe3b99e0"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00016-guest-df.json": {
+      "sizeBytes": 828,
+      "sha256": "edfecf76b6e138340f38a7db6644943c2990ca195eed8ea995391caf953a2966"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00203-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "2e7dc3642b5823af8573dac9ffc3bb0a2bb4e14c2c43b1420201afae4851d7f8"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-ports.json": {
+      "sizeBytes": 309,
+      "sha256": "a3036424298dd5616dc52d81fef5cf068ddede4d67855c36785e8b0e4d8fd343"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00095-du-5226066c.json": {
+      "sizeBytes": 716,
+      "sha256": "5cbe41eb1ea3e4a70e994f7abfea7d40613a7fd0903e9ef7932f903035530764"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-003-image.json": {
+      "sizeBytes": 3882,
+      "sha256": "d9d2cd052b6c6928663bdc8390d87aa6443564f39a695d122cd5e8be6b4f6187"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00155-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "2ab9e49bfe23d727fdc9f3cde3be1e2cd784e1557a5e71cafbec6b13f832bbb0"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00189-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "5b5c375b32ba6ed6cc96ebeb2ab65978dbb6611c8821d08c614a79a9183b49ec"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00118-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "5bcebc01800721ded49f4f292b2e63f558401f0ac3ff515595896cfc89310017"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00143-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "4287ccbd54b52724b1684bce62bd41804290fd344e73260213306296dd178248"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00009-du-5226066c.json": {
+      "sizeBytes": 712,
+      "sha256": "1351d5a2846a99a9590fe3fdda5c661a6a700ec67467489fc369dc44aa4971ad"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00033-du-e98481cf.json": {
+      "sizeBytes": 716,
+      "sha256": "0d538324f1dcf5c62dd4db464534eaa6ad7eec7e201c4a8c37c51f6dda63c6b9"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00134-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "4d7562175116595b599ebb6a4cac578a3adbc6d2cc372695046b8ba51fb49ad2"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00130-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "fad31839e8102cd72241b6807461f8384cd4890326f7cb0312526b6ec177fc8c"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00142-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "b39d0d9ba0aa7a1f6af6562e9038c5d7520d98b26079badcf1bff1af13c671c6"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00035-inspect.json": {
+      "sizeBytes": 42644,
+      "sha256": "307e63c308ea9ceaf1ed8423e903d1d2a8c43c30375f12b23b2cb9ae82c08804"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00021-guest-df.json": {
+      "sizeBytes": 828,
+      "sha256": "94d95612156efb259ea655aec786b247b5d373a7cd6199cce175e91f4bf2748f"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00238-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "f46f47fac5a189ec209d7176379806bf19f835d2e87af260b90ff6ceb97e8c09"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-013-created-volumes.json": {
+      "sizeBytes": 2882,
+      "sha256": "6b2ae4de30b7986d114cfd3f7a1e87dc195a19d70050d36a3c88e45470afea9e"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/operator-safety.mjs": {
+      "sizeBytes": 1495,
+      "sha256": "3b3e66a070667efbbeef9904c949ff0bb0420e1d257640981cd876f07352abcf"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00090-du-5226066c.json": {
+      "sizeBytes": 716,
+      "sha256": "d707d7b095894acbe72981162aee247276470c3d5efdae1aaa1181b3c4d980ee"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00094-du-e98481cf.json": {
+      "sizeBytes": 716,
+      "sha256": "4a7daa04c490666eeb5aa4fb0656742cd739b4e3a8fcfa8d97ed0c9587d5c513"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00036-guest-df.json": {
+      "sizeBytes": 828,
+      "sha256": "903f12088bc4cd814c5201d748ba5248058a8b77f02a8dd1489c04cd3acaf48c"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00214-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "833ea0b19732e5835e25618e2de311c0f437c76195a9fb6682e3040ce91458b4"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00210-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "0f3d16ce51ea10ad79bdf5e3e7fb95491812b902ab3db47b7b74d1ab1bf94304"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00162-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "ff0ff464dfa796674953bdbed993040a1885910ff05f09543a65c22a8d6c7db5"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00178-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "068c01f5af8347fa874bc34cbe24548813382729f2df1c7fc27b80c077925d03"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00135-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "1e1ccfbfff9850b00297e4f62c7aef9ff7d63a7102c5260daa8821fc8c3913f6"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00062-cluster-info.json": {
+      "sizeBytes": 832,
+      "sha256": "fb42cfcfa3b182def66f494ce95e123c4eb19a13a954c161c34b5ba6631f4976"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00008-du-e98481cf.json": {
+      "sizeBytes": 712,
+      "sha256": "16787437b32f9149c0e5558ceffbfd9294412d58ee13baa50e772956fe150e84"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00020-inspect.json": {
+      "sizeBytes": 41425,
+      "sha256": "f96d2182f8cec837e606084ef133028096d48d05c88ebe8e0666e6a016907c92"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00150-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "4f5cae06d58a1deca68a22b4531671bbc9c217b2d18d56b82bf576cb381c0f00"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00154-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "9fcf4a742c7602256baa20b95eff36b28ae188a04bedd6ec918fddc76275d68e"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00123-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "d260db5bcbbb6d751e6574b2d193beca56bbd95bff9cc71240718ae557bf2d99"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00225-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "a48882a1d0845b2664fba1603ec5749324981565ad724ad16705841f392cde31"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00161-inspect.json": {
+      "sizeBytes": 46915,
+      "sha256": "27fed1deb7b656f6b3256ee4565f2628888b8fa47a0cea97aa21652d1aeedcc9"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00046-guest-df.json": {
+      "sizeBytes": 828,
+      "sha256": "37763f98e7851258d84bd85947a65a2049d4343ceaf62b6071387f16a3c53b08"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00166-inspect.json": {
+      "sizeBytes": 46915,
+      "sha256": "12a19af9dc69f11987257987dcffc9cb0484a5bd34eabf1dce5dc84b0e2d4d05"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00063-cluster-config-status.json": {
+      "sizeBytes": 903,
+      "sha256": "277ac64f5fe2ce38e4ce28b428bb16ce78882c0151f03304c7f5a68f7f1e5de8"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/broker-scope.json": {
+      "sizeBytes": 483,
+      "sha256": "b1f4682bc29387c3b8552e2316fa291912473cd3f07d2f78eaa1e48298cd2ee0"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00192-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "42a5065ba3662bb48fbfba6bbdd12280a71bf4fea06f37a7eed4e6289cd2239f"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00233-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "8a9f0123d33dfbe6f22077e50ab9c6f55017f3d7f25162f8fef7a071f69c4de5"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00240-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "ed898d6c4c9a2ca8e6a0cb8dcebf095a07e7fec4fdd4f156e32683097b33b6b9"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00079-du-e98481cf.json": {
+      "sizeBytes": 716,
+      "sha256": "0b96c32b125b083fa89322b1711882b9dfc42f4eced51171a3e526e5603e4f70"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00244-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "a89824d8f97995f4729f497be675b19c627f908684158c2c4a9b4c7b62e4d4bc"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00068-guest-df.json": {
+      "sizeBytes": 828,
+      "sha256": "c8a356f92ccd0d934692a5d892af4b553d79aa2e8efc6eadd428f96dbb9afac2"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00165-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "e56bce4a1e407cedc6ce2642f54037ee47700aa875c8486731772a04690f2da9"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00126-inspect.json": {
+      "sizeBytes": 46919,
+      "sha256": "2527e58c0b91064484fc2f5d4db64e8886137031ab6f3830e570971c887ff837"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-watch.mjs": {
+      "sizeBytes": 11503,
+      "sha256": "0703c2fef686da22a65be57839bf69d24b5cc91f9e4ce15eae348bca1787c240"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00003-inspect.json": {
+      "sizeBytes": 36403,
+      "sha256": "2541871404e4b896c8c8c81fb7f2fc1f227753f9fa6fd29fa19c5bf663291cf5"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00128-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "1abb3f61e58c68d6d5f9a46db5fda870a32ebb7bb4f0731242a1cdf8ea9cfdc9"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00121-inspect.json": {
+      "sizeBytes": 46919,
+      "sha256": "8d47fcbbf946534c6d58329abed55a2a9726b402f9c2e3d4bcdac3eb336b5c4f"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00112-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "57449996adb5296c91982e9d6bc4a8b1fbb0449706317d8a091225e556545aa8"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00173-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "7f0320bf5ec635a6b8ef3b8991fdb83e767a0136acc6b6fa9cd7e461adc9b2ed"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00104-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "e1f0ab81975953095163f777793f44edff3b7418ce804855134cee39f3ca2aac"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/admin-readonly-receipt.json": {
+      "sizeBytes": 8324,
+      "sha256": "b0bb42db094ed8bb3077085b8acedf8f1af35b9fbe5aa5347878ebc3323d7e72"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00100-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "f8168aeeb0e753137fb1b1c7b32ea6b80fe031bc388087469f110b1cc8681af0"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00039-du-5226066c.json": {
+      "sizeBytes": 716,
+      "sha256": "eee5d647481b1434fbf7ba740f7ba8674e6370ab1985b090480ecfb7d64a0ca2"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00227-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "a2090ff60c6570217418198c34fdb8d97af67cfb3bea2e9cafa5b5615d60a191"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00102-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "3d19e8fa5efb71d583bc0af56ceff0d7156813e152fa1e6a77bd9493ab37e3f9"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00156-inspect.json": {
+      "sizeBytes": 46915,
+      "sha256": "3fee7fb9e8ba00cfb8c68051b76f4428c9ce403d637e9d59dfbdff029a16225e"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00228-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "340b364862c359c92de2e721d9b65fd927067a419e3ffa4eef456677939bb474"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/capture-admin.mjs": {
+      "sizeBytes": 3057,
+      "sha256": "eca4d51a815a5a296157bed09d3f0c989dff804f9f27e626641907ff0947d810"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00084-du-e98481cf.json": {
+      "sizeBytes": 716,
+      "sha256": "244bd9d65e7ea3a24533c0063608f84be117a736fc0658836f9b88e3cd343a26"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00080-du-5226066c.json": {
+      "sizeBytes": 716,
+      "sha256": "5ee14384578847369c8d9776f540663bacaf67a64254564ced1c069e3c491859"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00055-get-compacted_log_segment_size-rp0.json": {
+      "sizeBytes": 751,
+      "sha256": "4b481f88aaee81ac256aa83271013efb5206cc6bc9617eb225a167475e105ef1"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00151-inspect.json": {
+      "sizeBytes": 46917,
+      "sha256": "6a76500eb6b88bcd677771c70115d2f50bff51ac87c6177461f4cfb47a36923e"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00200-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "b42852c168d1cfa1aab53903313931c152877c19e5d3129336fcc83b351fc8be"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00237-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "44daf4a1c9cc096a68ba818ad521d883eb231e6af89ef1ecbe4e6c44e3f1d21d"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00204-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "50b76de70458223569ee5a01c884d08341a421812d84c713bd5229a26ee03e8d"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/registration.json": {
+      "sizeBytes": 3198,
+      "sha256": "c9a7b62c898908b2c5e1f9e91ef9d692352f71b76a5d71ce3430b2a1602d4616"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00041-guest-df.json": {
+      "sizeBytes": 828,
+      "sha256": "68bec0c3a13040a57e0e1902fe25ab4d33b3f4c2ff719f8ac8565f32b83717c1"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00111-inspect.json": {
+      "sizeBytes": 46811,
+      "sha256": "54aa3e75590058032aa110501e47cc4c5f73d19c3ed686a88803f81c7464dc81"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00168-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "743b2ff73cbb3084d41bdaa72b10a8ca62abc35c8c09a1d158d59e7821f1dd5b"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00066-inspect.json": {
+      "sizeBytes": 43972,
+      "sha256": "e96adaba8c68c115e48a1dcee1d1a3eafd2a97598f995bf2ed9435b34266e583"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-009-network-existing-ipam.json": {
+      "sizeBytes": 52168,
+      "sha256": "a36c4e90f5d687908ed2b810245234de79f288fe69d6039c80a52f0835f649a4"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00116-inspect.json": {
+      "sizeBytes": 46919,
+      "sha256": "753d8e1d9d68733ca84a75e2650b71cc2c87b59526bf6bd2960f13e2fb0e5d85"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00125-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "892443ed102e601c4c2575ceb6cfbcd412ba9f2b59b720cbbeccf29dc25e4c82"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00018-du-e98481cf.json": {
+      "sizeBytes": 713,
+      "sha256": "81d1fd12dff6879a5b851421cec6c272d3d09ef517a0bfb60b0aac09d70e39bc"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00144-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "53b498b9f4417026cf06871a063e525a479e293616dc4da2f701e19611b27028"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00140-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "f775e100a65b9c83d781357bedd9a81c8f3ecf72f3919c239da9ea2cf34d706d"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-samples.jsonl": {
+      "sizeBytes": 55373,
+      "sha256": "8a89c97f5fa2eceb7167bda8283a79322ad81d7fcb5d37f41cf1f7cf4bda5f8a"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-010-compose-config.json": {
+      "sizeBytes": 7555,
+      "sha256": "57066c4d191fd6b7e7798d96805baa5ff75e9f1c83f5d5078bf9443d8aa6f1ef"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00043-du-e98481cf.json": {
+      "sizeBytes": 716,
+      "sha256": "2326243b142369508d8acddcd3254f04e50b469aaf08d4f99fa6d2febba3bb46"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00133-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "b8f030206610dfba5f6aad33b1611b8cb0fe874237a474567c6a3792edb47f3a"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00182-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "ac641f0fa20ea365e52eb902a88d25413147315e2807e1d752d54e9af925dcf7"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/idle-watch.mjs": {
+      "sizeBytes": 4135,
+      "sha256": "5b0f3d4f068d5580be33e93e3c39dc21b3db754a23d7f0cca2cf2c75a17b9a8a"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00235-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "30f4931ce9d7b43e1ae6eae5693eba53176a850defcb56d667d85c63c27a9be7"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00002-inspect.json": {
+      "sizeBytes": 36403,
+      "sha256": "634cf7f37812b8ea87b62f78a8cdf9b244d35662adc385c3013f53b1273419f3"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00172-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "daa7372c97c03f5132c95bfea1e722e10bdf75a936cb567581e6859df8c7538e"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00005-inspect.json": {
+      "sizeBytes": 40225,
+      "sha256": "293d7db0f6f3524e3ccfbe62292ef602af6ce94489b0be34e1155153bfb0e084"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-014-network-inspect.json": {
+      "sizeBytes": 2269,
+      "sha256": "b8aa7cacd558787cdd8320385be8c47ccac3d1a72a196c931eed2a72754520d3"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00223-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "ddbfb8b5f4145c0cad4e975768a77b0a8755ef13b6bf776db1e6b5fb0ad4b46a"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00250-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "1280f9a02cdf7c84426917e2843890c390d108602fe9413416a59be4be2c4a2d"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00247-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "499515547977f7fd303d4ee6feb086e1be5b59acda13c074a552c354dbc5f7fd"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00010-inspect.json": {
+      "sizeBytes": 40226,
+      "sha256": "5c9b10442476623760ddddc920725bc98ec4ce7f6e0b94c56372297a28699b3f"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00175-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "baa5d30c27f76dc376f0ebc3d832e3610f7aa9dfd64e1a891ea2b6f16b2792e1"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00045-inspect.json": {
+      "sizeBytes": 43972,
+      "sha256": "58b19d8212f67a8deea5aeac7b32fbf7dbbcb1e3f0b5e3b81f8b964bf5e96d48"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00026-guest-df.json": {
+      "sizeBytes": 828,
+      "sha256": "f4a2f9f7703804d333eb60778e57aa13ded9eb968045046c4827999a41f0c0c3"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00048-du-e98481cf.json": {
+      "sizeBytes": 716,
+      "sha256": "f6ca5386b640237f7c958add55048c8fdc992b29ef72eaceba83941e0dc33ebd"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00031-guest-df.json": {
+      "sizeBytes": 828,
+      "sha256": "8689601f59930fccffcac0335c65d70c7c8bb0112cd069271280e2ce1d8aa1a7"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00138-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "ca13ee8dbb9608d335f54b326f7d9e4ded7d6932ec9176c560ff2907efc11762"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/operator-safety.test.mjs": {
+      "sizeBytes": 1580,
+      "sha256": "d16adae41ffbd27bb408db1b4a0b02a26fbf6adf10b299111565a976c55c9c64"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00163-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "55951d115c5b114762f3b50a6c7c39be1c3536f95c2e5b34d2b0fc13d71102c1"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00110-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "d1c2e85cb42f336b6660d5364abd9e29ecba7b93aa6ac866b6c983c3297cd0ea"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00114-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "3f5a6bee00961fd24771fc77b1b57553105412827a737f09398c1062a83f6bb5"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00013-du-e98481cf.json": {
+      "sizeBytes": 713,
+      "sha256": "74d42cccbea4c931744d629373da239927533b8174313077735626bbb06393f8"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00056-get-compacted_log_segment_size-rp1.json": {
+      "sizeBytes": 751,
+      "sha256": "02c4406c13e2a9a21cda45ea3acf8b932c9b5f3be5937ea2efe1de4c5cfe32f2"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00029-du-5226066c.json": {
+      "sizeBytes": 713,
+      "sha256": "b8db33718f8cc97c526081776d23d4ae270f58a26f75ef3cca1e1077ca66ffaa"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00232-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "f406b9e2a0fa593d8b172b376924e1503db055281f9e34e7a030c73be992148a"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00106-inspect.json": {
+      "sizeBytes": 46811,
+      "sha256": "b4baa2d88564ac2933c295b0e6d00fc0e93206a970730ea27c7b3f9633c53e52"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00107-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "13e55180627a574fbf62701c2bf115e6c209d6bd023c0140537322f3c9f1b135"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00101-inspect.json": {
+      "sizeBytes": 46631,
+      "sha256": "03d853457e096f03b3cd470c97fffd88c96d51eb19df451eea4543c411844849"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00053-get-log_segment_size-rp2.json": {
+      "sizeBytes": 731,
+      "sha256": "6804afc2078aa3b5fe84c1c7d75a883bf112799110e6371f792bc817bb11c094"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00076-inspect.json": {
+      "sizeBytes": 45301,
+      "sha256": "42f5936a115e519ed6307a056aaddf2274788591f24763daf11ddb3fe5af73af"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00012-du-45a7adb3.json": {
+      "sizeBytes": 716,
+      "sha256": "b92a3242493ea28d38df96375d7d89cd4856e9d61e71b6e15a0a075654bf41c6"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00187-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "b218473678f8c1a5acf322db22d92fdb142d5366329269d92503fd230b717f44"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00180-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "fb49fe361db0c0000c1f0be4d4618a72c664bef7a1b9886f3d8ecca7ed1809c5"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00184-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "e24697b715a5eb44415660f2a932982fe180f622daae69c55017657c2e43dacc"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-receipts.jsonl": {
+      "sizeBytes": 3028783,
+      "sha256": "1d1dda63018052329ebe869115151d300ff6735c190bcbde8b954ac52e7a56df"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00139-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "210352aaa074b9b4437c28262795f2d299a82d6dfd11bd3788456be5b42ecae6"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00141-inspect.json": {
+      "sizeBytes": 46919,
+      "sha256": "a12fd3e124ded8c5d76cbf8c282dbdb99fbec06d6a3f8bf3a56d51ca2646e1e4"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00146-inspect.json": {
+      "sizeBytes": 46917,
+      "sha256": "d8cd67848bb3e48b007b605ba854f12d3ca7929b02dfb725a390236465300c8a"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00057-get-compacted_log_segment_size-rp2.json": {
+      "sizeBytes": 751,
+      "sha256": "de766ce9be68182754a397ce3702e4092bffd4cb479a6b8ad9ee00e887683a23"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00242-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "0bf4677c471f3a3e09f22033ac137b9068eac923d791791557983cfa10148cbb"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00001-old-before.json": {
+      "sizeBytes": 316411,
+      "sha256": "f2f42bd0556f50c233023dfce1bdf9f548042293fe9b2449d1b2699c186b6b4b"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00177-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "647b3cb2981deb74e867070354bd1df0bfe4553978145bed6cdf77154de7304d"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00229-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "d4df822144d1f284675ef34c73dd106e03930276cb634571cfc59c5541c26ba7"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00042-du-45a7adb3.json": {
+      "sizeBytes": 716,
+      "sha256": "129c5904c284555d1613c944f5f614602c07c0cf362d301152046156f24aca3d"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00040-inspect.json": {
+      "sizeBytes": 42644,
+      "sha256": "398dcb974966277af7c698b867473ede3e3095af9ba6ffcb5f3216ba62a05b4d"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00015-inspect.json": {
+      "sizeBytes": 41425,
+      "sha256": "4ae88464646339aa1d7c2bc49a0864ec230485f71a7774a0306a994a4ddad50d"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00027-du-45a7adb3.json": {
+      "sizeBytes": 716,
+      "sha256": "632f1e1db5d1a33214564198e0ee374d975724f2e97f4d346e533f10d3656431"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00061-get-transaction_coordinator_log_segment_size-rp2.json": {
+      "sizeBytes": 779,
+      "sha256": "f9960907f5841d1aaadd419fbbdb8c2b2d553a90780754b79e76a0d0b726680f"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00169-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "5d5079b53f10e7f1748df20ca7ab848b98e8bb6c29230bd3b3ab64b43301363f"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00078-du-45a7adb3.json": {
+      "sizeBytes": 716,
+      "sha256": "49bce9476438bec209e3e13af4ec55a04e2c0a6ef739241bd0ab28deff6fba57"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00030-inspect.json": {
+      "sizeBytes": 42644,
+      "sha256": "420f00a727b376b6fa5ee62e0d0c8e6581f1e0f111372eece90aeaf8949ac4c6"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00065-inspect.json": {
+      "sizeBytes": 43972,
+      "sha256": "c99d1dbe941d1d6e26d261e24d8dd86eaf226e90b19d48663e74ec49775451ce"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00059-get-transaction_coordinator_log_segment_size-rp0.json": {
+      "sizeBytes": 779,
+      "sha256": "42fdfb0ffd2ccf6eb477364f98e1bed180b05ba0bf6d11dc50313eb519862f61"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-002-version.json": {
+      "sizeBytes": 1871,
+      "sha256": "ff9f905f27181ce7cb3aa43266778be557c3c376dba762d4f78353cb362bc0f6"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00060-get-transaction_coordinator_log_segment_size-rp1.json": {
+      "sizeBytes": 779,
+      "sha256": "d960a1c04305de50b4900cd443b45b9452e7408b111b5c4e89e57e0309e1be21"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00071-du-5226066c.json": {
+      "sizeBytes": 716,
+      "sha256": "ceb4a6efccd4dae98d5b9151c191325e151b39d786c4b2e3f7fbd84c92030299"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00251-cleanup-inspect.json": {
+      "sizeBytes": 46925,
+      "sha256": "630f33d4259afae5cc9681be27d5426d782c2b5742061d9bac9afdb66a1d0cb7"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00194-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "db2dbd2bd2a5ccccf5c1b210efcc87b0831da2d6d513eecae1fd3f54b170c348"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00190-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "d04913bf23f3cb9256f661e6a71ce53946417460031f6c782d61b9e84c6d113f"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00014-du-5226066c.json": {
+      "sizeBytes": 713,
+      "sha256": "3cf876c9bc92a450f081e9dc190b7b4570c180f05e7cae4a6d69e802f0f35771"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-006-volume-absence-1.json": {
+      "sizeBytes": 905,
+      "sha256": "f7967421f9c5daaa72b4a42c914dd3ae5ca8513038ad1ee64bb553557988dfce"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00167-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "e2b5c78ff5fd550f6cc043752fdcf2f667a845b16620f199e83260190f2872b6"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00129-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "05e2571eda19ffd521e67e7264bd2e5601c9285cbbd34839f492824e0baf14fc"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00025-inspect.json": {
+      "sizeBytes": 41425,
+      "sha256": "99f64de3a6905bf7c64ea2b6ca503ddbbf9f53a6ce48631c4b94a770992252a0"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00197-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "07954834a6877e026dfcb9233a34f0a9c78ea4cfeb9f6a8a66aa204477ff51ee"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00131-inspect.json": {
+      "sizeBytes": 46919,
+      "sha256": "b6de67cae3126bc3ba85b60a46222472f6b63f433c7dfae45272a3af56e9d648"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00239-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "93f128a29f5a2b8dca879481a30ba16c372e968472a73e39437145970c19f3c4"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00136-inspect.json": {
+      "sizeBytes": 46919,
+      "sha256": "df1a48dd4d07daf114dcf2e12fafcf395bfd6f1a02bd3ee80e49a16b32e65354"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00075-old-after.json": {
+      "sizeBytes": 316411,
+      "sha256": "9a27b58da41e3e2ba042d4c12138cf117a34feef418ff5a64ad15645e9ccc17f"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00222-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "14148a6fce0a120479d2570bb8bfbd737835838af795097d6d1e92e528810cb5"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00176-inspect.json": {
+      "sizeBytes": 46914,
+      "sha256": "fd18447caf37645f9303281e7706efb88e8190d1704a244a1c7c6f5afc7ba2b5"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00037-du-45a7adb3.json": {
+      "sizeBytes": 716,
+      "sha256": "866f418563feb03e3a37ccfe9d874c86dee4256f39c0576115521c05de3d8a8b"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00171-inspect.json": {
+      "sizeBytes": 46914,
+      "sha256": "7a1790971dc6bb32987a6251a85737da44b5779e2c45adb3fa0ccd6ffdfae0a3"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00044-du-5226066c.json": {
+      "sizeBytes": 716,
+      "sha256": "10f31566884fad75a972bc08f7e33ce65c584c26658964cda077c35183eea53f"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00117-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "54ac05b130f5916dabb59558b9a94851f4edf49432be841572cc89ffa46fc947"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00179-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "4648e5012474af22ce6929065291d70e7e08f33aebbdc609302e867c0c1081b7"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00241-inspect.json": {
+      "sizeBytes": 46917,
+      "sha256": "0fd9c2612d0b0cd084c273d0fc74e0124619846953613f9a6ce329ee106425d6"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00246-inspect.json": {
+      "sizeBytes": 46917,
+      "sha256": "365437a36ba00baa514148b2b7fdcdcabdd246fa66b55c5bfe0e02ba6ad3df38"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00064-transaction-max.json": {
+      "sizeBytes": 731,
+      "sha256": "e7bb8f1d845227188908ccd98100ead83447313b5c88374ee0830f3b1517ac9e"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00032-du-45a7adb3.json": {
+      "sizeBytes": 716,
+      "sha256": "398659f1e70b4d7f74c05609dd5208942f28137ef88d7e2403de46a61d736722"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00206-inspect.json": {
+      "sizeBytes": 46912,
+      "sha256": "74fb2cf3b8fd473829a9b278b8ad323688031647c0611194cf56110564dec0f1"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-007-volume-absence-2.json": {
+      "sizeBytes": 905,
+      "sha256": "9fbc429da66f3bd02037b54971ff0fbdfedc18eed4eeb74393e149d559bba8fc"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00137-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "af4b4a6abc9b0d0bda20a0bfd0fd4afbe39f05b56ae2ec4868160b311d9ec7c2"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00067-guest-df.json": {
+      "sizeBytes": 828,
+      "sha256": "af688e2bda67776d85e5969f316c52f0854074ca43d0a87266611fdb4c988476"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00201-inspect.json": {
+      "sizeBytes": 46912,
+      "sha256": "7519b1fd479327a0610fb4520d2a6b311b8341b033eb92843109f9e023d99fb5"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00196-inspect.json": {
+      "sizeBytes": 46912,
+      "sha256": "22c63d2577bcdccc019e4b253e5335b1a7f994735d9ca79960c60dd4250381df"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00119-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "6446974c1c2849f284fde17609955275f3404eb8a9b9ea02ece5b51afd63b066"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00202-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "21a7d6e228009dda69b6e893c0352cfe2de48c3b3a79cb0f6514f04594812020"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00024-du-5226066c.json": {
+      "sizeBytes": 713,
+      "sha256": "04c81973123a6e538ff9c2c3942133ffb59c674788d88bbf4e882570a82c5dfc"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00191-inspect.json": {
+      "sizeBytes": 46915,
+      "sha256": "6f9849b080a3e055122eed1a115727bf10fbed249f89b14d9eec5c7416494422"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00069-du-45a7adb3.json": {
+      "sizeBytes": 716,
+      "sha256": "ba0073d5c54746a0ae51daa2b2ec700d9b167db9432c9213bac36a496d4de59c"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00188-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "f6610f9b872cfc1c2ae545763d47a7acd57e5b07b82f2bc4f23206b5f232200b"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00089-du-e98481cf.json": {
+      "sizeBytes": 716,
+      "sha256": "94a056412fdd55857174df228b1014aa99855a997d01a9e8488e9dd10e4629ee"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/stopped-inspect.raw.json": {
+      "sizeBytes": 41538,
+      "sha256": "d5b820d2b1aa8776f720219fe440662b5e0e048c477a98c4c2337b8fb6472071"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00097-guest-df.json": {
+      "sizeBytes": 828,
+      "sha256": "dac9c5d8996c6d482f9a54596a33b3dafc48408d8daa3bbda3b0dce4ac04c479"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00209-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "aa5c2a32cf812c4c3e18165dfd9992a285f5b47a728a4e2dbccbc0b796dc6948"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00252-stop-owned.json": {
+      "sizeBytes": 1055,
+      "sha256": "237aed0233064055a7ef127b20a5fe4d89a1c66a207a648b0d341ddb020f4788"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00147-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "ca5b48d7760eef8d48436134f3bd90c02dccc64d8f85100d41786e3ccf6d4de0"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00183-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "1f8999db693a6b18d4318a060f0e0af964b46c86e6367bfc4c9ce008bcd1f3ce"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/preflight.json": {
+      "sizeBytes": 4792,
+      "sha256": "98ce2e1ce2fb514d846071f4972b1a5f77fe69b3bdf6356c19d834e7ce08a9f3"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00007-du-45a7adb3.json": {
+      "sizeBytes": 715,
+      "sha256": "f8166321e4b4a570eccfff817188e800bca1ce6015ec85000bf658fcd2479950"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/setup-authorization.template.json": {
+      "sizeBytes": 351,
+      "sha256": "15728d7576b1fa04107b888b4fcaad78f04440056bac4101162835e7e4caa04b"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00058-set-transaction_coordinator_log_segment_size.json": {
+      "sizeBytes": 850,
+      "sha256": "d5e245a6c8c0749506b71ef0d92e9cf7834a12214d352c667f50e8e39df89736"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00195-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "35d1834d5236eaf4babcca8606d7b52d01fd3c21318869d2437f995cc1adc733"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00149-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "bd68cd620aff6bf8947b90b31202e0b54a7f4ed082999092cc33ad83288f738a"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00074-du-5226066c.json": {
+      "sizeBytes": 716,
+      "sha256": "6bdce77751ed03a444690e490c9bb85e40ad68ad1241412272006a5d4adc0118"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00070-du-e98481cf.json": {
+      "sizeBytes": 716,
+      "sha256": "27f353724324de56aaeeaae811d2a6df72ebdb5d045a0db0174f4c2e7104d51e"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-004-project-absence.json": {
+      "sizeBytes": 681,
+      "sha256": "5edcb24f44597587f2250386895f8f461c1699982f39ddb18efc4e315d750704"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00157-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "2f1fcb9be0dc8cc4bcaccd27c901d26155e43b3aaf6f6ac87258aa5da9c4e792"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/prepare.mjs": {
+      "sizeBytes": 7935,
+      "sha256": "24faa91532441f2a0c3f8628d977e1df50648c7ebdc628cbec47777519408434"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/watch-handoff.json": {
+      "sizeBytes": 173,
+      "sha256": "1e153bf89a6d8c578b5e1ca0fc1d9f6fc1c01d1cf4f79239fffd3f1263b32a39"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00249-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "49823d40b39edb175b4a4528f6c8614f26c52cc8220e5988a05111d0813b549b"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00022-du-45a7adb3.json": {
+      "sizeBytes": 716,
+      "sha256": "8c4cbc6c2ef626f006f97c68c7f7d0356c77f11016b09e468eff82d3b8ebb1b7"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00109-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "04a2611f7c9d6bee6b8195caca16d05af31f695e311285811fb2b16de7ca03d5"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00034-du-5226066c.json": {
+      "sizeBytes": 716,
+      "sha256": "99ba14a2140b45fb242e1c0aa7f09f5411324bd3afd8fddd61c6dd42ea0649c6"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00047-du-45a7adb3.json": {
+      "sizeBytes": 716,
+      "sha256": "5a44317b668ffa6f7dce68822785779733e122b0269fa933459cd7b20ee1d54e"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00087-guest-df.json": {
+      "sizeBytes": 828,
+      "sha256": "9b6043dc35090d3c18f51d4dba1a079bb03285b3034f7b74161c61e0901ad89e"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00198-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "3e01c468e58c32575cf34844e034121648e32dce56012c8da8fb56a869fd2b26"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00051-get-log_segment_size-rp0.json": {
+      "sizeBytes": 731,
+      "sha256": "bec108b3b90e71857218d461e4d0c4b91b9545bcd7a7fa868470392c85a18744"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/broker.compose.yml": {
+      "sizeBytes": 2041,
+      "sha256": "5ab10a5e518a454f8cdebb54f8e490892c21834355fe322cef873619cbc7fbd8"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00099-du-e98481cf.json": {
+      "sizeBytes": 716,
+      "sha256": "e288f079f6099baa7d31b0c8f0275e6de3b78cae543f811e95d7827ba9450e1b"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00050-set-log_segment_size.json": {
+      "sizeBytes": 802,
+      "sha256": "1f8c1b08b062eea55bce99084de5e62a77b77c1bc57dad7222029fa186abd71d"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/profile.json": {
+      "sizeBytes": 2138,
+      "sha256": "6a03ae36d634c554f8a92010917da2fd8302dee4c83ec2bc9471788caf1114fc"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00077-guest-df.json": {
+      "sizeBytes": 828,
+      "sha256": "9311d717cf2b9c0826a116df4aaa07eda1f2c3d41c489ab33dc8353f36b38301"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00127-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "f737d8c6ed8bdf0142ee7dd9c2ebd20232a3533fd054c0fc316279d07c05914d"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00091-inspect.json": {
+      "sizeBytes": 46630,
+      "sha256": "9bf134356619856fbbea7164397273c8f3713db2e365f6f4121222cf0a426494"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00219-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "e1fd07895ad7c2ee050ecacee618938acd5cc4b503499006ef4ca5c3955e93bd"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00212-guest-df.json": {
+      "sizeBytes": 829,
+      "sha256": "670afce4287057b7bbc3f939f29f143ac5917d093ea8b0087e733cdcfb391297"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00004-start.json": {
+      "sizeBytes": 970,
+      "sha256": "c0d301ac905bb8e09c3d7f842b771714b9da33e033a61217c578bf8c1d890aa3"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00096-inspect.json": {
+      "sizeBytes": 46630,
+      "sha256": "2986341438afb5a06396776a4484e7def0ee2b2fd007be7bacdf580d875bc031"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00231-inspect.json": {
+      "sizeBytes": 46916,
+      "sha256": "c7d29f2136bd84b65c671306a4c29959c6f1ec200b79b38cbe3cc08976f083ad"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00072-du-45a7adb3.json": {
+      "sizeBytes": 716,
+      "sha256": "459131e8579a4dcc25315fddc9941ff933c3c59d6f359af27fa3c266c9708ac5"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00236-inspect.json": {
+      "sizeBytes": 46917,
+      "sha256": "ede39526c783b1a9393d765a6a6416ab74798d65c158bfa36f08226cbc659437"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00193-du-45a7adb3.json": {
+      "sizeBytes": 717,
+      "sha256": "2ee04279e4abe0c8b87ef7c94376ebd2badbf9dc72d7e7304431e97d7ce6faed"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00017-du-45a7adb3.json": {
+      "sizeBytes": 716,
+      "sha256": "2efc63f8a44b02b0071d0c73b02e7c4c60a666c404b521f0713af2eba0822448"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00159-du-e98481cf.json": {
+      "sizeBytes": 717,
+      "sha256": "23a72a1438274200d6995386b0df0d3f89f15b3aef69150273bcaf5d4b48ce9d"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00185-du-5226066c.json": {
+      "sizeBytes": 717,
+      "sha256": "573d39ae44c8b918d3a4f0fd40391a0bdd2c173eb191cdcc12bdb556f0607549"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-sandbox1/receipts.jsonl": {
+      "sizeBytes": 3728,
+      "sha256": "af0f8f64a3569ed91dd9ef3157a457befb2a7032b4079ef373d60fdb693bffb0"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-sandbox1/create-001-prior-nine-stopped.json": {
+      "sizeBytes": 3838,
+      "sha256": "f0b20adedbd5201bb7d32708b594820dbc70f7de76995734c7e633267cf05fdd"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-sandbox1/failure.json": {
+      "sizeBytes": 990,
+      "sha256": "378ee9708747f2133ba597e6d63ceb3cf2b54bc35293df92679f5cc294b0793c"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/restart-before-e3/restart-watch.mjs": {
+      "sizeBytes": 11861,
+      "sha256": "2cf42e999410e8418b92639ad35a05ee76caf5474c6d67c93e38eab17f84cb92"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-008-network-inventory.json": {
+      "sizeBytes": 1089,
+      "sha256": "1684af7dc0999b8120767222b10f7f4996ca80c40c8689f067aa90a89828ff99"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/receipts.jsonl": {
+      "sizeBytes": 377937,
+      "sha256": "a440aece7261ba6107c4f6863ef7e7a2a46d3bb9ff07bdb19508b77a67a42b50"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-001-prior-nine-stopped.json": {
+      "sizeBytes": 316407,
+      "sha256": "8be93cd970905be8831736f7cc1bdd2e58e863f8144020e70ae02fec5ff2c039"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-005-volume-absence-0.json": {
+      "sizeBytes": 905,
+      "sha256": "7c2f38b0a9f4aab6cd47c1ff036a99167a41f2cb4944c157e88e2dbb953274a3"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-ports.json": {
+      "sizeBytes": 309,
+      "sha256": "2ba3f276a8234f7637938156ec116d57c88c1330659988210a5efec0d061e475"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-003-image.json": {
+      "sizeBytes": 3882,
+      "sha256": "39d8a4c8df570cbec7a1a33a100b675a361170fa25db83410d46a4b7ebb5c7b9"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/operator-safety.mjs": {
+      "sizeBytes": 1353,
+      "sha256": "35b198a831aa523c77b89c52aab7a22a9f05d48f13dc11bff044aa8cb4765c83"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/red-test.txt": {
+      "sizeBytes": 1804,
+      "sha256": "69a9f195c7956271456aabcc57adc75f28c4219ce1d01dd4bfea455146113c90"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-009-network-existing-ipam.json": {
+      "sizeBytes": 52168,
+      "sha256": "57b3fa27cfafa17298ffb9b4e942a1771324c8395cbaef10ea2282affab1e15a"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/green-test.txt": {
+      "sizeBytes": 785,
+      "sha256": "aeea30de2c45ff9f400b41f5cd1174ef4832f538538fca34690b401356d04879"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/operator-safety.test.mjs": {
+      "sizeBytes": 1162,
+      "sha256": "384421cc493b5571091ab2cb0b630dd299f824c35c3de379bdabd2a309054612"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-002-version.json": {
+      "sizeBytes": 1871,
+      "sha256": "094310b50d316a5e675ba08cd7bd2ff854ff40e7576d7e7b16cd5173f676d426"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-006-volume-absence-1.json": {
+      "sizeBytes": 905,
+      "sha256": "bd8abeca9deed478fbfbf09afeaf23ed5d68517b07317a709fb400645445086f"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-007-volume-absence-2.json": {
+      "sizeBytes": 905,
+      "sha256": "56b2a32c4f68e5b3c5bd5a6e200ea246ae2856784322137d030bfef9d434367a"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/failure.json": {
+      "sizeBytes": 4794,
+      "sha256": "06907a9ce6d7b1e03cc86c66109347c148cf67f9396579e0abc182c45046a061"
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-004-project-absence.json": {
+      "sizeBytes": 681,
+      "sha256": "5ff45358a568b641653ba31e41fcf6ef3a52b796050d1495fe90c898be273feb"
+    }
+  },
+  "operatorCorrection": {
+    "cause": "Docker built-in host/none network IPAM.Config null rejected before create",
+    "beforeSourcePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/operator-safety.mjs",
+    "beforeSourceSha256": "35b198a831aa523c77b89c52aab7a22a9f05d48f13dc11bff044aa8cb4765c83",
+    "afterSourcePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/operator-safety.mjs",
+    "afterSourceSha256": "3b3e66a070667efbbeef9904c949ff0bb0420e1d257640981cd876f07352abcf",
+    "meaningfulREDPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/red-test.txt",
+    "GREENPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/green-test.txt",
+    "controls": 3
+  }
+}

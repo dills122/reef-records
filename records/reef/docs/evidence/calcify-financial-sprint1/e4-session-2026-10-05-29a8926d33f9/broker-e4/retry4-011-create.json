@@ -1,0 +1,30 @@
+{
+  "name": "create",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "compose",
+    "--project-name",
+    "reef-calcify-e4-session-8c6f",
+    "-f",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/broker.compose.yml",
+    "-f",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/pinned-network.compose.yml",
+    "create",
+    "--pull",
+    "never",
+    "--no-build",
+    "rp0",
+    "rp1",
+    "rp2"
+  ],
+  "startedAtMs": 59429200,
+  "startedUtc": "2026-10-05T14:03:14.795Z",
+  "stdout": "",
+  "stderr": " Network reef-calcify-e4-session-8c6f_default Creating \n Network reef-calcify-e4-session-8c6f_default Creating \n Network reef-calcify-e4-session-8c6f_default Created \n Network reef-calcify-e4-session-8c6f_default Created \n Container reef-calcify-e4-session-8c6f-rp2-1 Creating \n Container reef-calcify-e4-session-8c6f-rp0-1 Creating \n Container reef-calcify-e4-session-8c6f-rp1-1 Creating \n Container reef-calcify-e4-session-8c6f-rp0-1 Created \n Container reef-calcify-e4-session-8c6f-rp2-1 Created \n Container reef-calcify-e4-session-8c6f-rp1-1 Created \n",
+  "exitCode": 0,
+  "completedAtMs": 59429371,
+  "completedUtc": "2026-10-05T14:03:14.967Z",
+  "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderrSha256": "0448eeb80e85ffa49d64d4b9ad7fd2e52fda82b164e6712ad5da4ac266ed10bc",
+  "inputSha256": "081d682d61d3c75b6e976bac27fee9c7540c5b221b5e2c12ba7388be531fedb9"
+}

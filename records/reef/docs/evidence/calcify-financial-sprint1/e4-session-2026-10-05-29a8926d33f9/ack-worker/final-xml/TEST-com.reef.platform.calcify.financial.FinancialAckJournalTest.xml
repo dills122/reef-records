@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialAckJournalTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-05T13:10:57.855Z" hostname="Dylans-MacBook-Pro.local" time="3.921">
+  <properties/>
+  <testcase name="actualRateProviderAndTopologyUseRecoveredDiskMembershipBeforeFinancialWork()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="1.203"/>
+  <testcase name="queueBoundFailureIsStickyAndPreventsLaterPublication()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.036"/>
+  <testcase name="oldPrefixLookupAfterRestartDoesNotDependOnLiveSuffixAndNewClockScopeAppends()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.21"/>
+  <testcase name="everyPublishedFileMutationTornMarkerMissingFileAndGenerationMismatchRefuseActivation()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.679"/>
+  <testcase name="duplicateOrdinalPhysicalMutationAndByteEnvelopeBoundsFailSticky()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.29"/>
+  <testcase name="notificationsAreAfterPublicationForceAndRecoveredNotificationsAreNeverReplayed()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.089"/>
+  <testcase name="actualProcessCrashesDistinguishUnpublishedForcedAndPublishedBeforeNotification()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="1.276"/>
+  <testcase name="callbackVisibilityPrecedesForcedPublicationAndRecoveryRetainsPhysicalHoles()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.119"/>
+  <system-out><![CDATA[{"certifiedCatchupDomains":0,"partitionCut":null}
+]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>

@@ -1,0 +1,4 @@
+{
+  "error": "Error: ENOTDIR: not a directory, scandir '/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/HikariCP-7.1.0.jar/com/reef/platform/calcify/financial'",
+  "results": []
+}

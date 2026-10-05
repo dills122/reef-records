@@ -1,0 +1,97 @@
+{
+  "schema": "financial-heap-research-worksheet-v1",
+  "status": "CONDITIONAL_LOWER_MODEL_ONLY_NOT_ADMISSION_EVIDENCE",
+  "date": "2026-10-05",
+  "baseline": "29a8926d33f9e2dc7278a1676a6fa3272628de3c",
+  "sourceHashes": {
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt": "6916c2ed4f61a8f5f874f93f11ddc900519b503770e86bc3f0aaea343292965a",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialKernel.kt": "9f76e87940d7600dac11bb26aba9ad40e39e7fbf41ec28dc8ab990790f0e637e",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbe.kt": "f3e824685301fa7aa446f1017620dbc096c7bb9ecb81197dcc5f1f645e9d5fb7",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt": "f5dd838d77fb3e0796861ac0dc4936caccaf6d7c2cfc1b5e337678464fb90943",
+    "scripts/dev/calcify-financial/rate-proof.mjs": "eb04e2841db753cee03d04b0a171e6b043d9823a32e1a9d6760bd8af486d41b8"
+  },
+  "minimumContextFields": 3,
+  "entryCountsPerOwner": {
+    "rootMaps": 9,
+    "executionPayload": 13,
+    "obligation": 3,
+    "dedup": 6,
+    "contexts": 6,
+    "effectLegs": 12
+  },
+  "entryBytesModel": 40,
+  "objectNodesPerOwner": 10,
+  "objectNodeBytesModel": 24,
+  "simultaneouslyRetainedOwners": 2,
+  "identityLowerBytesConditional": 4400,
+  "authorizedMaxHeapBytes": 805306368,
+  "strictAdmissionLimitBytes": 644245094,
+  "arms": [
+    {
+      "rate": 2500,
+      "seconds": 60,
+      "timedIdentities": 150000,
+      "conditionalRetainedLowerBytes": 660000000,
+      "strictLimitExceededByLowerModel": true
+    },
+    {
+      "rate": 5000,
+      "seconds": 60,
+      "timedIdentities": 300000,
+      "conditionalRetainedLowerBytes": 1320000000,
+      "strictLimitExceededByLowerModel": true
+    },
+    {
+      "rate": 10000,
+      "seconds": 60,
+      "timedIdentities": 600000,
+      "conditionalRetainedLowerBytes": 2640000000,
+      "strictLimitExceededByLowerModel": true
+    }
+  ],
+  "initialBootstrap": {
+    "timedTrades": 1000,
+    "pendingItems": 100,
+    "sourceActions": 2100,
+    "historyRecords": 2101,
+    "maxUnsignedHistoryBytes": 65536,
+    "checksumEncodingBytes": 78,
+    "conditionalMaxEncodedHistoryBytes": 137855014,
+    "heapSafeProof": false
+  },
+  "observedArtifacts": {
+    "acceptance-and-proof.md": {
+      "sha256": "db11a1744a8b59e0335bdd30cf9f9ee8642496ad2dee80f685213420e6b887e1",
+      "bytes": 14100
+    },
+    "initial-recommendation.md": {
+      "sha256": "a68a518e8ed562824e5a044e9f44f5dec9e348d0d60f0199c2f219d0e1eb3fff",
+      "bytes": 9522
+    },
+    "jdk21-layout-flags.txt": {
+      "sha256": "63275d4a47ff8e1526e9c79cf2ff43fd94486b2378266c6eb810d09e11681e05",
+      "bytes": 59532
+    },
+    "jdk21-version.txt": {
+      "sha256": "bc5afcb601e907a35d4fbf9a4a00822e0885011d99f7f5e7c1b5d4ab026032a7",
+      "bytes": 166
+    },
+    "layout-fields.txt": {
+      "sha256": "7198ceb513aabd4df818bf69cb01a1a84515dd49d7fab8da52dcde7d843c2132",
+      "bytes": 5215
+    },
+    "objectnode-bytecode.txt": {
+      "sha256": "b54e8849926f7607b17a6c9cf5130f3526f610b5c78350d50da0c8aeed65355b",
+      "bytes": 86834
+    }
+  },
+  "unknowns": [
+    "Actual finite candidate layout/aliasing owner review pending",
+    "Lower model says no upper cost",
+    "No measured bootstrap or broker run",
+    "No native/RSS bound",
+    "No decoded/client/allocation peak proof",
+    "Cold managed restart scan graph omitted from lower model",
+    "Current worker source changes require new final hashes"
+  ]
+}

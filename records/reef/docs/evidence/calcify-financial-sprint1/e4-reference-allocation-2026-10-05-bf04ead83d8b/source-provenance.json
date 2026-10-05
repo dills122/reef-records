@@ -1,0 +1,164 @@
+{
+  "schema": "calcify-isolated-allocation-source-provenance-v1",
+  "scope": "Closed pure post-cohort reference allocation profile only; initial failure preserved; no broker workload, capacity qualification or upper bound. Actual measured executable snapshot/CP inputs remain pinned in original receipts.",
+  "sourceRepository": "https://github.com/dills122/reef",
+  "localOnlySourceRef": "refs/heads/codex/calcify-e4-allocation-supplement-evidence-provenance",
+  "parentProductCommit": "17409ac2e6f8e2c4408dcd6b36c98398c3da32ad",
+  "proposalSha256": "cefe7cf2852a054e919b769d39d36ef42dfc451dc09a3368fd28f3af30ddf78d",
+  "rootAuthorization": "Explicit root append-only supplement authorization; original proposal publicationAuthorizedByRoot=false retained unchanged as dated preparation fact",
+  "originalMapping": [
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/Profile.java",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/Profile.java",
+      "bytes": 4640,
+      "sha256": "c8b54f87141a3a7e051f5edbe935572eaeee91ebd4173194d7d9b38edc539b4d"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/argv.json",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/argv.json",
+      "bytes": 6036,
+      "sha256": "e9fe2e5c64be0257084b29312ba4499a7d66425d633f5652305be8a36da2bcb5"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/classmaps.json",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/classmaps.json",
+      "bytes": 54240,
+      "sha256": "88025c11a20fba44fc23bdd22243646e6f5b3c80f35fba6efb6ec9113558bb9b"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/close.py",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/close.py",
+      "bytes": 2712,
+      "sha256": "bb3520cbaed593319f139bb51edecc23cfc483530ef8ddfbba6aa542e07bbaa5"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/cp.txt",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/cp.txt",
+      "bytes": 5780,
+      "sha256": "573b22a0bcb80d64aa014cea466ee7e6d7be3fe429a07c4f7f45d2e7dc5e991c"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/exit.json",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/exit.json",
+      "bytes": 52,
+      "sha256": "ff403a000d04901ba5650e661aa2d1fce9a20b018b836ec780d38647157c0428"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/extract.mjs",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/extract.mjs",
+      "bytes": 988,
+      "sha256": "6d964531173a0e7c7296727aed3b29607f06919c3290ae9bf056e0240ceff2fa"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/extract.stderr.log",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/extract.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/extract.stdout.log",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/extract.stdout.log",
+      "bytes": 668,
+      "sha256": "03118808c48f15b99842c9eb299346d9a0d264ca22f0ccda78ffab68bedc7054"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/failed1-Profile.java",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/failed1-Profile.java",
+      "bytes": 4203,
+      "sha256": "7e4ef8dde9aae7b0c40c434bbbb298ee892ebe82acc644d1ab7a937b25f2682a"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/failed1-exit.json",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/failed1-exit.json",
+      "bytes": 51,
+      "sha256": "81f7166b10d30ca6374496ba84b66c97183e6e900257a3e7a62721afeaeb01fa"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/failed1-profile.stderr.log",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/failed1-profile.stderr.log",
+      "bytes": 238,
+      "sha256": "027b7ccf814da094ef747c263e20318c24e73f9abc8ec30626df3ec7de04e0a3"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/failed1-profile.stdout.log",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/failed1-profile.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/history.json",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/history.json",
+      "bytes": 5817782,
+      "sha256": "45b6d99ced630ac6ced5c2eb8646168bbbc7544107cd0db961576a933432ae4a"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/inputs.json",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/inputs.json",
+      "bytes": 418,
+      "sha256": "8892775e593a2a1e2f58057236428d73fd3d177d69ab5254884ed496da7ee2aa"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/jar-sha256.json",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/jar-sha256.json",
+      "bytes": 10823,
+      "sha256": "166b469f49c1288a0582028485b8cd5f0fd82e480800219559f3d1f85eb10203"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/pair-validation.json",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/pair-validation.json",
+      "bytes": 762,
+      "sha256": "795e65caddf6f0143a4166bc0944e9e29a8c98054eaa81dc76b332fead21b0f2"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/post-snapshot-validation.json",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/post-snapshot-validation.json",
+      "bytes": 522,
+      "sha256": "2604d7503300b8353d284f8ae54210bae55f329443be8f232228afa82f9d86c1"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/pre-snapshot-validation.json",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/pre-snapshot-validation.json",
+      "bytes": 1080,
+      "sha256": "2fd1c70bed0bbeaa2be1f312065096de88fb19ca32448f63d19ea9e7d3d66291"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/prepare.py",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/prepare.py",
+      "bytes": 1332,
+      "sha256": "ace01999c5a8f6cf69ea05b578742ff1ea9fe3a02ae19ccda454dc0eeec7fbd9"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/profile-result.json",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/profile-result.json",
+      "bytes": 7031,
+      "sha256": "1accc2d192bf346f0cc968f7d619c506cacbffc1fa2821ec1364814a9fbafeb4"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/profile.stderr.log",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/profile.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/profile.stdout.log",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/profile.stdout.log",
+      "bytes": 5955,
+      "sha256": "5d6deec86f6c6eef1473ca0ac0ac41114ee0185cb061aad031614e6d5090a487"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/summary.json",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/summary.json",
+      "bytes": 2973,
+      "sha256": "1a80a3c1bf6ddde6bbcff38d629052c2e2bbbeae7f18032ba5c83e2e595c9438"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile/supplement-manifest-proposal.json",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/supplement-manifest-proposal.json",
+      "bytes": 3954,
+      "sha256": "cefe7cf2852a054e919b769d39d36ef42dfc451dc09a3368fd28f3af30ddf78d"
+    }
+  ],
+  "originalFiles": 25,
+  "originalBytes": 5932240,
+  "originalBytesUnchanged": true
+}

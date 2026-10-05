@@ -1,0 +1,728 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  change-scope:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pull-requests: read
+    outputs:
+      bot-only: ${{ steps.scope.outputs.bot-only }}
+      run-full-ci: ${{ steps.scope.outputs.run-full-ci }}
+      reason: ${{ steps.scope.outputs.reason }}
+    steps:
+      - name: Check out trusted base classifier
+        if: github.event_name == 'pull_request'
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+      - name: Classify pull request change scope
+        id: scope
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number || '' }}
+          HEAD_REF: ${{ github.head_ref || '' }}
+          EXPECTED_CHANGED_FILES: ${{ github.event.pull_request.changed_files || 0 }}
+        run: |
+          set -euo pipefail
+          if [ "$GITHUB_EVENT_NAME" != "pull_request" ]; then
+            {
+              echo "bot-only=false"
+              echo "run-full-ci=true"
+              echo "reason=non_pull_request_event"
+            } >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # Fail closed while this classifier is first being introduced or if
+          # the trusted base copy is ever unavailable.
+          if [ ! -f scripts/dev/ci-pr-change-scope.mjs ]; then
+            {
+              echo "bot-only=false"
+              echo "run-full-ci=true"
+              echo "reason=trusted_classifier_unavailable"
+            } >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          gh api --paginate --slurp "repos/${GITHUB_REPOSITORY}/pulls/${PR_NUMBER}/files" \
+            > /tmp/reef-pr-files.json
+          node scripts/dev/ci-pr-change-scope.mjs /tmp/reef-pr-files.json \
+            >> "$GITHUB_OUTPUT"
+
+  dependency-alignment:
+    needs: change-scope
+    if: needs.change-scope.outputs.run-full-ci == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '22'
+      - name: Check shared dependency and toolchain alignment
+        run: make check-dependency-alignment
+
+  proto-governance:
+    needs: change-scope
+    if: needs.change-scope.outputs.run-full-ci == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7
+        with:
+          go-version-file: services/matching-engine/go.mod
+          cache-dependency-path: services/matching-engine/go.sum
+      - name: Install pinned protoc
+        env:
+          PROTOC_URL: https://github.com/protocolbuffers/protobuf/releases/download/v33.2/protoc-33.2-linux-x86_64.zip
+          PROTOC_SHA256: b24b53f87c151bfd48b112fe4c3a6e6574e5198874f38036aff41df3456b8caf
+        run: |
+          archive="$RUNNER_TEMP/protoc.zip"
+          install_dir="$RUNNER_TEMP/protoc"
+          curl --fail --location --show-error --silent "$PROTOC_URL" --output "$archive"
+          echo "$PROTOC_SHA256  $archive" | sha256sum --check
+          unzip -q "$archive" -d "$install_dir"
+          echo "$install_dir/bin" >> "$GITHUB_PATH"
+      - name: Install pinned Go protobuf generators
+        run: |
+          go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.34.2
+          go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.5.1
+      - name: Proto compatibility and generated-source check
+        run: ./scripts/check-proto-additive.sh
+
+  go-matching-engine:
+    needs: change-scope
+    if: needs.change-scope.outputs.run-full-ci == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: services/matching-engine
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7
+        with:
+          go-version-file: services/matching-engine/go.mod
+          cache-dependency-path: services/matching-engine/go.sum
+      - name: Verify Go module files are tidy
+        run: go mod tidy -diff
+      - name: Check gofmt
+        run: test -z "$(find . -name '*.go' -exec gofmt -l {} +)"
+      - name: Run Go tests with coverage
+        working-directory: .
+        run: ./scripts/ci/go-coverage.sh services/matching-engine matching-engine coverage/matching-engine 76 "cmd/matching-engine|pb/contracts/proto"
+      - name: Add coverage summary
+        working-directory: .
+        run: cat coverage/matching-engine/coverage-summary.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload matching-engine coverage
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: matching-engine-coverage
+          path: coverage/matching-engine
+      - name: Run matching-engine benchmark guardrail
+        working-directory: .
+        run: ./scripts/ci/check-matching-bench.sh
+
+  go-simulator:
+    needs: change-scope
+    if: needs.change-scope.outputs.run-full-ci == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: services/simulator
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7
+        with:
+          go-version-file: services/simulator/go.mod
+          cache-dependency-path: services/simulator/go.sum
+      - name: Verify Go module files are tidy
+        run: go mod tidy -diff
+      - name: Check gofmt
+        run: test -z "$(find . -name '*.go' -exec gofmt -l {} +)"
+      - name: Run simulator Go tests with coverage
+        working-directory: .
+        run: ./scripts/ci/go-coverage.sh services/simulator simulator coverage/simulator 71
+      - name: Add coverage summary
+        working-directory: .
+        run: cat coverage/simulator/coverage-summary.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload simulator coverage
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: simulator-coverage
+          path: coverage/simulator
+
+  kotlin-platform-runtime:
+    needs: change-scope
+    if: needs.change-scope.outputs.run-full-ci == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: services/platform-runtime
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '22'
+      - uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@9c971963bec38e04b3d30dcc455b5382be2fdbfb # v6
+      - name: Validate Gradle wrapper
+        uses: gradle/actions/wrapper-validation@9c971963bec38e04b3d30dcc455b5382be2fdbfb # v6
+      - name: Run Kotlin tests with coverage
+        run: ./gradlew --no-daemon test jacocoTestReport jacocoTestCoverageVerification
+      - name: Add coverage summary
+        run: |
+          csv="build/reports/jacoco/test/jacocoTestReport.csv"
+          awk -F, '
+            NR > 1 { missed += $4; covered += $5 }
+            END {
+              total = missed + covered
+              pct = total == 0 ? 0 : covered * 100 / total
+              print "## platform-runtime coverage"
+              print ""
+              print "| Module | Instruction coverage |"
+              print "| --- | ---: |"
+              printf("| services/platform-runtime | %.1f%% |\n", pct)
+            }
+          ' "$csv" >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload platform-runtime coverage
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: platform-runtime-coverage
+          path: |
+            services/platform-runtime/build/reports/jacoco/test
+            services/platform-runtime/build/test-results/test
+      - name: Run platform-runtime performance guardrail
+        working-directory: .
+        run: ./scripts/ci/check-runtime-bench.sh
+
+  kotlin-stock-data:
+    needs: change-scope
+    if: needs.change-scope.outputs.run-full-ci == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: services/stock-data
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@9c971963bec38e04b3d30dcc455b5382be2fdbfb # v6
+      - name: Validate Gradle wrapper
+        uses: gradle/actions/wrapper-validation@9c971963bec38e04b3d30dcc455b5382be2fdbfb # v6
+      - name: Run stock-data tests with coverage
+        run: ./gradlew --no-daemon test jacocoTestReport jacocoTestCoverageVerification
+      - name: Add coverage summary
+        run: |
+          csv="build/reports/jacoco/test/jacocoTestReport.csv"
+          awk -F, '
+            NR > 1 { missed += $4; covered += $5 }
+            END {
+              total = missed + covered
+              pct = total == 0 ? 0 : covered * 100 / total
+              print "## stock-data coverage"
+              print ""
+              print "| Module | Instruction coverage |"
+              print "| --- | ---: |"
+              printf("| services/stock-data | %.1f%% |\n", pct)
+            }
+          ' "$csv" >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload stock-data coverage
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: stock-data-coverage
+          path: |
+            services/stock-data/build/reports/jacoco/test
+            services/stock-data/build/test-results/test
+
+  reef-arena-separation:
+    needs: change-scope
+    if: needs.change-scope.outputs.run-full-ci == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@9c971963bec38e04b3d30dcc455b5382be2fdbfb # v6
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
+        with:
+          bun-version: '1.3.14'
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '22'
+      - name: Verify Reef core boundary and tests
+        run: make test-reef-core
+      - name: Verify Arena control-plane tests
+        run: make test-arena-control-plane
+      - name: Add Arena control-plane coverage summary
+        run: |
+          csv="services/arena-control-plane/build/reports/jacoco/test/jacocoTestReport.csv"
+          awk -F, '
+            NR > 1 { missed += $4; covered += $5 }
+            END {
+              total = missed + covered
+              pct = total == 0 ? 0 : covered * 100 / total
+              print "## arena-control-plane coverage"
+              print ""
+              print "| Module | Instruction coverage |"
+              print "| --- | ---: |"
+              printf("| services/arena-control-plane | %.1f%% |\n", pct)
+            }
+          ' "$csv" >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload Arena control-plane coverage
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: arena-control-plane-coverage
+          path: |
+            services/arena-control-plane/build/reports/jacoco/test
+            services/arena-control-plane/build/test-results/test
+      - name: Validate Reef Compose configuration
+        run: make dev-compose-config ARGS='--services'
+      - name: Validate Arena overlay Compose configuration
+        run: DEV_COMPOSE_FILES='compose.base.yml,compose.local.yml,compose.arena.yml' make dev-compose-config ARGS='--services'
+
+  node-dev-tooling:
+    needs: change-scope
+    if: needs.change-scope.outputs.run-full-ci == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '22'
+      - name: Check script surface
+        run: node scripts/dev/script-surface-check.mjs
+      - name: Run Node dev-tooling tests with coverage
+        env:
+          NODE_V8_COVERAGE: coverage/node-dev-tooling/v8
+        run: |
+          set -o pipefail
+          mkdir -p coverage/node-dev-tooling/v8
+          node --test --experimental-test-coverage \
+            scripts/dev/lib/dev-stack.test.mjs \
+            scripts/dev/lib/dev-profiles.test.mjs \
+            scripts/dev/lib/stress-success-guardrail.test.mjs \
+            scripts/dev/ci-workflow-hardening.test.mjs \
+            scripts/dev/ci-pr-change-scope.test.mjs \
+            scripts/ci/check-required-results.test.mjs \
+            scripts/ci/build-container.test.mjs \
+            scripts/dev/db/migrate.test.mjs \
+            scripts/dev/container-images-workflow.test.mjs \
+            scripts/dev/command-log-integrity-check.test.mjs \
+            scripts/dev/command-log-pin.test.mjs \
+            scripts/dev/command-log-archive.test.mjs \
+            scripts/dev/command-log-archive-partitions.test.mjs \
+            scripts/dev/command-log-prune.test.mjs \
+            scripts/dev/bot-submission-register-merged.test.mjs \
+            scripts/dev/export-simulation-run.test.mjs \
+            scripts/dev/deploy-receiver.test.mjs \
+            scripts/dev/analyze-arena-actor-diagnostics.test.mjs \
+            scripts/dev/arena-score-breakdown.test.mjs \
+            scripts/dev/compare-arena-score-v1-proof.test.mjs \
+            scripts/dev/compare-arena-scoring-calibration.test.mjs \
+            scripts/dev/run-arena-actor-calibration-matrix.test.mjs \
+            scripts/dev/run-arena-economic-policy-matrix.test.mjs \
+            scripts/dev/run-arena-scoring-calibration-matrix.test.mjs \
+            scripts/dev/projection-replay-proof.test.mjs \
+            scripts/dev/calcify-direct-capacity.test.mjs \
+            scripts/dev/calcify-financial/record-attempt.test.mjs \
+            scripts/dev/calcify-financial/broker-proof.test.mjs \
+            scripts/dev/calcify-financial/proof-supervisor.test.mjs \
+            scripts/dev/calcify-financial/reservation-model.test.mjs \
+            scripts/dev/calcify-financial/gate-model.test.mjs \
+            scripts/dev/calcify-financial/rate-proof.test.mjs \
+            scripts/dev/calcify-financial/rate-supervision.test.mjs \
+            scripts/dev/calcify-financial/bootstrap-calibration.test.mjs \
+            scripts/dev/calcify-financial/physical-evidence.test.mjs \
+            scripts/dev/calcify-financial/physical-adapter.test.mjs \
+            scripts/dev/stream-profile-guard.test.mjs | tee coverage/node-dev-tooling/test-output.txt
+      - name: Add coverage summary
+        run: |
+          {
+            echo "## node dev-tooling coverage"
+            echo
+            echo '```text'
+            tail -n 40 coverage/node-dev-tooling/test-output.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload Node dev-tooling coverage
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: node-dev-tooling-coverage
+          path: coverage/node-dev-tooling
+
+  docs-site:
+    needs: change-scope
+    if: needs.change-scope.outputs.run-full-ci == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: apps/docs-site
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: apps/docs-site/package-lock.json
+      - name: Install docs dependencies from lockfile
+        run: npm ci --include=optional
+      - name: Typecheck docs site
+        run: npm run typecheck
+      - name: Build docs site
+        run: npm run build
+
+  bot-sdk:
+    needs: change-scope
+    if: needs.change-scope.outputs.run-full-ci == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
+        with:
+          bun-version: '1.3.14'
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+      - name: Run bot SDK typecheck and test suite
+        run: make test-bot-sdk
+      - name: Run hosted bot container isolation gate
+        run: |
+          bun scripts/dev/bot-sdk-test-bot.mjs \
+            packages/bot-sdk/examples/technical-indicator-strategy-bot.ts \
+            packages/bot-sdk/fixtures/aapl-technical-indicator.json \
+            --summary-only \
+            --isolation=container \
+            --wall-timeout-ms=15000
+
+  arena-admin:
+    needs: change-scope
+    if: needs.change-scope.outputs.run-full-ci == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: apps/arena-admin
+    env:
+      PUBLIC_ARENA_API_BASE_URL: http://localhost:8080
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
+        with:
+          bun-version: '1.3.14'
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+      - name: Typecheck
+        run: bun run check
+      - name: Run run-detail navigation regressions
+        run: bun ../../scripts/dev/arena-admin-run-detail.test.mjs
+      - name: Build static site
+        run: bun --bun run build
+
+  scenario-replay:
+    needs: change-scope
+    runs-on: ubuntu-latest
+    if: >-
+      needs.change-scope.outputs.run-full-ci == 'true' &&
+      (github.event_name == 'push' ||
+      github.event_name == 'workflow_dispatch' ||
+      github.event.pull_request.user.login == 'dependabot[bot]')
+    timeout-minutes: 25
+    env:
+      JS_RUNTIME: node
+      EXTERNAL_API_COMMAND_PROCESSING_MODE: sync-result
+      EXTERNAL_API_COMMAND_LOG_MODE: disabled
+      EXTERNAL_API_COMMAND_ASYNC_WORKER_ENABLED: 'false'
+      STREAM_ACK_WORKER_ENABLED: 'false'
+      STREAM_ACK_PROJECTOR_ENABLED: 'false'
+      # Replay seeding reaches platform-runtime through Docker networking, not loopback.
+      PLATFORM_INTERNAL_HTTP_MODE: enabled
+      ADMIN_API_TOKEN: local-admin
+      DEV_REPLAY_ARTIFACT_DIR: replay-artifacts/persona-session
+      DEV_REPLAY_DURATION: 20s
+      DEV_REPLAY_WORKERS: '8'
+      DEV_REPLAY_RATE: '120'
+      DEV_REPLAY_TRACE_CHECK_LIMIT: '100'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7
+        with:
+          go-version-file: services/simulator/go.mod
+          cache-dependency-path: services/simulator/go.sum
+      - uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '22'
+      - uses: gradle/actions/setup-gradle@9c971963bec38e04b3d30dcc455b5382be2fdbfb # v6
+      - name: Start replay stack
+        run: JS_RUNTIME=node make dev-up
+      - name: Run deterministic replay pack
+        run: JS_RUNTIME=node make dev-replay
+      - name: Add replay summary
+        if: always()
+        run: |
+          echo "## deterministic replay" >> "$GITHUB_STEP_SUMMARY"
+          find replay-artifacts/persona-session -name '*.check.json' -print -exec cat {} \; >> "$GITHUB_STEP_SUMMARY" || true
+      - name: Upload replay artifacts
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: deterministic-replay-artifacts
+          path: replay-artifacts/persona-session
+      - name: Dump stack logs on failure
+        if: failure()
+        run: docker compose -f compose.base.yml -f compose.local.yml logs
+      - name: Stop stack
+        if: always()
+        run: docker compose -f compose.base.yml -f compose.local.yml down --volumes --remove-orphans
+
+  container-builds:
+    needs: change-scope
+    if: needs.change-scope.outputs.run-full-ci == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: matching-engine
+            context: services/matching-engine
+            dockerfile: services/matching-engine/Dockerfile
+          - name: platform-runtime
+            context: .
+            dockerfile: services/platform-runtime/Dockerfile
+          - name: arena-platform-runtime
+            context: .
+            dockerfile: services/arena-control-plane/Dockerfile
+          - name: stock-data
+            context: services/stock-data
+            dockerfile: services/stock-data/Dockerfile
+          - name: simulator
+            context: services/simulator
+            dockerfile: services/simulator/Dockerfile
+          - name: deploy-receiver
+            context: infra/hetzner-core/server/deploy-receiver
+            dockerfile: infra/hetzner-core/server/deploy-receiver/Dockerfile
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '22'
+      - name: Build ${{ matrix.name }} image
+        run: node scripts/ci/build-container.mjs -f "${{ matrix.dockerfile }}" -t "reef/${{ matrix.name }}:ci" "${{ matrix.context }}"
+
+  infrastructure-config:
+    needs: change-scope
+    if: needs.change-scope.outputs.run-full-ci == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: opentofu/setup-opentofu@a1320f892987e89d278cc92dc5adc984fb93aca4 # v2
+      - name: Check OpenTofu formatting
+        run: tofu fmt -check -recursive infra
+      - name: Initialize and validate DigitalOcean benchmark configuration
+        run: tofu -chdir=infra/do-benchmark init -backend=false -input=false -lockfile=readonly && tofu -chdir=infra/do-benchmark validate
+      - name: Initialize and validate Hetzner configuration
+        run: tofu -chdir=infra/hetzner-core/tofu init -backend=false -input=false -lockfile=readonly && tofu -chdir=infra/hetzner-core/tofu validate
+      - name: Create placeholder hosted Compose env files
+        run: |
+          set -euo pipefail
+          secrets_dir=infra/hetzner-core/server/secrets
+          mkdir -p "$secrets_dir"
+          for name in db postgres-admin postgres-analytics openbao matching-engine platform-runtime caddy simulator; do
+            touch "$secrets_dir/$name.env"
+          done
+      - name: Validate Hetzner local Compose overlay
+        run: docker compose -f infra/hetzner-core/server/docker-compose.yml -f infra/hetzner-core/server/docker-compose.local.yml config --quiet
+      - name: Validate Hetzner stream-ack Compose overlay
+        run: docker compose -f infra/hetzner-core/server/docker-compose.yml -f infra/hetzner-core/server/docker-compose.stream-ack.yml config --quiet
+
+  go-vulnerability-scan:
+    needs: change-scope
+    if: needs.change-scope.outputs.run-full-ci == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: matching-engine
+            workdir: services/matching-engine
+          - name: simulator
+            workdir: services/simulator
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7
+        with:
+          go-version: '1.26.x'
+          cache-dependency-path: ${{ matrix.workdir }}/go.sum
+      - name: Install pinned govulncheck
+        run: go install golang.org/x/vuln/cmd/govulncheck@v1.7.0
+      - name: Run govulncheck for ${{ matrix.name }}
+        working-directory: ${{ matrix.workdir }}
+        run: govulncheck ./...
+
+  postgres-schema-placement:
+    needs: change-scope
+    if: needs.change-scope.outputs.run-full-ci == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@9c971963bec38e04b3d30dcc455b5382be2fdbfb # v6
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '22'
+      - name: Validate dev migration scripts
+        run: node --test scripts/dev/lib/dev-stack.test.mjs scripts/dev/lib/dev-profiles.test.mjs scripts/dev/db/migrate.test.mjs
+      - name: Start Postgres databases
+        run: docker compose -f compose.base.yml -f compose.local.yml -f compose.arena.yml up -d postgres boundary-postgres projection-postgres arena-postgres --wait --wait-timeout 120
+      - name: Apply migrations
+        run: JS_RUNTIME=node REEF_ARENA_POSTGRES_MIGRATIONS=1 make dev-db-migrate
+      - name: Run schema placement integration test
+        env:
+          RUNTIME_POSTGRES_JDBC_URL_TEST: jdbc:postgresql://localhost:5432/reef
+          RUNTIME_POSTGRES_USER_TEST: reef
+          RUNTIME_POSTGRES_PASSWORD_TEST: reef
+          ARENA_POSTGRES_JDBC_URL_TEST: jdbc:postgresql://localhost:5435/reef
+          ARENA_POSTGRES_USER_TEST: reef
+          ARENA_POSTGRES_PASSWORD_TEST: reef
+        run: ./services/platform-runtime/gradlew --no-daemon -p services/platform-runtime jar && ./services/platform-runtime/gradlew --no-daemon -p services/arena-control-plane test --tests com.reef.arena.controlplane.infrastructure.persistence.PostgresSchemaMigrationIntegrationTest
+      - name: Dump Postgres logs on failure
+        if: failure()
+        run: docker compose -f compose.base.yml -f compose.local.yml -f compose.arena.yml logs postgres boundary-postgres projection-postgres arena-postgres
+      - name: Stop Postgres
+        if: always()
+        run: docker compose -f compose.base.yml -f compose.local.yml -f compose.arena.yml down --volumes --remove-orphans
+
+  calcify-tests:
+    # Calcify is opt-in/WIP, but its real-Postgres-backed receipt tests must
+    # not silently no-op in CI: without these env vars set,
+    # CalcifyReceiptStoreTest returns before any assertion runs. See
+    # docs/research/CALCIFY_PHASE1_2_ARCHITECTURE_REVIEW_2026-10-01.md
+    # Finding 3.
+    needs: change-scope
+    if: needs.change-scope.outputs.run-full-ci == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6 # v6.0.1
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: gradle/actions/setup-gradle@9c971963bec38e04b3d30dcc455b5382be2fdbfb # v6
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '22'
+      - name: Start Postgres
+        run: docker compose -f compose.base.yml -f compose.local.yml up -d postgres --wait --wait-timeout 120
+      - name: Apply runtime migrations
+        # Calcify only needs the runtime schema on the primary postgres
+        # service. dev-db-migrate unconditionally also migrates
+        # projection-postgres/boundary-postgres unless told not to, and
+        # this job never starts those containers.
+        run: JS_RUNTIME=node REEF_PROJECTION_POSTGRES_MIGRATIONS=0 REEF_BOUNDARY_POSTGRES_MIGRATIONS=0 make dev-db-migrate
+      - name: Run Calcify tests against real Postgres
+        env:
+          RUNTIME_POSTGRES_JDBC_URL_TEST: jdbc:postgresql://localhost:5432/reef
+          RUNTIME_POSTGRES_USER_TEST: reef
+          RUNTIME_POSTGRES_PASSWORD_TEST: reef
+        run: ./services/platform-runtime/gradlew --no-daemon -p services/platform-runtime test --tests "com.reef.platform.calcify.*"
+      - name: Run idempotency renewal tests against real Postgres
+        env:
+          RUNTIME_DB_URL_TEST: jdbc:postgresql://localhost:5432/reef
+          RUNTIME_DB_USER_TEST: reef
+          RUNTIME_DB_PASSWORD_TEST: reef
+        run: ./services/platform-runtime/gradlew --no-daemon -p services/platform-runtime test --tests "com.reef.platform.api.PostgresIdempotencyStoreIntegrationTest"
+      - name: Dump Postgres logs on failure
+        if: failure()
+        run: docker compose -f compose.base.yml -f compose.local.yml logs postgres
+      - name: Stop Postgres
+        if: always()
+        run: docker compose -f compose.base.yml -f compose.local.yml down --volumes --remove-orphans
+
+  ci-required:
+    name: ci-required
+    if: always()
+    needs:
+      - change-scope
+      - dependency-alignment
+      - proto-governance
+      - go-matching-engine
+      - go-simulator
+      - kotlin-platform-runtime
+      - kotlin-stock-data
+      - reef-arena-separation
+      - node-dev-tooling
+      - docs-site
+      - bot-sdk
+      - arena-admin
+      - scenario-replay
+      - container-builds
+      - infrastructure-config
+      - go-vulnerability-scan
+      - postgres-schema-placement
+      - calcify-tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
+        with:
+          node-version: '22'
+      - name: Enforce required CI results
+        env:
+          CI_NEEDS_JSON: ${{ toJSON(needs) }}
+          CI_SCENARIO_REPLAY_REQUIRED: ${{ github.event_name != 'pull_request' || github.event.pull_request.user.login == 'dependabot[bot]' }}
+        run: node scripts/ci/check-required-results.mjs

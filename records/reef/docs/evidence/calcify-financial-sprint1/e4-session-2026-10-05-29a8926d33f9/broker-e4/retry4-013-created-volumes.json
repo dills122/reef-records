@@ -1,0 +1,21 @@
+{
+  "name": "created-volumes",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "volume",
+    "inspect",
+    "reef-calcify-e4-session-8c6f_rp0-data",
+    "reef-calcify-e4-session-8c6f_rp1-data",
+    "reef-calcify-e4-session-8c6f_rp2-data"
+  ],
+  "startedAtMs": 59429399,
+  "startedUtc": "2026-10-05T14:03:14.995Z",
+  "stdout": "[\n    {\n        \"CreatedAt\": \"2026-10-05T14:00:59Z\",\n        \"Driver\": \"local\",\n        \"Labels\": {\n            \"com.docker.compose.config-hash\": \"5a0111db8027fe88ecba02f9b83c4a2100b01269eb40a140f64f93d10f582f33\",\n            \"com.docker.compose.project\": \"reef-calcify-e4-session-8c6f\",\n            \"com.docker.compose.version\": \"5.4.0\",\n            \"com.docker.compose.volume\": \"rp0-data\",\n            \"reef.test\": \"calcify-financial-sprint1\"\n        },\n        \"Mountpoint\": \"/var/lib/docker/volumes/reef-calcify-e4-session-8c6f_rp0-data/_data\",\n        \"Name\": \"reef-calcify-e4-session-8c6f_rp0-data\",\n        \"Options\": null,\n        \"Scope\": \"local\"\n    },\n    {\n        \"CreatedAt\": \"2026-10-05T14:00:59Z\",\n        \"Driver\": \"local\",\n        \"Labels\": {\n            \"com.docker.compose.config-hash\": \"ef7dbaabc2c3be0730d2896583e54954d186f00099aada747cb1d64bdb9c3b93\",\n            \"com.docker.compose.project\": \"reef-calcify-e4-session-8c6f\",\n            \"com.docker.compose.version\": \"5.4.0\",\n            \"com.docker.compose.volume\": \"rp1-data\",\n            \"reef.test\": \"calcify-financial-sprint1\"\n        },\n        \"Mountpoint\": \"/var/lib/docker/volumes/reef-calcify-e4-session-8c6f_rp1-data/_data\",\n        \"Name\": \"reef-calcify-e4-session-8c6f_rp1-data\",\n        \"Options\": null,\n        \"Scope\": \"local\"\n    },\n    {\n        \"CreatedAt\": \"2026-10-05T14:00:59Z\",\n        \"Driver\": \"local\",\n        \"Labels\": {\n            \"com.docker.compose.config-hash\": \"9e084dc63636aa3fa1da99deb88912bb0288fa82b9b3a658d86f6994567b9ef3\",\n            \"com.docker.compose.project\": \"reef-calcify-e4-session-8c6f\",\n            \"com.docker.compose.version\": \"5.4.0\",\n            \"com.docker.compose.volume\": \"rp2-data\",\n            \"reef.test\": \"calcify-financial-sprint1\"\n        },\n        \"Mountpoint\": \"/var/lib/docker/volumes/reef-calcify-e4-session-8c6f_rp2-data/_data\",\n        \"Name\": \"reef-calcify-e4-session-8c6f_rp2-data\",\n        \"Options\": null,\n        \"Scope\": \"local\"\n    }\n]\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 59429421,
+  "completedUtc": "2026-10-05T14:03:15.017Z",
+  "stdoutSha256": "332bd8abf64bd4b2d65ef4d0bfa31280c6beabc3206e2dd66787f5e19f109636",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputSha256": "0f8f10343624f92271e5f0402331eade9df473073a6673d9cf8b17766dd3dbe2"
+}

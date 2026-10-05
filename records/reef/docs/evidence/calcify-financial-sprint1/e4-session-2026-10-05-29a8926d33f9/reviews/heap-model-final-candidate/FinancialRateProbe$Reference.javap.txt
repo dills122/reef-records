@@ -1,0 +1,2393 @@
+Compiled from "FinancialRateProbe.kt"
+final class com.reef.platform.calcify.financial.FinancialRateProbe$Reference {
+  private final com.fasterxml.jackson.databind.JsonNode balances;
+
+  private final com.fasterxml.jackson.databind.JsonNode policy;
+
+  private final com.fasterxml.jackson.databind.node.ObjectNode owner;
+
+  private java.lang.String chain;
+
+  private long historyRecords;
+
+  public com.reef.platform.calcify.financial.FinancialRateProbe$Reference(com.fasterxml.jackson.databind.JsonNode, com.fasterxml.jackson.databind.JsonNode);
+    Code:
+       0: aload_1
+       1: ldc           #9                  // String balances
+       3: invokestatic  #15                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_2
+       7: ldc           #17                 // String policy
+       9: invokestatic  #15                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+      12: aload_0
+      13: invokespecial #20                 // Method java/lang/Object."<init>":()V
+      16: aload_0
+      17: aload_1
+      18: putfield      #23                 // Field balances:Lcom/fasterxml/jackson/databind/JsonNode;
+      21: aload_0
+      22: aload_2
+      23: putfield      #25                 // Field policy:Lcom/fasterxml/jackson/databind/JsonNode;
+      26: aload_0
+      27: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+      30: invokestatic  #35                 // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$emptyOwner:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;)Lcom/fasterxml/jackson/databind/node/ObjectNode;
+      33: putfield      #39                 // Field owner:Lcom/fasterxml/jackson/databind/node/ObjectNode;
+      36: aload_0
+      37: ldc           #41                 // String GENESIS
+      39: putfield      #45                 // Field chain:Ljava/lang/String;
+      42: return
+    LineNumberTable:
+      line 80: 12
+      line 81: 26
+      line 82: 36
+      line 80: 42
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      43     0  this   Lcom/reef/platform/calcify/financial/FinancialRateProbe$Reference;
+          0      43     1 balances   Lcom/fasterxml/jackson/databind/JsonNode;
+          0      43     2 policy   Lcom/fasterxml/jackson/databind/JsonNode;
+
+  public final com.fasterxml.jackson.databind.node.ObjectNode getOwner();
+    Code:
+       0: aload_0
+       1: getfield      #39                 // Field owner:Lcom/fasterxml/jackson/databind/node/ObjectNode;
+       4: areturn
+    LineNumberTable:
+      line 81: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       5     0  this   Lcom/reef/platform/calcify/financial/FinancialRateProbe$Reference;
+
+  public final java.lang.String getChain();
+    Code:
+       0: aload_0
+       1: getfield      #45                 // Field chain:Ljava/lang/String;
+       4: areturn
+    LineNumberTable:
+      line 82: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       5     0  this   Lcom/reef/platform/calcify/financial/FinancialRateProbe$Reference;
+
+  public final void setChain(java.lang.String);
+    Code:
+       0: aload_1
+       1: ldc           #55                 // String <set-?>
+       3: invokestatic  #15                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_0
+       7: aload_1
+       8: putfield      #45                 // Field chain:Ljava/lang/String;
+      11: return
+    LineNumberTable:
+      line 82: 6
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      12     0  this   Lcom/reef/platform/calcify/financial/FinancialRateProbe$Reference;
+          0      12     1 <set-?>   Ljava/lang/String;
+
+  public final long getHistoryRecords();
+    Code:
+       0: aload_0
+       1: getfield      #61                 // Field historyRecords:J
+       4: lreturn
+    LineNumberTable:
+      line 83: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       5     0  this   Lcom/reef/platform/calcify/financial/FinancialRateProbe$Reference;
+
+  public final void setHistoryRecords(long);
+    Code:
+       0: aload_0
+       1: lload_1
+       2: putfield      #61                 // Field historyRecords:J
+       5: return
+    LineNumberTable:
+      line 83: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0       6     0  this   Lcom/reef/platform/calcify/financial/FinancialRateProbe$Reference;
+          0       6     1 <set-?>   J
+
+  private final com.fasterxml.jackson.databind.JsonNode get(java.util.List<java.lang.String>);
+    Code:
+       0: aload_1
+       1: checkcast     #68                 // class java/lang/Iterable
+       4: astore_2
+       5: aload_0
+       6: getfield      #39                 // Field owner:Lcom/fasterxml/jackson/databind/node/ObjectNode;
+       9: checkcast     #70                 // class com/fasterxml/jackson/databind/JsonNode
+      12: astore_3
+      13: iconst_0
+      14: istore        4
+      16: aload_3
+      17: astore        5
+      19: aload_2
+      20: invokeinterface #74,  1           // InterfaceMethod java/lang/Iterable.iterator:()Ljava/util/Iterator;
+      25: astore        6
+      27: aload         6
+      29: invokeinterface #80,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      34: ifeq          81
+      37: aload         6
+      39: invokeinterface #84,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      44: astore        7
+      46: aload         5
+      48: aload         7
+      50: checkcast     #86                 // class java/lang/String
+      53: astore        8
+      55: astore        9
+      57: iconst_0
+      58: istore        10
+      60: aload         9
+      62: dup
+      63: ifnull        74
+      66: aload         8
+      68: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+      71: goto          76
+      74: pop
+      75: aconst_null
+      76: astore        5
+      78: goto          27
+      81: aload         5
+      83: dup
+      84: ifnonnull     100
+      87: pop
+      88: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+      91: invokestatic  #93                 // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$getNullNode:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;)Lcom/fasterxml/jackson/databind/JsonNode;
+      94: dup
+      95: ldc           #95                 // String access$getNullNode(...)
+      97: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+     100: areturn
+    LineNumberTable:
+      line 84: 0
+      line 926: 16
+      line 927: 19
+      line 84: 60
+      line 927: 76
+      line 928: 81
+      line 84: 83
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         60      16    10 $i$a$-fold-FinancialRateProbe$Reference$get$1   I
+         57      19     9     v   Lcom/fasterxml/jackson/databind/JsonNode;
+         57      19     8   key   Ljava/lang/String;
+         46      32     7 element$iv   Ljava/lang/Object;
+         16      67     4 $i$f$fold   I
+         19      64     5 accumulator$iv   Ljava/lang/Object;
+         13      70     2 $this$fold$iv   Ljava/lang/Iterable;
+         13      70     3 initial$iv   Ljava/lang/Object;
+          0     101     0  this   Lcom/reef/platform/calcify/financial/FinancialRateProbe$Reference;
+          0     101     1  path   Ljava/util/List;
+
+  public final void accept(com.fasterxml.jackson.databind.JsonNode);
+    Code:
+       0: aload_1
+       1: ldc           #117                // String record
+       3: invokestatic  #15                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: new           #119                // class java/util/LinkedHashMap
+       9: dup
+      10: invokespecial #120                // Method java/util/LinkedHashMap."<init>":()V
+      13: astore_2
+      14: new           #122                // class java/util/ArrayList
+      17: dup
+      18: invokespecial #123                // Method java/util/ArrayList."<init>":()V
+      21: checkcast     #113                // class java/util/List
+      24: astore_3
+      25: aload_0
+      26: getfield      #61                 // Field historyRecords:J
+      29: lconst_0
+      30: lcmp
+      31: ifne          665
+      34: aload_1
+      35: ldc           #125                // String kind
+      37: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+      40: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+      43: ldc           #41                 // String GENESIS
+      45: invokestatic  #132                // Method kotlin/jvm/internal/Intrinsics.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+      48: ifne          68
+      51: ldc           #134                // String Failed requirement.
+      53: astore        5
+      55: new           #136                // class java/lang/IllegalArgumentException
+      58: dup
+      59: aload         5
+      61: invokevirtual #139                // Method java/lang/Object.toString:()Ljava/lang/String;
+      64: invokespecial #141                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      67: athrow
+      68: iconst_4
+      69: anewarray     #86                 // class java/lang/String
+      72: astore        4
+      74: aload         4
+      76: iconst_0
+      77: ldc           #143                // String buyerCash
+      79: aastore
+      80: aload         4
+      82: iconst_1
+      83: ldc           #145                // String sellerCash
+      85: aastore
+      86: aload         4
+      88: iconst_2
+      89: ldc           #147                // String buyerShares
+      91: aastore
+      92: aload         4
+      94: iconst_3
+      95: ldc           #149                // String sellerShares
+      97: aastore
+      98: aload         4
+     100: invokestatic  #155                // Method kotlin/collections/CollectionsKt.listOf:([Ljava/lang/Object;)Ljava/util/List;
+     103: checkcast     #68                 // class java/lang/Iterable
+     106: astore        4
+     108: iconst_0
+     109: istore        5
+     111: aload         4
+     113: invokeinterface #74,  1           // InterfaceMethod java/lang/Iterable.iterator:()Ljava/util/Iterator;
+     118: astore        6
+     120: aload         6
+     122: invokeinterface #80,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     127: ifeq          176
+     130: aload         6
+     132: invokeinterface #84,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     137: astore        7
+     139: aload         7
+     141: checkcast     #86                 // class java/lang/String
+     144: astore        8
+     146: iconst_0
+     147: istore        9
+     149: aload_2
+     150: ldc           #9                  // String balances
+     152: aload         8
+     154: aload_0
+     155: getfield      #23                 // Field balances:Lcom/fasterxml/jackson/databind/JsonNode;
+     158: aload         8
+     160: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+     163: dup
+     164: ldc           #157                // String get(...)
+     166: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+     169: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+     172: nop
+     173: goto          120
+     176: nop
+     177: iconst_2
+     178: anewarray     #163                // class kotlin/Pair
+     181: astore        5
+     183: aload         5
+     185: iconst_0
+     186: ldc           #165                // String USD_NANO
+     188: ldc           #167                // String Cash
+     190: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+     193: aastore
+     194: aload         5
+     196: iconst_1
+     197: ldc           #175                // String ACME_SHARE
+     199: ldc           #177                // String Shares
+     201: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+     204: aastore
+     205: aload         5
+     207: invokestatic  #155                // Method kotlin/collections/CollectionsKt.listOf:([Ljava/lang/Object;)Ljava/util/List;
+     210: invokeinterface #178,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+     215: astore        4
+     217: aload         4
+     219: invokeinterface #80,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     224: ifeq          473
+     227: aload         4
+     229: invokeinterface #84,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     234: checkcast     #163                // class kotlin/Pair
+     237: astore        5
+     239: aload         5
+     241: invokevirtual #181                // Method kotlin/Pair.component1:()Ljava/lang/Object;
+     244: checkcast     #86                 // class java/lang/String
+     247: astore        6
+     249: aload         5
+     251: invokevirtual #184                // Method kotlin/Pair.component2:()Ljava/lang/Object;
+     254: checkcast     #86                 // class java/lang/String
+     257: astore        7
+     259: nop
+     260: new           #186                // class java/math/BigInteger
+     263: dup
+     264: aload_0
+     265: getfield      #23                 // Field balances:Lcom/fasterxml/jackson/databind/JsonNode;
+     268: aload         7
+     270: invokedynamic #198,  0            // InvokeDynamic #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     275: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+     278: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+     281: invokespecial #199                // Method java/math/BigInteger."<init>":(Ljava/lang/String;)V
+     284: new           #186                // class java/math/BigInteger
+     287: dup
+     288: aload_0
+     289: getfield      #23                 // Field balances:Lcom/fasterxml/jackson/databind/JsonNode;
+     292: aload         7
+     294: invokedynamic #202,  0            // InvokeDynamic #1:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     299: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+     302: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+     305: invokespecial #199                // Method java/math/BigInteger."<init>":(Ljava/lang/String;)V
+     308: invokevirtual #206                // Method java/math/BigInteger.add:(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+     311: dup
+     312: ldc           #208                // String add(...)
+     314: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+     317: invokevirtual #212                // Method java/math/BigInteger.negate:()Ljava/math/BigInteger;
+     320: dup
+     321: ldc           #214                // String negate(...)
+     323: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+     326: astore        8
+     328: aload_2
+     329: ldc           #9                  // String balances
+     331: aload         7
+     333: invokedynamic #217,  0            // InvokeDynamic #2:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+     338: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+     341: aload         8
+     343: invokevirtual #218                // Method java/math/BigInteger.toString:()Ljava/lang/String;
+     346: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+     349: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+     352: aload_3
+     353: aload         6
+     355: ldc           #224                // String opening
+     357: aload         8
+     359: invokestatic  #228                // Method accept$leg:(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/math/BigInteger;)V
+     362: iconst_2
+     363: anewarray     #86                 // class java/lang/String
+     366: astore        9
+     368: aload         9
+     370: iconst_0
+     371: ldc           #230                // String buyer
+     373: aastore
+     374: aload         9
+     376: iconst_1
+     377: ldc           #232                // String seller
+     379: aastore
+     380: aload         9
+     382: invokestatic  #155                // Method kotlin/collections/CollectionsKt.listOf:([Ljava/lang/Object;)Ljava/util/List;
+     385: checkcast     #68                 // class java/lang/Iterable
+     388: astore        9
+     390: iconst_0
+     391: istore        10
+     393: aload         9
+     395: invokeinterface #74,  1           // InterfaceMethod java/lang/Iterable.iterator:()Ljava/util/Iterator;
+     400: astore        11
+     402: aload         11
+     404: invokeinterface #80,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     409: ifeq          469
+     412: aload         11
+     414: invokeinterface #84,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     419: astore        12
+     421: aload         12
+     423: checkcast     #86                 // class java/lang/String
+     426: astore        13
+     428: iconst_0
+     429: istore        14
+     431: aload_3
+     432: aload         6
+     434: aload         13
+     436: new           #186                // class java/math/BigInteger
+     439: dup
+     440: aload_0
+     441: getfield      #23                 // Field balances:Lcom/fasterxml/jackson/databind/JsonNode;
+     444: aload         13
+     446: aload         7
+     448: invokedynamic #237,  0            // InvokeDynamic #3:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+     453: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+     456: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+     459: invokespecial #199                // Method java/math/BigInteger."<init>":(Ljava/lang/String;)V
+     462: invokestatic  #228                // Method accept$leg:(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/math/BigInteger;)V
+     465: nop
+     466: goto          402
+     469: nop
+     470: goto          217
+     473: bipush        6
+     475: anewarray     #86                 // class java/lang/String
+     478: astore        4
+     480: aload         4
+     482: iconst_0
+     483: ldc           #143                // String buyerCash
+     485: aastore
+     486: aload         4
+     488: iconst_1
+     489: ldc           #145                // String sellerCash
+     491: aastore
+     492: aload         4
+     494: iconst_2
+     495: ldc           #147                // String buyerShares
+     497: aastore
+     498: aload         4
+     500: iconst_3
+     501: ldc           #149                // String sellerShares
+     503: aastore
+     504: aload         4
+     506: iconst_4
+     507: ldc           #239                // String openingCash
+     509: aastore
+     510: aload         4
+     512: iconst_5
+     513: ldc           #241                // String openingShares
+     515: aastore
+     516: aload         4
+     518: invokestatic  #155                // Method kotlin/collections/CollectionsKt.listOf:([Ljava/lang/Object;)Ljava/util/List;
+     521: checkcast     #68                 // class java/lang/Iterable
+     524: astore        4
+     526: iconst_0
+     527: istore        5
+     529: aload         4
+     531: invokeinterface #74,  1           // InterfaceMethod java/lang/Iterable.iterator:()Ljava/util/Iterator;
+     536: astore        6
+     538: aload         6
+     540: invokeinterface #80,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+     545: ifeq          589
+     548: aload         6
+     550: invokeinterface #84,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     555: astore        7
+     557: aload         7
+     559: checkcast     #86                 // class java/lang/String
+     562: astore        8
+     564: iconst_0
+     565: istore        9
+     567: aload_2
+     568: ldc           #243                // String versions
+     570: aload         8
+     572: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+     575: lconst_0
+     576: invokestatic  #249                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+     579: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+     582: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+     585: nop
+     586: goto          538
+     589: nop
+     590: aload_2
+     591: ldc           #17                 // String policy
+     593: aconst_null
+     594: aload_0
+     595: getfield      #25                 // Field policy:Lcom/fasterxml/jackson/databind/JsonNode;
+     598: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+     601: aload_2
+     602: ldc           #251                // String activePolicy
+     604: aconst_null
+     605: aload_0
+     606: getfield      #25                 // Field policy:Lcom/fasterxml/jackson/databind/JsonNode;
+     609: ldc           #17                 // String policy
+     611: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+     614: dup
+     615: ldc           #157                // String get(...)
+     617: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+     620: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+     623: aload_2
+     624: ldc           #253                // String semanticDigest
+     626: aconst_null
+     627: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+     630: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+     633: ldc           #41                 // String GENESIS
+     635: astore        4
+     637: getstatic     #259                // Field kotlin/text/Charsets.UTF_8:Ljava/nio/charset/Charset;
+     640: aload         4
+     642: swap
+     643: invokevirtual #263                // Method java/lang/String.getBytes:(Ljava/nio/charset/Charset;)[B
+     646: dup
+     647: ldc_w         #265                // String getBytes(...)
+     650: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+     653: invokestatic  #269                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$sha:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;[B)Ljava/lang/String;
+     656: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+     659: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+     662: goto          2777
+     665: aload_1
+     666: ldc           #125                // String kind
+     668: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+     671: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+     674: ldc_w         #271                // String BUSINESS
+     677: invokestatic  #132                // Method kotlin/jvm/internal/Intrinsics.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+     680: ifne          700
+     683: ldc           #134                // String Failed requirement.
+     685: astore        5
+     687: new           #136                // class java/lang/IllegalArgumentException
+     690: dup
+     691: aload         5
+     693: invokevirtual #139                // Method java/lang/Object.toString:()Ljava/lang/String;
+     696: invokespecial #141                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+     699: athrow
+     700: aload_1
+     701: ldc_w         #273                // String input
+     704: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+     707: astore        4
+     709: aload         4
+     711: ldc           #125                // String kind
+     713: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+     716: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+     719: astore        5
+     721: aload         4
+     723: ldc_w         #275                // String payload
+     726: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+     729: astore        6
+     731: aload         4
+     733: ldc_w         #277                // String namespace
+     736: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+     739: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+     742: ldc_w         #279                // String financial-e4
+     745: invokestatic  #132                // Method kotlin/jvm/internal/Intrinsics.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+     748: ifeq          775
+     751: aload         4
+     753: ldc_w         #281                // String domain
+     756: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+     759: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+     762: ldc_w         #283                // String hot
+     765: invokestatic  #132                // Method kotlin/jvm/internal/Intrinsics.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+     768: ifeq          775
+     771: iconst_1
+     772: goto          776
+     775: iconst_0
+     776: ifne          796
+     779: ldc           #134                // String Failed requirement.
+     781: astore        8
+     783: new           #136                // class java/lang/IllegalArgumentException
+     786: dup
+     787: aload         8
+     789: invokevirtual #139                // Method java/lang/Object.toString:()Ljava/lang/String;
+     792: invokespecial #141                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+     795: athrow
+     796: iconst_2
+     797: anewarray     #86                 // class java/lang/String
+     800: astore        7
+     802: aload         7
+     804: iconst_0
+     805: ldc_w         #285                // String CAPTURE
+     808: aastore
+     809: aload         7
+     811: iconst_1
+     812: ldc_w         #287                // String SETTLE
+     815: aastore
+     816: aload         7
+     818: invokestatic  #293                // Method kotlin/collections/SetsKt.setOf:([Ljava/lang/Object;)Ljava/util/Set;
+     821: aload         5
+     823: invokeinterface #299,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+     828: ifne          848
+     831: ldc           #134                // String Failed requirement.
+     833: astore        8
+     835: new           #136                // class java/lang/IllegalArgumentException
+     838: dup
+     839: aload         8
+     841: invokevirtual #139                // Method java/lang/Object.toString:()Ljava/lang/String;
+     844: invokespecial #141                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+     847: athrow
+     848: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+     851: iconst_4
+     852: anewarray     #86                 // class java/lang/String
+     855: astore        8
+     857: aload         8
+     859: iconst_0
+     860: ldc_w         #301                // String e4
+     863: aastore
+     864: aload         8
+     866: iconst_1
+     867: ldc_w         #303                // String venue
+     870: aastore
+     871: aload         8
+     873: iconst_2
+     874: ldc_w         #305                // String ACME
+     877: aastore
+     878: aload         8
+     880: iconst_3
+     881: aload         6
+     883: ldc_w         #307                // String executionId
+     886: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+     889: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+     892: dup
+     893: ldc_w         #309                // String asText(...)
+     896: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+     899: aastore
+     900: aload         8
+     902: invokestatic  #313                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$frame:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;[Ljava/lang/String;)Ljava/lang/String;
+     905: astore        7
+     907: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+     910: iconst_3
+     911: anewarray     #86                 // class java/lang/String
+     914: astore        9
+     916: aload         9
+     918: iconst_0
+     919: ldc_w         #279                // String financial-e4
+     922: aastore
+     923: aload         9
+     925: iconst_1
+     926: ldc_w         #283                // String hot
+     929: aastore
+     930: aload         9
+     932: iconst_2
+     933: aload         4
+     935: ldc_w         #315                // String actionId
+     938: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+     941: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+     944: dup
+     945: ldc_w         #309                // String asText(...)
+     948: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+     951: aastore
+     952: aload         9
+     954: invokestatic  #313                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$frame:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;[Ljava/lang/String;)Ljava/lang/String;
+     957: astore        8
+     959: aload_0
+     960: getfield      #39                 // Field owner:Lcom/fasterxml/jackson/databind/node/ObjectNode;
+     963: ldc_w         #317                // String dedup
+     966: invokevirtual #320                // Method com/fasterxml/jackson/databind/node/ObjectNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+     969: aload         8
+     971: invokevirtual #324                // Method com/fasterxml/jackson/databind/JsonNode.has:(Ljava/lang/String;)Z
+     974: ifne          981
+     977: iconst_1
+     978: goto          982
+     981: iconst_0
+     982: ifne          1006
+     985: iconst_0
+     986: istore        10
+     988: ldc_w         #326                // String duplicate timed economic action
+     991: astore        10
+     993: new           #136                // class java/lang/IllegalArgumentException
+     996: dup
+     997: aload         10
+     999: invokevirtual #139                // Method java/lang/Object.toString:()Ljava/lang/String;
+    1002: invokespecial #141                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+    1005: athrow
+    1006: aconst_null
+    1007: astore        9
+    1009: aload         5
+    1011: ldc_w         #285                // String CAPTURE
+    1014: invokestatic  #132                // Method kotlin/jvm/internal/Intrinsics.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+    1017: ifeq          1336
+    1020: aload_0
+    1021: getfield      #39                 // Field owner:Lcom/fasterxml/jackson/databind/node/ObjectNode;
+    1024: ldc_w         #328                // String executions
+    1027: invokevirtual #320                // Method com/fasterxml/jackson/databind/node/ObjectNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1030: aload         7
+    1032: invokevirtual #324                // Method com/fasterxml/jackson/databind/JsonNode.has:(Ljava/lang/String;)Z
+    1035: ifne          1042
+    1038: iconst_1
+    1039: goto          1043
+    1042: iconst_0
+    1043: ifne          1063
+    1046: ldc           #134                // String Failed requirement.
+    1048: astore        11
+    1050: new           #136                // class java/lang/IllegalArgumentException
+    1053: dup
+    1054: aload         11
+    1056: invokevirtual #139                // Method java/lang/Object.toString:()Ljava/lang/String;
+    1059: invokespecial #141                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+    1062: athrow
+    1063: aload         6
+    1065: ldc_w         #330                // String quantity
+    1068: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1071: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+    1074: ldc_w         #332                // String 1
+    1077: invokestatic  #132                // Method kotlin/jvm/internal/Intrinsics.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+    1080: ifeq          1107
+    1083: aload         6
+    1085: ldc_w         #334                // String priceNanos
+    1088: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1091: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+    1094: ldc_w         #336                // String 10000000
+    1097: invokestatic  #132                // Method kotlin/jvm/internal/Intrinsics.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+    1100: ifeq          1107
+    1103: iconst_1
+    1104: goto          1108
+    1107: iconst_0
+    1108: ifne          1128
+    1111: ldc           #134                // String Failed requirement.
+    1113: astore        11
+    1115: new           #136                // class java/lang/IllegalArgumentException
+    1118: dup
+    1119: aload         11
+    1121: invokevirtual #139                // Method java/lang/Object.toString:()Ljava/lang/String;
+    1124: invokespecial #141                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+    1127: athrow
+    1128: aload_2
+    1129: ldc_w         #328                // String executions
+    1132: aload         7
+    1134: aload         6
+    1136: invokestatic  #340                // Method kotlin/jvm/internal/Intrinsics.checkNotNull:(Ljava/lang/Object;)V
+    1139: aload         6
+    1141: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    1144: aload_2
+    1145: ldc_w         #342                // String obligations
+    1148: aload         7
+    1150: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    1153: iconst_3
+    1154: anewarray     #163                // class kotlin/Pair
+    1157: astore        10
+    1159: aload         10
+    1161: iconst_0
+    1162: ldc_w         #344                // String status
+    1165: ldc_w         #346                // String PENDING
+    1168: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    1171: aastore
+    1172: aload         10
+    1174: iconst_1
+    1175: ldc_w         #348                // String cashResidual
+    1178: ldc_w         #336                // String 10000000
+    1181: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    1184: aastore
+    1185: aload         10
+    1187: iconst_2
+    1188: ldc_w         #350                // String shareResidual
+    1191: ldc_w         #332                // String 1
+    1194: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    1197: aastore
+    1198: aload         10
+    1200: invokestatic  #356                // Method kotlin/collections/MapsKt.mapOf:([Lkotlin/Pair;)Ljava/util/Map;
+    1203: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1206: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    1209: aload_2
+    1210: ldc_w         #358                // String workflows
+    1213: aload         7
+    1215: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    1218: ldc_w         #346                // String PENDING
+    1221: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1224: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    1227: aload_2
+    1228: ldc_w         #360                // String instructions
+    1231: aload         7
+    1233: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    1236: ldc_w         #362                // String READY
+    1239: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1242: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    1245: aload_2
+    1246: ldc_w         #364                // String dueQueue
+    1249: aload         7
+    1251: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    1254: iconst_3
+    1255: anewarray     #163                // class kotlin/Pair
+    1258: astore        10
+    1260: aload         10
+    1262: iconst_0
+    1263: ldc_w         #366                // String tick
+    1266: ldc_w         #368                // String 0
+    1269: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    1272: aastore
+    1273: aload         10
+    1275: iconst_1
+    1276: ldc_w         #370                // String priority
+    1279: iconst_0
+    1280: invokestatic  #375                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+    1283: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    1286: aastore
+    1287: aload         10
+    1289: iconst_2
+    1290: ldc_w         #377                // String workId
+    1293: aload         6
+    1295: ldc_w         #307                // String executionId
+    1298: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1301: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+    1304: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    1307: aastore
+    1308: aload         10
+    1310: invokestatic  #356                // Method kotlin/collections/MapsKt.mapOf:([Lkotlin/Pair;)Ljava/util/Map;
+    1313: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1316: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    1319: aload_2
+    1320: aload_0
+    1321: ldc           #243                // String versions
+    1323: aload         7
+    1325: invokestatic  #381                // Method accept$increment:(Ljava/util/LinkedHashMap;Lcom/reef/platform/calcify/financial/FinancialRateProbe$Reference;Ljava/lang/String;Ljava/lang/String;)V
+    1328: ldc_w         #383                // String CAPTURED
+    1331: astore        9
+    1333: goto          1940
+    1336: aload_0
+    1337: getfield      #39                 // Field owner:Lcom/fasterxml/jackson/databind/node/ObjectNode;
+    1340: ldc_w         #342                // String obligations
+    1343: invokevirtual #320                // Method com/fasterxml/jackson/databind/node/ObjectNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1346: aload         7
+    1348: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1351: ldc_w         #344                // String status
+    1354: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1357: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+    1360: ldc_w         #346                // String PENDING
+    1363: invokestatic  #132                // Method kotlin/jvm/internal/Intrinsics.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+    1366: ifne          1386
+    1369: ldc           #134                // String Failed requirement.
+    1371: astore        11
+    1373: new           #136                // class java/lang/IllegalArgumentException
+    1376: dup
+    1377: aload         11
+    1379: invokevirtual #139                // Method java/lang/Object.toString:()Ljava/lang/String;
+    1382: invokespecial #141                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+    1385: athrow
+    1386: iconst_4
+    1387: anewarray     #163                // class kotlin/Pair
+    1390: astore        11
+    1392: aload         11
+    1394: iconst_0
+    1395: ldc           #143                // String buyerCash
+    1397: ldc2_w        #384                // long -10000000l
+    1400: invokestatic  #249                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+    1403: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    1406: aastore
+    1407: aload         11
+    1409: iconst_1
+    1410: ldc           #145                // String sellerCash
+    1412: ldc2_w        #386                // long 10000000l
+    1415: invokestatic  #249                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+    1418: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    1421: aastore
+    1422: aload         11
+    1424: iconst_2
+    1425: ldc           #147                // String buyerShares
+    1427: lconst_1
+    1428: invokestatic  #249                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+    1431: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    1434: aastore
+    1435: aload         11
+    1437: iconst_3
+    1438: ldc           #149                // String sellerShares
+    1440: ldc2_w        #388                // long -1l
+    1443: invokestatic  #249                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+    1446: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    1449: aastore
+    1450: aload         11
+    1452: invokestatic  #155                // Method kotlin/collections/CollectionsKt.listOf:([Ljava/lang/Object;)Ljava/util/List;
+    1455: invokeinterface #178,  1          // InterfaceMethod java/util/List.iterator:()Ljava/util/Iterator;
+    1460: astore        10
+    1462: aload         10
+    1464: invokeinterface #80,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+    1469: ifeq          1637
+    1472: aload         10
+    1474: invokeinterface #84,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+    1479: checkcast     #163                // class kotlin/Pair
+    1482: astore        11
+    1484: aload         11
+    1486: invokevirtual #181                // Method kotlin/Pair.component1:()Ljava/lang/Object;
+    1489: checkcast     #86                 // class java/lang/String
+    1492: astore        12
+    1494: aload         11
+    1496: invokevirtual #184                // Method kotlin/Pair.component2:()Ljava/lang/Object;
+    1499: checkcast     #391                // class java/lang/Number
+    1502: invokevirtual #394                // Method java/lang/Number.longValue:()J
+    1505: lstore        13
+    1507: new           #186                // class java/math/BigInteger
+    1510: dup
+    1511: aload_0
+    1512: getfield      #39                 // Field owner:Lcom/fasterxml/jackson/databind/node/ObjectNode;
+    1515: ldc           #9                  // String balances
+    1517: invokevirtual #320                // Method com/fasterxml/jackson/databind/node/ObjectNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1520: aload         12
+    1522: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1525: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+    1528: invokespecial #199                // Method java/math/BigInteger."<init>":(Ljava/lang/String;)V
+    1531: astore        16
+    1533: lload         13
+    1535: invokestatic  #397                // Method java/math/BigInteger.valueOf:(J)Ljava/math/BigInteger;
+    1538: dup
+    1539: ldc_w         #399                // String valueOf(...)
+    1542: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    1545: aload         16
+    1547: swap
+    1548: invokevirtual #206                // Method java/math/BigInteger.add:(Ljava/math/BigInteger;)Ljava/math/BigInteger;
+    1551: dup
+    1552: ldc           #208                // String add(...)
+    1554: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    1557: astore        15
+    1559: aload         15
+    1561: invokevirtual #403                // Method java/math/BigInteger.signum:()I
+    1564: iflt          1585
+    1567: aload         15
+    1569: ldc2_w        #404                // long 9223372036854775807l
+    1572: invokestatic  #397                // Method java/math/BigInteger.valueOf:(J)Ljava/math/BigInteger;
+    1575: invokevirtual #409                // Method java/math/BigInteger.compareTo:(Ljava/math/BigInteger;)I
+    1578: ifgt          1585
+    1581: iconst_1
+    1582: goto          1586
+    1585: iconst_0
+    1586: ifne          1606
+    1589: ldc           #134                // String Failed requirement.
+    1591: astore        17
+    1593: new           #136                // class java/lang/IllegalArgumentException
+    1596: dup
+    1597: aload         17
+    1599: invokevirtual #139                // Method java/lang/Object.toString:()Ljava/lang/String;
+    1602: invokespecial #141                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+    1605: athrow
+    1606: aload_2
+    1607: ldc           #9                  // String balances
+    1609: aload         12
+    1611: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    1614: aload         15
+    1616: invokevirtual #218                // Method java/math/BigInteger.toString:()Ljava/lang/String;
+    1619: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1622: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    1625: aload_2
+    1626: aload_0
+    1627: ldc           #243                // String versions
+    1629: aload         12
+    1631: invokestatic  #381                // Method accept$increment:(Ljava/util/LinkedHashMap;Lcom/reef/platform/calcify/financial/FinancialRateProbe$Reference;Ljava/lang/String;Ljava/lang/String;)V
+    1634: goto          1462
+    1637: aload_3
+    1638: ldc           #165                // String USD_NANO
+    1640: ldc           #230                // String buyer
+    1642: ldc2_w        #384                // long -10000000l
+    1645: invokestatic  #397                // Method java/math/BigInteger.valueOf:(J)Ljava/math/BigInteger;
+    1648: dup
+    1649: ldc_w         #399                // String valueOf(...)
+    1652: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    1655: invokestatic  #228                // Method accept$leg:(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/math/BigInteger;)V
+    1658: aload_3
+    1659: ldc           #165                // String USD_NANO
+    1661: ldc           #232                // String seller
+    1663: ldc2_w        #386                // long 10000000l
+    1666: invokestatic  #397                // Method java/math/BigInteger.valueOf:(J)Ljava/math/BigInteger;
+    1669: dup
+    1670: ldc_w         #399                // String valueOf(...)
+    1673: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    1676: invokestatic  #228                // Method accept$leg:(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/math/BigInteger;)V
+    1679: aload_3
+    1680: ldc           #175                // String ACME_SHARE
+    1682: ldc           #232                // String seller
+    1684: getstatic     #413                // Field java/math/BigInteger.ONE:Ljava/math/BigInteger;
+    1687: dup
+    1688: ldc_w         #414                // String ONE
+    1691: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    1694: invokevirtual #212                // Method java/math/BigInteger.negate:()Ljava/math/BigInteger;
+    1697: dup
+    1698: ldc           #214                // String negate(...)
+    1700: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    1703: invokestatic  #228                // Method accept$leg:(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/math/BigInteger;)V
+    1706: aload_3
+    1707: ldc           #175                // String ACME_SHARE
+    1709: ldc           #230                // String buyer
+    1711: getstatic     #413                // Field java/math/BigInteger.ONE:Ljava/math/BigInteger;
+    1714: dup
+    1715: ldc_w         #414                // String ONE
+    1718: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    1721: invokestatic  #228                // Method accept$leg:(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/math/BigInteger;)V
+    1724: aload_2
+    1725: ldc_w         #342                // String obligations
+    1728: aload         7
+    1730: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    1733: iconst_3
+    1734: anewarray     #163                // class kotlin/Pair
+    1737: astore        10
+    1739: aload         10
+    1741: iconst_0
+    1742: ldc_w         #344                // String status
+    1745: ldc_w         #416                // String SETTLED
+    1748: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    1751: aastore
+    1752: aload         10
+    1754: iconst_1
+    1755: ldc_w         #348                // String cashResidual
+    1758: ldc_w         #368                // String 0
+    1761: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    1764: aastore
+    1765: aload         10
+    1767: iconst_2
+    1768: ldc_w         #350                // String shareResidual
+    1771: ldc_w         #368                // String 0
+    1774: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    1777: aastore
+    1778: aload         10
+    1780: invokestatic  #356                // Method kotlin/collections/MapsKt.mapOf:([Lkotlin/Pair;)Ljava/util/Map;
+    1783: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1786: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    1789: aload_2
+    1790: ldc_w         #358                // String workflows
+    1793: aload         7
+    1795: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    1798: ldc_w         #416                // String SETTLED
+    1801: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1804: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    1807: aload_2
+    1808: ldc_w         #360                // String instructions
+    1811: aload         7
+    1813: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    1816: ldc_w         #416                // String SETTLED
+    1819: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1822: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    1825: aload_2
+    1826: ldc_w         #418                // String attempts
+    1829: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    1832: iconst_5
+    1833: anewarray     #86                 // class java/lang/String
+    1836: astore        10
+    1838: aload         10
+    1840: iconst_0
+    1841: ldc_w         #301                // String e4
+    1844: aastore
+    1845: aload         10
+    1847: iconst_1
+    1848: ldc_w         #303                // String venue
+    1851: aastore
+    1852: aload         10
+    1854: iconst_2
+    1855: ldc_w         #305                // String ACME
+    1858: aastore
+    1859: aload         10
+    1861: iconst_3
+    1862: aload         6
+    1864: ldc_w         #307                // String executionId
+    1867: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1870: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+    1873: dup
+    1874: ldc_w         #309                // String asText(...)
+    1877: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    1880: aastore
+    1881: aload         10
+    1883: iconst_4
+    1884: ldc_w         #332                // String 1
+    1887: aastore
+    1888: aload         10
+    1890: invokestatic  #313                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$frame:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;[Ljava/lang/String;)Ljava/lang/String;
+    1893: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    1896: ldc_w         #416                // String SETTLED
+    1899: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1902: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    1905: aload_2
+    1906: aload_0
+    1907: ldc           #243                // String versions
+    1909: aload         7
+    1911: invokestatic  #381                // Method accept$increment:(Ljava/util/LinkedHashMap;Lcom/reef/platform/calcify/financial/FinancialRateProbe$Reference;Ljava/lang/String;Ljava/lang/String;)V
+    1914: aload_2
+    1915: ldc_w         #364                // String dueQueue
+    1918: aload         7
+    1920: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    1923: invokestatic  #93                 // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$getNullNode:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1926: dup
+    1927: ldc           #95                 // String access$getNullNode(...)
+    1929: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    1932: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    1935: ldc_w         #416                // String SETTLED
+    1938: astore        9
+    1940: aload_2
+    1941: aload_0
+    1942: ldc_w         #420                // String businessSeq
+    1945: aconst_null
+    1946: bipush        8
+    1948: aconst_null
+    1949: invokestatic  #424                // Method accept$increment$default:(Ljava/util/LinkedHashMap;Lcom/reef/platform/calcify/financial/FinancialRateProbe$Reference;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)V
+    1952: aload_2
+    1953: ldc_w         #426                // String lastDecisionId
+    1956: aconst_null
+    1957: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    1960: aload         8
+    1962: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+    1965: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    1968: aload         6
+    1970: invokevirtual #429                // Method com/fasterxml/jackson/databind/JsonNode.fields:()Ljava/util/Iterator;
+    1973: dup
+    1974: ldc_w         #431                // String fields(...)
+    1977: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    1980: invokestatic  #437                // Method kotlin/sequences/SequencesKt.asSequence:(Ljava/util/Iterator;)Lkotlin/sequences/Sequence;
+    1983: astore        11
+    1985: iconst_0
+    1986: istore        12
+    1988: aload         11
+    1990: new           #439                // class com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$1
+    1993: dup
+    1994: invokespecial #440                // Method com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$1."<init>":()V
+    1997: checkcast     #442                // class java/util/Comparator
+    2000: invokestatic  #446                // Method kotlin/sequences/SequencesKt.sortedWith:(Lkotlin/sequences/Sequence;Ljava/util/Comparator;)Lkotlin/sequences/Sequence;
+    2003: invokedynamic #465,  0            // InvokeDynamic #4:invoke:()Lkotlin/jvm/functions/Function1;
+    2008: invokestatic  #469                // Method kotlin/sequences/SequencesKt.map:(Lkotlin/sequences/Sequence;Lkotlin/jvm/functions/Function1;)Lkotlin/sequences/Sequence;
+    2011: invokestatic  #473                // Method kotlin/sequences/SequencesKt.toList:(Lkotlin/sequences/Sequence;)Ljava/util/List;
+    2014: astore        10
+    2016: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    2019: invokestatic  #477                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$getJson$p:()Lcom/fasterxml/jackson/databind/ObjectMapper;
+    2022: iconst_3
+    2023: anewarray     #4                  // class java/lang/Object
+    2026: astore        13
+    2028: aload         13
+    2030: iconst_0
+    2031: aload         5
+    2033: aastore
+    2034: aload         13
+    2036: iconst_1
+    2037: aconst_null
+    2038: aastore
+    2039: aload         13
+    2041: iconst_2
+    2042: aload         10
+    2044: aastore
+    2045: aload         13
+    2047: invokestatic  #155                // Method kotlin/collections/CollectionsKt.listOf:([Ljava/lang/Object;)Ljava/util/List;
+    2050: invokevirtual #483                // Method com/fasterxml/jackson/databind/ObjectMapper.writeValueAsBytes:(Ljava/lang/Object;)[B
+    2053: dup
+    2054: ldc_w         #485                // String writeValueAsBytes(...)
+    2057: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    2060: invokestatic  #269                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$sha:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;[B)Ljava/lang/String;
+    2063: astore        11
+    2065: aload_0
+    2066: getfield      #25                 // Field policy:Lcom/fasterxml/jackson/databind/JsonNode;
+    2069: invokevirtual #489                // Method com/fasterxml/jackson/databind/JsonNode.deepCopy:()Lcom/fasterxml/jackson/databind/JsonNode;
+    2072: astore        13
+    2074: aload         13
+    2076: checkcast     #319                // class com/fasterxml/jackson/databind/node/ObjectNode
+    2079: astore        14
+    2081: iconst_0
+    2082: istore        15
+    2084: aload         14
+    2086: ldc_w         #491                // String logicalTick
+    2089: ldc_w         #368                // String 0
+    2092: invokevirtual #495                // Method com/fasterxml/jackson/databind/node/ObjectNode.put:(Ljava/lang/String;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/node/ObjectNode;
+    2095: pop
+    2096: aload         14
+    2098: ldc_w         #281                // String domain
+    2101: ldc_w         #283                // String hot
+    2104: invokevirtual #495                // Method com/fasterxml/jackson/databind/node/ObjectNode.put:(Ljava/lang/String;Ljava/lang/String;)Lcom/fasterxml/jackson/databind/node/ObjectNode;
+    2107: pop
+    2108: aload         13
+    2110: checkcast     #319                // class com/fasterxml/jackson/databind/node/ObjectNode
+    2113: astore        12
+    2115: aload_2
+    2116: ldc_w         #317                // String dedup
+    2119: aload         8
+    2121: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    2124: iconst_3
+    2125: anewarray     #163                // class kotlin/Pair
+    2128: astore        13
+    2130: aload         13
+    2132: iconst_0
+    2133: ldc_w         #497                // String digest
+    2136: aload         11
+    2138: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    2141: aastore
+    2142: aload         13
+    2144: iconst_1
+    2145: ldc_w         #499                // String context
+    2148: aload         12
+    2150: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    2153: aastore
+    2154: aload         13
+    2156: iconst_2
+    2157: ldc_w         #501                // String disposition
+    2160: aload         9
+    2162: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    2165: aastore
+    2166: aload         13
+    2168: invokestatic  #356                // Method kotlin/collections/MapsKt.mapOf:([Lkotlin/Pair;)Ljava/util/Map;
+    2171: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+    2174: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    2177: aload_3
+    2178: checkcast     #503                // class java/util/Collection
+    2181: invokeinterface #506,  1          // InterfaceMethod java/util/Collection.isEmpty:()Z
+    2186: ifne          2193
+    2189: iconst_1
+    2190: goto          2194
+    2193: iconst_0
+    2194: ifeq          2213
+    2197: aload_2
+    2198: ldc_w         #508                // String effects
+    2201: aload         8
+    2203: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    2206: aload_3
+    2207: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+    2210: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    2213: aload_2
+    2214: invokevirtual #512                // Method java/util/LinkedHashMap.entrySet:()Ljava/util/Set;
+    2217: dup
+    2218: ldc_w         #514                // String <get-entries>(...)
+    2221: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    2224: checkcast     #68                 // class java/lang/Iterable
+    2227: astore        14
+    2229: iconst_0
+    2230: istore        15
+    2232: aload         14
+    2234: astore        16
+    2236: new           #122                // class java/util/ArrayList
+    2239: dup
+    2240: invokespecial #123                // Method java/util/ArrayList."<init>":()V
+    2243: checkcast     #503                // class java/util/Collection
+    2246: astore        17
+    2248: iconst_0
+    2249: istore        18
+    2251: aload         16
+    2253: invokeinterface #74,  1           // InterfaceMethod java/lang/Iterable.iterator:()Ljava/util/Iterator;
+    2258: astore        19
+    2260: aload         19
+    2262: invokeinterface #80,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+    2267: ifeq          2442
+    2270: aload         19
+    2272: invokeinterface #84,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+    2277: astore        20
+    2279: aload         20
+    2281: checkcast     #516                // class java/util/Map$Entry
+    2284: astore        21
+    2286: iconst_0
+    2287: istore        22
+    2289: bipush        6
+    2291: anewarray     #86                 // class java/lang/String
+    2294: astore        23
+    2296: aload         23
+    2298: iconst_0
+    2299: ldc_w         #518                // String historySeq
+    2302: aastore
+    2303: aload         23
+    2305: iconst_1
+    2306: ldc_w         #520                // String deliveryCursor
+    2309: aastore
+    2310: aload         23
+    2312: iconst_2
+    2313: ldc_w         #522                // String nextDelivery
+    2316: aastore
+    2317: aload         23
+    2319: iconst_3
+    2320: ldc_w         #524                // String stagedInputs
+    2323: aastore
+    2324: aload         23
+    2326: iconst_4
+    2327: ldc           #17                 // String policy
+    2329: aastore
+    2330: aload         23
+    2332: iconst_5
+    2333: ldc           #253                // String semanticDigest
+    2335: aastore
+    2336: aload         23
+    2338: invokestatic  #293                // Method kotlin/collections/SetsKt.setOf:([Ljava/lang/Object;)Ljava/util/Set;
+    2341: aload         21
+    2343: invokeinterface #527,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+    2348: checkcast     #113                // class java/util/List
+    2351: iconst_0
+    2352: invokeinterface #530,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+    2357: invokeinterface #299,  2          // InterfaceMethod java/util/Set.contains:(Ljava/lang/Object;)Z
+    2362: ifne          2425
+    2365: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    2368: aload_0
+    2369: aload         21
+    2371: invokeinterface #527,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+    2376: dup
+    2377: ldc_w         #532                // String <get-key>(...)
+    2380: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    2383: checkcast     #113                // class java/util/List
+    2386: invokespecial #534                // Method get:(Ljava/util/List;)Lcom/fasterxml/jackson/databind/JsonNode;
+    2389: invokestatic  #538                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$canonical:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Lcom/fasterxml/jackson/databind/JsonNode;)Ljava/lang/String;
+    2392: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    2395: aload         21
+    2397: invokeinterface #541,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+    2402: dup
+    2403: ldc_w         #543                // String <get-value>(...)
+    2406: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    2409: checkcast     #70                 // class com/fasterxml/jackson/databind/JsonNode
+    2412: invokestatic  #538                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$canonical:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Lcom/fasterxml/jackson/databind/JsonNode;)Ljava/lang/String;
+    2415: invokestatic  #132                // Method kotlin/jvm/internal/Intrinsics.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+    2418: ifne          2425
+    2421: iconst_1
+    2422: goto          2426
+    2425: iconst_0
+    2426: ifeq          2260
+    2429: aload         17
+    2431: aload         20
+    2433: invokeinterface #545,  2          // InterfaceMethod java/util/Collection.add:(Ljava/lang/Object;)Z
+    2438: pop
+    2439: goto          2260
+    2442: aload         17
+    2444: checkcast     #113                // class java/util/List
+    2447: nop
+    2448: checkcast     #68                 // class java/lang/Iterable
+    2451: astore        14
+    2453: nop
+    2454: iconst_0
+    2455: istore        15
+    2457: aload         14
+    2459: new           #547                // class com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$2
+    2462: dup
+    2463: invokespecial #548                // Method com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$2."<init>":()V
+    2466: checkcast     #442                // class java/util/Comparator
+    2469: invokestatic  #551                // Method kotlin/collections/CollectionsKt.sortedWith:(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    2472: checkcast     #68                 // class java/lang/Iterable
+    2475: astore        14
+    2477: nop
+    2478: iconst_0
+    2479: istore        15
+    2481: aload         14
+    2483: astore        16
+    2485: new           #122                // class java/util/ArrayList
+    2488: dup
+    2489: aload         14
+    2491: bipush        10
+    2493: invokestatic  #555                // Method kotlin/collections/CollectionsKt.collectionSizeOrDefault:(Ljava/lang/Iterable;I)I
+    2496: invokespecial #558                // Method java/util/ArrayList."<init>":(I)V
+    2499: checkcast     #503                // class java/util/Collection
+    2502: astore        17
+    2504: iconst_0
+    2505: istore        18
+    2507: aload         16
+    2509: invokeinterface #74,  1           // InterfaceMethod java/lang/Iterable.iterator:()Ljava/util/Iterator;
+    2514: astore        19
+    2516: aload         19
+    2518: invokeinterface #80,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+    2523: ifeq          2637
+    2526: aload         19
+    2528: invokeinterface #84,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+    2533: astore        20
+    2535: aload         17
+    2537: aload         20
+    2539: checkcast     #516                // class java/util/Map$Entry
+    2542: astore        21
+    2544: astore        24
+    2546: iconst_0
+    2547: istore        22
+    2549: iconst_3
+    2550: anewarray     #163                // class kotlin/Pair
+    2553: astore        23
+    2555: aload         23
+    2557: iconst_0
+    2558: ldc_w         #559                // String path
+    2561: aload         21
+    2563: invokeinterface #527,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+    2568: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    2571: aastore
+    2572: aload         23
+    2574: iconst_1
+    2575: ldc_w         #561                // String before
+    2578: aload_0
+    2579: aload         21
+    2581: invokeinterface #527,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+    2586: dup
+    2587: ldc_w         #532                // String <get-key>(...)
+    2590: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    2593: checkcast     #113                // class java/util/List
+    2596: invokespecial #534                // Method get:(Ljava/util/List;)Lcom/fasterxml/jackson/databind/JsonNode;
+    2599: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    2602: aastore
+    2603: aload         23
+    2605: iconst_2
+    2606: ldc_w         #563                // String after
+    2609: aload         21
+    2611: invokeinterface #541,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+    2616: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    2619: aastore
+    2620: aload         23
+    2622: invokestatic  #356                // Method kotlin/collections/MapsKt.mapOf:([Lkotlin/Pair;)Ljava/util/Map;
+    2625: aload         24
+    2627: swap
+    2628: invokeinterface #545,  2          // InterfaceMethod java/util/Collection.add:(Ljava/lang/Object;)Z
+    2633: pop
+    2634: goto          2516
+    2637: aload         17
+    2639: checkcast     #113                // class java/util/List
+    2642: nop
+    2643: astore        13
+    2645: aload_2
+    2646: ldc           #253                // String semanticDigest
+    2648: aconst_null
+    2649: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    2652: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    2655: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    2658: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    2661: bipush        6
+    2663: anewarray     #163                // class kotlin/Pair
+    2666: astore        14
+    2668: aload         14
+    2670: iconst_0
+    2671: ldc_w         #565                // String decisionId
+    2674: aload         8
+    2676: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    2679: aastore
+    2680: aload         14
+    2682: iconst_1
+    2683: ldc_w         #501                // String disposition
+    2686: aload         9
+    2688: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    2691: aastore
+    2692: aload         14
+    2694: iconst_2
+    2695: ldc_w         #273                // String input
+    2698: aload         11
+    2700: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    2703: aastore
+    2704: aload         14
+    2706: iconst_3
+    2707: ldc_w         #499                // String context
+    2710: aload         12
+    2712: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    2715: aastore
+    2716: aload         14
+    2718: iconst_4
+    2719: ldc_w         #567                // String journalLegs
+    2722: aload_3
+    2723: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    2726: aastore
+    2727: aload         14
+    2729: iconst_5
+    2730: ldc_w         #569                // String semanticChanges
+    2733: aload         13
+    2735: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    2738: aastore
+    2739: aload         14
+    2741: invokestatic  #356                // Method kotlin/collections/MapsKt.mapOf:([Lkotlin/Pair;)Ljava/util/Map;
+    2744: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+    2747: invokestatic  #538                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$canonical:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Lcom/fasterxml/jackson/databind/JsonNode;)Ljava/lang/String;
+    2750: astore        14
+    2752: getstatic     #259                // Field kotlin/text/Charsets.UTF_8:Ljava/nio/charset/Charset;
+    2755: aload         14
+    2757: swap
+    2758: invokevirtual #263                // Method java/lang/String.getBytes:(Ljava/nio/charset/Charset;)[B
+    2761: dup
+    2762: ldc_w         #265                // String getBytes(...)
+    2765: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    2768: invokestatic  #269                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$sha:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;[B)Ljava/lang/String;
+    2771: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+    2774: invokestatic  #161                // Method accept$put:(Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)V
+    2777: aload_2
+    2778: aload_0
+    2779: ldc_w         #518                // String historySeq
+    2782: aconst_null
+    2783: bipush        8
+    2785: aconst_null
+    2786: invokestatic  #424                // Method accept$increment$default:(Ljava/util/LinkedHashMap;Lcom/reef/platform/calcify/financial/FinancialRateProbe$Reference;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Object;)V
+    2789: aload_2
+    2790: checkcast     #571                // class java/util/Map
+    2793: astore        5
+    2795: iconst_0
+    2796: istore        6
+    2798: aload         5
+    2800: astore        7
+    2802: new           #122                // class java/util/ArrayList
+    2805: dup
+    2806: aload         5
+    2808: invokeinterface #574,  1          // InterfaceMethod java/util/Map.size:()I
+    2813: invokespecial #558                // Method java/util/ArrayList."<init>":(I)V
+    2816: checkcast     #503                // class java/util/Collection
+    2819: astore        8
+    2821: iconst_0
+    2822: istore        9
+    2824: aload         7
+    2826: invokeinterface #575,  1          // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+    2831: invokeinterface #576,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+    2836: astore        10
+    2838: aload         10
+    2840: invokeinterface #80,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+    2845: ifeq          2958
+    2848: aload         10
+    2850: invokeinterface #84,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+    2855: checkcast     #516                // class java/util/Map$Entry
+    2858: astore        11
+    2860: aload         8
+    2862: aload         11
+    2864: astore        12
+    2866: astore        24
+    2868: iconst_0
+    2869: istore        13
+    2871: aload         12
+    2873: invokeinterface #527,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+    2878: checkcast     #113                // class java/util/List
+    2881: astore        14
+    2883: aload         12
+    2885: invokeinterface #541,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+    2890: checkcast     #70                 // class com/fasterxml/jackson/databind/JsonNode
+    2893: astore        15
+    2895: iconst_3
+    2896: anewarray     #163                // class kotlin/Pair
+    2899: astore        16
+    2901: aload         16
+    2903: iconst_0
+    2904: ldc_w         #559                // String path
+    2907: aload         14
+    2909: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    2912: aastore
+    2913: aload         16
+    2915: iconst_1
+    2916: ldc_w         #561                // String before
+    2919: aload_0
+    2920: aload         14
+    2922: invokespecial #534                // Method get:(Ljava/util/List;)Lcom/fasterxml/jackson/databind/JsonNode;
+    2925: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    2928: aastore
+    2929: aload         16
+    2931: iconst_2
+    2932: ldc_w         #563                // String after
+    2935: aload         15
+    2937: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+    2940: aastore
+    2941: aload         16
+    2943: invokestatic  #356                // Method kotlin/collections/MapsKt.mapOf:([Lkotlin/Pair;)Ljava/util/Map;
+    2946: aload         24
+    2948: swap
+    2949: invokeinterface #545,  2          // InterfaceMethod java/util/Collection.add:(Ljava/lang/Object;)Z
+    2954: pop
+    2955: goto          2838
+    2958: aload         8
+    2960: checkcast     #113                // class java/util/List
+    2963: nop
+    2964: astore        4
+    2966: aload_1
+    2967: ldc_w         #578                // String changes
+    2970: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    2973: dup
+    2974: ldc           #157                // String get(...)
+    2976: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    2979: checkcast     #68                 // class java/lang/Iterable
+    2982: astore        6
+    2984: iconst_0
+    2985: istore        7
+    2987: aload         6
+    2989: astore        8
+    2991: new           #122                // class java/util/ArrayList
+    2994: dup
+    2995: aload         6
+    2997: bipush        10
+    2999: invokestatic  #555                // Method kotlin/collections/CollectionsKt.collectionSizeOrDefault:(Ljava/lang/Iterable;I)I
+    3002: invokespecial #558                // Method java/util/ArrayList."<init>":(I)V
+    3005: checkcast     #503                // class java/util/Collection
+    3008: astore        9
+    3010: iconst_0
+    3011: istore        10
+    3013: aload         8
+    3015: invokeinterface #74,  1           // InterfaceMethod java/lang/Iterable.iterator:()Ljava/util/Iterator;
+    3020: astore        11
+    3022: aload         11
+    3024: invokeinterface #80,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+    3029: ifeq          3069
+    3032: aload         11
+    3034: invokeinterface #84,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+    3039: astore        12
+    3041: aload         9
+    3043: aload         12
+    3045: checkcast     #70                 // class com/fasterxml/jackson/databind/JsonNode
+    3048: astore        13
+    3050: astore        24
+    3052: iconst_0
+    3053: istore        14
+    3055: aload         13
+    3057: aload         24
+    3059: swap
+    3060: invokeinterface #545,  2          // InterfaceMethod java/util/Collection.add:(Ljava/lang/Object;)Z
+    3065: pop
+    3066: goto          3022
+    3069: aload         9
+    3071: checkcast     #113                // class java/util/List
+    3074: nop
+    3075: checkcast     #68                 // class java/lang/Iterable
+    3078: astore        6
+    3080: nop
+    3081: iconst_0
+    3082: istore        7
+    3084: aload         6
+    3086: new           #580                // class com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$3
+    3089: dup
+    3090: invokespecial #581                // Method com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$3."<init>":()V
+    3093: checkcast     #442                // class java/util/Comparator
+    3096: invokestatic  #551                // Method kotlin/collections/CollectionsKt.sortedWith:(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    3099: astore        5
+    3101: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    3104: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    3107: aload         4
+    3109: checkcast     #68                 // class java/lang/Iterable
+    3112: astore        6
+    3114: iconst_0
+    3115: istore        7
+    3117: aload         6
+    3119: new           #583                // class com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$4
+    3122: dup
+    3123: invokespecial #584                // Method com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$4."<init>":()V
+    3126: checkcast     #442                // class java/util/Comparator
+    3129: invokestatic  #551                // Method kotlin/collections/CollectionsKt.sortedWith:(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    3132: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+    3135: invokestatic  #538                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$canonical:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Lcom/fasterxml/jackson/databind/JsonNode;)Ljava/lang/String;
+    3138: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    3141: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    3144: aload         5
+    3146: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+    3149: invokestatic  #538                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$canonical:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Lcom/fasterxml/jackson/databind/JsonNode;)Ljava/lang/String;
+    3152: invokestatic  #132                // Method kotlin/jvm/internal/Intrinsics.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+    3155: ifne          3179
+    3158: iconst_0
+    3159: istore        7
+    3161: ldc_w         #586                // String independent complete semantic delta mismatch
+    3164: astore        7
+    3166: new           #136                // class java/lang/IllegalArgumentException
+    3169: dup
+    3170: aload         7
+    3172: invokevirtual #139                // Method java/lang/Object.toString:()Ljava/lang/String;
+    3175: invokespecial #141                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+    3178: athrow
+    3179: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    3182: aload_1
+    3183: ldc_w         #588                // String journalGroups
+    3186: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    3189: dup
+    3190: ldc           #157                // String get(...)
+    3192: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    3195: invokestatic  #538                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$canonical:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Lcom/fasterxml/jackson/databind/JsonNode;)Ljava/lang/String;
+    3198: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    3201: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    3204: aload_3
+    3205: checkcast     #68                 // class java/lang/Iterable
+    3208: astore        6
+    3210: astore        26
+    3212: astore        25
+    3214: astore        24
+    3216: iconst_0
+    3217: istore        7
+    3219: aload         6
+    3221: astore        8
+    3223: new           #119                // class java/util/LinkedHashMap
+    3226: dup
+    3227: invokespecial #120                // Method java/util/LinkedHashMap."<init>":()V
+    3230: checkcast     #571                // class java/util/Map
+    3233: astore        9
+    3235: iconst_0
+    3236: istore        10
+    3238: aload         8
+    3240: invokeinterface #74,  1           // InterfaceMethod java/lang/Iterable.iterator:()Ljava/util/Iterator;
+    3245: astore        11
+    3247: aload         11
+    3249: invokeinterface #80,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+    3254: ifeq          3369
+    3257: aload         11
+    3259: invokeinterface #84,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+    3264: astore        12
+    3266: aload         12
+    3268: checkcast     #571                // class java/util/Map
+    3271: astore        13
+    3273: iconst_0
+    3274: istore        14
+    3276: aload         13
+    3278: ldc_w         #590                // String asset
+    3281: invokestatic  #593                // Method kotlin/collections/MapsKt.getValue:(Ljava/util/Map;Ljava/lang/Object;)Ljava/lang/Object;
+    3284: checkcast     #86                 // class java/lang/String
+    3287: astore        15
+    3289: aload         9
+    3291: astore        16
+    3293: aload         15
+    3295: astore        17
+    3297: iconst_0
+    3298: istore        18
+    3300: aload         16
+    3302: aload         17
+    3304: invokeinterface #595,  2          // InterfaceMethod java/util/Map.get:(Ljava/lang/Object;)Ljava/lang/Object;
+    3309: astore        19
+    3311: aload         19
+    3313: ifnonnull     3348
+    3316: iconst_0
+    3317: istore        20
+    3319: new           #122                // class java/util/ArrayList
+    3322: dup
+    3323: invokespecial #123                // Method java/util/ArrayList."<init>":()V
+    3326: checkcast     #113                // class java/util/List
+    3329: astore        20
+    3331: aload         16
+    3333: aload         17
+    3335: aload         20
+    3337: invokeinterface #598,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    3342: pop
+    3343: aload         20
+    3345: goto          3350
+    3348: aload         19
+    3350: nop
+    3351: checkcast     #113                // class java/util/List
+    3354: astore        13
+    3356: aload         13
+    3358: aload         12
+    3360: invokeinterface #599,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+    3365: pop
+    3366: goto          3247
+    3369: aload         9
+    3371: nop
+    3372: astore        27
+    3374: aload         24
+    3376: aload         25
+    3378: aload         26
+    3380: aload         27
+    3382: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+    3385: invokestatic  #538                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$canonical:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Lcom/fasterxml/jackson/databind/JsonNode;)Ljava/lang/String;
+    3388: invokestatic  #132                // Method kotlin/jvm/internal/Intrinsics.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+    3391: ifne          3415
+    3394: iconst_0
+    3395: istore        7
+    3397: ldc_w         #601                // String independent journal mismatch
+    3400: astore        7
+    3402: new           #136                // class java/lang/IllegalArgumentException
+    3405: dup
+    3406: aload         7
+    3408: invokevirtual #139                // Method java/lang/Object.toString:()Ljava/lang/String;
+    3411: invokespecial #141                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+    3414: athrow
+    3415: aload_1
+    3416: ldc_w         #603                // String sequence
+    3419: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    3422: invokevirtual #606                // Method com/fasterxml/jackson/databind/JsonNode.asLong:()J
+    3425: aload_0
+    3426: getfield      #61                 // Field historyRecords:J
+    3429: lconst_1
+    3430: ladd
+    3431: lcmp
+    3432: ifne          3477
+    3435: aload_1
+    3436: ldc_w         #608                // String priorSequence
+    3439: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    3442: invokevirtual #606                // Method com/fasterxml/jackson/databind/JsonNode.asLong:()J
+    3445: aload_0
+    3446: getfield      #61                 // Field historyRecords:J
+    3449: lcmp
+    3450: ifne          3477
+    3453: aload_1
+    3454: ldc_w         #610                // String priorChecksum
+    3457: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    3460: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+    3463: aload_0
+    3464: getfield      #45                 // Field chain:Ljava/lang/String;
+    3467: invokestatic  #132                // Method kotlin/jvm/internal/Intrinsics.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+    3470: ifeq          3477
+    3473: iconst_1
+    3474: goto          3478
+    3477: iconst_0
+    3478: ifne          3498
+    3481: ldc           #134                // String Failed requirement.
+    3483: astore        7
+    3485: new           #136                // class java/lang/IllegalArgumentException
+    3488: dup
+    3489: aload         7
+    3491: invokevirtual #139                // Method java/lang/Object.toString:()Ljava/lang/String;
+    3494: invokespecial #141                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+    3497: athrow
+    3498: aload_1
+    3499: invokevirtual #489                // Method com/fasterxml/jackson/databind/JsonNode.deepCopy:()Lcom/fasterxml/jackson/databind/JsonNode;
+    3502: astore        7
+    3504: aload         7
+    3506: checkcast     #319                // class com/fasterxml/jackson/databind/node/ObjectNode
+    3509: astore        8
+    3511: iconst_0
+    3512: istore        9
+    3514: aload         8
+    3516: ldc_w         #612                // String checksum
+    3519: invokevirtual #615                // Method com/fasterxml/jackson/databind/node/ObjectNode.remove:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    3522: pop
+    3523: aload         7
+    3525: checkcast     #319                // class com/fasterxml/jackson/databind/node/ObjectNode
+    3528: astore        6
+    3530: aload_1
+    3531: ldc_w         #612                // String checksum
+    3534: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    3537: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+    3540: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+    3543: aload         6
+    3545: invokestatic  #340                // Method kotlin/jvm/internal/Intrinsics.checkNotNull:(Ljava/lang/Object;)V
+    3548: aload         6
+    3550: checkcast     #70                 // class com/fasterxml/jackson/databind/JsonNode
+    3553: invokestatic  #618                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$digest:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Lcom/fasterxml/jackson/databind/JsonNode;)Ljava/lang/String;
+    3556: invokestatic  #132                // Method kotlin/jvm/internal/Intrinsics.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+    3559: ifne          3583
+    3562: iconst_0
+    3563: istore        8
+    3565: ldc_w         #620                // String history checksum
+    3568: astore        8
+    3570: new           #136                // class java/lang/IllegalArgumentException
+    3573: dup
+    3574: aload         8
+    3576: invokevirtual #139                // Method java/lang/Object.toString:()Ljava/lang/String;
+    3579: invokespecial #141                // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+    3582: athrow
+    3583: aload_2
+    3584: checkcast     #571                // class java/util/Map
+    3587: astore        7
+    3589: iconst_0
+    3590: istore        8
+    3592: aload         7
+    3594: invokeinterface #575,  1          // InterfaceMethod java/util/Map.entrySet:()Ljava/util/Set;
+    3599: invokeinterface #576,  1          // InterfaceMethod java/util/Set.iterator:()Ljava/util/Iterator;
+    3604: astore        9
+    3606: aload         9
+    3608: invokeinterface #80,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+    3613: ifeq          3766
+    3616: aload         9
+    3618: invokeinterface #84,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+    3623: checkcast     #516                // class java/util/Map$Entry
+    3626: astore        10
+    3628: aload         10
+    3630: astore        11
+    3632: iconst_0
+    3633: istore        12
+    3635: aload         11
+    3637: invokeinterface #527,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+    3642: checkcast     #113                // class java/util/List
+    3645: astore        13
+    3647: aload         11
+    3649: invokeinterface #541,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+    3654: checkcast     #70                 // class com/fasterxml/jackson/databind/JsonNode
+    3657: astore        14
+    3659: aload         13
+    3661: invokeinterface #621,  1          // InterfaceMethod java/util/List.size:()I
+    3666: iconst_1
+    3667: if_icmpne     3677
+    3670: aload_0
+    3671: getfield      #39                 // Field owner:Lcom/fasterxml/jackson/databind/node/ObjectNode;
+    3674: goto          3705
+    3677: aload_0
+    3678: getfield      #39                 // Field owner:Lcom/fasterxml/jackson/databind/node/ObjectNode;
+    3681: aload         13
+    3683: iconst_0
+    3684: invokeinterface #530,  2          // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+    3689: checkcast     #86                 // class java/lang/String
+    3692: invokevirtual #320                // Method com/fasterxml/jackson/databind/node/ObjectNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    3695: dup
+    3696: ldc_w         #623                // String null cannot be cast to non-null type com.fasterxml.jackson.databind.node.ObjectNode
+    3699: invokestatic  #625                // Method kotlin/jvm/internal/Intrinsics.checkNotNull:(Ljava/lang/Object;Ljava/lang/String;)V
+    3702: checkcast     #319                // class com/fasterxml/jackson/databind/node/ObjectNode
+    3705: astore        15
+    3707: aload         14
+    3709: invokevirtual #628                // Method com/fasterxml/jackson/databind/JsonNode.isNull:()Z
+    3712: ifeq          3742
+    3715: aload         13
+    3717: invokeinterface #621,  1          // InterfaceMethod java/util/List.size:()I
+    3722: iconst_1
+    3723: if_icmple     3742
+    3726: aload         15
+    3728: aload         13
+    3730: invokestatic  #632                // Method kotlin/collections/CollectionsKt.last:(Ljava/util/List;)Ljava/lang/Object;
+    3733: checkcast     #86                 // class java/lang/String
+    3736: invokevirtual #615                // Method com/fasterxml/jackson/databind/node/ObjectNode.remove:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    3739: goto          3760
+    3742: aload         15
+    3744: aload         13
+    3746: invokestatic  #632                // Method kotlin/collections/CollectionsKt.last:(Ljava/util/List;)Ljava/lang/Object;
+    3749: checkcast     #86                 // class java/lang/String
+    3752: aload         14
+    3754: invokevirtual #489                // Method com/fasterxml/jackson/databind/JsonNode.deepCopy:()Lcom/fasterxml/jackson/databind/JsonNode;
+    3757: invokevirtual #636                // Method com/fasterxml/jackson/databind/node/ObjectNode.set:(Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)Lcom/fasterxml/jackson/databind/JsonNode;
+    3760: pop
+    3761: nop
+    3762: nop
+    3763: goto          3606
+    3766: nop
+    3767: aload_0
+    3768: getfield      #61                 // Field historyRecords:J
+    3771: lstore        7
+    3773: aload_0
+    3774: lload         7
+    3776: lconst_1
+    3777: ladd
+    3778: putfield      #61                 // Field historyRecords:J
+    3781: aload_0
+    3782: aload_1
+    3783: ldc_w         #612                // String checksum
+    3786: invokevirtual #89                 // Method com/fasterxml/jackson/databind/JsonNode.get:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+    3789: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+    3792: dup
+    3793: ldc_w         #309                // String asText(...)
+    3796: invokestatic  #98                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+    3799: putfield      #45                 // Field chain:Ljava/lang/String;
+    3802: return
+    LineNumberTable:
+      line 86: 6
+      line 86: 13
+      line 89: 14
+      line 89: 24
+      line 91: 25
+      line 92: 34
+      line 93: 68
+      line 929: 111
+      line 93: 149
+      line 929: 172
+      line 930: 176
+      line 94: 177
+      line 95: 259
+      line 95: 260
+      line 95: 326
+      line 96: 328
+      line 97: 362
+      line 931: 393
+      line 97: 431
+      line 931: 465
+      line 932: 469
+      line 99: 473
+      line 933: 529
+      line 99: 567
+      line 933: 585
+      line 934: 589
+      line 100: 590
+      line 100: 653
+      line 102: 665
+      line 103: 700
+      line 104: 731
+      line 105: 796
+      line 106: 848
+      line 107: 907
+      line 108: 959
+      line 935: 985
+      line 108: 988
+      line 108: 991
+      line 109: 1006
+      line 110: 1009
+      line 111: 1020
+      line 111: 1063
+      line 112: 1128
+      line 113: 1209
+      line 114: 1245
+      line 115: 1319
+      line 117: 1336
+      line 118: 1386
+      line 119: 1507
+      line 119: 1557
+      line 120: 1559
+      line 120: 1606
+      line 122: 1637
+      line 122: 1703
+      line 123: 1724
+      line 124: 1789
+      line 125: 1905
+      line 127: 1940
+      line 128: 1968
+      line 936: 1988
+      line 936: 2000
+      line 128: 2003
+      line 129: 2016
+      line 130: 2065
+      line 935: 2081
+      line 130: 2084
+      line 130: 2108
+      line 130: 2110
+      line 131: 2115
+      line 132: 2177
+      line 132: 2194
+      line 133: 2213
+      line 937: 2232
+      line 938: 2251
+      line 133: 2289
+      line 938: 2426
+      line 939: 2442
+      line 937: 2447
+      line 134: 2453
+      line 940: 2457
+      line 940: 2469
+      line 134: 2477
+      line 941: 2481
+      line 942: 2507
+      line 943: 2535
+      line 134: 2549
+      line 943: 2628
+      line 944: 2637
+      line 941: 2642
+      line 134: 2643
+      line 133: 2643
+      line 135: 2645
+      line 135: 2768
+      line 137: 2777
+      line 138: 2789
+      line 945: 2798
+      line 946: 2824
+      line 946: 2836
+      line 947: 2860
+      line 138: 2895
+      line 947: 2949
+      line 948: 2958
+      line 945: 2963
+      line 138: 2964
+      line 139: 2966
+      line 949: 2987
+      line 950: 3013
+      line 951: 3041
+      line 139: 3055
+      line 951: 3060
+      line 952: 3069
+      line 949: 3074
+      line 139: 3080
+      line 953: 3084
+      line 953: 3096
+      line 139: 3099
+      line 140: 3101
+      line 954: 3117
+      line 954: 3129
+      line 140: 3132
+      line 935: 3158
+      line 140: 3161
+      line 140: 3164
+      line 141: 3179
+      line 955: 3219
+      line 956: 3238
+      line 957: 3266
+      line 141: 3276
+      line 957: 3287
+      line 958: 3289
+      line 959: 3300
+      line 960: 3311
+      line 961: 3316
+      line 958: 3319
+      line 961: 3329
+      line 962: 3331
+      line 963: 3343
+      line 965: 3348
+      line 960: 3350
+      line 958: 3351
+      line 966: 3356
+      line 968: 3369
+      line 955: 3371
+      line 141: 3382
+      line 935: 3394
+      line 141: 3397
+      line 141: 3400
+      line 142: 3415
+      line 143: 3498
+      line 935: 3511
+      line 143: 3514
+      line 143: 3523
+      line 143: 3525
+      line 144: 3530
+      line 935: 3562
+      line 144: 3565
+      line 144: 3568
+      line 145: 3583
+      line 969: 3592
+      line 969: 3604
+      line 146: 3659
+      line 147: 3707
+      line 148: 3761
+      line 969: 3762
+      line 970: 3766
+      line 149: 3767
+      line 150: 3802
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+        149      23     9 $i$a$-forEach-FinancialRateProbe$Reference$accept$1   I
+        146      26     8    it   Ljava/lang/String;
+        139      34     7 element$iv   Ljava/lang/Object;
+        111      66     5 $i$f$forEach   I
+        108      69     4 $this$forEach$iv   Ljava/lang/Iterable;
+        431      34    14 $i$a$-forEach-FinancialRateProbe$Reference$accept$2   I
+        428      37    13 account   Ljava/lang/String;
+        421      45    12 element$iv   Ljava/lang/Object;
+        393      77    10 $i$f$forEach   I
+        390      80     9 $this$forEach$iv   Ljava/lang/Iterable;
+        328     142     8 opening   Ljava/math/BigInteger;
+        249     221     6 asset   Ljava/lang/String;
+        259     211     7 suffix   Ljava/lang/String;
+        567      18     9 $i$a$-forEach-FinancialRateProbe$Reference$accept$3   I
+        564      21     8    it   Ljava/lang/String;
+        557      29     7 element$iv   Ljava/lang/Object;
+        529      61     5 $i$f$forEach   I
+        526      64     4 $this$forEach$iv   Ljava/lang/Iterable;
+        988       3    10 $i$a$-require-FinancialRateProbe$Reference$accept$4   I
+       1559      75    15  next   Ljava/math/BigInteger;
+       1494     140    12 field   Ljava/lang/String;
+       1507     127    13 delta   J
+       1988      15    12 $i$f$sortedBy   I
+       1985      18    11 $this$sortedBy$iv   Lkotlin/sequences/Sequence;
+       2084      24    15 $i$a$-apply-FinancialRateProbe$Reference$accept$context$1   I
+       2081      27    14 $this$accept_u24lambda_u246   Lcom/fasterxml/jackson/databind/node/ObjectNode;
+       2289     137    22 $i$a$-filter-FinancialRateProbe$Reference$accept$semanticChanges$1   I
+       2286     140    21    it   Ljava/util/Map$Entry;
+       2279     160    20 element$iv$iv   Ljava/lang/Object;
+       2251     193    18 $i$f$filterTo   I
+       2248     196    16 $this$filterTo$iv$iv   Ljava/lang/Iterable;
+       2248     196    17 destination$iv$iv   Ljava/util/Collection;
+       2232     216    15 $i$f$filter   I
+       2229     219    14 $this$filter$iv   Ljava/lang/Iterable;
+       2457      15    15 $i$f$sortedBy   I
+       2454      18    14 $this$sortedBy$iv   Ljava/lang/Iterable;
+       2549      76    22 $i$a$-map-FinancialRateProbe$Reference$accept$semanticChanges$3   I
+       2546      79    21    it   Ljava/util/Map$Entry;
+       2535      99    20 item$iv$iv   Ljava/lang/Object;
+       2507     132    18 $i$f$mapTo   I
+       2504     135    16 $this$mapTo$iv$iv   Ljava/lang/Iterable;
+       2504     135    17 destination$iv$iv   Ljava/util/Collection;
+       2481     162    15 $i$f$map   I
+       2478     165    14 $this$map$iv   Ljava/lang/Iterable;
+        709    2068     4 input   Lcom/fasterxml/jackson/databind/JsonNode;
+        721    2056     5  kind   Ljava/lang/String;
+        731    2046     6 payload   Lcom/fasterxml/jackson/databind/JsonNode;
+        907    1870     7 execution   Ljava/lang/String;
+        959    1818     8 decision   Ljava/lang/String;
+       1009    1768     9 disposition   Ljava/lang/String;
+       2016     761    10 pairs   Ljava/util/List;
+       2065     712    11 requestDigest   Ljava/lang/String;
+       2115     662    12 context   Lcom/fasterxml/jackson/databind/node/ObjectNode;
+       2645     132    13 semanticChanges   Ljava/util/List;
+       2871      75    13 $i$a$-map-FinancialRateProbe$Reference$accept$expected$1   I
+       2883      63    14     p   Ljava/util/List;
+       2895      51    15 value   Lcom/fasterxml/jackson/databind/JsonNode;
+       2860      95    11 item$iv$iv   Ljava/util/Map$Entry;
+       2824     136     9 $i$f$mapTo   I
+       2821     139     7 $this$mapTo$iv$iv   Ljava/util/Map;
+       2821     139     8 destination$iv$iv   Ljava/util/Collection;
+       2798     166     6 $i$f$map   I
+       2795     169     5 $this$map$iv   Ljava/util/Map;
+       3055       2    14 $i$a$-map-FinancialRateProbe$Reference$accept$actual$1   I
+       3052       5    13    it   Lcom/fasterxml/jackson/databind/JsonNode;
+       3041      25    12 item$iv$iv   Ljava/lang/Object;
+       3013      58    10 $i$f$mapTo   I
+       3010      61     8 $this$mapTo$iv$iv   Ljava/lang/Iterable;
+       3010      61     9 destination$iv$iv   Ljava/util/Collection;
+       2987      88     7 $i$f$map   I
+       2984      91     6 $this$map$iv   Ljava/lang/Iterable;
+       3084      15     7 $i$f$sortedBy   I
+       3081      18     6 $this$sortedBy$iv   Ljava/lang/Iterable;
+       3117      15     7 $i$f$sortedBy   I
+       3114      18     6 $this$sortedBy$iv   Ljava/lang/Iterable;
+       3161       3     7 $i$a$-require-FinancialRateProbe$Reference$accept$6   I
+       3276      11    14 $i$a$-groupBy-FinancialRateProbe$Reference$accept$7   I
+       3273      14    13    it   Ljava/util/Map;
+       3319      10    20 $i$a$-getOrPut-CollectionsKt___CollectionsKt$groupByTo$list$1$iv$iv   I
+       3331      14    20 answer$iv$iv$iv   Ljava/lang/Object;
+       3300      51    18 $i$f$getOrPut   I
+       3311      40    19 value$iv$iv$iv   Ljava/lang/Object;
+       3297      54    16 $this$getOrPut$iv$iv$iv   Ljava/util/Map;
+       3297      54    17 key$iv$iv$iv   Ljava/lang/Object;
+       3289      77    15 key$iv$iv   Ljava/lang/Object;
+       3356      10    13 list$iv$iv   Ljava/util/List;
+       3266     100    12 element$iv$iv   Ljava/lang/Object;
+       3238     133    10 $i$f$groupByTo   I
+       3235     136     8 $this$groupByTo$iv$iv   Ljava/lang/Iterable;
+       3235     136     9 destination$iv$iv   Ljava/util/Map;
+       3219     153     7 $i$f$groupBy   I
+       3216     156     6 $this$groupBy$iv   Ljava/lang/Iterable;
+       3397       3     7 $i$a$-require-FinancialRateProbe$Reference$accept$8   I
+       3514       9     9 $i$a$-apply-FinancialRateProbe$Reference$accept$unsigned$1   I
+       3511      12     8 $this$accept_u24lambda_u2417   Lcom/fasterxml/jackson/databind/node/ObjectNode;
+       3565       3     8 $i$a$-require-FinancialRateProbe$Reference$accept$9   I
+       3707      53    15 parent   Lcom/fasterxml/jackson/databind/node/ObjectNode;
+       3635     127    12 $i$a$-forEach-FinancialRateProbe$Reference$accept$10   I
+       3647     115    13     p   Ljava/util/List;
+       3659     103    14 value   Lcom/fasterxml/jackson/databind/JsonNode;
+       3628     135    10 element$iv   Ljava/util/Map$Entry;
+       3592     175     8 $i$f$forEach   I
+       3589     178     7 $this$forEach$iv   Ljava/util/Map;
+         14    3789     2 writes   Ljava/util/LinkedHashMap;
+         25    3778     3  legs   Ljava/util/List;
+       2966     837     4 expected   Ljava/util/List;
+       3101     702     5 actual   Ljava/util/List;
+       3530     273     6 unsigned   Lcom/fasterxml/jackson/databind/node/ObjectNode;
+          0    3803     0  this   Lcom/reef/platform/calcify/financial/FinancialRateProbe$Reference;
+          0    3803     1 record   Lcom/fasterxml/jackson/databind/JsonNode;
+
+  public final com.fasterxml.jackson.databind.node.ObjectNode businessView();
+    Code:
+       0: aload_0
+       1: getfield      #39                 // Field owner:Lcom/fasterxml/jackson/databind/node/ObjectNode;
+       4: invokevirtual #711                // Method com/fasterxml/jackson/databind/node/ObjectNode.deepCopy:()Lcom/fasterxml/jackson/databind/node/ObjectNode;
+       7: astore_1
+       8: aload_1
+       9: astore_2
+      10: iconst_0
+      11: istore_3
+      12: iconst_5
+      13: anewarray     #86                 // class java/lang/String
+      16: astore        4
+      18: aload         4
+      20: iconst_0
+      21: ldc           #17                 // String policy
+      23: aastore
+      24: aload         4
+      26: iconst_1
+      27: ldc_w         #518                // String historySeq
+      30: aastore
+      31: aload         4
+      33: iconst_2
+      34: ldc_w         #520                // String deliveryCursor
+      37: aastore
+      38: aload         4
+      40: iconst_3
+      41: ldc_w         #522                // String nextDelivery
+      44: aastore
+      45: aload         4
+      47: iconst_4
+      48: ldc_w         #524                // String stagedInputs
+      51: aastore
+      52: aload         4
+      54: invokestatic  #155                // Method kotlin/collections/CollectionsKt.listOf:([Ljava/lang/Object;)Ljava/util/List;
+      57: checkcast     #68                 // class java/lang/Iterable
+      60: astore        4
+      62: iconst_0
+      63: istore        5
+      65: aload         4
+      67: invokeinterface #74,  1           // InterfaceMethod java/lang/Iterable.iterator:()Ljava/util/Iterator;
+      72: astore        6
+      74: aload         6
+      76: invokeinterface #80,  1           // InterfaceMethod java/util/Iterator.hasNext:()Z
+      81: ifeq          114
+      84: aload         6
+      86: invokeinterface #84,  1           // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+      91: astore        7
+      93: aload         7
+      95: checkcast     #86                 // class java/lang/String
+      98: astore        8
+     100: iconst_0
+     101: istore        9
+     103: aload_2
+     104: aload         8
+     106: invokevirtual #615                // Method com/fasterxml/jackson/databind/node/ObjectNode.remove:(Ljava/lang/String;)Lcom/fasterxml/jackson/databind/JsonNode;
+     109: pop
+     110: nop
+     111: goto          74
+     114: nop
+     115: aload_2
+     116: ldc_w         #713                // String dueWork
+     119: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+     122: invokestatic  #717                // Method kotlin/collections/CollectionsKt.emptyList:()Ljava/util/List;
+     125: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+     128: invokevirtual #636                // Method com/fasterxml/jackson/databind/node/ObjectNode.set:(Ljava/lang/String;Lcom/fasterxml/jackson/databind/JsonNode;)Lcom/fasterxml/jackson/databind/JsonNode;
+     131: pop
+     132: nop
+     133: aload_1
+     134: areturn
+    LineNumberTable:
+      line 151: 0
+      line 152: 12
+      line 971: 65
+      line 152: 103
+      line 971: 110
+      line 972: 114
+      line 152: 115
+      line 153: 132
+      line 151: 133
+      line 153: 134
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+        103       7     9 $i$a$-forEach-FinancialRateProbe$Reference$businessView$1$1   I
+        100      10     8    it   Ljava/lang/String;
+         93      18     7 element$iv   Ljava/lang/Object;
+         65      50     5 $i$f$forEach   I
+         62      53     4 $this$forEach$iv   Ljava/lang/Iterable;
+         12     121     3 $i$a$-apply-FinancialRateProbe$Reference$businessView$1   I
+         10     123     2 $this$businessView_u24lambda_u240   Lcom/fasterxml/jackson/databind/node/ObjectNode;
+          0     135     0  this   Lcom/reef/platform/calcify/financial/FinancialRateProbe$Reference;
+
+  private static final void accept$put(java.util.LinkedHashMap<java.util.List<java.lang.String>, com.fasterxml.jackson.databind.JsonNode>, java.lang.String, java.lang.String, com.fasterxml.jackson.databind.JsonNode);
+    Code:
+       0: aload_0
+       1: checkcast     #571                // class java/util/Map
+       4: astore        4
+       6: aload_2
+       7: ifnonnull     17
+      10: aload_1
+      11: invokestatic  #724                // Method kotlin/collections/CollectionsKt.listOf:(Ljava/lang/Object;)Ljava/util/List;
+      14: goto          38
+      17: iconst_2
+      18: anewarray     #86                 // class java/lang/String
+      21: astore        5
+      23: aload         5
+      25: iconst_0
+      26: aload_1
+      27: aastore
+      28: aload         5
+      30: iconst_1
+      31: aload_2
+      32: aastore
+      33: aload         5
+      35: invokestatic  #155                // Method kotlin/collections/CollectionsKt.listOf:([Ljava/lang/Object;)Ljava/util/List;
+      38: aload         4
+      40: swap
+      41: aload_3
+      42: invokeinterface #598,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      47: pop
+      48: return
+    LineNumberTable:
+      line 87: 0
+      line 87: 48
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      49     0 writes   Ljava/util/LinkedHashMap;
+          0      49     1  root   Ljava/lang/String;
+          0      49     2   key   Ljava/lang/String;
+          0      49     3 value   Lcom/fasterxml/jackson/databind/JsonNode;
+
+  private static final void accept$increment(java.util.LinkedHashMap<java.util.List<java.lang.String>, com.fasterxml.jackson.databind.JsonNode>, com.reef.platform.calcify.financial.FinancialRateProbe$Reference, java.lang.String, java.lang.String);
+    Code:
+       0: aload_3
+       1: ifnonnull     11
+       4: aload_2
+       5: invokestatic  #724                // Method kotlin/collections/CollectionsKt.listOf:(Ljava/lang/Object;)Ljava/util/List;
+       8: goto          32
+      11: iconst_2
+      12: anewarray     #86                 // class java/lang/String
+      15: astore        5
+      17: aload         5
+      19: iconst_0
+      20: aload_2
+      21: aastore
+      22: aload         5
+      24: iconst_1
+      25: aload_3
+      26: aastore
+      27: aload         5
+      29: invokestatic  #155                // Method kotlin/collections/CollectionsKt.listOf:([Ljava/lang/Object;)Ljava/util/List;
+      32: astore        4
+      34: aload_0
+      35: checkcast     #571                // class java/util/Map
+      38: aload         4
+      40: getstatic     #31                 // Field com/reef/platform/calcify/financial/FinancialRateProbe.INSTANCE:Lcom/reef/platform/calcify/financial/FinancialRateProbe;
+      43: aload_1
+      44: aload         4
+      46: invokespecial #534                // Method get:(Ljava/util/List;)Lcom/fasterxml/jackson/databind/JsonNode;
+      49: invokevirtual #606                // Method com/fasterxml/jackson/databind/JsonNode.asLong:()J
+      52: lconst_1
+      53: ladd
+      54: invokestatic  #249                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+      57: invokestatic  #222                // Method com/reef/platform/calcify/financial/FinancialRateProbe.access$node:(Lcom/reef/platform/calcify/financial/FinancialRateProbe;Ljava/lang/Object;)Lcom/fasterxml/jackson/databind/JsonNode;
+      60: invokeinterface #598,  3          // InterfaceMethod java/util/Map.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      65: pop
+      66: return
+    LineNumberTable:
+      line 88: 0
+      line 88: 66
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+         34      33     4     p   Ljava/util/List;
+          0      67     0 writes   Ljava/util/LinkedHashMap;
+          0      67     1 this$0   Lcom/reef/platform/calcify/financial/FinancialRateProbe$Reference;
+          0      67     2  root   Ljava/lang/String;
+          0      67     3   key   Ljava/lang/String;
+
+  static void accept$increment$default(java.util.LinkedHashMap, com.reef.platform.calcify.financial.FinancialRateProbe$Reference, java.lang.String, java.lang.String, int, java.lang.Object);
+    Code:
+       0: iload         4
+       2: bipush        8
+       4: iand
+       5: ifeq          10
+       8: aconst_null
+       9: astore_3
+      10: aload_0
+      11: aload_1
+      12: aload_2
+      13: aload_3
+      14: invokestatic  #381                // Method accept$increment:(Ljava/util/LinkedHashMap;Lcom/reef/platform/calcify/financial/FinancialRateProbe$Reference;Ljava/lang/String;Ljava/lang/String;)V
+      17: return
+    LineNumberTable:
+      line 88: 0
+
+  private static final void accept$leg(java.util.List<java.util.Map<java.lang.String, java.lang.String>>, java.lang.String, java.lang.String, java.math.BigInteger);
+    Code:
+       0: aload_0
+       1: iconst_3
+       2: anewarray     #163                // class kotlin/Pair
+       5: astore        4
+       7: aload         4
+       9: iconst_0
+      10: ldc_w         #590                // String asset
+      13: aload_1
+      14: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+      17: aastore
+      18: aload         4
+      20: iconst_1
+      21: ldc_w         #729                // String account
+      24: aload_2
+      25: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+      28: aastore
+      29: aload         4
+      31: iconst_2
+      32: ldc_w         #731                // String amount
+      35: aload_3
+      36: invokevirtual #218                // Method java/math/BigInteger.toString:()Ljava/lang/String;
+      39: invokestatic  #173                // Method kotlin/TuplesKt.to:(Ljava/lang/Object;Ljava/lang/Object;)Lkotlin/Pair;
+      42: aastore
+      43: aload         4
+      45: invokestatic  #356                // Method kotlin/collections/MapsKt.mapOf:([Lkotlin/Pair;)Ljava/util/Map;
+      48: invokeinterface #599,  2          // InterfaceMethod java/util/List.add:(Ljava/lang/Object;)Z
+      53: pop
+      54: return
+    LineNumberTable:
+      line 90: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      55     0  legs   Ljava/util/List;
+          0      55     1 asset   Ljava/lang/String;
+          0      55     2 account   Ljava/lang/String;
+          0      55     3 amount   Ljava/math/BigInteger;
+
+  private static final java.util.List accept$lambda$5(java.util.Map$Entry);
+    Code:
+       0: iconst_2
+       1: anewarray     #86                 // class java/lang/String
+       4: astore_1
+       5: aload_1
+       6: iconst_0
+       7: aload_0
+       8: invokeinterface #527,  1          // InterfaceMethod java/util/Map$Entry.getKey:()Ljava/lang/Object;
+      13: aastore
+      14: aload_1
+      15: iconst_1
+      16: aload_0
+      17: invokeinterface #541,  1          // InterfaceMethod java/util/Map$Entry.getValue:()Ljava/lang/Object;
+      22: checkcast     #70                 // class com/fasterxml/jackson/databind/JsonNode
+      25: invokevirtual #128                // Method com/fasterxml/jackson/databind/JsonNode.asText:()Ljava/lang/String;
+      28: aastore
+      29: aload_1
+      30: invokestatic  #155                // Method kotlin/collections/CollectionsKt.listOf:([Ljava/lang/Object;)Ljava/util/List;
+      33: areturn
+    LineNumberTable:
+      line 128: 0
+    LocalVariableTable:
+      Start  Length  Slot  Name   Signature
+          0      34     0    it   Ljava/util/Map$Entry;
+}

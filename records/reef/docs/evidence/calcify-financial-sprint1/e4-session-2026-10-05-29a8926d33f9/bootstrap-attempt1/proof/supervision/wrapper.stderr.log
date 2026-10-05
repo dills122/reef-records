@@ -1,0 +1,3 @@
+Exception in thread "main" java.lang.IllegalArgumentException: BOOTSTRAP_CAPABILITY_DRIFT field=maxHeapBytes
+	at com.reef.platform.calcify.financial.FinancialRateProbe.bootstrapGuard$platform_runtime_test(FinancialRateProbe.kt:437)
+	at com.reef.platform.calcify.financial.FinancialRateProbe.main(FinancialRateProbe.kt:641)

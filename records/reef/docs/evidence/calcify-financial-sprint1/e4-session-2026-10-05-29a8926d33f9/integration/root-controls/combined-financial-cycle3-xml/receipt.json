@@ -1,0 +1,21 @@
+{
+  "counts": {
+    "tests": 97,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "files": [
+    "TEST-com.reef.platform.calcify.financial.FinancialBrokerProbeTest.xml",
+    "TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml",
+    "TEST-com.reef.platform.calcify.financial.FinancialBootstrapProbeTest.xml",
+    "TEST-com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest.xml",
+    "TEST-com.reef.platform.calcify.financial.FinancialPartitionCutTest.xml",
+    "TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+    "TEST-com.reef.platform.calcify.financial.FinancialHeapGuardTest.xml",
+    "TEST-com.reef.platform.calcify.financial.FinancialAckJournalTest.xml",
+    "TEST-com.reef.platform.calcify.financial.FinancialCommittedCutTest.xml"
+  ],
+  "sourceStable": true,
+  "sourceFreeze": "review-preparation/source-frozen-cycle3.json"
+}

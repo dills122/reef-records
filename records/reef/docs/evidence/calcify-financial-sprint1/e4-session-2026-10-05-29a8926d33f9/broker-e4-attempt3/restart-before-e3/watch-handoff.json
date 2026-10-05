@@ -1,0 +1,12 @@
+{
+  "accepted": true,
+  "strictFirstSamplePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/e3-current-candidate/resource-samples.jsonl",
+  "strictFirstSampleSha256": "e15a7f6f06b50d98c4565522a5c902fe6072d72b540a6d1fea817bb15689f9d0",
+  "observedSampledAtMs": 70404130,
+  "ownedIds": [
+    "45a7adb373fa7914cc16a1d58f4dd44a3d811259e7c097c119ee725129f2c893",
+    "5226066cada82643c4333341a25db1a50674d02574e8d3d1deb5e1dd89a65c54",
+    "e98481cf469c0cabac43873dfb732fac89f2c4a912e02604a2df888d05e77149"
+  ],
+  "scope": "Root observed actual strict supervisor sample exact3 after Ready code acceptance; watcher may relinquish to live supervisor75051"
+}

@@ -1,0 +1,13 @@
+{
+  "accepted": true,
+  "utc": "2026-10-05T18:25:28.900Z",
+  "strictSupervisorSessionId": 24401,
+  "sampleUtc": "2026-10-05T18:25:25.681Z",
+  "sampleSha256": "7257128f76b8923cb0125924295651147672bff98d3eb1954c31aeb2235a5d4b",
+  "sampledAtMs": 75159916,
+  "nowMs": 75163275,
+  "freshnessMs": 3359,
+  "projectAllocatedBytes": 5295767552,
+  "guestFreeBytes": 91936423936,
+  "scope": "Actual fresh strict diagnostic monitor validated; previous bounded watch may close"
+}

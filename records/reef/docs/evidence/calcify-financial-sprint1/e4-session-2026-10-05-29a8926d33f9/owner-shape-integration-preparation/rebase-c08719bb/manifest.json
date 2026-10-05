@@ -1,0 +1,37 @@
+{
+  "status": "PREPARED_NOT_APPLIED_NOT_COMPILED_NOT_RUN",
+  "baseRateProbeSha256": "c08719bb0f179aac6538ee09c6d9041432264ed3f8ebbe5361668a54246c724e",
+  "expectedIntegratedRateProbeSha256": "92fb6924c67085f7ab8e492209f692cabff2e20f2c99cb6a97c31869aeaa67d1",
+  "patchHunks": 6,
+  "files": {
+    "FinancialCanonicalLeafOwner.kt": "3406ede4cc3f8d605e4fcf5d8e047b941d35bc1502b21fd483b13fc415e7bcb7",
+    "FinancialCanonicalLeafOwnerTest.kt": "34ac8e67dc33421e055c3b2622eb093e6b3d603ec3ea23b0b99dce9c7d558378",
+    "FinancialRateReferenceTest.kt": "5bb7d0e24525d9bb505478f361dcac6fcf4e89ae5477b5e2ddd6f45dbedabf12",
+    "attempt-1-rebase-assertion-failure.json": "49206ae4212da1132de803321d2e6f2c209bfc1a4bce0813c15ea6db063e3197",
+    "baseline-FinancialRateProbe.kt": "c08719bb0f179aac6538ee09c6d9041432264ed3f8ebbe5361668a54246c724e",
+    "expected-FinancialRateProbe.kt": "92fb6924c67085f7ab8e492209f692cabff2e20f2c99cb6a97c31869aeaa67d1",
+    "reference-integration.patch": "b0fedc692d0bb7670acd109eb3aaad0bb4237b177c1d6ebe1ad15bb02f30d5bd"
+  },
+  "preservedCurrentFacts": [
+    "validateBootstrapActivation numeric2101history count",
+    "activation-attempt.json CREATE_NEW raw receipt",
+    "current numeric-wrapper/callback corrections outside owner hunks"
+  ],
+  "scenarioPreconditions": {
+    "livePaired": {
+      "sampleTrades": 1000,
+      "pendingSample": 100,
+      "agedIdentities": 0,
+      "sourceActions": 2100,
+      "historyRecords": 2101,
+      "genesisBalances": {
+        "buyerCash": "11000000000",
+        "sellerCash": "0",
+        "buyerShares": "0",
+        "sellerShares": "1100"
+      },
+      "identity": "financial-e4/hot/runId=e4/venue/ACME; timed0..999 CAPTURE+SETTLE thenpending0..99 CAPTURE; exactpolicybytes fixed; no topicUUID inside businessinput"
+    },
+    "draftJUnit": "boundedIDs andlargeropening; compare exact ownKernel/Oracle, do not claim liveSHA equal"
+  }
+}

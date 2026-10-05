@@ -1,0 +1,3 @@
+20b3ead90e2077f6b662c1e9dea39ab5124bb11ffc3bbae4f4f245d3bc4f27b0  scripts/dev/calcify-financial/bootstrap-calibration.mjs
+56fc72693ae7a5fa7035da05f8d9226b1549003700068b0d32d36d8fcda1b10b  scripts/dev/calcify-financial/bootstrap-calibration.test.mjs
+c067b36d4551f279a98e15029081374c4b84a88643857a666699bfce19d9e24e  scripts/dev/calcify-financial/rate-proof.mjs

@@ -1,0 +1,9 @@
+file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/restart-before-bootstrap/restart-watch.mjs:12
+const sleep=ms=>new Promise(r=>setTimeout(r,ms)),assert=(value,message)=>{if(!value)throw Error(message);};
+                                                                                          ^
+
+Error: broker stopped after startup or startup timeout
+    at assert (file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/restart-before-bootstrap/restart-watch.mjs:12:91)
+    at file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/restart-before-bootstrap/restart-watch.mjs:76:16
+
+Node.js v22.22.1

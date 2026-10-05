@@ -1,0 +1,5 @@
+{
+  "error": "Root assumed nonexistent bootstrap.assessment.json; actual raw cleanup inspect already wrote/stopped3 verified; runtime24401success unaffected",
+  "status": "SETUP_RECEIPT_PATH_ERROR",
+  "preservedRawCleanup": true
+}

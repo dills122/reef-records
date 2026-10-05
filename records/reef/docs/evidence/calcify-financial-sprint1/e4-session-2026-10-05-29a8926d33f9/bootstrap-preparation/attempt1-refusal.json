@@ -1,0 +1,17 @@
+{
+  "schema": "calcify-bootstrap-refusal-v1",
+  "utc": "2026-10-05T15:48:05.093162+00:00",
+  "attempt": 1,
+  "verdict": "REFUSED_BEFORE_WORKLOAD",
+  "cliExitCode": 1,
+  "normalizedCapabilityDifferencesIgnoringUsedHeap": {},
+  "actualMaxHeapBytes": 805306368,
+  "frozenMaxHeapBytes": 805306368,
+  "cause": "JVM raw parsed numeric subtype vs in-memory LongNode capability equality; research pending",
+  "sourceFrozen": "review-preparation/source-frozen-cycle3.json",
+  "payloadWorkloadStarted": false,
+  "economicInputs": 0,
+  "rawCapabilityReceiptSha256": "6698f012a52e92945657546391572b98c639571c4640524db2473dfc57c81803",
+  "rawWrapperErrorSha256": "9994435cd9ba138b1d7b42961db60ad87785b3c3899b84fabd92c9da12fb7b17",
+  "next": "Research before Attempt2 minimal source fix, fresh review and currentcandidate49 requalification required"
+}

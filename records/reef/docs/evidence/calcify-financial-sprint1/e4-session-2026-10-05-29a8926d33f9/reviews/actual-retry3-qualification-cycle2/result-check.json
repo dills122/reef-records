@@ -1,0 +1,589 @@
+{
+  "schema": "independent-actual-retry3-result-check-v1",
+  "reviewInstance": "2of3",
+  "bootstrapSha256": "12ff77ea79e806bcc18abf76fc676cf9ccf4f54c8c0b7b2afe082503bf127514",
+  "candidateSha256": "709dc3a7fe61df4acffae4fa3e16b260989ac4197f7826578fcfdee1bea514bc",
+  "resultSha256": "92d34552fd3474f4c8260eadb531e5d4cf7ef891a504384b18d1104f31d59afb",
+  "final": {
+    "offered": 1000,
+    "callbackSuccess": 1000,
+    "admitted": 1000,
+    "decided": 1000,
+    "settled": 1000,
+    "pending": 0
+  },
+  "parentProcessId": 29683,
+  "childProcessId": 29934,
+  "activation": {
+    "ownerSha256": "96da35188859915ebb3061691644e114021e8eb033e2f8865065fae4b7901db1",
+    "historyChecksum": "27d2d99c876edc961958133c9a9317a2baa7b12c78efd8a589af92c2b20ab5ae",
+    "historyRecords": 2101,
+    "ordinal": 2099,
+    "offset": 2099
+  },
+  "parity": {
+    "ownerSha256": "96da35188859915ebb3061691644e114021e8eb033e2f8865065fae4b7901db1",
+    "historyChecksum": "27d2d99c876edc961958133c9a9317a2baa7b12c78efd8a589af92c2b20ab5ae",
+    "historyRecords": 2101,
+    "sourceUuid": "YjGXHkb4RXm-JR0SAQcqwA",
+    "readCommitted": true,
+    "independentCompleteDeltas": true
+  },
+  "resultOnlyReplay": {
+    "records": 2101,
+    "inputs": 2100,
+    "bytes": 6007761,
+    "elapsedMs": 1807,
+    "committedResultOffsetExclusive": 2106,
+    "ownerSha256": "96da35188859915ebb3061691644e114021e8eb033e2f8865065fae4b7901db1",
+    "historyChecksum": "27d2d99c876edc961958133c9a9317a2baa7b12c78efd8a589af92c2b20ab5ae",
+    "sourceUuid": "YjGXHkb4RXm-JR0SAQcqwA",
+    "readCommitted": true,
+    "completeCommittedCut": true
+  },
+  "ackJournal": {
+    "schema": "financial-ack-journal-v1",
+    "directory": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/journal",
+    "scope": {
+      "runId": "financial-s1-e4-bootstrap-attempt3",
+      "topic": "financial-s1-e4-bootstrap-attempt3-input",
+      "topicUuid": "YjGXHkb4RXm-JR0SAQcqwA",
+      "partition": 0,
+      "domain": "hot"
+    },
+    "publishedMembers": 2100,
+    "recoveredMembers": 0,
+    "queueCapacity": 16384,
+    "queueSize": 0,
+    "batchSize": 256,
+    "batchMillis": 10,
+    "maxPayloadBytes": 1024,
+    "maxFrameBytes": 4096,
+    "maxAggregateBytes": 33554432,
+    "logicalBytes": 2379477,
+    "dataSha256": "e4a67ee37d2c5147bb1d61b88195616aeaaa5fdeb2463b584322501d81aa3071",
+    "publicationSha256": "8f698dcb09a6655d0a1e61811b37c7a6d8216413f8e9d189b1e061466237e09a",
+    "publicationWitnessSha256": "8f698dcb09a6655d0a1e61811b37c7a6d8216413f8e9d189b1e061466237e09a",
+    "forcesPerBatch": 4,
+    "liveForcedBatches": 9,
+    "liveForceElapsedNanos": 166906005,
+    "liveLastPublicationForceNano": 70328249128875,
+    "liveClockScope": "financial-s1-e4-bootstrap-attempt3:29683:8a32461b-7654-4d9c-843a-ada6de64618f",
+    "controllerAdmissionRecovery": "unknown; no source-derived timestamps",
+    "recoveryReceipt": {}
+  },
+  "journalHashes": {
+    "members.bin": "e4a67ee37d2c5147bb1d61b88195616aeaaa5fdeb2463b584322501d81aa3071",
+    "publications.bin": "8f698dcb09a6655d0a1e61811b37c7a6d8216413f8e9d189b1e061466237e09a",
+    "publication-witness.bin": "8f698dcb09a6655d0a1e61811b37c7a6d8216413f8e9d189b1e061466237e09a"
+  },
+  "heapObservation": {
+    "schema": "financial-bootstrap-heap-observation-v1",
+    "guardOutcome": "PASS_SAMPLED",
+    "actualMaxHeapBytes": 805306368,
+    "admissionLimitBytes": 644245094,
+    "estimatedHeapBytes": null,
+    "heapPeakBytes": 198005296,
+    "baselineObservations": [
+      {
+        "stage": "before-setup",
+        "sampledAtNano": 70319173094083,
+        "usedHeapBytes": 53017504,
+        "maxHeapBytes": 805306368
+      },
+      {
+        "stage": "warmed-before-aging",
+        "sampledAtNano": 70322859665875,
+        "usedHeapBytes": 51335208,
+        "maxHeapBytes": 805306368
+      },
+      {
+        "stage": "producer-warmed-before-aging",
+        "sampledAtNano": 70323341567750,
+        "usedHeapBytes": 60772392,
+        "maxHeapBytes": 805306368
+      }
+    ],
+    "pollMillis": 250,
+    "maxSampleAgeNanos": 5000000000,
+    "sampled": true,
+    "limitation": "Sudden allocation may outrun sampled protection; native/RSS memory unbounded; no OOM guarantee",
+    "purpose": "EMPIRICAL_BOUNDED_DIAGNOSTIC",
+    "heapConservativeBound": false,
+    "preloadOperationalCeilingBytes": null,
+    "reportedPeakScope": "Sampled through result assembly snapshot; final serialization and staged writes excluded"
+  },
+  "recoveryHeapObservation": {
+    "schema": "financial-bootstrap-heap-observation-v1",
+    "guardOutcome": "PASS_SAMPLED",
+    "actualMaxHeapBytes": 805306368,
+    "admissionLimitBytes": 644245094,
+    "estimatedHeapBytes": null,
+    "heapPeakBytes": 179424816,
+    "baselineObservations": [
+      {
+        "stage": "before-setup",
+        "sampledAtNano": 70332840935375,
+        "usedHeapBytes": 52770360,
+        "maxHeapBytes": 805306368
+      }
+    ],
+    "pollMillis": 250,
+    "maxSampleAgeNanos": 5000000000,
+    "sampled": true,
+    "limitation": "Sudden allocation may outrun sampled protection; native/RSS memory unbounded; no OOM guarantee",
+    "purpose": "EMPIRICAL_BOUNDED_DIAGNOSTIC",
+    "heapConservativeBound": false,
+    "preloadOperationalCeilingBytes": null,
+    "reportedPeakScope": "Sampled through result assembly snapshot; final serialization and staged writes excluded"
+  },
+  "physicalCheckpoints": [
+    {
+      "stage": "warmed",
+      "logicalReplicaBytes": 1395,
+      "brokerAllocatedBytes": 5254402048,
+      "localAllocatedBytes": 327680,
+      "localCategoryAllocatedBytes": {
+        "localStore": {
+          "status": "measured",
+          "allocatedBytes": 36864
+        },
+        "controllerJournal": {
+          "status": "measured",
+          "allocatedBytes": 4096
+        },
+        "proof": {
+          "status": "measured",
+          "allocatedBytes": 286720
+        }
+      },
+      "startedAtMs": 71842807,
+      "completedAtMs": 71843060
+    },
+    {
+      "stage": "before-settled",
+      "logicalReplicaBytes": 1395,
+      "brokerAllocatedBytes": 5254402048,
+      "localAllocatedBytes": 761856,
+      "localCategoryAllocatedBytes": {
+        "localStore": {
+          "status": "measured",
+          "allocatedBytes": 36864
+        },
+        "controllerJournal": {
+          "status": "measured",
+          "allocatedBytes": 4096
+        },
+        "proof": {
+          "status": "measured",
+          "allocatedBytes": 720896
+        }
+      },
+      "startedAtMs": 71843349,
+      "completedAtMs": 71843537
+    },
+    {
+      "stage": "after-settled",
+      "logicalReplicaBytes": 52996536,
+      "brokerAllocatedBytes": 5279195136,
+      "localAllocatedBytes": 11735040,
+      "localCategoryAllocatedBytes": {
+        "localStore": {
+          "status": "measured",
+          "allocatedBytes": 36864
+        },
+        "controllerJournal": {
+          "status": "measured",
+          "allocatedBytes": 3194880
+        },
+        "proof": {
+          "status": "measured",
+          "allocatedBytes": 8503296
+        }
+      },
+      "startedAtMs": 71847745,
+      "completedAtMs": 71847944
+    },
+    {
+      "stage": "after-pending",
+      "logicalReplicaBytes": 55444131,
+      "brokerAllocatedBytes": 5279195136,
+      "localAllocatedBytes": 12025856,
+      "localCategoryAllocatedBytes": {
+        "localStore": {
+          "status": "measured",
+          "allocatedBytes": 36864
+        },
+        "controllerJournal": {
+          "status": "measured",
+          "allocatedBytes": 3207168
+        },
+        "proof": {
+          "status": "measured",
+          "allocatedBytes": 8781824
+        }
+      },
+      "startedAtMs": 71849180,
+      "completedAtMs": 71849376
+    },
+    {
+      "stage": "workers-closed",
+      "logicalReplicaBytes": 54013142,
+      "brokerAllocatedBytes": 5278420992,
+      "localAllocatedBytes": 21438464,
+      "localCategoryAllocatedBytes": {
+        "localStore": {
+          "status": "measured",
+          "allocatedBytes": 9170944
+        },
+        "controllerJournal": {
+          "status": "measured",
+          "allocatedBytes": 3207168
+        },
+        "proof": {
+          "status": "measured",
+          "allocatedBytes": 9060352
+        }
+      },
+      "startedAtMs": 71851707,
+      "completedAtMs": 71851905
+    },
+    {
+      "stage": "after-managed-restart",
+      "logicalReplicaBytes": 51117692,
+      "brokerAllocatedBytes": 5276856320,
+      "localAllocatedBytes": 23433216,
+      "localCategoryAllocatedBytes": {
+        "localStore": {
+          "status": "measured",
+          "allocatedBytes": 9183232
+        },
+        "controllerJournal": {
+          "status": "measured",
+          "allocatedBytes": 3207168
+        },
+        "proof": {
+          "status": "measured",
+          "allocatedBytes": 11042816
+        }
+      },
+      "startedAtMs": 71886251,
+      "completedAtMs": 71886441
+    },
+    {
+      "stage": "after-result-replay",
+      "logicalReplicaBytes": 51117692,
+      "brokerAllocatedBytes": 5276856320,
+      "localAllocatedBytes": 23711744,
+      "localCategoryAllocatedBytes": {
+        "localStore": {
+          "status": "measured",
+          "allocatedBytes": 9183232
+        },
+        "controllerJournal": {
+          "status": "measured",
+          "allocatedBytes": 3207168
+        },
+        "proof": {
+          "status": "measured",
+          "allocatedBytes": 11321344
+        }
+      },
+      "startedAtMs": 71888374,
+      "completedAtMs": 71888567
+    }
+  ],
+  "assessment": {
+    "schema": "financial-bootstrap-assessment-v1",
+    "status": "VALIDATED_BOUNDED_DIAGNOSTIC",
+    "bootstrapSha256": "12ff77ea79e806bcc18abf76fc676cf9ccf4f54c8c0b7b2afe082503bf127514",
+    "candidateSha256": "709dc3a7fe61df4acffae4fa3e16b260989ac4197f7826578fcfdee1bea514bc",
+    "capacityQualification": false,
+    "heapConservativeBound": false,
+    "encodedEvidence": {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/proof/encoded-records.bin",
+      "bytes": 6784151,
+      "sha256": "8ab3811b267081c13820952efaacf48dae2df24c692b825c0c8782f9893050f5"
+    },
+    "physicalRawBytes": 1942459,
+    "physicalDeltas": [
+      {
+        "fromStage": "warmed",
+        "toStage": "before-settled",
+        "schema": "calcify-physical-delta-v1",
+        "manifestSha256": "6cf2e705dab376b8bee6f65295a2551c8fc56c7162de5b6748afbd687790ed4c",
+        "window": {
+          "startedAtMs": 71842807,
+          "completedAtMs": 71843537,
+          "clockScope": "host-monotonic-ms"
+        },
+        "broker": {
+          "baselineBytes": 5254402048,
+          "finalBytes": 5254402048,
+          "deltaBytes": 0,
+          "direction": "unchanged",
+          "costPerTradeBytes": null
+        },
+        "local": {
+          "baselineBytes": 327680,
+          "finalBytes": 761856,
+          "deltaBytes": 434176,
+          "direction": "growth",
+          "costPerTradeBytes": null
+        },
+        "logicalReplica": {
+          "baselineBytes": 1395,
+          "finalBytes": 1395,
+          "deltaBytes": 0,
+          "direction": "unchanged",
+          "costPerTradeBytes": null
+        },
+        "categories": {
+          "source": {
+            "status": "unknown",
+            "deltaBytes": null
+          },
+          "changelog": {
+            "status": "unknown",
+            "deltaBytes": null
+          },
+          "output": {
+            "status": "unknown",
+            "deltaBytes": null
+          }
+        }
+      },
+      {
+        "fromStage": "before-settled",
+        "toStage": "after-settled",
+        "schema": "calcify-physical-delta-v1",
+        "manifestSha256": "6cf2e705dab376b8bee6f65295a2551c8fc56c7162de5b6748afbd687790ed4c",
+        "window": {
+          "startedAtMs": 71843349,
+          "completedAtMs": 71847944,
+          "clockScope": "host-monotonic-ms"
+        },
+        "broker": {
+          "baselineBytes": 5254402048,
+          "finalBytes": 5279195136,
+          "deltaBytes": 24793088,
+          "direction": "growth",
+          "costPerTradeBytes": null
+        },
+        "local": {
+          "baselineBytes": 761856,
+          "finalBytes": 11735040,
+          "deltaBytes": 10973184,
+          "direction": "growth",
+          "costPerTradeBytes": null
+        },
+        "logicalReplica": {
+          "baselineBytes": 1395,
+          "finalBytes": 52996536,
+          "deltaBytes": 52995141,
+          "direction": "growth",
+          "costPerTradeBytes": null
+        },
+        "categories": {
+          "source": {
+            "status": "unknown",
+            "deltaBytes": null
+          },
+          "changelog": {
+            "status": "unknown",
+            "deltaBytes": null
+          },
+          "output": {
+            "status": "unknown",
+            "deltaBytes": null
+          }
+        }
+      },
+      {
+        "fromStage": "after-settled",
+        "toStage": "after-pending",
+        "schema": "calcify-physical-delta-v1",
+        "manifestSha256": "6cf2e705dab376b8bee6f65295a2551c8fc56c7162de5b6748afbd687790ed4c",
+        "window": {
+          "startedAtMs": 71847745,
+          "completedAtMs": 71849376,
+          "clockScope": "host-monotonic-ms"
+        },
+        "broker": {
+          "baselineBytes": 5279195136,
+          "finalBytes": 5279195136,
+          "deltaBytes": 0,
+          "direction": "unchanged",
+          "costPerTradeBytes": null
+        },
+        "local": {
+          "baselineBytes": 11735040,
+          "finalBytes": 12025856,
+          "deltaBytes": 290816,
+          "direction": "growth",
+          "costPerTradeBytes": null
+        },
+        "logicalReplica": {
+          "baselineBytes": 52996536,
+          "finalBytes": 55444131,
+          "deltaBytes": 2447595,
+          "direction": "growth",
+          "costPerTradeBytes": null
+        },
+        "categories": {
+          "source": {
+            "status": "unknown",
+            "deltaBytes": null
+          },
+          "changelog": {
+            "status": "unknown",
+            "deltaBytes": null
+          },
+          "output": {
+            "status": "unknown",
+            "deltaBytes": null
+          }
+        }
+      },
+      {
+        "fromStage": "after-pending",
+        "toStage": "workers-closed",
+        "schema": "calcify-physical-delta-v1",
+        "manifestSha256": "6cf2e705dab376b8bee6f65295a2551c8fc56c7162de5b6748afbd687790ed4c",
+        "window": {
+          "startedAtMs": 71849180,
+          "completedAtMs": 71851905,
+          "clockScope": "host-monotonic-ms"
+        },
+        "broker": {
+          "baselineBytes": 5279195136,
+          "finalBytes": 5278420992,
+          "deltaBytes": -774144,
+          "direction": "reclamation",
+          "costPerTradeBytes": null
+        },
+        "local": {
+          "baselineBytes": 12025856,
+          "finalBytes": 21438464,
+          "deltaBytes": 9412608,
+          "direction": "growth",
+          "costPerTradeBytes": null
+        },
+        "logicalReplica": {
+          "baselineBytes": 55444131,
+          "finalBytes": 54013142,
+          "deltaBytes": -1430989,
+          "direction": "reclamation",
+          "costPerTradeBytes": null
+        },
+        "categories": {
+          "source": {
+            "status": "unknown",
+            "deltaBytes": null
+          },
+          "changelog": {
+            "status": "unknown",
+            "deltaBytes": null
+          },
+          "output": {
+            "status": "unknown",
+            "deltaBytes": null
+          }
+        }
+      },
+      {
+        "fromStage": "workers-closed",
+        "toStage": "after-managed-restart",
+        "schema": "calcify-physical-delta-v1",
+        "manifestSha256": "6cf2e705dab376b8bee6f65295a2551c8fc56c7162de5b6748afbd687790ed4c",
+        "window": {
+          "startedAtMs": 71851707,
+          "completedAtMs": 71886441,
+          "clockScope": "host-monotonic-ms"
+        },
+        "broker": {
+          "baselineBytes": 5278420992,
+          "finalBytes": 5276856320,
+          "deltaBytes": -1564672,
+          "direction": "reclamation",
+          "costPerTradeBytes": null
+        },
+        "local": {
+          "baselineBytes": 21438464,
+          "finalBytes": 23433216,
+          "deltaBytes": 1994752,
+          "direction": "growth",
+          "costPerTradeBytes": null
+        },
+        "logicalReplica": {
+          "baselineBytes": 54013142,
+          "finalBytes": 51117692,
+          "deltaBytes": -2895450,
+          "direction": "reclamation",
+          "costPerTradeBytes": null
+        },
+        "categories": {
+          "source": {
+            "status": "unknown",
+            "deltaBytes": null
+          },
+          "changelog": {
+            "status": "unknown",
+            "deltaBytes": null
+          },
+          "output": {
+            "status": "unknown",
+            "deltaBytes": null
+          }
+        }
+      },
+      {
+        "fromStage": "after-managed-restart",
+        "toStage": "after-result-replay",
+        "schema": "calcify-physical-delta-v1",
+        "manifestSha256": "6cf2e705dab376b8bee6f65295a2551c8fc56c7162de5b6748afbd687790ed4c",
+        "window": {
+          "startedAtMs": 71886251,
+          "completedAtMs": 71888567,
+          "clockScope": "host-monotonic-ms"
+        },
+        "broker": {
+          "baselineBytes": 5276856320,
+          "finalBytes": 5276856320,
+          "deltaBytes": 0,
+          "direction": "unchanged",
+          "costPerTradeBytes": null
+        },
+        "local": {
+          "baselineBytes": 23433216,
+          "finalBytes": 23711744,
+          "deltaBytes": 278528,
+          "direction": "growth",
+          "costPerTradeBytes": null
+        },
+        "logicalReplica": {
+          "baselineBytes": 51117692,
+          "finalBytes": 51117692,
+          "deltaBytes": 0,
+          "direction": "unchanged",
+          "costPerTradeBytes": null
+        },
+        "categories": {
+          "source": {
+            "status": "unknown",
+            "deltaBytes": null
+          },
+          "changelog": {
+            "status": "unknown",
+            "deltaBytes": null
+          },
+          "output": {
+            "status": "unknown",
+            "deltaBytes": null
+          }
+        }
+      }
+    ]
+  },
+  "pass": true
+}

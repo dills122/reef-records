@@ -1,0 +1,6 @@
+{
+  "pass": true,
+  "frozenInputs": 13,
+  "bootstrapSha256": "db06b9b3f90f6f54c88b3b6735e236aeaa5cc7a54a343640ae55aec3bef7afc1",
+  "scope": "Read-only actual frozen evidence gate; no broker or JVM operation"
+}

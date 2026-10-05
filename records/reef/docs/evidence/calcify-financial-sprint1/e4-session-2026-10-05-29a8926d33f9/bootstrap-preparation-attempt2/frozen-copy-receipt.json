@@ -1,0 +1,58 @@
+{
+  "exactFrozenCopies": [
+    {
+      "name": "bootstrap-candidate.json",
+      "sha256": "9b503524ed344c2fb91e1dfdaa0ceb3c6ed9a04edd1c9f05774454431079e724"
+    },
+    {
+      "name": "bootstrap-review.json",
+      "sha256": "84f67a081a2672be598d551aab3253d3b53466cfbf3ce8dc0f2fb41afc16c205"
+    },
+    {
+      "name": "bootstrap-attempt2-review-report.md",
+      "sha256": "740ac26f10aba45ab99d1ba2f47097d69bdde5abf83d9ffa82a9932f76c49fe4"
+    },
+    {
+      "name": "capability.json",
+      "sha256": "56063a805c4502907fc2bc421f362811dc219bd33a69786e09f4b413b7312efb"
+    },
+    {
+      "name": "bootstrap-fixtures.json",
+      "sha256": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d"
+    },
+    {
+      "name": "e3-current-proof-manifest.json",
+      "sha256": "980b809ac4aaba0778833e075c5c837eec84791c28ef13e2b03f7f20a1786f11"
+    },
+    {
+      "name": "e3-current-correctness.json",
+      "sha256": "3e04880479ec134a88d96b603cb39bae16fb95bd536a5ddf4dcfcf4d4cce1ea5"
+    },
+    {
+      "name": "e3-current-outer-closure.json",
+      "sha256": "70f0b02db8d513eddf6eb85c7b1bf5190ad4b967cd39f33bafd235ba5967b356"
+    },
+    {
+      "name": "e3-closed-confirmation.json",
+      "sha256": "1db51d7a85aa6cfb087c14d3212fbf2af742e16c524ba0fb9c7e44726e68fe75"
+    },
+    {
+      "name": "e3-lossless-package-verification.json",
+      "sha256": "1d0412a095c02f58583f26d96eb3061dc7ebe6f39bc247e69519bc04ae6af549"
+    },
+    {
+      "name": "bootstrap-request.json",
+      "sha256": "c9f021b183f8591d046a8ed55b8250cec7f72f2b2229e062665b96fdf1384d66"
+    },
+    {
+      "name": "bootstrap-supervisor.json",
+      "sha256": "f003dbc6de01868a6f06a3a8248ef67d220b0ace4963469d54bb1f9e1110da0f"
+    },
+    {
+      "name": "bootstrap-adapter.json",
+      "sha256": "7744fcb6a33010bdcf9515af1183e76d64a01771df922765c9a7516b73a43269"
+    }
+  ],
+  "configNotMutated": true,
+  "noWorkloadExecuted": true
+}
