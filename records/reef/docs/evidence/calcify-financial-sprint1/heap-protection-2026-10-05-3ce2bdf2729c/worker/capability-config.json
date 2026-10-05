@@ -1,0 +1,12 @@
+{
+  "policy": {
+    "kernel": "e1-gross-v1",
+    "schema": "e1-v1",
+    "policy": "gross-p1",
+    "reference": "assets-r1",
+    "rounding": "EXACT",
+    "fees": "NONE",
+    "reservation": "UNRESERVED"
+  },
+  "stateDir": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-protection-2026-10-05/worker/must-not-create-capability-state"
+}

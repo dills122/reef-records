@@ -1,0 +1,8 @@
+Exception in thread "main" java.lang.IllegalStateException: heap protection refused stage=before-setup
+	at com.reef.platform.calcify.financial.FinancialHeapGuard.checkpoint(FinancialHeapGuard.kt:110)
+	at com.reef.platform.calcify.financial.FinancialHeapGuard.baseline(FinancialHeapGuard.kt:122)
+	at com.reef.platform.calcify.financial.FinancialHeapGuard.start(FinancialHeapGuard.kt:131)
+	at com.reef.platform.calcify.financial.FinancialRateProbe.withHeapProtection$platform_runtime_test(FinancialRateProbe.kt:251)
+	at com.reef.platform.calcify.financial.FinancialRateProbe.main(FinancialRateProbe.kt:303)
+Caused by: java.lang.IllegalStateException: HEAP_BASELINE_BOUND_EXCEEDED stage=before-setup
+	... 4 more

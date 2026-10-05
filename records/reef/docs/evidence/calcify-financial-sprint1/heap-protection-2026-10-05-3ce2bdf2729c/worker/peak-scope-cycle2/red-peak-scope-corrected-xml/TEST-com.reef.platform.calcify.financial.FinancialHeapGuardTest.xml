@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialHeapGuardTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-10-05T06:56:31.838Z" hostname="Dylans-MacBook-Pro.local" time="0.365">
+  <properties/>
+  <testcase name="artifactPeakScopeExplainsFinalHealthySamplesExcludedFromExportedPeak()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.186">
+    <failure message="org.opentest4j.AssertionFailedError: expected: &lt;Sampled through result assembly snapshot; final serialization and staged writes excluded&gt; but was: &lt;&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;Sampled through result assembly snapshot; final serialization and staged writes excluded&gt; but was: &lt;&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at kotlin.test.junit5.JUnit5Asserter.assertEquals(JUnitSupport.kt:32)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:83)
+	at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:82)
+	at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+	at com.reef.platform.calcify.financial.FinancialHeapGuardTest.artifactPeakScopeExplainsFinalHealthySamplesExcludedFromExportedPeak(FinancialHeapGuardTest.kt:211)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <system-out><![CDATA[{"validationOnly":true,"mode":"calibrate","exportedArtifact":{"heapObservation":{"schema":"financial-heap-observation-v1","guardOutcome":"PASS_SAMPLED","actualMaxHeapBytes":1000,"admissionLimitBytes":800,"estimatedHeapBytes":172,"heapPeakBytes":50,"baselineObservations":[{"stage":"before-setup","sampledAtNano":0,"usedHeapBytes":50,"maxHeapBytes":1000}],"pollMillis":250,"maxSampleAgeNanos":5000000000,"sampled":true,"limitation":"Sudden allocation may outrun sampled protection; native/RSS memory unbounded; no OOM guarantee"}},"finalHealthySamplePeakBytes":700}
+{"validationOnly":true,"mode":"run","exportedArtifact":{"heapObservation":{"schema":"financial-heap-observation-v1","guardOutcome":"PASS_SAMPLED","actualMaxHeapBytes":1000,"admissionLimitBytes":800,"estimatedHeapBytes":172,"heapPeakBytes":50,"baselineObservations":[{"stage":"before-setup","sampledAtNano":0,"usedHeapBytes":50,"maxHeapBytes":1000}],"pollMillis":250,"maxSampleAgeNanos":5000000000,"sampled":true,"limitation":"Sudden allocation may outrun sampled protection; native/RSS memory unbounded; no OOM guarantee"},"resources":{"heapPeakBytes":50}},"finalHealthySamplePeakBytes":700}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

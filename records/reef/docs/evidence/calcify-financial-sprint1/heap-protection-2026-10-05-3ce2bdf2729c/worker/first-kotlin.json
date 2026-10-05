@@ -1,0 +1,25 @@
+{
+  "label": "first-kotlin",
+  "command": [
+    "services/platform-runtime/gradlew",
+    "-p",
+    "services/platform-runtime",
+    "--offline",
+    "test",
+    "--tests",
+    "com.reef.platform.calcify.financial.FinancialHeapGuardTest",
+    "--console=plain"
+  ],
+  "cwd": "/Users/dsteele/.codex/worktrees/8c6f/reef",
+  "JAVA_HOME": "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home",
+  "startedAt": "2026-10-05T06:17:49.337213+00:00",
+  "elapsedSeconds": 7.86071608400016,
+  "exit": 1,
+  "sourceSha256": {
+    "scripts/dev/calcify-financial/rate-proof.mjs": "bc069fe4f1f709d431d0fff10c385142b016114b5c1eb20d61d95578e1010191",
+    "scripts/dev/calcify-financial/rate-proof.test.mjs": "98be0a29ab4802fb963abcbf566b4d608e343e6de04528ddde9571e90ecce54f",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt": "75f9f8bdfb36a5d9d76bf9cfeae8f80610d07b85a467c53cf197a4282db20f0d",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt": "190756c238d026a2d47b656adda388902c703616a216dfa293319d2da9e42065",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt": "c372ba7e6b807724e97d8b66f5862b61e2d2cf51fe2770115f17d786f961cef9"
+  }
+}

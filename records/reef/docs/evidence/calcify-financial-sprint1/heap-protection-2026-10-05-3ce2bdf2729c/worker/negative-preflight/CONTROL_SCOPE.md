@@ -1,0 +1,1 @@
+Negative test only. All cost/funding/rate/review claims fabricated. Stored usedHeapBytes intentionally forged zero; one-byte baseline impossible. Actual child must refuse before state/client/topic setup. Genuine raw fixture/config/compiled/classpath/VM identities copied from actual broker-free capability. No executable load permission or capacity evidence.

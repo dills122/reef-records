@@ -1,0 +1,3 @@
+Exception in thread "main" java.lang.IllegalArgumentException: HEAP_IDENTITY_MISMATCH field=buildSha256
+	at com.reef.platform.calcify.financial.FinancialRateProbe.heapGuard$platform_runtime_test(FinancialRateProbe.kt:233)
+	at com.reef.platform.calcify.financial.FinancialRateProbe.main(FinancialRateProbe.kt:312)

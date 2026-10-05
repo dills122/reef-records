@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialCommittedCutTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-05T07:00:17.409Z" hostname="Dylans-MacBook-Pro.local" time="0.188">
+  <properties/>
+  <testcase name="committed outputs must match actual accepted physical source membership()" classname="com.reef.platform.calcify.financial.FinancialCommittedCutTest" time="0.118"/>
+  <testcase name="committed quartet proves exact mixed balances refusal and complete activation()" classname="com.reef.platform.calcify.financial.FinancialCommittedCutTest" time="0.048"/>
+  <testcase name="committed cut rejects economically wrong but structurally valid output()" classname="com.reef.platform.calcify.financial.FinancialCommittedCutTest" time="0.019"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

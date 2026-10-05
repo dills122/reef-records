@@ -1,0 +1,277 @@
+{
+  "index": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"project\":\"reef-calcify-session-8c6f\",\"excluded\":{\"dirs\":[\".serena\",\".claude\",\"docs\",\"scripts\",\".vscode\"],\"count\":40,\"truncated\":true},\"not_indexed_files_count\":47,\"not_indexed_files\":{\"files\":[{\"path\":\"LICENSE\",\"reason\":\"skip-list\"},{\"path\":\"reef-logo-main.png\",\"reason\":\"ignored-suffix\"},{\"path\":\"services/simulator/go.sum\",\"reason\":\"skip-list\"},{\"path\":\"services/stock-data/gradle/wrapper/gradle-wrapper.jar\",\"reason\":\"ignored-suffix\"},{\"path\":\"services/platform-runtime/gradle/wrapper/gradle-wrapper.jar\",\"reason\":\"ignored-suffix\"}],\"count\":47,\"truncated\":true,\"note\":\"Excluded by design (gitignore/.cbmignore/skip-lists); examples only — full list in 'logfile'.\"},\"skipped_count\":0,\"logfile\":\"/Users/dsteele/.cache/codebase-memory-mcp/logs/reef-calcify-session-8c6f-1791182473.log\",\"parse_partial_count\":3,\"parse_partial\":{\"files\":[{\"path\":\".env.example\",\"error_ranges\":\"241-241\"},{\"path\":\"services/platform-runtime/gradlew\",\"error_ranges\":\"178-178\"},{\"path\":\"services/stock-data/gradlew\",\"error_ranges\":\"178-178\"}],\"count\":3,\"truncated\":false,\"note\":\"Indexed, but constructs in these line ranges may be missing (best-effort signal); examples only — full list via index_status or 'logfile'.\"},\"parse_unusable_count\":0,\"nodes\":14566,\"edges\":75179,\"expected_nodes\":14566,\"expected_edges\":75179,\"adr_present\":false,\"adr_hint\":\"Project indexed. Consider creating an Architecture Decision Record: explore the codebase with get_architecture(aspects=['all']), then use manage_adr(mode='update') to persist architectural insights across sessions.\",\"artifact_present\":false,\"status\":\"indexed\"}"
+        }
+      ],
+      "structuredContent": {
+        "project": "reef-calcify-session-8c6f",
+        "excluded": {
+          "dirs": [
+            ".serena",
+            ".claude",
+            "docs",
+            "scripts",
+            ".vscode"
+          ],
+          "count": 40,
+          "truncated": true
+        },
+        "not_indexed_files_count": 47,
+        "not_indexed_files": {
+          "files": [
+            {
+              "path": "LICENSE",
+              "reason": "skip-list"
+            },
+            {
+              "path": "reef-logo-main.png",
+              "reason": "ignored-suffix"
+            },
+            {
+              "path": "services/simulator/go.sum",
+              "reason": "skip-list"
+            },
+            {
+              "path": "services/stock-data/gradle/wrapper/gradle-wrapper.jar",
+              "reason": "ignored-suffix"
+            },
+            {
+              "path": "services/platform-runtime/gradle/wrapper/gradle-wrapper.jar",
+              "reason": "ignored-suffix"
+            }
+          ],
+          "count": 47,
+          "truncated": true,
+          "note": "Excluded by design (gitignore/.cbmignore/skip-lists); examples only — full list in 'logfile'."
+        },
+        "skipped_count": 0,
+        "logfile": "/Users/dsteele/.cache/codebase-memory-mcp/logs/reef-calcify-session-8c6f-1791182473.log",
+        "parse_partial_count": 3,
+        "parse_partial": {
+          "files": [
+            {
+              "path": ".env.example",
+              "error_ranges": "241-241"
+            },
+            {
+              "path": "services/platform-runtime/gradlew",
+              "error_ranges": "178-178"
+            },
+            {
+              "path": "services/stock-data/gradlew",
+              "error_ranges": "178-178"
+            }
+          ],
+          "count": 3,
+          "truncated": false,
+          "note": "Indexed, but constructs in these line ranges may be missing (best-effort signal); examples only — full list via index_status or 'logfile'."
+        },
+        "parse_unusable_count": 0,
+        "nodes": 14566,
+        "edges": 75179,
+        "expected_nodes": 14566,
+        "expected_edges": 75179,
+        "adr_present": false,
+        "adr_hint": "Project indexed. Consider creating an Architecture Decision Record: explore the codebase with get_architecture(aspects=['all']), then use manage_adr(mode='update') to persist architectural insights across sessions.",
+        "artifact_present": false,
+        "status": "indexed"
+      },
+      "isError": false
+    }
+  },
+  "coverage": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"project\":\"reef-calcify-session-8c6f\",\"signal\":\"best_effort\",\"indexed_at\":\"2026-10-05T06:41:13Z\",\"metadata\":{\"generation\":\"2026-10-05T06:41:13Z\",\"index_mode\":\"fast\",\"recorded_at\":\"2026-10-05T06:41:13Z\",\"recording_status\":\"complete\",\"ignored_files_stored\":47,\"ignored_files_total\":47,\"hash_records_complete\":true,\"coverage_version\":3,\"generation_matches\":true},\"paths\":[{\"requested_path\":\"services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt\",\"path\":\"services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt\",\"status\":\"no_recorded_issue\",\"freshness\":\"metadata_match\",\"recommended_action\":\"use_graph_with_best_effort_caveat\",\"coverage\":[]},{\"requested_path\":\"services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt\",\"path\":\"services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt\",\"status\":\"no_recorded_issue\",\"freshness\":\"metadata_match\",\"recommended_action\":\"use_graph_with_best_effort_caveat\",\"coverage\":[]},{\"requested_path\":\"services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt\",\"path\":\"services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt\",\"status\":\"no_recorded_issue\",\"freshness\":\"metadata_match\",\"recommended_action\":\"use_graph_with_best_effort_caveat\",\"coverage\":[]}],\"path_total\":3,\"path_returned\":3,\"path_has_more\":false,\"scopes\":[],\"scope_total\":0,\"scope_returned\":0,\"scope_truncated\":false,\"has_more\":false,\"caveat\":\"Best-effort signal only. No recorded issue does not prove graph or source completeness; read flagged source and qualify claims when metadata is changed or unavailable.\"}"
+        }
+      ],
+      "structuredContent": {
+        "project": "reef-calcify-session-8c6f",
+        "signal": "best_effort",
+        "indexed_at": "2026-10-05T06:41:13Z",
+        "metadata": {
+          "generation": "2026-10-05T06:41:13Z",
+          "index_mode": "fast",
+          "recorded_at": "2026-10-05T06:41:13Z",
+          "recording_status": "complete",
+          "ignored_files_stored": 47,
+          "ignored_files_total": 47,
+          "hash_records_complete": true,
+          "coverage_version": 3,
+          "generation_matches": true
+        },
+        "paths": [
+          {
+            "requested_path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt",
+            "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt",
+            "status": "no_recorded_issue",
+            "freshness": "metadata_match",
+            "recommended_action": "use_graph_with_best_effort_caveat",
+            "coverage": []
+          },
+          {
+            "requested_path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt",
+            "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt",
+            "status": "no_recorded_issue",
+            "freshness": "metadata_match",
+            "recommended_action": "use_graph_with_best_effort_caveat",
+            "coverage": []
+          },
+          {
+            "requested_path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt",
+            "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt",
+            "status": "no_recorded_issue",
+            "freshness": "metadata_match",
+            "recommended_action": "use_graph_with_best_effort_caveat",
+            "coverage": []
+          }
+        ],
+        "path_total": 3,
+        "path_returned": 3,
+        "path_has_more": false,
+        "scopes": [],
+        "scope_total": 0,
+        "scope_returned": 0,
+        "scope_truncated": false,
+        "has_more": false,
+        "caveat": "Best-effort signal only. No recorded issue does not prove graph or source completeness; read flagged source and qualify claims when metadata is changed or unavailable."
+      },
+      "isError": false
+    }
+  },
+  "retrieval": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"qn_rule\":\"qn = qn_prefix == \\\"\\\" ? name : qn_prefix + \\\".\\\" + name\",\"cols\":[\"name\",\"label\",\"lines\",\"in\",\"out\"],\"groups\":[{\"qn_prefix\":\"reef-calcify-session-8c6f.services.platform-runtime.src.test.kotlin.com.reef.platform.calcify.financial.FinancialHeapGuard\",\"file\":\"services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt\",\"rows\":[[\"FinancialHeapGuard\",\"Class\",\"58-170\",9,0]]},{\"qn_prefix\":\"reef-calcify-session-8c6f.services.platform-runtime.src.test.kotlin.com.reef.platform.calcify.financial.FinancialHeapGuard.kt\",\"file\":\"services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt\",\"rows\":[[\"__file__\",\"File\",\"\",0,3]]},{\"qn_prefix\":\"reef-calcify-session-8c6f.services.platform-runtime.src.test.kotlin.com.reef.platform.calcify.financial.FinancialHeapGuardTest\",\"file\":\"services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt\",\"rows\":[[\"FinancialHeapGuardTest\",\"Class\",\"20-192\",1,0]]},{\"qn_prefix\":\"reef-calcify-session-8c6f.services.platform-runtime.src.test.kotlin.com.reef.platform.calcify.financial.FinancialHeapGuardTest.kt\",\"file\":\"services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt\",\"rows\":[[\"__file__\",\"File\",\"\",0,0]]},{\"qn_prefix\":\"reef-calcify-session-8c6f.services.platform-runtime.src.test.kotlin.com.reef.platform.calcify.financial.FinancialRateProbe.FinancialRateProbe\",\"file\":\"services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt\",\"rows\":[[\"heapReplayBatch\",\"Method\",\"256-259\",4,2]]}],\"total\":7,\"returned\":5,\"count\":5,\"has_more\":true,\"next_offset\":5,\"truncated\":true,\"truncation_reason\":\"page_limit\"}"
+        }
+      ],
+      "structuredContent": {
+        "qn_rule": "qn = qn_prefix == \"\" ? name : qn_prefix + \".\" + name",
+        "cols": [
+          "name",
+          "label",
+          "lines",
+          "in",
+          "out"
+        ],
+        "groups": [
+          {
+            "qn_prefix": "reef-calcify-session-8c6f.services.platform-runtime.src.test.kotlin.com.reef.platform.calcify.financial.FinancialHeapGuard",
+            "file": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt",
+            "rows": [
+              [
+                "FinancialHeapGuard",
+                "Class",
+                "58-170",
+                9,
+                0
+              ]
+            ]
+          },
+          {
+            "qn_prefix": "reef-calcify-session-8c6f.services.platform-runtime.src.test.kotlin.com.reef.platform.calcify.financial.FinancialHeapGuard.kt",
+            "file": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt",
+            "rows": [
+              [
+                "__file__",
+                "File",
+                "",
+                0,
+                3
+              ]
+            ]
+          },
+          {
+            "qn_prefix": "reef-calcify-session-8c6f.services.platform-runtime.src.test.kotlin.com.reef.platform.calcify.financial.FinancialHeapGuardTest",
+            "file": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt",
+            "rows": [
+              [
+                "FinancialHeapGuardTest",
+                "Class",
+                "20-192",
+                1,
+                0
+              ]
+            ]
+          },
+          {
+            "qn_prefix": "reef-calcify-session-8c6f.services.platform-runtime.src.test.kotlin.com.reef.platform.calcify.financial.FinancialHeapGuardTest.kt",
+            "file": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt",
+            "rows": [
+              [
+                "__file__",
+                "File",
+                "",
+                0,
+                0
+              ]
+            ]
+          },
+          {
+            "qn_prefix": "reef-calcify-session-8c6f.services.platform-runtime.src.test.kotlin.com.reef.platform.calcify.financial.FinancialRateProbe.FinancialRateProbe",
+            "file": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt",
+            "rows": [
+              [
+                "heapReplayBatch",
+                "Method",
+                "256-259",
+                4,
+                2
+              ]
+            ]
+          }
+        ],
+        "total": 7,
+        "returned": 5,
+        "count": 5,
+        "has_more": true,
+        "next_offset": 5,
+        "truncated": true,
+        "truncation_reason": "page_limit"
+      },
+      "isError": false
+    }
+  },
+  "snippet": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"name\":\"heapReplayBatch\",\"qualified_name\":\"reef-calcify-session-8c6f.services.platform-runtime.src.test.kotlin.com.reef.platform.calcify.financial.FinancialRateProbe.FinancialRateProbe.heapReplayBatch\",\"label\":\"Method\",\"file_path\":\"/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt\",\"start_line\":256,\"end_line\":259,\"source_mode\":\"full\",\"source\":\"    internal fun <T> heapReplayBatch(guard: FinancialHeapGuard, records: Iterable<T>, applyRecord: (T) -> Unit) {\\n        guard.checkpoint(\\\"result-only-replay-batch\\\")\\n        records.forEach { record -> guard.checkpoint(\\\"result-only-replay-record\\\"); applyRecord(record); guard.checkpoint(\\\"result-only-replay-record-applied\\\") }\\n    }\\n\",\"callers\":4,\"callees\":2}"
+      }
+    ],
+    "structuredContent": {
+      "name": "heapReplayBatch",
+      "qualified_name": "reef-calcify-session-8c6f.services.platform-runtime.src.test.kotlin.com.reef.platform.calcify.financial.FinancialRateProbe.FinancialRateProbe.heapReplayBatch",
+      "label": "Method",
+      "file_path": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt",
+      "start_line": 256,
+      "end_line": 259,
+      "source_mode": "full",
+      "source": "    internal fun <T> heapReplayBatch(guard: FinancialHeapGuard, records: Iterable<T>, applyRecord: (T) -> Unit) {\n        guard.checkpoint(\"result-only-replay-batch\")\n        records.forEach { record -> guard.checkpoint(\"result-only-replay-record\"); applyRecord(record); guard.checkpoint(\"result-only-replay-record-applied\") }\n    }\n",
+      "callers": 4,
+      "callees": 2
+    },
+    "isError": false
+  },
+  "scriptSurface": {
+    "status": "fulfilled",
+    "value": {
+      "chunk_id": "c22b86",
+      "wall_time_seconds": 7.312671083,
+      "exit_code": 0,
+      "original_token_count": 218,
+      "output": "script surface check passed\n  scripts=272\n  nodeSyntaxChecked=260\n  shellSyntaxChecked=11\n  syntaxSkipped=scripts/dev/arena-runner-bench-deno.ts\n  controlFiles=Makefile, package.json, .github/dependabot.yml, .github/workflows/admin-ui-deploy.yml, .github/workflows/bot-registry-sync.yml, .github/workflows/bot-submission-invite-approve.yml, .github/workflows/bot-submission-non-bot-status.yml, .github/workflows/bot-submission-provision.yml, .github/workflows/bot-submission.yml, .github/workflows/ci.yml, .github/workflows/container-images.yml, .github/workflows/dependabot-auto-merge.yml, .github/workflows/docs-site.yml, .github/workflows/materializer-10k-gate.yml, .github/workflows/open-code-review-pilot.yml, .github/workflows/publish-image.yml, .github/workflows/records-retention.yml, .github/workflows/service-deploy.yml, .github/workflows/throughput-stress.yml\n"
+    }
+  }
+}

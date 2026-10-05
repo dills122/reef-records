@@ -1,0 +1,42 @@
+{
+  "checks": {
+    "compiledAndClasspathFilesUnchanged": true,
+    "financialBuildDigestMatches": true,
+    "classpathDigestMatches": true,
+    "fixtureHashMatches": true,
+    "configHashMatches": true,
+    "capabilityStateDirectoryAbsent": true,
+    "negativeMeasurementAbsent": true,
+    "negativeParityAbsent": true
+  },
+  "capabilitySha256": "997a5a029e61538bdda02af5aeef13ce97e1e2c3c2575763e19947b90b410145",
+  "capability": {
+    "schema": "financial-heap-capability-v1",
+    "maxHeapBytes": 805306368,
+    "usedHeapBytes": 32795048,
+    "vmArguments": [
+      "-Xms128m",
+      "-Xmx768m"
+    ],
+    "javaVersion": "21",
+    "javaVendor": "Oracle Corporation",
+    "sourceHead": "3ce2bdf2729c884b0efd77d0a56808a0a6eb7d96",
+    "fixtureSha256": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+    "configSha256": "f153d7e7ccdf2587573f0e4522f7ff0896d5007c015865b21db87fa295b58ad0",
+    "buildSha256": "9afe7aae2dc094089ff20d41450e5c6c7c06258a6dd57ac891175c784dadf67a",
+    "classpathSha256": "55b090d18ab3aacdb8beb7ff531e93b567f8134e3c148a591f3db2b970400834",
+    "classIdentityScope": "All compiled Financial*.class including nested classes; ordered classpath entries with streamed jar/file bytes and sorted directory resources"
+  },
+  "kotlin": {
+    "name": "com.reef.platform.calcify.financial.FinancialHeapGuardTest",
+    "tests": "18",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-05T06:34:41.336Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.36"
+  },
+  "negativeControlScope": "All cost/calibration/review claims fabricated negative fixture; true identities/max/VM args except deliberately forged stored used=0; actual child refused real baseline before setup",
+  "sourceHeadScope": "CLI sourceHead echoes accepted baseline3ce2bdf; dirty source hashes and compiled bytes independently frozen; no claim compiled code equals clean baseline"
+}

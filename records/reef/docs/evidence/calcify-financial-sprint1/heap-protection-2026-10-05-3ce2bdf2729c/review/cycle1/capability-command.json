@@ -1,0 +1,21 @@
+[
+  "env",
+  "-u",
+  "JAVA_TOOL_OPTIONS",
+  "-u",
+  "_JAVA_OPTIONS",
+  "-u",
+  "JDK_JAVA_OPTIONS",
+  "-u",
+  "CLASSPATH",
+  "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/java",
+  "-Xms128m",
+  "-Xmx768m",
+  "-cp",
+  "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/main:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resources/main:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/*",
+  "com.reef.platform.calcify.financial.FinancialRateProbe",
+  "heap-capability",
+  "3ce2bdf2729c884b0efd77d0a56808a0a6eb7d96",
+  "/Users/dsteele/.codex/worktrees/8c6f/reef/docs/evidence/calcify-financial-sprint1/fixtures.json",
+  "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-protection-2026-10-05/worker/capability-config.json"
+]

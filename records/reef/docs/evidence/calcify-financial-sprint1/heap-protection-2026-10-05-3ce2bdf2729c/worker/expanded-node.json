@@ -1,0 +1,29 @@
+{
+  "label": "expanded-node",
+  "command": [
+    "node",
+    "--test",
+    "scripts/dev/calcify-financial/rate-proof.test.mjs"
+  ],
+  "cwd": "/Users/dsteele/.codex/worktrees/8c6f/reef",
+  "JAVA_HOME": "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home",
+  "startedAt": "2026-10-05T06:26:10.724701+00:00",
+  "elapsedSeconds": 0.11650912500044797,
+  "exit": 0,
+  "sourceSha256": {
+    "scripts/dev/calcify-financial/rate-proof.mjs": "566d0a9bbd70c2bd93a2f2444ced2192c167ff59c45dcc3989a18b4c8da8115d",
+    "scripts/dev/calcify-financial/rate-proof.test.mjs": "f44eff062e333b33f62940c44bf1de30e2f669b68c1e6d9d352b611b93f7f623",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt": "a08c8ac219cf45a7ffd00d3ea3aa605dea37dd015917f5b66786d9745b740bbb",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt": "f78d0231f4fde79c248a138c9156296d2a29eaacfcfbf7353e4f3450be3be191",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt": "9a2420cbd1d870012601cc2cc21c042cb4734a96cc24c2529a6b02d1cf8ae6b9"
+  },
+  "sourceBeforeSha256": {
+    "scripts/dev/calcify-financial/rate-proof.mjs": "566d0a9bbd70c2bd93a2f2444ced2192c167ff59c45dcc3989a18b4c8da8115d",
+    "scripts/dev/calcify-financial/rate-proof.test.mjs": "f44eff062e333b33f62940c44bf1de30e2f669b68c1e6d9d352b611b93f7f623",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt": "a08c8ac219cf45a7ffd00d3ea3aa605dea37dd015917f5b66786d9745b740bbb",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt": "f78d0231f4fde79c248a138c9156296d2a29eaacfcfbf7353e4f3450be3be191",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt": "9a2420cbd1d870012601cc2cc21c042cb4734a96cc24c2529a6b02d1cf8ae6b9"
+  },
+  "sourceUnchangedDuringCommand": true,
+  "sourceSha256Scope": "post-run snapshot"
+}

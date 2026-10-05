@@ -1,0 +1,10 @@
+{
+  "recordsCheck": "PASS: 520 archived files and maintained references verified",
+  "recordsTests": {
+    "exitCode": 0,
+    "tests": 9,
+    "pass": 9,
+    "fail": 0
+  },
+  "finalFiveSourceHashesMatch": true
+}

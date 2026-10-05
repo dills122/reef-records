@@ -1,0 +1,24 @@
+[
+  {
+    "exit": 1,
+    "elapsedSeconds": 0.4323231659946032,
+    "expectedError": "HEAP_BASELINE_BOUND_EXCEEDED",
+    "expectedErrorObserved": true,
+    "stateDirectoryAbsent": true,
+    "measurementAbsent": true,
+    "parityAbsent": true,
+    "validationOnly": true,
+    "label": "impossible-baseline"
+  },
+  {
+    "exit": 1,
+    "elapsedSeconds": 0.4121377499977825,
+    "expectedError": "HEAP_IDENTITY_MISMATCH field=buildSha256",
+    "expectedErrorObserved": true,
+    "stateDirectoryAbsent": true,
+    "measurementAbsent": true,
+    "parityAbsent": true,
+    "validationOnly": true,
+    "label": "compiled-build-mismatch"
+  }
+]
