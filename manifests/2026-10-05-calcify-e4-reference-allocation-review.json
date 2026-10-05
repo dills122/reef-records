@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/dills122/reef",
+  "source_commit": "3b6556d4a2bcb350fa41adcd7272fd494a0a0689",
+  "selection_policy": "Append-only separate fresh independent allocation review supplement; original allocation source checkpoint2b78445 retained unchanged, product/index/HEAD untouched, no capacity or upper upgrade",
+  "files": [
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/review/SHA256SUMS",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/review/SHA256SUMS",
+      "source_blob_oid": "4641bd607df443c2b5902aa3fb75bbaa791f8a78",
+      "bytes": 243,
+      "sha256": "534528a53068d9e4e21f5e0024d36cb282be90ee20d3496f3be665506416e614",
+      "reason": "Exact fresh independent isolated allocation method review or provenance/checksum companion; original limits preserved"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/review/checks.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/review/checks.json",
+      "source_blob_oid": "1680db25d4a27bca1812d9c9be90bf50ff4f18b2",
+      "bytes": 3911,
+      "sha256": "3fa0f74875f8d54841b3f109fafc1752c0a9dc35dff7ad00a13e28fbf0512238",
+      "reason": "Exact fresh independent isolated allocation method review or provenance/checksum companion; original limits preserved"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/review/report.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/review/report.md",
+      "source_blob_oid": "1a125a727df37edfa7ea17c3da44f316e5c6de0b",
+      "bytes": 6802,
+      "sha256": "0d7b2f030702c24615cc4cb27ec2ab0fd864253c0ddfc7d3de06fb0ae9a77aff",
+      "reason": "Exact fresh independent isolated allocation method review or provenance/checksum companion; original limits preserved"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/review/source-provenance.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/review/source-provenance.json",
+      "source_blob_oid": "1c695e7243d5feff48267ce674c2225a1742bccd",
+      "bytes": 1270,
+      "sha256": "384fb89ce751dd879551840e13fe5d67379ca1b444d07e5c7302e5ee600f3175",
+      "reason": "Exact fresh independent isolated allocation method review or provenance/checksum companion; original limits preserved"
+    }
+  ]
+}

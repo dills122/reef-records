@@ -1,0 +1,3 @@
+Exception in thread "main" java.lang.NoSuchMethodException: com.reef.platform.calcify.financial.FinancialRateProbe$Reference.ownerDigest()
+	at java.base/java.lang.Class.getDeclaredMethod(Class.java:2848)
+	at Profile.main(Profile.java:28)

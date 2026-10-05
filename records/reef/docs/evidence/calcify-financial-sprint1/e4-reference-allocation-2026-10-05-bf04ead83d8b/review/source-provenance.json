@@ -1,0 +1,22 @@
+{
+  "schema": "calcify-isolated-allocation-review-provenance-v1",
+  "scope": "Fresh independent method review of closed isolated allocation profile; exact reviewer bytes and limits preserved, no capacity or upper-bound proof",
+  "parentAllocationCheckpoint": "2b78445d614f0ff6b8917a65a78fdf8cc737d2d2",
+  "localOnlySourceRef": "refs/heads/codex/calcify-e4-allocation-review-evidence-provenance",
+  "productHeadAtPreparation": "17409ac2e6f8e2c4408dcd6b36c98398c3da32ad",
+  "rootAuthorization": "Root explicit append-only fresh review supplement after Ready",
+  "originalMapping": [
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile-review/checks.json",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/review/checks.json",
+      "bytes": 3911,
+      "sha256": "3fa0f74875f8d54841b3f109fafc1752c0a9dc35dff7ad00a13e28fbf0512238"
+    },
+    {
+      "originalPath": "/private/tmp/calcify-e4-reference-allocation-profile-review/report.md",
+      "sourcePath": "docs/evidence/calcify-financial-sprint1/e4-reference-allocation-2026-10-05-bf04ead83d8b/review/report.md",
+      "bytes": 6802,
+      "sha256": "0d7b2f030702c24615cc4cb27ec2ab0fd864253c0ddfc7d3de06fb0ae9a77aff"
+    }
+  ]
+}

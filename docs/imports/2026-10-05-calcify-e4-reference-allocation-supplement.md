@@ -1,0 +1,3 @@
+Closed isolated Calcify reference allocation supplement.
+
+Local-only Reef source checkpoint `2b78445d614f0ff6b8917a65a78fdf8cc737d2d2`; parent product commit `17409ac2e6f8e2c4408dcd6b36c98398c3da32ad`; ref `refs/heads/codex/calcify-e4-allocation-supplement-evidence-provenance` intentionally unpushed. Exact25 original files preserved including initial failure and unchanged proposal dated publication authorization flag. Two generated source/checksum companions document mapping; source blob identities and byte hashes verified. No original E4 namespace or manifest changed. Allocation evidence only; no broker workload, capacity or upper-bound claim.

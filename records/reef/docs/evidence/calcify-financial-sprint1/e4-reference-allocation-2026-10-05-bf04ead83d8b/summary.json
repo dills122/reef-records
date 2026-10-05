@@ -1,0 +1,111 @@
+{
+  "pass": true,
+  "summary": [
+    {
+      "arm": "ordinary-reference",
+      "acceptAllocatedBytes": {
+        "min": 2244514008,
+        "max": 2244581208,
+        "median": 2244541400,
+        "all": [
+          2244581208,
+          2244581208,
+          2244541400,
+          2244514008,
+          2244514008
+        ]
+      },
+      "finalOwnerDigestAllocatedBytes": {
+        "min": 66991464,
+        "max": 66991464,
+        "median": 66991464,
+        "all": [
+          66991464,
+          66991464,
+          66991464,
+          66991464,
+          66991464
+        ]
+      },
+      "acceptElapsedNanos": {
+        "min": 529556333,
+        "max": 539577042,
+        "median": 533778084,
+        "all": [
+          536079000,
+          533778084,
+          539577042,
+          531156334,
+          529556333
+        ]
+      },
+      "digestElapsedNanos": {
+        "min": 17250458,
+        "max": 20058500,
+        "median": 17804542,
+        "all": [
+          17804542,
+          20058500,
+          18268375,
+          17442166,
+          17250458
+        ]
+      }
+    },
+    {
+      "arm": "canonical-leaf-reference",
+      "acceptAllocatedBytes": {
+        "min": 2369983696,
+        "max": 2370007696,
+        "median": 2370007696,
+        "all": [
+          2370007696,
+          2370007696,
+          2370007696,
+          2369986312,
+          2369983696
+        ]
+      },
+      "finalOwnerDigestAllocatedBytes": {
+        "min": 7431576,
+        "max": 7431576,
+        "median": 7431576,
+        "all": [
+          7431576,
+          7431576,
+          7431576,
+          7431576,
+          7431576
+        ]
+      },
+      "acceptElapsedNanos": {
+        "min": 539306083,
+        "max": 548462000,
+        "median": 542714959,
+        "all": [
+          542714959,
+          542058458,
+          548462000,
+          544582542,
+          539306083
+        ]
+      },
+      "digestElapsedNanos": {
+        "min": 5177166,
+        "max": 6577375,
+        "median": 5488834,
+        "all": [
+          5177166,
+          5488834,
+          5712375,
+          5438000,
+          6577375
+        ]
+      }
+    }
+  ],
+  "scope": "Single-thread Reference accept of identical pre-parsed committed 2101 histories plus one final ownerDigest; reflective invocation included; construction/data parsing excluded; two warmups and five repetitions per arm. No Kafka, kernel, driver, GC-retained heap, native memory, workload rate or upper-cost inference.",
+  "failureHistory": "failed1 baseline method discovery, no successful allocation result claimed; original logs/client preserved",
+  "armOrder": "ordinary all seven then compact all seven; no randomization or crossover; two warmups followed by five repetitions",
+  "warning": "Allocation includes reflection, canonicalization/checksums and class-local mapper, not retained bytes; shared preparsed history/data excluded. Does not prove cause of full-driver sampled heap peaks or safe cost upper bound."
+}

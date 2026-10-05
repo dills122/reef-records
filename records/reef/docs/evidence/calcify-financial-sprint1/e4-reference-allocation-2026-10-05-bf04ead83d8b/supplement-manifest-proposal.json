@@ -1,0 +1,128 @@
+{
+  "schema": "isolated-reference-allocation-supplement-proposal-v1",
+  "capturedUtc": "2026-10-05T19:08:41.207418+00:00",
+  "root": "/private/tmp/calcify-e4-reference-allocation-profile",
+  "files": [
+    {
+      "name": "Profile.java",
+      "sha256": "c8b54f87141a3a7e051f5edbe935572eaeee91ebd4173194d7d9b38edc539b4d",
+      "sizeBytes": 4640
+    },
+    {
+      "name": "argv.json",
+      "sha256": "e9fe2e5c64be0257084b29312ba4499a7d66425d633f5652305be8a36da2bcb5",
+      "sizeBytes": 6036
+    },
+    {
+      "name": "classmaps.json",
+      "sha256": "88025c11a20fba44fc23bdd22243646e6f5b3c80f35fba6efb6ec9113558bb9b",
+      "sizeBytes": 54240
+    },
+    {
+      "name": "close.py",
+      "sha256": "bb3520cbaed593319f139bb51edecc23cfc483530ef8ddfbba6aa542e07bbaa5",
+      "sizeBytes": 2712
+    },
+    {
+      "name": "cp.txt",
+      "sha256": "573b22a0bcb80d64aa014cea466ee7e6d7be3fe429a07c4f7f45d2e7dc5e991c",
+      "sizeBytes": 5780
+    },
+    {
+      "name": "exit.json",
+      "sha256": "ff403a000d04901ba5650e661aa2d1fce9a20b018b836ec780d38647157c0428",
+      "sizeBytes": 52
+    },
+    {
+      "name": "extract.mjs",
+      "sha256": "6d964531173a0e7c7296727aed3b29607f06919c3290ae9bf056e0240ceff2fa",
+      "sizeBytes": 988
+    },
+    {
+      "name": "extract.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sizeBytes": 0
+    },
+    {
+      "name": "extract.stdout.log",
+      "sha256": "03118808c48f15b99842c9eb299346d9a0d264ca22f0ccda78ffab68bedc7054",
+      "sizeBytes": 668
+    },
+    {
+      "name": "failed1-Profile.java",
+      "sha256": "7e4ef8dde9aae7b0c40c434bbbb298ee892ebe82acc644d1ab7a937b25f2682a",
+      "sizeBytes": 4203
+    },
+    {
+      "name": "failed1-exit.json",
+      "sha256": "81f7166b10d30ca6374496ba84b66c97183e6e900257a3e7a62721afeaeb01fa",
+      "sizeBytes": 51
+    },
+    {
+      "name": "failed1-profile.stderr.log",
+      "sha256": "027b7ccf814da094ef747c263e20318c24e73f9abc8ec30626df3ec7de04e0a3",
+      "sizeBytes": 238
+    },
+    {
+      "name": "failed1-profile.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sizeBytes": 0
+    },
+    {
+      "name": "history.json",
+      "sha256": "45b6d99ced630ac6ced5c2eb8646168bbbc7544107cd0db961576a933432ae4a",
+      "sizeBytes": 5817782
+    },
+    {
+      "name": "inputs.json",
+      "sha256": "8892775e593a2a1e2f58057236428d73fd3d177d69ab5254884ed496da7ee2aa",
+      "sizeBytes": 418
+    },
+    {
+      "name": "jar-sha256.json",
+      "sha256": "166b469f49c1288a0582028485b8cd5f0fd82e480800219559f3d1f85eb10203",
+      "sizeBytes": 10823
+    },
+    {
+      "name": "pair-validation.json",
+      "sha256": "795e65caddf6f0143a4166bc0944e9e29a8c98054eaa81dc76b332fead21b0f2",
+      "sizeBytes": 762
+    },
+    {
+      "name": "post-snapshot-validation.json",
+      "sha256": "2604d7503300b8353d284f8ae54210bae55f329443be8f232228afa82f9d86c1",
+      "sizeBytes": 522
+    },
+    {
+      "name": "pre-snapshot-validation.json",
+      "sha256": "2fd1c70bed0bbeaa2be1f312065096de88fb19ca32448f63d19ea9e7d3d66291",
+      "sizeBytes": 1080
+    },
+    {
+      "name": "prepare.py",
+      "sha256": "ace01999c5a8f6cf69ea05b578742ff1ea9fe3a02ae19ccda454dc0eeec7fbd9",
+      "sizeBytes": 1332
+    },
+    {
+      "name": "profile-result.json",
+      "sha256": "1accc2d192bf346f0cc968f7d619c506cacbffc1fa2821ec1364814a9fbafeb4",
+      "sizeBytes": 7031
+    },
+    {
+      "name": "profile.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sizeBytes": 0
+    },
+    {
+      "name": "profile.stdout.log",
+      "sha256": "5d6deec86f6c6eef1473ca0ac0ac41114ee0185cb061aad031614e6d5090a487",
+      "sizeBytes": 5955
+    },
+    {
+      "name": "summary.json",
+      "sha256": "1a80a3c1bf6ddde6bbcff38d629052c2e2bbbeae7f18032ba5c83e2e595c9438",
+      "sizeBytes": 2973
+    }
+  ],
+  "publicationAuthorizedByRoot": false
+}

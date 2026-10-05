@@ -1,0 +1,23 @@
+{
+  "schema": "independent-actual-raw-owner-history-pair-v1",
+  "pass": true,
+  "sourceEnvelopes": 2100,
+  "historyRecords": 2101,
+  "settled": 1000,
+  "pending": 100,
+  "openingCashNanos": "11000000000",
+  "openingShares": "1100",
+  "ownerSha256": "96da35188859915ebb3061691644e114021e8eb033e2f8865065fae4b7901db1",
+  "historyChecksum": "27d2d99c876edc961958133c9a9317a2baa7b12c78efd8a589af92c2b20ab5ae",
+  "baselineJournal": {
+    "members": 2100,
+    "publicationBatches": 9,
+    "lastOffset": 2099
+  },
+  "compactJournal": {
+    "members": 2100,
+    "publicationBatches": 9,
+    "lastOffset": 2099
+  },
+  "normalization": "none; exact deep equality of all source envelopes, full committed history records, opening resources, policy and reconstructed owner"
+}
