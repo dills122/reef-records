@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialOracleTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-05T03:36:50.955Z" hostname="Dylans-MacBook-Pro.local" time="22.464">
+  <properties/>
+  <testcase name="typed envelope identities never alias valid text identities in either order()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="0.05"/>
+  <testcase name="missing empty null and numeric envelope identities reject before missing policy()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="0.043"/>
+  <testcase name="broker reference stages malformed numeric missing payload and missing identity without losing authority()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="0.023"/>
+  <testcase name="malformed identical retry preserves first context and all business state()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="0.003"/>
+  <testcase name="three frozen xorshift seeds cover 300 traces and each of 19200 input prefixes()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="22.232"/>
+  <testcase name="independent BigInteger reference matches all frozen expectations and every business prefix()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="0.033"/>
+  <testcase name="funding checks exact credit and opening debit boundaries for both assets()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="0.007"/>
+  <testcase name="synthetic capture accepts zero and positive price and refuses negative price()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="0.004"/>
+  <testcase name="execution resolution requires textual locators and complete scope or unique unscoped identity()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="0.029"/>
+  <testcase name="duplicate discharge and unbalanced one leg are rejected by independent reference()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="0.003"/>
+  <testcase name="broker observer refuses omitted final business record and omitted whole history()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="0.005"/>
+  <testcase name="consumed signed64 bounds reject before effects and preserve rejection retries()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="0.019"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

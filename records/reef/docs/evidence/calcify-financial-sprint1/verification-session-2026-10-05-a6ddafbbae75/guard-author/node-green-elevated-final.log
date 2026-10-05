@@ -1,0 +1,118 @@
+TAP version 13
+# Subtest: fixed budgets retain bounded correctness profile
+ok 1 - fixed budgets retain bounded correctness profile
+  ---
+  duration_ms: 0.860834
+  type: 'test'
+  ...
+# Subtest: preflight rejects unsupported schema, duplicate IDs, scope and wrapper paths
+ok 2 - preflight rejects unsupported schema, duplicate IDs, scope and wrapper paths
+  ---
+  duration_ms: 0.668917
+  type: 'test'
+  ...
+# Subtest: frozen preflight clone prevents caller changing cleanup resources
+ok 3 - frozen preflight clone prevents caller changing cleanup resources
+  ---
+  duration_ms: 0.231292
+  type: 'test'
+  ...
+# Subtest: exact resource set and labels required on every sample
+ok 4 - exact resource set and labels required on every sample
+  ---
+  duration_ms: 0.270458
+  type: 'test'
+  ...
+# Subtest: negative/nonfinite readings and stale/future heartbeat fail closed
+ok 5 - negative/nonfinite readings and stale/future heartbeat fail closed
+  ---
+  duration_ms: 0.848542
+  type: 'test'
+  ...
+# Subtest: each resource budget aborts at exact threshold
+ok 6 - each resource budget aborts at exact threshold
+  ---
+  duration_ms: 0.131041
+  type: 'test'
+  ...
+# Subtest: intentional STOP charges evidenced conservative bound and requires healthy peers
+ok 7 - intentional STOP charges evidenced conservative bound and requires healthy peers
+  ---
+  duration_ms: 0.285333
+  type: 'test'
+  ...
+# Subtest: observer startup throw prevents launch, still stops registered brokers
+ok 8 - observer startup throw prevents launch, still stops registered brokers
+  ---
+  duration_ms: 1.337458
+  type: 'test'
+  ...
+# Subtest: observer throw/stale/hung and sample record failure kill owned group and brokers
+ok 9 - observer throw/stale/hung and sample record failure kill owned group and brokers
+  ---
+  duration_ms: 13.39375
+  type: 'test'
+  ...
+# Subtest: wrapper failure and proof timeout kill owned group and registered brokers
+ok 10 - wrapper failure and proof timeout kill owned group and registered brokers
+  ---
+  duration_ms: 0.802542
+  type: 'test'
+  ...
+# Subtest: success requires final sample and exit status handshake before completion
+ok 11 - success requires final sample and exit status handshake before completion
+  ---
+  duration_ms: 0.303167
+  type: 'test'
+  ...
+# Subtest: final sample failure cannot report successful wrapper as proof completion
+ok 12 - final sample failure cannot report successful wrapper as proof completion
+  ---
+  duration_ms: 0.246541
+  type: 'test'
+  ...
+# Subtest: cleanup failures are recorded and never relabel proof as successful
+ok 13 - cleanup failures are recorded and never relabel proof as successful
+  ---
+  duration_ms: 0.21775
+  type: 'test'
+  ...
+# Subtest: hanging journal, prelaunch interrupt and synchronous cleanup throws fail closed
+ok 14 - hanging journal, prelaunch interrupt and synchronous cleanup throws fail closed
+  ---
+  duration_ms: 23.822542
+  type: 'test'
+  ...
+# Subtest: Docker adapter samples running peers, reserves stopped target and retains registered volumes
+ok 15 - Docker adapter samples running peers, reserves stopped target and retains registered volumes
+  ---
+  duration_ms: 6.9495
+  type: 'test'
+  ...
+# Subtest: Docker adapter does not skip running du failure or accept changed image metadata
+ok 16 - Docker adapter does not skip running du failure or accept changed image metadata
+  ---
+  duration_ms: 2.130958
+  type: 'test'
+  ...
+# Subtest: observer failure stops active owned wrapper/STOP leaf while sentinel survives
+ok 17 - observer failure stops active owned wrapper/STOP leaf while sentinel survives
+  ---
+  duration_ms: 481.035375
+  type: 'test'
+  ...
+# Subtest: owned group kills stopped TERM-resistant leaf after leader exits; unrelated sentinel survives
+ok 18 - owned group kills stopped TERM-resistant leaf after leader exits; unrelated sentinel survives
+  ---
+  duration_ms: 778.675208
+  type: 'test'
+  ...
+1..18
+# tests 18
+# suites 0
+# pass 18
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1359.203709

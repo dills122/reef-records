@@ -1,0 +1,44 @@
+{
+  "schema": "calcify-owner-sync-proposal-v1",
+  "state": "DRAFT_PENDING_LIVE_AND_REVIEW",
+  "owners": [
+    "docs/WORK_PLAN.md",
+    "docs/evidence/calcify-financial-sprint1/README.md",
+    "docs/work/handoffs/2026-10-04-calcify-financial-sprint1-recovery.md",
+    "docs/README.md",
+    "docs/records/retained-evidence.json"
+  ],
+  "historicalScope": [
+    "Keep original 44 arms, 132 topics, 474.917 seconds and sampled 4.45 GiB unchanged; preserve default-segment failure.",
+    "Keep historical review cap7 dated; current explicit session allows three cycles per attempt, three attempts, research between attempts.",
+    "Keep activation1 guard SHA150 and external1/2 failed campaigns scoped separately."
+  ],
+  "newVerifiedFacts": [
+    "Baseline and upstream remain a6ddafbb.",
+    "45 financial tests and exact CI214 pass on prior candidate; new guard refinement needs fresh review/CI.",
+    "Quartet1 refuses isolated A10/B27 and missingA+5; complete A15/B27 rebuild, actual new-directory restore and unchanged old output prefix/checkpoint; fresh suffix A16/B28.",
+    "No production API, contract or authority change; financial capacity unmeasured."
+  ],
+  "requiredBeforeMarkingE3Done": [
+    "M0 Attempt2 revised candidate review pass.",
+    "Actual parent starting resource sample with target du under fixed deadline in real phase smoke.",
+    "Final candidate all four external faults pass.",
+    "Final candidate quartet2 passes.",
+    "Final candidate 24 core and 20 golden arms pass.",
+    "Final integrated independent review pass.",
+    "Exact-byte Records publication verified; owner summary hashes refreshed."
+  ],
+  "nextE4": [
+    "Apply actual observed JVM maximum heap admission guard.",
+    "Recover controller ACK membership with source offset holes and topic UUID binding.",
+    "Separate encoded, replica-log, allocated-broker, local-state and proof metric provenance.",
+    "Calibrate producer/observer under owned guard through restore; current assessment remains LIMITED."
+  ],
+  "otherOpen": [
+    "Reservation owner acceptance.",
+    "Matcher identity integration.",
+    "Financial production authority and cutover.",
+    "Records PR6 landing."
+  ],
+  "retention": "Promote explicitly selected exact receipts to isolated local-only provenance commit; append-only Records import, publish/verify; no tracked bulk deletion."
+}

@@ -1,0 +1,93 @@
+TAP version 13
+# Subtest: readiness rejects signal-terminated worker despite retained startup receipts
+not ok 1 - readiness rejects signal-terminated worker despite retained startup receipts
+  ---
+  duration_ms: 6.8015
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/broker-proof.test.mjs:11:1'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected rejection.'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  operator: 'rejects'
+  stack: |-
+    async TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/broker-proof.test.mjs:16:2)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: external plan freezes four executable trigger/barrier definitions
+ok 2 - external plan freezes four executable trigger/barrier definitions
+  ---
+  duration_ms: 0.782667
+  type: 'test'
+  ...
+# Subtest: broker registration refuses missing, malformed, duplicate and unregistered IDs
+ok 3 - broker registration refuses missing, malformed, duplicate and unregistered IDs
+  ---
+  duration_ms: 0.3955
+  type: 'test'
+  ...
+# Subtest: daemon inspection requires exact IDs, owned labels and two live peers
+ok 4 - daemon inspection requires exact IDs, owned labels and two live peers
+  ---
+  duration_ms: 1.215667
+  type: 'test'
+  ...
+# Subtest: restoration validates ownership even when peer health fails after outage
+ok 5 - restoration validates ownership even when peer health fails after outage
+  ---
+  duration_ms: 0.344958
+  type: 'test'
+  ...
+# Subtest: recovery requires identical physical prefix and exact stable end for idle restart
+ok 6 - recovery requires identical physical prefix and exact stable end for idle restart
+  ---
+  duration_ms: 0.618416
+  type: 'test'
+  ...
+# Subtest: idle restart refuses checkpoint divergence despite unchanged economic output
+ok 7 - idle restart refuses checkpoint divergence despite unchanged economic output
+  ---
+  duration_ms: 0.117208
+  type: 'test'
+  ...
+# Subtest: stale owner requires observed broker fencing, never generic error or elapsed time
+ok 8 - stale owner requires observed broker fencing, never generic error or elapsed time
+  ---
+  duration_ms: 0.265416
+  type: 'test'
+  ...
+# Subtest: producer failure arm invokes actual producer seam, observes zero abort outputs then restores
+ok 9 - producer failure arm invokes actual producer seam, observes zero abort outputs then restores
+  ---
+  duration_ms: 0.583125
+  type: 'test'
+  ...
+# Subtest: committed-before-ACK arm kills after read-committed barrier and persists ACK only after stable recovery
+ok 10 - committed-before-ACK arm kills after read-committed barrier and persists ACK only after stable recovery
+  ---
+  duration_ms: 0.619417
+  type: 'test'
+  ...
+# Subtest: stale-owner arm freezes before forward, takes over, resumes and demands fencing before end-offset proof
+ok 11 - stale-owner arm freezes before forward, takes over, resumes and demands fencing before end-offset proof
+  ---
+  duration_ms: 0.353958
+  type: 'test'
+  ...
+# Subtest: majority outage proves fresh outputs while target stopped and restores target on failure
+ok 12 - majority outage proves fresh outputs while target stopped and restores target on failure
+  ---
+  duration_ms: 0.329167
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 11
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 66.492083

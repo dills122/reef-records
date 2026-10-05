@@ -1,0 +1,18 @@
+{
+  "ciBeforeAfterMatch": true,
+  "currentAllCiCaptureFilesMatch": true,
+  "ciCaptureFiles": 38,
+  "ciCommandMatchesWorkflow": true,
+  "ciTap": {
+    "tests": 216,
+    "pass": 216,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "ciStderrBytes": 0,
+  "ci1OriginalPreservedAndHashMatches": true,
+  "runtime": "{\"platform\":\"darwin\",\"node\":\"22.22.1\",\"uv\":\"1.51.0\"}",
+  "reviewSourceBeforeAfterMatch": false,
+  "syntaxFivePass": true
+}

@@ -1,0 +1,57 @@
+{
+  "utc": "2026-10-05T05:08:15.319353+00:00",
+  "rows": [
+    {
+      "volume": "reef-calcify-financial-session-8c6f_rp0-data",
+      "containers": [
+        "1335cf8f168bed8177104f47994745d4525b12ab5b014dd649adcb4e73860143"
+      ],
+      "expectedContainer": "1335cf8f168bed8177104f47994745d4525b12ab5b014dd649adcb4e73860143",
+      "command": [
+        "/usr/local/bin/docker",
+        "ps",
+        "-a",
+        "--no-trunc",
+        "--filter",
+        "volume=reef-calcify-financial-session-8c6f_rp0-data",
+        "--format",
+        "{{.ID}}"
+      ]
+    },
+    {
+      "volume": "reef-calcify-financial-session-8c6f_rp1-data",
+      "containers": [
+        "5aa6560ec9bb80fd238bdba3c2e07259854f30de76c6c82868de1e038cd2d446"
+      ],
+      "expectedContainer": "5aa6560ec9bb80fd238bdba3c2e07259854f30de76c6c82868de1e038cd2d446",
+      "command": [
+        "/usr/local/bin/docker",
+        "ps",
+        "-a",
+        "--no-trunc",
+        "--filter",
+        "volume=reef-calcify-financial-session-8c6f_rp1-data",
+        "--format",
+        "{{.ID}}"
+      ]
+    },
+    {
+      "volume": "reef-calcify-financial-session-8c6f_rp2-data",
+      "containers": [
+        "733d961222e085cb98d5af55859eaeb59a2390198fa0bbcdffdf975061fcec9c"
+      ],
+      "expectedContainer": "733d961222e085cb98d5af55859eaeb59a2390198fa0bbcdffdf975061fcec9c",
+      "command": [
+        "/usr/local/bin/docker",
+        "ps",
+        "-a",
+        "--no-trunc",
+        "--filter",
+        "volume=reef-calcify-financial-session-8c6f_rp2-data",
+        "--format",
+        "{{.ID}}"
+      ]
+    }
+  ],
+  "scope": "Daemon container mount inventory: exact registered container only for each fresh session data volume. No host/outside writer guarantee; exclusive-writer premise remains operational."
+}

@@ -1,0 +1,33 @@
+TAP version 13
+# Subtest: actual smoke body refuses unobserved starting instead of publishing success
+not ok 1 - actual smoke body refuses unobserved starting instead of publishing success
+  ---
+  duration_ms: 5.700166
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-session-2026-10-04/smoke-driver-controls.mjs:32:1'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected rejection.'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  operator: 'rejects'
+  stack: |-
+    async TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-session-2026-10-04/smoke-driver-controls.mjs:33:2)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: actual smoke body accepts observed starting followed by new-generation healthy recovery
+ok 2 - actual smoke body accepts observed starting followed by new-generation healthy recovery
+  ---
+  duration_ms: 105.44
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 1
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 156.674917

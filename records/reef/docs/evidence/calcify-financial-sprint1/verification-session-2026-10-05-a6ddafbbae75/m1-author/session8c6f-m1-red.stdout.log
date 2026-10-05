@@ -1,0 +1,16 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :verifyRuntimeOrderIdentityMigration
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :processTestResources UP-TO-DATE
+> Task :verifyNoTestSourceExclusions
+
+> Task :compileTestKotlin FAILED
+
+[Incubating] Problems report is available at: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/reports/problems/problems-report.html
+8 actionable tasks: 3 executed, 5 up-to-date

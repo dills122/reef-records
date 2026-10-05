@@ -1,0 +1,15 @@
+{
+  "intent": "Close bounded E3 externalfault and activation acceptance gaps within existing test-only Sprint1 design",
+  "flow": "Broker runner seeds manifest with actual source dataoffsets and UUID; EOS worker restores c/h/s and validates sharedcut before kernels becomeactive. Output verifier independently checks economics. CommittedCut builds source-derived coverage from actualread_committed resultrecords, reruns identical partition verifier on fullstate, isolatedmixedrequest and missinghistory. Quartet restarts actual managedstore from changelog innewdir, preservesoriginaloutputprefix, thenfreshsuffix. Externalfault arms use deterministic observerbarriers and actualproducer failure classes",
+  "choices": "Refusal branch adopted; no syntheticRocksDB mutation or production financial authority redesign. Fullsemanticstate compare includes deliverydedup and pendingphase. Physical groupresume remains frameworkcaptured fact",
+  "verification": "Known red/green receipts retained .planning session and docs/evidence raw. Shared Gradle resultXML copied immediately after integrated completion. Previous M1 originalXMLmissing disclosed; retained2/2summary andbuildlog. Newintegratedsuite suppliesfreshXML",
+  "reviewResponse": "M1cycle1 acceptedP2 ready signalCode defect; negative exactsourcevm regression RED thenGREEN; immediate signalguard fixed",
+  "limits": "No injected mixedmanagedstore restore claimed. Isolatedquartet derives certification fromcommitted output facts; mandatoryactualinit shares verifier. Livebrokerproof stillpending. Nodeguard underseparatereview; nofinancialrate orwholeclusterloss guarantee",
+  "cost": "Coldstartup fullscan existed already, consolidated toone scan+strict verifier; no addedhotpathscan. New builder testonly isolatedproof operation",
+  "additionalRootFixes": [
+    "DynamicRateProbe providesmembership callback withoutstaticarray; newinprocessTopologyTestDriverRED1of3 confirmsNPE, emptycut nowrequestsnone; actualhistoryprefix stillrequirescomplete callbackmembership. GREEN19targetedthen45fullfinancial tests retained.",
+    "Recorder recreated historicalarchived raw/attempts.jsonl andretentioncheckfailed; current35filesrelocatedexactbytes/hashmapping tosessionattempts-legacy, nohistorical originalmodified; recorderexplicitdir+activeproofdefaultTDDRED1of2/GREEN2of2 and520retentionPASS."
+  ],
+  "M0Gate": "Ready review3of3:30controls, realownedDocker smokeactualexit0/finalsample/cleanup/retainedvolumes passed; asyncpreparationbounded, atomic synchronousfinalpublication filesystemstalls limitationdisclosed.",
+  "scopeBoundary": "Finalcode11hashesexplicit9financialfault+cutfiles and2recorderfiles; sourceHeadbaselinea6ddafbb+uncommittedhashboundary. Parentwillattach allfailedandpassingliveproofs, resourcesamplesandverification."
+}

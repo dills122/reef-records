@@ -1,0 +1,52 @@
+TAP version 13
+# Subtest: Docker adapter samples running peers, reserves stopped target and retains registered volumes
+not ok 1 - Docker adapter samples running peers, reserves stopped target and retains registered volumes
+  ---
+  duration_ms: 7.6135
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:175:1'
+  failureType: 'testCodeFailure'
+  error: 'spawn /test/docker ENOENT'
+  code: 'ENOENT'
+  stack: |-
+    ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    onErrorNT (node:internal/child_process:483:16)
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  ...
+# Subtest: Docker adapter does not skip running du failure or accept changed image metadata
+not ok 2 - Docker adapter does not skip running du failure or accept changed image metadata
+  ---
+  duration_ms: 3.108459
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:188:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /du failed|image differs/. Input:
+    
+    'Error: spawn /test/docker ENOENT'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+  error: 'spawn /test/docker ENOENT'
+  stack: |-
+    ChildProcess._handle.onexit (node:internal/child_process:285:19)
+    onErrorNT (node:internal/child_process:483:16)
+    process.processTicksAndRejections (node:internal/process/task_queues:89:21)
+  operator: 'rejects'
+  stack: |-
+    process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    async TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:191:11)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 0
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 63.201333

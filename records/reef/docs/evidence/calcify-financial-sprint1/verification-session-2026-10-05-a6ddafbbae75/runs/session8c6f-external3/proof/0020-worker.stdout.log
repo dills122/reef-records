@@ -1,0 +1,6 @@
+{"processStarted":true,"guarantee":"exactly_once_v2","commitIntervalMs":1000,"transactionTimeoutMs":30000,"stateDir":"/var/folders/lg/j56llg991d1gpjvtjh8l9gbh0000gn/T/reef-financial-e3-IKPbA5"}
+{"certifiedCatchupDomains":0,"partitionCut":null}
+{"frameworkRunningMs":1323}
+{"faultBoundary":"before-forward","inputOrdinal":4,"inputOffset":10,"storeCertificateCandidate":"{\"offset\":10,\"ordinal\":4,\"sourceUuid\":\"TJNoOlbOTG2FjgPEyYnkAg\",\"authoritySha256\":\"dab50f37d20e28a153e22dcf56d93e2bc3478c960dc4e5ba7fd387fbee87ec38\",\"owners\":{\"A\":{\"sequence\":4,\"checksum\":\"407744cbe59490930f56ded35a41d4113aafd981afcb5740dc84179e7662328f\"},\"B\":{\"sequence\":3,\"checksum\":\"3dbde29dd483add921f2cbc3d8aeed35eb3de5755db64ebfccaa9f7e117aaf21\"}}}","outputBytes":2612,"commitRequested":false}
+{"faultBoundary":"stale-owner-resumed","inputOrdinal":4,"inputOffset":10}
+{"producerBoundary":"send","failureClass":"org.apache.kafka.common.errors.ProducerFencedException","causeClasses":["org.apache.kafka.common.errors.ProducerFencedException"],"resource":"financial-s1-97924e15-session8c6f-external3-stale-owner-resume-after-takeover-results","failure":"org.apache.kafka.common.errors.ProducerFencedException: There is a newer producer with the same transactionalId which fences the current one."}

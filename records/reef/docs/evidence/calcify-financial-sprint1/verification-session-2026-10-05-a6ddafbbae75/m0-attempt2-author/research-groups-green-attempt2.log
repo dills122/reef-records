@@ -1,0 +1,77 @@
+TAP version 13
+# Subtest: Attempt2 group2 actual adapter and file protocol accept one STOP starting healthy cycle with stable reservation
+ok 1 - Attempt2 group2 actual adapter and file protocol accept one STOP starting healthy cycle with stable reservation
+  ---
+  duration_ms: 228.846083
+  type: 'test'
+  ...
+# {"control":"healthy-only-restriction-mutant","orderedObservations":["healthy","stopped","starting"],"rejectedAt":"starting","scope":"single predicate restriction mutation; not complete old source"}
+# Subtest: Attempt2 healthy-only restriction mutant reaches STOP then rejects actual adapter starting observation
+ok 2 - Attempt2 healthy-only restriction mutant reaches STOP then rejects actual adapter starting observation
+  ---
+  duration_ms: 5.271875
+  type: 'test'
+  ...
+# Subtest: Attempt2 group1 initial stopped starting unhealthy and unconfigured fault reject before launch
+ok 3 - Attempt2 group1 initial stopped starting unhealthy and unconfigured fault reject before launch
+  ---
+  duration_ms: 36.104083
+  type: 'test'
+  ...
+# Subtest: Attempt2 group3 START requires authorized directly observed stopped barrier even without periodic STOP sample
+ok 4 - Attempt2 group3 START requires authorized directly observed stopped barrier even without periodic STOP sample
+  ---
+  duration_ms: 2.239
+  type: 'test'
+  ...
+# Subtest: Attempt2 group4 exact identity artifacts immutable replay path and missing ACK fail closed
+ok 5 - Attempt2 group4 exact identity artifacts immutable replay path and missing ACK fail closed
+  ---
+  duration_ms: 8.81675
+  type: 'test'
+  ...
+# Subtest: Attempt2 group5 either peer lifecycle health and generation fail in every phase
+ok 6 - Attempt2 group5 either peer lifecycle health and generation fail in every phase
+  ---
+  duration_ms: 52.461292
+  type: 'test'
+  ...
+# Subtest: Attempt2 group6 target invalid grace second generation stopped-after-running and old probe fail
+ok 7 - Attempt2 group6 target invalid grace second generation stopped-after-running and old probe fail
+  ---
+  duration_ms: 17.838875
+  type: 'test'
+  ...
+# Subtest: Attempt2 group7 fixed recovery deadline boundaries persistence and starting never renew anchor
+ok 8 - Attempt2 group7 fixed recovery deadline boundaries persistence and starting never renew anchor
+  ---
+  duration_ms: 7.96175
+  type: 'test'
+  ...
+# Subtest: Attempt2 group8 target du bound strict malformed and observer hung retain fixed charged bytes
+ok 9 - Attempt2 group8 target du bound strict malformed and observer hung retain fixed charged bytes
+  ---
+  duration_ms: 43.805792
+  type: 'test'
+  ...
+# Subtest: Attempt2 group9 protocol read ACK and authorization evidence cannot suspend strict observer gate
+ok 10 - Attempt2 group9 protocol read ACK and authorization evidence cannot suspend strict observer gate
+  ---
+  duration_ms: 289.264167
+  type: 'test'
+  ...
+# Subtest: Attempt2 group10 incomplete cycle exit cannot complete and rejected raw inspect survives diagnostics failure
+ok 11 - Attempt2 group10 incomplete cycle exit cannot complete and rejected raw inspect survives diagnostics failure
+  ---
+  duration_ms: 11.694792
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 755.280666

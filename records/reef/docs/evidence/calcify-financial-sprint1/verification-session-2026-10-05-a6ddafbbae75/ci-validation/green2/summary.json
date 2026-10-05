@@ -1,0 +1,12 @@
+{
+  "tests": 216,
+  "pass": 216,
+  "fail": 0,
+  "skipped": 0,
+  "cancelled": 0,
+  "actualExitCode": 0,
+  "sourceHashesBeforeAfterMatch": true,
+  "attemptStartedUtc": "2026-10-05T05:04:43.362Z",
+  "attemptFinishedUtc": "2026-10-05T05:04:52.900Z",
+  "scope": "Exact CI job command, before/after source captures around subprocess; raw V8 coverage excluded from Records"
+}

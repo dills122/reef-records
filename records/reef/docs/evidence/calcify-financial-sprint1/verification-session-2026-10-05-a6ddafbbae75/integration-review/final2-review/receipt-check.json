@@ -1,0 +1,112 @@
+{
+  "runs": [
+    {
+      "name": "recovery-smoke1",
+      "samples": 11,
+      "maxGapMs": 804,
+      "starting": 4,
+      "maxAccountedBytes": 4627775488,
+      "actualCliExit": 0
+    },
+    {
+      "name": "external3",
+      "samples": 38,
+      "maxGapMs": 4806,
+      "starting": 4,
+      "maxAccountedBytes": 4844015616,
+      "actualCliExit": 0,
+      "arms": 4,
+      "armNames": [
+        "producer-failure",
+        "committed-output-before-controller-ack",
+        "stale-owner-resume-after-takeover",
+        "majority-one-broker-unavailable"
+      ]
+    },
+    {
+      "name": "activation2",
+      "samples": 6,
+      "maxGapMs": 4802,
+      "starting": 0,
+      "maxAccountedBytes": 2522976256,
+      "actualCliExit": 0,
+      "arms": 1,
+      "armNames": [
+        "activation-quartet"
+      ]
+    },
+    {
+      "name": "core1",
+      "samples": 99,
+      "maxGapMs": 4805,
+      "starting": 0,
+      "maxAccountedBytes": 4340293632,
+      "actualCliExit": 0,
+      "arms": 24,
+      "armNames": [
+        "happy",
+        "mutation-0",
+        "mutation-1",
+        "mutation-2",
+        "mutation-3",
+        "mutation-4",
+        "mutation-5",
+        "mutation-6",
+        "mutation-7",
+        "mutation-8",
+        "mutation-9",
+        "mutation-10",
+        "mutation-11",
+        "mutation-12",
+        "mutation-13",
+        "mutation-14",
+        "mutation-15",
+        "mutation-16",
+        "mutation-17",
+        "mutation-18",
+        "forward",
+        "serialization",
+        "local-state-loss",
+        "staged-phase-loss"
+      ]
+    },
+    {
+      "name": "golden1",
+      "samples": 92,
+      "maxGapMs": 4815,
+      "starting": 0,
+      "maxAccountedBytes": 5863723008,
+      "actualCliExit": 0,
+      "arms": 20,
+      "armNames": [
+        "golden-0",
+        "golden-1",
+        "golden-2",
+        "golden-3",
+        "golden-4",
+        "golden-5",
+        "golden-6",
+        "golden-7",
+        "golden-8",
+        "golden-9",
+        "golden-10",
+        "golden-11",
+        "golden-12",
+        "golden-13",
+        "golden-14",
+        "golden-15",
+        "golden-16",
+        "golden-17",
+        "golden-18",
+        "golden-19"
+      ]
+    }
+  ],
+  "identity": {
+    "runners": 3,
+    "sources": 11,
+    "compiled": 97,
+    "fixture": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d"
+  },
+  "rawResults": 49
+}

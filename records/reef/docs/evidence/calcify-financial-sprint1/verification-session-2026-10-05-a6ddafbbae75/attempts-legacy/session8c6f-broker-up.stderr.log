@@ -1,0 +1,14 @@
+ Network reef-calcify-financial-session-8c6f_default Creating 
+ Volume reef-calcify-financial-session-8c6f_rp0-data Creating 
+ Volume reef-calcify-financial-session-8c6f_rp0-data Creating 
+ Volume reef-calcify-financial-session-8c6f_rp2-data Creating 
+ Network reef-calcify-financial-session-8c6f_default Creating 
+ Volume reef-calcify-financial-session-8c6f_rp2-data Creating 
+ Volume reef-calcify-financial-session-8c6f_rp1-data Creating 
+ Volume reef-calcify-financial-session-8c6f_rp1-data Creating 
+ Network reef-calcify-financial-session-8c6f_default Error Error response from daemon: all predefined address pools have been fully subnetted
+ network:default failed to create network reef-calcify-financial-session-8c6f_default: Error response from daemon: all predefined address pools have been fully subnetted 
+ Volume reef-calcify-financial-session-8c6f_rp1-data Error error during connect: Post "http://%2FUsers%2Fdsteele%2F.docker%2Frun%2Fdocker.sock/v1.55/volumes/create": failed to create network reef-calcify-financial-session-8c6f_default: Error response from daemon: all predefined address pools have been fully subnetted
+ Volume reef-calcify-financial-session-8c6f_rp0-data Error error during connect: Post "http://%2FUsers%2Fdsteele%2F.docker%2Frun%2Fdocker.sock/v1.55/volumes/create": failed to create network reef-calcify-financial-session-8c6f_default: Error response from daemon: all predefined address pools have been fully subnetted
+ Volume reef-calcify-financial-session-8c6f_rp2-data Error error during connect: Post "http://%2FUsers%2Fdsteele%2F.docker%2Frun%2Fdocker.sock/v1.55/volumes/create": failed to create network reef-calcify-financial-session-8c6f_default: Error response from daemon: all predefined address pools have been fully subnetted
+failed to create network reef-calcify-financial-session-8c6f_default: Error response from daemon: all predefined address pools have been fully subnetted

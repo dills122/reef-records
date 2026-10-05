@@ -1,0 +1,148 @@
+TAP version 13
+# Subtest: fixed budgets retain bounded correctness profile
+ok 1 - fixed budgets retain bounded correctness profile
+  ---
+  duration_ms: 0.937834
+  type: 'test'
+  ...
+# Subtest: preflight rejects unsupported schema, duplicate IDs, scope and wrapper paths
+ok 2 - preflight rejects unsupported schema, duplicate IDs, scope and wrapper paths
+  ---
+  duration_ms: 0.678333
+  type: 'test'
+  ...
+# Subtest: frozen preflight clone prevents caller changing cleanup resources
+ok 3 - frozen preflight clone prevents caller changing cleanup resources
+  ---
+  duration_ms: 0.231959
+  type: 'test'
+  ...
+# Subtest: exact resource set and labels required on every sample
+ok 4 - exact resource set and labels required on every sample
+  ---
+  duration_ms: 0.279166
+  type: 'test'
+  ...
+# Subtest: negative/nonfinite readings and stale/future heartbeat fail closed
+ok 5 - negative/nonfinite readings and stale/future heartbeat fail closed
+  ---
+  duration_ms: 2.002875
+  type: 'test'
+  ...
+# Subtest: each resource budget aborts at exact threshold
+ok 6 - each resource budget aborts at exact threshold
+  ---
+  duration_ms: 0.172708
+  type: 'test'
+  ...
+# Subtest: intentional STOP charges evidenced conservative bound and requires healthy peers
+ok 7 - intentional STOP charges evidenced conservative bound and requires healthy peers
+  ---
+  duration_ms: 0.318
+  type: 'test'
+  ...
+# Subtest: observer startup throw prevents launch, still stops registered brokers
+ok 8 - observer startup throw prevents launch, still stops registered brokers
+  ---
+  duration_ms: 1.565375
+  type: 'test'
+  ...
+# Subtest: observer throw/stale/hung and sample record failure kill owned group and brokers
+ok 9 - observer throw/stale/hung and sample record failure kill owned group and brokers
+  ---
+  duration_ms: 12.715625
+  type: 'test'
+  ...
+# Subtest: wrapper failure and proof timeout kill owned group and registered brokers
+ok 10 - wrapper failure and proof timeout kill owned group and registered brokers
+  ---
+  duration_ms: 2.687917
+  type: 'test'
+  ...
+# Subtest: success requires final sample and exit status handshake before completion
+ok 11 - success requires final sample and exit status handshake before completion
+  ---
+  duration_ms: 0.43325
+  type: 'test'
+  ...
+# Subtest: final sample failure cannot report successful wrapper as proof completion
+ok 12 - final sample failure cannot report successful wrapper as proof completion
+  ---
+  duration_ms: 0.233833
+  type: 'test'
+  ...
+# Subtest: cleanup failures are recorded and never relabel proof as successful
+ok 13 - cleanup failures are recorded and never relabel proof as successful
+  ---
+  duration_ms: 0.24375
+  type: 'test'
+  ...
+# Subtest: hanging journal, prelaunch interrupt and synchronous cleanup throws fail closed
+ok 14 - hanging journal, prelaunch interrupt and synchronous cleanup throws fail closed
+  ---
+  duration_ms: 23.749834
+  type: 'test'
+  ...
+# Subtest: monitor plus journal elapsed time cannot launch with stale initial sample
+ok 15 - monitor plus journal elapsed time cannot launch with stale initial sample
+  ---
+  duration_ms: 0.227667
+  type: 'test'
+  ...
+# Subtest: slow initial monitor anchors first and later sample starts to sample timestamp
+ok 16 - slow initial monitor anchors first and later sample starts to sample timestamp
+  ---
+  duration_ms: 0.334916
+  type: 'test'
+  ...
+# Subtest: polling clock jump past heartbeat deadline stops owned wrapper before new sample
+ok 17 - polling clock jump past heartbeat deadline stops owned wrapper before new sample
+  ---
+  duration_ms: 0.142667
+  type: 'test'
+  ...
+# Subtest: elapsed launch time cannot continue with stale heartbeat
+ok 18 - elapsed launch time cannot continue with stale heartbeat
+  ---
+  duration_ms: 0.129791
+  type: 'test'
+  ...
+# Subtest: hanging or throwing completion write returns failure after bounded cleanup
+ok 19 - hanging or throwing completion write returns failure after bounded cleanup
+  ---
+  duration_ms: 11.501167
+  type: 'test'
+  ...
+# Subtest: Docker adapter samples running peers, reserves stopped target and retains registered volumes
+ok 20 - Docker adapter samples running peers, reserves stopped target and retains registered volumes
+  ---
+  duration_ms: 3.731542
+  type: 'test'
+  ...
+# Subtest: Docker adapter does not skip running du failure or accept changed image metadata
+ok 21 - Docker adapter does not skip running du failure or accept changed image metadata
+  ---
+  duration_ms: 3.100458
+  type: 'test'
+  ...
+# Subtest: observer failure stops active owned wrapper/STOP leaf while sentinel survives
+ok 22 - observer failure stops active owned wrapper/STOP leaf while sentinel survives
+  ---
+  duration_ms: 483.011083
+  type: 'test'
+  ...
+# Subtest: owned group kills stopped TERM-resistant leaf after leader exits; unrelated sentinel survives
+ok 23 - owned group kills stopped TERM-resistant leaf after leader exits; unrelated sentinel survives
+  ---
+  duration_ms: 786.893
+  type: 'test'
+  ...
+1..23
+# tests 23
+# suites 0
+# pass 23
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1388.971542

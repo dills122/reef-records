@@ -1,0 +1,43 @@
+{
+  "intent": "Close bounded test-only E3 external fault and exact certified activation gaps in existing RFC refusal branch",
+  "flow": "Actual accepted source offset/UUID/hash facts bind c/h/s and configured authority; mandatory FinancialProcessor.init verifies same partition cut before kernel activation. Independent output oracle verifies economics. CommittedCut builds isolated certification from actual read_committed outputs; exact A10/B27 mixed semantic request and missing A+5 refusal share actual startup helper. Actual new-directory same-app changelog restore preserves old output prefix/end/checkpoint before fresh suffix. No mixed RocksDB injection claim.",
+  "externalFaults": {
+    "producer": "Actual Kafka RecordTooLargeException at send after prior forwards; aborted read_committed output empty, restart full8 and idle no republish",
+    "controllerAck": "Read_committed prefix4 before controller ACK file; SIGKILL, same old prefix/end/checkpoint after restore, then fresh suffix",
+    "staleOwner": "Pause at ordinal4 before forward, OS SIGSTOP, replacement full8, old SIGCONT/resume actual ProducerFencedException; economic prefix unchanged, physical aborted frames considered",
+    "majority": "Fresh inspected exact rp1 STOP under immutable supervisor grants; two healthy peers commit full8 while stopped; bounded target starting/du/recovered generation, idle oracle/end unchanged"
+  },
+  "faultSpecificSettings": "Default worker commit60000ms/transaction120000ms; stale-owner arm commit1000ms/transaction30000ms explicitly emitted/frozen to bound takeover restoration; no general timing extrapolation",
+  "rootFixes": [
+    "ready rejects spawn/exit/signal before accepting readiness",
+    "financial Docker label derives actual compose canonical test label",
+    "dynamic rate callback no static array accepted only with prefix complete membership; empty cut requests none",
+    "recorder default active .planning proof namespace plus override, exact35 original receipts relocated with hash mapping",
+    "CI adds broker and supervisor regression entries",
+    "reviewed supervisor Attempt2 fixed immutable one-cycle phase protocol and starting allowance with actual du plus fixed3GiB reservation; flag pair validation and recovery-only cadence controls",
+    "root smoke refuses unobserved starting; CI direct before/after capture and previous unsupported timing claim separately corrected"
+  ],
+  "tests": [
+    "Financial45/45 actual XML",
+    "Exact CI216/216 before/after38 hashes actualexit0",
+    "Fresh independent focused58/58 and smoke actual-body2/2"
+  ],
+  "live": [
+    "recovery-smoke1 actual parent4starting/du/finalhealthy/marker/exit0",
+    "external3 four arms pass",
+    "activation2 actualquartet pass",
+    "core1 24arms oracle+isolated full-history pass",
+    "golden1 still running; replace before dispatch"
+  ],
+  "identity": "Four candidate plans same3 runner/11 financial source/97 compiled hashes, unchanged fixtureSHAfee7eead...; currentsource match. Baselinea6ddafbb plus dirty/new hashes; historical97924 topic naming does not identify executable source.",
+  "history": "External1 wrong prior label failure and external2 recovery false-abort retained with partial3arm successes and raw corrections. Earlier activation1 scope separate. M0 Attempt1threecycles then primary Docker health research beforeAttempt2; no count reset. Prior cap7 belongs dated original scope; current user explicit bounded milestone sessions.",
+  "limits": [
+    "No production financial authority, API/events/storage contract or accepted ADR change",
+    "No live reservation/matcher identity acceptance",
+    "No full cluster-loss or continuous peak guarantee",
+    "No financial throughput/capacity promotion",
+    "Fault accounting includes target3GiB reservation; measured running broker sum separate",
+    "Node/kernel/filesystem stalls and outside-writer absence remain disclosed operational limits",
+    "Archive publication/delivery remains parent-owned pending finalreview"
+  ]
+}

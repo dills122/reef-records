@@ -1,0 +1,83 @@
+{
+  "schema": "calcify-proof-supervisor-v1",
+  "registeredResources": {
+    "project": "reef-calcify-financial-session-8c6f",
+    "containers": [
+      {
+        "id": "1335cf8f168bed8177104f47994745d4525b12ab5b014dd649adcb4e73860143",
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-financial-session-8c6f",
+          "com.docker.compose.service": "rp0",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-financial-session-8c6f_rp0-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "5aa6560ec9bb80fd238bdba3c2e07259854f30de76c6c82868de1e038cd2d446",
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-financial-session-8c6f",
+          "com.docker.compose.service": "rp1",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-financial-session-8c6f_rp1-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "733d961222e085cb98d5af55859eaeb59a2390198fa0bbcdffdf975061fcec9c",
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-financial-session-8c6f",
+          "com.docker.compose.service": "rp2",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-financial-session-8c6f_rp2-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      }
+    ]
+  },
+  "wrapper": {
+    "argv": [
+      "/usr/bin/env",
+      "JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home",
+      "CALCIFY_FINANCIAL_RUN_ID=session8c6f-external1",
+      "CALCIFY_FINANCIAL_PREFLIGHT=/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-session-2026-10-04/broker/preflight.json",
+      "CALCIFY_FINANCIAL_PROOF_DIR=/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-session-2026-10-04/runs/session8c6f-external1/proof",
+      "/Users/dsteele/.local/state/fnm_multishells/53262_1791169112824/bin/node",
+      "/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/broker-proof.mjs",
+      "run-external"
+    ],
+    "cwd": "/Users/dsteele/.codex/worktrees/8c6f/reef",
+    "outputDir": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-session-2026-10-04/runs/session8c6f-external1",
+    "timeoutMs": 1800000
+  },
+  "externalBrokerFault": {
+    "composeProject": "reef-calcify-financial-session-8c6f",
+    "containers": [
+      "1335cf8f168bed8177104f47994745d4525b12ab5b014dd649adcb4e73860143",
+      "5aa6560ec9bb80fd238bdba3c2e07259854f30de76c6c82868de1e038cd2d446",
+      "733d961222e085cb98d5af55859eaeb59a2390198fa0bbcdffdf975061fcec9c"
+    ],
+    "targetContainer": "5aa6560ec9bb80fd238bdba3c2e07259854f30de76c6c82868de1e038cd2d446",
+    "stoppedAllocatedBytesUpperBound": 3221225472,
+    "evidence": "Frozen conservative3GiB reservation for exact stopped target; every running sample rejects target allocation above bound. Fresh registered named volumes have exclusively owned brokers and no outside writers; stopped allocation cannot grow while broker stopped. Reservation is upper-bound accounting, not measured stopped bytes or continuous peak."
+  },
+  "profileSha256": "00c46da720023a481280c38cd4bb4848df878690005350231f74d4e1371e24f6",
+  "supervisorSourceSha256": "150722f9b26a61971db04084146979c9938795ff5e3f113811de984f614db1d5",
+  "sourceHead": "a6ddafbbae750693e227985f054be2d26716ae84",
+  "workingTreeBoundary": "Explicit dirty source hashes and compiled hashes frozen by broker runner plan; sourceHead denotes baseline, not new uncommitted implementation."
+}
