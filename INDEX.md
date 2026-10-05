@@ -1,5 +1,9 @@
 # Archive index
 
+## October5UTC/October4local — Round7 sign-off and supervised44arm proof
+
+948exact files/4214935bytes. [Bundle](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-05-f22b2f85/README.md), [review7](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-05-f22b2f85/review/instance-7/report.md), [resourcegate](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-05-f22b2f85/proof-pilot/resource-gate.json), [matrixproof](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-05-f22b2f85/proof-matrix/proof-summary.json), [manifest](manifests/2026-10-05-calcify-sprint1-round7-bounded-proof.json), [local-only provenance](docs/imports/2026-10-05-calcify-sprint1-round7-provenance.md). GuardP1closed;19mock+2realcontrols,2pilot+44matrixarmsPASS; fullE3/E4/capacityunsigned. Priororigins unchanged.
+
 ## October 5 UTC / October 4 local — Guard completion-handshake correction
 
 25 exact-byte files (54,968 bytes). Local-only source `fedb554b811559596d32a084451d9af60e021ca8`. [Bundle](records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/README.md), [manifest](manifests/2026-10-05-calcify-sprint1-guard-revision.json), [provenance](docs/imports/2026-10-05-calcify-sprint1-guard-revision-final-provenance.md). Parent13mocks and final real OS process control; earlier controls with escalation EPERM retained; review6 Not ready unchanged. No broker probes.

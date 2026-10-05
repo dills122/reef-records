@@ -1,0 +1,1 @@
+{"profile": {"log_segment_size": 8388608, "compacted_log_segment_size": 8388608, "transaction_coordinator_log_segment_size": 8388608}, "baselineAllocatedBytes": 151191552, "guestFreeBytes": 97434447872, "preflight": "/Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-proof-bounded-pilot/preflight.json"}

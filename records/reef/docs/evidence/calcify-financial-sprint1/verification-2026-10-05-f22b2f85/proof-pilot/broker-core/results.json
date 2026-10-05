@@ -1,0 +1,1186 @@
+{
+  "prefix": "financial-s1-97924e15-bounded-f56b30b1-core",
+  "scope": "bounded RF3/EOS financial experiment; no live venue or whole-cluster durability claim",
+  "results": [
+    {
+      "name": "happy",
+      "topic": "financial-s1-97924e15-bounded-f56b30b1-core-happy",
+      "fault": "",
+      "localStateLost": false,
+      "before": {
+        "initialCommittedEndOffset": 6,
+        "finalCommittedEndOffset": 6,
+        "resultOffsets": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "ownerSnapshots": {
+          "A": {
+            "balances": {
+              "buyerCash": "50000000000",
+              "sellerCash": "50000000000",
+              "buyerShares": "5",
+              "sellerShares": "5",
+              "openingCash": "-100000000000",
+              "openingShares": "-10"
+            },
+            "executions": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": {
+                "buyOrderId": "a-b",
+                "buyerAccount": "buyer",
+                "cashAsset": "USD_NANO",
+                "dueTick": "0",
+                "executionId": "exec-synthetic-1",
+                "instrumentId": "ACME",
+                "priceNanos": "10000000000",
+                "quantity": "5",
+                "runId": "run-é",
+                "securityAsset": "ACME_SHARE",
+                "sellOrderId": "c",
+                "sellerAccount": "seller",
+                "venueSessionId": "session-1"
+              }
+            },
+            "obligations": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": {
+                "status": "SETTLED",
+                "cashResidual": "0",
+                "shareResidual": "0"
+              }
+            },
+            "workflows": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": "SETTLED"
+            },
+            "instructions": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": "SETTLED"
+            },
+            "attempts": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\",\"1\"]": "SETTLED"
+            },
+            "exceptions": {},
+            "reservations": {},
+            "dedup": {
+              "[\"sprint1\",\"A\",\"capture-1\"]": {
+                "digest": "cf24c721e98289d5e296d383bb74b6bf4226365411d118fae15567e58cf887e4",
+                "context": {
+                  "kernel": "e1-gross-v1",
+                  "schema": "e1-v1",
+                  "policy": "gross-p1",
+                  "reference": "assets-r1",
+                  "rounding": "EXACT",
+                  "fees": "NONE",
+                  "reservation": "UNRESERVED",
+                  "logicalTick": "0",
+                  "domain": "A"
+                },
+                "disposition": "CAPTURED"
+              },
+              "[\"sprint1\",\"A\",\"settle-1\"]": {
+                "digest": "975733695610610b7ca94ebe518de02d8a179ab580bad041217723671db87ee6",
+                "context": {
+                  "kernel": "e1-gross-v1",
+                  "schema": "e1-v1",
+                  "policy": "gross-p1",
+                  "reference": "assets-r1",
+                  "rounding": "EXACT",
+                  "fees": "NONE",
+                  "reservation": "UNRESERVED",
+                  "logicalTick": "0",
+                  "domain": "A"
+                },
+                "disposition": "SETTLED"
+              }
+            },
+            "effects": {
+              "[\"sprint1\",\"A\",\"settle-1\"]": [
+                {
+                  "asset": "USD_NANO",
+                  "account": "buyer",
+                  "amount": "-50000000000"
+                },
+                {
+                  "asset": "USD_NANO",
+                  "account": "seller",
+                  "amount": "50000000000"
+                },
+                {
+                  "asset": "ACME_SHARE",
+                  "account": "seller",
+                  "amount": "-5"
+                },
+                {
+                  "asset": "ACME_SHARE",
+                  "account": "buyer",
+                  "amount": "5"
+                }
+              ]
+            },
+            "versions": {
+              "buyerCash": 1,
+              "sellerCash": 1,
+              "buyerShares": 1,
+              "sellerShares": 1,
+              "openingCash": 0,
+              "openingShares": 0,
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": 2
+            },
+            "dueQueue": {},
+            "stagedInputs": {},
+            "policy": {
+              "kernel": "e1-gross-v1",
+              "schema": "e1-v1",
+              "policy": "gross-p1",
+              "reference": "assets-r1",
+              "rounding": "EXACT",
+              "fees": "NONE",
+              "reservation": "UNRESERVED"
+            },
+            "logicalTick": "0",
+            "businessSeq": 2,
+            "historySeq": 3,
+            "deliveryCursor": 0,
+            "nextDelivery": 0,
+            "continuation": null,
+            "lastDecisionId": "[\"sprint1\",\"A\",\"settle-1\"]",
+            "semanticDigest": "425ff7a2ac09379582b1ac257d4b0694326fd2ec2102cec23c708b48714c2f8c",
+            "activePolicy": "gross-p1"
+          },
+          "B": {
+            "balances": {
+              "buyerCash": "50000000000",
+              "sellerCash": "50000000000",
+              "buyerShares": "5",
+              "sellerShares": "5",
+              "openingCash": "-100000000000",
+              "openingShares": "-10"
+            },
+            "executions": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": {
+                "buyOrderId": "a-b",
+                "buyerAccount": "buyer",
+                "cashAsset": "USD_NANO",
+                "dueTick": "0",
+                "executionId": "exec-synthetic-1",
+                "instrumentId": "ACME",
+                "priceNanos": "10000000000",
+                "quantity": "5",
+                "runId": "run-é",
+                "securityAsset": "ACME_SHARE",
+                "sellOrderId": "c",
+                "sellerAccount": "seller",
+                "venueSessionId": "session-1"
+              }
+            },
+            "obligations": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": {
+                "status": "SETTLED",
+                "cashResidual": "0",
+                "shareResidual": "0"
+              }
+            },
+            "workflows": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": "SETTLED"
+            },
+            "instructions": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": "SETTLED"
+            },
+            "attempts": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\",\"1\"]": "SETTLED"
+            },
+            "exceptions": {},
+            "reservations": {},
+            "dedup": {
+              "[\"sprint1\",\"B\",\"capture-1\"]": {
+                "digest": "cf24c721e98289d5e296d383bb74b6bf4226365411d118fae15567e58cf887e4",
+                "context": {
+                  "kernel": "e1-gross-v1",
+                  "schema": "e1-v1",
+                  "policy": "gross-p1",
+                  "reference": "assets-r1",
+                  "rounding": "EXACT",
+                  "fees": "NONE",
+                  "reservation": "UNRESERVED",
+                  "logicalTick": "0",
+                  "domain": "B"
+                },
+                "disposition": "CAPTURED"
+              },
+              "[\"sprint1\",\"B\",\"settle-1\"]": {
+                "digest": "975733695610610b7ca94ebe518de02d8a179ab580bad041217723671db87ee6",
+                "context": {
+                  "kernel": "e1-gross-v1",
+                  "schema": "e1-v1",
+                  "policy": "gross-p1",
+                  "reference": "assets-r1",
+                  "rounding": "EXACT",
+                  "fees": "NONE",
+                  "reservation": "UNRESERVED",
+                  "logicalTick": "0",
+                  "domain": "B"
+                },
+                "disposition": "SETTLED"
+              }
+            },
+            "effects": {
+              "[\"sprint1\",\"B\",\"settle-1\"]": [
+                {
+                  "asset": "USD_NANO",
+                  "account": "buyer",
+                  "amount": "-50000000000"
+                },
+                {
+                  "asset": "USD_NANO",
+                  "account": "seller",
+                  "amount": "50000000000"
+                },
+                {
+                  "asset": "ACME_SHARE",
+                  "account": "seller",
+                  "amount": "-5"
+                },
+                {
+                  "asset": "ACME_SHARE",
+                  "account": "buyer",
+                  "amount": "5"
+                }
+              ]
+            },
+            "versions": {
+              "buyerCash": 1,
+              "sellerCash": 1,
+              "buyerShares": 1,
+              "sellerShares": 1,
+              "openingCash": 0,
+              "openingShares": 0,
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": 2
+            },
+            "dueQueue": {},
+            "stagedInputs": {},
+            "policy": {
+              "kernel": "e1-gross-v1",
+              "schema": "e1-v1",
+              "policy": "gross-p1",
+              "reference": "assets-r1",
+              "rounding": "EXACT",
+              "fees": "NONE",
+              "reservation": "UNRESERVED"
+            },
+            "logicalTick": "0",
+            "businessSeq": 2,
+            "historySeq": 3,
+            "deliveryCursor": 0,
+            "nextDelivery": 0,
+            "continuation": null,
+            "lastDecisionId": "[\"sprint1\",\"B\",\"settle-1\"]",
+            "semanticDigest": "cbc7d540476f980905b220cc8f2708370da79623649f8372711ab257607e8adb",
+            "activePolicy": "gross-p1"
+          }
+        },
+        "scope": "certified prefix including pending phases",
+        "consecutiveResultOffsets": true,
+        "coveredInputs": 4,
+        "expectedInputs": 4,
+        "businessDecisions": 4,
+        "settlements": 2,
+        "domains": 2,
+        "readCommittedOracle": true,
+        "pass": true
+      },
+      "after": {
+        "initialCommittedEndOffset": 12,
+        "finalCommittedEndOffset": 12,
+        "resultOffsets": [
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          9,
+          10
+        ],
+        "ownerSnapshots": {
+          "A": {
+            "balances": {
+              "buyerCash": "0",
+              "sellerCash": "100000000000",
+              "buyerShares": "10",
+              "sellerShares": "0",
+              "openingCash": "-100000000000",
+              "openingShares": "-10"
+            },
+            "executions": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": {
+                "buyOrderId": "a-b",
+                "buyerAccount": "buyer",
+                "cashAsset": "USD_NANO",
+                "dueTick": "0",
+                "executionId": "exec-synthetic-1",
+                "instrumentId": "ACME",
+                "priceNanos": "10000000000",
+                "quantity": "5",
+                "runId": "run-é",
+                "securityAsset": "ACME_SHARE",
+                "sellOrderId": "c",
+                "sellerAccount": "seller",
+                "venueSessionId": "session-1"
+              },
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": {
+                "buyOrderId": "a-b",
+                "buyerAccount": "buyer",
+                "cashAsset": "USD_NANO",
+                "dueTick": "0",
+                "executionId": "exec-synthetic-1-fresh",
+                "instrumentId": "ACME",
+                "priceNanos": "10000000000",
+                "quantity": "5",
+                "runId": "run-é",
+                "securityAsset": "ACME_SHARE",
+                "sellOrderId": "c",
+                "sellerAccount": "seller",
+                "venueSessionId": "session-1"
+              }
+            },
+            "obligations": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": {
+                "status": "SETTLED",
+                "cashResidual": "0",
+                "shareResidual": "0"
+              },
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": {
+                "status": "SETTLED",
+                "cashResidual": "0",
+                "shareResidual": "0"
+              }
+            },
+            "workflows": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": "SETTLED",
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": "SETTLED"
+            },
+            "instructions": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": "SETTLED",
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": "SETTLED"
+            },
+            "attempts": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\",\"1\"]": "SETTLED",
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\",\"1\"]": "SETTLED"
+            },
+            "exceptions": {},
+            "reservations": {},
+            "dedup": {
+              "[\"sprint1\",\"A\",\"capture-1\"]": {
+                "digest": "cf24c721e98289d5e296d383bb74b6bf4226365411d118fae15567e58cf887e4",
+                "context": {
+                  "kernel": "e1-gross-v1",
+                  "schema": "e1-v1",
+                  "policy": "gross-p1",
+                  "reference": "assets-r1",
+                  "rounding": "EXACT",
+                  "fees": "NONE",
+                  "reservation": "UNRESERVED",
+                  "logicalTick": "0",
+                  "domain": "A"
+                },
+                "disposition": "CAPTURED"
+              },
+              "[\"sprint1\",\"A\",\"settle-1\"]": {
+                "digest": "975733695610610b7ca94ebe518de02d8a179ab580bad041217723671db87ee6",
+                "context": {
+                  "kernel": "e1-gross-v1",
+                  "schema": "e1-v1",
+                  "policy": "gross-p1",
+                  "reference": "assets-r1",
+                  "rounding": "EXACT",
+                  "fees": "NONE",
+                  "reservation": "UNRESERVED",
+                  "logicalTick": "0",
+                  "domain": "A"
+                },
+                "disposition": "SETTLED"
+              },
+              "[\"sprint1\",\"A\",\"capture-1-fresh\"]": {
+                "digest": "f010afab38888e1bf67b8f91d8f94ba1d859df8e49db784ca478e3de30173536",
+                "context": {
+                  "kernel": "e1-gross-v1",
+                  "schema": "e1-v1",
+                  "policy": "gross-p1",
+                  "reference": "assets-r1",
+                  "rounding": "EXACT",
+                  "fees": "NONE",
+                  "reservation": "UNRESERVED",
+                  "logicalTick": "0",
+                  "domain": "A"
+                },
+                "disposition": "CAPTURED"
+              },
+              "[\"sprint1\",\"A\",\"settle-1-fresh\"]": {
+                "digest": "8e353bbdb3ab3e59636538103664fc5271210a8bd5e84e92ffab03e735d268fe",
+                "context": {
+                  "kernel": "e1-gross-v1",
+                  "schema": "e1-v1",
+                  "policy": "gross-p1",
+                  "reference": "assets-r1",
+                  "rounding": "EXACT",
+                  "fees": "NONE",
+                  "reservation": "UNRESERVED",
+                  "logicalTick": "0",
+                  "domain": "A"
+                },
+                "disposition": "SETTLED"
+              }
+            },
+            "effects": {
+              "[\"sprint1\",\"A\",\"settle-1\"]": [
+                {
+                  "asset": "USD_NANO",
+                  "account": "buyer",
+                  "amount": "-50000000000"
+                },
+                {
+                  "asset": "USD_NANO",
+                  "account": "seller",
+                  "amount": "50000000000"
+                },
+                {
+                  "asset": "ACME_SHARE",
+                  "account": "seller",
+                  "amount": "-5"
+                },
+                {
+                  "asset": "ACME_SHARE",
+                  "account": "buyer",
+                  "amount": "5"
+                }
+              ],
+              "[\"sprint1\",\"A\",\"settle-1-fresh\"]": [
+                {
+                  "asset": "USD_NANO",
+                  "account": "buyer",
+                  "amount": "-50000000000"
+                },
+                {
+                  "asset": "USD_NANO",
+                  "account": "seller",
+                  "amount": "50000000000"
+                },
+                {
+                  "asset": "ACME_SHARE",
+                  "account": "seller",
+                  "amount": "-5"
+                },
+                {
+                  "asset": "ACME_SHARE",
+                  "account": "buyer",
+                  "amount": "5"
+                }
+              ]
+            },
+            "versions": {
+              "buyerCash": 2,
+              "sellerCash": 2,
+              "buyerShares": 2,
+              "sellerShares": 2,
+              "openingCash": 0,
+              "openingShares": 0,
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": 2,
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": 2
+            },
+            "dueQueue": {},
+            "stagedInputs": {},
+            "policy": {
+              "kernel": "e1-gross-v1",
+              "schema": "e1-v1",
+              "policy": "gross-p1",
+              "reference": "assets-r1",
+              "rounding": "EXACT",
+              "fees": "NONE",
+              "reservation": "UNRESERVED"
+            },
+            "logicalTick": "0",
+            "businessSeq": 4,
+            "historySeq": 5,
+            "deliveryCursor": 0,
+            "nextDelivery": 0,
+            "continuation": null,
+            "lastDecisionId": "[\"sprint1\",\"A\",\"settle-1-fresh\"]",
+            "semanticDigest": "6d96b8662f1b7327ed7c9f75dc73a83ee7d1f81f714d028e294d144f24c7bdbe",
+            "activePolicy": "gross-p1"
+          },
+          "B": {
+            "balances": {
+              "buyerCash": "0",
+              "sellerCash": "100000000000",
+              "buyerShares": "10",
+              "sellerShares": "0",
+              "openingCash": "-100000000000",
+              "openingShares": "-10"
+            },
+            "executions": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": {
+                "buyOrderId": "a-b",
+                "buyerAccount": "buyer",
+                "cashAsset": "USD_NANO",
+                "dueTick": "0",
+                "executionId": "exec-synthetic-1",
+                "instrumentId": "ACME",
+                "priceNanos": "10000000000",
+                "quantity": "5",
+                "runId": "run-é",
+                "securityAsset": "ACME_SHARE",
+                "sellOrderId": "c",
+                "sellerAccount": "seller",
+                "venueSessionId": "session-1"
+              },
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": {
+                "buyOrderId": "a-b",
+                "buyerAccount": "buyer",
+                "cashAsset": "USD_NANO",
+                "dueTick": "0",
+                "executionId": "exec-synthetic-1-fresh",
+                "instrumentId": "ACME",
+                "priceNanos": "10000000000",
+                "quantity": "5",
+                "runId": "run-é",
+                "securityAsset": "ACME_SHARE",
+                "sellOrderId": "c",
+                "sellerAccount": "seller",
+                "venueSessionId": "session-1"
+              }
+            },
+            "obligations": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": {
+                "status": "SETTLED",
+                "cashResidual": "0",
+                "shareResidual": "0"
+              },
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": {
+                "status": "SETTLED",
+                "cashResidual": "0",
+                "shareResidual": "0"
+              }
+            },
+            "workflows": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": "SETTLED",
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": "SETTLED"
+            },
+            "instructions": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": "SETTLED",
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": "SETTLED"
+            },
+            "attempts": {
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\",\"1\"]": "SETTLED",
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\",\"1\"]": "SETTLED"
+            },
+            "exceptions": {},
+            "reservations": {},
+            "dedup": {
+              "[\"sprint1\",\"B\",\"capture-1\"]": {
+                "digest": "cf24c721e98289d5e296d383bb74b6bf4226365411d118fae15567e58cf887e4",
+                "context": {
+                  "kernel": "e1-gross-v1",
+                  "schema": "e1-v1",
+                  "policy": "gross-p1",
+                  "reference": "assets-r1",
+                  "rounding": "EXACT",
+                  "fees": "NONE",
+                  "reservation": "UNRESERVED",
+                  "logicalTick": "0",
+                  "domain": "B"
+                },
+                "disposition": "CAPTURED"
+              },
+              "[\"sprint1\",\"B\",\"settle-1\"]": {
+                "digest": "975733695610610b7ca94ebe518de02d8a179ab580bad041217723671db87ee6",
+                "context": {
+                  "kernel": "e1-gross-v1",
+                  "schema": "e1-v1",
+                  "policy": "gross-p1",
+                  "reference": "assets-r1",
+                  "rounding": "EXACT",
+                  "fees": "NONE",
+                  "reservation": "UNRESERVED",
+                  "logicalTick": "0",
+                  "domain": "B"
+                },
+                "disposition": "SETTLED"
+              },
+              "[\"sprint1\",\"B\",\"capture-1-fresh\"]": {
+                "digest": "f010afab38888e1bf67b8f91d8f94ba1d859df8e49db784ca478e3de30173536",
+                "context": {
+                  "kernel": "e1-gross-v1",
+                  "schema": "e1-v1",
+                  "policy": "gross-p1",
+                  "reference": "assets-r1",
+                  "rounding": "EXACT",
+                  "fees": "NONE",
+                  "reservation": "UNRESERVED",
+                  "logicalTick": "0",
+                  "domain": "B"
+                },
+                "disposition": "CAPTURED"
+              },
+              "[\"sprint1\",\"B\",\"settle-1-fresh\"]": {
+                "digest": "8e353bbdb3ab3e59636538103664fc5271210a8bd5e84e92ffab03e735d268fe",
+                "context": {
+                  "kernel": "e1-gross-v1",
+                  "schema": "e1-v1",
+                  "policy": "gross-p1",
+                  "reference": "assets-r1",
+                  "rounding": "EXACT",
+                  "fees": "NONE",
+                  "reservation": "UNRESERVED",
+                  "logicalTick": "0",
+                  "domain": "B"
+                },
+                "disposition": "SETTLED"
+              }
+            },
+            "effects": {
+              "[\"sprint1\",\"B\",\"settle-1\"]": [
+                {
+                  "asset": "USD_NANO",
+                  "account": "buyer",
+                  "amount": "-50000000000"
+                },
+                {
+                  "asset": "USD_NANO",
+                  "account": "seller",
+                  "amount": "50000000000"
+                },
+                {
+                  "asset": "ACME_SHARE",
+                  "account": "seller",
+                  "amount": "-5"
+                },
+                {
+                  "asset": "ACME_SHARE",
+                  "account": "buyer",
+                  "amount": "5"
+                }
+              ],
+              "[\"sprint1\",\"B\",\"settle-1-fresh\"]": [
+                {
+                  "asset": "USD_NANO",
+                  "account": "buyer",
+                  "amount": "-50000000000"
+                },
+                {
+                  "asset": "USD_NANO",
+                  "account": "seller",
+                  "amount": "50000000000"
+                },
+                {
+                  "asset": "ACME_SHARE",
+                  "account": "seller",
+                  "amount": "-5"
+                },
+                {
+                  "asset": "ACME_SHARE",
+                  "account": "buyer",
+                  "amount": "5"
+                }
+              ]
+            },
+            "versions": {
+              "buyerCash": 2,
+              "sellerCash": 2,
+              "buyerShares": 2,
+              "sellerShares": 2,
+              "openingCash": 0,
+              "openingShares": 0,
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": 2,
+              "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": 2
+            },
+            "dueQueue": {},
+            "stagedInputs": {},
+            "policy": {
+              "kernel": "e1-gross-v1",
+              "schema": "e1-v1",
+              "policy": "gross-p1",
+              "reference": "assets-r1",
+              "rounding": "EXACT",
+              "fees": "NONE",
+              "reservation": "UNRESERVED"
+            },
+            "logicalTick": "0",
+            "businessSeq": 4,
+            "historySeq": 5,
+            "deliveryCursor": 0,
+            "nextDelivery": 0,
+            "continuation": null,
+            "lastDecisionId": "[\"sprint1\",\"B\",\"settle-1-fresh\"]",
+            "semanticDigest": "977e481fded577ee64861be3d9706a73752e976dfd793085b3717265c6d1471c",
+            "activePolicy": "gross-p1"
+          }
+        },
+        "scope": "full input/phase completion",
+        "consecutiveResultOffsets": false,
+        "coveredInputs": 8,
+        "expectedInputs": 8,
+        "businessDecisions": 8,
+        "settlements": 4,
+        "domains": 2,
+        "readCommittedOracle": true,
+        "pass": true
+      },
+      "isolated": [
+        {
+          "isolatedReconstruction": {
+            "inputPartitionOrdinal": 7,
+            "inputPartitionOffset": 13,
+            "ownerHistoryCuts": {
+              "A": 5,
+              "B": 5
+            },
+            "mixedAgeRefused": true,
+            "missingHistoryRefused": true,
+            "repairFromCompleteHistory": true,
+            "committedEndBeforeReconstruction": 12,
+            "scope": "read_committed result-only reconstruction; no local or changelog reads"
+          }
+        },
+        {
+          "result": {
+            "initialCommittedEndOffset": 12,
+            "finalCommittedEndOffset": 12,
+            "resultOffsets": [
+              1,
+              2,
+              3,
+              4,
+              7,
+              8,
+              9,
+              10
+            ],
+            "ownerSnapshots": {
+              "A": {
+                "balances": {
+                  "buyerCash": "0",
+                  "sellerCash": "100000000000",
+                  "buyerShares": "10",
+                  "sellerShares": "0",
+                  "openingCash": "-100000000000",
+                  "openingShares": "-10"
+                },
+                "executions": {
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": {
+                    "buyOrderId": "a-b",
+                    "buyerAccount": "buyer",
+                    "cashAsset": "USD_NANO",
+                    "dueTick": "0",
+                    "executionId": "exec-synthetic-1",
+                    "instrumentId": "ACME",
+                    "priceNanos": "10000000000",
+                    "quantity": "5",
+                    "runId": "run-é",
+                    "securityAsset": "ACME_SHARE",
+                    "sellOrderId": "c",
+                    "sellerAccount": "seller",
+                    "venueSessionId": "session-1"
+                  },
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": {
+                    "buyOrderId": "a-b",
+                    "buyerAccount": "buyer",
+                    "cashAsset": "USD_NANO",
+                    "dueTick": "0",
+                    "executionId": "exec-synthetic-1-fresh",
+                    "instrumentId": "ACME",
+                    "priceNanos": "10000000000",
+                    "quantity": "5",
+                    "runId": "run-é",
+                    "securityAsset": "ACME_SHARE",
+                    "sellOrderId": "c",
+                    "sellerAccount": "seller",
+                    "venueSessionId": "session-1"
+                  }
+                },
+                "obligations": {
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": {
+                    "status": "SETTLED",
+                    "cashResidual": "0",
+                    "shareResidual": "0"
+                  },
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": {
+                    "status": "SETTLED",
+                    "cashResidual": "0",
+                    "shareResidual": "0"
+                  }
+                },
+                "workflows": {
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": "SETTLED",
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": "SETTLED"
+                },
+                "instructions": {
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": "SETTLED",
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": "SETTLED"
+                },
+                "attempts": {
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\",\"1\"]": "SETTLED",
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\",\"1\"]": "SETTLED"
+                },
+                "exceptions": {},
+                "reservations": {},
+                "dedup": {
+                  "[\"sprint1\",\"A\",\"capture-1\"]": {
+                    "digest": "cf24c721e98289d5e296d383bb74b6bf4226365411d118fae15567e58cf887e4",
+                    "context": {
+                      "kernel": "e1-gross-v1",
+                      "schema": "e1-v1",
+                      "policy": "gross-p1",
+                      "reference": "assets-r1",
+                      "rounding": "EXACT",
+                      "fees": "NONE",
+                      "reservation": "UNRESERVED",
+                      "logicalTick": "0",
+                      "domain": "A"
+                    },
+                    "disposition": "CAPTURED"
+                  },
+                  "[\"sprint1\",\"A\",\"settle-1\"]": {
+                    "digest": "975733695610610b7ca94ebe518de02d8a179ab580bad041217723671db87ee6",
+                    "context": {
+                      "kernel": "e1-gross-v1",
+                      "schema": "e1-v1",
+                      "policy": "gross-p1",
+                      "reference": "assets-r1",
+                      "rounding": "EXACT",
+                      "fees": "NONE",
+                      "reservation": "UNRESERVED",
+                      "logicalTick": "0",
+                      "domain": "A"
+                    },
+                    "disposition": "SETTLED"
+                  },
+                  "[\"sprint1\",\"A\",\"capture-1-fresh\"]": {
+                    "digest": "f010afab38888e1bf67b8f91d8f94ba1d859df8e49db784ca478e3de30173536",
+                    "context": {
+                      "kernel": "e1-gross-v1",
+                      "schema": "e1-v1",
+                      "policy": "gross-p1",
+                      "reference": "assets-r1",
+                      "rounding": "EXACT",
+                      "fees": "NONE",
+                      "reservation": "UNRESERVED",
+                      "logicalTick": "0",
+                      "domain": "A"
+                    },
+                    "disposition": "CAPTURED"
+                  },
+                  "[\"sprint1\",\"A\",\"settle-1-fresh\"]": {
+                    "digest": "8e353bbdb3ab3e59636538103664fc5271210a8bd5e84e92ffab03e735d268fe",
+                    "context": {
+                      "kernel": "e1-gross-v1",
+                      "schema": "e1-v1",
+                      "policy": "gross-p1",
+                      "reference": "assets-r1",
+                      "rounding": "EXACT",
+                      "fees": "NONE",
+                      "reservation": "UNRESERVED",
+                      "logicalTick": "0",
+                      "domain": "A"
+                    },
+                    "disposition": "SETTLED"
+                  }
+                },
+                "effects": {
+                  "[\"sprint1\",\"A\",\"settle-1\"]": [
+                    {
+                      "asset": "USD_NANO",
+                      "account": "buyer",
+                      "amount": "-50000000000"
+                    },
+                    {
+                      "asset": "USD_NANO",
+                      "account": "seller",
+                      "amount": "50000000000"
+                    },
+                    {
+                      "asset": "ACME_SHARE",
+                      "account": "seller",
+                      "amount": "-5"
+                    },
+                    {
+                      "asset": "ACME_SHARE",
+                      "account": "buyer",
+                      "amount": "5"
+                    }
+                  ],
+                  "[\"sprint1\",\"A\",\"settle-1-fresh\"]": [
+                    {
+                      "asset": "USD_NANO",
+                      "account": "buyer",
+                      "amount": "-50000000000"
+                    },
+                    {
+                      "asset": "USD_NANO",
+                      "account": "seller",
+                      "amount": "50000000000"
+                    },
+                    {
+                      "asset": "ACME_SHARE",
+                      "account": "seller",
+                      "amount": "-5"
+                    },
+                    {
+                      "asset": "ACME_SHARE",
+                      "account": "buyer",
+                      "amount": "5"
+                    }
+                  ]
+                },
+                "versions": {
+                  "buyerCash": 2,
+                  "sellerCash": 2,
+                  "buyerShares": 2,
+                  "sellerShares": 2,
+                  "openingCash": 0,
+                  "openingShares": 0,
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": 2,
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": 2
+                },
+                "dueQueue": {},
+                "stagedInputs": {},
+                "policy": {
+                  "kernel": "e1-gross-v1",
+                  "schema": "e1-v1",
+                  "policy": "gross-p1",
+                  "reference": "assets-r1",
+                  "rounding": "EXACT",
+                  "fees": "NONE",
+                  "reservation": "UNRESERVED"
+                },
+                "logicalTick": "0",
+                "businessSeq": 4,
+                "historySeq": 5,
+                "deliveryCursor": 0,
+                "nextDelivery": 0,
+                "continuation": null,
+                "lastDecisionId": "[\"sprint1\",\"A\",\"settle-1-fresh\"]",
+                "semanticDigest": "6d96b8662f1b7327ed7c9f75dc73a83ee7d1f81f714d028e294d144f24c7bdbe",
+                "activePolicy": "gross-p1"
+              },
+              "B": {
+                "balances": {
+                  "buyerCash": "0",
+                  "sellerCash": "100000000000",
+                  "buyerShares": "10",
+                  "sellerShares": "0",
+                  "openingCash": "-100000000000",
+                  "openingShares": "-10"
+                },
+                "executions": {
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": {
+                    "buyOrderId": "a-b",
+                    "buyerAccount": "buyer",
+                    "cashAsset": "USD_NANO",
+                    "dueTick": "0",
+                    "executionId": "exec-synthetic-1",
+                    "instrumentId": "ACME",
+                    "priceNanos": "10000000000",
+                    "quantity": "5",
+                    "runId": "run-é",
+                    "securityAsset": "ACME_SHARE",
+                    "sellOrderId": "c",
+                    "sellerAccount": "seller",
+                    "venueSessionId": "session-1"
+                  },
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": {
+                    "buyOrderId": "a-b",
+                    "buyerAccount": "buyer",
+                    "cashAsset": "USD_NANO",
+                    "dueTick": "0",
+                    "executionId": "exec-synthetic-1-fresh",
+                    "instrumentId": "ACME",
+                    "priceNanos": "10000000000",
+                    "quantity": "5",
+                    "runId": "run-é",
+                    "securityAsset": "ACME_SHARE",
+                    "sellOrderId": "c",
+                    "sellerAccount": "seller",
+                    "venueSessionId": "session-1"
+                  }
+                },
+                "obligations": {
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": {
+                    "status": "SETTLED",
+                    "cashResidual": "0",
+                    "shareResidual": "0"
+                  },
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": {
+                    "status": "SETTLED",
+                    "cashResidual": "0",
+                    "shareResidual": "0"
+                  }
+                },
+                "workflows": {
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": "SETTLED",
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": "SETTLED"
+                },
+                "instructions": {
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": "SETTLED",
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": "SETTLED"
+                },
+                "attempts": {
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\",\"1\"]": "SETTLED",
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\",\"1\"]": "SETTLED"
+                },
+                "exceptions": {},
+                "reservations": {},
+                "dedup": {
+                  "[\"sprint1\",\"B\",\"capture-1\"]": {
+                    "digest": "cf24c721e98289d5e296d383bb74b6bf4226365411d118fae15567e58cf887e4",
+                    "context": {
+                      "kernel": "e1-gross-v1",
+                      "schema": "e1-v1",
+                      "policy": "gross-p1",
+                      "reference": "assets-r1",
+                      "rounding": "EXACT",
+                      "fees": "NONE",
+                      "reservation": "UNRESERVED",
+                      "logicalTick": "0",
+                      "domain": "B"
+                    },
+                    "disposition": "CAPTURED"
+                  },
+                  "[\"sprint1\",\"B\",\"settle-1\"]": {
+                    "digest": "975733695610610b7ca94ebe518de02d8a179ab580bad041217723671db87ee6",
+                    "context": {
+                      "kernel": "e1-gross-v1",
+                      "schema": "e1-v1",
+                      "policy": "gross-p1",
+                      "reference": "assets-r1",
+                      "rounding": "EXACT",
+                      "fees": "NONE",
+                      "reservation": "UNRESERVED",
+                      "logicalTick": "0",
+                      "domain": "B"
+                    },
+                    "disposition": "SETTLED"
+                  },
+                  "[\"sprint1\",\"B\",\"capture-1-fresh\"]": {
+                    "digest": "f010afab38888e1bf67b8f91d8f94ba1d859df8e49db784ca478e3de30173536",
+                    "context": {
+                      "kernel": "e1-gross-v1",
+                      "schema": "e1-v1",
+                      "policy": "gross-p1",
+                      "reference": "assets-r1",
+                      "rounding": "EXACT",
+                      "fees": "NONE",
+                      "reservation": "UNRESERVED",
+                      "logicalTick": "0",
+                      "domain": "B"
+                    },
+                    "disposition": "CAPTURED"
+                  },
+                  "[\"sprint1\",\"B\",\"settle-1-fresh\"]": {
+                    "digest": "8e353bbdb3ab3e59636538103664fc5271210a8bd5e84e92ffab03e735d268fe",
+                    "context": {
+                      "kernel": "e1-gross-v1",
+                      "schema": "e1-v1",
+                      "policy": "gross-p1",
+                      "reference": "assets-r1",
+                      "rounding": "EXACT",
+                      "fees": "NONE",
+                      "reservation": "UNRESERVED",
+                      "logicalTick": "0",
+                      "domain": "B"
+                    },
+                    "disposition": "SETTLED"
+                  }
+                },
+                "effects": {
+                  "[\"sprint1\",\"B\",\"settle-1\"]": [
+                    {
+                      "asset": "USD_NANO",
+                      "account": "buyer",
+                      "amount": "-50000000000"
+                    },
+                    {
+                      "asset": "USD_NANO",
+                      "account": "seller",
+                      "amount": "50000000000"
+                    },
+                    {
+                      "asset": "ACME_SHARE",
+                      "account": "seller",
+                      "amount": "-5"
+                    },
+                    {
+                      "asset": "ACME_SHARE",
+                      "account": "buyer",
+                      "amount": "5"
+                    }
+                  ],
+                  "[\"sprint1\",\"B\",\"settle-1-fresh\"]": [
+                    {
+                      "asset": "USD_NANO",
+                      "account": "buyer",
+                      "amount": "-50000000000"
+                    },
+                    {
+                      "asset": "USD_NANO",
+                      "account": "seller",
+                      "amount": "50000000000"
+                    },
+                    {
+                      "asset": "ACME_SHARE",
+                      "account": "seller",
+                      "amount": "-5"
+                    },
+                    {
+                      "asset": "ACME_SHARE",
+                      "account": "buyer",
+                      "amount": "5"
+                    }
+                  ]
+                },
+                "versions": {
+                  "buyerCash": 2,
+                  "sellerCash": 2,
+                  "buyerShares": 2,
+                  "sellerShares": 2,
+                  "openingCash": 0,
+                  "openingShares": 0,
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]": 2,
+                  "[\"run-é\",\"session-1\",\"ACME\",\"exec-synthetic-1-fresh\"]": 2
+                },
+                "dueQueue": {},
+                "stagedInputs": {},
+                "policy": {
+                  "kernel": "e1-gross-v1",
+                  "schema": "e1-v1",
+                  "policy": "gross-p1",
+                  "reference": "assets-r1",
+                  "rounding": "EXACT",
+                  "fees": "NONE",
+                  "reservation": "UNRESERVED"
+                },
+                "logicalTick": "0",
+                "businessSeq": 4,
+                "historySeq": 5,
+                "deliveryCursor": 0,
+                "nextDelivery": 0,
+                "continuation": null,
+                "lastDecisionId": "[\"sprint1\",\"B\",\"settle-1-fresh\"]",
+                "semanticDigest": "977e481fded577ee64861be3d9706a73752e976dfd793085b3717265c6d1471c",
+                "activePolicy": "gross-p1"
+              }
+            },
+            "scope": "full input/phase completion",
+            "consecutiveResultOffsets": false,
+            "coveredInputs": 8,
+            "expectedInputs": 8,
+            "businessDecisions": 8,
+            "settlements": 4,
+            "domains": 2,
+            "readCommittedOracle": true,
+            "pass": true
+          }
+        }
+      ]
+    }
+  ]
+}

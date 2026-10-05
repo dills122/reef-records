@@ -1,0 +1,2 @@
+Filesystem     1K-blocks     Used Available Use% Mounted on
+/dev/vda1      156558308 53421976  95150828  36% /var/lib/redpanda/data

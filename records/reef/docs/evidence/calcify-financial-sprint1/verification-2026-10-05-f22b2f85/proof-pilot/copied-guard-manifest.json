@@ -1,0 +1,14 @@
+[
+  {
+    "path": "resource_watchdog.py",
+    "sha256": "9a27f1c6a2c5633718b11e572d17407504c3205bff99550b5576dbf7f21c545c"
+  },
+  {
+    "path": "supervise_checks.py",
+    "sha256": "12155edc5be4ac0b10a24669d6ae8b39a398dde056dac8a1264f7cb4c7a1561b"
+  },
+  {
+    "path": "run_checks.py",
+    "sha256": "88e90c2f68299b0e7dcbbfa960829adfbd6616cfa91d148d230d5eb5082ada30"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "counts": {
+    "tests": 154,
+    "pass": 154,
+    "fail": 0,
+    "skipped": 0
+  },
+  "coveragePercent": {
+    "lines": 76.55,
+    "branches": 73.81,
+    "functions": 86.03
+  },
+  "scope": "Exact31-file Node CI command; coverage includes testfiles/previousscripts, not product-widecoverage"
+}

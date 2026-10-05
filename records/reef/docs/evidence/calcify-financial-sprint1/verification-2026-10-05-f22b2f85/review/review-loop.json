@@ -1,0 +1,88 @@
+{
+  "schema": "independent-review-loop-v1",
+  "scope": "All recovered E1-E4 implementation code/config/tests relative E0base97924e15",
+  "maxInstances": 7,
+  "instances": [
+    {
+      "number": 1,
+      "head": "35a20cc933d42fd6ec751d63011aa3d40b72ff0a",
+      "bootstrap": "instance-1/bootstrap.md",
+      "author": "instance-1/author.md",
+      "reviewer": "/root/sprint1_independent_review_1",
+      "status": "NOT_READY",
+      "findings": 4,
+      "response": "instance-1/response.md"
+    },
+    {
+      "number": 2,
+      "head": "5843ad5b02c21fd94db5598f05a503a785d8e251",
+      "bootstrap": "instance-2/bootstrap.md",
+      "author": "instance-2/author.md",
+      "status": "NOT_READY",
+      "findings": 3,
+      "response": "instance-2/response.md"
+    },
+    {
+      "number": 3,
+      "head": "908c3e54583cb812b074fe66160c42f0bcbd4921",
+      "bootstrap": "instance-3/bootstrap.md",
+      "author": "instance-3/author.md",
+      "status": "READY_WITH_NON_BLOCKING_FOLLOWUPS",
+      "response": "instance-3/response.md",
+      "openFindings": 1
+    },
+    {
+      "number": 4,
+      "head": "3435d7b0e5a21c8212bcabe18b60dd6196cf1bbc",
+      "bootstrap": "instance-4/bootstrap.md",
+      "author": "instance-4/author.md",
+      "status": "READY_WITH_NON_BLOCKING_FOLLOWUPS",
+      "response": "instance-4/response.md",
+      "openFindings": 1
+    },
+    {
+      "number": 5,
+      "head": "f75b5d6187b631d5d608a24b883df6c57478b151",
+      "bootstrap": "instance-5/bootstrap.md",
+      "author": "instance-5/author.md",
+      "status": "READY_WITH_NON_BLOCKING_FOLLOWUPS",
+      "response": "instance-5/response.md",
+      "openFindings": 0
+    },
+    {
+      "number": 6,
+      "head": "f56b30b19d00a1033abae44a75435a4e771990e9",
+      "bootstrap": "instance-6/bootstrap.md",
+      "author": "instance-6/author.md",
+      "status": "NOT_READY",
+      "openFindings": 1,
+      "response": "instance-6/response.md"
+    },
+    {
+      "number": 7,
+      "head": "f22b2f852a3aa1b14bd52a36f828f3e5cceb351f",
+      "bootstrap": "instance-7/bootstrap.md",
+      "author": "instance-7/author.md",
+      "status": "READY_WITH_NON_BLOCKING_FOLLOWUPS",
+      "reviewer": "/root/sprint1_independent_review_7",
+      "openFindings": 0,
+      "response": "instance-7/response.md"
+    }
+  ],
+  "priorScope": "Merged E0preparation checkpoint review belongs prior distinct implementation; no fresh review previously run for E1-E4 source",
+  "nextAction": "Supervisedpilot; full24core/20golden conditionalonactiveallocatedforecast andheadroom; nofullE3/E4claim",
+  "extension": {
+    "date": "2026-10-04",
+    "humanAuthorization": "Yes you can do some more rounds of independent-review Please",
+    "parentLimit": 6,
+    "usedBeforeExtension": 3
+  },
+  "extensions": [
+    {
+      "humanAuthorization": "Okay that sounds good lets do it",
+      "parentLimit": 7,
+      "usedBeforeExtension": 6,
+      "scope": "Guard closure review, supervisedpilot and boundedfullmatrix"
+    }
+  ]
+}
