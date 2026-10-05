@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.infrastructure.persistence.PostgresVenueEventBatchMaterializationIntegrationTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:19:16.370Z" hostname="Dylans-MacBook-Pro.local" time="0.002">
+  <properties/>
+  <testcase name="canonicalBatchIdentityMatchesPostgresEncodingWhenMigratedPostgresIsAvailable()" classname="com.reef.platform.infrastructure.persistence.PostgresVenueEventBatchMaterializationIntegrationTest" time="0.0"/>
+  <testcase name="sameStoreExactDuplicateClaimSkipsEffectsAfterWatermarkRewind()" classname="com.reef.platform.infrastructure.persistence.PostgresVenueEventBatchMaterializationIntegrationTest" time="0.0"/>
+  <testcase name="separatedStoreDeadlineFencesCandidatesPausedBeforeTheirClaim()" classname="com.reef.platform.infrastructure.persistence.PostgresVenueEventBatchMaterializationIntegrationTest" time="0.0"/>
+  <testcase name="ambiguousCommitDoesNotRepeatProjectionEffectsWhenMigratedPostgresIsAvailable()" classname="com.reef.platform.infrastructure.persistence.PostgresVenueEventBatchMaterializationIntegrationTest" time="0.0"/>
+  <testcase name="projectsExecutionsAndTradesCarriedInResultPayloadWhenMigratedPostgresIsAvailable()" classname="com.reef.platform.infrastructure.persistence.PostgresVenueEventBatchMaterializationIntegrationTest" time="0.0"/>
+  <testcase name="sameStoreProjectionUsesConfiguredRetryHorizon()" classname="com.reef.platform.infrastructure.persistence.PostgresVenueEventBatchMaterializationIntegrationTest" time="0.0"/>
+  <testcase name="retryPastItsDatabaseDeadlineIsFencedWhenMigratedPostgresIsAvailable()" classname="com.reef.platform.infrastructure.persistence.PostgresVenueEventBatchMaterializationIntegrationTest" time="0.0"/>
+  <testcase name="retainsDirtyWorkAcrossUncleanPostgresRestart()" classname="com.reef.platform.infrastructure.persistence.PostgresVenueEventBatchMaterializationIntegrationTest" time="0.0"/>
+  <testcase name="compatBootstrapPreservesMigratedSameStoreClaimWrapperWhenPostgresIsAvailable()" classname="com.reef.platform.infrastructure.persistence.PostgresVenueEventBatchMaterializationIntegrationTest" time="0.0"/>
+  <testcase name="rejectsSamePartitionSequenceFromAnotherBatch()" classname="com.reef.platform.infrastructure.persistence.PostgresVenueEventBatchMaterializationIntegrationTest" time="0.0"/>
+  <testcase name="projectsMaterializedSubmitOutcomesWhenMigratedPostgresIsAvailable()" classname="com.reef.platform.infrastructure.persistence.PostgresVenueEventBatchMaterializationIntegrationTest" time="0.001"/>
+  <testcase name="materializesVenueEventBatchIdempotentlyWhenMigratedPostgresIsAvailable()" classname="com.reef.platform.infrastructure.persistence.PostgresVenueEventBatchMaterializationIntegrationTest" time="0.0"/>
+  <testcase name="sameStoreProjectionAppliesTheMembershipClaimedBeforeConcurrentMaterialization()" classname="com.reef.platform.infrastructure.persistence.PostgresVenueEventBatchMaterializationIntegrationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

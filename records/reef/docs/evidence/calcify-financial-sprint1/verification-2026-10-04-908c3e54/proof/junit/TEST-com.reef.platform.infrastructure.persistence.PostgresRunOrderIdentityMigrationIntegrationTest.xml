@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.infrastructure.persistence.PostgresRunOrderIdentityMigrationIntegrationTest" tests="2" skipped="2" failures="0" errors="0" timestamp="2026-10-04T22:40:23.290Z" hostname="Dylans-MacBook-Pro.local" time="0.0">
+  <properties/>
+  <testcase name="upgradeRecoversCanonicalAcceptancesAndPreservesUnprovenLegacyEvents()" classname="com.reef.platform.infrastructure.persistence.PostgresRunOrderIdentityMigrationIntegrationTest" time="0.0">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: assumption is not true" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: assumption is not true
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:66)
+	at com.reef.platform.infrastructure.persistence.PostgresRunOrderIdentityMigrationIntegrationTest.upgradeRecoversCanonicalAcceptancesAndPreservesUnprovenLegacyEvents(PostgresRunOrderIdentityMigrationIntegrationTest.kt:90)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <testcase name="externalCanonicalHistoryRebuildsFreshStoreWithoutRewritingLegacyFacts()" classname="com.reef.platform.infrastructure.persistence.PostgresRunOrderIdentityMigrationIntegrationTest" time="0.0">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: assumption is not true" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: assumption is not true
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:66)
+	at com.reef.platform.infrastructure.persistence.PostgresRunOrderIdentityMigrationIntegrationTest.externalCanonicalHistoryRebuildsFreshStoreWithoutRewritingLegacyFacts(PostgresRunOrderIdentityMigrationIntegrationTest.kt:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

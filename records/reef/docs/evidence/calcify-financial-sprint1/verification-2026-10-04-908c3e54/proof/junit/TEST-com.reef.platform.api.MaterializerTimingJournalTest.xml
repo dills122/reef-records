@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.api.MaterializerTimingJournalTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:37:41.562Z" hostname="Dylans-MacBook-Pro.local" time="0.01">
+  <properties/>
+  <testcase name="disabledJournalRetainsNothing()" classname="com.reef.platform.api.MaterializerTimingJournalTest" time="0.002"/>
+  <testcase name="retainsExactNoncontiguousMembershipAndDecimalStrings()" classname="com.reef.platform.api.MaterializerTimingJournalTest" time="0.002"/>
+  <testcase name="preservesCompleteCheckpointShapeAndOriginalMembershipAfterCallerMutation()" classname="com.reef.platform.api.MaterializerTimingJournalTest" time="0.001"/>
+  <testcase name="duplicatesCannotReplaceOriginalEvidenceAndRestartChangesIdentity()" classname="com.reef.platform.api.MaterializerTimingJournalTest" time="0.001"/>
+  <testcase name="invalidMembershipAndMissingOrFutureTimingFailClosed()" classname="com.reef.platform.api.MaterializerTimingJournalTest" time="0.001"/>
+  <testcase name="checkpointsSelectLaterRecordsWithoutChangingEarlierSnapshot()" classname="com.reef.platform.api.MaterializerTimingJournalTest" time="0.0"/>
+  <testcase name="capacityDoesNotEvictAndReportsEveryDrop()" classname="com.reef.platform.api.MaterializerTimingJournalTest" time="0.001"/>
+  <testcase name="mutatingReturnedCheckpointCannotChangeRetainedEvidence()" classname="com.reef.platform.api.MaterializerTimingJournalTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

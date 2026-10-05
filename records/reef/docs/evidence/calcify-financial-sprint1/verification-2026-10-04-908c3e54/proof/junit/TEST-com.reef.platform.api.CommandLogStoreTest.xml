@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.api.CommandLogStoreTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:37:41.425Z" hostname="Dylans-MacBook-Pro.local" time="0.007">
+  <properties/>
+  <testcase name="inMemoryStoreAllowsRepeatedTerminalUpdates()" classname="com.reef.platform.api.CommandLogStoreTest" time="0.004"/>
+  <testcase name="inMemoryStoreTracksProcessingCompletedAndFailedStatus()" classname="com.reef.platform.api.CommandLogStoreTest" time="0.0"/>
+  <testcase name="inMemoryStoreMarksTerminalBatch()" classname="com.reef.platform.api.CommandLogStoreTest" time="0.001"/>
+  <testcase name="inMemoryStoreBuildsAccountingSnapshotByRun()" classname="com.reef.platform.api.CommandLogStoreTest" time="0.0"/>
+  <testcase name="inMemoryStoreReturnsExistingCommandForDuplicateCommandId()" classname="com.reef.platform.api.CommandLogStoreTest" time="0.0"/>
+  <testcase name="inMemoryStoreReturnsExistingCommandForDuplicateIdempotencyKey()" classname="com.reef.platform.api.CommandLogStoreTest" time="0.001"/>
+  <testcase name="inMemoryStoreClaimsReceivedCommandsAndCountsStatuses()" classname="com.reef.platform.api.CommandLogStoreTest" time="0.0"/>
+  <testcase name="inMemoryStoreAppendsAndFindsCommand()" classname="com.reef.platform.api.CommandLogStoreTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

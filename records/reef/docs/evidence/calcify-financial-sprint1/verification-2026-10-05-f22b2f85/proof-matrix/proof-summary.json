@@ -1,0 +1,58 @@
+{
+  "result": "PASS",
+  "utc": "2026-10-05T00:37:57.664021+00:00",
+  "sourceHead": "f22b2f852a3aa1b14bd52a36f828f3e5cceb351f",
+  "codeSourceHead": "f75b5d6187b631d5d608a24b883df6c57478b151",
+  "profileSourceHead": "f56b30b19d00a1033abae44a75435a4e771990e9",
+  "review": "7of7 Ready with non-blocking follow-ups; no new actionablefinding; guardP1closed",
+  "coreArms": 24,
+  "goldenArms": 20,
+  "mutationFaults": 19,
+  "otherCoreArms": [
+    "happy",
+    "forward",
+    "serialization",
+    "local-state-loss",
+    "staged-phase-loss"
+  ],
+  "allAfterOraclePass": true,
+  "isolatedHistoryChecks": 44,
+  "priorFaultsExposedZeroUncommittedOutputs": true,
+  "resourceSamples": 92,
+  "maxSampledAllocatedBytes": 4778024960,
+  "minGuestFreeBytes": 92796874752,
+  "maxSampledRawBytes": 2756698,
+  "finalLiveAllocatedBytes": 4752396288,
+  "forecasts": 8280440832,
+  "elapsedSeconds": {
+    "broker-golden": 432.849,
+    "broker-core": 469.711,
+    "supervised-matrix": 474.917
+  },
+  "topicSettingsVerified": 132,
+  "sourceFilesUnchanged": 18,
+  "buildFilesUnchanged": 89,
+  "guardFilesUnchanged": 5,
+  "freshNodeCI": {
+    "tests": 154,
+    "pass": 154,
+    "fail": 0,
+    "skipped": 0
+  },
+  "retainedSameCodePlatform": {
+    "reportedTests": 795,
+    "reportedPassed": 775,
+    "skips": 20,
+    "failures": 0,
+    "errors": 0,
+    "financialPassed": 27,
+    "scope": "Alreadyfreshlyrerunafterreview5; identical18software/89buildhashes independentlyverified7; offlineDBguardedreturns noDBintegrationclaim"
+  },
+  "limitations": [
+    "5ssamples notcontinuouspeak/hard10GiBguarantee",
+    "Observedcorrectnesstimingnotthroughput/capacitylatency",
+    "FullE3majority/staleowner/producerfailure/committed-beforeACK/A10B27activationmatrixstillopen",
+    "E4heap/ACK/physicalbyte/calibrationgatesopen; noE4load",
+    "No production/cutover/fullRFCsignoff"
+  ]
+}

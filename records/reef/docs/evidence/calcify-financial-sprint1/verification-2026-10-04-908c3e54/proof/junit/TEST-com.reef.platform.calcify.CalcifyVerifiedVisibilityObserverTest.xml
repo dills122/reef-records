@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.CalcifyVerifiedVisibilityObserverTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:38:02.908Z" hostname="Dylans-MacBook-Pro.local" time="0.003">
+  <properties/>
+  <testcase name="producerCreateTimeAllowsOnlyItsSubMillisecondTruncation()" classname="com.reef.platform.calcify.CalcifyVerifiedVisibilityObserverTest" time="0.001"/>
+  <testcase name="seededMakerBaselineRequiresExactAcceptedCommandsAndZeroTrades()" classname="com.reef.platform.calcify.CalcifyVerifiedVisibilityObserverTest" time="0.0"/>
+  <testcase name="histogramPercentileCeilingsAndOverflowRemainUpperBounds()" classname="com.reef.platform.calcify.CalcifyVerifiedVisibilityObserverTest" time="0.0"/>
+  <testcase name="timingIntegrityRequiredWithoutSemanticAcceptedAtFallback()" classname="com.reef.platform.calcify.CalcifyVerifiedVisibilityObserverTest" time="0.001"/>
+  <testcase name="seededBaselineRejectsHiddenSourceAndAnyStageOutput()" classname="com.reef.platform.calcify.CalcifyVerifiedVisibilityObserverTest" time="0.0"/>
+  <testcase name="batchEntryRequiresRealOrderedWallClockWithoutFallback()" classname="com.reef.platform.calcify.CalcifyVerifiedVisibilityObserverTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

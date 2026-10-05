@@ -1,0 +1,3 @@
+{"processStarted":true,"guarantee":"exactly_once_v2","commitIntervalMs":60000,"stateDir":"/var/folders/lg/j56llg991d1gpjvtjh8l9gbh0000gn/T/reef-financial-e3-I32x4S"}
+{"certifiedCatchupDomains":0,"partitionCut":null}
+{"frameworkRunningMs":2766}

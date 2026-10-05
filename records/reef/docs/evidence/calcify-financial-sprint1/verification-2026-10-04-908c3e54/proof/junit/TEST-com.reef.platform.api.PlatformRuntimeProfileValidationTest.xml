@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.api.PlatformRuntimeProfileValidationTest" tests="27" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:37:59.927Z" hostname="Dylans-MacBook-Pro.local" time="0.012">
+  <properties/>
+  <testcase name="acceptsAcceptedAsyncOversizedWindowWithOverride()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.004"/>
+  <testcase name="defaultPublisherAndProviderResolveToJetStreamWhenUnset()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.001"/>
+  <testcase name="rejectsUnboundedInMemoryIntakeStore()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.001"/>
+  <testcase name="rejectsNoopPublisherWithVenueEventBatchProjectionSource()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <testcase name="acceptsBoundedInMemoryIntakeStore()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.001"/>
+  <testcase name="rejectsAcceptedAsyncOversizedWindowWithoutOverride()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <testcase name="rejectsNoopPublisherWithMultipleDownstreamConsumersReportingAllViolations()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <testcase name="acceptedAsyncDefaultsPassValidation()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <testcase name="rejectsNoopPublisherWithOrderLifecycleProjectorEnabled()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.001"/>
+  <testcase name="rejectsNoopPublisherWithVenueEventMaterializerEnabled()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <testcase name="localRuntimeDefaultsPostTradeProfile()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <testcase name="externalApiDeploymentProfileMarksRuntimeNonLocal()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <testcase name="cleanNoopThroughputCeilingProfilePassesValidation()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.001"/>
+  <testcase name="redpandaDurablePublisherProfileWithBoundedInMemoryStoreIsValid()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <testcase name="rejectsAcceptedAsyncUnboundedTerminalStatusRetention()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <testcase name="nonLocalRuntimeRequiresExplicitPostTradeProfile()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.001"/>
+  <testcase name="redpandaAliasKafkaResolvesToRedpandaProvider()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <testcase name="nonLocalRuntimeAcceptsExplicitPostTradeProfile()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <testcase name="nonStreamAckModesSkipStreamAckValidation()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <testcase name="rejectsCommandStatusStageWithLifecycleConsumers()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <testcase name="jetStreamDurablePublisherProfileWithPostgresStoreIsValid()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <testcase name="rejectsNoopPublisherWithMarketDataProjectorEnabled()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <testcase name="postgresIntakeStoreNeverTriggersTheBoundedRetentionRule()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <testcase name="rejectsUnsupportedPublisherOverride()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <testcase name="allowsExplicitCommandStatusLifecycleDiagnosticAblation()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.001"/>
+  <testcase name="rejectsUnsupportedIntakeStoreOverride()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <testcase name="noopPublisherWithCanonicalSubmitProjectionSourceIsAllowed()" classname="com.reef.platform.api.PlatformRuntimeProfileValidationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

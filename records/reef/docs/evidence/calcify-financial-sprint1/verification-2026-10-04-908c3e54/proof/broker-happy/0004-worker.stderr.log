@@ -1,0 +1,10 @@
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.IllegalArgumentException: Transaction timeout 10000 was set lower than streams commit interval 60000. This will cause ongoing transaction always timeout due to inactivity caused by long commit interval. Consider reconfiguring commit interval to match transaction timeout by tuning 'commit.interval.ms' config, or increase the transaction timeout to match commit interval by tuning `producer.transaction.timeout.ms` config.
+	at org.apache.kafka.streams.StreamsConfig.verifyEOSTransactionTimeoutCompatibility(StreamsConfig.java:1589)
+	at org.apache.kafka.streams.StreamsConfig.<init>(StreamsConfig.java:1546)
+	at org.apache.kafka.streams.StreamsConfig.<init>(StreamsConfig.java:1537)
+	at org.apache.kafka.streams.KafkaStreams.<init>(KafkaStreams.java:816)
+	at com.reef.platform.calcify.financial.FinancialBrokerProbe.worker(FinancialBrokerProbe.kt:143)
+	at com.reef.platform.calcify.financial.FinancialBrokerProbe.main(FinancialBrokerProbe.kt:106)

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialBrokerProbeTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-10-04T22:57:28.245Z" hostname="Dylans-MacBook-Pro.local" time="0.299">
+  <properties/>
+  <testcase name="actual EOS worker config permits sixty second transaction grouping()" classname="com.reef.platform.calcify.financial.FinancialBrokerProbeTest" time="0.285">
+    <failure message="java.lang.IllegalArgumentException: Transaction timeout 10000 was set lower than streams commit interval 60000. This will cause ongoing transaction always timeout due to inactivity caused by long commit interval. Consider reconfiguring commit interval to match transaction timeout by tuning 'commit.interval.ms' config, or increase the transaction timeout to match commit interval by tuning `producer.transaction.timeout.ms` config." type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: Transaction timeout 10000 was set lower than streams commit interval 60000. This will cause ongoing transaction always timeout due to inactivity caused by long commit interval. Consider reconfiguring commit interval to match transaction timeout by tuning 'commit.interval.ms' config, or increase the transaction timeout to match commit interval by tuning `producer.transaction.timeout.ms` config.
+	at org.apache.kafka.streams.StreamsConfig.verifyEOSTransactionTimeoutCompatibility(StreamsConfig.java:1589)
+	at org.apache.kafka.streams.StreamsConfig.&lt;init&gt;(StreamsConfig.java:1546)
+	at org.apache.kafka.streams.StreamsConfig.&lt;init&gt;(StreamsConfig.java:1537)
+	at com.reef.platform.calcify.financial.FinancialBrokerProbeTest.actual EOS worker config permits sixty second transaction grouping(FinancialBrokerProbeTest.kt:14)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>

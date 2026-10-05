@@ -1,0 +1,9 @@
+# Follow-up author self-check: completion handshake
+
+User asked whether fix was certain. Eleven original mock controls passed again, but second source look identified completion race: observer exited0 after attempts appended while wrappers still flushing/exiting; supervisor treated any observer exit as failure. Mock counterexample reproduced false SUPERVISOR_ABORT. Original archived guard and counterexample retained.
+
+Fix: observer continues heartbeat/sampling after attempts complete until explicit supervisor-finished.json handshake. Supervisor creates handshake atomically only after both actual wrapper processes exit0; final observer sample/exit0 still required. Old marker cleared before observer spawn. Two extra controls cover delayed completion release and successful wrapper-exit handshake:13/13 mocked controls pass. Real OS child-process control then simulates observer exit1 and verifies supervisor terminates only its two spawned disposable groups, exit-15/-15, with no Docker/ps/broker calls. This verifies OS process cleanup, not live resource sampling or Kafka proof.
+
+No independent fresh sign-off. Review6 remains Not ready; configured6 limit exhausted. Need human extension for seventh round including corrected helpers and current full unchanged software scope. No bounded broker probe run/profile applied; old failures and complete original617-file archive immutable.
+
+Real-process follow-up: initial sandbox and outside-sandbox attempts terminated both disposable groups(exit-15/-15) but recorded EPERM escalating SIGKILL after group leader exited without reaping. Retained both logs; no clean-cleanup claim for those attempts. Parent changed termination to wait/reap leader after SIGTERM before SIGKILL escalation, preserving escalation for surviving group members. Reap control and final strengthened assertion passed; final groupErrors empty.13 mocked controls remain PASS. This is a second author fix, not independent sign-off.

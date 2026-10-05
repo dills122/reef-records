@@ -1,0 +1,550 @@
+{
+  "schema": "financial-post-signoff-source-v1",
+  "sourceHead": "908c3e54583cb812b074fe66160c42f0bcbd4921",
+  "fixtureSha256": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+  "sourceFiles": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 30605,
+      "sha256": "e8627b8dc7eb20d6a5e0aa89148c46057dca3ac8bcae8cf9e9503ac9144d7c99"
+    },
+    {
+      "path": "Makefile",
+      "bytes": 30550,
+      "sha256": "a86478c27761393bd28d71cdeb2452e47dc72dc6a6cb6018204551906897dc92"
+    },
+    {
+      "path": "scripts/dev/calcify-financial/broker-proof.mjs",
+      "bytes": 12399,
+      "sha256": "19f73807a2f67e574f4ca1fdede6387b84accf3726383de61d6e735fe2bdb842"
+    },
+    {
+      "path": "scripts/dev/calcify-financial/freeze-fixtures.mjs",
+      "bytes": 19064,
+      "sha256": "efb99c2ef901f988dd832c2d37a0576e2fc6951b6dc9ad4ff3979b56daa9dff8"
+    },
+    {
+      "path": "scripts/dev/calcify-financial/gate-model.mjs",
+      "bytes": 18154,
+      "sha256": "d6a3470817616680e679d72b821bfcbd75388c966e8308d4909c1f0683d1fbea"
+    },
+    {
+      "path": "scripts/dev/calcify-financial/gate-model.test.mjs",
+      "bytes": 7331,
+      "sha256": "4933eb876be97a944eef626cb32354f4ffdc21a58b5cb833bec39f73b7b978e7"
+    },
+    {
+      "path": "scripts/dev/calcify-financial/rate-proof.mjs",
+      "bytes": 18240,
+      "sha256": "8110c34cc54019c021fbe9fdeb11684efb6b06effd394b0e20b286f511a30383"
+    },
+    {
+      "path": "scripts/dev/calcify-financial/rate-proof.test.mjs",
+      "bytes": 7626,
+      "sha256": "f87da86782473cbab9f7a9eb3456eaa7df510da44879934edf100eb84e13cfd8"
+    },
+    {
+      "path": "scripts/dev/calcify-financial/reservation-model.mjs",
+      "bytes": 3403,
+      "sha256": "aacad53dfd2b3e0a91d2c4d26a57448b6499e84d135a13f00bb106d9cef4ec53"
+    },
+    {
+      "path": "scripts/dev/calcify-financial/reservation-model.test.mjs",
+      "bytes": 3113,
+      "sha256": "1c5bd6e4ce9b0a50d60b4d359509ce692eaa1611bd22dea1728721c3b3b754ac"
+    },
+    {
+      "path": "scripts/dev/script-surface-check.mjs",
+      "bytes": 15823,
+      "sha256": "1e95affce790bf2602fb324cd52a95b33178cad67ad20d58f1d8cd36ed84ce59"
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbe.kt",
+      "bytes": 40271,
+      "sha256": "a73c82c949455202a7b6fd729c611af09dd39066e85493ab4e8699f4d738a241"
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialKernel.kt",
+      "bytes": 30486,
+      "sha256": "9f76e87940d7600dac11bb26aba9ad40e39e7fbf41ec28dc8ab990790f0e637e"
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialKernelTest.kt",
+      "bytes": 24397,
+      "sha256": "c45298ccfdc257c0c77ddd153e09e0eaf6849a4ec8d086cd2ea3e8544cf5d1ac"
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialOracle.kt",
+      "bytes": 20825,
+      "sha256": "8c96181409d813876a6be78fed286064070f05f9cc1a5e67729927145c931012"
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialOracleTest.kt",
+      "bytes": 33307,
+      "sha256": "7ecca8b421f9936845bdc235bb3e36e6a779b23a55b3761d6fa992a71fa532e7"
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt",
+      "bytes": 36567,
+      "sha256": "b5df60cbf2a10a1f5257d5eaf5db4aa419aff7b8d72b4d8a28a307fa886972c6"
+    },
+    {
+      "path": "docs/evidence/calcify-financial-sprint1/fixtures.json",
+      "bytes": 90325,
+      "sha256": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d"
+    },
+    {
+      "path": "docs/evidence/calcify-financial-sprint1/broker.compose.yml",
+      "bytes": 1977,
+      "sha256": "0c84f3aaa9115bc55cd9c130a1c2c8f4d5674a18effe81b94e597f7dab9ada40"
+    }
+  ],
+  "compiledClasses": [
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$FinancialProcessor$init$$inlined$sortedBy$1.class",
+      "bytes": 2410,
+      "sha256": "2555ba3bf8a75377c918fc5d6f7d54df1bf91add384999e755923e53d653519f"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$FinancialProcessor$init$lambda$16$$inlined$sortedBy$1.class",
+      "bytes": 2433,
+      "sha256": "4cdb3bb6d716a48e0cfd13621ce24d2238bdd40089601f5286a07260edc962e3"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$FinancialProcessor$init$lambda$3$$inlined$sortedBy$1.class",
+      "bytes": 2438,
+      "sha256": "6a93ecbce5c2011bc6cd9cb2b95754dea64f2284e5e375234cc6b84cc4058575"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$FinancialProcessor.class",
+      "bytes": 36128,
+      "sha256": "12e00d433feb6cc09dddbc1b71eecef933c26ecbdc87a37d4246e1e70cde7c2c"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$OutputVerifier$Staged.class",
+      "bytes": 3935,
+      "sha256": "5c8c4144cbb9f9e7f5c234e8ff30807f666170f02de8f594f4b89f5c389d25a5"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$OutputVerifier.class",
+      "bytes": 24057,
+      "sha256": "9c06afad8f3eff7a3195f57c14136066bb0de622b401cb92dc2c6045cb9c4c16"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$businessView$lambda$0$$inlined$compareBy$1.class",
+      "bytes": 2635,
+      "sha256": "dba90a61ee730c8e33169367e99f510a07c8ce0c656e84c9a7a6f533092e1f68"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$businessView$lambda$0$$inlined$thenBy$1.class",
+      "bytes": 2613,
+      "sha256": "4a6b5ada7b7f578704366fd8f2836f6f56fec2bb69660d1016d3fa75dfe0e03e"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$businessView$lambda$0$$inlined$thenBy$2.class",
+      "bytes": 2408,
+      "sha256": "fa4b5e9ce3ac44b292ce07a5cc3e8af7139975c353ba0a82392b79d500b6ff42"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$topology$3.class",
+      "bytes": 2374,
+      "sha256": "cd075e98fcad0c56d8db09905a51be1878deb2fdee9552176a0429b33766a672"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe.class",
+      "bytes": 60058,
+      "sha256": "7de9a24cedf086690db618b3bacf0be4285b4b3a8c321cd9d98c5a20ea23657f"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Changes.class",
+      "bytes": 6436,
+      "sha256": "b43eff5c6943dcd26dbcbb9b06a1bdf953f5f0e651a6127bd27f204994d500b3"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Companion$canonical$$inlined$sortedBy$1.class",
+      "bytes": 2174,
+      "sha256": "44af03f200d3ab3e252da479efc4ad2e1a59b8f670888a882132042da0e33876"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Companion$normalize$$inlined$sortedBy$1.class",
+      "bytes": 2174,
+      "sha256": "e4f5c0e4f91bf7b8dca7f887418fd6a7ab84cc5858c0dc6ccaee7a9c71e3d9da"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Companion$normalizePayload$lambda$0$$inlined$sortedBy$1.class",
+      "bytes": 2252,
+      "sha256": "4596dc96023fdbb9aa922ae91a6b5ddd649979e1dd99c63030bff52754248152"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Companion$semantic$$inlined$sortedBy$1.class",
+      "bytes": 2823,
+      "sha256": "16d602a8437df407f626cfc7ec824e74fa32b8eb7da05ee1d50ff5276109a8c1"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Companion.class",
+      "bytes": 30586,
+      "sha256": "e01f75b62811f7f273a74358068db1a9f26c4a0ff117417be79ce011e5a51a4e"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Due.class",
+      "bytes": 5114,
+      "sha256": "6abc89477f2f82e6729ac4be5f35425731f6d38a0d7499ee75a7881fdc64ad50"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$drainStaged$$inlined$sortedBy$1.class",
+      "bytes": 2316,
+      "sha256": "bd706d768796dcd5c55f39b13c611dba6e2b4fe82133f0dae7668e20941d7474"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel.class",
+      "bytes": 55577,
+      "sha256": "7a27cbb18cb93f2f78b5f8c9aa40d1b2c762bd2bf88bd0d204905aa867b95c46"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernelTest$brokerModeRetainsOnlyLatestBoundedRecordAndReplaysStreamingHistory$stream$1.class",
+      "bytes": 1694,
+      "sha256": "ca5fdbdf978ff6aff0e3adcb0daf0e3bcd37731373c743b00f4a3bccd8ffda07"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernelTest$missingStagingDeltaMutantCannotReconstructPendingOwnerState$canonical$$inlined$sortedBy$1.class",
+      "bytes": 2386,
+      "sha256": "8f052a8e22a3a83eec1e774d5b1e243d39386e10cd0cfd2dfa6f836e23f8225b"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernelTest.class",
+      "bytes": 44706,
+      "sha256": "2dff392f6332d4270732331750882635e8a7786b934478e03eb94e166576fced"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracle$eligible$$inlined$compareBy$1.class",
+      "bytes": 2545,
+      "sha256": "9be63b83e411f2abf2c9e90149129da90915fb9eab9e7897971ee1212b14d679"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracle$eligible$$inlined$thenBy$1.class",
+      "bytes": 2817,
+      "sha256": "17a7e17309f31dc104a06d83d19e9b9fefbb7d039d2ec2aed43cf5ae6896d85d"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracle$eligible$$inlined$thenBy$2.class",
+      "bytes": 2197,
+      "sha256": "9cbae8e3509c1638c09c0f631c875bd582fda75613e7712c9da9d3727a1a2ed5"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracle$semanticChanges$$inlined$sortedBy$1.class",
+      "bytes": 2586,
+      "sha256": "7f7a6fd7e5e8dad7c641de020fcf1c3c75e575be1163c9b315536eb44f7538e5"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracle.class",
+      "bytes": 52988,
+      "sha256": "85e43579069dd8f5a6e3c8583f0dc4679d26450dbbd7b576135cd3065b800532"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracleTest$XorShift32.class",
+      "bytes": 1882,
+      "sha256": "398a99618e9f5c82fc80974c8c14088ed6c3f07ddd0cb779d48b805d41c3f829"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracleTest$consumed signed64 bounds reject before effects and preserve rejection retries$Boundary.class",
+      "bytes": 4154,
+      "sha256": "55c453d19d66006742eaa94db07e4134162fa45a231d671ebaaff3af99880ba6"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracleTest$generatedTraces$1.class",
+      "bytes": 6332,
+      "sha256": "a45cd11ae9ac6bd3fd4d2dae8858eca412bbf8a89309e3f5cecc8a03cd7a72d1"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracleTest.class",
+      "bytes": 56076,
+      "sha256": "f8013512ef4afddb7b93d73203f440245ccb3af8096cb0fe9bbae9f6dd97d848"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$1.class",
+      "bytes": 2175,
+      "sha256": "ba03a9f1dda72da2eb081f44deb2ba77e15a88da90c3e6083f7b8f91a344569b"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$2.class",
+      "bytes": 2614,
+      "sha256": "2f8a5a864b13c1ed23c5df8909659afc1187e37743ea0b98bb64134edfcad914"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$3.class",
+      "bytes": 2681,
+      "sha256": "809e2b113951e9062af62d5bbe183127811e87f594c30ffcf3a927f273740ce2"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$4.class",
+      "bytes": 2615,
+      "sha256": "123f273c0d3d852b97e0478d798008d989d512ef5aa9d2766a8396007a0ade1c"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$Reference.class",
+      "bytes": 23824,
+      "sha256": "ee243dc823774989459e4d56d47b0aa2556ad45336603b2644a2f5358ec3857d"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$canonical$$inlined$sortedBy$1.class",
+      "bytes": 2136,
+      "sha256": "3059f20685f659d81a924c64602b644fe833ad188dd9e534c03813bb39681638"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$digest$walk$$inlined$sortedBy$1.class",
+      "bytes": 2156,
+      "sha256": "e560d290d48eec410bea36dcea00433b839385bfc81cc6db9c6bb95796ee302b"
+    },
+    {
+      "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe.class",
+      "bytes": 85407,
+      "sha256": "a52af4871b849c49a72a0f204c76dbe11bed96763cdf041946d5c813584778e1"
+    }
+  ],
+  "dependencyJars": [
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/HikariCP-7.1.0.jar",
+      "bytes": 172996,
+      "sha256": "2be45c641b841e81df87292e181f2c203500c5f0e9a1676f135927387f3cf40b"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/animal-sniffer-annotations-1.27.jar",
+      "bytes": 3194,
+      "sha256": "cfd7e51a828fe6b98bc0dbb99e34900c9e9012322cb9ddd57fd8dd0b02da5e27"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/annotations-23.0.0.jar",
+      "bytes": 29371,
+      "sha256": "7b0f19724082cbfcbc66e5abea2b9bc92cf08a1ea11e191933ed43801eb3cd05"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/annotations-4.1.1.4.jar",
+      "bytes": 3120,
+      "sha256": "ba734e1e84c09d615af6a09d33034b4f0442f8772dec120efb376d86a565ae15"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/bcprov-lts8on-2.73.12.1.jar",
+      "bytes": 6315559,
+      "sha256": "7514e0d8b9987b1cce93c15d8379d14fed2663b37e7c0b0692e596ed6b6e58a7"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/checker-qual-3.55.1.jar",
+      "bytes": 241885,
+      "sha256": "857658c8bdcbff794949a8d9922f88d63ee3751c203c7cd7d21ea97f9e745288"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/error_prone_annotations-2.50.0.jar",
+      "bytes": 20252,
+      "sha256": "4667724877f1d37a689202da191e23efa7657c62eef93ccdac406eccfe5cdd0a"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/failureaccess-1.0.3.jar",
+      "bytes": 10763,
+      "sha256": "cbfc3906b19b8f55dd7cfd6dfe0aa4532e834250d7f080bd8d211a3e246b59cb"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/grpc-api-1.84.0.jar",
+      "bytes": 346588,
+      "sha256": "a2a57594571a4392751609bf4c63cf838ba7dcdbc8e5fd07983c313cb1565ac8"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/grpc-context-1.84.0.jar",
+      "bytes": 293,
+      "sha256": "e6f6e5db0d704e34d03f013cceb6be326c9ed3916346378ca1587ed41f943080"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/grpc-core-1.84.0.jar",
+      "bytes": 661896,
+      "sha256": "750c08018e22014cb5e6b6ac64fd4d0b2302b7db9cb2b83a1e0914d0561ed71c"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/grpc-netty-shaded-1.84.0.jar",
+      "bytes": 10855978,
+      "sha256": "f07624d7ca0b0bce8dded33dfe261fd9be59168bb6a77f0580ab09ecd22f113d"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/grpc-protobuf-1.84.0.jar",
+      "bytes": 5204,
+      "sha256": "076ad68d91d59132970dd739ff908d0b8fffea9fb0ccbea9310d933e0a677802"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/grpc-protobuf-lite-1.84.0.jar",
+      "bytes": 7815,
+      "sha256": "12827fd4ba3d75f7ab5fceb3296c5ac9f473826e6b2aa67684d32879b7fa239b"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/grpc-stub-1.84.0.jar",
+      "bytes": 61670,
+      "sha256": "5d7c9eac0386fbf6f1c9dc90171034939093c9f72196bd9242acf819c5f10a4a"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/grpc-util-1.84.0.jar",
+      "bytes": 108997,
+      "sha256": "b64b8eedb714ec8c22ddc57361c7f2c0718cd51fa9d44a8cff68b30c117a6c23"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/gson-2.14.0.jar",
+      "bytes": 313604,
+      "sha256": "2cbd119bf1961c28788310963dc80ba65f58cdeec1dd139c8bdb1240faa2c36f"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/guava-33.6.0-jre.jar",
+      "bytes": 3064793,
+      "sha256": "dc573e1fca4fd5454f4a5fd3d7da2df03002876a4175bafc14a95980dd7713b3"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/j2objc-annotations-3.1.jar",
+      "bytes": 16762,
+      "sha256": "84d3a150518485f8140ea99b8a985656749629f6433c92b80c75b36aba3b099b"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/jackson-annotations-2.22.jar",
+      "bytes": 84211,
+      "sha256": "21ddb598807d3a51a876704eb979d9296e1c6a6f47ab1826ff88c6d6a127a2d0"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/jackson-core-2.22.3.jar",
+      "bytes": 594776,
+      "sha256": "8a501126a385b25841915d839508f8a66e2a0dbc8a6709d055ef3b3e852b094c"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/jackson-databind-2.22.3.jar",
+      "bytes": 1709604,
+      "sha256": "556db5439e206114346043f68d200497dc96a0bca62a360a81784092ebd0e0a9"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/jnats-2.26.3.jar",
+      "bytes": 662485,
+      "sha256": "dad5c08148220792c0f6b21f042f4d7128f9565466f945644a93484b4e29f9cd"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/jspecify-1.0.0.jar",
+      "bytes": 3819,
+      "sha256": "1fad6e6be7557781e4d33729d49ae1cdc8fdda6fe477bb0cc68ce351eafdfbab"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/jsr305-3.0.2.jar",
+      "bytes": 19936,
+      "sha256": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/junit-jupiter-api-5.10.1.jar",
+      "bytes": 210958,
+      "sha256": "60d5c398c32dc7039b99282514ad6064061d8417cf959a1f6bd2038cc907c913"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/junit-jupiter-engine-5.10.1.jar",
+      "bytes": 244694,
+      "sha256": "02930dfe495f93fe70b26550ace3a28f7e1b900c84426c2e4626ce020c7282d6"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/junit-platform-commons-1.10.1.jar",
+      "bytes": 106265,
+      "sha256": "7d9855ee3f3f71f015eb1479559bf923783243c24fbfbd8b29bed8e8099b5672"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/junit-platform-engine-1.10.1.jar",
+      "bytes": 204822,
+      "sha256": "baa48e470d6dee7369a0a8820c51da89c1463279eda6e13a304d11f45922c760"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/junit-platform-launcher-1.10.1.jar",
+      "bytes": 183803,
+      "sha256": "ded414c504e88d02270331071969084e1b2fd9bcf8443f35d44da2c6e3301bc2"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/kafka-clients-4.3.1.jar",
+      "bytes": 10204032,
+      "sha256": "52501b7b47510c66f898871adaf6d2968ab7246561d44ced43643a8a587f0b36"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/kafka-streams-4.3.1.jar",
+      "bytes": 2277950,
+      "sha256": "bd73f3805e116f711e8456ee89a8a5b43ff5dcf5a5bb865afae29deae89e7c4b"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/kafka-streams-test-utils-4.3.1.jar",
+      "bytes": 66449,
+      "sha256": "e84547c830b86dffdc4f5556d9d58fd1de5020a820b0de34d837b27aa4452d8c"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/kotlin-stdlib-2.4.20.jar",
+      "bytes": 1853314,
+      "sha256": "2226de463d309d4a5500a481320b3dea515a6981dcae1def531fbc158884e25f"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/kotlin-test-2.4.20.jar",
+      "bytes": 183223,
+      "sha256": "fa281d657898a34f6b0c7383f374f0a0161e61b6cea0095f135d917721d63f22"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/kotlin-test-junit5-2.4.20.jar",
+      "bytes": 5183,
+      "sha256": "07d93fe7fdc4ec5c09df4b1a65db0d8a33c66fdec1469168e4e9a641f9186f06"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/kotlinx-coroutines-core-jvm-1.11.0.jar",
+      "bytes": 1577052,
+      "sha256": "d1d75aa01dffbb4d1c520e67e4c4e7f5f6174718e7cb4632412503f2f0e604fa"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+      "bytes": 2199,
+      "sha256": "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/lz4-java-1.10.2.jar",
+      "bytes": 1002267,
+      "sha256": "252dabd586d22149a31661a8afc1a50747714eb1a298bd4a6e780c8c91a13866"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/opentest4j-1.3.0.jar",
+      "bytes": 14304,
+      "sha256": "48e2df636cab6563ced64dcdff8abb2355627cb236ef0bf37598682ddf742f1b"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/perfmark-api-0.27.0.jar",
+      "bytes": 6954,
+      "sha256": "c7b478503ec524e55df19b424d46d27c8a68aeb801664fadd4f069b71f52d0f6"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/postgresql-42.7.13.jar",
+      "bytes": 1220948,
+      "sha256": "6e0e4cc2d8cae902084f8a2b18728b073a6fd9d1f87c9d8bff8f298c18185b93"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/proto-google-common-protos-2.64.1.jar",
+      "bytes": 2861414,
+      "sha256": "beb8107f340dc0bb04bf40d1a61631a21e450c58aad93c160959f0292136d99f"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/protobuf-java-4.36.2.jar",
+      "bytes": 1795062,
+      "sha256": "0773e72eaf375e1285df330575bfec5bda5da674d544d0e142a17f89c8f754da"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/rocksdbjni-10.1.3.jar",
+      "bytes": 72725808,
+      "sha256": "e7f925287d9fe2574fb7c7a86f7facaa9b8ab602a2eed0e598bf633528121498"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/slf4j-api-2.0.17.jar",
+      "bytes": 69908,
+      "sha256": "7b751d952061954d5abfed7181c1f645d336091b679891591d63329c622eb832"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/snappy-java-1.1.10.7.jar",
+      "bytes": 2338496,
+      "sha256": "4c766cb3f855415ee734b2392949a0b6f12a60879334a74518deaf6270d32e36"
+    },
+    {
+      "path": "services/platform-runtime/build/resolver-probe-deps/zstd-jni-1.5.6-10.jar",
+      "bytes": 7305999,
+      "sha256": "b6c3237e24b8252a5a9c3a0e1ae30ef8f323412e74bd358548b7a9e527d676df"
+    }
+  ],
+  "reviewVerdict": "Ready with non-blocking follow-ups; E1/E2+bounded E3 only",
+  "e4PassBlocked": true,
+  "rawStorage": "/Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-proof-2026-10-04",
+  "originalOctober3RawProof": "lost; these are fresh October4 attempts"
+}

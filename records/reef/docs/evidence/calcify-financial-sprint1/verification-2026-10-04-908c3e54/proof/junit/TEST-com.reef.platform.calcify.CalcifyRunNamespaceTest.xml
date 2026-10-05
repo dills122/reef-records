@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.CalcifyRunNamespaceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:38:02.148Z" hostname="Dylans-MacBook-Pro.local" time="0.759">
+  <properties/>
+  <testcase name="missingOrConflictingAuthoritativeTradeRunFailsClosed()" classname="com.reef.platform.calcify.CalcifyRunNamespaceTest" time="0.001"/>
+  <testcase name="restoredPendingSnapshotMatchesLiveReplayWithoutBorrowingAcrossRuns()" classname="com.reef.platform.calcify.CalcifyRunNamespaceTest" time="0.196"/>
+  <testcase name="publicHiddenLimitCommandAndCanonicalAliasReplayKeepSameEconomics()" classname="com.reef.platform.calcify.CalcifyRunNamespaceTest" time="0.002"/>
+  <testcase name="publiclySupportedHiddenLimitFactsDecode()" classname="com.reef.platform.calcify.CalcifyRunNamespaceTest" time="0.085"/>
+  <testcase name="reusedOrderIdsInDifferentRunsResolveIndependently()" classname="com.reef.platform.calcify.CalcifyRunNamespaceTest" time="0.283"/>
+  <testcase name="tradeCannotBorrowExistingAcceptanceFromAnotherRun()" classname="com.reef.platform.calcify.CalcifyRunNamespaceTest" time="0.095"/>
+  <testcase name="legacyAndIncompatibleStateRequireCoordinatedReplayAndRetainEvidence()" classname="com.reef.platform.calcify.CalcifyRunNamespaceTest" time="0.004"/>
+  <testcase name="realEngineHiddenLimitModifySourceResolvesExactContext()" classname="com.reef.platform.calcify.CalcifyRunNamespaceTest" time="0.09"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

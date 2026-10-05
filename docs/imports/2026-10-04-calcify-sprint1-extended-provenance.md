@@ -1,0 +1,5 @@
+# Extended sprint1 provenance
+
+Local-only Reef source commit `b0ff1f24e252d922ba8df1ddf2854dc832010b6b` on `codex/calcify-sprint1-extended-records-provenance`; bulk source commit intentionally never pushed to Reef. Reviewed product source [f56b30b1](https://github.com/dills122/reef/tree/f56b30b19d00a1033abae44a75435a4e771990e9) published separately. Exact source Git blob bytes copied into this append-only Records bundle; manifest records source paths, bytes and SHA256. Source originals remain in persistent execution worktree.
+
+Final review6 Not ready for bounded broker rerun: watchdog fail-closed supervision defect. Parent remediation/mocked controls preserve failure history but do not substitute independent sign-off. No bounded full run or full E3/E4/capacity/database qualification. Prior happy proof succeeds; core/golden partial budget abort remains retained. See bundle README for stopped-footprint arithmetic correction and final8MiB proposal versus historical16MiB proposal. Older Records imports unchanged.

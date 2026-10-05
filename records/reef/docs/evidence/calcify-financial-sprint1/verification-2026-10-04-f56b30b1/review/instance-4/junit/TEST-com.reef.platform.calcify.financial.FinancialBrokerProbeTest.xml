@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialBrokerProbeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:02:04.604Z" hostname="Dylans-MacBook-Pro.local" time="0.273">
+  <properties/>
+  <testcase name="actual EOS worker config permits sixty second transaction grouping()" classname="com.reef.platform.calcify.financial.FinancialBrokerProbeTest" time="0.261"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>

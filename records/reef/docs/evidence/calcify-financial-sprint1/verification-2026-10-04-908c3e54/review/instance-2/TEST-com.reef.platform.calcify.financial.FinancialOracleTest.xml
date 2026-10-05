@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialOracleTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:07:44.803Z" hostname="Dylans-MacBook-Pro.local" time="3.0">
+  <properties/>
+  <testcase name="malformed identical retry preserves first context and all business state()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="1.217"/>
+  <testcase name="funding checks exact credit and opening debit boundaries for both assets()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="0.445"/>
+  <testcase name="synthetic capture accepts zero and positive price and refuses negative price()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="0.421"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

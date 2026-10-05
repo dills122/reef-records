@@ -1,5 +1,31 @@
 # Archive index
 
+## October 5 — OCR checkpoint and metric fixes
+
+[Proof](records/reef/docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/README.md), [manifest](manifests/2026-10-05-calcify-sprint1-ocr-followup.json). Product `0a64c4823a00ec5133e331bcfbbc94e542c4d8d3`; local-only source `245a91ba49db43788eb3fe948a522a92f70f287c`. 13 exact files. Focused47/47, Node158/158; initial sandbox failure retained. Review extension required. Prior imports unchanged.
+
+## October5UTC/October4local — Round7 sign-off and supervised44arm proof
+
+948exact files/4214935bytes. [Bundle](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-05-f22b2f85/README.md), [review7](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-05-f22b2f85/review/instance-7/report.md), [resourcegate](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-05-f22b2f85/proof-pilot/resource-gate.json), [matrixproof](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-05-f22b2f85/proof-matrix/proof-summary.json), [manifest](manifests/2026-10-05-calcify-sprint1-round7-bounded-proof.json), [local-only provenance](docs/imports/2026-10-05-calcify-sprint1-round7-provenance.md). GuardP1closed;19mock+2realcontrols,2pilot+44matrixarmsPASS; fullE3/E4/capacityunsigned. Priororigins unchanged.
+
+## October 5 UTC / October 4 local — Guard completion-handshake correction
+
+25 exact-byte files (54,968 bytes). Local-only source `fedb554b811559596d32a084451d9af60e021ca8`. [Bundle](records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/README.md), [manifest](manifests/2026-10-05-calcify-sprint1-guard-revision.json), [provenance](docs/imports/2026-10-05-calcify-sprint1-guard-revision-final-provenance.md). Parent13mocks and final real OS process control; earlier controls with escalation EPERM retained; review6 Not ready unchanged. No broker probes.
+
+
+## October 4, 2026 — Calcify sprint1 extended rounds4–6 and partial proof
+
+617 exact-byte files (2,682,693 bytes). Local-only source provenance `b0ff1f24e252d922ba8df1ddf2854dc832010b6b`; [reviewed product code](https://github.com/dills122/reef/tree/f56b30b19d00a1033abae44a75435a4e771990e9). Bulk publishes solely here.
+
+[Bundle](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-f56b30b1/README.md), [final Not ready review](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-f56b30b1/review/instance-6/report.md), [loop ledger](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-f56b30b1/review/review-loop.json), [partial budget abort](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-f56b30b1/proof-software-f75b5d61/budget-abort.json), [checksums](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-f56b30b1/SHA256SUMS), [import manifest](manifests/2026-10-04-calcify-sprint1-extended-review-proof.json), [provenance/corrections](docs/imports/2026-10-04-calcify-sprint1-extended-provenance.md). No bounded rerun, full E3/E4 or capacity qualification.
+
+
+## October 4, 2026 — Calcify sprint1 review and post-signoff proof
+
+256 exact-byte files (1,342,028 bytes). Local-only source provenance `fa442bbc5ef9fa7ab33e8ae4e6f128e364a30a95`; [published reviewed code](https://github.com/dills122/reef/tree/908c3e54583cb812b074fe66160c42f0bcbd4921). Bulk publishes solely here.
+
+[Bundle](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/README.md), [closure and limits](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/closure.json), [final review](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/report.md), [RF3 failure](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/failure.json), [checksums](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/SHA256SUMS), [import manifest](manifests/2026-10-04-calcify-sprint1-review-proof.json), [publication provenance](docs/imports/2026-10-04-calcify-sprint1-provenance.md). All failed attempts and skipped scopes retained. E1/E2 checks pass; E3/E4 continuation blocked. No database integration or throughput/capacity qualification.
+
 ## October 3, 2026 — Calcify E0 complete evidence
 
 97 exact-byte files (300,129 bytes), source [`41bb17dcb5e9`](https://github.com/dills122/reef/tree/41bb17dcb5e93b7bce9444dd7f597c90ea01a3e1).

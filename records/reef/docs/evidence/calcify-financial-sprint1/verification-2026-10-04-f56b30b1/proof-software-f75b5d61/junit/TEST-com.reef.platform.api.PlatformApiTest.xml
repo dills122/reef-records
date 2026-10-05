@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.api.PlatformApiTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:16:20.834Z" hostname="Dylans-MacBook-Pro.local" time="0.036">
+  <properties/>
+  <testcase name="referenceDataCrudEndpointsExposeSavedEntities()" classname="com.reef.platform.api.PlatformApiTest" time="0.001"/>
+  <testcase name="submitOrderSerializesRejectedResponse()" classname="com.reef.platform.api.PlatformApiTest" time="0.002"/>
+  <testcase name="tradeTapeApiReturnsRecentPublicSafeTradesForInstrumentMostRecentFirst()" classname="com.reef.platform.api.PlatformApiTest" time="0.002"/>
+  <testcase name="ownOrdersApiScopesToParticipantAndOpenStatusOnly()" classname="com.reef.platform.api.PlatformApiTest" time="0.002"/>
+  <testcase name="healthReturnsExpectedPayload()" classname="com.reef.platform.api.PlatformApiTest" time="0.001"/>
+  <testcase name="roleEndpointsExposeSavedDefinitionsAndActorBindings()" classname="com.reef.platform.api.PlatformApiTest" time="0.001"/>
+  <testcase name="marketDataSnapshotWithStatusReportsNotFound()" classname="com.reef.platform.api.PlatformApiTest" time="0.0"/>
+  <testcase name="marketDataDepthSnapshotWithStatusReportsNotFound()" classname="com.reef.platform.api.PlatformApiTest" time="0.001"/>
+  <testcase name="operationalProjectionSmokeReachesOrderAndMarketDataReads()" classname="com.reef.platform.api.PlatformApiTest" time="0.007"/>
+  <testcase name="orderWithStatusReportsNotFoundAndMatchesOrderBody()" classname="com.reef.platform.api.PlatformApiTest" time="0.002"/>
+  <testcase name="ownExecutionsApiScopesToParticipantOwnedOrders()" classname="com.reef.platform.api.PlatformApiTest" time="0.002"/>
+  <testcase name="submitOrderSerializesAcceptedResponse()" classname="com.reef.platform.api.PlatformApiTest" time="0.001"/>
+  <testcase name="cancelAndModifySerializeResponses()" classname="com.reef.platform.api.PlatformApiTest" time="0.002"/>
+  <testcase name="intradayBarsWithStatusReportsUnsupportedIntervalAsNotOk()" classname="com.reef.platform.api.PlatformApiTest" time="0.001"/>
+  <testcase name="orderAndEventsExposePersistedArtifacts()" classname="com.reef.platform.api.PlatformApiTest" time="0.001"/>
+  <testcase name="marketDataSnapshotApiReadsProjectedTopOfBook()" classname="com.reef.platform.api.PlatformApiTest" time="0.002"/>
+  <testcase name="intradayBarsWithStatusRejectsOversizedAndInvalidRanges()" classname="com.reef.platform.api.PlatformApiTest" time="0.001"/>
+  <testcase name="intradayBarsApiAggregatesTradesIntoOhlcvBucketsForInstrument()" classname="com.reef.platform.api.PlatformApiTest" time="0.002"/>
+  <testcase name="orderLookupAndHistoryUseExplicitRunWhenOrderIdRepeats()" classname="com.reef.platform.api.PlatformApiTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
