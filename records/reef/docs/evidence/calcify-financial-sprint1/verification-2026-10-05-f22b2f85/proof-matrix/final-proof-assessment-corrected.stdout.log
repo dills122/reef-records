@@ -1,0 +1,1 @@
+{"result": "PASS", "coreArms": 24, "goldenArms": 20, "maxSampledAllocatedBytes": 4778024960, "minGuestFreeBytes": 92796874752, "elapsedSeconds": {"broker-golden": 432.849, "broker-core": 469.711, "supervised-matrix": 474.917}}

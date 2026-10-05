@@ -1,0 +1,98 @@
+TAP version 13
+# Subtest: adapter completion uses atomic synchronous commit rather than uncancellable asynchronous rename
+not ok 1 - adapter completion uses atomic synchronous commit rather than uncancellable asynchronous rename
+  ---
+  duration_ms: 27.001292
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:270:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:277:58)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: adapter timed-out temporary data write cannot publish late successful completion
+not ok 2 - adapter timed-out temporary data write cannot publish late successful completion
+  ---
+  duration_ms: 97.236125
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:281:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    true !== false
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: false
+  actual: true
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:293:12)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: adapter checks elapsed deadline before commit when write continuation delays timer callback
+not ok 3 - adapter checks elapsed deadline before commit when write continuation delays timer callback
+  ---
+  duration_ms: 43.138667
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:296:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /deadline/. Input:
+    
+    'evidence write failed: Error: completion evidence write timeout/stale observer'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: 'evidence write failed: Error: completion evidence write timeout/stale observer'
+  operator: 'match'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:306:90)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: synchronous adapter commit cannot interleave with timeout callback at publication boundary
+not ok 4 - synchronous adapter commit cannot interleave with timeout callback at publication boundary
+  ---
+  duration_ms: 17.177042
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:311:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:321:89)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..4
+# tests 4
+# suites 0
+# pass 0
+# fail 4
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 233.495541

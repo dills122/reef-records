@@ -1,0 +1,76 @@
+{
+  "utc": "2026-10-05T00:25:18.823547+00:00",
+  "sourceHead": "f22b2f852a3aa1b14bd52a36f828f3e5cceb351f",
+  "codeSourceHead": "f75b5d6187b631d5d608a24b883df6c57478b151",
+  "profileSourceHead": "f56b30b19d00a1033abae44a75435a4e771990e9",
+  "project": "reef-calcify-financial-s1-bounded",
+  "scope": "Supervised synthetic RF3/EOS correctness only; no throughput/capacity",
+  "image": "redpandadata/redpanda:v26.2.3",
+  "digest": [
+    "redpandadata/redpanda@sha256:9e83cfa99278f30d0133271c26bf670cd69c94ffa6ba0b42830dd0c3bd9dcfd9"
+  ],
+  "clusterInfo": "CLUSTER\n=======\nredpanda.68f8a9ac-6825-461b-96bd-71b3b1cee2a7\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\n",
+  "clusterConfigStatus": "NODE  CONFIG-VERSION  NEEDS-RESTART  INVALID  UNKNOWN\n0     5               false          []       []\n1     5               false          []       []\n2     5               false          []       []\n",
+  "clusterProperties": {
+    "log_segment_size": 8388608,
+    "compacted_log_segment_size": 8388608,
+    "transaction_coordinator_log_segment_size": 8388608
+  },
+  "transactionMaxTimeoutMs": 900000,
+  "workerTransactionTimeoutMs": 120000,
+  "workerCommitIntervalMs": 60000,
+  "hardware": {
+    "hw.memsize": "68719476736",
+    "hw.physicalcpu": "10",
+    "hw.logicalcpu": "10",
+    "machdep.cpu.brand_string": "Apple M1 Max",
+    "docker": {
+      "ServerVersion": "29.7.2",
+      "NCPU": 10,
+      "MemTotal": 16745824256,
+      "OperatingSystem": "Docker Desktop"
+    }
+  },
+  "hostFreeBytes": 399431090176,
+  "guestFreeBytes": 97427865600,
+  "baselineAllocatedBytes": 151191552,
+  "minimumFreeBytes": 21474836480,
+  "experimentDiskBudgetBytes": 10737418240,
+  "abortAllocatedBytes": 9663676416,
+  "rawProofBudgetBytes": 268435456,
+  "composeSha256": "0c84f3aaa9115bc55cd9c130a1c2c8f4d5674a18effe81b94e597f7dab9ada40",
+  "profileSha256": "9b5a452576ea96fd9d5ab6fcb118e8a5a04039037903d2a4fc4c214a6e2f8e25",
+  "registeredResources": [
+    {
+      "name": "reef-calcify-financial-s1-bounded-rp0-1",
+      "id": "ca29d14f9d82aff207894f98d974bf9462e149cb375bdf789c80a4b6943ee504",
+      "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+      "memoryLimitBytes": 2147483648,
+      "nanoCpus": 1000000000,
+      "volumes": [
+        "reef-calcify-financial-s1-bounded_rp0-data"
+      ]
+    },
+    {
+      "name": "reef-calcify-financial-s1-bounded-rp1-1",
+      "id": "568d0cd44c5bfc872852f4a899c925eb9099229edd54a02355630806ca084cda",
+      "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+      "memoryLimitBytes": 2147483648,
+      "nanoCpus": 1000000000,
+      "volumes": [
+        "reef-calcify-financial-s1-bounded_rp1-data"
+      ]
+    },
+    {
+      "name": "reef-calcify-financial-s1-bounded-rp2-1",
+      "id": "6612d2bb9f4810c77c70159d842577d72e8eeeb90e294564c668aa063cda55ed",
+      "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+      "memoryLimitBytes": 2147483648,
+      "nanoCpus": 1000000000,
+      "volumes": [
+        "reef-calcify-financial-s1-bounded_rp2-data"
+      ]
+    }
+  ],
+  "cleanup": "Stop only registered project; retain volumes/topics and all original projects"
+}

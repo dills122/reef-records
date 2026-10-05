@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.infrastructure.persistence.PostgresSchemaRequirementsTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:19:16.356Z" hostname="Dylans-MacBook-Pro.local" time="0.009">
+  <properties/>
+  <testcase name="boundaryStreamCommandIntakeRequirementsCoverIntakeTable()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaRequirementsTest" time="0.004"/>
+  <testcase name="analyticsRunExportsRequirementsCoverExportTable()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaRequirementsTest" time="0.001"/>
+  <testcase name="boundaryInstrumentPriceCollarRequirementsCoverCollarTable()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaRequirementsTest" time="0.0"/>
+  <testcase name="boundaryIdempotencyRequirementsCoverMigratedTable()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaRequirementsTest" time="0.0"/>
+  <testcase name="boundaryAccountRiskRequirementsCoverControlsAndDecisionAudit()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaRequirementsTest" time="0.0"/>
+  <testcase name="adminAuthRequirementsCoverOAuthSessionsAndServiceTokens()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaRequirementsTest" time="0.001"/>
+  <testcase name="boundaryRejectionRequirementsCoverGuardrailAuditTable()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaRequirementsTest" time="0.0"/>
+  <testcase name="analyticsRunBotPerformanceRequirementsCoverSummaryTable()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaRequirementsTest" time="0.0"/>
+  <testcase name="adminIdentityRequirementsCoverUserRoleAndAuditObjects()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaRequirementsTest" time="0.0"/>
+  <testcase name="boundaryCommandCaptureRequirementsCoverLiveStoreColumns()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaRequirementsTest" time="0.001"/>
+  <testcase name="commandLogRequirementsCoverAppendOnlyCommandTable()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaRequirementsTest" time="0.0"/>
+  <testcase name="boundaryCommandCircuitBreakerRequirementsCoverBreakerTable()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaRequirementsTest" time="0.0"/>
+  <testcase name="runtimeRequirementsCoverMigratedRuntimeAndAuthObjects()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaRequirementsTest" time="0.001"/>
+  <testcase name="settlementFactsRequirementsCoverAllSettlementTables()" classname="com.reef.platform.infrastructure.persistence.PostgresSchemaRequirementsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

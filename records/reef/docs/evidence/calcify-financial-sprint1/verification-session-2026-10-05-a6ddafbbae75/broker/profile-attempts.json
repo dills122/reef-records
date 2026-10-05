@@ -1,0 +1,289 @@
+[
+  {
+    "name": "set-log_segment_size",
+    "argv": [
+      "docker",
+      "exec",
+      "reef-calcify-financial-session-8c6f-rp0-1",
+      "rpk",
+      "cluster",
+      "config",
+      "set",
+      "log_segment_size",
+      "8388608"
+    ],
+    "elapsedSeconds": 0.087,
+    "exitCode": 0
+  },
+  {
+    "name": "read-log_segment_size-0",
+    "argv": [
+      "docker",
+      "exec",
+      "reef-calcify-financial-session-8c6f-rp0-1",
+      "rpk",
+      "cluster",
+      "config",
+      "get",
+      "log_segment_size"
+    ],
+    "elapsedSeconds": 0.072,
+    "exitCode": 0
+  },
+  {
+    "name": "set-compacted_log_segment_size",
+    "argv": [
+      "docker",
+      "exec",
+      "reef-calcify-financial-session-8c6f-rp0-1",
+      "rpk",
+      "cluster",
+      "config",
+      "set",
+      "compacted_log_segment_size",
+      "8388608"
+    ],
+    "elapsedSeconds": 0.076,
+    "exitCode": 0
+  },
+  {
+    "name": "read-compacted_log_segment_size-0",
+    "argv": [
+      "docker",
+      "exec",
+      "reef-calcify-financial-session-8c6f-rp0-1",
+      "rpk",
+      "cluster",
+      "config",
+      "get",
+      "compacted_log_segment_size"
+    ],
+    "elapsedSeconds": 0.067,
+    "exitCode": 0
+  },
+  {
+    "name": "set-transaction_coordinator_log_segment_size",
+    "argv": [
+      "docker",
+      "exec",
+      "reef-calcify-financial-session-8c6f-rp0-1",
+      "rpk",
+      "cluster",
+      "config",
+      "set",
+      "transaction_coordinator_log_segment_size",
+      "8388608"
+    ],
+    "elapsedSeconds": 0.076,
+    "exitCode": 0
+  },
+  {
+    "name": "read-transaction_coordinator_log_segment_size-0",
+    "argv": [
+      "docker",
+      "exec",
+      "reef-calcify-financial-session-8c6f-rp0-1",
+      "rpk",
+      "cluster",
+      "config",
+      "get",
+      "transaction_coordinator_log_segment_size"
+    ],
+    "elapsedSeconds": 0.07,
+    "exitCode": 0
+  },
+  {
+    "name": "cluster-info",
+    "argv": [
+      "docker",
+      "exec",
+      "reef-calcify-financial-session-8c6f-rp0-1",
+      "rpk",
+      "cluster",
+      "info"
+    ],
+    "elapsedSeconds": 0.074,
+    "exitCode": 0
+  },
+  {
+    "name": "cluster-config-status",
+    "argv": [
+      "docker",
+      "exec",
+      "reef-calcify-financial-session-8c6f-rp0-1",
+      "rpk",
+      "cluster",
+      "config",
+      "status"
+    ],
+    "elapsedSeconds": 0.077,
+    "exitCode": 0
+  },
+  {
+    "name": "transaction-max",
+    "argv": [
+      "docker",
+      "exec",
+      "reef-calcify-financial-session-8c6f-rp0-1",
+      "rpk",
+      "cluster",
+      "config",
+      "get",
+      "transaction_max_timeout_ms"
+    ],
+    "elapsedSeconds": 0.08,
+    "exitCode": 0
+  },
+  {
+    "name": "image",
+    "argv": [
+      "docker",
+      "image",
+      "inspect",
+      "redpandadata/redpanda:v26.2.3",
+      "--format",
+      "{{json .RepoDigests}}"
+    ],
+    "elapsedSeconds": 0.022,
+    "exitCode": 0
+  },
+  {
+    "name": "du-rp0",
+    "argv": [
+      "docker",
+      "exec",
+      "reef-calcify-financial-session-8c6f-rp0-1",
+      "du",
+      "-sk",
+      "/var/lib/redpanda/data"
+    ],
+    "elapsedSeconds": 0.056,
+    "exitCode": 0
+  },
+  {
+    "name": "inspect-rp0",
+    "argv": [
+      "docker",
+      "inspect",
+      "reef-calcify-financial-session-8c6f-rp0-1",
+      "--format",
+      "{{json .}}"
+    ],
+    "elapsedSeconds": 0.028,
+    "exitCode": 0
+  },
+  {
+    "name": "du-rp1",
+    "argv": [
+      "docker",
+      "exec",
+      "reef-calcify-financial-session-8c6f-rp1-1",
+      "du",
+      "-sk",
+      "/var/lib/redpanda/data"
+    ],
+    "elapsedSeconds": 0.057,
+    "exitCode": 0
+  },
+  {
+    "name": "inspect-rp1",
+    "argv": [
+      "docker",
+      "inspect",
+      "reef-calcify-financial-session-8c6f-rp1-1",
+      "--format",
+      "{{json .}}"
+    ],
+    "elapsedSeconds": 0.024,
+    "exitCode": 0
+  },
+  {
+    "name": "du-rp2",
+    "argv": [
+      "docker",
+      "exec",
+      "reef-calcify-financial-session-8c6f-rp2-1",
+      "du",
+      "-sk",
+      "/var/lib/redpanda/data"
+    ],
+    "elapsedSeconds": 0.054,
+    "exitCode": 0
+  },
+  {
+    "name": "inspect-rp2",
+    "argv": [
+      "docker",
+      "inspect",
+      "reef-calcify-financial-session-8c6f-rp2-1",
+      "--format",
+      "{{json .}}"
+    ],
+    "elapsedSeconds": 0.032,
+    "exitCode": 0
+  },
+  {
+    "name": "guest-df",
+    "argv": [
+      "docker",
+      "exec",
+      "reef-calcify-financial-session-8c6f-rp0-1",
+      "df",
+      "-k",
+      "/var/lib/redpanda/data"
+    ],
+    "elapsedSeconds": 0.065,
+    "exitCode": 0
+  },
+  {
+    "name": "host-hw-memsize",
+    "argv": [
+      "sysctl",
+      "-n",
+      "hw.memsize"
+    ],
+    "elapsedSeconds": 0.033,
+    "exitCode": 0
+  },
+  {
+    "name": "host-hw-physicalcpu",
+    "argv": [
+      "sysctl",
+      "-n",
+      "hw.physicalcpu"
+    ],
+    "elapsedSeconds": 0.005,
+    "exitCode": 0
+  },
+  {
+    "name": "host-hw-logicalcpu",
+    "argv": [
+      "sysctl",
+      "-n",
+      "hw.logicalcpu"
+    ],
+    "elapsedSeconds": 0.005,
+    "exitCode": 0
+  },
+  {
+    "name": "host-machdep-cpu-brand_string",
+    "argv": [
+      "sysctl",
+      "-n",
+      "machdep.cpu.brand_string"
+    ],
+    "elapsedSeconds": 0.007,
+    "exitCode": 0
+  },
+  {
+    "name": "docker-info",
+    "argv": [
+      "docker",
+      "info",
+      "--format",
+      "{{json .}}"
+    ],
+    "elapsedSeconds": 0.19,
+    "exitCode": 0
+  }
+]

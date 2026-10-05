@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.infrastructure.persistence.PostgresRuntimePersistenceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:40:23.297Z" hostname="Dylans-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="marketDataDepthSnapshotDoesNotRebuildUnrelatedOrderLifecycleState()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimePersistenceTest" time="0.0"/>
+  <testcase name="acceptedOrderReturnsNullForUnknownOrder()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimePersistenceTest" time="0.0"/>
+  <testcase name="refreshMarketDataSnapshotsDoesNotRebuildUnrelatedOrderLifecycleState()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimePersistenceTest" time="0.0"/>
+  <testcase name="orderLifecycleStateRebuildsFromAcceptedAndFilledOrders()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimePersistenceTest" time="0.0"/>
+  <testcase name="storesAndQueriesAcceptedArtifacts()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimePersistenceTest" time="0.0"/>
+  <testcase name="validateReferenceDataReportsMissingEntities()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimePersistenceTest" time="0.0"/>
+  <testcase name="storesPostTradeProfilesAndActiveDefault()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimePersistenceTest" time="0.001"/>
+  <testcase name="singleSubmitOutcomePersistsOrderScopeMetadata()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimePersistenceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

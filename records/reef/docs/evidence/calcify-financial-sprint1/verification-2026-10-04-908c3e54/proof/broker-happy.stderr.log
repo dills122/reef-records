@@ -1,0 +1,10 @@
+file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/scripts/dev/calcify-financial/broker-proof.mjs:92
+  if(worker.spawnError||worker.child.exitCode!==null)throw Error(`worker failed before ready: ${worker.spawnError??worker.child.exitCode}`);
+                                                           ^
+
+Error: worker failed before ready: 1
+    at ready (file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/scripts/dev/calcify-financial/broker-proof.mjs:92:60)
+    at async arm (file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/scripts/dev/calcify-financial/broker-proof.mjs:112:3)
+    at async file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/scripts/dev/calcify-financial/broker-proof.mjs:156:30
+
+Node.js v22.23.3

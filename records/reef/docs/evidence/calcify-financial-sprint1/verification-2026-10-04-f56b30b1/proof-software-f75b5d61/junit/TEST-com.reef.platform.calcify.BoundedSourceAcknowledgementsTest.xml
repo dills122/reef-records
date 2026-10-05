@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.BoundedSourceAcknowledgementsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:16:39.063Z" hostname="Dylans-MacBook-Pro.local" time="0.058">
+  <properties/>
+  <testcase name="controlOneWaitsForEverySourceAcknowledgement()" classname="com.reef.platform.calcify.BoundedSourceAcknowledgementsTest" time="0.0"/>
+  <testcase name="failedSourceNeverPublishesVerification()" classname="com.reef.platform.calcify.BoundedSourceAcknowledgementsTest" time="0.001"/>
+  <testcase name="configuredBoundAndFinalDrainCoverEverySend()" classname="com.reef.platform.calcify.BoundedSourceAcknowledgementsTest" time="0.0"/>
+  <testcase name="laterReadyAcknowledgementCannotPublishAheadOfFirst()" classname="com.reef.platform.calcify.BoundedSourceAcknowledgementsTest" time="0.056"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

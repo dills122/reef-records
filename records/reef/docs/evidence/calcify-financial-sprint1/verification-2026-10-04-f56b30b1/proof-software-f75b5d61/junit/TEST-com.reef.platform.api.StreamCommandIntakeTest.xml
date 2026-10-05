@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.api.StreamCommandIntakeTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:16:38.864Z" hostname="Dylans-MacBook-Pro.local" time="0.007">
+  <properties/>
+  <testcase name="envelopeBuilderRejectsMissingRoutingMetadata()" classname="com.reef.platform.api.StreamCommandIntakeTest" time="0.001"/>
+  <testcase name="asyncPublicationMarkerEventuallyMarksReservedCommandPublished()" classname="com.reef.platform.api.StreamCommandIntakeTest" time="0.002"/>
+  <testcase name="subjectBuilderUsesDeterministicPartitionAndRoutingTokens()" classname="com.reef.platform.api.StreamCommandIntakeTest" time="0.0"/>
+  <testcase name="intakeStoreCanBoundInMemoryRetentionWindow()" classname="com.reef.platform.api.StreamCommandIntakeTest" time="0.001"/>
+  <testcase name="apiExitsAfterPublishAckBeforeBoundaryMarkerUpdate_retryRepublishesAndConverges()" classname="com.reef.platform.api.StreamCommandIntakeTest" time="0.0"/>
+  <testcase name="envelopeBuilderRejectsMalformedJsonBeforeRoutingValidation()" classname="com.reef.platform.api.StreamCommandIntakeTest" time="0.0"/>
+  <testcase name="submitAndCancelForSameBookUseSamePartitionLane()" classname="com.reef.platform.api.StreamCommandIntakeTest" time="0.0"/>
+  <testcase name="intakeStoreReplaysSamePayloadAndConflictsDifferentPayload()" classname="com.reef.platform.api.StreamCommandIntakeTest" time="0.0"/>
+  <testcase name="partitionedPublisherCanSubmitQueuedRequestsAsBatch()" classname="com.reef.platform.api.StreamCommandIntakeTest" time="0.001"/>
+  <testcase name="partitionedPublisherCompletesAfterAsyncDelegateDurableAck()" classname="com.reef.platform.api.StreamCommandIntakeTest" time="0.0"/>
+  <testcase name="partitionedPublisherRejectsWhenLaneQueueIsFull()" classname="com.reef.platform.api.StreamCommandIntakeTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

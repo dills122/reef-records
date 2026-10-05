@@ -1,0 +1,3 @@
+{"processStarted":true,"guarantee":"exactly_once_v2","commitIntervalMs":60000,"stateDir":"/var/folders/lg/j56llg991d1gpjvtjh8l9gbh0000gn/T/reef-financial-e3-wcy6ms"}
+{"certifiedCatchupDomains":2,"partitionCut":"{\"offset\":11,\"ordinal\":7,\"sourceUuid\":\"TtiI7DvuRqOmWp18pIMIKw\",\"authoritySha256\":\"dab50f37d20e28a153e22dcf56d93e2bc3478c960dc4e5ba7fd387fbee87ec38\",\"owners\":{\"A\":{\"sequence\":4,\"checksum\":\"4668419bf13dd18b3b9e782327114e139dcb1d783c17f46bee0be9ce05839fcc\"},\"B\":{\"sequence\":4,\"checksum\":\"6fe2148c28dd791973aeabafa6d0a55453a57f14a56b2f3424e34591e6fe6a76\"}}}"}
+{"frameworkRunningMs":5522}

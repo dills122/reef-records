@@ -1,0 +1,50 @@
+{
+  "rows": [
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialBrokerProbeTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.353"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialKernelTest",
+      "tests": "14",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "118.188"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialPartitionCutTest",
+      "tests": "13",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.065"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialOracleTest",
+      "tests": "12",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "22.464"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialCommittedCutTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.277"
+    }
+  ],
+  "tests": 44,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "buildSeconds": 151,
+  "attempt": "session8c6f-financial-integrated-green1"
+}

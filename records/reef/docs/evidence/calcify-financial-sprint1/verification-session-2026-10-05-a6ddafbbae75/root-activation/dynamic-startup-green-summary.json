@@ -1,0 +1,29 @@
+{
+  "rows": [
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialBrokerProbeTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialPartitionCutTest",
+      "tests": "13",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialCommittedCutTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    }
+  ],
+  "tests": 19,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0
+}

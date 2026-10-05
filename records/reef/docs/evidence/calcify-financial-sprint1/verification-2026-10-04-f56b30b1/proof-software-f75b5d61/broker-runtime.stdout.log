@@ -1,0 +1,10 @@
+rpk version: v26.2.3
+Git ref:     3c9fc8dd623ed22ad66eaca7621fe7ab1c268369
+Build date:  2026 Sep 17 20 20 32 Thu
+OS/Arch:     linux/arm64
+Go version:  go1.26.5
+
+Redpanda Cluster
+  node-0  v26.2.3 - 3c9fc8dd623ed22ad66eaca7621fe7ab1c268369
+  node-1  v26.2.3 - 3c9fc8dd623ed22ad66eaca7621fe7ab1c268369
+  node-2  v26.2.3 - 3c9fc8dd623ed22ad66eaca7621fe7ab1c268369

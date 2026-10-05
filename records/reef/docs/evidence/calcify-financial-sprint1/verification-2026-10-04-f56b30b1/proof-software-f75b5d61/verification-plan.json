@@ -1,0 +1,21 @@
+{
+  "sourceHead": "3435d7b0e5a21c8212bcabe18b60dd6196cf1bbc",
+  "phase": "AWAITING_INDEPENDENT_REVIEW_4_OF_6",
+  "postSignoff": [
+    "exactNodeCI",
+    "fullPlatformRuntime",
+    "gateModel",
+    "fixtureAndScriptChecks",
+    "RF3runHappy",
+    "RF3runGolden",
+    "RF3runCore"
+  ],
+  "beforeSignoff": "Broker runtime/disk/max transaction preflight only; no code probe execution",
+  "limits": {
+    "fullE3Qualification": false,
+    "E4LoadAuthorizedByThisPlan": false,
+    "diskBytes": 10737418240,
+    "rawBytes": 268435456
+  },
+  "history": "Prior908c source run-happy failed; retained in RecordsPR6. New runs never replace earlier failures."
+}

@@ -1,0 +1,11 @@
+# Calcify sprint1 extended reviews and retained proof — October 4, 2026
+
+Source review: `f56b30b19d00a1033abae44a75435a4e771990e9`. Software runtime proof: `f75b5d6187b631d5d608a24b883df6c57478b151`; 18 executable source files remain unchanged at reviewed source. New 8MiB broker profile remains unqualified.
+
+[Final review](review/instance-6/report.md), [review ledger](review/review-loop.json), [author response](review/instance-6/response.md), [software test totals](proof-software-f75b5d61/junit-summary.json), [RF3 happy proof](proof-software-f75b5d61/broker-happy.stdout.log), [partial budget abort](proof-software-f75b5d61/budget-abort.json), [bounded preparation](proof-bounded-f56b30b1/attempts.jsonl), [exact original mapping](bundle-manifest.json).
+
+Round6 verdict **Not ready**: operational watchdog failure paths block bounded broker execution. Six authorized rounds exhausted; guard remediation and controls do not constitute independent sign-off. No bounded core/golden rerun, full E3, E4, capacity, database integration or production qualification claimed. Prior rounds4–5 found no new actionable E1/E2 defects after count/byte fixes. Full offline platform proof reports 795 tests, 775 passes, 20 skipped, 104 suites, zero failures/errors; guarded database tests returning without external database are not database integration evidence. Node CI154 passes; symbolic gate checks156 finite plus128 seeded are not live gateway/heap proof.
+
+Prior RF3 happy run passes; attempted full core/golden aborted for disk budget after 10/24 and9/20 completed arms respectively. Last active allocation sample 9,114,636,288bytes; actual peak unmeasured. Stopped allocation13,537,280bytes is12.91MiB and cannot replace active peak. Original budget note calls stopped allocation13.2MiB and proposed16MiB geometry; those historical wording errors are corrected here. Final committed proposal uses8MiB; no proof was run with16MiB. Original logs remain byte-identical.
+
+Raw directories include failed commands, red regressions, corrected commands, reviewer counterexamples and draft execution helpers. Helpers are historical evidence, not current operational guidance. Complete current scope and safe continuation remain owned by focused Reef docs. Bulk publishes solely Reef Records; source provenance Git commit remains local-only. Older review1–3 bundle remains immutable.

@@ -1,0 +1,38 @@
+{
+  "capturedUtc": "2026-10-05T04:51:42.639991+00:00",
+  "scope": "CapturedwhileCIrunning; freezehandoffandendhashmatchrequired",
+  "files": {
+    ".github/workflows/ci.yml": {
+      "sha256": "b637e1bca4afbe9d6beb693d5da5ea0a4787b23adcc889c3b49c801b5d6a798f",
+      "mtimeUtc": "2026-10-05T04:19:19.072159+00:00"
+    },
+    "scripts/dev/calcify-financial/proof-supervisor.mjs": {
+      "sha256": "18637f24da84c9e0cae72e5ceffc58f7d9fd769cb6b30a2076093090c357699c",
+      "mtimeUtc": "2026-10-05T04:46:40.505945+00:00"
+    },
+    "scripts/dev/calcify-financial/proof-supervisor.test.mjs": {
+      "sha256": "a1ccd0e7ea2944b2cef3972970550a535b9df58a4f093ce77ffa7c8fb8e0c341",
+      "mtimeUtc": "2026-10-05T04:41:04.082333+00:00"
+    },
+    "scripts/dev/calcify-financial/broker-proof.mjs": {
+      "sha256": "fb3599f79cee45d9ce1987ad4aca3a15c924db6baf5028976127e144a699bb78",
+      "mtimeUtc": "2026-10-05T04:29:37.360902+00:00"
+    },
+    "scripts/dev/calcify-financial/broker-proof.test.mjs": {
+      "sha256": "af02c807123a2998093b04864d32d50da543a8b4ee8de021dbd22478451c62cf",
+      "mtimeUtc": "2026-10-05T04:42:37.840548+00:00"
+    },
+    "scripts/dev/calcify-financial/lib/external-faults.mjs": {
+      "sha256": "c62bb2ce1e71fa2cfe345e9419fa678404eb273f32a3e1a0a8a24954e2df429f",
+      "mtimeUtc": "2026-10-05T04:46:40.575180+00:00"
+    },
+    "scripts/dev/calcify-financial/record-attempt.mjs": {
+      "sha256": "82673197ab191e17ca70c51f71cbcb11d523a2197914ee91ddaa3ea7daa41a11",
+      "mtimeUtc": "2026-10-05T03:56:27.350375+00:00"
+    },
+    "scripts/dev/calcify-financial/record-attempt.test.mjs": {
+      "sha256": "36ac794101707e7c88ee3a812ff39f35800f51b43491be1a68bcd13334022f1e",
+      "mtimeUtc": "2026-10-05T03:56:27.374757+00:00"
+    }
+  }
+}

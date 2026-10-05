@@ -1,0 +1,608 @@
+{
+  "schema": "calcify-engineering-session-v1",
+  "baseline": "a6ddafbbae750693e227985f054be2d26716ae84",
+  "startedUtc": "2026-10-05T03:04:50Z",
+  "targetEndUtc": "2026-10-05T10:04:50Z",
+  "thesis": "Close bounded E3 external failure and certified activation gaps before E4",
+  "reviewPolicy": {
+    "source": "user orchestrator request",
+    "cyclesPerAttempt": 3,
+    "maxAttemptsPerMilestone": 3,
+    "researchBetweenAttempts": true,
+    "priorCap7": "Historical scope preserved; current user explicitly authorizes new milestone review sessions"
+  },
+  "tasks": [
+    {
+      "id": "M0",
+      "milestone": "Proof resource/process supervisor",
+      "worker": "proof_supervisor",
+      "state": "IN PROGRESS",
+      "dependencies": [
+        "frozen RF3 profile"
+      ],
+      "reviews": [
+        {
+          "attempt": 1,
+          "cycle": 1,
+          "verdict": "Not ready",
+          "findings": [
+            "P1initialstale launch/cadence",
+            "P2unbounded finish"
+          ],
+          "response": "Accept; worker TDDfix underway"
+        },
+        {
+          "attempt": 1,
+          "cycle": 2,
+          "verdict": "Not ready",
+          "findings": [
+            "P2async rename publisheslateoktrue aftertimeout"
+          ],
+          "response": "Accept; boundedasync preparation+synchronous atomic publication localfix underway"
+        },
+        {
+          "attempt": 1,
+          "cycle": 3,
+          "verdict": "Ready",
+          "artifact": "reviews/m0-attempt1-cycle3/report.md",
+          "limitation": "async preparation deadline only; synchronous localfilesystem publication cannotstrictlybound Node/kernel stalls"
+        },
+        {
+          "attempt": 2,
+          "cycle": 1,
+          "verdict": "Ready with non-blocking follow-ups",
+          "reviewer": "review_m0_attempt2_cycle1",
+          "bootstrap": "m0-attempt2-author/review-bootstrap.md",
+          "artifact": "reviews/m0-attempt2-cycle1/report.md",
+          "scope": "Frozen source ready for bounded smoke; actualparent starting measureddu required forliveacceptance"
+        },
+        {
+          "attempt": 2,
+          "cycle": 2,
+          "verdict": "Ready for bounded live proof",
+          "reviewer": "review_m0_attempt2_cycle2",
+          "bootstrap": "m0-attempt2-cycle2-author/review-bootstrap.md",
+          "artifact": "reviews/m0-attempt2-cycle2/report.md"
+        },
+        {
+          "attempt": 2,
+          "cycle": 3,
+          "verdict": "Ready for frozen bounded source/plan/live acceptance",
+          "reviewer": "review_e3_final",
+          "bootstrap": "integration-review/final2-bootstrap.md",
+          "scope": "Integrated source/owner/live acceptance; archive publication pending",
+          "artifact": "integration-review/final2-review/report.md",
+          "reportSha256": "5fcecf73fed5e40763bd4755dc8233c953459a3ae3c765daa5baf17f26a1f24d"
+        }
+      ],
+      "attempt": 2,
+      "deliveryGate": "Archive publication and immutable owner links pending; code/live independently Ready"
+    },
+    {
+      "id": "M1",
+      "milestone": "E3 external faults",
+      "worker": "e3_external_faults",
+      "state": "IN PROGRESS",
+      "dependencies": [
+        "preflight",
+        "isolated RF3 resource gate"
+      ],
+      "reviews": [
+        {
+          "attempt": 1,
+          "cycle": 1,
+          "verdict": "Not ready",
+          "findings": [
+            "P2 readiness ignores signalexit"
+          ],
+          "response": "Accept; RED11/12 GREEN12/12; integrated source rerereview pending"
+        },
+        {
+          "attempt": 1,
+          "cycle": 2,
+          "verdict": "Ready for supervised RF3 proof",
+          "artifact": "integration-review/report.md",
+          "scope": "9file integratedcode only; final liveevidence review required"
+        },
+        {
+          "attempt": 1,
+          "cycle": 3,
+          "verdict": "Ready for frozen bounded source/plan/live acceptance",
+          "reviewer": "review_e3_final",
+          "bootstrap": "integration-review/final2-bootstrap.md",
+          "scope": "Integrated source/owner/live acceptance; archive publication pending",
+          "artifact": "integration-review/final2-review/report.md",
+          "reportSha256": "5fcecf73fed5e40763bd4755dc8233c953459a3ae3c765daa5baf17f26a1f24d"
+        }
+      ],
+      "deliveryGate": "Archive publication and immutable owner links pending; code/live independently Ready"
+    },
+    {
+      "id": "M2",
+      "milestone": "E3 certified activation",
+      "worker": "e3_activation",
+      "state": "IN PROGRESS",
+      "dependencies": [
+        "cut interface",
+        "M1 integration"
+      ],
+      "reviews": [
+        {
+          "attempt": 1,
+          "cycle": 1,
+          "verdict": "Ready for supervised RF3 proof",
+          "artifact": "integration-review/report.md",
+          "scope": "9file integratedcode only; final liveevidence review required"
+        },
+        {
+          "attempt": 1,
+          "cycle": 2,
+          "verdict": "Ready for frozen bounded source/plan/live acceptance",
+          "reviewer": "review_e3_final",
+          "bootstrap": "integration-review/final2-bootstrap.md",
+          "scope": "Integrated source/owner/live acceptance; archive publication pending",
+          "artifact": "integration-review/final2-review/report.md",
+          "reportSha256": "5fcecf73fed5e40763bd4755dc8233c953459a3ae3c765daa5baf17f26a1f24d"
+        }
+      ],
+      "deliveryGate": "Archive publication and immutable owner links pending; code/live independently Ready"
+    },
+    {
+      "id": "M3",
+      "milestone": "E4 readiness",
+      "state": "DEFERRED",
+      "dependencies": [
+        "E3 acceptance"
+      ],
+      "reviews": []
+    }
+  ],
+  "events": [
+    {
+      "kind": "preflight",
+      "state": "PASSED_WITH_DOCUMENTED_FALLBACK",
+      "artifact": "preflight.json"
+    },
+    {
+      "kind": "baseline",
+      "financialTests": 27,
+      "failures": 0,
+      "compileSeconds": 52,
+      "testBuildSeconds": 161,
+      "artifact": "financial-baseline-tests.json"
+    },
+    {
+      "kind": "resource-profile",
+      "utc": "2026-10-05T03:25:37.089153+00:00",
+      "artifact": "broker/preflight.json",
+      "baselineAllocatedBytes": 151191552,
+      "guestFreeBytes": 97396953088,
+      "profile": "RF3, write cache disabled,8MiB segments",
+      "failedSetup": "session8c6f-broker-up address-pool exhaustion retained;explicit unused10.254.250.0/24 retry healthy;unrelated resources preserved"
+    },
+    {
+      "kind": "TDD",
+      "task": "M2",
+      "attempt": "session8c6f-m2-red2",
+      "tests": 13,
+      "failures": 13,
+      "result": "expected permissive-stub refusals missing; fixture NPE corrected before RED2"
+    },
+    {
+      "kind": "TDD",
+      "task": "M1",
+      "attempt": "session8c6f-m1-red",
+      "result": "unresolved outputBytes before implementation; Node restoration regression RED9/10 then GREEN10/10"
+    },
+    {
+      "kind": "integration",
+      "utc": "2026-10-05T03:38:25.900773+00:00",
+      "sourceHashes": {
+        "scripts/dev/calcify-financial/broker-proof.mjs": "67bfa1aabb0d67fbe9e44ae6ecd27a7c3b87f865fa380b98914065fa04cc9678",
+        "scripts/dev/calcify-financial/broker-proof.test.mjs": "f4c0ccd734f2ab2bb310e9f35dab3407f3595b3fde4a7935b21d2135fea1c826",
+        "scripts/dev/calcify-financial/lib/external-faults.mjs": "b06166162092f476aa6848a1c4eefd59ea443b44999f0c719c49a5373f38e1f9",
+        "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbe.kt": "8bba053d100ffc9f6e900e71e9835fde364f3b5c54443aadc277f5cf31d69cbc",
+        "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbeTest.kt": "88da44c0b64daba9d131d9953739ebed4bf1b39b44149a50b0fe0a7142e1e8af",
+        "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPartitionCut.kt": "b24893cbf315171652c2d18cb9cb343f1c1f906d9263d5d6ea2262e90a3161bc",
+        "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPartitionCutTest.kt": "609e09025939987d83fa0a6a7b3b78fe6de54bc6dc11266a6c2296f4c130cd2c",
+        "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialCommittedCut.kt": "543a31445992e4e33b0c8518df6d21f66689dba2dc850effe6e73080ddd236a6",
+        "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialCommittedCutTest.kt": "a2f6485d28625502fbaf1edfc029d01f093b9918c6b9265baa69996ecde0f716"
+      },
+      "scope": "sharedmandatory startup verifier; source-derived isolatedquartetactivation requests; realstoreloss+freshsuffixrunner",
+      "NodeTests": 66,
+      "NodeFailures": 0
+    },
+    {
+      "kind": "validation",
+      "utc": "2026-10-05T03:43:27.590947+00:00",
+      "tests": 44,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "buildSeconds": 151,
+      "artifact": "integration-review/financial-green1-summary.json"
+    },
+    {
+      "kind": "TDD",
+      "scope": "dynamicRateProbe coldstartup compatibility",
+      "RED": "session8c6f-dynamic-startup-red 3tests1failure NPE missingstaticmembership",
+      "GREEN": "session8c6f-dynamic-startup-green19tests0failures",
+      "rootCause": "sharedcut integration assumedstaticmanifestmembership; existingrate adapter suppliescallback",
+      "fix": "staticmembership ifpresent; otherwise requestcoverage prefix membership only, emptycut requestsnone"
+    },
+    {
+      "kind": "validation",
+      "artifact": "integration-review/financial-green2-summary.json",
+      "rows": [
+        {
+          "name": "com.reef.platform.calcify.financial.FinancialBrokerProbeTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "1.064"
+        },
+        {
+          "name": "com.reef.platform.calcify.financial.FinancialKernelTest",
+          "tests": "14",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "111.618"
+        },
+        {
+          "name": "com.reef.platform.calcify.financial.FinancialPartitionCutTest",
+          "tests": "13",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "0.06"
+        },
+        {
+          "name": "com.reef.platform.calcify.financial.FinancialOracleTest",
+          "tests": "12",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "21.406"
+        },
+        {
+          "name": "com.reef.platform.calcify.financial.FinancialCommittedCutTest",
+          "tests": "3",
+          "failures": "0",
+          "errors": "0",
+          "skipped": "0",
+          "time": "0.166"
+        }
+      ],
+      "tests": 45,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "buildSeconds": 140,
+      "attempt": "session8c6f-financial-integrated-green2"
+    },
+    {
+      "kind": "real-supervisor-smoke",
+      "attempt": "session8c6f-real-supervisor-smoke2",
+      "ok": true,
+      "wrapperExitCode": 0,
+      "cleanupErrors": [],
+      "volumesPreserved": true,
+      "sampledFinalAllocatedBytes": 50528256,
+      "artifact": "runs/session8c6f-smoke2/supervisor-finished.json",
+      "scope": "realownedDocker observation/cleanup; nofinancialworkload"
+    },
+    {
+      "kind": "retention-correction",
+      "RED": "recorder override ENOENT1of2 and repo:check:records historicalsourcepathblocked",
+      "GREEN": "recorder2of2 and retention520files passed",
+      "artifact": "attempts-path-correction.json",
+      "preservedExactFiles": 35,
+      "codeChange": "default ignoredactiveproof namespace + explicit attemptdir override"
+    },
+    {
+      "kind": "live-fault-campaign",
+      "utc": "2026-10-05T04:03:19.332237+00:00",
+      "attempt": "session8c6f-external1-supervised",
+      "result": "FAIL",
+      "armsPassed": [
+        "producer-failure",
+        "committed-output-before-controller-ack",
+        "stale-owner-resume-after-takeover"
+      ],
+      "failure": "Majority outage blocked before fault by wrong priorresolverlabel; actualfinancialCompose label differs",
+      "scope": "threebounded arm successes preserved; no wholecampaign success claim",
+      "cleanupErrors": [],
+      "volumesPreserved": true,
+      "artifact": "runs/session8c6f-external1/proof/failure.json"
+    },
+    {
+      "kind": "TDD",
+      "scope": "financialbroker ownership label",
+      "RED": "session8c6f-financial-label-red12tests2failed",
+      "GREEN": "session8c6f-financial-label-green12of12 thensurrounding66of66",
+      "fix": "require exactcanonicalfinancial label; inspectionfixture derives actualCompose label tocatchfuturecontractdrift"
+    },
+    {
+      "kind": "live-fault-campaign",
+      "attempt": "session8c6f-external2-supervised",
+      "result": "FAIL",
+      "armsPassed": [
+        "producer-failure",
+        "committed-output-before-controller-ack",
+        "stale-owner-resume-after-takeover"
+      ],
+      "failure": "Guard rejects designated target running with healthstarting during intentionalrestart; laststop sample correctly conservativebound and2healthy peers",
+      "scope": "no completecampaign success; exact source/compiled/hash/faultreceipts retained",
+      "cleanupErrors": [],
+      "volumesPreserved": true,
+      "artifact": "runs/session8c6f-external2/resource-samples.jsonl"
+    },
+    {
+      "kind": "research-spike",
+      "task": "M0",
+      "policy": "Attempt1threecycles exhausted; priorcodeReady reopened by live recovery-state regression. Stop patches, primarysource/evidence research before Attempt2; counts preserved.",
+      "question": "Bound intentionaltarget STOP-to-starting-to-healthy recovery while maintaining2healthy peers, freshsamples, frozenbound and no unauthorizedunhealthy states"
+    },
+    {
+      "kind": "research-spike-complete",
+      "task": "M0",
+      "artifact": "research/m0-recovery-spike1/report.md",
+      "decision": "Bounded one-cycle STOP barrier and monotonic30s restart authorization; stable3GiB charge+running du; no global health relaxation; Attempt2 TDD begins",
+      "priorReviewsPreserved": 3
+    },
+    {
+      "kind": "live-activation",
+      "attempt": "session8c6f-activation1-supervised",
+      "result": "PASS",
+      "artifact": "runs/session8c6f-activation1/supervisor-finished.json",
+      "scope": "Exactquartet isolated refusal + committed prefix rebuild + realnew-state-directory restart + unchangedprefix freshsuffix; finalE3independentreviewpending",
+      "wrapperExitCode": 0,
+      "cleanupErrors": [],
+      "volumesPreserved": true
+    },
+    {
+      "kind": "delivery-wiring",
+      "files": [
+        ".github/workflows/ci.yml"
+      ],
+      "change": "Add newbroker andsupervisorregressionfiles toexistingNodejob requiredscript-surface gate; exactCIvalidationafterworkerfreeze"
+    },
+    {
+      "kind": "scope-correction",
+      "attempt": "session8c6f-external2-supervised",
+      "artifact": "runs/session8c6f-external2/proof/0033-observe.stdout.log",
+      "fact": "Full8 read_committed oracle passed duringtargetSTOP; sourceoffsetholes preserved; postrestartwholecampaignincomplete. Exactfailedsupervisorinspectmissing; wrapperdirectlyrecordsstarting.",
+      "lastAcceptedAccountedBytes": 4586557440,
+      "stoppedTargetReservationBytes": 3221225472,
+      "measuredPeakClaim": false
+    },
+    {
+      "kind": "E4-readiness-research",
+      "artifact": "e4-readiness-research/report.md",
+      "status": "readonlypreparationcomplete",
+      "gaps": [
+        "actualmaxappliedheapguard",
+        "recoverableACKmembership",
+        "physicalmetricprovenance",
+        "calibrationandsupervisionthroughrestore"
+      ],
+      "scope": "CurrentliveassessmentLIMITED; planningheapcounterexampleonly, callbackorderingunrunhypothesis; nofinancialcapacityclaim",
+      "dependency": "E3acceptedcandidatebeforeimplementation"
+    },
+    {
+      "kind": "validation-plan",
+      "order": [
+        "Attempt2TDD+freshM0review",
+        "realonecycleDockerrecoverysmoke",
+        "fourexternalfaults",
+        "24core+20goldenunchangedfixtureoncandidate",
+        "finalintegratedE3independentreview"
+      ],
+      "reason": "Mandatorycoldstartupverifier changed sharedrestoration; previous44armproof remains historicalbuildscope; healthy-onlyguard forcore/golden",
+      "limits": "Serialownedbrokerloads; abortbudgetsunchanged; no throughputclaim; retainallfailedattempts"
+    },
+    {
+      "kind": "upstream-recheck",
+      "utc": "2026-10-05T04:29:24.935590+00:00",
+      "originMaster": "a6ddafbbae750693e227985f054be2d26716ae84",
+      "workingHead": "a6ddafbbae750693e227985f054be2d26716ae84",
+      "newCommits": 0,
+      "recordsPR6": "OPEN",
+      "recordsPR6Head": "ef6e48ee0469816f83500a46b96f1986ea7b174b"
+    },
+    {
+      "kind": "recovery-smoke-preparation",
+      "files": [
+        "freeze_supervisor.py",
+        "fault_smoke.mjs"
+      ],
+      "state": "syntaxcheckedonly",
+      "constraints": "Originalbroker/preflight.json immutable; newperrunphasecopyfullresourcepinning; fixeddeadlineactualownedSTOP/START, nofinancialclaim; executeafterAttempt2independentreviewpass",
+      "additionalLocalScaffoldExcludedFromArchive": "__pycache__/freeze_supervisor*.pyc"
+    },
+    {
+      "kind": "TDD-scope",
+      "task": "M0",
+      "attempt": 2,
+      "artifact": "m0-attempt2-author/protocol-red.log",
+      "result": "ActualadapterprotocolRED1of1 failsmissingbroker-faultdirectory, notoriginalstartingassertion",
+      "correction": "KeeporiginalREDimmutable; liveexternal2 isboundedfalseabortbaseline; workeradds explicithealthy-onlyrestrictionmutationcontrol or equivalent startingregression withoutmislabeling fulloldsource"
+    },
+    {
+      "kind": "TDD-green",
+      "task": "M0",
+      "attempt": 2,
+      "artifact": "m0-attempt2-author/focused-frozen-green.log",
+      "tests": 56,
+      "failures": 0,
+      "skipped": 0,
+      "status": "Fullfocused56/56 observed; sourcefreeze/reviewpacketpendingworkerhandoff; notlivecomplete"
+    },
+    {
+      "kind": "exactCI",
+      "attempt": "session8c6f-node-ci-green1",
+      "artifact": "ci-validation/summary.json",
+      "tests": 214,
+      "pass": 214,
+      "fail": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "sourceHashesMatch": true,
+      "sourceBoundary": "Captured duringCI; allscope mtimes precedeCLIattemptstarted timestamp and worker freeze matches; endhashes unchanged"
+    },
+    {
+      "kind": "CI-source-boundary-attribution-correction",
+      "originalPath": "ci-validation/current-source-boundary.json",
+      "originalSha256": "7d81cee28797400bcb22d79c333a1fbca49b36082d74c6578e7d8ceb6458982a",
+      "originalPreserved": true,
+      "correction": "CapturedUtc04:51:42 is afterCIfinished04:51:24; capturedwhileCIrunning claim unsupported. Actual post-run sourcehashes match workerfreeze, mtimesprecedeCIstart, CLI214/214actualexit0. No pre-run hash capture claimed."
+    },
+    {
+      "kind": "review-followups",
+      "task": "M0",
+      "attempt": 2,
+      "cycle": 1,
+      "decision": "TDD literalphaseflag and1sRECOVERING-onlysampling preserving5smaxfreshness30sdeadline; rootTDDsmokeassert actualstarting. Freshcycle2beforelive."
+    },
+    {
+      "kind": "TDD",
+      "task": "M0",
+      "scope": "root smoke acceptance",
+      "RED": "session8c6f-smoke-acceptance-red2tests1failure Missingexpectedrejection",
+      "GREEN": "session8c6f-smoke-acceptance-green2of2",
+      "change": "Actualdriver requires observedstarting beforeRECOVERED ACK/success; noDocker",
+      "CIprovenanceFix": "Future exactCI helper captures before/after sourcehashes directly around subprocess in unique perrun directory; prior unsupportedtimingreceipt preserved with correction"
+    },
+    {
+      "kind": "exactCI",
+      "attempt": "session8c6f-node-ci-green2",
+      "artifact": "ci-validation/green2/summary.json",
+      "tests": 216,
+      "pass": 216,
+      "fail": 0,
+      "skipped": 0,
+      "cancelled": 0,
+      "actualExitCode": 0,
+      "sourceHashesBeforeAfterMatch": true,
+      "attemptStartedUtc": "2026-10-05T05:04:43.362Z",
+      "attemptFinishedUtc": "2026-10-05T05:04:52.900Z",
+      "scope": "Exact CI job command, before/after source captures around subprocess; raw V8 coverage excluded from Records"
+    },
+    {
+      "kind": "owned-preflight",
+      "artifact": "broker/exclusive-volume-writers-recovery-smoke1.json",
+      "scope": "Exactlyone registereddaemoncontainermountpereachfreshowneddata volume; external/host writerabsenceoperationalpremise, notproved universal. Prepstartonly; proofwaitsreview."
+    },
+    {
+      "kind": "review-scope-revision",
+      "utc": "2026-10-05T05:10:19.787062+00:00",
+      "review": "M0Attempt2cycle2",
+      "path": "freeze_supervisor.py",
+      "sha256": "07a4f112f956f4aa2a5e2290ec94d3674e0f8699497303113c318321b3b4500c",
+      "change": "One descriptive evidence string: stable 3 GiB charge throughout fault mode; no field or operation change. Other frozen operational/CI/smoke sources unchanged. Reviewer notified; adjunct edits stopped."
+    },
+    {
+      "kind": "live-recovery-smoke",
+      "attempt": "session8c6f-recovery-smoke1-supervised",
+      "artifact": "runs/session8c6f-recovery-smoke1/compact-summary.json",
+      "result": "PASS",
+      "scope": "Actual parent starting measured du and reserved charge; no financial workload",
+      "startingSampleCount": 4,
+      "actualExitCode": 0,
+      "volumesPreserved": true
+    },
+    {
+      "kind": "live-external-faults",
+      "attempt": "session8c6f-external3-supervised",
+      "result": "PASS",
+      "arms": 4,
+      "actualExitCode": 0,
+      "artifact": "runs/session8c6f-external3/compact-summary.json",
+      "scope": "Bounded RF3 actual external faults; no cluster-loss or capacity claim",
+      "cleanupErrors": [],
+      "volumesPreserved": true
+    },
+    {
+      "kind": "live-activation",
+      "attempt": "session8c6f-activation2-supervised",
+      "result": "PASS",
+      "artifact": "runs/session8c6f-activation2/compact-summary.json",
+      "scope": "Isolated mixed snapshot refusal and actual new-directory changelog restore; no injected mixed managed store",
+      "actualExitCode": 0,
+      "volumesPreserved": true
+    },
+    {
+      "kind": "owner-sync",
+      "state": "candidate-status-only",
+      "files": [
+        "docs/WORK_PLAN.md",
+        "docs/evidence/calcify-financial-sprint1/README.md",
+        "docs/work/handoffs/2026-10-04-calcify-financial-sprint1-recovery.md"
+      ],
+      "scope": "Historical facts and cap preserved; current explicit bounded review authorization, 45 Kotlin/216 CI/recovery smoke facts; E3 pending final gates"
+    },
+    {
+      "kind": "delivery-check",
+      "scriptSurface": {
+        "scripts": 272,
+        "nodeSyntaxChecked": 260,
+        "shellSyntaxChecked": 11,
+        "pass": true
+      },
+      "diffWhitespace": "PASS"
+    },
+    {
+      "kind": "live-core-matrix",
+      "attempt": "session8c6f-core1-supervised",
+      "result": "PASS",
+      "arms": 24,
+      "artifact": "runs/session8c6f-core1/compact-summary.json",
+      "actualExitCode": 0,
+      "scope": "All 24 oracle and isolated full-history checks on candidate; no throughput claim"
+    },
+    {
+      "kind": "graph-refresh",
+      "generation": "2026-10-05T05:31:40Z",
+      "project": "reef-calcify-session-8c6f",
+      "nodes": 14510,
+      "edges": 74758,
+      "cause": "BrokerProbe metadata changed since03:42 index",
+      "coverage": "Exact BrokerProbe/PartitionCut/CommittedCut metadata_match; scripts/docs excluded; best-effort no completeness claim"
+    },
+    {
+      "kind": "live-golden-matrix",
+      "attempt": "session8c6f-golden1-supervised",
+      "result": "PASS",
+      "arms": 20,
+      "artifact": "runs/session8c6f-golden1/compact-summary.json",
+      "actualExitCode": 0,
+      "scope": "All20oracle and isolated complete-history checks, unchanged fixture on frozen candidate"
+    },
+    {
+      "kind": "integrated-independent-review",
+      "verdict": "Ready",
+      "findings": 0,
+      "candidateArmsVerified": 49,
+      "rawSamplesVerified": 246,
+      "maximumObservedSampleStartGapMs": 4815,
+      "freshNodeTests": 60,
+      "scope": "M0Attempt2cycle3/M1Attempt1cycle3/M2Attempt1cycle2; delivery still pending",
+      "artifact": "integration-review/final2-review/report.md"
+    },
+    {
+      "kind": "delivery-diff-correction",
+      "path": "docs/records/retained-evidence.json",
+      "change": "Removed unnecessary array sort before checkpoint; original338 order preserved, only current README hash/new focused entry/selection reason updated",
+      "scope": "Nonfunctional retention metadata, no source or proof edit"
+    },
+    {
+      "kind": "reviewed-product-checkpoint",
+      "commit": "c4d332a0d1b559a2a412093504826b0ac0adee6e",
+      "branch": "codex/calcify-planning-readiness",
+      "sourceScope": "14 operational hashes identical to final independent review; owners record observed Ready and archive pending; measurements predate commit with baseline+dirty hashes",
+      "archiveSnapshotLimit": "Ledger frozen before publication; later delivery outcome owned by current Reef summary/immutable archive publication receipt"
+    }
+  ]
+}

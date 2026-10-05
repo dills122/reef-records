@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.application.admin.AdminIdentityServiceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:16:39Z" hostname="Dylans-MacBook-Pro.local" time="0.004">
+  <properties/>
+  <testcase name="accessMutationsRequireReasonAndRoleRevocationPolicy()" classname="com.reef.platform.application.admin.AdminIdentityServiceTest" time="0.0"/>
+  <testcase name="updatesGithubUserDisplayDataWithoutResettingTrustOrCreatedAt()" classname="com.reef.platform.application.admin.AdminIdentityServiceTest" time="0.0"/>
+  <testcase name="ensuresGithubUserWithParticipantRole()" classname="com.reef.platform.application.admin.AdminIdentityServiceTest" time="0.0"/>
+  <testcase name="trustedOperatorCanManageReviewerRoleAndNonBannedTrustStatesWithReason()" classname="com.reef.platform.application.admin.AdminIdentityServiceTest" time="0.0"/>
+  <testcase name="rejectsInvalidGithubIdentity()" classname="com.reef.platform.application.admin.AdminIdentityServiceTest" time="0.0"/>
+  <testcase name="operatorCannotAssignPrivilegedRolesOrBanUsers()" classname="com.reef.platform.application.admin.AdminIdentityServiceTest" time="0.0"/>
+  <testcase name="assignsRole()" classname="com.reef.platform.application.admin.AdminIdentityServiceTest" time="0.001"/>
+  <testcase name="trustedPlatformAdminCanManagePrivilegedRolesAndBans()" classname="com.reef.platform.application.admin.AdminIdentityServiceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

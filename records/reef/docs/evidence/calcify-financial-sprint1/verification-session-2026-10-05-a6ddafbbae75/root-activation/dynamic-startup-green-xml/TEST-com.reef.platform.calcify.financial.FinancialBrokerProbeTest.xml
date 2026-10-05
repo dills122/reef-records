@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialBrokerProbeTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-05T03:47:35.094Z" hostname="Dylans-MacBook-Pro.local" time="1.04">
+  <properties/>
+  <testcase name="actual EOS worker config permits sixty second transaction grouping()" classname="com.reef.platform.calcify.financial.FinancialBrokerProbeTest" time="0.287"/>
+  <testcase name="empty cold startup permits rate probe dynamic acknowledged membership()" classname="com.reef.platform.calcify.financial.FinancialBrokerProbeTest" time="0.73"/>
+  <testcase name="producer fault overflows only B settlement after bounded earlier sends()" classname="com.reef.platform.calcify.financial.FinancialBrokerProbeTest" time="0.011"/>
+  <system-out><![CDATA[{"certifiedCatchupDomains":0,"partitionCut":null}
+]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>

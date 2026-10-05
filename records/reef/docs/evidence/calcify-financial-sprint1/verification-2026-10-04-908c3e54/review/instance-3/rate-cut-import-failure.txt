@@ -1,0 +1,1 @@
+Initial review harness import used four parent paths, Node ERR_MODULE_NOT_FOUND /Users/dsteele/repos/reef/.worktrees/scripts/dev/calcify-financial/rate-proof.mjs. Harness corrected to three parent paths; source unchanged.

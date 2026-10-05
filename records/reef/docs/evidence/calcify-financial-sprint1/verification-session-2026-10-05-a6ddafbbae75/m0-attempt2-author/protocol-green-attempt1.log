@@ -1,0 +1,31 @@
+TAP version 13
+# Subtest: Attempt2 actual adapter and file protocol accept one STOP starting healthy cycle with stable reservation
+not ok 1 - Attempt2 actual adapter and file protocol accept one STOP starting healthy cycle with stable reservation
+  ---
+  duration_ms: 137.1345
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:257:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert.ok(starting)
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:286:12)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 187.862333

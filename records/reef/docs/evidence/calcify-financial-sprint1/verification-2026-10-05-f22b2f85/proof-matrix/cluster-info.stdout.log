@@ -1,0 +1,11 @@
+CLUSTER
+=======
+redpanda.68f8a9ac-6825-461b-96bd-71b3b1cee2a7
+
+BROKERS
+=======
+ID    HOST  PORT
+0*    rp0   9092
+1     rp1   9092
+2     rp2   9092
+

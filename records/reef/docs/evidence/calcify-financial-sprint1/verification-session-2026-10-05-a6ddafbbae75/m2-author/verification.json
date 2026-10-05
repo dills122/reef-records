@@ -1,0 +1,9 @@
+{
+  "milestone": "M2 pure certified cut helper",
+  "attempt": 1,
+  "red": {"id": "session8c6f-m2-red", "tests": 11, "failures": 11, "scope": "permissive stub; pending fixture append NPE preserved"},
+  "red2": {"id": "session8c6f-m2-red2", "tests": 13, "failures": 13, "seconds": 14, "scope": "corrected pending fixture; added strict malformed numeric/shape cases; permissive stub"},
+  "green": {"id": "session8c6f-m2-green1", "tests": 13, "failures": 0, "seconds": 7, "exit": 0},
+  "command": "JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home node scripts/dev/calcify-financial/record-attempt.mjs session8c6f-m2-green1 services/platform-runtime ./gradlew test --tests com.reef.platform.calcify.financial.FinancialPartitionCutTest --no-daemon --offline",
+  "limits": ["Pure helper tests; no actual broker execution or actual managed store snapshot injection", "Actual resume positions remain separate framework evidence", "Parent integrates mandatory worker init and exact quartet result-derived activation checks", "Fresh independent review pending"]
+}

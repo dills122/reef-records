@@ -1,0 +1,7 @@
+NAME                                                                               PARTITIONS  REPLICAS
+financial-s1-97924e15-bounded-f56b30b1-core-happy-app-financial-state-changelog    1           3
+financial-s1-97924e15-bounded-f56b30b1-core-happy-input                            1           3
+financial-s1-97924e15-bounded-f56b30b1-core-happy-results                          1           3
+financial-s1-97924e15-bounded-f56b30b1-golden-happy-app-financial-state-changelog  1           3
+financial-s1-97924e15-bounded-f56b30b1-golden-happy-input                          1           3
+financial-s1-97924e15-bounded-f56b30b1-golden-happy-results                        1           3

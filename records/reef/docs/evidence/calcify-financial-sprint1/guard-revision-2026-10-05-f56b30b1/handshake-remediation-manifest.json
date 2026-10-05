@@ -1,0 +1,55 @@
+{
+  "sourceHead": "f56b30b19d00a1033abae44a75435a4e771990e9",
+  "reviewVerdict": "NOT_READY",
+  "authorControls": {
+    "mockTests": 13,
+    "failures": 0,
+    "realOwnedProcessControl": "FinalPASS:observerexit1,two owned groups exit-15,groupErrors empty; no Docker/ps/brokers"
+  },
+  "liveBoundedProof": "NOT_RUN",
+  "profileApplied": false,
+  "requiresFreshIndependentReview": true,
+  "files": [
+    {
+      "path": "resource_watchdog.py",
+      "bytes": 5320,
+      "sha256": "8e63a35ec9733c62728d6a25069d45de6903f543222ed78f47cf3ba2cbf5955f"
+    },
+    {
+      "path": "resource_watchdog.review6.py",
+      "bytes": 3186,
+      "sha256": "1277897cf77a3ce7faa2fc094f7f2f70ae66cac21be4c43184ad5f26b7dcf64f"
+    },
+    {
+      "path": "run_checks.py",
+      "bytes": 1276,
+      "sha256": "88e90c2f68299b0e7dcbbfa960829adfbd6616cfa91d148d230d5eb5082ada30"
+    },
+    {
+      "path": "supervise_checks.pre-handshake.py",
+      "bytes": 4072,
+      "sha256": "f516f6b3b8d2583e996a2e8787fa80188ead877263278e8d0cf51a87bac33985"
+    },
+    {
+      "path": "supervise_checks.pre-reap.py",
+      "bytes": 4384,
+      "sha256": "f38e22e3b6a43ddaaf01b8f2e06803737e30aff27493a86f67ee0396255dd687"
+    },
+    {
+      "path": "supervise_checks.py",
+      "bytes": 4544,
+      "sha256": "12155edc5be4ac0b10a24669d6ae8b39a398dde056dac8a1264f7cb4c7a1561b"
+    },
+    {
+      "path": "supervisor_process_control.py",
+      "bytes": 2109,
+      "sha256": "56ebfa3d8af099dddb7eec140c304db2ef4d3210ec8a1d7ef29aa91cd78edda5"
+    },
+    {
+      "path": "watchdog_controls.py",
+      "bytes": 8492,
+      "sha256": "fdf37e233256baa6696f89c312cb4c4b6225092b440c9c4be5dc6e6769475b3b"
+    }
+  ],
+  "preservedCorrections": "Initial OS control PASS for process termination but EPERM cleanup errors retained; reap-before-escalation fix and final assertion verified"
+}

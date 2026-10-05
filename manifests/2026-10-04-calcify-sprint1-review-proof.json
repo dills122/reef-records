@@ -1,0 +1,1800 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/dills122/reef",
+  "source_commit": "fa442bbc5ef9fa7ab33e8ae4e6f128e364a30a95",
+  "selection_policy": "Complete tracked local-only source bundle at fa442bbc5ef9fa7ab33e8ae4e6f128e364a30a95. Reviewed executable source908c3e54583cb812b074fe66160c42f0bcbd4921 is published in Reef. Local provenance commit is deliberately not published to Reef: all bulk evidence publishes solely reef-records per user preference. Raw originals preserved exactly; no caches, binaries, private recovery sessions or live database state. E3/E4 continuation BLOCKED; failures retained.",
+  "files": [
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/README.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/README.md",
+      "bytes": 1717,
+      "sha256": "b8fad1e4ae759edf5ac525f78196c3ef517dc052f0c3604f76d8ed089d9a1fe7",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/SHA256SUMS",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/SHA256SUMS",
+      "bytes": 31426,
+      "sha256": "1802af7faba258c9aee3dd9d034b262bbe6dee2b2c0e13f0b4979479385865d9",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/bundle-manifest.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/bundle-manifest.json",
+      "bytes": 77757,
+      "sha256": "c97de2dc5d18eb96a3cb1d023cc631517b19c991d71f3200b65ed70f6f643292",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/archive-plan.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/archive-plan.md",
+      "bytes": 1011,
+      "sha256": "ad5c00391b4b2a6fa4ba6344cbff9143cdea6658cfc8645d747985d03d8447d1",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/attempts.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/attempts.jsonl",
+      "bytes": 16406,
+      "sha256": "9ee9e94de3af48049d2359ca895e992225decb5e355be37d95f27adc51157a11",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-cluster.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-cluster.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-cluster.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-cluster.stdout.log",
+      "bytes": 148,
+      "sha256": "0d99a1ecb316b1fc1be2b506011dc7c37b9ce30f9bf23c5430cbdbdade1dc560",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-compose-config.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-compose-config.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-compose-config.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-compose-config.stdout.log",
+      "bytes": 5530,
+      "sha256": "14d963c3896263c009173561dd1e8b54f815fe278f9ea6fc438abb5eb2a807a6",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-final-state.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-final-state.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-final-state.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-final-state.stdout.log",
+      "bytes": 4209,
+      "sha256": "39aad8ea41901f2fb09c8b28006e3fa2d86e47d3cf5f518616bce5c0fc020cc1",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy.stderr.log",
+      "bytes": 803,
+      "sha256": "df63e55e28ff4202434cf04cb8a061f3abc3ec26dd48cd9d4b89ee426931d4c9",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy.stdout.log",
+      "bytes": 159,
+      "sha256": "74bd8885f52b28c5777d1d45a88a891341b3f9298c51efb4fa842d440ec42787",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/0001-mutation-plan.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/0001-mutation-plan.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/0001-mutation-plan.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/0001-mutation-plan.stdout.log",
+      "bytes": 1227,
+      "sha256": "4029ed90be4026517e807a56c8b8cbc8c6d44818950287029f24550ea789f86d",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/0002-init.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/0002-init.stderr.log",
+      "bytes": 186,
+      "sha256": "2c58b87a0350a39bb1c3b5f4891defeeb9a785e84aa11a466dc9ddb21253bf58",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/0002-init.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/0002-init.stdout.log",
+      "bytes": 96,
+      "sha256": "6d18fda5af391f62f11f9128f321ceeb3f29d7df9a678319cff0e8189ee0612b",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/0003-seed-prefix.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/0003-seed-prefix.stderr.log",
+      "bytes": 186,
+      "sha256": "2c58b87a0350a39bb1c3b5f4891defeeb9a785e84aa11a466dc9ddb21253bf58",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/0003-seed-prefix.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/0003-seed-prefix.stdout.log",
+      "bytes": 316,
+      "sha256": "df048be3e248c4c62aaf4d92821c76b1de0e4f9b8c680a4672c3bbf77f03b2f7",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/0004-worker.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/0004-worker.stderr.log",
+      "bytes": 1169,
+      "sha256": "3b74dec0800fc4d31b5978750dd5ae85eec852dafbb39ff45a7e7e396e70eb44",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/0004-worker.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/0004-worker.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/attempts.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/attempts.jsonl",
+      "bytes": 3019,
+      "sha256": "91f02a09f864342734765fe1439aa4b8e4069db9b99aacb1e5d0211d08ca8c31",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/core-cohort.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/core-cohort.json",
+      "bytes": 2943,
+      "sha256": "bcd0249da007db0b43cc0c4a630ff902bc81e57159cefa9fa84ba1555864202c",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/failure.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/failure.json",
+      "bytes": 71,
+      "sha256": "6ab67d974e238bad74d3bb59a40a8876e38383a936ce380cb4ffd52c885279ff",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/happy-cohort.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/happy-cohort.json",
+      "bytes": 5136,
+      "sha256": "76e1adda7d8e2ec8cce6aa49753502b7f1ae3269543e03143d1f5f554a515f8b",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/happy-cohort.json.accepted.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/happy-cohort.json.accepted.json",
+      "bytes": 805,
+      "sha256": "d1779b9c5100236682461ad33884d8233355b4e1193677132a67a5f07fbbfee2",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/plan.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/plan.json",
+      "bytes": 27118,
+      "sha256": "3382a364c163ac18b8766d36f21936cbda7a3ff596f4932c8e1ae2c4d4d6b688",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/stage-cohort.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-happy/stage-cohort.json",
+      "bytes": 9604,
+      "sha256": "7af01d2e05cee0d6eee89fe6802f9e85ccba820efdb50fe06a5d65c883673453",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-preflight.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-preflight.json",
+      "bytes": 1626,
+      "sha256": "181e1a4c5256138df90e5a14f933823b4ed9f8ae0503d68efabff1bf8e41575b",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-runtime.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-runtime.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-runtime.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-runtime.stdout.log",
+      "bytes": 361,
+      "sha256": "3dbe4efcccc6a8e76432d387acaacc0ab82792c602bbc68049932753d3a75eda",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-stop.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-stop.stderr.log",
+      "bytes": 369,
+      "sha256": "dbc3024b7c82f90f89f7f13a999f3f08038b310d5e781e13c0a56017a0c5b23d",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-stop.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-stop.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-up.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-up.stderr.log",
+      "bytes": 2088,
+      "sha256": "e8410d7b7733a5627032cfc50fb179c5684ff33786f6a216a63d5f828659120c",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-up.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/broker-up.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/closure.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/closure.json",
+      "bytes": 3582,
+      "sha256": "0a60ca9fb32116a4d905491762681ef7520a9f54fdb1dbfc11fb887135bb4b6c",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/docker-before-start.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/docker-before-start.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/docker-before-start.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/docker-before-start.stdout.log",
+      "bytes": 61,
+      "sha256": "855b47137d363549ec733ddc7340225adc2f64d4a713d4a8b408d6414c7118d4",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/docker-images.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/docker-images.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/docker-images.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/docker-images.stdout.log",
+      "bytes": 108,
+      "sha256": "3584f62e96ce64887dde58d82bc669a868831788ed570c1b15610aa5aa2edb7d",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/docker-inventory.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/docker-inventory.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/docker-inventory.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/docker-inventory.stdout.log",
+      "bytes": 784,
+      "sha256": "6355cd030a99f7ecb4b4e29e142a87c97a71bb196a034dbdf7384dfc365a19f4",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/docker-start.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/docker-start.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/docker-start.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/docker-start.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/e4-known-counterexample.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/e4-known-counterexample.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/e4-known-counterexample.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/e4-known-counterexample.stdout.log",
+      "bytes": 1427,
+      "sha256": "dad6dba88caa094e7cbd3ccf05738bf02da2de40363c1191bd6275ebb94908a9",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/fixture-check.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/fixture-check.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/fixture-check.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/fixture-check.stdout.log",
+      "bytes": 223,
+      "sha256": "82d127536827c54db75dd1d1fb13ff88e0df0bc505eb7b28c3784e487bb7457e",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/full-platform-runtime.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/full-platform-runtime.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/full-platform-runtime.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/full-platform-runtime.stdout.log",
+      "bytes": 8653,
+      "sha256": "adb51f855209de09b030517467736ded0baa6444db7d7a337330488caa9b2f76",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/gate-report.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/gate-report.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/gate-report.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/gate-report.stdout.log",
+      "bytes": 5142,
+      "sha256": "bbfc6d44097260e27598e5757ba53471fc25fe1cb6d0d199748b0a593f202892",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/guest-disk.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/guest-disk.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/guest-disk.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/guest-disk.stdout.log",
+      "bytes": 140,
+      "sha256": "f5d6347a81e40a8f3221a97b68edd01a6f1a7af6bf53c7b83c656594d57b7a34",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/host-disk.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/host-disk.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/host-disk.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/host-disk.stdout.log",
+      "bytes": 192,
+      "sha256": "622a2e9a72255a8163dc18768a9d63b7af4a34b30544decce5f3b4d663bea22b",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit-summary.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit-summary.json",
+      "bytes": 21367,
+      "sha256": "125051ded56969cc8d2ea36a0f8a5b6affc8c3612f963ca7016d3e920e199ec7",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-co-P8GFOK2C9I3VE.reef.platform.infrastructure.persistence.PostgresVenueEventBatchMaterializationIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-co-P8GFOK2C9I3VE.reef.platform.infrastructure.persistence.PostgresVenueEventBatchMaterializationIntegrationTest.xml",
+      "bytes": 3139,
+      "sha256": "f6b431809719ea75fbecb0931d7ddffeac20ffc8ed38d0691df1f858808e4cca",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.admin.AdminCliAdapterTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.admin.AdminCliAdapterTest.xml",
+      "bytes": 859,
+      "sha256": "6605f17377728e7ad11c7bb12352c06d6370cfe0d73ac8d1d155014351850908",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.admin.AdminCliIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.admin.AdminCliIntegrationTest.xml",
+      "bytes": 478,
+      "sha256": "9c7d755b976b769b7d116c2d4d96658143fa7bbd94394e9823b6181af4b330e1",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.AcceptedAsyncCommandIntakeTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.AcceptedAsyncCommandIntakeTest.xml",
+      "bytes": 1283,
+      "sha256": "429038e5a11619a08facde6e233ead2de20fe2b3c21840a78fbac0719f5558fe",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.AccountRiskCheckExtensionTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.AccountRiskCheckExtensionTest.xml",
+      "bytes": 618,
+      "sha256": "b252585faffe9267f2e6cddd2b4d66a115102fccf811974a6d857c8ce892fb0f",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.AdminJsonValidationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.AdminJsonValidationTest.xml",
+      "bytes": 847,
+      "sha256": "f38eb97dd846969c59c862e7d739aeb1f29d0f2f238d18c0e4e1f25c32846888",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.BotRuntimeOrderClientTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.BotRuntimeOrderClientTest.xml",
+      "bytes": 1065,
+      "sha256": "d1f1db33e9e8fe71ee3f451ec9cee31891d15ec1a350907ad833d161390fd265",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.CommandCaptureStoreTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.CommandCaptureStoreTest.xml",
+      "bytes": 2147,
+      "sha256": "704e22e48f1100a3d78fad4382c691ab246ebe70601a9ba09c90ddf6a2cbd302",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.CommandLogStoreTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.CommandLogStoreTest.xml",
+      "bytes": 1433,
+      "sha256": "99562f75f76f22a5b87a8e89d90fb804eb094e27edd34fae09dce78a4281faa4",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.CommandProcessingModeTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.CommandProcessingModeTest.xml",
+      "bytes": 834,
+      "sha256": "47bfe5df0aa7f6192005ecff696b0b1434de47c6d31b19f5edc05dc8dc7f73bd",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.DownstreamProjectionInstrumentationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.DownstreamProjectionInstrumentationTest.xml",
+      "bytes": 1565,
+      "sha256": "5cb91bfed762534257c107e2532fa5e14de78ee4efa5573d1d2fa814b2be6663",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.ExternalApiBoundaryTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.ExternalApiBoundaryTest.xml",
+      "bytes": 5417,
+      "sha256": "f64813ffa108677ef60c6ae42ce4122b53eab71919b2440ee8e09513c83bb898",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.InMemoryIdempotencyStoreTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.InMemoryIdempotencyStoreTest.xml",
+      "bytes": 899,
+      "sha256": "e3a96b4cf4c543838945ed83d3461ac6ae0fdaa73e7a83db98b457862e8000c9",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.JsonCodecTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.JsonCodecTest.xml",
+      "bytes": 1911,
+      "sha256": "9a84bf240418b52c8c869d5d656ffa2ad8429b37e63ad9110cba0d9e8527823d",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.KafkaStreamCommandPublisherTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.KafkaStreamCommandPublisherTest.xml",
+      "bytes": 1834,
+      "sha256": "9930199035c86f885502707e62bb3cf93beafee5564554b1710bbc757bca1bdf",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.MarketDataProjectionWorkerTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.MarketDataProjectionWorkerTest.xml",
+      "bytes": 11467,
+      "sha256": "7a215cdee86371b7faac1445091a4d0fd55b0186ac0bb9a9d085f8c835d7cd2d",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.MaterializerTimingJournalTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.MaterializerTimingJournalTest.xml",
+      "bytes": 1574,
+      "sha256": "ec06b68b4e4dfbd6553f4d5a533f40e9587455d176c2da1f10c480833b1b9f85",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.OrderLifecycleProjectionWorkerGroupTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.OrderLifecycleProjectionWorkerGroupTest.xml",
+      "bytes": 689,
+      "sha256": "b0216c16320866ad3de79e6bc6eb1e393b2b36ba2b19ed4f3e368e190b7c380d",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.OrderLifecycleProjectionWorkerTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.OrderLifecycleProjectionWorkerTest.xml",
+      "bytes": 2074,
+      "sha256": "97f9f40a3728bd6c81eaa9ba77a14b24f4bf8f9a1178b626211a65dc9f314bd1",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PlatformAdminDataRoutesTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PlatformAdminDataRoutesTest.xml",
+      "bytes": 625,
+      "sha256": "8ab042926901075cfb9490c09db19f330b56192acf6e5d69bbe10780e3938fe4",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PlatformApiTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PlatformApiTest.xml",
+      "bytes": 2880,
+      "sha256": "795b08c22c1249bc95a265117fb83bff03e7084aaf4339d32192dac42a84a7c8",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PlatformCommandParsersTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PlatformCommandParsersTest.xml",
+      "bytes": 1086,
+      "sha256": "d2cb09c088fb9ea6953d6a4240430ca500ce3ac7f39cadb676d0f10718a4c9c8",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PlatformHttpServerBoundaryTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PlatformHttpServerBoundaryTest.xml",
+      "bytes": 383582,
+      "sha256": "21ea7ede0fb98492a11e8dfc90c33a0ecc050db21f481519d609dd57249c7814",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PlatformHttpServerHelpersTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PlatformHttpServerHelpersTest.xml",
+      "bytes": 2630,
+      "sha256": "295ea32be1438860e322e72dcdcabf6e50865be7f63061a4206697b4ef8eb0e4",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PlatformRuntimePartitionsTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PlatformRuntimePartitionsTest.xml",
+      "bytes": 629,
+      "sha256": "90db7bb9e01d4280e865c60a09b75d6b3f3f8fc5ca882ecc71bd9ee098d0dbb1",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PlatformRuntimeProfileValidationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PlatformRuntimeProfileValidationTest.xml",
+      "bytes": 4541,
+      "sha256": "205fcbc68c251cf4b6a502a96414b915032d2a1d30433e061d7a257a31a5661a",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PostgresBoundarySqlNamesTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PostgresBoundarySqlNamesTest.xml",
+      "bytes": 747,
+      "sha256": "a8ddc5e1f6938cf3f5c1d6fd4a83f52f7986db3b37a655b8f5d7828263ed366f",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PostgresCommandLogCaptureIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PostgresCommandLogCaptureIntegrationTest.xml",
+      "bytes": 536,
+      "sha256": "99a59d30ad18ee24faf7e75535500f015040dbacc86138f640685098ff380147",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PostgresCommandLogStoreIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PostgresCommandLogStoreIntegrationTest.xml",
+      "bytes": 2801,
+      "sha256": "1595e56f92614c87fc79c0a17087649a727e01afb9c692ef9289f17f14a5192c",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PostgresIdempotencyStoreIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.PostgresIdempotencyStoreIntegrationTest.xml",
+      "bytes": 3972,
+      "sha256": "2d59136cc48e717067b67dd37331f9fda03c0f9a3c0716270bb9a66145d0b4ca",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.SettlementAdminGatewayParsingTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.SettlementAdminGatewayParsingTest.xml",
+      "bytes": 688,
+      "sha256": "f2beb089b75a0f04aa03c03e9dff0dfc95c6d216b51a8e42b1f774b832b1a691",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.StreamCommandDrainBackpressureTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.StreamCommandDrainBackpressureTest.xml",
+      "bytes": 1409,
+      "sha256": "49c0793bd835e5585e18a9991972c1e88b1071777c1a8f0e9f2b05b2c16e6991",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.StreamCommandIntakeTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.StreamCommandIntakeTest.xml",
+      "bytes": 1972,
+      "sha256": "7f742a96793f3f6978e851faf08f7ff455a4d8d855fcab684b3ea3625ba13f6d",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.StreamCommandWorkerTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.StreamCommandWorkerTest.xml",
+      "bytes": 2400,
+      "sha256": "69761f818b2b8bd8955844838720472e0ecbb1518ea37b14d02861a4d57aeeb6",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.StreamIngressSubmitHandlerTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.StreamIngressSubmitHandlerTest.xml",
+      "bytes": 1336,
+      "sha256": "545221a0704b32545e14425e519b92e6c24d083b662cc415320434c7a1d983c5",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.VenueEventBatchMaterializerTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.api.VenueEventBatchMaterializerTest.xml",
+      "bytes": 34796,
+      "sha256": "c358adc349a2c151c2dd044ac83a7a8cbb8c2656620d675fd7b414c0d32377ca",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.OrderApplicationServicePerfGuardrailTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.OrderApplicationServicePerfGuardrailTest.xml",
+      "bytes": 530,
+      "sha256": "fd3c05ce885a5a236eafe895864a4543837eeb89784f1da738b62f71744c73ba",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.OrderApplicationServiceTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.OrderApplicationServiceTest.xml",
+      "bytes": 2696,
+      "sha256": "7e1f08cd74373055d1461e3d665263908be332af4b6f3b3a4cdef6703af10f11",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.admin.AdminApplicationServiceTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.admin.AdminApplicationServiceTest.xml",
+      "bytes": 988,
+      "sha256": "200ce81fb268cce15c9305bf89c42bdda8ce50a1da9ed0962c7cf7ea037abb26",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.admin.AdminAuthServiceTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.admin.AdminAuthServiceTest.xml",
+      "bytes": 1102,
+      "sha256": "5e91f3b6e27143d63c636c9dab5d26d81fd1eca26ecaf9b13a7e2a6a7c63e811",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.admin.AdminIdentityServiceTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.admin.AdminIdentityServiceTest.xml",
+      "bytes": 1581,
+      "sha256": "4e6cf37bef868651a759677d871a6d0c82b3c0e91d9bed7275aeb086e63c1735",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.admin.PostgresAdminAuthSqlNamesTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.admin.PostgresAdminAuthSqlNamesTest.xml",
+      "bytes": 795,
+      "sha256": "b5f2edf1fd9372b34615580ac2815167217a6957ff47326cfa35743466beff32",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.admin.PostgresAdminIdentitySqlNamesTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.admin.PostgresAdminIdentitySqlNamesTest.xml",
+      "bytes": 817,
+      "sha256": "620becd9f3cc5aeaadf88684903fd85faf96c4cb33959041025c2a703d623b01",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.analytics.SimulationRunExportStoreTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.analytics.SimulationRunExportStoreTest.xml",
+      "bytes": 2262,
+      "sha256": "cb2ad4c5f98d409b418c7e90b44c1fcf8943faba5c84c08b0ce49ddaacfcbed9",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.settlement.PostTradeProfileResolverTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.settlement.PostTradeProfileResolverTest.xml",
+      "bytes": 1483,
+      "sha256": "bd77cd4587f4b27b1162e9b73937baac053baac5ba40f43dbd640cc3033073a4",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.settlement.PostgresSettlementFactStoreIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.settlement.PostgresSettlementFactStoreIntegrationTest.xml",
+      "bytes": 752,
+      "sha256": "745455d5ec78c6f3a0ebb7d2cd755f0e909fcbe1d729e8094ab8b45388366b09",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.settlement.SettlementExceptionProjectionTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.settlement.SettlementExceptionProjectionTest.xml",
+      "bytes": 723,
+      "sha256": "b77ec0218a4b6ea0fa18270c2f8290dbb3b0af4bf780fd07f687e341a197714b",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.settlement.SettlementFactStoreTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.settlement.SettlementFactStoreTest.xml",
+      "bytes": 5883,
+      "sha256": "312ea86c8c806beb8519815fde830ef882896a880f239519c2295006b6dc50d0",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.settlement.SettlementLedgerProjectionTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.settlement.SettlementLedgerProjectionTest.xml",
+      "bytes": 705,
+      "sha256": "064ea317105983f52671649d2a6289e9c902edc5228158b9a6cff90c67521872",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.settlement.SettlementObligationProjectionTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.settlement.SettlementObligationProjectionTest.xml",
+      "bytes": 1732,
+      "sha256": "c30cb35c368cfa964ec90762b1fae33be7259db22bd27321b0d2a822957d0a6d",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.settlement.SettlementScenarioProofProjectionTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.settlement.SettlementScenarioProofProjectionTest.xml",
+      "bytes": 721,
+      "sha256": "6aaf08bc7dcd6b17ac733442ee202d6c7616a24ec13a6734c849659d9fe6a770",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.settlement.SettlementScoreProjectionTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.settlement.SettlementScoreProjectionTest.xml",
+      "bytes": 697,
+      "sha256": "4eaba7a668ec2304788fe7436b48463661c540a4657964ec419ba41d83c133f9",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.settlement.TradeSettlementObligationMaterializerTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.application.settlement.TradeSettlementObligationMaterializerTest.xml",
+      "bytes": 2062,
+      "sha256": "c371c7fc96271fb4b264772626b460d22b21c4e2a48cd91b926bb3d0b2fedb34",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.ActualMeasureCompletionTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.ActualMeasureCompletionTest.xml",
+      "bytes": 638,
+      "sha256": "e0cd43a4f3568e394b2ef3d1a5cbbd5b2ade2448970a2a5e52b4e8614de74662",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.BoundedSourceAcknowledgementsTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.BoundedSourceAcknowledgementsTest.xml",
+      "bytes": 965,
+      "sha256": "e0b1f7118e97efa39b9fc7100476aa35fbeb50356561fbf6d659bb6dfc5d83b1",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyActualFullFactObserverTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyActualFullFactObserverTest.xml",
+      "bytes": 1195,
+      "sha256": "66eed75ae54c47a2706c7e02e43b5bb3b3fe76b5d9d9d5bc9a6a1ae36d86d9ac",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyContractTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyContractTest.xml",
+      "bytes": 727,
+      "sha256": "ddec141c24c2c83e66da7f0d9719093ced1ae88772fe9836cd51889a11dfda59",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyExtractorPollBatchTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyExtractorPollBatchTest.xml",
+      "bytes": 1033,
+      "sha256": "1caf560422296e057396605aa9cbb785ba5c2abe9f9fdae8c905afa5d4560eb1",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyPipelineConfigTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyPipelineConfigTest.xml",
+      "bytes": 784,
+      "sha256": "6d41ec454ea6b2080268451293b1a7d88343ba6a17bb103101dd69845d3e97ed",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyReceiptBatchTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyReceiptBatchTest.xml",
+      "bytes": 803,
+      "sha256": "7ae671d5224a14382b467ac50994e9d6a59df154979d5645da8801150f1ab3af",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyReceiptStoreTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyReceiptStoreTest.xml",
+      "bytes": 637,
+      "sha256": "9f3c9931513c15230124e0c0e654c90c10aa04b170b1177706f8014ecd8303b3",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyResolverProcessorTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyResolverProcessorTest.xml",
+      "bytes": 1863,
+      "sha256": "8d2890cbff7544037dc33788f6f794044b218fe10382bcb18487a2129039ebb8",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyRunNamespaceTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyRunNamespaceTest.xml",
+      "bytes": 1579,
+      "sha256": "d3c6eff770d079d368e04c5bef2faa9e077f69f84d82ed514709112a2e2231b4",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifySourceRegistrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifySourceRegistrationTest.xml",
+      "bytes": 653,
+      "sha256": "ce977df724c949531ee30e1f1b3b56b41d3cd999fa529fa6be27eb112b87125e",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyVerifiedVisibilityObserverTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyVerifiedVisibilityObserverTest.xml",
+      "bytes": 1365,
+      "sha256": "fd9cfe850c6242bae916f3e41a711650791bf9b61893323fe62cb5dde16485aa",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyVerifierBatchTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.CalcifyVerifierBatchTest.xml",
+      "bytes": 806,
+      "sha256": "ce467aa3d637f2993e5a1b3102928ec0eb37a27574f7eb58e76c3d7ccb7dd313",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.MatchContextResolverTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.MatchContextResolverTest.xml",
+      "bytes": 1064,
+      "sha256": "a416e7198e6fc919c3ac75fd1cfcce900058cbaa3597b0ef9e259b71bb769eae",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.ResolverConsumerGateTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.ResolverConsumerGateTest.xml",
+      "bytes": 1182,
+      "sha256": "b13906bbe5e20622d64e1d2469d4ff80fcc3d429f1bc54e5840b2aac044af919",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.ResolverTopicDurabilityTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.ResolverTopicDurabilityTest.xml",
+      "bytes": 949,
+      "sha256": "49bdbc65e0ef16cafe3f0bde179d3c7a30b084727a7bbc4e4fc06961c0eee332",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml",
+      "bytes": 2663,
+      "sha256": "d44223b4f0769cb9c4fd7420129f2ab82b8b9184d5292e8151db914fea2f5fcb",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+      "bytes": 2588,
+      "sha256": "33813ea94e0a21e627c39d8e2d535d978adfc2dc631d4f385ec61a22c3eddc51",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.config.RuntimeEnvTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.config.RuntimeEnvTest.xml",
+      "bytes": 802,
+      "sha256": "7b0e58b2015f6af2f4ccdf59aded7b61951ff93a9340c988afdb5d507d5c742f",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.engine.EngineClientIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.engine.EngineClientIntegrationTest.xml",
+      "bytes": 533,
+      "sha256": "a9c283a2702e0b73bebdda5ed63021672519481a8a0b568641fc7e1031aa962f",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.engine.EngineClientTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.engine.EngineClientTest.xml",
+      "bytes": 1275,
+      "sha256": "6a940033c73876e8660349baa8e1db98aa035fb2f0a6e392f8ca833da8ffb620",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.engine.EngineTransportParityTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.engine.EngineTransportParityTest.xml",
+      "bytes": 168228,
+      "sha256": "57bc654134a7b397c5354fe2b627d8739bd1fa66154fb943f21bc763ad34d441",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.engine.EngineTransportTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.engine.EngineTransportTest.xml",
+      "bytes": 1277,
+      "sha256": "ee7e55feb63852293bcea8d33880daa9b0f73ee53cd1e25acf6a5b2e0589d6a6",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.partition.PartitionLaneHashTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.partition.PartitionLaneHashTest.xml",
+      "bytes": 650,
+      "sha256": "e47fc19f10f7f655e83fa82f7409e2228aa6903d36700d00ea9245e7ee06ed54",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest.xml",
+      "bytes": 3114,
+      "sha256": "fff8aae3f9865cb3916e6dcc762f2299bef6ed103be45ee2a8a34fa4c1f84a0b",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.xml",
+      "bytes": 14136,
+      "sha256": "612852debb2098a826ca251b1aba0c4aa0f4d9a5409953467fffe4f53602dbdf",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.MatchingFactsReconciliationIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.MatchingFactsReconciliationIntegrationTest.xml",
+      "bytes": 1411,
+      "sha256": "faed46cf43098cd4e431ced094a99f8fbe28d8772dcffefa22a8d1a8db0b5e99",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.NoopRuntimePersistenceTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.NoopRuntimePersistenceTest.xml",
+      "bytes": 1293,
+      "sha256": "f39993e6b5fdb3693759165531c3b33422b1e0dbc1e6ff31913848f45cb7206b",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresBootstrapModeTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresBootstrapModeTest.xml",
+      "bytes": 823,
+      "sha256": "c75a1b6fa7a5b09fbaa9278718389462fd830f38987d6704ab02672b7786ff9a",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresCanonicalIndexConsolidationIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresCanonicalIndexConsolidationIntegrationTest.xml",
+      "bytes": 998,
+      "sha256": "e43bb8d03e9dcac7edd023f40718ddc7701836312814c4d1843b15e94b2bf056",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresCanonicalSequencePrefixGuardIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresCanonicalSequencePrefixGuardIntegrationTest.xml",
+      "bytes": 599,
+      "sha256": "54d3e8e9f4844f0c8c88d23d87df9956bb8200d93b2ed22c0052470057151b73",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresCommittedProjectionFrontierIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresCommittedProjectionFrontierIntegrationTest.xml",
+      "bytes": 818,
+      "sha256": "805afd55d725ea5d3bb02a9c15d6eddfb3d14e5644bd4f0bf49e610cf5e02aa9",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresDirtyProjectionConcurrencyIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresDirtyProjectionConcurrencyIntegrationTest.xml",
+      "bytes": 1403,
+      "sha256": "f55b21910cfe0bcda3311c61b48f4646c412f274639479ca64f9bf67305e5677",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresLifecycleNumericParityIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresLifecycleNumericParityIntegrationTest.xml",
+      "bytes": 595,
+      "sha256": "deb6acb7dca6192c5c13055946cbdbe45c3b4f9b30a6b71e84b72e6e96a35d6b",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresMarketDataIndexedProjectionIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresMarketDataIndexedProjectionIntegrationTest.xml",
+      "bytes": 817,
+      "sha256": "48a786500da0a63440de776dd633a1dc4626246969ad6c81719e31177b335edf",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresProjectionBatchClaimIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresProjectionBatchClaimIntegrationTest.xml",
+      "bytes": 2002,
+      "sha256": "d5e161093e15c30374c7f50e693f15a31992b49d727a48d8188ddc6b61c76cb4",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresProjectionStatusIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresProjectionStatusIntegrationTest.xml",
+      "bytes": 594,
+      "sha256": "cadbd8cac7cb0f07e9b6debc1a298e4e100c5f72207bb4dc59c9b112d0d6ec3e",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresRunOrderIdentityMigrationIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresRunOrderIdentityMigrationIntegrationTest.xml",
+      "bytes": 2575,
+      "sha256": "b6fcb6e5207053625acc2f2ab4c25ffd675282e5ff96e110c91eac61d30de5ec",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresRunOrderIsolationIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresRunOrderIsolationIntegrationTest.xml",
+      "bytes": 3469,
+      "sha256": "7fb3726910465aa7d051cd35ae87de7b3a2596a476f1e351578918fc645d963b",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresRuntimeEventReplayIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresRuntimeEventReplayIntegrationTest.xml",
+      "bytes": 1343,
+      "sha256": "8ed02f77a1eebf7fcb8aa122e49514b4d05e093d622f28799e87448a5a40b453",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresRuntimeJsonTest.xml",
+      "bytes": 2747,
+      "sha256": "4ec5f030e13333e993f66dd1a0859e012727e9f94f5e96ba793aa2e12f3fbf0e",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresRuntimePersistenceTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresRuntimePersistenceTest.xml",
+      "bytes": 1747,
+      "sha256": "8497aea3dcb7b128ada5b5f3d145712c9812528f1dae13e1caf750fde07d81d7",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresRuntimeSqlNamesTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresRuntimeSqlNamesTest.xml",
+      "bytes": 859,
+      "sha256": "9e51a02c0738348f4a0fd3bc40d504b1b7b5456afc04f31a8e4aca6ac5b74003",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresSchemaRequirementsTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresSchemaRequirementsTest.xml",
+      "bytes": 2856,
+      "sha256": "cd0b1de00113673dc1d382d5614219c61fbf724dd974abf0ce008f7864bc8089",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresSchemaValidatorTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresSchemaValidatorTest.xml",
+      "bytes": 1199,
+      "sha256": "3f533875ed6ec5d95ba78b2a6d64ba0a58b616c9a530d69b947b4b0e779ec384",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresSubmitResultReplayIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresSubmitResultReplayIntegrationTest.xml",
+      "bytes": 755,
+      "sha256": "92939e303698a6c5bfb8dda2e56bc6693a0c969d9306d01d67fb32497d907468",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresTradeReplayIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresTradeReplayIntegrationTest.xml",
+      "bytes": 727,
+      "sha256": "dba55336839257e3028514f6005dee14ebc9cffbf701bb5cd4b4698eab41d6e7",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresVenueBatchOutcomeReuseIntegrationTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.PostgresVenueBatchOutcomeReuseIntegrationTest.xml",
+      "bytes": 1301,
+      "sha256": "c35dfbac9272840ddf972742e3b4bfe92c735eeba1328d5ff92109c16b190bc7",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.ProjectionBatchClaimBootstrapTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.ProjectionBatchClaimBootstrapTest.xml",
+      "bytes": 572,
+      "sha256": "7e8172459ece7e6cb5bb4a068f8526b241af3756674ad75e8dc8970040bc608a",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.ProjectionBatchIdentityV1Test.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/junit/TEST-com.reef.platform.infrastructure.persistence.ProjectionBatchIdentityV1Test.xml",
+      "bytes": 1075,
+      "sha256": "61b9becb6311b894ee32fab078d8cb42d4fa32055e0377c2b4aef474d64eb7af",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/node-ci-unsandboxed.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/node-ci-unsandboxed.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/node-ci-unsandboxed.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/node-ci-unsandboxed.stdout.log",
+      "bytes": 38471,
+      "sha256": "bc206d33b4ffb6fe8ece6390cc093be9a4a2b0dd9e6e8136c117c223b8ba6e8c",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/node-ci.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/node-ci.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/node-ci.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/node-ci.stdout.log",
+      "bytes": 38916,
+      "sha256": "2eebafee8e05f476159916f453d9d7e0b6c6d4f2db23abc1cc731231579c2687",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/rate-selfcheck.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/rate-selfcheck.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/rate-selfcheck.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/rate-selfcheck.stdout.log",
+      "bytes": 92,
+      "sha256": "856e001a65ed464a3a1dc87436cdc5f950a4920aa57abb55976c0f9ffa576021",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/reviewed-source-unchanged.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/reviewed-source-unchanged.json",
+      "bytes": 3090,
+      "sha256": "f5cda9610e00528103970a26b3619eb72342bcf23b9d36be088f4260e85ece19",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/run_checks.py",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/run_checks.py",
+      "bytes": 1276,
+      "sha256": "88e90c2f68299b0e7dcbbfa960829adfbd6616cfa91d148d230d5eb5082ada30",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/script-surface.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/script-surface.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/script-surface.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/script-surface.stdout.log",
+      "bytes": 871,
+      "sha256": "feca7605a5f72e09d88320d2ef9959d86468c50ce66aa5e1d3f15edc58b85708",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/source-manifest.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/source-manifest.json",
+      "bytes": 25660,
+      "sha256": "422f81d11e44b732a80354529eaf3d04788d37dd1145c30d42d5ee62566e05c9",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/verification-plan.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/proof/verification-plan.json",
+      "bytes": 2544,
+      "sha256": "85c2ede6846d7cc36a19caadc1514411dae56055fa46900447d81f7c24eb4cb3",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/ResolutionBoundary.java",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/ResolutionBoundary.java",
+      "bytes": 2145,
+      "sha256": "ba285dc47986a2f6dfb3ce97d19814514cd1fee0d03de9a04b5c11e18c39ad7a",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml",
+      "bytes": 855,
+      "sha256": "ed7bb62d5c936a5439698fc3f53346300f5347fd1e6369bbd2f2bd463a4b6f5f",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+      "bytes": 1109,
+      "sha256": "c112d1c1f59beb0e8fdfc2c5ccd55d2e3ab71cf94bef0deb5d3b2280dd5128ad",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/attempts.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/attempts.jsonl",
+      "bytes": 5879,
+      "sha256": "bc3e795d2dacc801299495dfa23d609cc60ea34da09f822ff797feb70534e9dc",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/final-focused/TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/final-focused/TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml",
+      "bytes": 852,
+      "sha256": "b1f4a19f6e2c231c20b3d7f6120873110c0924c60ac500232d74abe323786fc5",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/final-focused/TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/final-focused/TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+      "bytes": 1306,
+      "sha256": "244acc60cdef79e5b7fd23cadf14658177ba12bbe1ae67ec0c35559b53e3ab7b",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/final-focused/junit-summary.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/final-focused/junit-summary.json",
+      "bytes": 355,
+      "sha256": "a41a02e2b6a2a840cd903321fc10e87a5839e529522e77f05f09d9d42edcf266",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/focused-fixes-2.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/focused-fixes-2.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/focused-fixes-2.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/focused-fixes-2.stdout.log",
+      "bytes": 2548,
+      "sha256": "4e87eb8a3890a73a42eb3342778bd10a9f7f2cb487450619b037e5c1684677c4",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/focused-fixes-3.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/focused-fixes-3.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/focused-fixes-3.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/focused-fixes-3.stdout.log",
+      "bytes": 1940,
+      "sha256": "205d1e223354b18beef90e59fa7d17123b82aaf387492b21c213ad3894429d18",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/focused-fixes.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/focused-fixes.stderr.log",
+      "bytes": 1125,
+      "sha256": "0ab5dac3edb589421e5c4a726d8ebc49cb25818ed0a5711f10a748a1c602bad3",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/focused-fixes.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/focused-fixes.stdout.log",
+      "bytes": 879,
+      "sha256": "0455e30b5b2fb4d7417cd3e45a85eb2d2b114f9d1428b37725f74a878b6d1bff",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/junit-summary.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/junit-summary.json",
+      "bytes": 355,
+      "sha256": "cb6a55093958255f5267ac43b43de3b4e7b8cdb159efbfb585087b969689e58d",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/locator-boundary-green.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/locator-boundary-green.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/locator-boundary-green.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/locator-boundary-green.stdout.log",
+      "bytes": 289,
+      "sha256": "b93c0e370a8fdf305a87b3e8dbee899a5d0fbd15196c89c388c1e085055c0333",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/locator-boundary.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/locator-boundary.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/locator-boundary.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/locator-boundary.stdout.log",
+      "bytes": 281,
+      "sha256": "edde459f1092686f277126f15de8d539ab1c1aab97ac94989e88de5d9def5543",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/reviewer-boundary-green.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/reviewer-boundary-green.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/reviewer-boundary-green.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/author-checks/reviewer-boundary-green.stdout.log",
+      "bytes": 563,
+      "sha256": "d0a2008b7499d13a78deb9fa16c386543701ba0fe5dbed2ebd172945dce90113",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/author.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/author.md",
+      "bytes": 5914,
+      "sha256": "08fd13982a4d7a618a2f3abd829405d5aac2111aded6e81a15076c68469948e2",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/bootstrap.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/bootstrap.md",
+      "bytes": 4305,
+      "sha256": "b303286ee04110bf5f2f6e5b388a0ddb3d33cbebe7a31be06dcbc543b20b9174",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/checklog-counterexamples.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/checklog-counterexamples.log",
+      "bytes": 323,
+      "sha256": "b0f546973af2206bc007e94dc1b162705f3217069fd5d0af87966f128408c7aa",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/checklog-gradle.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/checklog-gradle.log",
+      "bytes": 8619,
+      "sha256": "68f0f03a062b1c8530c029deeb4a896bb46b2d9be2c2b1bf38c06b5290fce660",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/checklog-junit-summary.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/checklog-junit-summary.json",
+      "bytes": 304,
+      "sha256": "a6cc1430c3e19c353b9e80774f08cd2e3b5d88af4920b531080b8857b8fc4ad4",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/checklog-rate-selfcheck.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/checklog-rate-selfcheck.log",
+      "bytes": 92,
+      "sha256": "856e001a65ed464a3a1dc87436cdc5f950a4920aa57abb55976c0f9ffa576021",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/checklog.java",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/checklog.java",
+      "bytes": 1889,
+      "sha256": "ff08cd35ff82a35ab4102c05a9bf87feb91ffd4471997beeb75a05a7d6570397",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/node-tests.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/node-tests.log",
+      "bytes": 8819,
+      "sha256": "1be6e3e22b0868aee4c281bc2dd9dcb3f9b30552ae33e483ae9184911cf8b4a5",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/preliminary.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/preliminary.md",
+      "bytes": 2345,
+      "sha256": "7e7d79c8e3afa433875aef544e32fc3e50bdb9639ad7f867bb885ec11eb8413a",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/report.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/report.md",
+      "bytes": 11785,
+      "sha256": "a79ac844bcc83a4e6c75d15c9b8aa2ed24a8962bf1a881c88284a043aef5c6ef",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/response.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-1/response.md",
+      "bytes": 1187,
+      "sha256": "37e65f8babe1cb49066e5374a95df4f1e9296204d44425663a907f3ee444a23b",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/BoundaryCheck.java",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/BoundaryCheck.java",
+      "bytes": 2836,
+      "sha256": "ffd297986cf082c5477be76206ea1e4e1790be05647d2348b1160297062513a1",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+      "bytes": 888,
+      "sha256": "abf2abcd1f70778c56ce9e8f9e69414d33387f659425c1be931e678c1053c4ac",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/author.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/author.md",
+      "bytes": 6926,
+      "sha256": "00d88f588a272a8cd754b9dfca2d19846df00360c30ab8bd9fb2f2676b006343",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/bootstrap.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/bootstrap.md",
+      "bytes": 4642,
+      "sha256": "70a5866599f16f72555a2c78a8f776755e24a4062bfa64ab50cdba12578ac242",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/boundary-check-confirmed-2.exit",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/boundary-check-confirmed-2.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/boundary-check-confirmed-2.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/boundary-check-confirmed-2.log",
+      "bytes": 11711,
+      "sha256": "128b8d6ca1f45cc52ac50d101f4b70917bfd595496fc1e775fe25ca42b46c036",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/boundary-check-confirmed.exit",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/boundary-check-confirmed.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/boundary-check-confirmed.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/boundary-check-confirmed.log",
+      "bytes": 11678,
+      "sha256": "a158711986bf8e212b854320661e0c28da93d703b30206b18525973def84eb28",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/boundary-check.exit",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/boundary-check.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/boundary-check.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/boundary-check.log",
+      "bytes": 11678,
+      "sha256": "a158711986bf8e212b854320661e0c28da93d703b30206b18525973def84eb28",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/boundary-final.exit",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/boundary-final.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/boundary-final.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/boundary-final.log",
+      "bytes": 15951,
+      "sha256": "7f98c7ef6e2d60524fba8ed816d1a186e9ba0e4dc696301767e828c8b7a360ca",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/commands.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/commands.md",
+      "bytes": 1350,
+      "sha256": "6231ead2adfdeae9d9c6ce32cbd8bb9acb5dd0cac1c3563e12ad626af65498a8",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/diff-check.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/diff-check.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/fixture-check.exit",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/fixture-check.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/fixture-check.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/fixture-check.log",
+      "bytes": 223,
+      "sha256": "82d127536827c54db75dd1d1fb13ff88e0df0bc505eb7b28c3784e487bb7457e",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/gradle-focused.exit",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/gradle-focused.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/gradle-focused.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/gradle-focused.log",
+      "bytes": 1719,
+      "sha256": "07573985cf696230e9935840630f143b1149ca202d6f3c7eda48c1527ac01870",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/junit-summary.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/junit-summary.json",
+      "bytes": 357,
+      "sha256": "80ae5353f584e54b73f5bb684585faa172af7d9141105c575f3ad94dbb9e481f",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/node-tests.exit",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/node-tests.exit",
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/node-tests.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/node-tests.log",
+      "bytes": 8826,
+      "sha256": "4c82135dad1ebcca8c793a3fcb3c5f253953b98a5f9621c859fe3dcd18fca638",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/preliminary.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/preliminary.md",
+      "bytes": 2593,
+      "sha256": "8fbd8f07fe65d729c4cacf79e6b6bbbe9f4df50c05f41b762a6b829fd61091dd",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/report.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/report.md",
+      "bytes": 13889,
+      "sha256": "1f3c1c0f3d00d17c09f61a807458ed3439a57c53bd284759ec23b64510af515c",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/response.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/response.md",
+      "bytes": 1172,
+      "sha256": "12da8cb72123b2574a20f8ffdd976710f6e0955fe0ab14d1b82b32dacee386e5",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/scope-diffstat.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/scope-diffstat.log",
+      "bytes": 1510,
+      "sha256": "776d8daa3aafc9852d1fbfb824f8e8e05c286a6a993e8b07c65bba953690cfeb",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/scope-head.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/scope-head.log",
+      "bytes": 41,
+      "sha256": "bd37a4b00e4ae2f3feff15cfb503959b64c942016cf24d04d143dc5ad62c4e84",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/scope-status.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-2/scope-status.log",
+      "bytes": 14,
+      "sha256": "04e4c83344c25bdd363f4ca53837da13224816711859de5d17eaca22521ba39f",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/BoundaryCheck.java",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/BoundaryCheck.java",
+      "bytes": 2836,
+      "sha256": "ffd297986cf082c5477be76206ea1e4e1790be05647d2348b1160297062513a1",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/ResolutionBoundary.java",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/ResolutionBoundary.java",
+      "bytes": 2145,
+      "sha256": "ba285dc47986a2f6dfb3ce97d19814514cd1fee0d03de9a04b5c11e18c39ad7a",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml",
+      "bytes": 2663,
+      "sha256": "8864fb41a83289e1c9009e9d67a2c86b79c26e0596d65fcb5661fd53754b5faa",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+      "bytes": 2588,
+      "sha256": "f4ecd09db85d42791593e33dfcccd23f6f8b67aab81421705528222db1dc769a",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/author.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/author.md",
+      "bytes": 8972,
+      "sha256": "bbd5965b5badc9ad13e406d332b76a272b468d306365ac5fb3495fdae5b6bbd2",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/bootstrap.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/bootstrap.md",
+      "bytes": 5049,
+      "sha256": "5bbc3cbf4f5d71cbd1d7b4e043658abdeb6cdd2ff7ebdc3ccfd1c9481f36a350",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/boundary-recheck.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/boundary-recheck.log",
+      "bytes": 563,
+      "sha256": "d0a2008b7499d13a78deb9fa16c386543701ba0fe5dbed2ebd172945dce90113",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/commands.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/commands.md",
+      "bytes": 1953,
+      "sha256": "8e8079e90508aae001822cfbc2db88f6996fe465836fb18567b2194a3f3cd111",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/commits.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/commits.log",
+      "bytes": 373,
+      "sha256": "05267cfc4ec6524ba0806f23a4a78bbd1a34c88a04fbdf02ea93b036894862f1",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/diff-check.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/diff-check.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/final-status.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/final-status.log",
+      "bytes": 14,
+      "sha256": "04e4c83344c25bdd363f4ca53837da13224816711859de5d17eaca22521ba39f",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/fixtures.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/fixtures.log",
+      "bytes": 223,
+      "sha256": "82d127536827c54db75dd1d1fb13ff88e0df0bc505eb7b28c3784e487bb7457e",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/gradle-financial.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/gradle-financial.log",
+      "bytes": 8338,
+      "sha256": "cc7334252b98cb63b9a8d14538908b36c6a9703c8f55135d7f75045cb8d802c0",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/junit-summary.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/junit-summary.json",
+      "bytes": 563,
+      "sha256": "a20a53fc3717e02d5318122832da363cdf88ae400b37cd43b1b2315dc4733ff5",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/node-models.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/node-models.log",
+      "bytes": 8819,
+      "sha256": "cace02db754a0edc5d059e38e0876ba86a378c864d49f47c34ac0021c8cc132d",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/paths.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/paths.log",
+      "bytes": 1318,
+      "sha256": "3b3c5fee8d589a1884ce78361ca502ac9a55300acc26611d84e0146cf0beb37b",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/preliminary.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/preliminary.md",
+      "bytes": 2497,
+      "sha256": "f1074c6145409716bbbc52b141c5d4e6c67b00ab15100542c540977dbff9b381",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/rate-cut-consistency.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/rate-cut-consistency.log",
+      "bytes": 1427,
+      "sha256": "dad6dba88caa094e7cbd3ccf05738bf02da2de40363c1191bd6275ebb94908a9",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/rate-cut-consistency.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/rate-cut-consistency.mjs",
+      "bytes": 2330,
+      "sha256": "ff1304cdb06c2fab572ee73a80d00ef2cd9ee75e171b8d333dbf8afddbd0eb50",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/rate-cut-import-failure.txt",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/rate-cut-import-failure.txt",
+      "bytes": 222,
+      "sha256": "47095b613421c9ae6123eeee565902897e91a45118b67fb7bb3278e5769e742d",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/rate-selfcheck.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/rate-selfcheck.log",
+      "bytes": 92,
+      "sha256": "856e001a65ed464a3a1dc87436cdc5f950a4920aa57abb55976c0f9ffa576021",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/report.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/report.md",
+      "bytes": 12639,
+      "sha256": "a5e5fd31e379634751419a0f8379dcde04a590a2df15af766ea81162e36efe11",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/resolution-recheck.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/resolution-recheck.log",
+      "bytes": 289,
+      "sha256": "b93c0e370a8fdf305a87b3e8dbee899a5d0fbd15196c89c388c1e085055c0333",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/response.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/response.md",
+      "bytes": 720,
+      "sha256": "6ce1940be68927192e39852c4001f25a23ecc20d5c17cc4c85c96a8920dc806d",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/source-hashes.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/instance-3/source-hashes.json",
+      "bytes": 5536,
+      "sha256": "068912fc93bea322637a251773387ae39403556298076498a7d5700322355591",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/review-loop.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54/review/review-loop.json",
+      "bytes": 1314,
+      "sha256": "5b6b4184d05cde5c220c6b4e1a00a437388af13a72be100fe03f263a235fee82",
+      "reason": "Closed sprint1 independent-review and post-signoff proof; preserve successes, failures, skipped scopes and corrections as immutable history. Current code/checkpoint remain Reef."
+    }
+  ]
+}

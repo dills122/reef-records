@@ -1,0 +1,142 @@
+TAP version 13
+# Subtest: preparation stops until E3 correctness and real calibration plus indexed/bounded adapter exist
+ok 1 - preparation stops until E3 correctness and real calibration plus indexed/bounded adapter exist
+  ---
+  duration_ms: 1.181167
+  type: 'test'
+  ...
+# Subtest: source/fixture mismatches and fabricated zero-byte calibration cannot freeze runnable policy
+ok 2 - source/fixture mismatches and fabricated zero-byte calibration cannot freeze runnable policy
+  ---
+  duration_ms: 0.15775
+  type: 'test'
+  ...
+# Subtest: aged estimate retains proposed 1m identities; over-budget case explicitly shrinks diagnostic only
+ok 3 - aged estimate retains proposed 1m identities; over-budget case explicitly shrinks diagnostic only
+  ---
+  duration_ms: 0.134916
+  type: 'test'
+  ...
+# Subtest: disk space gate and exact prefunding bound all declared timed plus pending work
+ok 4 - disk space gate and exact prefunding bound all declared timed plus pending work
+  ---
+  duration_ms: 1.193959
+  type: 'test'
+  ...
+# Subtest: measurement separates stage rates; complete parity and all telemetry permit diagnostic pass
+ok 5 - measurement separates stage rates; complete parity and all telemetry permit diagnostic pass
+  ---
+  duration_ms: 0.675708
+  type: 'test'
+  ...
+# Subtest: producer duration miss fails even when output is exact after drain
+ok 6 - producer duration miss fails even when output is exact after drain
+  ---
+  duration_ms: 0.28175
+  type: 'test'
+  ...
+# Subtest: late drain cannot be counted as deadline output or settled financial throughput
+ok 7 - late drain cannot be counted as deadline output or settled financial throughput
+  ---
+  duration_ms: 0.17025
+  type: 'test'
+  ...
+# Subtest: cumulative offered cannot roll back between deadline and final cuts
+ok 8 - cumulative offered cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.127542
+  type: 'test'
+  ...
+# Subtest: cumulative admitted cannot roll back between deadline and final cuts
+ok 9 - cumulative admitted cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.305
+  type: 'test'
+  ...
+# Subtest: cumulative decided cannot roll back between deadline and final cuts
+ok 10 - cumulative decided cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.492875
+  type: 'test'
+  ...
+# Subtest: cumulative settled cannot roll back between deadline and final cuts
+ok 11 - cumulative settled cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.158584
+  type: 'test'
+  ...
+# Subtest: deadline offers cannot exceed frozen expected workload even if final agrees
+ok 12 - deadline offers cannot exceed frozen expected workload even if final agrees
+  ---
+  duration_ms: 0.099834
+  type: 'test'
+  ...
+# Subtest: each cut rejects admission ordering and settlement accounting violations
+ok 13 - each cut rejects admission ordering and settlement accounting violations
+  ---
+  duration_ms: 0.3155
+  type: 'test'
+  ...
+# Subtest: pending may decrease during drain; only missed deadline settlement fails
+ok 14 - pending may decrease during drain; only missed deadline settlement fails
+  ---
+  duration_ms: 0.377666
+  type: 'test'
+  ...
+# Subtest: missing accounting or resource metrics are explicit limited attempt; count inconsistency fails
+ok 15 - missing accounting or resource metrics are explicit limited attempt; count inconsistency fails
+  ---
+  duration_ms: 0.319958
+  type: 'test'
+  ...
+# Subtest: lag growth, over-budget disk and unsupported latency clock cannot silently pass
+ok 16 - lag growth, over-budget disk and unsupported latency clock cannot silently pass
+  ---
+  duration_ms: 0.134041
+  type: 'test'
+  ...
+# Subtest: highest stable measured arm creates fresh/aged 300s pair with same business workload
+ok 17 - highest stable measured arm creates fresh/aged 300s pair with same business workload
+  ---
+  duration_ms: 0.157959
+  type: 'test'
+  ...
+# Subtest: missing restore cost, partial monitoring and observer slowdown remain limited preflight
+ok 18 - missing restore cost, partial monitoring and observer slowdown remain limited preflight
+  ---
+  duration_ms: 0.192
+  type: 'test'
+  ...
+# Subtest: load and calibration entrypoints refuse before filesystem or adapter work without authorization
+ok 19 - load and calibration entrypoints refuse before filesystem or adapter work without authorization
+  ---
+  duration_ms: 0.79375
+  type: 'test'
+  ...
+# Subtest: calibration overrides cannot undercut measured physical byte budget or use invalid numbers
+ok 20 - calibration overrides cannot undercut measured physical byte budget or use invalid numbers
+  ---
+  duration_ms: 0.425208
+  type: 'test'
+  ...
+# Subtest: valid byte override preserves conservative floor and may increase budget only
+ok 21 - valid byte override preserves conservative floor and may increase budget only
+  ---
+  duration_ms: 0.094333
+  type: 'test'
+  ...
+# Subtest: derived per-trade budget must remain safe integer before policy freezes
+ok 22 - derived per-trade budget must remain safe integer before policy freezes
+  ---
+  duration_ms: 0.07925
+  type: 'test'
+  ...
+1..22
+# tests 22
+# suites 0
+# pass 22
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 66.318292

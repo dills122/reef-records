@@ -1,0 +1,23 @@
+TAP version 13
+# Subtest: Attempt2 cycle2 preflight requires exactly one adjacent literal phase flag and directory
+ok 1 - Attempt2 cycle2 preflight requires exactly one adjacent literal phase flag and directory
+  ---
+  duration_ms: 3.702
+  type: 'test'
+  ...
+# {"control":"three-second-parent-recovery","startingSamples":[27600,28400,29200],"grantAtMs":26800,"recoveryDeadlineMs":56800,"scope":"actual adapter and file protocol; injected Docker and monotonic clock"}
+# Subtest: Attempt2 cycle2 three-second recovery records multiple measured starting samples; other phases keep five-second cadence
+ok 2 - Attempt2 cycle2 three-second recovery records multiple measured starting samples; other phases keep five-second cadence
+  ---
+  duration_ms: 616.8695
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 673.574917

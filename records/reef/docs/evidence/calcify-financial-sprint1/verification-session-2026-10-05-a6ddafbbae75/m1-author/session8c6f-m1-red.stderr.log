@@ -1,0 +1,23 @@
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbeTest.kt:30:53 Unresolved reference 'outputBytes'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbeTest.kt:31:41 Unresolved reference 'outputBytes'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbeTest.kt:31:77 Unresolved reference 'size'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbeTest.kt:32:51 Unresolved reference 'outputBytes'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbeTest.kt:33:71 Unresolved reference 'outputBytes'.
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileTestKotlin' (registered by plugin 'org.jetbrains.kotlin.jvm').
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.btapi.BuildToolsApiCompilationWork
+   > Kotlin compiler: UNRESOLVED_REFERENCE
+       Kotlin compiler error
+         Unresolved reference 'outputBytes'.
+         Location: /Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbeTest.kt:30
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 6s

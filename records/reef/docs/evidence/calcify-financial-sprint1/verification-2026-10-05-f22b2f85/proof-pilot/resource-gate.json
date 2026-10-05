@@ -1,0 +1,147 @@
+{
+  "result": "PASS",
+  "pilotArms": 2,
+  "pilotPeakSampledAllocatedBytes": 1591246848,
+  "perArmAllocatedBytes": {
+    "core": 76013568,
+    "golden": 75669504
+  },
+  "maxPerArmBytes": 76013568,
+  "safetyMultiplier": 2,
+  "plannedMatrixArms": 44,
+  "forecastAllocatedBytes": 8280440832,
+  "abortAllocatedBytes": 9663676416,
+  "configuredBudgetBytes": 10737418240,
+  "minObservedGuestFreeBytes": 95993610240,
+  "forecastFreeBytesLowerBound": 87713169408,
+  "minimumFreeBytes": 21474836480,
+  "rawProofBytes": 396169,
+  "forecastRawBytes": 11650929,
+  "rawBudgetBytes": 268435456,
+  "coordinatorPartitionsObserved": 50,
+  "coordinatorReplicaDirsObserved": 150,
+  "formula": "Whole activepilot peak (no stoppedfootprint/subtraction) + 2*max observed fullarm allocation acrossall3replicas*44; rawforecast analogous. Includes alreadyallocated50txn partitions; doublesallplannedperarmtopic/changelogcost. Forecast is assumption, not empirical fullmatrixpass; liveguard remains required.",
+  "scope": "Synthetic correctness only;5s samples not continuouspeak; no capacity claim",
+  "topicConfigs": [
+    {
+      "topic": "financial-s1-97924e15-bounded-f56b30b1-core-happy-app-financial-state-changelog",
+      "partitions": 1,
+      "replicas": 3,
+      "requestedKafkaMinISR": 2,
+      "reportedKafkaMinISR": null,
+      "redpandaQuorumForRF3": 2,
+      "writeCaching": false,
+      "segmentBytes": 8388608,
+      "argv": [
+        "docker",
+        "exec",
+        "reef-calcify-financial-s1-bounded-pilot-rp0-1",
+        "rpk",
+        "topic",
+        "describe",
+        "financial-s1-97924e15-bounded-f56b30b1-core-happy-app-financial-state-changelog",
+        "-c"
+      ]
+    },
+    {
+      "topic": "financial-s1-97924e15-bounded-f56b30b1-core-happy-input",
+      "partitions": 1,
+      "replicas": 3,
+      "requestedKafkaMinISR": 2,
+      "reportedKafkaMinISR": null,
+      "redpandaQuorumForRF3": 2,
+      "writeCaching": false,
+      "segmentBytes": 8388608,
+      "argv": [
+        "docker",
+        "exec",
+        "reef-calcify-financial-s1-bounded-pilot-rp0-1",
+        "rpk",
+        "topic",
+        "describe",
+        "financial-s1-97924e15-bounded-f56b30b1-core-happy-input",
+        "-c"
+      ]
+    },
+    {
+      "topic": "financial-s1-97924e15-bounded-f56b30b1-core-happy-results",
+      "partitions": 1,
+      "replicas": 3,
+      "requestedKafkaMinISR": 2,
+      "reportedKafkaMinISR": null,
+      "redpandaQuorumForRF3": 2,
+      "writeCaching": false,
+      "segmentBytes": 8388608,
+      "argv": [
+        "docker",
+        "exec",
+        "reef-calcify-financial-s1-bounded-pilot-rp0-1",
+        "rpk",
+        "topic",
+        "describe",
+        "financial-s1-97924e15-bounded-f56b30b1-core-happy-results",
+        "-c"
+      ]
+    },
+    {
+      "topic": "financial-s1-97924e15-bounded-f56b30b1-golden-happy-app-financial-state-changelog",
+      "partitions": 1,
+      "replicas": 3,
+      "requestedKafkaMinISR": 2,
+      "reportedKafkaMinISR": null,
+      "redpandaQuorumForRF3": 2,
+      "writeCaching": false,
+      "segmentBytes": 8388608,
+      "argv": [
+        "docker",
+        "exec",
+        "reef-calcify-financial-s1-bounded-pilot-rp0-1",
+        "rpk",
+        "topic",
+        "describe",
+        "financial-s1-97924e15-bounded-f56b30b1-golden-happy-app-financial-state-changelog",
+        "-c"
+      ]
+    },
+    {
+      "topic": "financial-s1-97924e15-bounded-f56b30b1-golden-happy-input",
+      "partitions": 1,
+      "replicas": 3,
+      "requestedKafkaMinISR": 2,
+      "reportedKafkaMinISR": null,
+      "redpandaQuorumForRF3": 2,
+      "writeCaching": false,
+      "segmentBytes": 8388608,
+      "argv": [
+        "docker",
+        "exec",
+        "reef-calcify-financial-s1-bounded-pilot-rp0-1",
+        "rpk",
+        "topic",
+        "describe",
+        "financial-s1-97924e15-bounded-f56b30b1-golden-happy-input",
+        "-c"
+      ]
+    },
+    {
+      "topic": "financial-s1-97924e15-bounded-f56b30b1-golden-happy-results",
+      "partitions": 1,
+      "replicas": 3,
+      "requestedKafkaMinISR": 2,
+      "reportedKafkaMinISR": null,
+      "redpandaQuorumForRF3": 2,
+      "writeCaching": false,
+      "segmentBytes": 8388608,
+      "argv": [
+        "docker",
+        "exec",
+        "reef-calcify-financial-s1-bounded-pilot-rp0-1",
+        "rpk",
+        "topic",
+        "describe",
+        "financial-s1-97924e15-bounded-f56b30b1-golden-happy-results",
+        "-c"
+      ]
+    }
+  ]
+}

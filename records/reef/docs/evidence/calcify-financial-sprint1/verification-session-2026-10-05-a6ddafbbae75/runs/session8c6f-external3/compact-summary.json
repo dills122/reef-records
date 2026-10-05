@@ -1,0 +1,310 @@
+{
+  "guardOk": true,
+  "wrapperStatus": {
+    "code": 0,
+    "signal": null
+  },
+  "cleanupErrors": [],
+  "volumesPreserved": true,
+  "finalHealthy": [
+    true,
+    true,
+    true
+  ],
+  "sampledMaximumAccountedBytes": 4844015616,
+  "sampleCount": 38,
+  "scope": "bounded RF3/EOS external faults; no cluster-loss guarantee",
+  "arms": [
+    {
+      "name": "producer-failure",
+      "aborted": {
+        "pass": false,
+        "readCommittedOracle": true,
+        "coveredInputs": 0,
+        "resultOffsets": [],
+        "initialCommittedEndOffset": 2,
+        "finalCommittedEndOffset": 2,
+        "inputGroupCheckpoint": -1,
+        "inputReadCommittedEndOffset": 13
+      },
+      "after": {
+        "pass": true,
+        "readCommittedOracle": true,
+        "coveredInputs": 8,
+        "resultOffsets": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          11,
+          12
+        ],
+        "initialCommittedEndOffset": 14,
+        "finalCommittedEndOffset": 14,
+        "inputGroupCheckpoint": 13,
+        "inputReadCommittedEndOffset": 13
+      },
+      "idle": {
+        "pass": true,
+        "readCommittedOracle": true,
+        "coveredInputs": 8,
+        "resultOffsets": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          11,
+          12
+        ],
+        "initialCommittedEndOffset": 14,
+        "finalCommittedEndOffset": 14,
+        "inputGroupCheckpoint": 13,
+        "inputReadCommittedEndOffset": 13
+      },
+      "trigger": {
+        "rejection": {
+          "producerBoundary": "send",
+          "failureClass": "org.apache.kafka.common.errors.RecordTooLargeException",
+          "causeClasses": [
+            "org.apache.kafka.common.errors.RecordTooLargeException"
+          ],
+          "resource": "financial-s1-97924e15-session8c6f-external3-producer-failure-results",
+          "failure": "org.apache.kafka.common.errors.RecordTooLargeException: The message is 134306 bytes when serialized which is larger than 131072, which is the value of the max.request.size configuration."
+        }
+      }
+    },
+    {
+      "name": "committed-output-before-controller-ack",
+      "before": {
+        "pass": true,
+        "readCommittedOracle": true,
+        "coveredInputs": 4,
+        "resultOffsets": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "initialCommittedEndOffset": 6,
+        "finalCommittedEndOffset": 6,
+        "inputGroupCheckpoint": 9,
+        "inputReadCommittedEndOffset": 9
+      },
+      "idle": {
+        "pass": true,
+        "readCommittedOracle": true,
+        "coveredInputs": 4,
+        "resultOffsets": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "initialCommittedEndOffset": 6,
+        "finalCommittedEndOffset": 6,
+        "inputGroupCheckpoint": 9,
+        "inputReadCommittedEndOffset": 9
+      },
+      "after": {
+        "pass": true,
+        "readCommittedOracle": true,
+        "coveredInputs": 8,
+        "resultOffsets": [
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          9,
+          10
+        ],
+        "initialCommittedEndOffset": 12,
+        "finalCommittedEndOffset": 12,
+        "inputGroupCheckpoint": 15,
+        "inputReadCommittedEndOffset": 15
+      },
+      "trigger": {
+        "controllerAckPersisted": true
+      }
+    },
+    {
+      "name": "stale-owner-resume-after-takeover",
+      "before": {
+        "pass": true,
+        "readCommittedOracle": true,
+        "coveredInputs": 4,
+        "resultOffsets": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "initialCommittedEndOffset": 6,
+        "finalCommittedEndOffset": 6,
+        "inputGroupCheckpoint": 9,
+        "inputReadCommittedEndOffset": 9
+      },
+      "takeover": {
+        "pass": true,
+        "readCommittedOracle": true,
+        "coveredInputs": 8,
+        "resultOffsets": [
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          9,
+          10
+        ],
+        "initialCommittedEndOffset": 12,
+        "finalCommittedEndOffset": 12,
+        "inputGroupCheckpoint": 15,
+        "inputReadCommittedEndOffset": 15
+      },
+      "after": {
+        "pass": true,
+        "readCommittedOracle": true,
+        "coveredInputs": 8,
+        "resultOffsets": [
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          9,
+          10
+        ],
+        "initialCommittedEndOffset": 12,
+        "finalCommittedEndOffset": 12,
+        "inputGroupCheckpoint": 15,
+        "inputReadCommittedEndOffset": 15
+      },
+      "idle": {
+        "pass": true,
+        "readCommittedOracle": true,
+        "coveredInputs": 8,
+        "resultOffsets": [
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          9,
+          10
+        ],
+        "initialCommittedEndOffset": 12,
+        "finalCommittedEndOffset": 12,
+        "inputGroupCheckpoint": 15,
+        "inputReadCommittedEndOffset": 15
+      },
+      "trigger": {
+        "fencing": [
+          {
+            "processStarted": true,
+            "guarantee": "exactly_once_v2",
+            "commitIntervalMs": 1000,
+            "transactionTimeoutMs": 30000,
+            "stateDir": "/var/folders/lg/j56llg991d1gpjvtjh8l9gbh0000gn/T/reef-financial-e3-IKPbA5"
+          },
+          {
+            "certifiedCatchupDomains": 0,
+            "partitionCut": null
+          },
+          {
+            "frameworkRunningMs": 1323
+          },
+          {
+            "faultBoundary": "before-forward",
+            "inputOrdinal": 4,
+            "inputOffset": 10,
+            "storeCertificateCandidate": "{\"offset\":10,\"ordinal\":4,\"sourceUuid\":\"TJNoOlbOTG2FjgPEyYnkAg\",\"authoritySha256\":\"dab50f37d20e28a153e22dcf56d93e2bc3478c960dc4e5ba7fd387fbee87ec38\",\"owners\":{\"A\":{\"sequence\":4,\"checksum\":\"407744cbe59490930f56ded35a41d4113aafd981afcb5740dc84179e7662328f\"},\"B\":{\"sequence\":3,\"checksum\":\"3dbde29dd483add921f2cbc3d8aeed35eb3de5755db64ebfccaa9f7e117aaf21\"}}}",
+            "outputBytes": 2612,
+            "commitRequested": false
+          },
+          {
+            "faultBoundary": "stale-owner-resumed",
+            "inputOrdinal": 4,
+            "inputOffset": 10
+          },
+          {
+            "producerBoundary": "send",
+            "failureClass": "org.apache.kafka.common.errors.ProducerFencedException",
+            "causeClasses": [
+              "org.apache.kafka.common.errors.ProducerFencedException"
+            ],
+            "resource": "financial-s1-97924e15-session8c6f-external3-stale-owner-resume-after-takeover-results",
+            "failure": "org.apache.kafka.common.errors.ProducerFencedException: There is a newer producer with the same transactionalId which fences the current one."
+          }
+        ]
+      }
+    },
+    {
+      "name": "majority-one-broker-unavailable",
+      "before": {
+        "pass": true,
+        "readCommittedOracle": true,
+        "coveredInputs": 4,
+        "resultOffsets": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "initialCommittedEndOffset": 6,
+        "finalCommittedEndOffset": 6,
+        "inputGroupCheckpoint": 9,
+        "inputReadCommittedEndOffset": 9
+      },
+      "during": {
+        "pass": true,
+        "readCommittedOracle": true,
+        "coveredInputs": 8,
+        "resultOffsets": [
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          9,
+          10
+        ],
+        "initialCommittedEndOffset": 6,
+        "finalCommittedEndOffset": 12,
+        "inputGroupCheckpoint": 15,
+        "inputReadCommittedEndOffset": 15
+      },
+      "after": {
+        "pass": true,
+        "readCommittedOracle": true,
+        "coveredInputs": 8,
+        "resultOffsets": [
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          9,
+          10
+        ],
+        "initialCommittedEndOffset": 12,
+        "finalCommittedEndOffset": 12,
+        "inputGroupCheckpoint": 15,
+        "inputReadCommittedEndOffset": 15
+      },
+      "trigger": {}
+    }
+  ],
+  "sampledMaximumMeasuredRunningBrokerBytes": 2430259200,
+  "accountingScope": "Maximum accounted bytes includes fixed 3 GiB target reservation throughout external fault mode; measured running broker sum excludes stopped-target unknown rows; sampled only, no continuous peak"
+}

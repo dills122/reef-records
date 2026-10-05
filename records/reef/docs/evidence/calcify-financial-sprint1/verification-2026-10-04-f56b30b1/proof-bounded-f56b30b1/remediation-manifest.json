@@ -1,0 +1,39 @@
+{
+  "sourceHead": "f56b30b19d00a1033abae44a75435a4e771990e9",
+  "reviewVerdict": "NOT_READY",
+  "authorControls": {
+    "tests": 11,
+    "failures": 0,
+    "mockOnly": true
+  },
+  "liveBoundedProof": "NOT_RUN",
+  "profileApplied": false,
+  "requiresFreshIndependentReview": true,
+  "files": [
+    {
+      "path": "resource_watchdog.py",
+      "bytes": 5091,
+      "sha256": "685a1e4d5613350bdbaf222582a90fb0f5bf5718bd13d163e057a35f9b594442"
+    },
+    {
+      "path": "resource_watchdog.review6.py",
+      "bytes": 3186,
+      "sha256": "1277897cf77a3ce7faa2fc094f7f2f70ae66cac21be4c43184ad5f26b7dcf64f"
+    },
+    {
+      "path": "run_checks.py",
+      "bytes": 1276,
+      "sha256": "88e90c2f68299b0e7dcbbfa960829adfbd6616cfa91d148d230d5eb5082ada30"
+    },
+    {
+      "path": "supervise_checks.py",
+      "bytes": 4072,
+      "sha256": "f516f6b3b8d2583e996a2e8787fa80188ead877263278e8d0cf51a87bac33985"
+    },
+    {
+      "path": "watchdog_controls.py",
+      "bytes": 7070,
+      "sha256": "ea5ad17f90c9f1c66088ea823d66602cccf99e3650997412b701adadbdf7eaa4"
+    }
+  ]
+}

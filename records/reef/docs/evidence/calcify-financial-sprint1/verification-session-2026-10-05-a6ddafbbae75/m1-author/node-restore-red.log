@@ -1,0 +1,91 @@
+TAP version 13
+# Subtest: external plan freezes four executable trigger/barrier definitions
+ok 1 - external plan freezes four executable trigger/barrier definitions
+  ---
+  duration_ms: 0.93725
+  type: 'test'
+  ...
+# Subtest: broker registration refuses missing, malformed, duplicate and unregistered IDs
+ok 2 - broker registration refuses missing, malformed, duplicate and unregistered IDs
+  ---
+  duration_ms: 1.245625
+  type: 'test'
+  ...
+# Subtest: daemon inspection requires exact IDs, owned labels and two live peers
+ok 3 - daemon inspection requires exact IDs, owned labels and two live peers
+  ---
+  duration_ms: 1.121417
+  type: 'test'
+  ...
+# Subtest: restoration validates ownership even when peer health fails after outage
+not ok 4 - restoration validates ownership even when peer health fails after outage
+  ---
+  duration_ms: 0.125333
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/broker-proof.test.mjs:23:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    broker state disagrees with fault barrier
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    validateInspection (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/lib/external-faults.mjs:28:10)
+    TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/broker-proof.test.mjs:25:2)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: recovery requires identical physical prefix and exact stable end for idle restart
+ok 5 - recovery requires identical physical prefix and exact stable end for idle restart
+  ---
+  duration_ms: 0.567292
+  type: 'test'
+  ...
+# Subtest: stale owner requires observed broker fencing, never generic error or elapsed time
+ok 6 - stale owner requires observed broker fencing, never generic error or elapsed time
+  ---
+  duration_ms: 0.341291
+  type: 'test'
+  ...
+# Subtest: producer failure arm invokes actual producer seam, observes zero abort outputs then restores
+ok 7 - producer failure arm invokes actual producer seam, observes zero abort outputs then restores
+  ---
+  duration_ms: 0.487458
+  type: 'test'
+  ...
+# Subtest: committed-before-ACK arm kills after read-committed barrier and persists ACK only after stable recovery
+ok 8 - committed-before-ACK arm kills after read-committed barrier and persists ACK only after stable recovery
+  ---
+  duration_ms: 0.159875
+  type: 'test'
+  ...
+# Subtest: stale-owner arm freezes before forward, takes over, resumes and demands fencing before end-offset proof
+ok 9 - stale-owner arm freezes before forward, takes over, resumes and demands fencing before end-offset proof
+  ---
+  duration_ms: 0.424125
+  type: 'test'
+  ...
+# Subtest: majority outage proves fresh outputs while target stopped and restores target on failure
+ok 10 - majority outage proves fresh outputs while target stopped and restores target on failure
+  ---
+  duration_ms: 1.517375
+  type: 'test'
+  ...
+1..10
+# tests 10
+# suites 0
+# pass 9
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 59.875208

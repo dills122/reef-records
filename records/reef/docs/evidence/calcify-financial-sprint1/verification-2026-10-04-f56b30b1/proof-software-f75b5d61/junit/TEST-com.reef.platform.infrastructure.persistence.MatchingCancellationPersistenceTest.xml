@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest" tests="14" skipped="11" failures="0" errors="0" timestamp="2026-10-04T23:19:16.311Z" hostname="Dylans-MacBook-Pro.local" time="0.013">
+  <properties/>
+  <testcase name="cancellationProjectionKeepsSameOrderIdIsolatedAcrossRunsInPostgres()" classname="com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest" time="0.0">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.source(MatchingCancellationPersistenceTest.kt:275)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.cancellationProjectionKeepsSameOrderIdIsolatedAcrossRunsInPostgres(MatchingCancellationPersistenceTest.kt:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <testcase name="postgresStreamCancellationClosesOrderAndPreservesRetry()" classname="com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest" time="0.001">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.source(MatchingCancellationPersistenceTest.kt:275)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.postgresStreamCancellationClosesOrderAndPreservesRetry(MatchingCancellationPersistenceTest.kt:107)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <testcase name="cancellationProjectionKeepsSameOrderIdIsolatedAcrossRunsInMemory()" classname="com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest" time="0.002"/>
+  <testcase name="rejectedStreamQuoteDoesNotBlockRestart()" classname="com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest" time="0.001">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.source(MatchingCancellationPersistenceTest.kt:275)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.withRejectedQuoteHistory(MatchingCancellationPersistenceTest.kt:254)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.rejectedStreamQuoteDoesNotBlockRestart(MatchingCancellationPersistenceTest.kt:238)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <testcase name="compatibilityBootstrapBackfillsLegacyCanonicalFacts()" classname="com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest" time="0.0">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.source(MatchingCancellationPersistenceTest.kt:275)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.checkLegacyReplay(MatchingCancellationPersistenceTest.kt:163)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.compatibilityBootstrapBackfillsLegacyCanonicalFacts(MatchingCancellationPersistenceTest.kt:160)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <testcase name="migrationBackfillsLegacyCanonicalFactsBeforeExactReplay()" classname="com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest" time="0.001">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.source(MatchingCancellationPersistenceTest.kt:275)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.checkLegacyReplay(MatchingCancellationPersistenceTest.kt:163)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.migrationBackfillsLegacyCanonicalFactsBeforeExactReplay(MatchingCancellationPersistenceTest.kt:154)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <testcase name="deployedSqlProjectionKeepsTerminalFactAndRejectsChangedReplay()" classname="com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest" time="0.0">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.source(MatchingCancellationPersistenceTest.kt:275)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.deployedSqlProjectionKeepsTerminalFactAndRejectsChangedReplay(MatchingCancellationPersistenceTest.kt:123)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <testcase name="migrationBackfillsArchivedCanonicalFactsBeforeExactReplay()" classname="com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest" time="0.0">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.source(MatchingCancellationPersistenceTest.kt:275)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.checkLegacyReplay(MatchingCancellationPersistenceTest.kt:163)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.migrationBackfillsArchivedCanonicalFactsBeforeExactReplay(MatchingCancellationPersistenceTest.kt:157)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <testcase name="postgresDirectRetryAndRestartKeepExactCancellation()" classname="com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest" time="0.0">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.source(MatchingCancellationPersistenceTest.kt:275)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.postgresDirectRetryAndRestartKeepExactCancellation(MatchingCancellationPersistenceTest.kt:93)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <testcase name="compatibilityBootstrapRejectsHistoricalQuoteContradictionWithoutRelabelingFacts()" classname="com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest" time="0.001">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.source(MatchingCancellationPersistenceTest.kt:275)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.compatibilityBootstrapRejectsHistoricalQuoteContradictionWithoutRelabelingFacts(MatchingCancellationPersistenceTest.kt:219)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <testcase name="persistedInstrumentQuoteSurvivesRestartAndCannotChange()" classname="com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest" time="0.0">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.source(MatchingCancellationPersistenceTest.kt:275)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.persistedInstrumentQuoteSurvivesRestartAndCannotChange(MatchingCancellationPersistenceTest.kt:205)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <testcase name="rejectedStreamQuoteDoesNotBlockMigration()" classname="com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest" time="0.001">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: requires isolated Postgres test database
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.source(MatchingCancellationPersistenceTest.kt:275)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.withRejectedQuoteHistory(MatchingCancellationPersistenceTest.kt:254)
+	at com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest.rejectedStreamQuoteDoesNotBlockMigration(MatchingCancellationPersistenceTest.kt:245)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <testcase name="canonicalStreamCancellationClosesInMemoryOrderAndSurvivesRedelivery()" classname="com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest" time="0.002"/>
+  <testcase name="canonicalStreamPartialAndFullFillsKeepExactResults()" classname="com.reef.platform.infrastructure.persistence.MatchingCancellationPersistenceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

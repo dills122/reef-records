@@ -1,0 +1,26 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :verifyRuntimeOrderIdentityMigration
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :processTestResources UP-TO-DATE
+> Task :verifyNoTestSourceExclusions
+
+> Task :compileTestKotlin
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbe.kt:193:39 'fun fields(): (Mutable)Iterator<(Mutable)Map.(Mutable)Entry<String!, JsonNode!>!>!' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbe.kt:456:75 'fun fields(): (Mutable)Iterator<(Mutable)Map.(Mutable)Entry<String!, JsonNode!>!>!' is deprecated. Deprecated in Java.
+
+> Task :compileTestJava NO-SOURCE
+> Task :testClasses UP-TO-DATE
+
+> Task :test FAILED
+
+FinancialBrokerProbeTest > actual EOS worker config permits sixty second transaction grouping() FAILED
+    java.lang.IllegalArgumentException at FinancialBrokerProbeTest.kt:14
+
+[Incubating] Problems report is available at: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/build/reports/problems/problems-report.html
+9 actionable tasks: 4 executed, 5 up-to-date

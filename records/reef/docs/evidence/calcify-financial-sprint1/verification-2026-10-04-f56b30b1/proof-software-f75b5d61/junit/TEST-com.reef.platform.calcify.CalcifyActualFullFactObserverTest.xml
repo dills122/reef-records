@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.CalcifyActualFullFactObserverTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:16:39.121Z" hostname="Dylans-MacBook-Pro.local" time="0.124">
+  <properties/>
+  <testcase name="legacySubmitFallbackWorksButMissingModifyRunFailsClosed()" classname="com.reef.platform.calcify.CalcifyActualFullFactObserverTest" time="0.052"/>
+  <testcase name="independentDecoderCoversActualRestingPartialFillModifyAndMultiTradeFacts()" classname="com.reef.platform.calcify.CalcifyActualFullFactObserverTest" time="0.045"/>
+  <testcase name="reusedOrderIdsStayRunScopedAndAmbiguousStringKeysDoNotCollide()" classname="com.reef.platform.calcify.CalcifyActualFullFactObserverTest" time="0.009"/>
+  <testcase name="independentDecoderRejectsCorruptOrMisroutedSource()" classname="com.reef.platform.calcify.CalcifyActualFullFactObserverTest" time="0.007"/>
+  <testcase name="hiddenLimitMapsToLimitAndAuthoritativeRunConflictFails()" classname="com.reef.platform.calcify.CalcifyActualFullFactObserverTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

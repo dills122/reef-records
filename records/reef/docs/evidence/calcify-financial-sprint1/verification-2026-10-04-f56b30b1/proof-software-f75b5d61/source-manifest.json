@@ -1,0 +1,97 @@
+{
+  "sourceHead": "f75b5d6187b631d5d608a24b883df6c57478b151",
+  "sourceFiles": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 30605,
+      "sha256": "e8627b8dc7eb20d6a5e0aa89148c46057dca3ac8bcae8cf9e9503ac9144d7c99"
+    },
+    {
+      "path": "Makefile",
+      "bytes": 30550,
+      "sha256": "a86478c27761393bd28d71cdeb2452e47dc72dc6a6cb6018204551906897dc92"
+    },
+    {
+      "path": "scripts/dev/calcify-financial/broker-proof.mjs",
+      "bytes": 12399,
+      "sha256": "19f73807a2f67e574f4ca1fdede6387b84accf3726383de61d6e735fe2bdb842"
+    },
+    {
+      "path": "scripts/dev/calcify-financial/freeze-fixtures.mjs",
+      "bytes": 19064,
+      "sha256": "efb99c2ef901f988dd832c2d37a0576e2fc6951b6dc9ad4ff3979b56daa9dff8"
+    },
+    {
+      "path": "scripts/dev/calcify-financial/gate-model.mjs",
+      "bytes": 18154,
+      "sha256": "d6a3470817616680e679d72b821bfcbd75388c966e8308d4909c1f0683d1fbea"
+    },
+    {
+      "path": "scripts/dev/calcify-financial/gate-model.test.mjs",
+      "bytes": 7331,
+      "sha256": "4933eb876be97a944eef626cb32354f4ffdc21a58b5cb833bec39f73b7b978e7"
+    },
+    {
+      "path": "scripts/dev/calcify-financial/rate-proof.mjs",
+      "bytes": 19262,
+      "sha256": "4b7663af609b743380483020999fb10c0818d24725fb581fa09ce85d5b8708df"
+    },
+    {
+      "path": "scripts/dev/calcify-financial/rate-proof.test.mjs",
+      "bytes": 10987,
+      "sha256": "70a45a8ffdef39e42bff93755b928eb0a92ebe159fccdbbc1d57f8ea04e0bbe9"
+    },
+    {
+      "path": "scripts/dev/calcify-financial/reservation-model.mjs",
+      "bytes": 3403,
+      "sha256": "aacad53dfd2b3e0a91d2c4d26a57448b6499e84d135a13f00bb106d9cef4ec53"
+    },
+    {
+      "path": "scripts/dev/calcify-financial/reservation-model.test.mjs",
+      "bytes": 3113,
+      "sha256": "1c5bd6e4ce9b0a50d60b4d359509ce692eaa1611bd22dea1728721c3b3b754ac"
+    },
+    {
+      "path": "scripts/dev/script-surface-check.mjs",
+      "bytes": 15823,
+      "sha256": "1e95affce790bf2602fb324cd52a95b33178cad67ad20d58f1d8cd36ed84ce59"
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbe.kt",
+      "bytes": 40671,
+      "sha256": "b9d653c90277595fb99d81e7888505a1a9d798979bd2d5df0d2b86dcc260a4d7"
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbeTest.kt",
+      "bytes": 1175,
+      "sha256": "5bcaf106dbd8f76652bdb905f21d7c9a2f1e003e6ca4b9baba5e5b20b8a376ee"
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialKernel.kt",
+      "bytes": 30486,
+      "sha256": "9f76e87940d7600dac11bb26aba9ad40e39e7fbf41ec28dc8ab990790f0e637e"
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialKernelTest.kt",
+      "bytes": 24397,
+      "sha256": "c45298ccfdc257c0c77ddd153e09e0eaf6849a4ec8d086cd2ea3e8544cf5d1ac"
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialOracle.kt",
+      "bytes": 20825,
+      "sha256": "8c96181409d813876a6be78fed286064070f05f9cc1a5e67729927145c931012"
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialOracleTest.kt",
+      "bytes": 33307,
+      "sha256": "7ecca8b421f9936845bdc235bb3e36e6a779b23a55b3761d6fa992a71fa532e7"
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt",
+      "bytes": 36567,
+      "sha256": "b5df60cbf2a10a1f5257d5eaf5db4aa419aff7b8d72b4d8a28a307fa886972c6"
+    }
+  ],
+  "allUnchanged": true,
+  "review": "instance5of6"
+}

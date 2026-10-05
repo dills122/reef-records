@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:19:16.299Z" hostname="Dylans-MacBook-Pro.local" time="0.012">
+  <properties/>
+  <testcase name="canonicalCancelAndModifyReplayUsesCapturedRunScope()" classname="com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest" time="0.003"/>
+  <testcase name="projectsMaterializedVenueEventBatchOutcomesIntoCompactLifecycleRows()" classname="com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest" time="0.001"/>
+  <testcase name="sameOrderIdsKeepIndependentLifecycleFillsAndSettlementHistory()" classname="com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest" time="0.001"/>
+  <testcase name="projectionStageParsesTimelineAliases()" classname="com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest" time="0.0"/>
+  <testcase name="canonicalReplayPreservesScopedAcceptancesAndFills()" classname="com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest" time="0.001"/>
+  <testcase name="projectsCancelAndModifyOutcomesIntoLifecycleRowsWithWatermarkReplay()" classname="com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest" time="0.001"/>
+  <testcase name="commandStatusProjectionStageSkipsTimelineEvents()" classname="com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest" time="0.0"/>
+  <testcase name="materializesVenueEventBatchIdempotently()" classname="com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest" time="0.0"/>
+  <testcase name="recentTradesClampsAndReturnsMostRecent()" classname="com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest" time="0.0"/>
+  <testcase name="storesAndQueriesAcceptedArtifacts()" classname="com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest" time="0.001"/>
+  <testcase name="projectsRejectedVenueEventBatchOutcomesIntoCompactLifecycleRows()" classname="com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest" time="0.0"/>
+  <testcase name="bulkReplayKeepsRunOrderHistory()" classname="com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest" time="0.001"/>
+  <testcase name="sameOrderIdPreservesBothRunAcceptances()" classname="com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest" time="0.0"/>
+  <testcase name="refreshesMarketDataSnapshotsFromOpenLifecycleState()" classname="com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest" time="0.001"/>
+  <testcase name="eventReplayIsIdempotentAndChangedBatchIsAtomic()" classname="com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest" time="0.001"/>
+  <testcase name="timelineProjectionStageSkipsSubmitStatusRows()" classname="com.reef.platform.infrastructure.persistence.InMemoryRuntimePersistenceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

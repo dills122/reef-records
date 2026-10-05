@@ -1,0 +1,20 @@
+{
+  "schema": "local-only-provenance-plan-v1",
+  "state": "PLANNED_ONLY",
+  "productBranch": "codex/calcify-planning-readiness",
+  "provenanceBranch": "codex/calcify-e3-evidence-provenance",
+  "method": "Isolated temporary Git index from reviewed product-source commit; hash-object explicitly eligible exact selected bytes into unique evidence namespace; write-tree and commit-tree parent product-source, update only provenance feature ref. Product index/tree untouched; bulk never pushed into Reef.",
+  "sourceNamespace": "docs/evidence/calcify-financial-sprint1/verification-session-2026-10-05-a6ddafbbae75",
+  "recordsBranch": "codex/calcify-e3-session-2026-10-05",
+  "recordsClone": "/private/tmp/calcify-session-records-8c6f",
+  "constraints": [
+    "Final live proof/review writers stopped before selection",
+    "Preserve originalsha/bytes/pathmapping and failures",
+    "Exclude .gitignore marker/localcache/liveRocksDB/dependencies/hostDockerinfo",
+    "Local-onlyprovenance notpublicGitHubsourcecommit; stateplainly",
+    "RecordsimportexactGitblobs and manifest append-only",
+    "Checks thenremote immutableblobverification",
+    "No trackedbulkdeletion/no automaticmerge",
+    "Finalownerlinksandretainedsummaryhashes updateafterpublication"
+  ]
+}

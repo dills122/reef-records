@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-05T05:11:57.089572+00:00",
+  "hashes": {
+    "scripts/dev/calcify-financial/proof-supervisor.mjs": "04631a6ce54cf5a591715570d4d8823b0d559ea8a3cb90003bdd9e0e0df88844",
+    "scripts/dev/calcify-financial/proof-supervisor.test.mjs": "20242a1692edd7099fc98594d4783b3ef32abb63078e610b71836fe96df3034e",
+    "scripts/dev/calcify-financial/broker-proof.mjs": "fb3599f79cee45d9ce1987ad4aca3a15c924db6baf5028976127e144a699bb78",
+    "scripts/dev/calcify-financial/broker-proof.test.mjs": "af02c807123a2998093b04864d32d50da543a8b4ee8de021dbd22478451c62cf",
+    "scripts/dev/calcify-financial/lib/external-faults.mjs": "c62bb2ce1e71fa2cfe345e9419fa678404eb273f32a3e1a0a8a24954e2df429f",
+    ".github/workflows/ci.yml": "b637e1bca4afbe9d6beb693d5da5ea0a4787b23adcc889c3b49c801b5d6a798f",
+    ".planning/calcify-session-2026-10-04/fault_smoke.mjs": "319e39995b9ce63ae16351e1a65dcaba3cc975500d9551d19495cbccfff96dbe",
+    ".planning/calcify-session-2026-10-04/freeze_supervisor.py": "07a4f112f956f4aa2a5e2290ec94d3674e0f8699497303113c318321b3b4500c",
+    ".planning/calcify-session-2026-10-04/smoke-driver-controls.mjs": "759139e06719bd9ff0525946cc32c41b342de63d81cedcf812269e161bc732dd"
+  },
+  "matchExceptExplicitEvidenceStringRevision": true
+}

@@ -1,0 +1,200 @@
+{
+  "schema": "calcify-e2-gates-v1",
+  "bounds": {
+    "namespace": "calcify-e2-v1",
+    "windows": 16,
+    "members": 4,
+    "memberBytes": 32,
+    "sealBytes": 16,
+    "activeWindows": 2,
+    "completionBytes": 288,
+    "fetchItems": 4,
+    "fetchBytes": 128,
+    "bypassItems": 8,
+    "bypassBytes": 256,
+    "historyItems": 256,
+    "historyBytes": 8192
+  },
+  "exhaustive": {
+    "windows": 2,
+    "membersPerWindow": 1,
+    "recordPermutations": 24,
+    "grantOrders": 2,
+    "takeoverCuts": [
+      0,
+      1,
+      2
+    ],
+    "creditScenarios": 144,
+    "prefixScenarios": 12,
+    "scenarios": 156
+  },
+  "seeded": {
+    "firstSeed": 1,
+    "lastSeed": 64,
+    "windows": 4,
+    "membersPerWindow": 3,
+    "duplicates": 4,
+    "modes": [
+      "prefix",
+      "credit"
+    ],
+    "scenarios": 128
+  },
+  "fairness": "An available owner/channel is eventually serviced; drain services every enabled local transition.",
+  "assumptions": [
+    "Immutable explicit manifests reachable independently before opening; exact membership, dependencies and bounded wire sizes.",
+    "Prefix slices contiguous by manifest order; no active closure hidden behind another slice.",
+    "Credit bypass stages source facts recoverably, within declared independent item/byte capacity; grant is not selective access.",
+    "Finite certified source history/tombstones retained for entire experiment; no garbage collection claim.",
+    "No source dependency cycles; prefix dependencies refer only to preceding slices. Missing real facts remain wait.",
+    "Checkpoint is one atomic whole-model cut; broker transactions/fencing/crash behavior not proved."
+  ],
+  "exhaustiveResult": {
+    "scenarios": 156,
+    "failures": [],
+    "maxPeakBytes": 672,
+    "bounds": {
+      "windows": 2,
+      "membersPerWindow": 1,
+      "recordPermutations": 24,
+      "grantOrders": 2,
+      "takeoverCuts": [
+        0,
+        1,
+        2
+      ],
+      "creditScenarios": 144,
+      "prefixScenarios": 12,
+      "scenarios": 156
+    }
+  },
+  "seededResult": {
+    "scenarios": 128,
+    "failures": [],
+    "maxPeakBytes": 2320,
+    "byMode": {
+      "prefix": {
+        "maxPeakBytes": 1840,
+        "maxRetainedItems": 36
+      },
+      "credit": {
+        "maxPeakBytes": 2320,
+        "maxRetainedItems": 40
+      }
+    },
+    "bounds": {
+      "firstSeed": 1,
+      "lastSeed": 64,
+      "windows": 4,
+      "membersPerWindow": 3,
+      "duplicates": 4,
+      "modes": [
+        "prefix",
+        "credit"
+      ],
+      "scenarios": 128
+    }
+  },
+  "counterexample": {
+    "history": [
+      {
+        "kind": "member",
+        "window": "A",
+        "member": "a",
+        "bytes": 32,
+        "grantId": "[\"calcify-e2-v1\",\"A\"]",
+        "epoch": 1
+      },
+      {
+        "kind": "seal",
+        "window": "A",
+        "bytes": 16,
+        "grantId": "[\"calcify-e2-v1\",\"A\"]",
+        "epoch": 1
+      },
+      {
+        "kind": "member",
+        "window": "B",
+        "member": "b",
+        "bytes": 32,
+        "grantId": "[\"calcify-e2-v1\",\"B\"]",
+        "epoch": 1
+      },
+      {
+        "kind": "seal",
+        "window": "B",
+        "bytes": 16,
+        "grantId": "[\"calcify-e2-v1\",\"B\"]",
+        "epoch": 1
+      }
+    ],
+    "grant": "B",
+    "noBypass": {
+      "mode": "credit",
+      "epoch": 1,
+      "readPosition": 0,
+      "fetchPosition": 4,
+      "closed": [],
+      "completedMembers": 0,
+      "admittedMembership": {
+        "B": [
+          "b"
+        ]
+      },
+      "activeWindows": 1,
+      "reservedBytes": 48,
+      "reservedCompletionBytes": 32,
+      "reservedSealBytes": 16,
+      "retainedItems": 14,
+      "fetchedItems": 4,
+      "fetchedBytes": 96,
+      "bypassItems": 0,
+      "bypassBytes": 0,
+      "upstreamItems": 4,
+      "upstreamBytes": 96,
+      "metadataBytes": 384,
+      "duplicateRecords": 0,
+      "progress": "ACCESS_BLOCKED",
+      "fault": null,
+      "transitions": 0,
+      "peakRetainedBytes": 624,
+      "envelopeBytes": 1152
+    },
+    "reservedBypass": {
+      "mode": "credit",
+      "epoch": 1,
+      "readPosition": 4,
+      "fetchPosition": 4,
+      "closed": [
+        "B"
+      ],
+      "completedMembers": 1,
+      "admittedMembership": {
+        "B": [
+          "b"
+        ]
+      },
+      "activeWindows": 0,
+      "reservedBytes": 0,
+      "reservedCompletionBytes": 0,
+      "reservedSealBytes": 0,
+      "retainedItems": 12,
+      "fetchedItems": 0,
+      "fetchedBytes": 0,
+      "bypassItems": 2,
+      "bypassBytes": 48,
+      "upstreamItems": 4,
+      "upstreamBytes": 96,
+      "metadataBytes": 384,
+      "duplicateRecords": 0,
+      "progress": "OPEN_WAIT",
+      "fault": null,
+      "transitions": 4,
+      "peakRetainedBytes": 624,
+      "envelopeBytes": 1152
+    }
+  },
+  "decision": "Prefer certified source-prefix slices accepting head-of-line blocking. Credits add independent-domain progress only within proven bypass bounds; no measured need established.",
+  "liveGap": "Existing upstream manifests, contiguous closure order and whole-process wire/heap/fetch budgets are not verified. Neither model certifies current gateway or broker liveness."
+}
