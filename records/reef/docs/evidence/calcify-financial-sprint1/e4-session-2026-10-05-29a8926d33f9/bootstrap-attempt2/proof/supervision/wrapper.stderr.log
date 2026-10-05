@@ -1,0 +1,7 @@
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.IllegalArgumentException: BOOTSTRAP_MANAGED_PROCESS_FAILED
+	at com.reef.platform.calcify.financial.FinancialRateProbe.main$lambda$8(FinancialRateProbe.kt:853)
+	at com.reef.platform.calcify.financial.FinancialRateProbe.withHeapProtection$platform_runtime_test(FinancialRateProbe.kt:480)
+	at com.reef.platform.calcify.financial.FinancialRateProbe.main(FinancialRateProbe.kt:649)

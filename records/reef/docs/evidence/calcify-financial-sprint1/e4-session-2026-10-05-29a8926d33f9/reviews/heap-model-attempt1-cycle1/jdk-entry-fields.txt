@@ -1,0 +1,20 @@
+Compiled from "HashMap.java"
+class java.util.HashMap$Node<K, V> implements java.util.Map$Entry<K, V> {
+  final int hash;
+  final K key;
+  V value;
+  java.util.HashMap$Node<K, V> next;
+  java.util.HashMap$Node(int, K, V, java.util.HashMap$Node<K, V>);
+  public final K getKey();
+  public final V getValue();
+  public final java.lang.String toString();
+  public final int hashCode();
+  public final V setValue(V);
+  public final boolean equals(java.lang.Object);
+}
+Compiled from "LinkedHashMap.java"
+class java.util.LinkedHashMap$Entry<K, V> extends java.util.HashMap$Node<K, V> {
+  java.util.LinkedHashMap$Entry<K, V> before;
+  java.util.LinkedHashMap$Entry<K, V> after;
+  java.util.LinkedHashMap$Entry(int, K, V, java.util.HashMap$Node<K, V>);
+}

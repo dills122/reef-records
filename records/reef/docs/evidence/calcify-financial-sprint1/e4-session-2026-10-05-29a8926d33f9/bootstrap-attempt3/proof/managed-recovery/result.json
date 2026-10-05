@@ -1,0 +1,41 @@
+{
+  "schema" : "financial-bootstrap-process-recovery-v1",
+  "bootstrapSha256" : "12ff77ea79e806bcc18abf76fc676cf9ccf4f54c8c0b7b2afe082503bf127514",
+  "processId" : 29934,
+  "sourceUuid" : "YjGXHkb4RXm-JR0SAQcqwA",
+  "recoveredMembers" : 2100,
+  "controllerAdmissionsReplayed" : 0,
+  "oldControllerAdmissionTimes" : "unknown",
+  "activation" : {
+    "ownerSha256" : "96da35188859915ebb3061691644e114021e8eb033e2f8865065fae4b7901db1",
+    "historyChecksum" : "27d2d99c876edc961958133c9a9317a2baa7b12c78efd8a589af92c2b20ab5ae",
+    "historyRecords" : 2101,
+    "ordinal" : 2099,
+    "offset" : 2099
+  },
+  "elapsedMs" : 33491,
+  "heapObservation" : {
+    "schema" : "financial-bootstrap-heap-observation-v1",
+    "guardOutcome" : "PASS_SAMPLED",
+    "actualMaxHeapBytes" : 805306368,
+    "admissionLimitBytes" : 644245094,
+    "estimatedHeapBytes" : null,
+    "heapPeakBytes" : 179424816,
+    "baselineObservations" : [ {
+      "stage" : "before-setup",
+      "sampledAtNano" : 70332840935375,
+      "usedHeapBytes" : 52770360,
+      "maxHeapBytes" : 805306368
+    } ],
+    "pollMillis" : 250,
+    "maxSampleAgeNanos" : 5000000000,
+    "sampled" : true,
+    "limitation" : "Sudden allocation may outrun sampled protection; native/RSS memory unbounded; no OOM guarantee",
+    "purpose" : "EMPIRICAL_BOUNDED_DIAGNOSTIC",
+    "heapConservativeBound" : false,
+    "preloadOperationalCeilingBytes" : null,
+    "reportedPeakScope" : "Sampled through result assembly snapshot; final serialization and staged writes excluded"
+  },
+  "firstFreshResult" : null,
+  "scope" : "actual new JVM and KafkaStreams instance; complete certified activation; no new economic inputs"
+}

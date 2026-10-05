@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialAckJournalTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-10-05T12:51:48.666Z" hostname="Dylans-MacBook-Pro.local" time="0.033">
+  <properties/>
+  <testcase name="callbackVisibilityPrecedesForcedPublicationAndRecoveryRetainsPhysicalHoles()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.02">
+    <failure message="java.lang.IllegalStateException: ACK_JOURNAL_NOT_IMPLEMENTED" type="java.lang.IllegalStateException">java.lang.IllegalStateException: ACK_JOURNAL_NOT_IMPLEMENTED
+	at com.reef.platform.calcify.financial.FinancialAckJournal.callback(FinancialAckJournal.kt:19)
+	at com.reef.platform.calcify.financial.FinancialAckJournalTest.submit(FinancialAckJournalTest.kt:18)
+	at com.reef.platform.calcify.financial.FinancialAckJournalTest.submit$default(FinancialAckJournalTest.kt:18)
+	at com.reef.platform.calcify.financial.FinancialAckJournalTest.callbackVisibilityPrecedesForcedPublicationAndRecoveryRetainsPhysicalHoles(FinancialAckJournalTest.kt:27)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

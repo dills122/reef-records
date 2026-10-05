@@ -1,0 +1,19 @@
+{
+  "executable": "/usr/local/bin/docker",
+  "argv": [
+    "exec",
+    "2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e",
+    "du",
+    "-sk",
+    "/var/lib/redpanda/data"
+  ],
+  "startedAtMs": 61868464,
+  "clockScope": "host-monotonic-ms",
+  "inputSha256": "f4bff02f9e3800525b8f23095cee4845ebf3aca79b016202ef2de35f40fbc717",
+  "stdout": "16448\t/var/lib/redpanda/data\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 61868511,
+  "stdoutSha256": "ce6566bd08f6b2790896927afe29d91254aa6049fc67b482f2026238b614d551",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

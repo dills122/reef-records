@@ -1,0 +1,19 @@
+{
+  "name": "image",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "image",
+    "inspect",
+    "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6"
+  ],
+  "startedAtMs": 69829932,
+  "startedUtc": "2026-10-05T16:56:35.524Z",
+  "stdout": "[\n    {\n        \"Id\": \"sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6\",\n        \"RepoTags\": [\n            \"redpandadata/redpanda:v26.2.3\"\n        ],\n        \"RepoDigests\": [\n            \"redpandadata/redpanda@sha256:9e83cfa99278f30d0133271c26bf670cd69c94ffa6ba0b42830dd0c3bd9dcfd9\"\n        ],\n        \"Comment\": \"buildkit.dockerfile.v0\",\n        \"Created\": \"2026-09-17T20:46:45.435356669Z\",\n        \"Config\": {\n            \"User\": \"redpanda\",\n            \"ExposedPorts\": {\n                \"8081/tcp\": {},\n                \"8082/tcp\": {},\n                \"9092/tcp\": {},\n                \"9644/tcp\": {}\n            },\n            \"Env\": [\n                \"PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\",\n                \"EDITOR=nano\"\n            ],\n            \"Entrypoint\": [\n                \"/entrypoint.sh\"\n            ],\n            \"Cmd\": [\n                \"redpanda\",\n                \"start\",\n                \"--overprovisioned\"\n            ],\n            \"Volumes\": {\n                \"/var/lib/redpanda/data\": {}\n            },\n            \"Labels\": {\n                \"org.opencontainers.image.authors\": \"Redpanda Data <hi@redpanda.com>\"\n            },\n            \"ArgsEscaped\": true\n        },\n        \"Architecture\": \"arm64\",\n        \"Os\": \"linux\",\n        \"Size\": 415108929,\n        \"GraphDriver\": {\n            \"Data\": {\n                \"LowerDir\": \"/var/lib/docker/overlay2/2a0b841e61f63dd0077f860871c413c403c1d1e1d586f2d5623c3060674377c6/diff:/var/lib/docker/overlay2/4e8651842484685fff4946fe0a6fae39171b5f44279ed9878fac202f42d5ce98/diff:/var/lib/docker/overlay2/a95b44c16387a88025dc249374e720b667a4efa56ae5ff5af4348c00df86f4df/diff:/var/lib/docker/overlay2/b707d6a449a07c913a24c60f5f1b0e426ce9e87426f7c7e60201d0dee2e64381/diff:/var/lib/docker/overlay2/a5de7e7e00431ad8be6129b4bcdf5ed000d3663819e3792c2f3d3fb2074cfda8/diff\",\n                \"MergedDir\": \"/var/lib/docker/overlay2/429a6b56c5746428638e0afade8e23fc947beac25bcdc31941cdeb115fbc5798/merged\",\n                \"UpperDir\": \"/var/lib/docker/overlay2/429a6b56c5746428638e0afade8e23fc947beac25bcdc31941cdeb115fbc5798/diff\",\n                \"WorkDir\": \"/var/lib/docker/overlay2/429a6b56c5746428638e0afade8e23fc947beac25bcdc31941cdeb115fbc5798/work\"\n            },\n            \"Name\": \"overlay2\"\n        },\n        \"RootFS\": {\n            \"Type\": \"layers\",\n            \"Layers\": [\n                \"sha256:41d6505109809884e681a97f978542a2d4d3506af0124f18b3f3a471edfcc9b7\",\n                \"sha256:39c9c3ddf8f47644e4c736826545eaa5952533dd246e3f81a5a2b3169adcc2a3\",\n                \"sha256:691a6edf49f263fdafae794612be0c3ed9ec35c64795980ac1d6f052cc0db29b\",\n                \"sha256:705b14ad1c2c8c2c72c3f134ddc3ab74715edb277b8f9038581550ab630a40e9\",\n                \"sha256:70bab1adc8dcfe1d1f8cb353a8c22083f977717def6ab8ba52f6441b8c588c1d\",\n                \"sha256:69ae9077981f4aee2782a0a45477f99686d10e8aca7d93b37d5727a3e9e58361\"\n            ]\n        },\n        \"Metadata\": {\n            \"LastTagTime\": \"0001-01-01T00:00:00Z\"\n        }\n    }\n]\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 69829950,
+  "completedUtc": "2026-10-05T16:56:35.542Z",
+  "stdoutSha256": "08e9d498b3e2b7cbbf3d588dd4b273b0ca50557f8647cace56a4b777fba2c189",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputSha256": "965d2a1ac52aaf9a45f92c47af8f90fd1c821c119ea0893198fabfc2643ebd3f"
+}

@@ -1,0 +1,1 @@
+{"e3Results":49,"pass":true,"scope":"49 serial current-candidate E3 RF3/EOS correctness arms only: external4/core24/golden20/activation1; full source/oracle/state/history assertions inherited from current broker probe; original small /private/tmp RocksDB directories unregistered; no E4 resource/capacity/heap-bootstrap qualification"}

@@ -1,0 +1,63 @@
+{
+  "schema": "calcify-attempt2-operator-recipes-v1",
+  "acceptedCandidate": false,
+  "executionAuthorized": false,
+  "actualLoadExecuted": false,
+  "files": [
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-attempt2/broker-preflight.recipe.json",
+      "sizeBytes": 8376,
+      "sha256": "56f9a8f1abc2d46de6b027edec7bc1fb36f1dac260f08d5108827ec53af0cf3d"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-attempt2/execution-manifest.draft.json",
+      "sizeBytes": 200249,
+      "sha256": "3c5c0e0f3ba8cd895f86c0fa2070d9b2d6f77224df78b5ed704dcc0319d8439c"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-attempt2/handoff.md",
+      "sizeBytes": 2157,
+      "sha256": "3b454c614bda1a27dbed5986f1415466f55b0f1dbb647d87370de349c594c904"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-attempt2/preparation-result.json",
+      "sizeBytes": 1132,
+      "sha256": "562a2416e4ad242cc1068a38ceac75b6eb1b39336407c9341a3b055639635f41"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-attempt2/prepare-recipes.mjs",
+      "sizeBytes": 7967,
+      "sha256": "2fc278ea0fbc6cc0d1979af661068aaf01fea4bb2fa4cf4d86147d0cc972d6ba"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-attempt2/recipe-controls.mjs",
+      "sizeBytes": 2133,
+      "sha256": "e1eae1946fd3a9504fc051b603fb35f332f02152daa3981421adf36f94843c19"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-attempt2/recipe-controls.stderr.log",
+      "sizeBytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-attempt2/recipe-controls.stdout.log",
+      "sizeBytes": 155,
+      "sha256": "4c185284472c328373e17889df2163bb58b37305cb933b0fae4a67920bc5c7c3"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-attempt2/root-acceptance-prerequisites.json",
+      "sizeBytes": 9176,
+      "sha256": "94ea435315e3cba2eaf7956f171d52a5fff1e75864af83a3e123106d329bc639"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-attempt2/supervisor.recipe.json",
+      "sizeBytes": 7510,
+      "sha256": "d619fbfe9a5874613fa37d1da2f469e739e2ccde55391e9bb78ba5e4b484fb4c"
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-attempt2/wrapper.mjs",
+      "sizeBytes": 8282,
+      "sha256": "874111b7dd8977cf00727879dbda682bcb7c0987e0f2740cdf3cfabd62e1026b"
+    }
+  ]
+}

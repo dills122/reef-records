@@ -1,0 +1,1032 @@
+TAP version 13
+# Subtest: finite bootstrap freeze remains empirical and never manufactures heap costs
+ok 1 - finite bootstrap freeze remains empirical and never manufactures heap costs
+  ---
+  duration_ms: 1.2885
+  type: 'test'
+  ...
+# Subtest: bootstrap refuses cohort expansion, changed caps, conventional arms and mismatched review
+ok 2 - bootstrap refuses cohort expansion, changed caps, conventional arms and mismatched review
+  ---
+  duration_ms: 1.076125
+  type: 'test'
+  ...
+# Subtest: executable bootstrap binds raw review, fixture, config and complete source bytes
+ok 3 - executable bootstrap binds raw review, fixture, config and complete source bytes
+  ---
+  duration_ms: 181.416333
+  type: 'test'
+  ...
+# Subtest: bootstrap measured validator binds counts recovery heap raw bytes and all physical receipts
+ok 4 - bootstrap measured validator binds counts recovery heap raw bytes and all physical receipts
+  ---
+  duration_ms: 33.782292
+  type: 'test'
+  ...
+# Subtest: bootstrap result refuses scope inflation identity drift incomplete counts and recovered fake timing
+ok 5 - bootstrap result refuses scope inflation identity drift incomplete counts and recovered fake timing
+  ---
+  duration_ms: 21.555542
+  type: 'test'
+  ...
+# Subtest: primary and recovery sampled heap both require actual pin strict80percent and finite observations
+ok 6 - primary and recovery sampled heap both require actual pin strict80percent and finite observations
+  ---
+  duration_ms: 16.588625
+  type: 'test'
+  ...
+# Subtest: retained encoded recovery and collector raw evidence reject byte hash ownership and checkpoint mutations
+ok 7 - retained encoded recovery and collector raw evidence reject byte hash ownership and checkpoint mutations
+  ---
+  duration_ms: 29.47225
+  type: 'test'
+  ...
+# Subtest: valid recomputed hashes cannot authorize fake JVM command or inconsistent physical measurements
+ok 8 - valid recomputed hashes cannot authorize fake JVM command or inconsistent physical measurements
+  ---
+  duration_ms: 14.868459
+  type: 'test'
+  ...
+# Subtest: readiness rejects signal-terminated worker despite retained startup receipts
+ok 9 - readiness rejects signal-terminated worker despite retained startup receipts
+  ---
+  duration_ms: 4.882917
+  type: 'test'
+  ...
+# Subtest: external plan freezes four executable trigger/barrier definitions
+ok 10 - external plan freezes four executable trigger/barrier definitions
+  ---
+  duration_ms: 0.446375
+  type: 'test'
+  ...
+# Subtest: broker registration refuses missing, malformed, duplicate and unregistered IDs
+ok 11 - broker registration refuses missing, malformed, duplicate and unregistered IDs
+  ---
+  duration_ms: 0.58425
+  type: 'test'
+  ...
+# Subtest: daemon inspection requires exact IDs, owned labels and two live peers
+ok 12 - daemon inspection requires exact IDs, owned labels and two live peers
+  ---
+  duration_ms: 1.288958
+  type: 'test'
+  ...
+# Subtest: restoration validates ownership even when peer health fails after outage
+ok 13 - restoration validates ownership even when peer health fails after outage
+  ---
+  duration_ms: 0.335292
+  type: 'test'
+  ...
+# Subtest: recovery requires identical physical prefix and exact stable end for idle restart
+ok 14 - recovery requires identical physical prefix and exact stable end for idle restart
+  ---
+  duration_ms: 0.581125
+  type: 'test'
+  ...
+# Subtest: idle restart refuses checkpoint divergence despite unchanged economic output
+ok 15 - idle restart refuses checkpoint divergence despite unchanged economic output
+  ---
+  duration_ms: 0.117791
+  type: 'test'
+  ...
+# Subtest: stale owner requires observed broker fencing, never generic error or elapsed time
+ok 16 - stale owner requires observed broker fencing, never generic error or elapsed time
+  ---
+  duration_ms: 0.258875
+  type: 'test'
+  ...
+# Subtest: producer failure arm invokes actual producer seam, observes zero abort outputs then restores
+ok 17 - producer failure arm invokes actual producer seam, observes zero abort outputs then restores
+  ---
+  duration_ms: 0.571083
+  type: 'test'
+  ...
+# Subtest: committed-before-ACK arm kills after read-committed barrier and persists ACK only after stable recovery
+ok 18 - committed-before-ACK arm kills after read-committed barrier and persists ACK only after stable recovery
+  ---
+  duration_ms: 0.41625
+  type: 'test'
+  ...
+# Subtest: stale-owner arm freezes before forward, takes over, resumes and demands fencing before end-offset proof
+ok 19 - stale-owner arm freezes before forward, takes over, resumes and demands fencing before end-offset proof
+  ---
+  duration_ms: 0.306292
+  type: 'test'
+  ...
+# Subtest: majority outage proves fresh outputs while target stopped and restores target on failure
+ok 20 - majority outage proves fresh outputs while target stopped and restores target on failure
+  ---
+  duration_ms: 0.228709
+  type: 'test'
+  ...
+# Subtest: failed START is not retried by majority-arm finally or granted new recovery time
+ok 21 - failed START is not retried by majority-arm finally or granted new recovery time
+  ---
+  duration_ms: 0.105375
+  type: 'test'
+  ...
+# Subtest: actual runner outage adapter waits for STOP and stopped grants then uses fixed START generation deadline
+ok 22 - actual runner outage adapter waits for STOP and stopped grants then uses fixed START generation deadline
+  ---
+  duration_ms: 6.036625
+  type: 'test'
+  ...
+# Subtest: actual runner recovery rejects peer failure immediately and slow START cannot reset fixed deadline
+ok 23 - actual runner recovery rejects peer failure immediately and slow START cannot reset fixed deadline
+  ---
+  duration_ms: 5.547375
+  type: 'test'
+  ...
+# Subtest: prefix: complete manifest, duplicate and out-of-order members close once
+ok 24 - prefix: complete manifest, duplicate and out-of-order members close once
+  ---
+  duration_ms: 1.8
+  type: 'test'
+  ...
+# Subtest: prefix: unresolved prior fill prevents opening until dependency closure
+ok 25 - prefix: unresolved prior fill prevents opening until dependency closure
+  ---
+  duration_ms: 0.477666
+  type: 'test'
+  ...
+# Subtest: prefix: zero-trade amendment/cancel are explicit coverage members
+ok 26 - prefix: zero-trade amendment/cancel are explicit coverage members
+  ---
+  duration_ms: 0.279333
+  type: 'test'
+  ...
+# Subtest: prefix: high water leaves fetched suffix in separate bounded budget
+ok 27 - prefix: high water leaves fetched suffix in separate bounded budget
+  ---
+  duration_ms: 0.212625
+  type: 'test'
+  ...
+# Subtest: prefix: reassignment preserves grant membership; timeout never reclaims
+ok 28 - prefix: reassignment preserves grant membership; timeout never reclaims
+  ---
+  duration_ms: 2.37025
+  type: 'test'
+  ...
+# Subtest: prefix: closed tombstone rejects late old duplicate without extra capacity
+ok 29 - prefix: closed tombstone rejects late old duplicate without extra capacity
+  ---
+  duration_ms: 0.485167
+  type: 'test'
+  ...
+# Subtest: prefix: missing source fact remains waiting, not algorithmic deadlock
+ok 30 - prefix: missing source fact remains waiting, not algorithmic deadlock
+  ---
+  duration_ms: 0.245
+  type: 'test'
+  ...
+# Subtest: credit: complete manifest, duplicate and out-of-order members close once
+ok 31 - credit: complete manifest, duplicate and out-of-order members close once
+  ---
+  duration_ms: 0.269625
+  type: 'test'
+  ...
+# Subtest: credit: unresolved prior fill prevents opening until dependency closure
+ok 32 - credit: unresolved prior fill prevents opening until dependency closure
+  ---
+  duration_ms: 0.400167
+  type: 'test'
+  ...
+# Subtest: credit: zero-trade amendment/cancel are explicit coverage members
+ok 33 - credit: zero-trade amendment/cancel are explicit coverage members
+  ---
+  duration_ms: 0.472667
+  type: 'test'
+  ...
+# Subtest: credit: high water leaves fetched suffix in separate bounded budget
+ok 34 - credit: high water leaves fetched suffix in separate bounded budget
+  ---
+  duration_ms: 0.203333
+  type: 'test'
+  ...
+# Subtest: credit: reassignment preserves grant membership; timeout never reclaims
+ok 35 - credit: reassignment preserves grant membership; timeout never reclaims
+  ---
+  duration_ms: 0.157458
+  type: 'test'
+  ...
+# Subtest: credit: closed tombstone rejects late old duplicate without extra capacity
+ok 36 - credit: closed tombstone rejects late old duplicate without extra capacity
+  ---
+  duration_ms: 0.080167
+  type: 'test'
+  ...
+# Subtest: credit: missing source fact remains waiting, not algorithmic deadlock
+ok 37 - credit: missing source fact remains waiting, not algorithmic deadlock
+  ---
+  duration_ms: 0.061125
+  type: 'test'
+  ...
+# Subtest: source-prefix refuses B grant while ungranted A occupies FIFO; credits need bounded bypass
+ok 38 - source-prefix refuses B grant while ungranted A occupies FIFO; credits need bounded bypass
+  ---
+  duration_ms: 0.930583
+  type: 'test'
+  ...
+# Subtest: seal behind future burst: prefix excludes ordering, credit reserved bypass reaches closure
+ok 39 - seal behind future burst: prefix excludes ordering, credit reserved bypass reaches closure
+  ---
+  duration_ms: 0.805375
+  type: 'test'
+  ...
+# Subtest: future burst beyond bypass envelope produces retained counterexample, no lost admitted membership
+ok 40 - future burst beyond bypass envelope produces retained counterexample, no lost admitted membership
+  ---
+  duration_ms: 0.336
+  type: 'test'
+  ...
+# Subtest: declared fanout overflow rejected before opening; unknown membership faults without release
+ok 41 - declared fanout overflow rejected before opening; unknown membership faults without release
+  ---
+  duration_ms: 0.177791
+  type: 'test'
+  ...
+# Subtest: bounded exhaustive and seeded schedule families close all supplied facts within resources
+ok 42 - bounded exhaustive and seeded schedule families close all supplied facts within resources
+  ---
+  duration_ms: 105.254416
+  type: 'test'
+  ...
+# Subtest: healthy credit rejects unproved closure path before reserving capacity
+ok 43 - healthy credit rejects unproved closure path before reserving capacity
+  ---
+  duration_ms: 0.148458
+  type: 'test'
+  ...
+# Subtest: cyclic or forward prefix dependency manifests fail preflight instead of creating deadlock
+ok 44 - cyclic or forward prefix dependency manifests fail preflight instead of creating deadlock
+  ---
+  duration_ms: 0.172167
+  type: 'test'
+  ...
+# Subtest: prefix: checkpoint schema and required state reject truncated or mixed cuts
+ok 45 - prefix: checkpoint schema and required state reject truncated or mixed cuts
+  ---
+  duration_ms: 1.998166
+  type: 'test'
+  ...
+# Subtest: credit: checkpoint schema and required state reject truncated or mixed cuts
+ok 46 - credit: checkpoint schema and required state reject truncated or mixed cuts
+  ---
+  duration_ms: 1.740042
+  type: 'test'
+  ...
+# Subtest: bounded inventory reader rejects oversize and invalid JSON
+ok 47 - bounded inventory reader rejects oversize and invalid JSON
+  ---
+  duration_ms: 12.807541
+  type: 'test'
+  ...
+# Subtest: adapter publishes collector evidence exclusively within frozen proof path
+ok 48 - adapter publishes collector evidence exclusively within frozen proof path
+  ---
+  duration_ms: 14.613125
+  type: 'test'
+  ...
+# Subtest: exact owned RF3 logical replicas distinct from measured broker/local allocation and unknown categories
+ok 49 - exact owned RF3 logical replicas distinct from measured broker/local allocation and unknown categories
+  ---
+  duration_ms: 14.186208
+  type: 'test'
+  ...
+# Subtest: manifest freezes clone and rejects prefix authority, nonRF3, duplicate topics/partitions/brokers/local paths
+ok 50 - manifest freezes clone and rejects prefix authority, nonRF3, duplicate topics/partitions/brokers/local paths
+  ---
+  duration_ms: 1.684
+  type: 'test'
+  ...
+# Subtest: replica missing duplicate extra identity range API errors and unsafe integers fail with retained raw evidence
+ok 51 - replica missing duplicate extra identity range API errors and unsafe integers fail with retained raw evidence
+  ---
+  duration_ms: 3.425834
+  type: 'test'
+  ...
+# Subtest: stale future and spanning sample windows fail
+ok 52 - stale future and spanning sample windows fail
+  ---
+  duration_ms: 1.6055
+  type: 'test'
+  ...
+# Subtest: Docker exact ownership image mount drift stops before any exec; stopped broker never executed
+ok 53 - Docker exact ownership image mount drift stops before any exec; stopped broker never executed
+  ---
+  duration_ms: 1.744709
+  type: 'test'
+  ...
+# Subtest: strict du KiB conversion rejects unit path numeric errors; raw receipt hashes validated
+ok 54 - strict du KiB conversion rejects unit path numeric errors; raw receipt hashes validated
+  ---
+  duration_ms: 0.826625
+  type: 'test'
+  ...
+# Subtest: collector command failures, output overrun and hang have bounded failure evidence
+ok 55 - collector command failures, output overrun and hang have bounded failure evidence
+  ---
+  duration_ms: 13.5125
+  type: 'test'
+  ...
+# Subtest: signed deltas retain decreasing allocations as reclamation and keep baseline separate
+ok 56 - signed deltas retain decreasing allocations as reclamation and keep baseline separate
+  ---
+  duration_ms: 4.351291
+  type: 'test'
+  ...
+# Subtest: receipt unit and executable mutations fail even with recomputed input hash
+ok 57 - receipt unit and executable mutations fail even with recomputed input hash
+  ---
+  duration_ms: 1.6165
+  type: 'test'
+  ...
+# Subtest: actual local symlink escape rejected before host du
+ok 58 - actual local symlink escape rejected before host du
+  ---
+  duration_ms: 3.128709
+  type: 'test'
+  ...
+# Subtest: opaque category path mapping never authorizes category allocation
+ok 59 - opaque category path mapping never authorizes category allocation
+  ---
+  duration_ms: 0.49025
+  type: 'test'
+  ...
+# Subtest: raw actual operation JSON must semantically derive exact inventory sizes and topic incarnation
+ok 60 - raw actual operation JSON must semantically derive exact inventory sizes and topic incarnation
+  ---
+  duration_ms: 2.183542
+  type: 'test'
+  ...
+# Subtest: unregistered local categories remain explicitly unknown, registered zero allocation measured
+ok 61 - unregistered local categories remain explicitly unknown, registered zero allocation measured
+  ---
+  duration_ms: 1.709375
+  type: 'test'
+  ...
+# Subtest: unsupported measured missing and invented telemetry cannot enter validated evidence
+ok 62 - unsupported measured missing and invented telemetry cannot enter validated evidence
+  ---
+  duration_ms: 3.064458
+  type: 'test'
+  ...
+# Subtest: explicit lower frozen raw budget refuses actual output overflow without raising existing cap
+ok 63 - explicit lower frozen raw budget refuses actual output overflow without raising existing cap
+  ---
+  duration_ms: 0.462792
+  type: 'test'
+  ...
+# Subtest: timeout never resumes later Docker/local commands from late executor completion
+ok 64 - timeout never resumes later Docker/local commands from late executor completion
+  ---
+  duration_ms: 47.815625
+  type: 'test'
+  ...
+# Subtest: metadata raw hash and normalized snapshot mutations, extra mounts and missing API receipts rejected
+ok 65 - metadata raw hash and normalized snapshot mutations, extra mounts and missing API receipts rejected
+  ---
+  duration_ms: 2.509042
+  type: 'test'
+  ...
+# Subtest: actual raw requests broker identity partition duplicates and registered ranges all fail closed
+ok 66 - actual raw requests broker identity partition duplicates and registered ranges all fail closed
+  ---
+  duration_ms: 2.990292
+  type: 'test'
+  ...
+# Subtest: declared Kafka endpoints freeze exact unique loopback ports and broker-ordered bootstrap literal
+ok 67 - declared Kafka endpoints freeze exact unique loopback ports and broker-ordered bootstrap literal
+  ---
+  duration_ms: 2.040166
+  type: 'test'
+  ...
+# Subtest: every pinned Kafka sample uses actual raw Docker port bindings, never declared summary metadata
+ok 68 - every pinned Kafka sample uses actual raw Docker port bindings, never declared summary metadata
+  ---
+  duration_ms: 0.827083
+  type: 'test'
+  ...
+# Subtest: actual Docker dependency factory rejects foreign published port before allocation and prelaunch
+ok 69 - actual Docker dependency factory rejects foreign published port before allocation and prelaunch
+  ---
+  duration_ms: 8.458834
+  type: 'test'
+  ...
+# Subtest: fixed budgets retain bounded correctness profile
+ok 70 - fixed budgets retain bounded correctness profile
+  ---
+  duration_ms: 0.119916
+  type: 'test'
+  ...
+# Subtest: preflight rejects unsupported schema, duplicate IDs, scope and wrapper paths
+ok 71 - preflight rejects unsupported schema, duplicate IDs, scope and wrapper paths
+  ---
+  duration_ms: 0.314667
+  type: 'test'
+  ...
+# Subtest: frozen preflight clone prevents caller changing cleanup resources
+ok 72 - frozen preflight clone prevents caller changing cleanup resources
+  ---
+  duration_ms: 0.0975
+  type: 'test'
+  ...
+# Subtest: exact resource set and labels required on every sample
+ok 73 - exact resource set and labels required on every sample
+  ---
+  duration_ms: 0.231625
+  type: 'test'
+  ...
+# Subtest: negative/nonfinite readings and stale/future heartbeat fail closed
+ok 74 - negative/nonfinite readings and stale/future heartbeat fail closed
+  ---
+  duration_ms: 0.423083
+  type: 'test'
+  ...
+# Subtest: each resource budget aborts at exact threshold
+ok 75 - each resource budget aborts at exact threshold
+  ---
+  duration_ms: 0.643875
+  type: 'test'
+  ...
+# Subtest: host allocation joins broker allocation and cannot be absent, duplicated or logical
+ok 76 - host allocation joins broker allocation and cannot be absent, duplicated or logical
+  ---
+  duration_ms: 0.692833
+  type: 'test'
+  ...
+# Subtest: host allocation registration requires distinct owned categories and proof directory
+ok 77 - host allocation registration requires distinct owned categories and proof directory
+  ---
+  duration_ms: 0.60775
+  type: 'test'
+  ...
+# Subtest: host sampler measures actual allocated blocks and rejects symlink or missing paths
+ok 78 - host sampler measures actual allocated blocks and rejects symlink or missing paths
+  ---
+  duration_ms: 16.618667
+  type: 'test'
+  ...
+# Subtest: intentional STOP charges evidenced conservative bound and requires healthy peers
+ok 79 - intentional STOP charges evidenced conservative bound and requires healthy peers
+  ---
+  duration_ms: 0.326792
+  type: 'test'
+  ...
+# Subtest: observer startup throw prevents launch, still stops registered brokers
+ok 80 - observer startup throw prevents launch, still stops registered brokers
+  ---
+  duration_ms: 2.487375
+  type: 'test'
+  ...
+# Subtest: observer throw/stale/hung and sample record failure kill owned group and brokers
+ok 81 - observer throw/stale/hung and sample record failure kill owned group and brokers
+  ---
+  duration_ms: 12.719542
+  type: 'test'
+  ...
+# Subtest: wrapper failure and proof timeout kill owned group and registered brokers
+ok 82 - wrapper failure and proof timeout kill owned group and registered brokers
+  ---
+  duration_ms: 0.63275
+  type: 'test'
+  ...
+# Subtest: success requires final sample and exit status handshake before completion
+ok 83 - success requires final sample and exit status handshake before completion
+  ---
+  duration_ms: 1.057958
+  type: 'test'
+  ...
+# Subtest: final sample failure cannot report successful wrapper as proof completion
+ok 84 - final sample failure cannot report successful wrapper as proof completion
+  ---
+  duration_ms: 0.3075
+  type: 'test'
+  ...
+# Subtest: cleanup failures are recorded and never relabel proof as successful
+ok 85 - cleanup failures are recorded and never relabel proof as successful
+  ---
+  duration_ms: 0.22475
+  type: 'test'
+  ...
+# Subtest: hanging journal, prelaunch interrupt and synchronous cleanup throws fail closed
+ok 86 - hanging journal, prelaunch interrupt and synchronous cleanup throws fail closed
+  ---
+  duration_ms: 44.295625
+  type: 'test'
+  ...
+# Subtest: monitor plus journal elapsed time cannot launch with stale initial sample
+ok 87 - monitor plus journal elapsed time cannot launch with stale initial sample
+  ---
+  duration_ms: 0.25875
+  type: 'test'
+  ...
+# Subtest: slow initial monitor anchors first and later sample starts to sample timestamp
+ok 88 - slow initial monitor anchors first and later sample starts to sample timestamp
+  ---
+  duration_ms: 0.288375
+  type: 'test'
+  ...
+# Subtest: polling clock jump past heartbeat deadline stops owned wrapper before new sample
+ok 89 - polling clock jump past heartbeat deadline stops owned wrapper before new sample
+  ---
+  duration_ms: 0.1415
+  type: 'test'
+  ...
+# Subtest: elapsed launch time cannot continue with stale heartbeat
+ok 90 - elapsed launch time cannot continue with stale heartbeat
+  ---
+  duration_ms: 0.135583
+  type: 'test'
+  ...
+# Subtest: hanging or throwing completion write returns failure after bounded cleanup
+ok 91 - hanging or throwing completion write returns failure after bounded cleanup
+  ---
+  duration_ms: 10.570041
+  type: 'test'
+  ...
+# Subtest: polling jitter within early sample lead keeps strict freshness and bounded cadence
+ok 92 - polling jitter within early sample lead keeps strict freshness and bounded cadence
+  ---
+  duration_ms: 0.358709
+  type: 'test'
+  ...
+# Subtest: real asynchronous monitor/write time and polling jitter stay within five-second sample window
+ok 93 - real asynchronous monitor/write time and polling jitter stay within five-second sample window
+  ---
+  duration_ms: 5091.390875
+  type: 'test'
+  ...
+# Subtest: timed-out completion receives cancellation and cannot publish after delayed data write
+ok 94 - timed-out completion receives cancellation and cannot publish after delayed data write
+  ---
+  duration_ms: 63.240583
+  type: 'test'
+  ...
+# Subtest: Attempt2 cycle2 preflight requires exactly one adjacent literal phase flag and directory
+ok 95 - Attempt2 cycle2 preflight requires exactly one adjacent literal phase flag and directory
+  ---
+  duration_ms: 1.234334
+  type: 'test'
+  ...
+# {"control":"three-second-parent-recovery","startingSamples":[27600,28400,29200],"grantAtMs":26800,"recoveryDeadlineMs":56800,"scope":"actual adapter and file protocol; injected Docker and monotonic clock"}
+# Subtest: Attempt2 cycle2 three-second recovery records multiple measured starting samples; other phases keep five-second cadence
+ok 96 - Attempt2 cycle2 three-second recovery records multiple measured starting samples; other phases keep five-second cadence
+  ---
+  duration_ms: 483.160791
+  type: 'test'
+  ...
+# Subtest: Attempt2 group2 actual adapter and file protocol accept one STOP starting healthy cycle with stable reservation
+ok 97 - Attempt2 group2 actual adapter and file protocol accept one STOP starting healthy cycle with stable reservation
+  ---
+  duration_ms: 263.329542
+  type: 'test'
+  ...
+# {"control":"healthy-only-restriction-mutant","orderedObservations":["healthy","stopped","starting"],"rejectedAt":"starting","scope":"single predicate restriction mutation; not complete old source"}
+# Subtest: Attempt2 healthy-only restriction mutant reaches STOP then rejects actual adapter starting observation
+ok 98 - Attempt2 healthy-only restriction mutant reaches STOP then rejects actual adapter starting observation
+  ---
+  duration_ms: 4.785959
+  type: 'test'
+  ...
+# Subtest: Attempt2 group1 initial stopped starting unhealthy and unconfigured fault reject before launch
+ok 99 - Attempt2 group1 initial stopped starting unhealthy and unconfigured fault reject before launch
+  ---
+  duration_ms: 36.969833
+  type: 'test'
+  ...
+# Subtest: Attempt2 group3 START requires authorized directly observed stopped barrier even without periodic STOP sample
+ok 100 - Attempt2 group3 START requires authorized directly observed stopped barrier even without periodic STOP sample
+  ---
+  duration_ms: 3.249875
+  type: 'test'
+  ...
+# Subtest: Attempt2 group4 exact identity artifacts immutable replay path and missing ACK fail closed
+ok 101 - Attempt2 group4 exact identity artifacts immutable replay path and missing ACK fail closed
+  ---
+  duration_ms: 7.204584
+  type: 'test'
+  ...
+# Subtest: Attempt2 group5 either peer lifecycle health and generation fail in every phase
+ok 102 - Attempt2 group5 either peer lifecycle health and generation fail in every phase
+  ---
+  duration_ms: 56.495709
+  type: 'test'
+  ...
+# Subtest: Attempt2 group6 target invalid grace second generation stopped-after-running and old probe fail
+ok 103 - Attempt2 group6 target invalid grace second generation stopped-after-running and old probe fail
+  ---
+  duration_ms: 18.420333
+  type: 'test'
+  ...
+# Subtest: Attempt2 group7 fixed recovery deadline boundaries persistence and starting never renew anchor
+ok 104 - Attempt2 group7 fixed recovery deadline boundaries persistence and starting never renew anchor
+  ---
+  duration_ms: 7.377708
+  type: 'test'
+  ...
+# Subtest: Attempt2 group8 target du bound strict malformed and observer hung retain fixed charged bytes
+ok 105 - Attempt2 group8 target du bound strict malformed and observer hung retain fixed charged bytes
+  ---
+  duration_ms: 46.612708
+  type: 'test'
+  ...
+# Subtest: Attempt2 group9 protocol read ACK and authorization evidence cannot suspend strict observer gate
+ok 106 - Attempt2 group9 protocol read ACK and authorization evidence cannot suspend strict observer gate
+  ---
+  duration_ms: 296.323708
+  type: 'test'
+  ...
+# Subtest: Attempt2 group10 incomplete cycle exit cannot complete and rejected raw inspect survives diagnostics failure
+ok 107 - Attempt2 group10 incomplete cycle exit cannot complete and rejected raw inspect survives diagnostics failure
+  ---
+  duration_ms: 10.179625
+  type: 'test'
+  ...
+# Subtest: Docker adapter samples running peers, reserves stopped target and retains registered volumes
+ok 108 - Docker adapter samples running peers, reserves stopped target and retains registered volumes
+  ---
+  duration_ms: 1.432209
+  type: 'test'
+  ...
+# Subtest: Docker adapter does not skip running du failure or accept changed image metadata
+ok 109 - Docker adapter does not skip running du failure or accept changed image metadata
+  ---
+  duration_ms: 1.833292
+  type: 'test'
+  ...
+# Subtest: adapter completion uses atomic synchronous commit rather than uncancellable asynchronous rename
+ok 110 - adapter completion uses atomic synchronous commit rather than uncancellable asynchronous rename
+  ---
+  duration_ms: 24.302042
+  type: 'test'
+  ...
+# Subtest: adapter timed-out temporary data write cannot publish late successful completion
+ok 111 - adapter timed-out temporary data write cannot publish late successful completion
+  ---
+  duration_ms: 235.922959
+  type: 'test'
+  ...
+# Subtest: adapter checks elapsed deadline before commit when write continuation delays timer callback
+ok 112 - adapter checks elapsed deadline before commit when write continuation delays timer callback
+  ---
+  duration_ms: 214.326167
+  type: 'test'
+  ...
+# Subtest: synchronous adapter commit cannot interleave with timeout callback at publication boundary
+ok 113 - synchronous adapter commit cannot interleave with timeout callback at publication boundary
+  ---
+  duration_ms: 1081.429333
+  type: 'test'
+  ...
+# Subtest: observer failure stops active owned wrapper/STOP leaf while sentinel survives
+ok 114 - observer failure stops active owned wrapper/STOP leaf while sentinel survives
+  ---
+  duration_ms: 481.710291
+  type: 'test'
+  ...
+# Subtest: owned group kills stopped TERM-resistant leaf after leader exits; unrelated sentinel survives
+ok 115 - owned group kills stopped TERM-resistant leaf after leader exits; unrelated sentinel survives
+  ---
+  duration_ms: 781.528666
+  type: 'test'
+  ...
+# Subtest: capacity lock has fixed shared name in platform temporary directory
+ok 116 - capacity lock has fixed shared name in platform temporary directory
+  ---
+  duration_ms: 0.828916
+  type: 'test'
+  ...
+# Subtest: deadline CAPTURE decision may precede paired SETTLE durable admission
+ok 117 - deadline CAPTURE decision may precede paired SETTLE durable admission
+  ---
+  duration_ms: 1.16025
+  type: 'test'
+  ...
+# Subtest: stage counts reject decided beyond offered and settled beyond admission
+ok 118 - stage counts reject decided beyond offered and settled beyond admission
+  ---
+  duration_ms: 1.882541
+  type: 'test'
+  ...
+# Subtest: preparation stops until E3 correctness and real calibration plus indexed/bounded adapter exist
+ok 119 - preparation stops until E3 correctness and real calibration plus indexed/bounded adapter exist
+  ---
+  duration_ms: 0.363291
+  type: 'test'
+  ...
+# Subtest: source/fixture mismatches and fabricated zero-byte calibration cannot freeze runnable policy
+ok 120 - source/fixture mismatches and fabricated zero-byte calibration cannot freeze runnable policy
+  ---
+  duration_ms: 0.174458
+  type: 'test'
+  ...
+# Subtest: aged estimate retains proposed 1m identities; over-budget case explicitly shrinks diagnostic only
+ok 121 - aged estimate retains proposed 1m identities; over-budget case explicitly shrinks diagnostic only
+  ---
+  duration_ms: 0.080166
+  type: 'test'
+  ...
+# Subtest: disk space gate and exact prefunding bound all declared timed plus pending work
+ok 122 - disk space gate and exact prefunding bound all declared timed plus pending work
+  ---
+  duration_ms: 0.169709
+  type: 'test'
+  ...
+# Subtest: measurement separates stage rates; complete parity and all telemetry permit diagnostic pass
+ok 123 - measurement separates stage rates; complete parity and all telemetry permit diagnostic pass
+  ---
+  duration_ms: 0.19625
+  type: 'test'
+  ...
+# Subtest: producer duration miss fails even when output is exact after drain
+ok 124 - producer duration miss fails even when output is exact after drain
+  ---
+  duration_ms: 0.404792
+  type: 'test'
+  ...
+# Subtest: late drain cannot be counted as deadline output or settled financial throughput
+ok 125 - late drain cannot be counted as deadline output or settled financial throughput
+  ---
+  duration_ms: 0.606167
+  type: 'test'
+  ...
+# Subtest: cumulative offered cannot roll back between deadline and final cuts
+ok 126 - cumulative offered cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.276
+  type: 'test'
+  ...
+# Subtest: cumulative admitted cannot roll back between deadline and final cuts
+ok 127 - cumulative admitted cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.148875
+  type: 'test'
+  ...
+# Subtest: cumulative decided cannot roll back between deadline and final cuts
+ok 128 - cumulative decided cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.132834
+  type: 'test'
+  ...
+# Subtest: cumulative settled cannot roll back between deadline and final cuts
+ok 129 - cumulative settled cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.137167
+  type: 'test'
+  ...
+# Subtest: deadline offers cannot exceed frozen expected workload even if final agrees
+ok 130 - deadline offers cannot exceed frozen expected workload even if final agrees
+  ---
+  duration_ms: 0.151625
+  type: 'test'
+  ...
+# Subtest: each cut rejects admission ordering and settlement accounting violations
+ok 131 - each cut rejects admission ordering and settlement accounting violations
+  ---
+  duration_ms: 0.829708
+  type: 'test'
+  ...
+# Subtest: pending may decrease during drain; only missed deadline settlement fails
+ok 132 - pending may decrease during drain; only missed deadline settlement fails
+  ---
+  duration_ms: 0.486625
+  type: 'test'
+  ...
+# Subtest: missing accounting or resource metrics are explicit limited attempt; count inconsistency fails
+ok 133 - missing accounting or resource metrics are explicit limited attempt; count inconsistency fails
+  ---
+  duration_ms: 0.407542
+  type: 'test'
+  ...
+# Subtest: lag growth, over-budget disk and unsupported latency clock cannot silently pass
+ok 134 - lag growth, over-budget disk and unsupported latency clock cannot silently pass
+  ---
+  duration_ms: 0.148541
+  type: 'test'
+  ...
+# Subtest: highest stable measured arm creates fresh/aged 300s pair with same business workload
+ok 135 - highest stable measured arm creates fresh/aged 300s pair with same business workload
+  ---
+  duration_ms: 0.092375
+  type: 'test'
+  ...
+# Subtest: missing restore cost, partial monitoring and observer slowdown remain limited preflight
+ok 136 - missing restore cost, partial monitoring and observer slowdown remain limited preflight
+  ---
+  duration_ms: 0.157042
+  type: 'test'
+  ...
+# Subtest: load and calibration entrypoints refuse before filesystem or adapter work without authorization
+ok 137 - load and calibration entrypoints refuse before filesystem or adapter work without authorization
+  ---
+  duration_ms: 0.355958
+  type: 'test'
+  ...
+# Subtest: calibration overrides cannot undercut measured physical byte budget or use invalid numbers
+ok 138 - calibration overrides cannot undercut measured physical byte budget or use invalid numbers
+  ---
+  duration_ms: 0.405875
+  type: 'test'
+  ...
+# Subtest: valid byte override preserves conservative floor and may increase budget only
+ok 139 - valid byte override preserves conservative floor and may increase budget only
+  ---
+  duration_ms: 1.039792
+  type: 'test'
+  ...
+# Subtest: derived per-trade budget must remain safe integer before policy freezes
+ok 140 - derived per-trade budget must remain safe integer before policy freezes
+  ---
+  duration_ms: 0.368083
+  type: 'test'
+  ...
+# Subtest: invalid telemetry produces null derived metrics instead of non-finite values
+ok 141 - invalid telemetry produces null derived metrics instead of non-finite values
+  ---
+  duration_ms: 0.788917
+  type: 'test'
+  ...
+# Subtest: invalid duration and zero trades cannot publish non-finite derived metrics
+ok 142 - invalid duration and zero trades cannot publish non-finite derived metrics
+  ---
+  duration_ms: 0.532292
+  type: 'test'
+  ...
+# Subtest: M3H missing conservative heap evidence blocks legacy real calibration
+ok 143 - M3H missing conservative heap evidence blocks legacy real calibration
+  ---
+  duration_ms: 0.069542
+  type: 'test'
+  ...
+# Subtest: M3H oversized retained heap cannot freeze despite fitting physical budget
+ok 144 - M3H oversized retained heap cannot freeze despite fitting physical budget
+  ---
+  duration_ms: 0.070459
+  type: 'test'
+  ...
+# Subtest: M3H finite checked formula includes timed+aged identities, pending and both reserves
+ok 145 - M3H finite checked formula includes timed+aged identities, pending and both reserves
+  ---
+  duration_ms: 0.183916
+  type: 'test'
+  ...
+# Subtest: M3H numeric controls reject missing, string, negative, NaN, infinity, unsafe and fractional values
+ok 146 - M3H numeric controls reject missing, string, negative, NaN, infinity, unsafe and fractional values
+  ---
+  duration_ms: 1.706875
+  type: 'test'
+  ...
+# Subtest: M3H child lower max recomputes limit, higher unauthorized max cannot raise request cap
+ok 147 - M3H child lower max recomputes limit, higher unauthorized max cannot raise request cap
+  ---
+  duration_ms: 0.152417
+  type: 'test'
+  ...
+# Subtest: M3H equality, unsupported counts and multiplication/addition overflow refuse
+ok 148 - M3H equality, unsupported counts and multiplication/addition overflow refuse
+  ---
+  duration_ms: 0.198083
+  type: 'test'
+  ...
+# Subtest: M3H fresh and aged overrun block without silently shrinking original heap workload
+ok 149 - M3H fresh and aged overrun block without silently shrinking original heap workload
+  ---
+  duration_ms: 0.157917
+  type: 'test'
+  ...
+# Subtest: M3H candidate/config/fixture/build/VM/review mismatch or legacy averages refuse
+ok 150 - M3H candidate/config/fixture/build/VM/review mismatch or legacy averages refuse
+  ---
+  duration_ms: 0.505625
+  type: 'test'
+  ...
+# Subtest: M3H executable raw bound/capability/review/fixture bytes hash and exact scope verified before adapter read
+ok 151 - M3H executable raw bound/capability/review/fixture bytes hash and exact scope verified before adapter read
+  ---
+  duration_ms: 37.666083
+  type: 'test'
+  ...
+# Subtest: M3H synthetic evidence and unpinned launcher cannot authorize executable load
+ok 152 - M3H synthetic evidence and unpinned launcher cannot authorize executable load
+  ---
+  duration_ms: 4.2975
+  type: 'test'
+  ...
+# Subtest: M3H runtime guard failure or missing lifecycle observation cannot publish diagnostic success
+ok 153 - M3H runtime guard failure or missing lifecycle observation cannot publish diagnostic success
+  ---
+  duration_ms: 0.795084
+  type: 'test'
+  ...
+# Subtest: M3H capability timeout escalates TERM to KILL with bounded output and retained process error
+ok 154 - M3H capability timeout escalates TERM to KILL with bounded output and retained process error
+  ---
+  duration_ms: 18.809583
+  type: 'test'
+  ...
+# Subtest: M3H symlink outside policy ownership and valid hash with changed raw identity refuse
+ok 155 - M3H symlink outside policy ownership and valid hash with changed raw identity refuse
+  ---
+  duration_ms: 3.428666
+  type: 'test'
+  ...
+# Subtest: rate supervision binds exact command, output, allocation categories and finite timeout
+ok 156 - rate supervision binds exact command, output, allocation categories and finite timeout
+  ---
+  duration_ms: 2.474792
+  type: 'test'
+  ...
+# Subtest: actual financial runtime directories and full registry must match supervised resource identity
+ok 157 - actual financial runtime directories and full registry must match supervised resource identity
+  ---
+  duration_ms: 1.24225
+  type: 'test'
+  ...
+# Subtest: foreign bootstrap endpoint cannot borrow same broker IDs and local resource allocations
+ok 158 - foreign bootstrap endpoint cannot borrow same broker IDs and local resource allocations
+  ---
+  duration_ms: 2.198958
+  type: 'test'
+  ...
+# Subtest: supervisor evidence mismatch refuses before dependency setup; failed supervision still closes
+ok 159 - supervisor evidence mismatch refuses before dependency setup; failed supervision still closes
+  ---
+  duration_ms: 10.137833
+  type: 'test'
+  ...
+# Subtest: actual supervised child receives frozen environment through owned launch
+ok 160 - actual supervised child receives frozen environment through owned launch
+  ---
+  duration_ms: 294.352792
+  type: 'test'
+  ...
+# Subtest: all actual financial modes reject raw unregistered config before dependency setup
+ok 161 - all actual financial modes reject raw unregistered config before dependency setup
+  ---
+  duration_ms: 4.61925
+  type: 'test'
+  ...
+# Subtest: all actual financial modes refuse foreign frozen bootstrap argument before dependencies
+ok 162 - all actual financial modes refuse foreign frozen bootstrap argument before dependencies
+  ---
+  duration_ms: 4.501875
+  type: 'test'
+  ...
+# Subtest: actual financial runtime validates planned new paths and refuses symlinked registered directory before launch
+ok 163 - actual financial runtime validates planned new paths and refuses symlinked registered directory before launch
+  ---
+  duration_ms: 3.2525
+  type: 'test'
+  ...
+# Subtest: stdout and stderr retain split UTF-8 and invalid bytes exactly
+ok 164 - stdout and stderr retain split UTF-8 and invalid bytes exactly
+  ---
+  duration_ms: 1.659
+  type: 'test'
+  ...
+# Subtest: recorder persists binary output, failures and separate spawn diagnostics
+ok 165 - recorder persists binary output, failures and separate spawn diagnostics
+  ---
+  duration_ms: 339.737167
+  type: 'test'
+  ...
+# Subtest: USD_NANO: own hold consumption and competing withdrawal stay bounded
+ok 166 - USD_NANO: own hold consumption and competing withdrawal stay bounded
+  ---
+  duration_ms: 0.9775
+  type: 'test'
+  ...
+# Subtest: ACME_SHARE: own hold consumption and competing withdrawal stay bounded
+ok 167 - ACME_SHARE: own hold consumption and competing withdrawal stay bounded
+  ---
+  duration_ms: 0.214667
+  type: 'test'
+  ...
+# Subtest: cancel releases unmatched order only; captured obligation stays owned
+ok 168 - cancel releases unmatched order only; captured obligation stays owned
+  ---
+  duration_ms: 0.075833
+  type: 'test'
+  ...
+# Subtest: creation priority uses acceptance then stable owner ID; competing owner cannot spend hold
+ok 169 - creation priority uses acceptance then stable owner ID; competing owner cannot spend hold
+  ---
+  duration_ms: 0.587625
+  type: 'test'
+  ...
+# Subtest: exact-unit/range errors and conflicting transfers make no changes
+ok 170 - exact-unit/range errors and conflicting transfers make no changes
+  ---
+  duration_ms: 0.326583
+  type: 'test'
+  ...
+1..170
+# tests 170
+# suites 0
+# pass 170
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 9384.936

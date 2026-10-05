@@ -1,0 +1,10 @@
+{
+  "schema": "calcify-e3-closed-confirmation-v1",
+  "confirmedBy": "root",
+  "cliExitCode": null,
+  "writersClosed": false,
+  "cleanupClosed": false,
+  "scope": "TEMPLATE ONLY while actual49 writers live; root fills exactfinalreceipts only after CLI0 and independently inspected cleanup",
+  "proofRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt2/e3-current-candidate",
+  "executionManifestSha256": "31c0322a96d8c4793711c86960279344e5a2b53416e9cda37aa7ba321fdc823d"
+}

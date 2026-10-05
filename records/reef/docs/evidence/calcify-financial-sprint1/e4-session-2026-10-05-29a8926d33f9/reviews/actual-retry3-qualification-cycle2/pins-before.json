@@ -1,0 +1,51 @@
+{
+  "schema": "independent-actual-retry3-pin-check-v1",
+  "reviewInstance": "2of3",
+  "checkedUtc": "2026-10-05T17:10:02.245Z",
+  "sourcePaths": 24,
+  "candidatePaths": 26,
+  "candidateSha256": "709dc3a7fe61df4acffae4fa3e16b260989ac4197f7826578fcfdee1bea514bc",
+  "capabilitySha256": "e99c7a9690bdbacfba18246cc3fff4dfbc226ae42c9ab4c094ea93fb9c0da7a4",
+  "executionManifestSha256": "22b2593b57922707cc532600adce2750827c67730bebc370861312ba5f73edd1",
+  "buildSha256": "a9bf0d4330ac290647046026453d1e8d024398cc4af5eb2d46f11cb7da5de74e",
+  "classpathSha256": "5c0a4e8722f050d96723db9a4a11cedad113ad305ce58afcb1418cfad463dc34",
+  "classpathFiles": 78,
+  "classpathDirectories": [
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test",
+      "files": 335
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/main",
+      "files": 747
+    },
+    {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/java/main",
+      "files": 99
+    }
+  ],
+  "brokerScope": {
+    "schema": "financial-broker-scope-v1",
+    "bootstrapServers": "127.0.0.1:40092,127.0.0.1:40192,127.0.0.1:40292",
+    "clusterId": "redpanda.8843d456-1b62-45e9-9be8-295fd8339a28",
+    "brokers": [
+      {
+        "id": 0,
+        "host": "127.0.0.1",
+        "port": 40092
+      },
+      {
+        "id": 1,
+        "host": "127.0.0.1",
+        "port": 40192
+      },
+      {
+        "id": 2,
+        "host": "127.0.0.1",
+        "port": 40292
+      }
+    ],
+    "metadataSource": "actual AdminClient describeCluster"
+  },
+  "pass": true
+}

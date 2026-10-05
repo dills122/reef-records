@@ -1,0 +1,142 @@
+{
+  "schema": "financial-e3-cohort-v1",
+  "caseId": "activation-quartet",
+  "policy": {
+    "kernel": "e1-gross-v1",
+    "schema": "e1-v1",
+    "policy": "gross-p1",
+    "reference": "assets-r1",
+    "rounding": "EXACT",
+    "fees": "NONE",
+    "reservation": "UNRESERVED"
+  },
+  "genesis": {
+    "A": {
+      "balances": {
+        "buyerCash": "0",
+        "sellerCash": "0",
+        "buyerShares": "0",
+        "sellerShares": "0"
+      }
+    },
+    "B": {
+      "balances": {
+        "buyerCash": "0",
+        "sellerCash": "0",
+        "buyerShares": "0",
+        "sellerShares": "0"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "domain": "A",
+      "mode": "EXECUTE",
+      "inputOrdinal": 0,
+      "commit": false,
+      "input": {
+        "namespace": "activation-quartet",
+        "domain": "A",
+        "actionId": "fund-0",
+        "kind": "FUND",
+        "payload": {
+          "account": "buyer",
+          "asset": "USD_NANO",
+          "amount": "10",
+          "authority": "opening-resource-owner"
+        }
+      }
+    },
+    {
+      "domain": "B",
+      "mode": "EXECUTE",
+      "inputOrdinal": 1,
+      "commit": false,
+      "input": {
+        "namespace": "activation-quartet",
+        "domain": "B",
+        "actionId": "fund-1",
+        "kind": "FUND",
+        "payload": {
+          "account": "buyer",
+          "asset": "USD_NANO",
+          "amount": "20",
+          "authority": "opening-resource-owner"
+        }
+      }
+    },
+    {
+      "domain": "A",
+      "mode": "EXECUTE",
+      "inputOrdinal": 2,
+      "commit": false,
+      "input": {
+        "namespace": "activation-quartet",
+        "domain": "A",
+        "actionId": "fund-2",
+        "kind": "FUND",
+        "payload": {
+          "account": "buyer",
+          "asset": "USD_NANO",
+          "amount": "5",
+          "authority": "opening-resource-owner"
+        }
+      }
+    },
+    {
+      "domain": "B",
+      "mode": "EXECUTE",
+      "inputOrdinal": 3,
+      "commit": true,
+      "input": {
+        "namespace": "activation-quartet",
+        "domain": "B",
+        "actionId": "fund-3",
+        "kind": "FUND",
+        "payload": {
+          "account": "buyer",
+          "asset": "USD_NANO",
+          "amount": "7",
+          "authority": "opening-resource-owner"
+        }
+      }
+    },
+    {
+      "domain": "A",
+      "mode": "EXECUTE",
+      "inputOrdinal": 4,
+      "commit": false,
+      "input": {
+        "namespace": "activation-quartet",
+        "domain": "A",
+        "actionId": "fund-4",
+        "kind": "FUND",
+        "payload": {
+          "account": "buyer",
+          "asset": "USD_NANO",
+          "amount": "1",
+          "authority": "opening-resource-owner"
+        }
+      }
+    },
+    {
+      "domain": "B",
+      "mode": "EXECUTE",
+      "inputOrdinal": 5,
+      "commit": true,
+      "input": {
+        "namespace": "activation-quartet",
+        "domain": "B",
+        "actionId": "fund-5",
+        "kind": "FUND",
+        "payload": {
+          "account": "buyer",
+          "asset": "USD_NANO",
+          "amount": "1",
+          "authority": "opening-resource-owner"
+        }
+      }
+    }
+  ],
+  "scope": "exact funding quartet then fresh suffix; isolated mixed snapshot request refuses before activation"
+}

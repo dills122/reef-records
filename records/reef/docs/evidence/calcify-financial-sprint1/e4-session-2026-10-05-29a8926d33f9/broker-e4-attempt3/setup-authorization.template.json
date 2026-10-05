@@ -1,0 +1,10 @@
+{
+  "schema": "calcify-owned-setup-authorization-v1",
+  "accepted": false,
+  "baselineClosed": false,
+  "cleanupVerified": false,
+  "project": "reef-calcify-e4-attempt3-8c6f",
+  "scope": "Create/start only after explicit root authorization; all prior exact nine exited; preserve every volume",
+  "rootClosurePath": null,
+  "rootClosureSha256": null
+}

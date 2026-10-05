@@ -1,0 +1,40 @@
+{
+  "schema": "compact-admission-final-research-v1",
+  "scope": "FrozenAttempt3cycle1+prospective samebinary/options layout; notactivePID",
+  "retainedModelStatus": "FINITE_ENVELOPE_REFUSAL_ON_SUPPORTED_PROSPECTIVE_LAYOUT",
+  "cohort": 150000,
+  "retainedLowerBytes": 664800000,
+  "strictLimitBytes": 644245094,
+  "excessBytes": 20554906,
+  "conservativeUpperAvailable": false,
+  "capacityQualified": false,
+  "growthUpperAvailable": false,
+  "sameRawOwnerHistoryPairPass": true,
+  "parentObservedPeakDeltaBytes": 16011784,
+  "childObservedPeakDeltaBytes": 40031248,
+  "causalPeakClaim": false,
+  "nextTwoLeafSharingWeakLowerBytes": 608400376,
+  "nextSharingFitProven": false,
+  "postRunReceiptChecks": [
+    {
+      "path": ".planning/calcify-e4-session-2026-10-05/research/compact-admission/attempt3-layout-flags.txt",
+      "matchesRecordedHash": true,
+      "sha256": "f88a0771d411b7d64ce183a88562b874c193251cd164da465c95bb2c492c747f"
+    },
+    {
+      "path": ".planning/calcify-e4-session-2026-10-05/research/compact-admission/attempt3-helper.javap.txt",
+      "matchesRecordedHash": true,
+      "sha256": "a66f4474bdc9760a9883be383ad12ad6b5034cbb1fc301bc58889c4e86649c26"
+    }
+  ],
+  "rawSha256": {
+    ".planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/proof/bootstrap.json": "92d34552fd3474f4c8260eadb531e5d4cf7ef891a504384b18d1104f31d59afb",
+    ".planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/proof/managed-recovery/result.json": "cc946149e2a83b778ce57ae0e9a890672e618c36f26cfd55b6fd71f65f65b754",
+    ".planning/calcify-e4-session-2026-10-05/bootstrap-compact1/proof/bootstrap.json": "e90b8171f7a630f7bd3bf4b93bb940373bf1c438fa4abdd866382b2b3e89b170",
+    ".planning/calcify-e4-session-2026-10-05/bootstrap-compact1/proof/managed-recovery/result.json": "25bad258e58273e9a920343053629be7820c084423969e7d6c497f1e87f8a25c",
+    ".planning/calcify-e4-session-2026-10-05/reviews/actual-compact-qualification-instance3/exact-raw-pair-check.json": "93dca7f29bbf3d8f75b45824c33d27177962576b52918bcc57cf4140b21026a5",
+    ".planning/calcify-e4-session-2026-10-05/bootstrap-compact1/proof/assessment.json": "e36077a8dfb87a71cf3392cc9f2e7c065b8fdd210f47187e49a9ddd5750cc26a"
+  },
+  "memoSha256": "587c0ab59a6b99f1840d5a039e4887477bcfe320979c65f89f61864e2b396981",
+  "noNewJvmBuildSourceOrLoadThisPass": true
+}

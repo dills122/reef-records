@@ -1,0 +1,71 @@
+{
+  "schema": "independent-actual-setup-receipt-v1",
+  "setupOnly": true,
+  "verified": [
+    {
+      "kind": "config",
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/config.json",
+      "sha256": "4a396265d14af57c557a00ecca19b6f4a4d7c3721005c346e7f4216e6cbec8f9"
+    },
+    {
+      "kind": "fixture",
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/bootstrap-fixtures.json",
+      "sha256": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d"
+    },
+    {
+      "kind": "preflight",
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/preflight.json",
+      "sha256": "98ce2e1ce2fb514d846071f4972b1a5f77fe69b3bdf6356c19d834e7ce08a9f3"
+    },
+    {
+      "kind": "adminScope",
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/broker-scope.json",
+      "sha256": "b1f4682bc29387c3b8552e2316fa291912473cd3f07d2f78eaa1e48298cd2ee0"
+    },
+    {
+      "kind": "watchFinished",
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/watch-finished.json",
+      "sha256": "a1235709d452863a2939b439c6206b14a3e750c6fe9f39940bb1ff537c979df1"
+    },
+    {
+      "kind": "cleanupInspection",
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/stopped-inspect.raw.json",
+      "sha256": "d5b820d2b1aa8776f720219fe440662b5e0e048c477a98c4c2337b8fb6472071"
+    },
+    {
+      "kind": "cleanupCommandReceipt",
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-00253-stopped-confirm.json",
+      "sha256": "11807d2428a326e44125a473795e460c31c638ac0a9b5bc5533b315cac64a9bc"
+    }
+  ],
+  "exactOwnedStopped": true,
+  "watchReason": "setup completion: exact owned brokers stopped or explicit strict supervisor handoff",
+  "handoff": {
+    "accepted": true,
+    "strictFirstSamplePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/e3-current-candidate/resource-samples.jsonl",
+    "strictFirstSampleSha256": "e15a7f6f06b50d98c4565522a5c902fe6072d72b540a6d1fea817bb15689f9d0",
+    "observedSampledAtMs": 70404130,
+    "ownedIds": [
+      "45a7adb373fa7914cc16a1d58f4dd44a3d811259e7c097c119ee725129f2c893",
+      "5226066cada82643c4333341a25db1a50674d02574e8d3d1deb5e1dd89a65c54",
+      "e98481cf469c0cabac43873dfb732fac89f2c4a912e02604a2df888d05e77149"
+    ],
+    "scope": "Root observed actual strict supervisor sample exact3 after Ready code acceptance; watcher may relinquish to live supervisor75051"
+  },
+  "lastWatchSample": {
+    "sampledAtMs": 70450063,
+    "completedAtMs": 70450205,
+    "runningIds": [
+      "45a7adb373fa7914cc16a1d58f4dd44a3d811259e7c097c119ee725129f2c893",
+      "e98481cf469c0cabac43873dfb732fac89f2c4a912e02604a2df888d05e77149",
+      "5226066cada82643c4333341a25db1a50674d02574e8d3d1deb5e1dd89a65c54"
+    ],
+    "healthyIds": [
+      "45a7adb373fa7914cc16a1d58f4dd44a3d811259e7c097c119ee725129f2c893",
+      "e98481cf469c0cabac43873dfb732fac89f2c4a912e02604a2df888d05e77149",
+      "5226066cada82643c4333341a25db1a50674d02574e8d3d1deb5e1dd89a65c54"
+    ],
+    "allocatedBytes": 1589936128,
+    "guestFreeBytes": 95729926144
+  }
+}

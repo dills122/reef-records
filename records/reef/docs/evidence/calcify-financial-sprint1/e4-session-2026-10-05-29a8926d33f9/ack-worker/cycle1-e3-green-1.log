@@ -1,0 +1,70 @@
+TAP version 13
+# Subtest: finite bootstrap freeze remains empirical and never manufactures heap costs
+ok 1 - finite bootstrap freeze remains empirical and never manufactures heap costs
+  ---
+  duration_ms: 1.152458
+  type: 'test'
+  ...
+# Subtest: bootstrap refuses cohort expansion, changed caps, conventional arms and mismatched review
+ok 2 - bootstrap refuses cohort expansion, changed caps, conventional arms and mismatched review
+  ---
+  duration_ms: 0.812542
+  type: 'test'
+  ...
+# Subtest: executable bootstrap binds raw review, fixture, config and complete source bytes
+not ok 3 - executable bootstrap binds raw review, fixture, config and complete source bytes
+  ---
+  duration_ms: 27.847792
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/bootstrap-calibration.test.mjs:52:1'
+  failureType: 'testCodeFailure'
+  error: 'BOOTSTRAP_E3_RAW_PROOF_ROOT'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    reject (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/bootstrap-calibration.mjs:114:36)
+    check (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/bootstrap-calibration.mjs:114:113)
+    verifyCurrentE3Evidence (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/bootstrap-calibration.mjs:125:3)
+    async verifyBootstrapEvidence (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/bootstrap-calibration.mjs:109:3)
+    async TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/bootstrap-calibration.test.mjs:111:19)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: bootstrap measured validator binds counts recovery heap raw bytes and all physical receipts
+ok 4 - bootstrap measured validator binds counts recovery heap raw bytes and all physical receipts
+  ---
+  duration_ms: 30.222916
+  type: 'test'
+  ...
+# Subtest: bootstrap result refuses scope inflation identity drift incomplete counts and recovered fake timing
+ok 5 - bootstrap result refuses scope inflation identity drift incomplete counts and recovered fake timing
+  ---
+  duration_ms: 31.053417
+  type: 'test'
+  ...
+# Subtest: primary and recovery sampled heap both require actual pin strict80percent and finite observations
+ok 6 - primary and recovery sampled heap both require actual pin strict80percent and finite observations
+  ---
+  duration_ms: 21.825042
+  type: 'test'
+  ...
+# Subtest: retained encoded recovery and collector raw evidence reject byte hash ownership and checkpoint mutations
+ok 7 - retained encoded recovery and collector raw evidence reject byte hash ownership and checkpoint mutations
+  ---
+  duration_ms: 27.085542
+  type: 'test'
+  ...
+# Subtest: valid recomputed hashes cannot authorize fake JVM command or inconsistent physical measurements
+ok 8 - valid recomputed hashes cannot authorize fake JVM command or inconsistent physical measurements
+  ---
+  duration_ms: 12.345875
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 7
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 205.449375

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialBootstrapProbeTest" tests="9" skipped="0" failures="1" errors="0" timestamp="2026-10-05T16:57:41.242Z" hostname="Dylans-MacBook-Pro.local" time="0.516">
+  <properties/>
+  <testcase name="complete synthetic proof binds actual compiled files and detects post proof class mutation()" classname="com.reef.platform.calcify.financial.FinancialBootstrapProbeTest" time="0.245"/>
+  <testcase name="result byte bound precedes decoded JSON and checksum expansion is covered()" classname="com.reef.platform.calcify.financial.FinancialBootstrapProbeTest" time="0.018"/>
+  <testcase name="bootstrap freezes effective Kafka client buffers including restore consumers()" classname="com.reef.platform.calcify.financial.FinancialBootstrapProbeTest" time="0.06"/>
+  <testcase name="broker endpoint and observed cluster must match registered live resource scope()" classname="com.reef.platform.calcify.financial.FinancialBootstrapProbeTest" time="0.004"/>
+  <testcase name="bootstrap counts cannot expand or enter conventional rate scope()" classname="com.reef.platform.calcify.financial.FinancialBootstrapProbeTest" time="0.002"/>
+  <testcase name="actual runtime paths must match every registered allocation category()" classname="com.reef.platform.calcify.financial.FinancialBootstrapProbeTest" time="0.003"/>
+  <testcase name="managed activation count survives actual Long to raw JSON round trip()" classname="com.reef.platform.calcify.financial.FinancialBootstrapProbeTest" time="0.005">
+    <failure message="java.lang.IllegalArgumentException: BOOTSTRAP_MANAGED_ACTIVATION_PARITY" type="java.lang.IllegalArgumentException">java.lang.IllegalArgumentException: BOOTSTRAP_MANAGED_ACTIVATION_PARITY
+	at com.reef.platform.calcify.financial.FinancialRateProbe.validateBootstrapActivation$platform_runtime_test(FinancialRateProbe.kt:420)
+	at com.reef.platform.calcify.financial.FinancialBootstrapProbeTest.managed activation count survives actual Long to raw JSON round trip(FinancialBootstrapProbeTest.kt:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="raw capability integer round trip retains exact pinned heap identity()" classname="com.reef.platform.calcify.financial.FinancialBootstrapProbeTest" time="0.001"/>
+  <testcase name="E3 admission reads raw proof and rejects stale candidate even when declaration hashes match()" classname="com.reef.platform.calcify.financial.FinancialBootstrapProbeTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>

@@ -1,0 +1,63 @@
+{
+  "attempt": 3,
+  "cycle": 1,
+  "processExitCode": 0,
+  "totals": {
+    "tests": 109,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "sourceFreezePath": ".planning/calcify-e4-session-2026-10-05/review-preparation/source-frozen-attempt3-cycle1.json",
+  "sourceFreezeSha256": "08cef836ca84ee4e0c49ece43c7b388b37d2ef6dda9a6e142a6a1c91093c0dcb",
+  "sourcePaths": 27,
+  "sourceDrift": [],
+  "logSha256": "e3736daa181f3d88cba65ccde23a8b8c2d9aa7bad387743c46bcfe6b0fcf81cc",
+  "xml": [
+    {
+      "path": ".planning/calcify-e4-session-2026-10-05/root-controls/combined-financial-attempt3-cycle1-xml/TEST-com.reef.platform.calcify.financial.FinancialAckJournalTest.xml",
+      "sha256": "96907e1005b9e8d18ee48c5711c5e63be56212ae453d19cd38d29db18684f38c"
+    },
+    {
+      "path": ".planning/calcify-e4-session-2026-10-05/root-controls/combined-financial-attempt3-cycle1-xml/TEST-com.reef.platform.calcify.financial.FinancialBootstrapProbeTest.xml",
+      "sha256": "1f17866c438d2c0b8e0ef0b3b2354e70303daad7f66fd325b32f342c9db52f66"
+    },
+    {
+      "path": ".planning/calcify-e4-session-2026-10-05/root-controls/combined-financial-attempt3-cycle1-xml/TEST-com.reef.platform.calcify.financial.FinancialBrokerProbeTest.xml",
+      "sha256": "1b3da70f202f0e344d8bcc443247cc3f425a9941fe551511b2093ce39beee8a8"
+    },
+    {
+      "path": ".planning/calcify-e4-session-2026-10-05/root-controls/combined-financial-attempt3-cycle1-xml/TEST-com.reef.platform.calcify.financial.FinancialCanonicalLeafOwnerTest.xml",
+      "sha256": "8ebb2cb572a261bd9a812e5b2a99d5b511a72a94842188081e82e6afe4e224da"
+    },
+    {
+      "path": ".planning/calcify-e4-session-2026-10-05/root-controls/combined-financial-attempt3-cycle1-xml/TEST-com.reef.platform.calcify.financial.FinancialCommittedCutTest.xml",
+      "sha256": "95eed60da278d758f3a0a01b10e3bbf2191df8fe2a0e94906e58d846ea6dbebf"
+    },
+    {
+      "path": ".planning/calcify-e4-session-2026-10-05/root-controls/combined-financial-attempt3-cycle1-xml/TEST-com.reef.platform.calcify.financial.FinancialHeapGuardTest.xml",
+      "sha256": "2fdc063adf41476f58692761e1690ecb8f0d24803d44f7a0e406ddc7e0b83427"
+    },
+    {
+      "path": ".planning/calcify-e4-session-2026-10-05/root-controls/combined-financial-attempt3-cycle1-xml/TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml",
+      "sha256": "ac1bffafe4a2ae6ca3fe73ef635723fdf6ce93592c96772b9f205a94a08fcbd7"
+    },
+    {
+      "path": ".planning/calcify-e4-session-2026-10-05/root-controls/combined-financial-attempt3-cycle1-xml/TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+      "sha256": "513c6d6afccc2c7943a3ca00f82a1c069b00c7594be7c5f866590f9eeacc3b81"
+    },
+    {
+      "path": ".planning/calcify-e4-session-2026-10-05/root-controls/combined-financial-attempt3-cycle1-xml/TEST-com.reef.platform.calcify.financial.FinancialPartitionCutTest.xml",
+      "sha256": "9ce1888b6481b5c078413e061972d612f20b57184f01816cf5bea5c8c0e74d02"
+    },
+    {
+      "path": ".planning/calcify-e4-session-2026-10-05/root-controls/combined-financial-attempt3-cycle1-xml/TEST-com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest.xml",
+      "sha256": "d86c5b91313cc1c0e4019b043893aeb8ab24fb14f72964ca4c1543944f204b2b"
+    },
+    {
+      "path": ".planning/calcify-e4-session-2026-10-05/root-controls/combined-financial-attempt3-cycle1-xml/TEST-com.reef.platform.calcify.financial.FinancialRateReferenceTest.xml",
+      "sha256": "c27f818368fc070b0a57341e15c55cd270ad314a320037c91c8c2c54be79f04f"
+    }
+  ],
+  "scope": "Whole frozen27 code gate; excludes actual compact qualification and delivery"
+}

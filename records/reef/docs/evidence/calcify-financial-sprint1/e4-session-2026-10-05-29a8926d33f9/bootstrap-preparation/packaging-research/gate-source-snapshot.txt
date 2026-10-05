@@ -1,0 +1,77 @@
+123: async function verifyCurrentE3Evidence(request, root, owned, candidate, bootstrapServers) {
+124:   const reject = reason => { throw Error(`BOOTSTRAP_E3_${reason}`); }, check = (value, reason) => { if (!value) reject(reason); };
+125:   const raw = await readBoundedBytes(await owned(request.correctnessEvidencePath), 1024 * 1024);
+126:   check(createHash('sha256').update(raw).digest('hex') === request.correctness.evidenceSha256, 'RAW_HASH');
+127:   const expected = Object.fromEntries(Object.entries(request.correctness).filter(([k]) => k !== 'evidenceSha256'));
+128:   check(isDeepStrictEqual(JSON.parse(raw), expected), 'RAW_IDENTITY');
+129:   const proofRaw = await readBoundedBytes(await owned(request.correctnessProofManifestEvidencePath), 8 * 1024 * 1024);
+130:   check(createHash('sha256').update(proofRaw).digest('hex') === expected.proofManifestSha256, 'RAW_PROOF_MANIFEST_HASH');
+131:   const proof = JSON.parse(proofRaw);
+132:   check(proof.schema === 'financial-e3-proof-manifest-v1' && ['sourceHead', 'candidateSha256', 'fixtureSha256', 'buildSha256', 'classpathSha256', 'plannedBootstrapConfigSha256']
+133:     .every(k => proof[k] === expected[k]) && isDeepStrictEqual(proof.arms, expected.arms) && isDeepStrictEqual(proof.e3PlanSha256, expected.e3PlanSha256), 'PROOF_MANIFEST_IDENTITY');
+134:   const proofRoot = await realpath(proof.proofRoot);
+135:   check(proofRoot === proof.proofRoot && proofRoot === request.correctnessProofRoot && proofRoot.startsWith(path.dirname(root) + path.sep)
+136:     && proofRoot !== root && proofRoot !== path.dirname(root), 'RAW_PROOF_ROOT');
+137:   check(Array.isArray(proof.files) && proof.files.length > 0 && proof.files.length <= 65536, 'RAW_FILE_SET');
+138:   const enumerated = []; let entries = 0;
+139:   async function walk(dir, depth = 0) {
+140:     check(depth <= 64, 'RAW_DIRECTORY_DEPTH');
+141:     for await (const entry of await opendir(dir)) {
+142:       check(++entries <= 65536, 'RAW_TREE_ENTRY_BOUND');
+143:       const file = path.join(dir, entry.name); check(!entry.isSymbolicLink(), 'RAW_SYMLINK');
+144:       if (entry.isDirectory()) await walk(file, depth + 1); else { check(entry.isFile(), 'RAW_FILE_TYPE'); enumerated.push(file); check(enumerated.length <= 65536, 'RAW_FILE_COUNT'); }
+145:     }
+146:   }
+147:   await walk(proofRoot); enumerated.sort();
+148:   check(isDeepStrictEqual(proof.files.map(r => r.path), enumerated), 'RAW_COMPLETE_SORTED_SET');
+149:   let total = 0; const selected = new Map();
+150:   for (const row of proof.files) {
+151:     check(typeof row.path === 'string' && row.path.startsWith(proofRoot + path.sep) && await realpath(row.path) === row.path
+152:       && Number.isSafeInteger(row.sizeBytes) && row.sizeBytes >= 0 && row.sizeBytes <= 8 * 1024 * 1024 && hash(row.sha256), 'RAW_FILE_IDENTITY');
+153:     const stat = await lstat(row.path); check(stat.isFile() && !stat.isSymbolicLink() && stat.size === row.sizeBytes, 'RAW_FILE_SIZE');
+154:     total += row.sizeBytes; check(Number.isSafeInteger(total) && total <= 256 * 1024 * 1024, 'RAW_TOTAL_BOUND');
+155:     const file = await open(row.path, 'r'), digest = createHash('sha256'), buffer = Buffer.alloc(65536); let count = 0;
+156:     try { while (true) { const { bytesRead } = await file.read(buffer, 0, buffer.length, count); if (!bytesRead) break;
+157:       count += bytesRead; check(count <= 8 * 1024 * 1024, 'RAW_FILE_BOUND'); digest.update(buffer.subarray(0, bytesRead)); }
+158:     } finally { await file.close(); }
+159:     check(count === row.sizeBytes && digest.digest('hex') === row.sha256, 'RAW_FILE_HASH');
+160:     for (const [kind, planHash] of Object.entries(expected.e3PlanSha256)) if (row.sha256 === planHash && path.basename(row.path) === 'plan.json') {
+161:       check(!selected.has(kind), 'DUPLICATE_SELECTED_PLAN'); selected.set(kind, row.path);
+162:     }
+163:   }
+164:   const compiled = {}; let compiledBytes = 0;
+165:   check(Array.isArray(request.capability.classpathEntries) && request.capability.classpathEntries.length > 0
+166:     && request.capability.classpathEntries.length <= 1024, 'CURRENT_CLASSPATH_REQUIRED');
+167:   async function compiledFile(file) {
+168:     check(path.isAbsolute(file) && path.resolve(file) === file, 'CURRENT_COMPILED_PATH');
+169:     const stat = await lstat(file); check(stat.isFile() && stat.size <= 512 * 1024 * 1024, 'CURRENT_COMPILED_BOUND');
+170:     compiledBytes += stat.size; check(compiledBytes <= 2 * 1024 * 1024 * 1024, 'CURRENT_COMPILED_TOTAL_BOUND');
+185:   check(Object.keys(compiled).some(file => path.basename(file) === 'FinancialRateProbe.class'), 'CURRENT_FINANCIAL_BUILD_REQUIRED');
+186:   for (const [kind, count] of Object.entries(expected.arms)) {
+187:     const planPath = selected.get(kind); check(planPath, 'SELECTED_PLAN_MISSING');
+188:     const plan = JSON.parse((await readBoundedBytes(planPath, 8 * 1024 * 1024)).toString('utf8'));
+189:     check(plan.schema === 'financial-e3-plan-v1' && plan.fixtureSha256 === request.fixtureSha256, 'SELECTED_PLAN_IDENTITY');
+190:     check(plan.broker === bootstrapServers, 'SELECTED_PLAN_BROKER');
+191:     check(plan.classpath === request.capability.classpathEntries.join(path.delimiter)
+192:       && isDeepStrictEqual(plan.compiledHashes, compiled), 'SELECTED_PLAN_COMPILED_CLASSPATH');
+193:     const sources = Object.fromEntries(Object.entries(candidate.sourceSha256).filter(([name]) => name.startsWith('services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/') && /^Financial.*\.kt$/.test(path.basename(name)))
+194:       .map(([name, digest]) => [path.basename(name), digest]));
+195:     check(isDeepStrictEqual(plan.sourceHashes, sources), 'SELECTED_PLAN_SOURCE');
+196:     const runners = Object.fromEntries(['scripts/dev/calcify-financial/broker-proof.mjs', 'scripts/dev/calcify-financial/lib/external-faults.mjs', 'scripts/dev/calcify-financial/proof-supervisor.mjs'].map(name => [name, candidate.sourceSha256[name]]));
+197:     check(isDeepStrictEqual(plan.runnerHashes, runners), 'SELECTED_PLAN_RUNNER');
+198:     const resultPath = path.join(path.dirname(planPath), 'results.json'); check(enumerated.includes(resultPath), 'SELECTED_RESULTS_MISSING');
+199:     const result = JSON.parse((await readBoundedBytes(resultPath, 8 * 1024 * 1024)).toString('utf8'));
+200:     let names;
+201:     if (kind === 'core') { check(Array.isArray(plan.mutationBoundaries) && plan.mutationBoundaries.length === 19, 'CORE_MUTATION_SCOPE');
+202:       names = ['happy', ...plan.mutationBoundaries.map(r => `mutation-${r.index}`), 'forward', 'serialization', 'local-state-loss', 'staged-phase-loss']; }
+203:     else if (kind === 'golden') names = Array.from({ length: 20 }, (_, i) => `golden-${i}`);
+204:     else if (kind === 'external') { check(isDeepStrictEqual(plan.externalMatrix, EXTERNAL_ARMS), 'EXTERNAL_MATRIX'); names = EXTERNAL_ARMS.map(r => r.name); }
+205:     else names = ['activation-quartet'];
+206:     check(result.prefix === plan.prefix && Array.isArray(result.results) && result.results.length === count && new Set(names).size === count
+207:       && isDeepStrictEqual(result.results.map(r => r.name).sort(), names.sort())
+208:       && result.results.every(r => r.after?.pass === true && r.topic === `${plan.prefix}-${r.name}`
+209:         && (kind !== 'activation' || r.before?.pass === true && r.idle?.pass === true)), 'ACTUAL_SUCCESSFUL_ARM_SET');
+210:   }
+211: }
+212: 
+213: export async function validateBootstrapResult(request, measured, outputRoot) {

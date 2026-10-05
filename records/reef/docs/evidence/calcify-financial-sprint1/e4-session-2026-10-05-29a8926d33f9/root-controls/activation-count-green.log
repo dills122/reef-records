@@ -1,0 +1,44 @@
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava UP-TO-DATE
+> Task :verifyRuntimeOrderIdentityMigration
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :processTestResources UP-TO-DATE
+> Task :verifyNoTestSourceExclusions
+
+> Task :compileTestKotlin FAILED
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt:595:35 None of the following candidates is applicable:
+
+static fun writeString(p0: Path!, p1: CharSequence!, vararg p2: OpenOption!): Path!
+static fun writeString(p0: Path!, p1: CharSequence!, p2: Charset!, vararg p3: OpenOption!): Path!:
+  Argument type mismatch: actual type is 'StandardOpenOption', but 'Charset!' was expected.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt:595:47 Unresolved reference 'proof'.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt:595:47 Argument type mismatch: actual type is 'File', but 'Path!' was expected.
+e: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt:596:75 Argument type mismatch: actual type is 'Long?', but 'Long' was expected.
+
+[Incubating] Problems report is available at: file:///Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':compileTestKotlin' (registered by plugin 'org.jetbrains.kotlin.jvm').
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.btapi.BuildToolsApiCompilationWork
+   > Kotlin compiler: NONE_APPLICABLE
+       Kotlin compiler error
+         None of the following candidates is applicable:
+     
+         static fun writeString(p0: Path!, p1: CharSequence!, vararg p2: OpenOption!): Path!
+         static fun writeString(p0: Path!, p1: CharSequence!, p2: Charset!, vararg p3: OpenOption!): Path!:
+           Argument type mismatch: actual type is 'StandardOpenOption', but 'Charset!' was expected.
+         Location: /Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt:595
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 1s
+8 actionable tasks: 3 executed, 5 up-to-date

@@ -1,0 +1,10 @@
+{
+  "schema": "calcify-bootstrap-closed-resource-summary-v1",
+  "journalRows": 13,
+  "actualSamples": 12,
+  "maxSampleStartGapMs": 4803,
+  "maxProjectAllocatedBytes": 5299146752,
+  "minGuestFreeBytes": 91934068736,
+  "rawJournalSha256": "a5dcfddaccd1aa3443d78cbce76866ffceb5ab6a9d850a7551cdf125e6e214be",
+  "scope": "Actual5-second sampled broker/local3category allocation during fixeddiagnostic; continuouspeak/native/RSS/CPU not measured"
+}

@@ -1,0 +1,9 @@
+{
+  "src/main/kotlin/com/reef/platform/calcify/financial/CanonicalLeafOwner.kt": "dbc6946fa87c31f1af9bb3ddcac862563028c5955b8f47bf97f7e541f9ef74d0",
+  "src/main/kotlin/com/reef/platform/calcify/financial/CompactReferenceFixture.kt": "1512e58ff86eb8e7d5b1ee7dd565d92efb832be40e96f2c13250981ba245755c",
+  "src/main/kotlin/com/reef/platform/calcify/financial/FinancialKernel.kt": "9f76e87940d7600dac11bb26aba9ad40e39e7fbf41ec28dc8ab990790f0e637e",
+  "src/main/kotlin/com/reef/platform/calcify/financial/FinancialOracle.kt": "8c96181409d813876a6be78fed286064070f05f9cc1a5e67729927145c931012",
+  "src/main/kotlin/com/reef/platform/calcify/financial/LegacyReferenceFixture.kt": "79043a41dea8c2721b82d44c6e0dd0dbce51a711432fa0e76fc82e7780808bb1",
+  "src/main/kotlin/com/reef/platform/calcify/financial/PrototypeChecks.kt": "1c60484d3578fb28fab8ec40010a54fe7031d60f1b73863b6e5e195318b73781",
+  "build.gradle.kts": "7293e3d5d417842b109a7ad72d95e19773574cff603c4fd8dea963cf6dad0e6f"
+}

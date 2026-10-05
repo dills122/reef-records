@@ -1,0 +1,11 @@
+{
+  "readyAllocatedBytes": 151179264,
+  "readyGuestFreeBytes": 97269911552,
+  "lastMeasuredAllocatedBytesBeforeStop": 50528256,
+  "lastMeasuredGuestFreeBytes": 97370546176,
+  "signedReadyToLastDeltaBytes": -100651008,
+  "firstGuestDelayMs": 49,
+  "lastRawProofBytes": 11723564,
+  "AdminExitCode": 0,
+  "AdminClassStable": true
+}

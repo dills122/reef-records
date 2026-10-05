@@ -1,0 +1,545 @@
+1: package com.reef.platform.calcify.financial
+2: 
+3: import com.fasterxml.jackson.databind.JsonNode
+4: import com.fasterxml.jackson.databind.ObjectMapper
+5: import com.fasterxml.jackson.databind.node.ObjectNode
+6: import java.nio.file.Files
+7: import java.nio.file.Path
+8: import java.time.Duration
+9: import java.util.Properties
+10: import java.util.concurrent.CountDownLatch
+11: import java.util.concurrent.TimeUnit
+12: import java.util.concurrent.Future
+13: import org.apache.kafka.clients.consumer.ConsumerGroupMetadata
+14: import org.apache.kafka.clients.consumer.OffsetAndMetadata
+15: import org.apache.kafka.clients.producer.Callback
+16: import org.apache.kafka.clients.producer.Producer
+17: import org.apache.kafka.clients.producer.RecordMetadata
+18: import org.apache.kafka.streams.processor.internals.DefaultKafkaClientSupplier
+19: import org.apache.kafka.clients.admin.AdminClient
+20: import org.apache.kafka.clients.admin.NewTopic
+21: import org.apache.kafka.clients.consumer.KafkaConsumer
+22: import org.apache.kafka.clients.producer.ProducerConfig
+23: import org.apache.kafka.clients.producer.KafkaProducer
+24: import org.apache.kafka.clients.producer.ProducerRecord
+25: import org.apache.kafka.common.TopicPartition
+26: import org.apache.kafka.common.serialization.Deserializer
+27: import org.apache.kafka.common.serialization.Serdes
+28: import org.apache.kafka.common.serialization.Serializer
+29: import org.apache.kafka.common.serialization.StringDeserializer
+30: import org.apache.kafka.common.serialization.StringSerializer
+31: import org.apache.kafka.streams.KafkaStreams
+32: import org.apache.kafka.streams.StreamsConfig
+33: import org.apache.kafka.streams.Topology
+34: import org.apache.kafka.streams.errors.StreamsUncaughtExceptionHandler
+35: import org.apache.kafka.streams.processor.api.Processor
+36: import org.apache.kafka.streams.processor.api.ProcessorContext
+37: import org.apache.kafka.streams.processor.api.Record
+38: import org.apache.kafka.streams.state.KeyValueStore
+39: import org.apache.kafka.streams.state.Stores
+40: import java.security.MessageDigest
+41: 
+42: /** Isolated test-only RF3/EOS financial adapter. Bounded delta writes; no live venue authority. */
+43: object FinancialBrokerProbe {
+44:     private val json = ObjectMapper()
+45:     @JvmStatic fun main(args: Array<String>) {
+46:         require(args.size >= 4) { "mode bootstrap prefix configuration-file [mode arguments]" }
+47:         val mode = args[0]; val broker = args[1]; val prefix = args[2]
+48:         val config = json.readTree(Files.readString(Path.of(args[3]))) as ObjectNode
+49:         val cohortHash = sha(canonical(config))
+50:         if (mode in setOf("worker", "observe", "observe-prefix", "reconstruct", "reconstruct-prefix")) {
+51:             val manifest = json.readTree(Files.readString(Path.of(args[3] + ".accepted.json")))
+52:             val unsigned = manifest.deepCopy<ObjectNode>(); unsigned.remove("checksum")
+53:             require(manifest["checksum"].asText() == sha(canonical(unsigned)) && manifest["cohortSha256"].asText() == cohortHash) { "accepted source manifest checksum" }
+54:             val actualId = AdminClient.create(properties(broker)).use { it.describeTopics(listOf("$prefix-input")).allTopicNames().get().getValue("$prefix-input").topicId().toString() }
+55:             require(actualId == manifest["inputTopicId"].asText()) { "source topic UUID changed" }
+56:             config.set<JsonNode>("acceptedManifest", manifest)
+57:         }
+58:         require(prefix.startsWith("financial-s1-")) { "isolated financial topic prefix required" }
+59:         when (mode) {
+60:             "init" -> AdminClient.create(properties(broker)).use { admin ->
+61:                 admin.createTopics(listOf("input", "results").map { suffix -> NewTopic("$prefix-$suffix", 1, 3.toShort()).configs(mapOf("cleanup.policy" to "delete", "write.caching" to "false", "min.insync.replicas" to "2")) }).all().get(30, TimeUnit.SECONDS)
+62:                 emit(mapOf("initialized" to prefix, "partitions" to 1, "replication" to 3))
+63:             }
+64:             "seed", "seed-prefix", "append-suffix" -> {
+65:                 val accepted = mutableListOf<JsonNode>()
+66:                 val prior = if (mode == "append-suffix") json.readTree(Files.readString(Path.of(args[3] + ".accepted.json"))) else null
+67:                 if (prior != null) {
+68:                     val unsigned = prior.deepCopy<ObjectNode>(); unsigned.remove("checksum")
+69:                     require(prior["checksum"].asText() == sha(canonical(unsigned)) && prior["cohortSha256"].asText() == cohortHash) { "suffix changed frozen cohort" }
+70:                     prior["membership"].forEach { accepted.add(it) }
+71:                 }
+72:                 val limit = if (mode == "seed-prefix") args[4].toInt() else config["inputs"].size()
+73:                 require(limit in 1..config["inputs"].size())
+74:                 val topicId = AdminClient.create(properties(broker)).use { it.describeTopics(listOf("$prefix-input")).allTopicNames().get().getValue("$prefix-input").topicId().toString() }
+75:                 KafkaProducer(properties(broker).apply { put("acks", "all"); put("enable.idempotence", true); put("transactional.id", "$prefix-source-driver") }, StringSerializer(), StringSerializer()).use { producer ->
+76:                     producer.initTransactions()
+77:                     if (prior == null) {
+78:                     producer.beginTransaction()
+79:                     val aborted = config["inputs"][0].deepCopy<ObjectNode>(); aborted.put("inputOrdinal", -1)
+80:                     producer.send(ProducerRecord("$prefix-input", 0, aborted["domain"].asText(), aborted.toString())).get(30, TimeUnit.SECONDS)
+81:                     producer.abortTransaction()
+82:                     }
+83:                     producer.beginTransaction()
+84:                     config["inputs"].forEachIndexed { ordinal, envelope ->
+85:                         if (ordinal < accepted.size || ordinal >= limit) return@forEachIndexed
+86:                         require(envelope["inputOrdinal"].asInt() == ordinal)
+87:                         val body = envelope.toString()
+88:                         val metadata = producer.send(ProducerRecord("$prefix-input", 0, envelope["domain"].asText(), body)).get(30, TimeUnit.SECONDS)
+89:                         accepted.add(json.valueToTree(mapOf("ordinal" to ordinal, "offset" to metadata.offset(), "domain" to envelope["domain"].asText(), "payloadSha256" to sha(body), "bytes" to body.toByteArray().size)))
+90:                     }
+91:                     producer.commitTransaction()
+92:                 }
+93:                 val manifest = json.valueToTree<ObjectNode>(mapOf("schema" to "financial-e3-source-v1", "cohortSha256" to cohortHash, "inputTopicId" to topicId, "membership" to accepted, "abortedPrelude" to true))
+94:                 manifest.put("checksum", sha(canonical(manifest)))
+95:                 val manifestPath = Path.of(args[3] + ".accepted.json")
+96:                 val pendingManifest = Files.createTempFile(manifestPath.parent, "accepted-", ".json")
+97:                 Files.writeString(pendingManifest, manifest.toString() + "\n")
+98:                 Files.move(pendingManifest, manifestPath, java.nio.file.StandardCopyOption.ATOMIC_MOVE, java.nio.file.StandardCopyOption.REPLACE_EXISTING)
+99:                 emit(mapOf("offeredInputs" to accepted.size, "inputBytes" to accepted.sumOf { it["bytes"].asInt() }, "acceptedManifest" to args[3] + ".accepted.json", "manifestSha256" to manifest["checksum"].asText(), "physicalOffsets" to accepted.map { it["offset"] }))
+100:             }
+101:             "mutation-plan" -> {
+102:                 val models = mutableMapOf<String, FinancialKernel>()
+103:                 var mutations: List<Map<String, Any>> = emptyList()
+104:                 config["inputs"].forEach { envelope ->
+105:                     val domain = envelope["domain"].asText()
+106:                     val kernel = models.getOrPut(domain) { FinancialKernel(config["genesis"][domain]["balances"], config["policy"], retainHistory = false) }
+107:                     kernel.execute(envelope["input"], detailed = false)
+108:                     if (domain == "B" && envelope["input"]["kind"].asText() == "SETTLE") mutations = kernel.lastRecord()!!["changes"].mapIndexedNotNull { index, change ->
+109:                         if (change["path"][0].asText() in setOf("historySeq", "deliveryCursor", "nextDelivery", "stagedInputs")) null else mapOf("index" to index, "path" to change["path"])
+110:                     }
+111:                 }
+112:                 emit(mapOf("mutations" to mutations, "domains" to config["genesis"].fieldNames().asSequence().toList(), "frozenInputs" to config["inputs"].size()))
+113:             }
+114:             "worker" -> worker(broker, prefix, config, args[4], args[5], args.getOrNull(6) ?: "", args[3] + ".accepted.json")
+115:             "observe-prefix" -> observe(broker, prefix, config, args.getOrNull(4)?.toLong() ?: 30000, limit = args[5].toInt())
+116:             "observe" -> observe(broker, prefix, config, args.getOrNull(4)?.toLong() ?: 30000)
+117:             "reconstruct" -> observe(broker, prefix, config, args.getOrNull(4)?.toLong() ?: 30000, reconstruct = true)
+118:             "reconstruct-prefix" -> observe(broker, prefix, config, args[4].toLong(), reconstruct = true, limit = args[5].toInt())
+119:             else -> error("unknown mode $mode")
+120:         }
+121:     }
+122: 
+123:     private fun worker(broker: String, prefix: String, config: JsonNode, app: String, stateDir: String, fault: String, acceptedPath: String) {
+124:         val started = System.nanoTime()
+125:         require(app == "$prefix-app" && stateDir.contains("reef-financial-e3-")) { "unregistered app/state directory" }
+126:         val topology = topology(config, fault, prefix, { ordinal ->
+127:             val deadline = System.nanoTime() + 10_000_000_000L
+128:             while (ordinal >= config["acceptedManifest"]["membership"].size() && System.nanoTime() < deadline) {
+129:                 val refreshed = json.readTree(Files.readString(Path.of(acceptedPath)))
+130:                 val unsigned = refreshed.deepCopy<ObjectNode>(); unsigned.remove("checksum")
+131:                 val old = config["acceptedManifest"]
+132:                 require(refreshed["checksum"].asText() == sha(canonical(unsigned)) && refreshed["cohortSha256"] == old["cohortSha256"] && refreshed["inputTopicId"] == old["inputTopicId"]) { "invalid membership extension" }
+133:                 old["membership"].forEachIndexed { index, member -> require(member == refreshed["membership"][index]) { "source membership rewritten" } }
+134:                 (config as ObjectNode).set<JsonNode>("acceptedManifest", refreshed)
+135:                 if (ordinal >= refreshed["membership"].size()) Thread.sleep(50)
+136:             }
+137:             require(ordinal < config["acceptedManifest"]["membership"].size()) { "source acknowledgement not registered before bounded deadline" }
+138:             config["acceptedManifest"]["membership"][ordinal.toInt()]
+139:         })
+140:         val props = workerProperties(broker, app, stateDir, config, fault)
+141:         val failed = CountDownLatch(1)
+142:         val clients = object : DefaultKafkaClientSupplier() {
+143:             override fun getProducer(config: MutableMap<String, Any>): Producer<ByteArray, ByteArray> {
+144:                 val delegate = super.getProducer(config)
+145:                 return object : Producer<ByteArray, ByteArray> by delegate {
+146:                     override fun send(record: ProducerRecord<ByteArray, ByteArray>, callback: Callback?): Future<RecordMetadata> {
+147:                         try {
+148:                             return delegate.send(record, Callback { metadata, failure ->
+149:                                 if (failure != null) producerFailure("send", failure, record.topic())
+150:                                 callback?.onCompletion(metadata, failure)
+151:                             })
+152:                         } catch (failure: Exception) { producerFailure("send", failure, record.topic()); throw failure }
+153:                     }
+154:                     override fun sendOffsetsToTransaction(offsets: MutableMap<TopicPartition, OffsetAndMetadata>, group: ConsumerGroupMetadata) {
+155:                         try { delegate.sendOffsetsToTransaction(offsets, group) }
+156:                         catch (failure: Exception) { producerFailure("sendOffsetsToTransaction", failure, group.groupId()); throw failure }
+157:                     }
+158:                     override fun commitTransaction() {
+159:                         try { delegate.commitTransaction() }
+160:                         catch (failure: Exception) { producerFailure("commitTransaction", failure, app); throw failure }
+161:                     }
+162:                 }
+163:             }
+164:         }
+165:         val streams = KafkaStreams(topology, props, clients)
+166:         streams.setUncaughtExceptionHandler { failure ->
+167:             emit(mapOf("halted" to failure.toString(), "cacheInvalidated" to true))
+168:             failed.countDown(); StreamsUncaughtExceptionHandler.StreamThreadExceptionResponse.SHUTDOWN_CLIENT
+169:         }
+170:         streams.setStateListener { next, _ -> if (next == KafkaStreams.State.RUNNING) emit(mapOf("frameworkRunningMs" to (System.nanoTime() - started) / 1_000_000)) }
+171:         Runtime.getRuntime().addShutdownHook(Thread { streams.close(Duration.ofSeconds(10)) })
+172:         emit(mapOf("processStarted" to true, "guarantee" to "exactly_once_v2", "commitIntervalMs" to props[StreamsConfig.COMMIT_INTERVAL_MS_CONFIG], "transactionTimeoutMs" to props[StreamsConfig.producerPrefix(ProducerConfig.TRANSACTION_TIMEOUT_CONFIG)], "stateDir" to stateDir))
+173:         streams.start()
+174:         if (failed.await(30, TimeUnit.MINUTES)) { streams.close(Duration.ofSeconds(10)); error("financial worker failed; caches discarded") }
+175:     }
+176: 
+177:     internal fun topology(
+178:         config: JsonNode,
+179:         fault: String,
+180:         prefix: String,
+181:         membership: (Long) -> JsonNode = { ordinal -> config["acceptedManifest"]["membership"][ordinal.toInt()] },
+182:         sourceUuid: String = config["acceptedManifest"]["inputTopicId"].asText(),
+183:         onActivation: (FinancialPartitionCut.ReconstructedCut) -> Unit = {},
+184:     ): Topology {
+185:         return Topology().addSource("financial-input", StringDeserializer(), StringDeserializer(), "$prefix-input")
+186:             .addProcessor("financial", { FinancialProcessor(config, fault, membership, sourceUuid, onActivation) }, "financial-input")
+187:             .addStateStore(Stores.keyValueStoreBuilder(Stores.persistentKeyValueStore("financial-state"), Serdes.String(), Serdes.String()).withCachingDisabled(), "financial")
+188:             .addSink("financial-results", "$prefix-results", StringSerializer(), object : Serializer<String> {
+189:                 override fun serialize(topic: String?, data: String?): ByteArray? {
+190:                     return outputBytes(fault, data)
+191:                 }
+192:             }, "financial")
+193:     }
+194: 
+195:     /** Cold verifier consumes one member at a time; retain no second JSON prefix. */
+196:     internal fun activationMembership(config: JsonNode, coverageSize: Int, membership: (Long) -> JsonNode): List<JsonNode> {
+197:         require(coverageSize >= 0)
+198:         val declared = config["acceptedManifest"]?.get("membership")
+199:         require(declared == null || declared.isArray) { "invalid accepted membership" }
+200:         return object : AbstractList<JsonNode>() {
+201:             override val size: Int = declared?.size() ?: coverageSize
+202:             override fun get(index: Int): JsonNode {
+203:                 if (index !in 0 until size) throw IndexOutOfBoundsException("membership index=$index size=$size")
+204:                 return declared?.get(index) ?: membership(index.toLong())
+205:             }
+206:         }
+207:     }
+208: 
+209:     private class FinancialProcessor(private val config: JsonNode, private val fault: String, private val membership: (Long) -> JsonNode,
+210:         private val sourceUuid: String, private val onActivation: (FinancialPartitionCut.ReconstructedCut) -> Unit) : Processor<String, String, String, String> {
+211:         private lateinit var context: ProcessorContext<String, String>
+212:         private lateinit var store: KeyValueStore<String, String>
+213:         private val kernels = mutableMapOf<String, FinancialKernel>()
+214:         private val authorityHash = sha(canonical(json.valueToTree(mapOf("policy" to config["policy"], "genesis" to config["genesis"]))))
+215:         private var faultTriggered = false
+216:         private val resume = java.util.concurrent.Semaphore(0)
+217:         @Volatile private var pausePending = false
+218:         override fun init(context: ProcessorContext<String, String>) {
+219:             this.context = context; store = context.getStateStore("financial-state")
+220:             if (fault in setOf("pause", "stale-owner")) Thread { System.`in`.bufferedReader().forEachLine { if (it == "resume") resume.release() } }.apply { isDaemon = true; start() }
+221:             // Cold recovery only. Hot processing performs known-key reads/writes from bounded semantic deltas.
+222:             val coverage = mutableListOf<JsonNode>()
+223:             val historyWrappers = mutableMapOf<String, JsonNode>()
+224:             val semanticState = mutableMapOf<String, JsonNode>()
+225:             store.all().use { rows -> while (rows.hasNext()) {
+226:                 val row = rows.next()
+227:                 when {
+228:                     row.key.startsWith("c/") -> coverage.add(json.readTree(row.value))
+229:                     row.key.startsWith("h/") -> historyWrappers[row.key] = json.readTree(row.value)
+230:                     row.key.startsWith("s/") -> semanticState[row.key] = json.readTree(row.value)
+231:                 }
+232:             } }
+233:             val certificate = store.get("cert/0")?.let { json.readTree(it) }
+234:             val acceptedMembers = activationMembership(config, coverage.size, membership)
+235:             val restored = FinancialPartitionCut.validateActivation(config, sourceUuid,
+236:                 acceptedMembers, certificate, coverage, historyWrappers, semanticState)
+237:             kernels.putAll(restored.owners)
+238:             onActivation(restored)
+239:             emit(mapOf("certifiedCatchupDomains" to kernels.size, "partitionCut" to store.get("cert/0")))
+240:         }
+241:         override fun process(record: Record<String, String>) {
+242:             if (pausePending) { resume.acquire(); pausePending = false }
+243:             val envelope = json.readTree(record.value())
+244:             val domain = envelope["domain"].asText()
+245:             require(config["genesis"].has(domain) && record.key() == domain) { "undeclared domain or key mismatch" }
+246:             if (envelope["mode"].asText() != "DRAIN") require(envelope["input"]["domain"].asText() == domain) { "cross-domain input" }
+247:             val metadata = context.recordMetadata().orElseThrow()
+248:             require(metadata.partition() == 0)
+249:             val offset = metadata.offset()
+250:             val priorCertificate = store.get("cert/0")?.let { json.readTree(it) }
+251:             val priorOffset = priorCertificate?.get("offset")?.asLong() ?: -1L
+252:             val ordinal = envelope["inputOrdinal"].asLong()
+253:             val priorOrdinal = priorCertificate?.get("ordinal")?.asLong() ?: -1L
+254:             require(ordinal == priorOrdinal + 1 && offset > priorOffset) { "missing logical source membership" }
+255:             val sourceMember = membership(ordinal)
+256:             require(sourceMember["ordinal"].asLong() == ordinal && sourceMember["offset"].asLong() == offset && sourceMember["domain"].asText() == domain && sourceMember["payloadSha256"].asText() == sha(record.value())) { "unregistered source fact" }
+257:             val records = mutableListOf<JsonNode>()
+258:             val priorHead = kernels[domain]?.let { mapOf("sequence" to it.historySequence(), "checksum" to it.lastRecord()!!["checksum"].asText()) } ?: mapOf("sequence" to 0L, "checksum" to "GENESIS")
+259:             val kernel = kernels.getOrPut(domain) {
+260:                 val genesis = config["genesis"][domain]
+261:                 FinancialKernel(genesis["balances"], config["policy"], retainHistory = false).also { records.add(it.lastRecord()!!) }
+262:             }
+263:             val before = kernel.historySequence()
+264:             val result = when (envelope["mode"].asText()) {
+265:                 "EXECUTE" -> kernel.execute(envelope["input"], detailed = false)
+266:                 "STAGE" -> kernel.stage(envelope["input"], detailed = false)
+267:                 "DRAIN" -> kernel.drainStaged(maxDecisions = 1, detailed = false).singleOrNull()
+268:                 else -> error("unknown financial envelope")
+269:             }
+270:             if (kernel.historySequence() != before) records.add(kernel.lastRecord()!!)
+271:             records.forEach { history ->
+272:                 history["changes"].forEachIndexed { index, change ->
+273:                     val key = "s/" + json.writeValueAsString(listOf(domain) + change["path"].map { it.asText() })
+274:                     val stored = store.get(key)?.let { json.readTree(it) }
+275:                     val provenGenesis = history["kind"].asText() == "GENESIS" || store.get("h/$domain/00000000000000000001") != null
+276:                     require(provenGenesis) { "semantic state cannot bootstrap without genesis" }
+277:                     val default = defaultValue(change["path"].map { it.asText() })
+278:                     require(canonical(stored ?: default) == canonical(change["before"])) { "persistent semantic predecessor mismatch key=$key" }
+279:                     val after = change["after"]
+280:                     if (after.isNull && change["path"].size() > 1) store.delete(key) else store.put(key, after.toString())
+281:                     if (!faultTriggered && fault == "mutation:$index" && domain == "B" && history["input"]?.get("kind")?.asText() == "SETTLE") {
+282:                         faultTriggered = true; emit(mapOf("injectedMutation" to index, "key" to key)); Runtime.getRuntime().halt(91)
+283:                     }
+284:                 }
+285:                 val seq = history["sequence"].asLong()
+286:                 store.put("h/$domain/${seq.toString().padStart(20, '0')}", json.writeValueAsString(mapOf("domain" to domain, "record" to history, "source" to mapOf("ordinal" to ordinal, "offset" to offset, "uuid" to sourceUuid, "payloadSha256" to sourceMember["payloadSha256"].asText()))))
+287:             }
+288:             val afterHead = mapOf("sequence" to kernel.historySequence(), "checksum" to kernel.lastRecord()!!["checksum"].asText())
+289:             store.put("c/${ordinal.toString().padStart(20, '0')}", json.writeValueAsString(mapOf("ordinal" to ordinal, "offset" to offset, "uuid" to sourceUuid, "authoritySha256" to authorityHash, "domain" to domain, "payloadSha256" to sourceMember["payloadSha256"].asText(), "headBefore" to priorHead, "headAfter" to afterHead, "history" to records.map { mapOf("sequence" to it["sequence"].asLong(), "checksum" to it["checksum"].asText()) })))
+290:             store.put("cert/0", json.writeValueAsString(mapOf("offset" to offset, "ordinal" to ordinal, "sourceUuid" to sourceUuid, "authoritySha256" to authorityHash, "owners" to kernels.mapValues { (_, owner) -> mapOf("sequence" to owner.historySequence(), "checksum" to owner.lastRecord()!!["checksum"].asText()) })))
+291:             val output = json.writeValueAsString(mapOf("domain" to domain, "inputOffset" to offset, "inputOrdinal" to ordinal, "records" to records, "disposition" to result?.get("disposition")?.asText()))
+292:             if (fault == "stale-owner" && ordinal == config["pauseBeforeOrdinal"].asLong()) {
+293:                 emit(mapOf("faultBoundary" to "before-forward", "inputOrdinal" to ordinal, "inputOffset" to offset, "storeCertificateCandidate" to store.get("cert/0"), "outputBytes" to output.toByteArray(Charsets.UTF_8).size, "commitRequested" to false))
+294:                 resume.acquire()
+295:                 emit(mapOf("faultBoundary" to "stale-owner-resumed", "inputOrdinal" to ordinal, "inputOffset" to offset))
+296:             }
+297:             context.forward(Record(domain, output, record.timestamp()))
+298:             if (fault == "forward" && domain == "B" && records.any { it["input"]?.get("kind")?.asText() == "SETTLE" }) Runtime.getRuntime().halt(91)
+299:             if (envelope["commit"]?.asBoolean() == true) context.commit()
+300:             if (fault == "pause" && ordinal == config["pauseAfterOrdinal"].asLong()) {
+301:                 context.commit(); pausePending = true
+302:                 emit(mapOf("pausePendingAfterOrdinal" to ordinal, "scope" to "controller must verify read_committed marker before stopping"))
+303:             }
+304:         }
+305:         override fun close() { kernels.clear(); resume.release() }
+306:     }
+307: 
+308:     private fun observe(broker: String, prefix: String, config: JsonNode, timeoutMs: Long, reconstruct: Boolean = false, limit: Int = config["inputs"].size()) {
+309:         val verifier = OutputVerifier(config)
+310:         val owners = verifier.owners
+311:         val histories = verifier.histories
+312:         var covered = -1L; var physical = -1L; var business = 0; var settled = 0
+313:         var initialEnd = 0L; var finalEnd = 0L; val outputOffsets = mutableListOf<Long>()
+314:         val committedOutputs = mutableListOf<JsonNode>()
+315:         KafkaConsumer(properties(broker).apply { put("enable.auto.commit", false); put("auto.offset.reset", "earliest"); put("isolation.level", "read_committed") }, StringDeserializer(), StringDeserializer()).use { consumer ->
+316:             val partition = TopicPartition("$prefix-results", 0)
+317:             consumer.assign(listOf(partition)); consumer.seekToBeginning(listOf(partition))
+318:             initialEnd = consumer.endOffsets(listOf(partition)).getValue(partition)
+319:             val deadline = System.nanoTime() + timeoutMs * 1_000_000
+320:             var quietUntil = Long.MAX_VALUE
+321:             while (System.nanoTime() < deadline && (covered + 1 < limit || System.nanoTime() < quietUntil || consumer.position(partition) < finalEnd)) {
+322:                 for (record in consumer.poll(Duration.ofMillis(100))) {
+323:                     require(covered + 1 < limit) { "extra committed output after declared input membership" }
+324:                     outputOffsets.add(record.offset())
+325:                     val output = json.readTree(record.value()); val domain = output["domain"].asText()
+326:                     require(output["inputOrdinal"].asLong() == covered + 1 && output["inputOffset"].asLong() > physical) { "output logical membership gap/duplicate" }; covered++
+327:                     val member = config["acceptedManifest"]["membership"][covered.toInt()]
+328:                     require(member["offset"].asLong() == output["inputOffset"].asLong() && member["domain"].asText() == domain) { "output source membership mismatch" }
+329:                     physical = output["inputOffset"].asLong()
+330:                     verifier.accept(output); committedOutputs.add(output)
+331:                     business = verifier.business; settled = verifier.settled
+332:                     if (covered + 1 == limit.toLong()) quietUntil = System.nanoTime() + 1_500_000_000L
+333:                 }
+334:                 if (covered + 1 == limit.toLong()) finalEnd = consumer.endOffsets(listOf(partition)).getValue(partition)
+335:             }
+336:             finalEnd = consumer.endOffsets(listOf(partition)).getValue(partition)
+337:         }
+338:         val complete = covered + 1 == limit.toLong()
+339:         val inputPartition = TopicPartition("$prefix-input", 0)
+340:         val groupCheckpoint = AdminClient.create(properties(broker)).use { admin ->
+341:             admin.listConsumerGroupOffsets("$prefix-app").partitionsToOffsetAndMetadata().get(10, TimeUnit.SECONDS)[inputPartition]?.offset() ?: -1L
+342:         }
+343:         val inputEnd = KafkaConsumer(properties(broker).apply { put("isolation.level", "read_committed") }, StringDeserializer(), StringDeserializer()).use { consumer ->
+344:             consumer.endOffsets(listOf(inputPartition), Duration.ofSeconds(10)).getValue(inputPartition)
+345:         }
+346:         if (complete) {
+347:             verifier.requirePrefix(limit)
+348:             require(groupCheckpoint in (physical + 1)..inputEnd) { "committed results/input checkpoint disagreement" }
+349:         }
+350:         if (reconstruct) {
+351:             require(complete) { "cannot certify incomplete partition coverage" }
+352:             val manifest = config["acceptedManifest"]
+353:             val cut = FinancialCommittedCut.build(config, manifest, committedOutputs)
+354:             val sourceUuid = manifest["inputTopicId"].asText()
+355:             val members = manifest["membership"].toList()
+356:             val rebuilt = FinancialPartitionCut.reconstruct(config, sourceUuid, members, cut.certificate, cut.coverage, cut.histories)
+357:             val quartet = config.path("caseId").asText() == "activation-quartet"
+358:             if (quartet) {
+359:                 require(limit == 4 && owners["A"]!!["balances"]["buyerCash"].asText() == "15" && owners["B"]!!["balances"]["buyerCash"].asText() == "27") { "exact quartet not observed" }
+360:                 val mixed = cut.snapshots.first().filterKeys { json.readTree(it.removePrefix("s/"))[0].asText() == "A" } +
+361:                     cut.snapshots.last().filterKeys { json.readTree(it.removePrefix("s/"))[0].asText() == "B" }
+362:                 require(mixed["s/" + json.writeValueAsString(listOf("A", "balances", "buyerCash"))]!!.asText() == "10") { "mixed A snapshot differs from recorded A+10" }
+363:                 require(runCatching { FinancialPartitionCut.validateActivation(config, sourceUuid, members, cut.certificate, cut.coverage, cut.histories, mixed) }.isFailure) { "mixed A10/B27 activation allowed" }
+364:             } else {
+365:                 val mixedCertificate = cut.certificate.deepCopy<ObjectNode>()
+366:                 val oldest = cut.histories.values.first()
+367:                 (mixedCertificate["owners"] as ObjectNode).set<JsonNode>(oldest["domain"].asText(),
+368:                     json.valueToTree(mapOf("sequence" to oldest["record"]["sequence"].asLong(), "checksum" to oldest["record"]["checksum"].asText())))
+369:                 require(runCatching { FinancialPartitionCut.reconstruct(config, sourceUuid, members, mixedCertificate, cut.coverage, cut.histories) }.isFailure) { "mixed owner certificate allowed" }
+370:             }
+371:             val missingKey = if (quartet) "h/A/00000000000000000003" else cut.histories.keys.first()
+372:             require(cut.histories.containsKey(missingKey)) { "missing-history control not applicable" }
+373:             require(runCatching { FinancialPartitionCut.reconstruct(config, sourceUuid, members, cut.certificate, cut.coverage, cut.histories.filterKeys { it != missingKey }) }.isFailure) { "incomplete history activation allowed" }
+374:             require(rebuilt.semanticState == cut.snapshots.last()) { "complete history changed semantic state" }
+375:             emit(mapOf("isolatedReconstruction" to mapOf("inputPartitionOrdinal" to covered, "inputPartitionOffset" to physical,
+376:                 "capturedInputGroupCheckpoint" to groupCheckpoint, "inputReadCommittedEndOffset" to inputEnd,
+377:                 "sourceDerivedCertificate" to cut.certificate, "mixedAgeRefused" to true, "missingHistoryRefused" to true,
+378:                 "repairFromCompleteHistory" to true, "exactQuartetA15B27" to quartet, "committedEndBeforeReconstruction" to finalEnd,
+379:                 "scope" to "isolated activation request from actual read_committed outputs; same mandatory startup verifier; no injected mixed RocksDB/changelog restore")))
+380:         }
+381:         emit(mapOf("result" to mapOf("initialCommittedEndOffset" to initialEnd, "finalCommittedEndOffset" to finalEnd, "resultOffsets" to outputOffsets, "ownerSnapshots" to owners, "scope" to (if (limit == config["inputs"].size()) "full input/phase completion" else "certified prefix including pending phases"), "consecutiveResultOffsets" to outputOffsets.zipWithNext().all { (left, right) -> right == left + 1 }, "coveredInputs" to covered + 1, "lastInputOffset" to physical, "inputGroupCheckpoint" to groupCheckpoint, "inputReadCommittedEndOffset" to inputEnd, "ownerCuts" to histories.mapValues { (_, rows) -> mapOf("sequence" to rows.last()["sequence"].asLong(), "checksum" to rows.last()["checksum"].asText()) }, "expectedInputs" to limit, "businessDecisions" to business, "settlements" to settled, "domains" to owners.size, "readCommittedOracle" to true, "pass" to complete)))
+382:     }
+383: 
+384:     /** Reference dispatch derives expected decisions from accepted inputs, including zero-record deliveries. */
+385:     internal class OutputVerifier(private val config: JsonNode) {
+386:         val owners = linkedMapOf<String, ObjectNode>()
+387:         val histories = linkedMapOf<String, MutableList<JsonNode>>()
+388:         private val oracles = mutableMapOf<String, FinancialOracle>()
+389:         private data class Staged(val input: JsonNode, val digest: String, val position: Long)
+390:         private val pending = mutableMapOf<String, LinkedHashMap<String, Staged>>()
+391:         private val nextDelivery = mutableMapOf<String, Long>()
+392:         private val cursor = mutableMapOf<String, Long>()
+393:         var business = 0; private set
+394:         var settled = 0; private set
+395:         private var ordinal = -1L
+396:         fun accept(output: JsonNode) {
+397:             require(output["inputOrdinal"].asLong() == ordinal + 1) { "output logical prefix gap" }; ordinal++
+398:             val expectedEnvelope = config["inputs"][ordinal.toInt()]
+399:             val domain = expectedEnvelope["domain"].asText()
+400:             require(output["domain"].asText() == domain) { "cross-domain output" }
+401:             val oracle = oracles.getOrPut(domain) { FinancialOracle(config["genesis"][domain]["balances"], config["policy"]) }
+402:             val queue = pending.getOrPut(domain) { linkedMapOf() }
+403:             val beforeSeq = oracle.businessView()["businessSeq"].asLong()
+404:             var disposition: String? = null
+405:             fun enqueue(input: JsonNode) {
+406:                 val digest = requestDigest(input)
+407:                 val key = json.writeValueAsString(listOf(actionKey(input), digest))
+408:                 if (!queue.containsKey(key)) {
+409:                     val position = nextDelivery[domain] ?: 0L
+410:                     queue[key] = Staged(input, digest, position); nextDelivery[domain] = position + 1
+411:                 }
+412:             }
+413:             when (expectedEnvelope["mode"].asText()) {
+414:                 "STAGE" -> { enqueue(expectedEnvelope["input"]); disposition = "STAGED" }
+415:                 "EXECUTE" -> {
+416:                     disposition = oracle.execute(expectedEnvelope["input"])["disposition"].asText()
+417:                     if (disposition == "STAGED") enqueue(expectedEnvelope["input"])
+418:                 }
+419:                 "DRAIN" -> {
+420:                     val view = oracle.businessView()
+421:                     val item = if (view["continuation"].isNull) queue.entries.minByOrNull { it.value.position } else queue.entries.filter {
+422:                         it.value.input.path("kind").asText().uppercase() == "CONTINUE" && it.value.input.path("payload").path("workId").asText() == view["dueWork"][0].asText()
+423:                     }.minByOrNull { it.value.position }
+424:                     if (item != null) {
+425:                         queue.remove(item.key); cursor[domain] = (cursor[domain] ?: 0L) + 1
+426:                         disposition = oracle.execute(item.value.input)["disposition"].asText()
+427:                     }
+428:                 }
+429:                 else -> error("unsupported source dispatch")
+430:             }
+431:             val owner = owners.getOrPut(domain) { emptyOwner() }
+432:             val domainHistory = histories.getOrPut(domain) { mutableListOf() }
+433:             var emittedBusiness = 0
+434:             output["records"].forEach { history ->
+435:                 verifyRecord(history, domainHistory.lastOrNull()); domainHistory.add(history)
+436:                 history["changes"].forEach { change -> apply(owner, change) }
+437:                 if (history["kind"].asText() == "BUSINESS") emittedBusiness++
+438:             }
+439:             require(domainHistory.isNotEmpty() && domainHistory.first()["kind"].asText() == "GENESIS") { "missing genesis authority" }
+440:             require(emittedBusiness.toLong() == oracle.businessView()["businessSeq"].asLong() - beforeSeq) { "missing or extra business authority" }
+441:             require(output["disposition"]?.takeUnless { it.isNull }?.asText() == disposition) { "source disposition mismatch" }
+442:             oracle.assertMatches(businessView(owner), "broker domain=$domain input=$ordinal")
+443:             val expectedStaging = json.valueToTree<JsonNode>(queue.mapValues { (_, value) -> mapOf("input" to value.input, "digest" to value.digest, "position" to value.position) })
+444:             require(canonical(owner["stagedInputs"]) == canonical(expectedStaging)) { "missing or extra staged authority" }
+445:             require(owner["nextDelivery"].asLong() == (nextDelivery[domain] ?: 0L) && owner["deliveryCursor"].asLong() == (cursor[domain] ?: 0L)) { "delivery cursor disagreement" }
+446:             business += emittedBusiness; if (disposition == "SETTLED") settled++
+447:         }
+448:         fun requirePrefix(count: Int) {
+449:             require(ordinal + 1 == count.toLong()) { "incomplete input prefix" }
+450:             if (count == config["inputs"].size()) require(pending.values.all { it.isEmpty() } && owners.values.all { it["continuation"].isNull }) { "financial phase remains unfinished" }
+451:         }
+452:         private fun actionKey(input: JsonNode) = json.writeValueAsString(listOf("namespace", "domain", "actionId").map { input.path(it) })
+453:         private fun requestDigest(input: JsonNode): String {
+454:             // Independent source normalization: expected malformed input retains canonical identity while staged.
+455:             val normalized = runCatching {
+456:                 val payload = input.path("payload")
+457:                 require(payload.isObject)
+458:                 val numeric = setOf("quantity", "priceNanos", "dueTick", "attempt", "amount", "tick")
+459:                 val pairs = json.createArrayNode()
+460:                 payload.fieldNames().asSequence().sorted().forEach { name ->
+461:                     val value = payload[name]
+462:                     val normalizedValue = if (name in numeric) {
+463:                         require(value.isTextual && value.asText().matches(Regex("-?[0-9]+")))
+464:                         json.nodeFactory.textNode(value.asText().toBigInteger().toString())
+465:                     } else value
+466:                     pairs.add(json.createArrayNode().add(name).add(normalizedValue))
+467:                 }
+468:                 json.writeValueAsString(listOf(input.path("kind").asText().uppercase(), input.get("requestedPolicy"), pairs))
+469:             }
+470:             return sha(normalized.getOrElse { canonical(input) })
+471:         }
+472:     }
+473: 
+474:     private fun emptyOwner(): ObjectNode = json.createObjectNode().apply {
+475:         listOf("balances", "executions", "obligations", "workflows", "instructions", "attempts", "exceptions", "reservations", "dedup", "effects", "versions", "dueQueue", "stagedInputs", "policy").forEach { set<JsonNode>(it, json.createObjectNode()) }
+476:         put("logicalTick", "0"); listOf("businessSeq", "historySeq", "deliveryCursor", "nextDelivery").forEach { put(it, 0L) }
+477:         listOf("continuation", "lastDecisionId", "semanticDigest", "activePolicy").forEach { putNull(it) }
+478:     }
+479:     private fun defaultValue(path: List<String>): JsonNode {
+480:         var node: JsonNode = emptyOwner()
+481:         path.forEach { key -> node = node.get(key) ?: json.nullNode() }
+482:         return node
+483:     }
+484:     private fun apply(owner: ObjectNode, change: JsonNode) {
+485:         val path = change["path"].map { it.asText() }
+486:         var parent = owner
+487:         path.dropLast(1).forEach { key -> parent = parent[key] as ObjectNode }
+488:         val key = path.last(); val previous = parent.get(key) ?: json.nullNode()
+489:         require(canonical(previous) == canonical(change["before"])) { "observer delta before mismatch path=$path" }
+490:         if (change["after"].isNull && path.size > 1) parent.remove(key) else parent.set<JsonNode>(key, change["after"].deepCopy())
+491:     }
+492:     private fun businessView(owner: ObjectNode): JsonNode = owner.deepCopy().apply {
+493:         listOf("policy", "historySeq", "deliveryCursor", "nextDelivery", "stagedInputs").forEach { remove(it) }
+494:         val queue = this["dueQueue"]
+495:         val due = if (this["continuation"].isNull) emptyList() else queue.fields().asSequence().filter { it.value["tick"].asText().toBigInteger() <= this["logicalTick"].asText().toBigInteger() }.sortedWith(compareBy<Map.Entry<String, JsonNode>> { it.value["tick"].asText().toBigInteger() }.thenBy { it.value["workId"].asText() }.thenBy { it.key }).map { it.value["workId"].asText() }.toList()
+496:         set<JsonNode>("dueWork", json.valueToTree(due))
+497:     }
+498:     private fun verifyHistory(records: List<JsonNode>) {
+499:         records.forEachIndexed { index, record -> verifyRecord(record, records.getOrNull(index - 1)) }
+500:     }
+501:     private fun verifyRecord(record: JsonNode, previous: JsonNode?) {
+502:         require(if (previous == null) record["kind"].asText() == "GENESIS" && record["sequence"].asLong() == 1L && record["priorSequence"].asLong() == 0L && record["priorChecksum"].asText() == "GENESIS" else record["sequence"].asLong() == previous["sequence"].asLong() + 1 && record["priorSequence"].asLong() == previous["sequence"].asLong() && record["priorChecksum"].asText() == previous["checksum"].asText()) { "uncertified history prefix" }
+503:         val unsigned = record.deepCopy<ObjectNode>(); unsigned.remove("checksum")
+504:         require(record["checksum"].asText() == sha(canonical(unsigned))) { "history checksum mismatch" }
+505:     }
+506:     internal fun workerProperties(broker: String, app: String, stateDir: String, config: JsonNode, fault: String = ""): Properties = properties(broker).apply {
+507:         put(StreamsConfig.APPLICATION_ID_CONFIG, app); put(StreamsConfig.STATE_DIR_CONFIG, stateDir)
+508:         put(StreamsConfig.PROCESSING_GUARANTEE_CONFIG, StreamsConfig.EXACTLY_ONCE_V2)
+509:         // Preserve sixty-second grouping; EOS default ten-second timeout cannot cover this interval.
+510:         put(StreamsConfig.producerPrefix(ProducerConfig.TRANSACTION_TIMEOUT_CONFIG), 120000)
+511:         put(StreamsConfig.REPLICATION_FACTOR_CONFIG, 3); put(StreamsConfig.NUM_STREAM_THREADS_CONFIG, 1)
+512:         put(StreamsConfig.COMMIT_INTERVAL_MS_CONFIG, config["commitIntervalMs"]?.asInt() ?: 60000); put("topic.min.insync.replicas", 2); put("topic.write.caching", false)
+513:         put("default.deserialization.exception.handler", "org.apache.kafka.streams.errors.LogAndFailExceptionHandler")
+514:         put("default.production.exception.handler", "org.apache.kafka.streams.errors.DefaultProductionExceptionHandler")
+515:         put("processing.exception.handler", "org.apache.kafka.streams.errors.LogAndFailProcessingExceptionHandler")
+516:         put("consumer.max.poll.records", config["maxPollRecords"]?.asInt() ?: 128); put("consumer.max.poll.interval.ms", 10000); put("consumer.session.timeout.ms", 6000); put("consumer.heartbeat.interval.ms", 1000)
+517:         if (fault == "production") put("producer.max.request.size", 131072)
+518:         if (fault == "stale-owner") {
+519:             // Bound paused producer transaction lifetime so replacement changelog restoration cannot wait two minutes.
+520:             put(StreamsConfig.COMMIT_INTERVAL_MS_CONFIG, 1000)
+521:             put(StreamsConfig.producerPrefix(ProducerConfig.TRANSACTION_TIMEOUT_CONFIG), 30000)
+522:         }
+523:     }
+524: 
+525:     internal fun outputBytes(fault: String, data: String?): ByteArray? {
+526:         if (data == null) return null
+527:         if (fault == "serialization" && data.contains("\"SETTLED\"")) throw IllegalStateException("injected financial serializer failure")
+528:         val target = fault == "production" && json.readTree(data).let { it["domain"]?.asText() == "B" && it["disposition"]?.asText() == "SETTLED" }
+529:         return (if (target) data + " ".repeat(131072) else data).toByteArray(Charsets.UTF_8)
+530:     }
+531: 
+532:     private fun producerFailure(boundary: String, failure: Exception, resource: String) {
+533:         val causes = generateSequence<Throwable>(failure) { it.cause }.take(12).map { it.javaClass.name }.toList()
+534:         emit(mapOf("producerBoundary" to boundary, "failureClass" to failure.javaClass.name, "causeClasses" to causes, "resource" to resource, "failure" to failure.toString()))
+535:     }
+536: 
+537:     private fun properties(broker: String) = Properties().apply { put("bootstrap.servers", broker) }
+538:     private fun canonical(node: JsonNode): String = when {
+539:         node.isObject -> node.fieldNames().asSequence().sorted().joinToString(",", "{", "}") { json.writeValueAsString(it) + ":" + canonical(node[it]) }
+540:         node.isArray -> node.joinToString(",", "[", "]") { canonical(it) }
+541:         else -> node.toString()
+542:     }
+543:     private fun sha(value: String) = MessageDigest.getInstance("SHA-256").digest(value.toByteArray(Charsets.UTF_8)).joinToString("") { "%02x".format(it) }
+544:     private fun emit(value: Any) { println(json.writeValueAsString(value)); System.out.flush() }
+545: }

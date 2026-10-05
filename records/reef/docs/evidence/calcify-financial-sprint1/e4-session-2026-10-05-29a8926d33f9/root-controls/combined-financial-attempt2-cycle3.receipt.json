@@ -1,0 +1,9 @@
+{
+  "totals": {
+    "tests": 109,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "scope": "Frozen27 source; newcutnegative fixture emitsJsonNodefields dueIterableplus overload; NotReady; all originals preserved"
+}

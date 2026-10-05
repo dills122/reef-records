@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "sourceEnvelopes": 2100,
+  "historyRecords": 2101,
+  "ownerSha256": "96da35188859915ebb3061691644e114021e8eb033e2f8865065fae4b7901db1",
+  "journal": {
+    "members": 2100,
+    "publicationBatches": 9,
+    "lastOffset": 2099
+  }
+}

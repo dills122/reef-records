@@ -1,0 +1,4 @@
+{
+  "stopAfterPreparation": true,
+  "reason": "Setup only complete; actual read-only Admin/config/health captured. Root source review/E3 workload not authorized yet. Exact owned3 stop, preserve volumes."
+}

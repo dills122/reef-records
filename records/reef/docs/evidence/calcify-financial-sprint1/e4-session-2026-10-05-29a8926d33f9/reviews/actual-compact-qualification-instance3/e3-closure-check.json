@@ -1,0 +1,25 @@
+{
+  "pass": true,
+  "closed49": true,
+  "counts": [
+    [
+      "run-external",
+      4
+    ],
+    [
+      "run-core",
+      24
+    ],
+    [
+      "run-golden",
+      20
+    ],
+    [
+      "run-activation",
+      1
+    ]
+  ],
+  "elapsedMs": 1059676,
+  "stoppedPinnedBrokers": 3,
+  "cleanupRawSha256": "171596eed1ee6903f653e8fdb053497ee8990b4a78d25e279469f3c22fdf71c6"
+}

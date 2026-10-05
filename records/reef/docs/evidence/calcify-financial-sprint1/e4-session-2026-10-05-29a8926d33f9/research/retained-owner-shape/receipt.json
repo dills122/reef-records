@@ -1,0 +1,25 @@
+{
+  "schema": "financial-retained-owner-shape-proposal-v1",
+  "planSha256": "586a0e9b079a4c2af9642abcfc6f6dec1fee7e9b652005a421bb9ed1e8cb616f",
+  "selectedSlice": "Independent immutable canonical leaf String storage in test-only E4 Reference",
+  "implementationPerformed": false,
+  "workloadPerformed": false,
+  "measuredRateConclusion": false,
+  "ordinary150000ArmFeasible": false,
+  "diagnosticEvidenceInspected": false,
+  "requiresNewCandidateModelAndProof": true,
+  "ordinaryRawModeDistinction": "RAW_CAP encoded file calibration-only; ACK default cap ordinary256MiB",
+  "correction": {
+    "reason": "unsignedHistory65536 erroneously treated as complete result wrapper",
+    "actualCompleteWrapperMaxBytes": 135324,
+    "sourceMaxBytes": 1024,
+    "sourceActions": 2100,
+    "configuredGenericEncodedMaxBytes": 286330800,
+    "rawEncodedCapBytes": 150994944,
+    "genericEnvelopeFitsRawCap": false,
+    "safeWorstCaseGuarantee": false,
+    "actualBytesMeasured": false,
+    "preservedOriginalPlanSha256": "614f1f382ee5087ab7ae3743dbb90f2121e96e6f3bb98952160f671e7d592bb0",
+    "priorPlan": "plan-before-wrapper-correction-2026-10-05.md"
+  }
+}

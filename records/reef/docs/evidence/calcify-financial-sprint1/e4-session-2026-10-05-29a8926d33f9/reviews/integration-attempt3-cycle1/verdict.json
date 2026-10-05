@@ -1,0 +1,23 @@
+{
+  "schema": "independent-review-verdict-v1",
+  "attempt": 3,
+  "maxAttempts": 3,
+  "cycle": 1,
+  "maxCycles": 3,
+  "verdict": "Ready",
+  "findings": [],
+  "frozenPaths": 27,
+  "sourceDrift": [],
+  "reviewerNode": {
+    "tests": 125,
+    "failed": 0,
+    "skipped": 0
+  },
+  "parentFinancialReconciled": {
+    "tests": 109,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "scope": "whole frozen integrated E4 code/plan readiness; actual compactpair/capacity/retention/delivery excluded"
+}

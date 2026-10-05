@@ -1,0 +1,11 @@
+{
+  "schema": "independent-owned-process-closure-readback-v1",
+  "command": "/bin/ps -axo pid=,ppid=,pgid=",
+  "exitCode": 0,
+  "observedProcessRows": 941,
+  "parentProcessId": 82795,
+  "childProcessId": 83139,
+  "matchingPidPpidPgidRows": [],
+  "pass": true,
+  "scope": "Actual read-only escalated ps after run; no parent/child PID, direct descendant PPID or owned process-group PGID match. Other process rows omitted. Raw numeric output retained in tool transcript. First unprivileged PID-only ps was denied sandbox; escalated check succeeds."
+}

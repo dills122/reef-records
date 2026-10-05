@@ -1,0 +1,18 @@
+{
+  "schema": "independent-encoded-delta-check-v1",
+  "reviewInstance": "2of3",
+  "bytes": 6784151,
+  "inputBytes": 776390,
+  "resultBytes": 6007761,
+  "inputs": 2100,
+  "results": 2100,
+  "historyRecords": 2101,
+  "genesisRecords": 1,
+  "historyChecksum": "27d2d99c876edc961958133c9a9317a2baa7b12c78efd8a589af92c2b20ab5ae",
+  "ownerSha256": "96da35188859915ebb3061691644e114021e8eb033e2f8865065fae4b7901db1",
+  "settled": 1000,
+  "pending": 100,
+  "completeBeforeAfterDeltaChain": true,
+  "eachJournalGroupBalanced": true,
+  "pass": true
+}

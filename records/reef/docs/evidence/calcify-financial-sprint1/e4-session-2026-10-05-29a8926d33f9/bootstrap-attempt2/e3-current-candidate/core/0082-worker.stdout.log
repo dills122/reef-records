@@ -1,0 +1,4 @@
+{"processStarted":true,"guarantee":"exactly_once_v2","commitIntervalMs":60000,"transactionTimeoutMs":120000,"stateDir":"/private/tmp/reef-financial-e3-OrvlZV"}
+{"certifiedCatchupDomains":0,"partitionCut":null}
+{"frameworkRunningMs":1314}
+{"injectedMutation":10,"key":"s/[\"B\",\"instructions\",\"[\\\"run-?\\\",\\\"session-1\\\",\\\"ACME\\\",\\\"exec-synthetic-1\\\"]\"]"}

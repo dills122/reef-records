@@ -1,0 +1,5 @@
+# Calcify E4 readiness component and diagnostic session proof provenance
+
+Local-only Reef evidence checkpoint `c8cef277e7063b54b5dddab373e33c14903b0107`; parent reviewed product commit `17409ac2e6f8e2c4408dcd6b36c98398c3da32ad`. Evidence checkpoint intentionally unpushed to Reef; no unavailable source-commit GitHub link. Original ignored synthetic receipts explicitly promoted under unique tracked namespace with exact-byte path mapping. Execution baseline `29a8926d33f9e2dc7278a1676a6fa3272628de3c` and dirty/new executable hashes/build/profile companions remain separate from later product checkpoint. Preservation does not establish readiness; original failed campaigns, partial arms, corrections and review limits remain intact. No Reef source removal. Complete bulk publication belongs solely to Records.
+
+Raw CLI coverage output and lossless journal chunk boundaries retain original trailing whitespace. Whole raw diff whitespace check reports those literal bytes; import metadata whitespace check passes. Archive integrity, staged source blob identities and exact byte preservation remain mandatory. No raw proof formatting changes.

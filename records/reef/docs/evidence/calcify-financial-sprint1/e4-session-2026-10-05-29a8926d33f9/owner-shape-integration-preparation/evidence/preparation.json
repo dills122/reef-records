@@ -1,0 +1,20 @@
+{
+  "status": "PREPARED_NOT_COMPILED_NOT_RUN_NOT_INTEGRATED",
+  "currentRateProbeSha256": "3189cc005f9b58631a67c9cee0b1ec338b6fb075b48befbdec60f50c564b1aae",
+  "testMethods": {
+    "FinancialCanonicalLeafOwnerTest.kt": [
+      "canonicalDigestPreservesGenesisEmptyCategoriesAndExactRootTypes",
+      "escapedKeysNestedNullsAndInsertionOrdersMatchCanonicalLegacyBytes",
+      "constructorWriteReadAndMaterializedCopiesCannotAliasRetainedFacts",
+      "leafNullDeletesRootNullRemainsAndClearDropsEveryRetainedLeaf"
+    ],
+    "FinancialRateReferenceTest.kt": [
+      "boundedCohortKeepsEveryFactAndMatchesEveryPrefixAndCompleteReplay",
+      "completeDeltaJournalAndHistoryMutantsFailBeforeAnyWrite",
+      "duplicateAndReorderedEconomicActionsFailWithoutAdvancingOwner",
+      "truncatedExtraAndReorderedCompleteCommittedCutsFailExpectedBoundary",
+      "sameCountChangedExecutionDedupOrEffectFactsChangeActualReferenceDigest"
+    ]
+  },
+  "scope": "only ignored owner-shape-integration-preparation directory; baseline source and running classpath untouched"
+}

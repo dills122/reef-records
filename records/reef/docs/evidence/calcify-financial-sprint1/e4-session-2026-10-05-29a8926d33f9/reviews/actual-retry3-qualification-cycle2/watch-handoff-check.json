@@ -1,0 +1,12 @@
+{
+  "schema": "independent-watch-handoff-check-v1",
+  "hash": "e15a7f6f06b50d98c4565522a5c902fe6072d72b540a6d1fea817bb15689f9d0",
+  "sampledAtMs": 70404130,
+  "exactOwnedIds": [
+    "45a7adb373fa7914cc16a1d58f4dd44a3d811259e7c097c119ee725129f2c893",
+    "5226066cada82643c4333341a25db1a50674d02574e8d3d1deb5e1dd89a65c54",
+    "e98481cf469c0cabac43873dfb732fac89f2c4a912e02604a2df888d05e77149"
+  ],
+  "allHealthy": true,
+  "pass": true
+}

@@ -1,0 +1,118 @@
+{
+  "schema": "calcify-operator-staging-freeze-v1",
+  "preparedUtc": "2026-10-05T16:52:51.332263+00:00",
+  "acceptedCandidate": false,
+  "actualSetupExecuted": false,
+  "capabilityPresent": false,
+  "proofCreated": false,
+  "files": {
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/bootstrap-watch.mjs": {
+      "sha256": "0703c2fef686da22a65be57839bf69d24b5cc91f9e4ce15eae348bca1787c240",
+      "sizeBytes": 11503
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/broker.compose.yml": {
+      "sha256": "5ab10a5e518a454f8cdebb54f8e490892c21834355fe322cef873619cbc7fbd8",
+      "sizeBytes": 2041
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/capture-admin.mjs": {
+      "sha256": "eca4d51a815a5a296157bed09d3f0c989dff804f9f27e626641907ff0947d810",
+      "sizeBytes": 3057
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/idle-watch.mjs": {
+      "sha256": "5b0f3d4f068d5580be33e93e3c39dc21b3db754a23d7f0cca2cf2c75a17b9a8a",
+      "sizeBytes": 4135
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/operator-safety.mjs": {
+      "sha256": "35b198a831aa523c77b89c52aab7a22a9f05d48f13dc11bff044aa8cb4765c83",
+      "sizeBytes": 1353
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/operator-safety.test.mjs": {
+      "sha256": "384421cc493b5571091ab2cb0b630dd299f824c35c3de379bdabd2a309054612",
+      "sizeBytes": 1162
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/pinned-network.compose.yml": {
+      "sha256": "eb9b66ed23d16eb7d96adb6ba2fc628e23a90529a36a62209daa4703139f8347",
+      "sizeBytes": 79
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/prepare.mjs": {
+      "sha256": "eb797b4f8a9a158ada76737b69f460d99c4642f471054ae22babf5c62ed4087b",
+      "sizeBytes": 7935
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/profile.json": {
+      "sha256": "047040b7a8e0241ef6188141a50c9a4b2d483e3093b1a6c1cfdc77e56d901d71",
+      "sizeBytes": 2138
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/restart-before-e3/restart-watch.mjs": {
+      "sha256": "2cf42e999410e8418b92639ad35a05ee76caf5474c6d67c93e38eab17f84cb92",
+      "sizeBytes": 11861
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/setup-authorization.template.json": {
+      "sha256": "13bda2ed9b84547e970695b315026ff281141c1adf76c78d505eb06739b18f77",
+      "sizeBytes": 351
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/bootstrap-fixtures.json": {
+      "sha256": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+      "sizeBytes": 90325
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/config.template.json": {
+      "sha256": "62faa4cb06a336e47a62b5d476d58909bded0fa58ce44bc9a76876645224bee6",
+      "sizeBytes": 1627
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-compact1/prepare-recipes.mjs": {
+      "sha256": "af43234f6fdb387163a60d82c111f0683ddde1f75069432127a373c1161b87e1",
+      "sizeBytes": 8025
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-compact1/recipe-controls.mjs": {
+      "sha256": "e1eae1946fd3a9504fc051b603fb35f332f02152daa3981421adf36f94843c19",
+      "sizeBytes": 2133
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-compact1/wrapper.mjs": {
+      "sha256": "a61553f7068108bf9947c3059e19eadb12b0b704079d6edc276578f88a4a261a",
+      "sizeBytes": 8282
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-compact1/bind-config.mjs": {
+      "sha256": "c12fa1309db155075aac8fabd34cbcf311c65881b5c88e94abfc063a49f7c730",
+      "sizeBytes": 2808
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-compact1/bind-pins.mjs": {
+      "sha256": "5463e22461460d722572f0fdc6f5e712a824da8e5966a0e041d1a408c4c4234a",
+      "sizeBytes": 3144
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-compact1/build-inputs.mjs": {
+      "sha256": "a9352d34575fa71cfd7babcf510528065d277ac775757390b68a130ea34a6cd0",
+      "sizeBytes": 18639
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-compact1/handoff-stage1.txt": {
+      "sha256": "3b0b9ef128b099babf43046b7cda07cadea230cc0bb3ef07b026ff03ce36aa4b",
+      "sizeBytes": 7957
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-compact1/handoff.md": {
+      "sha256": "4aba3c5c7a678792ce5cfa768b280c15e65dc9871adfab1b92877230774b139c",
+      "sizeBytes": 7969
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-compact1/pack-proof.mjs": {
+      "sha256": "59dcbe66548d9ed7d549c6da3edbf523412f0bd876b8b7ea8b5ca1177710c156",
+      "sizeBytes": 7498
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-compact1/preparation-pins.template.json": {
+      "sha256": "0cd3fd9fbb915e819afe78d281c00720b6baf94e9e41b7b93c5812d5b3ba2258",
+      "sizeBytes": 1096
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-compact1/staging-controls.json": {
+      "sha256": "e2770489001a01ce2f7a318885dac6effd5b12839b7c11ecc066bdf32d6ac54b",
+      "sizeBytes": 10426
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-compact1/template-origins.json": {
+      "sha256": "6e2b9578709112fbc9bfd13da7161c4b33ea31380783f9079b26cf9e60301a86",
+      "sizeBytes": 3431
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-compact1/verify-package.mjs": {
+      "sha256": "4ee15666554d775a49b61993e4b3833d308667623d9c4d91c1fc0de291ef9cb6",
+      "sizeBytes": 7712
+    },
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-compact1/write-cleanup-array.mjs": {
+      "sha256": "6784c6522287ac3bacd2d745a4b611c3edfaa8500b019079b0293ecd02df7cc8",
+      "sizeBytes": 1691
+    }
+  }
+}

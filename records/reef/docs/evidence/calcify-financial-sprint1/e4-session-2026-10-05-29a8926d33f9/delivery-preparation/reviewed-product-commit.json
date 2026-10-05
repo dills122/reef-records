@@ -1,0 +1,9 @@
+{
+  "commit": "17409ac2e6f8e2c4408dcd6b36c98398c3da32ad",
+  "sourceFreezeAttempt": 3,
+  "cycle": 1,
+  "sourcePaths": 27,
+  "allReviewedSourceMatchesCommit": true,
+  "measuredSourceHead": "29a8926d33f9e2dc7278a1676a6fa3272628de3c",
+  "scope": "Reviewed code commit; current compact actualqualification and owner docs/retention pending"
+}

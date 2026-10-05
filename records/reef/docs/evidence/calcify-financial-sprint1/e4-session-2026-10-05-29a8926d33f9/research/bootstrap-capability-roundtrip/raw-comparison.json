@@ -1,0 +1,14 @@
+{
+  "frozenMaxHeapBytes": 805306368,
+  "actualMaxHeapBytes": 805306368,
+  "fieldsEqualExcludingUsedHeapBytes": true,
+  "differentFields": {
+    "usedHeapBytes": {
+      "frozen": 38503064,
+      "actual": 38267696
+    }
+  },
+  "classpathEntries": 51,
+  "frozenSha256": "d684b5318d6c12e1e5933c0b4c0e31a6eb1f226d79d70d53f5c14ab7a60d6e59",
+  "actualAttemptSha256": "6698f012a52e92945657546391572b98c639571c4640524db2473dfc57c81803"
+}

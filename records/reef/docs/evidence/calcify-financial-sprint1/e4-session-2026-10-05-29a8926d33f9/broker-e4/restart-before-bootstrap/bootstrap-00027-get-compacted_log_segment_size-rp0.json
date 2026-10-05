@@ -1,0 +1,24 @@
+{
+  "seq": 27,
+  "name": "get-compacted_log_segment_size-rp0",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "exec",
+    "e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af",
+    "rpk",
+    "cluster",
+    "config",
+    "get",
+    "compacted_log_segment_size"
+  ],
+  "startedAtMs": 65380372,
+  "startedUtc": "2026-10-05T15:42:25.978Z",
+  "stdout": "8388608\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 65380439,
+  "completedUtc": "2026-10-05T15:42:26.045Z",
+  "stdoutSha256": "22ee405617f143f8b43cdb9268b81b558e106454ba7a8b8c1354e9574481ba1e",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputSha256": "0606010fb316579d5f8637cdb295ee544cb2854490219008ad086605043fd666"
+}

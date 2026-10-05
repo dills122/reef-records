@@ -1,0 +1,20 @@
+{
+  "executable": "/usr/local/bin/docker",
+  "argv": [
+    "stop",
+    "--time",
+    "5",
+    "e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af",
+    "2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e",
+    "841231db0a0bd1bde6b7a33976f43f7950753c9bbc91782c7675b97a384de81f"
+  ],
+  "startedAtMs": 63003153,
+  "clockScope": "host-monotonic-ms",
+  "inputSha256": "f17e24a1d8ed24c4f593c2f73d8972e3fceaa3c2ef1d1ff15b411fe5d4efe09e",
+  "stdout": "Flag --time has been deprecated, use --timeout instead\ne35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af\n2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e\n841231db0a0bd1bde6b7a33976f43f7950753c9bbc91782c7675b97a384de81f\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 63003471,
+  "stdoutSha256": "63750173765a1d7f98fa60379df169c87ffcdef1d24b038fe3535e1bc6e8b86f",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

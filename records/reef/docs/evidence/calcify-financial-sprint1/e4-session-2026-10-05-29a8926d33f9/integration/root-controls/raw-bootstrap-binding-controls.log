@@ -1,0 +1,298 @@
+TAP version 13
+# Subtest: finite bootstrap freeze remains empirical and never manufactures heap costs
+ok 1 - finite bootstrap freeze remains empirical and never manufactures heap costs
+  ---
+  duration_ms: 1.911
+  type: 'test'
+  ...
+# Subtest: bootstrap refuses cohort expansion, changed caps, conventional arms and mismatched review
+ok 2 - bootstrap refuses cohort expansion, changed caps, conventional arms and mismatched review
+  ---
+  duration_ms: 0.789458
+  type: 'test'
+  ...
+# Subtest: executable bootstrap binds raw review, fixture, config and complete source bytes
+ok 3 - executable bootstrap binds raw review, fixture, config and complete source bytes
+  ---
+  duration_ms: 43.305333
+  type: 'test'
+  ...
+# Subtest: bounded inventory reader rejects oversize and invalid JSON
+ok 4 - bounded inventory reader rejects oversize and invalid JSON
+  ---
+  duration_ms: 7.33925
+  type: 'test'
+  ...
+# Subtest: adapter publishes collector evidence exclusively within frozen proof path
+ok 5 - adapter publishes collector evidence exclusively within frozen proof path
+  ---
+  duration_ms: 9.096416
+  type: 'test'
+  ...
+# Subtest: capacity lock has fixed shared name in platform temporary directory
+ok 6 - capacity lock has fixed shared name in platform temporary directory
+  ---
+  duration_ms: 0.856916
+  type: 'test'
+  ...
+# Subtest: deadline CAPTURE decision may precede paired SETTLE durable admission
+ok 7 - deadline CAPTURE decision may precede paired SETTLE durable admission
+  ---
+  duration_ms: 1.178916
+  type: 'test'
+  ...
+# Subtest: stage counts reject decided beyond offered and settled beyond admission
+ok 8 - stage counts reject decided beyond offered and settled beyond admission
+  ---
+  duration_ms: 0.785292
+  type: 'test'
+  ...
+# Subtest: preparation stops until E3 correctness and real calibration plus indexed/bounded adapter exist
+ok 9 - preparation stops until E3 correctness and real calibration plus indexed/bounded adapter exist
+  ---
+  duration_ms: 0.699167
+  type: 'test'
+  ...
+# Subtest: source/fixture mismatches and fabricated zero-byte calibration cannot freeze runnable policy
+ok 10 - source/fixture mismatches and fabricated zero-byte calibration cannot freeze runnable policy
+  ---
+  duration_ms: 0.164416
+  type: 'test'
+  ...
+# Subtest: aged estimate retains proposed 1m identities; over-budget case explicitly shrinks diagnostic only
+ok 11 - aged estimate retains proposed 1m identities; over-budget case explicitly shrinks diagnostic only
+  ---
+  duration_ms: 0.07375
+  type: 'test'
+  ...
+# Subtest: disk space gate and exact prefunding bound all declared timed plus pending work
+ok 12 - disk space gate and exact prefunding bound all declared timed plus pending work
+  ---
+  duration_ms: 0.186916
+  type: 'test'
+  ...
+# Subtest: measurement separates stage rates; complete parity and all telemetry permit diagnostic pass
+ok 13 - measurement separates stage rates; complete parity and all telemetry permit diagnostic pass
+  ---
+  duration_ms: 0.179417
+  type: 'test'
+  ...
+# Subtest: producer duration miss fails even when output is exact after drain
+ok 14 - producer duration miss fails even when output is exact after drain
+  ---
+  duration_ms: 0.393459
+  type: 'test'
+  ...
+# Subtest: late drain cannot be counted as deadline output or settled financial throughput
+ok 15 - late drain cannot be counted as deadline output or settled financial throughput
+  ---
+  duration_ms: 0.64275
+  type: 'test'
+  ...
+# Subtest: cumulative offered cannot roll back between deadline and final cuts
+ok 16 - cumulative offered cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.316875
+  type: 'test'
+  ...
+# Subtest: cumulative admitted cannot roll back between deadline and final cuts
+ok 17 - cumulative admitted cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.150042
+  type: 'test'
+  ...
+# Subtest: cumulative decided cannot roll back between deadline and final cuts
+ok 18 - cumulative decided cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.135125
+  type: 'test'
+  ...
+# Subtest: cumulative settled cannot roll back between deadline and final cuts
+ok 19 - cumulative settled cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.133125
+  type: 'test'
+  ...
+# Subtest: deadline offers cannot exceed frozen expected workload even if final agrees
+ok 20 - deadline offers cannot exceed frozen expected workload even if final agrees
+  ---
+  duration_ms: 0.163834
+  type: 'test'
+  ...
+# Subtest: each cut rejects admission ordering and settlement accounting violations
+ok 21 - each cut rejects admission ordering and settlement accounting violations
+  ---
+  duration_ms: 0.827208
+  type: 'test'
+  ...
+# Subtest: pending may decrease during drain; only missed deadline settlement fails
+ok 22 - pending may decrease during drain; only missed deadline settlement fails
+  ---
+  duration_ms: 0.57125
+  type: 'test'
+  ...
+# Subtest: missing accounting or resource metrics are explicit limited attempt; count inconsistency fails
+ok 23 - missing accounting or resource metrics are explicit limited attempt; count inconsistency fails
+  ---
+  duration_ms: 0.358
+  type: 'test'
+  ...
+# Subtest: lag growth, over-budget disk and unsupported latency clock cannot silently pass
+ok 24 - lag growth, over-budget disk and unsupported latency clock cannot silently pass
+  ---
+  duration_ms: 0.155459
+  type: 'test'
+  ...
+# Subtest: highest stable measured arm creates fresh/aged 300s pair with same business workload
+ok 25 - highest stable measured arm creates fresh/aged 300s pair with same business workload
+  ---
+  duration_ms: 0.09925
+  type: 'test'
+  ...
+# Subtest: missing restore cost, partial monitoring and observer slowdown remain limited preflight
+ok 26 - missing restore cost, partial monitoring and observer slowdown remain limited preflight
+  ---
+  duration_ms: 0.161917
+  type: 'test'
+  ...
+# Subtest: load and calibration entrypoints refuse before filesystem or adapter work without authorization
+ok 27 - load and calibration entrypoints refuse before filesystem or adapter work without authorization
+  ---
+  duration_ms: 0.36725
+  type: 'test'
+  ...
+# Subtest: calibration overrides cannot undercut measured physical byte budget or use invalid numbers
+ok 28 - calibration overrides cannot undercut measured physical byte budget or use invalid numbers
+  ---
+  duration_ms: 0.422417
+  type: 'test'
+  ...
+# Subtest: valid byte override preserves conservative floor and may increase budget only
+ok 29 - valid byte override preserves conservative floor and may increase budget only
+  ---
+  duration_ms: 0.115958
+  type: 'test'
+  ...
+# Subtest: derived per-trade budget must remain safe integer before policy freezes
+ok 30 - derived per-trade budget must remain safe integer before policy freezes
+  ---
+  duration_ms: 0.083292
+  type: 'test'
+  ...
+# Subtest: invalid telemetry produces null derived metrics instead of non-finite values
+ok 31 - invalid telemetry produces null derived metrics instead of non-finite values
+  ---
+  duration_ms: 1.222041
+  type: 'test'
+  ...
+# Subtest: invalid duration and zero trades cannot publish non-finite derived metrics
+ok 32 - invalid duration and zero trades cannot publish non-finite derived metrics
+  ---
+  duration_ms: 0.572916
+  type: 'test'
+  ...
+# Subtest: M3H missing conservative heap evidence blocks legacy real calibration
+ok 33 - M3H missing conservative heap evidence blocks legacy real calibration
+  ---
+  duration_ms: 0.0835
+  type: 'test'
+  ...
+# Subtest: M3H oversized retained heap cannot freeze despite fitting physical budget
+ok 34 - M3H oversized retained heap cannot freeze despite fitting physical budget
+  ---
+  duration_ms: 0.073292
+  type: 'test'
+  ...
+# Subtest: M3H finite checked formula includes timed+aged identities, pending and both reserves
+ok 35 - M3H finite checked formula includes timed+aged identities, pending and both reserves
+  ---
+  duration_ms: 0.199042
+  type: 'test'
+  ...
+# Subtest: M3H numeric controls reject missing, string, negative, NaN, infinity, unsafe and fractional values
+ok 36 - M3H numeric controls reject missing, string, negative, NaN, infinity, unsafe and fractional values
+  ---
+  duration_ms: 1.6975
+  type: 'test'
+  ...
+# Subtest: M3H child lower max recomputes limit, higher unauthorized max cannot raise request cap
+ok 37 - M3H child lower max recomputes limit, higher unauthorized max cannot raise request cap
+  ---
+  duration_ms: 0.164333
+  type: 'test'
+  ...
+# Subtest: M3H equality, unsupported counts and multiplication/addition overflow refuse
+ok 38 - M3H equality, unsupported counts and multiplication/addition overflow refuse
+  ---
+  duration_ms: 0.218542
+  type: 'test'
+  ...
+# Subtest: M3H fresh and aged overrun block without silently shrinking original heap workload
+ok 39 - M3H fresh and aged overrun block without silently shrinking original heap workload
+  ---
+  duration_ms: 0.184208
+  type: 'test'
+  ...
+# Subtest: M3H candidate/config/fixture/build/VM/review mismatch or legacy averages refuse
+ok 40 - M3H candidate/config/fixture/build/VM/review mismatch or legacy averages refuse
+  ---
+  duration_ms: 0.54375
+  type: 'test'
+  ...
+# Subtest: M3H executable raw bound/capability/review/fixture bytes hash and exact scope verified before adapter read
+ok 41 - M3H executable raw bound/capability/review/fixture bytes hash and exact scope verified before adapter read
+  ---
+  duration_ms: 33.42175
+  type: 'test'
+  ...
+# Subtest: M3H synthetic evidence and unpinned launcher cannot authorize executable load
+ok 42 - M3H synthetic evidence and unpinned launcher cannot authorize executable load
+  ---
+  duration_ms: 5.133583
+  type: 'test'
+  ...
+# Subtest: M3H runtime guard failure or missing lifecycle observation cannot publish diagnostic success
+ok 43 - M3H runtime guard failure or missing lifecycle observation cannot publish diagnostic success
+  ---
+  duration_ms: 0.80775
+  type: 'test'
+  ...
+# Subtest: M3H capability timeout escalates TERM to KILL with bounded output and retained process error
+ok 44 - M3H capability timeout escalates TERM to KILL with bounded output and retained process error
+  ---
+  duration_ms: 21.154541
+  type: 'test'
+  ...
+# Subtest: M3H symlink outside policy ownership and valid hash with changed raw identity refuse
+ok 45 - M3H symlink outside policy ownership and valid hash with changed raw identity refuse
+  ---
+  duration_ms: 3.678583
+  type: 'test'
+  ...
+# Subtest: rate supervision binds exact command, output, allocation categories and finite timeout
+ok 46 - rate supervision binds exact command, output, allocation categories and finite timeout
+  ---
+  duration_ms: 3.217708
+  type: 'test'
+  ...
+# Subtest: supervisor evidence mismatch refuses before dependency setup; failed supervision still closes
+ok 47 - supervisor evidence mismatch refuses before dependency setup; failed supervision still closes
+  ---
+  duration_ms: 8.467875
+  type: 'test'
+  ...
+# Subtest: actual supervised child receives frozen environment through owned launch
+ok 48 - actual supervised child receives frozen environment through owned launch
+  ---
+  duration_ms: 302.397959
+  type: 'test'
+  ...
+1..48
+# tests 48
+# suites 0
+# pass 48
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 372.907458

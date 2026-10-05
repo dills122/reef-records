@@ -1,0 +1,71 @@
+{
+  "schema": "financial-retained-lower-refusal-v1",
+  "reviewScope": "Final candidate factual rebind of heap attempt1 cycle1; not new whole review cycle",
+  "verdict": "REJECTED_FINITE_HEAP_ENVELOPE",
+  "identity": {
+    "capabilitySha256": "d684b5318d6c12e1e5933c0b4c0e31a6eb1f226d79d70d53f5c14ab7a60d6e59",
+    "commandSha256": "f741cac75a703a7062b8656a241da3dc554208ccf8db1c73d600fad03a6d7d8b",
+    "sourceHeadSuppliedBaseline": "29a8926d33f9e2dc7278a1676a6fa3272628de3c",
+    "candidateSha256": "5cb4cf59c099736a77eb63fe8fe690fa954901e25fd7e1eed072726c2596aa8d",
+    "buildSha256": "2dfdc070a90dc940792cce59cd27b00e2612d4d947f9d3b44efe71ca2d590e6e",
+    "classpathSha256": "2bf9c7bd2ea516e3e5121f5990e2c6b13a85a4424e4f133bf9e44855ad33eb59",
+    "fixtureSha256": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+    "configSha256": "4a933d25de10963566b1ab27d49c9ef29dc690632d373a42146fd9e9410ae5c1"
+  },
+  "ordinarySmallestArm": {
+    "rateTradesPerSecond": 2500,
+    "durationSeconds": 60,
+    "settledTrades": 150000,
+    "liveDisjointEconomicOwners": 2
+  },
+  "installedLayout": {
+    "maxHeapBytes": 805306368,
+    "UseCompressedOops": true,
+    "UseCompressedClassPointers": true,
+    "ObjectAlignmentInBytes": 8,
+    "LinkedHashMapEntryMinimumBytes": 40,
+    "ObjectNodeMinimumBytes": 24,
+    "layoutIsStructuralNotEmpiricalSizing": true
+  },
+  "countPerOwnerPerSettledTrade": {
+    "outerMapEntries": 9,
+    "childMapEntries": 52,
+    "totalMapEntries": 61,
+    "objectNodes": 10
+  },
+  "arithmetic": {
+    "perTradeLowerBytesBothOwners": 5360,
+    "retainedLowerBytes": 804000000,
+    "entryOnlyLowerBytes": 732000000,
+    "strict80PercentLimitBytes": 644245094,
+    "retainedLowerExcessBytes": 159754906,
+    "entryOnlyLowerExcessBytes": 87754906
+  },
+  "interpretation": {
+    "actualRuntimeBytesMeasured": false,
+    "rateCapacityMeasured": false,
+    "capacityCeiling": false,
+    "conservativeUpperBound": false,
+    "diagnostic1000Settled100PendingFitProven": false,
+    "wholeReviewReadinessVerdict": false
+  },
+  "premises": [
+    "Seven-key canonical policy plus logicalTick/domain decision context",
+    "13-field unique CAPTURE payload; one successful SETTLE per unique identity",
+    "One hot domain; both kernel and independent observer retain complete economic state through full drain before streams.close",
+    "Actual Financial source and corresponding material bytecode preserve reviewed state shape/deepCopy/lifecycle",
+    "Pinned Oracle HotSpot21 compressed references and8-byte alignment"
+  ],
+  "omittedCosts": [
+    "owner/category/map headers and backing arrays",
+    "scalars, strings, effect arrays",
+    "execution index and fixed balance/version entries",
+    "latest history, ACK/client buffers, garbage and replay/recovery graphs",
+    "native memory and process RSS"
+  ],
+  "invalidation": [
+    "Any source/class/classpath/config/fixture change requires rebind",
+    "Changed retention, economic owner representation, policy cardinality, fixture identity or JVM layout requires new model"
+  ],
+  "sourceFreeze24Unchanged": true
+}

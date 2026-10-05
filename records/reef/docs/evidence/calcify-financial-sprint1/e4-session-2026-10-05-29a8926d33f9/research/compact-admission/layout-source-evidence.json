@@ -1,0 +1,24 @@
+{
+  "sourceAndJavapOnly": true,
+  "newApplicationJvmOrWorkloadExecuted": false,
+  "classpathEntriesFrom": ".planning/calcify-e4-session-2026-10-05/bootstrap-attempt1/frozen/capability.json",
+  "fileSha256": {
+    "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib/src.zip": "a73c1a5a3c3c1ecf1c866022686b3ed7f17a49b7c604d0f59ba61572ac4e10ee",
+    "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/java": "8a0ccbcc399a0eac0a89ea47307af07db2f4c686974b846cef56a175caed99df",
+    "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib/server/libjvm.dylib": "bf5b121ef9db76c2a20fe99401368df61416cca787140542532e370e455030d0",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/jackson-annotations-2.22.jar": "21ddb598807d3a51a876704eb979d9296e1c6a6f47ab1826ff88c6d6a127a2d0",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/jackson-core-2.22.3.jar": "8a501126a385b25841915d839508f8a66e2a0dbc8a6709d055ef3b3e852b094c",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/jackson-databind-2.22.3.jar": "556db5439e206114346043f68d200497dc96a0bca62a360a81784092ebd0e0a9",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/kotlin-stdlib-2.4.20.jar": "2226de463d309d4a5500a481320b3dea515a6981dcae1def531fbc158884e25f",
+    ".planning/calcify-e4-session-2026-10-05/research/compact-admission/BaseJsonNode.javap.txt": "8afa1b0e8aa4ba23edd59eb4c60e88ad01868a35547ad6f6d03e8d34ba6ddacf",
+    ".planning/calcify-e4-session-2026-10-05/research/compact-admission/CollectionsKt___CollectionsKt.javap.txt": "a8c6699d7b7b8c16c391d8f2e8a83683c08612b43baca8b066631b21f378737f",
+    ".planning/calcify-e4-session-2026-10-05/research/compact-admission/InternalNodeMapper.javap.txt": "a86c0bc92b63b0d201f2b4f1c76180684c391921146ba99f84eb086bf1abf3fb",
+    ".planning/calcify-e4-session-2026-10-05/research/compact-admission/ObjectNode.javap.txt": "b54e8849926f7607b17a6c9cf5130f3526f610b5c78350d50da0c8aeed65355b",
+    ".planning/calcify-e4-session-2026-10-05/research/compact-admission/ObjectWriter.javap.txt": "3ef6754f94dda3b02a2857ad65746ed1a396c868c22687186fc6074fe37c1774",
+    ".planning/calcify-e4-session-2026-10-05/research/compact-admission/SegmentedStringWriter.javap.txt": "b0fcb6b375a7620b068415df7ad6896e20b96dfc1fefae10f2a8a038a9887385",
+    ".planning/calcify-e4-session-2026-10-05/research/compact-admission/SequencesKt___SequencesKt.javap.txt": "bb3bdc10e0385b0cde81e6051c95c01a2673aa92af5775cbed24888e0dc31ac1",
+    ".planning/calcify-e4-session-2026-10-05/research/compact-admission/String.javap.txt": "7811a39338e48eac03a0ccf4a77802066449cb49efedf480dd29a37fdbf575a3",
+    ".planning/calcify-e4-session-2026-10-05/research/compact-admission/StringBuilder.javap.txt": "bcb4fad1c768e21cb3efa683296571602b41441b5d7f967cde491b7e7feceeef",
+    ".planning/calcify-e4-session-2026-10-05/research/compact-admission/TextBuffer.javap.txt": "01d6b903d48c5653304aa636a7565b927dc448e509873c7fef456164d2546602"
+  }
+}

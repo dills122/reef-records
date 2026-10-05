@@ -1,0 +1,32 @@
+{
+  "schema": "calcify-rf3-correctness-profile-v1",
+  "scope": "Fresh isolated RF3 E4 readiness/calibration resources only; no capacity qualification or payload initialization in broker preparation",
+  "clusterProperties": {
+    "log_segment_size": 8388608,
+    "compacted_log_segment_size": 8388608,
+    "transaction_coordinator_log_segment_size": 8388608
+  },
+  "applyBefore": "Any E4 topic init/seed/workload: exact readback after fresh bootstrap",
+  "invariants": [
+    "RF3 and topic min.insync.replicas2 unchanged",
+    "Input/result/changelog write caching false unchanged",
+    "Worker60s commit and120s producer timeout unchanged",
+    "Retention/history and replica/durability settings unchanged",
+    "No topic initialization or payload workload during broker preparation"
+  ],
+  "budgets": {
+    "projectAllocatedBytes": 10737418240,
+    "guestFreeBytesFloor": 21474836480,
+    "rawProofBytes": 268435456
+  },
+  "monitoring": "Parent-owned watcher samples allocated broker directories/guest free/raw proof bytes every5seconds; stops only registered project and exact owned probe tree at9GiB allocation (hardbudget10GiB), guest<20GiB or raw>=256MiB. Recorded samples are not continuous peak measurement. Preallocation may reclaim on shutdown; stopped footprint never reported as active peak.",
+  "rationale": "Previous default topic/internal transaction segment preallocation reached sampled9,114,636,288bytes after nine completed arms; core/golden stopped before full pass. Topics/volumes and failed proof preserved.8MiB segments reduce reserved geometry; no business or ordering rule changes.",
+  "references": [
+    "https://docs.redpanda.com/streaming/current/reference/properties/topic-properties/",
+    "https://docs.redpanda.com/streaming/current/reference/properties/cluster-properties/"
+  ],
+  "project": "reef-calcify-e4-attempt3-8c6f",
+  "bootstrapServers": "127.0.0.1:40092,127.0.0.1:40192,127.0.0.1:40292",
+  "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+  "imageRepoDigest": "redpandadata/redpanda@sha256:9e83cfa99278f30d0133271c26bf670cd69c94ffa6ba0b42830dd0c3bd9dcfd9"
+}

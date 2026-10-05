@@ -1,0 +1,11 @@
+{
+  "status": "PREPARATION_SCRIPT_ASSERTION_FAILURE",
+  "scope": "ignored source-rebase preparation only; no main writes/compilation/tests",
+  "cause": "guard incorrectly divided patch.count(\"@@ \") by2; pattern counts only hunk opening, not both delimiters",
+  "toolOutput": "Traceback (most recent call last): File \"<stdin>\", line24, in <module>; AssertionError",
+  "partialFiles": [
+    "baseline-FinancialRateProbe.kt",
+    "expected-FinancialRateProbe.kt"
+  ],
+  "correction": "count hunk opening lines directly; preserve partial identical source snapshots"
+}

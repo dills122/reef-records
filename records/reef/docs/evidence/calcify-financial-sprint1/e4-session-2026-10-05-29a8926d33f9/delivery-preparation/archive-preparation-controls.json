@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-05T18:50:43.777996+00:00",
+  "originalSlowProcessSession": 89931,
+  "originalProcessPid": 92610,
+  "originalTerminalExitCode": 130,
+  "reason": "Verified two per-file Git calls, repeated index rewrites and two subsequent per-file shows replaced with identical-byte batch writes/readback",
+  "recordsNamespaceExistedBeforeStop": false,
+  "productHeadUnchanged": true,
+  "batchControls": {
+    "tests": 2,
+    "passed": 2,
+    "checks": [
+      "Tree equality against legacyperfile algorithm",
+      "Empty/binary/CRLF/UTF8spacepath/largebytes literal exact",
+      "Real productindexHEAD unaffected",
+      "Alteredblobcontent rejected",
+      "WrongtreeOID rejected",
+      "Traversal rejected"
+    ]
+  },
+  "helperSha256": "6e2003f05874ae6cf6097cac140979bdaaed1ddeec7803b69f0601e54685a244",
+  "oldHelperPreserved": "retention-preparation/snapshots/before-batch-promotion.py",
+  "scope": "Archive operation equivalence; no proof/source/runtime scope change, originals/partial immutable Git blobs retained"
+}

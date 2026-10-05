@@ -1,0 +1,68 @@
+{
+  "sourceStable": true,
+  "suites": [
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialAckJournalTest",
+      "tests": "8",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialBootstrapProbeTest",
+      "tests": "6",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialBrokerProbeTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialCommittedCutTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialHeapGuardTest",
+      "tests": "25",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialKernelTest",
+      "tests": "14",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialOracleTest",
+      "tests": "12",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialPartitionCutTest",
+      "tests": "13",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest",
+      "tests": "11",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    }
+  ]
+}

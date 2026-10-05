@@ -1,0 +1,20 @@
+{
+  "name": "volume-absence-1",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "volume",
+    "inspect",
+    "reef-calcify-e4-compact1-8c6f_rp1-data"
+  ],
+  "startedAtMs": 72234905,
+  "startedUtc": "2026-10-05T17:36:40.534Z",
+  "stdout": "[]\n",
+  "stderr": "Error response from daemon: get reef-calcify-e4-compact1-8c6f_rp1-data: no such volume\n",
+  "exitCode": 1,
+  "error": "Command failed: /usr/local/bin/docker volume inspect reef-calcify-e4-compact1-8c6f_rp1-data\nError response from daemon: get reef-calcify-e4-compact1-8c6f_rp1-data: no such volume\n",
+  "completedAtMs": 72234923,
+  "completedUtc": "2026-10-05T17:36:40.552Z",
+  "stdoutSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "stderrSha256": "5af1d2147016d87d0077d49c2d12e5ee27c457dbc673a2d0cb1144aebe005869",
+  "inputSha256": "111ccac7f27acc410893a90178bdee5ad1356a7d32d38a83eb097f82a5b79459"
+}

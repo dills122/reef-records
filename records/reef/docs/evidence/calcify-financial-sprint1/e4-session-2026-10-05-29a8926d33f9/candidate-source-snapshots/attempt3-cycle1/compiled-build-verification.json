@@ -1,0 +1,6 @@
+{
+  "schema": "calcify-compiled-snapshot-build-verification-v1",
+  "computedBuildSha256": "bf04ead83d8be2864231b95720190b109c9d31e09ed585f01791947520337b53",
+  "expectedActualBuildSha256": "bf04ead83d8be2864231b95720190b109c9d31e09ed585f01791947520337b53",
+  "allExactSnapshotBytesMatch": true
+}

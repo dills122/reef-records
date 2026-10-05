@@ -1,0 +1,99 @@
+{
+  "scope": "Observed current whole financial XML; no reviewer Gradle/JVM execution",
+  "totals": {
+    "tests": 109,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "suites": [
+    {
+      "file": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialAckJournalTest.xml",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "b5f53efe0aa1aedd32b74fe93fe945922fd9f2329b2338cfc1f9b4a90d7e2275"
+    },
+    {
+      "file": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialBootstrapProbeTest.xml",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "96bab34463d4642c8b914cac7db71b86e94406e0b463b5022f1d6d2106f89174"
+    },
+    {
+      "file": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialBrokerProbeTest.xml",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "7ece8d9d958b8435cfdd19253cdcccfc2e031bc5d8c0313ea1c75749b3156ee9"
+    },
+    {
+      "file": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialCanonicalLeafOwnerTest.xml",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "9ff1e6dcdb13336733be39480e09b20dc4d32fe8dd6a96670ad02c65dafd8ee9"
+    },
+    {
+      "file": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialCommittedCutTest.xml",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "b696f45b12e3933a0b9d36ce3c9c75662189628e38fdb87098a614c5efba8fc7"
+    },
+    {
+      "file": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialHeapGuardTest.xml",
+      "tests": 25,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "e1fc8360166d0bdaee71123d3d29dd69770a75f8dc1669a73105df1629f680e6"
+    },
+    {
+      "file": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "e2769c6bb72b4cd6bd5b086acd66e42533e98d6dfe97446262772ec45969bdc3"
+    },
+    {
+      "file": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "74ffea2734b658af4985c15cb222c18b250c8ffe356e3610368b31275f7e9719"
+    },
+    {
+      "file": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialPartitionCutTest.xml",
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "b276932ecc81cac6ca9b0d1c3793e11b131350fd1b0d1fbe2482d0655136a05a"
+    },
+    {
+      "file": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest.xml",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "dd07c17be4daf52c0b880d7e206eb432a5124585a71d5db119f6a4910d79a1af"
+    },
+    {
+      "file": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialRateReferenceTest.xml",
+      "tests": 5,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "sha256": "73d91fb4af85e5636be5a9208068ebb47aa61ea2ad2cd1dc72cac222a948ce9f"
+    }
+  ]
+}

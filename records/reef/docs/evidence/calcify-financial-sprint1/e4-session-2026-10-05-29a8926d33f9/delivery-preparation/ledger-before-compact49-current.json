@@ -1,0 +1,317 @@
+{
+  "schema": "calcify-e4-session-v1",
+  "startedUtc": "2026-10-05T12:38:42Z",
+  "targetUtc": "2026-10-05T19:38:42Z",
+  "baseline": "29a8926d33f9e2dc7278a1676a6fa3272628de3c",
+  "upstreamMaster": "a6ddafbbae750693e227985f054be2d26716ae84",
+  "branch": "codex/calcify-e4-readiness",
+  "thesis": "Complete missing E4 readiness seam, then run honest bounded calibration and serial rate/storage diagnostics under verified gates; advance aligned bottleneck fixes where evidence supports them. Reassess useful remaining capacity after every reviewed milestone.",
+  "state": "WHOLE_ATTEMPT3_CYCLE1_COMPACT_FIX_GREEN_PENDING",
+  "milestones": [
+    {
+      "id": "E4-A",
+      "task": "Recoverable durable ACK membership and actual rate-probe lifecycle binding",
+      "state": "IN_PROGRESS",
+      "attempt": 1,
+      "cycles": 0,
+      "estimate": "90-150m",
+      "dependencies": [
+        "previous E3/heap verified candidate"
+      ],
+      "codeReadiness": {
+        "attempt": 2,
+        "cycle": 1,
+        "verdict": "Ready frozen integrated code",
+        "financialTests": 98,
+        "reviewerNodeTests": 125,
+        "runtimeAcceptance": "freshcurrent49 +bounded1000/100 remains open"
+      }
+    },
+    {
+      "id": "E4-B",
+      "task": "Owned replicated/allocation resource inventory collector and raw evidence validation",
+      "state": "IN_PROGRESS",
+      "attempt": 1,
+      "cycles": 1,
+      "estimate": "60-100m parallel",
+      "dependencies": [
+        "frozen exact resource registry"
+      ],
+      "reviewVerdict": "RevisionsRequired",
+      "reviewPath": "reviews/physical-attempt1-cycle1/report.md",
+      "codeReadiness": {
+        "attempt": 2,
+        "cycle": 1,
+        "verdict": "Ready frozen integrated code",
+        "financialTests": 98,
+        "reviewerNodeTests": 125,
+        "runtimeAcceptance": "freshcurrent49 +bounded1000/100 remains open"
+      }
+    },
+    {
+      "id": "E4-C",
+      "task": "Runtime supervision, safe calibration bootstrap/cost evidence and integration",
+      "state": "IN_PROGRESS",
+      "attempt": 1,
+      "cycles": 0,
+      "estimate": "90-150m",
+      "dependencies": [
+        "E4-A",
+        "E4-B",
+        "cost research"
+      ],
+      "codeReadiness": {
+        "attempt": 2,
+        "cycle": 1,
+        "verdict": "Ready frozen integrated code",
+        "financialTests": 98,
+        "reviewerNodeTests": 125,
+        "runtimeAcceptance": "freshcurrent49 +bounded1000/100 remains open"
+      }
+    },
+    {
+      "id": "E4-D",
+      "task": "Serial calibration/rate ladder/fresh-aged diagnostics when frozen gates admit, plus measured bottleneck follow-up",
+      "state": "IN_PROGRESS",
+      "attempt": 1,
+      "cycles": 0,
+      "estimate": "40-90m initially",
+      "dependencies": [
+        "E4-C Ready",
+        "real admission/cost evidence"
+      ],
+      "admission": {
+        "ordinaryRateLadder": "No conservative upper bound; oldtwoownerlowerboundrefused150000 identities",
+        "fixedDiagnostic": "freshcurrent49running; bootstrappending"
+      }
+    },
+    {
+      "id": "DELIVERY",
+      "task": "Owner docs/evidence/archive/PR/hosted gates, rolling per milestone",
+      "state": "IN_PROGRESS",
+      "estimate": "40-60m distributed",
+      "dependencies": [
+        "independent Ready"
+      ],
+      "progress": "Ownerdocsrolling; rawretentionselector refreshed needsnewreceiptfamilies; publication/PRfinalCIpending"
+    }
+  ],
+  "reviewPolicy": "Fresh fork:none reviewer; up to3cycles/attempt, research before nextattempt, max3attempts; preserve previous milestone review counts, no reset",
+  "capacityPolicy": "After each reviewed milestone, record actual time/remaining budget and choose next bounded critical-path work; early stop only real blocker, no useful safe slice, user stop or exhausted budget",
+  "invariants": [
+    "test-only financial authority",
+    "same canonical facts and independent oracle",
+    "physical offsets distinct from logical ordinals",
+    "callback visibility distinct from durable controller membership",
+    "no fsync per trade without measured justification",
+    "no fabricated conservative costs or inherited historical capacity",
+    "preserve unrelated checkout and volumes"
+  ],
+  "events": [
+    {
+      "utc": "2026-10-05T12:44:28.092043+00:00",
+      "kind": "PREFLIGHT_COMPLETE",
+      "result": "Healthy graph exact root/source; SerenaGo source reachable; KotlinLSP degraded Java21 fallback; prior4draft PRs OPEN green; exact3brokers exited; upstream unchanged."
+    },
+    {
+      "utc": "2026-10-05T13:08:36.712962+00:00",
+      "kind": "READINESS_PROGRESS",
+      "result": "ACK7 initial controls including actual3crash boundaries pass; witness truncation fix in progress. Physical13initialcontrols pass; independentcycle1 fourP2evidence gaps returned; fixing. Rootcount +hostallocation86controls pass; supervised adapter exactcommandcontract added. Conditional heap lower model requires independent validation; fixed bootstrapguard design accepted, worker waits compilehandoff."
+    },
+    {
+      "utc": "2026-10-05T13:21:07.518777+00:00",
+      "kind": "CAPACITY_REASSESSMENT",
+      "remainingSeconds": 22654,
+      "next": "Complete lazyactivation/helperintegration+RF3bootstrap, then measuredlower-model/retentionbottleneckfollowup; no wholeE4milestoneclaimedcompletefromcomponentReady."
+    },
+    {
+      "utc": "2026-10-05T13:31:45.391422+00:00",
+      "kind": "CLOCK_CORRECTION",
+      "result": "ActualpinnedDarwinNodehrtime57430510ms outsideJVMnano bracket55910722..55910807ms. Directcommonorigin hypothesis refused; failedXML/raw retained. Adopt actualNodeclockbefore+after Admin requests coveringintervals, preserveoriginal JVM APIwindows explicitly. No offset, individual APIlatency or sharedoriginclaim; strict5s actualhostfreshness remains."
+    },
+    {
+      "utc": "2026-10-05T13:31:45.391512+00:00",
+      "kind": "FINITE_HEAP_REJECTION",
+      "result": "Independentsource/layout/lifecycle lower proof:61entries\u00d740B\u00d72owners\u00d7150000=732000000B exceeds644245094B80%limit; fuller804000000B. Conditionalpinnedsource/JDK/fixture, finalsource-to-buildbindingpending. Minimumunchangedladderrefused; continuefixed1000/100bootstrap andalignednextbottleneckwork."
+    },
+    {
+      "utc": "2026-10-05T14:05:06.664828+00:00",
+      "kind": "CAPACITY_REASSESSMENT",
+      "remainingSeconds": 20015,
+      "next": "Final integrated source freeze/fresh review; fresh RF3 same-build correctness plus fixed1000/100 bootstrap, actual new JVM certified activation and entire committed result replay. Ordinary ladder lower-bound refusal remains conditional pending compiled binding. No early stop."
+    },
+    {
+      "utc": "2026-10-05T14:14:15.056009+00:00",
+      "kind": "INTEGRATION_CYCLE1_PROGRESS",
+      "result": "ExactworkflowNode266/266 sourceStable23paths; compiledfinancial93/93 beforeminorrawrecoveryreceiptedit +final3focused compile. Freshintegrationreviewaccepted allocation-config cross-binding and missingrawsamecandidateE3gate findings; sourcefrozenuntilfinalcycle1report. ActualRF3healthyreadyfreshIDs pinned3; strictidlewatchroot87929 tookoverbeforebootstrapwatchexit0. No topics/workload. Compiledretainedlowerbound804000000>644245094 independently rebound; ordinaryladderrefused, fixedbootstrapcontinuesaftercorrections."
+    },
+    {
+      "utc": "2026-10-05T14:28:48.460055+00:00",
+      "kind": "GATE_CORRECTION_PROGRESS",
+      "result": "Kotlinactualpathcrossbinding + rawfullE3semantic/source/actualCP/classsha gates6focusedPASS. Actualbroker-freeplan explicit48jarREDENOTDIR correctedGREEN48actualbytehashverified. Nodegatecorrectionworkerfinishing; same-sourcecombinedKotlinrunstarted. No topics/payload; strictwatch2takeoverprecededwatch1deadline actualallocated50528256/raw53107337, volumespreserved."
+    },
+    {
+      "utc": "2026-10-05T15:06:40.571918+00:00",
+      "milestone": "whole-E4-attempt1-cycle3",
+      "state": "REVIEWING",
+      "facts": [
+        "Cycle2 endpoint P1 fixed generically in Node and Kotlin, final24source freeze.",
+        "Final exact NodeCI274/274, zero failures/skips, sourceStable=true; fullfinancial running.",
+        "Focused Kotlin7 passed; finalcapability build2dfdc070a90dc940792cce59cd27b00e2612d4d947f9d3b44efe71ca2d590e6e.",
+        "Strict idle handoff EEXIST caused owned3brokerstop; failure retained, no payload.",
+        "Fresh source-first reviewercycle3 underway; no actualqualification until current49E3 + diagnostic."
+      ]
+    },
+    {
+      "utc": "2026-10-05T15:10:00Z",
+      "milestone": "E4-code-readiness",
+      "verdict": "Ready",
+      "attempt": 1,
+      "cycle": 3,
+      "review": "reviews/integration-attempt1-cycle3/report.md",
+      "scope": "Bounded supervised diagnostic code only; actual49E3 and1000+100 sample still pending",
+      "validation": {
+        "financial": 97,
+        "nodeCI": 274,
+        "sourceStable": true
+      },
+      "next": "Actual current-candidate49E3 under strictowned supervisor; retain everyfailure, no ordinarycapacityclaim"
+    },
+    {
+      "utc": "2026-10-05T15:26:21.720594+00:00",
+      "milestone": "raw-proof-packaging-gate",
+      "state": "PREPARING",
+      "facts": [
+        "Actual E3 external4/core24 pass; golden running.",
+        "Actual resource-samples.jsonl exceeds8MiB perfile bootstrapgate, within256MiB aggregate.",
+        "Original wholeclosedproof remains unchanged; sibling lossless bytechunk export proposed; fresh narrow packagingreview pendingactualimplementation/reassembly.",
+        "No source/cap changes or rawtruncation; codewholeAttempt1cycle3Ready retainscounter.",
+        "Aligned observershape prototype isolated underignoredsubtree, no currentsource/build writes; integrateonlyafterdiagnosticbaseline."
+      ]
+    },
+    {
+      "utc": "2026-10-05T15:33:03.718613+00:00",
+      "milestone": "same-candidate-E3-prerequisite",
+      "verdict": "ACTUAL_PASS",
+      "arms": {
+        "external": 4,
+        "core": 24,
+        "golden": 20,
+        "activation": 1
+      },
+      "wrapperElapsedMs": 1073813,
+      "samples": 233,
+      "maxChargedProjectBytes": 6658150400,
+      "maxMeasuredBrokerSumOnFullyMeasuredSamples": 5135011840,
+      "scope": "Correctness only, reservation3GiB distinctactual; no rate/continuouspeak/native/financialauthorityclaim",
+      "cleanup": "exec28017exit0; rootactualpostinspect3exited/Restart0/volumespreserved",
+      "next": "Losslesspackagefreshreview; frozenbootstrap1000+100 under strictownedmonitor"
+    },
+    {
+      "utc": "2026-10-05T15:59:51.901151+00:00",
+      "kind": "ACTUAL_BOOTSTRAP_REFUSAL_AND_RESEARCH",
+      "attempt": 1,
+      "result": "Equal805306368 heap bytes LongNode/IntNode inequality refused before economic payload; raw failure retained. Independent isolated JShell confirms strict integral fix. Meaningful RED8tests1fail then GREEN8tests, strict wrong/type/null/missing/zero/negative/overflow/unauthorized controls. Whole new Attempt2 review needed, fresh actual49 binding required. Old rig stopped/data preserved; new fresh rig preparation avoids5.17GiB existing plus repeat49 exceeding9GiB envelope."
+    },
+    {
+      "utc": "2026-10-05T16:08:00.092674+00:00",
+      "kind": "WHOLE_ATTEMPT2_CYCLE1_READY",
+      "financialTests": 98,
+      "reviewerNodeTests": 125,
+      "sourceStable": true,
+      "actualBoundaryRoundtrip": "actualheapCapabilityLongNode->rawIntNode->actualhelperPASS",
+      "next": "Fresh strict current49 before bounded1000+100 diagnostic; no source/build writes during run"
+    },
+    {
+      "utc": "2026-10-05T16:12:28.115122+00:00",
+      "kind": "CAPACITY_REASSESSMENT",
+      "remainingSeconds": 12373,
+      "next": "Current49under strictsupervisor7353; actualfirstsamplehandoff beforestartupwatchexit0. Thenboundedbootstrap actual7checkpoints, compactintegration only after baseline; isolatedactualJUnitprep and completeRecordsselector runparallel, no build/sourcewrites duringproof."
+    }
+  ],
+  "componentReviews": {
+    "ack": {
+      "attempt": 1,
+      "cycle": 1,
+      "verdict": "Ready component; lazyactivation+actualrestartpending",
+      "report": "reviews/ack-attempt1-cycle1/report.md"
+    },
+    "physical": {
+      "attempt": 1,
+      "cycle": 2,
+      "verdict": "Ready component; actualRF3adapterpending",
+      "report": "reviews/physical-attempt1-cycle2/report.md"
+    },
+    "bootstrapHeap": {
+      "attempt": 1,
+      "cycle": 1,
+      "verdict": "Ready component; frozenruntimecaller/loadpending",
+      "report": "reviews/bootstrap-heap-attempt1-cycle1/report.md"
+    },
+    "adminInventory": {
+      "attempt": 1,
+      "cycle": 1,
+      "verdict": "Preliminary component Ready under owned group; reviewer reused prior unrelated heap context; fresh whole integration review required",
+      "report": "reviews/admin-inventory-attempt1-cycle1/report.md"
+    },
+    "integration": {
+      "attempt": 2,
+      "cycle": 1,
+      "verdict": "Ready code only",
+      "priorAttempt": {
+        "attempt": 1,
+        "cycles": 3,
+        "verdict": "Ready code; subsequent actual bootstrap setup refusal"
+      },
+      "research": "research/bootstrap-capability-roundtrip/memo.md",
+      "report": "reviews/integration-attempt2-cycle1/finalreport.md"
+    }
+  },
+  "latestRuntime": {
+    "operatorRun": 2,
+    "fresh49": "PASS49",
+    "bootstrap": "FAILED_MANAGED_ACTIVATION_PARITY",
+    "actions": 2100,
+    "historyRecords": 2101,
+    "physicalCheckpoints": 5,
+    "recoveryParity": "UNPROVEN",
+    "cleanupReadback": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt2/bootstrap-failed-cleanup-inspect.raw.json",
+    "nextCodeReview": {
+      "attempt": 2,
+      "cycle": 2
+    },
+    "qualificationReview": {
+      "instance": 1,
+      "verdict": "NotReady"
+    },
+    "correctedFinancialTests": 99,
+    "newCandidateCapability": "bootstrap-attempt3/frozen/capability.json",
+    "newRig": "PREPARED_STOPPED",
+    "new49SupervisorSession": 75051,
+    "currentCodeReview": {
+      "attempt": 2,
+      "cycle": 2,
+      "verdict": "Ready",
+      "financialTests": 99,
+      "reviewerNodeTests": 170
+    },
+    "newCandidateSha256": "709dc3a7fe61df4acffae4fa3e16b260989ac4197f7826578fcfdee1bea514bc",
+    "new49": "PASS49",
+    "bootstrapRun3": "VALIDATED_BOUNDED_DIAGNOSTIC",
+    "bootstrapRun3Actions": 2100,
+    "bootstrapRun3Histories": 2101,
+    "bootstrapRun3PhysicalCheckpoints": 7,
+    "successfulBaselineClosure": "bootstrap-preparation-attempt3/bootstrap-successful-closure.json",
+    "parentProcessId": 29683,
+    "childProcessId": 29934
+  },
+  "codeReviewCounter": {
+    "attempt": 3,
+    "cycle": 1,
+    "previousAttempt": 2,
+    "previousCycle": 3,
+    "previousVerdict": "NotReady negative fixture KotlinJsonNodeIterable overload",
+    "researchBeforeAttempt": "research/compact-cut-fixture-overload/memo.md",
+    "reset": false
+  }
+}

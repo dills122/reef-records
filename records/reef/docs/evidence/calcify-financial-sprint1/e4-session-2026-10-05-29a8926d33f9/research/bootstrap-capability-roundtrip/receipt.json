@@ -1,0 +1,27 @@
+{
+  "schema": "financial-bootstrap-capability-roundtrip-research-v1",
+  "result": "CONFIRMED_NUMERIC_NODE_WIDTH_MISMATCH",
+  "actualType": "LongNode",
+  "frozenParsedType": "IntNode",
+  "maxHeapBytes": 805306368,
+  "nonUsedRawCapabilityFieldsEqual": true,
+  "actualClasspathEntryCount": 51,
+  "isolatedReproductionPassed": true,
+  "rootCompilationPerformed": false,
+  "productEditsPerformed": false,
+  "workloadPerformed": false,
+  "files": {
+    "jshell-command.json": "0bfe340c0f950b2bd0024850ef08133afd3ffcc621a9630015a87a608420d961",
+    "jshell-default-command.json": "76dd0d61a0dfd8e4e1bb9e122d173d6e3853b10a5b1423e158438c90713107a7",
+    "jshell-default.stderr.log": "3e4b19e9be7b84d0fa4c50bef89d87cc980564dbeda462ff55c1c7eb7f3e83fb",
+    "jshell-default.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "jshell-system-classpath-command.json": "c5fd117b92b598b9c5110b51ba722dfc6992c6c6487986623c68a3c9094dacf6",
+    "jshell-system-classpath.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "jshell-system-classpath.stdout.log": "3e49a3c4f262be9a11b1a63b3c3a05e47b9b923463b595b75aeaab390bddaa99",
+    "jshell.stderr.log": "cbf005e8ecf2f546d03d47ea37d26e520f77091f1efe9a15673e4a386356cdfe",
+    "jshell.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "memo.md": "d1ba6b24d46e7599e5a55cfd6cf81d08ca507c9aae95d7278056c9b91ee88dc9",
+    "raw-comparison.json": "1a13bef447e26831a30c40274c82a849f448b4a5b17a7c5f858ce954cff7a7cd",
+    "reproduce.jsh": "55c69933dad701d6aaf7c9880c14bf7fced793ef2085ba54874c2897976f5761"
+  }
+}

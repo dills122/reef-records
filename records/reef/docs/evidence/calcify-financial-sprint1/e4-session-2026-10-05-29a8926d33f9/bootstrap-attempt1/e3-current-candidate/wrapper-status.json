@@ -1,0 +1,40 @@
+{
+  "schema": "calcify-e3-serial-wrapper-result-v1",
+  "ok": true,
+  "error": null,
+  "manifestSha256": "e40f4cbf595f54a33444772efeb056bf554bf506371df69c4bd558053b3f9afb",
+  "startedAtMs": 63450311,
+  "completedAtMs": 64524124,
+  "results": [
+    {
+      "mode": "run-external",
+      "runId": "e4-current-external1",
+      "results": 4,
+      "resultsSha256": "9b459b6b9a0bb36acba7b9bdaa78b2c480f1c28be07716769694002498f5f212",
+      "directory": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt1/e3-current-candidate/external"
+    },
+    {
+      "mode": "run-core",
+      "runId": "e4-current-core1",
+      "results": 24,
+      "resultsSha256": "e9f54edbab739c0f455ee1f88fd6a8c7224fb9715ead383e0cd6a042abcf0603",
+      "directory": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt1/e3-current-candidate/core"
+    },
+    {
+      "mode": "run-golden",
+      "runId": "e4-current-golden1",
+      "results": 20,
+      "resultsSha256": "d3155941965141d860ca9a2cafd20d74ba96bc4bae938acfe557b821302fd931",
+      "directory": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt1/e3-current-candidate/golden"
+    },
+    {
+      "mode": "run-activation",
+      "runId": "e4-current-activation1",
+      "results": 1,
+      "resultsSha256": "adba1c91bd1a03f5e4f1d7e8557a2ce86c2091a6b674cf5858d7e88143958ca0",
+      "directory": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt1/e3-current-candidate/activation"
+    }
+  ],
+  "totalResults": 49,
+  "scope": "49 serial current-candidate E3 RF3/EOS correctness arms only: external4/core24/golden20/activation1; full source/oracle/state/history assertions inherited from current broker probe; original small /private/tmp RocksDB directories unregistered; no E4 resource/capacity/heap-bootstrap qualification"
+}

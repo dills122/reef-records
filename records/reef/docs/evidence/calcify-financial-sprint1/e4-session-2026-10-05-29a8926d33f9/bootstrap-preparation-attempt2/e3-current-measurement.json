@@ -1,0 +1,13 @@
+{
+  "schema": "calcify-e3-actual-measurement-v1",
+  "utc": "2026-10-05T16:29:27.156796+00:00",
+  "journalRows": 233,
+  "nonmeasurementLifecycleRows": 5,
+  "sampleCount": 228,
+  "fullyMeasuredSamples": 225,
+  "wrapperElapsedMs": 1054051,
+  "maxChargedProjectBytes": 6671249408,
+  "maxMeasuredBrokerSumOnFullyMeasuredSamples": 5104246784,
+  "minGuestFreeBytes": 92310630400,
+  "scope": "Actual sample observations separatefaultphase/closure rows;3GiB targetreservation distinguishedrunningdu, stoppedallocationunknown; correctness only, no rate/costupper; smalltempstate outsidewatch"
+}

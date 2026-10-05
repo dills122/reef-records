@@ -1,0 +1,7 @@
+{
+  "build-inputs.mjs": "81f7a0fba11af67ce84f05095a5c24a2a43b92843ec35b6bc048ef2a365005d6",
+  "preparation-controls.mjs": "885fd459f1897438b15a99626d14dfa3529901475a8db7453cee4e8b12a20526",
+  "preparation-pins.json": "9d07e5531d84a5175a02ae796d37cdce1fe350e9c0b6d18e6e0e0a501bde1b37",
+  "handoff.md": "0bd161a9cc5b7f368359ec6e5dee3b736f0ead766e1478b7af3d53050e79bcdc",
+  "SHA256SUMS": "4f982cc557bf22972bdfccb7c2ca2953a6b118e8e46db1daad566ce5330fc3e0"
+}

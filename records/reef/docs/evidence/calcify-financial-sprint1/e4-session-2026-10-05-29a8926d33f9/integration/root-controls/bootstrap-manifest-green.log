@@ -1,0 +1,22 @@
+TAP version 13
+# Subtest: finite bootstrap freeze remains empirical and never manufactures heap costs
+ok 1 - finite bootstrap freeze remains empirical and never manufactures heap costs
+  ---
+  duration_ms: 1.06125
+  type: 'test'
+  ...
+# Subtest: bootstrap refuses cohort expansion, changed caps, conventional arms and mismatched review
+ok 2 - bootstrap refuses cohort expansion, changed caps, conventional arms and mismatched review
+  ---
+  duration_ms: 0.738
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 51.493333

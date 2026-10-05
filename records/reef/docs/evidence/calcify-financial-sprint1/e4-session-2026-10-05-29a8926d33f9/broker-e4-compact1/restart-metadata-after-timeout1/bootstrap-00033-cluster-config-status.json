@@ -1,0 +1,23 @@
+{
+  "seq": 33,
+  "name": "cluster-config-status",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "exec",
+    "b3c49cb7544c501fa3e8a764571cdc705ca04d10c82ffcb0cbf400032ebaf33c",
+    "rpk",
+    "cluster",
+    "config",
+    "status"
+  ],
+  "startedAtMs": 73630370,
+  "startedUtc": "2026-10-05T17:59:55.992Z",
+  "stdout": "NODE  CONFIG-VERSION  NEEDS-RESTART  INVALID  UNKNOWN\n0     5               false          []       []\n1     5               false          []       []\n2     5               false          []       []\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 73630439,
+  "completedUtc": "2026-10-05T17:59:56.060Z",
+  "stdoutSha256": "7be98e1b25dbb9ca16f71512ad2205e27dbee9b1b80d59bda7c68529ab138d5f",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputSha256": "14f7433a502ac73ed2f29cc0a668c12da38ebab5499f473515536ed154908228"
+}

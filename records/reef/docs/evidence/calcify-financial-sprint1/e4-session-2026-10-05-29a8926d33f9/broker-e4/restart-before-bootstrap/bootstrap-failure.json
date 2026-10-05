@@ -1,0 +1,42 @@
+{
+  "error": "broker stopped after startup or startup timeout",
+  "lastSample": {
+    "schema": "calcify-e4-bootstrap-sample-v1",
+    "sampledAtMs": 65508748,
+    "completedAtMs": 65508974,
+    "clockScope": "host-monotonic-ms",
+    "utc": "2026-10-05T15:44:34.581Z",
+    "runningIds": [
+      "e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af",
+      "2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e",
+      "841231db0a0bd1bde6b7a33976f43f7950753c9bbc91782c7675b97a384de81f"
+    ],
+    "allocations": [
+      {
+        "id": "841231db0a0bd1bde6b7a33976f43f7950753c9bbc91782c7675b97a384de81f",
+        "allocatedBytes": 197083136
+      },
+      {
+        "id": "e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af",
+        "allocatedBytes": 27463680
+      },
+      {
+        "id": "2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e",
+        "allocatedBytes": 27639808
+      }
+    ],
+    "allocatedBytes": 252186624,
+    "partialMeasuredAllocatedBytes": 252186624,
+    "guestFreeBytes": 94823628800,
+    "rawProofBytes": 133637937,
+    "unmeasuredIds": [],
+    "startupUnknown": false,
+    "scope": "Approved setup-only startup exception<=30s; actual running du/df; not strict runtime supervisor or capacity evidence",
+    "healthyIds": [
+      "e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af",
+      "2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e",
+      "841231db0a0bd1bde6b7a33976f43f7950753c9bbc91782c7675b97a384de81f"
+    ]
+  },
+  "utc": "2026-10-05T15:44:35.701Z"
+}

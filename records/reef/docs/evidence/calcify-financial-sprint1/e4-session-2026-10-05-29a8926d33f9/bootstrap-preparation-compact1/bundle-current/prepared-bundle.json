@@ -1,0 +1,99 @@
+{
+  "schema": "calcify-bootstrap-prepared-bundle-v1",
+  "actualLoadExecuted": false,
+  "proofResults": 49,
+  "proofRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/e3-packaged-candidate",
+  "originalProofRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/e3-current-candidate",
+  "packagedProofRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/e3-packaged-candidate",
+  "originalManifestSha256": "c8c384602570836fbcfd83e3c842f8995a1c716d9d19b8901802e7091d88b0a1",
+  "packagingManifestSha256": "6b689248921a8841fead2a326ad27b2603d571b724d645e3c871e80c0ad5bdfe",
+  "packagingVerificationSha256": "b3a0fc4785baf4a14efa7631bb6a47ab256f12bc50ebdcc30249a311203feca1",
+  "proofFiles": 825,
+  "proofBytes": 40187437,
+  "combinedRawWithProspectiveFrozenCopiesUpperBytes": 80032488,
+  "candidateSha256": "cd50045bb09f0faba60179a1f7ed0295c968dfb94823e8ee58e6e82fb3ca65be",
+  "bootstrapSha256": "5ddc8c9d6ea6344f2436311a92286f260162bedc20469bc6862685939c121400",
+  "files": [
+    {
+      "name": "bootstrap-candidate.json",
+      "sizeBytes": 5057,
+      "sha256": "4742fe3cce03e0dde0e782c3364f183dab29725e3d73128579db92f6986693bf",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/bootstrap-candidate.json"
+    },
+    {
+      "name": "bootstrap-review.json",
+      "sizeBytes": 974,
+      "sha256": "e3a4bd3da26b2098b654adfdcc7034fe2ccff31094ae215741ee13b22574de40",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/bootstrap-review.json"
+    },
+    {
+      "name": "bootstrap-compact1-review-report.md",
+      "sizeBytes": 7697,
+      "sha256": "d96dcfe01a3f59f5c98a6231056ef63a8040cfef0d9bbfff1d146d10458810a9",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/bootstrap-compact1-review-report.md"
+    },
+    {
+      "name": "capability.json",
+      "sizeBytes": 7243,
+      "sha256": "255c410c9ec86dd5bd1ab9c4c31ef8a8dc843603ae2f67d27972b2b3df02ffeb",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/capability.json"
+    },
+    {
+      "name": "bootstrap-fixtures.json",
+      "sizeBytes": 90325,
+      "sha256": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/bootstrap-fixtures.json"
+    },
+    {
+      "name": "e3-current-proof-manifest.json",
+      "sizeBytes": 242193,
+      "sha256": "36702c77e4a7ebc4c1d244bed88ec37aae0a1390b77fa12237777472c5a55591",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/e3-current-proof-manifest.json"
+    },
+    {
+      "name": "e3-current-correctness.json",
+      "sizeBytes": 2113,
+      "sha256": "a702292c3507278993a7fa895f601357ca8aef477c6fec7a2e4ca45406d5cac6",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/e3-current-correctness.json"
+    },
+    {
+      "name": "e3-current-outer-closure.json",
+      "sizeBytes": 1235,
+      "sha256": "96af2f0499ede32535c21fd1ca72130b1cf81697c335e175a74f0e4f9b187aca",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/e3-current-outer-closure.json"
+    },
+    {
+      "name": "e3-closed-confirmation.json",
+      "sizeBytes": 1230,
+      "sha256": "6ea725a313b360e247910f460681f363d90ed517bc7865aea894b7bde07de116",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/e3-closed-confirmation.json"
+    },
+    {
+      "name": "e3-lossless-package-verification.json",
+      "sizeBytes": 1070,
+      "sha256": "b3a0fc4785baf4a14efa7631bb6a47ab256f12bc50ebdcc30249a311203feca1",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/e3-lossless-package-verification.json"
+    },
+    {
+      "name": "bootstrap-request.json",
+      "sizeBytes": 12824,
+      "sha256": "20059e9096ca766a0190f7d21edc35bd08df7377e818dd6f0e92e650df1ae886",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/bootstrap-request.json"
+    },
+    {
+      "name": "bootstrap-supervisor.json",
+      "sizeBytes": 10814,
+      "sha256": "0837c8028cbd954943d60d69d1a58f528156580c6048a800f805c6f967fbb1cd",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/bootstrap-supervisor.json"
+    },
+    {
+      "name": "bootstrap-adapter.json",
+      "sizeBytes": 6682,
+      "sha256": "e23ec12c5d01bf6c399d95a78558e8181070396aedf9c62456edd41b705136ee",
+      "target": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/bootstrap-adapter.json"
+    }
+  ],
+  "targetRequestPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/frozen/bootstrap-request.json",
+  "uniqueOutput": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/proof",
+  "operatorGate": "Root copies exact staged bytes, invokes verifyBootstrapEvidence against frozen request/config broker-free, then separately supervised restart+fresh strict health before load"
+}

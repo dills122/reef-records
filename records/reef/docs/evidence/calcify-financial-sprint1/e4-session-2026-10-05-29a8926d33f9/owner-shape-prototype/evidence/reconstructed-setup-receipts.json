@@ -1,0 +1,24 @@
+{
+  "format": "reconstructed tool-output receipt; not original raw process log",
+  "firstWrapperFailure": {
+    "earliestLogBirthUtc": "2026-10-05T15:26:36.463438Z",
+    "toolExitCode": 1,
+    "output": "Exception in thread \"main\" java.io.FileNotFoundException: /Users/dsteele/.gradle/wrapper/dists/gradle-9.8.0-bin/3m7h6ceboy5k31n8kzwzuxssm/gradle-9.8.0-bin.zip.lck (Operation not permitted)",
+    "rawLogPreserved": false
+  },
+  "firstEscalatedAttempt": {
+    "sessionId": 9930,
+    "exitCode": 1,
+    "fault": "local fileTree path used ../../../../services instead of ../../../services; resulting Kotlin compile lacked dependencies",
+    "rawLogPreserved": false,
+    "exactCompilerOutputRecovered": false
+  },
+  "meaningfulRed": {
+    "sessionId": 91432,
+    "exitCode": 1,
+    "rawLog": "red.log",
+    "lastWriteUtc": "2026-10-05T15:28:03.562319Z",
+    "result": "genesis canonical digest mismatch"
+  },
+  "limitation": "red.log reused for first three attempts before unique receipt rule received; earliest birth is not meaningful RED start, intervening exact process output unavailable"
+}

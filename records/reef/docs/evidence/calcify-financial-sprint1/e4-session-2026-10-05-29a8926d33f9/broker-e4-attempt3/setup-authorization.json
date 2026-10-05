@@ -1,0 +1,11 @@
+{
+  "accepted": true,
+  "baselineClosed": true,
+  "cleanupVerified": true,
+  "project": "reef-calcify-e4-attempt3-8c6f",
+  "evidence": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt2/bootstrap-failed-cleanup-inspect.raw.json",
+  "baselineOutcome": "FAILED_MANAGED_ACTIVATION_PARITY",
+  "schema": "calcify-owned-setup-authorization-v1",
+  "rootClosurePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt2/bootstrap-failed-cleanup-inspect.raw.json",
+  "rootClosureSha256": "82a53d12a9133edaa6395f05ae4bcf8d5a3b358b57b067d21d2c392fdcbcce02"
+}

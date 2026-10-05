@@ -1,0 +1,24 @@
+{
+  "schema": "calcify-attempt2-preparation-complete-v1",
+  "resourceState": "STOPPED_AFTER_HEALTHY_SETUP",
+  "exactOwnedIds": [
+    "05e2b09ff3d44b6e32d398b6cc20790f82b7a2cf98f25ff50e3c07d430279fce",
+    "9a9f3e1e1fbaaa82740db449e5094b6db9457caa0732176f4a82eef0b6bc2dec",
+    "553a483b1a11d32daf5d67a9465e591c4a4c58b61548a02a790980be8d6d7672"
+  ],
+  "runningEndpointInspectionPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt2/bootstrap-00551-cleanup-inspect.json",
+  "runningEndpointInspectionSha256": "bdc7032a7b313f571481721941a9043aa09e00bf28823eb8294fb5957f1c8340",
+  "stoppedInspectionPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt2/bootstrap-00553-stopped-confirm.json",
+  "stoppedInspectionSha256": "6eff9bac7fcd55832d92bf4856edb4d305b1c648f5b2a49775cab72cd67c65cd",
+  "setupWatcherExitCode": 0,
+  "actualAdminScopePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt2/broker-scope.json",
+  "actualAdminScopeSha256": "9237e6dc158d7db24337e28fa75a28242f594abc9cee5b903343ef0a7d07ca22",
+  "configPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt2/frozen/config.json",
+  "configSha256": "89df4112745bc4e3013ad39528417bd239f04f8ae90a23d18f9d090d4270b330",
+  "stateDirectoryEmpty": true,
+  "journalDirectoryEmpty": true,
+  "proofPathAbsent": true,
+  "oldSixExactExitedResourcesPreserved": true,
+  "noTopicsOrWorkload": true,
+  "stoppedAllocation": "unknown; no stopped-container execution or zero claim"
+}

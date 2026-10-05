@@ -1,0 +1,17 @@
+{
+  "schema": "calcify-lossless-e3-verification-v1",
+  "pass": true,
+  "originalRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/e3-current-candidate",
+  "packagedRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/e3-packaged-candidate",
+  "originalManifestSha256": "c8c384602570836fbcfd83e3c842f8995a1c716d9d19b8901802e7091d88b0a1",
+  "packagingManifestSha256": "6b689248921a8841fead2a326ad27b2603d571b724d645e3c871e80c0ad5bdfe",
+  "closedConfirmationSha256": "6ea725a313b360e247910f460681f363d90ed517bc7865aea894b7bde07de116",
+  "executionManifestSha256": "25adec8c78dbd7c5ecfb365ec4733f932fc2528111c9bdf25084eab262b812b2",
+  "originalFiles": 814,
+  "packagedFiles": 825,
+  "originalBytes": 39065067,
+  "packagedBytes": 40187437,
+  "combinedRetainedRawBytes": 79252504,
+  "reassembly": "Independent64KiB reads; exact ordered contiguous source byte count+SHA for every original; source entire tree equal before/after",
+  "actualLoadExecuted": false
+}

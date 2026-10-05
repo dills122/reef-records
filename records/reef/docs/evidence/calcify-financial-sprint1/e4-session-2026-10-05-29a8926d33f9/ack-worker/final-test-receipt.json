@@ -1,0 +1,74 @@
+{
+  "command": "JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home ./gradlew test --tests 'com.reef.platform.calcify.financial.*'",
+  "exitCode": 0,
+  "java": "21+35-LTS-2513",
+  "tests": 72,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "classes": [
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialBrokerProbeTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-10-05T13:11:01.777Z",
+      "time": "0.114"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialKernelTest",
+      "tests": "14",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-10-05T13:11:02.066Z",
+      "time": "117.854"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialPartitionCutTest",
+      "tests": "13",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-10-05T13:13:22.083Z",
+      "time": "0.059"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialOracleTest",
+      "tests": "12",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-10-05T13:12:59.921Z",
+      "time": "22.162"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialHeapGuardTest",
+      "tests": "19",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-10-05T13:11:01.992Z",
+      "time": "0.074"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialAckJournalTest",
+      "tests": "8",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-10-05T13:10:57.855Z",
+      "time": "3.921"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialCommittedCutTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-10-05T13:11:01.892Z",
+      "time": "0.099"
+    }
+  ]
+}

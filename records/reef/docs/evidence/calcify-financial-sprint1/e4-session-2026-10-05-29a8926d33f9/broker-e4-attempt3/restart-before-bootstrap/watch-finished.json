@@ -1,0 +1,42 @@
+{
+  "reason": "setup completion: exact owned brokers stopped or explicit strict supervisor handoff",
+  "lastSample": {
+    "schema": "calcify-e4-bootstrap-sample-v1",
+    "sampledAtMs": 71861506,
+    "completedAtMs": 71861679,
+    "clockScope": "host-monotonic-ms",
+    "utc": "2026-10-05T17:30:27.305Z",
+    "runningIds": [
+      "45a7adb373fa7914cc16a1d58f4dd44a3d811259e7c097c119ee725129f2c893",
+      "e98481cf469c0cabac43873dfb732fac89f2c4a912e02604a2df888d05e77149",
+      "5226066cada82643c4333341a25db1a50674d02574e8d3d1deb5e1dd89a65c54"
+    ],
+    "allocations": [
+      {
+        "id": "e98481cf469c0cabac43873dfb732fac89f2c4a912e02604a2df888d05e77149",
+        "allocatedBytes": 1761525760
+      },
+      {
+        "id": "5226066cada82643c4333341a25db1a50674d02574e8d3d1deb5e1dd89a65c54",
+        "allocatedBytes": 1755869184
+      },
+      {
+        "id": "45a7adb373fa7914cc16a1d58f4dd44a3d811259e7c097c119ee725129f2c893",
+        "allocatedBytes": 1759461376
+      }
+    ],
+    "allocatedBytes": 5276856320,
+    "partialMeasuredAllocatedBytes": 5276856320,
+    "guestFreeBytes": 92033662976,
+    "rawProofBytes": 38062154,
+    "unmeasuredIds": [],
+    "startupUnknown": false,
+    "scope": "Approved setup-only startup exception<=30s; actual running du/df; not strict runtime supervisor or capacity evidence",
+    "healthyIds": [
+      "45a7adb373fa7914cc16a1d58f4dd44a3d811259e7c097c119ee725129f2c893",
+      "e98481cf469c0cabac43873dfb732fac89f2c4a912e02604a2df888d05e77149",
+      "5226066cada82643c4333341a25db1a50674d02574e8d3d1deb5e1dd89a65c54"
+    ]
+  },
+  "utc": "2026-10-05T17:30:28.307Z"
+}

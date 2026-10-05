@@ -1,0 +1,22 @@
+{
+  "name": "project-absence",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "ps",
+    "-a",
+    "--filter",
+    "label=com.docker.compose.project=reef-calcify-e4-session-8c6f",
+    "--format",
+    "{{json .}}"
+  ],
+  "startedAtMs": 59428906,
+  "startedUtc": "2026-10-05T14:03:14.502Z",
+  "stdout": "",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 59428930,
+  "completedUtc": "2026-10-05T14:03:14.526Z",
+  "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputSha256": "0edb8c62c9adde949cd1b5517ce7f268f8ee42930357a8b4ec86e904d7d3b06f"
+}

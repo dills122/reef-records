@@ -1,0 +1,24 @@
+{
+  "schema": "calcify-closed-recovery-companions-v1",
+  "scope": "Exact successful bounded Compact1 encoded synthetic source bytes and stopped managed process metadata; no live RocksDB/volume sweep or capacity claim",
+  "journalManifestPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/durable-journal-evidence/compact1/manifest.json",
+  "journalManifestSha256": "fe36bae276df76bde6369c37836fb869412016654c5ac19aa58428afccbf5aec",
+  "cleanupInspectionPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-compact1/bootstrap-cleanup-inspect.raw.json",
+  "cleanupInspectionSha256": "7ecc1d1be953b3acdbe07f366ac10a4207d114700c54c99f48272061e7db36ad",
+  "writersClosed": true,
+  "allSessionWritersClosed": false,
+  "files": [
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/proof/encoded-records.bin",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/durable-journal-evidence/compact1/encoded-records.bin",
+      "sizeBytes": 6784151,
+      "sha256": "8ab3811b267081c13820952efaacf48dae2df24c692b825c0c8782f9893050f5"
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/store/financial-s1-e4-bootstrap-compact1-streams/kafka-streams-process-metadata",
+      "snapshotPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/durable-journal-evidence/compact1/kafka-streams-process-metadata",
+      "sizeBytes": 52,
+      "sha256": "1a13cda253894f118a5655ebdcbeee3de85a63afecb60b0bec325d9561d7c211"
+    }
+  ]
+}

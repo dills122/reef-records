@@ -1,0 +1,16 @@
+{
+  "schema": "financial-e3-outer-closure-v1",
+  "proofRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt2/e3-current-candidate",
+  "originalProofRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt2/e3-current-candidate",
+  "packagedProofRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt2/e3-packaged-candidate",
+  "originalManifestSha256": "cbb7e719488b71b12e57a82f4fc1d342630b686a30c4892512ceb16129f0b523",
+  "packagingManifestSha256": "b2cd5c78081d77ae56ce952e3fd8b3eb6a13c65ae981bda824260628e6468001",
+  "packagingVerificationSha256": "1d0412a095c02f58583f26d96eb3061dc7ebe6f39bc247e69519bc04ae6af549",
+  "cliExitCode": 0,
+  "writersClosed": true,
+  "cleanupClosed": true,
+  "supervisorFinishedSha256": "97a665679a425ba1d2cdedd01e6bf14eaa26388771066d016a3abab9a1b844de",
+  "wrapperStatusSha256": "747d87d87dfacff8749eeddc8f63661767fd8e6129e0a7366b7dbb4b63408de8",
+  "executionManifestSha256": "31c0322a96d8c4793711c86960279344e5a2b53416e9cda37aa7ba321fdc823d",
+  "closedConfirmationSha256": "1db51d7a85aa6cfb087c14d3212fbf2af742e16c524ba0fb9c7e44726e68fe75"
+}

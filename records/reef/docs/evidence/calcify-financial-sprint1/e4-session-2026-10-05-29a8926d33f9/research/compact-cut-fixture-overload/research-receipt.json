@@ -1,0 +1,10 @@
+{
+  "beforeNextAttempt": true,
+  "method": "Read actual compiled failingJUnit class via pinnedJDK21 javap, noappworkload",
+  "bytecodeSha256": "0ee78976534febec6c98f7e3c59d17396816389b4590becdbf324073885b6828",
+  "nextAttempt": 3,
+  "nextCycle": 1,
+  "priorAttempt": 2,
+  "priorCycle": 3,
+  "sourceUnchangedDuringResearch": true
+}

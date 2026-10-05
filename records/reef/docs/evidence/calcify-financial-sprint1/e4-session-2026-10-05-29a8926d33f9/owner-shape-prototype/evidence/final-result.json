@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "checks": 12212,
+  "sourceActions": 2100,
+  "historyRecords": 2101,
+  "fullOraclePrefixes": 40,
+  "ownerSha256": "feee9cec92140f5dd0b3bf9fca6c4c9e07b23ad2bdd51bd1560af557c49bbbff",
+  "historyChecksum": "8c27f0035dfd33fbd6daa8367e3d4b27bdb1674c1fdb5884fabd1b8dfc515b3d",
+  "scope": "isolated copied-source prototype; no throughput/capacity claim"
+}

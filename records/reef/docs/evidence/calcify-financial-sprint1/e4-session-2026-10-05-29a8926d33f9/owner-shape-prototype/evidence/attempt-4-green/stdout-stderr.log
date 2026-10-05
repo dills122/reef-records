@@ -1,0 +1,20 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :processResources NO-SOURCE
+
+> Task :compileKotlin
+w: file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/owner-shape-prototype/src/main/kotlin/com/reef/platform/calcify/financial/PrototypeChecks.kt:14:21 'fun fields(): (Mutable)Iterator<(Mutable)Map.(Mutable)Entry<String!, JsonNode!>!>!' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/owner-shape-prototype/src/main/kotlin/com/reef/platform/calcify/financial/PrototypeChecks.kt:45:14 'fun fields(): (Mutable)Iterator<(Mutable)Map.(Mutable)Entry<String!, JsonNode!>!>!' is deprecated. Deprecated in Java.
+
+> Task :compileJava NO-SOURCE
+> Task :classes UP-TO-DATE
+
+> Task :run
+{"status":"PASS","checks":2488,"sourceActions":2100,"historyRecords":2101,"fullOraclePrefixes":40,"ownerSha256":"feee9cec92140f5dd0b3bf9fca6c4c9e07b23ad2bdd51bd1560af557c49bbbff","historyChecksum":"8c27f0035dfd33fbd6daa8367e3d4b27bdb1674c1fdb5884fabd1b8dfc515b3d","scope":"isolated copied-source prototype; no throughput/capacity claim"}
+
+[Incubating] Problems report is available at: file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/owner-shape-prototype/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 17s
+2 actionable tasks: 2 executed
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.8.0/userguide/configuration_cache_enabling.html

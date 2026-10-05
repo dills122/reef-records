@@ -1,0 +1,13 @@
+{
+  "FinancialBrokerProbe$FinancialProcessor.javap.txt": "2781bf9df6f0824011bac6ca3da4e0133240af0e76fb61a16b4529d826a37b81",
+  "FinancialKernel$Changes.javap.txt": "bcf301a15341c98ca7c58fc1196bc535c6a274b5ba199cfa99028d09b08b4dc8",
+  "FinancialKernel.javap.txt": "9b897906615a82bb285bd5ab1607c8366157e0c8db74af333f1e1e74b43a530b",
+  "FinancialRateProbe$Reference.javap.txt": "04cfef2ce63e8f48693138923d41e5465eb8e6bd120e6381a0a67e4748d0855a",
+  "FinancialRateProbe.javap.txt": "e3922e49ce94dcdff2b5e94864d695e3db2c69cb7d7e4ad298a24b9bd1e6f677",
+  "binding-report.md": "ec14dab889aace9e4c2971b24ff15e64da09284035e0f15116aa5ab5d4d74973",
+  "binding-verdict.json": "bb9b63ccb8c24b1e6889b3034acfec2ca49ac9867b0025e5ad5c9a47ae275191",
+  "bound-capability-command.json": "f741cac75a703a7062b8656a241da3dc554208ccf8db1c73d600fad03a6d7d8b",
+  "bound-capability.json": "69154c464bbf8ec2652ce4418d59eb02386016be003169c7e1e1f485d668b708",
+  "bound-final-compile.log": "3315599836aeda8e9ba70075250a13fed292507046348c6087ec6442bfd8c1b3",
+  "identity.json": "d3ca69f62e9271fb8724309e5a9e852fb3e75193da871aa4234fd648d7900db3"
+}

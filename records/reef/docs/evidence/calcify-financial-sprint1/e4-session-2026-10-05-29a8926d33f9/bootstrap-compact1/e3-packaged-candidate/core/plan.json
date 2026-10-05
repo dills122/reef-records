@@ -1,0 +1,561 @@
+{
+  "preflight": {
+    "schema": "calcify-e4-broker-preflight-v1",
+    "createdUtc": "2026-10-05T17:36:40.916Z",
+    "registeredResources": {
+      "project": "reef-calcify-e4-compact1-8c6f",
+      "containers": [
+        {
+          "id": "b3c49cb7544c501fa3e8a764571cdc705ca04d10c82ffcb0cbf400032ebaf33c",
+          "brokerId": 0,
+          "name": "reef-calcify-e4-compact1-8c6f-rp0-1",
+          "hostKafkaEndpoint": {
+            "host": "127.0.0.1",
+            "port": 40392,
+            "containerPort": "40392/tcp"
+          },
+          "labels": {
+            "com.docker.compose.project": "reef-calcify-e4-compact1-8c6f",
+            "com.docker.compose.service": "rp0",
+            "reef.test": "calcify-financial-sprint1"
+          },
+          "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+          "volumes": [
+            {
+              "name": "reef-calcify-e4-compact1-8c6f_rp0-data",
+              "destination": "/var/lib/redpanda/data"
+            }
+          ]
+        },
+        {
+          "id": "8bcac17db63ad1d6767999fa5eb1e1454d2534cdd27584432e51af5a20f4921d",
+          "brokerId": 1,
+          "name": "reef-calcify-e4-compact1-8c6f-rp1-1",
+          "hostKafkaEndpoint": {
+            "host": "127.0.0.1",
+            "port": 40492,
+            "containerPort": "40492/tcp"
+          },
+          "labels": {
+            "com.docker.compose.project": "reef-calcify-e4-compact1-8c6f",
+            "com.docker.compose.service": "rp1",
+            "reef.test": "calcify-financial-sprint1"
+          },
+          "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+          "volumes": [
+            {
+              "name": "reef-calcify-e4-compact1-8c6f_rp1-data",
+              "destination": "/var/lib/redpanda/data"
+            }
+          ]
+        },
+        {
+          "id": "a7fad66030855c9ae5e9b942c13c128e7151db37356b18b64d43e730efbf7b0f",
+          "brokerId": 2,
+          "name": "reef-calcify-e4-compact1-8c6f-rp2-1",
+          "hostKafkaEndpoint": {
+            "host": "127.0.0.1",
+            "port": 40592,
+            "containerPort": "40592/tcp"
+          },
+          "labels": {
+            "com.docker.compose.project": "reef-calcify-e4-compact1-8c6f",
+            "com.docker.compose.service": "rp2",
+            "reef.test": "calcify-financial-sprint1"
+          },
+          "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+          "volumes": [
+            {
+              "name": "reef-calcify-e4-compact1-8c6f_rp2-data",
+              "destination": "/var/lib/redpanda/data"
+            }
+          ]
+        }
+      ],
+      "bootstrapServers": "127.0.0.1:40392,127.0.0.1:40492,127.0.0.1:40592"
+    },
+    "bootstrapServers": "127.0.0.1:40392,127.0.0.1:40492,127.0.0.1:40592",
+    "composePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/broker.compose.yml",
+    "composeSha256": "e34831c6bee64f02235ef145e89bae84fa7a5f9b976128d908794510cd7f68ba",
+    "profilePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/profile.json",
+    "profileSha256": "a87919d2abfe1c0648f360dd725293a98c09b299422b06d634a41d179032217e",
+    "state": "HEALTHY_PROFILE_READ_BACK",
+    "guestFreeBytes": 97071116288,
+    "utc": "2026-10-05T17:37:14.502Z",
+    "clusterProperties": {
+      "log_segment_size": 8388608,
+      "compacted_log_segment_size": 8388608,
+      "transaction_coordinator_log_segment_size": 8388608
+    },
+    "clusterInfo": "CLUSTER\n=======\nredpanda.6e0ef954-456e-46a6-93d4-fbac11248626\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\n",
+    "clusterConfigStatus": "NODE  CONFIG-VERSION  NEEDS-RESTART  INVALID  UNKNOWN\n0     5               false          []       []\n1     5               false          []       []\n2     5               false          []       []\n",
+    "transactionMaxTimeoutMs": 900000,
+    "baselineAllocatedBytes": 151179264,
+    "rawProofBytes": 3140203,
+    "bootstrapException": {
+      "startupDeadlineMs": 72287186,
+      "firstObservedRunningAtMs": 72258346,
+      "firstGuestAtMs": 72258396,
+      "firstGuestDelayMs": 50,
+      "scope": "setup-only approved initial unknown; no topics or payload workload"
+    },
+    "budgets": {
+      "abortAllocatedBytes": 9663676416,
+      "hardAllocatedBytes": 10737418240,
+      "guestFreeBytesFloor": 21474836480,
+      "rawProofBytes": 268435456,
+      "sampleIntervalMs": 5000
+    },
+    "pinnedNetworkPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/pinned-network.compose.yml",
+    "pinnedNetworkSha256": "07aee3c2407dc45a370ad0deae418f8b40763ea542b57679919977e39022c16e",
+    "priorRigPreserved": true,
+    "watchHandoffPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-compact1/watch-handoff.json",
+    "externalBrokerFault": {
+      "composeProject": "reef-calcify-e4-compact1-8c6f",
+      "containers": [
+        "b3c49cb7544c501fa3e8a764571cdc705ca04d10c82ffcb0cbf400032ebaf33c",
+        "8bcac17db63ad1d6767999fa5eb1e1454d2534cdd27584432e51af5a20f4921d",
+        "a7fad66030855c9ae5e9b942c13c128e7151db37356b18b64d43e730efbf7b0f"
+      ],
+      "targetContainer": "8bcac17db63ad1d6767999fa5eb1e1454d2534cdd27584432e51af5a20f4921d",
+      "resources": [
+        {
+          "id": "b3c49cb7544c501fa3e8a764571cdc705ca04d10c82ffcb0cbf400032ebaf33c",
+          "brokerId": 0,
+          "name": "reef-calcify-e4-compact1-8c6f-rp0-1",
+          "labels": {
+            "com.docker.compose.project": "reef-calcify-e4-compact1-8c6f",
+            "com.docker.compose.service": "rp0",
+            "reef.test": "calcify-financial-sprint1"
+          },
+          "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+          "volumes": [
+            {
+              "name": "reef-calcify-e4-compact1-8c6f_rp0-data",
+              "destination": "/var/lib/redpanda/data"
+            }
+          ]
+        },
+        {
+          "id": "8bcac17db63ad1d6767999fa5eb1e1454d2534cdd27584432e51af5a20f4921d",
+          "brokerId": 1,
+          "name": "reef-calcify-e4-compact1-8c6f-rp1-1",
+          "labels": {
+            "com.docker.compose.project": "reef-calcify-e4-compact1-8c6f",
+            "com.docker.compose.service": "rp1",
+            "reef.test": "calcify-financial-sprint1"
+          },
+          "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+          "volumes": [
+            {
+              "name": "reef-calcify-e4-compact1-8c6f_rp1-data",
+              "destination": "/var/lib/redpanda/data"
+            }
+          ]
+        },
+        {
+          "id": "a7fad66030855c9ae5e9b942c13c128e7151db37356b18b64d43e730efbf7b0f",
+          "brokerId": 2,
+          "name": "reef-calcify-e4-compact1-8c6f-rp2-1",
+          "labels": {
+            "com.docker.compose.project": "reef-calcify-e4-compact1-8c6f",
+            "com.docker.compose.service": "rp2",
+            "reef.test": "calcify-financial-sprint1"
+          },
+          "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+          "volumes": [
+            {
+              "name": "reef-calcify-e4-compact1-8c6f_rp2-data",
+              "destination": "/var/lib/redpanda/data"
+            }
+          ]
+        }
+      ],
+      "stoppedAllocatedBytesUpperBound": 3221225472,
+      "phaseProtocol": {
+        "schema": "calcify-broker-fault-phase-v1",
+        "runId": "e4-compact-external1",
+        "maxCycles": 1,
+        "recoveryTimeoutMs": 30000,
+        "stopTimeoutMs": 30000,
+        "directory": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-compact1/e3-current-candidate/broker-fault",
+        "clock": {
+          "platform": "darwin",
+          "node": "22.22.1",
+          "uv": "1.51.0"
+        }
+      },
+      "evidence": "Existing frozen3GiB target reservation throughout fault-enabled E3 proof; actual running du must stay<=3GiB. Stopped actual allocation unknown. New named data volumes exclusively owned with no outside writers. Charge is bound, not physical measurement or startup calibration."
+    },
+    "derivedFromProfileSha256": "cf804a779edfa0722631330e0e2f05a472537e004bd11798368ee7649df2f5a3",
+    "derivedFaultRunId": "e4-compact-external1",
+    "originalProfileFactsScope": "Setup hardware/config/image/node identities retained as dated facts. Actual current health/generations/allocation/guest-free come from fresh strict supervisor; no bootstrap sample or prior footprint is current bound."
+  },
+  "schema": "financial-e3-plan-v1",
+  "prefix": "financial-s1-97924e15-e4-compact-core1",
+  "broker": "127.0.0.1:40392,127.0.0.1:40492,127.0.0.1:40592",
+  "fixtureSha256": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+  "sourceHashes": {
+    "FinancialAckJournal.kt": "a1600cadef1962822ea5d7bcbe32436ce5133d685f22624faa61f83a590fc933",
+    "FinancialAckJournalTest.kt": "85127a857336a2f42193083354e7fb2533e22f1595392b38aa117a1a9e1d6a08",
+    "FinancialBootstrapProbeTest.kt": "c2f83dd64aff583ce4d2dbb4284101e96670b808875fc23827e812506695f10b",
+    "FinancialBrokerProbe.kt": "6f7d89934d01a79e54b68ced230adc2d341076573cdd7fa0ca36408b767ae778",
+    "FinancialBrokerProbeTest.kt": "33f641de586b7aef69d9bf1028a4978d070301cabaa2060508fe7ab71b490d2a",
+    "FinancialCanonicalLeafOwner.kt": "3406ede4cc3f8d605e4fcf5d8e047b941d35bc1502b21fd483b13fc415e7bcb7",
+    "FinancialCanonicalLeafOwnerTest.kt": "34ac8e67dc33421e055c3b2622eb093e6b3d603ec3ea23b0b99dce9c7d558378",
+    "FinancialCommittedCut.kt": "543a31445992e4e33b0c8518df6d21f66689dba2dc850effe6e73080ddd236a6",
+    "FinancialCommittedCutTest.kt": "a2f6485d28625502fbaf1edfc029d01f093b9918c6b9265baa69996ecde0f716",
+    "FinancialHeapGuard.kt": "06e673ff1b8428a755485313e5514f43ed9635594f62fc23259248fe7a9f484d",
+    "FinancialHeapGuardTest.kt": "b398ecd7e41473abe0c4e3930add848d1c37107ada6d0f0ffecf9c3d64d7ddff",
+    "FinancialKernel.kt": "9f76e87940d7600dac11bb26aba9ad40e39e7fbf41ec28dc8ab990790f0e637e",
+    "FinancialKernelTest.kt": "c45298ccfdc257c0c77ddd153e09e0eaf6849a4ec8d086cd2ea3e8544cf5d1ac",
+    "FinancialOracle.kt": "8c96181409d813876a6be78fed286064070f05f9cc1a5e67729927145c931012",
+    "FinancialOracleTest.kt": "7ecca8b421f9936845bdc235bb3e36e6a779b23a55b3761d6fa992a71fa532e7",
+    "FinancialPartitionCut.kt": "b24893cbf315171652c2d18cb9cb343f1c1f906d9263d5d6ea2262e90a3161bc",
+    "FinancialPartitionCutTest.kt": "609e09025939987d83fa0a6a7b3b78fe6de54bc6dc11266a6c2296f4c130cd2c",
+    "FinancialPhysicalInventory.kt": "984d21564e57472525c28ddd72668645be76dd5f1e10e7e70c968dec68256c2c",
+    "FinancialPhysicalInventoryTest.kt": "8a7045d480d55538ed162dc316e593205932eeaa987a529e3bc20bf43e34fb3c",
+    "FinancialRateProbe.kt": "92fb6924c67085f7ab8e492209f692cabff2e20f2c99cb6a97c31869aeaa67d1",
+    "FinancialRateReferenceTest.kt": "413c6e820dced468eae3de8367d0c5312b107bac529e144a60fa21ec42e2f6f3"
+  },
+  "runnerHashes": {
+    "scripts/dev/calcify-financial/broker-proof.mjs": "5e508882336f939cb6ed2c15dfbe38c4a4fa7228266a405d7bb8a2b17ac61680",
+    "scripts/dev/calcify-financial/lib/external-faults.mjs": "c62bb2ce1e71fa2cfe345e9419fa678404eb273f32a3e1a0a8a24954e2df429f",
+    "scripts/dev/calcify-financial/proof-supervisor.mjs": "a5ec54bb9a1eca13e4d321872523565d0770b435836f18ec873eb95882832425"
+  },
+  "classpath": "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/main:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/java/main:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/HikariCP-7.1.0.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/animal-sniffer-annotations-1.27.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/annotations-23.0.0.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/annotations-4.1.1.4.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/bcprov-lts8on-2.73.12.1.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/checker-qual-3.55.1.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/error_prone_annotations-2.50.0.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/failureaccess-1.0.3.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/grpc-api-1.84.0.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/grpc-context-1.84.0.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/grpc-core-1.84.0.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/grpc-netty-shaded-1.84.0.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/grpc-protobuf-1.84.0.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/grpc-protobuf-lite-1.84.0.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/grpc-stub-1.84.0.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/grpc-util-1.84.0.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/gson-2.14.0.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/guava-33.6.0-jre.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/j2objc-annotations-3.1.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/jackson-annotations-2.22.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/jackson-core-2.22.3.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/jackson-databind-2.22.3.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/jnats-2.26.3.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/jspecify-1.0.0.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/jsr305-3.0.2.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/junit-jupiter-api-5.10.1.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/junit-jupiter-engine-5.10.1.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/junit-platform-commons-1.10.1.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/junit-platform-engine-1.10.1.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/junit-platform-launcher-1.10.1.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/kafka-clients-4.3.1.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/kafka-streams-4.3.1.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/kafka-streams-test-utils-4.3.1.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/kotlin-stdlib-2.4.20.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/kotlin-test-2.4.20.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/kotlin-test-junit5-2.4.20.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/kotlinx-coroutines-core-jvm-1.11.0.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/lz4-java-1.10.2.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/opentest4j-1.3.0.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/perfmark-api-0.27.0.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/postgresql-42.7.13.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/proto-google-common-protos-2.64.1.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/protobuf-java-4.36.2.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/rocksdbjni-10.1.3.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/slf4j-api-2.0.17.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/snappy-java-1.1.10.7.jar:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/zstd-jni-1.5.6-10.jar",
+  "compiledHashes": {
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialAckJournal$Callback.class": "7d527a2e7b069f8fb5e1fba8783c9febf15b8ed0dfe518844c23efc0f8e4c755",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialAckJournal$Companion.class": "009b0b7cdfd97257d4049d922d397f1a9ddb4c4b112fe413b4d9a536a7a71c9f",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialAckJournal$Frame.class": "d6331ed7e03fccb901f3cbcecd90bfe231823b0b7cc29632294e67d9e7737398",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialAckJournal$Scope.class": "3e56c6249f675a2ee1b69f682ad659eeb16b0ff18258e3f9e9fa60c9f10896fe",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialAckJournal.class": "89fb1afe907a7afe34fd48f8de76eba587b5518511bc5d92f30443e39a9befc8",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialAckJournalCrashProcess.class": "1416bc33179b149405c031bfb8c89d0fd8059863bf964e477739ffd3f22d5f02",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialAckJournalTest.class": "b02b1a4252b01b667f74406a71d6c0d3ecf70ef4b86a2b01540de28dbb7628d1",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBootstrapProbeTest$sam$java_util_function_Function$0.class": "29bcf8bad3c2b09b835aa6ae0d47e8e1ed756c8921522bd3925d9ba6f8c7d4c5",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBootstrapProbeTest.class": "d733f6e70f3a0d28ecc6a0d3bca26ca820ef9c5d4aaeb1469be7a92a67ed63a0",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$FinancialProcessor.class": "ba2b88c4217409eec4052c8d1891875877f24037c7f33c042179fe66eb1cd92f",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$OutputVerifier$Staged.class": "578295265e913253abe1d09b1b80e48e1c770a92025859c0df37abaa0393c12d",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$OutputVerifier.class": "4327782ab2d3b270ef32cfe979400befd75537fc43d0f354dfa1c56637dbfdaf",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$activationMembership$2.class": "55b3f3d127765beca5f7a3f2c152b7955acc17c1d8365cad9283354aec3edf98",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$businessView$lambda$0$$inlined$compareBy$1.class": "a0fc95e86cde3e574b34d1448bbc7a0c7b8073aa940de0825f91260ae4376228",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$businessView$lambda$0$$inlined$thenBy$1.class": "0fcb39c8196b4f7d33f6184d2dfbdfeb16a8c11a3748fff7b2cc0b5d830f379d",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$businessView$lambda$0$$inlined$thenBy$2.class": "21a909a9576889cf671e08220ce0841f5d4a65485cd48ac1fa0523c9d2afd1a0",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$topology$4.class": "190324fac3fc892be287d45f65d6c19545b6d5171039dcd3e5f6a13e8fbc8b16",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$worker$clients$1$getProducer$1.class": "87d0ea1a8cb5f7f67eef29050cde3f4ff06aa9292b5a73b737a194fa01b2e5c7",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe$worker$clients$1.class": "57906c710905e69998637157804355e14f8f39b7c11a020e0a9bffc7662dcb5d",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbe.class": "fb356e52479d876bf1318e02374c9d8bcd0716477e24ba0fe3ee291a8573f1cf",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialBrokerProbeTest.class": "6bc14cfb31f6fef7ed94d7cacc0fcdbba9efb4c083b8d5afe50257b059cb4bf9",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialCanonicalLeafOwner$Companion.class": "bf1acdaab4c8af950851f2c9fe2e93e58625b73e6940c092cecbce949cefa923",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialCanonicalLeafOwner$canonical$$inlined$sortedBy$1.class": "d658447522312272cff9ff86b9db3eb06080531557086fb5b3a144616210a589",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialCanonicalLeafOwner.class": "f1bf8ad395dbed4e664b218404e9c5da4c48bbef238fa7fb4c635f4184afa231",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialCanonicalLeafOwnerTest.class": "41f8f050c36c829d294c1dc4d47a7a41251e34007abd388ecab590a4aa54df31",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialCommittedCut$Cut.class": "0b3bb7e2550534433d3967d354da9a1bb2da73d0fb41b1b4cb27ccc126628552",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialCommittedCut.class": "b641dc0ceee6bc45824918c4bbd99f33220933c92398d0527d69fd45af448083",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialCommittedCutTest$Fixture.class": "8e2cae5e86702e0d11fc6c58446d524cbf7d5d7b102970925d8e7dd7f6fb0b81",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialCommittedCutTest.class": "23dacde9abf3e4625b35469bfc4fbc6016bb2bdea6316baf1ffad88250295dea",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapBounds$Companion.class": "951121778969dc8f2c883ee65a663cb81e0c97f2700d07fb1b9216d68cb4f030",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapBounds.class": "9df336cf26452616f07f3681d67c01076110952ff440c4c69ddefc6dc8132916",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuard$1.class": "3faecdd9f1273bac1aa663059a205c95ed7e8087f65609975003e4002e570957",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuard$2.class": "c055f11968fb8872dc51badef683bb2dae9a298bbdddaa555f5e3afdf8e9b644",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuard$Companion$diagnosticBootstrap$1.class": "6abde96ba4e89e2858b097a045f2425aed7a117922c9e86b3b7b515d4a6689a0",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuard$Companion$diagnosticBootstrap$2.class": "5f5f89f2a00469489003c1dcde170234122d5a38c9b5457fcf7138fe681b441b",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuard$Companion.class": "bb97e07c8e9530eff74e7b65da1073b11571d72ea8552b21ec3b7fa8b1fc832e",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuard$Profile$Conservative.class": "3997b12c80da9fc361ddbc19e3b17388ef1d7b1d2fe75f2fbcf6bce95adc7771",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuard$Profile$DiagnosticBootstrap.class": "17ebd6a0ce47ae231dd6e541cbc47932946d02a7a9230d1917ba1f907087e5eb",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuard$Profile.class": "169b9204b190126cdefb732bc902f0174391b1a425ab7f184c536da0747417a7",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuard.class": "4be6290e58c94dd10a2f041e4000d71dedc01fbf83c5378e03aa927386257b68",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$actualLifecycleFailureAtEveryPhaseCannotPublishAfterward$g$1.class": "cc9b796fdda7dc8d39e2766e6f02eb32f2ab528ba04b6c72267c5cc590216bb5",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$actualReplayBatchFailureAfterWorkersCloseBlocksArtifactAndStopsSensor$g$1.class": "fba0ce516a0499970937f9ab23ee5869236bc439f010715dc08270f4d12704b8",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$artifactPeakScopeExplainsFinalHealthySamplesExcludedFromExportedPeak$g$1.class": "73d4b7d0861d2b8848e73e650a6604979f43f0578706f81636f185bb45c7a22a",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$breachSticksAfterGcAndMaximumCannotChange$1.class": "557d4f635016d9b3faf1a31524bb2419a241f7340fafce2826b11ffff3a44d9c",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$breachSticksAfterGcAndMaximumCannotChange$2.class": "ae88d3bfa51459fcdbe308042d90d3ba4c88e9e034ea91ec76841368fd0edeef",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$diagnosticBreachSensorErrorStaleAndMaximumChangeRemainSticky$1.class": "f28fc0f970895140bbfeb36e2333c262404b298fc634dc5587c74da60fa38c79",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$diagnosticBreachSensorErrorStaleAndMaximumChangeRemainSticky$2.class": "c8442c38ac90d688d777f0de8a7183192e82f6ad2364b0b2e3c978aa71fdb9c8",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$diagnosticBreachSensorErrorStaleAndMaximumChangeRemainSticky$3.class": "8c52ea2c439a54ecb5dd50f534fa6724cc514ea17de9b55b2027653033ed32c5",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$finalSampleFailureLeavesNoArtifactAndExceptionalBodyClosesGuard$3$1.class": "0df6e17b5eff13a476355329c723c517e50607db4d38f0f0113ed9bd0b246647",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$finalSampleFailureLeavesNoArtifactAndExceptionalBodyClosesGuard$g$1.class": "27ed4da9162b041d99b03b481ff3bc0b0cff29f7066ed1cdc809043829562723",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$staleFutureAndMissingSnapshotRefuseSticky$1.class": "ca622b4e45fc32ad0d429f21e43a8a847ea89669fa96f455db1e37428b4f40b3",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest$warmedBaselineRefusalPreventsAnySendThroughActualLifecycle$g$1.class": "72e9c87b73e2ef1d54c5bea5abc72ff3bd47192dd0424c0ef0ea5109f8584d62",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapGuardTest.class": "9145e8644b11fe23a872598dc146e2b71bb188c23691179d035f251cdc8c2feb",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialHeapSnapshot.class": "9b22133c881a5c2c73f86f2a84fd1925cd91280f2c99dc72d699aba2b345fd1f",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Changes.class": "b43eff5c6943dcd26dbcbb9b06a1bdf953f5f0e651a6127bd27f204994d500b3",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Companion$canonical$$inlined$sortedBy$1.class": "44af03f200d3ab3e252da479efc4ad2e1a59b8f670888a882132042da0e33876",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Companion$normalize$$inlined$sortedBy$1.class": "e4f5c0e4f91bf7b8dca7f887418fd6a7ab84cc5858c0dc6ccaee7a9c71e3d9da",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Companion$normalizePayload$lambda$0$$inlined$sortedBy$1.class": "4596dc96023fdbb9aa922ae91a6b5ddd649979e1dd99c63030bff52754248152",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Companion$semantic$$inlined$sortedBy$1.class": "16d602a8437df407f626cfc7ec824e74fa32b8eb7da05ee1d50ff5276109a8c1",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Companion.class": "e01f75b62811f7f273a74358068db1a9f26c4a0ff117417be79ce011e5a51a4e",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$Due.class": "6abc89477f2f82e6729ac4be5f35425731f6d38a0d7499ee75a7881fdc64ad50",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel$drainStaged$$inlined$sortedBy$1.class": "bd706d768796dcd5c55f39b13c611dba6e2b4fe82133f0dae7668e20941d7474",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernel.class": "7a27cbb18cb93f2f78b5f8c9aa40d1b2c762bd2bf88bd0d204905aa867b95c46",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernelTest$brokerModeRetainsOnlyLatestBoundedRecordAndReplaysStreamingHistory$stream$1.class": "ca5fdbdf978ff6aff0e3adcb0daf0e3bcd37731373c743b00f4a3bccd8ffda07",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernelTest$missingStagingDeltaMutantCannotReconstructPendingOwnerState$canonical$$inlined$sortedBy$1.class": "8f052a8e22a3a83eec1e774d5b1e243d39386e10cd0cfd2dfa6f836e23f8225b",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialKernelTest.class": "2dff392f6332d4270732331750882635e8a7786b934478e03eb94e166576fced",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracle$eligible$$inlined$compareBy$1.class": "9be63b83e411f2abf2c9e90149129da90915fb9eab9e7897971ee1212b14d679",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracle$eligible$$inlined$thenBy$1.class": "17a7e17309f31dc104a06d83d19e9b9fefbb7d039d2ec2aed43cf5ae6896d85d",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracle$eligible$$inlined$thenBy$2.class": "9cbae8e3509c1638c09c0f631c875bd582fda75613e7712c9da9d3727a1a2ed5",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracle$semanticChanges$$inlined$sortedBy$1.class": "7f7a6fd7e5e8dad7c641de020fcf1c3c75e575be1163c9b315536eb44f7538e5",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracle.class": "85e43579069dd8f5a6e3c8583f0dc4679d26450dbbd7b576135cd3065b800532",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracleTest$XorShift32.class": "398a99618e9f5c82fc80974c8c14088ed6c3f07ddd0cb779d48b805d41c3f829",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracleTest$consumed signed64 bounds reject before effects and preserve rejection retries$Boundary.class": "55c453d19d66006742eaa94db07e4134162fa45a231d671ebaaff3af99880ba6",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracleTest$generatedTraces$1.class": "a45cd11ae9ac6bd3fd4d2dae8858eca412bbf8a89309e3f5cecc8a03cd7a72d1",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialOracleTest.class": "f8013512ef4afddb7b93d73203f440245ccb3af8096cb0fe9bbae9f6dd97d848",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPartitionCut$ReconstructedCut.class": "32637957cb4a7d9605d0407befebd2929f71f9b5bad0511f0d94114e31121eb2",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPartitionCut$reconstruct$$inlined$sortedBy$1.class": "ec1ad3307903cf6f7a47ec11a3dccdd27c04d731a35404855c9d1a1401f9004a",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPartitionCut.class": "b3ab48c9b1250099e79969a63b5836074a2bbc52e4a7109c210b807686366b8c",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPartitionCutTest$FixtureCut.class": "d3a9278a12d74619ef66b159e495bc57624bde99f8dc2536fa63dd9987f569e9",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPartitionCutTest.class": "9ed5e20b1eed1063d1ba7c9ce927484ead6d6bdc0dec85d27d2dc065527593bb",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPhysicalInventory$Failure.class": "8e4a793046972c51af4953c7ff7249a6411313ca3557691ecddaceeac10d1649",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPhysicalInventory$OwnedTopic.class": "6d0dcb67dc217da995cab17f6d939c4bc0f3c7a44c79cce8dfb03741dcf97b04",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPhysicalInventory$topics$lambda$1$$inlined$sortedBy$1.class": "bbe513f55d8a21b4f3624aee7bfa70c48f1057521de443f080cd39f628f01955",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPhysicalInventory.class": "51ada9100a062509d64c7647e85ad870b49f77eaa9ab3e837fcaebcd089798c2",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialPhysicalInventoryTest.class": "38e5325aa1deb1d2169bbe0b85b08381b014a50f2873d1985987a628386497fe",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$HeapArtifactSnapshot.class": "a43dd3ff86981794d0967f4bc278a9dda22c4d24fc810f7fbf4d3339baf6b6d6",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$1.class": "2bd209d67c506f0fac587695c94f4261b108dbe9d9b1efb5c3e514986ea21b71",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$2.class": "defbb1879910593c147d56991a5f656970a238049becb39f05c2cdf9340a9584",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$3.class": "c9d8fe960ea09bb81e664d38223607499d5be96e67aad463f4e1f4b2c10e7b1b",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$Reference$accept$$inlined$sortedBy$4.class": "e5cfd921f5dda8812a3c19f49c9868c29dc372c13d7dc0f500ae8637bd7c08fc",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$Reference.class": "cd83a27547201a5998e43477e3593caf656524f4e30f25478312da3c2bf1853b",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$brokerScope$$inlined$sortedBy$1.class": "f0d05c951133d58d3bfb4f700967b946b060c1edec4676cd26c71e3d9796d55a",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$canonical$$inlined$sortedBy$1.class": "2104794cdee7f2318d7108147a9eeb57606d46d348725d221ebeb220ab829d32",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$digest$walk$$inlined$sortedBy$1.class": "8752b97824649706bb2dfa37ca7ec631165dccd792d8485d7efa2d83ad1c8afd",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe$validateBootstrapBrokerScope$$inlined$sortedBy$1.class": "0d29eddb19b855a9f66ed75bc90a8ece62ee0931edc8e24ca06ad2b6c879c144",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateProbe.class": "1f5550d8a6cfbea033d5d0923b9cc61ebd47e4cc314daeafbfbbb72f460cf947",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/financial/FinancialRateReferenceTest.class": "f9299e6bf32819973e93d59d46cf895b22eb59b561a9735a859e9c30012aeea3",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/HikariCP-7.1.0.jar": "2be45c641b841e81df87292e181f2c203500c5f0e9a1676f135927387f3cf40b",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/animal-sniffer-annotations-1.27.jar": "cfd7e51a828fe6b98bc0dbb99e34900c9e9012322cb9ddd57fd8dd0b02da5e27",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/annotations-23.0.0.jar": "7b0f19724082cbfcbc66e5abea2b9bc92cf08a1ea11e191933ed43801eb3cd05",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/annotations-4.1.1.4.jar": "ba734e1e84c09d615af6a09d33034b4f0442f8772dec120efb376d86a565ae15",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/bcprov-lts8on-2.73.12.1.jar": "7514e0d8b9987b1cce93c15d8379d14fed2663b37e7c0b0692e596ed6b6e58a7",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/checker-qual-3.55.1.jar": "857658c8bdcbff794949a8d9922f88d63ee3751c203c7cd7d21ea97f9e745288",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/error_prone_annotations-2.50.0.jar": "4667724877f1d37a689202da191e23efa7657c62eef93ccdac406eccfe5cdd0a",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/failureaccess-1.0.3.jar": "cbfc3906b19b8f55dd7cfd6dfe0aa4532e834250d7f080bd8d211a3e246b59cb",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/grpc-api-1.84.0.jar": "a2a57594571a4392751609bf4c63cf838ba7dcdbc8e5fd07983c313cb1565ac8",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/grpc-context-1.84.0.jar": "e6f6e5db0d704e34d03f013cceb6be326c9ed3916346378ca1587ed41f943080",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/grpc-core-1.84.0.jar": "750c08018e22014cb5e6b6ac64fd4d0b2302b7db9cb2b83a1e0914d0561ed71c",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/grpc-netty-shaded-1.84.0.jar": "f07624d7ca0b0bce8dded33dfe261fd9be59168bb6a77f0580ab09ecd22f113d",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/grpc-protobuf-1.84.0.jar": "076ad68d91d59132970dd739ff908d0b8fffea9fb0ccbea9310d933e0a677802",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/grpc-protobuf-lite-1.84.0.jar": "12827fd4ba3d75f7ab5fceb3296c5ac9f473826e6b2aa67684d32879b7fa239b",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/grpc-stub-1.84.0.jar": "5d7c9eac0386fbf6f1c9dc90171034939093c9f72196bd9242acf819c5f10a4a",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/grpc-util-1.84.0.jar": "b64b8eedb714ec8c22ddc57361c7f2c0718cd51fa9d44a8cff68b30c117a6c23",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/gson-2.14.0.jar": "2cbd119bf1961c28788310963dc80ba65f58cdeec1dd139c8bdb1240faa2c36f",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/guava-33.6.0-jre.jar": "dc573e1fca4fd5454f4a5fd3d7da2df03002876a4175bafc14a95980dd7713b3",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/j2objc-annotations-3.1.jar": "84d3a150518485f8140ea99b8a985656749629f6433c92b80c75b36aba3b099b",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/jackson-annotations-2.22.jar": "21ddb598807d3a51a876704eb979d9296e1c6a6f47ab1826ff88c6d6a127a2d0",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/jackson-core-2.22.3.jar": "8a501126a385b25841915d839508f8a66e2a0dbc8a6709d055ef3b3e852b094c",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/jackson-databind-2.22.3.jar": "556db5439e206114346043f68d200497dc96a0bca62a360a81784092ebd0e0a9",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/jnats-2.26.3.jar": "dad5c08148220792c0f6b21f042f4d7128f9565466f945644a93484b4e29f9cd",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/jspecify-1.0.0.jar": "1fad6e6be7557781e4d33729d49ae1cdc8fdda6fe477bb0cc68ce351eafdfbab",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/jsr305-3.0.2.jar": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/junit-jupiter-api-5.10.1.jar": "60d5c398c32dc7039b99282514ad6064061d8417cf959a1f6bd2038cc907c913",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/junit-jupiter-engine-5.10.1.jar": "02930dfe495f93fe70b26550ace3a28f7e1b900c84426c2e4626ce020c7282d6",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/junit-platform-commons-1.10.1.jar": "7d9855ee3f3f71f015eb1479559bf923783243c24fbfbd8b29bed8e8099b5672",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/junit-platform-engine-1.10.1.jar": "baa48e470d6dee7369a0a8820c51da89c1463279eda6e13a304d11f45922c760",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/junit-platform-launcher-1.10.1.jar": "ded414c504e88d02270331071969084e1b2fd9bcf8443f35d44da2c6e3301bc2",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/kafka-clients-4.3.1.jar": "52501b7b47510c66f898871adaf6d2968ab7246561d44ced43643a8a587f0b36",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/kafka-streams-4.3.1.jar": "bd73f3805e116f711e8456ee89a8a5b43ff5dcf5a5bb865afae29deae89e7c4b",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/kafka-streams-test-utils-4.3.1.jar": "e84547c830b86dffdc4f5556d9d58fd1de5020a820b0de34d837b27aa4452d8c",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/kotlin-stdlib-2.4.20.jar": "2226de463d309d4a5500a481320b3dea515a6981dcae1def531fbc158884e25f",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/kotlin-test-2.4.20.jar": "fa281d657898a34f6b0c7383f374f0a0161e61b6cea0095f135d917721d63f22",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/kotlin-test-junit5-2.4.20.jar": "07d93fe7fdc4ec5c09df4b1a65db0d8a33c66fdec1469168e4e9a641f9186f06",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/kotlinx-coroutines-core-jvm-1.11.0.jar": "d1d75aa01dffbb4d1c520e67e4c4e7f5f6174718e7cb4632412503f2f0e604fa",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar": "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/lz4-java-1.10.2.jar": "252dabd586d22149a31661a8afc1a50747714eb1a298bd4a6e780c8c91a13866",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/opentest4j-1.3.0.jar": "48e2df636cab6563ced64dcdff8abb2355627cb236ef0bf37598682ddf742f1b",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/perfmark-api-0.27.0.jar": "c7b478503ec524e55df19b424d46d27c8a68aeb801664fadd4f069b71f52d0f6",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/postgresql-42.7.13.jar": "6e0e4cc2d8cae902084f8a2b18728b073a6fd9d1f87c9d8bff8f298c18185b93",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/proto-google-common-protos-2.64.1.jar": "beb8107f340dc0bb04bf40d1a61631a21e450c58aad93c160959f0292136d99f",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/protobuf-java-4.36.2.jar": "0773e72eaf375e1285df330575bfec5bda5da674d544d0e142a17f89c8f754da",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/rocksdbjni-10.1.3.jar": "e7f925287d9fe2574fb7c7a86f7facaa9b8ab602a2eed0e598bf633528121498",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/slf4j-api-2.0.17.jar": "7b751d952061954d5abfed7181c1f645d336091b679891591d63329c622eb832",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/snappy-java-1.1.10.7.jar": "4c766cb3f855415ee734b2392949a0b6f12a60879334a74518deaf6270d32e36",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/zstd-jni-1.5.6-10.jar": "b6c3237e24b8252a5a9c3a0e1ae30ef8f323412e74bd358548b7a9e527d676df"
+  },
+  "domains": [
+    "A",
+    "B"
+  ],
+  "partitions": 1,
+  "replication": 3,
+  "commitIntervalMs": 60000,
+  "staleOwnerOverrides": {
+    "commitIntervalMs": 1000,
+    "transactionTimeoutMs": 30000
+  },
+  "inputsPerCore": 4,
+  "mutationBoundaries": [
+    {
+      "index": 0,
+      "path": [
+        "balances",
+        "buyerCash"
+      ]
+    },
+    {
+      "index": 1,
+      "path": [
+        "versions",
+        "buyerCash"
+      ]
+    },
+    {
+      "index": 2,
+      "path": [
+        "balances",
+        "sellerCash"
+      ]
+    },
+    {
+      "index": 3,
+      "path": [
+        "versions",
+        "sellerCash"
+      ]
+    },
+    {
+      "index": 4,
+      "path": [
+        "balances",
+        "buyerShares"
+      ]
+    },
+    {
+      "index": 5,
+      "path": [
+        "versions",
+        "buyerShares"
+      ]
+    },
+    {
+      "index": 6,
+      "path": [
+        "balances",
+        "sellerShares"
+      ]
+    },
+    {
+      "index": 7,
+      "path": [
+        "versions",
+        "sellerShares"
+      ]
+    },
+    {
+      "index": 8,
+      "path": [
+        "obligations",
+        "[\"run-?\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]"
+      ]
+    },
+    {
+      "index": 9,
+      "path": [
+        "workflows",
+        "[\"run-?\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]"
+      ]
+    },
+    {
+      "index": 10,
+      "path": [
+        "instructions",
+        "[\"run-?\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]"
+      ]
+    },
+    {
+      "index": 11,
+      "path": [
+        "attempts",
+        "[\"run-?\",\"session-1\",\"ACME\",\"exec-synthetic-1\",\"1\"]"
+      ]
+    },
+    {
+      "index": 12,
+      "path": [
+        "versions",
+        "[\"run-?\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]"
+      ]
+    },
+    {
+      "index": 13,
+      "path": [
+        "dueQueue",
+        "[\"run-?\",\"session-1\",\"ACME\",\"exec-synthetic-1\"]"
+      ]
+    },
+    {
+      "index": 14,
+      "path": [
+        "businessSeq"
+      ]
+    },
+    {
+      "index": 15,
+      "path": [
+        "lastDecisionId"
+      ]
+    },
+    {
+      "index": 16,
+      "path": [
+        "dedup",
+        "[\"sprint1\",\"B\",\"settle-1\"]"
+      ]
+    },
+    {
+      "index": 17,
+      "path": [
+        "effects",
+        "[\"sprint1\",\"B\",\"settle-1\"]"
+      ]
+    },
+    {
+      "index": 18,
+      "path": [
+        "semanticDigest"
+      ]
+    }
+  ],
+  "goldenCases": 20,
+  "stagingInputs": 32,
+  "externalMatrix": [
+    {
+      "name": "producer-failure",
+      "trigger": "B SETTLED output exceeds producer max.request.size after prior forwards",
+      "barrier": "RecordTooLargeException from actual producer; worker shutdown; read_committed abort observation",
+      "assertions": [
+        "zero visible aborted outputs",
+        "fresh cache restores all accepted inputs"
+      ]
+    },
+    {
+      "name": "committed-output-before-controller-ack",
+      "trigger": "SIGKILL after independent prefix observer succeeds, before controller ACK file exists",
+      "barrier": "read_committed prefix4 and exact output end offset",
+      "assertions": [
+        "restart retains identical prefix and end offset",
+        "only appended fresh suffix emits new outputs"
+      ]
+    },
+    {
+      "name": "stale-owner-resume-after-takeover",
+      "trigger": "before-forward ordinal4 semaphore, SIGSTOP whole owner, replacement takeover, SIGCONT and resume",
+      "barrier": "replacement read_committed full8 before old owner resumes; real producer/group fencing exception",
+      "assertions": [
+        "old owner broker write rejected",
+        "unique ordered output prefix despite aborted physical frames",
+        "idle restart retains exact final end offset"
+      ]
+    },
+    {
+      "name": "majority-one-broker-unavailable",
+      "trigger": "docker stop exact preflight-registered container ID after committed prefix4",
+      "barrier": "daemon target stopped, two registered peers running; full8 oracle completes while target remains stopped",
+      "assertions": [
+        "healthy majority commits fresh work",
+        "one authorized target recovery; parent cleanup on mutation failure",
+        "restart preserves prefix and stable final end offset"
+      ]
+    }
+  ],
+  "retainedResources": "input/result/changelog topics and disposable state directories; parent owns broker/resource cleanup"
+}

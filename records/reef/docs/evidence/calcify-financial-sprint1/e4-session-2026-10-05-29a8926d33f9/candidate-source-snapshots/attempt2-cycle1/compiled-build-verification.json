@@ -1,0 +1,7 @@
+{
+  "schema": "calcify-compiled-snapshot-build-verification-v1",
+  "computedBuildSha256": "6b75608d82ab7e952dc27fdd38783b993740ae0d5d0810142c193bc4fea405d2",
+  "expectedActualBuildSha256": "6b75608d82ab7e952dc27fdd38783b993740ae0d5d0810142c193bc4fea405d2",
+  "allExactSnapshotBytesMatch": true,
+  "scope": "SameheapCapability filename-NUL-actualbyte sequence; otherclasspathinputs remainhashpinned separately"
+}

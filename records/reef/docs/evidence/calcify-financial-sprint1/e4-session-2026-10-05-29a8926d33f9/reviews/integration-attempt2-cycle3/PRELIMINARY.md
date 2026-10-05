@@ -1,0 +1,13 @@
+# Source-first preliminary review
+
+Review instance: 3 of 3. Attempt2 final cycle; no reset.
+
+Repository /Users/dsteele/.codex/worktrees/8c6f/reef; branch codex/calcify-e4-readiness; HEAD/base 29a8926d33f9e2dc7278a1676a6fa3272628de3c. Working-tree review covers frozen 27 source paths plus five changed docs. Hash check: 27/27 unchanged. No author implementation history inherited; initiating bootstrap contained operational claims, so completely blind review impossible. Dedicated author explanation not read before this ledger.
+
+No actionable source blocker identified. Actual Reference owns private FinancialCanonicalLeafOwner; immutable canonical strings preserve complete category leaves and root JSON types. Updates parse only bounded current leaves, verify independent BigInteger deltas/journals and exact history checksum before writes. Streaming canonical owner hash sorts references without owner-wide JSON decoding/joining. Whole complete-cut replay creates fresh Reference after clearing prior retained leaves. New tests assert every 2100-action prefix, independent oracle prefixes/final, 9712 complete leaves, hash mutants, reordered/missing/extra history and alias isolation.
+
+ACK controller admission follows data/index/witness/publication force; startup validates published chain/index/generation, preserves unpublished tails, rejects corrupted publications and witness disagreement. Managed child uses separate PID/JVM and exact 2100-member recovered journal; activation verifies exact 2101 histories, complete owner/checksum, ordinal2099 and physical offset. Numeric count/heap fixes accept exact integral values across Jackson node widths, reject coerced forms. Raw activation attempt emitted before parity validation.
+
+Physical inventory preserves actual Admin reply rows, RF3/topic incarnation and complete replicas, independent Node host clock brackets, allocated KiB receipts, and unknown attribution/native/CPU scopes. Registered host store/journal/proof allocations join broker resource budget. Frozen bootstrap requires same candidate sources/build/classpath/config and actual 49-arm E3 evidence. Finite bootstrap retains explicit null upper estimate and cannot authorize ordinary ladder.
+
+Reviewer checks: focused Node 125/125; git diff --check passes; frozen source 27/27 matches. No reviewer compiler/JVM/broker/workload run. Actual previous 24-path success does not accept new 27-path candidate. Final verdict pending author packet and current Kotlin verification evidence. Docs currently describe earlier run states; final delivery requires current compact candidate outcome, retention publication/verification and corrected current scope before PR.

@@ -1,0 +1,6 @@
+{
+  "error": "KeyError: containers",
+  "cause": "Root measurement summarizer assumed every resource journal row was complete container sample; nonmeasurement lifecycle rows need separate scope",
+  "mutation": "Actual raw cleanupinspection+confirmation alreadycaptured; originalproof unchanged",
+  "correction": "Preserve all rows, report skipped nonmeasurement schema separately and summarize measured sample rows only"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" tests="11" skipped="0" failures="1" errors="0" timestamp="2026-10-05T13:34:26.168Z" hostname="Dylans-MacBook-Pro.local" time="1.87">
+  <properties/>
+  <testcase name="finite raw metadata bound includes foreign rows()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.102"/>
+  <testcase name="clock drift process errors output overrun and hang refuse bounded()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="1.126"/>
+  <testcase name="UUID recreation assignment drift and missing topics refuse()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.019"/>
+  <testcase name="actual pinned Node clocks cover host interval without assuming JVM origin()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.096"/>
+  <testcase name="actual log errors future negative unsafe partition path refuse with raw()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.033"/>
+  <testcase name="RF2 broker drift missing and duplicate replicas refuse()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.01"/>
+  <testcase name="actual Admin future path binds both host samples and original JVM operation windows()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.167">
+    <failure message="org.opentest4j.AssertionFailedError: expected: com.fasterxml.jackson.databind.node.IntNode@53016b11&lt;57702308&gt; but was: com.fasterxml.jackson.databind.node.LongNode@7af327e3&lt;57702308&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: com.fasterxml.jackson.databind.node.IntNode@53016b11&lt;57702308&gt; but was: com.fasterxml.jackson.databind.node.LongNode@7af327e3&lt;57702308&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at kotlin.test.junit5.JUnit5Asserter.assertEquals(JUnitSupport.kt:32)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals(Assertions.kt:83)
+	at kotlin.test.AssertionsKt.assertEquals(Unknown Source)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertEquals$default(Assertions.kt:82)
+	at kotlin.test.AssertionsKt.assertEquals$default(Unknown Source)
+	at com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest.actual Admin future path binds both host samples and original JVM operation windows(FinancialPhysicalInventoryTest.kt:152)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="actual RF3 replies bind raw receipts and normalized identities()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.012"/>
+  <testcase name="actual Admin API exception retains request and failure receipt()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.081"/>
+  <testcase name="actual API sizes and foreign rows retained without ownership()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.005"/>
+  <testcase name="unsafe reversed or overlong clocks refuse()" classname="com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest" time="0.003"/>
+  <system-out><![CDATA[{"clockScope":"host-monotonic-ms","verified":true,"timestampMeaning":"actual Node host sample; JVM bracket uses separate origin","jvmClockScope":"jvm-system-nano","sameOriginObserved":false,"jvmStartedAtMs":56182304,"jvmCompletedAtMs":56182342,"nodeExecutable":"/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node","adapterScript":"/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/physical-adapter.mjs","sample":{"clockScope":"host-monotonic-ms","sampledAtMs":57702090,"node":"22.22.1","uv":"1.51.0","platform":"darwin"},"process":{"argv":["/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node","/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/physical-adapter.mjs","--clock"],"startedAtMs":56182307,"completedAtMs":56182342,"exitCode":0,"stdout":"{\"clockScope\":\"host-monotonic-ms\",\"sampledAtMs\":57702090,\"node\":\"22.22.1\",\"uv\":\"1.51.0\",\"platform\":\"darwin\"}\n","stderr":"","error":null}}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

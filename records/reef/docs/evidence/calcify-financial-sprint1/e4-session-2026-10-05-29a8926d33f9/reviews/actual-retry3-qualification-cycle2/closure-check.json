@@ -1,0 +1,28 @@
+{
+  "schema": "independent-actual-bootstrap-closure-v1",
+  "closureSha256": "2774bf7d2d2caa6f6efc3e0070cebeb6bd8ca6d12df90b07fd38fbfba5b9f459",
+  "verified": [
+    {
+      "kind": "assessment",
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/proof/assessment.json",
+      "sha256": "d0b2471423b1f567b3df20e11162e70af963b31a2173ee46fabbb8865bdbf884"
+    },
+    {
+      "kind": "bootstrap",
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/proof/bootstrap.json",
+      "sha256": "92d34552fd3474f4c8260eadb531e5d4cf7ef891a504384b18d1104f31d59afb"
+    },
+    {
+      "kind": "process",
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/proof/process.json",
+      "sha256": "aa4ae5c04d675193553b3d3cf6c2e415de9b649ee1553a09e19eeb4c5528087b"
+    },
+    {
+      "kind": "cleanupInspection",
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/bootstrap-cleanup-inspect.raw.json",
+      "sha256": "dfa0668bdc4aa280881ff2feddc351659345443bc2cb97773b629804a59df87a"
+    }
+  ],
+  "exactOwnedStopped": true,
+  "pass": true
+}

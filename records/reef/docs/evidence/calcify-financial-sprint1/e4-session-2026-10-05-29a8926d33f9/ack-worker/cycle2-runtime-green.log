@@ -1,0 +1,52 @@
+TAP version 13
+# Subtest: rate supervision binds exact command, output, allocation categories and finite timeout
+ok 1 - rate supervision binds exact command, output, allocation categories and finite timeout
+  ---
+  duration_ms: 2.731917
+  type: 'test'
+  ...
+# Subtest: actual financial runtime directories and full registry must match supervised resource identity
+ok 2 - actual financial runtime directories and full registry must match supervised resource identity
+  ---
+  duration_ms: 1.184
+  type: 'test'
+  ...
+# Subtest: foreign bootstrap endpoint cannot borrow same broker IDs and local resource allocations
+ok 3 - foreign bootstrap endpoint cannot borrow same broker IDs and local resource allocations
+  ---
+  duration_ms: 0.182458
+  type: 'test'
+  ...
+# Subtest: supervisor evidence mismatch refuses before dependency setup; failed supervision still closes
+ok 4 - supervisor evidence mismatch refuses before dependency setup; failed supervision still closes
+  ---
+  duration_ms: 5.959583
+  type: 'test'
+  ...
+# Subtest: actual supervised child receives frozen environment through owned launch
+ok 5 - actual supervised child receives frozen environment through owned launch
+  ---
+  duration_ms: 298.108959
+  type: 'test'
+  ...
+# Subtest: all actual financial modes reject raw unregistered config before dependency setup
+ok 6 - all actual financial modes reject raw unregistered config before dependency setup
+  ---
+  duration_ms: 6.231167
+  type: 'test'
+  ...
+# Subtest: actual financial runtime validates planned new paths and refuses symlinked registered directory before launch
+ok 7 - actual financial runtime validates planned new paths and refuses symlinked registered directory before launch
+  ---
+  duration_ms: 4.954
+  type: 'test'
+  ...
+1..7
+# tests 7
+# suites 0
+# pass 7
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 372.972333

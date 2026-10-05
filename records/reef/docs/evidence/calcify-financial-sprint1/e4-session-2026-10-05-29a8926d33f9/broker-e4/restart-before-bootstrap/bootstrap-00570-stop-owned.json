@@ -1,0 +1,23 @@
+{
+  "seq": 570,
+  "name": "stop-owned",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "stop",
+    "--time",
+    "5",
+    "e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af",
+    "2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e",
+    "841231db0a0bd1bde6b7a33976f43f7950753c9bbc91782c7675b97a384de81f"
+  ],
+  "startedAtMs": 65510074,
+  "startedUtc": "2026-10-05T15:44:35.681Z",
+  "stdout": "Flag --time has been deprecated, use --timeout instead\ne35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af\n2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e\n841231db0a0bd1bde6b7a33976f43f7950753c9bbc91782c7675b97a384de81f\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 65510093,
+  "completedUtc": "2026-10-05T15:44:35.700Z",
+  "stdoutSha256": "63750173765a1d7f98fa60379df169c87ffcdef1d24b038fe3535e1bc6e8b86f",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputSha256": "344cea76d6f97581df3c7814ca72935388dd470a296129bb98ddf7c59bce78e6"
+}

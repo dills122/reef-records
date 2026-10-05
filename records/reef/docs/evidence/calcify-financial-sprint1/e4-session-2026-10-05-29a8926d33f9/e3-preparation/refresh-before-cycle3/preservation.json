@@ -1,0 +1,16 @@
+{
+  "preservedUtc": "2026-10-05T15:05:13.823410+00:00",
+  "files": {
+    "broker-preflight.recipe.json": "757c78f3e2b8745070703a8d240232f67ca4e421c6340d1579f27e878e94dd13",
+    "supervisor.recipe.json": "6ee7618bdd8a592f5983e07fe15b27af2780158f8ab50a6a45feed025a2b2e61",
+    "execution-manifest.draft.json": "71c1ae48b91ad465a8814ce25ce05806a3c8eea2c7ffbbe58970ddd222977be5",
+    "preparation-result.json": "645aebca4335ad5aa1bc30eeea979711d91682d9ed1e5cb95854e5832d69dc19",
+    "prepare.stdout.log": "7e2fd13329663ad35b038e8145f8dbb3fc872804ca739a7f4a8bd98295f20fd2",
+    "prepare.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "recipe-controls.stdout.log": "4c185284472c328373e17889df2163bb58b37305cb933b0fae4a67920bc5c7c3",
+    "recipe-controls.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "SHA256SUMS": "ca72d31dd16ebeaaf5aafb4b8e9865e144eb6209e48945709f5d240ceef013cd",
+    "plan-author.md": "e3a4a2c3ea14fbd48acb31257fd3e5674b974105eb32332b0ca0048f28a73424"
+  },
+  "reason": "refresh execution pins for current frozen cycle3 source/capability; no source/helper edits"
+}

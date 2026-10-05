@@ -1,0 +1,51 @@
+{
+  "startedUtc": "2026-10-05T12:40:29.567094+00:00",
+  "baseline": "29a8926d33f9e2dc7278a1676a6fa3272628de3c",
+  "upstreamMaster": "a6ddafbbae750693e227985f054be2d26716ae84",
+  "branch": "codex/calcify-heap-protection",
+  "workingTree": "CLEAN",
+  "graph": {
+    "project": "reef-calcify-session-8c6f",
+    "root": "/Users/dsteele/.codex/worktrees/8c6f/reef",
+    "generation": "2026-10-05T07:02:27Z",
+    "nodes": 14569,
+    "edges": 75204,
+    "financialThreePaths": "metadata_match",
+    "refresh": "not needed, exact Kotlin source unchanged"
+  },
+  "serena": {
+    "projectRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef",
+    "goCalcifySymbol": "retrieved",
+    "activeServers": [
+      "svelte",
+      "go",
+      "yaml"
+    ],
+    "kotlin": "DEGRADED, prior expired server; Java21 graph/source fallback"
+  },
+  "tools": {
+    "bun": "1.3.14",
+    "node": "22.22.1",
+    "go": "1.26.5",
+    "protoc": "33.2",
+    "astGrep": "0.45.3",
+    "rg": "15.2.0",
+    "java": "21",
+    "dockerServer": "29.7.2",
+    "dockerCPUs": 10,
+    "dockerMemoryBytes": 16745824256,
+    "compose": "5.4.0",
+    "diskAvailable": "370GiB",
+    "psql": "unavailable; no current SQL work planned"
+  },
+  "priorDelivery": {
+    "reef474": "OPEN draft, all checks green",
+    "reef475": "OPEN stacked draft, all checks green"
+  },
+  "ownedBrokers": "exact three IDs exited; volumes preserved; no reset/prune",
+  "limits": [
+    "Docker socket requires authorized execution",
+    "Graph docs/scripts excluded; direct source fallback",
+    "Kotlin LSP degraded"
+  ]
+}

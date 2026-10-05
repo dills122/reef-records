@@ -1,0 +1,31 @@
+{
+  "schema": "financial-e3-correctness-binding-v1",
+  "result": "PASS",
+  "scope": "Actual same-candidate RF3/EOS financial proof: core24 + golden20 + external4 + activation1; E3 configuration and plan identities retained separately from planned bootstrap configuration.",
+  "sourceHead": "29a8926d33f9e2dc7278a1676a6fa3272628de3c",
+  "candidateSha256": "ff091a94a9b826b34010f9245719d14e13b53eb82f4fa4e721743ff31df3db8f",
+  "fixtureSha256": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+  "buildSha256": "6b75608d82ab7e952dc27fdd38783b993740ae0d5d0810142c193bc4fea405d2",
+  "classpathSha256": "2c18b7a673503c831d0d8f5c009ba36a717e02251c6e273ff81c54ca069d19c2",
+  "plannedBootstrapConfigSha256": "89df4112745bc4e3013ad39528417bd239f04f8ae90a23d18f9d090d4270b330",
+  "arms": {
+    "core": 24,
+    "golden": 20,
+    "external": 4,
+    "activation": 1
+  },
+  "e3PlanSha256": {
+    "core": "95cbb131003b557275ef08e00a8665f5f0c127aaa4e080f1d99a91d7a777c126",
+    "golden": "f74c9085fef7a56ea3646376e356751f82c8674c7e2f040ce6dea31a0271215c",
+    "external": "414004d2136b73c630ee21f1b7497214d5ead6ad943268af357b7097bc671280",
+    "activation": "9cbbe0add9154c1d05387d61bf18fc63cad013d15582f202999b159a1f1ab3d0"
+  },
+  "originalProofRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt2/e3-current-candidate",
+  "packagedProofRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt2/e3-packaged-candidate",
+  "originalManifestSha256": "cbb7e719488b71b12e57a82f4fc1d342630b686a30c4892512ceb16129f0b523",
+  "packagingManifestSha256": "b2cd5c78081d77ae56ce952e3fd8b3eb6a13c65ae981bda824260628e6468001",
+  "packagingVerificationSha256": "1d0412a095c02f58583f26d96eb3061dc7ebe6f39bc247e69519bc04ae6af549",
+  "sourceCandidateEvidenceSha256": "9b503524ed344c2fb91e1dfdaa0ceb3c6ed9a04edd1c9f05774454431079e724",
+  "proofManifestSha256": "980b809ac4aaba0778833e075c5c837eec84791c28ef13e2b03f7f20a1786f11",
+  "outerEvidenceSha256": "70f0b02db8d513eddf6eb85c7b1bf5190ad4b967cd39f33bafd235ba5967b356"
+}

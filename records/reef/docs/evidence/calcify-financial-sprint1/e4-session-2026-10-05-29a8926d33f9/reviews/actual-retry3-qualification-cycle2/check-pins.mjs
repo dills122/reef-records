@@ -1,0 +1,30 @@
+import assert from 'node:assert/strict';
+import {readFile, writeFile, readdir, lstat} from 'node:fs/promises';
+import {createReadStream} from 'node:fs';
+import {createHash} from 'node:crypto';
+import path from 'node:path';
+const root=process.cwd(),session=path.join(root,'.planning/calcify-e4-session-2026-10-05'),out=path.resolve(import.meta.dirname);
+const sha=b=>createHash('sha256').update(b).digest('hex');
+async function digest(p){const h=createHash('sha256');for await(const b of createReadStream(p))h.update(b);return h.digest('hex');}
+const read=async p=>JSON.parse(await readFile(p));
+const pins=await read(path.join(session,'bootstrap-preparation-attempt3/preparation-pins.json'));
+const freeze=await read(pins.sourceFreezePath);
+assert.equal(await digest(pins.sourceFreezePath),pins.freezeSha256);
+assert.equal(Object.keys(freeze.paths).length,24);
+for(const [p,h]of Object.entries(freeze.paths))assert.equal(await digest(path.join(root,p)),h,p);
+for(const [p,h]of Object.entries(pins.sourceSha256))assert.equal(await digest(path.join(root,p)),h,p);
+assert.equal(sha(JSON.stringify(pins.sourceSha256)),pins.candidateSha256);
+const frozen=path.join(session,'bootstrap-attempt3/frozen'),execution=await read(path.join(frozen,'e3-execution-manifest.json'));
+assert.equal(await digest(path.join(frozen,'e3-execution-manifest.json')),pins.executionManifestSha256);
+for(const [p,h]of Object.entries(execution.checksums))assert.equal(await digest(p),h,p);
+async function tree(dir){const result={};async function walk(d,r=''){for(const n of (await readdir(d)).sort()){const p=path.join(d,n),k=r?`${r}/${n}`:n,s=await lstat(p);assert(!s.isSymbolicLink());if(s.isDirectory())await walk(p,k);else{assert(s.isFile());result[k]=await digest(p);}}}await walk(dir);return result;}
+for(const d of execution.directoryChecksums)assert.deepEqual(await tree(d.path),d.files,d.path);
+const capability=await read(path.join(frozen,'capability.json')),config=await read(path.join(frozen,'config.json'));
+assert.equal(await digest(path.join(frozen,'capability.json')),pins.capabilitySha256);
+assert.equal(await digest(path.join(frozen,'config.json')),capability.configSha256);
+assert.equal(capability.buildSha256,pins.buildSha256);assert.equal(capability.classpathSha256,pins.classpathSha256);
+assert.deepEqual(capability.classpathEntries,execution.classpathEntries);
+assert.equal(config.brokerScope.clusterId,'redpanda.8843d456-1b62-45e9-9be8-295fd8339a28');
+assert.equal(config.registeredResources.bootstrapServers,'127.0.0.1:40092,127.0.0.1:40192,127.0.0.1:40292');
+const receipt={schema:'independent-actual-retry3-pin-check-v1',reviewInstance:'2of3',checkedUtc:new Date().toISOString(),sourcePaths:24,candidatePaths:Object.keys(pins.sourceSha256).length,candidateSha256:pins.candidateSha256,capabilitySha256:pins.capabilitySha256,executionManifestSha256:pins.executionManifestSha256,buildSha256:pins.buildSha256,classpathSha256:pins.classpathSha256,classpathFiles:Object.keys(execution.checksums).length,classpathDirectories:execution.directoryChecksums.map(d=>({path:d.path,files:Object.keys(d.files).length})),brokerScope:config.brokerScope,pass:true};
+await writeFile(path.join(out,process.argv[2]??'pins-before.json'),JSON.stringify(receipt,null,2)+'\n',{flag:'wx'});console.log(JSON.stringify(receipt));

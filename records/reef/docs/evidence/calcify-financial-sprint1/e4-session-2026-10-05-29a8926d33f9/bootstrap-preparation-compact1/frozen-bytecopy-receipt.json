@@ -1,0 +1,71 @@
+{
+  "pass": true,
+  "fileCount": 13,
+  "files": [
+    {
+      "name": "bootstrap-candidate.json",
+      "sha256": "4742fe3cce03e0dde0e782c3364f183dab29725e3d73128579db92f6986693bf",
+      "bytes": 5057
+    },
+    {
+      "name": "bootstrap-review.json",
+      "sha256": "e3a4bd3da26b2098b654adfdcc7034fe2ccff31094ae215741ee13b22574de40",
+      "bytes": 974
+    },
+    {
+      "name": "bootstrap-compact1-review-report.md",
+      "sha256": "d96dcfe01a3f59f5c98a6231056ef63a8040cfef0d9bbfff1d146d10458810a9",
+      "bytes": 7697
+    },
+    {
+      "name": "capability.json",
+      "sha256": "255c410c9ec86dd5bd1ab9c4c31ef8a8dc843603ae2f67d27972b2b3df02ffeb",
+      "bytes": 7243
+    },
+    {
+      "name": "bootstrap-fixtures.json",
+      "sha256": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+      "bytes": 90325
+    },
+    {
+      "name": "e3-current-proof-manifest.json",
+      "sha256": "36702c77e4a7ebc4c1d244bed88ec37aae0a1390b77fa12237777472c5a55591",
+      "bytes": 242193
+    },
+    {
+      "name": "e3-current-correctness.json",
+      "sha256": "a702292c3507278993a7fa895f601357ca8aef477c6fec7a2e4ca45406d5cac6",
+      "bytes": 2113
+    },
+    {
+      "name": "e3-current-outer-closure.json",
+      "sha256": "96af2f0499ede32535c21fd1ca72130b1cf81697c335e175a74f0e4f9b187aca",
+      "bytes": 1235
+    },
+    {
+      "name": "e3-closed-confirmation.json",
+      "sha256": "6ea725a313b360e247910f460681f363d90ed517bc7865aea894b7bde07de116",
+      "bytes": 1230
+    },
+    {
+      "name": "e3-lossless-package-verification.json",
+      "sha256": "b3a0fc4785baf4a14efa7631bb6a47ab256f12bc50ebdcc30249a311203feca1",
+      "bytes": 1070
+    },
+    {
+      "name": "bootstrap-request.json",
+      "sha256": "20059e9096ca766a0190f7d21edc35bd08df7377e818dd6f0e92e650df1ae886",
+      "bytes": 12824
+    },
+    {
+      "name": "bootstrap-supervisor.json",
+      "sha256": "0837c8028cbd954943d60d69d1a58f528156580c6048a800f805c6f967fbb1cd",
+      "bytes": 10814
+    },
+    {
+      "name": "bootstrap-adapter.json",
+      "sha256": "e23ec12c5d01bf6c399d95a78558e8181070396aedf9c62456edd41b705136ee",
+      "bytes": 6682
+    }
+  ]
+}

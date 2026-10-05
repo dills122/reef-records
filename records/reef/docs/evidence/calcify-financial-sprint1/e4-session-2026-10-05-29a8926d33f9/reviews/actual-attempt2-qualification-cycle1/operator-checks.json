@@ -1,0 +1,11 @@
+{
+  "pass": true,
+  "scope": "Read-only frozen source/CP/operator identity and pure closure/arm/mapping gates; no active raw tree read",
+  "pinsChecked": 1304,
+  "positive": 8,
+  "negative": 29,
+  "candidateSha256": "ff091a94a9b826b34010f9245719d14e13b53eb82f4fa4e721743ff31df3db8f",
+  "executionManifestSha256": "31c0322a96d8c4793711c86960279344e5a2b53416e9cda37aa7ba321fdc823d",
+  "actualProofValidated": false,
+  "actualLoadExecuted": false
+}

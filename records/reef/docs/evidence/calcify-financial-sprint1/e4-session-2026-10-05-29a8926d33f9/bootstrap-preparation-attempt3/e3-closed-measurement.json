@@ -1,0 +1,12 @@
+{
+  "schema": "calcify-e3-closed-measurement-v1",
+  "journalRows": 237,
+  "resourceObservations": 232,
+  "fullyActualAll3Observations": 230,
+  "maxProjectChargedBytes": 6657753088,
+  "maxFullyMeasuredAll3BrokerBytes": 5073129472,
+  "minGuestFreeBytes": 92242239488,
+  "correctnessWrapperElapsedMs": 1074258,
+  "sourceJournalSha256": "df7b574645b1724c3ce7466e31861b097a3a17e3bb1f8ad0d1c7e6f6f8bf71d5",
+  "scope": "Correctness only; charged project includes fixed3GiB target reservation, fully measured all3 distinct; lifecycle rows not resource observations; native,RSS,CPU,causal rates unknown"
+}

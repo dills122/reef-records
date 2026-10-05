@@ -1,0 +1,15 @@
+{
+  "schema": "calcify-e3-closed-confirmation-v1",
+  "confirmedBy": "root",
+  "utc": "2026-10-05T15:29:39.409460+00:00",
+  "cliExitCode": 0,
+  "writersClosed": true,
+  "cleanupClosed": true,
+  "proofRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt1/e3-current-candidate",
+  "executionManifestSha256": "e40f4cbf595f54a33444772efeb056bf554bf506371df69c4bd558053b3f9afb",
+  "supervisorFinishedSha256": "2d98f37f83f94126a8cd2e8ad1727b5bb71daee54d278399f40ffff13c9e99a0",
+  "wrapperStatusSha256": "c52a22f35da94a3ac0076708801aec49ca3dc38f6f1e909b366b41ed3dc04530",
+  "scope": "Actual exec28017 completion exit0; all four runner exits0; closed streams/group cleanup complete, owned brokers stopped, volumes retained. Original raw tree remains unchanged.",
+  "cleanupInspectionSha256": "ab6256e733102fed7a3b2ebbb703d82f52118111325235dc58f524f39dc1215b",
+  "cleanupInspectionPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation/e3-cleanup-inspect.json"
+}

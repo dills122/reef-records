@@ -1,0 +1,67 @@
+{
+  "schema": "calcify-e4-created-broker-registry-v1",
+  "createdUtc": "2026-10-05T14:03:15.018Z",
+  "registeredResources": {
+    "project": "reef-calcify-e4-session-8c6f",
+    "containers": [
+      {
+        "id": "e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af",
+        "brokerId": 0,
+        "name": "reef-calcify-e4-session-8c6f-rp0-1",
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-session-8c6f",
+          "com.docker.compose.service": "rp0",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-session-8c6f_rp0-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e",
+        "brokerId": 1,
+        "name": "reef-calcify-e4-session-8c6f-rp1-1",
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-session-8c6f",
+          "com.docker.compose.service": "rp1",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-session-8c6f_rp1-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "841231db0a0bd1bde6b7a33976f43f7950753c9bbc91782c7675b97a384de81f",
+        "brokerId": 2,
+        "name": "reef-calcify-e4-session-8c6f-rp2-1",
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-session-8c6f",
+          "com.docker.compose.service": "rp2",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-session-8c6f_rp2-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      }
+    ]
+  },
+  "bootstrapServers": "127.0.0.1:39492,127.0.0.1:39592,127.0.0.1:39692",
+  "composePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/broker.compose.yml",
+  "composeSha256": "e2f91e4aed12abd6eab58210e89a77e460b2b7f0f9ed5a9ea4b49eb45e11e8bd",
+  "profilePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/profile.json",
+  "profileSha256": "86d60d158a1aa6e91c3589347e1b02d17fbe3a337a5847a6c0f1f73ae36d22ff",
+  "state": "CREATED_NOT_STARTED",
+  "guestFreeBytes": null
+}

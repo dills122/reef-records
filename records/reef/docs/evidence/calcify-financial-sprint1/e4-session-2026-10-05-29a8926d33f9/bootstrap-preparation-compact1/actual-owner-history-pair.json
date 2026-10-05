@@ -1,0 +1,34 @@
+{
+  "schema": "calcify-bounded-owner-history-pair-v1",
+  "sampleTrades": 1000,
+  "pendingSample": 100,
+  "agedIdentities": 0,
+  "sourceActions": 2100,
+  "historyRecords": 2101,
+  "ownerSha256": "96da35188859915ebb3061691644e114021e8eb033e2f8865065fae4b7901db1",
+  "historyChecksum": "27d2d99c876edc961958133c9a9317a2baa7b12c78efd8a589af92c2b20ab5ae",
+  "baselineProject": "reef-calcify-e4-attempt3-8c6f",
+  "compactProject": "reef-calcify-e4-compact1-8c6f",
+  "scope": "Pure owner/history comparison after independently validated actual closed runs; no capacity/native/RSS/retained-heap-upper-bound or raw-closure validation by this helper",
+  "perArmClosures": {
+    "baseline": {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/bootstrap-successful-closure.json",
+      "sha256": "2774bf7d2d2caa6f6efc3e0070cebeb6bd8ca6d12df90b07fd38fbfba5b9f459"
+    },
+    "compact": {
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-compact1/bootstrap-successful-closure.json",
+      "sha256": "4de5bfb9fd72c2226e381e9327bde58f8339fb47f6f1bba8a5292e9a7ad457d4"
+    }
+  },
+  "sampledPeaks": {
+    "baselineParent": 198005296,
+    "compactParent": 214017080,
+    "parentDifference": 16011784,
+    "baselineChild": 179424816,
+    "compactChild": 219456064,
+    "childDifference": 40031248,
+    "scope": "Single paired observations; compact sampled peaks higher; no causal/retained/upper inference; final serialization/staged writes excluded"
+  },
+  "independentExactRawPairPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/reviews/actual-compact-qualification-instance3/exact-raw-pair-check.json",
+  "independentExactRawPairSha256": "93dca7f29bbf3d8f75b45824c33d27177962576b52918bcc57cf4140b21026a5"
+}

@@ -1,0 +1,192 @@
+{
+  "schema": "calcify-e4-broker-preflight-v1",
+  "createdUtc": "2026-10-05T16:56:35.976Z",
+  "registeredResources": {
+    "project": "reef-calcify-e4-attempt3-8c6f",
+    "containers": [
+      {
+        "id": "45a7adb373fa7914cc16a1d58f4dd44a3d811259e7c097c119ee725129f2c893",
+        "brokerId": 0,
+        "name": "reef-calcify-e4-attempt3-8c6f-rp0-1",
+        "hostKafkaEndpoint": {
+          "host": "127.0.0.1",
+          "port": 40092,
+          "containerPort": "40092/tcp"
+        },
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-attempt3-8c6f",
+          "com.docker.compose.service": "rp0",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-attempt3-8c6f_rp0-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "e98481cf469c0cabac43873dfb732fac89f2c4a912e02604a2df888d05e77149",
+        "brokerId": 1,
+        "name": "reef-calcify-e4-attempt3-8c6f-rp1-1",
+        "hostKafkaEndpoint": {
+          "host": "127.0.0.1",
+          "port": 40192,
+          "containerPort": "40192/tcp"
+        },
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-attempt3-8c6f",
+          "com.docker.compose.service": "rp1",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-attempt3-8c6f_rp1-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "5226066cada82643c4333341a25db1a50674d02574e8d3d1deb5e1dd89a65c54",
+        "brokerId": 2,
+        "name": "reef-calcify-e4-attempt3-8c6f-rp2-1",
+        "hostKafkaEndpoint": {
+          "host": "127.0.0.1",
+          "port": 40292,
+          "containerPort": "40292/tcp"
+        },
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-attempt3-8c6f",
+          "com.docker.compose.service": "rp2",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-attempt3-8c6f_rp2-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      }
+    ],
+    "bootstrapServers": "127.0.0.1:40092,127.0.0.1:40192,127.0.0.1:40292"
+  },
+  "bootstrapServers": "127.0.0.1:40092,127.0.0.1:40192,127.0.0.1:40292",
+  "composePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/broker.compose.yml",
+  "composeSha256": "5ab10a5e518a454f8cdebb54f8e490892c21834355fe322cef873619cbc7fbd8",
+  "profilePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/profile.json",
+  "profileSha256": "6a03ae36d634c554f8a92010917da2fd8302dee4c83ec2bc9471788caf1114fc",
+  "state": "HEALTHY_PROFILE_READ_BACK",
+  "guestFreeBytes": 97170444288,
+  "utc": "2026-10-05T16:57:02.551Z",
+  "clusterProperties": {
+    "log_segment_size": 8388608,
+    "compacted_log_segment_size": 8388608,
+    "transaction_coordinator_log_segment_size": 8388608
+  },
+  "clusterInfo": "CLUSTER\n=======\nredpanda.8843d456-1b62-45e9-9be8-295fd8339a28\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\n",
+  "clusterConfigStatus": "NODE  CONFIG-VERSION  NEEDS-RESTART  INVALID  UNKNOWN\n0     5               false          []       []\n1     5               false          []       []\n2     5               false          []       []\n",
+  "transactionMaxTimeoutMs": 900000,
+  "baselineAllocatedBytes": 151179264,
+  "rawProofBytes": 3483704,
+  "bootstrapException": {
+    "startupDeadlineMs": 69875345,
+    "firstObservedRunningAtMs": 69846494,
+    "firstGuestAtMs": 69846539,
+    "firstGuestDelayMs": 45,
+    "scope": "setup-only approved initial unknown; no topics or payload workload"
+  },
+  "budgets": {
+    "abortAllocatedBytes": 9663676416,
+    "hardAllocatedBytes": 10737418240,
+    "guestFreeBytesFloor": 21474836480,
+    "rawProofBytes": 268435456,
+    "sampleIntervalMs": 5000
+  },
+  "pinnedNetworkPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/pinned-network.compose.yml",
+  "pinnedNetworkSha256": "eb9b66ed23d16eb7d96adb6ba2fc628e23a90529a36a62209daa4703139f8347",
+  "priorRigPreserved": true,
+  "watchHandoffPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/watch-handoff.json",
+  "externalBrokerFault": {
+    "composeProject": "reef-calcify-e4-attempt3-8c6f",
+    "containers": [
+      "45a7adb373fa7914cc16a1d58f4dd44a3d811259e7c097c119ee725129f2c893",
+      "e98481cf469c0cabac43873dfb732fac89f2c4a912e02604a2df888d05e77149",
+      "5226066cada82643c4333341a25db1a50674d02574e8d3d1deb5e1dd89a65c54"
+    ],
+    "targetContainer": "e98481cf469c0cabac43873dfb732fac89f2c4a912e02604a2df888d05e77149",
+    "resources": [
+      {
+        "id": "45a7adb373fa7914cc16a1d58f4dd44a3d811259e7c097c119ee725129f2c893",
+        "brokerId": 0,
+        "name": "reef-calcify-e4-attempt3-8c6f-rp0-1",
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-attempt3-8c6f",
+          "com.docker.compose.service": "rp0",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-attempt3-8c6f_rp0-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "e98481cf469c0cabac43873dfb732fac89f2c4a912e02604a2df888d05e77149",
+        "brokerId": 1,
+        "name": "reef-calcify-e4-attempt3-8c6f-rp1-1",
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-attempt3-8c6f",
+          "com.docker.compose.service": "rp1",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-attempt3-8c6f_rp1-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "5226066cada82643c4333341a25db1a50674d02574e8d3d1deb5e1dd89a65c54",
+        "brokerId": 2,
+        "name": "reef-calcify-e4-attempt3-8c6f-rp2-1",
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-attempt3-8c6f",
+          "com.docker.compose.service": "rp2",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-attempt3-8c6f_rp2-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      }
+    ],
+    "stoppedAllocatedBytesUpperBound": 3221225472,
+    "phaseProtocol": {
+      "schema": "calcify-broker-fault-phase-v1",
+      "runId": "e4-current-external3",
+      "maxCycles": 1,
+      "recoveryTimeoutMs": 30000,
+      "stopTimeoutMs": 30000,
+      "directory": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/e3-current-candidate/broker-fault",
+      "clock": {
+        "platform": "darwin",
+        "node": "22.22.1",
+        "uv": "1.51.0"
+      }
+    },
+    "evidence": "Existing frozen3GiB target reservation throughout fault-enabled E3 proof; actual running du must stay<=3GiB. Stopped actual allocation unknown. New named data volumes exclusively owned with no outside writers. Charge is bound, not physical measurement or startup calibration."
+  },
+  "derivedFromProfileSha256": "98ce2e1ce2fb514d846071f4972b1a5f77fe69b3bdf6356c19d834e7ce08a9f3",
+  "derivedFaultRunId": "e4-current-external3",
+  "originalProfileFactsScope": "Setup hardware/config/image/node identities retained as dated facts. Actual current health/generations/allocation/guest-free come from fresh strict supervisor; no bootstrap sample or prior footprint is current bound."
+}

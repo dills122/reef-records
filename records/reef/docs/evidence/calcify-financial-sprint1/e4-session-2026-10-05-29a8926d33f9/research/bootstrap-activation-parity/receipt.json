@@ -1,0 +1,22 @@
+{
+  "schema": "financial-bootstrap-activation-parity-research-v1",
+  "finding": "in-memory LongNode historyRecords compared with parsed IntNode request2101",
+  "priorAuditMissExplicit": true,
+  "requestedHistoryRecords": 2101,
+  "actualOwnerHashParityProven": false,
+  "actualHistoryChecksumParityProven": false,
+  "newJvmRunPerformed": false,
+  "sourceEditsPerformed": false,
+  "buildPerformed": false,
+  "brokerRunPerformed": false,
+  "reviewContinuation": "Attempt2cycle2 following actual failure",
+  "evidenceSha256": {
+    ".planning/calcify-e4-session-2026-10-05/bootstrap-attempt2/proof/managed-recovery/request.json": "0f3d1d2748344b8183bb01956b1c29671def911d201e6a544e7a1b44e4ded9d4",
+    ".planning/calcify-e4-session-2026-10-05/bootstrap-attempt2/proof/managed-recovery/stderr.log": "312814860bf5d9ac4d2202fca61581e21a1d5c35bb07815cca040d3e89c95e0e",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt": "3189cc005f9b58631a67c9cee0b1ec338b6fb075b48befbdec60f50c564b1aae",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialKernel.kt": "9f76e87940d7600dac11bb26aba9ad40e39e7fbf41ec28dc8ab990790f0e637e",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPhysicalInventory.kt": "984d21564e57472525c28ddd72668645be76dd5f1e10e7e70c968dec68256c2c",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialPartitionCut.kt": "b24893cbf315171652c2d18cb9cb343f1c1f906d9263d5d6ea2262e90a3161bc"
+  },
+  "memoSha256": "8aba8ce06eeb3a534a995a54fb1eca1c65d7cf3ad4eb22e44b028f0e771d2a79"
+}

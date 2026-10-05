@@ -1,0 +1,10 @@
+{
+  "schema": "calcify-attempt2-operator-verification-v1",
+  "syntaxPassed": true,
+  "controlsPassed": true,
+  "actualLoadExecuted": false,
+  "actualBrokerOperationExecuted": false,
+  "actualCompilerExecuted": false,
+  "proofRootCreated": false,
+  "scope": "Current broker-free recipe/negative controls and exact source candidate capture only; root Ready/acceptance required for execution"
+}

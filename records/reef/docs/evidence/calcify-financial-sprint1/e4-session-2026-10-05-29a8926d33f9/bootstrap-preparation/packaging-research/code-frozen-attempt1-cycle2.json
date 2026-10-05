@@ -1,0 +1,22 @@
+{
+  "schema": "calcify-e3-packaging-code-freeze-v1",
+  "frozenUtc": "2026-10-05T15:33:40.730707+00:00",
+  "paths": {
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation/build-inputs.mjs": "6e5f2e9946754c8cf1c4ad0fb43083ec770c5b962adb3e33d1fa9c0bc4b9470f",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation/pack-proof.mjs": "7d5c176e24dcbc4c39f471696963d0ab364cde893a5c998695e9751d1adedde5",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation/verify-package.mjs": "c2e61d180e8de517626abe3808a62a548cbe7500aab3b606e3a3962352a95313",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation/preparation-pins.json": "9d07e5531d84a5175a02ae796d37cdce1fe350e9c0b6d18e6e0e0a501bde1b37",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation/preparation-controls.mjs": "885fd459f1897438b15a99626d14dfa3529901475a8db7453cee4e8b12a20526",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation/packaging-research/chunk-controls.mjs": "1192139c0b4e886ab0a21eef923cb58a183c6e7de4adc142dec14ccd77c09722",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation/handoff.md": "ed9ec9997f18e5bd4c2a2e0b8d95db7e09c93b40113b76a4d73e698bc715eb33",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation/packaging-research/proposal.md": "327a6dc3767fb545c7d7f94cf1457a7cbbcf7f15fe064726808ed1ab399e58b9",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation/packaging-research/gate-source-snapshot.txt": "b593f87b9217db7733d3b9e958589ec6c5364cb3cb4bba1eb75e97988764b248"
+  },
+  "syntax": "PASS three execution modules",
+  "syntheticControls": "PASS closure/arm/currentcandidate +chunk shape refusal only",
+  "actualOriginalClosed": "Root confirmation inspected, actual814files39,488,462B root report",
+  "actualPackagerExecuted": false,
+  "actualBuilderExecuted": false,
+  "actualLoadExecuted": false,
+  "reviewGate": "Fresh packaging attempt1cycle2 Ready required; proposal cycle1 unable-actual not reused"
+}

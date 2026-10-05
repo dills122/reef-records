@@ -1,0 +1,15 @@
+{
+  "reason": "Default sandbox Docker socket permission denied before any creation or start; retry requires authorized escalation",
+  "files": [
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-001-prior-nine-stopped.json",
+      "retainedPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-sandbox1/create-001-prior-nine-stopped.json",
+      "sha256": "f0b20adedbd5201bb7d32708b594820dbc70f7de76995734c7e633267cf05fdd"
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/receipts.jsonl",
+      "retainedPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-sandbox1/receipts.jsonl",
+      "sha256": "af0f8f64a3569ed91dd9ef3157a457befb2a7032b4079ef373d60fdb693bffb0"
+    }
+  ]
+}

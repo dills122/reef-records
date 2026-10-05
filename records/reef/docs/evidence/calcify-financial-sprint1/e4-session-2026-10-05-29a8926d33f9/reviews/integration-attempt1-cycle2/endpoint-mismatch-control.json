@@ -1,0 +1,9 @@
+{
+  "control": "synthetic broker endpoint mismatch; no brokers contacted, no payload",
+  "foreignEndpoint": "foreign-cluster.example:9092",
+  "registeredProject": "reef-calcify-e4-session-8c6f",
+  "dependencyBoundaryAccepted": true,
+  "result": {
+    "ok": true
+  }
+}

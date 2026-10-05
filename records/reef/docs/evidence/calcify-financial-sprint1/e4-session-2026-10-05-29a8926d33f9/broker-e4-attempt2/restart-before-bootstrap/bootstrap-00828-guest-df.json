@@ -1,0 +1,22 @@
+{
+  "seq": 828,
+  "name": "guest-df",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "exec",
+    "05e2b09ff3d44b6e32d398b6cc20790f82b7a2cf98f25ff50e3c07d430279fce",
+    "df",
+    "-Pk",
+    "/var/lib/redpanda/data"
+  ],
+  "startedAtMs": 68884877,
+  "startedUtc": "2026-10-05T16:40:50.470Z",
+  "stdout": "Filesystem     1024-blocks     Used Available Capacity Mounted on\n/dev/vda1        156558308 58598544  89974260      40% /var/lib/redpanda/data\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 68884927,
+  "completedUtc": "2026-10-05T16:40:50.521Z",
+  "stdoutSha256": "f90a6b3e111d3c944f3348c3df40776fd3a8bfc541f740ffa2f189aa7b62534d",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputSha256": "1781fca15d77b3802615c38964fdbe130eb5c7e0f8e4c4473aff6efcb4913c83"
+}

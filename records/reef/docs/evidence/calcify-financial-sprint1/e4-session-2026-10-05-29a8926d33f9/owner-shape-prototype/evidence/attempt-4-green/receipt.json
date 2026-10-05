@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/gradlew",
+    "-p",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/owner-shape-prototype",
+    "--offline",
+    "--no-daemon",
+    "run"
+  ],
+  "startUtc": "2026-10-05T15:36:48.987553+00:00",
+  "scope": "isolated ignored standalone project; no root Gradle compilation",
+  "endUtc": "2026-10-05T15:37:07.158926+00:00",
+  "exitCode": 0
+}

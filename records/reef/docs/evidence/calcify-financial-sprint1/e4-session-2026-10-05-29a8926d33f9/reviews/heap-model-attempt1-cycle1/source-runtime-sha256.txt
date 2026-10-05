@@ -1,0 +1,8 @@
+9f76e87940d7600dac11bb26aba9ad40e39e7fbf41ec28dc8ab990790f0e637e  services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialKernel.kt
+ab0fe88e9570da93790ce946fb23dff39ef93caaa5725629c863fbdbd7e901fc  services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt
+f3e824685301fa7aa446f1017620dbc096c7bb9ecb81197dcc5f1f645e9d5fb7  services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbe.kt
+fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d  docs/evidence/calcify-financial-sprint1/fixtures.json
+8a0ccbcc399a0eac0a89ea47307af07db2f4c686974b846cef56a175caed99df  /Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/java
+bf5b121ef9db76c2a20fe99401368df61416cca787140542532e370e455030d0  /Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib/server/libjvm.dylib
+556db5439e206114346043f68d200497dc96a0bca62a360a81784092ebd0e0a9  /Users/dsteele/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.22.3/d0d4b2cdb0a1440ac02178fc2ff01dfb05cd06a8/jackson-databind-2.22.3.jar
+bd73f3805e116f711e8456ee89a8a5b43ff5dcf5a5bb865afae29deae89e7c4b  /Users/dsteele/.gradle/caches/modules-2/files-2.1/org.apache.kafka/kafka-streams/4.3.1/76cef4ff46a4355bac231cba87ef74a79a27aaf2/kafka-streams-4.3.1.jar

@@ -1,0 +1,27 @@
+{
+  "name": "prior-nine-stopped",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "inspect",
+    "1335cf8f168bed8177104f47994745d4525b12ab5b014dd649adcb4e73860143",
+    "5aa6560ec9bb80fd238bdba3c2e07259854f30de76c6c82868de1e038cd2d446",
+    "733d961222e085cb98d5af55859eaeb59a2390198fa0bbcdffdf975061fcec9c",
+    "e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af",
+    "2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e",
+    "841231db0a0bd1bde6b7a33976f43f7950753c9bbc91782c7675b97a384de81f",
+    "05e2b09ff3d44b6e32d398b6cc20790f82b7a2cf98f25ff50e3c07d430279fce",
+    "9a9f3e1e1fbaaa82740db449e5094b6db9457caa0732176f4a82eef0b6bc2dec",
+    "553a483b1a11d32daf5d67a9465e591c4a4c58b61548a02a790980be8d6d7672"
+  ],
+  "startedAtMs": 69731526,
+  "startedUtc": "2026-10-05T16:54:57.118Z",
+  "stdout": "[]\n",
+  "stderr": "permission denied while trying to connect to the docker API at unix:///Users/dsteele/.docker/run/docker.sock\npermission denied while trying to connect to the docker API at unix:///Users/dsteele/.docker/run/docker.sock\npermission denied while trying to connect to the docker API at unix:///Users/dsteele/.docker/run/docker.sock\npermission denied while trying to connect to the docker API at unix:///Users/dsteele/.docker/run/docker.sock\npermission denied while trying to connect to the docker API at unix:///Users/dsteele/.docker/run/docker.sock\npermission denied while trying to connect to the docker API at unix:///Users/dsteele/.docker/run/docker.sock\npermission denied while trying to connect to the docker API at unix:///Users/dsteele/.docker/run/docker.sock\npermission denied while trying to connect to the docker API at unix:///Users/dsteele/.docker/run/docker.sock\npermission denied while trying to connect to the docker API at unix:///Users/dsteele/.docker/run/docker.sock\n",
+  "exitCode": 1,
+  "error": "Command failed: /usr/local/bin/docker inspect 1335cf8f168bed8177104f47994745d4525b12ab5b014dd649adcb4e73860143 5aa6560ec9bb80fd238bdba3c2e07259854f30de76c6c82868de1e038cd2d446 733d961222e085cb98d5af55859eaeb59a2390198fa0bbcdffdf975061fcec9c e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af 2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e 841231db0a0bd1bde6b7a33976f43f7950753c9bbc91782c7675b97a384de81f 05e2b09ff3d44b6e32d398b6cc20790f82b7a2cf98f25ff50e3c07d430279fce 9a9f3e1e1fbaaa82740db449e5094b6db9457caa0732176f4a82eef0b6bc2dec 553a483b1a11d32daf5d67a9465e591c4a4c58b61548a02a790980be8d6d7672\npermission denied while trying to connect to the docker API at unix:///Users/dsteele/.docker/run/docker.sock\npermission denied while trying to connect to the docker API at unix:///Users/dsteele/.docker/run/docker.sock\npermission denied while trying to connect to the docker API at unix:///Users/dsteele/.docker/run/docker.sock\npermission denied while trying to connect to the docker API at unix:///Users/dsteele/.docker/run/docker.sock\npermission denied while trying to connect to the docker API at unix:///Users/dsteele/.docker/run/docker.sock\npermission denied while trying to connect to the docker API at unix:///Users/dsteele/.docker/run/docker.sock\npermission denied while trying to connect to the docker API at unix:///Users/dsteele/.docker/run/docker.sock\npermission denied while trying to connect to the docker API at unix:///Users/dsteele/.docker/run/docker.sock\npermission denied while trying to connect to the docker API at unix:///Users/dsteele/.docker/run/docker.sock\n",
+  "completedAtMs": 69731644,
+  "completedUtc": "2026-10-05T16:54:57.236Z",
+  "stdoutSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+  "stderrSha256": "d8478e577e3aef17249ea4b7ee04e5bbe611d8805a802038d2106d9352e17481",
+  "inputSha256": "b8771148fc8f849ce4eb06524927b645ccb337931699cc3fb52861ad741d3ae7"
+}

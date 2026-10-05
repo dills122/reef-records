@@ -1,0 +1,983 @@
+[
+    {
+        "Id": "e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af",
+        "Created": "2026-10-05T14:03:14.90726605Z",
+        "Path": "/entrypoint.sh",
+        "Args": [
+            "redpanda",
+            "start",
+            "--overprovisioned",
+            "--smp",
+            "1",
+            "--memory",
+            "1G",
+            "--reserve-memory",
+            "0M",
+            "--check=false",
+            "--node-id",
+            "0",
+            "--kafka-addr",
+            "internal://0.0.0.0:9092,external://0.0.0.0:39492",
+            "--advertise-kafka-addr",
+            "internal://rp0:9092,external://127.0.0.1:39492",
+            "--rpc-addr",
+            "0.0.0.0:33145",
+            "--advertise-rpc-addr",
+            "rp0:33145",
+            "--seeds",
+            "rp0:33145"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-05T15:08:40.473685667Z",
+            "FinishedAt": "2026-10-05T15:28:10.1199355Z",
+            "Health": {
+                "Status": "unhealthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-10-05T15:27:56.797301258Z",
+                        "End": "2026-10-05T15:27:56.848326341Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.1c792c9e-2f81-49d9-891a-23069d3e144d\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                                                                             PARTITIONS  REPLICAS\n__consumer_offsets                                                                                               3           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-app-financial-state-changelog                    1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-input                                            1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-results                                          1           3\nfinancial-s1-97924e15-e4-current-core1-forward-app-financial-state-changelog                                     1           3\nfinancial-s1-97924e15-e4-current-core1-forward-input                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-forward-results                                                           1           3\nfinancial-s1-97924e15-e4-current-core1-happy-app-financial-state-changelog                                       1           3\nfinancial-s1-97924e15-e4-current-core1-happy-input                                                               1           3\nfinancial-s1-97924e15-e4-current-core1-happy-results                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-app-financial-state-changelog                            1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-input                                                    1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-results                                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-input                                                         1   ..."
+                    },
+                    {
+                        "Start": "2026-10-05T15:27:59.848681926Z",
+                        "End": "2026-10-05T15:27:59.893961676Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.1c792c9e-2f81-49d9-891a-23069d3e144d\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                                                                             PARTITIONS  REPLICAS\n__consumer_offsets                                                                                               3           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-app-financial-state-changelog                    1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-input                                            1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-results                                          1           3\nfinancial-s1-97924e15-e4-current-core1-forward-app-financial-state-changelog                                     1           3\nfinancial-s1-97924e15-e4-current-core1-forward-input                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-forward-results                                                           1           3\nfinancial-s1-97924e15-e4-current-core1-happy-app-financial-state-changelog                                       1           3\nfinancial-s1-97924e15-e4-current-core1-happy-input                                                               1           3\nfinancial-s1-97924e15-e4-current-core1-happy-results                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-app-financial-state-changelog                            1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-input                                                    1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-results                                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-input                                                         1   ..."
+                    },
+                    {
+                        "Start": "2026-10-05T15:28:02.897980594Z",
+                        "End": "2026-10-05T15:28:02.936280552Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.1c792c9e-2f81-49d9-891a-23069d3e144d\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                                                                             PARTITIONS  REPLICAS\n__consumer_offsets                                                                                               3           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-app-financial-state-changelog                    1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-input                                            1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-results                                          1           3\nfinancial-s1-97924e15-e4-current-core1-forward-app-financial-state-changelog                                     1           3\nfinancial-s1-97924e15-e4-current-core1-forward-input                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-forward-results                                                           1           3\nfinancial-s1-97924e15-e4-current-core1-happy-app-financial-state-changelog                                       1           3\nfinancial-s1-97924e15-e4-current-core1-happy-input                                                               1           3\nfinancial-s1-97924e15-e4-current-core1-happy-results                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-app-financial-state-changelog                            1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-input                                                    1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-results                                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-input                                                         1   ..."
+                    },
+                    {
+                        "Start": "2026-10-05T15:28:05.937323221Z",
+                        "End": "2026-10-05T15:28:05.978723679Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.1c792c9e-2f81-49d9-891a-23069d3e144d\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                                                                             PARTITIONS  REPLICAS\n__consumer_offsets                                                                                               3           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-app-financial-state-changelog                    1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-input                                            1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-results                                          1           3\nfinancial-s1-97924e15-e4-current-core1-forward-app-financial-state-changelog                                     1           3\nfinancial-s1-97924e15-e4-current-core1-forward-input                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-forward-results                                                           1           3\nfinancial-s1-97924e15-e4-current-core1-happy-app-financial-state-changelog                                       1           3\nfinancial-s1-97924e15-e4-current-core1-happy-input                                                               1           3\nfinancial-s1-97924e15-e4-current-core1-happy-results                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-app-financial-state-changelog                            1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-input                                                    1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-results                                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-input                                                         1   ..."
+                    },
+                    {
+                        "Start": "2026-10-05T15:28:08.983524222Z",
+                        "End": "2026-10-05T15:28:09.037496514Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.1c792c9e-2f81-49d9-891a-23069d3e144d\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                                                                             PARTITIONS  REPLICAS\n__consumer_offsets                                                                                               3           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-app-financial-state-changelog                    1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-input                                            1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-results                                          1           3\nfinancial-s1-97924e15-e4-current-core1-forward-app-financial-state-changelog                                     1           3\nfinancial-s1-97924e15-e4-current-core1-forward-input                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-forward-results                                                           1           3\nfinancial-s1-97924e15-e4-current-core1-happy-app-financial-state-changelog                                       1           3\nfinancial-s1-97924e15-e4-current-core1-happy-input                                                               1           3\nfinancial-s1-97924e15-e4-current-core1-happy-results                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-app-financial-state-changelog                            1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-input                                                    1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-results                                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-input                                                         1   ..."
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "ResolvConfPath": "/var/lib/docker/containers/e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af/hostname",
+        "HostsPath": "/var/lib/docker/containers/e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af/hosts",
+        "LogPath": "/var/lib/docker/containers/e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af/e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af-json.log",
+        "Name": "/reef-calcify-e4-session-8c6f-rp0-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "reef-calcify-e4-session-8c6f_rp0-data:/var/lib/redpanda/data:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "reef-calcify-e4-session-8c6f_default",
+            "PortBindings": {
+                "39492/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "39492"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 2147483648,
+            "NanoCpus": 1000000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 4294967296,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "ID": "e35648ab23ef4ac6d37e1e82b938eb4a370150221de20942bedb393d75af39af",
+                "LowerDir": "/var/lib/docker/overlay2/b82d3d5787d53f6d27bfd9eb93c7d9a51d346d86226798e6fd01419f9e122a13-init/diff:/var/lib/docker/overlay2/429a6b56c5746428638e0afade8e23fc947beac25bcdc31941cdeb115fbc5798/diff:/var/lib/docker/overlay2/2a0b841e61f63dd0077f860871c413c403c1d1e1d586f2d5623c3060674377c6/diff:/var/lib/docker/overlay2/4e8651842484685fff4946fe0a6fae39171b5f44279ed9878fac202f42d5ce98/diff:/var/lib/docker/overlay2/a95b44c16387a88025dc249374e720b667a4efa56ae5ff5af4348c00df86f4df/diff:/var/lib/docker/overlay2/b707d6a449a07c913a24c60f5f1b0e426ce9e87426f7c7e60201d0dee2e64381/diff:/var/lib/docker/overlay2/a5de7e7e00431ad8be6129b4bcdf5ed000d3663819e3792c2f3d3fb2074cfda8/diff",
+                "MergedDir": "/var/lib/docker/overlay2/b82d3d5787d53f6d27bfd9eb93c7d9a51d346d86226798e6fd01419f9e122a13/merged",
+                "UpperDir": "/var/lib/docker/overlay2/b82d3d5787d53f6d27bfd9eb93c7d9a51d346d86226798e6fd01419f9e122a13/diff",
+                "WorkDir": "/var/lib/docker/overlay2/b82d3d5787d53f6d27bfd9eb93c7d9a51d346d86226798e6fd01419f9e122a13/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "reef-calcify-e4-session-8c6f_rp0-data",
+                "Source": "/var/lib/docker/volumes/reef-calcify-e4-session-8c6f_rp0-data/_data",
+                "Destination": "/var/lib/redpanda/data",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "e35648ab23ef",
+            "Domainname": "",
+            "User": "redpanda",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "39492/tcp": {},
+                "8081/tcp": {},
+                "8082/tcp": {},
+                "9092/tcp": {},
+                "9644/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "EDITOR=nano"
+            ],
+            "Cmd": [
+                "redpanda",
+                "start",
+                "--overprovisioned",
+                "--smp",
+                "1",
+                "--memory",
+                "1G",
+                "--reserve-memory",
+                "0M",
+                "--check=false",
+                "--node-id",
+                "0",
+                "--kafka-addr",
+                "internal://0.0.0.0:9092,external://0.0.0.0:39492",
+                "--advertise-kafka-addr",
+                "internal://rp0:9092,external://127.0.0.1:39492",
+                "--rpc-addr",
+                "0.0.0.0:33145",
+                "--advertise-rpc-addr",
+                "rp0:33145",
+                "--seeds",
+                "rp0:33145"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD",
+                    "rpk",
+                    "cluster",
+                    "info",
+                    "-X",
+                    "brokers=127.0.0.1:9092"
+                ],
+                "Interval": 3000000000,
+                "Timeout": 2000000000,
+                "Retries": 30
+            },
+            "Image": "redpandadata/redpanda@sha256:9e83cfa99278f30d0133271c26bf670cd69c94ffa6ba0b42830dd0c3bd9dcfd9",
+            "Volumes": {
+                "/var/lib/redpanda/data": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "0dece746f1227f8e85ffbffeb6345e6e7ee0d6a960db0e6dcb8cf16fbb8539bb",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "reef-calcify-e4-session-8c6f",
+                "com.docker.compose.project.config_files": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/broker.compose.yml,/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/pinned-network.compose.yml",
+                "com.docker.compose.project.working_dir": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4",
+                "com.docker.compose.service": "rp0",
+                "com.docker.compose.version": "5.4.0",
+                "org.opencontainers.image.authors": "Redpanda Data \u003chi@redpanda.com\u003e",
+                "reef.test": "calcify-financial-sprint1"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "",
+            "SandboxKey": "",
+            "Ports": {},
+            "Networks": {
+                "reef-calcify-e4-session-8c6f_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "reef-calcify-e4-session-8c6f-rp0-1",
+                        "rp0"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "21dfdd047955204800cb1d68c54b9f3f7f059c2f8751fdbe935fd0708512f4ab",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "MacAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "reef-calcify-e4-session-8c6f-rp0-1",
+                        "rp0",
+                        "e35648ab23ef"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Id": "2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e",
+        "Created": "2026-10-05T14:03:14.907071758Z",
+        "Path": "/entrypoint.sh",
+        "Args": [
+            "redpanda",
+            "start",
+            "--overprovisioned",
+            "--smp",
+            "1",
+            "--memory",
+            "1G",
+            "--reserve-memory",
+            "0M",
+            "--check=false",
+            "--node-id",
+            "1",
+            "--kafka-addr",
+            "internal://0.0.0.0:9092,external://0.0.0.0:39592",
+            "--advertise-kafka-addr",
+            "internal://rp1:9092,external://127.0.0.1:39592",
+            "--rpc-addr",
+            "0.0.0.0:33145",
+            "--advertise-rpc-addr",
+            "rp1:33145",
+            "--seeds",
+            "rp0:33145"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-05T15:12:24.637156507Z",
+            "FinishedAt": "2026-10-05T15:28:10.139626833Z",
+            "Health": {
+                "Status": "unhealthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-10-05T15:27:54.884343965Z",
+                        "End": "2026-10-05T15:27:54.929908715Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.1c792c9e-2f81-49d9-891a-23069d3e144d\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                                                                             PARTITIONS  REPLICAS\n__consumer_offsets                                                                                               3           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-app-financial-state-changelog                    1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-input                                            1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-results                                          1           3\nfinancial-s1-97924e15-e4-current-core1-forward-app-financial-state-changelog                                     1           3\nfinancial-s1-97924e15-e4-current-core1-forward-input                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-forward-results                                                           1           3\nfinancial-s1-97924e15-e4-current-core1-happy-app-financial-state-changelog                                       1           3\nfinancial-s1-97924e15-e4-current-core1-happy-input                                                               1           3\nfinancial-s1-97924e15-e4-current-core1-happy-results                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-app-financial-state-changelog                            1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-input                                                    1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-results                                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-input                                                         1   ..."
+                    },
+                    {
+                        "Start": "2026-10-05T15:27:57.934408925Z",
+                        "End": "2026-10-05T15:27:57.97701005Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.1c792c9e-2f81-49d9-891a-23069d3e144d\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                                                                             PARTITIONS  REPLICAS\n__consumer_offsets                                                                                               3           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-app-financial-state-changelog                    1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-input                                            1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-results                                          1           3\nfinancial-s1-97924e15-e4-current-core1-forward-app-financial-state-changelog                                     1           3\nfinancial-s1-97924e15-e4-current-core1-forward-input                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-forward-results                                                           1           3\nfinancial-s1-97924e15-e4-current-core1-happy-app-financial-state-changelog                                       1           3\nfinancial-s1-97924e15-e4-current-core1-happy-input                                                               1           3\nfinancial-s1-97924e15-e4-current-core1-happy-results                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-app-financial-state-changelog                            1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-input                                                    1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-results                                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-input                                                         1   ..."
+                    },
+                    {
+                        "Start": "2026-10-05T15:28:00.978032343Z",
+                        "End": "2026-10-05T15:28:01.019460135Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.1c792c9e-2f81-49d9-891a-23069d3e144d\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                                                                             PARTITIONS  REPLICAS\n__consumer_offsets                                                                                               3           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-app-financial-state-changelog                    1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-input                                            1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-results                                          1           3\nfinancial-s1-97924e15-e4-current-core1-forward-app-financial-state-changelog                                     1           3\nfinancial-s1-97924e15-e4-current-core1-forward-input                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-forward-results                                                           1           3\nfinancial-s1-97924e15-e4-current-core1-happy-app-financial-state-changelog                                       1           3\nfinancial-s1-97924e15-e4-current-core1-happy-input                                                               1           3\nfinancial-s1-97924e15-e4-current-core1-happy-results                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-app-financial-state-changelog                            1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-input                                                    1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-results                                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-input                                                         1   ..."
+                    },
+                    {
+                        "Start": "2026-10-05T15:28:04.020454761Z",
+                        "End": "2026-10-05T15:28:04.069405261Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.1c792c9e-2f81-49d9-891a-23069d3e144d\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                                                                             PARTITIONS  REPLICAS\n__consumer_offsets                                                                                               3           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-app-financial-state-changelog                    1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-input                                            1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-results                                          1           3\nfinancial-s1-97924e15-e4-current-core1-forward-app-financial-state-changelog                                     1           3\nfinancial-s1-97924e15-e4-current-core1-forward-input                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-forward-results                                                           1           3\nfinancial-s1-97924e15-e4-current-core1-happy-app-financial-state-changelog                                       1           3\nfinancial-s1-97924e15-e4-current-core1-happy-input                                                               1           3\nfinancial-s1-97924e15-e4-current-core1-happy-results                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-app-financial-state-changelog                            1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-input                                                    1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-results                                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-input                                                         1   ..."
+                    },
+                    {
+                        "Start": "2026-10-05T15:28:07.072600804Z",
+                        "End": "2026-10-05T15:28:07.130643804Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.1c792c9e-2f81-49d9-891a-23069d3e144d\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                                                                             PARTITIONS  REPLICAS\n__consumer_offsets                                                                                               3           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-app-financial-state-changelog                    1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-input                                            1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-results                                          1           3\nfinancial-s1-97924e15-e4-current-core1-forward-app-financial-state-changelog                                     1           3\nfinancial-s1-97924e15-e4-current-core1-forward-input                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-forward-results                                                           1           3\nfinancial-s1-97924e15-e4-current-core1-happy-app-financial-state-changelog                                       1           3\nfinancial-s1-97924e15-e4-current-core1-happy-input                                                               1           3\nfinancial-s1-97924e15-e4-current-core1-happy-results                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-app-financial-state-changelog                            1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-input                                                    1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-results                                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-input                                                         1   ..."
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "ResolvConfPath": "/var/lib/docker/containers/2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e/hostname",
+        "HostsPath": "/var/lib/docker/containers/2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e/hosts",
+        "LogPath": "/var/lib/docker/containers/2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e/2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e-json.log",
+        "Name": "/reef-calcify-e4-session-8c6f-rp1-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "reef-calcify-e4-session-8c6f_rp1-data:/var/lib/redpanda/data:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "reef-calcify-e4-session-8c6f_default",
+            "PortBindings": {
+                "39592/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "39592"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 2147483648,
+            "NanoCpus": 1000000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 4294967296,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "ID": "2753163a664f440f59a139b1c09ddc4312edddf4145e8f8bc9217672c1742f4e",
+                "LowerDir": "/var/lib/docker/overlay2/41039a6924aeed3c4ee04ff3f1ae4cd6fbaa32ab5155fadce7274168ddc41a13-init/diff:/var/lib/docker/overlay2/429a6b56c5746428638e0afade8e23fc947beac25bcdc31941cdeb115fbc5798/diff:/var/lib/docker/overlay2/2a0b841e61f63dd0077f860871c413c403c1d1e1d586f2d5623c3060674377c6/diff:/var/lib/docker/overlay2/4e8651842484685fff4946fe0a6fae39171b5f44279ed9878fac202f42d5ce98/diff:/var/lib/docker/overlay2/a95b44c16387a88025dc249374e720b667a4efa56ae5ff5af4348c00df86f4df/diff:/var/lib/docker/overlay2/b707d6a449a07c913a24c60f5f1b0e426ce9e87426f7c7e60201d0dee2e64381/diff:/var/lib/docker/overlay2/a5de7e7e00431ad8be6129b4bcdf5ed000d3663819e3792c2f3d3fb2074cfda8/diff",
+                "MergedDir": "/var/lib/docker/overlay2/41039a6924aeed3c4ee04ff3f1ae4cd6fbaa32ab5155fadce7274168ddc41a13/merged",
+                "UpperDir": "/var/lib/docker/overlay2/41039a6924aeed3c4ee04ff3f1ae4cd6fbaa32ab5155fadce7274168ddc41a13/diff",
+                "WorkDir": "/var/lib/docker/overlay2/41039a6924aeed3c4ee04ff3f1ae4cd6fbaa32ab5155fadce7274168ddc41a13/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "reef-calcify-e4-session-8c6f_rp1-data",
+                "Source": "/var/lib/docker/volumes/reef-calcify-e4-session-8c6f_rp1-data/_data",
+                "Destination": "/var/lib/redpanda/data",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "2753163a664f",
+            "Domainname": "",
+            "User": "redpanda",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "39592/tcp": {},
+                "8081/tcp": {},
+                "8082/tcp": {},
+                "9092/tcp": {},
+                "9644/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "EDITOR=nano"
+            ],
+            "Cmd": [
+                "redpanda",
+                "start",
+                "--overprovisioned",
+                "--smp",
+                "1",
+                "--memory",
+                "1G",
+                "--reserve-memory",
+                "0M",
+                "--check=false",
+                "--node-id",
+                "1",
+                "--kafka-addr",
+                "internal://0.0.0.0:9092,external://0.0.0.0:39592",
+                "--advertise-kafka-addr",
+                "internal://rp1:9092,external://127.0.0.1:39592",
+                "--rpc-addr",
+                "0.0.0.0:33145",
+                "--advertise-rpc-addr",
+                "rp1:33145",
+                "--seeds",
+                "rp0:33145"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD",
+                    "rpk",
+                    "cluster",
+                    "info",
+                    "-X",
+                    "brokers=127.0.0.1:9092"
+                ],
+                "Interval": 3000000000,
+                "Timeout": 2000000000,
+                "Retries": 30
+            },
+            "Image": "redpandadata/redpanda@sha256:9e83cfa99278f30d0133271c26bf670cd69c94ffa6ba0b42830dd0c3bd9dcfd9",
+            "Volumes": {
+                "/var/lib/redpanda/data": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "016994de8275ac3a4b56861ec0f75fd985111c9f2b91d677a0adb829ff490dc8",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "reef-calcify-e4-session-8c6f",
+                "com.docker.compose.project.config_files": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/broker.compose.yml,/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/pinned-network.compose.yml",
+                "com.docker.compose.project.working_dir": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4",
+                "com.docker.compose.service": "rp1",
+                "com.docker.compose.version": "5.4.0",
+                "org.opencontainers.image.authors": "Redpanda Data \u003chi@redpanda.com\u003e",
+                "reef.test": "calcify-financial-sprint1"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "",
+            "SandboxKey": "",
+            "Ports": {},
+            "Networks": {
+                "reef-calcify-e4-session-8c6f_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "reef-calcify-e4-session-8c6f-rp1-1",
+                        "rp1"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "21dfdd047955204800cb1d68c54b9f3f7f059c2f8751fdbe935fd0708512f4ab",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "MacAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "reef-calcify-e4-session-8c6f-rp1-1",
+                        "rp1",
+                        "2753163a664f"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Id": "841231db0a0bd1bde6b7a33976f43f7950753c9bbc91782c7675b97a384de81f",
+        "Created": "2026-10-05T14:03:14.907167966Z",
+        "Path": "/entrypoint.sh",
+        "Args": [
+            "redpanda",
+            "start",
+            "--overprovisioned",
+            "--smp",
+            "1",
+            "--memory",
+            "1G",
+            "--reserve-memory",
+            "0M",
+            "--check=false",
+            "--node-id",
+            "2",
+            "--kafka-addr",
+            "internal://0.0.0.0:9092,external://0.0.0.0:39692",
+            "--advertise-kafka-addr",
+            "internal://rp2:9092,external://127.0.0.1:39692",
+            "--rpc-addr",
+            "0.0.0.0:33145",
+            "--advertise-rpc-addr",
+            "rp2:33145",
+            "--seeds",
+            "rp0:33145"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-05T15:08:40.650835917Z",
+            "FinishedAt": "2026-10-05T15:28:10.124444Z",
+            "Health": {
+                "Status": "unhealthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-10-05T15:27:56.796296466Z",
+                        "End": "2026-10-05T15:27:56.847246091Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.1c792c9e-2f81-49d9-891a-23069d3e144d\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                                                                             PARTITIONS  REPLICAS\n__consumer_offsets                                                                                               3           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-app-financial-state-changelog                    1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-input                                            1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-results                                          1           3\nfinancial-s1-97924e15-e4-current-core1-forward-app-financial-state-changelog                                     1           3\nfinancial-s1-97924e15-e4-current-core1-forward-input                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-forward-results                                                           1           3\nfinancial-s1-97924e15-e4-current-core1-happy-app-financial-state-changelog                                       1           3\nfinancial-s1-97924e15-e4-current-core1-happy-input                                                               1           3\nfinancial-s1-97924e15-e4-current-core1-happy-results                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-app-financial-state-changelog                            1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-input                                                    1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-results                                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-input                                                         1   ..."
+                    },
+                    {
+                        "Start": "2026-10-05T15:27:59.848243551Z",
+                        "End": "2026-10-05T15:27:59.893639551Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.1c792c9e-2f81-49d9-891a-23069d3e144d\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                                                                             PARTITIONS  REPLICAS\n__consumer_offsets                                                                                               3           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-app-financial-state-changelog                    1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-input                                            1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-results                                          1           3\nfinancial-s1-97924e15-e4-current-core1-forward-app-financial-state-changelog                                     1           3\nfinancial-s1-97924e15-e4-current-core1-forward-input                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-forward-results                                                           1           3\nfinancial-s1-97924e15-e4-current-core1-happy-app-financial-state-changelog                                       1           3\nfinancial-s1-97924e15-e4-current-core1-happy-input                                                               1           3\nfinancial-s1-97924e15-e4-current-core1-happy-results                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-app-financial-state-changelog                            1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-input                                                    1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-results                                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-input                                                         1   ..."
+                    },
+                    {
+                        "Start": "2026-10-05T15:28:02.898031427Z",
+                        "End": "2026-10-05T15:28:02.936829927Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.1c792c9e-2f81-49d9-891a-23069d3e144d\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                                                                             PARTITIONS  REPLICAS\n__consumer_offsets                                                                                               3           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-app-financial-state-changelog                    1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-input                                            1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-results                                          1           3\nfinancial-s1-97924e15-e4-current-core1-forward-app-financial-state-changelog                                     1           3\nfinancial-s1-97924e15-e4-current-core1-forward-input                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-forward-results                                                           1           3\nfinancial-s1-97924e15-e4-current-core1-happy-app-financial-state-changelog                                       1           3\nfinancial-s1-97924e15-e4-current-core1-happy-input                                                               1           3\nfinancial-s1-97924e15-e4-current-core1-happy-results                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-app-financial-state-changelog                            1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-input                                                    1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-results                                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-input                                                         1   ..."
+                    },
+                    {
+                        "Start": "2026-10-05T15:28:05.937288471Z",
+                        "End": "2026-10-05T15:28:05.979242179Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.1c792c9e-2f81-49d9-891a-23069d3e144d\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                                                                             PARTITIONS  REPLICAS\n__consumer_offsets                                                                                               3           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-app-financial-state-changelog                    1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-input                                            1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-results                                          1           3\nfinancial-s1-97924e15-e4-current-core1-forward-app-financial-state-changelog                                     1           3\nfinancial-s1-97924e15-e4-current-core1-forward-input                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-forward-results                                                           1           3\nfinancial-s1-97924e15-e4-current-core1-happy-app-financial-state-changelog                                       1           3\nfinancial-s1-97924e15-e4-current-core1-happy-input                                                               1           3\nfinancial-s1-97924e15-e4-current-core1-happy-results                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-app-financial-state-changelog                            1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-input                                                    1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-results                                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-input                                                         1   ..."
+                    },
+                    {
+                        "Start": "2026-10-05T15:28:08.983218972Z",
+                        "End": "2026-10-05T15:28:09.03808918Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.1c792c9e-2f81-49d9-891a-23069d3e144d\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                                                                             PARTITIONS  REPLICAS\n__consumer_offsets                                                                                               3           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-app-financial-state-changelog                    1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-input                                            1           3\nfinancial-s1-97924e15-e4-current-activation1-activation-quartet-results                                          1           3\nfinancial-s1-97924e15-e4-current-core1-forward-app-financial-state-changelog                                     1           3\nfinancial-s1-97924e15-e4-current-core1-forward-input                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-forward-results                                                           1           3\nfinancial-s1-97924e15-e4-current-core1-happy-app-financial-state-changelog                                       1           3\nfinancial-s1-97924e15-e4-current-core1-happy-input                                                               1           3\nfinancial-s1-97924e15-e4-current-core1-happy-results                                                             1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-app-financial-state-changelog                            1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-input                                                    1           3\nfinancial-s1-97924e15-e4-current-core1-local-state-loss-results                                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-0-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-app-financial-state-changelog                                  1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-input                                                          1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-1-results                                                        1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-10-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-11-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-input                                                         1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-12-results                                                       1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-app-financial-state-changelog                                 1           3\nfinancial-s1-97924e15-e4-current-core1-mutation-13-input                                                         1   ..."
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "ResolvConfPath": "/var/lib/docker/containers/841231db0a0bd1bde6b7a33976f43f7950753c9bbc91782c7675b97a384de81f/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/841231db0a0bd1bde6b7a33976f43f7950753c9bbc91782c7675b97a384de81f/hostname",
+        "HostsPath": "/var/lib/docker/containers/841231db0a0bd1bde6b7a33976f43f7950753c9bbc91782c7675b97a384de81f/hosts",
+        "LogPath": "/var/lib/docker/containers/841231db0a0bd1bde6b7a33976f43f7950753c9bbc91782c7675b97a384de81f/841231db0a0bd1bde6b7a33976f43f7950753c9bbc91782c7675b97a384de81f-json.log",
+        "Name": "/reef-calcify-e4-session-8c6f-rp2-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "reef-calcify-e4-session-8c6f_rp2-data:/var/lib/redpanda/data:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "reef-calcify-e4-session-8c6f_default",
+            "PortBindings": {
+                "39692/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "39692"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 2147483648,
+            "NanoCpus": 1000000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 4294967296,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "ID": "841231db0a0bd1bde6b7a33976f43f7950753c9bbc91782c7675b97a384de81f",
+                "LowerDir": "/var/lib/docker/overlay2/506190da9c5085457a50aad580dc26aa5a6e21efe132be0fbe2c86879c56ab59-init/diff:/var/lib/docker/overlay2/429a6b56c5746428638e0afade8e23fc947beac25bcdc31941cdeb115fbc5798/diff:/var/lib/docker/overlay2/2a0b841e61f63dd0077f860871c413c403c1d1e1d586f2d5623c3060674377c6/diff:/var/lib/docker/overlay2/4e8651842484685fff4946fe0a6fae39171b5f44279ed9878fac202f42d5ce98/diff:/var/lib/docker/overlay2/a95b44c16387a88025dc249374e720b667a4efa56ae5ff5af4348c00df86f4df/diff:/var/lib/docker/overlay2/b707d6a449a07c913a24c60f5f1b0e426ce9e87426f7c7e60201d0dee2e64381/diff:/var/lib/docker/overlay2/a5de7e7e00431ad8be6129b4bcdf5ed000d3663819e3792c2f3d3fb2074cfda8/diff",
+                "MergedDir": "/var/lib/docker/overlay2/506190da9c5085457a50aad580dc26aa5a6e21efe132be0fbe2c86879c56ab59/merged",
+                "UpperDir": "/var/lib/docker/overlay2/506190da9c5085457a50aad580dc26aa5a6e21efe132be0fbe2c86879c56ab59/diff",
+                "WorkDir": "/var/lib/docker/overlay2/506190da9c5085457a50aad580dc26aa5a6e21efe132be0fbe2c86879c56ab59/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "reef-calcify-e4-session-8c6f_rp2-data",
+                "Source": "/var/lib/docker/volumes/reef-calcify-e4-session-8c6f_rp2-data/_data",
+                "Destination": "/var/lib/redpanda/data",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "841231db0a0b",
+            "Domainname": "",
+            "User": "redpanda",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "39692/tcp": {},
+                "8081/tcp": {},
+                "8082/tcp": {},
+                "9092/tcp": {},
+                "9644/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "EDITOR=nano"
+            ],
+            "Cmd": [
+                "redpanda",
+                "start",
+                "--overprovisioned",
+                "--smp",
+                "1",
+                "--memory",
+                "1G",
+                "--reserve-memory",
+                "0M",
+                "--check=false",
+                "--node-id",
+                "2",
+                "--kafka-addr",
+                "internal://0.0.0.0:9092,external://0.0.0.0:39692",
+                "--advertise-kafka-addr",
+                "internal://rp2:9092,external://127.0.0.1:39692",
+                "--rpc-addr",
+                "0.0.0.0:33145",
+                "--advertise-rpc-addr",
+                "rp2:33145",
+                "--seeds",
+                "rp0:33145"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD",
+                    "rpk",
+                    "cluster",
+                    "info",
+                    "-X",
+                    "brokers=127.0.0.1:9092"
+                ],
+                "Interval": 3000000000,
+                "Timeout": 2000000000,
+                "Retries": 30
+            },
+            "Image": "redpandadata/redpanda@sha256:9e83cfa99278f30d0133271c26bf670cd69c94ffa6ba0b42830dd0c3bd9dcfd9",
+            "Volumes": {
+                "/var/lib/redpanda/data": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "4254cda774114147c2cf978f280110b9b5918d2f3a6978ec3d2d8bd9c31d4e48",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "reef-calcify-e4-session-8c6f",
+                "com.docker.compose.project.config_files": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/broker.compose.yml,/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4/pinned-network.compose.yml",
+                "com.docker.compose.project.working_dir": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4",
+                "com.docker.compose.service": "rp2",
+                "com.docker.compose.version": "5.4.0",
+                "org.opencontainers.image.authors": "Redpanda Data \u003chi@redpanda.com\u003e",
+                "reef.test": "calcify-financial-sprint1"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "",
+            "SandboxKey": "",
+            "Ports": {},
+            "Networks": {
+                "reef-calcify-e4-session-8c6f_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "reef-calcify-e4-session-8c6f-rp2-1",
+                        "rp2"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "21dfdd047955204800cb1d68c54b9f3f7f059c2f8751fdbe935fd0708512f4ab",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "MacAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "reef-calcify-e4-session-8c6f-rp2-1",
+                        "rp2",
+                        "841231db0a0b"
+                    ]
+                }
+            }
+        }
+    }
+]

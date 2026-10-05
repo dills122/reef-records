@@ -1,0 +1,60 @@
+{
+  "reason": "Fail-closed classifier rejected Docker built-in host/none null IPAM before create/start",
+  "files": [
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-001-prior-nine-stopped.json",
+      "retainedPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-001-prior-nine-stopped.json",
+      "sha256": "8be93cd970905be8831736f7cc1bdd2e58e863f8144020e70ae02fec5ff2c039"
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-002-version.json",
+      "retainedPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-002-version.json",
+      "sha256": "094310b50d316a5e675ba08cd7bd2ff854ff40e7576d7e7b16cd5173f676d426"
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-003-image.json",
+      "retainedPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-003-image.json",
+      "sha256": "39d8a4c8df570cbec7a1a33a100b675a361170fa25db83410d46a4b7ebb5c7b9"
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-004-project-absence.json",
+      "retainedPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-004-project-absence.json",
+      "sha256": "5ff45358a568b641653ba31e41fcf6ef3a52b796050d1495fe90c898be273feb"
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-005-volume-absence-0.json",
+      "retainedPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-005-volume-absence-0.json",
+      "sha256": "7c2f38b0a9f4aab6cd47c1ff036a99167a41f2cb4944c157e88e2dbb953274a3"
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-006-volume-absence-1.json",
+      "retainedPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-006-volume-absence-1.json",
+      "sha256": "bd8abeca9deed478fbfbf09afeaf23ed5d68517b07317a709fb400645445086f"
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-007-volume-absence-2.json",
+      "retainedPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-007-volume-absence-2.json",
+      "sha256": "56b2a32c4f68e5b3c5bd5a6e200ea246ae2856784322137d030bfef9d434367a"
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-008-network-inventory.json",
+      "retainedPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-008-network-inventory.json",
+      "sha256": "1684af7dc0999b8120767222b10f7f4996ca80c40c8689f067aa90a89828ff99"
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-009-network-existing-ipam.json",
+      "retainedPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-009-network-existing-ipam.json",
+      "sha256": "57b3fa27cfafa17298ffb9b4e942a1771324c8395cbaef10ea2282affab1e15a"
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/create-ports.json",
+      "retainedPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/create-ports.json",
+      "sha256": "2ba3f276a8234f7637938156ec116d57c88c1330659988210a5efec0d061e475"
+    },
+    {
+      "originalPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/receipts.jsonl",
+      "retainedPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/failed-setup-ipam1/receipts.jsonl",
+      "sha256": "a440aece7261ba6107c4f6863ef7e7a2a46d3bb9ff07bdb19508b77a67a42b50"
+    }
+  ]
+}

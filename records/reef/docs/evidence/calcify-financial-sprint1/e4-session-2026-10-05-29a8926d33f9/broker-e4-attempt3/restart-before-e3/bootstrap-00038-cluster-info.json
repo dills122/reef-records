@@ -1,0 +1,22 @@
+{
+  "seq": 38,
+  "name": "cluster-info",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "exec",
+    "45a7adb373fa7914cc16a1d58f4dd44a3d811259e7c097c119ee725129f2c893",
+    "rpk",
+    "cluster",
+    "info"
+  ],
+  "startedAtMs": 70361792,
+  "startedUtc": "2026-10-05T17:05:27.384Z",
+  "stdout": "CLUSTER\n=======\nredpanda.8843d456-1b62-45e9-9be8-295fd8339a28\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 70361851,
+  "completedUtc": "2026-10-05T17:05:27.442Z",
+  "stdoutSha256": "33997ec3da9a8d57dfa579aba1de24449dc4f2de2d38f70522ff8eb46468846a",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputSha256": "2f812a7df51e4206a79cf8770dfa5952b423543512e63b1a1315f139c8b68328"
+}

@@ -1,0 +1,75 @@
+{
+  "totals": {
+    "tests": 99,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "files": [
+    {
+      "path": "TEST-com.reef.platform.calcify.financial.FinancialAckJournalTest.xml",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "TEST-com.reef.platform.calcify.financial.FinancialBootstrapProbeTest.xml",
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "TEST-com.reef.platform.calcify.financial.FinancialBrokerProbeTest.xml",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "TEST-com.reef.platform.calcify.financial.FinancialCommittedCutTest.xml",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "TEST-com.reef.platform.calcify.financial.FinancialHeapGuardTest.xml",
+      "tests": 25,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "TEST-com.reef.platform.calcify.financial.FinancialPartitionCutTest.xml",
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "TEST-com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest.xml",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "sourceStable": true,
+  "sourceFreezeSha256": "2e33ca58fdd653f83e3ead35404af18b445beb4ed1076ece1b8d14d398a6d514"
+}

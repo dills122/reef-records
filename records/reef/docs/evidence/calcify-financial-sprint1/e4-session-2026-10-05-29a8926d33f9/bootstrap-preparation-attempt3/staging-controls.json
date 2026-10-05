@@ -1,0 +1,211 @@
+{
+  "schema": "calcify-operator-staging-controls-v1",
+  "createdUtc": "2026-10-05T16:51:19.390156+00:00",
+  "actualDockerExecuted": false,
+  "actualJavaExecuted": false,
+  "sourceOrBuildChanged": false,
+  "commands": [
+    {
+      "argv": [
+        "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+        "--check",
+        "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/bind-config.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+        "--check",
+        "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/bind-pins.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+        "--check",
+        "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/build-inputs.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+        "--check",
+        "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/pack-proof.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+        "--check",
+        "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/verify-package.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+        "--check",
+        "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/write-cleanup-array.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+        "--check",
+        "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-watch.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+        "--check",
+        "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/capture-admin.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+        "--check",
+        "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/idle-watch.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+        "--check",
+        "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/operator-safety.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+        "--check",
+        "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/operator-safety.test.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+        "--check",
+        "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/prepare.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+        "--check",
+        "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/restart-before-e3/restart-watch.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+        "--check",
+        "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-attempt3/prepare-recipes.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+        "--check",
+        "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-attempt3/recipe-controls.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+        "--check",
+        "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-attempt3/wrapper.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+        "--test",
+        "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/operator-safety.test.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "TAP version 13\n# Subtest: subnet exact, supernet and contained overlap refused; adjacent accepted\nok 1 - subnet exact, supernet and contained overlap refused; adjacent accepted\n  ---\n  duration_ms: 1.092125\n  type: 'test'\n  ...\n# Subtest: raw cleanup array exact identities and all stopped; envelope is rejected\nok 2 - raw cleanup array exact identities and all stopped; envelope is rejected\n  ---\n  duration_ms: 0.941\n  type: 'test'\n  ...\n1..2\n# tests 2\n# suites 0\n# pass 2\n# fail 0\n# cancelled 0\n# skipped 0\n# todo 0\n# duration_ms 47.221417\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+        "--check",
+        "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/prepare.mjs"
+      ],
+      "exitCode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "templateHashes": {
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/bind-config.mjs": "ef4942711ada228f682494813a536ce3c1ab9076681d4e5e6ffd6ec10c8f6a86",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/bind-pins.mjs": "6fb4fca587be7e0b6aa82d29a57925729e5b3910e40ac6ca49f5f50ab7fce9c1",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/build-inputs.mjs": "288ebf89b4448f4cfdd81e180b7ce66f9cd28e846bce041c91275295db0a3f0a",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/pack-proof.mjs": "112d7b3f12c8b9bd172b9bb5ff3a61a04d23d51bf7c72cc5b3e9365a46ff072d",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/verify-package.mjs": "a4d3990973f728d1cfc469184030932d51170241ebc64a9534f94f8fecc52e8b",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/write-cleanup-array.mjs": "d5c590e470e23299cfaef50aa4090db9a2ffba9ec0177446941af1402d4d2b82",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/bootstrap-watch.mjs": "0703c2fef686da22a65be57839bf69d24b5cc91f9e4ce15eae348bca1787c240",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/capture-admin.mjs": "eca4d51a815a5a296157bed09d3f0c989dff804f9f27e626641907ff0947d810",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/idle-watch.mjs": "5b0f3d4f068d5580be33e93e3c39dc21b3db754a23d7f0cca2cf2c75a17b9a8a",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/operator-safety.mjs": "35b198a831aa523c77b89c52aab7a22a9f05d48f13dc11bff044aa8cb4765c83",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/operator-safety.test.mjs": "384421cc493b5571091ab2cb0b630dd299f824c35c3de379bdabd2a309054612",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/prepare.mjs": "24faa91532441f2a0c3f8628d977e1df50648c7ebdc628cbec47777519408434",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/restart-before-e3/restart-watch.mjs": "2cf42e999410e8418b92639ad35a05ee76caf5474c6d67c93e38eab17f84cb92",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-attempt3/prepare-recipes.mjs": "003880c87a984d9e963cfba0dfb30248956bc9c7ae7e281c6e7e64f2c926e5fe",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-attempt3/recipe-controls.mjs": "e1eae1946fd3a9504fc051b603fb35f332f02152daa3981421adf36f94843c19",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/e3-preparation-attempt3/wrapper.mjs": "993d1eb2f72e000f1dff449f5b7e383445f0750a5e127d4c8d641b630dca90cf"
+  },
+  "corrections": [
+    "Before operational execution, handoff supervisor command corrected to mandatory --preflight CLI; prior handoff-stage1.txt preserved.",
+    "Root setup authorization now also requires exact actual closure receipt path/SHA; no accepted booleans-only authority."
+  ]
+}

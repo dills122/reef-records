@@ -1,0 +1,22 @@
+{
+  "seq": 789,
+  "name": "du-05e2b09f",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "exec",
+    "05e2b09ff3d44b6e32d398b6cc20790f82b7a2cf98f25ff50e3c07d430279fce",
+    "du",
+    "-sk",
+    "/var/lib/redpanda/data"
+  ],
+  "startedAtMs": 68875555,
+  "startedUtc": "2026-10-05T16:40:41.149Z",
+  "stdout": "1704208\t/var/lib/redpanda/data\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 68875606,
+  "completedUtc": "2026-10-05T16:40:41.200Z",
+  "stdoutSha256": "0ed6514bdd4d3874783999382accabbc603e453e793c7914f3cde3c9fa5290b6",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputSha256": "d3659081cf4ee122b5e7c15308b3529b150d102a4bd5a41c9bac380277e086ae"
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialAckJournalTest" tests="7" skipped="0" failures="1" errors="0" timestamp="2026-10-05T13:00:56.498Z" hostname="Dylans-MacBook-Pro.local" time="7.462">
+  <properties/>
+  <testcase name="queueBoundFailureIsStickyAndPreventsLaterPublication()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.393"/>
+  <testcase name="oldPrefixLookupAfterRestartDoesNotDependOnLiveSuffixAndNewClockScopeAppends()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.2"/>
+  <testcase name="everyPublishedFileMutationTornMarkerMissingFileAndGenerationMismatchRefuseActivation()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.414"/>
+  <testcase name="duplicateOrdinalPhysicalMutationAndByteEnvelopeBoundsFailSticky()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="5.233">
+    <failure message="org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalStateException to be thrown, but was completed successfully." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalStateException to be thrown, but was completed successfully.
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at kotlin.test.junit5.JUnit5Asserter.fail(JUnitSupport.kt:56)
+	at kotlin.test.AssertionsKt__AssertionsImplKt.checkResultIsFailure(AssertionsImpl.kt:20)
+	at kotlin.test.AssertionsKt.checkResultIsFailure(Unknown Source)
+	at com.reef.platform.calcify.financial.FinancialAckJournalTest.duplicateOrdinalPhysicalMutationAndByteEnvelopeBoundsFailSticky(FinancialAckJournalTest.kt:121)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="notificationsAreAfterPublicationForceAndRecoveredNotificationsAreNeverReplayed()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.073"/>
+  <testcase name="actualProcessCrashesDistinguishUnpublishedForcedAndPublishedBeforeNotification()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="1.018"/>
+  <testcase name="callbackVisibilityPrecedesForcedPublicationAndRecoveryRetainsPhysicalHoles()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.112"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

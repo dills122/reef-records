@@ -1,0 +1,1 @@
+Blind preliminary sent before author worksheet:61 entries +10 objects per owner,5360bytes/two-owner trade,804000000bytes for150000. Initial conditions: installed bytecode/layout and lifecycle confirmation pending. Later checks confirmed premises. No upper or measured rate inferred.

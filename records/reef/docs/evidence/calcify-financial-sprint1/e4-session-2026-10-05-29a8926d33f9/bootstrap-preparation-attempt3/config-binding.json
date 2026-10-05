@@ -1,0 +1,12 @@
+{
+  "schema": "calcify-bootstrap-config-binding-v1",
+  "actualLoadExecuted": false,
+  "configPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-attempt3/frozen/config.json",
+  "configSha256": "4a396265d14af57c557a00ecca19b6f4a4d7c3721005c346e7f4216e6cbec8f9",
+  "profilePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/preflight.json",
+  "profileSha256": "98ce2e1ce2fb514d846071f4972b1a5f77fe69b3bdf6356c19d834e7ce08a9f3",
+  "brokerScopePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/broker-e4-attempt3/broker-scope.json",
+  "brokerScopeSha256": "b1f4682bc29387c3b8552e2316fa291912473cd3f07d2f78eaa1e48298cd2ee0",
+  "stateAndJournalCreatedEmpty": true,
+  "proofAbsent": true
+}

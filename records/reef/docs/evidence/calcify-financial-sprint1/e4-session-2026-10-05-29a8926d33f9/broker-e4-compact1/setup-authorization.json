@@ -1,0 +1,11 @@
+{
+  "schema": "calcify-owned-setup-authorization-v1",
+  "accepted": true,
+  "baselineClosed": true,
+  "successfulBaselineClosed": true,
+  "cleanupVerified": true,
+  "project": "reef-calcify-e4-compact1-8c6f",
+  "rootClosurePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-e4-session-2026-10-05/bootstrap-preparation-attempt3/bootstrap-successful-closure.json",
+  "rootClosureSha256": "2774bf7d2d2caa6f6efc3e0070cebeb6bd8ca6d12df90b07fd38fbfba5b9f459",
+  "scope": "Only freshowned compact1 setup; root observed successfulbaselineCLI0+actualstopped3, operator must independently verifyold12stopped; no workload/build/sourcepermission"
+}

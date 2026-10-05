@@ -1,0 +1,23 @@
+{
+  "schema": "financial-broker-scope-v1",
+  "bootstrapServers": "127.0.0.1:40392,127.0.0.1:40492,127.0.0.1:40592",
+  "clusterId": "redpanda.6e0ef954-456e-46a6-93d4-fbac11248626",
+  "brokers": [
+    {
+      "id": 0,
+      "host": "127.0.0.1",
+      "port": 40392
+    },
+    {
+      "id": 1,
+      "host": "127.0.0.1",
+      "port": 40492
+    },
+    {
+      "id": 2,
+      "host": "127.0.0.1",
+      "port": 40592
+    }
+  ],
+  "metadataSource": "actual AdminClient describeCluster"
+}
