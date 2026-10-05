@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialHeapGuardTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2026-10-05T06:10:59.868Z" hostname="Dylans-MacBook-Pro.local" time="0.08">
+  <properties/>
+  <testcase name="actualProbeLifecycleRequiresHeapProtectionThroughReplay()" classname="com.reef.platform.calcify.financial.FinancialHeapGuardTest" time="0.065">
+    <failure message="org.opentest4j.AssertionFailedError: Actual probe lifecycle has no heap protection seam; sampler stops before result-only replay ==&gt; expected: not &lt;null&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Actual probe lifecycle has no heap protection seam; sampler stops before result-only replay ==&gt; expected: not &lt;null&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertNotNull.failNull(AssertNotNull.java:49)
+	at org.junit.jupiter.api.AssertNotNull.assertNotNull(AssertNotNull.java:35)
+	at org.junit.jupiter.api.Assertions.assertNotNull(Assertions.java:312)
+	at kotlin.test.junit5.JUnit5Asserter.assertNotNull(JUnitSupport.kt:48)
+	at kotlin.test.AssertionsKt__AssertionsKt.assertNotNull(Assertions.kt:279)
+	at kotlin.test.AssertionsKt.assertNotNull(Unknown Source)
+	at com.reef.platform.calcify.financial.FinancialHeapGuardTest.actualProbeLifecycleRequiresHeapProtectionThroughReplay(FinancialHeapGuardTest.kt:8)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

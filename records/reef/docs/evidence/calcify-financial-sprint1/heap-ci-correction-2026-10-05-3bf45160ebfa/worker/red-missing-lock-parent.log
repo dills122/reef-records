@@ -1,0 +1,72 @@
+TAP version 13
+# Subtest: M3H executable raw bound/capability/review/fixture bytes hash and exact scope verified before adapter read
+not ok 1 - M3H executable raw bound/capability/review/fixture bytes hash and exact scope verified before adapter read
+  ---
+  duration_ms: 8.466959
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-ci-correction-2026-10-05/worker/linux-missing-parent-red/rate-proof.test.mjs:354:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /RAW_EVIDENCE_HASH/. Input:
+    
+    "Error: ENOENT: no such file or directory, open '/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-ci-correction-2026-10-05/worker/linux-missing-parent-red/nonexistent-lock-parent/reef-financial-rate-capacity.lock'"
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+  error: "ENOENT: no such file or directory, open '/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-ci-correction-2026-10-05/worker/linux-missing-parent-red/nonexistent-lock-parent/reef-financial-rate-capacity.lock'"
+  stack: |-
+    async open (node:internal/fs/promises:636:25)
+    async runAdapter (file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-ci-correction-2026-10-05/worker/linux-missing-parent-red/rate-proof.mjs:311:16)
+    async waitForActual (node:assert:644:5)
+    async Function.rejects (node:assert:767:25)
+    async TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-ci-correction-2026-10-05/worker/linux-missing-parent-red/rate-proof.test.mjs:361:7)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  operator: 'rejects'
+  stack: |-
+    async TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-ci-correction-2026-10-05/worker/linux-missing-parent-red/rate-proof.test.mjs:361:7)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: M3H synthetic evidence and unpinned launcher cannot authorize executable load
+not ok 2 - M3H synthetic evidence and unpinned launcher cannot authorize executable load
+  ---
+  duration_ms: 2.877916
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-ci-correction-2026-10-05/worker/linux-missing-parent-red/rate-proof.test.mjs:370:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /PINNED_LAUNCHER/. Input:
+    
+    "Error: ENOENT: no such file or directory, open '/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-ci-correction-2026-10-05/worker/linux-missing-parent-red/nonexistent-lock-parent/reef-financial-rate-capacity.lock'"
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual:
+  error: "ENOENT: no such file or directory, open '/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-ci-correction-2026-10-05/worker/linux-missing-parent-red/nonexistent-lock-parent/reef-financial-rate-capacity.lock'"
+  stack: |-
+    async open (node:internal/fs/promises:636:25)
+    async runAdapter (file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-ci-correction-2026-10-05/worker/linux-missing-parent-red/rate-proof.mjs:311:16)
+    async waitForActual (node:assert:644:5)
+    async Function.rejects (node:assert:767:25)
+    async TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-ci-correction-2026-10-05/worker/linux-missing-parent-red/rate-proof.test.mjs:376:5)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  operator: 'rejects'
+  stack: |-
+    async TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-ci-correction-2026-10-05/worker/linux-missing-parent-red/rate-proof.test.mjs:376:5)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 0
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 61.39275

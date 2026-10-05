@@ -1,0 +1,11 @@
+{
+  "maxHeapBytes": true,
+  "vmArguments": true,
+  "javaVersion": true,
+  "javaVendor": true,
+  "sourceHead": true,
+  "fixtureSha256": true,
+  "configSha256": true,
+  "buildSha256": true,
+  "classpathSha256": true
+}

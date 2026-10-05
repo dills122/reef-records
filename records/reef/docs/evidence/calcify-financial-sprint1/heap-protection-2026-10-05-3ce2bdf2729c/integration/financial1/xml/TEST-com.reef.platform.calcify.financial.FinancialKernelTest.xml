@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialKernelTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-10-05T06:41:19.309Z" hostname="Dylans-MacBook-Pro.local" time="115.948">
+  <properties/>
+  <testcase name="deliverySchedulesPreserveBusinessCutsAndPendingMembership()" classname="com.reef.platform.calcify.financial.FinancialKernelTest" time="0.105"/>
+  <testcase name="seededTracesRestoreAtEveryHistoryRecordAndCheckpointCut()" classname="com.reef.platform.calcify.financial.FinancialKernelTest" time="74.697"/>
+  <testcase name="seededStagedHistoriesRecoverEveryActualRecordCrashPoint()" classname="com.reef.platform.calcify.financial.FinancialKernelTest" time="40.933"/>
+  <testcase name="leanDecisionsEmitSameBoundedAuthorityWithoutProjectionImages()" classname="com.reef.platform.calcify.financial.FinancialKernelTest" time="0.004"/>
+  <testcase name="envelopeIdentityTypesCannotConflateValidAndRejectedActions()" classname="com.reef.platform.calcify.financial.FinancialKernelTest" time="0.012"/>
+  <testcase name="clockBarrierDurablyStagesMalformedInputsUntilTerminalRejection()" classname="com.reef.platform.calcify.financial.FinancialKernelTest" time="0.047"/>
+  <testcase name="missingStagingDeltaMutantCannotReconstructPendingOwnerState()" classname="com.reef.platform.calcify.financial.FinancialKernelTest" time="0.005"/>
+  <testcase name="repeatedConflictRetainsFirstConflictContextAndDecisionIdentity()" classname="com.reef.platform.calcify.financial.FinancialKernelTest" time="0.002"/>
+  <testcase name="clockBarrierStagesFundingAndDeduplicatesPendingMembership()" classname="com.reef.platform.calcify.financial.FinancialKernelTest" time="0.003"/>
+  <testcase name="brokerModeRetainsOnlyLatestBoundedRecordAndReplaysStreamingHistory()" classname="com.reef.platform.calcify.financial.FinancialKernelTest" time="0.006"/>
+  <testcase name="replayFailsClosedOnMissingReorderedOrTamperedHistory()" classname="com.reef.platform.calcify.financial.FinancialKernelTest" time="0.002"/>
+  <testcase name="completeHistoryRebuildsEveryCutAndEveryCheckpointSuffix()" classname="com.reef.platform.calcify.financial.FinancialKernelTest" time="0.054"/>
+  <testcase name="actualJsonWireHistoryAndCheckpointRoundTripsPreserveCompleteOwnerState()" classname="com.reef.platform.calcify.financial.FinancialKernelTest" time="0.05"/>
+  <testcase name="invalidEnvelopeIdentityRejectsAndIdenticalRetryReturnsPriorResult()" classname="com.reef.platform.calcify.financial.FinancialKernelTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

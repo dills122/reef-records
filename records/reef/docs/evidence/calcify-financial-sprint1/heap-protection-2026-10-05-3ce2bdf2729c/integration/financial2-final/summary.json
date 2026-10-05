@@ -1,0 +1,23 @@
+{
+  "command": [
+    "services/platform-runtime/gradlew",
+    "--no-daemon",
+    "-p",
+    "services/platform-runtime",
+    "--offline",
+    "test",
+    "--rerun-tasks",
+    "--tests",
+    "com.reef.platform.calcify.financial.*",
+    "--console=plain"
+  ],
+  "startedAt": "2026-10-05T06:59:49.960426+00:00",
+  "finishedAt": "2026-10-05T07:02:41.164931+00:00",
+  "elapsedSeconds": 171.2028860419996,
+  "exit": 0,
+  "sourceInputs": 437,
+  "sourceBeforeAfterEqual": true,
+  "sourceSnapshotScope": "Tracked scripts, financial Kotlin sources and CI workflow plus two new guard sources; no claim covering unrelated module sources",
+  "javaHome": "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home",
+  "jvmOptionEnvironmentRemoved": true
+}

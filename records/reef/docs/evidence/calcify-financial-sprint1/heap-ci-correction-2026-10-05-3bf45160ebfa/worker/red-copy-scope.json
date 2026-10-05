@@ -1,0 +1,9 @@
+{
+  "scope": "Validation-only reproduction of Linux absent /private/tmp parent using copied unchanged tests plus copied runner with only hardcoded lock path redirected to unique nonexistent owned parent. Original runtime source unchanged. No load or broker action.",
+  "originalSourceSha256": "fc2aecc678e1dc7b1b6479b2793f68f4e447e7d3963555c7ffa8da986340f090",
+  "originalTestSha256": "237818ed0bf7fef0ca86e5ac6eac0274afcf596e0f0676b7fbc75cc62b01938e",
+  "copiedRunnerSha256": "2aedb56ca14967552e956cf541e6749d80ae907f4558d8141dc43114a3c3be0d",
+  "copiedTestSha256": "237818ed0bf7fef0ca86e5ac6eac0274afcf596e0f0676b7fbc75cc62b01938e",
+  "missingLockPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-ci-correction-2026-10-05/worker/linux-missing-parent-red/nonexistent-lock-parent/reef-financial-rate-capacity.lock",
+  "hostedOriginalSha256": "b8d2d53ecdfa3d0e76c84be70b11615261f7fb2ff95973036b1cb77c6becf14d"
+}

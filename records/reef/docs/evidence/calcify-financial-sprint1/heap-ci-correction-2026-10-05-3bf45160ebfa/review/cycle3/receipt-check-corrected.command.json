@@ -1,0 +1,7 @@
+{
+  "command": [
+    "python3",
+    ".planning/calcify-heap-ci-correction-2026-10-05/review/cycle3/verify-receipts.py"
+  ],
+  "exitCode": 0
+}

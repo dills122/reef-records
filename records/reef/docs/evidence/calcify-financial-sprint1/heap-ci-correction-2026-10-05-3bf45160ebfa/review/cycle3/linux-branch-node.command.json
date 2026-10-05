@@ -1,0 +1,12 @@
+{
+  "command": [
+    "node",
+    "--test",
+    ".planning/calcify-heap-ci-correction-2026-10-05/review/cycle3/linux-branch-node.test.mjs"
+  ],
+  "startedAt": "2026-10-05T07:47:18.586647+00:00",
+  "finishedAt": "2026-10-05T07:47:18.727428+00:00",
+  "exitCode": 0,
+  "actualLinuxQualification": false,
+  "instrumentation": "process.platform=linux on actual macOS"
+}

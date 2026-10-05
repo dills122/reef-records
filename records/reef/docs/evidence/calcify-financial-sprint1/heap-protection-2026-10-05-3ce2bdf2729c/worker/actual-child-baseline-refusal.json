@@ -1,0 +1,49 @@
+{
+  "label": "actual-child-baseline-refusal",
+  "command": [
+    "env",
+    "-u",
+    "JAVA_TOOL_OPTIONS",
+    "-u",
+    "_JAVA_OPTIONS",
+    "-u",
+    "JDK_JAVA_OPTIONS",
+    "-u",
+    "CLASSPATH",
+    "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/java",
+    "-Xms128m",
+    "-Xmx768m",
+    "-cp",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/main:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resources/main:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/*",
+    "com.reef.platform.calcify.financial.FinancialRateProbe",
+    "run",
+    "unreachable-broker",
+    "financial-s1-heap-negative",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-protection-2026-10-05/worker/capability-config.json",
+    "--financial-rate-policy",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-protection-2026-10-05/worker/negative-preflight/policy.json",
+    "--financial-rate-measurement",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-protection-2026-10-05/worker/negative-preflight/measurement-must-not-exist.json"
+  ],
+  "cwd": "/Users/dsteele/.codex/worktrees/8c6f/reef",
+  "JAVA_HOME": "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home",
+  "startedAt": "2026-10-05T06:39:10.687031+00:00",
+  "elapsedSeconds": 0.584246834001533,
+  "exit": 1,
+  "sourceSha256": {
+    "scripts/dev/calcify-financial/rate-proof.mjs": "fc2aecc678e1dc7b1b6479b2793f68f4e447e7d3963555c7ffa8da986340f090",
+    "scripts/dev/calcify-financial/rate-proof.test.mjs": "237818ed0bf7fef0ca86e5ac6eac0274afcf596e0f0676b7fbc75cc62b01938e",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt": "6410c13d9fbeee2c7909530c73e30f233919cc393c2fbd6d311601fc03dc4909",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt": "f5dd838d77fb3e0796861ac0dc4936caccaf6d7c2cfc1b5e337678464fb90943",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt": "30f3945352a1e692627cbfb25d51ad95015115fe3760d7ff1911d3d3b04df948"
+  },
+  "sourceBeforeSha256": {
+    "scripts/dev/calcify-financial/rate-proof.mjs": "fc2aecc678e1dc7b1b6479b2793f68f4e447e7d3963555c7ffa8da986340f090",
+    "scripts/dev/calcify-financial/rate-proof.test.mjs": "237818ed0bf7fef0ca86e5ac6eac0274afcf596e0f0676b7fbc75cc62b01938e",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt": "6410c13d9fbeee2c7909530c73e30f233919cc393c2fbd6d311601fc03dc4909",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt": "f5dd838d77fb3e0796861ac0dc4936caccaf6d7c2cfc1b5e337678464fb90943",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt": "30f3945352a1e692627cbfb25d51ad95015115fe3760d7ff1911d3d3b04df948"
+  },
+  "sourceUnchangedDuringCommand": true,
+  "sourceSha256Scope": "post-run snapshot"
+}

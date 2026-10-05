@@ -1,0 +1,10 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "scripts/dev/calcify-financial/rate-proof.test.mjs"
+  ],
+  "startedAt": "2026-10-05T07:45:19.993048+00:00",
+  "finishedAt": "2026-10-05T07:45:20.134153+00:00",
+  "exitCode": 0
+}

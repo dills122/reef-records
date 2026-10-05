@@ -1,0 +1,15 @@
+{
+  "exactNodeCI": {
+    "tests": 230,
+    "pass": 230,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "sourceInputs": 437,
+  "sourceBeforeAfterEqual": true,
+  "kotlinSourceUnchanged": true,
+  "financial64ReceiptScope": "Previous exact final Kotlin candidate; no rerun for JS-only correction",
+  "host": "macOS",
+  "instrumentedLinuxBranchNotActualLinux": true
+}

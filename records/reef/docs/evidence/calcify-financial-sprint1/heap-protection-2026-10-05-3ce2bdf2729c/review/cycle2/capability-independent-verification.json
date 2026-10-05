@@ -1,0 +1,14 @@
+{
+  "matchesFinalWorkerFields": true,
+  "buildDigestRecomputed": "0ab2ba5b4584cf44bdf3aca2bb2fd32c929c78503bc3f361c438a114ab1055aa",
+  "classpathDigestRecomputed": "c5436375e29d6c954f79c082512f27c094569fc1c56082e89115427167e11a84",
+  "fixtureDigestRecomputed": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+  "configDigestRecomputed": "f153d7e7ccdf2587573f0e4522f7ff0896d5007c015865b21db87fa295b58ad0",
+  "actualMaxHeapBytes": 805306368,
+  "vmArguments": [
+    "-Xms128m",
+    "-Xmx768m"
+  ],
+  "usedHeapBytes": 32657616,
+  "stateDirectoryAbsent": true
+}

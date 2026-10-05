@@ -1,0 +1,17 @@
+{
+  "financial": {
+    "tests": 64,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "financialXmlFiles": 6,
+  "nodeCI": {
+    "tests": 229,
+    "pass": 229,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "scope": "Actual final candidate parent commands after two-path emitted-peak correction; no broker load/capacity proof"
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "command": [
+      "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/javac",
+      "-cp",
+      "/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/main:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resources/main:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/*",
+      "-d",
+      ".planning/calcify-heap-protection-2026-10-05/review/cycle1",
+      ".planning/calcify-heap-protection-2026-10-05/review/cycle1/PeakScopeControl.java"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/java",
+      "-cp",
+      ".planning/calcify-heap-protection-2026-10-05/review/cycle1:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/test:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/classes/kotlin/main:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resources/main:/Users/dsteele/.codex/worktrees/8c6f/reef/services/platform-runtime/build/resolver-probe-deps/*",
+      "PeakScopeControl",
+      ".planning/calcify-heap-protection-2026-10-05/review/cycle1/peak-scope-measurement-corrected.json"
+    ],
+    "exit": 0,
+    "stdout": "published={\"heapPeakBytes\":50} finalGuardPeak=700 calls=3\n",
+    "stderr": ""
+  }
+]

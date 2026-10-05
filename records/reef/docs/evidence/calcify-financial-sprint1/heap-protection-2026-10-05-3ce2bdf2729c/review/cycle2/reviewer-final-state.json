@@ -1,0 +1,7 @@
+{
+  "utc": "2026-10-05T07:10:41.586654+00:00",
+  "branch": "codex/calcify-heap-protection",
+  "head": "3ce2bdf2729c884b0efd77d0a56808a0a6eb7d96",
+  "status": " M docs/WORK_PLAN.md\n M scripts/dev/calcify-financial/rate-proof.mjs\n M scripts/dev/calcify-financial/rate-proof.test.mjs\n M services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt\n?? services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt\n?? services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt\n",
+  "allSixBeforeAfterMatchBoundary": true
+}

@@ -1,0 +1,512 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/dills122/reef",
+  "source_commit": "8ecaa27d543b191f43122a765fda934424066e51",
+  "selection_policy": "Exact selected synthetic session proof promoted from ignored receipts into local-only tracked provenance; retain failures, corrections, source/build/profile identity and reviews. Bulk only Records; no Reef source removal or readiness upgrade.",
+  "files": [
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/SHA256SUMS",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/SHA256SUMS",
+      "source_blob_oid": "d2ffee6badbbc46fda078301d9e174cee648da33",
+      "bytes": 6366,
+      "sha256": "e8c193512ce4fb2bc59482d628e441c3cd99d091c7756ef165ccfdf3f7086606",
+      "reason": "Companion original-path mapping, source-provenance or checksum ledger for exact local-only evidence import"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/final-counts.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/final-counts.json",
+      "source_blob_oid": "26e8c9cc706b02163ca77e9648f144083bd5894b",
+      "bytes": 375,
+      "sha256": "393735cf03f215a9bc109d70508f13530aea61c95c3bd0c55a853b1058794a49",
+      "reason": "Parent integrated tests, source snapshots and actual financial XML; no capacity proof"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/node-ci-final/output.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/node-ci-final/output.log",
+      "source_blob_oid": "86b2a62118a1eb308fdb2d1ddca2483bd33f299f",
+      "bytes": 61707,
+      "sha256": "ab734dfb2309a9c86a5e2cab05eeb0424bdc83679995e1f2a47f2861e50642e5",
+      "reason": "Parent integrated tests, source snapshots and actual financial XML; no capacity proof"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/node-ci-final/source-after.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/node-ci-final/source-after.json",
+      "source_blob_oid": "f8403000a887f84cfd2055c9dbf0c36f44417191",
+      "bytes": 54882,
+      "sha256": "b1d742d6ff8b43a12b1d11ff02b9c4de0cfabd4bdfa55f707254be05ace6cce4",
+      "reason": "Parent integrated tests, source snapshots and actual financial XML; no capacity proof"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/node-ci-final/source-before.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/node-ci-final/source-before.json",
+      "source_blob_oid": "f8403000a887f84cfd2055c9dbf0c36f44417191",
+      "bytes": 54882,
+      "sha256": "b1d742d6ff8b43a12b1d11ff02b9c4de0cfabd4bdfa55f707254be05ace6cce4",
+      "reason": "Parent integrated tests, source snapshots and actual financial XML; no capacity proof"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/node-ci-final/summary.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/node-ci-final/summary.json",
+      "source_blob_oid": "1cd600fa90b4871483fbced9d3fb6e54160abb4f",
+      "bytes": 2333,
+      "sha256": "0d695faa5b03d8c916cc862bc4e870ac42adccc0c9e84b2de7b6aecddcd6f65c",
+      "reason": "Parent integrated tests, source snapshots and actual financial XML; no capacity proof"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/original-hosted-node-failure.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/original-hosted-node-failure.log",
+      "source_blob_oid": "93d2d8fc277f6b4b08d66098b4b906455871a4ee",
+      "bytes": 129715,
+      "sha256": "b8d2d53ecdfa3d0e76c84be70b11615261f7fb2ff95973036b1cb77c6becf14d",
+      "reason": "Parent integrated tests, source snapshots and actual financial XML; no capacity proof"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/original-hosted-result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/original-hosted-result.json",
+      "source_blob_oid": "4c2265db1c2fa07b4fce611620f3cb8d14e76088",
+      "bytes": 474,
+      "sha256": "fd479f272e046a2a72b8d6bd65df3ef75440cb56d9a814a0c63188210957f8fb",
+      "reason": "Parent integrated tests, source snapshots and actual financial XML; no capacity proof"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/parent-command-correction.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/parent-command-correction.json",
+      "source_blob_oid": "01662dfdbbe538386203cbf86238b758144d8324",
+      "bytes": 347,
+      "sha256": "61875696179275778cbb76280da53848ed1581b987edd86e1a964ee7e4b657a8",
+      "reason": "Parent integrated tests, source snapshots and actual financial XML; no capacity proof"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/run_validation.py",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/run_validation.py",
+      "source_blob_oid": "e5badbdea560935676922c5bfa77c1d9a8cfffd5",
+      "bytes": 2350,
+      "sha256": "4520235af0ac575aa9778ea7e05850bc03b6d89db3979a5effc81cf4f17d3f7f",
+      "reason": "Parent integrated tests, source snapshots and actual financial XML; no capacity proof"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/script-surface-final.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/script-surface-final.log",
+      "source_blob_oid": "bb2150be864247c45620d4d9458cf88fd1386803",
+      "bytes": 871,
+      "sha256": "2d2df04221369478e9c059c2207bb20d0b10fc82dead706a59681fbb80e4d180",
+      "reason": "Parent integrated tests, source snapshots and actual financial XML; no capacity proof"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/ledger.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/ledger.json",
+      "source_blob_oid": "04896045c572934405ae98d02760dc241eab4366",
+      "bytes": 1574,
+      "sha256": "ebafe9ba66c90ab3f892bf9dd2fab85be99722ce913d111ad08cbd8c489a0b31",
+      "reason": "Bounded heap session events, attempts, reviews and deferred E4 scope"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/promotion-mapping.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/promotion-mapping.json",
+      "source_blob_oid": "2b71bb9afbc58e7b6c05a2ffbc72aa4c2736ab8f",
+      "bytes": 30266,
+      "sha256": "7b190ffdf6adb2d19a15c7b12aa4c65bb998920db11a39a04e3598cb27f89ff4",
+      "reason": "Companion original-path mapping, source-provenance or checksum ledger for exact local-only evidence import"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/author-explanation.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/author-explanation.md",
+      "source_blob_oid": "bc8e6d2ade3779ffcd9b41b3297d1f4998294d68",
+      "bytes": 2076,
+      "sha256": "97ffb607827635ab012c08c63b8c668e6dc9acf3d3d44e2e9ced9df5064b3b87",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/actual-darwin.command.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/actual-darwin.command.json",
+      "source_blob_oid": "7e08b5bbe91fada8c9ad44f0acfed5766129125e",
+      "bytes": 299,
+      "sha256": "4c7192a2374527c7c50d7df60ba79eec261f4bed995b0d69423caa632d4e0d2c",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/actual-darwin.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/actual-darwin.stderr.log",
+      "source_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/actual-darwin.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/actual-darwin.stdout.log",
+      "source_blob_oid": "749184574b124fb9ed9e2cd4093efea5f4753c92",
+      "bytes": 453,
+      "sha256": "8fee825ccb501749f5abb61bb9077ca05c96feb74d43b83964371aaedc6c614f",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/focused-node.command.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/focused-node.command.json",
+      "source_blob_oid": "892278ed9f918ac62c1cc38a1c1ec96b4b841975",
+      "bytes": 225,
+      "sha256": "15d7cf66123932ff141ab920b9fcbbfab60f2498ac7245040473d41b071f3ec6",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/focused-node.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/focused-node.stderr.log",
+      "source_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/focused-node.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/focused-node.stdout.log",
+      "source_blob_oid": "ce41b168f5badf854be7ac7aac6d4c3d14f7249f",
+      "bytes": 8988,
+      "sha256": "d8f76e8d54c39c613d97bbf8a4a7b38140ee46c2b14996263d303acc5e97ce6e",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/instrumented-linux.command.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/instrumented-linux.command.json",
+      "source_blob_oid": "239cd13f82273ec154d0c62b25bed9baf97a269a",
+      "bytes": 304,
+      "sha256": "8efa3bb1b6dc11de008aeef3a6209577081474826a4ee799aafa51a5f6ff8495",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/instrumented-linux.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/instrumented-linux.stderr.log",
+      "source_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/instrumented-linux.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/instrumented-linux.stdout.log",
+      "source_blob_oid": "e25dc9a2ec1c9afc66d36b932c3edc343594c4ba",
+      "bytes": 478,
+      "sha256": "ec78a31578f4c4298d67f6ff7cfc7e9abe35cc417cb7330164889c550b57f4b2",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/linux-branch-node.command.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/linux-branch-node.command.json",
+      "source_blob_oid": "24170dc2e592df306ffe31fea7a3ad740ad72dbc",
+      "bytes": 364,
+      "sha256": "ac5e422f6d89a9ca031ea53c7bfc4fe2a8a674a2ad3f13cc5153f255d717aba6",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/linux-branch-node.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/linux-branch-node.stderr.log",
+      "source_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/linux-branch-node.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/linux-branch-node.stdout.log",
+      "source_blob_oid": "001a26bbba3d9cf7f39c1f8fcb544c896f1be1d4",
+      "bytes": 8995,
+      "sha256": "834a003842ef85b34cd1c427291ca037b2c514017f22d24a6074fc37cbca81b9",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/linux-branch-node.test.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/linux-branch-node.test.mjs",
+      "source_blob_oid": "005bde943f1d8096deff41d5ccd943682c81a191",
+      "bytes": 221,
+      "sha256": "775273bed9fb7fbbb3fa6e516bf1b7bcc1a119fb0e8c9a71b4a8ee1135188b4f",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/lock-controls.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/lock-controls.mjs",
+      "source_blob_oid": "722eb86cc3f052925b433647e605e97f2ca5d25f",
+      "bytes": 5640,
+      "sha256": "751dbee8ae3d29431b19c7d2d9c96d3ab97aacbbfe41867a0c8a1c62dcd0df07",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/preliminary.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/preliminary.md",
+      "source_blob_oid": "5cb693b5a04c4cc64af07d0d75af93cf5fcb26da",
+      "bytes": 2544,
+      "sha256": "8b034cb71c16ba6eb6983aac92ad057381398dcb4306af6b00a9e7584f8046ac",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/receipt-check-corrected.command.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/receipt-check-corrected.command.json",
+      "source_blob_oid": "8605387770c40d7069b331081acdb0ba77b56a40",
+      "bytes": 142,
+      "sha256": "d89644db357787dd89eda6ea3adbd20547f2996525c8d5f6f9e1e6cc47832030",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/receipt-check-corrected.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/receipt-check-corrected.stderr.log",
+      "source_blob_oid": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/receipt-check-corrected.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/receipt-check-corrected.stdout.log",
+      "source_blob_oid": "76eff4b23eb4d4ea523b0602f5f2dbcc95f6c72c",
+      "bytes": 4035,
+      "sha256": "602e0f0b45907385e1636e88e5fd0fe3e93b50d4377672431fd55bd4f95e8b8e",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/receipt-check-original-failure.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/receipt-check-original-failure.log",
+      "source_blob_oid": "b5774b0c944736ee501f36e3bb53945948642096",
+      "bytes": 158,
+      "sha256": "84082c573e3624afa9c709736c5b0bf767e00ef1e70f835dd2da0e6f53593266",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/receipts-independent-verification.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/receipts-independent-verification.json",
+      "source_blob_oid": "76eff4b23eb4d4ea523b0602f5f2dbcc95f6c72c",
+      "bytes": 4035,
+      "sha256": "602e0f0b45907385e1636e88e5fd0fe3e93b50d4377672431fd55bd4f95e8b8e",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/report.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/report.md",
+      "source_blob_oid": "9593296de6bf9500c28f852af19b7f38f7d97790",
+      "bytes": 9290,
+      "sha256": "9ebc59478ae371de93d1212eee324038fa07a6b671513eedb95f69a1afb12599",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/retained-controls-verified.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/retained-controls-verified.json",
+      "source_blob_oid": "7ba559f4f05d536b4fcacfd5aaa95c1ad9aa9dfc",
+      "bytes": 654,
+      "sha256": "993a937ba21aa18a61e66cb0dda68e247446fcef6797b5f5bf00ab608d37c1f6",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/reviewer-corrections.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/reviewer-corrections.json",
+      "source_blob_oid": "d776a69c3a22afb912a21b36ec491f103a77fd6b",
+      "bytes": 698,
+      "sha256": "a3e79a0013578af8f3d5fe0eaa6603c01489273d886b5a7fe756ff7d1836ef68",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/source-after.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/source-after.json",
+      "source_blob_oid": "ed7161696ed24d78c832b9f7b4434f1904518876",
+      "bytes": 1057,
+      "sha256": "1eed207d60b429d9d4abc19ec0fd9cce9b64871bdd82f200dd95e5ce0332b6aa",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/source-before.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/source-before.json",
+      "source_blob_oid": "60a0dc3e0d3d8f73ea64bcf8a361f62cf3293152",
+      "bytes": 1057,
+      "sha256": "54e64192b77d5aaed11da938e28e459892400e7c7d61470114c7904ca5df0aea",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/source-equality.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/source-equality.json",
+      "source_blob_oid": "d376bf18767c228b86c0bae5dca288d45acd81a7",
+      "bytes": 172,
+      "sha256": "5ddc39b740f94aa2746e57fff7e8e10ce6b82b35971310c4eb5b183a251bc7dc",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/verify-receipts.py",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/verify-receipts.py",
+      "source_blob_oid": "0cf8593706c53670b1050f6774152f74c78d6570",
+      "bytes": 4176,
+      "sha256": "58ba5d871ad1d1cfe6a5aa318d07e202e316d92a0b3f2b8fe66af8442b674bc7",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/peak-scope-acceptance.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/peak-scope-acceptance.md",
+      "source_blob_oid": "2e36f99bb793bc7ab9d94887a5f29a7f55ff8e2c",
+      "bytes": 915,
+      "sha256": "bb764b4430bc5d06a3c98b384866a58792b3d3aa4c5d0950a43f2d9bd82da047",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/requirements.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/requirements.md",
+      "source_blob_oid": "286d66a18c534f97380e424354f9c11d58cef375",
+      "bytes": 3459,
+      "sha256": "1503905da2ecf266cab651fe2d98dd4789551da18b72f1ff6b3c4b45bb65a05c",
+      "reason": "Neutral requirements, author testimony and fresh independent preliminary/report/check receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/source-provenance.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/source-provenance.json",
+      "source_blob_oid": "f1fe5d4ee37cf1ba818821b4d9e3c1674014b559",
+      "bytes": 1980,
+      "sha256": "8693ed6cab71f08ea99c5f9875df35ed6620e68d4a5fe20452f213de077cfce2",
+      "reason": "Companion original-path mapping, source-provenance or checksum ledger for exact local-only evidence import"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/green-linux-platform-copy.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/green-linux-platform-copy.json",
+      "source_blob_oid": "78f2ddce8798e591653a9ddf46b9f19269517526",
+      "bytes": 2260,
+      "sha256": "79abcd846e7f53c3b7670239ec55fb6d326119c09d43dfb12a2e25ca3321dad0",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/green-linux-platform-copy.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/green-linux-platform-copy.log",
+      "source_blob_oid": "e15c5ecba630f322b97aa98564cd8caf3e346fc2",
+      "bytes": 8993,
+      "sha256": "6c9a0b890a255599c40a70449ccff3a12c39d81892fa5a9530c7576ddea82431",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/green-node.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/green-node.json",
+      "source_blob_oid": "66d691a948e266ca3cfda15a56499f3ea450d824",
+      "bytes": 2052,
+      "sha256": "e6ade47541451d77c629268c5918c077023ca81f09efd7396b7d3eb8a36724bb",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/green-node.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/green-node.log",
+      "source_blob_oid": "3fb371a470bc3c48a9031a4fcbb34dff9056ffee",
+      "bytes": 8999,
+      "sha256": "f8b81f6f1cc45b884203521abe07a9a5703586b934643cf980c04349e4d8dd20",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/hosted-original-node-ci.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/hosted-original-node-ci.log",
+      "source_blob_oid": "93d2d8fc277f6b4b08d66098b4b906455871a4ee",
+      "bytes": 129715,
+      "sha256": "b8d2d53ecdfa3d0e76c84be70b11615261f7fb2ff95973036b1cb77c6becf14d",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/linux-missing-parent-red/rate-proof.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/linux-missing-parent-red/rate-proof.mjs",
+      "source_blob_oid": "509c7b331e3d9018a3a4378013742f4f5da7305c",
+      "bytes": 30766,
+      "sha256": "2aedb56ca14967552e956cf541e6749d80ae907f4558d8141dc43114a3c3be0d",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/linux-missing-parent-red/rate-proof.test.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/linux-missing-parent-red/rate-proof.test.mjs",
+      "source_blob_oid": "ad3873382f605e63e68b2f8d273ad83eaea0318b",
+      "bytes": 27713,
+      "sha256": "237818ed0bf7fef0ca86e5ac6eac0274afcf596e0f0676b7fbc75cc62b01938e",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/linux-platform-green-scope.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/linux-platform-green-scope.json",
+      "source_blob_oid": "0927763c32e6918ef66afde811494148145233da",
+      "bytes": 773,
+      "sha256": "68875f8c899b993e91cc355901ef63236746b3a751269e4b687204aa0e8c2258",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/linux-platform-green/rate-proof.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/linux-platform-green/rate-proof.mjs",
+      "source_blob_oid": "c09dcf90b2faa7e1f555b548be253f1556790603",
+      "bytes": 30915,
+      "sha256": "cb44cc6561600015e4ec1fabc05ef3d383ee4c9be52ad472ea42e4be580e040f",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/linux-platform-green/rate-proof.test.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/linux-platform-green/rate-proof.test.mjs",
+      "source_blob_oid": "6d177b989f3beaa7f7e2e951765b71db5d28cab8",
+      "bytes": 28378,
+      "sha256": "ede45b558776bb944d1ce65fb66ff8a9f3d80b8cb638047051e78aa81e9ad821",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/red-copy-scope.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/red-copy-scope.json",
+      "source_blob_oid": "61035e558a82c601f213463587458666467a614c",
+      "bytes": 934,
+      "sha256": "3b4a17e83d5640dc42caa1ed7750ce7afdefdedc081c72979d56e0f9cad0d032",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/red-missing-lock-parent.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/red-missing-lock-parent.json",
+      "source_blob_oid": "859be6e4bad0b3b9a384ed7a7d25e146fc0d865e",
+      "bytes": 2191,
+      "sha256": "052d1e636b62d05ed512a5a40ff1d7ed84fce1450de63c70a2c72536315d8596",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/red-missing-lock-parent.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/red-missing-lock-parent.log",
+      "source_blob_oid": "b0773a6040e0c96997df14d33a1623978f46011c",
+      "bytes": 4337,
+      "sha256": "f7ca4024d2de3f295bf03fec4aab0ccfabe67d77dc53df8540b4305b43db13a0",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/red-platform-lock-resolver.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/red-platform-lock-resolver.json",
+      "source_blob_oid": "18e344a3b5260ad5f69bc0dddc7b539acd8cab84",
+      "bytes": 2126,
+      "sha256": "6da51b71ce61cd220d270942d876dd1e759d0b14346055c1a4f48be20434d2c0",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/red-platform-lock-resolver.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/red-platform-lock-resolver.log",
+      "source_blob_oid": "628247d7b156108f5c2fb00bd1f0ea21c636d4d5",
+      "bytes": 999,
+      "sha256": "44305effd70190cbd54f9dfe8ea76cb35188b0cc9c47f120bd6862472a3d8c9c",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/report.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/report.md",
+      "source_blob_oid": "0defd16b70bf66f251a99cd17a595bface2242cc",
+      "bytes": 3233,
+      "sha256": "585bc04163e820f4625433657312467ff03321721e478e075e23d505ee720669",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/run.py",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/run.py",
+      "source_blob_oid": "9aa196da95f0362cb8db3b68ae0a9ba59ce7d488",
+      "bytes": 1930,
+      "sha256": "78c21da0c55e5ce38f512bff912205e48424ec8c9d7aac2e8d7d52d380b3758d",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/source-freeze.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/source-freeze.json",
+      "source_blob_oid": "2d288cc53892dfe1a7f9cb5c3dcdddea972be026",
+      "bytes": 2106,
+      "sha256": "07f01e5a601bc9bbf22466c42a580fc9d035dd61b7252a1382dbb2ad393097ca",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/two-source-delta.patch",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/two-source-delta.patch",
+      "source_blob_oid": "4c9bde4d396f6cb2b3af96aa0e489b50803e5554",
+      "bytes": 3486,
+      "sha256": "bbc15ce93914020a45e48d5ec95c9ce014e9942a385123897e78c61a707c10a4",
+      "reason": "Heap component RED/GREEN/failure, actual capability, identity and scope-correction receipts"
+    }
+  ]
+}

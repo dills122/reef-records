@@ -1,0 +1,8 @@
+{
+  "allIdentityFieldsMatch": true,
+  "differences": {},
+  "afterBroadRawSha256": "e74d8a4298f653de1994be64e339e45d0e669b09041bb35242611ee35ec7f3ad",
+  "usedHeapBytesBefore": 32795048,
+  "usedHeapBytesAfter": 31470920,
+  "scope": "Actual fresh capability after forced parent compile/test. Used bytes snapshots, not conservative cost bound or peak."
+}

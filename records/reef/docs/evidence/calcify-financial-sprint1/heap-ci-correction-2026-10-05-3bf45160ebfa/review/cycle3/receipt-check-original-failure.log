@@ -1,0 +1,4 @@
+Original inline Python receipt check exited1. Raw tool chunk acb5d0.
+Traceback (most recent call last):
+  File "<stdin>", line 31, in <module>
+AssertionError

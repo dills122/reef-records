@@ -1,0 +1,76 @@
+--- cycle1/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt
++++ cycle2/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt
+@@ -272,6 +272,16 @@
+                 catch (_: TimeoutException) { /* Keep heap checkpoint separate from blocked operation. */ }
+             }
+         } finally { if (!task.isDone) task.cancel(true); thread.join(500) }
++    }
++
++    internal data class HeapArtifactSnapshot(val observation: Map<String, Any>, val resourcePeakBytes: Long, val peakScope: String)
++
++    /** Reporting cutoff only: guard continues sampling through serialization and staged writes. */
++    internal fun heapArtifactSnapshot(guard: FinancialHeapGuard, physicalSamplerPeakBytes: Long): HeapArtifactSnapshot {
++        val observation = guard.telemetry()
++        val scope = "Sampled through result assembly snapshot; final serialization and staged writes excluded"
++        return HeapArtifactSnapshot(observation + ("reportedPeakScope" to scope),
++            maxOf(physicalSamplerPeakBytes, observation["heapPeakBytes"] as Long), scope)
+     }
+ 
+     @JvmStatic fun main(args: Array<String>) {
+@@ -448,14 +458,15 @@
+             val restoreMs = (System.nanoTime() - restoreStart) / 1_000_000
+             val parityPath = outPath.parent.resolve("parity.json")
+             val parityContent = json.writeValueAsString(mapOf("ownerSha256" to expectedOwner, "historyChecksum" to expectedChain, "historyRecords" to expectedHistory, "sourceUuid" to uuid, "readCommitted" to true, "independentCompleteDeltas" to true)) + "\n"
++            val heapArtifact = heapArtifactSnapshot(guard, heapPeak)
+             val result = if (mode == "calibrate") mapOf(
+                 "schema" to "financial-rate-calibration-v1", "sourceHead" to spec["sourceHead"].asText(), "fixtureSha256" to spec["fixtureSha256"].asText(), "realRecordEvidencePath" to "encoded-records.bin", "realRecordEvidenceSha256" to shaFile(rawPath), "sampleTrades" to count, "encodedBytes" to rawBytes,
+-                "physicalBytes" to bytesPhysical, "physicalReplicationIncluded" to true, "identityPhysicalBytes" to if (bytesPhysical > 0) maxOf(1L, bytesPhysical / count) else 0, "pendingPhysicalBytes" to pendingPhysical, "identityHeapBytes" to identityHeap, "heapObservation" to guard.telemetry(),
++                "physicalBytes" to bytesPhysical, "physicalReplicationIncluded" to true, "identityPhysicalBytes" to if (bytesPhysical > 0) maxOf(1L, bytesPhysical / count) else 0, "pendingPhysicalBytes" to pendingPhysical, "identityHeapBytes" to identityHeap, "heapObservation" to heapArtifact.observation,
+                 "producer" to mapOf("completedTrades" to admitted.get(), "elapsedMs" to producerMs), "observer" to mapOf("completedTrades" to settled.get(), "elapsedMs" to observerMs, "exactParity" to true), "sourceTopicUuid" to uuid)
+             else mapOf("schema" to "financial-rate-measurement-v1", "policySha256" to spec["policySha256"].asText(), "sourceHead" to spec["sourceHead"].asText(), "fixtureSha256" to spec["fixtureSha256"].asText(), "workloadSha256" to HexFormat.of().formatHex(workload.digest()), "units" to "unique timed executions; preflight/aged rows excluded", "producerElapsedMs" to producerMs, "drainMs" to drainMs, "deadline" to deadline.get(), "final" to counts(),
+                 "parity" to mapOf("completeJournal" to true, "completeOwnerState" to true, "independentOracle" to true, "evidenceSha256" to sha(parityContent.toByteArray())), "lagSamples" to lag,
+-                "resources" to mapOf("processCpuMs" to cpuMs, "heapPeakBytes" to maxOf(heapPeak, (guard.telemetry()["heapPeakBytes"] as Long)), "rssPeakBytes" to rssPeak, "diskPeakBytes" to diskPeak, "encodedInputBytes" to inputBytes.get(), "encodedResultBytes" to outputBytes.get(), "encodedTechnicalBytes" to null, "physicalBrokerBytes" to physicalEnd?.first, "physicalChangelogBytes" to physicalEnd?.second, "touchedKeys" to keys.get(), "technicalRecords" to covered.get(), "transactionWaitMs" to txnMs),
+-                "heapObservation" to guard.telemetry(), "stageLatency" to synchronized(latency) { val sorted = latency.sorted(); mapOf("kind" to "sampled-individual", "stage" to "offer-to-read-committed-settlement", "clockDomain" to "same-monotonic", "samples" to sorted.size, "p95Ms" to sorted.getOrNull((sorted.size * .95).toInt()), "p99Ms" to sorted.getOrNull((sorted.size * .99).toInt())) },
++                "resources" to mapOf("processCpuMs" to cpuMs, "heapPeakBytes" to heapArtifact.resourcePeakBytes, "heapPeakScope" to heapArtifact.peakScope, "rssPeakBytes" to rssPeak, "diskPeakBytes" to diskPeak, "encodedInputBytes" to inputBytes.get(), "encodedResultBytes" to outputBytes.get(), "encodedTechnicalBytes" to null, "physicalBrokerBytes" to physicalEnd?.first, "physicalChangelogBytes" to physicalEnd?.second, "touchedKeys" to keys.get(), "technicalRecords" to covered.get(), "transactionWaitMs" to txnMs),
++                "heapObservation" to heapArtifact.observation, "stageLatency" to synchronized(latency) { val sorted = latency.sorted(); mapOf("kind" to "sampled-individual", "stage" to "offer-to-read-committed-settlement", "clockDomain" to "same-monotonic", "samples" to sorted.size, "p95Ms" to sorted.getOrNull((sorted.size * .95).toInt()), "p99Ms" to sorted.getOrNull((sorted.size * .99).toInt())) },
+                 "restore" to mapOf("records" to expectedHistory, "bytes" to restoreBytes, "elapsedMs" to restoreMs, "verifiedCut" to true), "gaps" to listOf("Managed restart requires recovered durable ACK membership; rate callback RAM registry not certified", "Encoded technical store bytes uninstrumented", "CPU scope same-JVM worker+producer+observer; broker CPU unmeasured", "Touched keys = emitted state/history/coverage/cert writes; framework reads excluded"), "capacityQualification" to false)
+             guard.publish(outPath, json.writerWithDefaultPrettyPrinter().writeValueAsString(result) + "\n", parityPath to parityContent); println(json.writeValueAsString(mapOf("artifact" to outPath.toString(), "offered" to offered.get(), "admitted" to admitted.get(), "settled" to settled.get())))
+         }
+--- cycle1/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt
++++ cycle2/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt
+@@ -184,6 +184,35 @@
+             assertFalse(Files.exists(output)); assertFalse(Files.exists(parity)); assertEquals(0, Files.list(dir).use { it.count() }); assertTrue(g.isClosed)
+         } finally { Files.deleteIfExists(output); Files.deleteIfExists(parity); Files.deleteIfExists(dir) }
+     }
++    @Test fun artifactPeakScopeExplainsFinalHealthySamplesExcludedFromExportedPeak() {
++        val exported = mutableListOf<com.fasterxml.jackson.databind.JsonNode>()
++        for (mode in listOf("calibrate", "run")) {
++            val dir = Files.createTempDirectory("heap-peak-scope-$mode"); val output = dir.resolve("artifact.json")
++            val used = AtomicLong(50); val g = guard(used::get)
++            try {
++                FinancialRateProbe.withHeapProtection(g) {
++                    val snapshot = FinancialRateProbe.heapArtifactSnapshot(it, 50)
++                    val observation = snapshot.observation
++                    val resources = mapOf("heapPeakBytes" to snapshot.resourcePeakBytes, "heapPeakScope" to snapshot.peakScope)
++                    val artifact = if (mode == "calibrate") mapOf("heapObservation" to observation)
++                        else mapOf("heapObservation" to observation, "resources" to resources)
++                    val contents = json.writeValueAsString(artifact)
++                    used.set(700); it.publish(output, contents)
++                }
++                val artifact = json.readTree(Files.readString(output)); exported.add(artifact)
++                assertEquals(50, artifact["heapObservation"]["heapPeakBytes"].asLong())
++                if (mode == "run") assertEquals(50, artifact["resources"]["heapPeakBytes"].asLong())
++                assertEquals(700L, g.telemetry()["heapPeakBytes"])
++                assertEquals(null, g.failure)
++                assertFalse(g.telemetry().containsKey("reportedPeakScope"), "Post-publication guard telemetry must retain full sampled lifetime scope")
++                println(json.writeValueAsString(mapOf("validationOnly" to true, "mode" to mode, "exportedArtifact" to artifact,
++                    "finalHealthySamplePeakBytes" to g.telemetry()["heapPeakBytes"])))
++            } finally { Files.deleteIfExists(output); Files.deleteIfExists(dir) }
++        }
++        val expected = "Sampled through result assembly snapshot; final serialization and staged writes excluded"
++        exported.forEach { artifact -> assertEquals(expected, artifact["heapObservation"].path("reportedPeakScope").asText()) }
++        assertEquals(expected, exported.last()["resources"].path("heapPeakScope").asText())
++    }
+     private fun awaitFailure(g: FinancialHeapGuard) {
+         val end = System.nanoTime() + TimeUnit.SECONDS.toNanos(1)
+         while (g.failure == null && System.nanoTime() < end) Thread.yield()

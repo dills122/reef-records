@@ -1,0 +1,17 @@
+{
+  "command": [
+    "services/platform-runtime/gradlew",
+    "--no-daemon",
+    "-p",
+    "services/platform-runtime",
+    "--offline",
+    "test",
+    "--tests",
+    "com.reef.platform.calcify.financial.FinancialHeapGuardTest",
+    "--console=plain"
+  ],
+  "javaHome": "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home",
+  "startedAt": "2026-10-05T07:05:44.468878+00:00",
+  "exit": 1,
+  "elapsedSeconds": 0.08635187499749009
+}

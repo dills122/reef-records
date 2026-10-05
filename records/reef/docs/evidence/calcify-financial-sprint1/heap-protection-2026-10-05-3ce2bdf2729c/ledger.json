@@ -1,0 +1,171 @@
+{
+  "schema": "calcify-heap-protection-session-v1",
+  "baseline": "3ce2bdf2729c884b0efd77d0a56808a0a6eb7d96",
+  "startedUtc": "2026-10-05T06:07:59.754730+00:00",
+  "branch": "codex/calcify-heap-protection",
+  "dependency": "E3 PR474 independently Ready; Records7 exact-byte publication verified",
+  "milestone": "M3H applied heap admission/runtime protection only",
+  "state": "PASSED",
+  "budget": "75m implementation/focused checks plus45m independent review/owner sync",
+  "attempt": 1,
+  "reviews": [
+    {
+      "attempt": 1,
+      "cycle": 1,
+      "reviewer": "review_heap_cycle1",
+      "verdict": "Ready with non-blocking follow-ups",
+      "report": "review/cycle1/report.md",
+      "findings": [
+        {
+          "priority": "P2",
+          "finding": "Emitted peak excludes final publication samples without scope field",
+          "triage": "Accept; smallest metadata+shared artifact regression correction; fresh cycle2 required"
+        }
+      ]
+    },
+    {
+      "attempt": 1,
+      "cycle": 2,
+      "reviewer": "review_heap_cycle2",
+      "verdict": "Ready",
+      "report": "review/cycle2/report.md",
+      "findings": [],
+      "scope": "Whole bounded component and peak-scope amendment; actual final-build child refusals and own checks verified"
+    }
+  ],
+  "fullE4Readiness": "DEFERRED",
+  "capacityQualification": false,
+  "invariants": [
+    "No E3 frozen code edits",
+    "No production authority/API/contract change",
+    "Unknown cost provenance blocks real loads",
+    "Actual observed max/baseline cannot be replaced by request assertions",
+    "Sticky sampled protection remains active through result-only replay",
+    "No heap-to-RSS or continuous/OOM prevention claim"
+  ],
+  "events": [
+    {
+      "utc": "2026-10-05T06:10:37Z",
+      "kind": "TDD_RED",
+      "scope": "Node admission",
+      "result": "0/2 pass: missing conservative evidence and oversized retained cost incorrectly FROZEN",
+      "receipts": "worker/red-node.log and worker/red-node.json"
+    },
+    {
+      "utc": "2026-10-05T06:15:00Z",
+      "kind": "TDD_RED",
+      "scope": "Kotlin probe lifecycle",
+      "result": "Actual test failure: required heap protection lifecycle method absent; initial Gradle sandbox cache-lock failure preserved separately",
+      "receipts": "worker/red-kotlin-authorized log/command/source hashes/XML"
+    },
+    {
+      "utc": "2026-10-05T06:15:05Z",
+      "kind": "DEPENDENCY_CI",
+      "scope": "E3 PR474",
+      "result": "All completed applicable checks PASS; calcify-tests remains IN_PROGRESS; OPEN draft"
+    },
+    {
+      "utc": "2026-10-05T06:18:30Z",
+      "kind": "DEPENDENCY_CI",
+      "scope": "E3 PR474 head3ce2bdf2",
+      "result": "All applicable hosted checks SUCCESS including calcify-tests and external registry-diff-and-provision status context. Draft still OPEN."
+    },
+    {
+      "utc": "2026-10-05T06:17:41Z",
+      "kind": "INTERMEDIATE_GREEN",
+      "scope": "Node admission",
+      "result": "26/26 pass. Source hashes post-run only; final validation will bind before/after snapshots."
+    },
+    {
+      "utc": "2026-10-05T06:21:30Z",
+      "kind": "INTEGRATION_FINDING",
+      "scope": "Heap evidence provenance",
+      "result": "Review hash was syntax-only; worker binding raw review artifact exact finite bounds/candidate/build/config/fixture. Actual fixture bytes required."
+    },
+    {
+      "utc": "2026-10-05T06:22:00Z",
+      "kind": "RECEIPT_SCOPE_CORRECTION",
+      "scope": "Worker runner",
+      "result": "Node run copied unrelated existing Kotlin XML; preserve originals and add explicit correction. Future XML conditional on actual Kotlin task; before/after source hashes required."
+    },
+    {
+      "utc": "2026-10-05T06:40:00Z",
+      "kind": "SOURCE_FREEZE",
+      "result": "Five code/test paths stopped; focused Node37/37, Kotlin18/18; actual capability exit0; actual child baseline refusal exit1 before setup, no state/parity/measurement."
+    },
+    {
+      "utc": "2026-10-05T06:40:48Z",
+      "kind": "VALIDATION_ENV_FAILURE",
+      "result": "Exact Node CI 228/229; listen EPERM localhost mock HTTP in sandbox. Stable437 source inputs; original failure preserved. Same command rerun authorized node-ci2-authorized."
+    },
+    {
+      "utc": "2026-10-05T06:41:13Z",
+      "kind": "GRAPH_REFRESH",
+      "result": "14566nodes/75179edges fast/no persistence; three heap Kotlin paths metadata_match; heapReplayBatch and guard retrievable. Scripts/docs excluded; direct source fallback."
+    },
+    {
+      "utc": "2026-10-05T06:43:39Z",
+      "kind": "INTEGRATED_GREEN",
+      "result": "Financial63/63 fresh6XML, exact Node229/229, actual0,437source inputs before/after equal; script surface272pass."
+    },
+    {
+      "utc": "2026-10-05T06:45:35Z",
+      "kind": "POST_COMPILE_CAPABILITY",
+      "result": "Actual broker-free rerun all pinned JVM/config/fixture/build/classpath identity fields match initial; used snapshots32795048/31470920, no bound/peak inference."
+    },
+    {
+      "utc": "2026-10-05T06:48:50Z",
+      "kind": "UPSTREAM_REFRESH",
+      "result": "Reef origin/master unchangeda6ddafbb; Records origin/main unchanged08a4347f; frozen branch unaffected."
+    },
+    {
+      "utc": "2026-10-05T06:50:00Z",
+      "kind": "REVIEW_PRELIMINARY_CONTROL",
+      "result": "Reviewer actual publication outputs peak50 while final sensor telemetry700. Protection intact; emitted peak lacks explicit assembly scope. Complete cycle1 report pending; no patch yet."
+    },
+    {
+      "utc": "2026-10-05T06:53:00Z",
+      "kind": "REVIEW_CYCLE1_COMPLETE",
+      "result": "No P0/P1. Node37/37,Kotlin18/18, actual JVM and three identity mismatch refusals, parent63/63+229/229 verified. Two-path P2 metadata correction authorized; preserve all first candidate receipts."
+    },
+    {
+      "utc": "2026-10-05T06:56:00Z",
+      "kind": "TDD_RED_P2_SCOPE",
+      "result": "Corrected actual RED: valid calibration/measurement JSON peak50 then finalhealthy700; missing reportedPeakScope fails fresh1test XML. Initial boxed Integer-vs-Long test mistake retained separately."
+    },
+    {
+      "utc": "2026-10-05T06:59:07Z",
+      "kind": "CORRECTION_FREEZE",
+      "result": "Only RateProbe+HeapGuardTest change for explicit assembly snapshot scope; other3 code/test hashes same. Kotlin19/19,Node37/37; original candidate reconstructed by inverse delta patch."
+    },
+    {
+      "utc": "2026-10-05T07:02:41Z",
+      "kind": "FINAL_INTEGRATED_GREEN",
+      "result": "Financial64/64fresh6XML,NodeCI229/229,actual0,437before/after source hashes stable;10Gradle tasks executed."
+    },
+    {
+      "utc": "2026-10-05T07:02:27Z",
+      "kind": "FINAL_GRAPH_REFRESH",
+      "result": "14569nodes/75204edges;3heap Kotlin paths metadata_match; actual shared artifact-snapshot snippet retrieved. Docs/scripts excluded."
+    },
+    {
+      "utc": "2026-10-05T07:04:00Z",
+      "kind": "FINAL_CAPABILITY_REBIND",
+      "result": "Post-full-compile capability actual0, build0ab2ba5b/CPc5436375 unchanged; used snapshots31746600/26501352, not cost bounds or peak."
+    },
+    {
+      "utc": "2026-10-05T07:17:44.088444+00:00",
+      "kind": "OWNER_SYNC",
+      "result": "Current work plan/reading order/checkpoint/handoff distinguish E3 acceptance and verified heap component; remaining E4 costs/ACK/physical/calibration/supervision gates open. Owner JSON publication pending."
+    }
+  ],
+  "tooling": {
+    "graph": "FinancialRateProbe metadata_changed and new FinancialHeapGuard not_tracked during active implementation; refresh after worker freezes source, not while edits active",
+    "java": "Pinned21 compilation fallback; Kotlin LSP degraded"
+  },
+  "delivery": {
+    "state": "IN PROGRESS",
+    "remaining": "Commit owner sync, immutable Records publication/remote blob verification, draft PR attachment"
+  },
+  "reviewedCodeStillExact": true
+}

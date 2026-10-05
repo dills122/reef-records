@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-05T07:01:01.620582+00:00",
+  "base": "3ce2bdf2729c884b0efd77d0a56808a0a6eb7d96",
+  "head": "3ce2bdf2729c884b0efd77d0a56808a0a6eb7d96",
+  "branch": "codex/calcify-heap-protection",
+  "status": " M docs/WORK_PLAN.md\n M scripts/dev/calcify-financial/rate-proof.mjs\n M scripts/dev/calcify-financial/rate-proof.test.mjs\n M services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt\n?? services/platform-runtime/.kotlin/\n?? services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt\n?? services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt\n",
+  "paths": {
+    "scripts/dev/calcify-financial/rate-proof.mjs": "fc2aecc678e1dc7b1b6479b2793f68f4e447e7d3963555c7ffa8da986340f090",
+    "scripts/dev/calcify-financial/rate-proof.test.mjs": "237818ed0bf7fef0ca86e5ac6eac0274afcf596e0f0676b7fbc75cc62b01938e",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt": "6916c2ed4f61a8f5f874f93f11ddc900519b503770e86bc3f0aaea343292965a",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt": "f5dd838d77fb3e0796861ac0dc4936caccaf6d7c2cfc1b5e337678464fb90943",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt": "bed9edbd42798136c127ed9d172a6110e6288bdc933cc6b1f5fb2160d6a957fa",
+    "docs/WORK_PLAN.md": "a9b1a36623add9a8e487c356e870e6b1f44d0e9ca1cca06f20f690108cc26764"
+  },
+  "codeWritersStopped": true,
+  "ownerWorkPlanFrozenForReview": true,
+  "priorCycle": "cycle1 Ready with non-blocking P2; source correction two Kotlin paths only"
+}

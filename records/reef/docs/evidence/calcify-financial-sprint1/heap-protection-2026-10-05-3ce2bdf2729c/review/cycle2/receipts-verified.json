@@ -1,0 +1,117 @@
+{
+  "reviewer-focused": {
+    "totals": {
+      "tests": 19,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "files": [
+      {
+        "path": ".planning/calcify-heap-protection-2026-10-05/review/cycle2/kotlin-focused-authorized-xml/TEST-com.reef.platform.calcify.financial.FinancialHeapGuardTest.xml",
+        "name": "com.reef.platform.calcify.financial.FinancialHeapGuardTest",
+        "timestamp": "2026-10-05T07:06:18.854Z"
+      }
+    ]
+  },
+  "parent-final": {
+    "totals": {
+      "tests": 64,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "files": [
+      {
+        "path": ".planning/calcify-heap-protection-2026-10-05/integration/financial2-final/xml/TEST-com.reef.platform.calcify.financial.FinancialBrokerProbeTest.xml",
+        "name": "com.reef.platform.calcify.financial.FinancialBrokerProbeTest",
+        "timestamp": "2026-10-05T07:00:16.275Z"
+      },
+      {
+        "path": ".planning/calcify-heap-protection-2026-10-05/integration/financial2-final/xml/TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml",
+        "name": "com.reef.platform.calcify.financial.FinancialKernelTest",
+        "timestamp": "2026-10-05T07:00:17.683Z"
+      },
+      {
+        "path": ".planning/calcify-heap-protection-2026-10-05/integration/financial2-final/xml/TEST-com.reef.platform.calcify.financial.FinancialPartitionCutTest.xml",
+        "name": "com.reef.platform.calcify.financial.FinancialPartitionCutTest",
+        "timestamp": "2026-10-05T07:02:38.928Z"
+      },
+      {
+        "path": ".planning/calcify-heap-protection-2026-10-05/integration/financial2-final/xml/TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+        "name": "com.reef.platform.calcify.financial.FinancialOracleTest",
+        "timestamp": "2026-10-05T07:02:16.305Z"
+      },
+      {
+        "path": ".planning/calcify-heap-protection-2026-10-05/integration/financial2-final/xml/TEST-com.reef.platform.calcify.financial.FinancialHeapGuardTest.xml",
+        "name": "com.reef.platform.calcify.financial.FinancialHeapGuardTest",
+        "timestamp": "2026-10-05T07:00:17.598Z"
+      },
+      {
+        "path": ".planning/calcify-heap-protection-2026-10-05/integration/financial2-final/xml/TEST-com.reef.platform.calcify.financial.FinancialCommittedCutTest.xml",
+        "name": "com.reef.platform.calcify.financial.FinancialCommittedCutTest",
+        "timestamp": "2026-10-05T07:00:17.409Z"
+      }
+    ]
+  },
+  "worker-green": {
+    "totals": {
+      "tests": 19,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "files": [
+      {
+        "path": ".planning/calcify-heap-protection-2026-10-05/worker/peak-scope-cycle2/green-kotlin-xml/TEST-com.reef.platform.calcify.financial.FinancialHeapGuardTest.xml",
+        "name": "com.reef.platform.calcify.financial.FinancialHeapGuardTest",
+        "timestamp": "2026-10-05T06:57:30.820Z"
+      }
+    ]
+  },
+  "worker-initial-red": {
+    "totals": {
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "files": [
+      {
+        "path": ".planning/calcify-heap-protection-2026-10-05/worker/red-kotlin-authorized-xml/TEST-com.reef.platform.calcify.financial.FinancialHeapGuardTest.xml",
+        "name": "com.reef.platform.calcify.financial.FinancialHeapGuardTest",
+        "timestamp": "2026-10-05T06:10:59.868Z"
+      }
+    ]
+  },
+  "worker-cutoff-red": {
+    "totals": {
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "files": [
+      {
+        "path": ".planning/calcify-heap-protection-2026-10-05/worker/peak-scope-cycle2/red-peak-scope-corrected-xml/TEST-com.reef.platform.calcify.financial.FinancialHeapGuardTest.xml",
+        "name": "com.reef.platform.calcify.financial.FinancialHeapGuardTest",
+        "timestamp": "2026-10-05T06:56:31.838Z"
+      }
+    ]
+  },
+  "financial2-final-source": {
+    "inputs": 437,
+    "beforeAfterEqual": true
+  },
+  "node-ci3-final-source": {
+    "inputs": 437,
+    "beforeAfterEqual": true
+  },
+  "node-ci-actual-log": {
+    "tests": 229,
+    "pass": 229,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "financial": {
+    "tests": 63,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "financialXmlFiles": 6,
+  "nodeCI": {
+    "tests": 229,
+    "pass": 229,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0
+  },
+  "scope": "Actual final parent commands; no broker load or capacity proof"
+}

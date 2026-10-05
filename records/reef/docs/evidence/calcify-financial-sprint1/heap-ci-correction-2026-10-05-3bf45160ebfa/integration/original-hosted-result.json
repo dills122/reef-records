@@ -1,0 +1,16 @@
+{
+  "runId": 37278081559,
+  "head": "3bf45160ebfa1d1e1fac6fb808b80b86688f35fe",
+  "result": "FAILURE",
+  "nodeTests": 229,
+  "pass": 227,
+  "fail": 2,
+  "failures": [
+    "RAW_EVIDENCE_HASH test sees missing /private/tmp lock parent",
+    "PINNED_LAUNCHER test sees missing /private/tmp lock parent"
+  ],
+  "ciRequired": "FAILURE from node-dev-tooling",
+  "allOtherApplicableChecks": "SUCCESS",
+  "correctionLocalExactTests": 230,
+  "correctionHosted": "PENDING_NEW_PUSH"
+}

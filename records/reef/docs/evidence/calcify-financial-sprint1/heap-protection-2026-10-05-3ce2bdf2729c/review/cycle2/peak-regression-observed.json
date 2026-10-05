@@ -1,0 +1,62 @@
+[
+  {
+    "validationOnly": true,
+    "mode": "calibrate",
+    "exportedArtifact": {
+      "heapObservation": {
+        "schema": "financial-heap-observation-v1",
+        "guardOutcome": "PASS_SAMPLED",
+        "actualMaxHeapBytes": 1000,
+        "admissionLimitBytes": 800,
+        "estimatedHeapBytes": 172,
+        "heapPeakBytes": 50,
+        "baselineObservations": [
+          {
+            "stage": "before-setup",
+            "sampledAtNano": 0,
+            "usedHeapBytes": 50,
+            "maxHeapBytes": 1000
+          }
+        ],
+        "pollMillis": 250,
+        "maxSampleAgeNanos": 5000000000,
+        "sampled": true,
+        "limitation": "Sudden allocation may outrun sampled protection; native/RSS memory unbounded; no OOM guarantee",
+        "reportedPeakScope": "Sampled through result assembly snapshot; final serialization and staged writes excluded"
+      }
+    },
+    "finalHealthySamplePeakBytes": 700
+  },
+  {
+    "validationOnly": true,
+    "mode": "run",
+    "exportedArtifact": {
+      "heapObservation": {
+        "schema": "financial-heap-observation-v1",
+        "guardOutcome": "PASS_SAMPLED",
+        "actualMaxHeapBytes": 1000,
+        "admissionLimitBytes": 800,
+        "estimatedHeapBytes": 172,
+        "heapPeakBytes": 50,
+        "baselineObservations": [
+          {
+            "stage": "before-setup",
+            "sampledAtNano": 0,
+            "usedHeapBytes": 50,
+            "maxHeapBytes": 1000
+          }
+        ],
+        "pollMillis": 250,
+        "maxSampleAgeNanos": 5000000000,
+        "sampled": true,
+        "limitation": "Sudden allocation may outrun sampled protection; native/RSS memory unbounded; no OOM guarantee",
+        "reportedPeakScope": "Sampled through result assembly snapshot; final serialization and staged writes excluded"
+      },
+      "resources": {
+        "heapPeakBytes": 50,
+        "heapPeakScope": "Sampled through result assembly snapshot; final serialization and staged writes excluded"
+      }
+    },
+    "finalHealthySamplePeakBytes": 700
+  }
+]

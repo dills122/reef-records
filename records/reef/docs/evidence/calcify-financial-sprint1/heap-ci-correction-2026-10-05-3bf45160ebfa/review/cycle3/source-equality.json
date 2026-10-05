@@ -1,0 +1,7 @@
+{
+  "fiveSourceBeforeAfterEqual": true,
+  "headBeforeAfterEqual": true,
+  "trackedStatusBeforeAfterEqual": true,
+  "sourceMutations": false,
+  "actualKotlinRerun": false
+}

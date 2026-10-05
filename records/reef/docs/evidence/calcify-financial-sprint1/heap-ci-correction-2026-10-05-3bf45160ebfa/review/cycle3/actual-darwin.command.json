@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    ".planning/calcify-heap-ci-correction-2026-10-05/review/cycle3/lock-controls.mjs",
+    "actual-darwin"
+  ],
+  "startedAt": "2026-10-05T07:46:57.286693+00:00",
+  "finishedAt": "2026-10-05T07:46:57.330115+00:00",
+  "exitCode": 0,
+  "actualLinuxQualification": false
+}

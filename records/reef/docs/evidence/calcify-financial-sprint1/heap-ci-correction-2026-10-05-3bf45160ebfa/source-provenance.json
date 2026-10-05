@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "measurement_baseline_commit": "3bf45160ebfa1d1e1fac6fb808b80b86688f35fe",
+  "reviewed_product_commit_supplied_by_caller": "c4c11b3a8be680bbb443bcfbf6b67b2563542721",
+  "inventory_observed_head": "c4c11b3a8be680bbb443bcfbf6b67b2563542721",
+  "inventory_snapshot_utc": "2026-10-05T07:55:22.463906+00:00",
+  "source_repository": "https://github.com/dills122/reef",
+  "publication": "Evidence checkpoint local-only and unpushed; complete bulk remote publication only in Reef Records",
+  "measurement_identity_limit": "Checks precede product checkpoint and used recorded dirty/new source hashes and actual JVM capability/build receipts. Baseline or reviewed product commit alone does not establish measured software identity.",
+  "measured_source_hash_companions": [
+    "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/node-ci-final/source-after.json",
+    "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/integration/node-ci-final/source-before.json",
+    "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/source-after.json",
+    "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/source-before.json",
+    "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/source-equality.json",
+    "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/source-freeze.json",
+    "docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/worker/two-source-delta.patch"
+  ],
+  "readiness_limit": "Receipt promotion/import establishes preservation only; original failure, partial-arm, correction, review and bounded outcome scope remains unchanged",
+  "writers_stopped_asserted_by_caller": true,
+  "inventory_sha256": "08f72765f1a8ae67f6e362cf0f22e95a6cb4c5c942fe39134803e50854d693ee"
+}
