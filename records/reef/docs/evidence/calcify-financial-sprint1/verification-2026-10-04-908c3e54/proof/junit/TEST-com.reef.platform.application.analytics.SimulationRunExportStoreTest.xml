@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.application.analytics.SimulationRunExportStoreTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:38:00.069Z" hostname="Dylans-MacBook-Pro.local" time="0.01">
+  <properties/>
+  <testcase name="ingestUpsertsIntoStoreAndFindReturnsRecord()" classname="com.reef.platform.application.analytics.SimulationRunExportStoreTest" time="0.004"/>
+  <testcase name="analyticsSqlNamesDefaultsToAnalyticsSchema()" classname="com.reef.platform.application.analytics.SimulationRunExportStoreTest" time="0.001"/>
+  <testcase name="listClampsToAllowedRange()" classname="com.reef.platform.application.analytics.SimulationRunExportStoreTest" time="0.001"/>
+  <testcase name="analyticsSqlNamesRejectsInvalidIdentifiers()" classname="com.reef.platform.application.analytics.SimulationRunExportStoreTest" time="0.0"/>
+  <testcase name="ingestProjectsBotPerformanceSummariesIdempotently()" classname="com.reef.platform.application.analytics.SimulationRunExportStoreTest" time="0.002"/>
+  <testcase name="inMemoryStoreUpsertOverwritesExistingRecord()" classname="com.reef.platform.application.analytics.SimulationRunExportStoreTest" time="0.0"/>
+  <testcase name="listClampsLimitAndOrdersByCompletionThenExportRecency()" classname="com.reef.platform.application.analytics.SimulationRunExportStoreTest" time="0.0"/>
+  <testcase name="ingestAppliesDefaultsAndClampsNegativeCounts()" classname="com.reef.platform.application.analytics.SimulationRunExportStoreTest" time="0.0"/>
+  <testcase name="ingestRejectsBlankRunId()" classname="com.reef.platform.application.analytics.SimulationRunExportStoreTest" time="0.0"/>
+  <testcase name="analyticsSqlNamesFallsBackToDefaultWhenBlank()" classname="com.reef.platform.application.analytics.SimulationRunExportStoreTest" time="0.0"/>
+  <testcase name="analyticsSqlNamesQualifiesCustomSchema()" classname="com.reef.platform.application.analytics.SimulationRunExportStoreTest" time="0.0"/>
+  <testcase name="ingestPreservesExplicitExportedAtAndPositiveCounts()" classname="com.reef.platform.application.analytics.SimulationRunExportStoreTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

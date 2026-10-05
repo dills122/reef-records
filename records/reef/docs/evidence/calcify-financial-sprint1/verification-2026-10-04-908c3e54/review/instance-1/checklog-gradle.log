@@ -1,0 +1,54 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :verifyRuntimeOrderIdentityMigration
+> Task :processResources
+> Task :processTestResources
+> Task :verifyNoTestSourceExclusions
+
+> Task :compileKotlin
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/main/kotlin/com/reef/platform/api/JsonCodec.kt:232:18 'fun fields(): (Mutable)Iterator<(Mutable)Map.(Mutable)Entry<String!, JsonNode!>!>!' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/main/kotlin/com/reef/platform/api/PlatformNettyHotPathServer.kt:50:25 'constructor(p0: Int): NioEventLoopGroup' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/main/kotlin/com/reef/platform/api/PlatformNettyHotPathServer.kt:51:50 'constructor(p0: Int): NioEventLoopGroup' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/main/kotlin/com/reef/platform/api/PlatformNettyHotPathServer.kt:51:88 'constructor(): NioEventLoopGroup' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/main/kotlin/com/reef/platform/api/PlatformNettyHotPathServer.kt:70:30 'fun addLast(p0: EventExecutorGroup!, vararg p1: ChannelHandler!): ChannelPipeline!' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/main/kotlin/com/reef/platform/api/PlatformStreamIngressServer.kt:32:25 'constructor(p0: Int): NioEventLoopGroup' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/main/kotlin/com/reef/platform/api/PlatformStreamIngressServer.kt:33:50 'constructor(p0: Int): NioEventLoopGroup' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/main/kotlin/com/reef/platform/api/PlatformStreamIngressServer.kt:33:88 'constructor(): NioEventLoopGroup' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/main/kotlin/com/reef/platform/api/StreamCommandPublishing.kt:172:37 Elvis operator (?:) always returns the left operand of non-nullable type 'String'.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/main/kotlin/com/reef/platform/api/StreamCommandPublishing.kt:198:69 Elvis operator (?:) always returns the left operand of non-nullable type 'String'.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/BrokerVenueSourceReader.kt:63:23 'fun close(p0: Duration!): Unit' is deprecated. Deprecated in Java.
+
+> Task :compileJava
+> Task :classes
+> Task :jar
+
+> Task :compileTestKotlin
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/application/OrderApplicationServiceTest.kt:230:60 Unnecessary safe call on a non-null receiver of type 'EngineOrderRejected'.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/application/OrderApplicationServiceTest.kt:231:80 Unnecessary safe call on a non-null receiver of type 'EngineOrderRejected'.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/application/OrderApplicationServiceTest.kt:429:61 Unnecessary safe call on a non-null receiver of type 'EngineOrderRejected'.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/application/OrderApplicationServiceTest.kt:464:61 Unnecessary safe call on a non-null receiver of type 'EngineOrderRejected'.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/application/OrderApplicationServiceTest.kt:465:83 Unnecessary safe call on a non-null receiver of type 'EngineOrderRejected'.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/CalcifyResolverBrokerProbe.kt:263:32 'fun fields(): (Mutable)Iterator<(Mutable)Map.(Mutable)Entry<String!, JsonNode!>!>!' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbe.kt:203:39 'fun fields(): (Mutable)Iterator<(Mutable)Map.(Mutable)Entry<String!, JsonNode!>!>!' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbe.kt:455:75 'fun fields(): (Mutable)Iterator<(Mutable)Map.(Mutable)Entry<String!, JsonNode!>!>!' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialOracle.kt:69:30 'fun fields(): (Mutable)Iterator<(Mutable)Map.(Mutable)Entry<String!, JsonNode!>!>!' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialOracleTest.kt:28:34 'fun fields(): (Mutable)Iterator<(Mutable)Map.(Mutable)Entry<String!, JsonNode!>!>!' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialOracleTest.kt:171:31 Cast is redundant.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt:43:25 'fun fields(): (Mutable)Iterator<(Mutable)Map.(Mutable)Entry<String!, JsonNode!>!>!' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt:52:46 'fun fields(): (Mutable)Iterator<(Mutable)Map.(Mutable)Entry<String!, JsonNode!>!>!' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt:125:37 'fun fields(): (Mutable)Iterator<(Mutable)Map.(Mutable)Entry<String!, JsonNode!>!>!' is deprecated. Deprecated in Java.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt:290:510 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Pair<Long, Long>'.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt:290:532 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Pair<Long, Long>'.
+w: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/src/test/kotlin/com/reef/platform/infrastructure/engine/EngineTransportTest.kt:64:54 Unnecessary non-null assertion (!!) on a non-null receiver of type 'EngineOrderAccepted'.
+
+> Task :compileTestJava NO-SOURCE
+> Task :testClasses
+> Task :test
+> Task :jacocoTestReport
+
+[Incubating] Problems report is available at: file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/services/platform-runtime/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 3m 19s
+10 actionable tasks: 10 executed
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.8.0/userguide/configuration_cache_enabling.html

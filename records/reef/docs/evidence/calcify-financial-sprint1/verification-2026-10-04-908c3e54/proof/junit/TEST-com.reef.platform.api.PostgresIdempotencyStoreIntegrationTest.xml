@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.api.PostgresIdempotencyStoreIntegrationTest" tests="3" skipped="3" failures="0" errors="0" timestamp="2026-10-04T22:37:59.945Z" hostname="Dylans-MacBook-Pro.local" time="0.012">
+  <properties/>
+  <testcase name="concurrentRenewalsKeepOneLiveWinnerAcrossInstances()" classname="com.reef.platform.api.PostgresIdempotencyStoreIntegrationTest" time="0.01">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Postgres test skipped: set RUNTIME_DB_URL_TEST, RUNTIME_DB_USER_TEST, RUNTIME_DB_PASSWORD_TEST" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Postgres test skipped: set RUNTIME_DB_URL_TEST, RUNTIME_DB_USER_TEST, RUNTIME_DB_PASSWORD_TEST
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at com.reef.platform.api.PostgresIdempotencyStoreIntegrationTest.withDatabase(PostgresIdempotencyStoreIntegrationTest.kt:118)
+	at com.reef.platform.api.PostgresIdempotencyStoreIntegrationTest.concurrentRenewalsKeepOneLiveWinnerAcrossInstances(PostgresIdempotencyStoreIntegrationTest.kt:55)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <testcase name="persistedLiveRecordCanBeReadByNewStoreInstanceAndCannotBeOverwritten()" classname="com.reef.platform.api.PostgresIdempotencyStoreIntegrationTest" time="0.001">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Postgres test skipped: set RUNTIME_DB_URL_TEST, RUNTIME_DB_USER_TEST, RUNTIME_DB_PASSWORD_TEST" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Postgres test skipped: set RUNTIME_DB_URL_TEST, RUNTIME_DB_USER_TEST, RUNTIME_DB_PASSWORD_TEST
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at com.reef.platform.api.PostgresIdempotencyStoreIntegrationTest.withDatabase(PostgresIdempotencyStoreIntegrationTest.kt:118)
+	at com.reef.platform.api.PostgresIdempotencyStoreIntegrationTest.persistedLiveRecordCanBeReadByNewStoreInstanceAndCannotBeOverwritten(PostgresIdempotencyStoreIntegrationTest.kt:23)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <testcase name="expiredRecordRenewsWithoutCleanupAndPersistsAcrossInstances()" classname="com.reef.platform.api.PostgresIdempotencyStoreIntegrationTest" time="0.001">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: Postgres test skipped: set RUNTIME_DB_URL_TEST, RUNTIME_DB_USER_TEST, RUNTIME_DB_PASSWORD_TEST" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: Postgres test skipped: set RUNTIME_DB_URL_TEST, RUNTIME_DB_USER_TEST, RUNTIME_DB_PASSWORD_TEST
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at com.reef.platform.api.PostgresIdempotencyStoreIntegrationTest.withDatabase(PostgresIdempotencyStoreIntegrationTest.kt:118)
+	at com.reef.platform.api.PostgresIdempotencyStoreIntegrationTest.expiredRecordRenewsWithoutCleanupAndPersistsAcrossInstances(PostgresIdempotencyStoreIntegrationTest.kt:35)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

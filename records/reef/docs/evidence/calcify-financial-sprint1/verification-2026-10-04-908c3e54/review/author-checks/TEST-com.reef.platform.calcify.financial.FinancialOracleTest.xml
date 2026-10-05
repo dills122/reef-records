@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialOracleTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:20:24.010Z" hostname="Dylans-MacBook-Pro.local" time="0.269">
+  <properties/>
+  <testcase name="typed envelope identities never alias valid text identities in either order()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="0.098"/>
+  <testcase name="missing empty null and numeric envelope identities reject before missing policy()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="0.062"/>
+  <testcase name="broker reference stages malformed numeric missing payload and missing identity without losing authority()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="0.052"/>
+  <testcase name="consumed signed64 bounds reject before effects and preserve rejection retries()" classname="com.reef.platform.calcify.financial.FinancialOracleTest" time="0.047"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

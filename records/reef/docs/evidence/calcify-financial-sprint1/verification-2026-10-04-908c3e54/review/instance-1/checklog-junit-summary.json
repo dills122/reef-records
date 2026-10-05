@@ -1,0 +1,16 @@
+[
+  {
+    "suite": "com.reef.platform.calcify.financial.FinancialKernelTest",
+    "tests": 11,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "suite": "com.reef.platform.calcify.financial.FinancialOracleTest",
+    "tests": 4,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+]

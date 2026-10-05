@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.infrastructure.persistence.PostgresProjectionBatchClaimIntegrationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:19:16.335Z" hostname="Dylans-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="cleanupRetainsAuthorityUntilEveryStaleSelectorDeadlineHasExpired()" classname="com.reef.platform.infrastructure.persistence.PostgresProjectionBatchClaimIntegrationTest" time="0.0"/>
+  <testcase name="compatBootstrapPreservesSkipLockedCleanup()" classname="com.reef.platform.infrastructure.persistence.PostgresProjectionBatchClaimIntegrationTest" time="0.001"/>
+  <testcase name="cleanupRequiresExpiredDeadlineAndStrictlyAdvancedWatermarkWhenMigratedPostgresIsAvailable()" classname="com.reef.platform.infrastructure.persistence.PostgresProjectionBatchClaimIntegrationTest" time="0.0"/>
+  <testcase name="cleanupSkipsLockedExpiredClaimsAndCleansOtherEligibleClaims()" classname="com.reef.platform.infrastructure.persistence.PostgresProjectionBatchClaimIntegrationTest" time="0.0"/>
+  <testcase name="identityMismatchFailsBeforeClaimInsertionWhenMigratedPostgresIsAvailable()" classname="com.reef.platform.infrastructure.persistence.PostgresProjectionBatchClaimIntegrationTest" time="0.0"/>
+  <testcase name="rollbackRemovesClaimAndEffectsBeforeRetryWhenMigratedPostgresIsAvailable()" classname="com.reef.platform.infrastructure.persistence.PostgresProjectionBatchClaimIntegrationTest" time="0.0"/>
+  <testcase name="completionRejectsResultCountThatDoesNotMatchClaimedMembership()" classname="com.reef.platform.infrastructure.persistence.PostgresProjectionBatchClaimIntegrationTest" time="0.0"/>
+  <testcase name="incompleteCommittedClaimFailsClosedWhenMigratedPostgresIsAvailable()" classname="com.reef.platform.infrastructure.persistence.PostgresProjectionBatchClaimIntegrationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

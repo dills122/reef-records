@@ -1,0 +1,208 @@
+TAP version 13
+# Subtest: preparation stops until E3 correctness and real calibration plus indexed/bounded adapter exist
+ok 1 - preparation stops until E3 correctness and real calibration plus indexed/bounded adapter exist
+  ---
+  duration_ms: 0.793417
+  type: 'test'
+  ...
+# Subtest: source/fixture mismatches and fabricated zero-byte calibration cannot freeze runnable policy
+ok 2 - source/fixture mismatches and fabricated zero-byte calibration cannot freeze runnable policy
+  ---
+  duration_ms: 0.1365
+  type: 'test'
+  ...
+# Subtest: aged estimate retains proposed 1m identities; over-budget case explicitly shrinks diagnostic only
+ok 3 - aged estimate retains proposed 1m identities; over-budget case explicitly shrinks diagnostic only
+  ---
+  duration_ms: 0.128125
+  type: 'test'
+  ...
+# Subtest: disk space gate and exact prefunding bound all declared timed plus pending work
+ok 4 - disk space gate and exact prefunding bound all declared timed plus pending work
+  ---
+  duration_ms: 0.525
+  type: 'test'
+  ...
+# Subtest: measurement separates stage rates; complete parity and all telemetry permit diagnostic pass
+ok 5 - measurement separates stage rates; complete parity and all telemetry permit diagnostic pass
+  ---
+  duration_ms: 1.357167
+  type: 'test'
+  ...
+# Subtest: producer duration miss fails even when output is exact after drain
+ok 6 - producer duration miss fails even when output is exact after drain
+  ---
+  duration_ms: 0.322375
+  type: 'test'
+  ...
+# Subtest: late drain cannot be counted as deadline output or settled financial throughput
+ok 7 - late drain cannot be counted as deadline output or settled financial throughput
+  ---
+  duration_ms: 0.190625
+  type: 'test'
+  ...
+# Subtest: cumulative offered cannot roll back between deadline and final cuts
+not ok 8 - cumulative offered cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.389
+  type: 'test'
+  location: '/Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-review/author-checks-extended/e4-count-expanded-baseline.test.mjs:95:3'
+  failureType: 'testCodeFailure'
+  error: 'offered'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-review/author-checks-extended/e4-count-expanded-baseline.test.mjs:102:12)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: cumulative admitted cannot roll back between deadline and final cuts
+not ok 9 - cumulative admitted cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.460125
+  type: 'test'
+  location: '/Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-review/author-checks-extended/e4-count-expanded-baseline.test.mjs:95:3'
+  failureType: 'testCodeFailure'
+  error: 'admitted'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-review/author-checks-extended/e4-count-expanded-baseline.test.mjs:102:12)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: cumulative decided cannot roll back between deadline and final cuts
+not ok 10 - cumulative decided cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.39175
+  type: 'test'
+  location: '/Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-review/author-checks-extended/e4-count-expanded-baseline.test.mjs:95:3'
+  failureType: 'testCodeFailure'
+  error: 'decided'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-review/author-checks-extended/e4-count-expanded-baseline.test.mjs:102:12)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: cumulative settled cannot roll back between deadline and final cuts
+not ok 11 - cumulative settled cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.308459
+  type: 'test'
+  location: '/Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-review/author-checks-extended/e4-count-expanded-baseline.test.mjs:95:3'
+  failureType: 'testCodeFailure'
+  error: 'settled'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-review/author-checks-extended/e4-count-expanded-baseline.test.mjs:102:12)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: deadline offers cannot exceed frozen expected workload even if final agrees
+not ok 12 - deadline offers cannot exceed frozen expected workload even if final agrees
+  ---
+  duration_ms: 2.681042
+  type: 'test'
+  location: '/Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-review/author-checks-extended/e4-count-expanded-baseline.test.mjs:107:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The expression evaluated to a falsy value:
+    
+      assert.ok(r.failures.includes('DEADLINE_OFFERED_EXCEEDS_EXPECTED'))
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: '=='
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-review/author-checks-extended/e4-count-expanded-baseline.test.mjs:113:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: each cut rejects admission ordering and settlement accounting violations
+ok 13 - each cut rejects admission ordering and settlement accounting violations
+  ---
+  duration_ms: 0.759375
+  type: 'test'
+  ...
+# Subtest: pending may decrease during drain; only missed deadline settlement fails
+ok 14 - pending may decrease during drain; only missed deadline settlement fails
+  ---
+  duration_ms: 0.461
+  type: 'test'
+  ...
+# Subtest: missing accounting or resource metrics are explicit limited attempt; count inconsistency fails
+ok 15 - missing accounting or resource metrics are explicit limited attempt; count inconsistency fails
+  ---
+  duration_ms: 0.172958
+  type: 'test'
+  ...
+# Subtest: lag growth, over-budget disk and unsupported latency clock cannot silently pass
+ok 16 - lag growth, over-budget disk and unsupported latency clock cannot silently pass
+  ---
+  duration_ms: 0.103666
+  type: 'test'
+  ...
+# Subtest: highest stable measured arm creates fresh/aged 300s pair with same business workload
+ok 17 - highest stable measured arm creates fresh/aged 300s pair with same business workload
+  ---
+  duration_ms: 0.119667
+  type: 'test'
+  ...
+# Subtest: missing restore cost, partial monitoring and observer slowdown remain limited preflight
+ok 18 - missing restore cost, partial monitoring and observer slowdown remain limited preflight
+  ---
+  duration_ms: 0.132042
+  type: 'test'
+  ...
+# Subtest: load and calibration entrypoints refuse before filesystem or adapter work without authorization
+ok 19 - load and calibration entrypoints refuse before filesystem or adapter work without authorization
+  ---
+  duration_ms: 0.399
+  type: 'test'
+  ...
+1..19
+# tests 19
+# suites 0
+# pass 14
+# fail 5
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 65.723208

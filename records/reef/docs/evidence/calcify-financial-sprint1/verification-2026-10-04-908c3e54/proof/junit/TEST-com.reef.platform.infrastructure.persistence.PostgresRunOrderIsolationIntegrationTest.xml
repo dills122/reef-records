@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.infrastructure.persistence.PostgresRunOrderIsolationIntegrationTest" tests="3" skipped="3" failures="0" errors="0" timestamp="2026-10-04T22:40:23.291Z" hostname="Dylans-MacBook-Pro.local" time="0.0">
+  <properties/>
+  <testcase name="canonicalReplayPreservesScopedAcceptancesAndFills()" classname="com.reef.platform.infrastructure.persistence.PostgresRunOrderIsolationIntegrationTest" time="0.0">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: real Postgres integration requires RUNTIME_POSTGRES_JDBC_URL_TEST" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: real Postgres integration requires RUNTIME_POSTGRES_JDBC_URL_TEST
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at com.reef.platform.infrastructure.persistence.PostgresRunOrderIsolationIntegrationTest.canonicalReplayPreservesScopedAcceptancesAndFills(PostgresRunOrderIsolationIntegrationTest.kt:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <testcase name="sameOrderIdPreservesBothRunAcceptances()" classname="com.reef.platform.infrastructure.persistence.PostgresRunOrderIsolationIntegrationTest" time="0.0">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: real Postgres integration requires RUNTIME_POSTGRES_JDBC_URL_TEST" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: real Postgres integration requires RUNTIME_POSTGRES_JDBC_URL_TEST
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at com.reef.platform.infrastructure.persistence.PostgresRunOrderIsolationIntegrationTest.sameOrderIdPreservesBothRunAcceptances(PostgresRunOrderIsolationIntegrationTest.kt:10)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <testcase name="bulkProjectionKeepsRunOrderHistory()" classname="com.reef.platform.infrastructure.persistence.PostgresRunOrderIsolationIntegrationTest" time="0.0">
+    <skipped message="org.opentest4j.TestAbortedException: Assumption failed: real Postgres integration requires RUNTIME_POSTGRES_JDBC_URL_TEST" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: real Postgres integration requires RUNTIME_POSTGRES_JDBC_URL_TEST
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:316)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:115)
+	at com.reef.platform.infrastructure.persistence.PostgresRunOrderIsolationIntegrationTest.bulkProjectionKeepsRunOrderHistory(PostgresRunOrderIsolationIntegrationTest.kt:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</skipped>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

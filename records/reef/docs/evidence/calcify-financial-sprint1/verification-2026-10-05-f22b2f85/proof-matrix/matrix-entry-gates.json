@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "round": 7,
+  "guardScopeUnchanged": true,
+  "sourceFiles": 18,
+  "buildFiles": 89,
+  "sourceAndBuildUnchanged": true,
+  "profileIdentical": true,
+  "pilotCluster": "redpanda.e2b68c57-c6f1-425b-b061-c1d95647f34e",
+  "matrixCluster": "redpanda.68f8a9ac-6825-461b-96bd-71b3b1cee2a7",
+  "pilotResourceGate": "PASS",
+  "scope": "44implemented correctness arms only; no capacity/fullE3/E4"
+}

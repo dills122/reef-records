@@ -1,0 +1,91 @@
+# Author Explanation
+
+## Intent And Success Criteria
+Close operational guard defect, establish explicit readiness for bounded broker proof. Guard must abort on missing observations, deadlines/resource threshold/observer death/log-write failure; stop exact owned probes despite broker-stop failure; preserve errors; normal completion needs actual successful wrapper exits plus final observer sample. No financial production behavior change.
+
+## Plan-To-Implementation Traceability
+User approved guard gate→review7→smallpilot→completecore/golden→bounded report. Latest source18 software hashes identicalf75; only focused docs and8MiB broker profile since then.24core/20golden implemented, fullE3/E4 requirements remain incomplete. Review6Notready and all old evidence immutable. Seven total passes cap, no additionalreview.
+
+## Technical Approach And Flow
+run_checks.py captures exact argv/logs/attempt timestamps; supervise_checks.py validates two exact wrapper/proof-dir/run-ID registrations, starts observer first and waits current heartbeat, launches own process groups, detects error/stall, cleans groups regardless abort-log write/Compose success. Observer bounded5sdu/df/ps,15sstop; records abort before cleanup; exact process marker fallback; only two project allowlisted names via env. Every5s samples;30sheartbeat maximum includes observation deadlines. Sampling cannot prove continuoushard10GiBceiling. Completion handshake created only after both wrappers exit0; watcher continues samples until marker then finalsample/exit0 required.
+
+## Changed-Component Walkthrough
+Operationalhelpers frozen in scope-manifest. resource_watchdog owns observations/abort/isolatedbrokerstop. supervise_checks owns processes/liveness/completion. Mock controls19cases incl logfailure, thresholds, malformedheartbeat/completion, timeouts, processownership. Real controls build disposablewrapper→Node→Java trees with extra stubbornPython leaves; foreignsentinel; observerdeath/abortlogfailure. No operational code changes since profile/softwarebaseline except declared guardprojectselector and new tests in this preparation.
+
+## Decisions And Rejected Alternatives
+Observer plus independently owning supervisor handles watcher death/psfailure. Exact groups created by Popen reduce orphan risk; signalTERM/reap thenKILL survivinggroup. Avoid broad scan/kill/prune and preservevolumes. Two project names allowlist supports separatepilot andmatrixclusters without flexibleunboundedtargets. Softwarekernel remains separate from proof orchestration.
+
+## Invariants And Boundary Conditions
+RF3/minISR2/writecachingfalse;60scommit/120stimeout;retentionhistory unchanged. Syntheticinputs only. Pilot isolatedproject; stopped beforefullproject binds sameports. Exactcluster UUID/readback recorded. NoE4loads and no claimsphysicalheap/liveness/authorityactivation. Storageobservations allocateddirs includeinternaltopics, excludesVM overhead; timestamps/samplemaximum, never stoppedfootprintasactivepeak.
+
+## Verification Performed And Results
+19/19mockcontrols pass in guard-closure-mock-controls-final rawlogs. Realprocesscontrols observerdeath andabortlogwritefailure: bothwrapperNodeJava trees+SIGTERM-resistantleaves stopped; foreignsentinel alive;zero groupErrors. Initial sandboxattemptfailedonexactPIDps permission and retained; outside-sandboxsamecontrolspass. Previous completionraceandEPERM controls/fixes retained in pinnedRecords0fd0e45. No livebroker/profileapply/newboundedproofyet. Softwarefulltests unchanged:154Node;795reportedplatform775passes20skips;27financial;E2finite156+seeded128. Reviewer must verify actual evidence.
+
+## Risks, Tradeoffs, And Maintenance Costs
+Operationalhelpers remain localpersistent plusRecordsprovenance, excludedproductPR; reproducedfromexactarchivedbytes. fsyncrecordcost onlytestobserver, nohotpath. CleanupSIGKILL canlosewrapperattemptcompletionrecord, so supervisorrawlog+capturedpartialartifacts areabortsource; nofullPASS. SupervisorSIGKILL/hostloss cannotguarantee simultaneouscleanup; parentalsoownsproject and must verifyknownprobesgone. OScontrolsdon'texerciseKafkaordockerdaemonerrors. Smallersegmentsneedliveconfigreadbackbeforeinit/seed. Segmentmincompatibility/readbackpossibleenvironmentfailurerecordednotpass.
+
+## Deviations, Deferrals, And Known Gaps
+No actualnewbrokercohortuntilreview signoff. Fullbrokermajority/staleowner/producerfailure/committed-beforeACK/exactactivationmatrix remainsfuture. E4heap/ACK/calibration gaps persist. Nofullsprint/capacitycutover. Noheavyarchitecturepivot.
+
+## Challenge Points For The Reviewer
+Tryfailurepathsnormalcompletionandsupervisionownership. Verify19mockclaims+2realcontrols fromrawoutputs, exacthashes and samecodefulltests. Checkpilot→fullclusterplan/preflightresourceforecast versusoldbudgetabort. Recordanycoveragegapwithoutassumingmockcoverageproveslivebehavior. Prior author6testimony belowhistorical; supersededguardcount/project/preparationstateabove.
+
+---
+
+# Author Explanation
+
+## Intent And Success Criteria
+Recovered test-only Calcify gross-DvP kernel, independent BigInteger oracle, proposal reservation model, finite prefix/credit gate model and RF3/EOS correctness/rate probes. Goal is reliable diagnostic experiments from RFC sprint1; no production authority change. Actual post-signoff retest at908c3e54 failed broker startup, and reviewer3 found assessor count inconsistency; latest changes fix these two specific defects. Success requires valid actual KafkaStreams config and rejection of impossible cumulative count cuts, while preserving grouping and valid pending drain. Full E3/E4 acceptance remains incomplete.
+
+## Plan-To-Implementation Traceability
+E1a frozen20/52 corpus, deterministic kernel/oracle parity, seeded300traces/19200prefixes, replay/checkpoint/staging/mutation controls implemented. E1b reservation remains proposal, not accepted live lifecycle. E2 finite156 and seeded128 symbolic cases implemented. E3 runner implemented happy/golden/recovery/core fault controls, but full broker matrix and qualified mixed-age activation missing. E4 preparation/assessment and actual adapter exist but heap guard only draft, physical calibration/ACK membership gaps and E3 prerequisite keep loads blocked. Runtime checks do not establish SQL integration or capacity.
+
+## Technical Approach And Flow
+Kernel normalizes bounded inputs, decides/validates/encodes deltas then evolves state/history; same scope/action retries retain prior decision. Oracle independently normalizes input/raw types and BigInteger economics then compares complete owner/journal business prefixes. Broker source registers ACK membership with topic UUID/physical offsets and payload digests; worker stores deltas/staging/history and emits results within EOS transaction, observer independently applies oracle to accepted source. Runner retains raw child outputs, tests prefix commit then restart/fresh suffix, transactional abort/crash omission controls and reconstruction. Rate assessor consumes frozen policy and measured cuts, resource/parity/restore telemetry; diagnostic only, no capacity eligibility.
+
+## Changed-Component Walkthrough
+FinancialKernel/KernelTest own bounded mutation, dedup/staging/history/replay. FinancialOracle/OracleTest independent arithmetic/typed normalization and parity/seeded schedules. FinancialBrokerProbe broker adapter and observer; FinancialRateProbe shared broker/kernel diagnostic adapter. reservation-model proposal; gate-model finite bounded closure/credit/state retention; rate-proof preparation/assessment/budget/entrypoint gates. broker-proof orchestrates isolated arms with persistent proof directory; freeze-fixtures verifies immutable corpus; Makefile/CI and script-surface check wiring. Focused docs keep current checkpoint and archive links; all complete proof/reviews published to reef-records, no bulk product PR.
+
+Latest FinancialBrokerProbe.worker now calls internal workerProperties, which preserves RF3/EOS/60s commit grouping and explicit producer-prefixed transaction timeout120000ms. This avoids KafkaStreams4.3.1 EOS default10000ms incompatible with60000ms. New FinancialBrokerProbeTest constructs actual StreamsConfig from same helper for default and explicit staged maxPollRecords1 config, checks effective timeout and preserved EOS/RF3/grouping. No Kafka connection in regression.
+Latest rate-proof assessor validates each cumulative offered/admitted/decided/settled deadline counter <= corresponding final and deadline offers <= frozen expected trades. Pending remains gauge, can decrease during drain. Tests individually isolate rollback stages, excess offers, within-cut ordering/accounting and valid pending reduction. Existing nonnegative safe-integer checks retained; impossible controls are fabricated unit inputs, never benchmark stats.
+
+## Decisions And Rejected Alternatives
+Preserve60s interval because runner requires grouped results/transaction crash cuts; lowering interval to default would alter proof. Explicit120s timeout leaves margin and must fit actual broker cap; preflight must verify before live run. Official Kafka4.3 producer docs https://kafka.apache.org/43/generated/producer_config.html define broker transaction.max.timeout.ms bound; actual pinned dependencyStreamsConfig regression verifies compatibility. Helper extraction lets regression exercise production probe config rather than mirrored values. Rate fixes compare same counters at successive cuts rather than making pending monotonic. No architectural pivot.
+
+## Invariants And Boundary Conditions
+Test-only no production authority; deterministic same scoped lane state/history, canonical facts separate from projections; financial conserved balances and balanced journals; type invalid values cannot alias valid IDs; bounded signed64 consumed values/products; malformed bounded stage survives restore; independent oracle never kernel validator delegation. Exactly-once output/state transaction and accepted-manifest membership keyed by topic UUID/physical offsets; observed result count alone not acceptance proof. Fresh failed attempts retained, never rewrite historical claims.
+
+## Verification Performed And Results
+Prior source908c3e54 review3:26financial tests/38Node model tests, eleven boundary controls pass; Ready with non-blocking follow-ups, openE4assessorP2. Postsignoff Node144/144, offline runtime794reported/774passes/20skips/0fail/errors,26financial, E2finite156+seeded128 and rate40prefixselfcheck pass. Broker arm failed before ready with transactiontimeout10s<commitinterval60s, no completed financial output; four input ACKs alone not pass. RecordsPR6 archivecfa4217708ff0694a966e3d87acce9585010a65a preserves256files and failure. None of these prior results certify latest source yet.
+New broker regression red fails actual StreamsConfig constructor, one attempted green failed compilation due incorrect Kafka constant suffix; corrected against javap pinned4.3.1. Final green passes9.503s. Raw logs/redXML under sibling author-checks-extended. E4 expanded baseline14pass/5fail then fixed19/19pass; all current financial Node models45/45pass. Diff check passes. Full module/current live broker retest intentionally after independent sign-off.
+
+## Risks, Tradeoffs, And Maintenance Costs
+Small test-only helper exposes internal probe config; fixed timeout tailored bounded60s workload, not arbitrary runtime guarantee. Runner currently90s command/60s readiness caps; transaction timeout120s means timeout and kill budgets must be interpreted accurately. Actual Kafka/Redpanda topic config, EOS crash proof and resources remain independent verification gates. Explicit validation failure labels additive, downstream report clients none known outside experiment. Full E3 matrix not implemented, rate adapter RAM ACK/disk-resource semantics limit qualification.
+
+## Deviations, Deferrals, And Known Gaps
+No full E3/4 pass. Heap guard draft retained unapplied; full SQL/venue load qualification absent. Reservation proposal requires owner policy acceptance; matcher identity integration remains open. Serena language-server/tool setup not six-language verified. No production/API/proto change so overview/contract/ADR no-op recorded. Prior reports3of3 remain immutable; user authorized further rounds, parent max6 total. Latest checkpoint docs still prior908c evidence until fresh proof/Records update.
+
+## Challenge Points For The Reviewer
+Independently inspect observer source/history/phase restoration and omitted mutations, not just two newest fixes. Check actual workerProperties and effective Kafka producer config, fixed timeout broker max, all counter cuts and missing telemetry handling. Challenge policy/claim completeness vs implemented runner arms, physical storage/resource/SQL readiness; no scope hiding. Return real findings even if qualification remains intentionally blocked. Author claims testimony only, no author readiness verdict.
+
+
+## Instance5 update: reviewer4 physical-byte guard
+
+Reviewer4 found one new P2: optional maxPhysicalBytesPerTrade unchecked, allowed invalid or undersized values to freeze over-budget policy. Accepted; f75b5d61 adds shared physicalTradeBudget guard. Requires positive safe measured physicalBytes/sampleTrades, derived ceil(mean)*2 safepositive, optional override positive safe integer >= conservative derived floor. Rejects zero/negative/fractional/string/null/nonfinite/unsafe/undersized values. Exported estimateAged throws explicit PHYSICAL_TRADE_BUDGET_INVALID; preparePolicy adds BLOCKED gap. Same/higher valid override preserves/increases budget; derived overflow cannot freeze. No E4 loads. Latest rate tests22/22 pass; baseline red controls retained. Full new48model Node count not yet rerun by author.
+
+Reviewer4 report Ready with non-blocking follow-ups for E1/E2/bounded E3, newP2 + known fullqualification gates. Independent27financial tests at3435 source (all Kotlin identical latesthead), Node45/45, fixture/selfcheck40pass. Actual runtime preflight newprojectreef-calcify-financial-s1-3435d7b0 remains shared isolated broker resource name even after latesthead; record actualsourceheadf75 in plan at run. Broker max900000ms permits fixedworker120000ms; guest90.76GiB/host373.05GiB, exact image digest pinned; preflight-only no current code probe run yet. Current proof directory .planning/sprint1-proof-3435d7b0 name historical preparation, actual head pinned in manifest; no source/proof ambiguity claimed.
+
+Review count5of6, entire original implementation flow retained. No resets/workstream splits. Preliminary must precede reading this author packet and earlier reports. Previous author sections describe original3435corrections and old908c evidence; current guard update above supersedes optionaloverride gap only, not full E3/E4 readiness. All historic908c raw failures immutable RecordsPR6 archivecfa4217. New source source-only branchpushedf75, currentcheckpointdocs still dated908c until new proof/Records publication. No author readiness verdict.
+
+
+## Instance6 update: runtime segment allocation budget
+
+Review5 signed off E1/E2/bounded E3 with no new defects. Postsignoff exactNodeCI154/154, full offline platform795reported/775passes/20skips/0fail/errors,27financial, gate156+128, fixture/script checks pass. E4 count and byte counterexamples now reject; corrected selfcheck40prefix+mutant passes (first parent command omitted fixture argument, preserved failure). RF3 happy/restart actual run passes26.417s: first4decisions grouped, afterrestart8decisions/4settlements/two domains exactoracle, isolated result-only reconstruction controls pass. Complete raw in .planning/sprint1-proof-3435d7b0.
+
+Then parallel correctness run-core and run-golden completed10/24 and9/20 arms respectively before budget stop. Last active allocated sample9,114,636,288bytes at5core+4golden. Manual sampling did not capture peak before parent stop; cannot certify hard10GiB ceiling. Both processes terminatedSIGTERM and only registeredbrokerprojectstopped, volumes retained. Clean shutdown reclaimed segment preallocation to13,537,280bytes; stopped footprint is NOT active peak. Any partial successful arms remain partial; overall core/golden are BUDGET_ABORT, not PASS. No failure hidden or replaced.
+
+Latest f56b30b1 adds focused broker-profile.json with8MiB default log, compacted log and transaction coordinator segments (earlier16MiB proposed config source5648 was never applied). Apply/verify on fresh isolated project before any probe operation. RF3/minISR2/write.cachingfalse/retention/history/EOS/60s grouping/120s timeout remain untouched. Profile changes physical allocation and later cost calibrations, so no historical throughput transfer. Official Redpanda topic/cluster property docs cited in profile; actualinstalled26.2 values tobeverified in preflight. No productionconfig/architecture change.
+
+Parent-only resource_watchdog.py proof harness samples actualdataallocated+guestfree+raw bytes every5s, persistentrawcommand results. At9GiB (hardcap10GiB), guest<20GiB orraw>=256MiB, stop only fixed registered newproject reef-calcify-financial-s1-bounded and own wrapper→node→FinancialBrokerProbe child tree matching bounded namespace. Volumes preserved; no wildcard kill/prune. It exits after both core/golden capture attempts complete, otherwise continues. Sampled maxima still not continuous peak. Watchdog artifact in scope as operationalplan, no productPRbulk.
+
+All18source/configcode hashes identical f75→f56; no software semantics changed and fresh module795/Node154 results atf75 apply to identical code, not yetnewbrokerprofile. Buildmanifest89class/JAR hashes retained. Fresh configreview required because profile/resource assumptions changed; last6of6. After sign-off frozennewprofile will run actual core/golden inclhappy plus19mutations/forward/serialization/local-loss/staged-loss, independent two namespaces correctness concurrency only. No E4loads; fullE3matrix/heap/calibration/ACK/physicalbyteseams stillopen. No author readiness verdict.

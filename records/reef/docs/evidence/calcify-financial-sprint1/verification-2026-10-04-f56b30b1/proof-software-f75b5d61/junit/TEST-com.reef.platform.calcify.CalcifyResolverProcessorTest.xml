@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.CalcifyResolverProcessorTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:16:39.336Z" hostname="Dylans-MacBook-Pro.local" time="1.745">
+  <properties/>
+  <testcase name="existingVerifierNullKeyUsesPayloadIdentityButConflictingKeyFaults()" classname="com.reef.platform.calcify.CalcifyResolverProcessorTest" time="0.678"/>
+  <testcase name="readyTargetSkipsPendingWithoutSkippingDedupOrLaneChecks()" classname="com.reef.platform.calcify.CalcifyResolverProcessorTest" time="0.112"/>
+  <testcase name="pendingQueueIsDurableAndRejectsLaneOrderRegression()" classname="com.reef.platform.calcify.CalcifyResolverProcessorTest" time="0.091"/>
+  <testcase name="poisonAndConflictingPendingAreDurableLaneFaults()" classname="com.reef.platform.calcify.CalcifyResolverProcessorTest" time="0.178"/>
+  <testcase name="idleSourceIdentityChangePersistsLaneFault()" classname="com.reef.platform.calcify.CalcifyResolverProcessorTest" time="0.093"/>
+  <testcase name="sequentialSourceAndExactOutputReplay()" classname="com.reef.platform.calcify.CalcifyResolverProcessorTest" time="0.157"/>
+  <testcase name="bufferedSuffixAfterFaultIsRetained()" classname="com.reef.platform.calcify.CalcifyResolverProcessorTest" time="0.09"/>
+  <testcase name="acceptedCacheEvictionFallsBackToFullManagedFacts()" classname="com.reef.platform.calcify.CalcifyResolverProcessorTest" time="0.127"/>
+  <testcase name="waitingSourceStagesPendingAndResumesThroughPunctuation()" classname="com.reef.platform.calcify.CalcifyResolverProcessorTest" time="0.087"/>
+  <testcase name="pendingOverflowFailsClosedWithoutOutput()" classname="com.reef.platform.calcify.CalcifyResolverProcessorTest" time="0.087"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

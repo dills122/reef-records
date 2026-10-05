@@ -1,0 +1,41 @@
+{
+  "source-manifest.json": {
+    "sourceHead": "f75b5d6187b631d5d608a24b883df6c57478b151",
+    "checked": 18,
+    "mismatches": []
+  },
+  "build-manifest.json": {
+    "sourceHead": "f75b5d6187b631d5d608a24b883df6c57478b151",
+    "checked": 89,
+    "mismatches": []
+  },
+  "junit": {
+    "suites": 104,
+    "reported": {
+      "tests": 795,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 20
+    },
+    "financial": {
+      "TEST-com.reef.platform.calcify.financial.FinancialBrokerProbeTest.xml": {
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      "TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml": {
+        "tests": "14",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      },
+      "TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml": {
+        "tests": "12",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.api.PostgresCommandLogStoreIntegrationTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:16:38.844Z" hostname="Dylans-MacBook-Pro.local" time="0.004">
+  <properties/>
+  <testcase name="postgresCompatBootstrapReconstructsMissingActiveQueueRowsWhenConfigured()" classname="com.reef.platform.api.PostgresCommandLogStoreIntegrationTest" time="0.001"/>
+  <testcase name="postgresStoreReclaimsStaleProcessingCommandsWhenConfigured()" classname="com.reef.platform.api.PostgresCommandLogStoreIntegrationTest" time="0.001"/>
+  <testcase name="postgresStorePersistsStatusTransitionsWhenConfigured()" classname="com.reef.platform.api.PostgresCommandLogStoreIntegrationTest" time="0.0"/>
+  <testcase name="postgresStoreReturnsExistingCommandForDuplicateIdempotencyWhenConfigured()" classname="com.reef.platform.api.PostgresCommandLogStoreIntegrationTest" time="0.0"/>
+  <testcase name="postgresStoreAppendsAndReplaysCommandWhenConfigured()" classname="com.reef.platform.api.PostgresCommandLogStoreIntegrationTest" time="0.0"/>
+  <testcase name="postgresStoreKeepsRepeatedTerminalUpdatesIdempotentWhenConfigured()" classname="com.reef.platform.api.PostgresCommandLogStoreIntegrationTest" time="0.0"/>
+  <testcase name="postgresStoreFunctionAppendModeReturnsExistingCommandForDuplicateIdempotencyWhenConfigured()" classname="com.reef.platform.api.PostgresCommandLogStoreIntegrationTest" time="0.0"/>
+  <testcase name="postgresStoreCanMarkKnownCommandTerminalWithoutQueueRowWhenConfigured()" classname="com.reef.platform.api.PostgresCommandLogStoreIntegrationTest" time="0.0"/>
+  <testcase name="postgresStoreClaimsReceivedCommandsWhenConfigured()" classname="com.reef.platform.api.PostgresCommandLogStoreIntegrationTest" time="0.0"/>
+  <testcase name="postgresStoreReturnsExistingCommandForDuplicateCommandIdWhenConfigured()" classname="com.reef.platform.api.PostgresCommandLogStoreIntegrationTest" time="0.0"/>
+  <testcase name="postgresStoreWritesPayloadToSideTableByDefaultWhenConfigured()" classname="com.reef.platform.api.PostgresCommandLogStoreIntegrationTest" time="0.0"/>
+  <testcase name="postgresStoreReturnsSingleWinnerForConcurrentDuplicateIdempotencyWhenConfigured()" classname="com.reef.platform.api.PostgresCommandLogStoreIntegrationTest" time="0.0"/>
+  <testcase name="postgresStoreDoesNotArchivePinnedTerminalResultsWhenConfigured()" classname="com.reef.platform.api.PostgresCommandLogStoreIntegrationTest" time="0.0"/>
+  <testcase name="postgresStoreArchivesOldTerminalResultsAndKeepsExactStatusLookupWhenConfigured()" classname="com.reef.platform.api.PostgresCommandLogStoreIntegrationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.api.JsonCodecTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:16:20.196Z" hostname="Dylans-MacBook-Pro.local" time="0.039">
+  <properties/>
+  <testcase name="byteParserRejectsEncodingAutodetectionAndBom()" classname="com.reef.platform.api.JsonCodecTest" time="0.008"/>
+  <testcase name="canonicalChecksumPreservesByteLengthsAtCacheBoundary()" classname="com.reef.platform.api.JsonCodecTest" time="0.011"/>
+  <testcase name="canonicalChecksumSortsFieldsAndExcludesOnlyRoot()" classname="com.reef.platform.api.JsonCodecTest" time="0.0"/>
+  <testcase name="extractsStringFieldsWithWhitespaceAndEscapes()" classname="com.reef.platform.api.JsonCodecTest" time="0.0"/>
+  <testcase name="byteParserPreservesStrictUtf8AcrossValidationWindows()" classname="com.reef.platform.api.JsonCodecTest" time="0.008"/>
+  <testcase name="canonicalChecksumIncludesShortValuesBeyondMemoBudget()" classname="com.reef.platform.api.JsonCodecTest" time="0.003"/>
+  <testcase name="commandParsersRejectMalformedJsonPayloads()" classname="com.reef.platform.api.JsonCodecTest" time="0.0"/>
+  <testcase name="canonicalChecksumIncludesFieldsBeyondMemoBudgetAndLongUtf8Keys()" classname="com.reef.platform.api.JsonCodecTest" time="0.002"/>
+  <testcase name="canonicalChecksumRetainsEveryJsonType()" classname="com.reef.platform.api.JsonCodecTest" time="0.002"/>
+  <testcase name="extractsObjectArraysWithoutRegexAssumptions()" classname="com.reef.platform.api.JsonCodecTest" time="0.001"/>
+  <testcase name="jsonFieldsFacadePreservesEmptyFallbackForMalformedPayloads()" classname="com.reef.platform.api.JsonCodecTest" time="0.0"/>
+  <testcase name="writesObjectsAndEscapesStrings()" classname="com.reef.platform.api.JsonCodecTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

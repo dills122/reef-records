@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.api.PostgresCommandLogCaptureIntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-04T22:37:59.941Z" hostname="Dylans-MacBook-Pro.local" time="0.0">
+  <properties/>
+  <testcase name="commandLogCaptureAppendsToMigratedPostgresCommandLogWhenConfigured()" classname="com.reef.platform.api.PostgresCommandLogCaptureIntegrationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

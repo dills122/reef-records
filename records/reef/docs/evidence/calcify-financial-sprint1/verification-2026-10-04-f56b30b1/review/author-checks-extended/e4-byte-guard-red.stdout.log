@@ -1,0 +1,179 @@
+TAP version 13
+# Subtest: preparation stops until E3 correctness and real calibration plus indexed/bounded adapter exist
+ok 1 - preparation stops until E3 correctness and real calibration plus indexed/bounded adapter exist
+  ---
+  duration_ms: 2.430917
+  type: 'test'
+  ...
+# Subtest: source/fixture mismatches and fabricated zero-byte calibration cannot freeze runnable policy
+ok 2 - source/fixture mismatches and fabricated zero-byte calibration cannot freeze runnable policy
+  ---
+  duration_ms: 1.516833
+  type: 'test'
+  ...
+# Subtest: aged estimate retains proposed 1m identities; over-budget case explicitly shrinks diagnostic only
+ok 3 - aged estimate retains proposed 1m identities; over-budget case explicitly shrinks diagnostic only
+  ---
+  duration_ms: 1.86025
+  type: 'test'
+  ...
+# Subtest: disk space gate and exact prefunding bound all declared timed plus pending work
+ok 4 - disk space gate and exact prefunding bound all declared timed plus pending work
+  ---
+  duration_ms: 4.015959
+  type: 'test'
+  ...
+# Subtest: measurement separates stage rates; complete parity and all telemetry permit diagnostic pass
+ok 5 - measurement separates stage rates; complete parity and all telemetry permit diagnostic pass
+  ---
+  duration_ms: 5.154416
+  type: 'test'
+  ...
+# Subtest: producer duration miss fails even when output is exact after drain
+ok 6 - producer duration miss fails even when output is exact after drain
+  ---
+  duration_ms: 2.243584
+  type: 'test'
+  ...
+# Subtest: late drain cannot be counted as deadline output or settled financial throughput
+ok 7 - late drain cannot be counted as deadline output or settled financial throughput
+  ---
+  duration_ms: 1.287292
+  type: 'test'
+  ...
+# Subtest: cumulative offered cannot roll back between deadline and final cuts
+ok 8 - cumulative offered cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.4
+  type: 'test'
+  ...
+# Subtest: cumulative admitted cannot roll back between deadline and final cuts
+ok 9 - cumulative admitted cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 2.126542
+  type: 'test'
+  ...
+# Subtest: cumulative decided cannot roll back between deadline and final cuts
+ok 10 - cumulative decided cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 3.123
+  type: 'test'
+  ...
+# Subtest: cumulative settled cannot roll back between deadline and final cuts
+ok 11 - cumulative settled cannot roll back between deadline and final cuts
+  ---
+  duration_ms: 0.648375
+  type: 'test'
+  ...
+# Subtest: deadline offers cannot exceed frozen expected workload even if final agrees
+ok 12 - deadline offers cannot exceed frozen expected workload even if final agrees
+  ---
+  duration_ms: 0.485542
+  type: 'test'
+  ...
+# Subtest: each cut rejects admission ordering and settlement accounting violations
+ok 13 - each cut rejects admission ordering and settlement accounting violations
+  ---
+  duration_ms: 0.640917
+  type: 'test'
+  ...
+# Subtest: pending may decrease during drain; only missed deadline settlement fails
+ok 14 - pending may decrease during drain; only missed deadline settlement fails
+  ---
+  duration_ms: 1.348709
+  type: 'test'
+  ...
+# Subtest: missing accounting or resource metrics are explicit limited attempt; count inconsistency fails
+ok 15 - missing accounting or resource metrics are explicit limited attempt; count inconsistency fails
+  ---
+  duration_ms: 0.367459
+  type: 'test'
+  ...
+# Subtest: lag growth, over-budget disk and unsupported latency clock cannot silently pass
+ok 16 - lag growth, over-budget disk and unsupported latency clock cannot silently pass
+  ---
+  duration_ms: 0.115958
+  type: 'test'
+  ...
+# Subtest: highest stable measured arm creates fresh/aged 300s pair with same business workload
+ok 17 - highest stable measured arm creates fresh/aged 300s pair with same business workload
+  ---
+  duration_ms: 0.12225
+  type: 'test'
+  ...
+# Subtest: missing restore cost, partial monitoring and observer slowdown remain limited preflight
+ok 18 - missing restore cost, partial monitoring and observer slowdown remain limited preflight
+  ---
+  duration_ms: 0.107167
+  type: 'test'
+  ...
+# Subtest: load and calibration entrypoints refuse before filesystem or adapter work without authorization
+ok 19 - load and calibration entrypoints refuse before filesystem or adapter work without authorization
+  ---
+  duration_ms: 1.408208
+  type: 'test'
+  ...
+# Subtest: calibration overrides cannot undercut measured physical byte budget or use invalid numbers
+not ok 20 - calibration overrides cannot undercut measured physical byte budget or use invalid numbers
+  ---
+  duration_ms: 5.18475
+  type: 'test'
+  location: '/Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/scripts/dev/calcify-financial/rate-proof.test.mjs:172:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    0
+    + actual - expected
+    
+    + 'FROZEN'
+    - 'BLOCKED'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'BLOCKED'
+  actual: 'FROZEN'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/scripts/dev/calcify-financial/rate-proof.test.mjs:177:12)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: valid byte override preserves conservative floor and may increase budget only
+ok 21 - valid byte override preserves conservative floor and may increase budget only
+  ---
+  duration_ms: 1.088042
+  type: 'test'
+  ...
+# Subtest: derived per-trade budget must remain safe integer before policy freezes
+not ok 22 - derived per-trade budget must remain safe integer before policy freezes
+  ---
+  duration_ms: 0.546375
+  type: 'test'
+  location: '/Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/scripts/dev/calcify-financial/rate-proof.test.mjs:192:1'
+  failureType: 'testCodeFailure'
+  error: 'Missing expected exception.'
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  operator: 'throws'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/scripts/dev/calcify-financial/rate-proof.test.mjs:195:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..22
+# tests 22
+# suites 0
+# pass 20
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 351.824292

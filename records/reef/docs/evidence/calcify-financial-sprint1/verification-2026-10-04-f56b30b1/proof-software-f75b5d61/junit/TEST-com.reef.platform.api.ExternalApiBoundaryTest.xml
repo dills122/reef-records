@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.api.ExternalApiBoundaryTest" tests="31" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:16:20.159Z" hostname="Dylans-MacBook-Pro.local" time="0.029">
+  <properties/>
+  <testcase name="parseTrackedRoutesFallsBackWhenBlankOrEmpty()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.0"/>
+  <testcase name="nonLocalBoundaryValidationAcceptsFailClosedModes()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.002"/>
+  <testcase name="defaultBoundaryHooksBuildsFullyInMemoryLocalDefaultsFromInjectedLookup()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.002"/>
+  <testcase name="parseCsvSetTrimsAndFiltersBlanks()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.0"/>
+  <testcase name="nonLocalBoundaryValidationRejectsRawInternalHttpExposure()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.0"/>
+  <testcase name="rejectRateAbuseHookAppliesRoutePolicyOverrides()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.004"/>
+  <testcase name="idempotencyStoreScopesByClientRouteAndKey()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.0"/>
+  <testcase name="rejectRateAbuseHookBlocksClientAfterTrackedRejectThreshold()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.001"/>
+  <testcase name="rejectRateAbuseHookIgnoresNonTrackedRejectCodes()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.001"/>
+  <testcase name="parseStaticTokenClientConfigsParsesIdentityScopes()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.001"/>
+  <testcase name="parseRoutePoliciesSkipsBadShapesAndNonPositiveValues()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.0"/>
+  <testcase name="staticTokenAuthHookRequiresMatchingClientToken()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.001"/>
+  <testcase name="rejectRateAbuseHookScopesByTrackedRoutes()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.001"/>
+  <testcase name="writeCheckPassesWithRequiredHeaders()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.001"/>
+  <testcase name="defaultBoundaryHooksBuildsConfiguredStaticGuardsAndChainsRiskExtensions()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.002"/>
+  <testcase name="inMemoryRateLimitStorePrunesOldWindows()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.002"/>
+  <testcase name="writeCheckRequiresIdempotencyKey()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.0"/>
+  <testcase name="parseRejectCodesFallsBackWhenBlankOrEmpty()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.0"/>
+  <testcase name="errorEnvelopeIncludesCodeMessageAndCorrelationId()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.001"/>
+  <testcase name="nonLocalBoundaryValidationRejectsUnscopedStaticTokens()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.001"/>
+  <testcase name="fixedWindowRateLimitHookRejectsAfterThreshold()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.001"/>
+  <testcase name="writeCheckRequiresClientId()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.0"/>
+  <testcase name="staticAccountRiskCheckReturnsConfiguredDecisions()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.001"/>
+  <testcase name="idempotencyStoreCleanupExpiredKeepsFreshEntries()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.0"/>
+  <testcase name="nonLocalBoundaryValidationRequiresExplicitSafeModes()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.001"/>
+  <testcase name="idempotencyStoreCleanupExpiredRemovesStaleEntries()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.0"/>
+  <testcase name="rejectRateAbuseHookCleansExpiredStateWithoutDoubleCountingRelease()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.002"/>
+  <testcase name="idempotencyStoreDoesNotOverwriteExistingEntry()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.0"/>
+  <testcase name="parseRoutePoliciesParsesValidEntriesAndSkipsMalformed()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.0"/>
+  <testcase name="parseStaticTokensParsesValidPairsAndSkipsMalformed()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.001"/>
+  <testcase name="envBoolParsesRecognizedValuesAndFallsBackOtherwise()" classname="com.reef.platform.api.ExternalApiBoundaryTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[abuse_breaker_trip mode=reject-rate clientId=client-1 route=/api/v1/orders/modify rejectCode=INVALID_STATE rejects=2 maxRejects=1 windowSeconds=30 blockSeconds=45 trips=1
+abuse_breaker_trip mode=reject-rate clientId=client-1 route=/api/v1/orders/submit rejectCode=INVALID_STATE rejects=3 maxRejects=2 windowSeconds=60 blockSeconds=30 trips=1
+abuse_breaker_trip mode=reject-rate clientId=client-1 route=/api/v1/orders/submit rejectCode=INVALID_STATE rejects=2 maxRejects=1 windowSeconds=60 blockSeconds=30 trips=1
+abuse_breaker_trip mode=reject-rate clientId=client-1 route=/api/v1/orders/submit rejectCode=INVALID_STATE rejects=2 maxRejects=1 windowSeconds=10 blockSeconds=5 trips=1
+]]></system-err>
+</testsuite>

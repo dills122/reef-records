@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-04",
+  "status": "POST_SIGNOFF_VERIFICATION",
+  "reviewLoop": {
+    "instance": 3,
+    "maximum": 3
+  },
+  "source": "Freeze signed-off commit and source/fixture/compiled hashes before all evidence runs",
+  "storage": "Persistent workspace raw logs; complete bundle published to reef-records, concise checkpoint in Reef",
+  "checks": [
+    {
+      "gate": "E1a",
+      "command": "Java21 Gradle financial JUnit suite",
+      "expected": "Frozen20/52,300x64 prefixes,history/checkpoint/staging/wire/mutant controls; retain exact XML/counts/elapsed/counterexamples"
+    },
+    {
+      "gate": "E1b/E2/policy",
+      "command": "Node model tests",
+      "expected": "All actual currenttests, finite/seeded scopes, stable oracle sensitivity; no liveness/livepolicy upgrade"
+    },
+    {
+      "gate": "regression",
+      "command": "Existing Calcify tests/full platform-runtime required checks and script-surface/fixture/retention gates",
+      "expected": "No implementation exclusion/coverage weakening; preserve any failure beforefix"
+    },
+    {
+      "gate": "adapter",
+      "command": "Rate self-check then isolated broker happy/restore/fault matrix only under signed-off safeplan",
+      "expected": "Actual registered resources/topicdurability,sourcebound read_committed parity, certified cut, no republish; incomplete matrix remainslimited"
+    },
+    {
+      "gate": "cost/rate",
+      "command": "Actual calibration then budgeted serial arms only after E3 gate",
+      "expected": "Counts,rates,lag/drain,CPU/heap/RSS/disk/bytes/touchedkeys/TX/compatiblelatency; explicit missing or failedgates, no qualification shortcut"
+    }
+  ],
+  "retention": "No private/tmp for code, handoff or sole proof; commit+push source checkpoints and archive proof before finalpause",
+  "note": "No runs executed under this plan yet",
+  "sourceHead": "908c3e54583cb812b074fe66160c42f0bcbd4921",
+  "environmentObservation": "Docker desktop-linux daemon socket absent; record formal preflight after source sign-off; no broker/load attempts before runtime/resource gates",
+  "authorChecks": {
+    "focusedRegressions": 8,
+    "executableBoundaryScenarios": 11,
+    "result": "PASS",
+    "failedCompileAttempts": 1,
+    "qualification": "Pre-review author checks; post-signoff full rerun pending"
+  },
+  "reviewVerdict": "Ready with non-blocking follow-ups",
+  "allowedScope": "E1/E2 proof regeneration and bounded E3 cohorts",
+  "e4": "Blocked: assessor count consistency, full E3 gate, heap/calibration/telemetry remain unresolved"
+}

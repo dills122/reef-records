@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.infrastructure.persistence.PostgresRuntimeEventReplayIntegrationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-04T23:19:16.340Z" hostname="Dylans-MacBook-Pro.local" time="0.0">
+  <properties/>
+  <testcase name="deterministicTimelineReplayRejectsChangedPayloadWithoutLegacyAllocation()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeEventReplayIntegrationTest" time="0.0"/>
+  <testcase name="concurrentIdenticalLegacyTimelineReplayAllocatesOnce()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeEventReplayIntegrationTest" time="0.0"/>
+  <testcase name="legacyRowsWithoutDigestStillValidateSidePayloadOnReplay()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeEventReplayIntegrationTest" time="0.0"/>
+  <testcase name="timelineReplayRejectsChangedHeaderAndDoesNotFillMissingPayload()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeEventReplayIntegrationTest" time="0.0"/>
+  <testcase name="directReplayKeepsSequenceAndRejectsChangedPayload()" classname="com.reef.platform.infrastructure.persistence.PostgresRuntimeEventReplayIntegrationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

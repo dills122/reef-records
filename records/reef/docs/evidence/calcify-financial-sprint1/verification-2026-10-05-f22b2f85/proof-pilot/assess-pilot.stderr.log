@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/dsteele/repos/reef/.worktrees/calcify-sprint1-experiments/.planning/sprint1-proof-bounded-pilot/assess_pilot.py", line 15, in <module>
+    assert entries['min.insync.replicas']=='2',entries
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'min.insync.replicas'
