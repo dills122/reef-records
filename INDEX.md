@@ -1,5 +1,10 @@
 # Archive index
 
+## October 5 UTC / October 4 local — Guard completion-handshake correction
+
+25 exact-byte files (54,968 bytes). Local-only source `fedb554b811559596d32a084451d9af60e021ca8`. [Bundle](records/reef/docs/evidence/calcify-financial-sprint1/guard-revision-2026-10-05-f56b30b1/README.md), [manifest](manifests/2026-10-05-calcify-sprint1-guard-revision.json), [provenance](docs/imports/2026-10-05-calcify-sprint1-guard-revision-final-provenance.md). Parent13mocks and final real OS process control; earlier controls with escalation EPERM retained; review6 Not ready unchanged. No broker probes.
+
+
 ## October 4, 2026 — Calcify sprint1 extended rounds4–6 and partial proof
 
 617 exact-byte files (2,682,693 bytes). Local-only source provenance `b0ff1f24e252d922ba8df1ddf2854dc832010b6b`; [reviewed product code](https://github.com/dills122/reef/tree/f56b30b19d00a1033abae44a75435a4e771990e9). Bulk publishes solely here.
