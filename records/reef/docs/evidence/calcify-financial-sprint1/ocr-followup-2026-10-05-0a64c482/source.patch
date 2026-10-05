@@ -1,0 +1,129 @@
+diff --git a/scripts/dev/calcify-financial/gate-model.mjs b/scripts/dev/calcify-financial/gate-model.mjs
+index 78e72572..f9803b83 100644
+--- a/scripts/dev/calcify-financial/gate-model.mjs
++++ b/scripts/dev/calcify-financial/gate-model.mjs
+@@ -166,8 +166,41 @@ export class GateModel {
+   drain() { while (this.step()) {} return this.snapshot(); }
+   reassign() { this.epoch++; this.assertInvariant(); }
+   expire(id) { return this.windows[id] && !this.windows[id].closed ? { status: 'WAIT', reason: 'FENCING_REQUIRED' } : { status: 'NOOP' }; }
+-  checkpoint() { return structuredClone({ ...this }); }
+-  static restore(cut) { const g = Object.assign(Object.create(GateModel.prototype), structuredClone(cut)); g.windows = Object.assign(Object.create(null), g.windows); g.assertInvariant(); return g; }
++  checkpoint() { return structuredClone({ schema: 'calcify-e2-gate-checkpoint-v1', ...this }); }
++  static restore(cut) {
++    if (!cut || cut.schema !== 'calcify-e2-gate-checkpoint-v1') throw new Error('CHECKPOINT_SCHEMA');
++    try {
++      const { schema, ...state } = structuredClone(cut);
++      const integer = value => Number.isSafeInteger(value) && value >= 0;
++      const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
++      if (!object(state.bounds) || typeof state.bounds.namespace !== 'string' || !state.bounds.namespace
++        || Object.keys(DEFAULT_BOUNDS).filter(k => k !== 'namespace').some(k => !integer(state.bounds[k]))
++        || !Array.isArray(state.manifests) || !Array.isArray(state.history)) throw new Error('SHAPE');
++      // Re-run manifest/history preflight before accepting persisted mutable state.
++      const g = new GateModel(state.mode, state.manifests, state.history, state.bounds);
++      const required = Object.keys(g);
++      if (Object.keys(state).length !== required.length || required.some(k => !Object.hasOwn(state, k))) throw new Error('FIELDS');
++      if (['epoch', 'fetchPosition', 'readPosition', 'duplicateRecords', 'peakRetainedBytes', 'transitions', 'metadataBytes']
++        .some(k => !integer(state[k])) || state.epoch < 1 || state.fetchPosition > state.history.length
++        || state.readPosition > state.fetchPosition || state.metadataBytes !== g.metadataBytes
++        || ![null, 'UNKNOWN_ROUTING', 'UNDECLARED_OR_UNAUTHORIZED_COMPLETION'].includes(state.fault)) throw new Error('STATE');
++      for (const key of ['fetched', 'bypass']) {
++        if (!Array.isArray(state[key]) || state[key].some(r => !object(r) || !integer(r.bytes)
++          || r.bytes === 0 || r.bytes > state.bounds.memberBytes)) throw new Error('RECORDS');
++      }
++      if (JSON.stringify(state.fetched) !== JSON.stringify(state.history.slice(state.readPosition, state.fetchPosition))
++        || !object(state.windows)) throw new Error('POSITION');
++      for (const [id, w] of Object.entries(state.windows)) {
++        const m = state.manifests.find(m => m.id === id);
++        if (!m || !object(w) || !Array.isArray(w.seen) || typeof w.sealed !== 'boolean'
++          || typeof w.closed !== 'boolean' || w.reserve !== m.completionBytes + m.sealBytes) throw new Error('WINDOW');
++      }
++      Object.assign(g, state);
++      g.windows = Object.assign(Object.create(null), state.windows);
++      g.assertInvariant();
++      return g;
++    } catch (error) { throw new Error('CHECKPOINT_INVALID', { cause: error }); }
++  }
+ 
+   assertInvariant() {
+     if (this.reservedBytes() > this.bounds.completionBytes || this.fetched.length > this.bounds.fetchItems
+diff --git a/scripts/dev/calcify-financial/gate-model.test.mjs b/scripts/dev/calcify-financial/gate-model.test.mjs
+index 5caf7ec9..103674ce 100644
+--- a/scripts/dev/calcify-financial/gate-model.test.mjs
++++ b/scripts/dev/calcify-financial/gate-model.test.mjs
+@@ -141,3 +141,26 @@ test('cyclic or forward prefix dependency manifests fail preflight instead of cr
+   assert.throws(() => new GateModel('credit', [manifest('A', ['a'], ['B']), manifest('B', ['b'], ['A'])], []), /DEPENDENCY_CYCLE/);
+   assert.throws(() => new GateModel('prefix', [manifest('A', ['a'], ['B']), manifest('B', ['b'])], []), /NON_PREFIX_DEPENDENCY/);
+ });
++
++for (const mode of ['prefix', 'credit']) {
++  test(`${mode}: checkpoint schema and required state reject truncated or mixed cuts`, () => {
++    const g = new GateModel(mode, [A], log.slice(0, 3)); g.open('A'); g.step();
++    const cut = g.checkpoint();
++    assert.equal(cut.schema, 'calcify-e2-gate-checkpoint-v1');
++    for (const key of Object.keys(cut)) {
++      const broken = structuredClone(cut); delete broken[key];
++      assert.throws(() => GateModel.restore(broken), /CHECKPOINT/, key);
++    }
++    for (const patch of [{ schema: 'v2' }, { epoch: 0 }, { epoch: '1' },
++      { readPosition: -1 }, { fetchPosition: 999 }, { fault: false },
++      { transitions: NaN }, { metadataBytes: 0 }, { extraVersionField: true }]) {
++      assert.throws(() => GateModel.restore({ ...cut, ...patch }), /CHECKPOINT/);
++    }
++    const badWindow = structuredClone(cut); badWindow.windows.A.reserve = 0;
++    assert.throws(() => GateModel.restore(badWindow), /CHECKPOINT/);
++    const restored = GateModel.restore(cut); restored.drain();
++    assert.deepEqual(restored.snapshot().closed, ['A']);
++    assert.equal(Object.getPrototypeOf(restored.windows), null);
++    assert.deepEqual(cut, g.checkpoint()); // Restore and drain cannot mutate source cut.
++  });
++}
+diff --git a/scripts/dev/calcify-financial/rate-proof.mjs b/scripts/dev/calcify-financial/rate-proof.mjs
+index fcf1807c..d6526c1b 100644
+--- a/scripts/dev/calcify-financial/rate-proof.mjs
++++ b/scripts/dev/calcify-financial/rate-proof.mjs
+@@ -131,10 +131,10 @@ export function assessMeasurement(policy, m) {
+   if (!latency || latency.kind !== 'sampled-individual' || latency.clockDomain !== 'same-monotonic' || !positive(latency.samples)
+     || !finiteNonnegative(latency.p95Ms) || !finiteNonnegative(latency.p99Ms) || latency.p99Ms < latency.p95Ms) gaps.push('LATENCY_CLOCK_UNQUALIFIED');
+   return { result: failures.length ? 'FAIL_DIAGNOSTIC' : gaps.length ? 'LIMITED' : 'PASS_DIAGNOSTIC', failures, gaps,
+-    rates: Object.fromEntries(stages.map(stage => [`${stage}PerSecond`, nonnegative(m.deadline?.[stage]) ? m.deadline[stage] * 1000 / durationMs : null])),
++    rates: Object.fromEntries(stages.map(stage => [`${stage}PerSecond`, nonnegative(m.deadline?.[stage]) && positive(durationMs) ? m.deadline[stage] * 1000 / durationMs : null])),
+     rateBoundary: 'Counts visible at fixed deadline / scheduled duration; conservative covering rates, not individual latency.',
+-    cpuEquivalentCores: m.resources ? m.resources.processCpuMs / durationMs : null,
+-    touchedKeysPerTrade: m.resources && positive(m.final?.decided) ? m.resources.touchedKeys / m.final.decided : null,
++    cpuEquivalentCores: finiteNonnegative(m.resources?.processCpuMs) && positive(durationMs) ? m.resources.processCpuMs / durationMs : null,
++    touchedKeysPerTrade: nonnegative(m.resources?.touchedKeys) && positive(m.final?.decided) ? m.resources.touchedKeys / m.final.decided : null,
+     capacityQualification: false, sourceHead: policy.sourceHead, policySha256: policy.policySha256 };
+ }
+ 
+diff --git a/scripts/dev/calcify-financial/rate-proof.test.mjs b/scripts/dev/calcify-financial/rate-proof.test.mjs
+index 4e4715fd..fdb3943e 100644
+--- a/scripts/dev/calcify-financial/rate-proof.test.mjs
++++ b/scripts/dev/calcify-financial/rate-proof.test.mjs
+@@ -194,3 +194,27 @@ test('derived per-trade budget must remain safe integer before policy freezes',
+   assert.equal(preparePolicy({ calibration: c, correctness, preflight, arm }).status, 'BLOCKED');
+   assert.throws(() => estimateAged(c, preflight, arm), /PHYSICAL_TRADE_BUDGET/);
+ });
++
++test('invalid telemetry produces null derived metrics instead of non-finite values', () => {
++  for (const value of [undefined, null, 'bad', -1, NaN, Infinity]) {
++    const m = measurement(); m.resources.processCpuMs = value; m.resources.touchedKeys = value;
++    const r = assessMeasurement(policy(), m);
++    assert.notEqual(r.result, 'PASS_DIAGNOSTIC');
++    assert.equal(r.cpuEquivalentCores, null);
++    assert.equal(r.touchedKeysPerTrade, null);
++  }
++  const m = measurement(); m.resources.processCpuMs = 0; m.resources.touchedKeys = 0;
++  const r = assessMeasurement(policy(), m);
++  assert.equal(r.cpuEquivalentCores, 0); assert.equal(r.touchedKeysPerTrade, 0);
++});
++
++test('invalid duration and zero trades cannot publish non-finite derived metrics', () => {
++  for (const seconds of [0, undefined, NaN, Infinity, -1]) {
++    const p = policy(); p.arm = { ...p.arm, seconds };
++    const m = measurement(); m.final.decided = 0;
++    const r = assessMeasurement(p, m);
++    assert.equal(r.result, 'FAIL_DIAGNOSTIC');
++    assert.equal(r.cpuEquivalentCores, null); assert.equal(r.touchedKeysPerTrade, null);
++    assert.ok(Object.values(r.rates).every(x => x === null));
++  }
++});

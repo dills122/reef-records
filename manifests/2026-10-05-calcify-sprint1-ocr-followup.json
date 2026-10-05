@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/dills122/reef",
+  "source_commit": "245a91ba49db43788eb3fe948a522a92f70f287c",
+  "selection_policy": "Exact OCR proof, preserve failures. Local-only source provenance; bulk only Records; current code/focused verification stay Reef.",
+  "files": [
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/README.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/README.md",
+      "bytes": 824,
+      "sha256": "f67856e45fb9476c133284de0a76c28d1a8e27d461cef329d1480bddc957bbb1",
+      "reason": "OCR regression evidence preserving failed attempts and corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/attempts.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/attempts.jsonl",
+      "bytes": 1278,
+      "sha256": "ac1f1b87c8462dba23ad43bfe729202b64f07433a585fb72f73374feb03f59ae",
+      "reason": "OCR regression evidence preserving failed attempts and corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/exact-node-ci-command.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/exact-node-ci-command.json",
+      "bytes": 1679,
+      "sha256": "12db81ca9b5338c42c667660e6a91da1f368fca473cb4f45b509a724cf04d7bb",
+      "reason": "OCR regression evidence preserving failed attempts and corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/node-ci-unsandboxed.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/node-ci-unsandboxed.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "OCR regression evidence preserving failed attempts and corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/node-ci-unsandboxed.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/node-ci-unsandboxed.stdout.log",
+      "bytes": 41525,
+      "sha256": "c78e4eab02c81af80078700fd39d87d11f44e5692418c9f1ac954c078677805a",
+      "reason": "OCR regression evidence preserving failed attempts and corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/node-ci.stderr.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/node-ci.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "OCR regression evidence preserving failed attempts and corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/node-ci.stdout.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/node-ci.stdout.log",
+      "bytes": 41993,
+      "sha256": "ddb4d50dc866d5795a700d3f527ecc0cff17422170b05dba483d6d7a9d1688ca",
+      "reason": "OCR regression evidence preserving failed attempts and corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/ocr-existing-tests.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/ocr-existing-tests.log",
+      "bytes": 9905,
+      "sha256": "2b39dd11a7f35d54f6b9ca0562af2e925d65b3fa6ca0b10d4c55d6ba7cab354a",
+      "reason": "OCR regression evidence preserving failed attempts and corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/ocr-green-tests.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/ocr-green-tests.log",
+      "bytes": 10801,
+      "sha256": "1ff94e3bc7633d64cf5f00df8e8139514177c7b163348dd035508b069664570d",
+      "reason": "OCR regression evidence preserving failed attempts and corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/ocr-red-tests.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/ocr-red-tests.log",
+      "bytes": 14529,
+      "sha256": "4020d821592fed6d58b07e4e316afff4b7ae491fd72e443eaf8c6df14ccb6c07",
+      "reason": "OCR regression evidence preserving failed attempts and corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/script-surface.log",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/script-surface.log",
+      "bytes": 871,
+      "sha256": "feca7605a5f72e09d88320d2ef9959d86468c50ce66aa5e1d3f15edc58b85708",
+      "reason": "OCR regression evidence preserving failed attempts and corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/source.patch",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/source.patch",
+      "bytes": 8954,
+      "sha256": "b3bc967ab6421e0a5ea382276394d22d5550e5de0b77f7821b5d75e676824ff8",
+      "reason": "OCR regression evidence preserving failed attempts and corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/threads-before.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/threads-before.json",
+      "bytes": 3280,
+      "sha256": "8d5d637b87eb41c14848e7bff21db873d8edc5a8466d58d76ab8f43548d57d70",
+      "reason": "OCR regression evidence preserving failed attempts and corrections"
+    }
+  ]
+}

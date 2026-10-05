@@ -1,5 +1,9 @@
 # Archive index
 
+## October 5 — OCR checkpoint and metric fixes
+
+[Proof](records/reef/docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/README.md), [manifest](manifests/2026-10-05-calcify-sprint1-ocr-followup.json). Product `0a64c4823a00ec5133e331bcfbbc94e542c4d8d3`; local-only source `245a91ba49db43788eb3fe948a522a92f70f287c`. 13 exact files. Focused47/47, Node158/158; initial sandbox failure retained. Review extension required. Prior imports unchanged.
+
 ## October5UTC/October4local — Round7 sign-off and supervised44arm proof
 
 948exact files/4214935bytes. [Bundle](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-05-f22b2f85/README.md), [review7](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-05-f22b2f85/review/instance-7/report.md), [resourcegate](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-05-f22b2f85/proof-pilot/resource-gate.json), [matrixproof](records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-05-f22b2f85/proof-matrix/proof-summary.json), [manifest](manifests/2026-10-05-calcify-sprint1-round7-bounded-proof.json), [local-only provenance](docs/imports/2026-10-05-calcify-sprint1-round7-provenance.md). GuardP1closed;19mock+2realcontrols,2pilot+44matrixarmsPASS; fullE3/E4/capacityunsigned. Priororigins unchanged.
