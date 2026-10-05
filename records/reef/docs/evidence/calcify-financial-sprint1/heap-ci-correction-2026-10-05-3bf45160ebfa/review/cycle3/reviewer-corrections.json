@@ -1,0 +1,15 @@
+{
+  "receiptCheck": {
+    "originalCommand": "Inline python3 receipt verifier; assertion sha(old/review/cycle2/direct-child-controls/config.json) == cap.configSha256",
+    "actualExit": 1,
+    "wrongConfigSha256": "99111397d07df4963cda22c3276e2232e67aa09e0191aa009c63bd571ef0d817",
+    "capabilityConfigSha256": "f153d7e7ccdf2587573f0e4522f7ff0896d5007c015865b21db87fa295b58ad0",
+    "correction": "Config uses capability-command.json final argv path; refusal control config intentionally separate",
+    "sourceEffect": false
+  },
+  "readToolBlocks": {
+    "count": 3,
+    "reason": "Non-symbolic read cadence hook; reset and continued exact source/evidence reads",
+    "sourceEffect": false
+  }
+}

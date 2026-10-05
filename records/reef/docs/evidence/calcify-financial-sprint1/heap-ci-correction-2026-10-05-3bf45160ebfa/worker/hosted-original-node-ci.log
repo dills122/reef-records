@@ -1,0 +1,1802 @@
+﻿2026-10-05T07:30:21.7517945Z Current runner version: '2.337.0'
+2026-10-05T07:30:21.7542887Z ##[group]Runner Image Provisioner
+2026-10-05T07:30:21.7543910Z Hosted Compute Agent
+2026-10-05T07:30:21.7544539Z Version: 20260901.588
+2026-10-05T07:30:21.7545177Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+2026-10-05T07:30:21.7546004Z Build Date: 2026-09-01T19:56:44Z
+2026-10-05T07:30:21.7546764Z Worker ID: {abebfcc5-c2b9-486a-8959-f758c9598c84}
+2026-10-05T07:30:21.7547625Z Azure Region: westcentralus
+2026-10-05T07:30:21.7548268Z ##[endgroup]
+2026-10-05T07:30:21.7549934Z ##[group]Operating System
+2026-10-05T07:30:21.7550710Z Ubuntu
+2026-10-05T07:30:21.7551260Z 24.04.5
+2026-10-05T07:30:21.7551874Z LTS
+2026-10-05T07:30:21.7552540Z ##[endgroup]
+2026-10-05T07:30:21.7553178Z ##[group]Runner Image
+2026-10-05T07:30:21.7553945Z Image: ubuntu-24.04
+2026-10-05T07:30:21.7554642Z Version: 20260927.320.1
+2026-10-05T07:30:21.7556065Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-05T07:30:21.7557784Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+2026-10-05T07:30:21.7558883Z ##[endgroup]
+2026-10-05T07:30:21.7560439Z ##[group]GITHUB_TOKEN Permissions
+2026-10-05T07:30:21.7562506Z Contents: read
+2026-10-05T07:30:21.7563139Z Metadata: read
+2026-10-05T07:30:21.7563698Z ##[endgroup]
+2026-10-05T07:30:21.7565850Z Secret source: Actions
+2026-10-05T07:30:21.7566836Z Cache mode: write
+2026-10-05T07:30:21.7567691Z Prepare workflow directory
+2026-10-05T07:30:21.7962359Z Prepare all required actions
+2026-10-05T07:30:21.8011562Z Getting action download info
+2026-10-05T07:30:22.1497838Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+2026-10-05T07:30:22.2668475Z Download action repository 'actions/setup-node@820762786026740c76f36085b0efc47a31fe5020' (SHA:820762786026740c76f36085b0efc47a31fe5020)
+2026-10-05T07:30:22.3696445Z Download action repository 'actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a' (SHA:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a)
+2026-10-05T07:30:22.5416890Z Complete job name: node-dev-tooling
+2026-10-05T07:30:22.6168872Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+2026-10-05T07:30:22.6170214Z with:
+2026-10-05T07:30:22.6170713Z   repository: dills122/reef
+2026-10-05T07:30:22.6174684Z   token: ***
+2026-10-05T07:30:22.6175123Z   ssh-strict: true
+2026-10-05T07:30:22.6175570Z   ssh-user: git
+2026-10-05T07:30:22.6176021Z   persist-credentials: true
+2026-10-05T07:30:22.6176513Z   clean: true
+2026-10-05T07:30:22.6176961Z   sparse-checkout-cone-mode: true
+2026-10-05T07:30:22.6177486Z   fetch-depth: 1
+2026-10-05T07:30:22.6177909Z   fetch-tags: false
+2026-10-05T07:30:22.6178348Z   show-progress: true
+2026-10-05T07:30:22.6178798Z   lfs: false
+2026-10-05T07:30:22.6179378Z   submodules: false
+2026-10-05T07:30:22.6179828Z   set-safe-directory: true
+2026-10-05T07:30:22.6180590Z   allow-unsafe-pr-checkout: false
+2026-10-05T07:30:22.6181702Z ##[endgroup]
+2026-10-05T07:30:22.7176653Z Syncing repository: dills122/reef
+2026-10-05T07:30:22.7179520Z ##[group]Getting Git version info
+2026-10-05T07:30:22.7180819Z Working directory is '/home/runner/work/reef/reef'
+2026-10-05T07:30:22.7182387Z [command]/usr/bin/git version
+2026-10-05T07:30:22.7219736Z git version 2.55.0
+2026-10-05T07:30:22.7276847Z ##[endgroup]
+2026-10-05T07:30:22.7284184Z Temporarily overriding HOME='/home/runner/work/_temp/0531909f-2578-43cf-9934-6e101c5dc4fe' before making global git config changes
+2026-10-05T07:30:22.7287069Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-05T07:30:22.7289648Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/reef/reef
+2026-10-05T07:30:22.7344174Z Deleting the contents of '/home/runner/work/reef/reef'
+2026-10-05T07:30:22.7347825Z ##[group]Determining repository object format
+2026-10-05T07:30:22.7349774Z ##[endgroup]
+2026-10-05T07:30:22.7350918Z ##[group]Initializing the repository
+2026-10-05T07:30:22.7354908Z [command]/usr/bin/git init /home/runner/work/reef/reef
+2026-10-05T07:30:22.7460491Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-05T07:30:22.7463019Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-05T07:30:22.7464527Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-05T07:30:22.7465744Z hint: call:
+2026-10-05T07:30:22.7466314Z hint:
+2026-10-05T07:30:22.7467011Z hint: 	git config --global init.defaultBranch <name>
+2026-10-05T07:30:22.7467863Z hint:
+2026-10-05T07:30:22.7468551Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-05T07:30:22.7470016Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-05T07:30:22.7470890Z hint:
+2026-10-05T07:30:22.7471366Z hint: 	git branch -m <name>
+2026-10-05T07:30:22.7471903Z hint:
+2026-10-05T07:30:22.7472622Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-05T07:30:22.7478550Z Initialized empty Git repository in /home/runner/work/reef/reef/.git/
+2026-10-05T07:30:22.7488777Z [command]/usr/bin/git remote add origin https://github.com/dills122/reef
+2026-10-05T07:30:22.7540101Z ##[endgroup]
+2026-10-05T07:30:22.7540920Z ##[group]Disabling automatic garbage collection
+2026-10-05T07:30:22.7544051Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-05T07:30:22.7576860Z ##[endgroup]
+2026-10-05T07:30:22.7577726Z ##[group]Setting up auth
+2026-10-05T07:30:22.7583673Z Removing SSH command configuration
+2026-10-05T07:30:22.7591068Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-05T07:30:22.7623484Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-05T07:30:22.8029999Z Removing HTTP extra header
+2026-10-05T07:30:22.8047670Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-05T07:30:22.8091580Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-05T07:30:22.8356073Z Removing includeIf entries pointing to credentials config files
+2026-10-05T07:30:22.8364679Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-05T07:30:22.8419691Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-05T07:30:22.8675151Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-949aa20d-7ff1-4494-98e8-ee0a97de17ea.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-05T07:30:22.8717868Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/reef/reef/.git.path /home/runner/work/_temp/git-credentials-949aa20d-7ff1-4494-98e8-ee0a97de17ea.config
+2026-10-05T07:30:22.8754383Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/reef/reef/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-949aa20d-7ff1-4494-98e8-ee0a97de17ea.config
+2026-10-05T07:30:22.8793333Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-949aa20d-7ff1-4494-98e8-ee0a97de17ea.config
+2026-10-05T07:30:22.8830237Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-949aa20d-7ff1-4494-98e8-ee0a97de17ea.config
+2026-10-05T07:30:22.8862108Z ##[endgroup]
+2026-10-05T07:30:22.8863540Z ##[group]Fetching the repository
+2026-10-05T07:30:22.8870187Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d62a0a294413af8346bcc412be669e96b947408c:refs/remotes/pull/475/merge
+2026-10-05T07:30:24.2855956Z From https://github.com/dills122/reef
+2026-10-05T07:30:24.2858178Z  * [new ref]         d62a0a294413af8346bcc412be669e96b947408c -> pull/475/merge
+2026-10-05T07:30:24.2863316Z ##[endgroup]
+2026-10-05T07:30:24.2864312Z ##[group]Determining the checkout info
+2026-10-05T07:30:24.2866353Z ##[endgroup]
+2026-10-05T07:30:24.2869834Z [command]/usr/bin/git sparse-checkout disable
+2026-10-05T07:30:24.2932522Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-05T07:30:24.2971837Z ##[group]Checking out the ref
+2026-10-05T07:30:24.2976036Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/475/merge
+2026-10-05T07:30:24.4438496Z Note: switching to 'refs/remotes/pull/475/merge'.
+2026-10-05T07:30:24.4440860Z 
+2026-10-05T07:30:24.4442015Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-10-05T07:30:24.4443595Z changes and commit them, and you can discard any commits you make in this
+2026-10-05T07:30:24.4445110Z state without impacting any branches by switching back to a branch.
+2026-10-05T07:30:24.4446120Z 
+2026-10-05T07:30:24.4446844Z If you want to create a new branch to retain commits you create, you may
+2026-10-05T07:30:24.4448271Z do so (now or later) by using -c with the switch command. Example:
+2026-10-05T07:30:24.4449480Z 
+2026-10-05T07:30:24.4449877Z   git switch -c <new-branch-name>
+2026-10-05T07:30:24.4450911Z 
+2026-10-05T07:30:24.4451430Z Or undo this operation with:
+2026-10-05T07:30:24.4452093Z 
+2026-10-05T07:30:24.4452442Z   git switch -
+2026-10-05T07:30:24.4453042Z 
+2026-10-05T07:30:24.4453817Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-10-05T07:30:24.4454983Z 
+2026-10-05T07:30:24.4456290Z HEAD is now at d62a0a2 Merge 3bf45160ebfa1d1e1fac6fb808b80b86688f35fe into 3ce2bdf2729c884b0efd77d0a56808a0a6eb7d96
+2026-10-05T07:30:24.4461368Z ##[endgroup]
+2026-10-05T07:30:24.4504627Z [command]/usr/bin/git log -1 --format=%H
+2026-10-05T07:30:24.4534698Z d62a0a294413af8346bcc412be669e96b947408c
+2026-10-05T07:30:24.5014161Z ##[group]Run actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+2026-10-05T07:30:24.5016105Z with:
+2026-10-05T07:30:24.5017223Z   node-version: 22
+2026-10-05T07:30:24.5018397Z   check-latest: false
+2026-10-05T07:30:24.5029183Z   token: ***
+2026-10-05T07:30:24.5030395Z   package-manager-cache: true
+2026-10-05T07:30:24.5031753Z ##[endgroup]
+2026-10-05T07:30:24.6304890Z Found in cache @ /opt/hostedtoolcache/node/22.23.3/x64
+2026-10-05T07:30:24.6308806Z ##[group]Environment details
+2026-10-05T07:30:25.0309686Z node: v22.23.3
+2026-10-05T07:30:25.0310080Z npm: 10.9.9
+2026-10-05T07:30:25.0310395Z yarn: 1.22.22
+2026-10-05T07:30:25.0313203Z ##[endgroup]
+2026-10-05T07:30:25.0475762Z ##[group]Run node scripts/dev/script-surface-check.mjs
+2026-10-05T07:30:25.0476327Z [36;1mnode scripts/dev/script-surface-check.mjs[0m
+2026-10-05T07:30:25.0750968Z shell: /usr/bin/bash -e {0}
+2026-10-05T07:30:25.0751529Z ##[endgroup]
+2026-10-05T07:30:31.2483584Z script surface check passed
+2026-10-05T07:30:31.2484659Z   scripts=272
+2026-10-05T07:30:31.2485283Z   nodeSyntaxChecked=260
+2026-10-05T07:30:31.2485863Z   shellSyntaxChecked=11
+2026-10-05T07:30:31.2486665Z   syntaxSkipped=scripts/dev/arena-runner-bench-deno.ts
+2026-10-05T07:30:31.2492471Z   controlFiles=Makefile, package.json, .github/dependabot.yml, .github/workflows/admin-ui-deploy.yml, .github/workflows/bot-registry-sync.yml, .github/workflows/bot-submission-invite-approve.yml, .github/workflows/bot-submission-non-bot-status.yml, .github/workflows/bot-submission-provision.yml, .github/workflows/bot-submission.yml, .github/workflows/ci.yml, .github/workflows/container-images.yml, .github/workflows/dependabot-auto-merge.yml, .github/workflows/docs-site.yml, .github/workflows/materializer-10k-gate.yml, .github/workflows/open-code-review-pilot.yml, .github/workflows/publish-image.yml, .github/workflows/records-retention.yml, .github/workflows/service-deploy.yml, .github/workflows/throughput-stress.yml
+2026-10-05T07:30:31.2618545Z ##[group]Run set -o pipefail
+2026-10-05T07:30:31.2619481Z [36;1mset -o pipefail[0m
+2026-10-05T07:30:31.2619773Z [36;1mmkdir -p coverage/node-dev-tooling/v8[0m
+2026-10-05T07:30:31.2620138Z [36;1mnode --test --experimental-test-coverage \[0m
+2026-10-05T07:30:31.2620490Z [36;1m  scripts/dev/lib/dev-stack.test.mjs \[0m
+2026-10-05T07:30:31.2620838Z [36;1m  scripts/dev/lib/dev-profiles.test.mjs \[0m
+2026-10-05T07:30:31.2621239Z [36;1m  scripts/dev/lib/stress-success-guardrail.test.mjs \[0m
+2026-10-05T07:30:31.2621661Z [36;1m  scripts/dev/ci-workflow-hardening.test.mjs \[0m
+2026-10-05T07:30:31.2622039Z [36;1m  scripts/dev/ci-pr-change-scope.test.mjs \[0m
+2026-10-05T07:30:31.2622404Z [36;1m  scripts/ci/check-required-results.test.mjs \[0m
+2026-10-05T07:30:31.2622761Z [36;1m  scripts/ci/build-container.test.mjs \[0m
+2026-10-05T07:30:31.2623090Z [36;1m  scripts/dev/db/migrate.test.mjs \[0m
+2026-10-05T07:30:31.2623487Z [36;1m  scripts/dev/container-images-workflow.test.mjs \[0m
+2026-10-05T07:30:31.2623901Z [36;1m  scripts/dev/command-log-integrity-check.test.mjs \[0m
+2026-10-05T07:30:31.2624283Z [36;1m  scripts/dev/command-log-pin.test.mjs \[0m
+2026-10-05T07:30:31.2624666Z [36;1m  scripts/dev/command-log-archive.test.mjs \[0m
+2026-10-05T07:30:31.2625105Z [36;1m  scripts/dev/command-log-archive-partitions.test.mjs \[0m
+2026-10-05T07:30:31.2625508Z [36;1m  scripts/dev/command-log-prune.test.mjs \[0m
+2026-10-05T07:30:31.2625910Z [36;1m  scripts/dev/bot-submission-register-merged.test.mjs \[0m
+2026-10-05T07:30:31.2626313Z [36;1m  scripts/dev/export-simulation-run.test.mjs \[0m
+2026-10-05T07:30:31.2626666Z [36;1m  scripts/dev/deploy-receiver.test.mjs \[0m
+2026-10-05T07:30:31.2627049Z [36;1m  scripts/dev/analyze-arena-actor-diagnostics.test.mjs \[0m
+2026-10-05T07:30:31.2627456Z [36;1m  scripts/dev/arena-score-breakdown.test.mjs \[0m
+2026-10-05T07:30:31.2627838Z [36;1m  scripts/dev/compare-arena-score-v1-proof.test.mjs \[0m
+2026-10-05T07:30:31.2628273Z [36;1m  scripts/dev/compare-arena-scoring-calibration.test.mjs \[0m
+2026-10-05T07:30:31.2628733Z [36;1m  scripts/dev/run-arena-actor-calibration-matrix.test.mjs \[0m
+2026-10-05T07:30:31.2629460Z [36;1m  scripts/dev/run-arena-economic-policy-matrix.test.mjs \[0m
+2026-10-05T07:30:31.2629953Z [36;1m  scripts/dev/run-arena-scoring-calibration-matrix.test.mjs \[0m
+2026-10-05T07:30:31.2630396Z [36;1m  scripts/dev/projection-replay-proof.test.mjs \[0m
+2026-10-05T07:30:31.2630781Z [36;1m  scripts/dev/calcify-direct-capacity.test.mjs \[0m
+2026-10-05T07:30:31.2631182Z [36;1m  scripts/dev/calcify-financial/record-attempt.test.mjs \[0m
+2026-10-05T07:30:31.2631609Z [36;1m  scripts/dev/calcify-financial/broker-proof.test.mjs \[0m
+2026-10-05T07:30:31.2632033Z [36;1m  scripts/dev/calcify-financial/proof-supervisor.test.mjs \[0m
+2026-10-05T07:30:31.2632484Z [36;1m  scripts/dev/calcify-financial/reservation-model.test.mjs \[0m
+2026-10-05T07:30:31.2632918Z [36;1m  scripts/dev/calcify-financial/gate-model.test.mjs \[0m
+2026-10-05T07:30:31.2633305Z [36;1m  scripts/dev/calcify-financial/rate-proof.test.mjs \[0m
+2026-10-05T07:30:31.2633844Z [36;1m  scripts/dev/stream-profile-guard.test.mjs | tee coverage/node-dev-tooling/test-output.txt[0m
+2026-10-05T07:30:31.2700532Z shell: /usr/bin/bash -e {0}
+2026-10-05T07:30:31.2700798Z env:
+2026-10-05T07:30:31.2701034Z   NODE_V8_COVERAGE: coverage/node-dev-tooling/v8
+2026-10-05T07:30:31.2701329Z ##[endgroup]
+2026-10-05T07:30:31.3430489Z TAP version 13
+2026-10-05T07:30:31.4311213Z # Subtest: recognizes observed Maven request throttling and plugin-portal equivalent
+2026-10-05T07:30:31.4334806Z ok 1 - recognizes observed Maven request throttling and plugin-portal equivalent
+2026-10-05T07:30:31.4359496Z   ---
+2026-10-05T07:30:31.4360471Z   duration_ms: 2.208114
+2026-10-05T07:30:31.4361160Z   type: 'test'
+2026-10-05T07:30:31.4361726Z   ...
+2026-10-05T07:30:31.4362562Z # Subtest: successful first build runs once without waiting
+2026-10-05T07:30:31.4364119Z ok 2 - successful first build runs once without waiting
+2026-10-05T07:30:31.4384781Z   ---
+2026-10-05T07:30:31.4405607Z   duration_ms: 0.891531
+2026-10-05T07:30:31.4406269Z   type: 'test'
+2026-10-05T07:30:31.4406892Z   ...
+2026-10-05T07:30:31.4408085Z # Subtest: throttled builds retry with bounded backoff and require actual success
+2026-10-05T07:30:31.4432911Z ok 3 - throttled builds retry with bounded backoff and require actual success
+2026-10-05T07:30:31.4437197Z   ---
+2026-10-05T07:30:31.4437984Z   duration_ms: 1.196279
+2026-10-05T07:30:31.4438591Z   type: 'test'
+2026-10-05T07:30:31.4439511Z   ...
+2026-10-05T07:30:31.4440574Z # Subtest: persistent throttling stays red after three attempts
+2026-10-05T07:30:31.4441738Z ok 4 - persistent throttling stays red after three attempts
+2026-10-05T07:30:31.4442628Z   ---
+2026-10-05T07:30:31.4459943Z   duration_ms: 0.429741
+2026-10-05T07:30:31.4460656Z   type: 'test'
+2026-10-05T07:30:31.4461206Z   ...
+2026-10-05T07:30:31.4462163Z # Subtest: compile errors, interrupted builds and spawn errors do not retry
+2026-10-05T07:30:31.4463525Z ok 5 - compile errors, interrupted builds and spawn errors do not retry
+2026-10-05T07:30:31.4464450Z   ---
+2026-10-05T07:30:31.4465058Z   duration_ms: 2.886506
+2026-10-05T07:30:31.4465758Z   type: 'test'
+2026-10-05T07:30:31.4466315Z   ...
+2026-10-05T07:30:31.4728414Z # build output
+2026-10-05T07:30:31.4730747Z # dependency error
+2026-10-05T07:30:31.4877555Z # Subtest: subprocess runner captures both streams and preserves exit code
+2026-10-05T07:30:31.4881424Z ok 6 - subprocess runner captures both streams and preserves exit code
+2026-10-05T07:30:31.4900292Z   ---
+2026-10-05T07:30:31.4901006Z   duration_ms: 83.261554
+2026-10-05T07:30:31.4901697Z   type: 'test'
+2026-10-05T07:30:31.4949522Z   ...
+2026-10-05T07:30:31.5400567Z # Subtest: accepts a successful full CI run
+2026-10-05T07:30:31.5424544Z ok 7 - accepts a successful full CI run
+2026-10-05T07:30:31.5430532Z   ---
+2026-10-05T07:30:31.5431489Z   duration_ms: 3.529326
+2026-10-05T07:30:31.5432223Z   type: 'test'
+2026-10-05T07:30:31.5432931Z   ...
+2026-10-05T07:30:31.5433980Z # Subtest: accepts intentionally skipped full jobs for a bot-only pull request
+2026-10-05T07:30:31.5435534Z ok 8 - accepts intentionally skipped full jobs for a bot-only pull request
+2026-10-05T07:30:31.5436503Z   ---
+2026-10-05T07:30:31.5437082Z   duration_ms: 0.282607
+2026-10-05T07:30:31.5437775Z   type: 'test'
+2026-10-05T07:30:31.5438467Z   ...
+2026-10-05T07:30:31.5439915Z # Subtest: accepts an intentionally skipped replay on a human pull request
+2026-10-05T07:30:31.5446489Z ok 9 - accepts an intentionally skipped replay on a human pull request
+2026-10-05T07:30:31.5447487Z   ---
+2026-10-05T07:30:31.5448239Z   duration_ms: 0.32733
+2026-10-05T07:30:31.5449254Z   type: 'test'
+2026-10-05T07:30:31.5449929Z   ...
+2026-10-05T07:30:31.5450679Z # Subtest: rejects any failed full-CI job
+2026-10-05T07:30:31.5451601Z ok 10 - rejects any failed full-CI job
+2026-10-05T07:30:31.5452354Z   ---
+2026-10-05T07:30:31.5453090Z   duration_ms: 0.721455
+2026-10-05T07:30:31.5453844Z   type: 'test'
+2026-10-05T07:30:31.5454535Z   ...
+2026-10-05T07:30:31.5455691Z # Subtest: rejects a replay skip when replay is required
+2026-10-05T07:30:31.5456883Z ok 11 - rejects a replay skip when replay is required
+2026-10-05T07:30:31.5457780Z   ---
+2026-10-05T07:30:31.5458383Z   duration_ms: 0.292535
+2026-10-05T07:30:31.5459346Z   type: 'test'
+2026-10-05T07:30:31.5459983Z   ...
+2026-10-05T07:30:31.5461067Z # Subtest: rejects a failed scope classifier even when full CI is skipped
+2026-10-05T07:30:31.5462351Z ok 12 - rejects a failed scope classifier even when full CI is skipped
+2026-10-05T07:30:31.5463229Z   ---
+2026-10-05T07:30:31.5463928Z   duration_ms: 0.305419
+2026-10-05T07:30:31.5464646Z   type: 'test'
+2026-10-05T07:30:31.5465297Z   ...
+2026-10-05T07:30:31.5466027Z # arena actor diagnostics checks passed
+2026-10-05T07:30:31.5467089Z # Subtest: scripts/dev/analyze-arena-actor-diagnostics.test.mjs
+2026-10-05T07:30:31.5468317Z ok 3 - scripts/dev/analyze-arena-actor-diagnostics.test.mjs
+2026-10-05T07:30:31.5470699Z   ---
+2026-10-05T07:30:31.5492089Z   duration_ms: 107.19032
+2026-10-05T07:30:31.5492764Z   type: 'test'
+2026-10-05T07:30:31.5493188Z   ...
+2026-10-05T07:30:31.5493661Z # arena score breakdown checks passed
+2026-10-05T07:30:31.5494376Z # Subtest: scripts/dev/arena-score-breakdown.test.mjs
+2026-10-05T07:30:31.5495015Z ok 4 - scripts/dev/arena-score-breakdown.test.mjs
+2026-10-05T07:30:31.5501249Z   ---
+2026-10-05T07:30:31.5501627Z   duration_ms: 104.526654
+2026-10-05T07:30:31.5502038Z   type: 'test'
+2026-10-05T07:30:31.5502339Z   ...
+2026-10-05T07:30:32.1619198Z # bot submission merged registry sync checks passed
+2026-10-05T07:30:32.1847223Z # Subtest: scripts/dev/bot-submission-register-merged.test.mjs
+2026-10-05T07:30:32.1849417Z ok 5 - scripts/dev/bot-submission-register-merged.test.mjs
+2026-10-05T07:30:32.1850574Z   ---
+2026-10-05T07:30:32.1851371Z   duration_ms: 707.705052
+2026-10-05T07:30:32.1852164Z   type: 'test'
+2026-10-05T07:30:32.1857751Z   ...
+2026-10-05T07:30:32.1858821Z # Subtest: qualifies trade contexts/s and reports distinct order units
+2026-10-05T07:30:32.1860434Z ok 16 - qualifies trade contexts/s and reports distinct order units
+2026-10-05T07:30:32.1861342Z   ---
+2026-10-05T07:30:32.1861948Z   duration_ms: 5.333779
+2026-10-05T07:30:32.1862608Z   type: 'test'
+2026-10-05T07:30:32.1863227Z   ...
+2026-10-05T07:30:32.1864263Z # Subtest: after-deadline observation cannot rescue failed sustained throughput
+2026-10-05T07:30:32.1865700Z ok 17 - after-deadline observation cannot rescue failed sustained throughput
+2026-10-05T07:30:32.1866768Z   ---
+2026-10-05T07:30:32.1867360Z   duration_ms: 0.437225
+2026-10-05T07:30:32.1868018Z   type: 'test'
+2026-10-05T07:30:32.1868603Z   ...
+2026-10-05T07:30:32.1869779Z # Subtest: preflight does not contribute to measured throughput
+2026-10-05T07:30:32.1871073Z ok 18 - preflight does not contribute to measured throughput
+2026-10-05T07:30:32.1871964Z   ---
+2026-10-05T07:30:32.1872580Z   duration_ms: 2.285179
+2026-10-05T07:30:32.1873261Z   type: 'test'
+2026-10-05T07:30:32.1873893Z   ...
+2026-10-05T07:30:32.1874905Z # Subtest: missing baseline, verified count, or full-fact proof fails closed
+2026-10-05T07:30:32.1876279Z ok 19 - missing baseline, verified count, or full-fact proof fails closed
+2026-10-05T07:30:32.1877281Z   ---
+2026-10-05T07:30:32.1877886Z   duration_ms: 0.508468
+2026-10-05T07:30:32.1878741Z   type: 'test'
+2026-10-05T07:30:32.1881178Z   ...
+2026-10-05T07:30:32.1910344Z # Subtest: drain bound starts from HTTP completion, not later report receipt
+2026-10-05T07:30:32.1938222Z ok 20 - drain bound starts from HTTP completion, not later report receipt
+2026-10-05T07:30:32.1939459Z   ---
+2026-10-05T07:30:32.1940078Z   duration_ms: 0.2465
+2026-10-05T07:30:32.1940732Z   type: 'test'
+2026-10-05T07:30:32.1941311Z   ...
+2026-10-05T07:30:32.1942037Z # Subtest: short diagnostic cannot qualify
+2026-10-05T07:30:32.1942896Z ok 21 - short diagnostic cannot qualify
+2026-10-05T07:30:32.1943573Z   ---
+2026-10-05T07:30:32.1944113Z   duration_ms: 0.211645
+2026-10-05T07:30:32.1944700Z   type: 'test'
+2026-10-05T07:30:32.1945233Z   ...
+2026-10-05T07:30:32.1946015Z # Subtest: Go omits the disabled receipt-generation field
+2026-10-05T07:30:32.1947188Z ok 22 - Go omits the disabled receipt-generation field
+2026-10-05T07:30:32.1947999Z   ---
+2026-10-05T07:30:32.1950519Z   duration_ms: 0.194894
+2026-10-05T07:30:32.1951175Z   type: 'test'
+2026-10-05T07:30:32.1951707Z   ...
+2026-10-05T07:30:32.1952607Z # Subtest: direct config defaults to no preflight and distinct path units
+2026-10-05T07:30:32.1953864Z ok 23 - direct config defaults to no preflight and distinct path units
+2026-10-05T07:30:32.1954776Z   ---
+2026-10-05T07:30:32.1955338Z   duration_ms: 1.171433
+2026-10-05T07:30:32.1955954Z   type: 'test'
+2026-10-05T07:30:32.1956509Z   ...
+2026-10-05T07:30:32.1957507Z # Subtest: aggressor counts one timed order per trade and excludes 64 seeded makers
+2026-10-05T07:30:32.1958914Z ok 24 - aggressor counts one timed order per trade and excludes 64 seeded makers
+2026-10-05T07:30:32.1960733Z   ---
+2026-10-05T07:30:32.1961612Z   duration_ms: 0.302574
+2026-10-05T07:30:32.1962839Z   type: 'test'
+2026-10-05T07:30:32.1963432Z   ...
+2026-10-05T07:30:32.1964658Z # Subtest: aggressor report must agree with configured mode and trade aliases
+2026-10-05T07:30:32.1966295Z ok 25 - aggressor report must agree with configured mode and trade aliases
+2026-10-05T07:30:32.1967400Z   ---
+2026-10-05T07:30:32.1967933Z   duration_ms: 0.259484
+2026-10-05T07:30:32.1968733Z   type: 'test'
+2026-10-05T07:30:32.1969624Z   ...
+2026-10-05T07:30:32.1970733Z # Subtest: zero-trade maker baseline requires exactly the configured accepted orders
+2026-10-05T07:30:32.1972364Z ok 26 - zero-trade maker baseline requires exactly the configured accepted orders
+2026-10-05T07:30:32.1973636Z   ---
+2026-10-05T07:30:32.1974612Z   duration_ms: 0.270935
+2026-10-05T07:30:32.1975638Z   type: 'test'
+2026-10-05T07:30:32.1976575Z   ...
+2026-10-05T07:30:32.1978141Z # Subtest: readiness rejects signal-terminated worker despite retained startup receipts
+2026-10-05T07:30:32.1980451Z ok 27 - readiness rejects signal-terminated worker despite retained startup receipts
+2026-10-05T07:30:32.1981951Z   ---
+2026-10-05T07:30:32.1982655Z   duration_ms: 22.232317
+2026-10-05T07:30:32.1983707Z   type: 'test'
+2026-10-05T07:30:32.1984657Z   ...
+2026-10-05T07:30:32.1985997Z # Subtest: external plan freezes four executable trigger/barrier definitions
+2026-10-05T07:30:32.1991111Z ok 28 - external plan freezes four executable trigger/barrier definitions
+2026-10-05T07:30:32.1992477Z   ---
+2026-10-05T07:30:32.1993438Z   duration_ms: 1.396212
+2026-10-05T07:30:32.1994487Z   type: 'test'
+2026-10-05T07:30:32.1995132Z   ...
+2026-10-05T07:30:32.1996614Z # Subtest: broker registration refuses missing, malformed, duplicate and unregistered IDs
+2026-10-05T07:30:32.1998878Z ok 29 - broker registration refuses missing, malformed, duplicate and unregistered IDs
+2026-10-05T07:30:32.2000316Z   ---
+2026-10-05T07:30:32.2001333Z   duration_ms: 1.73355
+2026-10-05T07:30:32.2002359Z   type: 'test'
+2026-10-05T07:30:32.2003357Z   ...
+2026-10-05T07:30:32.2004811Z # Subtest: daemon inspection requires exact IDs, owned labels and two live peers
+2026-10-05T07:30:32.2006649Z ok 30 - daemon inspection requires exact IDs, owned labels and two live peers
+2026-10-05T07:30:32.2008070Z   ---
+2026-10-05T07:30:32.2009037Z   duration_ms: 3.274551
+2026-10-05T07:30:32.2010225Z   type: 'test'
+2026-10-05T07:30:32.2011211Z   ...
+2026-10-05T07:30:32.2012673Z # Subtest: restoration validates ownership even when peer health fails after outage
+2026-10-05T07:30:32.2014860Z ok 31 - restoration validates ownership even when peer health fails after outage
+2026-10-05T07:30:32.2016313Z   ---
+2026-10-05T07:30:32.2016938Z   duration_ms: 0.443827
+2026-10-05T07:30:32.2017981Z   type: 'test'
+2026-10-05T07:30:32.2018865Z   ...
+2026-10-05T07:30:32.2020491Z # Subtest: recovery requires identical physical prefix and exact stable end for idle restart
+2026-10-05T07:30:32.2022562Z ok 32 - recovery requires identical physical prefix and exact stable end for idle restart
+2026-10-05T07:30:32.2024047Z   ---
+2026-10-05T07:30:32.2040747Z   duration_ms: 1.281188
+2026-10-05T07:30:32.2059624Z   type: 'test'
+2026-10-05T07:30:32.2072602Z   ...
+2026-10-05T07:30:32.2073697Z # Subtest: idle restart refuses checkpoint divergence despite unchanged economic output
+2026-10-05T07:30:32.2075149Z ok 33 - idle restart refuses checkpoint divergence despite unchanged economic output
+2026-10-05T07:30:32.2076078Z   ---
+2026-10-05T07:30:32.2076583Z   duration_ms: 0.520841
+2026-10-05T07:30:32.2077154Z   type: 'test'
+2026-10-05T07:30:32.2077646Z   ...
+2026-10-05T07:30:32.2078659Z # Subtest: stale owner requires observed broker fencing, never generic error or elapsed time
+2026-10-05T07:30:32.2080685Z ok 34 - stale owner requires observed broker fencing, never generic error or elapsed time
+2026-10-05T07:30:32.2081849Z   ---
+2026-10-05T07:30:32.2082359Z   duration_ms: 0.827412
+2026-10-05T07:30:32.2083120Z   type: 'test'
+2026-10-05T07:30:32.2090026Z   ...
+2026-10-05T07:30:32.2091480Z # Subtest: producer failure arm invokes actual producer seam, observes zero abort outputs then restores
+2026-10-05T07:30:32.2093356Z ok 35 - producer failure arm invokes actual producer seam, observes zero abort outputs then restores
+2026-10-05T07:30:32.2094376Z   ---
+2026-10-05T07:30:32.2094884Z   duration_ms: 1.677406
+2026-10-05T07:30:32.2095440Z   type: 'test'
+2026-10-05T07:30:32.2095941Z   ...
+2026-10-05T07:30:32.2097191Z # Subtest: committed-before-ACK arm kills after read-committed barrier and persists ACK only after stable recovery
+2026-10-05T07:30:32.2099238Z ok 36 - committed-before-ACK arm kills after read-committed barrier and persists ACK only after stable recovery
+2026-10-05T07:30:32.2100373Z   ---
+2026-10-05T07:30:32.2100875Z   duration_ms: 0.716755
+2026-10-05T07:30:32.2101432Z   type: 'test'
+2026-10-05T07:30:32.2101932Z   ...
+2026-10-05T07:30:32.2103192Z # Subtest: stale-owner arm freezes before forward, takes over, resumes and demands fencing before end-offset proof
+2026-10-05T07:30:32.2105030Z ok 37 - stale-owner arm freezes before forward, takes over, resumes and demands fencing before end-offset proof
+2026-10-05T07:30:32.2106128Z   ---
+2026-10-05T07:30:32.2106598Z   duration_ms: 0.776948
+2026-10-05T07:30:32.2107130Z   type: 'test'
+2026-10-05T07:30:32.2107651Z   ...
+2026-10-05T07:30:32.2108707Z # Subtest: majority outage proves fresh outputs while target stopped and restores target on failure
+2026-10-05T07:30:32.2110455Z ok 38 - majority outage proves fresh outputs while target stopped and restores target on failure
+2026-10-05T07:30:32.2111441Z   ---
+2026-10-05T07:30:32.2111921Z   duration_ms: 0.72455
+2026-10-05T07:30:32.2112451Z   type: 'test'
+2026-10-05T07:30:32.2112980Z   ...
+2026-10-05T07:30:32.2114025Z # Subtest: failed START is not retried by majority-arm finally or granted new recovery time
+2026-10-05T07:30:32.2115466Z ok 39 - failed START is not retried by majority-arm finally or granted new recovery time
+2026-10-05T07:30:32.2116381Z   ---
+2026-10-05T07:30:32.2116873Z   duration_ms: 0.488771
+2026-10-05T07:30:32.2117417Z   type: 'test'
+2026-10-05T07:30:32.2117914Z   ...
+2026-10-05T07:30:32.2119408Z # Subtest: actual runner outage adapter waits for STOP and stopped grants then uses fixed START generation deadline
+2026-10-05T07:30:32.2121230Z ok 40 - actual runner outage adapter waits for STOP and stopped grants then uses fixed START generation deadline
+2026-10-05T07:30:32.2122334Z   ---
+2026-10-05T07:30:32.2122889Z   duration_ms: 20.030705
+2026-10-05T07:30:32.2123522Z   type: 'test'
+2026-10-05T07:30:32.2124083Z   ...
+2026-10-05T07:30:32.2125225Z # Subtest: actual runner recovery rejects peer failure immediately and slow START cannot reset fixed deadline
+2026-10-05T07:30:32.2126870Z ok 41 - actual runner recovery rejects peer failure immediately and slow START cannot reset fixed deadline
+2026-10-05T07:30:32.2127874Z   ---
+2026-10-05T07:30:32.2128332Z   duration_ms: 9.416925
+2026-10-05T07:30:32.2128842Z   type: 'test'
+2026-10-05T07:30:32.2129572Z   ...
+2026-10-05T07:30:32.2130574Z # Subtest: prefix: complete manifest, duplicate and out-of-order members close once
+2026-10-05T07:30:32.2131848Z ok 42 - prefix: complete manifest, duplicate and out-of-order members close once
+2026-10-05T07:30:32.2132670Z   ---
+2026-10-05T07:30:32.2133120Z   duration_ms: 5.898752
+2026-10-05T07:30:32.2133693Z   type: 'test'
+2026-10-05T07:30:32.2134157Z   ...
+2026-10-05T07:30:32.2134980Z # Subtest: prefix: unresolved prior fill prevents opening until dependency closure
+2026-10-05T07:30:32.2136161Z ok 43 - prefix: unresolved prior fill prevents opening until dependency closure
+2026-10-05T07:30:32.2136939Z   ---
+2026-10-05T07:30:32.2137380Z   duration_ms: 0.866134
+2026-10-05T07:30:32.2137863Z   type: 'test'
+2026-10-05T07:30:32.2138303Z   ...
+2026-10-05T07:30:32.2139324Z # Subtest: prefix: zero-trade amendment/cancel are explicit coverage members
+2026-10-05T07:30:32.2140621Z ok 44 - prefix: zero-trade amendment/cancel are explicit coverage members
+2026-10-05T07:30:32.2141408Z   ---
+2026-10-05T07:30:32.2142084Z   duration_ms: 2.198937
+2026-10-05T07:30:32.2142784Z   type: 'test'
+2026-10-05T07:30:32.2143238Z   ...
+2026-10-05T07:30:32.2144055Z # Subtest: prefix: high water leaves fetched suffix in separate bounded budget
+2026-10-05T07:30:32.2145302Z ok 45 - prefix: high water leaves fetched suffix in separate bounded budget
+2026-10-05T07:30:32.2179819Z   ---
+2026-10-05T07:30:32.2180363Z   duration_ms: 0.87467
+2026-10-05T07:30:32.2180899Z   type: 'test'
+2026-10-05T07:30:32.2181255Z   ...
+2026-10-05T07:30:32.2181902Z # Subtest: prefix: reassignment preserves grant membership; timeout never reclaims
+2026-10-05T07:30:32.2182570Z ok 46 - prefix: reassignment preserves grant membership; timeout never reclaims
+2026-10-05T07:30:32.2182971Z   ---
+2026-10-05T07:30:32.2183174Z   duration_ms: 1.636729
+2026-10-05T07:30:32.2183401Z   type: 'test'
+2026-10-05T07:30:32.2183609Z   ...
+2026-10-05T07:30:32.2184048Z # Subtest: prefix: closed tombstone rejects late old duplicate without extra capacity
+2026-10-05T07:30:32.2184716Z ok 47 - prefix: closed tombstone rejects late old duplicate without extra capacity
+2026-10-05T07:30:32.2185114Z   ---
+2026-10-05T07:30:32.2185296Z   duration_ms: 0.513116
+2026-10-05T07:30:32.2185507Z   type: 'test'
+2026-10-05T07:30:32.2185694Z   ...
+2026-10-05T07:30:32.2186090Z # Subtest: prefix: missing source fact remains waiting, not algorithmic deadlock
+2026-10-05T07:30:32.2186680Z ok 48 - prefix: missing source fact remains waiting, not algorithmic deadlock
+2026-10-05T07:30:32.2187054Z   ---
+2026-10-05T07:30:32.2187242Z   duration_ms: 1.032324
+2026-10-05T07:30:32.2187450Z   type: 'test'
+2026-10-05T07:30:32.2187632Z   ...
+2026-10-05T07:30:32.2188046Z # Subtest: credit: complete manifest, duplicate and out-of-order members close once
+2026-10-05T07:30:32.2188806Z ok 49 - credit: complete manifest, duplicate and out-of-order members close once
+2026-10-05T07:30:32.2189473Z   ---
+2026-10-05T07:30:32.2189673Z   duration_ms: 0.57951
+2026-10-05T07:30:32.2189887Z   type: 'test'
+2026-10-05T07:30:32.2190071Z   ...
+2026-10-05T07:30:32.2190490Z # Subtest: credit: unresolved prior fill prevents opening until dependency closure
+2026-10-05T07:30:32.2191113Z ok 50 - credit: unresolved prior fill prevents opening until dependency closure
+2026-10-05T07:30:32.2191491Z   ---
+2026-10-05T07:30:32.2191678Z   duration_ms: 0.383534
+2026-10-05T07:30:32.2191888Z   type: 'test'
+2026-10-05T07:30:32.2192070Z   ...
+2026-10-05T07:30:32.2192444Z # Subtest: credit: zero-trade amendment/cancel are explicit coverage members
+2026-10-05T07:30:32.2193024Z ok 51 - credit: zero-trade amendment/cancel are explicit coverage members
+2026-10-05T07:30:32.2193385Z   ---
+2026-10-05T07:30:32.2193581Z   duration_ms: 0.320718
+2026-10-05T07:30:32.2193797Z   type: 'test'
+2026-10-05T07:30:32.2193979Z   ...
+2026-10-05T07:30:32.2194362Z # Subtest: credit: high water leaves fetched suffix in separate bounded budget
+2026-10-05T07:30:32.2194937Z ok 52 - credit: high water leaves fetched suffix in separate bounded budget
+2026-10-05T07:30:32.2195297Z   ---
+2026-10-05T07:30:32.2195486Z   duration_ms: 0.339152
+2026-10-05T07:30:32.2195708Z   type: 'test'
+2026-10-05T07:30:32.2195885Z   ...
+2026-10-05T07:30:32.2196289Z # Subtest: credit: reassignment preserves grant membership; timeout never reclaims
+2026-10-05T07:30:32.2196893Z ok 53 - credit: reassignment preserves grant membership; timeout never reclaims
+2026-10-05T07:30:32.2197297Z   ---
+2026-10-05T07:30:32.2197478Z   duration_ms: 0.323322
+2026-10-05T07:30:32.2197683Z   type: 'test'
+2026-10-05T07:30:32.2197860Z   ...
+2026-10-05T07:30:32.2198267Z # Subtest: credit: closed tombstone rejects late old duplicate without extra capacity
+2026-10-05T07:30:32.2198890Z ok 54 - credit: closed tombstone rejects late old duplicate without extra capacity
+2026-10-05T07:30:32.2199593Z   ---
+2026-10-05T07:30:32.2199782Z   duration_ms: 0.780434
+2026-10-05T07:30:32.2199997Z   type: 'test'
+2026-10-05T07:30:32.2200179Z   ...
+2026-10-05T07:30:32.2200571Z # Subtest: credit: missing source fact remains waiting, not algorithmic deadlock
+2026-10-05T07:30:32.2201344Z ok 55 - credit: missing source fact remains waiting, not algorithmic deadlock
+2026-10-05T07:30:32.2201831Z   ---
+2026-10-05T07:30:32.2202022Z   duration_ms: 0.195044
+2026-10-05T07:30:32.2202246Z   type: 'test'
+2026-10-05T07:30:32.2202432Z   ...
+2026-10-05T07:30:32.2202928Z # Subtest: source-prefix refuses B grant while ungranted A occupies FIFO; credits need bounded bypass
+2026-10-05T07:30:32.2203677Z ok 56 - source-prefix refuses B grant while ungranted A occupies FIFO; credits need bounded bypass
+2026-10-05T07:30:32.2204115Z   ---
+2026-10-05T07:30:32.2204307Z   duration_ms: 0.589298
+2026-10-05T07:30:32.2204522Z   type: 'test'
+2026-10-05T07:30:32.2204704Z   ...
+2026-10-05T07:30:32.2205180Z # Subtest: seal behind future burst: prefix excludes ordering, credit reserved bypass reaches closure
+2026-10-05T07:30:32.2205911Z ok 57 - seal behind future burst: prefix excludes ordering, credit reserved bypass reaches closure
+2026-10-05T07:30:32.2206343Z   ---
+2026-10-05T07:30:32.2206535Z   duration_ms: 0.743216
+2026-10-05T07:30:32.2206753Z   type: 'test'
+2026-10-05T07:30:32.2206942Z   ...
+2026-10-05T07:30:32.2207461Z # Subtest: future burst beyond bypass envelope produces retained counterexample, no lost admitted membership
+2026-10-05T07:30:32.2208273Z ok 58 - future burst beyond bypass envelope produces retained counterexample, no lost admitted membership
+2026-10-05T07:30:32.2208735Z   ---
+2026-10-05T07:30:32.2209146Z   duration_ms: 0.297775
+2026-10-05T07:30:32.2209488Z   type: 'test'
+2026-10-05T07:30:32.2209682Z   ...
+2026-10-05T07:30:32.2210182Z # Subtest: declared fanout overflow rejected before opening; unknown membership faults without release
+2026-10-05T07:30:32.2210955Z ok 59 - declared fanout overflow rejected before opening; unknown membership faults without release
+2026-10-05T07:30:32.2211407Z   ---
+2026-10-05T07:30:32.2211600Z   duration_ms: 0.313354
+2026-10-05T07:30:32.2211816Z   type: 'test'
+2026-10-05T07:30:32.2211999Z   ...
+2026-10-05T07:30:32.2212490Z # Subtest: bounded exhaustive and seeded schedule families close all supplied facts within resources
+2026-10-05T07:30:32.2213236Z ok 60 - bounded exhaustive and seeded schedule families close all supplied facts within resources
+2026-10-05T07:30:32.2274747Z   ---
+2026-10-05T07:30:32.2275720Z   duration_ms: 387.922369
+2026-10-05T07:30:32.2276309Z   type: 'test'
+2026-10-05T07:30:32.2276817Z   ...
+2026-10-05T07:30:32.2277808Z # Subtest: healthy credit rejects unproved closure path before reserving capacity
+2026-10-05T07:30:32.2279376Z ok 61 - healthy credit rejects unproved closure path before reserving capacity
+2026-10-05T07:30:32.2280265Z   ---
+2026-10-05T07:30:32.2280757Z   duration_ms: 0.362415
+2026-10-05T07:30:32.2281331Z   type: 'test'
+2026-10-05T07:30:32.2281832Z   ...
+2026-10-05T07:30:32.2282876Z # Subtest: cyclic or forward prefix dependency manifests fail preflight instead of creating deadlock
+2026-10-05T07:30:32.2284468Z ok 62 - cyclic or forward prefix dependency manifests fail preflight instead of creating deadlock
+2026-10-05T07:30:32.2285423Z   ---
+2026-10-05T07:30:32.2285779Z   duration_ms: 0.29511
+2026-10-05T07:30:32.2286160Z   type: 'test'
+2026-10-05T07:30:32.2286432Z   ...
+2026-10-05T07:30:32.2286893Z # Subtest: prefix: checkpoint schema and required state reject truncated or mixed cuts
+2026-10-05T07:30:32.2287567Z ok 63 - prefix: checkpoint schema and required state reject truncated or mixed cuts
+2026-10-05T07:30:32.2287959Z   ---
+2026-10-05T07:30:32.2288152Z   duration_ms: 3.034525
+2026-10-05T07:30:32.2288525Z   type: 'test'
+2026-10-05T07:30:32.2289174Z   ...
+2026-10-05T07:30:32.2290329Z # Subtest: credit: checkpoint schema and required state reject truncated or mixed cuts
+2026-10-05T07:30:32.2291892Z ok 64 - credit: checkpoint schema and required state reject truncated or mixed cuts
+2026-10-05T07:30:32.2292688Z   ---
+2026-10-05T07:30:32.2293060Z   duration_ms: 2.205099
+2026-10-05T07:30:32.2293526Z   type: 'test'
+2026-10-05T07:30:32.2293983Z   ...
+2026-10-05T07:30:37.0035945Z # Subtest: fixed budgets retain bounded correctness profile
+2026-10-05T07:30:37.0037062Z ok 65 - fixed budgets retain bounded correctness profile
+2026-10-05T07:30:37.0039778Z   ---
+2026-10-05T07:30:37.0040182Z   duration_ms: 4.645276
+2026-10-05T07:30:37.0040611Z   type: 'test'
+2026-10-05T07:30:37.0040982Z   ...
+2026-10-05T07:30:37.0041884Z # Subtest: preflight rejects unsupported schema, duplicate IDs, scope and wrapper paths
+2026-10-05T07:30:37.0043198Z ok 66 - preflight rejects unsupported schema, duplicate IDs, scope and wrapper paths
+2026-10-05T07:30:37.0043984Z   ---
+2026-10-05T07:30:37.0044318Z   duration_ms: 1.84561
+2026-10-05T07:30:37.0044716Z   type: 'test'
+2026-10-05T07:30:37.0045082Z   ...
+2026-10-05T07:30:37.0045845Z # Subtest: frozen preflight clone prevents caller changing cleanup resources
+2026-10-05T07:30:37.0047208Z ok 67 - frozen preflight clone prevents caller changing cleanup resources
+2026-10-05T07:30:37.0055033Z   ---
+2026-10-05T07:30:37.0055717Z   duration_ms: 0.391048
+2026-10-05T07:30:37.0056472Z   type: 'test'
+2026-10-05T07:30:37.0057066Z   ...
+2026-10-05T07:30:37.0057958Z # Subtest: exact resource set and labels required on every sample
+2026-10-05T07:30:37.0059435Z ok 68 - exact resource set and labels required on every sample
+2026-10-05T07:30:37.0060311Z   ---
+2026-10-05T07:30:37.0060897Z   duration_ms: 1.123764
+2026-10-05T07:30:37.0061537Z   type: 'test'
+2026-10-05T07:30:37.0062112Z   ...
+2026-10-05T07:30:37.0063115Z # Subtest: negative/nonfinite readings and stale/future heartbeat fail closed
+2026-10-05T07:30:37.0064488Z ok 69 - negative/nonfinite readings and stale/future heartbeat fail closed
+2026-10-05T07:30:37.0065420Z   ---
+2026-10-05T07:30:37.0066067Z   duration_ms: 0.920685
+2026-10-05T07:30:37.0066505Z   type: 'test'
+2026-10-05T07:30:37.0066832Z   ...
+2026-10-05T07:30:37.0067427Z # Subtest: each resource budget aborts at exact threshold
+2026-10-05T07:30:37.0068217Z ok 70 - each resource budget aborts at exact threshold
+2026-10-05T07:30:37.0068755Z   ---
+2026-10-05T07:30:37.0069340Z   duration_ms: 0.536219
+2026-10-05T07:30:37.0069733Z   type: 'test'
+2026-10-05T07:30:37.0070064Z   ...
+2026-10-05T07:30:37.0070910Z # Subtest: intentional STOP charges evidenced conservative bound and requires healthy peers
+2026-10-05T07:30:37.0072190Z ok 71 - intentional STOP charges evidenced conservative bound and requires healthy peers
+2026-10-05T07:30:37.0072949Z   ---
+2026-10-05T07:30:37.0073274Z   duration_ms: 0.587955
+2026-10-05T07:30:37.0073640Z   type: 'test'
+2026-10-05T07:30:37.0073952Z   ...
+2026-10-05T07:30:37.0074705Z # Subtest: observer startup throw prevents launch, still stops registered brokers
+2026-10-05T07:30:37.0075830Z ok 72 - observer startup throw prevents launch, still stops registered brokers
+2026-10-05T07:30:37.0076514Z   ---
+2026-10-05T07:30:37.0076845Z   duration_ms: 2.608621
+2026-10-05T07:30:37.0077230Z   type: 'test'
+2026-10-05T07:30:37.0077549Z   ...
+2026-10-05T07:30:37.0078359Z # Subtest: observer throw/stale/hung and sample record failure kill owned group and brokers
+2026-10-05T07:30:37.0079889Z ok 73 - observer throw/stale/hung and sample record failure kill owned group and brokers
+2026-10-05T07:30:37.0080655Z   ---
+2026-10-05T07:30:37.0080990Z   duration_ms: 31.151566
+2026-10-05T07:30:37.0081382Z   type: 'test'
+2026-10-05T07:30:37.0081694Z   ...
+2026-10-05T07:30:37.0082442Z # Subtest: wrapper failure and proof timeout kill owned group and registered brokers
+2026-10-05T07:30:37.0083553Z ok 74 - wrapper failure and proof timeout kill owned group and registered brokers
+2026-10-05T07:30:37.0086561Z   ---
+2026-10-05T07:30:37.0086892Z   duration_ms: 5.168891
+2026-10-05T07:30:37.0087274Z   type: 'test'
+2026-10-05T07:30:37.0087592Z   ...
+2026-10-05T07:30:37.0088349Z # Subtest: success requires final sample and exit status handshake before completion
+2026-10-05T07:30:37.0089246Z ok 75 - success requires final sample and exit status handshake before completion
+2026-10-05T07:30:37.0089646Z   ---
+2026-10-05T07:30:37.0089934Z   duration_ms: 1.41116
+2026-10-05T07:30:37.0090336Z   type: 'test'
+2026-10-05T07:30:37.0090659Z   ...
+2026-10-05T07:30:37.0091630Z # Subtest: final sample failure cannot report successful wrapper as proof completion
+2026-10-05T07:30:37.0092990Z ok 76 - final sample failure cannot report successful wrapper as proof completion
+2026-10-05T07:30:37.0093715Z   ---
+2026-10-05T07:30:37.0094054Z   duration_ms: 1.270898
+2026-10-05T07:30:37.0094456Z   type: 'test'
+2026-10-05T07:30:37.0094790Z   ...
+2026-10-05T07:30:37.0095505Z # Subtest: cleanup failures are recorded and never relabel proof as successful
+2026-10-05T07:30:37.0096616Z ok 77 - cleanup failures are recorded and never relabel proof as successful
+2026-10-05T07:30:37.0097281Z   ---
+2026-10-05T07:30:37.0097611Z   duration_ms: 1.720035
+2026-10-05T07:30:37.0097991Z   type: 'test'
+2026-10-05T07:30:37.0098318Z   ...
+2026-10-05T07:30:37.0099392Z # Subtest: hanging journal, prelaunch interrupt and synchronous cleanup throws fail closed
+2026-10-05T07:30:37.0100684Z ok 78 - hanging journal, prelaunch interrupt and synchronous cleanup throws fail closed
+2026-10-05T07:30:37.0101434Z   ---
+2026-10-05T07:30:37.0101790Z   duration_ms: 46.572873
+2026-10-05T07:30:37.0102201Z   type: 'test'
+2026-10-05T07:30:37.0102535Z   ...
+2026-10-05T07:30:37.0103313Z # Subtest: monitor plus journal elapsed time cannot launch with stale initial sample
+2026-10-05T07:30:37.0104514Z ok 79 - monitor plus journal elapsed time cannot launch with stale initial sample
+2026-10-05T07:30:37.0105229Z   ---
+2026-10-05T07:30:37.0105579Z   duration_ms: 0.800562
+2026-10-05T07:30:37.0105967Z   type: 'test'
+2026-10-05T07:30:37.0106297Z   ...
+2026-10-05T07:30:37.0107119Z # Subtest: slow initial monitor anchors first and later sample starts to sample timestamp
+2026-10-05T07:30:37.0108368Z ok 80 - slow initial monitor anchors first and later sample starts to sample timestamp
+2026-10-05T07:30:37.0109339Z   ---
+2026-10-05T07:30:37.0109700Z   duration_ms: 1.524641
+2026-10-05T07:30:37.0110094Z   type: 'test'
+2026-10-05T07:30:37.0110429Z   ...
+2026-10-05T07:30:37.0111295Z # Subtest: polling clock jump past heartbeat deadline stops owned wrapper before new sample
+2026-10-05T07:30:37.0112597Z ok 81 - polling clock jump past heartbeat deadline stops owned wrapper before new sample
+2026-10-05T07:30:37.0113366Z   ---
+2026-10-05T07:30:37.0113707Z   duration_ms: 0.726644
+2026-10-05T07:30:37.0114090Z   type: 'test'
+2026-10-05T07:30:37.0114413Z   ...
+2026-10-05T07:30:37.0115055Z # Subtest: elapsed launch time cannot continue with stale heartbeat
+2026-10-05T07:30:37.0115998Z ok 82 - elapsed launch time cannot continue with stale heartbeat
+2026-10-05T07:30:37.0116599Z   ---
+2026-10-05T07:30:37.0116949Z   duration_ms: 0.726223
+2026-10-05T07:30:37.0117407Z   type: 'test'
+2026-10-05T07:30:37.0117733Z   ...
+2026-10-05T07:30:37.0118513Z # Subtest: hanging or throwing completion write returns failure after bounded cleanup
+2026-10-05T07:30:37.0119936Z ok 83 - hanging or throwing completion write returns failure after bounded cleanup
+2026-10-05T07:30:37.0120653Z   ---
+2026-10-05T07:30:37.0120982Z   duration_ms: 24.21377
+2026-10-05T07:30:37.0121209Z   type: 'test'
+2026-10-05T07:30:37.0121404Z   ...
+2026-10-05T07:30:37.0121860Z # Subtest: polling jitter within early sample lead keeps strict freshness and bounded cadence
+2026-10-05T07:30:37.0122538Z ok 84 - polling jitter within early sample lead keeps strict freshness and bounded cadence
+2026-10-05T07:30:37.0122943Z   ---
+2026-10-05T07:30:37.0123133Z   duration_ms: 1.87278
+2026-10-05T07:30:37.0123337Z   type: 'test'
+2026-10-05T07:30:37.0123521Z   ...
+2026-10-05T07:30:37.0124027Z # Subtest: real asynchronous monitor/write time and polling jitter stay within five-second sample window
+2026-10-05T07:30:37.0124795Z ok 85 - real asynchronous monitor/write time and polling jitter stay within five-second sample window
+2026-10-05T07:30:37.0125241Z   ---
+2026-10-05T07:30:37.0125431Z   duration_ms: 5078.5971
+2026-10-05T07:30:37.0125649Z   type: 'test'
+2026-10-05T07:30:37.0125828Z   ...
+2026-10-05T07:30:37.0669864Z # Subtest: timed-out completion receives cancellation and cannot publish after delayed data write
+2026-10-05T07:30:37.0671851Z ok 86 - timed-out completion receives cancellation and cannot publish after delayed data write
+2026-10-05T07:30:37.0672946Z   ---
+2026-10-05T07:30:37.0673331Z   duration_ms: 62.181939
+2026-10-05T07:30:37.0673748Z   type: 'test'
+2026-10-05T07:30:37.0674108Z   ...
+2026-10-05T07:30:37.0686852Z # Subtest: Attempt2 cycle2 preflight requires exactly one adjacent literal phase flag and directory
+2026-10-05T07:30:37.0688785Z ok 87 - Attempt2 cycle2 preflight requires exactly one adjacent literal phase flag and directory
+2026-10-05T07:30:37.0704109Z   ---
+2026-10-05T07:30:37.0704680Z   duration_ms: 4.169908
+2026-10-05T07:30:37.0705148Z   type: 'test'
+2026-10-05T07:30:37.0705523Z   ...
+2026-10-05T07:30:37.6437823Z # {"control":"three-second-parent-recovery","startingSamples":[27600,28400,29200],"grantAtMs":26800,"recoveryDeadlineMs":56800,"scope":"actual adapter and file protocol; injected Docker and monotonic clock"}
+2026-10-05T07:30:37.6445620Z # Subtest: Attempt2 cycle2 three-second recovery records multiple measured starting samples; other phases keep five-second cadence
+2026-10-05T07:30:37.6447889Z ok 88 - Attempt2 cycle2 three-second recovery records multiple measured starting samples; other phases keep five-second cadence
+2026-10-05T07:30:37.6449142Z   ---
+2026-10-05T07:30:37.6449708Z   duration_ms: 575.802804
+2026-10-05T07:30:37.6450324Z   type: 'test'
+2026-10-05T07:30:37.6451098Z   ...
+2026-10-05T07:30:37.8693504Z # Subtest: Attempt2 group2 actual adapter and file protocol accept one STOP starting healthy cycle with stable reservation
+2026-10-05T07:30:37.8695888Z ok 89 - Attempt2 group2 actual adapter and file protocol accept one STOP starting healthy cycle with stable reservation
+2026-10-05T07:30:37.8697311Z   ---
+2026-10-05T07:30:37.8697824Z   duration_ms: 224.719522
+2026-10-05T07:30:37.8698409Z   type: 'test'
+2026-10-05T07:30:37.8699189Z   ...
+2026-10-05T07:30:37.8774532Z # {"control":"healthy-only-restriction-mutant","orderedObservations":["healthy","stopped","starting"],"rejectedAt":"starting","scope":"single predicate restriction mutation; not complete old source"}
+2026-10-05T07:30:37.8780513Z # Subtest: Attempt2 healthy-only restriction mutant reaches STOP then rejects actual adapter starting observation
+2026-10-05T07:30:37.8782445Z ok 90 - Attempt2 healthy-only restriction mutant reaches STOP then rejects actual adapter starting observation
+2026-10-05T07:30:37.8783564Z   ---
+2026-10-05T07:30:37.8783967Z   duration_ms: 8.815047
+2026-10-05T07:30:37.8784421Z   type: 'test'
+2026-10-05T07:30:37.8784641Z   ...
+2026-10-05T07:30:37.8875890Z # Subtest: Attempt2 group1 initial stopped starting unhealthy and unconfigured fault reject before launch
+2026-10-05T07:30:37.8878192Z ok 91 - Attempt2 group1 initial stopped starting unhealthy and unconfigured fault reject before launch
+2026-10-05T07:30:37.8879672Z   ---
+2026-10-05T07:30:37.8880116Z   duration_ms: 9.40079
+2026-10-05T07:30:37.8880624Z   type: 'test'
+2026-10-05T07:30:37.8881093Z   ...
+2026-10-05T07:30:37.8915233Z # Subtest: Attempt2 group3 START requires authorized directly observed stopped barrier even without periodic STOP sample
+2026-10-05T07:30:37.8917387Z ok 92 - Attempt2 group3 START requires authorized directly observed stopped barrier even without periodic STOP sample
+2026-10-05T07:30:37.8918648Z   ---
+2026-10-05T07:30:37.8919516Z   duration_ms: 3.931914
+2026-10-05T07:30:37.8919999Z   type: 'test'
+2026-10-05T07:30:37.8920391Z   ...
+2026-10-05T07:30:37.9043986Z # Subtest: Attempt2 group4 exact identity artifacts immutable replay path and missing ACK fail closed
+2026-10-05T07:30:37.9045895Z ok 93 - Attempt2 group4 exact identity artifacts immutable replay path and missing ACK fail closed
+2026-10-05T07:30:37.9047052Z   ---
+2026-10-05T07:30:37.9047498Z   duration_ms: 12.912306
+2026-10-05T07:30:37.9048062Z   type: 'test'
+2026-10-05T07:30:37.9048538Z   ...
+2026-10-05T07:30:38.0179197Z # Subtest: Attempt2 group5 either peer lifecycle health and generation fail in every phase
+2026-10-05T07:30:38.0181852Z ok 94 - Attempt2 group5 either peer lifecycle health and generation fail in every phase
+2026-10-05T07:30:38.0183476Z   ---
+2026-10-05T07:30:38.0184155Z   duration_ms: 113.190238
+2026-10-05T07:30:38.0184659Z   type: 'test'
+2026-10-05T07:30:38.0185027Z   ...
+2026-10-05T07:30:38.0525885Z # Subtest: Attempt2 group6 target invalid grace second generation stopped-after-running and old probe fail
+2026-10-05T07:30:38.0528570Z ok 95 - Attempt2 group6 target invalid grace second generation stopped-after-running and old probe fail
+2026-10-05T07:30:38.0529745Z   ---
+2026-10-05T07:30:38.0530132Z   duration_ms: 34.77493
+2026-10-05T07:30:38.0530658Z   type: 'test'
+2026-10-05T07:30:38.0531059Z   ...
+2026-10-05T07:30:38.0678418Z # Subtest: Attempt2 group7 fixed recovery deadline boundaries persistence and starting never renew anchor
+2026-10-05T07:30:38.0680818Z ok 96 - Attempt2 group7 fixed recovery deadline boundaries persistence and starting never renew anchor
+2026-10-05T07:30:38.0682004Z   ---
+2026-10-05T07:30:38.0682450Z   duration_ms: 15.244974
+2026-10-05T07:30:38.0682993Z   type: 'test'
+2026-10-05T07:30:38.0683437Z   ...
+2026-10-05T07:30:38.0984606Z # Subtest: Attempt2 group8 target du bound strict malformed and observer hung retain fixed charged bytes
+2026-10-05T07:30:38.0986809Z ok 97 - Attempt2 group8 target du bound strict malformed and observer hung retain fixed charged bytes
+2026-10-05T07:30:38.0987652Z   ---
+2026-10-05T07:30:38.0987881Z   duration_ms: 30.558981
+2026-10-05T07:30:38.0988130Z   type: 'test'
+2026-10-05T07:30:38.0988343Z   ...
+2026-10-05T07:30:38.3223473Z # Subtest: Attempt2 group9 protocol read ACK and authorization evidence cannot suspend strict observer gate
+2026-10-05T07:30:38.3240644Z ok 98 - Attempt2 group9 protocol read ACK and authorization evidence cannot suspend strict observer gate
+2026-10-05T07:30:38.3241589Z   ---
+2026-10-05T07:30:38.3241981Z   duration_ms: 223.519805
+2026-10-05T07:30:38.3242382Z   type: 'test'
+2026-10-05T07:30:38.3242764Z   ...
+2026-10-05T07:30:38.3320332Z # Subtest: Attempt2 group10 incomplete cycle exit cannot complete and rejected raw inspect survives diagnostics failure
+2026-10-05T07:30:38.3322703Z ok 99 - Attempt2 group10 incomplete cycle exit cannot complete and rejected raw inspect survives diagnostics failure
+2026-10-05T07:30:38.3323770Z   ---
+2026-10-05T07:30:38.3324167Z   duration_ms: 9.966878
+2026-10-05T07:30:38.3324619Z   type: 'test'
+2026-10-05T07:30:38.3324981Z   ...
+2026-10-05T07:30:38.3339432Z # Subtest: Docker adapter samples running peers, reserves stopped target and retains registered volumes
+2026-10-05T07:30:38.3341659Z ok 100 - Docker adapter samples running peers, reserves stopped target and retains registered volumes
+2026-10-05T07:30:38.3342537Z   ---
+2026-10-05T07:30:38.3342829Z   duration_ms: 1.872184
+2026-10-05T07:30:38.3343259Z   type: 'test'
+2026-10-05T07:30:38.3343575Z   ...
+2026-10-05T07:30:38.3367768Z # Subtest: Docker adapter does not skip running du failure or accept changed image metadata
+2026-10-05T07:30:38.3369292Z ok 101 - Docker adapter does not skip running du failure or accept changed image metadata
+2026-10-05T07:30:38.3370108Z   ---
+2026-10-05T07:30:38.3370447Z   duration_ms: 2.823477
+2026-10-05T07:30:38.3370828Z   type: 'test'
+2026-10-05T07:30:38.3371152Z   ...
+2026-10-05T07:30:38.3475620Z # Subtest: adapter completion uses atomic synchronous commit rather than uncancellable asynchronous rename
+2026-10-05T07:30:38.3477461Z ok 102 - adapter completion uses atomic synchronous commit rather than uncancellable asynchronous rename
+2026-10-05T07:30:38.3478049Z   ---
+2026-10-05T07:30:38.3478275Z   duration_ms: 10.558251
+2026-10-05T07:30:38.3478544Z   type: 'test'
+2026-10-05T07:30:38.3478760Z   ...
+2026-10-05T07:30:38.5573090Z # Subtest: adapter timed-out temporary data write cannot publish late successful completion
+2026-10-05T07:30:38.5574711Z ok 103 - adapter timed-out temporary data write cannot publish late successful completion
+2026-10-05T07:30:38.5600031Z   ---
+2026-10-05T07:30:38.5602339Z   duration_ms: 209.670586
+2026-10-05T07:30:38.5602617Z   type: 'test'
+2026-10-05T07:30:38.5602820Z   ...
+2026-10-05T07:30:38.7444749Z # Subtest: adapter checks elapsed deadline before commit when write continuation delays timer callback
+2026-10-05T07:30:38.7446361Z ok 104 - adapter checks elapsed deadline before commit when write continuation delays timer callback
+2026-10-05T07:30:38.7446878Z   ---
+2026-10-05T07:30:38.7447091Z   duration_ms: 186.821198
+2026-10-05T07:30:38.7447349Z   type: 'test'
+2026-10-05T07:30:38.7447555Z   ...
+2026-10-05T07:30:39.8088451Z # Subtest: synchronous adapter commit cannot interleave with timeout callback at publication boundary
+2026-10-05T07:30:39.8089993Z ok 105 - synchronous adapter commit cannot interleave with timeout callback at publication boundary
+2026-10-05T07:30:39.8090636Z   ---
+2026-10-05T07:30:39.8090901Z   duration_ms: 1064.187188
+2026-10-05T07:30:39.8091199Z   type: 'test'
+2026-10-05T07:30:39.8091445Z   ...
+2026-10-05T07:30:40.2910983Z # Subtest: observer failure stops active owned wrapper/STOP leaf while sentinel survives
+2026-10-05T07:30:40.2912690Z ok 106 - observer failure stops active owned wrapper/STOP leaf while sentinel survives
+2026-10-05T07:30:40.2913772Z   ---
+2026-10-05T07:30:40.2914092Z   duration_ms: 482.228775
+2026-10-05T07:30:40.2914456Z   type: 'test'
+2026-10-05T07:30:40.2914769Z   ...
+2026-10-05T07:30:41.0697605Z # Subtest: owned group kills stopped TERM-resistant leaf after leader exits; unrelated sentinel survives
+2026-10-05T07:30:41.0700365Z ok 107 - owned group kills stopped TERM-resistant leaf after leader exits; unrelated sentinel survives
+2026-10-05T07:30:41.0701202Z   ---
+2026-10-05T07:30:41.0701533Z   duration_ms: 778.743655
+2026-10-05T07:30:41.0701900Z   type: 'test'
+2026-10-05T07:30:41.0702202Z   ...
+2026-10-05T07:30:41.2440226Z # Subtest: preparation stops until E3 correctness and real calibration plus indexed/bounded adapter exist
+2026-10-05T07:30:41.2442141Z ok 108 - preparation stops until E3 correctness and real calibration plus indexed/bounded adapter exist
+2026-10-05T07:30:41.2443132Z   ---
+2026-10-05T07:30:41.2443539Z   duration_ms: 1.972986
+2026-10-05T07:30:41.2444053Z   type: 'test'
+2026-10-05T07:30:41.2444463Z   ...
+2026-10-05T07:30:41.2445539Z # Subtest: source/fixture mismatches and fabricated zero-byte calibration cannot freeze runnable policy
+2026-10-05T07:30:41.2447264Z ok 109 - source/fixture mismatches and fabricated zero-byte calibration cannot freeze runnable policy
+2026-10-05T07:30:41.2448293Z   ---
+2026-10-05T07:30:41.2448679Z   duration_ms: 0.30594
+2026-10-05T07:30:41.2449388Z   type: 'test'
+2026-10-05T07:30:41.2449801Z   ...
+2026-10-05T07:30:41.2451009Z # Subtest: aged estimate retains proposed 1m identities; over-budget case explicitly shrinks diagnostic only
+2026-10-05T07:30:41.2452718Z ok 110 - aged estimate retains proposed 1m identities; over-budget case explicitly shrinks diagnostic only
+2026-10-05T07:30:41.2453641Z   ---
+2026-10-05T07:30:41.2453997Z   duration_ms: 0.313084
+2026-10-05T07:30:41.2454400Z   type: 'test'
+2026-10-05T07:30:41.2454734Z   ...
+2026-10-05T07:30:41.2455601Z # Subtest: disk space gate and exact prefunding bound all declared timed plus pending work
+2026-10-05T07:30:41.2456922Z ok 111 - disk space gate and exact prefunding bound all declared timed plus pending work
+2026-10-05T07:30:41.2457700Z   ---
+2026-10-05T07:30:41.2458054Z   duration_ms: 0.999933
+2026-10-05T07:30:41.2458476Z   type: 'test'
+2026-10-05T07:30:41.2458825Z   ...
+2026-10-05T07:30:41.2460066Z # Subtest: measurement separates stage rates; complete parity and all telemetry permit diagnostic pass
+2026-10-05T07:30:41.2461617Z ok 112 - measurement separates stage rates; complete parity and all telemetry permit diagnostic pass
+2026-10-05T07:30:41.2462501Z   ---
+2026-10-05T07:30:41.2462866Z   duration_ms: 1.134484
+2026-10-05T07:30:41.2463290Z   type: 'test'
+2026-10-05T07:30:41.2463643Z   ...
+2026-10-05T07:30:41.2464400Z # Subtest: producer duration miss fails even when output is exact after drain
+2026-10-05T07:30:41.2465546Z ok 113 - producer duration miss fails even when output is exact after drain
+2026-10-05T07:30:41.2466260Z   ---
+2026-10-05T07:30:41.2466926Z   duration_ms: 0.543943
+2026-10-05T07:30:41.2467637Z   type: 'test'
+2026-10-05T07:30:41.2468004Z   ...
+2026-10-05T07:30:41.2468859Z # Subtest: late drain cannot be counted as deadline output or settled financial throughput
+2026-10-05T07:30:41.2500593Z ok 114 - late drain cannot be counted as deadline output or settled financial throughput
+2026-10-05T07:30:41.2501421Z   ---
+2026-10-05T07:30:41.2501800Z   duration_ms: 0.424301
+2026-10-05T07:30:41.2502233Z   type: 'test'
+2026-10-05T07:30:41.2502596Z   ...
+2026-10-05T07:30:41.2503448Z # Subtest: cumulative offered cannot roll back between deadline and final cuts
+2026-10-05T07:30:41.2504651Z ok 115 - cumulative offered cannot roll back between deadline and final cuts
+2026-10-05T07:30:41.2505382Z   ---
+2026-10-05T07:30:41.2505743Z   duration_ms: 0.525079
+2026-10-05T07:30:41.2506156Z   type: 'test'
+2026-10-05T07:30:41.2506519Z   ...
+2026-10-05T07:30:41.2507304Z # Subtest: cumulative admitted cannot roll back between deadline and final cuts
+2026-10-05T07:30:41.2508483Z ok 116 - cumulative admitted cannot roll back between deadline and final cuts
+2026-10-05T07:30:41.2509471Z   ---
+2026-10-05T07:30:41.2509837Z   duration_ms: 0.359911
+2026-10-05T07:30:41.2510250Z   type: 'test'
+2026-10-05T07:30:41.2510608Z   ...
+2026-10-05T07:30:41.2511379Z # Subtest: cumulative decided cannot roll back between deadline and final cuts
+2026-10-05T07:30:41.2512544Z ok 117 - cumulative decided cannot roll back between deadline and final cuts
+2026-10-05T07:30:41.2513283Z   ---
+2026-10-05T07:30:41.2513653Z   duration_ms: 0.951934
+2026-10-05T07:30:41.2514070Z   type: 'test'
+2026-10-05T07:30:41.2514433Z   ...
+2026-10-05T07:30:41.2515208Z # Subtest: cumulative settled cannot roll back between deadline and final cuts
+2026-10-05T07:30:41.2516382Z ok 118 - cumulative settled cannot roll back between deadline and final cuts
+2026-10-05T07:30:41.2517115Z   ---
+2026-10-05T07:30:41.2517480Z   duration_ms: 0.410745
+2026-10-05T07:30:41.2517886Z   type: 'test'
+2026-10-05T07:30:41.2518231Z   ...
+2026-10-05T07:30:41.2519353Z # Subtest: deadline offers cannot exceed frozen expected workload even if final agrees
+2026-10-05T07:30:41.2520662Z ok 119 - deadline offers cannot exceed frozen expected workload even if final agrees
+2026-10-05T07:30:41.2521442Z   ---
+2026-10-05T07:30:41.2521799Z   duration_ms: 0.45068
+2026-10-05T07:30:41.2522207Z   type: 'test'
+2026-10-05T07:30:41.2522563Z   ...
+2026-10-05T07:30:41.2523382Z # Subtest: each cut rejects admission ordering and settlement accounting violations
+2026-10-05T07:30:41.2524636Z ok 120 - each cut rejects admission ordering and settlement accounting violations
+2026-10-05T07:30:41.2525469Z   ---
+2026-10-05T07:30:41.2525839Z   duration_ms: 2.136612
+2026-10-05T07:30:41.2526321Z   type: 'test'
+2026-10-05T07:30:41.2526674Z   ...
+2026-10-05T07:30:41.2527491Z # Subtest: pending may decrease during drain; only missed deadline settlement fails
+2026-10-05T07:30:41.2528727Z ok 121 - pending may decrease during drain; only missed deadline settlement fails
+2026-10-05T07:30:41.2537593Z   ---
+2026-10-05T07:30:41.2537948Z   duration_ms: 1.166824
+2026-10-05T07:30:41.2538268Z   type: 'test'
+2026-10-05T07:30:41.2538628Z   ...
+2026-10-05T07:30:41.2539790Z # Subtest: missing accounting or resource metrics are explicit limited attempt; count inconsistency fails
+2026-10-05T07:30:41.2541254Z ok 122 - missing accounting or resource metrics are explicit limited attempt; count inconsistency fails
+2026-10-05T07:30:41.2542073Z   ---
+2026-10-05T07:30:41.2542395Z   duration_ms: 1.079933
+2026-10-05T07:30:41.2542776Z   type: 'test'
+2026-10-05T07:30:41.2543109Z   ...
+2026-10-05T07:30:41.2543914Z # Subtest: lag growth, over-budget disk and unsupported latency clock cannot silently pass
+2026-10-05T07:30:41.2545122Z ok 123 - lag growth, over-budget disk and unsupported latency clock cannot silently pass
+2026-10-05T07:30:41.2545836Z   ---
+2026-10-05T07:30:41.2546152Z   duration_ms: 0.493059
+2026-10-05T07:30:41.2546514Z   type: 'test'
+2026-10-05T07:30:41.2546828Z   ...
+2026-10-05T07:30:41.2547897Z # Subtest: highest stable measured arm creates fresh/aged 300s pair with same business workload
+2026-10-05T07:30:41.2549499Z ok 124 - highest stable measured arm creates fresh/aged 300s pair with same business workload
+2026-10-05T07:30:41.2550043Z   ---
+2026-10-05T07:30:41.2550399Z   duration_ms: 0.255225
+2026-10-05T07:30:41.2550807Z   type: 'test'
+2026-10-05T07:30:41.2551158Z   ...
+2026-10-05T07:30:41.2552108Z # Subtest: missing restore cost, partial monitoring and observer slowdown remain limited preflight
+2026-10-05T07:30:41.2553554Z ok 125 - missing restore cost, partial monitoring and observer slowdown remain limited preflight
+2026-10-05T07:30:41.2554380Z   ---
+2026-10-05T07:30:41.2554726Z   duration_ms: 0.517654
+2026-10-05T07:30:41.2555124Z   type: 'test'
+2026-10-05T07:30:41.2555469Z   ...
+2026-10-05T07:30:41.2556491Z # Subtest: load and calibration entrypoints refuse before filesystem or adapter work without authorization
+2026-10-05T07:30:41.2558073Z ok 126 - load and calibration entrypoints refuse before filesystem or adapter work without authorization
+2026-10-05T07:30:41.2559209Z   ---
+2026-10-05T07:30:41.2559572Z   duration_ms: 0.920335
+2026-10-05T07:30:41.2559969Z   type: 'test'
+2026-10-05T07:30:41.2560315Z   ...
+2026-10-05T07:30:41.2561266Z # Subtest: calibration overrides cannot undercut measured physical byte budget or use invalid numbers
+2026-10-05T07:30:41.2562760Z ok 127 - calibration overrides cannot undercut measured physical byte budget or use invalid numbers
+2026-10-05T07:30:41.2563602Z   ---
+2026-10-05T07:30:41.2563940Z   duration_ms: 0.494241
+2026-10-05T07:30:41.2564336Z   type: 'test'
+2026-10-05T07:30:41.2564686Z   ...
+2026-10-05T07:30:41.2565488Z # Subtest: valid byte override preserves conservative floor and may increase budget only
+2026-10-05T07:30:41.2566702Z ok 128 - valid byte override preserves conservative floor and may increase budget only
+2026-10-05T07:30:41.2567429Z   ---
+2026-10-05T07:30:41.2567759Z   duration_ms: 0.390488
+2026-10-05T07:30:41.2568129Z   type: 'test'
+2026-10-05T07:30:41.2568468Z   ...
+2026-10-05T07:30:41.2569463Z # Subtest: derived per-trade budget must remain safe integer before policy freezes
+2026-10-05T07:30:41.2570604Z ok 129 - derived per-trade budget must remain safe integer before policy freezes
+2026-10-05T07:30:41.2571299Z   ---
+2026-10-05T07:30:41.2571618Z   duration_ms: 0.213608
+2026-10-05T07:30:41.2571987Z   type: 'test'
+2026-10-05T07:30:41.2572317Z   ...
+2026-10-05T07:30:41.2573195Z # Subtest: invalid telemetry produces null derived metrics instead of non-finite values
+2026-10-05T07:30:41.2574422Z ok 130 - invalid telemetry produces null derived metrics instead of non-finite values
+2026-10-05T07:30:41.2575141Z   ---
+2026-10-05T07:30:41.2575465Z   duration_ms: 2.475103
+2026-10-05T07:30:41.2575841Z   type: 'test'
+2026-10-05T07:30:41.2576167Z   ...
+2026-10-05T07:30:41.2576949Z # Subtest: invalid duration and zero trades cannot publish non-finite derived metrics
+2026-10-05T07:30:41.2578203Z ok 131 - invalid duration and zero trades cannot publish non-finite derived metrics
+2026-10-05T07:30:41.2579163Z   ---
+2026-10-05T07:30:41.2579533Z   duration_ms: 2.159684
+2026-10-05T07:30:41.2579930Z   type: 'test'
+2026-10-05T07:30:41.2580269Z   ...
+2026-10-05T07:30:41.2581060Z # Subtest: M3H missing conservative heap evidence blocks legacy real calibration
+2026-10-05T07:30:41.2582232Z ok 132 - M3H missing conservative heap evidence blocks legacy real calibration
+2026-10-05T07:30:41.2582785Z   ---
+2026-10-05T07:30:41.2582977Z   duration_ms: 0.167362
+2026-10-05T07:30:41.2583193Z   type: 'test'
+2026-10-05T07:30:41.2583390Z   ...
+2026-10-05T07:30:41.2583821Z # Subtest: M3H oversized retained heap cannot freeze despite fitting physical budget
+2026-10-05T07:30:41.2584465Z ok 133 - M3H oversized retained heap cannot freeze despite fitting physical budget
+2026-10-05T07:30:41.2584849Z   ---
+2026-10-05T07:30:41.2585040Z   duration_ms: 0.164146
+2026-10-05T07:30:41.2585254Z   type: 'test'
+2026-10-05T07:30:41.2585438Z   ...
+2026-10-05T07:30:41.2586094Z # Subtest: M3H finite checked formula includes timed+aged identities, pending and both reserves
+2026-10-05T07:30:41.2586919Z ok 134 - M3H finite checked formula includes timed+aged identities, pending and both reserves
+2026-10-05T07:30:41.2587336Z   ---
+2026-10-05T07:30:41.2587518Z   duration_ms: 0.408241
+2026-10-05T07:30:41.2587722Z   type: 'test'
+2026-10-05T07:30:41.2587911Z   ...
+2026-10-05T07:30:41.2588424Z # Subtest: M3H numeric controls reject missing, string, negative, NaN, infinity, unsafe and fractional values
+2026-10-05T07:30:41.2589591Z ok 135 - M3H numeric controls reject missing, string, negative, NaN, infinity, unsafe and fractional values
+2026-10-05T07:30:41.2590067Z   ---
+2026-10-05T07:30:41.2590249Z   duration_ms: 1.739622
+2026-10-05T07:30:41.2590458Z   type: 'test'
+2026-10-05T07:30:41.2590644Z   ...
+2026-10-05T07:30:41.2591105Z # Subtest: M3H child lower max recomputes limit, higher unauthorized max cannot raise request cap
+2026-10-05T07:30:41.2591816Z ok 136 - M3H child lower max recomputes limit, higher unauthorized max cannot raise request cap
+2026-10-05T07:30:41.2592234Z   ---
+2026-10-05T07:30:41.2592419Z   duration_ms: 0.346505
+2026-10-05T07:30:41.2592625Z   type: 'test'
+2026-10-05T07:30:41.2592810Z   ...
+2026-10-05T07:30:41.2593231Z # Subtest: M3H equality, unsupported counts and multiplication/addition overflow refuse
+2026-10-05T07:30:41.2593868Z ok 137 - M3H equality, unsupported counts and multiplication/addition overflow refuse
+2026-10-05T07:30:41.2594523Z   ---
+2026-10-05T07:30:41.2594867Z   duration_ms: 0.403181
+2026-10-05T07:30:41.2595250Z   type: 'test'
+2026-10-05T07:30:41.2595571Z   ...
+2026-10-05T07:30:41.2596318Z # Subtest: M3H fresh and aged overrun block without silently shrinking original heap workload
+2026-10-05T07:30:41.2597461Z ok 138 - M3H fresh and aged overrun block without silently shrinking original heap workload
+2026-10-05T07:30:41.2598210Z   ---
+2026-10-05T07:30:41.2598524Z   duration_ms: 0.347858
+2026-10-05T07:30:41.2598856Z   type: 'test'
+2026-10-05T07:30:41.2599326Z   ...
+2026-10-05T07:30:41.2600102Z # Subtest: M3H candidate/config/fixture/build/VM/review mismatch or legacy averages refuse
+2026-10-05T07:30:41.2601263Z ok 139 - M3H candidate/config/fixture/build/VM/review mismatch or legacy averages refuse
+2026-10-05T07:30:41.2602003Z   ---
+2026-10-05T07:30:41.2602324Z   duration_ms: 0.794962
+2026-10-05T07:30:41.2602687Z   type: 'test'
+2026-10-05T07:30:41.2603074Z   ...
+2026-10-05T07:30:41.2604138Z # Subtest: M3H executable raw bound/capability/review/fixture bytes hash and exact scope verified before adapter read
+2026-10-05T07:30:41.2605935Z not ok 140 - M3H executable raw bound/capability/review/fixture bytes hash and exact scope verified before adapter read
+2026-10-05T07:30:41.2606876Z   ---
+2026-10-05T07:30:41.2607205Z   duration_ms: 44.307119
+2026-10-05T07:30:41.2607601Z   type: 'test'
+2026-10-05T07:30:41.2608421Z   location: '/home/runner/work/reef/reef/scripts/dev/calcify-financial/rate-proof.test.mjs:354:1'
+2026-10-05T07:30:41.2609557Z   failureType: 'testCodeFailure'
+2026-10-05T07:30:41.2610029Z   error: |-
+2026-10-05T07:30:41.2610657Z     The input did not match the regular expression /RAW_EVIDENCE_HASH/. Input:
+2026-10-05T07:30:41.2611320Z     
+2026-10-05T07:30:41.2612123Z     "Error: ENOENT: no such file or directory, open '/private/tmp/reef-financial-rate-capacity.lock'"
+2026-10-05T07:30:41.2612941Z     
+2026-10-05T07:30:41.2613261Z   code: 'ERR_ASSERTION'
+2026-10-05T07:30:41.2613668Z   name: 'AssertionError'
+2026-10-05T07:30:41.2614048Z   expected:
+2026-10-05T07:30:41.2614366Z   actual:
+2026-10-05T07:30:41.2615159Z   error: "ENOENT: no such file or directory, open '/private/tmp/reef-financial-rate-capacity.lock'"
+2026-10-05T07:30:41.2615783Z   stack: |-
+2026-10-05T07:30:41.2616207Z     async open (node:internal/fs/promises:639:25)
+2026-10-05T07:30:41.2616806Z     async runAdapter (file:///home/runner/work/reef/reef/scripts/dev/calcify-financial/rate-proof.mjs:311:16)
+2026-10-05T07:30:41.2617350Z     async waitForActual (node:assert:644:5)
+2026-10-05T07:30:41.2617868Z     async Function.rejects (node:assert:767:25)
+2026-10-05T07:30:41.2619281Z     async TestContext.<anonymous> (file:///home/runner/work/reef/reef/scripts/dev/calcify-financial/rate-proof.test.mjs:361:7)
+2026-10-05T07:30:41.2620537Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-05T07:30:41.2621155Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-05T07:30:41.2621564Z   operator: 'rejects'
+2026-10-05T07:30:41.2621966Z   stack: |-
+2026-10-05T07:30:41.2622636Z     async TestContext.<anonymous> (file:///home/runner/work/reef/reef/scripts/dev/calcify-financial/rate-proof.test.mjs:361:7)
+2026-10-05T07:30:41.2623284Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-05T07:30:41.2623758Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-05T07:30:41.2624130Z   ...
+2026-10-05T07:30:41.2624863Z # Subtest: M3H synthetic evidence and unpinned launcher cannot authorize executable load
+2026-10-05T07:30:41.2626330Z not ok 141 - M3H synthetic evidence and unpinned launcher cannot authorize executable load
+2026-10-05T07:30:41.2627250Z   ---
+2026-10-05T07:30:41.2627720Z   duration_ms: 7.768736
+2026-10-05T07:30:41.2628391Z   type: 'test'
+2026-10-05T07:30:41.2629570Z   location: '/home/runner/work/reef/reef/scripts/dev/calcify-financial/rate-proof.test.mjs:370:1'
+2026-10-05T07:30:41.2630681Z   failureType: 'testCodeFailure'
+2026-10-05T07:30:41.2631339Z   error: |-
+2026-10-05T07:30:41.2632155Z     The input did not match the regular expression /PINNED_LAUNCHER/. Input:
+2026-10-05T07:30:41.2633063Z     
+2026-10-05T07:30:41.2633993Z     "Error: ENOENT: no such file or directory, open '/private/tmp/reef-financial-rate-capacity.lock'"
+2026-10-05T07:30:41.2635042Z     
+2026-10-05T07:30:41.2635520Z   code: 'ERR_ASSERTION'
+2026-10-05T07:30:41.2636051Z   name: 'AssertionError'
+2026-10-05T07:30:41.2651024Z   expected:
+2026-10-05T07:30:41.2651397Z   actual:
+2026-10-05T07:30:41.2652271Z   error: "ENOENT: no such file or directory, open '/private/tmp/reef-financial-rate-capacity.lock'"
+2026-10-05T07:30:41.2653171Z   stack: |-
+2026-10-05T07:30:41.2653681Z     async open (node:internal/fs/promises:639:25)
+2026-10-05T07:30:41.2654814Z     async runAdapter (file:///home/runner/work/reef/reef/scripts/dev/calcify-financial/rate-proof.mjs:311:16)
+2026-10-05T07:30:41.2655802Z     async waitForActual (node:assert:644:5)
+2026-10-05T07:30:41.2656392Z     async Function.rejects (node:assert:767:25)
+2026-10-05T07:30:41.2657544Z     async TestContext.<anonymous> (file:///home/runner/work/reef/reef/scripts/dev/calcify-financial/rate-proof.test.mjs:376:5)
+2026-10-05T07:30:41.2658704Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-05T07:30:41.2659811Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-05T07:30:41.2660487Z   operator: 'rejects'
+2026-10-05T07:30:41.2660839Z   stack: |-
+2026-10-05T07:30:41.2661825Z     async TestContext.<anonymous> (file:///home/runner/work/reef/reef/scripts/dev/calcify-financial/rate-proof.test.mjs:376:5)
+2026-10-05T07:30:41.2663004Z     async Test.run (node:internal/test_runner/test:1054:7)
+2026-10-05T07:30:41.2663853Z     async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+2026-10-05T07:30:41.2664515Z   ...
+2026-10-05T07:30:41.2665403Z # Subtest: M3H runtime guard failure or missing lifecycle observation cannot publish diagnostic success
+2026-10-05T07:30:41.2666733Z ok 142 - M3H runtime guard failure or missing lifecycle observation cannot publish diagnostic success
+2026-10-05T07:30:41.2667487Z   ---
+2026-10-05T07:30:41.2667800Z   duration_ms: 3.269422
+2026-10-05T07:30:41.2668149Z   type: 'test'
+2026-10-05T07:30:41.2668442Z   ...
+2026-10-05T07:30:41.2669551Z # Subtest: M3H capability timeout escalates TERM to KILL with bounded output and retained process error
+2026-10-05T07:30:41.2670853Z ok 143 - M3H capability timeout escalates TERM to KILL with bounded output and retained process error
+2026-10-05T07:30:41.2671606Z   ---
+2026-10-05T07:30:41.2671908Z   duration_ms: 19.676144
+2026-10-05T07:30:41.2672562Z   type: 'test'
+2026-10-05T07:30:41.2673025Z   ...
+2026-10-05T07:30:41.2673834Z # Subtest: M3H symlink outside policy ownership and valid hash with changed raw identity refuse
+2026-10-05T07:30:41.2675080Z ok 144 - M3H symlink outside policy ownership and valid hash with changed raw identity refuse
+2026-10-05T07:30:41.2675806Z   ---
+2026-10-05T07:30:41.2676121Z   duration_ms: 7.435055
+2026-10-05T07:30:41.2676470Z   type: 'test'
+2026-10-05T07:30:41.2676776Z   ...
+2026-10-05T07:30:41.2677414Z # Subtest: stdout and stderr retain split UTF-8 and invalid bytes exactly
+2026-10-05T07:30:41.2678355Z ok 145 - stdout and stderr retain split UTF-8 and invalid bytes exactly
+2026-10-05T07:30:41.2679201Z   ---
+2026-10-05T07:30:41.2679545Z   duration_ms: 3.974747
+2026-10-05T07:30:41.2679914Z   type: 'test'
+2026-10-05T07:30:41.2680225Z   ...
+2026-10-05T07:30:41.2680959Z # Subtest: recorder persists binary output, failures and separate spawn diagnostics
+2026-10-05T07:30:41.2682114Z ok 146 - recorder persists binary output, failures and separate spawn diagnostics
+2026-10-05T07:30:41.2682820Z   ---
+2026-10-05T07:30:41.2683138Z   duration_ms: 326.548979
+2026-10-05T07:30:41.2683503Z   type: 'test'
+2026-10-05T07:30:41.2683809Z   ...
+2026-10-05T07:30:41.2684488Z # Subtest: USD_NANO: own hold consumption and competing withdrawal stay bounded
+2026-10-05T07:30:41.2685518Z ok 147 - USD_NANO: own hold consumption and competing withdrawal stay bounded
+2026-10-05T07:30:41.2686140Z   ---
+2026-10-05T07:30:41.2686447Z   duration_ms: 3.209481
+2026-10-05T07:30:41.2686790Z   type: 'test'
+2026-10-05T07:30:41.2687092Z   ...
+2026-10-05T07:30:41.2687773Z # Subtest: ACME_SHARE: own hold consumption and competing withdrawal stay bounded
+2026-10-05T07:30:41.2688803Z ok 148 - ACME_SHARE: own hold consumption and competing withdrawal stay bounded
+2026-10-05T07:30:41.2689656Z   ---
+2026-10-05T07:30:41.2689964Z   duration_ms: 0.239887
+2026-10-05T07:30:41.2690330Z   type: 'test'
+2026-10-05T07:30:41.2690631Z   ...
+2026-10-05T07:30:41.2691328Z # Subtest: cancel releases unmatched order only; captured obligation stays owned
+2026-10-05T07:30:41.2692356Z ok 149 - cancel releases unmatched order only; captured obligation stays owned
+2026-10-05T07:30:41.2692972Z   ---
+2026-10-05T07:30:41.2693279Z   duration_ms: 0.171239
+2026-10-05T07:30:41.2693637Z   type: 'test'
+2026-10-05T07:30:41.2693944Z   ...
+2026-10-05T07:30:41.2694788Z # Subtest: creation priority uses acceptance then stable owner ID; competing owner cannot spend hold
+2026-10-05T07:30:41.2696113Z ok 150 - creation priority uses acceptance then stable owner ID; competing owner cannot spend hold
+2026-10-05T07:30:41.2696878Z   ---
+2026-10-05T07:30:41.2697194Z   duration_ms: 0.369638
+2026-10-05T07:30:41.2697547Z   type: 'test'
+2026-10-05T07:30:41.2697850Z   ...
+2026-10-05T07:30:41.2698491Z # Subtest: exact-unit/range errors and conflicting transfers make no changes
+2026-10-05T07:30:41.2699655Z ok 151 - exact-unit/range errors and conflicting transfers make no changes
+2026-10-05T07:30:41.2700264Z   ---
+2026-10-05T07:30:41.2700570Z   duration_ms: 0.446402
+2026-10-05T07:30:41.2700917Z   type: 'test'
+2026-10-05T07:30:41.2701209Z   ...
+2026-10-05T07:30:41.2701628Z # CI pull request change-scope checks passed
+2026-10-05T07:30:41.2702277Z # Subtest: scripts/dev/ci-pr-change-scope.test.mjs
+2026-10-05T07:30:41.2702944Z ok 13 - scripts/dev/ci-pr-change-scope.test.mjs
+2026-10-05T07:30:41.2703418Z   ---
+2026-10-05T07:30:41.2703713Z   duration_ms: 44.815438
+2026-10-05T07:30:41.2704067Z   type: 'test'
+2026-10-05T07:30:41.2704358Z   ...
+2026-10-05T07:30:41.2704780Z # CI workflow hardening guard checks passed
+2026-10-05T07:30:41.2705438Z # Subtest: scripts/dev/ci-workflow-hardening.test.mjs
+2026-10-05T07:30:41.2706170Z ok 14 - scripts/dev/ci-workflow-hardening.test.mjs
+2026-10-05T07:30:41.2706663Z   ---
+2026-10-05T07:30:41.2706969Z   duration_ms: 55.715362
+2026-10-05T07:30:41.2707320Z   type: 'test'
+2026-10-05T07:30:41.2707622Z   ...
+2026-10-05T07:30:41.2708082Z # Subtest: parses archive partition month bounds
+2026-10-05T07:30:41.2709212Z ok 154 - parses archive partition month bounds
+2026-10-05T07:30:41.2709965Z   ---
+2026-10-05T07:30:41.2710320Z   duration_ms: 2.571101
+2026-10-05T07:30:41.2710731Z   type: 'test'
+2026-10-05T07:30:41.2711075Z   ...
+2026-10-05T07:30:41.2711558Z # Subtest: builds archive partition list SQL
+2026-10-05T07:30:41.2712214Z ok 155 - builds archive partition list SQL
+2026-10-05T07:30:41.2712715Z   ---
+2026-10-05T07:30:41.2713046Z   duration_ms: 0.235679
+2026-10-05T07:30:41.2713431Z   type: 'test'
+2026-10-05T07:30:41.2713758Z   ...
+2026-10-05T07:30:41.2714293Z # Subtest: builds monthly archive partition create SQL
+2026-10-05T07:30:41.2715060Z ok 156 - builds monthly archive partition create SQL
+2026-10-05T07:30:41.2715602Z   ---
+2026-10-05T07:30:41.2715923Z   duration_ms: 0.172191
+2026-10-05T07:30:41.2716308Z   type: 'test'
+2026-10-05T07:30:41.2716641Z   ...
+2026-10-05T07:30:41.2717153Z # Subtest: builds monthly archive partition drop SQL
+2026-10-05T07:30:41.2717884Z ok 157 - builds monthly archive partition drop SQL
+2026-10-05T07:30:41.2718408Z   ---
+2026-10-05T07:30:41.2718751Z   duration_ms: 0.151251
+2026-10-05T07:30:41.2719511Z   type: 'test'
+2026-10-05T07:30:41.2719842Z   ...
+2026-10-05T07:30:41.2720383Z # Subtest: builds monthly archive partition export SQL
+2026-10-05T07:30:41.2721150Z ok 158 - builds monthly archive partition export SQL
+2026-10-05T07:30:41.2721673Z   ---
+2026-10-05T07:30:41.2721996Z   duration_ms: 0.220241
+2026-10-05T07:30:41.2722356Z   type: 'test'
+2026-10-05T07:30:41.2722668Z   ...
+2026-10-05T07:30:41.2723105Z # Subtest: builds archive eligible count SQL
+2026-10-05T07:30:41.2723700Z ok 159 - builds archive eligible count SQL
+2026-10-05T07:30:41.2724149Z   ---
+2026-10-05T07:30:41.2724467Z   duration_ms: 1.232116
+2026-10-05T07:30:41.2724833Z   type: 'test'
+2026-10-05T07:30:41.2725137Z   ...
+2026-10-05T07:30:41.2725561Z # Subtest: builds bounded archive batch SQL
+2026-10-05T07:30:41.2726174Z ok 160 - builds bounded archive batch SQL
+2026-10-05T07:30:41.2726510Z   ---
+2026-10-05T07:30:41.2726704Z   duration_ms: 0.283028
+2026-10-05T07:30:41.2726928Z   type: 'test'
+2026-10-05T07:30:41.2727116Z   ...
+2026-10-05T07:30:41.2727360Z # Subtest: builds archive vacuum commands
+2026-10-05T07:30:41.2727688Z ok 161 - builds archive vacuum commands
+2026-10-05T07:30:41.2727943Z   ---
+2026-10-05T07:30:41.2728123Z   duration_ms: 0.19323
+2026-10-05T07:30:41.2728336Z   type: 'test'
+2026-10-05T07:30:41.2728518Z   ...
+2026-10-05T07:30:41.2728796Z # Subtest: builds command-log integrity summary SQL
+2026-10-05T07:30:41.2729695Z ok 162 - builds command-log integrity summary SQL
+2026-10-05T07:30:41.2730145Z   ---
+2026-10-05T07:30:41.2730444Z   duration_ms: 1.773375
+2026-10-05T07:30:41.2730796Z   type: 'test'
+2026-10-05T07:30:41.2731138Z   ...
+2026-10-05T07:30:41.2731570Z # Subtest: parses integrity summary rows
+2026-10-05T07:30:41.2732149Z ok 163 - parses integrity summary rows
+2026-10-05T07:30:41.2732566Z   ---
+2026-10-05T07:30:41.2732872Z   duration_ms: 1.229902
+2026-10-05T07:30:41.2733214Z   type: 'test'
+2026-10-05T07:30:41.2733535Z   ...
+2026-10-05T07:30:41.2733986Z # Subtest: finds nonzero integrity violations
+2026-10-05T07:30:41.2734585Z ok 164 - finds nonzero integrity violations
+2026-10-05T07:30:41.2735022Z   ---
+2026-10-05T07:30:41.2735315Z   duration_ms: 0.198259
+2026-10-05T07:30:41.2735715Z   type: 'test'
+2026-10-05T07:30:41.2735924Z   ...
+2026-10-05T07:30:41.2736252Z # Subtest: normalizes supported retention pin selector types
+2026-10-05T07:30:41.2736769Z ok 165 - normalizes supported retention pin selector types
+2026-10-05T07:30:41.2737283Z   ---
+2026-10-05T07:30:41.2737640Z   duration_ms: 1.389941
+2026-10-05T07:30:41.2738007Z   type: 'test'
+2026-10-05T07:30:41.2738324Z   ...
+2026-10-05T07:30:41.2738837Z # Subtest: builds upsert pin SQL with escaped values
+2026-10-05T07:30:41.2739609Z ok 166 - builds upsert pin SQL with escaped values
+2026-10-05T07:30:41.2739904Z   ---
+2026-10-05T07:30:41.2740096Z   duration_ms: 0.283348
+2026-10-05T07:30:41.2740551Z   type: 'test'
+2026-10-05T07:30:41.2740877Z   ...
+2026-10-05T07:30:41.2741542Z # Subtest: builds list and delete pin SQL
+2026-10-05T07:30:41.2742280Z ok 167 - builds list and delete pin SQL
+2026-10-05T07:30:41.2742725Z   ---
+2026-10-05T07:30:41.2743034Z   duration_ms: 0.178312
+2026-10-05T07:30:41.2743404Z   type: 'test'
+2026-10-05T07:30:41.2743712Z   ...
+2026-10-05T07:30:41.2744147Z # Subtest: parses prune duration values
+2026-10-05T07:30:41.2744714Z ok 168 - parses prune duration values
+2026-10-05T07:30:41.2745152Z   ---
+2026-10-05T07:30:41.2745480Z   duration_ms: 1.675392
+2026-10-05T07:30:41.2745753Z   type: 'test'
+2026-10-05T07:30:41.2745943Z   ...
+2026-10-05T07:30:41.2746221Z # Subtest: builds terminal-only eligible count SQL
+2026-10-05T07:30:41.2746620Z ok 169 - builds terminal-only eligible count SQL
+2026-10-05T07:30:41.2746899Z   ---
+2026-10-05T07:30:41.2747081Z   duration_ms: 0.280343
+2026-10-05T07:30:41.2747295Z   type: 'test'
+2026-10-05T07:30:41.2747483Z   ...
+2026-10-05T07:30:41.2747802Z # Subtest: builds batched delete for terminal command history
+2026-10-05T07:30:41.2748676Z ok 170 - builds batched delete for terminal command history
+2026-10-05T07:30:41.2749137Z   ---
+2026-10-05T07:30:41.2749324Z   duration_ms: 0.221433
+2026-10-05T07:30:41.2749538Z   type: 'test'
+2026-10-05T07:30:41.2749730Z   ...
+2026-10-05T07:30:41.2750137Z # Subtest: builds command-log orphan diagnostics and cleanup SQL
+2026-10-05T07:30:41.2751096Z ok 171 - builds command-log orphan diagnostics and cleanup SQL
+2026-10-05T07:30:41.2751687Z   ---
+2026-10-05T07:30:41.2752026Z   duration_ms: 0.179455
+2026-10-05T07:30:41.2752394Z   type: 'test'
+2026-10-05T07:30:41.2752743Z   ...
+2026-10-05T07:30:41.2753200Z # Subtest: builds active queue count SQL
+2026-10-05T07:30:41.2753818Z ok 172 - builds active queue count SQL
+2026-10-05T07:30:41.2754287Z   ---
+2026-10-05T07:30:41.2754640Z   duration_ms: 0.195204
+2026-10-05T07:30:41.2754998Z   type: 'test'
+2026-10-05T07:30:41.2755346Z   ...
+2026-10-05T07:30:41.2755832Z # Subtest: builds low-shared-memory vacuum commands
+2026-10-05T07:30:41.2756539Z ok 173 - builds low-shared-memory vacuum commands
+2026-10-05T07:30:41.2757050Z   ---
+2026-10-05T07:30:41.2757365Z   duration_ms: 0.160629
+2026-10-05T07:30:41.2757730Z   type: 'test'
+2026-10-05T07:30:41.2758047Z   ...
+2026-10-05T07:30:41.2758545Z # Subtest: builds retention pin exclusion predicate
+2026-10-05T07:30:41.2759553Z ok 174 - builds retention pin exclusion predicate
+2026-10-05T07:30:41.2760057Z   ---
+2026-10-05T07:30:41.2760365Z   duration_ms: 0.12878
+2026-10-05T07:30:41.2760743Z   type: 'test'
+2026-10-05T07:30:41.2760941Z   ...
+2026-10-05T07:30:41.2761210Z # arena score-v1 proof comparison checks passed
+2026-10-05T07:30:41.2761656Z # Subtest: scripts/dev/compare-arena-score-v1-proof.test.mjs
+2026-10-05T07:30:41.2762131Z ok 20 - scripts/dev/compare-arena-score-v1-proof.test.mjs
+2026-10-05T07:30:41.2762442Z   ---
+2026-10-05T07:30:41.2762630Z   duration_ms: 77.433944
+2026-10-05T07:30:41.2762847Z   type: 'test'
+2026-10-05T07:30:41.2763030Z   ...
+2026-10-05T07:30:41.2763321Z # arena scoring calibration comparison checks passed
+2026-10-05T07:30:41.2763801Z # Subtest: scripts/dev/compare-arena-scoring-calibration.test.mjs
+2026-10-05T07:30:41.2764315Z ok 21 - scripts/dev/compare-arena-scoring-calibration.test.mjs
+2026-10-05T07:30:41.2764648Z   ---
+2026-10-05T07:30:41.2764834Z   duration_ms: 46.940238
+2026-10-05T07:30:41.2765050Z   type: 'test'
+2026-10-05T07:30:41.2765237Z   ...
+2026-10-05T07:30:41.2765500Z # container image workflow guard checks passed
+2026-10-05T07:30:41.2765924Z # Subtest: scripts/dev/container-images-workflow.test.mjs
+2026-10-05T07:30:41.2766357Z ok 22 - scripts/dev/container-images-workflow.test.mjs
+2026-10-05T07:30:41.2766653Z   ---
+2026-10-05T07:30:41.2766981Z   duration_ms: 41.14796
+2026-10-05T07:30:41.2767365Z   type: 'test'
+2026-10-05T07:30:41.2767620Z   ...
+2026-10-05T07:30:41.2767918Z # Subtest: discovers deterministic domain migrations
+2026-10-05T07:30:41.2768331Z ok 178 - discovers deterministic domain migrations
+2026-10-05T07:30:41.2768626Z   ---
+2026-10-05T07:30:41.2769157Z   duration_ms: 85.20641
+2026-10-05T07:30:41.2769411Z   type: 'test'
+2026-10-05T07:30:41.2769717Z   ...
+2026-10-05T07:30:41.2770188Z # Subtest: venue event batch integrity migration removes duplicate index and rejects conflicts
+2026-10-05T07:30:41.2770897Z ok 179 - venue event batch integrity migration removes duplicate index and rejects conflicts
+2026-10-05T07:30:41.2771322Z   ---
+2026-10-05T07:30:41.2771519Z   duration_ms: 47.465829
+2026-10-05T07:30:41.2771741Z   type: 'test'
+2026-10-05T07:30:41.2771928Z   ...
+2026-10-05T07:30:41.2772434Z # Subtest: audit hardening migration preserves first command outcome and counts actual canonical inserts
+2026-10-05T07:30:41.2773250Z ok 180 - audit hardening migration preserves first command outcome and counts actual canonical inserts
+2026-10-05T07:30:41.2773702Z   ---
+2026-10-05T07:30:41.2773888Z   duration_ms: 45.549507
+2026-10-05T07:30:41.2774104Z   type: 'test'
+2026-10-05T07:30:41.2774290Z   ...
+2026-10-05T07:30:41.2774764Z # Subtest: command-log integrity audit migration replaces dropped hot-path foreign key checks
+2026-10-05T07:30:41.2775490Z ok 181 - command-log integrity audit migration replaces dropped hot-path foreign key checks
+2026-10-05T07:30:41.2775915Z   ---
+2026-10-05T07:30:41.2776100Z   duration_ms: 53.351074
+2026-10-05T07:30:41.2776319Z   type: 'test'
+2026-10-05T07:30:41.2776510Z   ...
+2026-10-05T07:30:41.2776902Z # Subtest: typed top-of-book migration adds native numeric facts and indexes
+2026-10-05T07:30:41.2777468Z ok 182 - typed top-of-book migration adds native numeric facts and indexes
+2026-10-05T07:30:41.2777832Z   ---
+2026-10-05T07:30:41.2778022Z   duration_ms: 39.950142
+2026-10-05T07:30:41.2778237Z   type: 'test'
+2026-10-05T07:30:41.2778463Z   ...
+2026-10-05T07:30:41.2779008Z # Subtest: typed runtime event migration adds native UUID and timestamp facts
+2026-10-05T07:30:41.2779637Z ok 183 - typed runtime event migration adds native UUID and timestamp facts
+2026-10-05T07:30:41.2780023Z   ---
+2026-10-05T07:30:41.2780212Z   duration_ms: 42.72844
+2026-10-05T07:30:41.2780453Z   type: 'test'
+2026-10-05T07:30:41.2780667Z   ...
+2026-10-05T07:30:41.2781018Z # Subtest: typed submit result migration adds native audit facts
+2026-10-05T07:30:41.2781532Z ok 184 - typed submit result migration adds native audit facts
+2026-10-05T07:30:41.2781863Z   ---
+2026-10-05T07:30:41.2782062Z   duration_ms: 41.724649
+2026-10-05T07:30:41.2782281Z   type: 'test'
+2026-10-05T07:30:41.2782492Z   ...
+2026-10-05T07:30:41.2782869Z # Subtest: typed execution and trade migration adds native market facts
+2026-10-05T07:30:41.2783439Z ok 185 - typed execution and trade migration adds native market facts
+2026-10-05T07:30:41.2783798Z   ---
+2026-10-05T07:30:41.2784004Z   duration_ms: 38.127016
+2026-10-05T07:30:41.2784244Z   type: 'test'
+2026-10-05T07:30:41.2784448Z   ...
+2026-10-05T07:30:41.2784937Z # Subtest: execution liquidity-role migration preserves canonical maker/taker attribution
+2026-10-05T07:30:41.2785652Z ok 186 - execution liquidity-role migration preserves canonical maker/taker attribution
+2026-10-05T07:30:41.2786106Z   ---
+2026-10-05T07:30:41.2786313Z   duration_ms: 37.929926
+2026-10-05T07:30:41.2786544Z   type: 'test'
+2026-10-05T07:30:41.2786733Z   ...
+2026-10-05T07:30:41.2787127Z # Subtest: execution replay migration rejects conflicting immutable facts
+2026-10-05T07:30:41.2787715Z ok 187 - execution replay migration rejects conflicting immutable facts
+2026-10-05T07:30:41.2788088Z   ---
+2026-10-05T07:30:41.2788276Z   duration_ms: 36.061378
+2026-10-05T07:30:41.2788512Z   type: 'test'
+2026-10-05T07:30:41.2788697Z   ...
+2026-10-05T07:30:41.2789284Z # Subtest: projection batch claim migration guards effects on both projection paths
+2026-10-05T07:30:41.2789950Z ok 188 - projection batch claim migration guards effects on both projection paths
+2026-10-05T07:30:41.2790371Z   ---
+2026-10-05T07:30:41.2790560Z   duration_ms: 37.522957
+2026-10-05T07:30:41.2790799Z   type: 'test'
+2026-10-05T07:30:41.2790980Z   ...
+2026-10-05T07:30:41.2791428Z # Subtest: typed order migration adds native order facts
+2026-10-05T07:30:41.2792092Z ok 189 - typed order migration adds native order facts
+2026-10-05T07:30:41.2792512Z   ---
+2026-10-05T07:30:41.2792718Z   duration_ms: 38.827774
+2026-10-05T07:30:41.2792956Z   type: 'test'
+2026-10-05T07:30:41.2793143Z   ...
+2026-10-05T07:30:41.2793523Z # Subtest: typed canonical time migration adds native audit timestamps
+2026-10-05T07:30:41.2794084Z ok 190 - typed canonical time migration adds native audit timestamps
+2026-10-05T07:30:41.2794445Z   ---
+2026-10-05T07:30:41.2794647Z   duration_ms: 35.421975
+2026-10-05T07:30:41.2794861Z   type: 'test'
+2026-10-05T07:30:41.2795069Z   ...
+2026-10-05T07:30:41.2795484Z # Subtest: batch payload gin index is removed from hot canonical materialization
+2026-10-05T07:30:41.2796103Z ok 191 - batch payload gin index is removed from hot canonical materialization
+2026-10-05T07:30:41.2796495Z   ---
+2026-10-05T07:30:41.2796720Z   duration_ms: 26.684566
+2026-10-05T07:30:41.2796932Z   type: 'test'
+2026-10-05T07:30:41.2797188Z   ...
+2026-10-05T07:30:41.2797621Z # Subtest: command-log archive migration creates partitioned terminal result archive
+2026-10-05T07:30:41.2798324Z ok 192 - command-log archive migration creates partitioned terminal result archive
+2026-10-05T07:30:41.2798747Z   ---
+2026-10-05T07:30:41.2799050Z   duration_ms: 34.026074
+2026-10-05T07:30:41.2799291Z   type: 'test'
+2026-10-05T07:30:41.2799496Z   ...
+2026-10-05T07:30:41.2799904Z # Subtest: runtime archive migrations create partitioned cold-history targets
+2026-10-05T07:30:41.2800525Z ok 193 - runtime archive migrations create partitioned cold-history targets
+2026-10-05T07:30:41.2800910Z   ---
+2026-10-05T07:30:41.2801117Z   duration_ms: 36.589019
+2026-10-05T07:30:41.2801354Z   type: 'test'
+2026-10-05T07:30:41.2801560Z   ...
+2026-10-05T07:30:41.2801940Z # Subtest: runtime projection lock-order migration hardens dirty queues
+2026-10-05T07:30:41.2802510Z ok 194 - runtime projection lock-order migration hardens dirty queues
+2026-10-05T07:30:41.2802875Z   ---
+2026-10-05T07:30:41.2803079Z   duration_ms: 32.511461
+2026-10-05T07:30:41.2803297Z   type: 'test'
+2026-10-05T07:30:41.2803506Z   ...
+2026-10-05T07:30:41.2803904Z # Subtest: runtime dirty queue migration moves rebuildable queues out of WAL
+2026-10-05T07:30:41.2804514Z ok 195 - runtime dirty queue migration moves rebuildable queues out of WAL
+2026-10-05T07:30:41.2804910Z   ---
+2026-10-05T07:30:41.2805097Z   duration_ms: 39.17064
+2026-10-05T07:30:41.2805338Z   type: 'test'
+2026-10-05T07:30:41.2805541Z   ...
+2026-10-05T07:30:41.2805921Z # Subtest: runtime event payload migration moves event JSON off hot rows
+2026-10-05T07:30:41.2806499Z ok 196 - runtime event payload migration moves event JSON off hot rows
+2026-10-05T07:30:41.2806881Z   ---
+2026-10-05T07:30:41.2807068Z   duration_ms: 32.292932
+2026-10-05T07:30:41.2807305Z   type: 'test'
+2026-10-05T07:30:41.2807507Z   ...
+2026-10-05T07:30:41.2807917Z # Subtest: idempotent lifecycle projection migration skips no-op row rewrites
+2026-10-05T07:30:41.2808551Z ok 197 - idempotent lifecycle projection migration skips no-op row rewrites
+2026-10-05T07:30:41.2809275Z   ---
+2026-10-05T07:30:41.2809656Z   duration_ms: 32.821271
+2026-10-05T07:30:41.2809932Z   type: 'test'
+2026-10-05T07:30:41.2810170Z   ...
+2026-10-05T07:30:41.2810633Z # Subtest: runtime event index migration drops legacy all-event indexes
+2026-10-05T07:30:41.2811307Z ok 198 - runtime event index migration drops legacy all-event indexes
+2026-10-05T07:30:41.2811711Z   ---
+2026-10-05T07:30:41.2811916Z   duration_ms: 45.79863
+2026-10-05T07:30:41.2812153Z   type: 'test'
+2026-10-05T07:30:41.2812350Z   ...
+2026-10-05T07:30:41.2812751Z # Subtest: command outcome projection preserves command correlation metadata
+2026-10-05T07:30:41.2813363Z ok 199 - command outcome projection preserves command correlation metadata
+2026-10-05T07:30:41.2813747Z   ---
+2026-10-05T07:30:41.2813951Z   duration_ms: 49.271666
+2026-10-05T07:30:41.2814190Z   type: 'test'
+2026-10-05T07:30:41.2814389Z   ...
+2026-10-05T07:30:41.2815008Z # Subtest: submit outcome projection migration splits command-status and timeline stages
+2026-10-05T07:30:41.2815855Z ok 200 - submit outcome projection migration splits command-status and timeline stages
+2026-10-05T07:30:41.2816285Z   ---
+2026-10-05T07:30:41.2816489Z   duration_ms: 52.788728
+2026-10-05T07:30:41.2816720Z   type: 'test'
+2026-10-05T07:30:41.2816919Z   ...
+2026-10-05T07:30:41.2817246Z # Subtest: wraps migration SQL with checksum ledger insert
+2026-10-05T07:30:41.2817708Z ok 201 - wraps migration SQL with checksum ledger insert
+2026-10-05T07:30:41.2818025Z   ---
+2026-10-05T07:30:41.2818229Z   duration_ms: 46.595102
+2026-10-05T07:30:41.2818470Z   type: 'test'
+2026-10-05T07:30:41.2818658Z   ...
+2026-10-05T07:30:41.2819166Z # Subtest: routes arena migrations only to arena database target
+2026-10-05T07:30:41.2819775Z ok 202 - routes arena migrations only to arena database target
+2026-10-05T07:30:41.2820182Z   ---
+2026-10-05T07:30:41.2820431Z   duration_ms: 24.906761
+2026-10-05T07:30:41.2820724Z   type: 'test'
+2026-10-05T07:30:41.2820968Z   ...
+2026-10-05T07:30:41.2821279Z # deploy receiver tests passed
+2026-10-05T07:30:41.2821709Z # Subtest: scripts/dev/deploy-receiver.test.mjs
+2026-10-05T07:30:41.2822237Z ok 24 - scripts/dev/deploy-receiver.test.mjs
+2026-10-05T07:30:41.2822520Z   ---
+2026-10-05T07:30:41.2822712Z   duration_ms: 172.023746
+2026-10-05T07:30:41.2822943Z   type: 'test'
+2026-10-05T07:30:41.2823137Z   ...
+2026-10-05T07:30:41.2823552Z # Subtest: builds run export payload from stress report and artifact directory
+2026-10-05T07:30:41.2824159Z ok 204 - builds run export payload from stress report and artifact directory
+2026-10-05T07:30:41.2824548Z   ---
+2026-10-05T07:30:41.2824738Z   duration_ms: 17.140048
+2026-10-05T07:30:41.2824963Z   type: 'test'
+2026-10-05T07:30:41.2825333Z   ...
+2026-10-05T07:30:41.2825975Z # Subtest: extracts counts and latency from KPI report shape
+2026-10-05T07:30:41.2826799Z ok 205 - extracts counts and latency from KPI report shape
+2026-10-05T07:30:41.2827140Z   ---
+2026-10-05T07:30:41.2827425Z   duration_ms: 0.427817
+2026-10-05T07:30:41.2827742Z   type: 'test'
+2026-10-05T07:30:41.2827940Z   ...
+2026-10-05T07:30:41.2828325Z # Subtest: extracts counts, latency, and summary from arena local tick report
+2026-10-05T07:30:41.2829142Z ok 206 - extracts counts, latency, and summary from arena local tick report
+2026-10-05T07:30:41.2829575Z   ---
+2026-10-05T07:30:41.2829767Z   duration_ms: 6.810471
+2026-10-05T07:30:41.2829984Z   type: 'test'
+2026-10-05T07:30:41.2830171Z   ...
+2026-10-05T07:30:41.2830378Z # Subtest: parses cli flags
+2026-10-05T07:30:41.2830638Z ok 207 - parses cli flags
+2026-10-05T07:30:41.2830870Z   ---
+2026-10-05T07:30:41.2831056Z   duration_ms: 0.539936
+2026-10-05T07:30:41.2831267Z   type: 'test'
+2026-10-05T07:30:41.2831454Z   ...
+2026-10-05T07:30:41.2831658Z # dev profile checks passed
+2026-10-05T07:30:41.2831986Z # Subtest: scripts/dev/lib/dev-profiles.test.mjs
+2026-10-05T07:30:41.2832378Z ok 26 - scripts/dev/lib/dev-profiles.test.mjs
+2026-10-05T07:30:41.2832661Z   ---
+2026-10-05T07:30:41.2832853Z   duration_ms: 102.733347
+2026-10-05T07:30:41.2833079Z   type: 'test'
+2026-10-05T07:30:41.2833270Z   ...
+2026-10-05T07:30:41.2833640Z # Subtest: devUp starts postgres, runs migrations, then starts full stack
+2026-10-05T07:30:41.2834199Z ok 209 - devUp starts postgres, runs migrations, then starts full stack
+2026-10-05T07:30:41.2834550Z   ---
+2026-10-05T07:30:41.2834738Z   duration_ms: 2.817701
+2026-10-05T07:30:41.2834956Z   type: 'test'
+2026-10-05T07:30:41.2835141Z   ...
+2026-10-05T07:30:41.2835455Z # Subtest: devUp fails before full stack when migrations fail
+2026-10-05T07:30:41.2835915Z ok 210 - devUp fails before full stack when migrations fail
+2026-10-05T07:30:41.2836234Z   ---
+2026-10-05T07:30:41.2836416Z   duration_ms: 0.8584
+2026-10-05T07:30:41.2836628Z   type: 'test'
+2026-10-05T07:30:41.2836812Z   ...
+2026-10-05T07:30:41.2837185Z # Subtest: devReset wipes volumes, migrates, starts stack, and can run smoke
+2026-10-05T07:30:41.2837763Z ok 211 - devReset wipes volumes, migrates, starts stack, and can run smoke
+2026-10-05T07:30:41.2838292Z   ---
+2026-10-05T07:30:41.2838491Z   duration_ms: 0.610568
+2026-10-05T07:30:41.2838809Z   type: 'test'
+2026-10-05T07:30:41.2839290Z   ...
+2026-10-05T07:30:41.2839567Z # Subtest: devReset skips smoke by default
+2026-10-05T07:30:41.2839913Z ok 212 - devReset skips smoke by default
+2026-10-05T07:30:41.2840186Z   ---
+2026-10-05T07:30:41.2840372Z   duration_ms: 0.431214
+2026-10-05T07:30:41.2840583Z   type: 'test'
+2026-10-05T07:30:41.2840771Z   ...
+2026-10-05T07:30:41.2841164Z # Subtest: devUp starts Arena storage only when the Arena overlay is selected
+2026-10-05T07:30:41.2841753Z ok 213 - devUp starts Arena storage only when the Arena overlay is selected
+2026-10-05T07:30:41.2842132Z   ---
+2026-10-05T07:30:41.2842320Z   duration_ms: 0.49374
+2026-10-05T07:30:41.2842537Z   type: 'test'
+2026-10-05T07:30:41.2842726Z   ...
+2026-10-05T07:30:41.2843077Z # Subtest: end-to-end guardrail includes expected business rejects
+2026-10-05T07:30:41.2843590Z ok 214 - end-to-end guardrail includes expected business rejects
+2026-10-05T07:30:41.2843930Z   ---
+2026-10-05T07:30:41.2844119Z   duration_ms: 2.008784
+2026-10-05T07:30:41.2844333Z   type: 'test'
+2026-10-05T07:30:41.2844516Z   ...
+2026-10-05T07:30:41.2844863Z # Subtest: valid-intent guardrail excludes expected business rejects
+2026-10-05T07:30:41.2845370Z ok 215 - valid-intent guardrail excludes expected business rejects
+2026-10-05T07:30:41.2845717Z   ---
+2026-10-05T07:30:41.2845909Z   duration_ms: 0.170177
+2026-10-05T07:30:41.2846122Z   type: 'test'
+2026-10-05T07:30:41.2846310Z   ...
+2026-10-05T07:30:41.2846670Z # Subtest: valid-intent guardrail still exposes system failures
+2026-10-05T07:30:41.2847155Z ok 216 - valid-intent guardrail still exposes system failures
+2026-10-05T07:30:41.2847483Z   ---
+2026-10-05T07:30:41.2847668Z   duration_ms: 0.13949
+2026-10-05T07:30:41.2847882Z   type: 'test'
+2026-10-05T07:30:41.2848066Z   ...
+2026-10-05T07:30:41.2848451Z # Subtest: end-to-end guardrail supports older reports without quality metrics
+2026-10-05T07:30:41.2849242Z ok 217 - end-to-end guardrail supports older reports without quality metrics
+2026-10-05T07:30:41.2849630Z   ---
+2026-10-05T07:30:41.2849818Z   duration_ms: 0.121757
+2026-10-05T07:30:41.2850032Z   type: 'test'
+2026-10-05T07:30:41.2850218Z   ...
+2026-10-05T07:30:41.2850472Z # Subtest: rejects unknown guardrail metrics
+2026-10-05T07:30:41.2850816Z ok 218 - rejects unknown guardrail metrics
+2026-10-05T07:30:41.2851105Z   ---
+2026-10-05T07:30:41.2851293Z   duration_ms: 0.496044
+2026-10-05T07:30:41.2851505Z   type: 'test'
+2026-10-05T07:30:41.2851697Z   ...
+2026-10-05T07:30:41.2852000Z # Subtest: stableStringify canonicalizes object key order
+2026-10-05T07:30:41.2852432Z ok 219 - stableStringify canonicalizes object key order
+2026-10-05T07:30:41.2852733Z   ---
+2026-10-05T07:30:41.2852924Z   duration_ms: 10.747386
+2026-10-05T07:30:41.2853143Z   type: 'test'
+2026-10-05T07:30:41.2853324Z   ...
+2026-10-05T07:30:41.2853768Z # Subtest: assertStableProjectionReplaySnapshot accepts identical stable read output
+2026-10-05T07:30:41.2854455Z ok 220 - assertStableProjectionReplaySnapshot accepts identical stable read output
+2026-10-05T07:30:41.2854873Z   ---
+2026-10-05T07:30:41.2855066Z   duration_ms: 0.698811
+2026-10-05T07:30:41.2855286Z   type: 'test'
+2026-10-05T07:30:41.2855477Z   ...
+2026-10-05T07:30:41.2855884Z # Subtest: assertStableProjectionReplaySnapshot rejects duplicate replay rows
+2026-10-05T07:30:41.2856509Z ok 221 - assertStableProjectionReplaySnapshot rejects duplicate replay rows
+2026-10-05T07:30:41.2856936Z   ---
+2026-10-05T07:30:41.2857126Z   duration_ms: 0.800792
+2026-10-05T07:30:41.2857359Z   type: 'test'
+2026-10-05T07:30:41.2857548Z   ...
+2026-10-05T07:30:41.2858012Z # Subtest: assertStableProjectionReplaySnapshot rejects API freshness drift
+2026-10-05T07:30:41.2859316Z ok 222 - assertStableProjectionReplaySnapshot rejects API freshness drift
+2026-10-05T07:30:41.2860033Z   ---
+2026-10-05T07:30:41.2860342Z   duration_ms: 0.45101
+2026-10-05T07:30:41.2860567Z   type: 'test'
+2026-10-05T07:30:41.2860751Z   ...
+2026-10-05T07:30:41.2861437Z # Subtest: assertClaimGuardedProjectionReplay accepts an exact duplicate blocked by its completed claim
+2026-10-05T07:30:41.2862403Z ok 223 - assertClaimGuardedProjectionReplay accepts an exact duplicate blocked by its completed claim
+2026-10-05T07:30:41.2863411Z   ---
+2026-10-05T07:30:41.2863735Z   duration_ms: 0.32713
+2026-10-05T07:30:41.2864095Z   type: 'test'
+2026-10-05T07:30:41.2864411Z   ...
+2026-10-05T07:30:41.2865146Z # Subtest: assertClaimGuardedProjectionReplay rejects a replay without an exact completed claim
+2026-10-05T07:30:41.2865923Z ok 224 - assertClaimGuardedProjectionReplay rejects a replay without an exact completed claim
+2026-10-05T07:30:41.2866378Z   ---
+2026-10-05T07:30:41.2866572Z   duration_ms: 0.255777
+2026-10-05T07:30:41.2866790Z   type: 'test'
+2026-10-05T07:30:41.2866975Z   ...
+2026-10-05T07:30:41.2867356Z # Subtest: assertClaimGuardedProjectionReplay rejects duplicate effects
+2026-10-05T07:30:41.2867934Z ok 225 - assertClaimGuardedProjectionReplay rejects duplicate effects
+2026-10-05T07:30:41.2868298Z   ---
+2026-10-05T07:30:41.2868493Z   duration_ms: 0.310398
+2026-10-05T07:30:41.2868749Z   type: 'test'
+2026-10-05T07:30:41.2869229Z   ...
+2026-10-05T07:30:41.2869561Z # arena actor calibration matrix checks passed
+2026-10-05T07:30:41.2870037Z # Subtest: scripts/dev/run-arena-actor-calibration-matrix.test.mjs
+2026-10-05T07:30:41.2870558Z ok 30 - scripts/dev/run-arena-actor-calibration-matrix.test.mjs
+2026-10-05T07:30:41.2870899Z   ---
+2026-10-05T07:30:41.2871088Z   duration_ms: 50.906228
+2026-10-05T07:30:41.2871310Z   type: 'test'
+2026-10-05T07:30:41.2871499Z   ...
+2026-10-05T07:30:41.2871756Z # arena economic policy matrix checks passed
+2026-10-05T07:30:41.2872327Z # Subtest: scripts/dev/run-arena-economic-policy-matrix.test.mjs
+2026-10-05T07:30:41.2873141Z ok 31 - scripts/dev/run-arena-economic-policy-matrix.test.mjs
+2026-10-05T07:30:41.2873479Z   ---
+2026-10-05T07:30:41.2873678Z   duration_ms: 61.957085
+2026-10-05T07:30:41.2874077Z   type: 'test'
+2026-10-05T07:30:41.2874485Z   ...
+2026-10-05T07:30:41.2874953Z # arena scoring calibration matrix checks passed
+2026-10-05T07:30:41.2875795Z # Subtest: scripts/dev/run-arena-scoring-calibration-matrix.test.mjs
+2026-10-05T07:30:41.2876764Z ok 32 - scripts/dev/run-arena-scoring-calibration-matrix.test.mjs
+2026-10-05T07:30:41.2877387Z   ---
+2026-10-05T07:30:41.2877702Z   duration_ms: 58.788483
+2026-10-05T07:30:41.2878093Z   type: 'test'
+2026-10-05T07:30:41.2878435Z   ...
+2026-10-05T07:30:41.2879828Z # stream profile warning: stream-direct-nodb projector enabled for projection proof; do not use as no-DB throughput claim
+2026-10-05T07:30:41.2881460Z # stream profile warning: noop-ceiling is API-front-door isolation only; 202 does not prove broker append
+2026-10-05T07:30:41.2882454Z # stream profile guard checks passed
+2026-10-05T07:30:41.2883121Z # Subtest: scripts/dev/stream-profile-guard.test.mjs
+2026-10-05T07:30:41.2883822Z ok 33 - scripts/dev/stream-profile-guard.test.mjs
+2026-10-05T07:30:41.2884405Z   ---
+2026-10-05T07:30:41.2884780Z   duration_ms: 103.24631
+2026-10-05T07:30:41.2885156Z   type: 'test'
+2026-10-05T07:30:41.2885461Z   ...
+2026-10-05T07:30:41.2885825Z 1..229
+2026-10-05T07:30:41.2886199Z # tests 229
+2026-10-05T07:30:41.2886623Z # suites 0
+2026-10-05T07:30:41.2887000Z # pass 227
+2026-10-05T07:30:41.2887299Z # fail 2
+2026-10-05T07:30:41.2887640Z # cancelled 0
+2026-10-05T07:30:41.2888012Z # skipped 0
+2026-10-05T07:30:41.2888358Z # todo 0
+2026-10-05T07:30:41.2888742Z # duration_ms 9782.175881
+2026-10-05T07:30:41.2889533Z # start of coverage report
+2026-10-05T07:30:41.2891757Z # -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2026-10-05T07:30:41.2893813Z # file                                                 | line % | branch % | funcs % | uncovered lines
+2026-10-05T07:30:41.2896509Z # -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2026-10-05T07:30:41.2898679Z # infra                                                |        |          |         | 
+2026-10-05T07:30:41.2899874Z #  hetzner-core                                        |        |          |         | 
+2026-10-05T07:30:41.2900840Z #   server                                             |        |          |         | 
+2026-10-05T07:30:41.2901815Z #    deploy-receiver                                   |        |          |         | 
+2026-10-05T07:30:41.2904148Z #     server.mjs                                       |  56.30 |    75.00 |   58.33 | 37 48-55 57-60 62-71 73-91 93-116 136-137 139-140 142-143 145-146 149-153 155-159 161-165 199-200 213-214 216-217 221-244 246-250 271-278 286-287 291-292 304-305 318-320 375-376 387-389 406-458 460-469 472-477
+2026-10-05T07:30:41.2906062Z # scripts                                              |        |          |         | 
+2026-10-05T07:30:41.2906961Z #  ci                                                  |        |          |         | 
+2026-10-05T07:30:41.2908015Z #   build-container.mjs                                |  86.00 |    89.47 |   87.50 | 44-50
+2026-10-05T07:30:41.2909367Z #   build-container.test.mjs                           | 100.00 |   100.00 |   83.33 | 
+2026-10-05T07:30:41.2910592Z #   check-required-results.mjs                         |  79.37 |    73.33 |   50.00 | 25-26 51-59 62-63
+2026-10-05T07:30:41.2911839Z #   check-required-results.test.mjs                    | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2912882Z #  dev                                                 |        |          |         | 
+2026-10-05T07:30:41.2914197Z #   analyze-arena-actor-diagnostics.mjs                |  95.49 |    55.93 |   95.77 | 53-62 153-154 157-158 325-326 408-410
+2026-10-05T07:30:41.2915604Z #   analyze-arena-actor-diagnostics.test.mjs           | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2916886Z #   arena-score-breakdown.test.mjs                     | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2919534Z #   bot-submission-register-merged.mjs                 |  78.95 |    32.00 |   95.00 | 18-20 24-25 28-29 46-47 70-72 90-92 107-108 138-141 143-144 151-152 157-158 166-167 169-170 172-173 183-184 186-187 214 225 249-250 259-272 274-276 284-285 288-289 296-297 320-323
+2026-10-05T07:30:41.2921707Z #   bot-submission-register-merged.test.mjs            |  96.17 |    95.45 |   88.89 | 85-89 136-137 202 217
+2026-10-05T07:30:41.2923021Z #   calcify-direct-capacity.mjs                        |  42.64 |    90.57 |   90.00 | 83-195
+2026-10-05T07:30:41.2924195Z #   calcify-direct-capacity.test.mjs                   | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2925342Z #   calcify-financial                                  |        |          |         | 
+2026-10-05T07:30:41.2926412Z #    broker-proof.test.mjs                             | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2927572Z #    gate-model.mjs                                    |  95.68 |    91.86 |   98.80 | 309-318 321-324
+2026-10-05T07:30:41.2928670Z #    gate-model.test.mjs                               | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2929912Z #    lib                                               |        |          |         | 
+2026-10-05T07:30:41.2930887Z #     external-faults.mjs                              | 100.00 |    97.41 |   94.29 | 
+2026-10-05T07:30:41.2931939Z #     output-capture.mjs                               | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2933123Z #    proof-supervisor.mjs                              |  96.22 |    94.50 |   93.59 | 79-81 106 412-423
+2026-10-05T07:30:41.2934304Z #    proof-supervisor.test.mjs                         |  99.84 |    98.25 |   97.17 | 223
+2026-10-05T07:30:41.2936089Z #    rate-proof.mjs                                    |  76.08 |    90.21 |   80.43 | 109-116 269-278 283-306 312-315 323 325-330 332-351 354-355 358-366 368-372
+2026-10-05T07:30:41.2937647Z #    rate-proof.test.mjs                               |  98.34 |    97.89 |  100.00 | 362-366 377-378
+2026-10-05T07:30:41.2938762Z #    record-attempt.test.mjs                           | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2940113Z #    reservation-model.mjs                             |  97.10 |    76.27 |  100.00 | 63-64
+2026-10-05T07:30:41.2941215Z #    reservation-model.test.mjs                        | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2942472Z #   ci-pr-change-scope.mjs                             |  71.43 |    78.79 |   77.78 | 20-21 39-40 77-97 101-105
+2026-10-05T07:30:41.2943651Z #   ci-pr-change-scope.test.mjs                        | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2944825Z #   ci-workflow-hardening.test.mjs                     | 100.00 |    82.76 |  100.00 | 
+2026-10-05T07:30:41.2946429Z #   command-log-archive-partitions.mjs                 |  37.44 |    87.50 |   41.67 | 80-84 86-149 151-168 170-178 180-215 217-223 225-227
+2026-10-05T07:30:41.2947911Z #   command-log-archive-partitions.test.mjs            | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2949825Z #   command-log-archive.mjs                            |  35.63 |    80.00 |   27.27 | 113-117 119-245 247-262 264-267 269-277 279-319 321-326 328-334
+2026-10-05T07:30:41.2951269Z #   command-log-archive.test.mjs                       | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2952589Z #   command-log-integrity-check.mjs                    |  27.43 |    75.00 |   62.50 | 30-34 36-73 75-113
+2026-10-05T07:30:41.2953905Z #   command-log-integrity-check.test.mjs               | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2955250Z #   command-log-pin.mjs                                |  32.73 |    80.00 |   55.56 | 48-52 54-113 115-150 152-161
+2026-10-05T07:30:41.2956451Z #   command-log-pin.test.mjs                           | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2957917Z #   command-log-prune.mjs                              |  42.48 |    84.62 |   50.00 | 169-173 175-322 324-341 343-346 348-355 357-397 399-404 406-412
+2026-10-05T07:30:41.2959610Z #   command-log-prune.test.mjs                         | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2960905Z #   compare-arena-score-v1-proof.mjs                   |  85.14 |    40.26 |   94.44 | 9-21 118-119 173-190
+2026-10-05T07:30:41.2962217Z #   compare-arena-score-v1-proof.test.mjs              | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2963510Z #   compare-arena-scoring-calibration.mjs              |  91.43 |    62.00 |  100.00 | 5-13
+2026-10-05T07:30:41.2964854Z #   compare-arena-scoring-calibration.test.mjs         | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2966100Z #   container-images-workflow.test.mjs                 | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2967175Z #   db                                                 |        |          |         | 
+2026-10-05T07:30:41.2968494Z #    migrate.mjs                                       |  34.74 |    76.19 |   64.71 | 33-35 61-62 71-72 93-110 112-152 154-192 202-239 241-278 281-285
+2026-10-05T07:30:41.2969955Z #    migrate.test.mjs                                  | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2971052Z #   deploy-receiver.test.mjs                           | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2973155Z #   export-simulation-run.mjs                          |  82.82 |    44.60 |   86.11 | 79-84 107-108 117-138 152-162 167-183 191 400-408 413-414 435 444 471-476 479-483
+2026-10-05T07:30:41.2974889Z #   export-simulation-run.test.mjs                     | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2986510Z #   lib                                                |        |          |         | 
+2026-10-05T07:30:41.2987870Z #    arena-score-breakdown.mjs                         |  99.59 |    66.92 |   96.08 | 441-442
+2026-10-05T07:30:41.2989685Z #    bot-submission-contract.mjs                       |  66.67 |    45.45 |   80.00 | 8-9 14-18 27-28 30-31 36-37 39-40 42-43
+2026-10-05T07:30:41.2990898Z #    compose-utils.mjs                                 | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2993004Z #    db-diagnostics.mjs                                |   6.35 |   100.00 |    0.00 | 12-17 20-46 49-338 341-354 357-391 394-418 421-427 429-431 433-461 463-498 500-508 510-514 516-519 521-533 535-543 545-550 552-560 562-566 568-574 576-579 581-583
+2026-10-05T07:30:41.2994765Z #    dev-profiles.test.mjs                             | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.2996210Z #    dev-stack-profiles.mjs                            |  77.78 |    60.53 |   78.26 | 15-21 24-30 33-35 40 48-49 55 197-198 260-261 264 316-364 366-389 394
+2026-10-05T07:30:41.2997489Z #    dev-stack.mjs                                     | 100.00 |    76.47 |  100.00 | 
+2026-10-05T07:30:41.2998487Z #    dev-stack.test.mjs                                | 100.00 |   100.00 |   84.21 | 
+2026-10-05T07:30:41.2999978Z #    dev-stress-profiles.mjs                           |  67.95 |    63.64 |   50.00 | 13-17 22-23 25-26 34 38-40 42-66 68-79
+2026-10-05T07:30:41.3001280Z #    dev-utils.mjs                                     |  24.26 |    90.91 |   44.44 | 24-42 46-52 55-82 85-104 107-108 110-136
+2026-10-05T07:30:41.3002493Z #    projection-replay-proof.mjs                       |  91.04 |    90.48 |  100.00 | 31-34 47-48
+2026-10-05T07:30:41.3003697Z #    stream-profile-guard.mjs                          |  93.46 |    77.50 |   90.91 | 15-17 32 72-76 89
+2026-10-05T07:30:41.3004818Z #    stress-session-config.mjs                         | 100.00 |    62.50 |  100.00 | 
+2026-10-05T07:30:41.3005949Z #    stress-success-guardrail.mjs                      | 100.00 |    71.43 |  100.00 | 
+2026-10-05T07:30:41.3007097Z #    stress-success-guardrail.test.mjs                 | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.3008259Z #   projection-replay-proof.test.mjs                   | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.3010209Z #   run-arena-actor-calibration-matrix.mjs             |  69.64 |    57.80 |   81.25 | 104-106 109-198 397-407 459-469 471-477 484-491 493-515 517-529 543-545 547-549 555 576-579
+2026-10-05T07:30:41.3011819Z #   run-arena-actor-calibration-matrix.test.mjs        | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.3013793Z #   run-arena-economic-policy-matrix.mjs               |  54.55 |    66.67 |   60.00 | 13-19 22-55 58-77 79-97 135-136 145-146 149-150 152-153 165-166 171-173 176-177 183-184 187-188 229 234-255 276-279 281-283 285-287 289-291
+2026-10-05T07:30:41.3015347Z #   run-arena-economic-policy-matrix.test.mjs          | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.3016688Z #   run-arena-scoring-calibration-matrix.mjs           |  54.24 |    84.38 |   66.67 | 21-24 27-64 107-129 131-143 162-164
+2026-10-05T07:30:41.3018128Z #   run-arena-scoring-calibration-matrix.test.mjs      | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.3019853Z #   stream-profile-guard.test.mjs                      | 100.00 |   100.00 |  100.00 | 
+2026-10-05T07:30:41.3020865Z # ..                                                   |        |          |         | 
+2026-10-05T07:30:41.3021726Z #  ..                                                  |        |          |         | 
+2026-10-05T07:30:41.3022535Z #   ..                                                 |        |          |         | 
+2026-10-05T07:30:41.3023388Z #    ..                                                |        |          |         | 
+2026-10-05T07:30:41.3024186Z #     ..                                               |        |          |         | 
+2026-10-05T07:30:41.3024996Z #      tmp                                             |        |          |         | 
+2026-10-05T07:30:41.3025989Z #       calcify-health-restriction-KagFGo              |        |          |         | 
+2026-10-05T07:30:41.3027709Z #        guard-mutant.mjs                              |  31.75 |    87.80 |   51.52 | 25-28 37-85 88-121 125-188 190-195 200-283 286-308 390-392 396-404 411-422
+2026-10-05T07:30:41.3030672Z # -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2026-10-05T07:30:41.3032599Z # all files                                            |  77.87 |    81.75 |   88.99 | 
+2026-10-05T07:30:41.3034816Z # -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2026-10-05T07:30:41.3036398Z # end of coverage report
+2026-10-05T07:30:41.3049822Z ##[error]Process completed with exit code 1.
+2026-10-05T07:30:41.3144693Z ##[group]Run actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+2026-10-05T07:30:41.3145113Z with:
+2026-10-05T07:30:41.3145321Z   name: node-dev-tooling-coverage
+2026-10-05T07:30:41.3145588Z   path: coverage/node-dev-tooling
+2026-10-05T07:30:41.3145840Z   if-no-files-found: warn
+2026-10-05T07:30:41.3146072Z   compression-level: 6
+2026-10-05T07:30:41.3146282Z   overwrite: false
+2026-10-05T07:30:41.3146492Z   include-hidden-files: false
+2026-10-05T07:30:41.3146729Z   archive: true
+2026-10-05T07:30:41.3146924Z ##[endgroup]
+2026-10-05T07:30:41.4642604Z With the provided path, there will be 46 files uploaded
+2026-10-05T07:30:41.4648433Z Artifact name is valid!
+2026-10-05T07:30:41.4649204Z Root directory input is valid!
+2026-10-05T07:30:41.7718145Z Uploading artifact: node-dev-tooling-coverage.zip
+2026-10-05T07:30:41.7761687Z Beginning upload of artifact content to blob storage
+2026-10-05T07:30:42.5679542Z Uploaded bytes 1786785
+2026-10-05T07:30:42.6185575Z Finished uploading artifact content to blob storage!
+2026-10-05T07:30:42.6187390Z SHA256 digest of uploaded artifact is e213c67c6fefbfc82250eed849086b8621600c6c7c0d36b4f6d167ddfd098009
+2026-10-05T07:30:42.6189549Z Finalizing artifact upload
+2026-10-05T07:30:42.9687167Z Artifact node-dev-tooling-coverage successfully finalized. Artifact ID 11330907584
+2026-10-05T07:30:42.9689971Z Artifact node-dev-tooling-coverage has been successfully uploaded! Final size is 1786785 bytes. Artifact ID is 11330907584
+2026-10-05T07:30:42.9693073Z Artifact download URL: https://github.com/dills122/reef/actions/runs/37278081559/artifacts/11330907584
+2026-10-05T07:30:42.9905503Z Post job cleanup.
+2026-10-05T07:30:43.0757179Z [command]/usr/bin/git version
+2026-10-05T07:30:43.0813047Z git version 2.55.0
+2026-10-05T07:30:43.0850918Z Temporarily overriding HOME='/home/runner/work/_temp/981048de-5eb5-45a7-8f9f-c20259bbfa5a' before making global git config changes
+2026-10-05T07:30:43.0852437Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-05T07:30:43.0854407Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/reef/reef
+2026-10-05T07:30:43.0887808Z Removing SSH command configuration
+2026-10-05T07:30:43.0894415Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-05T07:30:43.0930188Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-05T07:30:43.1189634Z Removing HTTP extra header
+2026-10-05T07:30:43.1197025Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-05T07:30:43.1235775Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-05T07:30:43.1521015Z Removing includeIf entries pointing to credentials config files
+2026-10-05T07:30:43.1523205Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-05T07:30:43.1549608Z includeif.gitdir:/home/runner/work/reef/reef/.git.path
+2026-10-05T07:30:43.1550845Z includeif.gitdir:/home/runner/work/reef/reef/.git/worktrees/*.path
+2026-10-05T07:30:43.1551722Z includeif.gitdir:/github/workspace/.git.path
+2026-10-05T07:30:43.1552501Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-05T07:30:43.1562514Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/reef/reef/.git.path
+2026-10-05T07:30:43.1599582Z /home/runner/work/_temp/git-credentials-949aa20d-7ff1-4494-98e8-ee0a97de17ea.config
+2026-10-05T07:30:43.1610843Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/reef/reef/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-949aa20d\-7ff1\-4494\-98e8\-ee0a97de17ea\.config
+2026-10-05T07:30:43.1651276Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/reef/reef/.git/worktrees/*.path
+2026-10-05T07:30:43.1681143Z /home/runner/work/_temp/git-credentials-949aa20d-7ff1-4494-98e8-ee0a97de17ea.config
+2026-10-05T07:30:43.1692250Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/reef/reef/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-949aa20d\-7ff1\-4494\-98e8\-ee0a97de17ea\.config
+2026-10-05T07:30:43.1745659Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+2026-10-05T07:30:43.1773758Z /github/runner_temp/git-credentials-949aa20d-7ff1-4494-98e8-ee0a97de17ea.config
+2026-10-05T07:30:43.1782372Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-949aa20d\-7ff1\-4494\-98e8\-ee0a97de17ea\.config
+2026-10-05T07:30:43.1821567Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+2026-10-05T07:30:43.1852364Z /github/runner_temp/git-credentials-949aa20d-7ff1-4494-98e8-ee0a97de17ea.config
+2026-10-05T07:30:43.1863704Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-949aa20d\-7ff1\-4494\-98e8\-ee0a97de17ea\.config
+2026-10-05T07:30:43.1900296Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-05T07:30:43.2123451Z Removing credentials config '/home/runner/work/_temp/git-credentials-949aa20d-7ff1-4494-98e8-ee0a97de17ea.config'
+2026-10-05T07:30:43.2272833Z Cleaning up orphan processes

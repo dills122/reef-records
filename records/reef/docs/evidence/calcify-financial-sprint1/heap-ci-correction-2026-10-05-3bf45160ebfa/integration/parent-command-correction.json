@@ -1,0 +1,20 @@
+{
+  "command": [
+    "bun",
+    "run",
+    "repo:check:scripts"
+  ],
+  "exit": 1,
+  "error": "Script not found \"repo:check:scripts\"",
+  "correction": [
+    "bun",
+    "scripts/dev/script-surface-check.mjs"
+  ],
+  "correctionExit": 0,
+  "counts": {
+    "scripts": 272,
+    "nodeSyntax": 260,
+    "shellSyntax": 11
+  },
+  "sourceEffect": "NONE"
+}

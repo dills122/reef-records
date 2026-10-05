@@ -1,0 +1,34 @@
+TAP version 13
+# Subtest: capacity lock has fixed shared name in platform temporary directory
+not ok 1 - capacity lock has fixed shared name in platform temporary directory
+  ---
+  duration_ms: 1.193833
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/rate-proof.test.mjs:11:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    + actual - expected
+    
+    + 'undefined'
+    - 'function'
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'function'
+  actual: 'undefined'
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/rate-proof.test.mjs:13:10)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+1..1
+# tests 1
+# suites 0
+# pass 0
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 52.587375

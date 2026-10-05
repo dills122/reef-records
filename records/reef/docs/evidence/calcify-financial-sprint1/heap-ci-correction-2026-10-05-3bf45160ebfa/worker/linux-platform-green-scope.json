@@ -1,0 +1,8 @@
+{
+  "scope": "Broker-free copied-source behavioral control: process.platform linux override and isolated TMPDIR. Actual host macOS; no actual Linux-host claim. Production resolver/callers/test bytes otherwise unchanged. No load, client or broker execution.",
+  "originalSourceSha256": "eb04e2841db753cee03d04b0a171e6b043d9823a32e1a9d6760bd8af486d41b8",
+  "copySourceSha256": "cb44cc6561600015e4ec1fabc05ef3d383ee4c9be52ad472ea42e4be580e040f",
+  "originalTestSha256": "ede45b558776bb944d1ce65fb66ff8a9f3d80b8cb638047051e78aa81e9ad821",
+  "copyTestSha256": "ede45b558776bb944d1ce65fb66ff8a9f3d80b8cb638047051e78aa81e9ad821",
+  "temporaryDirectory": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-ci-correction-2026-10-05/worker/linux-platform-green/tmp"
+}

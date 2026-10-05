@@ -1,0 +1,36 @@
+{
+  "schema": "calcify-heap-ci-correction-v1",
+  "baseline": "3bf45160ebfa1d1e1fac6fb808b80b86688f35fe",
+  "state": "PASSED",
+  "attempt": 1,
+  "nextReviewCycle": 3,
+  "previousReviewCycles": 2,
+  "scope": "Linux executable-test lock isolation only; no runtime behavior change",
+  "originalArchive": "132dae9d9a02b1c6bd11946f9dbd12670a65d70b",
+  "originalValidation": "Local229/229; hosted227/229 ENOENT before intended refusal",
+  "events": [
+    {
+      "utc": "2026-10-05T07:33:22.356544+00:00",
+      "kind": "HOSTED_REGRESSION",
+      "result": "Two new Node tests fail Linux default macOS lock path; all previous actual local results remain historical exact scope. Follow-up bounded test-isolation correction; cycle3 required."
+    },
+    {
+      "utc": "2026-10-05T07:42:33.173425+00:00",
+      "kind": "FINAL_NODE_GREEN",
+      "result": "Actual exact CI230/230 zero failures/skips;437source maps before/afterequal. Focused38/38; no Kotlin source changes or new Kotlin execution claim. Initial wrong package script name command failed, actual direct script-surface command used."
+    },
+    {
+      "utc": "2026-10-05T07:54:49.039436+00:00",
+      "kind": "REVIEW_READY",
+      "result": "Full bounded component Ready; no actionable findings. Attempt1 cycle3of3. Owner docs updated; supplemental publication pending. Initial parent owner-update script syntax error made no writes; corrected."
+    }
+  ],
+  "review": {
+    "attempt": 1,
+    "cycle": 3,
+    "maximumCycles": 3,
+    "verdict": "Ready",
+    "findings": [],
+    "report": "review/cycle3/report.md"
+  }
+}

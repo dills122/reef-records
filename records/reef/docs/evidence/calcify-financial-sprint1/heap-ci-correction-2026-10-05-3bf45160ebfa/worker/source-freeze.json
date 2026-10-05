@@ -1,0 +1,24 @@
+{
+  "frozenAt": "2026-10-05T07:40:53.934496+00:00",
+  "candidateHeadMetadata": "3bf45160ebfa1d1e1fac6fb808b80b86688f35fe",
+  "scope": "Two JavaScript files changed. No further worker source writers. Three Kotlin sources exact unchanged; Node receipts never imply Kotlin rerun.",
+  "beforeSha256": {
+    "scripts/dev/calcify-financial/rate-proof.mjs": "fc2aecc678e1dc7b1b6479b2793f68f4e447e7d3963555c7ffa8da986340f090",
+    "scripts/dev/calcify-financial/rate-proof.test.mjs": "237818ed0bf7fef0ca86e5ac6eac0274afcf596e0f0676b7fbc75cc62b01938e",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt": "6916c2ed4f61a8f5f874f93f11ddc900519b503770e86bc3f0aaea343292965a",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt": "f5dd838d77fb3e0796861ac0dc4936caccaf6d7c2cfc1b5e337678464fb90943",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt": "bed9edbd42798136c127ed9d172a6110e6288bdc933cc6b1f5fb2160d6a957fa"
+  },
+  "frozenSha256": {
+    "scripts/dev/calcify-financial/rate-proof.mjs": "eb04e2841db753cee03d04b0a171e6b043d9823a32e1a9d6760bd8af486d41b8",
+    "scripts/dev/calcify-financial/rate-proof.test.mjs": "ede45b558776bb944d1ce65fb66ff8a9f3d80b8cb638047051e78aa81e9ad821",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt": "6916c2ed4f61a8f5f874f93f11ddc900519b503770e86bc3f0aaea343292965a",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt": "f5dd838d77fb3e0796861ac0dc4936caccaf6d7c2cfc1b5e337678464fb90943",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt": "bed9edbd42798136c127ed9d172a6110e6288bdc933cc6b1f5fb2160d6a957fa"
+  },
+  "changedPaths": [
+    "scripts/dev/calcify-financial/rate-proof.mjs",
+    "scripts/dev/calcify-financial/rate-proof.test.mjs"
+  ],
+  "hostedOriginalLogSha256": "b8d2d53ecdfa3d0e76c84be70b11615261f7fb2ff95973036b1cb77c6becf14d"
+}

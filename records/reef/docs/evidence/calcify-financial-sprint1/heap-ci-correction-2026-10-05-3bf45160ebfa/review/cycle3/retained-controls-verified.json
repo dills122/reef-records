@@ -1,0 +1,25 @@
+{
+  "childControls": [
+    {
+      "label": "impossible-baseline",
+      "retainedExecutedExit": 1,
+      "expectedErrorInRawStderr": true,
+      "rawStderrSha256": "aa64c88ab555669ed7b42bf933f18ebbadb237a2904ba770b83c0fdb6973fc51",
+      "newExecution": false
+    },
+    {
+      "label": "compiled-build-mismatch",
+      "retainedExecutedExit": 1,
+      "expectedErrorInRawStderr": true,
+      "rawStderrSha256": "d2999eda048ffff8e4d03e13a85bc7d9c92e13db2740ffeb57473d5fd5015a6f",
+      "newExecution": false
+    }
+  ],
+  "peakModes": [
+    "calibrate",
+    "run"
+  ],
+  "artifactPeak": 50,
+  "healthyLifetimePeak": 700,
+  "newKotlinExecution": false
+}

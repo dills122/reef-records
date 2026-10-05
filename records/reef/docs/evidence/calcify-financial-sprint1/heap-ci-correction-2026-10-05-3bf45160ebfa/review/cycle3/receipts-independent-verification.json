@@ -1,0 +1,97 @@
+{
+  "verifiedAt": "2026-10-05T07:50:45.060111+00:00",
+  "previousFinancial": {
+    "scope": "Retained actual earlier forced Kotlin run; no cycle3 rerun",
+    "sourceHashesMatchCurrent": true,
+    "suite": [
+      {
+        "path": ".planning/calcify-heap-protection-2026-10-05/integration/financial2-final/xml/TEST-com.reef.platform.calcify.financial.FinancialBrokerProbeTest.xml",
+        "sha256": "673c9e9d8bea22be92f724c898ea620d283a35eed37b501336f5f32923d5e6dd",
+        "timestamp": "2026-10-05T07:00:16.275Z",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "path": ".planning/calcify-heap-protection-2026-10-05/integration/financial2-final/xml/TEST-com.reef.platform.calcify.financial.FinancialCommittedCutTest.xml",
+        "sha256": "9680692f7a02f4e0413a717631f849d72957e17dc6aba157fb665578b71b3d34",
+        "timestamp": "2026-10-05T07:00:17.409Z",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "path": ".planning/calcify-heap-protection-2026-10-05/integration/financial2-final/xml/TEST-com.reef.platform.calcify.financial.FinancialHeapGuardTest.xml",
+        "sha256": "c4dd9d4dcc3c3d17bf1ece36e8ca66f027adac97adfe0e5ef597b2e6f6feb50b",
+        "timestamp": "2026-10-05T07:00:17.598Z",
+        "tests": 19,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "path": ".planning/calcify-heap-protection-2026-10-05/integration/financial2-final/xml/TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml",
+        "sha256": "e62642663ad13361ea71283f0d4e92157d0ec2ec6455623f9ed24bef47f21c83",
+        "timestamp": "2026-10-05T07:00:17.683Z",
+        "tests": 14,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "path": ".planning/calcify-heap-protection-2026-10-05/integration/financial2-final/xml/TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+        "sha256": "3c4987dd437155f79ee938fa48a0335c180f42e03b63a6ca8d644245a7529040",
+        "timestamp": "2026-10-05T07:02:16.305Z",
+        "tests": 12,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      {
+        "path": ".planning/calcify-heap-protection-2026-10-05/integration/financial2-final/xml/TEST-com.reef.platform.calcify.financial.FinancialPartitionCutTest.xml",
+        "sha256": "9987324a39b2bb01b559c86a16e0f9ccf3a0fbf34e2c9401cec012871a30768b",
+        "timestamp": "2026-10-05T07:02:38.928Z",
+        "tests": 13,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    ],
+    "tests": 64,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "currentBuild": {
+    "recomputed": true,
+    "financialClasses": 65,
+    "buildSha256": "0ab2ba5b4584cf44bdf3aca2bb2fd32c929c78503bc3f361c438a114ab1055aa",
+    "classpathSha256": "c5436375e29d6c954f79c082512f27c094569fc1c56082e89115427167e11a84",
+    "fixturePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/docs/evidence/calcify-financial-sprint1/fixtures.json",
+    "fixtureSha256": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+    "configPath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-heap-protection-2026-10-05/worker/capability-config.json",
+    "configSha256": "f153d7e7ccdf2587573f0e4522f7ff0896d5007c015865b21db87fa295b58ad0",
+    "capabilityRawSha256": "50fb062a203c2c4a7acdc28fb07959eabbfc8480c82727bb84be81c64562e79c",
+    "actualRuntimeRecaptured": false
+  },
+  "parentNodeCI": {
+    "sourceInputs": 437,
+    "allFrozenPathsMatch": true,
+    "beforeAfterEqual": true,
+    "counts": {
+      "tests": 230,
+      "pass": 230,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0
+    },
+    "outputSha256": "ab734dfb2309a9c86a5e2cab05eeb0424bdc83679995e1f2a47f2861e50642e5"
+  },
+  "originalHostedFailure": {
+    "rawSha256": "b8d2d53ecdfa3d0e76c84be70b11615261f7fb2ff95973036b1cb77c6becf14d",
+    "identifiedMissingLockParent": true,
+    "sourcePreserved": true
+  }
+}

@@ -1,0 +1,3 @@
+{"control":"both entrypoints refuse same stale exclusive lock and preserve owner bytes","lockPath":"/private/tmp/reviewer-linux-temp-IMW0iO/reef-financial-rate-capacity.lock","result":"PASS"}
+{"control":"each entrypoint cleans only lock it acquired after downstream refusal","result":"PASS"}
+{"originalPlatform":"darwin","effectivePlatform":"linux","instrumented":true,"actualLinuxQualification":false,"capabilitySpawned":false,"brokerSetup":false,"fixtureValidationOnly":true}
