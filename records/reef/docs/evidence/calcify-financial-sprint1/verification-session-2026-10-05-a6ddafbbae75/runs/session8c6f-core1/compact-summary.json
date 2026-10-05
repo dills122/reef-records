@@ -1,0 +1,440 @@
+{
+  "scope": "bounded RF3/EOS financial experiment; no live venue or whole-cluster durability claim",
+  "guard": {
+    "ok": true,
+    "wrapperStatus": {
+      "code": 0,
+      "signal": null
+    },
+    "cleanupErrors": [],
+    "volumesPreserved": true
+  },
+  "arms": [
+    {
+      "name": "happy",
+      "fault": "",
+      "localStateLost": false,
+      "finalCoveredInputs": 8,
+      "resultOffsets": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10
+      ],
+      "inputGroupCheckpoint": 15,
+      "inputReadCommittedEndOffset": 15,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-0",
+      "fault": "mutation:0",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-1",
+      "fault": "mutation:1",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-2",
+      "fault": "mutation:2",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-3",
+      "fault": "mutation:3",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-4",
+      "fault": "mutation:4",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-5",
+      "fault": "mutation:5",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-6",
+      "fault": "mutation:6",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-7",
+      "fault": "mutation:7",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-8",
+      "fault": "mutation:8",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-9",
+      "fault": "mutation:9",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-10",
+      "fault": "mutation:10",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-11",
+      "fault": "mutation:11",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-12",
+      "fault": "mutation:12",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-13",
+      "fault": "mutation:13",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-14",
+      "fault": "mutation:14",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-15",
+      "fault": "mutation:15",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-16",
+      "fault": "mutation:16",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-17",
+      "fault": "mutation:17",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "mutation-18",
+      "fault": "mutation:18",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "forward",
+      "fault": "forward",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "serialization",
+      "fault": "serialization",
+      "localStateLost": false,
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "local-state-loss",
+      "fault": "",
+      "localStateLost": true,
+      "finalCoveredInputs": 8,
+      "resultOffsets": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10
+      ],
+      "inputGroupCheckpoint": 15,
+      "inputReadCommittedEndOffset": 15,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "staged-phase-loss",
+      "fault": "",
+      "localStateLost": true,
+      "finalCoveredInputs": 32,
+      "resultOffsets": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22,
+        25,
+        28,
+        31,
+        34,
+        37,
+        40,
+        43,
+        46,
+        49,
+        52,
+        55,
+        58,
+        61,
+        64,
+        67,
+        70,
+        73,
+        76,
+        79,
+        82,
+        85,
+        88,
+        91,
+        94
+      ],
+      "inputGroupCheckpoint": 38,
+      "inputReadCommittedEndOffset": 39,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    }
+  ],
+  "count": 24,
+  "sampleCount": 99,
+  "sampledMaximumAllocatedBytes": 4340293632,
+  "minimumGuestFreeBytes": 93187383296,
+  "elapsedSeconds": 468.764,
+  "scopeLimit": "Correctness timing and sampled broker allocation only; not throughput or continuous peak"
+}

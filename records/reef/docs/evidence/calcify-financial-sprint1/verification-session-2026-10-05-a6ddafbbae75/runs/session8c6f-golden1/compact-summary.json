@@ -1,0 +1,324 @@
+{
+  "scope": "bounded RF3/EOS financial experiment; no live venue or whole-cluster durability claim",
+  "guard": {
+    "ok": true,
+    "wrapperStatus": {
+      "code": 0,
+      "signal": null
+    },
+    "cleanupErrors": [],
+    "volumesPreserved": true
+  },
+  "arms": [
+    {
+      "name": "golden-0",
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-1",
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-2",
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-3",
+      "finalCoveredInputs": 6,
+      "resultOffsets": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "inputGroupCheckpoint": 11,
+      "inputReadCommittedEndOffset": 11,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-4",
+      "finalCoveredInputs": 6,
+      "resultOffsets": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "inputGroupCheckpoint": 11,
+      "inputReadCommittedEndOffset": 11,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-5",
+      "finalCoveredInputs": 6,
+      "resultOffsets": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "inputGroupCheckpoint": 11,
+      "inputReadCommittedEndOffset": 11,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-6",
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-7",
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-8",
+      "finalCoveredInputs": 8,
+      "resultOffsets": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "inputGroupCheckpoint": 13,
+      "inputReadCommittedEndOffset": 13,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-9",
+      "finalCoveredInputs": 8,
+      "resultOffsets": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "inputGroupCheckpoint": 13,
+      "inputReadCommittedEndOffset": 13,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-10",
+      "finalCoveredInputs": 8,
+      "resultOffsets": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "inputGroupCheckpoint": 13,
+      "inputReadCommittedEndOffset": 13,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-11",
+      "finalCoveredInputs": 8,
+      "resultOffsets": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "inputGroupCheckpoint": 13,
+      "inputReadCommittedEndOffset": 13,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-12",
+      "finalCoveredInputs": 2,
+      "resultOffsets": [
+        1,
+        2
+      ],
+      "inputGroupCheckpoint": 7,
+      "inputReadCommittedEndOffset": 7,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-13",
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-14",
+      "finalCoveredInputs": 2,
+      "resultOffsets": [
+        1,
+        2
+      ],
+      "inputGroupCheckpoint": 7,
+      "inputReadCommittedEndOffset": 7,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-15",
+      "finalCoveredInputs": 2,
+      "resultOffsets": [
+        1,
+        2
+      ],
+      "inputGroupCheckpoint": 7,
+      "inputReadCommittedEndOffset": 7,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-16",
+      "finalCoveredInputs": 2,
+      "resultOffsets": [
+        1,
+        2
+      ],
+      "inputGroupCheckpoint": 7,
+      "inputReadCommittedEndOffset": 7,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-17",
+      "finalCoveredInputs": 2,
+      "resultOffsets": [
+        1,
+        2
+      ],
+      "inputGroupCheckpoint": 7,
+      "inputReadCommittedEndOffset": 7,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-18",
+      "finalCoveredInputs": 4,
+      "resultOffsets": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "inputGroupCheckpoint": 9,
+      "inputReadCommittedEndOffset": 9,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    },
+    {
+      "name": "golden-19",
+      "finalCoveredInputs": 16,
+      "resultOffsets": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "inputGroupCheckpoint": 21,
+      "inputReadCommittedEndOffset": 21,
+      "oraclePass": true,
+      "isolatedRefusalAndRepair": true
+    }
+  ],
+  "count": 20,
+  "sampleCount": 92,
+  "sampledMaximumAllocatedBytes": 5863723008,
+  "minimumGuestFreeBytes": 91658354688,
+  "elapsedSeconds": 435.002,
+  "scopeLimit": "Correctness timing/sampled allocation on same volumes retaining earlier attempts; no throughput or continuous peak"
+}

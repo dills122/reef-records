@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialPartitionCutTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-05T03:37:13.420Z" hostname="Dylans-MacBook-Pro.local" time="0.065">
+  <properties/>
+  <testcase name="historyReferenceMustBindSourceAndEntireOwnerChain()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.004"/>
+  <testcase name="pendingPhaseStagingAndDedupStateRequireExactAgreement()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.011"/>
+  <testcase name="missingAPlus5HistoryRefusesActivationAndReconstruction()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.002"/>
+  <testcase name="mixedOwnerCertificateRefusesEvenWithCompleteSemanticState()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.002"/>
+  <testcase name="sourceGenerationAndAuthorityMustMatchEveryCutRow()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.002"/>
+  <testcase name="incompleteOrWronglyShapedCertificatesCannotActivate()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.004"/>
+  <testcase name="coverageMustRepresentExactAcceptedMembershipDespitePhysicalGaps()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.002"/>
+  <testcase name="numericCutsCannotCoerceStringsFractionsOverflowNegativesOrNull()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.004"/>
+  <testcase name="acceptedSuffixDoesNotInvalidateCertifiedEarlierPrefix()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.005"/>
+  <testcase name="completeHistoryRebuildsA15B27AndEachFundingEffectOnce()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.005"/>
+  <testcase name="emptyStoreIsOnlyValidWithoutCertificateOrHistory()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.003"/>
+  <testcase name="mixedA10B27CannotActivateAtQuartetEnd()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.003"/>
+  <testcase name="genesisCannotSubstituteDifferentPolicyOrOpeningBalances()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

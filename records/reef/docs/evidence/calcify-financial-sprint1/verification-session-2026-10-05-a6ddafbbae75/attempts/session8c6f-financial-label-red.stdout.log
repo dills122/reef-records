@@ -1,0 +1,130 @@
+TAP version 13
+# Subtest: readiness rejects signal-terminated worker despite retained startup receipts
+ok 1 - readiness rejects signal-terminated worker despite retained startup receipts
+  ---
+  duration_ms: 4.740792
+  type: 'test'
+  ...
+# Subtest: external plan freezes four executable trigger/barrier definitions
+ok 2 - external plan freezes four executable trigger/barrier definitions
+  ---
+  duration_ms: 0.503
+  type: 'test'
+  ...
+# Subtest: broker registration refuses missing, malformed, duplicate and unregistered IDs
+ok 3 - broker registration refuses missing, malformed, duplicate and unregistered IDs
+  ---
+  duration_ms: 0.592459
+  type: 'test'
+  ...
+# Subtest: daemon inspection requires exact IDs, owned labels and two live peers
+not ok 4 - daemon inspection requires exact IDs, owned labels and two live peers
+  ---
+  duration_ms: 0.423334
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/broker-proof.test.mjs:27:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    unregistered experiment label
+    + actual - expected
+    
+    + 'calcify-financial-sprint1'
+    - 'calcify-resolver-rf3'
+               ^
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'calcify-resolver-rf3'
+  actual: 'calcify-financial-sprint1'
+  operator: 'strictEqual'
+  stack: |-
+    validateInspection (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/lib/external-faults.mjs:25:10)
+    TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/broker-proof.test.mjs:28:2)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: restoration validates ownership even when peer health fails after outage
+not ok 5 - restoration validates ownership even when peer health fails after outage
+  ---
+  duration_ms: 0.1205
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/broker-proof.test.mjs:33:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    unregistered experiment label
+    + actual - expected
+    
+    + 'calcify-financial-sprint1'
+    - 'calcify-resolver-rf3'
+               ^
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: 'calcify-resolver-rf3'
+  actual: 'calcify-financial-sprint1'
+  operator: 'strictEqual'
+  stack: |-
+    validateInspection (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/lib/external-faults.mjs:25:10)
+    TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/broker-proof.test.mjs:35:2)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: recovery requires identical physical prefix and exact stable end for idle restart
+ok 6 - recovery requires identical physical prefix and exact stable end for idle restart
+  ---
+  duration_ms: 1.382583
+  type: 'test'
+  ...
+# Subtest: idle restart refuses checkpoint divergence despite unchanged economic output
+ok 7 - idle restart refuses checkpoint divergence despite unchanged economic output
+  ---
+  duration_ms: 0.197791
+  type: 'test'
+  ...
+# Subtest: stale owner requires observed broker fencing, never generic error or elapsed time
+ok 8 - stale owner requires observed broker fencing, never generic error or elapsed time
+  ---
+  duration_ms: 0.289
+  type: 'test'
+  ...
+# Subtest: producer failure arm invokes actual producer seam, observes zero abort outputs then restores
+ok 9 - producer failure arm invokes actual producer seam, observes zero abort outputs then restores
+  ---
+  duration_ms: 0.598208
+  type: 'test'
+  ...
+# Subtest: committed-before-ACK arm kills after read-committed barrier and persists ACK only after stable recovery
+ok 10 - committed-before-ACK arm kills after read-committed barrier and persists ACK only after stable recovery
+  ---
+  duration_ms: 0.389417
+  type: 'test'
+  ...
+# Subtest: stale-owner arm freezes before forward, takes over, resumes and demands fencing before end-offset proof
+ok 11 - stale-owner arm freezes before forward, takes over, resumes and demands fencing before end-offset proof
+  ---
+  duration_ms: 0.211042
+  type: 'test'
+  ...
+# Subtest: majority outage proves fresh outputs while target stopped and restores target on failure
+ok 12 - majority outage proves fresh outputs while target stopped and restores target on failure
+  ---
+  duration_ms: 0.209916
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 10
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 56.867708

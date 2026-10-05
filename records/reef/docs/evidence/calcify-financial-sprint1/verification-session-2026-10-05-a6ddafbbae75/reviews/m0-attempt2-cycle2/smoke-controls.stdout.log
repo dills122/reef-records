@@ -1,0 +1,22 @@
+TAP version 13
+# Subtest: actual smoke body refuses unobserved starting instead of publishing success
+ok 1 - actual smoke body refuses unobserved starting instead of publishing success
+  ---
+  duration_ms: 5.859583
+  type: 'test'
+  ...
+# Subtest: actual smoke body accepts observed starting followed by new-generation healthy recovery
+ok 2 - actual smoke body accepts observed starting followed by new-generation healthy recovery
+  ---
+  duration_ms: 103.042458
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 2
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 112.491291

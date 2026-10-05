@@ -1,0 +1,16 @@
+{
+  "schema": "derived-summary-correction-v1",
+  "rawReceiptsChanged": false,
+  "corrections": [
+    {
+      "path": "runs/session8c6f-recovery-smoke1/compact-summary.json",
+      "change": "Initial derived startingSamples.du field null because guessed container field allocatedCommand absent. Corrected to matching row.commands Docker exec du receipt; each stdout KiB*1024 exactly equals measuredAllocatedBytes. Raw resource journal unchanged.",
+      "scope": "Draft derived summary amended before freeze/publication; no missing raw measurement claim"
+    },
+    {
+      "path": "runs/session8c6f-external3/compact-summary.json",
+      "change": "Added separately sampled measured running broker sum maximum2430259200 and explicit fixed3GiB target reservation accounting scope. Existing accounted maximum4844015616 retained.",
+      "scope": "Do not label accounted bound as actual measured allocation or continuous peak"
+    }
+  ]
+}

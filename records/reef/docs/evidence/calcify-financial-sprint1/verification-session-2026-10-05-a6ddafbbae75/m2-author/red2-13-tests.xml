@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialPartitionCutTest" tests="13" skipped="0" failures="13" errors="0" timestamp="2026-10-05T03:24:07.675Z" hostname="Dylans-MacBook-Pro.local" time="0.737">
+  <properties/>
+  <testcase name="historyReferenceMustBindSourceAndEntireOwnerChain()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.265">
+    <failure message="org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=3, offset=8)&gt;." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=3, offset=8)&gt;.
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at kotlin.test.junit5.JUnit5Asserter.fail(JUnitSupport.kt:56)
+	at kotlin.test.AssertionsKt__AssertionsImplKt.checkResultIsFailure(AssertionsImpl.kt:20)
+	at kotlin.test.AssertionsKt.checkResultIsFailure(Unknown Source)
+	at com.reef.platform.calcify.financial.FinancialPartitionCutTest.historyReferenceMustBindSourceAndEntireOwnerChain(FinancialPartitionCutTest.kt:97)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="pendingPhaseStagingAndDedupStateRequireExactAgreement()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.021">
+    <failure message="java.util.NoSuchElementException: Key domain-1 is missing in the map." type="java.util.NoSuchElementException">java.util.NoSuchElementException: Key domain-1 is missing in the map.
+	at kotlin.collections.MapsKt__MapWithDefaultKt.getOrImplicitDefaultNullable(MapWithDefault.kt:25)
+	at kotlin.collections.MapsKt__MapsKt.getValue(Maps.kt:437)
+	at com.reef.platform.calcify.financial.FinancialPartitionCutTest.pendingPhaseStagingAndDedupStateRequireExactAgreement(FinancialPartitionCutTest.kt:125)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="missingAPlus5HistoryRefusesActivationAndReconstruction()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.017">
+    <failure message="org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=3, offset=8)&gt;." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=3, offset=8)&gt;.
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at kotlin.test.junit5.JUnit5Asserter.fail(JUnitSupport.kt:56)
+	at kotlin.test.AssertionsKt__AssertionsImplKt.checkResultIsFailure(AssertionsImpl.kt:20)
+	at kotlin.test.AssertionsKt.checkResultIsFailure(Unknown Source)
+	at com.reef.platform.calcify.financial.FinancialPartitionCutTest.missingAPlus5HistoryRefusesActivationAndReconstruction(FinancialPartitionCutTest.kt:53)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="mixedOwnerCertificateRefusesEvenWithCompleteSemanticState()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.017">
+    <failure message="org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=3, offset=8)&gt;." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=3, offset=8)&gt;.
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at kotlin.test.junit5.JUnit5Asserter.fail(JUnitSupport.kt:56)
+	at kotlin.test.AssertionsKt__AssertionsImplKt.checkResultIsFailure(AssertionsImpl.kt:20)
+	at kotlin.test.AssertionsKt.checkResultIsFailure(Unknown Source)
+	at com.reef.platform.calcify.financial.FinancialPartitionCutTest.mixedOwnerCertificateRefusesEvenWithCompleteSemanticState(FinancialPartitionCutTest.kt:61)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="sourceGenerationAndAuthorityMustMatchEveryCutRow()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.014">
+    <failure message="org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=3, offset=8)&gt;." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=3, offset=8)&gt;.
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at kotlin.test.junit5.JUnit5Asserter.fail(JUnitSupport.kt:56)
+	at kotlin.test.AssertionsKt__AssertionsImplKt.checkResultIsFailure(AssertionsImpl.kt:20)
+	at kotlin.test.AssertionsKt.checkResultIsFailure(Unknown Source)
+	at com.reef.platform.calcify.financial.FinancialPartitionCutTest.sourceGenerationAndAuthorityMustMatchEveryCutRow(FinancialPartitionCutTest.kt:68)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="incompleteOrWronglyShapedCertificatesCannotActivate()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.011">
+    <failure message="org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=null, offset=8)&gt;." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=null, offset=8)&gt;.
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at kotlin.test.junit5.JUnit5Asserter.fail(JUnitSupport.kt:56)
+	at kotlin.test.AssertionsKt__AssertionsImplKt.checkResultIsFailure(AssertionsImpl.kt:20)
+	at kotlin.test.AssertionsKt.checkResultIsFailure(Unknown Source)
+	at com.reef.platform.calcify.financial.FinancialPartitionCutTest.incompleteOrWronglyShapedCertificatesCannotActivate(FinancialPartitionCutTest.kt:162)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="coverageMustRepresentExactAcceptedMembershipDespitePhysicalGaps()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.012">
+    <failure message="org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=3, offset=8)&gt;." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=3, offset=8)&gt;.
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at kotlin.test.junit5.JUnit5Asserter.fail(JUnitSupport.kt:56)
+	at kotlin.test.AssertionsKt__AssertionsImplKt.checkResultIsFailure(AssertionsImpl.kt:20)
+	at kotlin.test.AssertionsKt.checkResultIsFailure(Unknown Source)
+	at com.reef.platform.calcify.financial.FinancialPartitionCutTest.coverageMustRepresentExactAcceptedMembershipDespitePhysicalGaps(FinancialPartitionCutTest.kt:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="numericCutsCannotCoerceStringsFractionsOverflowNegativesOrNull()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.01">
+    <failure message="org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=3, offset=8)&gt;." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=3, offset=8)&gt;.
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at kotlin.test.junit5.JUnit5Asserter.fail(JUnitSupport.kt:56)
+	at kotlin.test.AssertionsKt__AssertionsImplKt.checkResultIsFailure(AssertionsImpl.kt:20)
+	at kotlin.test.AssertionsKt.checkResultIsFailure(Unknown Source)
+	at com.reef.platform.calcify.financial.FinancialPartitionCutTest.numericCutsCannotCoerceStringsFractionsOverflowNegativesOrNull(FinancialPartitionCutTest.kt:144)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="acceptedSuffixDoesNotInvalidateCertifiedEarlierPrefix()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.009">
+    <failure message="java.util.NoSuchElementException: Key A is missing in the map." type="java.util.NoSuchElementException">java.util.NoSuchElementException: Key A is missing in the map.
+	at kotlin.collections.MapsKt__MapWithDefaultKt.getOrImplicitDefaultNullable(MapWithDefault.kt:25)
+	at kotlin.collections.MapsKt__MapsKt.getValue(Maps.kt:437)
+	at com.reef.platform.calcify.financial.FinancialPartitionCutTest.acceptedSuffixDoesNotInvalidateCertifiedEarlierPrefix(FinancialPartitionCutTest.kt:116)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="completeHistoryRebuildsA15B27AndEachFundingEffectOnce()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.007">
+    <failure message="java.util.NoSuchElementException: Key A is missing in the map." type="java.util.NoSuchElementException">java.util.NoSuchElementException: Key A is missing in the map.
+	at kotlin.collections.MapsKt__MapWithDefaultKt.getOrImplicitDefaultNullable(MapWithDefault.kt:25)
+	at kotlin.collections.MapsKt__MapsKt.getValue(Maps.kt:437)
+	at com.reef.platform.calcify.financial.FinancialPartitionCutTest.completeHistoryRebuildsA15B27AndEachFundingEffectOnce(FinancialPartitionCutTest.kt:31)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="emptyStoreIsOnlyValidWithoutCertificateOrHistory()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.009">
+    <failure message="org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=null, offset=null)&gt;." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=null, offset=null)&gt;.
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at kotlin.test.junit5.JUnit5Asserter.fail(JUnitSupport.kt:56)
+	at kotlin.test.AssertionsKt__AssertionsImplKt.checkResultIsFailure(AssertionsImpl.kt:20)
+	at kotlin.test.AssertionsKt.checkResultIsFailure(Unknown Source)
+	at com.reef.platform.calcify.financial.FinancialPartitionCutTest.emptyStoreIsOnlyValidWithoutCertificateOrHistory(FinancialPartitionCutTest.kt:175)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="mixedA10B27CannotActivateAtQuartetEnd()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.008">
+    <failure message="org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=3, offset=8)&gt;." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=3, offset=8)&gt;.
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at kotlin.test.junit5.JUnit5Asserter.fail(JUnitSupport.kt:56)
+	at kotlin.test.AssertionsKt__AssertionsImplKt.checkResultIsFailure(AssertionsImpl.kt:20)
+	at kotlin.test.AssertionsKt.checkResultIsFailure(Unknown Source)
+	at com.reef.platform.calcify.financial.FinancialPartitionCutTest.mixedA10B27CannotActivateAtQuartetEnd(FinancialPartitionCutTest.kt:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="genesisCannotSubstituteDifferentPolicyOrOpeningBalances()" classname="com.reef.platform.calcify.financial.FinancialPartitionCutTest" time="0.008">
+    <failure message="org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=3, offset=8)&gt;." type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Expected an exception of class java.lang.IllegalArgumentException to be thrown, but was completed successfully with the result: &lt;ReconstructedCut(owners={}, semanticState={}, ordinal=3, offset=8)&gt;.
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at kotlin.test.junit5.JUnit5Asserter.fail(JUnitSupport.kt:56)
+	at kotlin.test.AssertionsKt__AssertionsImplKt.checkResultIsFailure(AssertionsImpl.kt:20)
+	at kotlin.test.AssertionsKt.checkResultIsFailure(Unknown Source)
+	at com.reef.platform.calcify.financial.FinancialPartitionCutTest.genesisCannotSubstituteDifferentPolicyOrOpeningBalances(FinancialPartitionCutTest.kt:186)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

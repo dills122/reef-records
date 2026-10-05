@@ -1,0 +1,18 @@
+{"control":"actual-adapter-final-peer-failure","ok":true,"inspects":4,"persistentRejectedInspect":true,"exactIdStop":true,"finishedMarker":false}
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: fixed broker recovery deadline expired
+    at validateInspection (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/lib/external-faults.mjs:129:13)
+    at evalmachine.<anonymous>:26:20
+    at async file:///Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-session-2026-10-04/reviews/m0-attempt2-cycle1/adversarial.mjs:39:1 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v22.22.1

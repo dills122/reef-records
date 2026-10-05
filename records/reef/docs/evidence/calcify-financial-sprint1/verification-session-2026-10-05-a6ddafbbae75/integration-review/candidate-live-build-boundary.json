@@ -1,0 +1,23 @@
+{
+  "names": [
+    "session8c6f-external3",
+    "session8c6f-activation2",
+    "session8c6f-core1",
+    "session8c6f-golden1"
+  ],
+  "fixtureHashes": {
+    "session8c6f-external3": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+    "session8c6f-activation2": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+    "session8c6f-core1": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+    "session8c6f-golden1": "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d"
+  },
+  "runnerHashesIdentical": true,
+  "financialSourceHashesIdentical": true,
+  "compiledHashesIdentical": true,
+  "runnerHashCount": 3,
+  "financialSourceHashCount": 11,
+  "compiledHashCount": 97,
+  "measurementBaseline": "a6ddafbbae750693e227985f054be2d26716ae84",
+  "scope": "Dirty/new source hash boundary and compiled artifacts identify actual candidate; historical topic prefix financial-s1-97924e15 is naming only",
+  "currentSourceHashesMatch": true
+}

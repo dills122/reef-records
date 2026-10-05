@@ -1,0 +1,150 @@
+{
+  "ok": true,
+  "wrapperStatus": {
+    "code": 0,
+    "signal": null
+  },
+  "cleanupErrors": [],
+  "volumesPreserved": true,
+  "startingSamples": [
+    {
+      "sampledAtMs": 27769940,
+      "phase": "RECOVERING",
+      "id": "5aa6560ec9bb80fd238bdba3c2e07259854f30de76c6c82868de1e038cd2d446",
+      "healthy": false,
+      "allocationMode": "reserved-fault-target",
+      "allocatedBytes": 3221225472,
+      "measuredAllocatedBytes": 22032384,
+      "du": {
+        "argv": [
+          "exec",
+          "5aa6560ec9bb80fd238bdba3c2e07259854f30de76c6c82868de1e038cd2d446",
+          "du",
+          "-sk",
+          "/var/lib/redpanda/data"
+        ],
+        "stdout": "21516\t/var/lib/redpanda/data\n"
+      }
+    },
+    {
+      "sampledAtMs": 27770742,
+      "phase": "RECOVERING",
+      "id": "5aa6560ec9bb80fd238bdba3c2e07259854f30de76c6c82868de1e038cd2d446",
+      "healthy": false,
+      "allocationMode": "reserved-fault-target",
+      "allocatedBytes": 3221225472,
+      "measuredAllocatedBytes": 46850048,
+      "du": {
+        "argv": [
+          "exec",
+          "5aa6560ec9bb80fd238bdba3c2e07259854f30de76c6c82868de1e038cd2d446",
+          "du",
+          "-sk",
+          "/var/lib/redpanda/data"
+        ],
+        "stdout": "45752\t/var/lib/redpanda/data\n"
+      }
+    },
+    {
+      "sampledAtMs": 27771546,
+      "phase": "RECOVERING",
+      "id": "5aa6560ec9bb80fd238bdba3c2e07259854f30de76c6c82868de1e038cd2d446",
+      "healthy": false,
+      "allocationMode": "reserved-fault-target",
+      "allocatedBytes": 3221225472,
+      "measuredAllocatedBytes": 156508160,
+      "du": {
+        "argv": [
+          "exec",
+          "5aa6560ec9bb80fd238bdba3c2e07259854f30de76c6c82868de1e038cd2d446",
+          "du",
+          "-sk",
+          "/var/lib/redpanda/data"
+        ],
+        "stdout": "152840\t/var/lib/redpanda/data\n"
+      }
+    },
+    {
+      "sampledAtMs": 27772350,
+      "phase": "RECOVERING",
+      "id": "5aa6560ec9bb80fd238bdba3c2e07259854f30de76c6c82868de1e038cd2d446",
+      "healthy": false,
+      "allocationMode": "reserved-fault-target",
+      "allocatedBytes": 3221225472,
+      "measuredAllocatedBytes": 248852480,
+      "du": {
+        "argv": [
+          "exec",
+          "5aa6560ec9bb80fd238bdba3c2e07259854f30de76c6c82868de1e038cd2d446",
+          "du",
+          "-sk",
+          "/var/lib/redpanda/data"
+        ],
+        "stdout": "243020\t/var/lib/redpanda/data\n"
+      }
+    }
+  ],
+  "finalHealthy": [
+    true,
+    true,
+    true
+  ],
+  "finalAccountedBytes": 4627775488,
+  "fault": {
+    "phase": "RECOVERED",
+    "seq": 4,
+    "stopDeadlineMs": 27798367,
+    "recoveryDeadlineMs": 27799280,
+    "targetGeneration": "2026-10-05T05:15:34.828140219Z",
+    "generations": {
+      "1335cf8f168bed8177104f47994745d4525b12ab5b014dd649adcb4e73860143": {
+        "startedAt": "2026-10-05T05:08:11.75577475Z",
+        "restartCount": 0
+      },
+      "5aa6560ec9bb80fd238bdba3c2e07259854f30de76c6c82868de1e038cd2d446": {
+        "startedAt": "2026-10-05T05:08:11.756279625Z",
+        "restartCount": 0
+      },
+      "733d961222e085cb98d5af55859eaeb59a2390198fa0bbcdffdf975061fcec9c": {
+        "startedAt": "2026-10-05T05:08:11.756705167Z",
+        "restartCount": 0
+      }
+    }
+  },
+  "driver": {
+    "ok": true,
+    "startingSeen": true,
+    "startGrant": {
+      "schema": "calcify-broker-fault-phase-v1",
+      "runId": "session8c6f-recovery-smoke1",
+      "cycle": 1,
+      "seq": 3,
+      "action": "start",
+      "targetContainer": "5aa6560ec9bb80fd238bdba3c2e07259854f30de76c6c82868de1e038cd2d446",
+      "issuedAtMs": 27768937,
+      "authorized": true,
+      "grantedAtMs": 27769280,
+      "phase": "RECOVERING",
+      "stopDeadlineMs": 27798367,
+      "recoveryDeadlineMs": 27799280,
+      "targetGeneration": null,
+      "generations": {
+        "1335cf8f168bed8177104f47994745d4525b12ab5b014dd649adcb4e73860143": {
+          "startedAt": "2026-10-05T05:08:11.75577475Z",
+          "restartCount": 0
+        },
+        "5aa6560ec9bb80fd238bdba3c2e07259854f30de76c6c82868de1e038cd2d446": {
+          "startedAt": "2026-10-05T05:08:11.756279625Z",
+          "restartCount": 0
+        },
+        "733d961222e085cb98d5af55859eaeb59a2390198fa0bbcdffdf975061fcec9c": {
+          "startedAt": "2026-10-05T05:08:11.756705167Z",
+          "restartCount": 0
+        }
+      }
+    },
+    "targetGeneration": "2026-10-05T05:15:34.828140219Z",
+    "elapsedFromGrantMs": 3596,
+    "scope": "Exact-owned single STOP/starting/healthy cycle and resource guard only; no financial workload or oracle claim"
+  }
+}

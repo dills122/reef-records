@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialBrokerProbeTest" tests="3" skipped="0" failures="1" errors="0" timestamp="2026-10-05T03:46:44.009Z" hostname="Dylans-MacBook-Pro.local" time="1.175">
+  <properties/>
+  <testcase name="actual EOS worker config permits sixty second transaction grouping()" classname="com.reef.platform.calcify.financial.FinancialBrokerProbeTest" time="0.292"/>
+  <testcase name="empty cold startup permits rate probe dynamic acknowledged membership()" classname="com.reef.platform.calcify.financial.FinancialBrokerProbeTest" time="0.856">
+    <failure message="org.apache.kafka.streams.errors.StreamsException: failed to initialize processor financial" type="org.apache.kafka.streams.errors.StreamsException">org.apache.kafka.streams.errors.StreamsException: failed to initialize processor financial
+	at org.apache.kafka.streams.processor.internals.ProcessorNode.init(ProcessorNode.java:132)
+	at org.apache.kafka.streams.processor.internals.ProcessorNode.init(ProcessorNode.java:141)
+	at org.apache.kafka.streams.processor.internals.StreamTask.initializeTopology(StreamTask.java:1124)
+	at org.apache.kafka.streams.processor.internals.StreamTask.completeRestoration(StreamTask.java:299)
+	at org.apache.kafka.streams.TopologyTestDriver.setupTask(TopologyTestDriver.java:527)
+	at org.apache.kafka.streams.TopologyTestDriver.&lt;init&gt;(TopologyTestDriver.java:368)
+	at org.apache.kafka.streams.TopologyTestDriver.&lt;init&gt;(TopologyTestDriver.java:310)
+	at org.apache.kafka.streams.TopologyTestDriver.&lt;init&gt;(TopologyTestDriver.java:286)
+	at com.reef.platform.calcify.financial.FinancialBrokerProbeTest.empty cold startup permits rate probe dynamic acknowledged membership(FinancialBrokerProbeTest.kt:22)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+Caused by: java.lang.NullPointerException: get(...) must not be null
+	at com.reef.platform.calcify.financial.FinancialBrokerProbe$FinancialProcessor.init(FinancialBrokerProbe.kt:219)
+	at org.apache.kafka.streams.processor.internals.ProcessorNode.init(ProcessorNode.java:124)
+	... 11 more
+</failure>
+  </testcase>
+  <testcase name="producer fault overflows only B settlement after bounded earlier sends()" classname="com.reef.platform.calcify.financial.FinancialBrokerProbeTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+</testsuite>
