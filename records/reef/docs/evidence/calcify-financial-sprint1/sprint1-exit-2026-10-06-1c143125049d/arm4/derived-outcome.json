@@ -1,0 +1,21 @@
+{
+  "schema": "calcify-empirical-aborted-arm-outcome-v1",
+  "result": "SAMPLED_HEAP_ABORT",
+  "reason": "HEAP_OBSERVED_LIMIT at send; sticky failure from heap-sensor",
+  "configuredMaxHeapBytes": 4294967296,
+  "configuredObservedHeapLimitBytes": 3435973836,
+  "observedHeapPeakBytes": null,
+  "lastValidProjectAllocatedBytes": 11005157376,
+  "rawJournalPublishedActions": 297280,
+  "pairedPublishedSettleInputs": 148640,
+  "deadlineSettledTradesUpperBound": 148640,
+  "frozenRequiredTradesByDeadline": 150000,
+  "usefulTargetOutcome": "TARGET_MISSED_BY_SOURCE_MEMBERSHIP_UPPER_BOUND",
+  "measuredDeadlineSettledTrades": null,
+  "measuredDeadlineRate": null,
+  "measuredFinalSettledTrades": null,
+  "finalMeasurementPresent": false,
+  "completedCohortOrReplayVerified": false,
+  "proof": "closed source journal complete published prefix; processor requires published source member before kernel execution",
+  "scope": "upper count bound only; no observed settlement/deadline rate. First-last source offered span129.572s."
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "calcify-review-limit-extension-v1",
+  "authorizedUtc": "2026-10-06T02:57:46.329425+00:00",
+  "humanStatement": "Yes I authorize that",
+  "previousCap": 3,
+  "extendedCap": 4,
+  "scope": "one extra independent review of fixed8GiB resource-only proposal; fixed diagnostic if Ready",
+  "priorCountPreserved": true
+}

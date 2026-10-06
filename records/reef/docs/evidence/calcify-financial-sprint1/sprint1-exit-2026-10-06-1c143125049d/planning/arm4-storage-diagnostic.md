@@ -1,0 +1,9 @@
+# Arm4 closed-source findings
+
+Read-only audit after empirical4GiB/16GiB run stopped by HEAP_OBSERVED_LIMIT at send; no final measurement. Original profile guard performed authorized stop; no claim that 4GiB was sufficient or that completed capacity/replay passed.
+
+Offline reader verified 297,280 published source actions in 3,075 mirrored publication batches: 148,640 paired CAPTURE/SETTLE source inputs, 0 unpaired captures, zero unpublished member/index tail. Full frame/checksum/chain/index/witness/source payload/source UUID/run/domain checks passed; retained journal files unchanged before/after read. Source payload bytes 111,148,150. First-to-last persisted offer span 129572.202250ms and callback span 129554.031625ms characterize source prefix only.
+
+Every processor execution requires published journal membership before kernel.execute; member lookup verifies publication+witness and refuses ordinal >= publishedCount. Publication count advances only after durability forces and notifications. Unpublished or buffered Kafka inputs cannot execute. Thus settled business decisions at any cut <= 148,640, below 150,000 target. Upper count bound only: actual deadline settled/admitted count, measured deadline rate, full owner/history parity, result-only replay and new managed restart remain unknown. No counts from final drain inferred.
+
+Optional8GiB JVM permission is resource configuration, not memory optimization: fixed new named profile financial-empirical-heap8-disk16-v1, same150000/60seconds workload,2GiB journal,14GiB disk abort/16GiB hard,20GiB guest free, raw256MiB and existing lifecycle/sampling. Old4GiB and768MiB profiles retained. Extra review authorization pending because policy review limit3 reached; no reviewer or load started by author. Originalarm3 files preserved; reader and receipt use arm4-specific filenames.

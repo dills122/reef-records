@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-06T02:26:21.215222+00:00",
+  "argv": [
+    "/usr/local/bin/docker",
+    "run",
+    "--rm",
+    "--name",
+    "reef-calcify-e4-timed1-closed-audit0",
+    "--network",
+    "none",
+    "--read-only",
+    "--memory",
+    "64m",
+    "--cpus",
+    "0.25",
+    "--mount",
+    "type=volume,src=reef-calcify-e4-timed1-8c6f_rp0-data,dst=/proof-volume,readonly",
+    "--entrypoint",
+    "/bin/sh",
+    "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+    "-c",
+    "du -sk /proof-volume/*/*"
+  ],
+  "returncode": 0,
+  "stdout": "116\t/proof-volume/kafka/__consumer_offsets\n104084\t/proof-volume/kafka/financial-s1-exit-timed1-input\n753096\t/proof-volume/kafka/financial-s1-exit-timed1-results\n1336628\t/proof-volume/kafka/financial-s1-exit-timed1-streams-financial-state-changelog\n28\t/proof-volume/kafka_internal/id_allocator\n1196\t/proof-volume/kafka_internal/tx\n20\t/proof-volume/redpanda/controller\n224\t/proof-volume/redpanda/kvstore\n",
+  "stderr": "",
+  "scope": "stopped synthetic volume, read-only mount, allocation per top-level topic/system directory; no broker startup or payload"
+}

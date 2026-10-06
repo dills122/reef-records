@@ -1,0 +1,21 @@
+{
+  "reviewInstance": "4 of 4",
+  "checkedUtc": "2026-10-06T02:59:23.053Z",
+  "base": "863503ec23c27f33ecea14fd82724fe28f96d308",
+  "branch": "codex/calcify-sprint1-exit-2026-10-06",
+  "patchSha256": "da8ad0e573c9d4a17a4da81c425401b08a34f4d3c04b8f301ec4061c1564117b",
+  "expectedPatchSha256": "da8ad0e573c9d4a17a4da81c425401b08a34f4d3c04b8f301ec4061c1564117b",
+  "paths": {
+    "scripts/dev/calcify-financial/rate-proof.mjs": "7e4165b9c0d819e46d5af120fd6c7af41ae4415dffd9f0612ab55b297fe12ff1",
+    "scripts/dev/calcify-financial/rate-proof.test.mjs": "f5746c2eec16ffdb3349d38c2ca6165b11324e0cbcdbda847e6d0395600dd031",
+    "scripts/dev/calcify-financial/rate-supervision.mjs": "20305ec5f344f18ec2a49e84b33ff72bac1a389ce21d6c8d672a3bd1616f8c53",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt": "ce533bc5d463f768b9e82e8bf9214e98ea3e7bdcb1133e0983f195bb9de84fce",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt": "95021bca9ae68e79127297fbd36890bbcd7c5f61f2418664aa28f8a6400c43e6",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt": "de04d6fc22c438750e909c089ac0ad91de3642def8d42c6600456dc0aa0b0162",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateReferenceTest.kt": "ab838eb6bb6c7da11a9f64ae6c09218378098f7883abf214eda3ca0528c85683",
+    "scripts/dev/calcify-financial/rate-supervision.test.mjs": "a5c932dab6d44ee423308a0797594ac4e468884676f0ff2c59acebdad00ce4ff",
+    "scripts/dev/calcify-financial/proof-supervisor.mjs": "ce0f4f2be245e900652a9f10551e35dc8cc3170aa8caf87acead936b0b3ae268",
+    "scripts/dev/calcify-financial/proof-supervisor.test.mjs": "aa23640223c84abf1801bb355901575d4cda6c7dba0955ed7292f9b0c25edf2b"
+  },
+  "mismatches": []
+}

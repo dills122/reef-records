@@ -1,0 +1,19 @@
+{
+  "name": "network-inspect",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "network",
+    "inspect",
+    "reef-calcify-e4-timed1-8c6f_default"
+  ],
+  "startedAtMs": 102567254,
+  "startedUtc": "2026-10-06T02:02:12.885Z",
+  "stdout": "[\n    {\n        \"Name\": \"reef-calcify-e4-timed1-8c6f_default\",\n        \"Id\": \"d40aac40970492fbf4edbc11f5638719cba34a42555043014351cd6a7415001c\",\n        \"Created\": \"2026-10-06T02:02:12.787429416Z\",\n        \"Scope\": \"local\",\n        \"Driver\": \"bridge\",\n        \"EnableIPv4\": true,\n        \"EnableIPv6\": false,\n        \"IPAM\": {\n            \"Driver\": \"default\",\n            \"Options\": null,\n            \"Config\": [\n                {\n                    \"Subnet\": \"10.254.240.0/24\",\n                    \"Gateway\": \"10.254.240.1\"\n                }\n            ]\n        },\n        \"Internal\": false,\n        \"Attachable\": false,\n        \"Ingress\": false,\n        \"ConfigFrom\": {\n            \"Network\": \"\"\n        },\n        \"ConfigOnly\": false,\n        \"Options\": {\n            \"com.docker.network.enable_ipv4\": \"true\",\n            \"com.docker.network.enable_ipv6\": \"false\"\n        },\n        \"Labels\": {\n            \"com.docker.compose.config-hash\": \"32d49ed8f68f3b0930e442621b3732c5a7baf1979e1ae0be0de962ffddf0f020\",\n            \"com.docker.compose.network\": \"default\",\n            \"com.docker.compose.project\": \"reef-calcify-e4-timed1-8c6f\",\n            \"com.docker.compose.version\": \"5.4.0\"\n        },\n        \"Containers\": {},\n        \"Status\": {\n            \"IPAM\": {\n                \"Subnets\": {\n                    \"10.254.240.0/24\": {\n                        \"IPsInUse\": 3,\n                        \"DynamicIPsAvailable\": 253\n                    }\n                }\n            }\n        }\n    }\n]\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 102567272,
+  "completedUtc": "2026-10-06T02:02:12.903Z",
+  "stdoutSha256": "aee12e3cc1740b28c94da3e34076eb6af8990469a8bb145d9c015c8172e792d9",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputSha256": "1d1d30083f1c70010c651faab42b75b8bb5668820b82ab43a57b0ee28869149d"
+}

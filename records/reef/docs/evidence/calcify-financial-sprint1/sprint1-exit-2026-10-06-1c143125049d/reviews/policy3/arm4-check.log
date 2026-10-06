@@ -1,0 +1,5 @@
+PASS policy/raw/source/config evidence; exact argv/supervisor/hash/profile; actual broker scope receipt; prior E3 raw digest; empty canonical store/journal
+{"policySha256":"4498a13ea289d8470c3d051c1998d802cdfba2f6e3b8dc61d8ae7629081a5455","configSha256":"77772830966c37a4bb6388a52aaf450e40a9222dcc69ababbad08563e6c2daa1","buildSha256":"004260ede2a67a4ec625525d35d4a3a17699c76a4efac1569b88b526d5be4f96","clusterId":"redpanda.c89cb3ea-9e69-480d-9529-a6ab634ab34c","project":"reef-calcify-e4-timed2-8c6f","budgets":{"abortAllocatedBytes":15032385536,"hardAllocatedBytes":17179869184,"guestFreeBytesFloor":21474836480,"rawProofBytes":268435456,"sampleIntervalMs":5000,"name":"financial-empirical-disk16-v1"}}
+PASS broker2/preflight exact registration matches supervisor; HEALTHY_PROFILE_READ_BACK; baseline 151179264; guest free 90188587008
+Registration top-level keys: schema,createdUtc,registeredResources,bootstrapServers,composePath,composeSha256,profilePath,profileSha256,state,guestFreeBytes
+PASS registration exact; raw Docker inspect IDs/images/labels/named mounts bind registered three containers

@@ -1,0 +1,24 @@
+{
+  "arm3": {
+    "actions": 272154,
+    "pairs": 136077,
+    "tails": 0
+  },
+  "arm4": {
+    "actions": 297280,
+    "pairs": 148640,
+    "tails": 0
+  },
+  "arm5": {
+    "actions": 300000,
+    "pairs": 150000,
+    "tails": 0
+  },
+  "nodeTestSummary": [
+    "# tests 279",
+    "# pass 279",
+    "# fail 0",
+    "# cancelled 0",
+    "# skipped 0"
+  ]
+}

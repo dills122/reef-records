@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/delivery-author/author-explanation.md",
+      "promoted_relative_path": "delivery-author/author-explanation.md",
+      "bytes": 2882,
+      "sha256": "51dec724f21438094606c57e6dbda34a092f305ebed7974cd2f6fb4275118112",
+      "reason": "Closed actual-evidence/sprint review1 Ready, author packet and original CPU-scope documentation correction; runtime source unchanged"
+    },
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/delivery-author/bootstrap.md",
+      "promoted_relative_path": "delivery-author/bootstrap.md",
+      "bytes": 2537,
+      "sha256": "6127eb60a896a363a40f79bb6dc6c6a90587199fca287021d080858dda90ce67",
+      "reason": "Closed actual-evidence/sprint review1 Ready, author packet and original CPU-scope documentation correction; runtime source unchanged"
+    },
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/delivery-author/docs-before-cpu-correction.patch",
+      "promoted_relative_path": "delivery-author/docs-before-cpu-correction.patch",
+      "bytes": 18516,
+      "sha256": "d03bbda4d9c2fbf528f982958f871215c0015f7a247f835e71d3a0aebe2aef18",
+      "reason": "Closed actual-evidence/sprint review1 Ready, author packet and original CPU-scope documentation correction; runtime source unchanged"
+    },
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/delivery-author/docs.patch",
+      "promoted_relative_path": "delivery-author/docs.patch",
+      "bytes": 18636,
+      "sha256": "ed5f48b54722277cf9bc1462a402ce0de246258d9f2ada32212eb7be16138078",
+      "reason": "Closed actual-evidence/sprint review1 Ready, author packet and original CPU-scope documentation correction; runtime source unchanged"
+    },
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/delivery-author/latest-summary-at-review.json",
+      "promoted_relative_path": "delivery-author/latest-summary-at-review.json",
+      "bytes": 9844,
+      "sha256": "11552b2e5b3a0358e38c8609b4d69468c40eed790db65936e61631fa3cfe5088",
+      "reason": "Closed actual-evidence/sprint review1 Ready, author packet and original CPU-scope documentation correction; runtime source unchanged"
+    },
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/delivery-author/source-freeze-before-cpu-correction.json",
+      "promoted_relative_path": "delivery-author/source-freeze-before-cpu-correction.json",
+      "bytes": 849,
+      "sha256": "9acfbedb6c269d63ce9cba3a4ba1c50a4e093b1631733a53c3463b59088d220e",
+      "reason": "Closed actual-evidence/sprint review1 Ready, author packet and original CPU-scope documentation correction; runtime source unchanged"
+    },
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/delivery-author/source-freeze.json",
+      "promoted_relative_path": "delivery-author/source-freeze.json",
+      "bytes": 849,
+      "sha256": "e6d7b4128d8804cb7251af466a5cbc7eaba4e1e9162b348f7edc56723db3cdea",
+      "reason": "Closed actual-evidence/sprint review1 Ready, author packet and original CPU-scope documentation correction; runtime source unchanged"
+    },
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/reviews/delivery1/arm3-journal-recomputed.json",
+      "promoted_relative_path": "reviews/delivery1/arm3-journal-recomputed.json",
+      "bytes": 2684,
+      "sha256": "d84957321e889eb910e61fb52416fac15ad3b11c41a26621e33ae3100a7cd20e",
+      "reason": "Closed actual-evidence/sprint review1 Ready, author packet and original CPU-scope documentation correction; runtime source unchanged"
+    },
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/reviews/delivery1/arm4-journal-recomputed.json",
+      "promoted_relative_path": "reviews/delivery1/arm4-journal-recomputed.json",
+      "bytes": 2684,
+      "sha256": "4070d740f4a3436c59db7e31eead01a5374fbde6823e26481e34818c76c6cf82",
+      "reason": "Closed actual-evidence/sprint review1 Ready, author packet and original CPU-scope documentation correction; runtime source unchanged"
+    },
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/reviews/delivery1/arm5-journal-recomputed.json",
+      "promoted_relative_path": "reviews/delivery1/arm5-journal-recomputed.json",
+      "bytes": 3483,
+      "sha256": "4d0c186e547f62a8c9fad007f3e7d155dbf31f76f4c7e105af17e71aa6055661",
+      "reason": "Closed actual-evidence/sprint review1 Ready, author packet and original CPU-scope documentation correction; runtime source unchanged"
+    },
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/reviews/delivery1/corrected-scope-validation.json",
+      "promoted_relative_path": "reviews/delivery1/corrected-scope-validation.json",
+      "bytes": 733,
+      "sha256": "fd11b5142b35b1018d29b65a5ebe66e54b412ac92bd59b2160d3db768cbb0fc6",
+      "reason": "Closed actual-evidence/sprint review1 Ready, author packet and original CPU-scope documentation correction; runtime source unchanged"
+    },
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/reviews/delivery1/final-count-validation.json",
+      "promoted_relative_path": "reviews/delivery1/final-count-validation.json",
+      "bytes": 351,
+      "sha256": "0d2c1fd391cef1ad4f40e392db8b0ca0e7c904fce3f7cca986127139bb7bb233",
+      "reason": "Closed actual-evidence/sprint review1 Ready, author packet and original CPU-scope documentation correction; runtime source unchanged"
+    },
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/reviews/delivery1/freeze-validation.json",
+      "promoted_relative_path": "reviews/delivery1/freeze-validation.json",
+      "bytes": 298,
+      "sha256": "219751bd5b71c2b5191d1a5e8c77389a075928a0f345c71da62165e56d46debb",
+      "reason": "Closed actual-evidence/sprint review1 Ready, author packet and original CPU-scope documentation correction; runtime source unchanged"
+    },
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/reviews/delivery1/preliminary.md",
+      "promoted_relative_path": "reviews/delivery1/preliminary.md",
+      "bytes": 1773,
+      "sha256": "ede9d043d7891d6a66fd83359c4c30cdcecbf5aeedb2967b4afbe800ca5e7b29",
+      "reason": "Closed actual-evidence/sprint review1 Ready, author packet and original CPU-scope documentation correction; runtime source unchanged"
+    },
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/reviews/delivery1/receipt-validation.json",
+      "promoted_relative_path": "reviews/delivery1/receipt-validation.json",
+      "bytes": 5867,
+      "sha256": "412f3761e10513f19ccb2394a1ef2e04ec3e8e245a55688653aae9399575ddf8",
+      "reason": "Closed actual-evidence/sprint review1 Ready, author packet and original CPU-scope documentation correction; runtime source unchanged"
+    },
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/reviews/delivery1/report.md",
+      "promoted_relative_path": "reviews/delivery1/report.md",
+      "bytes": 8931,
+      "sha256": "28c16a8fafe99de82669105f1232115468b2590c434d008dbc2a808f06f56572",
+      "reason": "Closed actual-evidence/sprint review1 Ready, author packet and original CPU-scope documentation correction; runtime source unchanged"
+    },
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/reviews/delivery1/verdict.json",
+      "promoted_relative_path": "reviews/delivery1/verdict.json",
+      "bytes": 727,
+      "sha256": "e39d7392da88333c2503da32e2871c15f77b1200a8b46e0b3015e4a5cfd3b2ae",
+      "reason": "Closed actual-evidence/sprint review1 Ready, author packet and original CPU-scope documentation correction; runtime source unchanged"
+    }
+  ]
+}

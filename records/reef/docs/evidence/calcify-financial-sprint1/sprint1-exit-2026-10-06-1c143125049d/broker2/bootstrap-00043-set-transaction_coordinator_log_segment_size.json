@@ -1,0 +1,25 @@
+{
+  "seq": 43,
+  "name": "set-transaction_coordinator_log_segment_size",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "exec",
+    "da51796997665b96755cfab24a3cc8fb1510b0a5690eb4170c734689a51d0d48",
+    "rpk",
+    "cluster",
+    "config",
+    "set",
+    "transaction_coordinator_log_segment_size",
+    "8388608"
+  ],
+  "startedAtMs": 104472912,
+  "startedUtc": "2026-10-06T02:33:58.441Z",
+  "stdout": "Successfully updated configuration. New configuration version is 5.\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 104472976,
+  "completedUtc": "2026-10-06T02:33:58.505Z",
+  "stdoutSha256": "3ec1f1c2af9526ade9512aa0a575e9ebc2e50844df7eca54aac12d7653da135d",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputSha256": "5f01876f9fb78542440c4734c4e17d2b8b8975e86e15a8ece026e3e6355867ed"
+}

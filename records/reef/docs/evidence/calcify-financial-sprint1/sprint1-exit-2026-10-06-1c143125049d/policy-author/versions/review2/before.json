@@ -1,0 +1,9 @@
+{
+  "scripts/dev/calcify-financial/rate-proof.mjs": "c067b36d4551f279a98e15029081374c4b84a88643857a666699bfce19d9e24e",
+  "scripts/dev/calcify-financial/rate-proof.test.mjs": "8188a8203a264022e6486380151153e8cc53a4a8c4ad62ce0d6945812aca3ec4",
+  "scripts/dev/calcify-financial/rate-supervision.mjs": "f7fdcddabe4f00cacb37d386785c8dedf53529c76a50bd11081a67022510110c",
+  "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt": "06e673ff1b8428a755485313e5514f43ed9635594f62fc23259248fe7a9f484d",
+  "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt": "b398ecd7e41473abe0c4e3930add848d1c37107ada6d0f0ffecf9c3d64d7ddff",
+  "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt": "92fb6924c67085f7ab8e492209f692cabff2e20f2c99cb6a97c31869aeaa67d1",
+  "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateReferenceTest.kt": "413c6e820dced468eae3de8367d0c5312b107bac529e144a60fa21ec42e2f6f3"
+}

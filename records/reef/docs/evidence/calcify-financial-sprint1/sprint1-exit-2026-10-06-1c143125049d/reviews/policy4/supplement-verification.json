@@ -1,0 +1,14 @@
+{
+  "reviewInstance": "4 of 4, same-instance concrete-envelope supplement",
+  "verdict": "Ready",
+  "checkedUtc": "2026-10-06T03:06:14.552Z",
+  "initialVerificationPreserved": true,
+  "files": {
+    "report.md": "35f0a0e3dd34bd00e22a4a8196f57d7aa6f9a238cf3ab04806c6c1e439674cdd",
+    "concrete-envelope.json": "b6db738cbd4431207d16c41b86cd9a118f41e21066e53fbf5f9a58910a7bc215",
+    "concrete-envelope.log": "b6db738cbd4431207d16c41b86cd9a118f41e21066e53fbf5f9a58910a7bc215",
+    "verify-envelope.mjs": "1d83cbe15e82025730b6b349edce6ba64a9d0a961f511088e30374008bcd1129"
+  },
+  "integrationSummarySha256": "22c9544df143a2707ce6c8764bea45332a3a962928145ce4a9bc18d25cee2cfb",
+  "rootRawIntegrationReceiptHashesVerified": true
+}

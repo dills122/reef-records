@@ -1,0 +1,70 @@
+{
+  "base": "863503ec23c27f33ecea14fd82724fe28f96d308",
+  "paths": [
+    "scripts/dev/calcify-financial/rate-proof.mjs",
+    "scripts/dev/calcify-financial/rate-proof.test.mjs",
+    "scripts/dev/calcify-financial/rate-supervision.mjs",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateReferenceTest.kt",
+    "scripts/dev/calcify-financial/rate-supervision.test.mjs",
+    "scripts/dev/calcify-financial/proof-supervisor.mjs",
+    "scripts/dev/calcify-financial/proof-supervisor.test.mjs"
+  ],
+  "patchSha256": "fe1401c15ec1e79ea8158bda053f2e5a3f1d04650a67bb664a6b8a905c08487e",
+  "nodeRed": "node-red.log: expected missing freezeDiagnostic export, prior tests passed",
+  "nodeGreen": "node-green.log: 51/51 PASS",
+  "kotlin": [
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialRateReferenceTest",
+      "tests": "6",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-06T02:32:38.120Z",
+      "hostname": "Dylans-MacBook-Pro.local",
+      "time": "53.282"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialHeapGuardTest",
+      "tests": "26",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-06T02:32:38.025Z",
+      "hostname": "Dylans-MacBook-Pro.local",
+      "time": "0.094"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialBootstrapProbeTest",
+      "tests": "10",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-06T02:32:37.603Z",
+      "hostname": "Dylans-MacBook-Pro.local",
+      "time": "0.42"
+    }
+  ],
+  "kotlinCommand": "JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home services/platform-runtime/gradlew -p services/platform-runtime test --tests '*FinancialRateReferenceTest' --tests '*FinancialHeapGuardTest' --tests '*FinancialBootstrapProbeTest' --console=plain",
+  "diffCheck": "PASS",
+  "liveLoadExecuted": false,
+  "bootstrapRegression": {
+    "name": "com.reef.platform.calcify.financial.FinancialBootstrapProbeTest",
+    "tests": "10",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-06T02:07:42.080Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.448"
+  },
+  "bootstrapCommand": "JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home services/platform-runtime/gradlew -p services/platform-runtime test --tests '*FinancialBootstrapProbeTest' --console=plain",
+  "reviewInstance": "3 of 3",
+  "nodeReview2Red": "node-review2-red.log: exact unsupported-schema assertion failed before fix",
+  "nodeReview2Green": "node-review2-green.log:51/51PASS",
+  "nodeReview3Red": "node-review3-red.log: missing exported empirical disk profile expected failure",
+  "nodeReview3Green": "node-review3-green.log:102/102 PASS",
+  "nodeCommand": "node --test scripts/dev/calcify-financial/rate-proof.test.mjs scripts/dev/calcify-financial/rate-supervision.test.mjs scripts/dev/calcify-financial/proof-supervisor.test.mjs"
+}

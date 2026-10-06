@@ -1,0 +1,57 @@
+{
+  "ciCommandStartedUtc": "2026-10-06T02:34:13.391995+00:00",
+  "reviewPatchSha256": "fe1401c15ec1e79ea8158bda053f2e5a3f1d04650a67bb664a6b8a905c08487e",
+  "scope": "review3sourcehashesmatchafterCI; filesystemmtimeatstart corroboration, not independent before-byte snapshot",
+  "files": [
+    {
+      "path": "scripts/dev/calcify-financial/rate-proof.mjs",
+      "sha256": "eb94f3f8ce5acf53f3950bdcf8b96d23ca87dc0418984ef1486558015873a39d",
+      "mtimeAtOrBeforeCiStarted": true
+    },
+    {
+      "path": "scripts/dev/calcify-financial/rate-proof.test.mjs",
+      "sha256": "a59da0227b623c33033dc6f23521e07819babbb1e2da03c18c64bd9e8aaafafe",
+      "mtimeAtOrBeforeCiStarted": true
+    },
+    {
+      "path": "scripts/dev/calcify-financial/rate-supervision.mjs",
+      "sha256": "617e8486ad8372b5c7021f61c3e2960e09a81776bba8567c8fc3d048d78e6507",
+      "mtimeAtOrBeforeCiStarted": true
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt",
+      "sha256": "e79552e85fd0022e2befb5dc202e07ed2739c9751cd194d6b4cad461fd0fb167",
+      "mtimeAtOrBeforeCiStarted": true
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt",
+      "sha256": "e68ebecec53998a0c99c4e0f1f741587d1a8d71e4d38de4c5e03b05ce0764698",
+      "mtimeAtOrBeforeCiStarted": true
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt",
+      "sha256": "13e49ffe0979148126e250d8b338f06682ddcb82b2dcb956d112880dcf2b64db",
+      "mtimeAtOrBeforeCiStarted": true
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateReferenceTest.kt",
+      "sha256": "51b129c4e34162ba35ddf0d6ef62a3a07f28db525eaa5cbea214fabaf6c81f45",
+      "mtimeAtOrBeforeCiStarted": true
+    },
+    {
+      "path": "scripts/dev/calcify-financial/rate-supervision.test.mjs",
+      "sha256": "6d51fc8c72270632fcc3ce8e394a55df42321c4fd41ca8e446ea7998abb9d424",
+      "mtimeAtOrBeforeCiStarted": true
+    },
+    {
+      "path": "scripts/dev/calcify-financial/proof-supervisor.mjs",
+      "sha256": "ea82aee75c9e406e2ab944e0033f7c661144fd909cbde76289c080e34d1833ca",
+      "mtimeAtOrBeforeCiStarted": true
+    },
+    {
+      "path": "scripts/dev/calcify-financial/proof-supervisor.test.mjs",
+      "sha256": "31907779a842a2c82d054b8db833186ef84aa14d510780b9a2742f1f09716172",
+      "mtimeAtOrBeforeCiStarted": true
+    }
+  ]
+}

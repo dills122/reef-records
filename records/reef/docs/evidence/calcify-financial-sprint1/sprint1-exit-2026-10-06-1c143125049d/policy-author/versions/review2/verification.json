@@ -1,0 +1,55 @@
+{
+  "base": "863503ec23c27f33ecea14fd82724fe28f96d308",
+  "paths": [
+    "scripts/dev/calcify-financial/rate-proof.mjs",
+    "scripts/dev/calcify-financial/rate-proof.test.mjs",
+    "scripts/dev/calcify-financial/rate-supervision.mjs",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateReferenceTest.kt"
+  ],
+  "patchSha256": "c442e47659025e60335e28f3930c9bad74d219c17f4565dad7efb1881b513138",
+  "nodeRed": "node-red.log: expected missing freezeDiagnostic export, prior tests passed",
+  "nodeGreen": "node-green.log: 51/51 PASS",
+  "kotlin": [
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialHeapGuardTest",
+      "tests": "26",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-06T02:05:40.152Z",
+      "hostname": "Dylans-MacBook-Pro.local",
+      "time": "0.419"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialRateReferenceTest",
+      "tests": "6",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-06T02:05:40.572Z",
+      "hostname": "Dylans-MacBook-Pro.local",
+      "time": "55.161"
+    }
+  ],
+  "kotlinCommand": "JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home services/platform-runtime/gradlew -p services/platform-runtime test --tests '*FinancialHeapGuardTest' --tests '*FinancialRateReferenceTest' --console=plain",
+  "diffCheck": "PASS",
+  "liveLoadExecuted": false,
+  "bootstrapRegression": {
+    "name": "com.reef.platform.calcify.financial.FinancialBootstrapProbeTest",
+    "tests": "10",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-06T02:07:42.080Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.448"
+  },
+  "bootstrapCommand": "JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home services/platform-runtime/gradlew -p services/platform-runtime test --tests '*FinancialBootstrapProbeTest' --console=plain",
+  "reviewInstance": "2 of 3",
+  "nodeReview2Red": "node-review2-red.log: exact unsupported-schema assertion failed before fix",
+  "nodeReview2Green": "node-review2-green.log:51/51PASS",
+  "kotlinRepeat": "Not repeated: all Kotlin source/test hashes unchanged from review1 passed checks"
+}

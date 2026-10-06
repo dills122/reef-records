@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "reviewed_product_parent": "1c143125049d18ee5c8c8cf473e7ed81ae25df8c",
+  "execution_baseline": "863503ec23c27f33ecea14fd82724fe28f96d308",
+  "executed_dirty_patch_sha256": "da8ad0e573c9d4a17a4da81c425401b08a34f4d3c04b8f301ec4061c1564117b",
+  "actual_8g_build_sha256": "2a8dc310c26c5973dcdbbea5f4ac0061a2c296a574e71b253bf47d6c09fe5314",
+  "scope": "Explicit selected closed synthetic evidence promoted to local-only tracked checkpoint. Product code commit created after execution; executed baseline and exact dirty source/build/profile identities remain original. Setup refusals, 4 GiB disk/heap aborts, 8 GiB deadline target MISS with full-cohort parity passing, failed checks and corrections preserved. No conservative bound, full E4 capacity qualification, aged/SQL qualification or production authority change. Broker volumes/topics retained locally, not exported; archive does not contain every raw history-topic record. No Reef source removal.",
+  "selected_original_files": 7578,
+  "selected_original_bytes": 1139985698,
+  "journal_reassembly_verified": [
+    {
+      "original": ".planning/calcify-sprint1-exit-2026-10-06/arm3/journal/members.bin",
+      "bytes": 297967900,
+      "sha256": "c914ae575e01bb6f47f800843247aa92478cb89249df69d55e48c475d73e4be8",
+      "chunks": 9
+    },
+    {
+      "original": ".planning/calcify-sprint1-exit-2026-10-06/arm4/journal/members.bin",
+      "bytes": 325619063,
+      "sha256": "0bcbe73f1528d8ef652ccd443a4d0ada233f99f2f047fffbabbc4e32f3665219",
+      "chunks": 10
+    },
+    {
+      "original": ".planning/calcify-sprint1-exit-2026-10-06/arm5/journal/members.bin",
+      "bytes": 328612423,
+      "sha256": "2a57a05048b965168bc77f22faf23383997722f7b779c116b2aaf5fb72c58238",
+      "chunks": 10
+    }
+  ]
+}

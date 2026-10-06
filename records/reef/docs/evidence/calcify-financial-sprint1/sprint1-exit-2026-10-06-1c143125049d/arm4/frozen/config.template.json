@@ -1,0 +1,130 @@
+{
+  "schema": "financial-empirical-runtime-v1",
+  "policy": {
+    "kernel": "e1-gross-v1",
+    "schema": "e1-v1",
+    "policy": "gross-p1",
+    "reference": "assets-r1",
+    "rounding": "EXACT",
+    "fees": "NONE",
+    "reservation": "UNRESERVED"
+  },
+  "ownedRoot": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/arm4",
+  "stateDir": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/arm4/store",
+  "ackJournalDir": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/arm4/journal",
+  "nodeExecutable": "/Users/dsteele/.local/share/fnm/node-versions/v22.22.1/installation/bin/node",
+  "physicalAdapterScript": "/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/physical-adapter.mjs",
+  "registeredResources": {
+    "project": "reef-calcify-e4-timed2-8c6f",
+    "containers": [
+      {
+        "id": "da51796997665b96755cfab24a3cc8fb1510b0a5690eb4170c734689a51d0d48",
+        "brokerId": 0,
+        "name": "reef-calcify-e4-timed2-8c6f-rp0-1",
+        "hostKafkaEndpoint": {
+          "host": "127.0.0.1",
+          "port": 42092,
+          "containerPort": "42092/tcp"
+        },
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-timed2-8c6f",
+          "com.docker.compose.service": "rp0",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-timed2-8c6f_rp0-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "c4f8288c635fb768fdaeb5f626a16a55e64c83ffb26f6b5e118e183d5659d53d",
+        "brokerId": 1,
+        "name": "reef-calcify-e4-timed2-8c6f-rp1-1",
+        "hostKafkaEndpoint": {
+          "host": "127.0.0.1",
+          "port": 42192,
+          "containerPort": "42192/tcp"
+        },
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-timed2-8c6f",
+          "com.docker.compose.service": "rp1",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-timed2-8c6f_rp1-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "c44b5d0cefa097514dbc39fa178e6ef8286f91f0cda69b209991ddd60153ccca",
+        "brokerId": 2,
+        "name": "reef-calcify-e4-timed2-8c6f-rp2-1",
+        "hostKafkaEndpoint": {
+          "host": "127.0.0.1",
+          "port": 42292,
+          "containerPort": "42292/tcp"
+        },
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-timed2-8c6f",
+          "com.docker.compose.service": "rp2",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-timed2-8c6f_rp2-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      }
+    ],
+    "bootstrapServers": "127.0.0.1:42092,127.0.0.1:42192,127.0.0.1:42292"
+  },
+  "localResources": [
+    {
+      "id": "store",
+      "category": "localStore",
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/arm4/store"
+    },
+    {
+      "id": "journal",
+      "category": "controllerJournal",
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/arm4/journal"
+    },
+    {
+      "id": "proof",
+      "category": "proof",
+      "path": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/arm4/proof"
+    }
+  ],
+  "proofDir": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/arm4/proof",
+  "brokerScope": {
+    "schema": "financial-broker-scope-v1",
+    "bootstrapServers": "127.0.0.1:42092,127.0.0.1:42192,127.0.0.1:42292",
+    "clusterId": "redpanda.c89cb3ea-9e69-480d-9529-a6ab634ab34c",
+    "brokers": [
+      {
+        "id": 0,
+        "host": "127.0.0.1",
+        "port": 42092
+      },
+      {
+        "id": 1,
+        "host": "127.0.0.1",
+        "port": 42192
+      },
+      {
+        "id": 2,
+        "host": "127.0.0.1",
+        "port": 42292
+      }
+    ],
+    "metadataSource": "actual AdminClient describeCluster"
+  }
+}

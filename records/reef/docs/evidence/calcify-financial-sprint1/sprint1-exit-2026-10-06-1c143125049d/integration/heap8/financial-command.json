@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "services/platform-runtime/gradlew",
+    "-p",
+    "services/platform-runtime",
+    "test",
+    "--tests",
+    "com.reef.platform.calcify.financial.*",
+    "--console=plain"
+  ],
+  "JAVA_HOME": "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home",
+  "utc": "2026-10-06T02:58:57.586505+00:00"
+}

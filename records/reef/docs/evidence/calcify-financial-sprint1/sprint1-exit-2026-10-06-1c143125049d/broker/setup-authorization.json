@@ -1,0 +1,10 @@
+{
+  "schema": "calcify-owned-setup-authorization-v1",
+  "accepted": true,
+  "baselineClosed": true,
+  "cleanupVerified": true,
+  "project": "reef-calcify-e4-timed1-8c6f",
+  "rootClosurePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/broker/prior-rigs-closure.json",
+  "rootClosureSha256": "b2b180a672f059cf3c84bdccc8c8aa758fcc1bdd6f39e669effc7f7d4a57a562",
+  "userAuthorization": "Kick off existing E4/sprint exit with reasonable explicit test resources; previous proof artifacts untouched"
+}

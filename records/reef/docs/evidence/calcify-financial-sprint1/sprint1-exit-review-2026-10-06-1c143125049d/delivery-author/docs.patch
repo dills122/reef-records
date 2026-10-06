@@ -1,0 +1,239 @@
+diff --git a/docs/README.md b/docs/README.md
+index f4acb733..21700634 100644
+--- a/docs/README.md
++++ b/docs/README.md
+@@ -24,7 +24,7 @@ have separate runbooks under [`infra/`](../infra/README.md).
+ 
+ | Order | Owner | Read for |
+ | --- | --- | --- |
+-| 1 | [Current work](WORK_PLAN.md#calcify-e4-continuation--october-5-2026) | Merged work, E4 diagnostic readiness, measured gates and next bounded work |
++| 1 | [Current work](WORK_PLAN.md#calcify-sprint1-exit-continuation--october-6-2026-utc) | Merged work, empirical E4 diagnostic, sprint exit decisions and next P3 slice |
+ | 2 | [Phase 1/2 overview](CALCIFY_PHASES_OVERVIEW.md) | Implemented production flow and source map |
+ | 3 | [System RFC](work/CALCIFY_SYSTEM_ARCHITECTURE_RFC.md#101-first-experiment-sprint) | Proposed financial authority, experiment acceptance and owner decisions |
+ | 4 | [Financial checkpoint](evidence/calcify-financial-sprint1/README.md) and [handoff](work/handoffs/2026-10-04-calcify-financial-sprint1-recovery.md) | Test-only proof, exact software scope, resources and continuation |
+diff --git a/docs/THROUGHPUT_BASELINES.md b/docs/THROUGHPUT_BASELINES.md
+index 764b4d1f..5dcbf45f 100644
+--- a/docs/THROUGHPUT_BASELINES.md
++++ b/docs/THROUGHPUT_BASELINES.md
+@@ -1472,3 +1472,76 @@ Campaign reused Calcify functional smoke, which forces PostgreSQL intake/idempot
+ ### Calcify direct-path D7 sustained qualification (October 2, 2026)
+ 
+ Fresh C5-style durable direct ingress16lanes/64instruments/1,024workers/matching batch500 attached Phase1 stub verifier and Phase2 managed resolver. Local10CPU/15.6GiB, RF1/write.caching=false; PostgreSQL startup identity control only. D7 passed300s: conservative deadline rates10,425.19 verified matched trades/s and10,440.92 resolved full-fact contexts/s. All3,142,846trades exact/ordered/unique, zero HTTP failures/retries;64seeded maker orders excluded. Timed durable HTTP ACKs10,475.59orders/s. One aggressor order per trade; does not establish two-sided paired or mixed-command10k trade capacity. Whole-batch matching-entry->verified visibility p99 upper433ms, not exact individual matching-acceptance latency. Bounded poll-level extraction transactions fixed actual backlog: comparable60s paired D4~2,045->D5~5,167verified trades/s. D6 standing-liquidity60s diagnostic precedes fresh D7; workload/retention changes separately declared. [Report/config/corrections](research/CALCIFY_DIRECT_THROUGHPUT_2026-10-02.md), [frozen policy and exact qualification](evidence/calcify-direct-throughput-2026-10-02/d7-300s-standing-liquidity/results.json). Earlier SQL campaign and D1 caching mistake remain historical diagnostics, not intended-path capacity bounds.
++
++
++### Calcify financial empirical diagnostic — October6, 2026 UTC
++
++Baseline863503ec, unchanged financial kernel/managed adapter; prior bounded
++1000/100 managed-restart proof is separate. New fixed fresh single-domain workload:
++2500trades/s for60s,150000trades,300000CAPTURE/SETTLE actions; finite exact
++prefunding,4GiB Java21 JVM,2GiB ACK journal. Three pinned RF3 Redpanda brokers,
++1CPU/2GiB container each, cachingfalse,2000ms commit interval, no compression.
++This is empirical test-adapter scope; no production capacity/conservative upper
++bound, aged state, SQL/API cost or new managed restart.
++
++Two setup refusals preserved: arm1 relative output rejected before payload; arm2
++missing registered store/journal directories rejected before payload and stopped
++owned brokers. Correction uses absolute unique output plus precreated empty
++registered store/journal; proof output stays absent until launcher creates it.
++
++Arm3 strict observation started02:22:28.778Z; allocation guard aborted02:24:34.816Z.
++Last valid project allocation9649577984B; rejected raw sum10155438080B exceeded
++9GiB abort threshold. Broker allocation8690835456B plus host1464602624B at
++rejected observation. No final measurement. Closed journal verifies272154
++published actions/136077paired SETTLE inputs, no tails; first-to-last source
++offered span120.708s. Processor requires published journal membership before
++execution, hence settled count at any cut <=136077, below150000 target. This
++is count upper bound, not observed deadline settlement rate.
++
++Arm4 used fresh cluster and fixed financial-empirical-disk16-v1 profile:
++14GiB abort/16GiB hard,20GiB guest-free floor,256MiB raw-proof cap,5s supervision;
++old9/10GiB limits preserved. Strict observation started02:39:20.457Z; run aborted
++02:41:40.473Z at sampled80% heap guard3435973836B. Actual peak not emitted.
++Last valid project allocation11005157376B stayed below14GiB. Closed journal
++verifies297280actions/148640paired inputs, no tails; offered span129.572s.
++Same source-membership argument bounds any-cut settled count <=148640; target
++miss proven, actual deadline count unknown. Neither arm completed economic/
++history/replay audit. Exact owned brokers/JVM stopped; volumes retained.
++
++Closed read-only volume audits occur after stop and differ from live peak
++allocation observations; do not substitute them for peak or infer causal cost.
++Fixed8GiB permission retains workload/disk limits, changes no kernel/reference
++algorithm. User authorized one extra review; review4of4 code/concrete envelope Ready.
++Original failures, frozen identities, cleanup and forensic receipts remain in
++active session `.planning/calcify-sprint1-exit-2026-10-06/` pending closed-proof
++Records delivery. Current execution owner: [work plan](WORK_PLAN.md#calcify-sprint1-exit-continuation--october-6-2026-utc).
++
++
++Arm5 fixed8GiB/fresh cluster strict sample03:06:14.705Z; closed03:10:21.499Z.
++Wrapper0/PROOF_READY; launcher1/FAIL_DIAGNOSTIC preserves useful target miss.
++At60s: offered71296,callback71286,admitted71256,decided/settled63104,pending0;
++settled covering rate1051.7333/s. Final150000 offered/admitted/decided/settled,
++300001 complete histories; independent economic/owner/history checks and
++result-only replay pass. Replay98.545s; no separately launched managed restart.
++Producer132.040s, post-producer drain8.139s; frozen producer,drain,rate and lag
++limits fail. Later completion cannot repair deadline miss. Sampled150 individual
++offer-to-read-committed-settlement latencies p95=7904ms,p99=8003ms cover full
++cohort, not just deadline. Closed source journal300000 exact actions/150000pairs,
++3146publication batches, zero tails,112172230source bytes; frame/hashchain/index/
++witness/scope/full payloads independently verify against frozen gross fixture.
++
++JVM sampled heap3962293592B excludes final serialization/staged writes; reported
++RSS4726587392B separate. Same-JVM process CPU321184ms covers timed load through
++full coverage/drain, including worker/producer/observer inline validation. It
++excludes later owner digest, result-only replay, final serialization and brokers.
++Assessment divides by scheduled60s to
++normalize cohort cost;5.353 equivalent cores is not actual core utilization.
++Encoded input112172230B, results883951833B; encoded technical store bytes unknown.
++53strict live allocation samples peak11773079552B include three broker directories
++and registered host store/journal/proof; VM overhead excluded. Probe physical
++inventory disk8831485940B has different measurement scope/time, not replacement
++for allocated project peak. No continuous memory/disk bound or causal bottleneck
++attribution. All owned brokers/JVM stopped; volumes retained. Reviewed implementation
++commit1c143125 follows run; actual baseline863503ec+frozen patchda8ad0e573c9d4a17a4da81c425401b08a34f4d3c04b8f301ec4061c1564117b.
++[Focused current verification](evidence/calcify-financial-sprint1/e4-verification-2026-10-06.json)
++links measured scope and failed original arms; complete proof archive pending.
+diff --git a/docs/WORK_PLAN.md b/docs/WORK_PLAN.md
+index 68e7dc7d..26a1f52e 100644
+--- a/docs/WORK_PLAN.md
++++ b/docs/WORK_PLAN.md
+@@ -18,6 +18,81 @@ Source/test/artifact reconciliation:
+ Items below distinguish missing implementation from evidence not found in the
+ audited checkout; missing local reports do not prove a run never happened.
+ 
++## Calcify sprint1 exit continuation — October 6, 2026 UTC
++
++Baseline `863503ec`; branch `codex/calcify-sprint1-exit-2026-10-06`.
++Reef PRs #473/#474/#475/#477 and Records PRs #6–#9 merged; earlier
++checkpoint draft/pending wording below records pre-merge scope. Landed E4 source
++tree equals reviewed source; original proof commits remain reachable in Records.
++
++Four-hour continuation follows [existing first experiment sprint](work/CALCIFY_SYSTEM_ARCHITECTURE_RFC.md#101-first-experiment-sprint).
++User direction removes test-harness memory optimization from critical path.
++Explicit larger test resources may support empirical rate/storage diagnostics;
++no conservative heap bound or production capacity follows from larger budget.
++Fresh fixed2,500-trades/s,60s diagnostic closed. Two4GiB attempts hit disk then
++heap guards. Explicit8GiB permission passed review4of4 after user extension;
++full150000 trades settled,300001 histories and complete result-only replay passed.
++Deadline63104settled/60s=1051.73/s misses2500/s target. Producer132.040s and
++post-producer drain8.139s miss frozen duration/drain gates; later completion does
++not count toward deadline. No harness optimization. Kernel/managed adapter unchanged.
++Final source NodeCI279/279, financial112/112. Implementation commit1c143125 created
++after closed run; executed baseline marker and dirty-source hashes retained in
++[focused verification](evidence/calcify-financial-sprint1/e4-verification-2026-10-06.json).
++Old 768 MiB conservative and 1,000/100 bootstrap evidence remain unchanged.
++No new managed-restart qualification or fourth prior E4 qualification instance.
++
++| Existing sprint exit | Current evidence / next action |
++| --- | --- |
++| Kernel contract | Keep bounded unreserved P1a contract; oracle/reconstruction proofs passed. Live-source integration separate. |
++| Gate protocol | Finite156 + seeded128 model cases passed. Propose RFC source-prefix baseline; credits require concrete isolation/progress need and access proof. Production selection unresolved. |
++| Reservation policy | Proposed executable fixture; owner acceptance absent. Keep live holds deferred; present own-hold/residual/cancel cases for accept/amend. |
++| Adapter recovery | Keep bounded E3 RF3/EOS contract: external4/core24/golden20/activation1 passed. No production/cluster-loss guarantee. |
++| Rate/storage cost | Fresh8GiB empirical deadline1051.73settled/s; targetmiss. Full150000 parity/result-only replay passed. Sampled costs measured; aged, production SQL/API and full qualification open. |
++
++After measured E4 evidence, select existing P3 first useful-path slice, preceded
++by unresolved P0 source acceptance/identity gate. RFC already defines venue and
++lifecycle input, admission, kernel, one SQL bundle and existing API; shadow step
++alone does not complete P3. Existing `matching-fact-v2` length framing supersedes
++old delimiter collision concern; do not reopen hashing redesign. Source audit confirms retained `(run, order)` IDs reject duplicates, but bounded
++terminal eviction deliberately permits same-run reuse. Snapshot restores retained
++IDs only. Default terminal retention0 preserves all; stress profile250000 does not
++prove full-run uniqueness. First P3 slice may pin retention0 with finite resource
++proof, or add Calcify-scoped durable no-reuse enforcement. Preserve legacy reuse
++semantics; incarnation contract needed only if owner requires same-run reuse.
++Source: `internal/app/terminal_retention_replay_test.go` and
++`internal/app/service_snapshot.go` under `services/matching-engine/`.
++Adoption authority ADR and numeric replay/capacity/SLO choices stay separate from
++synthetic E4 permission. No production financial authority changed.
++
++### Next P3 slice: finite source-to-read path
++
++Proposed scope follows RFC P3: isolated opt-in run, one instrument, two mapped
++accounts/assets, journaled opening resources, unreserved gross DvP, source-prefix
++admission, one SQL bundle, existing authenticated settlement reads, one
++funding/new-attempt repair. Current proof kernel fixes `buyer`/`seller` and
++`USD_NANO`/`ACME_SHARE`; mapping/generalization requires explicit invariant tests.
++Authority adoption remains owner decision; legacy accounts stay isolated.
++
++| Dependency order | Finite acceptance |
++| --- | --- |
++| P0 source gate | Pin retention0 plus finite run/order/resource budget. Real submit/fill/cancel/amend, zero-trade lifecycle, same-run reuse rejection after terminal state and restore; cross-run raw-ID reuse stays valid. |
++| Source/lifecycle closure | Extend existing resolved-trade facts with versioned lifecycle/coverage membership. Every execution and zero-trade member has explicit disposition. Bound slice/fanout/bytes; future-window burst cannot block admitted closure; restore retains exact frontier. |
++| Financial admission/adapter | Durable common order for captures/funding/repair; stable identity/request digest, identical retry returns original disposition, changed request conflicts. Promote reviewed kernel semantics with exact balanced legs and once-only obligation discharge. |
++| SQL and read seam | One transaction writes journal/account/obligation/exception/checkpoint under epoch and entity-version checks. Post-commit crash replay once; stale projector refused. Existing API reads coupled rows/progress under common snapshot. |
++| End-to-end repair/restart | Insufficient resources yield pending with zero partial legs; new funding plus distinct attempt settles once. Restart restores source/admission/owner/SQL cuts; missing required history refuses activation. Record finite stage costs. |
++
++Production Phase1/2 resolved facts, settlement routes/store and legacy projections
++exist. Financial lifecycle/gate/admission, runtime financial adapter and bounded
++SQL projector/common-snapshot progress contract remain implementation work.
++Existing legacy materializer scans complete persisted run facts; it does not
++establish new bounded SQL bundle behavior. Reservations, external effects, netting,
++production migration and full-path throughput qualification remain outside this
++first slice. First implementation task: explicit opt-in finite isolated source
++profile/startup guard pinned to terminal retention0, with terminal duplicate and
++restore acceptance. Existing no-reuse behavior needs binding to declared source
++contract, not another ID set or snapshot redesign. Live adoption remains owner
++decision; lifecycle/coverage follows this scoped gate.
++
+ ## Calcify E4 continuation — October 5, 2026
+ 
+ Branch `codex/calcify-e4-readiness`, base `29a8926d`. Test-only bounded diagnostic
+diff --git a/docs/evidence/calcify-financial-sprint1/README.md b/docs/evidence/calcify-financial-sprint1/README.md
+index 84e541af..17b01bc2 100644
+--- a/docs/evidence/calcify-financial-sprint1/README.md
++++ b/docs/evidence/calcify-financial-sprint1/README.md
+@@ -6,6 +6,24 @@ checkpoint and metric fixes postdate round7.
+ Test-only experiments. [Focused results](verification.json),
+ [current work plan](../../WORK_PLAN.md), [broker profile](broker-profile.json).
+ 
++## Latest empirical checkpoint — October6 UTC
++
++[Current work](../../WORK_PLAN.md#calcify-sprint1-exit-continuation--october-6-2026-utc)
++owns sprint status; [focused verification](e4-verification-2026-10-06.json) separates
++source-count upper bounds from unmeasured deadline settlement rates. Two fresh
++4GiB attempts aborted at disk then heap limits; original failure journals retained.
++Explicit8GiB profile passed review4of4 after user extension. Full150000 settlements,
++300001 histories and result-only replay passed; deadline63104/60s=1051.73/s missed
++2500/s target. Producer132.040s; post-producer drain8.139s. Sampled JVM heap
++3962293592B; live allocated project samplepeak11773079552B. These are different
++measurement scopes, not conservative bounds. Closed input journal independently
++verified300000 complete actions/150000pairs, full hashes/payloads and zero tails.
++Kernel/managed adapter unchanged; prior49-arm proof separate. No new managed
++restart, aged state, SQL/API or production capacity qualification.
++Historical draft/pending wording below
++predates merged Reef473/474/475/477 and Records6–9. Complete current closed proof
++archive in preparation; local session retained until publication verified.
++
+ ## Current E4 continuation
+ 
+ October5 branch `codex/calcify-e4-readiness`, base `29a8926d`.
+diff --git a/docs/work/CALCIFY_SYSTEM_ARCHITECTURE_RFC.md b/docs/work/CALCIFY_SYSTEM_ARCHITECTURE_RFC.md
+index 8070b6d3..27c2fe8a 100644
+--- a/docs/work/CALCIFY_SYSTEM_ARCHITECTURE_RFC.md
++++ b/docs/work/CALCIFY_SYSTEM_ARCHITECTURE_RFC.md
+@@ -890,6 +890,25 @@ and implementation mapper lifecycle limit comparison. Gross allocation does not
+ prove driver peak cause, retained upper or capacity.
+ Public financial authority and production matching remain unchanged.
+ 
++October6 continuation adds a separate fixed fresh150000-trade,60s empirical
++diagnostic with4GiB JVM and2GiB ACK journal. This records useful work by deadline,
++final drain, complete-history replay and sampled costs without deriving a
++conservative heap upper bound. Named `financial-empirical-disk16-v1` profile
++permits14GiB allocation abort/16GiB hard limit, retaining20GiB guest free floor,
++256MiB raw-proof cap and five-second resource supervision. Original9/10GiB
++profiles remain unchanged; larger budget requires exact diagnostic argv and
++frozen policy/supervisor binding. Separate fixed
++`financial-empirical-heap8-disk16-v1` profile permits exact8GiB JVM with same
++14/16GiB disk guards and unchanged workload. Explicit user review extension
++allowed review4of4; code and concrete envelope Ready before launch. Larger
++permission alone proves no fit, rate, native-memory or conservative upper bound.
++Existing768MiB policy and1000/100 managed-restart
++proof retain their original gates and scope. Prior49-arm correctness is reused
++only for unchanged kernel/managed-adapter source; timed cohort does not gain
++new managed-restart qualification. User direction excludes further test-reference
++memory optimization. [Current sprint exit work](../WORK_PLAN.md#calcify-sprint1-exit-continuation--october-6-2026-utc)
++owns run outcomes and next finite P3 acceptance slice.
++
+ Prior Java21/768MiB two-owner model refuses smallest150000-trade ordinary arm:
+ map entries alone require732000000 bytes, above strict644245094-byte heap gate.
+ New compact model needs separately bound layout/lifecycle costs; its structural

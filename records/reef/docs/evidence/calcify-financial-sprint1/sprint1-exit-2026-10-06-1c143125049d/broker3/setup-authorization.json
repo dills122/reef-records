@@ -1,0 +1,10 @@
+{
+  "schema": "calcify-owned-setup-authorization-v1",
+  "accepted": true,
+  "baselineClosed": true,
+  "cleanupVerified": true,
+  "project": "reef-calcify-e4-timed3-8c6f",
+  "rootClosurePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/broker3/prior-rigs-closure.json",
+  "rootClosureSha256": "7a529fc95835a3c9bdf687840f21d8401915784a3d7e25af11d2d73a8d48ebdb",
+  "userAuthorization": "explicit session plus extra review; preparation only, no payload until Ready"
+}

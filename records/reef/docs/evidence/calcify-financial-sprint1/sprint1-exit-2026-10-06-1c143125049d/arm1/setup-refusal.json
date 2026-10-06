@@ -1,0 +1,17 @@
+{
+  "schema": "calcify-timed-attempt-refusal-v1",
+  "utc": "2026-10-06T02:19:40.485850+00:00",
+  "result": "REFUSED_BEFORE_PAYLOAD",
+  "reason": "RATE_RUNTIME_LOCAL_REGISTRY_MISMATCH",
+  "cause": "Root launcher supplied relative output path; runtime guard requires canonical absolute output",
+  "strictSupervisorStarted": false,
+  "financialPayloadStarted": false,
+  "preservedPaths": [
+    "arm1/proof",
+    "arm1/launcher.stdout.log",
+    "arm1/launcher.stderr.log",
+    "arm1/frozen",
+    "arm1/frozen2"
+  ],
+  "retry": "arm2/frozen; absolute policy/adapter/output; unchanged reviewed source"
+}

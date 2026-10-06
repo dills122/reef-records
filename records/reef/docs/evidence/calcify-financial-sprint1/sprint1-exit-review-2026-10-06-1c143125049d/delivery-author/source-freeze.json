@@ -1,0 +1,12 @@
+{
+  "head": "1c143125049d18ee5c8c8cf473e7ed81ae25df8c",
+  "paths": {
+    "docs/README.md": "39169873cedfc51e263f8dbc7498a63dcfd714de3cc58e8d49877d96deaa6517",
+    "docs/WORK_PLAN.md": "0e79efe82fa0402bbcabfaa113a73b46463962f13bbef77d0db3d049298de859",
+    "docs/THROUGHPUT_BASELINES.md": "bf1e95359c54d669dae0c220d3e331d527227b8eeb7a861dd6070ec4841060d4",
+    "docs/work/CALCIFY_SYSTEM_ARCHITECTURE_RFC.md": "a0bd849f9355a4be29f75c7d681c205d0de75538468930ca3d4de568ccbcaf95",
+    "docs/evidence/calcify-financial-sprint1/README.md": "6324224dd3f904e90292f5b53d965772acfc55ccd3b1d688167da2bc1d05e77d",
+    "docs/evidence/calcify-financial-sprint1/e4-verification-2026-10-06.json": "11552b2e5b3a0358e38c8609b4d69468c40eed790db65936e61631fa3cfe5088"
+  },
+  "scope": "Working-tree owner/evidence documentation; latestJSON untracked explicitinclusion"
+}

@@ -1,0 +1,32 @@
+{
+  "result": "FAIL_DIAGNOSTIC",
+  "failures": [
+    "PRODUCER_DURATION_MISS",
+    "DRAIN_MISS",
+    "DEADLINE_USEFUL_RATE_MISS",
+    "LAG_END_OR_GROWTH"
+  ],
+  "gaps": [
+    "Actual managed restart remains separate from result-only replay and broker-free journal process-crash controls",
+    "Encoded technical store bytes uninstrumented",
+    "CPU scope same-JVM worker+producer+observer; broker CPU unmeasured",
+    "Touched keys = emitted state/history/coverage/cert writes; framework reads excluded",
+    "RESOURCE_TELEMETRY_INCOMPLETE",
+    "Empirical resource budget; no conservative heap upper bound or capacity qualification"
+  ],
+  "rates": {
+    "offeredPerSecond": 1188.2666666666667,
+    "admittedPerSecond": 1187.6,
+    "decidedPerSecond": 1051.7333333333333,
+    "settledPerSecond": 1051.7333333333333,
+    "pendingPerSecond": 0
+  },
+  "rateBoundary": "Counts visible at fixed deadline / scheduled duration; conservative covering rates, not individual latency.",
+  "cpuEquivalentCores": 5.353066666666667,
+  "touchedKeysPerTrade": 37.00011333333333,
+  "capacityQualification": false,
+  "sourceHead": "863503ec23c27f33ecea14fd82724fe28f96d308",
+  "policySha256": "bb090140bef683b5d8d5e20487853eb71d862e28233583f0ee83a59ac998a587",
+  "usefulRateOutcome": "TARGET_MISSED",
+  "heapConservativeBound": false
+}

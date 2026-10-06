@@ -1,0 +1,122 @@
+{
+  "utc": "2026-10-06T02:39:19.843900+00:00",
+  "gradleExitCode": 0,
+  "command": "JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home services/platform-runtime/gradlew -p services/platform-runtime test --tests com.reef.platform.calcify.financial.* --console=plain",
+  "tests": 111,
+  "skipped": 0,
+  "failures": 0,
+  "errors": 0,
+  "suites": [
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialBrokerProbeTest",
+      "tests": "4",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-06T02:35:25.806Z",
+      "hostname": "Dylans-MacBook-Pro.local",
+      "time": "0.101"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialKernelTest",
+      "tests": "14",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-06T02:35:26.129Z",
+      "hostname": "Dylans-MacBook-Pro.local",
+      "time": "118.119"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialBootstrapProbeTest",
+      "tests": "10",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-06T02:35:25.743Z",
+      "hostname": "Dylans-MacBook-Pro.local",
+      "time": "0.063"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest",
+      "tests": "11",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-06T02:37:46.619Z",
+      "hostname": "Dylans-MacBook-Pro.local",
+      "time": "1.472"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialPartitionCutTest",
+      "tests": "13",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-06T02:37:46.564Z",
+      "hostname": "Dylans-MacBook-Pro.local",
+      "time": "0.055"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialOracleTest",
+      "tests": "12",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-06T02:37:24.249Z",
+      "hostname": "Dylans-MacBook-Pro.local",
+      "time": "22.315"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialHeapGuardTest",
+      "tests": "26",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-06T02:35:26.023Z",
+      "hostname": "Dylans-MacBook-Pro.local",
+      "time": "0.104"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialCanonicalLeafOwnerTest",
+      "tests": "4",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-06T02:35:25.907Z",
+      "hostname": "Dylans-MacBook-Pro.local",
+      "time": "0.024"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialAckJournalTest",
+      "tests": "8",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-06T02:35:21.872Z",
+      "hostname": "Dylans-MacBook-Pro.local",
+      "time": "3.869"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialCommittedCutTest",
+      "tests": "3",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-06T02:35:25.932Z",
+      "hostname": "Dylans-MacBook-Pro.local",
+      "time": "0.09"
+    },
+    {
+      "name": "com.reef.platform.calcify.financial.FinancialRateReferenceTest",
+      "tests": "6",
+      "skipped": "0",
+      "failures": "0",
+      "errors": "0",
+      "timestamp": "2026-10-06T02:37:48.091Z",
+      "hostname": "Dylans-MacBook-Pro.local",
+      "time": "57.145"
+    }
+  ],
+  "reviewSourcePatchSha256": "fe1401c15ec1e79ea8158bda053f2e5a3f1d04650a67bb664a6b8a905c08487e"
+}

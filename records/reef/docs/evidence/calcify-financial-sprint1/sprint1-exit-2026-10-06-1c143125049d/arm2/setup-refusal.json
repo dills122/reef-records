@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-06T02:21:05.488556+00:00",
+  "result": "REFUSED_BEFORE_PAYLOAD",
+  "reason": "registered host journal/store directories missing at strict first resource observation",
+  "financialPayloadStarted": false,
+  "brokerCleanup": "strict supervisor stopped owned3; setup watcher recorded stop",
+  "correction": "precreate owned empty localStore/controllerJournal before fresh absolute launch"
+}
