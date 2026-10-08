@@ -1,0 +1,23 @@
+{
+  "reviewInstance": "4 of 4",
+  "kernelAndAdapter": {
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialKernel.kt": {
+      "current": "9f76e87940d7600dac11bb26aba9ad40e39e7fbf41ec28dc8ab990790f0e637e",
+      "base": "9f76e87940d7600dac11bb26aba9ad40e39e7fbf41ec28dc8ab990790f0e637e",
+      "unchanged": true
+    },
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialBrokerProbe.kt": {
+      "current": "6f7d89934d01a79e54b68ced230adc2d341076573cdd7fa0ca36408b767ae778",
+      "base": "6f7d89934d01a79e54b68ced230adc2d341076573cdd7fa0ca36408b767ae778",
+      "unchanged": true
+    }
+  },
+  "receiptHashes": {
+    "FinancialHeapGuardTest-heap8.xml": "a9d2ed17df9319a8bcdc43f3b09f6728ee46a0b435d843ef3ae3debb41d0bb1a",
+    "FinancialRateReferenceTest-heap8.xml": "dee0570ce08e1257e11f65936c0cf28fdabd3c2d34b915d137900c4ec2dbb93d",
+    "FinancialBootstrapProbeTest-heap8.xml": "344d27fedb19a961dbecf3b8650ba2ea31fe4e162c5ba693195a5df62845e956",
+    "kotlin-heap8-green.log": "abd553ccc20e0257d672553b542c68e73c0ac8ec826bb9ef0a1b139a30768fbe",
+    "heap8-delta-vs-ready-review3.patch": "cfdf5f572b4fb96daaef91bf762721fa0d4b10374fcfc7df8d22a5028f6b5883",
+    "heap8-author-explanation.md": "dc18f05571c994e521701d0acfbab9d6510a595fd8191630b9719c234fbe951f"
+  }
+}

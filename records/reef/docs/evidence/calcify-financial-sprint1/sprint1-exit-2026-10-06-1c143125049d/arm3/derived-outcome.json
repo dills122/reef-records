@@ -1,0 +1,19 @@
+{
+  "schema": "calcify-empirical-aborted-arm-outcome-v1",
+  "result": "RESOURCE_ABORT",
+  "reason": "9GiB allocatedproject abort threshold",
+  "lastValidProjectAllocatedBytes": 9649577984,
+  "rejectedRawProjectAllocatedBytes": 10155438080,
+  "rawJournalPublishedActions": 272154,
+  "pairedPublishedSettleInputs": 136077,
+  "deadlineSettledTradesUpperBound": 136077,
+  "frozenRequiredTradesByDeadline": 150000,
+  "usefulTargetOutcome": "TARGET_MISSED_BY_SOURCE_MEMBERSHIP_UPPER_BOUND",
+  "measuredDeadlineSettledTrades": null,
+  "measuredDeadlineRate": null,
+  "measuredFinalSettledTrades": null,
+  "finalMeasurementPresent": false,
+  "completedCohortOrReplayVerified": false,
+  "proof": "closed source journal complete published prefix; processor requires published source member before kernel execution",
+  "scope": "upper count bound only, not observed settlement/deadline rate. Source clock120.708s span diagnoses pacing prefix. Raw observations separately timed and sampled."
+}

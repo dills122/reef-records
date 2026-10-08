@@ -1,0 +1,193 @@
+{
+  "measurementShaMatch": true,
+  "parityShaMatch": true,
+  "configShaMatch": true,
+  "fixtureShaMatch": true,
+  "priorCorrectnessShaMatch": true,
+  "kernelShaMatch": true,
+  "adapterShaMatch": true,
+  "deadlineRate": 1051.7333333333333,
+  "cpuNormalized": 5.353066666666667,
+  "sampleCount": 54,
+  "sampleTopKeys": [
+    "sampledAtMs",
+    "containers",
+    "guestFreeBytes",
+    "rawProofBytes",
+    "commands",
+    "rawInspection",
+    "hostLocalAllocations",
+    "brokerAllocatedBytes",
+    "hostAllocatedBytes",
+    "projectAllocatedBytes",
+    "scope",
+    "utc"
+  ],
+  "allocationSamples": 53,
+  "allocationPeak": 11773079552,
+  "receiptHashesMatch": true,
+  "arm3CleanupKeys": [
+    "utc",
+    "containers",
+    "ownedDiagnosticJvmRows",
+    "supervisorCleanupErrors",
+    "volumesRetained",
+    "scope"
+  ],
+  "arm3Cleanup": {
+    "utc": "2026-10-06T02:25:30.364976+00:00",
+    "containers": [
+      {
+        "id": "5ac644f956f21f1f53a037f296af6dfe347d6af164c1e840422d355f69bffae9",
+        "status": "exited",
+        "running": false,
+        "OOMKilled": false,
+        "volumes": [
+          {
+            "Type": "volume",
+            "Name": "reef-calcify-e4-timed1-8c6f_rp0-data",
+            "Source": "/var/lib/docker/volumes/reef-calcify-e4-timed1-8c6f_rp0-data/_data",
+            "Destination": "/var/lib/redpanda/data",
+            "Driver": "local",
+            "Mode": "rw",
+            "RW": true,
+            "Propagation": ""
+          }
+        ]
+      },
+      {
+        "id": "31eb2b26af21fe2e07f0f6293187c55b0e468e47d235223c3e2c599fed3e7df0",
+        "status": "exited",
+        "running": false,
+        "OOMKilled": false,
+        "volumes": [
+          {
+            "Type": "volume",
+            "Name": "reef-calcify-e4-timed1-8c6f_rp1-data",
+            "Source": "/var/lib/docker/volumes/reef-calcify-e4-timed1-8c6f_rp1-data/_data",
+            "Destination": "/var/lib/redpanda/data",
+            "Driver": "local",
+            "Mode": "rw",
+            "RW": true,
+            "Propagation": ""
+          }
+        ]
+      },
+      {
+        "id": "a5b4a14f137f1565368d81d21edda8bc2fcc0bf92e01b3a34ea44b453ecfbc28",
+        "status": "exited",
+        "running": false,
+        "OOMKilled": false,
+        "volumes": [
+          {
+            "Type": "volume",
+            "Name": "reef-calcify-e4-timed1-8c6f_rp2-data",
+            "Source": "/var/lib/docker/volumes/reef-calcify-e4-timed1-8c6f_rp2-data/_data",
+            "Destination": "/var/lib/redpanda/data",
+            "Driver": "local",
+            "Mode": "rw",
+            "RW": true,
+            "Propagation": ""
+          }
+        ]
+      }
+    ],
+    "ownedDiagnosticJvmRows": [],
+    "supervisorCleanupErrors": [],
+    "volumesRetained": true,
+    "scope": "actual exactregisteredbrokers + owned diagnostic JVM process readback"
+  },
+  "arm4CleanupKeys": [
+    "utc",
+    "containers",
+    "ownedDiagnosticJvmRows",
+    "supervisorCleanupErrors",
+    "volumesRetained"
+  ],
+  "arm4Cleanup": {
+    "utc": "2026-10-06T02:43:39.122527+00:00",
+    "containers": [
+      {
+        "id": "da51796997665b96755cfab24a3cc8fb1510b0a5690eb4170c734689a51d0d48",
+        "status": "exited",
+        "running": false,
+        "OOMKilled": false,
+        "volumes": [
+          {
+            "Type": "volume",
+            "Name": "reef-calcify-e4-timed2-8c6f_rp0-data",
+            "Source": "/var/lib/docker/volumes/reef-calcify-e4-timed2-8c6f_rp0-data/_data",
+            "Destination": "/var/lib/redpanda/data",
+            "Driver": "local",
+            "Mode": "rw",
+            "RW": true,
+            "Propagation": ""
+          }
+        ]
+      },
+      {
+        "id": "c4f8288c635fb768fdaeb5f626a16a55e64c83ffb26f6b5e118e183d5659d53d",
+        "status": "exited",
+        "running": false,
+        "OOMKilled": false,
+        "volumes": [
+          {
+            "Type": "volume",
+            "Name": "reef-calcify-e4-timed2-8c6f_rp1-data",
+            "Source": "/var/lib/docker/volumes/reef-calcify-e4-timed2-8c6f_rp1-data/_data",
+            "Destination": "/var/lib/redpanda/data",
+            "Driver": "local",
+            "Mode": "rw",
+            "RW": true,
+            "Propagation": ""
+          }
+        ]
+      },
+      {
+        "id": "c44b5d0cefa097514dbc39fa178e6ef8286f91f0cda69b209991ddd60153ccca",
+        "status": "exited",
+        "running": false,
+        "OOMKilled": false,
+        "volumes": [
+          {
+            "Type": "volume",
+            "Name": "reef-calcify-e4-timed2-8c6f_rp2-data",
+            "Source": "/var/lib/docker/volumes/reef-calcify-e4-timed2-8c6f_rp2-data/_data",
+            "Destination": "/var/lib/redpanda/data",
+            "Driver": "local",
+            "Mode": "rw",
+            "RW": true,
+            "Propagation": ""
+          }
+        ]
+      }
+    ],
+    "ownedDiagnosticJvmRows": [],
+    "supervisorCleanupErrors": [],
+    "volumesRetained": true
+  },
+  "arm5CleanupKeys": [
+    "schema",
+    "utc",
+    "ownedContainerIds",
+    "allExited",
+    "ownedJvmAbsent",
+    "cleanupErrors",
+    "volumesPreserved"
+  ],
+  "arm5Cleanup": {
+    "schema": "calcify-owned-cleanup-verification-v1",
+    "utc": "2026-10-06T03:11:45.295042+00:00",
+    "ownedContainerIds": [
+      "165c5fe206479ff6a5eb4dd6e8bf94ccb841104f635052aa911b1b57bebb5475",
+      "86ef7794adc5dd1c675fdf0875196ba624ac75e09b2a25aedca1137f3cd8d830",
+      "82cc3f184410c87aebbd7ef49c9e1e5849ba82fb2eddaae84d90de687843b651"
+    ],
+    "allExited": true,
+    "ownedJvmAbsent": true,
+    "cleanupErrors": [],
+    "volumesPreserved": true
+  },
+  "sampleCheckCorrection": "Initial check incorrectly compared54 total JSONL rows to53 allocation rows; one nonallocation lifecycle row. Corrected predicate counts rows containing projectAllocatedBytes. Correct53 live observations and exactpeak confirmed.",
+  "correctedValidationPassed": true
+}

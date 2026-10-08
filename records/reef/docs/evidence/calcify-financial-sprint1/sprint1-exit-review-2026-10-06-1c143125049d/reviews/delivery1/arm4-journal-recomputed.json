@@ -1,0 +1,77 @@
+{
+  "scope": {
+    "runId": "financial-s1-exit-timed2",
+    "topic": "financial-s1-exit-timed2-input",
+    "topicUuid": "v6gYLdomSxSMZwEfgkNHQA",
+    "partition": 0,
+    "domain": "hot"
+  },
+  "rawFiles": {
+    "members.bin": {
+      "bytes": 325619063,
+      "sha256": "0bcbe73f1528d8ef652ccd443a4d0ada233f99f2f047fffbabbc4e32f3665219"
+    },
+    "ordinal-index.bin": {
+      "bytes": 4756480,
+      "sha256": "e6ad4cb5b468886628ef6c1c99ff948e34c9b92b869ffe83798a7d2c68307750"
+    },
+    "writer.lock": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "scope.json": {
+      "bytes": 270,
+      "sha256": "144eecb9ba8ec36d4dd12ba62f90793298f68f8c1f9a0bb46347052d9e8caf1d"
+    },
+    "publication-witness.bin": {
+      "bytes": 1551204,
+      "sha256": "2613c31b49422b29f7c3e425ec66d24602ad5a431dafb817f9ccaa3d3219acb4"
+    },
+    "publications.bin": {
+      "bytes": 1551204,
+      "sha256": "2613c31b49422b29f7c3e425ec66d24602ad5a431dafb817f9ccaa3d3219acb4"
+    }
+  },
+  "publicationMarkerCount": 3075,
+  "validatedPublishedMembers": 297280,
+  "pairedPublishedSettleInputs": 148640,
+  "unpairedCaptureInput": 0,
+  "sourcePayloadBytes": {
+    "CAPTURE": 71144485,
+    "SETTLE": 40003665
+  },
+  "sourcePayloadMaxBytes": {
+    "CAPTURE": 482,
+    "SETTLE": 271
+  },
+  "sourcePayloadAverageBytes": {
+    "CAPTURE": 478.6362015608181,
+    "SETTLE": 269.1312230893434
+  },
+  "offeredClockSpanMs": 129572.20225,
+  "callbackClockSpanMs": 129554.031625,
+  "publishedDataBytes": 325619063,
+  "unpublishedDataTailBytes": 0,
+  "unpublishedIndexTailBytes": 0,
+  "firstPublishedMember": {
+    "ordinal": 0,
+    "offset": 0,
+    "offeredNano": 96479751674958,
+    "callbackNano": 96479774725375,
+    "clockScope": "financial-s1-exit-timed2:56600:57bdd3ef-949e-49c9-ad73-6399033e2243"
+  },
+  "lastPublishedMember": {
+    "ordinal": 297279,
+    "offset": 297279,
+    "offeredNano": 96609323877208,
+    "callbackNano": 96609328757000,
+    "clockScope": "financial-s1-exit-timed2:56600:57bdd3ef-949e-49c9-ad73-6399033e2243"
+  },
+  "sourcePrefixChecks": "Full frame SHA/chain + mirrored publication witness + ordinal index + payload SHA + topic/run/domain/physical order + paired exact synthetic source input verified; raw files unchanged before/after read",
+  "limitations": [
+    "Source publication only, not business settlement or read_committed result parity",
+    "No persisted controller admission notification nano or timedStart/deadline cut; no deadline stage counts/rates reconstructed",
+    "No completed150k cohort, result-only replay or new managed restart certified",
+    "No broker read or RocksDB opening performed"
+  ]
+}

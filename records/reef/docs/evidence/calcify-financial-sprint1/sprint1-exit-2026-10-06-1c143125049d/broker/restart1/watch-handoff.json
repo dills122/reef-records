@@ -1,0 +1,8 @@
+{
+  "accepted": true,
+  "utc": "2026-10-06T02:22:38.151411+00:00",
+  "strictSupervisorEvidence": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/arm3/proof/supervision/resource-samples.jsonl",
+  "ownedWrapperLog": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/arm3/proof/supervision/wrapper.stderr.log",
+  "firstSampleUtc": "2026-10-06T02:22:28.778Z",
+  "scope": "strict runtime supervisor observed registeredbroker+hostresources and launchedownedwrapper before setuphandoff"
+}

@@ -1,0 +1,25 @@
+{
+  "seq": 35,
+  "name": "set-log_segment_size",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "exec",
+    "5ac644f956f21f1f53a037f296af6dfe347d6af164c1e840422d355f69bffae9",
+    "rpk",
+    "cluster",
+    "config",
+    "set",
+    "log_segment_size",
+    "8388608"
+  ],
+  "startedAtMs": 102888103,
+  "startedUtc": "2026-10-06T02:07:33.734Z",
+  "stdout": "Successfully updated configuration. New configuration version is 3.\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 102888187,
+  "completedUtc": "2026-10-06T02:07:33.818Z",
+  "stdoutSha256": "e910f659a8549a200146055ff009bb83483ea4b25d74482160233e2b06193fa0",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputSha256": "64285626f634ec311f37fe1ec886a65b6ca5f96125b191aa4101d33dded3696a"
+}

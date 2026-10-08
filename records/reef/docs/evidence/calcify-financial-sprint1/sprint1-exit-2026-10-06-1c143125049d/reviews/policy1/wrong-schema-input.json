@@ -1,0 +1,27 @@
+{
+  "schema": "unexpected-schema",
+  "purpose": "EMPIRICAL_TIMED_DIAGNOSTIC",
+  "policySha256": "96168144ba7fe0676c0ba3f4fadf1ddb79ecfb9bcf0afd773267183bc674e622",
+  "heapConservativeBound": false,
+  "capacityQualification": false,
+  "deadline": {
+    "decided": 1,
+    "settled": 1
+  },
+  "heapObservation": {
+    "schema": "financial-empirical-heap-observation-v1",
+    "guardOutcome": "PASS_SAMPLED",
+    "actualMaxHeapBytes": 4294967296,
+    "admissionLimitBytes": 3435973836,
+    "heapPeakBytes": 1024,
+    "estimatedHeapBytes": null,
+    "heapConservativeBound": false
+  },
+  "restore": {
+    "records": 300001
+  },
+  "ackJournal": {
+    "publishedMembers": 300000,
+    "maxAggregateBytes": 2147483648
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "label": "capacity promotion",
+    "rejected": true
+  },
+  {
+    "label": "heap bound promotion",
+    "rejected": true
+  },
+  {
+    "label": "ordinary heap injection",
+    "rejected": true
+  },
+  {
+    "label": "bootstrap cohort",
+    "rejected": true
+  },
+  {
+    "label": "changed budget",
+    "rejected": true
+  },
+  {
+    "label": "changed pre-funding",
+    "rejected": true
+  }
+]

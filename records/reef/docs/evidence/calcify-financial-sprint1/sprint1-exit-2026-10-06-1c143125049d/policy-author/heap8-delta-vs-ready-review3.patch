@@ -1,0 +1,360 @@
+--- a/scripts/dev/calcify-financial/rate-proof.mjs
++++ b/scripts/dev/calcify-financial/rate-proof.mjs
+@@ -5,7 +5,7 @@
+ import path from 'node:path';
+ import { isDeepStrictEqual } from 'node:util';
+ import { tmpdir } from 'node:os';
+-import { EMPIRICAL_DISK_PROFILE } from './proof-supervisor.mjs';
++import { EMPIRICAL_DISK_PROFILE, EMPIRICAL_8G_DISK_PROFILE } from './proof-supervisor.mjs';
+ import { superviseRateAdapter } from './rate-supervision.mjs';
+ import { freezeBootstrap, verifyBootstrapEvidence, validateBootstrapResult } from './bootstrap-calibration.mjs';
+ import { readBoundedJSON } from './physical-adapter.mjs';
+@@ -46,18 +46,25 @@
+ // Explicit finite empirical resource permission; never conservative admission.
+ export const DIAGNOSTIC_LAUNCHER = Object.freeze({ ...HEAP_LAUNCHER,
+   flags: ['-Xms128m', '-Xmx4g'], maxHeapBytes: 4 * 1024 ** 3 });
++export const DIAGNOSTIC_8G_LAUNCHER = Object.freeze({ ...HEAP_LAUNCHER,
++  flags: ['-Xms128m', '-Xmx8g'], maxHeapBytes: 8 * 1024 ** 3 });
++export function diagnosticLauncher(profile) {
++  if (profile === EMPIRICAL_8G_DISK_PROFILE.name) return DIAGNOSTIC_8G_LAUNCHER;
++  if (profile === undefined || profile === EMPIRICAL_DISK_PROFILE.name) return DIAGNOSTIC_LAUNCHER;
++  throw Error('EMPIRICAL_RESOURCE_PROFILE_REQUIRED');
++}
+ export function freezeDiagnostic(input) {
+   const r = structuredClone(input), c = r.capability;
+-  if (r.resourceProfile !== undefined && r.resourceProfile !== EMPIRICAL_DISK_PROFILE.name) throw Error('EMPIRICAL_RESOURCE_PROFILE_REQUIRED');
++  const launcher = diagnosticLauncher(r.resourceProfile);
+   if (r.heap !== undefined || r.heapConservativeBound === true || r.capacityQualification === true
+     || r.estimatedHeapBytes != null || (r.arm && !isDeepStrictEqual(r.arm, { rate: 2500, seconds: 60, state: 'fresh' })))
+     throw Error('EMPIRICAL_DIAGNOSTIC_SCOPE_REQUIRED');
+   if (!revision(r.sourceHead) || !hash(r.fixtureSha256) || typeof r.sourceRoot !== 'string' || !path.isAbsolute(r.sourceRoot)
+     || c?.schema !== 'financial-heap-capability-v1' || c.sourceHead !== r.sourceHead || c.fixtureSha256 !== r.fixtureSha256
+     || !['configSha256', 'buildSha256', 'classpathSha256'].every(k => hash(c[k]))
+-    || c.maxHeapBytes !== DIAGNOSTIC_LAUNCHER.maxHeapBytes || !nonnegative(c.usedHeapBytes)
++    || c.maxHeapBytes !== launcher.maxHeapBytes || !nonnegative(c.usedHeapBytes)
+     || c.usedHeapBytes >= Math.floor(c.maxHeapBytes * 4 / 5)
+-    || !isDeepStrictEqual(c.vmArguments, DIAGNOSTIC_LAUNCHER.flags)
++    || !isDeepStrictEqual(c.vmArguments, launcher.flags)
+     || typeof c.javaVersion !== 'string' || !/^21(?:[.+-]|$)/.test(c.javaVersion) || typeof c.javaVendor !== 'string' || !c.javaVendor)
+     throw Error('EMPIRICAL_PINNED_CAPABILITY_REQUIRED');
+   if (r.correctness?.result !== 'PASS' || !hash(r.correctness.evidenceSha256)
+@@ -73,7 +80,7 @@
+   return { ...frozen, policySha256: sha(frozen) };
+ }
+ export async function verifyDiagnosticEvidence(policy, policyPath, configPath, actual = policy.capability) {
+-  const frozen = freezeDiagnostic(policy);
++  const frozen = freezeDiagnostic(policy), launcher = diagnosticLauncher(policy.resourceProfile);
+   if (!isDeepStrictEqual(frozen, policy)) throw Error('EMPIRICAL_FROZEN_POLICY_CHANGED');
+   const root = await realpath(path.dirname(path.resolve(policyPath)));
+   const owned = async name => { const file = await realpath(path.resolve(root, name));
+@@ -91,7 +98,7 @@
+     throw Error('EMPIRICAL_FIXTURE_CONFIG_MISMATCH');
+   const immutable = c => Object.fromEntries(Object.entries(c).filter(([k]) => k !== 'usedHeapBytes'));
+   if (!isDeepStrictEqual(immutable(actual), immutable(policy.capability)) || !nonnegative(actual.usedHeapBytes)
+-    || actual.usedHeapBytes >= Math.floor(DIAGNOSTIC_LAUNCHER.maxHeapBytes * 4 / 5)) throw Error('EMPIRICAL_ACTUAL_CAPABILITY_DRIFT');
++    || actual.usedHeapBytes >= Math.floor(launcher.maxHeapBytes * 4 / 5)) throw Error('EMPIRICAL_ACTUAL_CAPABILITY_DRIFT');
+   for (const [name, key] of [['FinancialKernel.kt', 'kernelSha256'], ['FinancialBrokerProbe.kt', 'managedAdapterSha256']]) {
+     const file = path.join(policy.sourceRoot, 'services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial', name);
+     if (createHash('sha256').update(await readFile(file)).digest('hex') !== policy.runtimeProofHashes[key]) throw Error('EMPIRICAL_RUNTIME_PROOF_SOURCE_DRIFT');
+@@ -99,7 +106,7 @@
+   return frozen;
+ }
+ export function assessDiagnostic(policy, measurement) {
+-  const policyValid = isDeepStrictEqual(freezeDiagnostic(policy), policy);
++  const policyValid = isDeepStrictEqual(freezeDiagnostic(policy), policy), launcher = diagnosticLauncher(policy.resourceProfile);
+   const conservativeShape = { ...policy, status: 'FROZEN', heap: { capability: policy.capability },
+     heapEstimate: { estimatedHeapBytes: null } };
+   conservativeShape.policySha256 = sha(Object.fromEntries(Object.entries(conservativeShape).filter(([k]) => k !== 'policySha256')));
+@@ -107,7 +114,7 @@
+   const result = assessMeasurement(conservativeShape, { ...measurement, policySha256: conservativeShape.policySha256 });
+   result.gaps = result.gaps.filter(g => g !== 'HEAP_LIFECYCLE_OBSERVATION_REQUIRED');
+   result.failures = result.failures.filter(f => f !== 'HEAP_LIFECYCLE_PROTECTION_FAILED'
+-    && !(f === 'DISK_BUDGET_EXCEEDED' && policy.resourceProfile === EMPIRICAL_DISK_PROFILE.name));
++    && !(f === 'DISK_BUDGET_EXCEEDED' && [EMPIRICAL_DISK_PROFILE.name, EMPIRICAL_8G_DISK_PROFILE.name].includes(policy.resourceProfile)));
+   if (nonnegative(measurement?.resources?.diskPeakBytes) && measurement.resources.diskPeakBytes > policy.diskBudgetBytes)
+     result.failures.push('EMPIRICAL_DISK_BUDGET_EXCEEDED');
+   const supportedSchema = measurement?.schema === 'financial-rate-measurement-v1';
+@@ -118,8 +125,8 @@
+   if (!supportedSchema) result.failures.push('EMPIRICAL_MEASUREMENT_SCHEMA_REQUIRED');
+   if (!validEnvelope) result.failures.push('EMPIRICAL_SCOPE_OR_PROVENANCE_MISMATCH');
+   if (observation?.schema !== 'financial-empirical-heap-observation-v1' || observation.guardOutcome !== 'PASS_SAMPLED'
+-    || observation.actualMaxHeapBytes !== DIAGNOSTIC_LAUNCHER.maxHeapBytes
+-    || observation.admissionLimitBytes !== Math.floor(DIAGNOSTIC_LAUNCHER.maxHeapBytes * 4 / 5)
++    || observation.actualMaxHeapBytes !== launcher.maxHeapBytes
++    || observation.admissionLimitBytes !== Math.floor(launcher.maxHeapBytes * 4 / 5)
+     || !nonnegative(observation.heapPeakBytes) || observation.heapPeakBytes >= observation.admissionLimitBytes
+     || observation.estimatedHeapBytes !== null || observation.heapConservativeBound !== false)
+     result.failures.push('EMPIRICAL_HEAP_PROTECTION_FAILED');
+@@ -139,7 +146,7 @@
+ export async function diagnosticAdapter(policyPath, adapterPath, out, authorize) {
+   if (authorize !== '--authorize-load') throw Error('Explicit --authorize-load required.');
+   const policy = await readBoundedJSON(policyPath, 1024 * 1024), adapter = await readBoundedJSON(adapterPath, 65536);
+-  const pinned = pinnedHeapAdapter(adapter, 'diagnostic-run', DIAGNOSTIC_LAUNCHER);
++  const pinned = pinnedHeapAdapter(adapter, 'diagnostic-run', diagnosticLauncher(policy.resourceProfile));
+   await verifyDiagnosticEvidence(policy, policyPath, pinned[8]);
+   const lockPath = capacityLockPath(), lock = await open(lockPath, 'wx');
+   try {
+--- a/scripts/dev/calcify-financial/rate-proof.test.mjs
++++ b/scripts/dev/calcify-financial/rate-proof.test.mjs
+@@ -463,6 +463,11 @@
+   const larger = freezeDiagnostic({ ...request, resourceProfile: 'financial-empirical-disk16-v1' });
+   assert.equal(larger.diskBudgetBytes, 16 * 1024 ** 3); assert.equal(p.diskBudgetBytes, 10 * 1024 ** 3);
+   assert.throws(() => freezeDiagnostic({ ...request, resourceProfile: 'custom' }), /RESOURCE_PROFILE/);
++  const eight = freezeDiagnostic({ ...request, resourceProfile: 'financial-empirical-heap8-disk16-v1',
++    capability: { ...request.capability, maxHeapBytes: 8 * 1024 ** 3, vmArguments: ['-Xms128m', '-Xmx8g'] } });
++  assert.equal(eight.capability.maxHeapBytes, 8 * 1024 ** 3); assert.equal(eight.diskBudgetBytes, 16 * 1024 ** 3);
++  assert.throws(() => freezeDiagnostic({ ...eight, capability: request.capability }), /PINNED_CAPABILITY/);
++  assert.throws(() => freezeDiagnostic({ ...request, capability: eight.capability }), /PINNED_CAPABILITY/);
+   assert.equal(p.expectedTimedTrades, 150000); assert.equal(p.estimatedHeapBytes, null);
+   assert.equal(p.capacityQualification, false); assert.equal(p.heapConservativeBound, false);
+   assert.equal(p.ackJournalMaxBytes, 2 * 1024 ** 3);
+@@ -494,6 +499,12 @@
+   const larger = freezeDiagnostic({ ...p, resourceProfile: 'financial-empirical-disk16-v1' });
+   const largerMeasurement = { ...m, policySha256: larger.policySha256, resources: { ...m.resources, diskPeakBytes: 12 * 1024 ** 3 } };
+   assert.equal(assessDiagnostic(larger, largerMeasurement).failures.includes('DISK_BUDGET_EXCEEDED'), false);
++  const eight = freezeDiagnostic({ ...larger, resourceProfile: 'financial-empirical-heap8-disk16-v1',
++    capability: { ...larger.capability, maxHeapBytes: 8 * 1024 ** 3, vmArguments: ['-Xms128m', '-Xmx8g'] } });
++  const eightMeasurement = { ...largerMeasurement, policySha256: eight.policySha256,
++    heapObservation: { ...m.heapObservation, actualMaxHeapBytes: 8 * 1024 ** 3, admissionLimitBytes: Math.floor(8 * 1024 ** 3 * 4 / 5) } };
++  assert.equal(assessDiagnostic(eight, eightMeasurement).result, 'LIMITED');
++  assert.ok(assessDiagnostic(eight, { ...eightMeasurement, heapObservation: m.heapObservation }).failures.includes('EMPIRICAL_HEAP_PROTECTION_FAILED'));
+   assert.equal(assessDiagnostic(p, { ...largerMeasurement, policySha256: p.policySha256 }).failures.includes('EMPIRICAL_DISK_BUDGET_EXCEEDED'), true);
+   m.deadline = { offered: 150000, admitted: 75000, decided: 75000, settled: 75000, pending: 0 };
+   const miss = assessDiagnostic(p, m);
+--- a/scripts/dev/calcify-financial/rate-supervision.mjs
++++ b/scripts/dev/calcify-financial/rate-supervision.mjs
+@@ -2,7 +2,7 @@
+ import { readFile, realpath } from 'node:fs/promises';
+ import path from 'node:path';
+ import { isDeepStrictEqual } from 'node:util';
+-import { validatePreflight, validateBrokerEndpoints, superviseProof, dockerDependencies, launchOwnedWrapper, EMPIRICAL_DISK_PROFILE } from './proof-supervisor.mjs';
++import { validatePreflight, validateBrokerEndpoints, superviseProof, dockerDependencies, launchOwnedWrapper, EMPIRICAL_DISK_PROFILE, EMPIRICAL_8G_DISK_PROFILE } from './proof-supervisor.mjs';
+ import { readBoundedJSON } from './physical-adapter.mjs';
+ 
+ export function validateBootstrapRuntime(config, supervisor, output, brokerArgument) {
+@@ -33,7 +33,7 @@
+ 
+ export function validateRateResourcePolicy(p, policy) {
+   if (p.resourceProfile === undefined && policy.resourceProfile === undefined) return policy;
+-  if (p.resourceProfile !== EMPIRICAL_DISK_PROFILE.name || policy.resourceProfile !== p.resourceProfile
++  if (![EMPIRICAL_DISK_PROFILE.name, EMPIRICAL_8G_DISK_PROFILE.name].includes(p.resourceProfile) || policy.resourceProfile !== p.resourceProfile
+     || policy.schema !== 'financial-empirical-timed-policy-v1' || policy.status !== 'FROZEN_EMPIRICAL_DIAGNOSTIC'
+     || policy.capacityQualification !== false || policy.heapConservativeBound !== false
+     || policy.diskBudgetBytes !== EMPIRICAL_DISK_PROFILE.hardAllocatedBytes
+--- a/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt
++++ b/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuard.kt
+@@ -66,7 +66,7 @@
+     private sealed interface Profile {
+         data class Conservative(val bounds: FinancialHeapBounds, val estimate: Long) : Profile
+         data class DiagnosticBootstrap(val preloadOperationalCeilingBytes: Long?) : Profile
+-        data object EmpiricalTimed : Profile
++        data class EmpiricalTimed(val authorizedMax: Long) : Profile
+     }
+ 
+     constructor(
+@@ -81,10 +81,12 @@
+ 
+     companion object {
+         const val EMPIRICAL_MAX = 4L * 1024 * 1024 * 1024
++        const val EMPIRICAL_8G_MAX = 8L * 1024 * 1024 * 1024
+         internal fun empiricalTimed(capabilityMax: Long,
+-            sensor: () -> FinancialHeapSnapshot = ::runtimeSnapshot, clock: () -> Long = System::nanoTime): FinancialHeapGuard {
+-            require(capabilityMax == EMPIRICAL_MAX) { "EMPIRICAL_PINNED_MAX_REQUIRED" }
+-            return FinancialHeapGuard(Profile.EmpiricalTimed, capabilityMax, sensor, clock, 250, 5_000_000_000L)
++            sensor: () -> FinancialHeapSnapshot = ::runtimeSnapshot, clock: () -> Long = System::nanoTime,
++            authorizedMax: Long = EMPIRICAL_MAX): FinancialHeapGuard {
++            require(authorizedMax in listOf(EMPIRICAL_MAX, EMPIRICAL_8G_MAX) && capabilityMax == authorizedMax) { "EMPIRICAL_PINNED_MAX_REQUIRED" }
++            return FinancialHeapGuard(Profile.EmpiricalTimed(authorizedMax), capabilityMax, sensor, clock, 250, 5_000_000_000L)
+         }
+         private fun runtimeSnapshot() = FinancialHeapSnapshot(Runtime.getRuntime().maxMemory(),
+             ManagementFactory.getMemoryMXBean().heapMemoryUsage.used, System.nanoTime())
+@@ -128,8 +130,8 @@
+             require(profile.estimate > 0 && profile.estimate <= FinancialHeapBounds.MAX_SAFE_INTEGER) { "HEAP_ESTIMATE_INVALID" }
+     }
+     private fun profileLimit(max: Long): Long {
+-        if (profile != Profile.EmpiricalTimed) return FinancialHeapBounds.limit(max)
+-        require(max == EMPIRICAL_MAX) { "EMPIRICAL_PINNED_MAX_REQUIRED" }
++        if (profile !is Profile.EmpiricalTimed) return FinancialHeapBounds.limit(max)
++        require(max == profile.authorizedMax) { "EMPIRICAL_PINNED_MAX_REQUIRED" }
+         return Math.multiplyExact(max, 4L) / 5L
+     }
+     private fun fail(error: Throwable) { firstFailure.compareAndSet(null, error) }
+@@ -147,7 +149,7 @@
+             }
+             require(s.maxHeapBytes == actualMaxHeapBytes) { "HEAP_MAX_CHANGED" }
+             when (val p = profile) {
+-                Profile.EmpiricalTimed -> Unit
++                is Profile.EmpiricalTimed -> Unit
+                 is Profile.Conservative -> require(p.estimate < limit) { "HEAP_ADMISSION_LIMIT" }
+                 is Profile.DiagnosticBootstrap -> require(p.preloadOperationalCeilingBytes == null || p.preloadOperationalCeilingBytes < limit) { "HEAP_PRELOAD_OPERATIONAL_CEILING_INVALID" }
+             }
+@@ -171,7 +173,7 @@
+         refresh(stage)
+         val s = latest.get()
+         when (val p = profile) {
+-            Profile.EmpiricalTimed -> Unit
++            is Profile.EmpiricalTimed -> Unit
+             is Profile.Conservative -> if (s.usedHeapBytes > p.bounds.baselineHeapBytesUpper) {
+                 fail(IllegalStateException("HEAP_BASELINE_BOUND_EXCEEDED stage=$stage")); checkpoint(stage)
+             }
+@@ -194,13 +196,13 @@
+             catch (error: Throwable) { fail(error) }
+         }, "financial-heap-guard").apply { isDaemon = true; start() }
+     }
+-    fun telemetry(): Map<String, Any?> = mapOf("schema" to when (profile) { is Profile.Conservative -> "financial-heap-observation-v1"; is Profile.DiagnosticBootstrap -> "financial-bootstrap-heap-observation-v1"; Profile.EmpiricalTimed -> "financial-empirical-heap-observation-v1" }, "guardOutcome" to if (failure != null) "FAILED" else if (latest.get() == null) "UNSTARTED" else "PASS_SAMPLED", "actualMaxHeapBytes" to actualMaxHeapBytes,
++    fun telemetry(): Map<String, Any?> = mapOf("schema" to when (profile) { is Profile.Conservative -> "financial-heap-observation-v1"; is Profile.DiagnosticBootstrap -> "financial-bootstrap-heap-observation-v1"; is Profile.EmpiricalTimed -> "financial-empirical-heap-observation-v1" }, "guardOutcome" to if (failure != null) "FAILED" else if (latest.get() == null) "UNSTARTED" else "PASS_SAMPLED", "actualMaxHeapBytes" to actualMaxHeapBytes,
+         "admissionLimitBytes" to admissionLimitBytes, "estimatedHeapBytes" to (profile as? Profile.Conservative)?.estimate, "heapPeakBytes" to peak.get(),
+         "baselineObservations" to synchronized(baselineObservations) { baselineObservations.toList() },
+         "pollMillis" to pollMillis, "maxSampleAgeNanos" to maxSampleAgeNanos, "sampled" to true,
+         "limitation" to "Sudden allocation may outrun sampled protection; native/RSS memory unbounded; no OOM guarantee") +
+         if (profile is Profile.DiagnosticBootstrap) mapOf("purpose" to "EMPIRICAL_BOUNDED_DIAGNOSTIC", "heapConservativeBound" to false,
+-            "preloadOperationalCeilingBytes" to profile.preloadOperationalCeilingBytes) else if (profile == Profile.EmpiricalTimed) mapOf("purpose" to "EMPIRICAL_TIMED_DIAGNOSTIC", "heapConservativeBound" to false) else emptyMap()
++            "preloadOperationalCeilingBytes" to profile.preloadOperationalCeilingBytes) else if (profile is Profile.EmpiricalTimed) mapOf("purpose" to "EMPIRICAL_TIMED_DIAGNOSTIC", "heapConservativeBound" to false) else emptyMap()
+ 
+     /** Stage bytes first; sensor stops and final check succeeds before atomic publication. */
+     fun publish(path: Path, contents: String, auxiliary: Pair<Path, String>? = null) {
+--- a/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt
++++ b/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialHeapGuardTest.kt
+@@ -319,4 +319,18 @@
+             used.set(0); assertFailsWith<IllegalStateException> { g.refresh("after-gc") }
+         }
+     }
++    @Test fun empiricalEightGiBRequiresSeparateExplicitAuthorizationAndExactObservedMaximum() {
++        val max = FinancialHeapGuard.EMPIRICAL_8G_MAX
++        assertFailsWith<IllegalArgumentException> { FinancialHeapGuard.empiricalTimed(max) }
++        assertFailsWith<IllegalArgumentException> { FinancialHeapGuard.empiricalTimed(FinancialHeapGuard.EMPIRICAL_MAX, authorizedMax = max) }
++        assertFailsWith<IllegalArgumentException> { FinancialHeapGuard.empiricalTimed(max, authorizedMax = max + 1) }
++        FinancialHeapGuard.empiricalTimed(max, { FinancialHeapSnapshot(max, 128, 0) }, { 0 }, authorizedMax = max).use { g ->
++            g.start(); assertEquals(max * 4 / 5, g.admissionLimitBytes)
++            assertEquals(max, g.telemetry()["actualMaxHeapBytes"])
++            assertEquals(false, g.telemetry()["heapConservativeBound"])
++        }
++        FinancialHeapGuard.empiricalTimed(max, { FinancialHeapSnapshot(FinancialHeapGuard.EMPIRICAL_MAX, 128, 0) }, { 0 }, authorizedMax = max).use {
++            assertFailsWith<IllegalStateException> { it.start() }
++        }
++    }
+ }
+--- a/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt
++++ b/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateProbe.kt
+@@ -247,9 +247,11 @@
+     /** Finite empirical resource permission; never an ordinary conservative policy. */
+     internal fun diagnosticDiskBudget(spec: JsonNode): Long {
+         if (!spec.has("resourceProfile")) return DISK_CAP
+-        require(spec["resourceProfile"]?.asText() == "financial-empirical-disk16-v1") { "EMPIRICAL_RESOURCE_PROFILE_REQUIRED" }
++        require(spec["resourceProfile"]?.asText() in setOf("financial-empirical-disk16-v1", "financial-empirical-heap8-disk16-v1")) { "EMPIRICAL_RESOURCE_PROFILE_REQUIRED" }
+         return 16L * 1024 * 1024 * 1024
+     }
++    internal fun diagnosticHeapMax(spec: JsonNode): Long =
++        if (spec["resourceProfile"]?.asText() == "financial-empirical-heap8-disk16-v1") FinancialHeapGuard.EMPIRICAL_8G_MAX else FinancialHeapGuard.EMPIRICAL_MAX
+     internal fun validateDiagnosticPolicy(spec: JsonNode) {
+         require(spec["schema"]?.asText() == "financial-empirical-timed-policy-v1"
+             && spec["status"]?.asText() == "FROZEN_EMPIRICAL_DIAGNOSTIC"
+@@ -287,8 +289,9 @@
+         val actual = heapCapability(spec["sourceHead"].asText(), fixture, configPath)
+         for (field in listOf("schema", "sourceHead", "fixtureSha256", "configSha256", "buildSha256", "classpathSha256", "javaVersion", "javaVendor", "classpathEntries", "maxHeapBytes", "vmArguments"))
+             require(cap[field] != null && cap[field] == actual[field]) { "EMPIRICAL_CAPABILITY_DRIFT field=$field" }
+-        require(actual["vmArguments"] == node(listOf("-Xms128m", "-Xmx4g"))
+-            && actual["maxHeapBytes"].asLong() == FinancialHeapGuard.EMPIRICAL_MAX) { "EMPIRICAL_PINNED_VM_REQUIRED" }
++        val authorizedHeap = diagnosticHeapMax(spec)
++        require(actual["vmArguments"] == node(listOf("-Xms128m", if (authorizedHeap == FinancialHeapGuard.EMPIRICAL_8G_MAX) "-Xmx8g" else "-Xmx4g"))
++            && actual["maxHeapBytes"].asLong() == authorizedHeap) { "EMPIRICAL_PINNED_VM_REQUIRED" }
+         val sourceRoot = Path.of(spec["sourceRoot"].asText()).toRealPath()
+         require(actual["classpathEntries"].any { it.asText() == sourceRoot.resolve("services/platform-runtime/build/classes/kotlin/test").toString() }) { "EMPIRICAL_SOURCE_BUILD_ROOT" }
+         for ((name, key) in listOf("FinancialKernel.kt" to "kernelSha256", "FinancialBrokerProbe.kt" to "managedAdapterSha256")) {
+@@ -296,7 +299,7 @@
+             require(digest == spec["runtimeProofHashes"][key].asText() && digest == correctness[key].asText()) { "EMPIRICAL_CORRECTNESS_SOURCE_DRIFT" }
+         }
+         require(json.readTree(Files.readString(configPath))["policy"] == json.readTree(Files.readString(fixture))["policy"]) { "EMPIRICAL_POLICY_FIXTURE" }
+-        return FinancialHeapGuard.empiricalTimed(actual["maxHeapBytes"].asLong())
++        return FinancialHeapGuard.empiricalTimed(actual["maxHeapBytes"].asLong(), authorizedMax = authorizedHeap)
+     }
+ 
+     internal fun validateBootstrapCounts(spec: JsonNode) {
+@@ -984,7 +987,7 @@
+                 "resources" to mapOf("processCpuMs" to cpuMs, "heapPeakBytes" to heapArtifact.resourcePeakBytes, "heapPeakScope" to heapArtifact.peakScope, "rssPeakBytes" to rssPeak, "diskPeakBytes" to diskPeak, "encodedInputBytes" to inputBytes.get(), "encodedResultBytes" to outputBytes.get(), "encodedTechnicalBytes" to null, "physicalBrokerBytes" to physicalEnd?.first, "physicalChangelogBytes" to physicalEnd?.second, "touchedKeys" to keys.get(), "technicalRecords" to covered.get(), "transactionWaitMs" to txnMs),
+                 "heapObservation" to heapArtifact.observation, "stageLatency" to synchronized(latency) { val sorted = latency.sorted(); mapOf("kind" to "sampled-individual", "stage" to "offer-to-read-committed-settlement", "clockDomain" to "same-monotonic", "samples" to sorted.size, "p95Ms" to sorted.getOrNull((sorted.size * .95).toInt()), "p99Ms" to sorted.getOrNull((sorted.size * .99).toInt())) },
+                 "restore" to mapOf("kind" to "result-only-replay", "records" to expectedHistory, "bytes" to restoreBytes, "elapsedMs" to restoreMs, "verifiedCut" to true), "ackJournal" to journal.telemetry(), "gaps" to listOf("Actual managed restart remains separate from result-only replay and broker-free journal process-crash controls", "Encoded technical store bytes uninstrumented", "CPU scope same-JVM worker+producer+observer; broker CPU unmeasured", "Touched keys = emitted state/history/coverage/cert writes; framework reads excluded"), "capacityQualification" to false) + if (diagnostic) mapOf("purpose" to "EMPIRICAL_TIMED_DIAGNOSTIC", "heapConservativeBound" to false,
+-                "estimatedHeapBytes" to null, "explicitHeapBudgetBytes" to FinancialHeapGuard.EMPIRICAL_MAX,
++                "estimatedHeapBytes" to null, "explicitHeapBudgetBytes" to guard.actualMaxHeapBytes,
+                 "journalBudgetBytes" to journalCap, "managedRestartVerified" to false, "diskBudgetBytes" to diskCap, "resourceProfile" to spec["resourceProfile"]?.asText()) else emptyMap()
+             journal.checkHealthy(); guard.publish(outPath, json.writerWithDefaultPrettyPrinter().writeValueAsString(result) + "\n", parityPath to parityContent); println(json.writeValueAsString(mapOf("artifact" to outPath.toString(), "offered" to offered.get(), "admitted" to admitted.get(), "settled" to settled.get())))
+             }
+--- a/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateReferenceTest.kt
++++ b/services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialRateReferenceTest.kt
+@@ -207,6 +207,11 @@
+         FinancialRateProbe.validateDiagnosticPolicy(sign(spec()))
+         val larger = spec().apply { put("resourceProfile", "financial-empirical-disk16-v1"); put("diskBudgetBytes", 16L * 1024 * 1024 * 1024) }
+         FinancialRateProbe.validateDiagnosticPolicy(sign(larger))
++        val eight = larger.deepCopy().apply { put("resourceProfile", "financial-empirical-heap8-disk16-v1") }
++        FinancialRateProbe.validateDiagnosticPolicy(sign(eight))
++        assertEquals(FinancialHeapGuard.EMPIRICAL_8G_MAX, FinancialRateProbe.diagnosticHeapMax(eight))
++        assertEquals(FinancialHeapGuard.EMPIRICAL_MAX, FinancialRateProbe.diagnosticHeapMax(larger))
++        assertEquals(FinancialHeapGuard.EMPIRICAL_MAX, FinancialRateProbe.diagnosticHeapMax(spec()))
+         larger.put("diskBudgetBytes", 10L * 1024 * 1024 * 1024)
+         assertFailsWith<IllegalArgumentException> { FinancialRateProbe.validateDiagnosticPolicy(sign(larger)) }
+         larger.put("resourceProfile", "custom")
+--- a/scripts/dev/calcify-financial/rate-supervision.test.mjs
++++ b/scripts/dev/calcify-financial/rate-supervision.test.mjs
+@@ -213,6 +213,12 @@
+   const p = { resourceProfile: policy.resourceProfile, resourcePolicyBinding: { resourceProfile: policy.resourceProfile,
+     diskBudgetBytes: policy.diskBudgetBytes, policySha256: policy.policySha256 } };
+   assert.equal(validateRateResourcePolicy(p, policy), policy);
++  const eight = { ...policy, resourceProfile: 'financial-empirical-heap8-disk16-v1' }; delete eight.policySha256;
++  eight.policySha256 = createHash('sha256').update(JSON.stringify(eight)).digest('hex');
++  const eightSupervisor = { resourceProfile: eight.resourceProfile, resourcePolicyBinding: { resourceProfile: eight.resourceProfile,
++    diskBudgetBytes: eight.diskBudgetBytes, policySha256: eight.policySha256 } };
++  assert.equal(validateRateResourcePolicy(eightSupervisor, eight), eight);
++  assert.throws(() => validateRateResourcePolicy(p, eight), /RESOURCE_POLICY_MISMATCH/);
+   for (const changed of [{ ...policy, resourceProfile: undefined }, { ...policy, diskBudgetBytes: 10 * 1024 ** 3 },
+     { ...policy, policySha256: 'f'.repeat(64) }, { ...policy, capacityQualification: true }])
+     assert.throws(() => validateRateResourcePolicy(p, changed), /RESOURCE_POLICY_MISMATCH/);
+--- a/scripts/dev/calcify-financial/proof-supervisor.mjs
++++ b/scripts/dev/calcify-financial/proof-supervisor.mjs
+@@ -15,25 +15,27 @@
+   guestFreeBytesFloor: 20 * GiB, rawProofBytes: 256 * 1024 ** 2, sampleIntervalMs: 5000 });
+ export const EMPIRICAL_DISK_PROFILE = Object.freeze({ name: 'financial-empirical-disk16-v1',
+   abortAllocatedBytes: 14 * GiB, hardAllocatedBytes: 16 * GiB });
++export const EMPIRICAL_8G_DISK_PROFILE = Object.freeze({ ...EMPIRICAL_DISK_PROFILE, name: 'financial-empirical-heap8-disk16-v1' });
+ export function resourceBudgets(p) {
+   if (p.resourceProfile === undefined) {
+     requireValue(p.resourcePolicyBinding === undefined, 'resource policy binding requires named profile');
+     return BUDGETS;
+   }
+   const a = p.wrapper?.argv, b = p.resourcePolicyBinding;
+-  requireValue(p.resourceProfile === EMPIRICAL_DISK_PROFILE.name && !p.externalBrokerFault
++  const selected = p.resourceProfile === EMPIRICAL_8G_DISK_PROFILE.name ? EMPIRICAL_8G_DISK_PROFILE : EMPIRICAL_DISK_PROFILE;
++  requireValue(p.resourceProfile === selected.name && !p.externalBrokerFault
+     && p.budgets === undefined && p.abortAllocatedBytes === undefined && p.hardAllocatedBytes === undefined
+     && p.hostLocalResources?.paths?.length === 3
+     && Array.isArray(a) && a.length === 14
+     && a[0] === '/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/java'
+-    && a[1] === '-Xms128m' && a[2] === '-Xmx4g' && a[3] === '-cp' && a[4]
++    && a[1] === '-Xms128m' && a[2] === (selected === EMPIRICAL_8G_DISK_PROFILE ? '-Xmx8g' : '-Xmx4g') && a[3] === '-cp' && a[4]
+     && a[5] === 'com.reef.platform.calcify.financial.FinancialRateProbe' && a[6] === 'diagnostic-run'
+     && a[8].startsWith('financial-s1-') && isAbsolute(a[9])
+     && a[10] === '--financial-rate-policy' && isAbsolute(a[11])
+     && a[12] === '--financial-rate-measurement' && isAbsolute(a[13])
+     && b?.resourceProfile === p.resourceProfile && b.diskBudgetBytes === EMPIRICAL_DISK_PROFILE.hardAllocatedBytes
+     && /^[a-f0-9]{64}$/.test(b.policySha256 ?? ''), 'unsupported empirical resource profile or policy binding');
+-  return { ...BUDGETS, ...EMPIRICAL_DISK_PROFILE };
++  return { ...BUDGETS, ...selected };
+ }
+ const SAMPLE_LEAD_MS = 200; // start early; strict five-second heartbeat has no grace
+ const RECOVERY_SAMPLE_INTERVAL_MS = 1000; // scheduling target; bounded monitor latency may exceed one second
+--- a/scripts/dev/calcify-financial/proof-supervisor.test.mjs
++++ b/scripts/dev/calcify-financial/proof-supervisor.test.mjs
+@@ -775,6 +775,14 @@
+   p.wrapper.argv = ['/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/java', '-Xms128m', '-Xmx4g', '-cp', '/tmp/classes',
+     'com.reef.platform.calcify.financial.FinancialRateProbe', 'diagnostic-run', '127.0.0.1:41092', 'financial-s1-test', '/tmp/config.json',
+     '--financial-rate-policy', '/tmp/policy.json', '--financial-rate-measurement', '/tmp/measurement.json'];
++  const eight = structuredClone(p);
++  eight.resourceProfile = 'financial-empirical-heap8-disk16-v1'; eight.resourcePolicyBinding.resourceProfile = eight.resourceProfile;
++  eight.wrapper.argv[2] = '-Xmx8g';
++  assert.equal(validatePreflight(eight).wrapper.argv[2], '-Xmx8g');
++  const wrongFlags = structuredClone(eight); wrongFlags.wrapper.argv[2] = '-Xmx4g';
++  assert.throws(() => validatePreflight(wrongFlags));
++  const wrongOldFlags = structuredClone(p); wrongOldFlags.wrapper.argv[2] = '-Xmx8g';
++  assert.throws(() => validatePreflight(wrongOldFlags));
+   const f = validatePreflight(p), observation = sample(f);
+   observation.hostLocalAllocations = p.hostLocalResources.paths.map(r => ({ ...r, allocatedBytes: 0, allocationMode: 'du-allocated' })); observation.containers[0].allocatedBytes = 11 * GiB;
+   assert.equal(validateSample(f, observation, 10000).projectAllocatedBytes, 13 * GiB);

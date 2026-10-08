@@ -1,0 +1,16 @@
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Exception in thread "main" java.lang.IllegalStateException: heap protection refused stage=send
+	at com.reef.platform.calcify.financial.FinancialHeapGuard.checkpoint(FinancialHeapGuard.kt:162)
+	at com.reef.platform.calcify.financial.FinancialRateProbe.main$lambda$8$4$4$send(FinancialRateProbe.kt:855)
+	at com.reef.platform.calcify.financial.FinancialRateProbe.main$lambda$8(FinancialRateProbe.kt:874)
+	at com.reef.platform.calcify.financial.FinancialRateProbe.withHeapProtection$platform_runtime_test(FinancialRateProbe.kt:542)
+	at com.reef.platform.calcify.financial.FinancialRateProbe.main(FinancialRateProbe.kt:710)
+Caused by: java.lang.IllegalStateException: heap failure stage=heap-sensor
+	at com.reef.platform.calcify.financial.FinancialHeapGuard.refresh(FinancialHeapGuard.kt:156)
+	at com.reef.platform.calcify.financial.FinancialHeapGuard.start$lambda$0(FinancialHeapGuard.kt:192)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.IllegalArgumentException: HEAP_OBSERVED_LIMIT
+	at com.reef.platform.calcify.financial.FinancialHeapGuard.refresh(FinancialHeapGuard.kt:154)
+	... 2 more

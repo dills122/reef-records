@@ -1,0 +1,9 @@
+{
+  "accepted": true,
+  "utc": "2026-10-06T02:39:32.485104+00:00",
+  "strictSupervisorEvidence": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/arm4/proof/supervision/resource-samples.jsonl",
+  "ownedWrapperLog": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/arm4/proof/supervision/wrapper.stderr.log",
+  "firstSampleUtc": "2026-10-06T02:39:20.457Z",
+  "resourceProfile": "financial-empirical-disk16-v1",
+  "scope": "strict14/16GiB runtime supervisor observedregisteredbroker+hostresources and launchedownedwrapper beforehandoff"
+}

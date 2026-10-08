@@ -1,0 +1,37 @@
+{
+  "firstSample": {
+    "utc": "2026-10-06T02:22:28.778Z",
+    "projectAllocatedBytes": 50577408,
+    "brokerAllocatedBytes": 50528256,
+    "hostAllocatedBytes": 49152
+  },
+  "lastValidSample": {
+    "utc": "2026-10-06T02:24:28.824Z",
+    "projectAllocatedBytes": 9649577984,
+    "brokerAllocatedBytes": 8235102208,
+    "hostAllocatedBytes": 1414475776
+  },
+  "rejectedObservation": {
+    "utc": "2026-10-06T02:24:33.632Z",
+    "sampledAtMs": 103907934,
+    "brokerAllocatedBytes": 8690835456,
+    "hostAllocatedBytes": 1464602624,
+    "guestFreeBytes": 88424861696,
+    "projectAllocatedBytes": 10155438080
+  },
+  "closedVolumeCategoryAllocatedBytesRF3Sum": {
+    "__consumer_offsets": 356352,
+    "financial-s1-exit-timed1-input": 319766528,
+    "financial-s1-exit-timed1-results": 2313555968,
+    "financial-s1-exit-timed1-streams-financial-state-changelog": 4139024384,
+    "id_allocator": 86016,
+    "tx": 3674112,
+    "controller": 61440,
+    "kvstore": 679936
+  },
+  "journalPublishedSourceInputs": 272154,
+  "journalSourcePayloadBytes": 101688211,
+  "closedJournalLogicalBytes": 305233482,
+  "sourcePayloadBytesPerPublishedTrade": 747.2843390139407,
+  "journalLogicalBytesPerPublishedTrade": 2243.093851275381
+}

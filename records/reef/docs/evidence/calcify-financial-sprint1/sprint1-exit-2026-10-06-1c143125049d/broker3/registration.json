@@ -1,0 +1,83 @@
+{
+  "schema": "calcify-e4-created-broker-registry-v1",
+  "createdUtc": "2026-10-06T02:58:58.022Z",
+  "registeredResources": {
+    "project": "reef-calcify-e4-timed3-8c6f",
+    "containers": [
+      {
+        "id": "165c5fe206479ff6a5eb4dd6e8bf94ccb841104f635052aa911b1b57bebb5475",
+        "brokerId": 0,
+        "name": "reef-calcify-e4-timed3-8c6f-rp0-1",
+        "hostKafkaEndpoint": {
+          "host": "127.0.0.1",
+          "port": 43092,
+          "containerPort": "43092/tcp"
+        },
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-timed3-8c6f",
+          "com.docker.compose.service": "rp0",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-timed3-8c6f_rp0-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "86ef7794adc5dd1c675fdf0875196ba624ac75e09b2a25aedca1137f3cd8d830",
+        "brokerId": 1,
+        "name": "reef-calcify-e4-timed3-8c6f-rp1-1",
+        "hostKafkaEndpoint": {
+          "host": "127.0.0.1",
+          "port": 43192,
+          "containerPort": "43192/tcp"
+        },
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-timed3-8c6f",
+          "com.docker.compose.service": "rp1",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-timed3-8c6f_rp1-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      },
+      {
+        "id": "82cc3f184410c87aebbd7ef49c9e1e5849ba82fb2eddaae84d90de687843b651",
+        "brokerId": 2,
+        "name": "reef-calcify-e4-timed3-8c6f-rp2-1",
+        "hostKafkaEndpoint": {
+          "host": "127.0.0.1",
+          "port": 43292,
+          "containerPort": "43292/tcp"
+        },
+        "labels": {
+          "com.docker.compose.project": "reef-calcify-e4-timed3-8c6f",
+          "com.docker.compose.service": "rp2",
+          "reef.test": "calcify-financial-sprint1"
+        },
+        "imageId": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "volumes": [
+          {
+            "name": "reef-calcify-e4-timed3-8c6f_rp2-data",
+            "destination": "/var/lib/redpanda/data"
+          }
+        ]
+      }
+    ],
+    "bootstrapServers": "127.0.0.1:43092,127.0.0.1:43192,127.0.0.1:43292"
+  },
+  "bootstrapServers": "127.0.0.1:43092,127.0.0.1:43192,127.0.0.1:43292",
+  "composePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/broker3/broker.compose.yml",
+  "composeSha256": "a47f27aa09674561177c0966d0162a01a40faddf097f7ec2c7426df579c9fd10",
+  "profilePath": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/broker3/profile.json",
+  "profileSha256": "6c701d5ec3faedd997a128768b434908902ca4f0010a417615903570b45ab3d8",
+  "state": "CREATED_NOT_STARTED",
+  "guestFreeBytes": null
+}

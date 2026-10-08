@@ -1,0 +1,5 @@
+# Preliminary independent review
+Review instance: 3 of 3. Recorded before author explanation.
+Scope verified: HEAD/base 863503ec23c27f33ecea14fd82724fe28f96d308; branch codex/calcify-sprint1-exit-2026-10-06; patch SHA-256 fe1401c15ec1e79ea8158bda053f2e5a3f1d04650a67bb664a6b8a905c08487e; all ten current file hashes match after.json. Parent docs/planning dirty scope excluded.
+No actionable source findings from first pass. Fixed empirical profile requires exact diagnostic launcher, three host allocations, 4GiB heap, 16GiB policy binding; generic budgets remain 9/10GiB. Adapter validates actual frozen policy digest before launch. Kotlin verifies fixed fresh150000/60s policy and unchanged kernel/adapter source. Sampled heap profile separate from conservative768MiB admission; capacity and new managed restart remain false.
+Checks remaining: focused Node suite; digest author claims; inspect concrete frozen arm4 envelope once parent supplies it. Kotlin tests will use receipts to avoid concurrent compilation and frozen capability drift. Residual scrutiny: static unit profile fixture alone does not prove concrete runtime registration or load outcome.

@@ -1,0 +1,983 @@
+[
+    {
+        "Id": "da51796997665b96755cfab24a3cc8fb1510b0a5690eb4170c734689a51d0d48",
+        "Created": "2026-10-06T02:30:40.586589721Z",
+        "Path": "/entrypoint.sh",
+        "Args": [
+            "redpanda",
+            "start",
+            "--overprovisioned",
+            "--smp",
+            "1",
+            "--memory",
+            "1G",
+            "--reserve-memory",
+            "0M",
+            "--check=false",
+            "--node-id",
+            "0",
+            "--kafka-addr",
+            "internal://0.0.0.0:9092,external://0.0.0.0:42092",
+            "--advertise-kafka-addr",
+            "internal://rp0:9092,external://127.0.0.1:42092",
+            "--rpc-addr",
+            "0.0.0.0:33145",
+            "--advertise-rpc-addr",
+            "rp0:33145",
+            "--seeds",
+            "rp0:33145"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-06T02:33:51.122087754Z",
+            "FinishedAt": "2026-10-06T02:41:37.063022428Z",
+            "Health": {
+                "Status": "unhealthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-10-06T02:41:22.029872421Z",
+                        "End": "2026-10-06T02:41:22.075382712Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.c89cb3ea-9e69-480d-9529-a6ab634ab34c\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                        PARTITIONS  REPLICAS\n__consumer_offsets                                          3           3\nfinancial-s1-exit-timed2-input                              1           3\nfinancial-s1-exit-timed2-results                            1           3\nfinancial-s1-exit-timed2-streams-financial-state-changelog  1           3\n\n"
+                    },
+                    {
+                        "Start": "2026-10-06T02:41:25.076199089Z",
+                        "End": "2026-10-06T02:41:25.119364714Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.c89cb3ea-9e69-480d-9529-a6ab634ab34c\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                        PARTITIONS  REPLICAS\n__consumer_offsets                                          3           3\nfinancial-s1-exit-timed2-input                              1           3\nfinancial-s1-exit-timed2-results                            1           3\nfinancial-s1-exit-timed2-streams-financial-state-changelog  1           3\n\n"
+                    },
+                    {
+                        "Start": "2026-10-06T02:41:28.120300465Z",
+                        "End": "2026-10-06T02:41:28.165711715Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.c89cb3ea-9e69-480d-9529-a6ab634ab34c\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                        PARTITIONS  REPLICAS\n__consumer_offsets                                          3           3\nfinancial-s1-exit-timed2-input                              1           3\nfinancial-s1-exit-timed2-results                            1           3\nfinancial-s1-exit-timed2-streams-financial-state-changelog  1           3\n\n"
+                    },
+                    {
+                        "Start": "2026-10-06T02:41:31.167281758Z",
+                        "End": "2026-10-06T02:41:31.229730675Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.c89cb3ea-9e69-480d-9529-a6ab634ab34c\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                        PARTITIONS  REPLICAS\n__consumer_offsets                                          3           3\nfinancial-s1-exit-timed2-input                              1           3\nfinancial-s1-exit-timed2-results                            1           3\nfinancial-s1-exit-timed2-streams-financial-state-changelog  1           3\n\n"
+                    },
+                    {
+                        "Start": "2026-10-06T02:41:34.230877635Z",
+                        "End": "2026-10-06T02:41:34.273116385Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.c89cb3ea-9e69-480d-9529-a6ab634ab34c\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                        PARTITIONS  REPLICAS\n__consumer_offsets                                          3           3\nfinancial-s1-exit-timed2-input                              1           3\nfinancial-s1-exit-timed2-results                            1           3\nfinancial-s1-exit-timed2-streams-financial-state-changelog  1           3\n\n"
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "ResolvConfPath": "/var/lib/docker/containers/da51796997665b96755cfab24a3cc8fb1510b0a5690eb4170c734689a51d0d48/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/da51796997665b96755cfab24a3cc8fb1510b0a5690eb4170c734689a51d0d48/hostname",
+        "HostsPath": "/var/lib/docker/containers/da51796997665b96755cfab24a3cc8fb1510b0a5690eb4170c734689a51d0d48/hosts",
+        "LogPath": "/var/lib/docker/containers/da51796997665b96755cfab24a3cc8fb1510b0a5690eb4170c734689a51d0d48/da51796997665b96755cfab24a3cc8fb1510b0a5690eb4170c734689a51d0d48-json.log",
+        "Name": "/reef-calcify-e4-timed2-8c6f-rp0-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "reef-calcify-e4-timed2-8c6f_rp0-data:/var/lib/redpanda/data:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "reef-calcify-e4-timed2-8c6f_default",
+            "PortBindings": {
+                "42092/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "42092"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 2147483648,
+            "NanoCpus": 1000000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 4294967296,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "ID": "da51796997665b96755cfab24a3cc8fb1510b0a5690eb4170c734689a51d0d48",
+                "LowerDir": "/var/lib/docker/overlay2/1b4f90ced7caf6ea760f53b47411012c10872973221b3ab30544a692931a1ad0-init/diff:/var/lib/docker/overlay2/429a6b56c5746428638e0afade8e23fc947beac25bcdc31941cdeb115fbc5798/diff:/var/lib/docker/overlay2/2a0b841e61f63dd0077f860871c413c403c1d1e1d586f2d5623c3060674377c6/diff:/var/lib/docker/overlay2/4e8651842484685fff4946fe0a6fae39171b5f44279ed9878fac202f42d5ce98/diff:/var/lib/docker/overlay2/a95b44c16387a88025dc249374e720b667a4efa56ae5ff5af4348c00df86f4df/diff:/var/lib/docker/overlay2/b707d6a449a07c913a24c60f5f1b0e426ce9e87426f7c7e60201d0dee2e64381/diff:/var/lib/docker/overlay2/a5de7e7e00431ad8be6129b4bcdf5ed000d3663819e3792c2f3d3fb2074cfda8/diff",
+                "MergedDir": "/var/lib/docker/overlay2/1b4f90ced7caf6ea760f53b47411012c10872973221b3ab30544a692931a1ad0/merged",
+                "UpperDir": "/var/lib/docker/overlay2/1b4f90ced7caf6ea760f53b47411012c10872973221b3ab30544a692931a1ad0/diff",
+                "WorkDir": "/var/lib/docker/overlay2/1b4f90ced7caf6ea760f53b47411012c10872973221b3ab30544a692931a1ad0/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "reef-calcify-e4-timed2-8c6f_rp0-data",
+                "Source": "/var/lib/docker/volumes/reef-calcify-e4-timed2-8c6f_rp0-data/_data",
+                "Destination": "/var/lib/redpanda/data",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "da5179699766",
+            "Domainname": "",
+            "User": "redpanda",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "42092/tcp": {},
+                "8081/tcp": {},
+                "8082/tcp": {},
+                "9092/tcp": {},
+                "9644/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "EDITOR=nano"
+            ],
+            "Cmd": [
+                "redpanda",
+                "start",
+                "--overprovisioned",
+                "--smp",
+                "1",
+                "--memory",
+                "1G",
+                "--reserve-memory",
+                "0M",
+                "--check=false",
+                "--node-id",
+                "0",
+                "--kafka-addr",
+                "internal://0.0.0.0:9092,external://0.0.0.0:42092",
+                "--advertise-kafka-addr",
+                "internal://rp0:9092,external://127.0.0.1:42092",
+                "--rpc-addr",
+                "0.0.0.0:33145",
+                "--advertise-rpc-addr",
+                "rp0:33145",
+                "--seeds",
+                "rp0:33145"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD",
+                    "rpk",
+                    "cluster",
+                    "info",
+                    "-X",
+                    "brokers=127.0.0.1:9092"
+                ],
+                "Interval": 3000000000,
+                "Timeout": 2000000000,
+                "Retries": 30
+            },
+            "Image": "redpandadata/redpanda@sha256:9e83cfa99278f30d0133271c26bf670cd69c94ffa6ba0b42830dd0c3bd9dcfd9",
+            "Volumes": {
+                "/var/lib/redpanda/data": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "aa708010c2b13049ec1108d0f6cc95dd1d8395ba0ab4618ea1bfe98ab2882b21",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "reef-calcify-e4-timed2-8c6f",
+                "com.docker.compose.project.config_files": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/broker2/broker.compose.yml,/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/broker2/pinned-network.compose.yml",
+                "com.docker.compose.project.working_dir": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/broker2",
+                "com.docker.compose.service": "rp0",
+                "com.docker.compose.version": "5.4.0",
+                "org.opencontainers.image.authors": "Redpanda Data \u003chi@redpanda.com\u003e",
+                "reef.test": "calcify-financial-sprint1"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "",
+            "SandboxKey": "",
+            "Ports": {},
+            "Networks": {
+                "reef-calcify-e4-timed2-8c6f_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "reef-calcify-e4-timed2-8c6f-rp0-1",
+                        "rp0"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "30dc012a38884e339fb03be03e9aa62ae120556171917775bb72dd7e1dd702a8",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "MacAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "reef-calcify-e4-timed2-8c6f-rp0-1",
+                        "rp0",
+                        "da5179699766"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Id": "c4f8288c635fb768fdaeb5f626a16a55e64c83ffb26f6b5e118e183d5659d53d",
+        "Created": "2026-10-06T02:30:40.586820263Z",
+        "Path": "/entrypoint.sh",
+        "Args": [
+            "redpanda",
+            "start",
+            "--overprovisioned",
+            "--smp",
+            "1",
+            "--memory",
+            "1G",
+            "--reserve-memory",
+            "0M",
+            "--check=false",
+            "--node-id",
+            "1",
+            "--kafka-addr",
+            "internal://0.0.0.0:9092,external://0.0.0.0:42192",
+            "--advertise-kafka-addr",
+            "internal://rp1:9092,external://127.0.0.1:42192",
+            "--rpc-addr",
+            "0.0.0.0:33145",
+            "--advertise-rpc-addr",
+            "rp1:33145",
+            "--seeds",
+            "rp0:33145"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-06T02:33:51.19182542Z",
+            "FinishedAt": "2026-10-06T02:41:36.795881636Z",
+            "Health": {
+                "Status": "unhealthy",
+                "FailingStreak": 0,
+                "Log": [
+                    {
+                        "Start": "2026-10-06T02:41:22.023190546Z",
+                        "End": "2026-10-06T02:41:22.072186546Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.c89cb3ea-9e69-480d-9529-a6ab634ab34c\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                        PARTITIONS  REPLICAS\n__consumer_offsets                                          3           3\nfinancial-s1-exit-timed2-input                              1           3\nfinancial-s1-exit-timed2-results                            1           3\nfinancial-s1-exit-timed2-streams-financial-state-changelog  1           3\n\n"
+                    },
+                    {
+                        "Start": "2026-10-06T02:41:25.07310813Z",
+                        "End": "2026-10-06T02:41:25.11651313Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.c89cb3ea-9e69-480d-9529-a6ab634ab34c\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                        PARTITIONS  REPLICAS\n__consumer_offsets                                          3           3\nfinancial-s1-exit-timed2-input                              1           3\nfinancial-s1-exit-timed2-results                            1           3\nfinancial-s1-exit-timed2-streams-financial-state-changelog  1           3\n\n"
+                    },
+                    {
+                        "Start": "2026-10-06T02:41:28.117904215Z",
+                        "End": "2026-10-06T02:41:28.168482382Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.c89cb3ea-9e69-480d-9529-a6ab634ab34c\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                        PARTITIONS  REPLICAS\n__consumer_offsets                                          3           3\nfinancial-s1-exit-timed2-input                              1           3\nfinancial-s1-exit-timed2-results                            1           3\nfinancial-s1-exit-timed2-streams-financial-state-changelog  1           3\n\n"
+                    },
+                    {
+                        "Start": "2026-10-06T02:41:31.169343883Z",
+                        "End": "2026-10-06T02:41:31.224484842Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.c89cb3ea-9e69-480d-9529-a6ab634ab34c\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                        PARTITIONS  REPLICAS\n__consumer_offsets                                          3           3\nfinancial-s1-exit-timed2-input                              1           3\nfinancial-s1-exit-timed2-results                            1           3\nfinancial-s1-exit-timed2-streams-financial-state-changelog  1           3\n\n"
+                    },
+                    {
+                        "Start": "2026-10-06T02:41:34.224964135Z",
+                        "End": "2026-10-06T02:41:34.26830501Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.c89cb3ea-9e69-480d-9529-a6ab634ab34c\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                        PARTITIONS  REPLICAS\n__consumer_offsets                                          3           3\nfinancial-s1-exit-timed2-input                              1           3\nfinancial-s1-exit-timed2-results                            1           3\nfinancial-s1-exit-timed2-streams-financial-state-changelog  1           3\n\n"
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "ResolvConfPath": "/var/lib/docker/containers/c4f8288c635fb768fdaeb5f626a16a55e64c83ffb26f6b5e118e183d5659d53d/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/c4f8288c635fb768fdaeb5f626a16a55e64c83ffb26f6b5e118e183d5659d53d/hostname",
+        "HostsPath": "/var/lib/docker/containers/c4f8288c635fb768fdaeb5f626a16a55e64c83ffb26f6b5e118e183d5659d53d/hosts",
+        "LogPath": "/var/lib/docker/containers/c4f8288c635fb768fdaeb5f626a16a55e64c83ffb26f6b5e118e183d5659d53d/c4f8288c635fb768fdaeb5f626a16a55e64c83ffb26f6b5e118e183d5659d53d-json.log",
+        "Name": "/reef-calcify-e4-timed2-8c6f-rp1-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "reef-calcify-e4-timed2-8c6f_rp1-data:/var/lib/redpanda/data:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "reef-calcify-e4-timed2-8c6f_default",
+            "PortBindings": {
+                "42192/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "42192"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 2147483648,
+            "NanoCpus": 1000000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 4294967296,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "ID": "c4f8288c635fb768fdaeb5f626a16a55e64c83ffb26f6b5e118e183d5659d53d",
+                "LowerDir": "/var/lib/docker/overlay2/8aa381454385683a073fe9708d8ff0c0d95dd2125bc2710dbbe0979f199d90ae-init/diff:/var/lib/docker/overlay2/429a6b56c5746428638e0afade8e23fc947beac25bcdc31941cdeb115fbc5798/diff:/var/lib/docker/overlay2/2a0b841e61f63dd0077f860871c413c403c1d1e1d586f2d5623c3060674377c6/diff:/var/lib/docker/overlay2/4e8651842484685fff4946fe0a6fae39171b5f44279ed9878fac202f42d5ce98/diff:/var/lib/docker/overlay2/a95b44c16387a88025dc249374e720b667a4efa56ae5ff5af4348c00df86f4df/diff:/var/lib/docker/overlay2/b707d6a449a07c913a24c60f5f1b0e426ce9e87426f7c7e60201d0dee2e64381/diff:/var/lib/docker/overlay2/a5de7e7e00431ad8be6129b4bcdf5ed000d3663819e3792c2f3d3fb2074cfda8/diff",
+                "MergedDir": "/var/lib/docker/overlay2/8aa381454385683a073fe9708d8ff0c0d95dd2125bc2710dbbe0979f199d90ae/merged",
+                "UpperDir": "/var/lib/docker/overlay2/8aa381454385683a073fe9708d8ff0c0d95dd2125bc2710dbbe0979f199d90ae/diff",
+                "WorkDir": "/var/lib/docker/overlay2/8aa381454385683a073fe9708d8ff0c0d95dd2125bc2710dbbe0979f199d90ae/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "reef-calcify-e4-timed2-8c6f_rp1-data",
+                "Source": "/var/lib/docker/volumes/reef-calcify-e4-timed2-8c6f_rp1-data/_data",
+                "Destination": "/var/lib/redpanda/data",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "c4f8288c635f",
+            "Domainname": "",
+            "User": "redpanda",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "42192/tcp": {},
+                "8081/tcp": {},
+                "8082/tcp": {},
+                "9092/tcp": {},
+                "9644/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "EDITOR=nano"
+            ],
+            "Cmd": [
+                "redpanda",
+                "start",
+                "--overprovisioned",
+                "--smp",
+                "1",
+                "--memory",
+                "1G",
+                "--reserve-memory",
+                "0M",
+                "--check=false",
+                "--node-id",
+                "1",
+                "--kafka-addr",
+                "internal://0.0.0.0:9092,external://0.0.0.0:42192",
+                "--advertise-kafka-addr",
+                "internal://rp1:9092,external://127.0.0.1:42192",
+                "--rpc-addr",
+                "0.0.0.0:33145",
+                "--advertise-rpc-addr",
+                "rp1:33145",
+                "--seeds",
+                "rp0:33145"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD",
+                    "rpk",
+                    "cluster",
+                    "info",
+                    "-X",
+                    "brokers=127.0.0.1:9092"
+                ],
+                "Interval": 3000000000,
+                "Timeout": 2000000000,
+                "Retries": 30
+            },
+            "Image": "redpandadata/redpanda@sha256:9e83cfa99278f30d0133271c26bf670cd69c94ffa6ba0b42830dd0c3bd9dcfd9",
+            "Volumes": {
+                "/var/lib/redpanda/data": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "f62e5953444839a530304b3547d2945ba3d1f74a74dbf12c118f3a3f7e5dae9c",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "reef-calcify-e4-timed2-8c6f",
+                "com.docker.compose.project.config_files": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/broker2/broker.compose.yml,/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/broker2/pinned-network.compose.yml",
+                "com.docker.compose.project.working_dir": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/broker2",
+                "com.docker.compose.service": "rp1",
+                "com.docker.compose.version": "5.4.0",
+                "org.opencontainers.image.authors": "Redpanda Data \u003chi@redpanda.com\u003e",
+                "reef.test": "calcify-financial-sprint1"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "",
+            "SandboxKey": "",
+            "Ports": {},
+            "Networks": {
+                "reef-calcify-e4-timed2-8c6f_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "reef-calcify-e4-timed2-8c6f-rp1-1",
+                        "rp1"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "30dc012a38884e339fb03be03e9aa62ae120556171917775bb72dd7e1dd702a8",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "MacAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "reef-calcify-e4-timed2-8c6f-rp1-1",
+                        "rp1",
+                        "c4f8288c635f"
+                    ]
+                }
+            }
+        }
+    },
+    {
+        "Id": "c44b5d0cefa097514dbc39fa178e6ef8286f91f0cda69b209991ddd60153ccca",
+        "Created": "2026-10-06T02:30:40.586674763Z",
+        "Path": "/entrypoint.sh",
+        "Args": [
+            "redpanda",
+            "start",
+            "--overprovisioned",
+            "--smp",
+            "1",
+            "--memory",
+            "1G",
+            "--reserve-memory",
+            "0M",
+            "--check=false",
+            "--node-id",
+            "2",
+            "--kafka-addr",
+            "internal://0.0.0.0:9092,external://0.0.0.0:42292",
+            "--advertise-kafka-addr",
+            "internal://rp2:9092,external://127.0.0.1:42292",
+            "--rpc-addr",
+            "0.0.0.0:33145",
+            "--advertise-rpc-addr",
+            "rp2:33145",
+            "--seeds",
+            "rp0:33145"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2026-10-06T02:33:51.261271629Z",
+            "FinishedAt": "2026-10-06T02:41:40.307209054Z",
+            "Health": {
+                "Status": "unhealthy",
+                "FailingStreak": 1,
+                "Log": [
+                    {
+                        "Start": "2026-10-06T02:41:25.06922038Z",
+                        "End": "2026-10-06T02:41:25.113779547Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.c89cb3ea-9e69-480d-9529-a6ab634ab34c\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                        PARTITIONS  REPLICAS\n__consumer_offsets                                          3           3\nfinancial-s1-exit-timed2-input                              1           3\nfinancial-s1-exit-timed2-results                            1           3\nfinancial-s1-exit-timed2-streams-financial-state-changelog  1           3\n\n"
+                    },
+                    {
+                        "Start": "2026-10-06T02:41:28.115237215Z",
+                        "End": "2026-10-06T02:41:28.166882382Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.c89cb3ea-9e69-480d-9529-a6ab634ab34c\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                        PARTITIONS  REPLICAS\n__consumer_offsets                                          3           3\nfinancial-s1-exit-timed2-input                              1           3\nfinancial-s1-exit-timed2-results                            1           3\nfinancial-s1-exit-timed2-streams-financial-state-changelog  1           3\n\n"
+                    },
+                    {
+                        "Start": "2026-10-06T02:41:31.167243258Z",
+                        "End": "2026-10-06T02:41:31.22439355Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.c89cb3ea-9e69-480d-9529-a6ab634ab34c\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                        PARTITIONS  REPLICAS\n__consumer_offsets                                          3           3\nfinancial-s1-exit-timed2-input                              1           3\nfinancial-s1-exit-timed2-results                            1           3\nfinancial-s1-exit-timed2-streams-financial-state-changelog  1           3\n\n"
+                    },
+                    {
+                        "Start": "2026-10-06T02:41:34.224975635Z",
+                        "End": "2026-10-06T02:41:34.266453218Z",
+                        "ExitCode": 0,
+                        "Output": "CLUSTER\n=======\nredpanda.c89cb3ea-9e69-480d-9529-a6ab634ab34c\n\nBROKERS\n=======\nID    HOST  PORT\n0*    rp0   9092\n1     rp1   9092\n2     rp2   9092\n\nTOPICS\n======\nNAME                                                        PARTITIONS  REPLICAS\n__consumer_offsets                                          3           3\nfinancial-s1-exit-timed2-input                              1           3\nfinancial-s1-exit-timed2-results                            1           3\nfinancial-s1-exit-timed2-streams-financial-state-changelog  1           3\n\n"
+                    },
+                    {
+                        "Start": "2026-10-06T02:41:37.266973344Z",
+                        "End": "2026-10-06T02:41:37.305170595Z",
+                        "ExitCode": 1,
+                        "Output": "unable to request metadata: unable to dial: dial tcp 127.0.0.1:9092: connect: connection refused\n"
+                    }
+                ]
+            }
+        },
+        "Image": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+        "ResolvConfPath": "/var/lib/docker/containers/c44b5d0cefa097514dbc39fa178e6ef8286f91f0cda69b209991ddd60153ccca/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/c44b5d0cefa097514dbc39fa178e6ef8286f91f0cda69b209991ddd60153ccca/hostname",
+        "HostsPath": "/var/lib/docker/containers/c44b5d0cefa097514dbc39fa178e6ef8286f91f0cda69b209991ddd60153ccca/hosts",
+        "LogPath": "/var/lib/docker/containers/c44b5d0cefa097514dbc39fa178e6ef8286f91f0cda69b209991ddd60153ccca/c44b5d0cefa097514dbc39fa178e6ef8286f91f0cda69b209991ddd60153ccca-json.log",
+        "Name": "/reef-calcify-e4-timed2-8c6f-rp2-1",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "reef-calcify-e4-timed2-8c6f_rp2-data:/var/lib/redpanda/data:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "reef-calcify-e4-timed2-8c6f_default",
+            "PortBindings": {
+                "42292/tcp": [
+                    {
+                        "HostIp": "127.0.0.1",
+                        "HostPort": "42292"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": [],
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 2147483648,
+            "NanoCpus": 1000000000,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 4294967296,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/acpi",
+                "/proc/asound",
+                "/proc/interrupts",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/sys/devices/virtual/powercap",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "ID": "c44b5d0cefa097514dbc39fa178e6ef8286f91f0cda69b209991ddd60153ccca",
+                "LowerDir": "/var/lib/docker/overlay2/bb7b12bdb608060337483e31da055bd893aebb573d9b2838a941672a17beea2d-init/diff:/var/lib/docker/overlay2/429a6b56c5746428638e0afade8e23fc947beac25bcdc31941cdeb115fbc5798/diff:/var/lib/docker/overlay2/2a0b841e61f63dd0077f860871c413c403c1d1e1d586f2d5623c3060674377c6/diff:/var/lib/docker/overlay2/4e8651842484685fff4946fe0a6fae39171b5f44279ed9878fac202f42d5ce98/diff:/var/lib/docker/overlay2/a95b44c16387a88025dc249374e720b667a4efa56ae5ff5af4348c00df86f4df/diff:/var/lib/docker/overlay2/b707d6a449a07c913a24c60f5f1b0e426ce9e87426f7c7e60201d0dee2e64381/diff:/var/lib/docker/overlay2/a5de7e7e00431ad8be6129b4bcdf5ed000d3663819e3792c2f3d3fb2074cfda8/diff",
+                "MergedDir": "/var/lib/docker/overlay2/bb7b12bdb608060337483e31da055bd893aebb573d9b2838a941672a17beea2d/merged",
+                "UpperDir": "/var/lib/docker/overlay2/bb7b12bdb608060337483e31da055bd893aebb573d9b2838a941672a17beea2d/diff",
+                "WorkDir": "/var/lib/docker/overlay2/bb7b12bdb608060337483e31da055bd893aebb573d9b2838a941672a17beea2d/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "reef-calcify-e4-timed2-8c6f_rp2-data",
+                "Source": "/var/lib/docker/volumes/reef-calcify-e4-timed2-8c6f_rp2-data/_data",
+                "Destination": "/var/lib/redpanda/data",
+                "Driver": "local",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "c44b5d0cefa0",
+            "Domainname": "",
+            "User": "redpanda",
+            "AttachStdin": false,
+            "AttachStdout": true,
+            "AttachStderr": true,
+            "ExposedPorts": {
+                "42292/tcp": {},
+                "8081/tcp": {},
+                "8082/tcp": {},
+                "9092/tcp": {},
+                "9644/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "EDITOR=nano"
+            ],
+            "Cmd": [
+                "redpanda",
+                "start",
+                "--overprovisioned",
+                "--smp",
+                "1",
+                "--memory",
+                "1G",
+                "--reserve-memory",
+                "0M",
+                "--check=false",
+                "--node-id",
+                "2",
+                "--kafka-addr",
+                "internal://0.0.0.0:9092,external://0.0.0.0:42292",
+                "--advertise-kafka-addr",
+                "internal://rp2:9092,external://127.0.0.1:42292",
+                "--rpc-addr",
+                "0.0.0.0:33145",
+                "--advertise-rpc-addr",
+                "rp2:33145",
+                "--seeds",
+                "rp0:33145"
+            ],
+            "Healthcheck": {
+                "Test": [
+                    "CMD",
+                    "rpk",
+                    "cluster",
+                    "info",
+                    "-X",
+                    "brokers=127.0.0.1:9092"
+                ],
+                "Interval": 3000000000,
+                "Timeout": 2000000000,
+                "Retries": 30
+            },
+            "Image": "redpandadata/redpanda@sha256:9e83cfa99278f30d0133271c26bf670cd69c94ffa6ba0b42830dd0c3bd9dcfd9",
+            "Volumes": {
+                "/var/lib/redpanda/data": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "/entrypoint.sh"
+            ],
+            "Labels": {
+                "com.docker.compose.config-hash": "59df310d3ddcbd34adb73041d0b9de00d862a104cd68b34250c3accf0f12559a",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.depends_on": "",
+                "com.docker.compose.image": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "reef-calcify-e4-timed2-8c6f",
+                "com.docker.compose.project.config_files": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/broker2/broker.compose.yml,/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/broker2/pinned-network.compose.yml",
+                "com.docker.compose.project.working_dir": "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/broker2",
+                "com.docker.compose.service": "rp2",
+                "com.docker.compose.version": "5.4.0",
+                "org.opencontainers.image.authors": "Redpanda Data \u003chi@redpanda.com\u003e",
+                "reef.test": "calcify-financial-sprint1"
+            }
+        },
+        "NetworkSettings": {
+            "SandboxID": "",
+            "SandboxKey": "",
+            "Ports": {},
+            "Networks": {
+                "reef-calcify-e4-timed2-8c6f_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "reef-calcify-e4-timed2-8c6f-rp2-1",
+                        "rp2"
+                    ],
+                    "DriverOpts": null,
+                    "GwPriority": 0,
+                    "NetworkID": "30dc012a38884e339fb03be03e9aa62ae120556171917775bb72dd7e1dd702a8",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "MacAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DNSNames": [
+                        "reef-calcify-e4-timed2-8c6f-rp2-1",
+                        "rp2",
+                        "c44b5d0cefa0"
+                    ]
+                }
+            }
+        }
+    }
+]

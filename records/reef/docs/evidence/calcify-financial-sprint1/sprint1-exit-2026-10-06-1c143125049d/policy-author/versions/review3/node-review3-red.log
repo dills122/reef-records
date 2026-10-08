@@ -1,0 +1,322 @@
+TAP version 13
+# Subtest: declared Kafka endpoints freeze exact unique loopback ports and broker-ordered bootstrap literal
+ok 1 - declared Kafka endpoints freeze exact unique loopback ports and broker-ordered bootstrap literal
+  ---
+  duration_ms: 1.532625
+  type: 'test'
+  ...
+# Subtest: every pinned Kafka sample uses actual raw Docker port bindings, never declared summary metadata
+ok 2 - every pinned Kafka sample uses actual raw Docker port bindings, never declared summary metadata
+  ---
+  duration_ms: 0.628625
+  type: 'test'
+  ...
+# Subtest: actual Docker dependency factory rejects foreign published port before allocation and prelaunch
+ok 3 - actual Docker dependency factory rejects foreign published port before allocation and prelaunch
+  ---
+  duration_ms: 6.238583
+  type: 'test'
+  ...
+# Subtest: fixed budgets retain bounded correctness profile
+ok 4 - fixed budgets retain bounded correctness profile
+  ---
+  duration_ms: 0.114375
+  type: 'test'
+  ...
+# Subtest: preflight rejects unsupported schema, duplicate IDs, scope and wrapper paths
+ok 5 - preflight rejects unsupported schema, duplicate IDs, scope and wrapper paths
+  ---
+  duration_ms: 0.358625
+  type: 'test'
+  ...
+# Subtest: frozen preflight clone prevents caller changing cleanup resources
+ok 6 - frozen preflight clone prevents caller changing cleanup resources
+  ---
+  duration_ms: 0.112917
+  type: 'test'
+  ...
+# Subtest: exact resource set and labels required on every sample
+ok 7 - exact resource set and labels required on every sample
+  ---
+  duration_ms: 0.260834
+  type: 'test'
+  ...
+# Subtest: negative/nonfinite readings and stale/future heartbeat fail closed
+ok 8 - negative/nonfinite readings and stale/future heartbeat fail closed
+  ---
+  duration_ms: 0.493
+  type: 'test'
+  ...
+# Subtest: each resource budget aborts at exact threshold
+ok 9 - each resource budget aborts at exact threshold
+  ---
+  duration_ms: 0.388917
+  type: 'test'
+  ...
+# Subtest: host allocation joins broker allocation and cannot be absent, duplicated or logical
+ok 10 - host allocation joins broker allocation and cannot be absent, duplicated or logical
+  ---
+  duration_ms: 0.549875
+  type: 'test'
+  ...
+# Subtest: host allocation registration requires distinct owned categories and proof directory
+ok 11 - host allocation registration requires distinct owned categories and proof directory
+  ---
+  duration_ms: 0.417666
+  type: 'test'
+  ...
+# Subtest: host sampler measures actual allocated blocks and rejects symlink or missing paths
+ok 12 - host sampler measures actual allocated blocks and rejects symlink or missing paths
+  ---
+  duration_ms: 9.947084
+  type: 'test'
+  ...
+# Subtest: intentional STOP charges evidenced conservative bound and requires healthy peers
+ok 13 - intentional STOP charges evidenced conservative bound and requires healthy peers
+  ---
+  duration_ms: 0.29775
+  type: 'test'
+  ...
+# Subtest: observer startup throw prevents launch, still stops registered brokers
+ok 14 - observer startup throw prevents launch, still stops registered brokers
+  ---
+  duration_ms: 1.209083
+  type: 'test'
+  ...
+# Subtest: observer throw/stale/hung and sample record failure kill owned group and brokers
+ok 15 - observer throw/stale/hung and sample record failure kill owned group and brokers
+  ---
+  duration_ms: 11.514667
+  type: 'test'
+  ...
+# Subtest: wrapper failure and proof timeout kill owned group and registered brokers
+ok 16 - wrapper failure and proof timeout kill owned group and registered brokers
+  ---
+  duration_ms: 0.522792
+  type: 'test'
+  ...
+# Subtest: success requires final sample and exit status handshake before completion
+ok 17 - success requires final sample and exit status handshake before completion
+  ---
+  duration_ms: 0.656208
+  type: 'test'
+  ...
+# Subtest: final sample failure cannot report successful wrapper as proof completion
+ok 18 - final sample failure cannot report successful wrapper as proof completion
+  ---
+  duration_ms: 0.233333
+  type: 'test'
+  ...
+# Subtest: cleanup failures are recorded and never relabel proof as successful
+ok 19 - cleanup failures are recorded and never relabel proof as successful
+  ---
+  duration_ms: 0.296041
+  type: 'test'
+  ...
+# Subtest: hanging journal, prelaunch interrupt and synchronous cleanup throws fail closed
+ok 20 - hanging journal, prelaunch interrupt and synchronous cleanup throws fail closed
+  ---
+  duration_ms: 43.663584
+  type: 'test'
+  ...
+# Subtest: monitor plus journal elapsed time cannot launch with stale initial sample
+ok 21 - monitor plus journal elapsed time cannot launch with stale initial sample
+  ---
+  duration_ms: 0.34525
+  type: 'test'
+  ...
+# Subtest: slow initial monitor anchors first and later sample starts to sample timestamp
+ok 22 - slow initial monitor anchors first and later sample starts to sample timestamp
+  ---
+  duration_ms: 0.361833
+  type: 'test'
+  ...
+# Subtest: polling clock jump past heartbeat deadline stops owned wrapper before new sample
+ok 23 - polling clock jump past heartbeat deadline stops owned wrapper before new sample
+  ---
+  duration_ms: 0.177959
+  type: 'test'
+  ...
+# Subtest: elapsed launch time cannot continue with stale heartbeat
+ok 24 - elapsed launch time cannot continue with stale heartbeat
+  ---
+  duration_ms: 0.162333
+  type: 'test'
+  ...
+# Subtest: hanging or throwing completion write returns failure after bounded cleanup
+ok 25 - hanging or throwing completion write returns failure after bounded cleanup
+  ---
+  duration_ms: 11.773125
+  type: 'test'
+  ...
+# Subtest: polling jitter within early sample lead keeps strict freshness and bounded cadence
+ok 26 - polling jitter within early sample lead keeps strict freshness and bounded cadence
+  ---
+  duration_ms: 0.6025
+  type: 'test'
+  ...
+# Subtest: real asynchronous monitor/write time and polling jitter stay within five-second sample window
+ok 27 - real asynchronous monitor/write time and polling jitter stay within five-second sample window
+  ---
+  duration_ms: 5083.472625
+  type: 'test'
+  ...
+# Subtest: timed-out completion receives cancellation and cannot publish after delayed data write
+ok 28 - timed-out completion receives cancellation and cannot publish after delayed data write
+  ---
+  duration_ms: 64.038959
+  type: 'test'
+  ...
+# Subtest: Attempt2 cycle2 preflight requires exactly one adjacent literal phase flag and directory
+ok 29 - Attempt2 cycle2 preflight requires exactly one adjacent literal phase flag and directory
+  ---
+  duration_ms: 3.221459
+  type: 'test'
+  ...
+# {"control":"three-second-parent-recovery","startingSamples":[27600,28400,29200],"grantAtMs":26800,"recoveryDeadlineMs":56800,"scope":"actual adapter and file protocol; injected Docker and monotonic clock"}
+# Subtest: Attempt2 cycle2 three-second recovery records multiple measured starting samples; other phases keep five-second cadence
+ok 30 - Attempt2 cycle2 three-second recovery records multiple measured starting samples; other phases keep five-second cadence
+  ---
+  duration_ms: 535.204292
+  type: 'test'
+  ...
+# Subtest: Attempt2 group2 actual adapter and file protocol accept one STOP starting healthy cycle with stable reservation
+ok 31 - Attempt2 group2 actual adapter and file protocol accept one STOP starting healthy cycle with stable reservation
+  ---
+  duration_ms: 281.604666
+  type: 'test'
+  ...
+# {"control":"healthy-only-restriction-mutant","orderedObservations":["healthy","stopped","starting"],"rejectedAt":"starting","scope":"single predicate restriction mutation; not complete old source"}
+# Subtest: Attempt2 healthy-only restriction mutant reaches STOP then rejects actual adapter starting observation
+ok 32 - Attempt2 healthy-only restriction mutant reaches STOP then rejects actual adapter starting observation
+  ---
+  duration_ms: 5.174958
+  type: 'test'
+  ...
+# Subtest: Attempt2 group1 initial stopped starting unhealthy and unconfigured fault reject before launch
+ok 33 - Attempt2 group1 initial stopped starting unhealthy and unconfigured fault reject before launch
+  ---
+  duration_ms: 38.07525
+  type: 'test'
+  ...
+# Subtest: Attempt2 group3 START requires authorized directly observed stopped barrier even without periodic STOP sample
+ok 34 - Attempt2 group3 START requires authorized directly observed stopped barrier even without periodic STOP sample
+  ---
+  duration_ms: 2.512666
+  type: 'test'
+  ...
+# Subtest: Attempt2 group4 exact identity artifacts immutable replay path and missing ACK fail closed
+ok 35 - Attempt2 group4 exact identity artifacts immutable replay path and missing ACK fail closed
+  ---
+  duration_ms: 10.639291
+  type: 'test'
+  ...
+# Subtest: Attempt2 group5 either peer lifecycle health and generation fail in every phase
+ok 36 - Attempt2 group5 either peer lifecycle health and generation fail in every phase
+  ---
+  duration_ms: 52.753041
+  type: 'test'
+  ...
+# Subtest: Attempt2 group6 target invalid grace second generation stopped-after-running and old probe fail
+ok 37 - Attempt2 group6 target invalid grace second generation stopped-after-running and old probe fail
+  ---
+  duration_ms: 16.514875
+  type: 'test'
+  ...
+# Subtest: Attempt2 group7 fixed recovery deadline boundaries persistence and starting never renew anchor
+ok 38 - Attempt2 group7 fixed recovery deadline boundaries persistence and starting never renew anchor
+  ---
+  duration_ms: 7.387708
+  type: 'test'
+  ...
+# Subtest: Attempt2 group8 target du bound strict malformed and observer hung retain fixed charged bytes
+ok 39 - Attempt2 group8 target du bound strict malformed and observer hung retain fixed charged bytes
+  ---
+  duration_ms: 44.65475
+  type: 'test'
+  ...
+# Subtest: Attempt2 group9 protocol read ACK and authorization evidence cannot suspend strict observer gate
+ok 40 - Attempt2 group9 protocol read ACK and authorization evidence cannot suspend strict observer gate
+  ---
+  duration_ms: 296.625292
+  type: 'test'
+  ...
+# Subtest: Attempt2 group10 incomplete cycle exit cannot complete and rejected raw inspect survives diagnostics failure
+ok 41 - Attempt2 group10 incomplete cycle exit cannot complete and rejected raw inspect survives diagnostics failure
+  ---
+  duration_ms: 12.380625
+  type: 'test'
+  ...
+# Subtest: Docker adapter samples running peers, reserves stopped target and retains registered volumes
+ok 42 - Docker adapter samples running peers, reserves stopped target and retains registered volumes
+  ---
+  duration_ms: 1.591458
+  type: 'test'
+  ...
+# Subtest: Docker adapter does not skip running du failure or accept changed image metadata
+ok 43 - Docker adapter does not skip running du failure or accept changed image metadata
+  ---
+  duration_ms: 1.806333
+  type: 'test'
+  ...
+# Subtest: adapter completion uses atomic synchronous commit rather than uncancellable asynchronous rename
+ok 44 - adapter completion uses atomic synchronous commit rather than uncancellable asynchronous rename
+  ---
+  duration_ms: 25.069208
+  type: 'test'
+  ...
+# Subtest: adapter timed-out temporary data write cannot publish late successful completion
+ok 45 - adapter timed-out temporary data write cannot publish late successful completion
+  ---
+  duration_ms: 237.468292
+  type: 'test'
+  ...
+# Subtest: adapter checks elapsed deadline before commit when write continuation delays timer callback
+ok 46 - adapter checks elapsed deadline before commit when write continuation delays timer callback
+  ---
+  duration_ms: 212.037459
+  type: 'test'
+  ...
+# Subtest: synchronous adapter commit cannot interleave with timeout callback at publication boundary
+ok 47 - synchronous adapter commit cannot interleave with timeout callback at publication boundary
+  ---
+  duration_ms: 1080.603334
+  type: 'test'
+  ...
+# Subtest: observer failure stops active owned wrapper/STOP leaf while sentinel survives
+ok 48 - observer failure stops active owned wrapper/STOP leaf while sentinel survives
+  ---
+  duration_ms: 482.978
+  type: 'test'
+  ...
+# Subtest: owned group kills stopped TERM-resistant leaf after leader exits; unrelated sentinel survives
+ok 49 - owned group kills stopped TERM-resistant leaf after leader exits; unrelated sentinel survives
+  ---
+  duration_ms: 791.003583
+  type: 'test'
+  ...
+# Subtest: fixed empirical disk profile leaves generic budgets strict and aborts at14GiB
+not ok 50 - fixed empirical disk profile leaves generic budgets strict and aborts at14GiB
+  ---
+  duration_ms: 0.9425
+  type: 'test'
+  location: '/Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:766:1'
+  failureType: 'testCodeFailure'
+  error: "Cannot read properties of undefined (reading 'name')"
+  code: 'ERR_TEST_FAILURE'
+  name: 'TypeError'
+  stack: |-
+    TestContext.<anonymous> (file:///Users/dsteele/.codex/worktrees/8c6f/reef/scripts/dev/calcify-financial/proof-supervisor.test.mjs:769:46)
+    process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    async Test.run (node:internal/test_runner/test:1054:7)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+1..50
+# tests 50
+# suites 0
+# pass 49
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 9431.81925

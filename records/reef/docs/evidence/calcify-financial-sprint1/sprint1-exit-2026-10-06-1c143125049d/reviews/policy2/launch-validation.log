@@ -1,0 +1,5 @@
+owned policy/evidence/config/source validation PASS 3c5988a407b2a597692bf106047c87dcd7a4d74a3c351a0becb565abf7bcdbe9
+supervisor digest true
+classpath exact equality true
+launch supervisor/runtime validation PASS
+fresh broker-free actual Java capability/build/classpath, fixture policy and prior correctness raw digest PASS

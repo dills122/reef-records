@@ -1,0 +1,30 @@
+{
+  "name": "create",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "compose",
+    "--project-name",
+    "reef-calcify-e4-timed2-8c6f",
+    "-f",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/broker2/broker.compose.yml",
+    "-f",
+    "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/broker2/pinned-network.compose.yml",
+    "create",
+    "--pull",
+    "never",
+    "--no-build",
+    "rp0",
+    "rp1",
+    "rp2"
+  ],
+  "startedAtMs": 104274963,
+  "startedUtc": "2026-10-06T02:30:40.496Z",
+  "stdout": "",
+  "stderr": " Volume reef-calcify-e4-timed2-8c6f_rp0-data Creating \n Volume reef-calcify-e4-timed2-8c6f_rp0-data Creating \n Volume reef-calcify-e4-timed2-8c6f_rp2-data Creating \n Volume reef-calcify-e4-timed2-8c6f_rp2-data Creating \n Network reef-calcify-e4-timed2-8c6f_default Creating \n Volume reef-calcify-e4-timed2-8c6f_rp1-data Creating \n Volume reef-calcify-e4-timed2-8c6f_rp1-data Creating \n Network reef-calcify-e4-timed2-8c6f_default Creating \n Volume reef-calcify-e4-timed2-8c6f_rp0-data Created \n Volume reef-calcify-e4-timed2-8c6f_rp0-data Created \n Volume reef-calcify-e4-timed2-8c6f_rp1-data Created \n Volume reef-calcify-e4-timed2-8c6f_rp1-data Created \n Volume reef-calcify-e4-timed2-8c6f_rp2-data Created \n Volume reef-calcify-e4-timed2-8c6f_rp2-data Created \n Network reef-calcify-e4-timed2-8c6f_default Created \n Network reef-calcify-e4-timed2-8c6f_default Created \n Container reef-calcify-e4-timed2-8c6f-rp1-1 Creating \n Container reef-calcify-e4-timed2-8c6f-rp0-1 Creating \n Container reef-calcify-e4-timed2-8c6f-rp2-1 Creating \n Container reef-calcify-e4-timed2-8c6f-rp0-1 Created \n Container reef-calcify-e4-timed2-8c6f-rp1-1 Created \n Container reef-calcify-e4-timed2-8c6f-rp2-1 Created \n",
+  "exitCode": 0,
+  "completedAtMs": 104275084,
+  "completedUtc": "2026-10-06T02:30:40.617Z",
+  "stdoutSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderrSha256": "e0ead721a357e8d4a0a7f6f0c70f195450a07b7281f5b20a73545016159f7166",
+  "inputSha256": "3351dee85a5144bdf534c935c1d787c45e6f05db7bc6bdcf6d4541ccf9944015"
+}

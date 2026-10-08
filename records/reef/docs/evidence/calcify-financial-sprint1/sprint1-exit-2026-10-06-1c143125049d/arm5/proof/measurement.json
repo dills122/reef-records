@@ -1,0 +1,318 @@
+{
+  "schema" : "financial-rate-measurement-v1",
+  "policySha256" : "bb090140bef683b5d8d5e20487853eb71d862e28233583f0ee83a59ac998a587",
+  "sourceHead" : "863503ec23c27f33ecea14fd82724fe28f96d308",
+  "fixtureSha256" : "fee7eead368d2ef2927aad1e53877907a4d74f9762b696d20f7e5575b1361e6d",
+  "workloadSha256" : "e6b28e8b5e6c105b5935ae199267dad75dc2bfc97bba9e14b40bd4bd4941a5cb",
+  "units" : "unique timed executions; preflight/aged rows excluded",
+  "producerElapsedMs" : 132040,
+  "drainMs" : 8139,
+  "deadline" : {
+    "offered" : 71296,
+    "callbackSuccess" : 71286,
+    "admitted" : 71256,
+    "decided" : 63104,
+    "settled" : 63104,
+    "pending" : 0
+  },
+  "final" : {
+    "offered" : 150000,
+    "callbackSuccess" : 150000,
+    "admitted" : 150000,
+    "decided" : 150000,
+    "settled" : 150000,
+    "pending" : 0
+  },
+  "parity" : {
+    "completeJournal" : true,
+    "completeOwnerState" : true,
+    "independentOracle" : true,
+    "evidenceSha256" : "add621d4d9ded7da583e1390f4ef166dc264869b66e109560282b6c27de851c5"
+  },
+  "lagSamples" : [ {
+    "elapsedMs" : 0,
+    "lag" : 0
+  }, {
+    "elapsedMs" : 896,
+    "lag" : 2139
+  }, {
+    "elapsedMs" : 1907,
+    "lag" : 4661
+  }, {
+    "elapsedMs" : 2923,
+    "lag" : 6602
+  }, {
+    "elapsedMs" : 3937,
+    "lag" : 8192
+  }, {
+    "elapsedMs" : 4954,
+    "lag" : 8156
+  }, {
+    "elapsedMs" : 5964,
+    "lag" : 8192
+  }, {
+    "elapsedMs" : 6980,
+    "lag" : 8139
+  }, {
+    "elapsedMs" : 7989,
+    "lag" : 8192
+  }, {
+    "elapsedMs" : 8996,
+    "lag" : 8120
+  }, {
+    "elapsedMs" : 10014,
+    "lag" : 8192
+  }, {
+    "elapsedMs" : 11024,
+    "lag" : 8131
+  }, {
+    "elapsedMs" : 12036,
+    "lag" : 8192
+  }, {
+    "elapsedMs" : 13053,
+    "lag" : 8125
+  }, {
+    "elapsedMs" : 14063,
+    "lag" : 8192
+  }, {
+    "elapsedMs" : 15071,
+    "lag" : 8129
+  }, {
+    "elapsedMs" : 16079,
+    "lag" : 8192
+  }, {
+    "elapsedMs" : 17088,
+    "lag" : 8150
+  }, {
+    "elapsedMs" : 18105,
+    "lag" : 8192
+  }, {
+    "elapsedMs" : 19120,
+    "lag" : 8120
+  }, {
+    "elapsedMs" : 20138,
+    "lag" : 8192
+  }, {
+    "elapsedMs" : 21157,
+    "lag" : 8128
+  }, {
+    "elapsedMs" : 22223,
+    "lag" : 8176
+  }, {
+    "elapsedMs" : 23232,
+    "lag" : 8116
+  }, {
+    "elapsedMs" : 24247,
+    "lag" : 8159
+  }, {
+    "elapsedMs" : 25263,
+    "lag" : 8162
+  }, {
+    "elapsedMs" : 26283,
+    "lag" : 8149
+  }, {
+    "elapsedMs" : 27307,
+    "lag" : 8153
+  }, {
+    "elapsedMs" : 28327,
+    "lag" : 8147
+  }, {
+    "elapsedMs" : 29335,
+    "lag" : 8128
+  }, {
+    "elapsedMs" : 30343,
+    "lag" : 8130
+  }, {
+    "elapsedMs" : 31352,
+    "lag" : 8128
+  }, {
+    "elapsedMs" : 32366,
+    "lag" : 8127
+  }, {
+    "elapsedMs" : 33383,
+    "lag" : 8148
+  }, {
+    "elapsedMs" : 34398,
+    "lag" : 8133
+  }, {
+    "elapsedMs" : 35406,
+    "lag" : 8158
+  }, {
+    "elapsedMs" : 36414,
+    "lag" : 8148
+  }, {
+    "elapsedMs" : 37429,
+    "lag" : 8095
+  }, {
+    "elapsedMs" : 38438,
+    "lag" : 8138
+  }, {
+    "elapsedMs" : 39453,
+    "lag" : 8145
+  }, {
+    "elapsedMs" : 40473,
+    "lag" : 8134
+  }, {
+    "elapsedMs" : 41484,
+    "lag" : 8135
+  }, {
+    "elapsedMs" : 42497,
+    "lag" : 7985
+  }, {
+    "elapsedMs" : 43512,
+    "lag" : 8131
+  }, {
+    "elapsedMs" : 44535,
+    "lag" : 8109
+  }, {
+    "elapsedMs" : 45546,
+    "lag" : 8170
+  }, {
+    "elapsedMs" : 46560,
+    "lag" : 8137
+  }, {
+    "elapsedMs" : 47575,
+    "lag" : 7915
+  }, {
+    "elapsedMs" : 48588,
+    "lag" : 8128
+  }, {
+    "elapsedMs" : 49611,
+    "lag" : 8133
+  }, {
+    "elapsedMs" : 50625,
+    "lag" : 8138
+  }, {
+    "elapsedMs" : 51638,
+    "lag" : 8147
+  }, {
+    "elapsedMs" : 52650,
+    "lag" : 8185
+  }, {
+    "elapsedMs" : 53666,
+    "lag" : 8126
+  }, {
+    "elapsedMs" : 54678,
+    "lag" : 8163
+  }, {
+    "elapsedMs" : 55690,
+    "lag" : 8125
+  }, {
+    "elapsedMs" : 56704,
+    "lag" : 8139
+  }, {
+    "elapsedMs" : 57720,
+    "lag" : 7677
+  }, {
+    "elapsedMs" : 58738,
+    "lag" : 8116
+  }, {
+    "elapsedMs" : 59748,
+    "lag" : 8121
+  }, {
+    "elapsedMs" : 60000,
+    "lag" : 8152
+  } ],
+  "resources" : {
+    "processCpuMs" : 321184,
+    "heapPeakBytes" : 3962293592,
+    "heapPeakScope" : "Sampled through result assembly snapshot; final serialization and staged writes excluded",
+    "rssPeakBytes" : 4726587392,
+    "diskPeakBytes" : 8831485940,
+    "encodedInputBytes" : 112172230,
+    "encodedResultBytes" : 883951833,
+    "encodedTechnicalBytes" : null,
+    "physicalBrokerBytes" : 3017619363,
+    "physicalChangelogBytes" : 4471099809,
+    "touchedKeys" : 5550017,
+    "technicalRecords" : 300000,
+    "transactionWaitMs" : 76.788
+  },
+  "heapObservation" : {
+    "schema" : "financial-empirical-heap-observation-v1",
+    "guardOutcome" : "PASS_SAMPLED",
+    "actualMaxHeapBytes" : 8589934592,
+    "admissionLimitBytes" : 6871947673,
+    "estimatedHeapBytes" : null,
+    "heapPeakBytes" : 3962293592,
+    "baselineObservations" : [ {
+      "stage" : "before-setup",
+      "sampledAtNano" : 98089087204250,
+      "usedHeapBytes" : 9769680,
+      "maxHeapBytes" : 8589934592
+    }, {
+      "stage" : "warmed-before-aging",
+      "sampledAtNano" : 98091953424000,
+      "usedHeapBytes" : 50938104,
+      "maxHeapBytes" : 8589934592
+    }, {
+      "stage" : "producer-warmed-before-aging",
+      "sampledAtNano" : 98091956131583,
+      "usedHeapBytes" : 50938104,
+      "maxHeapBytes" : 8589934592
+    } ],
+    "pollMillis" : 250,
+    "maxSampleAgeNanos" : 5000000000,
+    "sampled" : true,
+    "limitation" : "Sudden allocation may outrun sampled protection; native/RSS memory unbounded; no OOM guarantee",
+    "purpose" : "EMPIRICAL_TIMED_DIAGNOSTIC",
+    "heapConservativeBound" : false,
+    "reportedPeakScope" : "Sampled through result assembly snapshot; final serialization and staged writes excluded"
+  },
+  "stageLatency" : {
+    "kind" : "sampled-individual",
+    "stage" : "offer-to-read-committed-settlement",
+    "clockDomain" : "same-monotonic",
+    "samples" : 150,
+    "p95Ms" : 7904,
+    "p99Ms" : 8003
+  },
+  "restore" : {
+    "kind" : "result-only-replay",
+    "records" : 300001,
+    "bytes" : 883951833,
+    "elapsedMs" : 98545,
+    "verifiedCut" : true
+  },
+  "ackJournal" : {
+    "schema" : "financial-ack-journal-v1",
+    "directory" : "/Users/dsteele/.codex/worktrees/8c6f/reef/.planning/calcify-sprint1-exit-2026-10-06/arm5/journal",
+    "scope" : {
+      "runId" : "financial-s1-exit-timed3",
+      "topic" : "financial-s1-exit-timed3-input",
+      "topicUuid" : "zub5R2aGRqSom8eLGByIvQ",
+      "partition" : 0,
+      "domain" : "hot"
+    },
+    "publishedMembers" : 300000,
+    "recoveredMembers" : 0,
+    "queueCapacity" : 16384,
+    "queueSize" : 0,
+    "batchSize" : 256,
+    "batchMillis" : 10,
+    "maxPayloadBytes" : 1024,
+    "maxFrameBytes" : 4096,
+    "maxAggregateBytes" : 2147483648,
+    "logicalBytes" : 336587023,
+    "dataSha256" : "2a57a05048b965168bc77f22faf23383997722f7b779c116b2aaf5fb72c58238",
+    "publicationSha256" : "baf5b6d427fbe92ec7909a63622eed0a00741ecdc7917adf4b86901cbc0213b1",
+    "publicationWitnessSha256" : "baf5b6d427fbe92ec7909a63622eed0a00741ecdc7917adf4b86901cbc0213b1",
+    "forcesPerBatch" : 4,
+    "liveForcedBatches" : 3146,
+    "liveForceElapsedNanos" : 60525331066,
+    "liveLastPublicationForceNano" : 98224181143708,
+    "liveClockScope" : "financial-s1-exit-timed3:70403:c16b14f2-bd7c-4c19-b9ac-f36176c590b9",
+    "controllerAdmissionRecovery" : "unknown; no source-derived timestamps",
+    "recoveryReceipt" : { }
+  },
+  "gaps" : [ "Actual managed restart remains separate from result-only replay and broker-free journal process-crash controls", "Encoded technical store bytes uninstrumented", "CPU scope same-JVM worker+producer+observer; broker CPU unmeasured", "Touched keys = emitted state/history/coverage/cert writes; framework reads excluded" ],
+  "capacityQualification" : false,
+  "purpose" : "EMPIRICAL_TIMED_DIAGNOSTIC",
+  "heapConservativeBound" : false,
+  "estimatedHeapBytes" : null,
+  "explicitHeapBudgetBytes" : 8589934592,
+  "journalBudgetBytes" : 2147483648,
+  "managedRestartVerified" : false,
+  "diskBudgetBytes" : 17179869184,
+  "resourceProfile" : "financial-empirical-heap8-disk16-v1"
+}

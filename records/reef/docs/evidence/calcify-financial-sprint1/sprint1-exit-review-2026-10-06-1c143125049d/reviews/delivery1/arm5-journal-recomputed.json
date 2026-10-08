@@ -1,0 +1,103 @@
+{
+  "scope": {
+    "runId": "financial-s1-exit-timed3",
+    "topic": "financial-s1-exit-timed3-input",
+    "topicUuid": "zub5R2aGRqSom8eLGByIvQ",
+    "partition": 0,
+    "domain": "hot"
+  },
+  "rawFiles": {
+    "members.bin": {
+      "bytes": 328612423,
+      "sha256": "2a57a05048b965168bc77f22faf23383997722f7b779c116b2aaf5fb72c58238"
+    },
+    "ordinal-index.bin": {
+      "bytes": 4800000,
+      "sha256": "856cd7f883ee5368a70c188759f054a155f69c1a93b401647c9cd42d98c47c8d"
+    },
+    "writer.lock": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "scope.json": {
+      "bytes": 270,
+      "sha256": "2b0ab18280542032dca4ec62dd9c5b7b3ff870fe51cd3227dfced551cd4a1740"
+    },
+    "publication-witness.bin": {
+      "bytes": 1587165,
+      "sha256": "baf5b6d427fbe92ec7909a63622eed0a00741ecdc7917adf4b86901cbc0213b1"
+    },
+    "publications.bin": {
+      "bytes": 1587165,
+      "sha256": "baf5b6d427fbe92ec7909a63622eed0a00741ecdc7917adf4b86901cbc0213b1"
+    }
+  },
+  "publicationMarkerCount": 3146,
+  "validatedPublishedMembers": 300000,
+  "pairedPublishedSettleInputs": 150000,
+  "unpairedCaptureInput": 0,
+  "sourcePayloadBytes": {
+    "CAPTURE": 71800005,
+    "SETTLE": 40372225
+  },
+  "sourcePayloadMaxBytes": {
+    "CAPTURE": 482,
+    "SETTLE": 271
+  },
+  "sourcePayloadAverageBytes": {
+    "CAPTURE": 478.6667,
+    "SETTLE": 269.14816666666667
+  },
+  "offeredClockSpanMs": 132031.181666,
+  "callbackClockSpanMs": 132017.862292,
+  "publishedDataBytes": 328612423,
+  "unpublishedDataTailBytes": 0,
+  "unpublishedIndexTailBytes": 0,
+  "firstPublishedMember": {
+    "ordinal": 0,
+    "offset": 0,
+    "offeredNano": 98092091821375,
+    "callbackNano": 98092112281833,
+    "clockScope": "financial-s1-exit-timed3:70403:c16b14f2-bd7c-4c19-b9ac-f36176c590b9"
+  },
+  "lastPublishedMember": {
+    "ordinal": 299999,
+    "offset": 299999,
+    "offeredNano": 98224123003041,
+    "callbackNano": 98224130144125,
+    "clockScope": "financial-s1-exit-timed3:70403:c16b14f2-bd7c-4c19-b9ac-f36176c590b9"
+  },
+  "sourcePrefixChecks": "Full frame SHA/chain + mirrored publication witness + ordinal index + payload SHA + topic/run/domain/physical order + exact complete synthetic source input verified; raw files unchanged before/after read",
+  "limitations": [
+    "Source publication only, not business settlement or read_committed result parity",
+    "No persisted controller admission notification nano or timedStart/deadline cut; no deadline stage counts/rates reconstructed",
+    "Journal checks alone do not certify settlement, result-only replay or new managed restart",
+    "No broker read or RocksDB opening performed"
+  ],
+  "measurementComparison": {
+    "ackJournalHashesExact": true,
+    "scopeExact": true,
+    "publishedMembersExact": true,
+    "queueSizeZero": true,
+    "logicalBytesExact": true,
+    "encodedInputBytesExact": true,
+    "measurementSha256": "8dc1974b7ba755c145d59534893befbe0b4c52180917df08325184ed8b4db6da",
+    "measurementDeadline": {
+      "offered": 71296,
+      "callbackSuccess": 71286,
+      "admitted": 71256,
+      "decided": 63104,
+      "settled": 63104,
+      "pending": 0
+    },
+    "measurementFinal": {
+      "offered": 150000,
+      "callbackSuccess": 150000,
+      "admitted": 150000,
+      "decided": 150000,
+      "settled": 150000,
+      "pending": 0
+    },
+    "deadlineScope": "Copied published measurement; not reconstructed from journal offer/callback clocks"
+  }
+}

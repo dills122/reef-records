@@ -1,0 +1,24 @@
+{
+  "seq": 29,
+  "name": "get-transaction_coordinator_log_segment_size-rp0",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "exec",
+    "5ac644f956f21f1f53a037f296af6dfe347d6af164c1e840422d355f69bffae9",
+    "rpk",
+    "cluster",
+    "config",
+    "get",
+    "transaction_coordinator_log_segment_size"
+  ],
+  "startedAtMs": 103704371,
+  "startedUtc": "2026-10-06T02:21:09.915Z",
+  "stdout": "8388608\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 103704437,
+  "completedUtc": "2026-10-06T02:21:09.981Z",
+  "stdoutSha256": "22ee405617f143f8b43cdb9268b81b558e106454ba7a8b8c1354e9574481ba1e",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputSha256": "2578ff54a34c3a346ad1dd96fa119608689daf68f9de8a6caf382900ffa31163"
+}

@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/dills122/reef",
+  "source_commit": "c61beaaf19ff5529be61e514003ac8dc032a0189",
+  "selection_policy": "Closed review-author packet and independent Ready verdict preserved exactly with original CPU documentation correction; append-only supplement, runtime code unchanged; no source removal",
+  "files": [
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/SHA256SUMS",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/SHA256SUMS",
+      "source_blob_oid": "76606eb1d3b24591603cb22ac6f7f59fba688772",
+      "bytes": 1993,
+      "sha256": "8b29be6d75ef8585833197b9151fee4070ba97acf155c2b75652fc8a1ae13e41",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/delivery-author/author-explanation.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/delivery-author/author-explanation.md",
+      "source_blob_oid": "c08c0c0f01ce181698ffba52ab35ac9805350853",
+      "bytes": 2882,
+      "sha256": "51dec724f21438094606c57e6dbda34a092f305ebed7974cd2f6fb4275118112",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/delivery-author/bootstrap.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/delivery-author/bootstrap.md",
+      "source_blob_oid": "98418d99141dde42b1ee35a6c5c659531be8a6bf",
+      "bytes": 2537,
+      "sha256": "6127eb60a896a363a40f79bb6dc6c6a90587199fca287021d080858dda90ce67",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/delivery-author/docs-before-cpu-correction.patch",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/delivery-author/docs-before-cpu-correction.patch",
+      "source_blob_oid": "316a112d73b8139ef58808c101e8261fef892cdf",
+      "bytes": 18516,
+      "sha256": "d03bbda4d9c2fbf528f982958f871215c0015f7a247f835e71d3a0aebe2aef18",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/delivery-author/docs.patch",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/delivery-author/docs.patch",
+      "source_blob_oid": "50b39b951981b5fa0d13ca228dc6bfee777ac555",
+      "bytes": 18636,
+      "sha256": "ed5f48b54722277cf9bc1462a402ce0de246258d9f2ada32212eb7be16138078",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/delivery-author/latest-summary-at-review.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/delivery-author/latest-summary-at-review.json",
+      "source_blob_oid": "bd1a3947be3e44c1889be7b6da24ed6cc5d3a08e",
+      "bytes": 9844,
+      "sha256": "11552b2e5b3a0358e38c8609b4d69468c40eed790db65936e61631fa3cfe5088",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/delivery-author/source-freeze-before-cpu-correction.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/delivery-author/source-freeze-before-cpu-correction.json",
+      "source_blob_oid": "0eab12c54c77e7ee3fd8cdd2fca72bbfefffb42c",
+      "bytes": 849,
+      "sha256": "9acfbedb6c269d63ce9cba3a4ba1c50a4e093b1631733a53c3463b59088d220e",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/delivery-author/source-freeze.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/delivery-author/source-freeze.json",
+      "source_blob_oid": "6fe3c9b212654a736a2d6dcf5756f82d5c41f9e3",
+      "bytes": 849,
+      "sha256": "e6d7b4128d8804cb7251af466a5cbc7eaba4e1e9162b348f7edc56723db3cdea",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/promotion-mapping.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/promotion-mapping.json",
+      "source_blob_oid": "3715956bd2f3aee6670ee70985e8e8cb00658fe6",
+      "bytes": 7885,
+      "sha256": "0f65dd3293170fe181df3fafb1aa0476826329c3f1d64418d368268d2705310c",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/arm3-journal-recomputed.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/arm3-journal-recomputed.json",
+      "source_blob_oid": "4b5e8f3439b36a3cfe13c9a9e38de72fc7d57df7",
+      "bytes": 2684,
+      "sha256": "d84957321e889eb910e61fb52416fac15ad3b11c41a26621e33ae3100a7cd20e",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/arm4-journal-recomputed.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/arm4-journal-recomputed.json",
+      "source_blob_oid": "168345d5c124a7c64ec8d6a0f6152fd05768a375",
+      "bytes": 2684,
+      "sha256": "4070d740f4a3436c59db7e31eead01a5374fbde6823e26481e34818c76c6cf82",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/arm5-journal-recomputed.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/arm5-journal-recomputed.json",
+      "source_blob_oid": "595f68c09f5ea8aad9509c781dc4ae35c25ca31b",
+      "bytes": 3483,
+      "sha256": "4d0c186e547f62a8c9fad007f3e7d155dbf31f76f4c7e105af17e71aa6055661",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/corrected-scope-validation.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/corrected-scope-validation.json",
+      "source_blob_oid": "c3a9da1a0cca0573df029a91d0920ef31b58272f",
+      "bytes": 733,
+      "sha256": "fd11b5142b35b1018d29b65a5ebe66e54b412ac92bd59b2160d3db768cbb0fc6",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/final-count-validation.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/final-count-validation.json",
+      "source_blob_oid": "c88712f65ed90d52983667fb78ec638c1c435afc",
+      "bytes": 351,
+      "sha256": "0d2c1fd391cef1ad4f40e392db8b0ca0e7c904fce3f7cca986127139bb7bb233",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/freeze-validation.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/freeze-validation.json",
+      "source_blob_oid": "a73d9ae062a010a433605aaed66c340fe64f928f",
+      "bytes": 298,
+      "sha256": "219751bd5b71c2b5191d1a5e8c77389a075928a0f345c71da62165e56d46debb",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/preliminary.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/preliminary.md",
+      "source_blob_oid": "5c4ebc8910c931b97428b31798e1ec286719dc94",
+      "bytes": 1773,
+      "sha256": "ede9d043d7891d6a66fd83359c4c30cdcecbf5aeedb2967b4afbe800ca5e7b29",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/receipt-validation.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/receipt-validation.json",
+      "source_blob_oid": "1a702aa142b182d5d74658973366c8867081ebd0",
+      "bytes": 5867,
+      "sha256": "412f3761e10513f19ccb2394a1ef2e04ec3e8e245a55688653aae9399575ddf8",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/report.md",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/report.md",
+      "source_blob_oid": "28481e8c2f28acf00212cc516279bda3d4b61901",
+      "bytes": 8931,
+      "sha256": "28c16a8fafe99de82669105f1232115468b2590c434d008dbc2a808f06f56572",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/verdict.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/verdict.json",
+      "source_blob_oid": "89b0eed6855516e8f0c49eda27795367566eef72",
+      "bytes": 727,
+      "sha256": "e39d7392da88333c2503da32e2871c15f77b1200a8b46e0b3015e4a5cfd3b2ae",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    },
+    {
+      "source_path": "docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/source-provenance.json",
+      "archive_path": "records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/source-provenance.json",
+      "source_blob_oid": "d5e337e56d23bd70d6fd47be451b654ac4d7b730",
+      "bytes": 404,
+      "sha256": "eaed731f0bed75f6414ae08eef05bff3a2e8a97da5c9fe847d24c4f50905dc58",
+      "reason": "Closed actual-evidence review1 and original/corrected stage-specific CPU documentation scope; no runtime change"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "result": "LIMITED",
+  "failures": [],
+  "gaps": [
+    "MEASUREMENT_ARTIFACT_REQUIRED",
+    "Empirical resource budget; no conservative heap upper bound or capacity qualification"
+  ],
+  "capacityQualification": false,
+  "usefulRateOutcome": "TARGET_MET",
+  "policySha256": "96168144ba7fe0676c0ba3f4fadf1ddb79ecfb9bcf0afd773267183bc674e622",
+  "heapConservativeBound": false
+}

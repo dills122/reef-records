@@ -1,0 +1,20 @@
+{
+  "name": "network-inventory",
+  "executable": "/usr/local/bin/docker",
+  "args": [
+    "network",
+    "ls",
+    "--format",
+    "{{.ID}}"
+  ],
+  "startedAtMs": 104274818,
+  "startedUtc": "2026-10-06T02:30:40.351Z",
+  "stdout": "36fea5d2204f\na354e7e34c90\n2f7bcb1575c3\n5fddb450d887\ncdcd35dfed52\nfb59fd94c7fe\ndb31944a13e4\ncfceee505448\nad26b09ffadd\n1ddc73ff44be\n4b4344817454\n2e180aba9bb1\nfe8283fa62be\nd4d7e461fb9c\n5a61270650eb\nef58f83b7562\n764587b01fe3\n049adeeb0aff\n962eb60907b5\na01ccb281911\n8a0ed55cf129\n2b59e5dc96ba\n21dfdd047955\nd40aac409704\n7d9b2d8211b6\ne109d7634f15\n8b18c1183637\ncc71e5cda939\n580cea6de13d\nf82994efd429\nb475a27a0481\n658e1acd18b3\n5a79c00aa602\nba6f5fae3bf7\nb14bc492c599\nc80eeddd3636\n44a5e0c8810f\n5e1d0da90e14\n",
+  "stderr": "",
+  "exitCode": 0,
+  "completedAtMs": 104274835,
+  "completedUtc": "2026-10-06T02:30:40.368Z",
+  "stdoutSha256": "ae4866a9f4579062be453b097e91d9c2a4ea5f2ab0fcefc282f9f5b32a85b411",
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "inputSha256": "22160d13fc7498d79dd99c82824820af0833f79789cd2c9105e4e269831935a7"
+}

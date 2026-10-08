@@ -1,0 +1,10 @@
+{
+  "schema": "financial-empirical-prior-correctness-binding-v1",
+  "result": "PASS",
+  "kernelSha256": "9f76e87940d7600dac11bb26aba9ad40e39e7fbf41ec28dc8ab990790f0e637e",
+  "managedAdapterSha256": "6f7d89934d01a79e54b68ced230adc2d341076573cdd7fa0ca36408b767ae778",
+  "priorProofSha256": "a702292c3507278993a7fa895f601357ca8aef477c6fec7a2e4ca45406d5cac6",
+  "priorProofPath": "prior-e3-correctness.json",
+  "immutableArchiveCommit": "87242fe0415a80a9934846686cd41fc8c08cad6c",
+  "scope": "Reuse bounded49 E3 correctness evidence for unchanged kernel/FinancialBrokerProbe source; new timed probe/config/heap/build differ, no new timed-cohort recovery qualification or conservative cost proof"
+}

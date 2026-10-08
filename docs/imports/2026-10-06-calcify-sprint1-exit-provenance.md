@@ -1,0 +1,7 @@
+# Calcify sprint1 exit empirical diagnostic proof provenance
+
+Local-only Reef checkpoint `e8b6c35b5ac9bc8cb987cf05f3ca9a5f38d3c358`; reviewed implementation parent `1c143125049d18ee5c8c8cf473e7ed81ae25df8c`. Checkpoint deliberately unpushed to Reef; complete bulk publication belongs to Records. Explicit selected ignored synthetic receipts promoted to unique tracked namespace with exact byte mapping. Executed baseline `863503ec23c27f33ecea14fd82724fe28f96d308`, dirty patch `da8ad0e573c9d4a17a4da81c425401b08a34f4d3c04b8f301ec4061c1564117b`, and actual 8 GiB build `2a8dc310c26c5973dcdbbea5f4ac0061a2c296a574e71b253bf47d6c09fe5314` remain separate from code commit created after execution.
+
+Setup refusals, 4 GiB disk/heap aborts, original failed/green checks, review corrections and completed 8 GiB target MISS retained. Full-cohort parity passed; no conservative bound, aged/SQL capacity or full E4 qualification. Three synthetic ACK membership originals preserved as ordered 32 MiB chunks with offsets, per-chunk hashes and original size/hash; exact reassembly verified. Broker volumes and topic records retained locally, not exported; archive does not contain every history-topic record. No source removal or production financial authority change.
+
+Raw original CLI output and binary chunks preserved literally; whitespace findings in bulk proof do not authorize normalization. Archive metadata and checksum integrity checked separately.

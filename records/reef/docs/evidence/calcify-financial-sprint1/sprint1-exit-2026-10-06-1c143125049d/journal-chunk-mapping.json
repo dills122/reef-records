@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "originals": [
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/arm3/journal/members.bin",
+      "bytes": 297967900,
+      "sha256": "c914ae575e01bb6f47f800843247aa92478cb89249df69d55e48c475d73e4be8",
+      "reason": "Closed first empirical attempt, original 9 GiB disk abort and partial synthetic ACK journal; no final measurement",
+      "chunk_bytes": 33554432,
+      "reassembly": "Concatenate listed chunks in order, then verify total bytes and original SHA-256.",
+      "chunks": [
+        {
+          "promoted_relative_path": "arm3/journal/members.bin.chunks/part-000000.bin",
+          "offset": 0,
+          "bytes": 33554432,
+          "sha256": "07987082ee467c4f46f0cfb4d99649fc059ccc324f30a8266c12dda7dcf955f4"
+        },
+        {
+          "promoted_relative_path": "arm3/journal/members.bin.chunks/part-000001.bin",
+          "offset": 33554432,
+          "bytes": 33554432,
+          "sha256": "43bd45ff892535ae3a7eb00783a7d9411b15b7ac0c32b0455cacc7149fae2d57"
+        },
+        {
+          "promoted_relative_path": "arm3/journal/members.bin.chunks/part-000002.bin",
+          "offset": 67108864,
+          "bytes": 33554432,
+          "sha256": "9a93e06dcb7fd3c95e39bf99cfd1513ae5db093fae6ba6efdaa395ae1cb26a21"
+        },
+        {
+          "promoted_relative_path": "arm3/journal/members.bin.chunks/part-000003.bin",
+          "offset": 100663296,
+          "bytes": 33554432,
+          "sha256": "c55ced7d8a372a4387c61ff7f9c2bfb2381564f283764fde0ddb549677156cbb"
+        },
+        {
+          "promoted_relative_path": "arm3/journal/members.bin.chunks/part-000004.bin",
+          "offset": 134217728,
+          "bytes": 33554432,
+          "sha256": "3c95e79ebfa0e011cac616819c7f12e3109c1564d5b602aa8277473bb01522a3"
+        },
+        {
+          "promoted_relative_path": "arm3/journal/members.bin.chunks/part-000005.bin",
+          "offset": 167772160,
+          "bytes": 33554432,
+          "sha256": "063f7dc6ae42fca81650062a1aea58cde1b0a3b5b4ea274dcd66e68b9561435b"
+        },
+        {
+          "promoted_relative_path": "arm3/journal/members.bin.chunks/part-000006.bin",
+          "offset": 201326592,
+          "bytes": 33554432,
+          "sha256": "203ff0aef12cdb37c0bcc521121338ae72721e6955a941cd5300da0454044c53"
+        },
+        {
+          "promoted_relative_path": "arm3/journal/members.bin.chunks/part-000007.bin",
+          "offset": 234881024,
+          "bytes": 33554432,
+          "sha256": "86a71d6eaa366cd877e46f8072cec1beede72e91f2d5d4c6aefd8d1494a5d881"
+        },
+        {
+          "promoted_relative_path": "arm3/journal/members.bin.chunks/part-000008.bin",
+          "offset": 268435456,
+          "bytes": 29532444,
+          "sha256": "678fda4219d91c3d8106ee975b6863d050b0e51b5a7d567869066ea4c64f9dd7"
+        }
+      ]
+    },
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/arm4/journal/members.bin",
+      "bytes": 325619063,
+      "sha256": "0bcbe73f1528d8ef652ccd443a4d0ada233f99f2f047fffbabbc4e32f3665219",
+      "reason": "Closed second empirical attempt, original 4 GiB observed heap abort and partial synthetic ACK journal; no final measurement",
+      "chunk_bytes": 33554432,
+      "reassembly": "Concatenate listed chunks in order, then verify total bytes and original SHA-256.",
+      "chunks": [
+        {
+          "promoted_relative_path": "arm4/journal/members.bin.chunks/part-000000.bin",
+          "offset": 0,
+          "bytes": 33554432,
+          "sha256": "049700dd1fb3df82c5506058bd832ffa74d69acb4311117af0974282ddcd33ce"
+        },
+        {
+          "promoted_relative_path": "arm4/journal/members.bin.chunks/part-000001.bin",
+          "offset": 33554432,
+          "bytes": 33554432,
+          "sha256": "7f49be7dd091b72b86f57a6c105bf2890dbe746593b96a0203809f631518e5b0"
+        },
+        {
+          "promoted_relative_path": "arm4/journal/members.bin.chunks/part-000002.bin",
+          "offset": 67108864,
+          "bytes": 33554432,
+          "sha256": "fe855126471bb02c63a7840bc2afb042cad6fc3348d55aaa4b13fdca3441be0e"
+        },
+        {
+          "promoted_relative_path": "arm4/journal/members.bin.chunks/part-000003.bin",
+          "offset": 100663296,
+          "bytes": 33554432,
+          "sha256": "5060b0995b4f28ce232ebe76be6fd8cd0a973bc4d0a1d56d88590678cfe36788"
+        },
+        {
+          "promoted_relative_path": "arm4/journal/members.bin.chunks/part-000004.bin",
+          "offset": 134217728,
+          "bytes": 33554432,
+          "sha256": "8b23c956c64411a2c440aaf8c90eb7c13f1811db0e94fd52150c0386ec8a1891"
+        },
+        {
+          "promoted_relative_path": "arm4/journal/members.bin.chunks/part-000005.bin",
+          "offset": 167772160,
+          "bytes": 33554432,
+          "sha256": "fde8cb6d93afb0ace7c227f9912291a7f47d3120b94a45b5c4ba0dc4204ebbda"
+        },
+        {
+          "promoted_relative_path": "arm4/journal/members.bin.chunks/part-000006.bin",
+          "offset": 201326592,
+          "bytes": 33554432,
+          "sha256": "6bcae94996778c025c7c0ecd298a8f290231af5c27ae3915462340a99788f4e3"
+        },
+        {
+          "promoted_relative_path": "arm4/journal/members.bin.chunks/part-000007.bin",
+          "offset": 234881024,
+          "bytes": 33554432,
+          "sha256": "3ebc32a1d9175c81504b6b8f690e5e33df33a35062af19091109d10ebccd484d"
+        },
+        {
+          "promoted_relative_path": "arm4/journal/members.bin.chunks/part-000008.bin",
+          "offset": 268435456,
+          "bytes": 33554432,
+          "sha256": "8b873527c89439ac592dff7821567e6d45739ae165304e9015d10c9c4fa3db37"
+        },
+        {
+          "promoted_relative_path": "arm4/journal/members.bin.chunks/part-000009.bin",
+          "offset": 301989888,
+          "bytes": 23629175,
+          "sha256": "87a8b37d332d4bf7e60cfdb150587906d523fdda99bcc6aeb086b751fb466031"
+        }
+      ]
+    },
+    {
+      "original_ignored_path": ".planning/calcify-sprint1-exit-2026-10-06/arm5/journal/members.bin",
+      "bytes": 328612423,
+      "sha256": "2a57a05048b965168bc77f22faf23383997722f7b779c116b2aaf5fb72c58238",
+      "reason": "Closed third timed attempt: original 8 GiB heap/16 GiB disk policy, exact frozen setup/corrections, full final measurement target miss, proof/supervision/raw logs/cleanup and synthetic journal",
+      "chunk_bytes": 33554432,
+      "reassembly": "Concatenate listed chunks in order, then verify total bytes and original SHA-256.",
+      "chunks": [
+        {
+          "promoted_relative_path": "arm5/journal/members.bin.chunks/part-000000.bin",
+          "offset": 0,
+          "bytes": 33554432,
+          "sha256": "037effe54b1d032a54691afe9028ff2840cb1c0daeaaaba28b8171b1e8806ae9"
+        },
+        {
+          "promoted_relative_path": "arm5/journal/members.bin.chunks/part-000001.bin",
+          "offset": 33554432,
+          "bytes": 33554432,
+          "sha256": "318e4a6b6e10f249337ef195fa3bea38e63a7a500638c76f518ce8e567451e35"
+        },
+        {
+          "promoted_relative_path": "arm5/journal/members.bin.chunks/part-000002.bin",
+          "offset": 67108864,
+          "bytes": 33554432,
+          "sha256": "149720e9648c0f9917f968e46801dc65faa62d206e4adffc4d6e81954c1f8f75"
+        },
+        {
+          "promoted_relative_path": "arm5/journal/members.bin.chunks/part-000003.bin",
+          "offset": 100663296,
+          "bytes": 33554432,
+          "sha256": "8a1d168961ff8d5b98f085efc851700540b0f797350d1b3a700e8a633474c873"
+        },
+        {
+          "promoted_relative_path": "arm5/journal/members.bin.chunks/part-000004.bin",
+          "offset": 134217728,
+          "bytes": 33554432,
+          "sha256": "7d812205439936a7e2be2b972079d09a342b5bc8baf470761475411a77647d97"
+        },
+        {
+          "promoted_relative_path": "arm5/journal/members.bin.chunks/part-000005.bin",
+          "offset": 167772160,
+          "bytes": 33554432,
+          "sha256": "40ce617f333b6ffe6fa824656529eacbca3393ca571cbdc55e7a5aba2bbeb6de"
+        },
+        {
+          "promoted_relative_path": "arm5/journal/members.bin.chunks/part-000006.bin",
+          "offset": 201326592,
+          "bytes": 33554432,
+          "sha256": "0f720175948819878d75a37d517cca7d7e6be6318b00b587c8b0eefcaf291d70"
+        },
+        {
+          "promoted_relative_path": "arm5/journal/members.bin.chunks/part-000007.bin",
+          "offset": 234881024,
+          "bytes": 33554432,
+          "sha256": "d3acd5903f090411a4e020530d337a0f8eabdf36227041444ed06c2f3e268066"
+        },
+        {
+          "promoted_relative_path": "arm5/journal/members.bin.chunks/part-000008.bin",
+          "offset": 268435456,
+          "bytes": 33554432,
+          "sha256": "03c4092dcbf58f1f00ef6073e87561fc893a02a2f31b9df10faea3b9c5592bf9"
+        },
+        {
+          "promoted_relative_path": "arm5/journal/members.bin.chunks/part-000009.bin",
+          "offset": 301989888,
+          "bytes": 26622535,
+          "sha256": "3f75926e69f7b65875762a9b6f4bc367bedc0d93ccbc224d9ac78e93a9011a3f"
+        }
+      ]
+    }
+  ]
+}
