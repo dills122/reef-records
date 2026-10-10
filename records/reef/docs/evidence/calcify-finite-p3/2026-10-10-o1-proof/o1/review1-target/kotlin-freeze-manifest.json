@@ -1,0 +1,237 @@
+{
+  "schema": "o1-kotlin-freeze-v1",
+  "head": "45211653d2f5b59dd25f4a4db42883881b4d6eb1",
+  "aggregateSha256": "6cbbd03874336027f3b887f64499f555431cc1d82887c209745a93612ffd449a",
+  "files": [
+    {
+      "path": "contracts/calcify/README.md",
+      "bytes": 13733,
+      "sha256": "2bacfab82e13e77b9f3e18392687cfec628341afb97380750df7090f7f2e456d"
+    },
+    {
+      "path": "contracts/calcify/finite-lifecycle-budget-v1.hex",
+      "bytes": 521,
+      "sha256": "456b572606dbaa87871f015a10adcf33159416f38c416373e8899898cca9cd6d"
+    },
+    {
+      "path": "contracts/calcify/finite-lifecycle-capture-command-v1.hex",
+      "bytes": 3317,
+      "sha256": "eb74049160112564440a91043b78f68310307f67e4923235b91b88b6b87d4b78"
+    },
+    {
+      "path": "contracts/calcify/finite-lifecycle-capture-multi-fill-v1.hex",
+      "bytes": 14781,
+      "sha256": "bf78e8425013fc9b03062b54fd5eea5315ea2c221990564620b7d3d4993a1275"
+    },
+    {
+      "path": "contracts/calcify/finite-lifecycle-legacy-source-v1.jsonl",
+      "bytes": 16647,
+      "sha256": "bdd4df11f562ba2f4dd217168a3e81e60f96fa4c3fa4a25c01e75830dda26506"
+    },
+    {
+      "path": "contracts/calcify/finite-lifecycle-source-v1-manifest.json",
+      "bytes": 11111,
+      "sha256": "900aed28cb4cf950157e84a0e7662729e951b7fe11cb68cc376a9d1e5850876a"
+    },
+    {
+      "path": "contracts/calcify/finite-lifecycle-source-v1.jsonl",
+      "bytes": 24809,
+      "sha256": "1a8cf1c8c769e3e2bf32fa80792f36da206f07e6e27ab4bbbc9511c925fb1811"
+    },
+    {
+      "path": "contracts/proto/calcify.proto",
+      "bytes": 7287,
+      "sha256": "8523e083c760bd4722a3b4875913f51690a54d9999185bf356d3a7433d45537f"
+    },
+    {
+      "path": "services/matching-engine/internal/transport/grpc/pb/contracts/proto/calcify.pb.go",
+      "bytes": 133532,
+      "sha256": "e7f288502937374d7cc6498212c7e30aadb72b2c4f85522447e4121ac60b53cc"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/Calcify.java",
+      "bytes": 29239,
+      "sha256": "7969a2728f04a4b4789cd796786d977245eecfaf09d2a84bc542aed64da956ee"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleBatchStateV1.java",
+      "bytes": 29925,
+      "sha256": "b26481edfc06296c81b5d3998dd0c72c257bea22c4e20afb27dff33a514491bd"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleBatchStateV1OrBuilder.java",
+      "bytes": 1574,
+      "sha256": "679bf9efff6116b807229a45c21b2c9554c94179f4ef58374983b47400f41826"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleCaptureV1.java",
+      "bytes": 70507,
+      "sha256": "5f60fef9008a69f1daaecd4587d10e1d96b731efc9ce0a2a26a0e90d62e63f61"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleCaptureV1OrBuilder.java",
+      "bytes": 4389,
+      "sha256": "66adbf09ed6efe17bd699b5b04588b15dbe901ca938f2e89b562bb22dee5123c"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleOrderStateV1.java",
+      "bytes": 51802,
+      "sha256": "91dfc324e9f9232c299e50051ae6577132749de9e789079215849b11c411b5c4"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleOrderStateV1OrBuilder.java",
+      "bytes": 3311,
+      "sha256": "43bf726de7b93d8bb4ce7218fcd6cc1d58cc8f8017c7dfbd840c17b97ad0d7d9"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleStateV1.java",
+      "bytes": 108254,
+      "sha256": "b57e02eb3572a7af71d72e7f8d2cf41e6b63d91c4c776631e2d81c706ec60a2d"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleStateV1OrBuilder.java",
+      "bytes": 7550,
+      "sha256": "ee4736968e306f2e6bf22a865f59e9b291a09a2489c9001c8633e395ca3440ff"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleSuffixV1.java",
+      "bytes": 19128,
+      "sha256": "09f5c0c51471b78e47dab23970c51ee7899c1c56ee968702e5d6022bc4094011"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleSuffixV1OrBuilder.java",
+      "bytes": 770,
+      "sha256": "d0e10436a9d9d6618ab7732ae362e9336dca85ff8d0aa9370686bcd2ab9ef9c4"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCancelV1.java",
+      "bytes": 17193,
+      "sha256": "8d9305eaaff26656b7724cffaaef48d3afff1910a75a50772ff61b6b912ad01b"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCancelV1OrBuilder.java",
+      "bytes": 676,
+      "sha256": "4ce399ba322458fc7c5c81e9f0036aa8e922fd8f12d43202818392375511c102"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCommandKindV1.java",
+      "bytes": 4435,
+      "sha256": "20a20886e3ab1eef4ab6887a8ac34987b86811247142ff16777840871eaa4e7f"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDependencyV1.java",
+      "bytes": 52006,
+      "sha256": "e7b50bd6c1df09f27d6b1444961360a88bd2675845a27e33cc6296ba45cd5df1"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDependencyV1OrBuilder.java",
+      "bytes": 3179,
+      "sha256": "96d502cca32410de80fa91b760391bf75bacb2825e093b940fc18319ada3488c"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDispositionV1.java",
+      "bytes": 4515,
+      "sha256": "506c64ebe3abc93bce602c65bfa4315b19045fbe7962216922316eb3379dc9ef"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberIdV1.java",
+      "bytes": 27871,
+      "sha256": "ffa4a639eaadd1766f5e921bb30e7a0b7a0ec59378c65dac3ba98c156401fd5b"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberIdV1OrBuilder.java",
+      "bytes": 1567,
+      "sha256": "b941a9348b3ba8effd17c45b926beb572400d3b4e82ffa23ad6981e550fde6ef"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberKindV1.java",
+      "bytes": 4046,
+      "sha256": "2a1de9537bcf72462a2998ee033008c223a2ea59b8119647c3b104b31ca649ab"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberV1.java",
+      "bytes": 110977,
+      "sha256": "31959ade247967c2a34e477920d8862c0bf2bf8308e137d5ed10a61a04c115a1"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberV1OrBuilder.java",
+      "bytes": 8147,
+      "sha256": "fd4d2279b24f3a8a75774e152f15d39677f75f7821e7fc32db120431a169fcfe"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleModifyV1.java",
+      "bytes": 21818,
+      "sha256": "b1121c124372bbce9aa4c586af0657d22cf97526bc927eabecefc801efcc6d5f"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleModifyV1OrBuilder.java",
+      "bytes": 994,
+      "sha256": "198fca816ad2161915ac5a17e7ad8c93e7ca7f7aaa48b0356f453792d81df4b5"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleOrderTerminalV1.java",
+      "bytes": 4053,
+      "sha256": "e4b19802948cdb51a5ede49b59478a13d9ec54d5ccb40378152e274f46a387b5"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleRevisionIdV1.java",
+      "bytes": 22090,
+      "sha256": "233252aac9bc742e639adb6a21a4a53cda8438e659ce279992f02bf8d26b8b84"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleRevisionIdV1OrBuilder.java",
+      "bytes": 1046,
+      "sha256": "8edc82d3a748b0c5ecfa20a6adf9244428885706a5ea4b2314727bb5cf456dfe"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleSubmitV1.java",
+      "bytes": 45862,
+      "sha256": "f6980e2ef24051a0fa7d8c7beea81f2a6e9142a029f0f5a77dc54f82f4d7b8db"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleSubmitV1OrBuilder.java",
+      "bytes": 3104,
+      "sha256": "3eec1874a6e113b958d7f87f9cc3c1e67479c8d1e919a350f8a13ae4fc519c13"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/OrderLifecycleCommandV1.java",
+      "bytes": 105253,
+      "sha256": "fb8c28dc1aca7d62dcf6021bda2c56b2c92c18c32dae4ba243cb17d8240433ca"
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/OrderLifecycleCommandV1OrBuilder.java",
+      "bytes": 6540,
+      "sha256": "9e5c3f0753fa07979d4b2106add6ba7383d1ebd276809f5890517ad419eb4359"
+    },
+    {
+      "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessor.kt",
+      "bytes": 29585,
+      "sha256": "f77b02418fb97de1bb7afa904d135f3ea38710fe767f9353cb56dd7e187323ac"
+    },
+    {
+      "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntime.kt",
+      "bytes": 3339,
+      "sha256": "f4bd66365de3c4995e65e0e3322a7a3e5845dcbb5a9e2051cf996ff2c8d7b494"
+    },
+    {
+      "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleContract.kt",
+      "bytes": 22994,
+      "sha256": "89c50f7fd5d0a9ef2551d0913e3910646903eeb531a66202b13c016cdd4e068d"
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessorTest.kt",
+      "bytes": 16851,
+      "sha256": "1ee5febcc7acd049a5da1b723ebbb325b420ba810e0a13042c9914333d24462f"
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntimeTest.kt",
+      "bytes": 4798,
+      "sha256": "42c06fe1d979cc752124c78b7f273f17d3a96ef246a43451cefa56df8e8b5d9a"
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleContractTest.kt",
+      "bytes": 8037,
+      "sha256": "d5b64afaa2aa41aecf73edc4622c1211295048f945c40cc60d29151dcbc23dd5"
+    }
+  ]
+}

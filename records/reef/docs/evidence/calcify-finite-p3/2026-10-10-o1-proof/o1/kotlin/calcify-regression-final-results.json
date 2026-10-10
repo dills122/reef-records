@@ -1,0 +1,302 @@
+[
+  {
+    "name": "com.reef.platform.calcify.ResolverConsumerGateTest",
+    "tests": "6",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:33.370Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.007"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyVerifiedVisibilityObserverTest",
+    "tests": "6",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:32.233Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.003"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialBrokerProbeTest",
+    "tests": "4",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:36.337Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.093"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyReceiptBatchTest",
+    "tests": "3",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:29.651Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.009"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialKernelTest",
+    "tests": "14",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:36.622Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "126.574"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyExtractorPollBatchTest",
+    "tests": "4",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:29.558Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.09"
+  },
+  {
+    "name": "com.reef.platform.calcify.FiniteLifecycleCaptureRuntimeTest",
+    "tests": "4",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:33.101Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.046"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialBootstrapProbeTest",
+    "tests": "10",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:36.274Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.063"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest",
+    "tests": "11",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:55:06.038Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "1.455"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialPartitionCutTest",
+    "tests": "13",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:55:05.984Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.053"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialOracleTest",
+    "tests": "12",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:54:43.197Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "22.786"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialHeapGuardTest",
+    "tests": "27",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:36.528Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.094"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyContractTest",
+    "tests": "3",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:29.540Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.017"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialCanonicalLeafOwnerTest",
+    "tests": "4",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:36.431Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.018"
+  },
+  {
+    "name": "com.reef.platform.calcify.FiniteLifecycleCaptureProcessorTest",
+    "tests": "14",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:32.242Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.858"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyReceiptStoreTest",
+    "tests": "2",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:29.661Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.001"
+  },
+  {
+    "name": "com.reef.platform.calcify.FiniteLifecycleContractTest",
+    "tests": "5",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:33.148Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.162"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyVerifierBatchTest",
+    "tests": "3",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:32.237Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.005"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialAckJournalTest",
+    "tests": "8",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:33.380Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "2.894"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifySourceRegistrationTest",
+    "tests": "2",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:32.232Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.001"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyRunNamespaceTest",
+    "tests": "8",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:31.454Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.777"
+  },
+  {
+    "name": "com.reef.platform.calcify.BoundedSourceAcknowledgementsTest",
+    "tests": "4",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:29.034Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.081"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyResolverProcessorTest",
+    "tests": "10",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:29.662Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "1.791"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialCommittedCutTest",
+    "tests": "3",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:36.450Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.078"
+  },
+  {
+    "name": "com.reef.platform.calcify.ResolverTopicDurabilityTest",
+    "tests": "4",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:33.377Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.002"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyPipelineConfigTest",
+    "tests": "3",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:29.648Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.003"
+  },
+  {
+    "name": "com.reef.platform.calcify.ActualMeasureCompletionTest",
+    "tests": "2",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:28.932Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.098"
+  },
+  {
+    "name": "com.reef.platform.calcify.MatchContextResolverTest",
+    "tests": "5",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:33.310Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.059"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyActualFullFactObserverTest",
+    "tests": "5",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:52:29.116Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "0.424"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialRateReferenceTest",
+    "tests": "6",
+    "skipped": "0",
+    "failures": "0",
+    "errors": "0",
+    "timestamp": "2026-10-10T03:55:07.493Z",
+    "hostname": "Dylans-MacBook-Pro.local",
+    "time": "59.792"
+  }
+]

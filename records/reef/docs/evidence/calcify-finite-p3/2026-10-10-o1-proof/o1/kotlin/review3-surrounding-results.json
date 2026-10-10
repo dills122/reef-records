@@ -1,0 +1,139 @@
+{
+  "tests": 70,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "reports": [
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.ActualMeasureCompletionTest.xml",
+      "sha256": "fc4dd374ce9eb779f478daf9f6a4a8ea0c4171f50f2e74ef477818206bca9929",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.BoundedSourceAcknowledgementsTest.xml",
+      "sha256": "181505fee2eec906919d62204e9b7fd1f2194410674e2d4b15ca7e5a75c909de",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyActualFullFactObserverTest.xml",
+      "sha256": "0be2f6857444ed46e76ac45d4ac058efc83637faca485bf9b4099bf624286a3a",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyContractTest.xml",
+      "sha256": "7aa5d9f244aae4448f69b257426942f4b33030e7ac1df936a1bec046f8012a0b",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyExtractorPollBatchTest.xml",
+      "sha256": "366972140d553ed3953b39c9a5b46daa54536f8ce08dd91edb2cb477f374d1f9",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyPipelineConfigTest.xml",
+      "sha256": "7e9fbf050e2d3d8f65b1acd437585e8226ded3a6a8288709f09f9cabc12225b3",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyReceiptBatchTest.xml",
+      "sha256": "0e0ea62a20f30e50a1b74cac759d11b458dfd8d788390e7878b40978408df186",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyReceiptStoreTest.xml",
+      "sha256": "53d0ca9cdeb7d338a5cc018fd082f04a83a73fa960b57ddd94a0ed45b505408b",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyResolverProcessorTest.xml",
+      "sha256": "a2143aa3cdc68a29b2116091d0a33277487a7da33ecd675bf813595497f06f53",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyRunNamespaceTest.xml",
+      "sha256": "08b1811da4f777e48b7a09bcb872fdc13971d6210095fa00881767866b489a63",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifySourceRegistrationTest.xml",
+      "sha256": "5afe4e6085e1d3f20bb9f0d5b0d142e857852ea0408aaf3907ecbd41efd402b3",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyVerifiedVisibilityObserverTest.xml",
+      "sha256": "b7a011305a6b22fb7e090832bc6b0a518676b23fdae19fe49be6ae35417186fc",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyVerifierBatchTest.xml",
+      "sha256": "ba2d94fcf4588d1558d2e9651881465f81654f7a6038c725449051900a7308d2",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.MatchContextResolverTest.xml",
+      "sha256": "a17fe8cc67468100825394d6802c67fd10765eb6badfb84c54a6bd9409c78c0a",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.ResolverConsumerGateTest.xml",
+      "sha256": "20a8737830ae84c56d0ca194f755fbac15ff95e9509b5e5dba1e76dbd382c983",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.ResolverTopicDurabilityTest.xml",
+      "sha256": "a6cb2252ab93c233d39f8618cc0655fe9f79f84d019dbca53b69b649acbdbd4e",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "exit": 0,
+  "commandReceipt": "review3-surrounding-command.json",
+  "sourceAggregateSha256": "7bbc9c22c7e4c14d8173c76b06bb64bae411083b963c7b365cfc3cd3af63e8c8"
+}

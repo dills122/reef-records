@@ -1,0 +1,1614 @@
+{
+  "schema_version": 1,
+  "status": "PREPARATION_NOT_PUBLICATION",
+  "selection_policy": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification",
+  "files": [
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.ActualMeasureCompletionTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.ActualMeasureCompletionTest.xml",
+      "bytes": 638,
+      "sha256": "4cdef794b54bb1f054548abe60b940d1c71ec5fd4719c5f3d79e47a707101a17",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.BoundedSourceAcknowledgementsTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.BoundedSourceAcknowledgementsTest.xml",
+      "bytes": 969,
+      "sha256": "88b459368855399c10f322390a8ab77eaf8a9926db8b233a4e29482f3ffb77ac",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.CalcifyActualFullFactObserverTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.CalcifyActualFullFactObserverTest.xml",
+      "bytes": 1195,
+      "sha256": "ba10d950eea6a24332b143c98f1c09e2ac1901561f4edc6cc1b10b96079c78d6",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.CalcifyContractTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.CalcifyContractTest.xml",
+      "bytes": 729,
+      "sha256": "dc96c46de5dff7047a5a3a6fbfc4f410af27e081c94ec62c11bb48ca35ea0065",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.CalcifyExtractorPollBatchTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.CalcifyExtractorPollBatchTest.xml",
+      "bytes": 1033,
+      "sha256": "98a46685754da0ef05c4a765ed5b2d0c7b24c4ea40698695a77efc9df4d805d6",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.CalcifyPipelineConfigTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.CalcifyPipelineConfigTest.xml",
+      "bytes": 784,
+      "sha256": "642a2e3e79f8d0fec556377a6eefc773520b5de9cbfa4ab6fb77460015ea36d1",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.CalcifyReceiptBatchTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.CalcifyReceiptBatchTest.xml",
+      "bytes": 803,
+      "sha256": "06681a14647ce92a3448e54b4f77362375e05e100f2fb5cca7ef085716e14e51",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.CalcifyReceiptStoreTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.CalcifyReceiptStoreTest.xml",
+      "bytes": 639,
+      "sha256": "f0e79a8c96ed8284ae7257beb409887d736ee117cf282adc36ecec25e0204a5d",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.CalcifyResolverProcessorTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.CalcifyResolverProcessorTest.xml",
+      "bytes": 2049,
+      "sha256": "62ff1994d490c3499776d48cd498f9f656a45e428a4a4b7738382a83884c08af",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.CalcifyRunNamespaceTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.CalcifyRunNamespaceTest.xml",
+      "bytes": 1579,
+      "sha256": "504a99c549fd8f4af626c4c03d0a9cf29dac6cd1eb94abac72c0c2e8249e81e4",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.CalcifySourceRegistrationTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.CalcifySourceRegistrationTest.xml",
+      "bytes": 653,
+      "sha256": "b868a1004fd1d1a80e791093fad34247611254a2c8eaf7b1824ed4383f19767f",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.CalcifyVerifiedVisibilityObserverTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.CalcifyVerifiedVisibilityObserverTest.xml",
+      "bytes": 1361,
+      "sha256": "76688f3af0d96e39ec22f3ba60ae64bc61faaa6a4fdfebe60ce8718a05a828c7",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.CalcifyVerifierBatchTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.CalcifyVerifierBatchTest.xml",
+      "bytes": 808,
+      "sha256": "cdcd1dc500db27b316b0fb6585c2d3b999e6e335d6a621379ea503947f14f35e",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.MatchContextResolverTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.MatchContextResolverTest.xml",
+      "bytes": 1063,
+      "sha256": "79f96975f7599684d49eae770c84dc1018cb3ebd5ae2d110de33b504c5b7a005",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.ResolverConsumerGateTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.ResolverConsumerGateTest.xml",
+      "bytes": 1180,
+      "sha256": "c4513ae3f6e61480aacf74529a20d11b8905288eaef3e8ea3740dc33bc3ee36d",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.ResolverTopicDurabilityTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.ResolverTopicDurabilityTest.xml",
+      "bytes": 951,
+      "sha256": "86f229b8d3952267edb777d0e0cc6f1aff74e46721804515330a9b1ec36c34db",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.financial.FinancialAckJournalTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.financial.FinancialAckJournalTest.xml",
+      "bytes": 1858,
+      "sha256": "5a9689f75a9208257f6c1282015de47d730f123cb23fdde34dec6811703f0393",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.financial.FinancialBootstrapProbeTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.financial.FinancialBootstrapProbeTest.xml",
+      "bytes": 2223,
+      "sha256": "7ff42d2e055571761048a040c23f268c7a983c7d40f97387edcc9e6506661431",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.financial.FinancialBrokerProbeTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.financial.FinancialBrokerProbeTest.xml",
+      "bytes": 1110,
+      "sha256": "50edcd877a1ab3c6d150b01f32921148eee66c6960114fd19bb6525e6bc46d99",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.financial.FinancialCanonicalLeafOwnerTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.financial.FinancialCanonicalLeafOwnerTest.xml",
+      "bytes": 1088,
+      "sha256": "3b4b6c3d079237a8a5482d356b926e3bc0f453ef23808a38bd540062ee1bf911",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.financial.FinancialCommittedCutTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.financial.FinancialCommittedCutTest.xml",
+      "bytes": 912,
+      "sha256": "d6fe39d47129e66c5101e17b674cfca7c778d7f91006d8d2e07900c6c15aafe9",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.financial.FinancialHeapGuardTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.financial.FinancialHeapGuardTest.xml",
+      "bytes": 6372,
+      "sha256": "49da2f94771f5228591b48d1382c8b8a6ec4da73a2a027e45aae866a120510ab",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml",
+      "bytes": 2663,
+      "sha256": "8be4fc60a005cbe235a0ba1064d501f23c9b918bc0f63a9bc8641ead8e7bc4f2",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+      "bytes": 2590,
+      "sha256": "bf8c805db6d5663f92b91eca614cc3da51f33be7cbae4744ae069004aa82eeee",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.financial.FinancialPartitionCutTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.financial.FinancialPartitionCutTest.xml",
+      "bytes": 2487,
+      "sha256": "5c2112869157db0ed30f9061fadecae041e7cddb7e20620a1cb5a56fe8fcf552",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest.xml",
+      "bytes": 3332,
+      "sha256": "c7556b162ec9aaf88e1272d26d3af2043fe8f170318c06987bd3ce1bc7e45cb0",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/TEST-com.reef.platform.calcify.financial.FinancialRateReferenceTest.xml",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/TEST-com.reef.platform.calcify.financial.FinancialRateReferenceTest.xml",
+      "bytes": 1421,
+      "sha256": "6df8c481deb3ba52191b4ccf5747cb3c257af0d0767239d890fc1c89f59138bc",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/baseline/receipt.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/baseline/receipt.json",
+      "bytes": 553,
+      "sha256": "70f4399e8a19c6c06a64e50a430ce9129f18f9d4a5f3546c11776c6cb88ec953",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0/attempt1/CALCIFY_FINITE_P3_SOURCE_CONTRACT.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0/attempt1/CALCIFY_FINITE_P3_SOURCE_CONTRACT.md",
+      "bytes": 26042,
+      "sha256": "41a96468b8a9dd700934432587e1095d5b8bfd11adb727f9f367bc460e104d2a",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0/attempt1/author-explanation.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0/attempt1/author-explanation.md",
+      "bytes": 5759,
+      "sha256": "48ca7d07afda2011c0b3548e3d46eeeb0fd50ccdd6c8b74a77e5f67a39c0e371",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0/attempt1/neutral-bootstrap.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0/attempt1/neutral-bootstrap.md",
+      "bytes": 3871,
+      "sha256": "6e24d9712b47346a441a38344e9c934604544afc31bbf89a2f0d6ce13b4b1c8b",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0/attempt1/o1-team-handoff.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0/attempt1/o1-team-handoff.md",
+      "bytes": 7850,
+      "sha256": "3fef8784a82cc95aaa2889cabe33df1f187a1109bd2b5449b6536e2c1682ad90",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0/attempt1/review-1.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0/attempt1/review-1.md",
+      "bytes": 11426,
+      "sha256": "43b3d576f8b2a08c6023a2eee6864cf995563dcce4a0fd876e899f8dbff91b7b",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0/attempt1/source-contract.patch",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0/attempt1/source-contract.patch",
+      "bytes": 26627,
+      "sha256": "733fccc1ed815996f41b3e860359fe235fee02d7d7af4e7ec763bb199bd65a7a",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0/attempt1/verification.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0/attempt1/verification.json",
+      "bytes": 916,
+      "sha256": "0a4c56837ea8b7f9c3332f8cee588cab71678d46d26554239e5bc1cea2fd3e8c",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0/author-explanation.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0/author-explanation.md",
+      "bytes": 6612,
+      "sha256": "bcb5557ce2cdbacbe4c188656711da7cfa96d2e6ee5f87eee19b13e019cf6d59",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0/finding-response-1.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0/finding-response-1.md",
+      "bytes": 644,
+      "sha256": "ed9ba86129798fcd7dcd4d68bf18ff3debba04b34c73da92b208e7790a5173f8",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0/finding-response-2.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0/finding-response-2.md",
+      "bytes": 1273,
+      "sha256": "297bc55496256cbca12b08ce4104e1d11a87aaefb2617b0de230a6ae9075dfd5",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0/neutral-bootstrap.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0/neutral-bootstrap.md",
+      "bytes": 3946,
+      "sha256": "85db3e910acac4373d03a82281f6cf124e54efc4db6459b1c7145a7f9f948871",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0/o1-json-coordination.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0/o1-json-coordination.md",
+      "bytes": 8092,
+      "sha256": "a4b34beacded92a33583c573007f5d484f0adea1ab9ee978d3830216be6dfbac",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0/o1-team-handoff.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0/o1-team-handoff.md",
+      "bytes": 8006,
+      "sha256": "573a721e6878a3cdb16a32b7b861d267305e1807ff306db1fa3fcfe2d7d61cdf",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0/policy-spike-1.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0/policy-spike-1.md",
+      "bytes": 5101,
+      "sha256": "d65af73b1790ff1c1d849d2ea65edb78f368c1080b605f6bb15f093dace5674a",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0/review-1.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0/review-1.md",
+      "bytes": 11426,
+      "sha256": "43b3d576f8b2a08c6023a2eee6864cf995563dcce4a0fd876e899f8dbff91b7b",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0/review-2.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0/review-2.md",
+      "bytes": 13528,
+      "sha256": "c115ac895b8891272e5b2b1d06506297894e84409f97a0003e60e2d6e97dd3c3",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0/source-contract.patch",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0/source-contract.patch",
+      "bytes": 27058,
+      "sha256": "a5da8d8937c1f31948d6867b0389bbf2442a5f25de0122ef53425ebe01ff500f",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0/verification.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0/verification.json",
+      "bytes": 1662,
+      "sha256": "798b26b047009f5e244644584c243cb3377b68785212b6458624e8839ed0dcd1",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0d/author.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/author.md",
+      "bytes": 5152,
+      "sha256": "52ba079f5815cb4cb3885b3221dbce2338681b095308d96d6603a9d4690d95f1",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0d/bootstrap.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/bootstrap.md",
+      "bytes": 3367,
+      "sha256": "577210379661a8b2c0777520e16586364e595e876de35661d489259a7c1dc038",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0d/developer-response.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/developer-response.md",
+      "bytes": 1877,
+      "sha256": "26e38caeb3572ff06b42f632ac30affd2565163cbcdc099540bcd335bca1d138",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0d/dirty-state.txt",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/dirty-state.txt",
+      "bytes": 386,
+      "sha256": "aca1650afc24da436ba491f392209a9a64128fb646b2f20fd827913504c437bd",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0d/freeze.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/freeze.json",
+      "bytes": 1519,
+      "sha256": "e344c4189100d1bed49b6519ce0e1ac118af5620caae99b01588b5e5d1042201",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0d/frozen.diff",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff",
+      "bytes": 30644,
+      "sha256": "11661abfb78139478a63c70b9fb8603b85bfcf6e2b982c8171ef882f01c4b22b",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o0d/review-1.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/review-1.md",
+      "bytes": 10470,
+      "sha256": "3330ffc9fa52d8c49748424fefd9bdf07abd8f607ce9209d4ae929e9728b1e7e",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/Review2Probe-initial.java",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/Review2Probe-initial.java",
+      "bytes": 6641,
+      "sha256": "c87065c4741c3a9d6ddb71dd978a7b558aef95406eca67acce2b1094f918b175",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/Review2Probe.java",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/Review2Probe.java",
+      "bytes": 6928,
+      "sha256": "64ffa96adb37eef14da051d2be180ff25d6d4df092e440779143801bdd9e1434",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/author-explanation-review2.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/author-explanation-review2.md",
+      "bytes": 545,
+      "sha256": "cc98d2d15dcc37159f9f566ee250715c97abe2c15039652adc85a51c206363f1",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/author-explanation-review3.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/author-explanation-review3.md",
+      "bytes": 4723,
+      "sha256": "3e35d346e8877f802316a14375abd7a9eb89ff436640a4b116084fe553c1c185",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/author-explanation.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/author-explanation.md",
+      "bytes": 2157,
+      "sha256": "a6ad2a95731470cfa74d913364b8a7ed00e2368f82b7722e307bce151a87a233",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/combined-files-review2.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/combined-files-review2.json",
+      "bytes": 8995,
+      "sha256": "cfa320c5737eef81e208b8f58d75bad8d2b8e0ae8c228169f5d841b1cf44876c",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/combined-files-review3.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/combined-files-review3.json",
+      "bytes": 8995,
+      "sha256": "fdae8e9c729f1907e3ed797e5225da7fdcd604c55cc9891c21da17d6a1c10c85",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/combined-files.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/combined-files.json",
+      "bytes": 8995,
+      "sha256": "bb1b5de9755cf7f3ba2656ce0c9bcf2dcc1cdfe0d1ce6138a8c630d8bbe00312",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/all-tests-final.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/all-tests-final.log",
+      "bytes": 1043,
+      "sha256": "f2d64a1b68c9ccf7f7f5bafaeddd031027d6be39264d20b6f87230f23859fb6d",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/all-tests-sandbox-red.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/all-tests-sandbox-red.log",
+      "bytes": 3415,
+      "sha256": "fa0c1cc56d748fc7f9f14cb3ae0326b317ea9e9fe1ac53013fea71d9bc112325",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/all-tests.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/all-tests.log",
+      "bytes": 1055,
+      "sha256": "a748567050ab980e4400f873da28d382691df696f958616dea4b2df9cb5477bf",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/author-explanation.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/author-explanation.md",
+      "bytes": 5615,
+      "sha256": "a242477bbb736c4faa432977a41008bbbf53c848514d1d109d0c3986f7459546",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/finding-response-1.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/finding-response-1.md",
+      "bytes": 2084,
+      "sha256": "94afe1df77febba41672d0f171f53c4264cb88d6af408baf145ba2dcda07cb5c",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/finding-response-2.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/finding-response-2.md",
+      "bytes": 1637,
+      "sha256": "6d90981e269095deac82664725980537199f86dd4991fc217fb2d0b089db316e",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/finding-response-3.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/finding-response-3.md",
+      "bytes": 2479,
+      "sha256": "dab7dd1f525c91b2cc34430684dc089220b77792b6b9240e3a3b33a67beb80a1",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/finite-lifecycle-source-v1-manifest.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/finite-lifecycle-source-v1-manifest.json",
+      "bytes": 11111,
+      "sha256": "900aed28cb4cf950157e84a0e7662729e951b7fe11cb68cc376a9d1e5850876a",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/finite-lifecycle-source-v1.jsonl",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/finite-lifecycle-source-v1.jsonl",
+      "bytes": 24809,
+      "sha256": "1a8cf1c8c769e3e2bf32fa80792f36da206f07e6e27ab4bbbc9511c925fb1811",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/fixture-harness-spike-1.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/fixture-harness-spike-1.md",
+      "bytes": 1249,
+      "sha256": "842388451a4425a55c53c62c44ca802d643f82d89a11286a114145fd3b810d47",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/fixture-tests-red-1.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/fixture-tests-red-1.log",
+      "bytes": 1453,
+      "sha256": "b2d651a9d6f61d3128fd17ce994ccdca3a9308231cd463ead50b7eb6bd2c353c",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/focused-tests-red-2.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/focused-tests-red-2.log",
+      "bytes": 630,
+      "sha256": "db336c02b8851db9f809e5c7d3f8f47387fe0e635ffa55e713b0c8974c49c485",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/focused-tests-red-3.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/focused-tests-red-3.log",
+      "bytes": 3879,
+      "sha256": "63f709562702dacb73580836fbeb968f5a033d533475978ec02783ef665553ad",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/focused-tests.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/focused-tests.log",
+      "bytes": 3811,
+      "sha256": "37829f60f1192d6a20beb8ed0c49de1d8c08a66a754c3dc72d185d85fb1461b5",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/legacy-source-v1.jsonl",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/legacy-source-v1.jsonl",
+      "bytes": 16647,
+      "sha256": "bdd4df11f562ba2f4dd217168a3e81e60f96fa4c3fa4a25c01e75830dda26506",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/neutral-bootstrap.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/neutral-bootstrap.md",
+      "bytes": 1588,
+      "sha256": "67cbe06040920a54e924dceadb9af543a876414261bba79fc742aa044b6e1ae9",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/owned-files.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned-files.json",
+      "bytes": 1549,
+      "sha256": "17f0bbe01ea789cb34b1d94f51bb33ea592cf0e78cb9ae6898e80f4a6e05758a",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/owned.patch",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch",
+      "bytes": 52681,
+      "sha256": "d729c4f7d509f97231d32063406e453e689aa3b80c5e41fcb76867a9d1330963",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/poison-harness-spike-2.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/poison-harness-spike-2.md",
+      "bytes": 1294,
+      "sha256": "0643263fd574ef9cf233bbc2a67c95158f705a4dba8337edfa87d449c42f1cd2",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/race-tests.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/race-tests.log",
+      "bytes": 159,
+      "sha256": "9a4c7a073a802cc4f88251ab0611b2738a8bd914759dae92c6ae877525540fcc",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/test-environment-spike-3.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/test-environment-spike-3.md",
+      "bytes": 807,
+      "sha256": "d954f111d4595317c1a7dde00f9b1e0c4b8427f68236248e4337c52cfdd33597",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/verification.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/verification.json",
+      "bytes": 6678,
+      "sha256": "70387e9beb50d95412722baa5166874bc9ebfeabd64d4c720080b0f29af3e2a6",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/vet-final.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/vet-final.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/go/vet.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/vet.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/Review1RestoreProbe.java",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/Review1RestoreProbe.java",
+      "bytes": 3754,
+      "sha256": "8c55c775c94406348f1d803f1f1c8ca541dcbe82b8b85f1a850d97613e4b13b2",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/Review2ResearchProbe.java",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/Review2ResearchProbe.java",
+      "bytes": 6928,
+      "sha256": "64ffa96adb37eef14da051d2be180ff25d6d4df092e440779143801bdd9e1434",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/StateCapProbe.java",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/StateCapProbe.java",
+      "bytes": 2485,
+      "sha256": "ef8d51503b07c7dde9162f1e65469cc901efa94e492ddfd6e8f00ac409b74795",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/author-explanation-review2.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/author-explanation-review2.md",
+      "bytes": 7032,
+      "sha256": "ba948103973209c1f06b44fb68642a7a4b8946e9b4a7e8cb4b7101cde47f2641",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/author-explanation-review3.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/author-explanation-review3.md",
+      "bytes": 5265,
+      "sha256": "93d2959f0f5b7f31e5a85b61046a4f1104c807c3f95e226952c59d99b04ad521",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/author-explanation.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/author-explanation.md",
+      "bytes": 7508,
+      "sha256": "26b683de56902f43f463e4ab7b0667e68e6bd8f41fc5db615cdab1de23093fe8",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/calcify-regression-earlier-results.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/calcify-regression-earlier-results.json",
+      "bytes": 4155,
+      "sha256": "4d9b5969390fc786ff4c1f88af1f15a2d8d603cee408d3b139390cd8b2812d84",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/calcify-regression-final-results.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/calcify-regression-final-results.json",
+      "bytes": 8058,
+      "sha256": "51a5c2fcbb3b08469113ab4060b9280cbe3d067ff9d58a2a1913fa77bc0bef6c",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/calcify-regression-final2-results.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/calcify-regression-final2-results.json",
+      "bytes": 8058,
+      "sha256": "18f07939da4cb37e59cb58b83852875b7a46de39ec487b66347531566df7ad18",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire/capture-01.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/capture-01.pb",
+      "bytes": 1658,
+      "sha256": "07bda6a2a39bba71d8ef1c3d921be9f9a8203a0dc1430c66159f62439324776e",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire/capture-02.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/capture-02.pb",
+      "bytes": 1670,
+      "sha256": "cd46c62ae3ea7f7368a92c20236246136babbfe61e6e1dbbe69f3750fce99bb8",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire/capture-03.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/capture-03.pb",
+      "bytes": 7390,
+      "sha256": "61ba31cd3bd6f2c9f79850a7b7f79c39108154662d24e71895c7632fa97cfada",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire/capture-04.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/capture-04.pb",
+      "bytes": 2318,
+      "sha256": "649827488ecf70ed664cba5203261bda5f6d5bc461c7c1e8ffcd14232757b784",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire/capture-05.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/capture-05.pb",
+      "bytes": 2322,
+      "sha256": "777ff7543a4041d5b046daf5eeaa09320cd4d8c50989058f5047a5aff00af098",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire/capture-06.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/capture-06.pb",
+      "bytes": 1662,
+      "sha256": "f6a7e279f8eb91eff07fde11d405fb4a4d60c2ed2aa2ec9c9904e147b79ca147",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire/capture-07.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/capture-07.pb",
+      "bytes": 2303,
+      "sha256": "95229ebbb8b43d4f4272eedd56da01c9502b2dbfad226ee183db9b7e62ad9bb8",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire/capture-08.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/capture-08.pb",
+      "bytes": 4539,
+      "sha256": "4c380ac54c7b9cabe2e7e48939b3ddeb8575aa1dda2ec23b6531f4995d9dd885",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire/capture-09.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/capture-09.pb",
+      "bytes": 1856,
+      "sha256": "6644a760b07e696db5d8d3c356ab79fee88839bb3260098e558e7b2fbe3dec17",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire/capture-10.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/capture-10.pb",
+      "bytes": 1882,
+      "sha256": "672a651922da0e1d57c7abfa2286f87a178faa4c38b6b270bdd855dd194fb5d8",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire/capture-11.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/capture-11.pb",
+      "bytes": 1162,
+      "sha256": "aaac9cd11383658a226aa0b8d3d14bb51d7c30854d3448fc22a0104c73043315",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire/capture-12.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/capture-12.pb",
+      "bytes": 1168,
+      "sha256": "5414b021cdddb40fc73ca2dda59f385be18135be45940ccbeb67b9b2582bea65",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire/state.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb",
+      "bytes": 65419,
+      "sha256": "68acd19c64d76d3dbc18e54b86823cb85ddc7ef00f22645d5ba4e8372ad314da",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire-manifest.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-manifest.json",
+      "bytes": 1637,
+      "sha256": "915949676cf42aa47fa213edecd82c7daa459d84eb34bffdedcedc87652ea26a",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire-review2/capture-01.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/capture-01.pb",
+      "bytes": 1658,
+      "sha256": "07bda6a2a39bba71d8ef1c3d921be9f9a8203a0dc1430c66159f62439324776e",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire-review2/capture-02.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/capture-02.pb",
+      "bytes": 1670,
+      "sha256": "cd46c62ae3ea7f7368a92c20236246136babbfe61e6e1dbbe69f3750fce99bb8",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire-review2/capture-03.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/capture-03.pb",
+      "bytes": 7390,
+      "sha256": "61ba31cd3bd6f2c9f79850a7b7f79c39108154662d24e71895c7632fa97cfada",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire-review2/capture-04.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/capture-04.pb",
+      "bytes": 2318,
+      "sha256": "649827488ecf70ed664cba5203261bda5f6d5bc461c7c1e8ffcd14232757b784",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire-review2/capture-05.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/capture-05.pb",
+      "bytes": 2322,
+      "sha256": "777ff7543a4041d5b046daf5eeaa09320cd4d8c50989058f5047a5aff00af098",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire-review2/capture-06.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/capture-06.pb",
+      "bytes": 1662,
+      "sha256": "f6a7e279f8eb91eff07fde11d405fb4a4d60c2ed2aa2ec9c9904e147b79ca147",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire-review2/capture-07.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/capture-07.pb",
+      "bytes": 2303,
+      "sha256": "95229ebbb8b43d4f4272eedd56da01c9502b2dbfad226ee183db9b7e62ad9bb8",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire-review2/capture-08.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/capture-08.pb",
+      "bytes": 4539,
+      "sha256": "4c380ac54c7b9cabe2e7e48939b3ddeb8575aa1dda2ec23b6531f4995d9dd885",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire-review2/capture-09.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/capture-09.pb",
+      "bytes": 1856,
+      "sha256": "6644a760b07e696db5d8d3c356ab79fee88839bb3260098e558e7b2fbe3dec17",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire-review2/capture-10.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/capture-10.pb",
+      "bytes": 1882,
+      "sha256": "672a651922da0e1d57c7abfa2286f87a178faa4c38b6b270bdd855dd194fb5d8",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire-review2/capture-11.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/capture-11.pb",
+      "bytes": 1162,
+      "sha256": "aaac9cd11383658a226aa0b8d3d14bb51d7c30854d3448fc22a0104c73043315",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire-review2/capture-12.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/capture-12.pb",
+      "bytes": 1168,
+      "sha256": "5414b021cdddb40fc73ca2dda59f385be18135be45940ccbeb67b9b2582bea65",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire-review2/state.pb",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb",
+      "bytes": 65419,
+      "sha256": "68acd19c64d76d3dbc18e54b86823cb85ddc7ef00f22645d5ba4e8372ad314da",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/capture-wire-review2-manifest.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2-manifest.json",
+      "bytes": 3051,
+      "sha256": "8ab146a996e2fe7774a74f468f53a71f74134ced879ef6d41ab0c5ba5762d3b4",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/compiled-source-identity-review3.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/compiled-source-identity-review3.json",
+      "bytes": 9453,
+      "sha256": "d4305213a9f3eb38286a264ab0a9ec34c13d21d8ef9ca2a8dadaba6aec721750",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/compiled-source-identity.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/compiled-source-identity.json",
+      "bytes": 9453,
+      "sha256": "9575f5824cef8934b65b64fdc241f73619486047d38566d92b6b90e82f6dee27",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/finding-response-1-research-version.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/finding-response-1-research-version.md",
+      "bytes": 1821,
+      "sha256": "8b92f74b99e01c0e87f62624a05ed0b51cb613427caf511fc70814eeb89ebae7",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/finding-response-1.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/finding-response-1.md",
+      "bytes": 2618,
+      "sha256": "afbd2115da577532c0e265ec6e1d1bd8ece8aac1de21df61ecf890a394b3a5cb",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/finding-response-2-research-version.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/finding-response-2-research-version.md",
+      "bytes": 1477,
+      "sha256": "3fcd830a149b1b11aca31e09931e0204220ec41e622b671d1408ad9b35dfc35d",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/finding-response-2.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/finding-response-2.md",
+      "bytes": 2095,
+      "sha256": "67eb0a60db53e9658df89f2a910068c09eb25bc75ffe1cf4b6366de8f0e48c65",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/finding-response-3.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/finding-response-3.md",
+      "bytes": 4104,
+      "sha256": "12761a93ca45bea7477377c7cd9bdc27eca4106ccfb35594f06b608415b44855",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/freeze-manifest-before-replay-fault-fix.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/freeze-manifest-before-replay-fault-fix.json",
+      "bytes": 10466,
+      "sha256": "56439b69a15b06e03609541e9b3e57b9f6d7c18cd35d5f2ce4172e687df89d10",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/freeze-manifest-review3.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/freeze-manifest-review3.json",
+      "bytes": 10593,
+      "sha256": "9be7a2ba047ad3ecbc0dcb8c356394cf35b336b33e060292978ce8b7353c7a1f",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/freeze-manifest.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/freeze-manifest.json",
+      "bytes": 10638,
+      "sha256": "5a8b6b7b28416a500ab2732fff9a80b2fa5e009f3c18cd03f68852ca0ebb03b3",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/gradle-calcify-final-2.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-calcify-final-2.log",
+      "bytes": 928,
+      "sha256": "3a712c63b32ee1ad11881c6f0811f3dbe3eca7448380e1a5ea54fb44f6324623",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/gradle-calcify-final-3.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-calcify-final-3.log",
+      "bytes": 928,
+      "sha256": "767fb28cad7e9859f21f0fffe0318449e5196422bf2194339965f71a51e4f80f",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/gradle-calcify-final.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-calcify-final.log",
+      "bytes": 928,
+      "sha256": "3a712c63b32ee1ad11881c6f0811f3dbe3eca7448380e1a5ea54fb44f6324623",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/gradle-focused-1.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-focused-1.log",
+      "bytes": 662,
+      "sha256": "29ead19a22200f14d99085c59a29685aeffcd927150ecec8fb9b065e543cbc86",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/gradle-focused-2.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-focused-2.log",
+      "bytes": 903,
+      "sha256": "6a0fab81cd57ba386919c1408f47984997c7017aed81dfbbcd6bfaff5190aed9",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/gradle-focused-3.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-focused-3.log",
+      "bytes": 903,
+      "sha256": "6a0fab81cd57ba386919c1408f47984997c7017aed81dfbbcd6bfaff5190aed9",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/gradle-review1-correction-calcify-final.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-review1-correction-calcify-final.log",
+      "bytes": 964,
+      "sha256": "30a605a6c2ee6dcbd1762ece8102a856e9891126b5872eae0599e43aad9414de",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/gradle-review1-correction-finite-final.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-review1-correction-finite-final.log",
+      "bytes": 947,
+      "sha256": "22132c8d36bbc0180b0173d383cc774cd9260ff0837758c763a9014f655f9aee",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/gradle-review1-correction-finite.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-review1-correction-finite.log",
+      "bytes": 925,
+      "sha256": "3a6da3bd9735a0f5d5f8fa105445da353618eaa876eae1e7f822eaa5c850ab62",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/gradle-review3-finite.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-review3-finite.log",
+      "bytes": 925,
+      "sha256": "4f2ce95f491ee1fbf5fb9e77eacc2406e9f3d7e17660f3c8c259cda042461484",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/gradle-review3-surrounding.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-review3-surrounding.log",
+      "bytes": 958,
+      "sha256": "e4d2761753f209aed9da996ddeba0ab5f4042a93c338589d4d46bd7788834e57",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/handoff-identity-review3.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/handoff-identity-review3.json",
+      "bytes": 941,
+      "sha256": "92f4bfb1d3fc1ac1be2e07bf7827ba082ab94a2475da40a5ced5b10f2da05834",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/handoff-identity.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/handoff-identity.json",
+      "bytes": 698,
+      "sha256": "9a74f80fd53b937d49367220cb4d43844a8450624960e582c3c9fc19c3c3d90c",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/handoff-spike-1.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/handoff-spike-1.md",
+      "bytes": 5154,
+      "sha256": "438be6da496ce421f3a24990fdcab3cdef8d98acc8533de9adc9e4f9ca70d55c",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/neutral-bootstrap-review2.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/neutral-bootstrap-review2.md",
+      "bytes": 4420,
+      "sha256": "4677a3084c4bb14d0fb3dd9ef3d42a974eca7c3cb3b235cd37140e2ed1bd75de",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/neutral-bootstrap-review3.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/neutral-bootstrap-review3.md",
+      "bytes": 3773,
+      "sha256": "f9cf290cb5580c7ad0dc3850e9cc5fa44e0121c049761790ed7a8b28aa2c166e",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/neutral-bootstrap.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/neutral-bootstrap.md",
+      "bytes": 4943,
+      "sha256": "64d33db40b9ca44ce195e23a0658a7fee6f9d1353bb0ff432c0021f4ce230597",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/owned-paths.txt",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-paths.txt",
+      "bytes": 4081,
+      "sha256": "325fe424e4a5356abafb14aa33de855a7401305f7144a80869cf1cfc5b58d270",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/owned-review3.patch",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch",
+      "bytes": 1144527,
+      "sha256": "a987f55cbd92b22021a29e9c1f0d2194c9d7ffe550041f38d4dfb8b2f4c37e98",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/owned.patch",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch",
+      "bytes": 1129494,
+      "sha256": "27900babf75aedd8946df58a45ddee6884a91e0f52df058a438a7c3ef3f103c7",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/proto-generation-2.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/proto-generation-2.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/proto-generation.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/proto-generation.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/retention-check.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/retention-check.log",
+      "bytes": 117,
+      "sha256": "d005dcb4ef850a44ced0e63e05133b86ff953046f68b3d3dd6c66bac93de8815",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review1-correction-calcify-final-results.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-correction-calcify-final-results.json",
+      "bytes": 10284,
+      "sha256": "3c0f00dbac4efe7465cb766fcdf7e65f87fe5ebc0dc07b70f12cf2cbe062d87a",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review1-correction-candidate-1.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-correction-candidate-1.json",
+      "bytes": 10341,
+      "sha256": "188fb983bb297a96e0bcea2677ff0cf5d649166e0a34365862dd6afcfeb6ff12",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review1-correction-finite-final-results.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-correction-finite-final-results.json",
+      "bytes": 1189,
+      "sha256": "92a7086f674e0d81814bd4203277fda5b524f70b89e929e596963b9bd1fe657e",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review1-correction-finite-results.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-correction-finite-results.json",
+      "bytes": 1276,
+      "sha256": "e1fdb71132052ae3c648f1145b893083bd7eea36eda812f72f7f19a1fb3e1f74",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review1-correction-probe-final.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-correction-probe-final.json",
+      "bytes": 2005,
+      "sha256": "884e025184cbfc3923892244d1ce0c65a981701086e2f5d89f19a9295fe5719f",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review1-correction-probe-final.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-correction-probe-final.log",
+      "bytes": 408,
+      "sha256": "c44c295b4d4620683634c51b664ac3e259c115489d66ea9dcb88ecb675d97109",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review1-correction-probe-green.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-correction-probe-green.json",
+      "bytes": 1903,
+      "sha256": "cc88ed96ffb99baa6a02572b677b2c5807b31ab1c25b8f6ffd3d16f26808b1f5",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review1-correction-probe-green.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-correction-probe-green.log",
+      "bytes": 408,
+      "sha256": "c44c295b4d4620683634c51b664ac3e259c115489d66ea9dcb88ecb675d97109",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review1-original-compiled-source-identity.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-compiled-source-identity.json",
+      "bytes": 9453,
+      "sha256": "3a89945c6da252512192c599778bae0b8e7b79beda73a7cf9bcf84f7256a2e4e",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review1-original-freeze-manifest.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-freeze-manifest.json",
+      "bytes": 10466,
+      "sha256": "30ece4c245137a58a12b00dd15265a278e2ad40de812ce6ad24d5573be6e9512",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review1-original-handoff-identity.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-handoff-identity.json",
+      "bytes": 697,
+      "sha256": "7cda6f8de339e53154a89e2413b5c58ebfbdc515010043f5c6146d6e298bbb4a",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review1-original-owned.patch",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch",
+      "bytes": 1106489,
+      "sha256": "4b254e46a29fe846dc41c969dad23bcc214736cbcda85559d5b5a7980e1c18db",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review1-reproduction.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-reproduction.json",
+      "bytes": 1857,
+      "sha256": "3d766d9f9d183df736e05f1786f4a9c8dae3447fe8583cc6ee941a8869dd22ca",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review1-reproduction.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-reproduction.log",
+      "bytes": 301,
+      "sha256": "6143ca41872a649721f3fd869211e1152abeb60815b750d22f3f9a5ed9a82d1e",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review1-research-spike.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-research-spike.md",
+      "bytes": 10827,
+      "sha256": "8aec4d117a14d203d287461cab8bbbda7a8a4cccd08684b69b804f2e359f3a7e",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review2-reproduction.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review2-reproduction.json",
+      "bytes": 3534,
+      "sha256": "2e782ebfdf562200c3589bceaf8730001d5b76fcde142784173fd7e518cd7ffa",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review2-reproduction.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review2-reproduction.log",
+      "bytes": 2321,
+      "sha256": "4d9e9d06c62dc187db037264a6ba07c647532de507259c6ab75dabd92a9273dc",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review2-research-spike.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review2-research-spike.md",
+      "bytes": 10369,
+      "sha256": "83e40b867c2cf0c32cb8101524b1c031ec07cd762ba7d32f99aeae16c673b9b3",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review3-finite-results.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review3-finite-results.json",
+      "bytes": 1179,
+      "sha256": "6644b73028dca42c8fd7d92cc64d7faa964ac4933d0a0a9f85c933f9d1403674",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review3-probe-command.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review3-probe-command.json",
+      "bytes": 3662,
+      "sha256": "5a4076ecc788e26e04eb5f8243ec19f1825f4ee812d03f7dad02883bf4be2ea7",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review3-probe.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review3-probe.log",
+      "bytes": 1670,
+      "sha256": "e5edf77b62332894e400febf4f264018f41458221c33c9bbb82f4e55c0d1b78c",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review3-surrounding-command.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review3-surrounding-command.json",
+      "bytes": 2651,
+      "sha256": "16ba50154783259b00f6c00c9ccb263fd5cf388bbe29e650e7eaf6c815345e60",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/review3-surrounding-results.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review3-surrounding-results.json",
+      "bytes": 5110,
+      "sha256": "841c99d0cf95f182640a59d214c48f9acc2a45de8b0753adc37522cc7ad6b5ba",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/state-cap-probe-classpath.txt",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/state-cap-probe-classpath.txt",
+      "bytes": 1113,
+      "sha256": "8fc69b21e7d6164b8bf532d94ac65f809f7a5c166bfc86ad81743f794fa663b4",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/state-cap-probe-command.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/state-cap-probe-command.json",
+      "bytes": 1671,
+      "sha256": "ec068e72023fe4fc4a5b257a65d67aea761231f5cf06b10d1807cf1df2425b89",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/state-cap-probe-review2-command.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/state-cap-probe-review2-command.json",
+      "bytes": 2020,
+      "sha256": "924c91ffc9d0cbcb7a1f7efb3d5f4dc58fc0ddf530905989c8f938d37ed99aea",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/state-cap-probe-review2.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/state-cap-probe-review2.log",
+      "bytes": 273,
+      "sha256": "788b9d560e226287bb335b5ca784db22c112b2f7c137e5c219b34ba62f833b82",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/state-cap-probe.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/state-cap-probe.log",
+      "bytes": 273,
+      "sha256": "788b9d560e226287bb335b5ca784db22c112b2f7c137e5c219b34ba62f833b82",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/verification-review2.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/verification-review2.md",
+      "bytes": 6006,
+      "sha256": "87c0c8067037289951b6d7b0a72ecef7311b199acf0fabcd02c8dca23c6b6d92",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/verification-review3.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/verification-review3.md",
+      "bytes": 4199,
+      "sha256": "e46c21f1d2b0e679efbde7590b5835327e64a2dae2a545d0c6bde4eba9108a95",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/kotlin/verification.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/verification.md",
+      "bytes": 10551,
+      "sha256": "07a0c421e39a5e4939e0201e5e006c50f2a827fb5d2f4a6d34c210124bbe5239",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/manager-acceptance.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/manager-acceptance.md",
+      "bytes": 1035,
+      "sha256": "85bb311a3289c1d15950b7cc42915bf198d169e3f74ac24532ebb90a20e35980",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/manager-session-at-o1-acceptance.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/manager-session-at-o1-acceptance.json",
+      "bytes": 20222,
+      "sha256": "148c11058021abccdf8365949399f8d02031582fcf1ba7854961ab5e87a3be4e",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/neutral-bootstrap-review2.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/neutral-bootstrap-review2.md",
+      "bytes": 4631,
+      "sha256": "16e638d648963484a52ecb300f2da74f4d5b364ee22d291dff9bc18d7b989fe1",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/neutral-bootstrap-review3.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/neutral-bootstrap-review3.md",
+      "bytes": 4199,
+      "sha256": "aeef3a1757b50cb5935457be66020904eabcb9ab57d033baec94be4cf3b578c3",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/neutral-bootstrap.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/neutral-bootstrap.md",
+      "bytes": 4267,
+      "sha256": "873b3d846d897ca11f2fadd4797e4fb81df1989980377ef724123a1158ead238",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/proto-governance.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/proto-governance.log",
+      "bytes": 94,
+      "sha256": "5ecf82871f187c92f0251abcdc0bd6e78a825cc75a86a37c086dcfccf94304c6",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-1-preliminary.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-1-preliminary.md",
+      "bytes": 2257,
+      "sha256": "4031ced0c29cb249a0b8d02d97cec2d2386aea6b3ea3723ded4085ae24180acd",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-1-verification.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-1-verification.json",
+      "bytes": 8654,
+      "sha256": "1e597d9a9cd9c8adc1a09840ddabf81d1f529f4956f87359aa6e142f83453cb5",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-1.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-1.md",
+      "bytes": 10024,
+      "sha256": "fc66ba75f06eb7779eec9e7371177557d8b3b393b89df258be12eda1ed7664c5",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-2-classpath.txt",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-2-classpath.txt",
+      "bytes": 2831,
+      "sha256": "c93624125ae15e8b656a01593656dcb7b3b486cc64d7c3b5dfecba4bf4608b0d",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-2-focused-results.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-2-focused-results.json",
+      "bytes": 857,
+      "sha256": "23b0932fe89137fe2da458661b7712777b0fd89eb1c709dfe816153f5aecc231",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-2-go.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-2-go.log",
+      "bytes": 159,
+      "sha256": "e381e47ef43619fe6198fadcc8ae592b8fa6951273cb84ade71b441e97e195a3",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-2-gradle-retry.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-2-gradle-retry.log",
+      "bytes": 958,
+      "sha256": "2cb2956662362fe41a95aa3e44f389bc67e3002e4226deccbc6e29398821f410",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-2-gradle.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-2-gradle.log",
+      "bytes": 662,
+      "sha256": "29ead19a22200f14d99085c59a29685aeffcd927150ecec8fb9b065e543cbc86",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-2-preliminary.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-2-preliminary.md",
+      "bytes": 3874,
+      "sha256": "6aec4baf7ddba56119e576557eb9df4062a99b261e0963ba210f5e8449c2e5f9",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-2-probe-command.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-2-probe-command.json",
+      "bytes": 3454,
+      "sha256": "f43b8d0bfe3dcb563bdf21fd232decf03023c0dc4220c0d056d3890a4c57fe48",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-2-probe-final-command.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-2-probe-final-command.json",
+      "bytes": 3460,
+      "sha256": "97003c0992847fbea2e1ff131fc66ce489941bac5a8d210d519dc368f639a2d9",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-2-probe-final.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-2-probe-final.log",
+      "bytes": 2321,
+      "sha256": "4d9e9d06c62dc187db037264a6ba07c647532de507259c6ab75dabd92a9273dc",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-2-probe.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-2-probe.log",
+      "bytes": 1786,
+      "sha256": "e1d495bc3388e67b4eb649dd7eaa87f7b94701c09952ab0fa2a32600cf529225",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-2-verification.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-2-verification.json",
+      "bytes": 2960,
+      "sha256": "c7dc363430cc6baa52703f2fe51e75b81717c65b1a2c635f214d86e9e9c8aca5",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-2.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-2.md",
+      "bytes": 11528,
+      "sha256": "2b61ce597e526348206e6857a6587ce65cf2f3d2143d8efc9f7c499eceea9c4e",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-3-focused-results.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-3-focused-results.json",
+      "bytes": 1013,
+      "sha256": "d61854bec85cea272c013a8cef3ac26d3500bae30deb7a3dc41e43a10b1d45fb",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-3-gradle-authorized.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-3-gradle-authorized.log",
+      "bytes": 957,
+      "sha256": "5db5face2ff2c1b7facb25f0d8237896f3d80c6c0c361f16964cc2b30ab056bb",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-3-gradle.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-3-gradle.log",
+      "bytes": 662,
+      "sha256": "29ead19a22200f14d99085c59a29685aeffcd927150ecec8fb9b065e543cbc86",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-3-preliminary.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-3-preliminary.md",
+      "bytes": 3103,
+      "sha256": "e2c6145dbd3232261a7380876e53ed8446ec294f2558b97ea6cac13649e0457f",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-3-probe-command.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-3-probe-command.json",
+      "bytes": 3469,
+      "sha256": "483974788e5b63476fcb2828eb5506c8298cb5170852f45b67c2a8cfc5541fd3",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-3-probe.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-3-probe.log",
+      "bytes": 1670,
+      "sha256": "e5edf77b62332894e400febf4f264018f41458221c33c9bbb82f4e55c0d1b78c",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-3-verification.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-3-verification.json",
+      "bytes": 1668,
+      "sha256": "f2fe90dc2a54f8bba36a08063c83fa1cc09fd9914add63a5d22b30ca8e533917",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review-3.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-3.md",
+      "bytes": 11474,
+      "sha256": "2997d54321041d10d9166b2750f1ec5d9fb694735ecb854979852ba23c9b1630",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review1-target/FiniteLifecycleCaptureProcessor.kt",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/FiniteLifecycleCaptureProcessor.kt",
+      "bytes": 29585,
+      "sha256": "f77b02418fb97de1bb7afa904d135f3ea38710fe767f9353cb56dd7e187323ac",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review1-target/FiniteLifecycleCaptureRuntime.kt",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/FiniteLifecycleCaptureRuntime.kt",
+      "bytes": 3339,
+      "sha256": "f4bd66365de3c4995e65e0e3322a7a3e5845dcbb5a9e2051cf996ff2c8d7b494",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review1-target/FiniteLifecycleContract.kt",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/FiniteLifecycleContract.kt",
+      "bytes": 22994,
+      "sha256": "89c50f7fd5d0a9ef2551d0913e3910646903eeb531a66202b13c016cdd4e068d",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review1-target/combined-files.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/combined-files.json",
+      "bytes": 8995,
+      "sha256": "bb1b5de9755cf7f3ba2656ce0c9bcf2dcc1cdfe0d1ce6138a8c630d8bbe00312",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review1-target/go-owned.patch",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch",
+      "bytes": 52681,
+      "sha256": "d729c4f7d509f97231d32063406e453e689aa3b80c5e41fcb76867a9d1330963",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review1-target/kotlin-freeze-manifest.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-freeze-manifest.json",
+      "bytes": 10466,
+      "sha256": "30ece4c245137a58a12b00dd15265a278e2ad40de812ce6ad24d5573be6e9512",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review1-target/kotlin-owned.patch",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch",
+      "bytes": 1106489,
+      "sha256": "4b254e46a29fe846dc41c969dad23bcc214736cbcda85559d5b5a7980e1c18db",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review2-target/FiniteLifecycleCaptureProcessor.kt",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/FiniteLifecycleCaptureProcessor.kt",
+      "bytes": 28095,
+      "sha256": "b9cbeed2496ac17cc1b50b4cc1f9f04790cc1f64cc776516492ff2ff60107353",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review2-target/FiniteLifecycleCaptureRuntime.kt",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/FiniteLifecycleCaptureRuntime.kt",
+      "bytes": 3339,
+      "sha256": "f4bd66365de3c4995e65e0e3322a7a3e5845dcbb5a9e2051cf996ff2c8d7b494",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review2-target/FiniteLifecycleContract.kt",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/FiniteLifecycleContract.kt",
+      "bytes": 26479,
+      "sha256": "b555a5323611093dac3dcfa1ab46d593c3d0f57d924ebb475fa1700f61ac1fc5",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review2-target/combined-files-review2.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/combined-files-review2.json",
+      "bytes": 8995,
+      "sha256": "cfa320c5737eef81e208b8f58d75bad8d2b8e0ae8c228169f5d841b1cf44876c",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review2-target/freeze-manifest.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/freeze-manifest.json",
+      "bytes": 10638,
+      "sha256": "5a8b6b7b28416a500ab2732fff9a80b2fa5e009f3c18cd03f68852ca0ebb03b3",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/o1/review2-target/owned.patch",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch",
+      "bytes": 1129494,
+      "sha256": "27900babf75aedd8946df58a45ddee6884a91e0f52df058a438a7c3ef3f103c7",
+      "reason": "Explicit synthetic O0/O0D/O1 session promotion, including failed attempts, research, review targets, corrections and final review; model scope only, no live qualification"
+    }
+  ],
+  "file_count": 228,
+  "bytes": 6859759,
+  "active_exclusions": [
+    "o2/",
+    "preflight/",
+    "o3/",
+    "session.json",
+    "morning-handoff-scaffold.md",
+    "delivery/"
+  ],
+  "refresh_after": "Final review verdict, developer response, OCR receipts and final manager session freeze; missing future artifacts are not complete proof"
+}

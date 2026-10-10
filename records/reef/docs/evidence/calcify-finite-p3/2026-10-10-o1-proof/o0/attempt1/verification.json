@@ -1,0 +1,20 @@
+{
+  "unit": "O0",
+  "kind": "planning-only",
+  "spec_sha256": "41a96468b8a9dd700934432587e1095d5b8bfd11adb727f9f367bc460e104d2a",
+  "patch_sha256": "733fccc1ed815996f41b3e860359fe235fee02d7d7af4e7ec763bb199bd65a7a",
+  "local_links_missing": [],
+  "git_diff_check_exit": 0,
+  "retention": {
+    "command": "bun scripts/ci/check-records-retention.mjs",
+    "exit": 0,
+    "archived_files_checked": 520
+  },
+  "runtime_tests_by_author": [],
+  "archive_pass": "no-op: new active planning contract, no superseded record removed",
+  "graph_project": "reef-main",
+  "graph_generation": "2026-09-30T21:14:17Z",
+  "graph_limitations": "Different checkout and stale/changed/not-tracked evidence paths; current-source fallback used; no exhaustive claim",
+  "search_graph_pages": "22 rows complete; offsets0,20",
+  "serena_limitations": "Only Svelte language server, Go symbol extraction unavailable; bounded source fallback"
+}

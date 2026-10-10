@@ -1,0 +1,46 @@
+--- FAIL: TestCheckHealthAcceptsSuccess (0.00s)
+panic: httptest: failed to listen on a port: listen tcp6 [::1]:0: bind: operation not permitted [recovered, repanicked]
+
+goroutine 8 [running]:
+testing.tRunner.func1.2({0x100fd6ac0, 0x4845ed21c3c0})
+	/Users/dsteele/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.9.darwin-arm64/src/testing/testing.go:1974 +0x1a0
+testing.tRunner.func1()
+	/Users/dsteele/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.9.darwin-arm64/src/testing/testing.go:1977 +0x318
+panic({0x100fd6ac0?, 0x4845ed21c3c0?})
+	/Users/dsteele/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.9.darwin-arm64/src/runtime/panic.go:860 +0x12c
+net/http/httptest.newLocalListener()
+	/Users/dsteele/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.9.darwin-arm64/src/net/http/httptest/server.go:72 +0xd4
+net/http/httptest.NewUnstartedServer(...)
+	/Users/dsteele/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.9.darwin-arm64/src/net/http/httptest/server.go:120
+net/http/httptest.NewServer({0x10105c1e0, 0x101058870})
+	/Users/dsteele/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.9.darwin-arm64/src/net/http/httptest/server.go:107 +0x28
+github.com/dills122/reef/services/matching-engine/cmd/http-healthcheck.TestCheckHealthAcceptsSuccess(0x4845ed33a488)
+	/Users/dsteele/.codex/worktrees/fa2b-0041/reef/services/matching-engine/cmd/http-healthcheck/main_test.go:11 +0x38
+testing.tRunner(0x4845ed33a488, 0x1010587d8)
+	/Users/dsteele/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.9.darwin-arm64/src/testing/testing.go:2036 +0xc4
+created by testing.(*T).Run in goroutine 1
+	/Users/dsteele/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.9.darwin-arm64/src/testing/testing.go:2101 +0x3a8
+FAIL	github.com/dills122/reef/services/matching-engine/cmd/http-healthcheck	0.314s
+?   	github.com/dills122/reef/services/matching-engine/cmd/matching-engine	[no test files]
+?   	github.com/dills122/reef/services/matching-engine/cmd/matching-engine-load	[no test files]
+ok  	github.com/dills122/reef/services/matching-engine/cmd/proto-compat-check	1.162s
+ok  	github.com/dills122/reef/services/matching-engine/internal/app	0.338s
+ok  	github.com/dills122/reef/services/matching-engine/internal/book	0.783s
+?   	github.com/dills122/reef/services/matching-engine/internal/domain	[no test files]
+ok  	github.com/dills122/reef/services/matching-engine/internal/loadtest	1.241s
+ok  	github.com/dills122/reef/services/matching-engine/internal/streamdirect	3.660s
+--- FAIL: TestHealthCheck (0.00s)
+    server_test.go:30: failed to create server: listen tcp 127.0.0.1:0: bind: operation not permitted
+--- FAIL: TestSubmitOrder (0.00s)
+    server_test.go:64: failed to create server: listen tcp 127.0.0.1:0: bind: operation not permitted
+--- FAIL: TestCancelOrder (0.00s)
+    server_test.go:114: failed to create server: listen tcp 127.0.0.1:0: bind: operation not permitted
+--- FAIL: TestModifyOrder (0.00s)
+    server_test.go:160: failed to create server: listen tcp 127.0.0.1:0: bind: operation not permitted
+--- FAIL: TestSubmitOrdersStream (0.00s)
+    server_test.go:207: failed to create server: listen tcp 127.0.0.1:0: bind: operation not permitted
+FAIL
+FAIL	github.com/dills122/reef/services/matching-engine/internal/transport/grpc	1.372s
+?   	github.com/dills122/reef/services/matching-engine/internal/transport/grpc/pb/contracts/proto	[no test files]
+ok  	github.com/dills122/reef/services/matching-engine/internal/transport/http	1.116s
+FAIL

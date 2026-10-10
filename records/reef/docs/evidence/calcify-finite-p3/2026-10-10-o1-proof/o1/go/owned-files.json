@@ -1,0 +1,16 @@
+{
+  "base": "45211653d2f5b59dd25f4a4db42883881b4d6eb1",
+  "files": {
+    "services/matching-engine/internal/domain/calcify_lifecycle.go": "9fe7396f3101aecc405318aaebb20b75495bb079936b5294fc0b998a7c85920d",
+    "services/matching-engine/internal/app/calcify_source_profile.go": "f47b63e16b0f2e9ddaf0ef17dd893a3eef063f3d92d2aba3311385e56fef778e",
+    "services/matching-engine/internal/app/calcify_source_identity_test.go": "e6fc8f0c129baa97386bc77f77f849da3f0da50cdca2e04a8d415c2b4d7950f3",
+    "services/matching-engine/internal/streamdirect/config.go": "8f4d038c9bcce67fef0043b1ff12d8259fe1704a4f6dadfb111930b70bdc6221",
+    "services/matching-engine/internal/streamdirect/processor.go": "89957b962a685f0bc2d82ee657f0393ad86624d6b6da5ed974b277c1b44bd17e",
+    "services/matching-engine/internal/streamdirect/runner.go": "8151da32b3a5c1b0d1bb59ac807ac0084cfff0cc548683c15e9c008f1cb07f24",
+    "services/matching-engine/internal/streamdirect/calcify_lifecycle_test.go": "d5ee8f158c19c4b93bb873e35192bb96e294f6f5314481f80ed919f7b804f092",
+    "services/matching-engine/internal/streamdirect/calcify_lifecycle_config_test.go": "9b35ec34ac99dbcc06754c6fc021d82fa1e22d16e6b4ee9cedb5fd1c4135a77a",
+    "services/matching-engine/internal/streamdirect/calcify_lifecycle_checksum_test.go": "59549564b9c8101b3a4659f736045ba2823c568a1ab74d52d6522fe7f4ab2633",
+    "services/matching-engine/README.md": "94328a2a090974722be7ac35a54c41cbdeb0f3d61977bf7db09f6f741254c31f"
+  },
+  "patchSha256": "d729c4f7d509f97231d32063406e453e689aa3b80c5e41fcb76867a9d1330963"
+}

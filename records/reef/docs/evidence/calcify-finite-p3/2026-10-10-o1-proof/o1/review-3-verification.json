@@ -1,0 +1,43 @@
+{
+  "reviewInstance": 3,
+  "reviewMaximum": 3,
+  "recordedAt": "2026-10-10T15:41:48.946174+00:00",
+  "base": "45211653d2f5b59dd25f4a4db42883881b4d6eb1",
+  "targetHashCount": 56,
+  "targetHashMismatches": [],
+  "compiledHashCount": 43,
+  "compiledHashMismatches": [],
+  "independentChecks": [
+    {
+      "command": "GOCACHE=/private/tmp/reef-o1-review3-gocache go test ./internal/app ./internal/streamdirect",
+      "cwd": "/Users/dsteele/.codex/worktrees/fa2b-0041/reef/services/matching-engine",
+      "exit": 0,
+      "results": "app 0.412s; streamdirect 3.409s; unrelated shell startup parse message retained in tool output"
+    },
+    {
+      "command": "JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home ./services/platform-runtime/gradlew --no-daemon -p services/platform-runtime test --tests 'com.reef.platform.calcify.FiniteLifecycle*'",
+      "exitSandbox": 1,
+      "failure": "wrapper user cache .zip.lck Operation not permitted",
+      "authorizedRetryExit": 0,
+      "log": "review-3-gradle-authorized.log",
+      "results": "review-3-focused-results.json"
+    },
+    {
+      "command": "git diff --check",
+      "exit": 0
+    },
+    {
+      "command": "Java21 source-mode -Xmx192m Review2ResearchProbe.java",
+      "details": "review-3-probe-command.json",
+      "exit": 0
+    }
+  ],
+  "limitations": [
+    "No full213 Calcify rerun on final source",
+    "No Go full/race/vet rerun; retained unchanged-source receipts verified",
+    "No proto regeneration; unchanged target governance evidence",
+    "No broker/container/network/SQL/live EOS or process restart qualification",
+    "No source or Git edits"
+  ],
+  "verdict": "Ready"
+}
