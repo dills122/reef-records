@@ -1,0 +1,31 @@
+{
+  "files": {
+    "npm__package__scripts__version.js": "51cd30899641cca504e68d876005e922d6a6ac6a065c3b41a91f201aedd23bac",
+    "upstream__bin__ocr.test.js": "61eb97b1a11e7fc43f734d213d5bd8e0f825d39f8354c1d064e080d661173f16",
+    "npm__package__bin__ocr.js": "7668ea8933d987357da1e1815bd9bc32739a8ed57b53a033df47a3164d13e502",
+    "harness-correction.md": "4399dd343e30fa455f5169cde7cfde6a83a86a7fa7d153d12ef13256b143931e",
+    "upstream__scripts__install.js": "6397a105ddfdab65bb6740f827962989f49a3f9b0807ef950c620479310bad2b",
+    "upstream__package.json": "760119d0f84c9ee0311ad195c3910fc0a960ec8eae94a075dcbfbaa981f9bf1a",
+    "upstream__bin__ocr.js": "7668ea8933d987357da1e1815bd9bc32739a8ed57b53a033df47a3164d13e502",
+    "npm__package__package.json": "c2cb3ead581a18dfd778f811dcc0c0ea732b3c4fafa469d46f39097b69a54d9a",
+    "upstream__scripts__platform.js": "19ad16acdba0fdd204ba2a8deb2651576907c070eb69c859dfbabad2c37ee3bb",
+    "npm__package__scripts__platform.js": "19ad16acdba0fdd204ba2a8deb2651576907c070eb69c859dfbabad2c37ee3bb",
+    "research.md": "fa030c78e9ad55c5fa1b17729726a18e6de058300ad3f06ada448b2dd9d9dfc1",
+    "proposed-trusted-base.patch": "947a3b0254c3cdcbbc3487076aa31be2f78959525ebc62c8cd39317a92e38192",
+    "npm-files.json": "506862733f892ba49db5c01b6df1e0d9b795b71b3e193b5228ccf3edf8ab0592",
+    "upstream__scripts__version.js": "51cd30899641cca504e68d876005e922d6a6ac6a065c3b41a91f201aedd23bac",
+    "failure-excerpt.log": "9bdcd10ac45e1e77af55a8ca8c886a9aab0c3db42bc6a4f507bcd834572728a9",
+    "npm-1.12.9.json": "20bfcc6312b195dcc586321f73e6383ab57b79f89f2c95fc3048c33c7ffe5a68",
+    "npm-1.12.9.tgz": "b3dbd94092797d42ee0fb1882eaaee16f1a79eddfe1c1beccd14fa2ab903c1d2",
+    "offline-launcher-proof.cjs": "d3127df814afcc998c2b5dbe039cf17855915050eaef0fff00c36bf96492a95d",
+    "upstream__scripts__update.js": "62bf6d5d3076d775a681bffd65f1c556b759b59695bbc7fb4431e8df0b184cc5",
+    "upstream__scripts__version.test.js": "4737752cc31a7acb5f81630cbfc873016473750e08b3a49d86210aad6e259285",
+    "npm__package__scripts__update.js": "62bf6d5d3076d775a681bffd65f1c556b759b59695bbc7fb4431e8df0b184cc5"
+  },
+  "npmTarballIntegrityVerified": true,
+  "launcherUpdaterPlatformMatchPinnedSource": true,
+  "offlineProofExit": 0,
+  "realChildProcesses": 0,
+  "providerCalls": 0,
+  "networkCallsInProof": 0
+}

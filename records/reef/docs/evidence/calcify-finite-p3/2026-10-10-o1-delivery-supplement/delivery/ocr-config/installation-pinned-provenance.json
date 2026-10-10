@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "kind": "Explicit derived pinned upstream metadata; raw third-party source/tarball excluded",
+  "upstream_commit": "bccbc15f785269400735d5255540c231e6c02b6d",
+  "npm_name": "@alibaba-group/open-code-review",
+  "npm_version": "1.12.9",
+  "metadata_url": "https://registry.npmjs.org/@alibaba-group%2Fopen-code-review/1.12.9",
+  "metadata_original_path": ".planning/calcify-p3-overnight/delivery/ocr-install-spike/npm-1.12.9.json",
+  "metadata_sha256": "20bfcc6312b195dcc586321f73e6383ab57b79f89f2c95fc3048c33c7ffe5a68",
+  "tarball_url": "https://registry.npmjs.org/@alibaba-group/open-code-review/-/open-code-review-1.12.9.tgz",
+  "registry_integrity": "sha512-UhmotfgVb5fk8QmIIoiGVko6YaPEnZFN2/QxoIo6WFAZcK+P28OhwusSkc0gbXH406H+8bOIzbDvbNbZhGG2vA==",
+  "tarball_sha256": "b3dbd94092797d42ee0fb1882eaaee16f1a79eddfe1c1beccd14fa2ab903c1d2",
+  "primary_sources": [
+    {
+      "path": "bin/ocr.js",
+      "url": "https://github.com/alibaba/open-code-review/blob/bccbc15f785269400735d5255540c231e6c02b6d/bin/ocr.js",
+      "sha256": "7668ea8933d987357da1e1815bd9bc32739a8ed57b53a033df47a3164d13e502"
+    },
+    {
+      "path": "scripts/update.js",
+      "url": "https://github.com/alibaba/open-code-review/blob/bccbc15f785269400735d5255540c231e6c02b6d/scripts/update.js",
+      "sha256": "62bf6d5d3076d775a681bffd65f1c556b759b59695bbc7fb4431e8df0b184cc5"
+    },
+    {
+      "path": "scripts/platform.js",
+      "url": "https://github.com/alibaba/open-code-review/blob/bccbc15f785269400735d5255540c231e6c02b6d/scripts/platform.js",
+      "sha256": "19ad16acdba0fdd204ba2a8deb2651576907c070eb69c859dfbabad2c37ee3bb"
+    },
+    {
+      "path": "action.yml",
+      "url": "https://github.com/alibaba/open-code-review/blob/bccbc15f785269400735d5255540c231e6c02b6d/action.yml"
+    }
+  ],
+  "network_verification_performed_by_this_preparation": false,
+  "integrity_verification_claim_scope": "Original owned research/manifest receipt; no tarball import or new execution here"
+}

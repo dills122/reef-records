@@ -1,0 +1,86 @@
+{
+  "reviewInstance": 1,
+  "maxReviewInstances": 3,
+  "deliveryUnit": "user-approved OCR pilot config fix",
+  "separateO1InternalReviewCap": "3 of 3 exhausted, unchanged",
+  "reviewRoot": "/private/tmp/reef-ocr-config-20261010",
+  "completedAt": "2026-10-10T16:28:41.187321+00:00",
+  "sourceBefore": "source-before.json",
+  "sourceAfter": "source-after.json",
+  "sourceHashesAndPatchUnchanged": true,
+  "blindPreliminary": "preliminary.md",
+  "authorExplanationReadAfterPreliminary": true,
+  "upstreamProvenance": "upstream-provenance.json",
+  "upstreamCommit": "bccbc15f785269400735d5255540c231e6c02b6d",
+  "commands": [
+    {
+      "command": "node scripts/dev/ci-workflow-hardening.test.mjs",
+      "exitCode": 0,
+      "log": "ci-hardening.log",
+      "sha256": "8a4af3c7efa4dad22bd2622d250ce9012d8122da8d6a677ebcdd6c51b3c9b790"
+    },
+    {
+      "command": "node scripts/dev/script-surface-check.mjs",
+      "exitCode": 0,
+      "log": "script-surface.log",
+      "sha256": "b2ca8c6b19bf4566453a91d00a4df1c2a87e5c7ed11012bcc5f06abbd132dc49"
+    },
+    {
+      "command": "node --test scripts/ci/check-required-results.test.mjs scripts/ci/build-container.test.mjs",
+      "exitCode": 0,
+      "log": "required-results-build-container.log",
+      "sha256": "b2b136810dbe292b627810318b4905f2726b187e383ac5105fa5811b0f1aaf6c"
+    },
+    {
+      "command": "actionlint .github/workflows/open-code-review-pilot.yml",
+      "exitCode": 0,
+      "log": "actionlint.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0,
+      "log": "diff-check.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "bun .planning/ocr-config-delivery/review1/focused-coverage-check.mjs",
+      "exitCode": 0,
+      "log": "focused-coverage.log",
+      "sha256": "14f59ad6eb8f99a3a7805a4f66fd0e29a11036ee21bc16c2c8318e3771c05183"
+    }
+  ],
+  "testSummary": {
+    "requiredResultsBuildContainerTests": 12,
+    "failures": 0,
+    "skips": 0,
+    "scriptSurfaceScripts": 280,
+    "nodeSyntax": 268,
+    "shellSyntax": 11,
+    "existingDenoSyntaxSkip": "scripts/dev/arena-runner-bench-deno.ts",
+    "selectionProjectionRetained": 17,
+    "testsPreserved": 7,
+    "generatedJavaExcluded": 31
+  },
+  "publicSourceFetch": {
+    "url": "https://raw.githubusercontent.com/alibaba/open-code-review/bccbc15f785269400735d5255540c231e6c02b6d/internal/agent/selection.go",
+    "webRead": "cache miss",
+    "initialSandboxCurl": "DNS unavailable",
+    "authorizedEscalatedCurl": "success; immutable blob matches upstream tree"
+  },
+  "providerCalled": false,
+  "secretsRead": false,
+  "gitMutations": false,
+  "sourceMutations": false,
+  "networkWrites": false,
+  "graph": {
+    "project": "reef",
+    "exactReviewRootIndexed": false,
+    "graphRoot": "/Users/dsteele/.codex/worktrees/8576/reef",
+    "generation": "2026-09-28T02:46:53Z",
+    "fourPathsFreshness": "missing",
+    "directSourceFallback": true
+  },
+  "verdict": "Ready",
+  "scopeOfVerdict": "Frozen four-path config patch ready for manager CI gate; not evidence of merged base, PR485 retry or O1 completion."
+}

@@ -1,0 +1,19 @@
+{
+  "configPR": "https://github.com/dills122/reef/pull/487",
+  "base": "ed76dd6b196731c454c0868f966424c491f33954",
+  "head": "be706614678b11439f8df851467da3ae455cdbc9",
+  "review": "Ready2of3",
+  "authorResponse": "Accept",
+  "managerResponse": "Accept",
+  "all4FrozenHashesMatchCommittedHead": true,
+  "commitPaths": [
+    ".github/workflows/open-code-review-pilot.yml",
+    "scripts/dev/ci-workflow-hardening.test.mjs",
+    "docs/CI_OPERATIONS.md"
+  ],
+  "requiredCI": "Running; no merge until actual pass",
+  "trustedBaseMerge": "Pending",
+  "actualCalcifyOCR": "Pending",
+  "O1SourceHead": "dcb106c4ddd5ccda60df7c8e6411fca88ef5be14",
+  "O1ReviewCap": "3of3 unchanged"
+}

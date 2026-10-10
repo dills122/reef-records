@@ -1,0 +1,23 @@
+[
+  "package/LICENSE",
+  "package/imgs/providers.jpg",
+  "package/scripts/install.js",
+  "package/bin/ocr.js",
+  "package/scripts/platform.js",
+  "package/scripts/update.js",
+  "package/scripts/version.js",
+  "package/package.json",
+  "package/README.md",
+  "package/imgs/benchmark-en.png",
+  "package/imgs/benchmark-ja.png",
+  "package/imgs/benchmark-ko.png",
+  "package/imgs/benchmark-ru.png",
+  "package/imgs/benchmark-zh.png",
+  "package/imgs/highlights-en.png",
+  "package/imgs/highlights-ja.png",
+  "package/imgs/highlights-ko.png",
+  "package/imgs/highlights-ru.png",
+  "package/imgs/highlights-zh.png",
+  "package/imgs/logo-core.svg",
+  "package/imgs/logo.svg"
+]

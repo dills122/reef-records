@@ -1,0 +1,13 @@
+{
+  "schema": "calcify-scoped-user-authorization-snapshot-v1",
+  "source_path": ".planning/calcify-p3-overnight/session.json",
+  "source_sha256_at_capture": "5f46133020b26d512635f1bfbe1c1aba17cf57176ffb7580b431499d1d5f0923",
+  "selected_field": "ocrRecoveryAuthorization",
+  "value": {
+    "approvedAt": "2026-10-10T16:17:30.692404+00:00",
+    "scope": "Separate generated Calcify Java exclusion, soft budget500000->1500000, independent review and trustedbase merge after gates, then actual OCR retryPR485",
+    "humanAnswer": "Approve reviewed config fix and retry (Recommended)",
+    "sourceChangesAuthorized": false
+  },
+  "discipline": "Derived explicit nonrecursive snapshot; selected humanAnswer/value preserved exactly, not whole-session import or original-byte claim"
+}

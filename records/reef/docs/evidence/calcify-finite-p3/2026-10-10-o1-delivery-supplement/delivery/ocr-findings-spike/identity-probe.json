@@ -1,0 +1,8 @@
+{
+  "sourceProfileHash": "1016a4bf5a9d63c61858cd25f9f2d42388bb50d7d3447e19846badda43ead8e0",
+  "modelFiniteBindingDigest": "37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61",
+  "bindingModelOnly": true,
+  "digestsDistinct": true,
+  "profileDigestRecomputed": true,
+  "proposedEqualityWouldRejectAcceptedFixture": true
+}

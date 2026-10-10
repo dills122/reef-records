@@ -1,0 +1,45 @@
+[
+  {
+    "upstreamPath": "action.yml",
+    "upstreamCommit": "bccbc15f785269400735d5255540c231e6c02b6d",
+    "cachedPath": "/Users/dsteele/.codex/worktrees/fa2b-0041/reef/.planning/calcify-p3-overnight/delivery/ocr-spike/action.yml",
+    "gitBlob": "bcb7381a6eeee67491dce8ff9dd84bcda6fab711",
+    "sha256": "8294d0b74478032330d54714c129ea39093dd74894e91e59a3f60388931f71e5"
+  },
+  {
+    "upstreamPath": "internal/config/rules/system_rules.go",
+    "upstreamCommit": "bccbc15f785269400735d5255540c231e6c02b6d",
+    "cachedPath": "/Users/dsteele/.codex/worktrees/fa2b-0041/reef/.planning/calcify-p3-overnight/delivery/ocr-spike/internal__config__rules__system_rules.go",
+    "gitBlob": "403c46a56e2d5b6fed40dfb00826ce3174aec0dd",
+    "sha256": "e0e5e751a8e250b9796a3be3e173955d555b78da685d7523313730973a7e9852"
+  },
+  {
+    "upstreamPath": "internal/config/allowlist/default_exclude_patterns.json",
+    "upstreamCommit": "bccbc15f785269400735d5255540c231e6c02b6d",
+    "cachedPath": "/Users/dsteele/.codex/worktrees/fa2b-0041/reef/.planning/calcify-p3-overnight/delivery/ocr-spike/internal__config__allowlist__default_exclude_patterns.json",
+    "gitBlob": "052583b84f07f75c7654966d809f5e978a1cf4ee",
+    "sha256": "2946e9e6e608af4fe4cb4e43f4744f9827cead0a69350488b31f1777961e9879"
+  },
+  {
+    "upstreamPath": "internal/agent/agent.go",
+    "upstreamCommit": "bccbc15f785269400735d5255540c231e6c02b6d",
+    "cachedPath": "/Users/dsteele/.codex/worktrees/fa2b-0041/reef/.planning/calcify-p3-overnight/delivery/ocr-spike/internal__agent__agent.go",
+    "gitBlob": "66d7a1c2952ba099ca4cdbb65f6bf45d05347dbb",
+    "sha256": "d3ecccbe748402413b7641ecad0d0a17201d63eeb0ba52a84a28bf730d24c623"
+  },
+  {
+    "upstreamPath": "internal/agent/estimate.go",
+    "upstreamCommit": "bccbc15f785269400735d5255540c231e6c02b6d",
+    "cachedPath": "/Users/dsteele/.codex/worktrees/fa2b-0041/reef/.planning/calcify-p3-overnight/delivery/ocr-spike/internal__agent__estimate.go",
+    "gitBlob": "021dff014c2694ca02891f316f28c34f10cd1d4b",
+    "sha256": "84cf22584064648130a76626a44aa039d337278eb3d6d04a53e79a88d75149e9"
+  },
+  {
+    "upstreamPath": "internal/agent/selection.go",
+    "upstreamCommit": "bccbc15f785269400735d5255540c231e6c02b6d",
+    "url": "https://raw.githubusercontent.com/alibaba/open-code-review/bccbc15f785269400735d5255540c231e6c02b6d/internal/agent/selection.go",
+    "localPath": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/review1/upstream-selection.go",
+    "gitBlob": "771c616f9c21f475eb9895aec49fa6d0b1924f13",
+    "sha256": "55359ece4199fa42fc5af3f435c7e8750ac66be6b0112be643a2b040b7134d1b"
+  }
+]

@@ -1,0 +1,51 @@
+{
+  "scope": "Eight authored owner/retention docs only; no Git/network/build/runtime rerun",
+  "local_links": 112,
+  "cbf_archive_links_checked_against_materialized_records": 11,
+  "whitespace": "PASS",
+  "issues": [],
+  "hashes": [
+    {
+      "path": "docs/WORK_PLAN.md",
+      "bytes": 55948,
+      "sha256": "8d652c557ea4ba8f70677ba76948c5c7760d3450b05a94c1dcafd5b9fc6df3ff"
+    },
+    {
+      "path": "docs/README.md",
+      "bytes": 6024,
+      "sha256": "1f83c7d6e22532ad52820e730f4458c4152ac4a1bdc0ea1cc7729391b78b5fbf"
+    },
+    {
+      "path": "docs/CALCIFY_PHASES_OVERVIEW.md",
+      "bytes": 13036,
+      "sha256": "cc0adeb79b0ca65375285917645991aa6b9ba110dd51687440ed255c44b9327f"
+    },
+    {
+      "path": "docs/work/handoffs/2026-10-10-calcify-finite-p3-overnight.md",
+      "bytes": 5837,
+      "sha256": "af8a6d13092adca6ad7484fe0c70e339689d6f2a7124a7e70351e7a7ff849af7"
+    },
+    {
+      "path": "docs/evidence/calcify-finite-p3/README.md",
+      "bytes": 8245,
+      "sha256": "403924bc33aa56b76e237b6e150de351646a66c6e11ecce4ccaba26cc9251556"
+    },
+    {
+      "path": "docs/RECORDS_RETENTION.md",
+      "bytes": 13899,
+      "sha256": "e999f3f0abc95cfe85b5bdcc2853dfa99ec78bfa9c22f397c50f80b013ec6b1d"
+    },
+    {
+      "path": "docs/records/retained-evidence.json",
+      "bytes": 74882,
+      "sha256": "fe67461abd671ae91150b7d30e508f3673a814f74c7d389a0d17167c93c7b0ca"
+    },
+    {
+      "path": "docs/records/2026-10-10-calcify-finite-p3-retention.json",
+      "bytes": 6496,
+      "sha256": "19b714d4acbe95906bca045ff554bb8cbeacb913f6b84c9a7cea86214e1610f5"
+    }
+  ],
+  "summary_inventory_and_retention_hash": "PASS",
+  "records_hosted_exactbase": "Verified manager receipt; no local final--base rerun"
+}

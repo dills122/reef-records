@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "derived": "Explicit finite snapshot metadata, excludes self/current-final/future archive commits",
+  "prior_snapshots": [
+    {
+      "path": ".planning/calcify-p3-overnight/delivery/supplement-preparation/selection.json",
+      "bytes": 17238,
+      "sha256": "070dab4c31b2bd39cbeef195fc05088f45ecf650b5832a8261b3d83bf0c732d4",
+      "scope": "Immutable prior preparation snapshot metadata; original remains local, current final mapping does not recursively include prior mappings"
+    },
+    {
+      "path": ".planning/calcify-p3-overnight/delivery/supplement-preparation/checks.json",
+      "bytes": 217,
+      "sha256": "4a70e77e8064fb3d142ad45268a530f371a1ec5b7c368767398f134ac4f0ca5b",
+      "scope": "Immutable prior preparation snapshot metadata; original remains local, current final mapping does not recursively include prior mappings"
+    },
+    {
+      "path": ".planning/calcify-p3-overnight/delivery/supplement-preparation/README.md",
+      "bytes": 7933,
+      "sha256": "5b3c284874bdca21a3a15208df1a9af7511b188981935f94c639532302b8337f",
+      "scope": "Immutable prior preparation snapshot metadata; original remains local, current final mapping does not recursively include prior mappings"
+    },
+    {
+      "path": ".planning/calcify-p3-overnight/delivery/supplement-preparation/selection-v2.json",
+      "bytes": 51138,
+      "sha256": "aaaca5c5f06a3eaabc53770563052f475b3826d5858353c0d7689e554a209538",
+      "scope": "Immutable prior preparation snapshot metadata; original remains local, current final mapping does not recursively include prior mappings"
+    },
+    {
+      "path": ".planning/calcify-p3-overnight/delivery/supplement-preparation/checks-v2.json",
+      "bytes": 982,
+      "sha256": "3d5bf2ef54d285f23160b79cfe16e8329768b0198c11b6a29092948a990448ad",
+      "scope": "Immutable prior preparation snapshot metadata; original remains local, current final mapping does not recursively include prior mappings"
+    },
+    {
+      "path": ".planning/calcify-p3-overnight/delivery/supplement-preparation/README-v2.md",
+      "bytes": 6395,
+      "sha256": "979a7c871af100c7361bdf74e7a2892ef9a513d527c90b6b372e3def6679c70d",
+      "scope": "Immutable prior preparation snapshot metadata; original remains local, current final mapping does not recursively include prior mappings"
+    },
+    {
+      "path": ".planning/calcify-p3-overnight/delivery/supplement-preparation/selection-v3.json",
+      "bytes": 67287,
+      "sha256": "500d5e316803f70b5099c3093ddf34ad3c433abc357630d003896adc61868206",
+      "scope": "Immutable prior preparation snapshot metadata; original remains local, current final mapping does not recursively include prior mappings"
+    },
+    {
+      "path": ".planning/calcify-p3-overnight/delivery/supplement-preparation/checks-v3.json",
+      "bytes": 26446,
+      "sha256": "005825889189a478dc32ca79bf8138b1eb173f21a73ae6e6b439693f410ecf2b",
+      "scope": "Immutable prior preparation snapshot metadata; original remains local, current final mapping does not recursively include prior mappings"
+    },
+    {
+      "path": ".planning/calcify-p3-overnight/delivery/supplement-preparation/README-v3.md",
+      "bytes": 4806,
+      "sha256": "3870b5d01a1daf1609f53025fc955cffc922a723f46f8f357e5d14225d97318b",
+      "scope": "Immutable prior preparation snapshot metadata; original remains local, current final mapping does not recursively include prior mappings"
+    },
+    {
+      "path": ".planning/calcify-p3-overnight/delivery/supplement-preparation/selection-v4.json",
+      "bytes": 78186,
+      "sha256": "83354bf09d0a81da15e0e16d772a6ee673d81c00a4c385274174a5ae68593474",
+      "scope": "Immutable prior preparation snapshot metadata; original remains local, current final mapping does not recursively include prior mappings"
+    },
+    {
+      "path": ".planning/calcify-p3-overnight/delivery/supplement-preparation/checks-v4.json",
+      "bytes": 31074,
+      "sha256": "54e68747a13279f225a39fdadf9c1d006ac941e279d3f219fe74c0e4851abfd3",
+      "scope": "Immutable prior preparation snapshot metadata; original remains local, current final mapping does not recursively include prior mappings"
+    },
+    {
+      "path": ".planning/calcify-p3-overnight/delivery/supplement-preparation/README-v4.md",
+      "bytes": 3448,
+      "sha256": "b47fadc3318807f80c6feae93c709e6e0f8bc9f071b5c86bd03ef09fc7304019",
+      "scope": "Immutable prior preparation snapshot metadata; original remains local, current final mapping does not recursively include prior mappings"
+    }
+  ],
+  "prior_v4_selected_records": 136,
+  "original_cbfpublished_records": 230,
+  "original_cb_commit": "cbf2413db33dc7cb65c339cbc51e0eb98c2633f3",
+  "original230Unchanged": true,
+  "copy_provenance_selected_paths": [
+    ".planning/calcify-p3-overnight/delivery/ocr-config/copy-provenance.json",
+    ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/copy-provenance.json",
+    ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/review2-copy-provenance.json"
+  ]
+}

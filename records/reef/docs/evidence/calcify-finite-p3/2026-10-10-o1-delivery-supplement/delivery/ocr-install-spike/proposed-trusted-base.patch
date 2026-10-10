@@ -1,0 +1,11 @@
+--- a/.github/workflows/open-code-review-pilot.yml
++++ b/.github/workflows/open-code-review-pilot.yml
+@@ -24,6 +24,8 @@
+       pull-requests: write
+     steps:
+       - uses: alibaba/open-code-review@bccbc15f785269400735d5255540c231e6c02b6d # v1.12.9
++        env:
++          OCR_NO_UPDATE: '1'
+         with:
+           ocr_version: '1.12.9'
+           llm_url: https://openrouter.ai/api/v1
