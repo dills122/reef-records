@@ -1,0 +1,56 @@
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: pinned OCR step must disable background global auto-update before version/config/review commands
+    at file:///private/tmp/reef-ocr-config-20261010/scripts/dev/ci-workflow-hardening.test.mjs:178:8 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 'name: OpenCodeReview pilot\n' +
+    '\n' +
+    '# pull_request_target loads this workflow and the OCR rule from the trusted base.\n' +
+    '# The pinned Action fetches PR head objects for review; do not execute PR files here.\n' +
+    'on:\n' +
+    '  pull_request_target:\n' +
+    '    branches: [master]\n' +
+    '    types: [labeled, synchronize, reopened, ready_for_review]\n' +
+    '\n' +
+    'permissions: {}\n' +
+    '\n' +
+    'concurrency:\n' +
+    '  group: reef-ocr-${{ github.event.pull_request.number }}\n' +
+    '  cancel-in-progress: true\n' +
+    '\n' +
+    'jobs:\n' +
+    '  review:\n' +
+    '    # Adding unrelated labels to an already opted-in PR must not spend tokens.\n' +
+    "    if: ${{ !github.event.pull_request.draft && contains(github.event.pull_request.labels.*.name, 'ocr-pilot') && (github.event.action != 'labeled' || github.event.label.name == 'ocr-pilot') }}\n" +
+    '    runs-on: ubuntu-latest\n' +
+    '    timeout-minutes: 45\n' +
+    '    permissions:\n' +
+    '      contents: read\n' +
+    '      pull-requests: write\n' +
+    '    steps:\n' +
+    '      - uses: alibaba/open-code-review@bccbc15f785269400735d5255540c231e6c02b6d # v1.12.9\n' +
+    '        with:\n' +
+    "          ocr_version: '1.12.9'\n" +
+    '          llm_url: https://openrouter.ai/api/v1\n' +
+    '          llm_auth_token: ${{ secrets.OCR_OPENROUTER_API_KEY }}\n' +
+    '          llm_model: openai/gpt-5.4-mini\n' +
+    "          llm_use_anthropic: 'false'\n" +
+    '          llm_protocol: openai\n' +
+    "          llm_extra_body: '{}'\n" +
+    '          effort: medium\n' +
+    "          # OCR's token budget is checked between rounds, so bound in-flight groups.\n" +
+    "          review_concurrency: '2'\n" +
+    "          max_tokens_budget: '1500000'\n" +
+    "          sticky_summary: 'true'\n" +
+    "          incremental: 'true'\n" +
+    "          checkpoint_range: 'true'\n" +
+    "          upload_artifacts: 'false'\n",
+  expected: /      - uses: alibaba\/open-code-review@bccbc15f785269400735d5255540c231e6c02b6d # v1\.12\.9\n        env:\n          OCR_NO_UPDATE: '1'\n        with:/,
+  operator: 'match',
+  diff: 'simple'
+}
+
+Node.js v22.23.3

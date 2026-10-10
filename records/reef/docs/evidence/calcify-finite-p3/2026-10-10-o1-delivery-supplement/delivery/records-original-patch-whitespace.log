@@ -1,0 +1,810 @@
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:11: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:33: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:47: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:59: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:64: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:67: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:73: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:76: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:80: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:82: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:85: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:91: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:94: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:99: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:110: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:112: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:151: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:152: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:185: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:187: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:195: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:208: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:220: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:222: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:224: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:235: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:247: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:252: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:265: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:298: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:301: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:307: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:310: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:314: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:316: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:319: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:325: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:328: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o0d/frozen.diff:334: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:60: space before tab in indent.
++ 	return hex.EncodeToString(digest[:])
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:62: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:70: space before tab in indent.
++ 	p := s.calcifySourceProfile
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:71: space before tab in indent.
++ 	if p == nil {
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:108: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:112: space before tab in indent.
++ 	"os"
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:113: space before tab in indent.
++ 	"strconv"
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:114: space before tab in indent.
++ 	"strings"
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:115: space before tab in indent.
++ 	"time"
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:119: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:174: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:176: space before tab in indent.
++ 	partitionCount := envInt("STREAM_ACK_PARTITION_COUNT", 64)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:177: space before tab in indent.
++ 	return RuntimeConfig{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:251: space before tab in indent.
++ 	}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:254: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:262: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:279: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:304: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:308: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:332: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:335: space before tab in indent.
++ 	stats.LastFetchedAt.Store("")
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:336: space before tab in indent.
++ 	stats.LastAckedAt.Store("")
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:337: space before tab in indent.
++ 	stats.LastBatchID.Store("")
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:340: space before tab in indent.
++ 		service:   service,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:341: space before tab in indent.
++ 		source:    source,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:342: space before tab in indent.
++ 		publisher: publisher,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:344: space before tab in indent.
++ 		stats:     stats,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:345: space before tab in indent.
++ 		now:       time.Now,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:346: space before tab in indent.
++ 	}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:353: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:357: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:362: space before tab in indent.
++ 	deliveries, err := p.source.Fetch(ctx, p.config.BatchSize, p.config.FetchTimeout)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:363: space before tab in indent.
++ 	if err != nil {
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:364: space before tab in indent.
++ 		return 0, err
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:372: space before tab in indent.
++ 	return replayer.ReplayCommitted(ctx, p.config.BatchSize, func(deliveries []CommandDelivery) error {
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:373: space before tab in indent.
++ 		_, _, rollback, err := p.buildBatchMode(
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:374: space before tab in indent.
++ 			deliveries,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:376: space before tab in indent.
++ 				status = "accepted"
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:377: space before tab in indent.
++ 			}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:378: space before tab in indent.
++ 			fact = CommandOutcomeFact{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:400: space before tab in indent.
++ 			}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:401: space before tab in indent.
++ 		}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:402: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:405: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:423: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:426: space before tab in indent.
++ 		result := p.service.SubmitOrderInBatch(rollback, command)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:427: space before tab in indent.
++ 		result.AcceptedOrder = acceptedOrderFact(command, result)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:428: space before tab in indent.
++ 		return processedOutcome{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:442: space before tab in indent.
++ 		}, true
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:443: space before tab in indent.
++ 	case "ModifyOrder":
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:444: space before tab in indent.
++ 		command, decodeErr := decodeCommand[domain.ModifyOrder](delivery.Data(), "modify")
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:446: space before tab in indent.
++ 		command.VenueSessionID = venueSessionID
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:447: space before tab in indent.
++ 		command.InstrumentID = instrumentID
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:448: space before tab in indent.
++ 		return processedOutcome{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:462: space before tab in indent.
++ 		}, true
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:463: space before tab in indent.
++ 	case "CancelOrder":
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:464: space before tab in indent.
++ 		command, decodeErr := decodeCommand[domain.CancelOrder](delivery.Data(), "cancel")
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:466: space before tab in indent.
++ 		command.VenueSessionID = venueSessionID
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:467: space before tab in indent.
++ 		command.InstrumentID = instrumentID
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:468: space before tab in indent.
++ 		return processedOutcome{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:482: space before tab in indent.
++ 		}, true
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:483: space before tab in indent.
++ 	default:
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:484: space before tab in indent.
++ 		return processedOutcome{CommandID: bestEffortCommandID(delivery.Data())}, false
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:486: space before tab in indent.
++ 	}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:488: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:535: space before tab in indent.
++ 	for _, delivery := range deliveries {
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:536: space before tab in indent.
++ 		if err := delivery.Nak(); err != nil {
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:543: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:556: space before tab in indent.
++ 	if len(config.Partitions) == 0 {
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:557: space before tab in indent.
++ 		return nil, fmt.Errorf("matching-engine direct stream requires at least one partition")
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:558: space before tab in indent.
++ 	}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:560: space before tab in indent.
++ 		commandSource := CommandSource(source)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:561: space before tab in indent.
++ 		eventPublisher := wrapEventBatchPublisherWithLocalFaultHooks(publisher, config)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:562: space before tab in indent.
++ 		processor := NewProcessor(service, commandSource, eventPublisher, ProcessorConfig{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:585: space before tab in indent.
++ 		})
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:586: space before tab in indent.
++ 		runner.processors = append(runner.processors, processor)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:587: space before tab in indent.
++ 		lanes = append(lanes, kafkaRunnerLane{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:1064: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/go/owned.patch:1095: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/capture-01.pb:2: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61~*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-1-1B@d3d06eb14a886f55e7c4a2e2b83488c6e961f4bf3817675add7140a83ad1592f"Å	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/capture-02.pb:2: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61Ä*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-2-2B@83f150f494da6076e0d99696a0bd4ead2f951454ce83c7d1d948d08902ce799a"á	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/capture-03.pb:2: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61Ä*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-3-3B@baa395d7f833ec7a8a0202d05729128bf0e9fcce4ffdd72c5c77389c602abfd1"Å	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/capture-08.pb:2: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61Ä*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-8-8B@8b2cde5a866198f5387075722f785ffa3383c74fc0ecdafaa08744f66b1c13f2"á	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:42: trailing whitespace.
++ã*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-8-8B@8b2cde5a866198f5387075722f785ffa3383c74fc0ecdafaa08744f66b1c13f2J	p3-cmd-08"2*100000000000228*—
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:44: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61~*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-1-1B@d3d06eb14a886f55e7c4a2e2b83488c6e961f4bf3817675add7140a83ad1592f"Å	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:58: trailing whitespace.
++evt-command-outcome-p3-cmd-01p0-1eng-p0-1"2026-10-10T03:00:00Zâ*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-1-1B@d3d06eb14a886f55e7c4a2e2b83488c6e961f4bf3817675add7140a83ad1592fJ	p3-cmd-01(8@“J@c3b89ab385cb0092fdd9fe35f95d27255af4afaedffe7e77ee0fde1cb5a40ef5R~*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-1-1B@d3d06eb14a886f55e7c4a2e2b83488c6e961f4bf3817675add7140a83ad1592fXb@e111f417afb217b55bb2b1e53be44cae30badb5f9c144ae78fea8d916cdc6b8ah*›
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:59: trailing whitespace.
++p3-engine-p0-2-2@83f150f494da6076e0d99696a0bd4ead2f951454ce83c7d1d948d08902ce799aÜ
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:60: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61Ä*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-2-2B@83f150f494da6076e0d99696a0bd4ead2f951454ce83c7d1d948d08902ce799a"á	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:76: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61Ä*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-3-3B@baa395d7f833ec7a8a0202d05729128bf0e9fcce4ffdd72c5c77389c602abfd1"Å	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:204: trailing whitespace.
++evt-command-outcome-p3-cmd-02p0-2eng-p0-2"2026-10-10T03:00:01Zã*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-2-2B@83f150f494da6076e0d99696a0bd4ead2f951454ce83c7d1d948d08902ce799aJ	p3-cmd-02(8@ÏJ@6db538616b635f97ae8b85c57aa75f8655d5b782306637e560ecade0de233ce9RÄ*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-5-5B@b2d4023fbe48c417833fd5ba5a5da96c8bb4ec6541ea540831d412d6bef08a7eXb@c9f46f8da789dcba1ea758aa7c458f3c8e604a88251a6c4ddcdebfc6cadfd0b5h*’
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:246: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61Ä*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-8-8B@8b2cde5a866198f5387075722f785ffa3383c74fc0ecdafaa08744f66b1c13f2"á	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:332: trailing whitespace.
++b@170462cb51c6747d66e0c0b25bbea08de46ce902ff8482917736edb27f75ba42h*„	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:333: trailing whitespace.
++p3-engine-p0-11-11@3ef9c968f10693483951bd2fd669bbd17e1222fef77a792f298cfdef22c42202ä	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:345: trailing whitespace.
++*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-11-11B@3ef9c968f10693483951bd2fd669bbd17e1222fef77a792f298cfdef22c42202Xb@a554d641d52ad34fa4ef11b3ed7eda58fa6b2601b75afb9ddbaf1943ddae32a2h*È	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:346: trailing whitespace.
++p3-engine-p0-12-12@76aa828fefe217eca9a7d7181eb3afa75bd9471df09e8b2d5c46b2723a27d466ê	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:356: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61~*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-1-1B@d3d06eb14a886f55e7c4a2e2b83488c6e961f4bf3817675add7140a83ad1592f"Å	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:370: trailing whitespace.
++evt-command-outcome-p3-cmd-01p0-1eng-p0-1"2026-10-10T03:00:00Zâ*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-1-1B@d3d06eb14a886f55e7c4a2e2b83488c6e961f4bf3817675add7140a83ad1592fJ	p3-cmd-01(8@“J@c3b89ab385cb0092fdd9fe35f95d27255af4afaedffe7e77ee0fde1cb5a40ef5R~*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-1-1B@d3d06eb14a886f55e7c4a2e2b83488c6e961f4bf3817675add7140a83ad1592fXb@e111f417afb217b55bb2b1e53be44cae30badb5f9c144ae78fea8d916cdc6b8ah:Ü
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:371: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61Ä*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-2-2B@83f150f494da6076e0d99696a0bd4ead2f951454ce83c7d1d948d08902ce799a"á	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:386: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61Ä*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-3-3B@baa395d7f833ec7a8a0202d05729128bf0e9fcce4ffdd72c5c77389c602abfd1"Å	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:551: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61Ä*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-8-8B@8b2cde5a866198f5387075722f785ffa3383c74fc0ecdafaa08744f66b1c13f2"á	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:635: trailing whitespace.
++b@170462cb51c6747d66e0c0b25bbea08de46ce902ff8482917736edb27f75ba42h:ä	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire-review2/state.pb:647: trailing whitespace.
++*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-11-11B@3ef9c968f10693483951bd2fd669bbd17e1222fef77a792f298cfdef22c42202Xb@a554d641d52ad34fa4ef11b3ed7eda58fa6b2601b75afb9ddbaf1943ddae32a2h:ê	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/capture-01.pb:2: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61~*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-1-1B@d3d06eb14a886f55e7c4a2e2b83488c6e961f4bf3817675add7140a83ad1592f"Å	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/capture-02.pb:2: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61Ä*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-2-2B@83f150f494da6076e0d99696a0bd4ead2f951454ce83c7d1d948d08902ce799a"á	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/capture-03.pb:2: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61Ä*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-3-3B@baa395d7f833ec7a8a0202d05729128bf0e9fcce4ffdd72c5c77389c602abfd1"Å	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/capture-08.pb:2: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61Ä*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-8-8B@8b2cde5a866198f5387075722f785ffa3383c74fc0ecdafaa08744f66b1c13f2"á	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:42: trailing whitespace.
++ã*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-8-8B@8b2cde5a866198f5387075722f785ffa3383c74fc0ecdafaa08744f66b1c13f2J	p3-cmd-08"2*100000000000228*—
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:44: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61~*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-1-1B@d3d06eb14a886f55e7c4a2e2b83488c6e961f4bf3817675add7140a83ad1592f"Å	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:58: trailing whitespace.
++evt-command-outcome-p3-cmd-01p0-1eng-p0-1"2026-10-10T03:00:00Zâ*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-1-1B@d3d06eb14a886f55e7c4a2e2b83488c6e961f4bf3817675add7140a83ad1592fJ	p3-cmd-01(8@“J@c3b89ab385cb0092fdd9fe35f95d27255af4afaedffe7e77ee0fde1cb5a40ef5R~*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-1-1B@d3d06eb14a886f55e7c4a2e2b83488c6e961f4bf3817675add7140a83ad1592fXb@e111f417afb217b55bb2b1e53be44cae30badb5f9c144ae78fea8d916cdc6b8ah*›
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:59: trailing whitespace.
++p3-engine-p0-2-2@83f150f494da6076e0d99696a0bd4ead2f951454ce83c7d1d948d08902ce799aÜ
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:60: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61Ä*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-2-2B@83f150f494da6076e0d99696a0bd4ead2f951454ce83c7d1d948d08902ce799a"á	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:76: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61Ä*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-3-3B@baa395d7f833ec7a8a0202d05729128bf0e9fcce4ffdd72c5c77389c602abfd1"Å	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:204: trailing whitespace.
++evt-command-outcome-p3-cmd-02p0-2eng-p0-2"2026-10-10T03:00:01Zã*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-2-2B@83f150f494da6076e0d99696a0bd4ead2f951454ce83c7d1d948d08902ce799aJ	p3-cmd-02(8@ÏJ@6db538616b635f97ae8b85c57aa75f8655d5b782306637e560ecade0de233ce9RÄ*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-5-5B@b2d4023fbe48c417833fd5ba5a5da96c8bb4ec6541ea540831d412d6bef08a7eXb@c9f46f8da789dcba1ea758aa7c458f3c8e604a88251a6c4ddcdebfc6cadfd0b5h*’
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:246: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61Ä*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-8-8B@8b2cde5a866198f5387075722f785ffa3383c74fc0ecdafaa08744f66b1c13f2"á	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:332: trailing whitespace.
++b@170462cb51c6747d66e0c0b25bbea08de46ce902ff8482917736edb27f75ba42h*„	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:333: trailing whitespace.
++p3-engine-p0-11-11@3ef9c968f10693483951bd2fd669bbd17e1222fef77a792f298cfdef22c42202ä	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:345: trailing whitespace.
++*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-11-11B@3ef9c968f10693483951bd2fd669bbd17e1222fef77a792f298cfdef22c42202Xb@a554d641d52ad34fa4ef11b3ed7eda58fa6b2601b75afb9ddbaf1943ddae32a2h*È	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:346: trailing whitespace.
++p3-engine-p0-12-12@76aa828fefe217eca9a7d7181eb3afa75bd9471df09e8b2d5c46b2723a27d466ê	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:356: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61~*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-1-1B@d3d06eb14a886f55e7c4a2e2b83488c6e961f4bf3817675add7140a83ad1592f"Å	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:370: trailing whitespace.
++evt-command-outcome-p3-cmd-01p0-1eng-p0-1"2026-10-10T03:00:00Zâ*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-1-1B@d3d06eb14a886f55e7c4a2e2b83488c6e961f4bf3817675add7140a83ad1592fJ	p3-cmd-01(8@“J@c3b89ab385cb0092fdd9fe35f95d27255af4afaedffe7e77ee0fde1cb5a40ef5R~*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-1-1B@d3d06eb14a886f55e7c4a2e2b83488c6e961f4bf3817675add7140a83ad1592fXb@e111f417afb217b55bb2b1e53be44cae30badb5f9c144ae78fea8d916cdc6b8ah:Ü
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:371: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61Ä*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-2-2B@83f150f494da6076e0d99696a0bd4ead2f951454ce83c7d1d948d08902ce799a"á	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:386: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61Ä*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-3-3B@baa395d7f833ec7a8a0202d05729128bf0e9fcce4ffdd72c5c77389c602abfd1"Å	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:551: trailing whitespace.
++#calcify-finite-lifecycle-capture-v1@37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61Ä*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-8-8B@8b2cde5a866198f5387075722f785ffa3383c74fc0ecdafaa08744f66b1c13f2"á	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:635: trailing whitespace.
++b@170462cb51c6747d66e0c0b25bbea08de46ce902ff8482917736edb27f75ba42h:ä	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/capture-wire/state.pb:647: trailing whitespace.
++*CALCIFY_P3_SOURCE2fixture-source-uuid:p3-engine-p0-11-11B@3ef9c968f10693483951bd2fd669bbd17e1222fef77a792f298cfdef22c42202Xb@a554d641d52ad34fa4ef11b3ed7eda58fa6b2601b75afb9ddbaf1943ddae32a2h:ê	
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-calcify-final-2.log:2: trailing whitespace.
++Daemon will be stopped at the end of the build 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-calcify-final-3.log:2: trailing whitespace.
++Daemon will be stopped at the end of the build 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-calcify-final.log:2: trailing whitespace.
++Daemon will be stopped at the end of the build 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-focused-2.log:2: trailing whitespace.
++Daemon will be stopped at the end of the build 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-focused-3.log:2: trailing whitespace.
++Daemon will be stopped at the end of the build 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-review1-correction-calcify-final.log:2: trailing whitespace.
++Daemon will be stopped at the end of the build 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-review1-correction-finite-final.log:2: trailing whitespace.
++Daemon will be stopped at the end of the build 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-review1-correction-finite.log:2: trailing whitespace.
++Daemon will be stopped at the end of the build 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-review3-finite.log:2: trailing whitespace.
++Daemon will be stopped at the end of the build 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/gradle-review3-surrounding.log:2: trailing whitespace.
++Daemon will be stopped at the end of the build 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:702: space before tab in indent.
++ 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:704: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:913: space before tab in indent.
++ 	state         protoimpl.MessageState
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:915: space before tab in indent.
++ 	return nil
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:917: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:923: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:1085: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:1104: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:1142: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3069: space before tab in indent.
++ 	if File_contracts_proto_calcify_proto != nil {
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3070: space before tab in indent.
++ 		return
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3071: space before tab in indent.
++ 	}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3073: space before tab in indent.
++ 				return nil
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3074: space before tab in indent.
++ 			}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3075: space before tab in indent.
++ 		}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3237: space before tab in indent.
++ 	}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3238: space before tab in indent.
++ 	type x struct{}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3239: space before tab in indent.
++ 	out := protoimpl.TypeBuilder{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3240: space before tab in indent.
++ 		File: protoimpl.DescBuilder{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3241: space before tab in indent.
++ 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3242: space before tab in indent.
++ 			RawDescriptor: file_contracts_proto_calcify_proto_rawDesc,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3247: space before tab in indent.
++ 			NumExtensions: 0,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3248: space before tab in indent.
++ 			NumServices:   0,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3249: space before tab in indent.
++ 		},
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3250: space before tab in indent.
++ 		GoTypes:           file_contracts_proto_calcify_proto_goTypes,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3251: space before tab in indent.
++ 		DependencyIndexes: file_contracts_proto_calcify_proto_depIdxs,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3253: space before tab in indent.
++ 		MessageInfos:      file_contracts_proto_calcify_proto_msgTypes,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3254: space before tab in indent.
++ 	}.Build()
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3255: space before tab in indent.
++ 	File_contracts_proto_calcify_proto = out.File
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned-review3.patch:3329: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:702: space before tab in indent.
++ 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:704: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:913: space before tab in indent.
++ 	state         protoimpl.MessageState
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:915: space before tab in indent.
++ 	return nil
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:917: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:923: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:1085: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:1104: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:1142: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3069: space before tab in indent.
++ 	if File_contracts_proto_calcify_proto != nil {
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3070: space before tab in indent.
++ 		return
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3071: space before tab in indent.
++ 	}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3073: space before tab in indent.
++ 				return nil
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3074: space before tab in indent.
++ 			}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3075: space before tab in indent.
++ 		}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3237: space before tab in indent.
++ 	}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3238: space before tab in indent.
++ 	type x struct{}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3239: space before tab in indent.
++ 	out := protoimpl.TypeBuilder{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3240: space before tab in indent.
++ 		File: protoimpl.DescBuilder{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3241: space before tab in indent.
++ 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3242: space before tab in indent.
++ 			RawDescriptor: file_contracts_proto_calcify_proto_rawDesc,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3247: space before tab in indent.
++ 			NumExtensions: 0,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3248: space before tab in indent.
++ 			NumServices:   0,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3249: space before tab in indent.
++ 		},
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3250: space before tab in indent.
++ 		GoTypes:           file_contracts_proto_calcify_proto_goTypes,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3251: space before tab in indent.
++ 		DependencyIndexes: file_contracts_proto_calcify_proto_depIdxs,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3253: space before tab in indent.
++ 		MessageInfos:      file_contracts_proto_calcify_proto_msgTypes,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3254: space before tab in indent.
++ 	}.Build()
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3255: space before tab in indent.
++ 	File_contracts_proto_calcify_proto = out.File
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/owned.patch:3329: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:257: space before tab in indent.
++ 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:259: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:468: space before tab in indent.
++ 	state         protoimpl.MessageState
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:470: space before tab in indent.
++ 	return nil
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:472: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:478: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:640: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:659: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:697: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2624: space before tab in indent.
++ 	if File_contracts_proto_calcify_proto != nil {
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2625: space before tab in indent.
++ 		return
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2626: space before tab in indent.
++ 	}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2628: space before tab in indent.
++ 				return nil
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2629: space before tab in indent.
++ 			}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2630: space before tab in indent.
++ 		}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2792: space before tab in indent.
++ 	}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2793: space before tab in indent.
++ 	type x struct{}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2794: space before tab in indent.
++ 	out := protoimpl.TypeBuilder{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2795: space before tab in indent.
++ 		File: protoimpl.DescBuilder{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2796: space before tab in indent.
++ 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2797: space before tab in indent.
++ 			RawDescriptor: file_contracts_proto_calcify_proto_rawDesc,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2802: space before tab in indent.
++ 			NumExtensions: 0,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2803: space before tab in indent.
++ 			NumServices:   0,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2804: space before tab in indent.
++ 		},
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2805: space before tab in indent.
++ 		GoTypes:           file_contracts_proto_calcify_proto_goTypes,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2806: space before tab in indent.
++ 		DependencyIndexes: file_contracts_proto_calcify_proto_depIdxs,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2808: space before tab in indent.
++ 		MessageInfos:      file_contracts_proto_calcify_proto_msgTypes,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2809: space before tab in indent.
++ 	}.Build()
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2810: space before tab in indent.
++ 	File_contracts_proto_calcify_proto = out.File
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/kotlin/review1-original-owned.patch:2884: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-2-gradle-retry.log:2: trailing whitespace.
++Daemon will be stopped at the end of the build 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review-3-gradle-authorized.log:2: trailing whitespace.
++Daemon will be stopped at the end of the build 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:60: space before tab in indent.
++ 	return hex.EncodeToString(digest[:])
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:62: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:70: space before tab in indent.
++ 	p := s.calcifySourceProfile
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:71: space before tab in indent.
++ 	if p == nil {
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:108: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:112: space before tab in indent.
++ 	"os"
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:113: space before tab in indent.
++ 	"strconv"
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:114: space before tab in indent.
++ 	"strings"
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:115: space before tab in indent.
++ 	"time"
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:119: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:174: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:176: space before tab in indent.
++ 	partitionCount := envInt("STREAM_ACK_PARTITION_COUNT", 64)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:177: space before tab in indent.
++ 	return RuntimeConfig{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:251: space before tab in indent.
++ 	}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:254: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:262: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:279: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:304: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:308: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:332: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:335: space before tab in indent.
++ 	stats.LastFetchedAt.Store("")
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:336: space before tab in indent.
++ 	stats.LastAckedAt.Store("")
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:337: space before tab in indent.
++ 	stats.LastBatchID.Store("")
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:340: space before tab in indent.
++ 		service:   service,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:341: space before tab in indent.
++ 		source:    source,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:342: space before tab in indent.
++ 		publisher: publisher,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:344: space before tab in indent.
++ 		stats:     stats,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:345: space before tab in indent.
++ 		now:       time.Now,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:346: space before tab in indent.
++ 	}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:353: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:357: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:362: space before tab in indent.
++ 	deliveries, err := p.source.Fetch(ctx, p.config.BatchSize, p.config.FetchTimeout)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:363: space before tab in indent.
++ 	if err != nil {
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:364: space before tab in indent.
++ 		return 0, err
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:372: space before tab in indent.
++ 	return replayer.ReplayCommitted(ctx, p.config.BatchSize, func(deliveries []CommandDelivery) error {
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:373: space before tab in indent.
++ 		_, _, rollback, err := p.buildBatchMode(
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:374: space before tab in indent.
++ 			deliveries,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:376: space before tab in indent.
++ 				status = "accepted"
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:377: space before tab in indent.
++ 			}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:378: space before tab in indent.
++ 			fact = CommandOutcomeFact{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:400: space before tab in indent.
++ 			}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:401: space before tab in indent.
++ 		}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:402: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:405: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:423: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:426: space before tab in indent.
++ 		result := p.service.SubmitOrderInBatch(rollback, command)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:427: space before tab in indent.
++ 		result.AcceptedOrder = acceptedOrderFact(command, result)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:428: space before tab in indent.
++ 		return processedOutcome{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:442: space before tab in indent.
++ 		}, true
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:443: space before tab in indent.
++ 	case "ModifyOrder":
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:444: space before tab in indent.
++ 		command, decodeErr := decodeCommand[domain.ModifyOrder](delivery.Data(), "modify")
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:446: space before tab in indent.
++ 		command.VenueSessionID = venueSessionID
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:447: space before tab in indent.
++ 		command.InstrumentID = instrumentID
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:448: space before tab in indent.
++ 		return processedOutcome{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:462: space before tab in indent.
++ 		}, true
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:463: space before tab in indent.
++ 	case "CancelOrder":
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:464: space before tab in indent.
++ 		command, decodeErr := decodeCommand[domain.CancelOrder](delivery.Data(), "cancel")
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:466: space before tab in indent.
++ 		command.VenueSessionID = venueSessionID
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:467: space before tab in indent.
++ 		command.InstrumentID = instrumentID
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:468: space before tab in indent.
++ 		return processedOutcome{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:482: space before tab in indent.
++ 		}, true
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:483: space before tab in indent.
++ 	default:
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:484: space before tab in indent.
++ 		return processedOutcome{CommandID: bestEffortCommandID(delivery.Data())}, false
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:486: space before tab in indent.
++ 	}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:488: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:535: space before tab in indent.
++ 	for _, delivery := range deliveries {
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:536: space before tab in indent.
++ 		if err := delivery.Nak(); err != nil {
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:543: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:556: space before tab in indent.
++ 	if len(config.Partitions) == 0 {
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:557: space before tab in indent.
++ 		return nil, fmt.Errorf("matching-engine direct stream requires at least one partition")
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:558: space before tab in indent.
++ 	}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:560: space before tab in indent.
++ 		commandSource := CommandSource(source)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:561: space before tab in indent.
++ 		eventPublisher := wrapEventBatchPublisherWithLocalFaultHooks(publisher, config)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:562: space before tab in indent.
++ 		processor := NewProcessor(service, commandSource, eventPublisher, ProcessorConfig{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:585: space before tab in indent.
++ 		})
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:586: space before tab in indent.
++ 		runner.processors = append(runner.processors, processor)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:587: space before tab in indent.
++ 		lanes = append(lanes, kafkaRunnerLane{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:1064: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/go-owned.patch:1095: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:257: space before tab in indent.
++ 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:259: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:468: space before tab in indent.
++ 	state         protoimpl.MessageState
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:470: space before tab in indent.
++ 	return nil
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:472: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:478: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:640: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:659: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:697: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2624: space before tab in indent.
++ 	if File_contracts_proto_calcify_proto != nil {
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2625: space before tab in indent.
++ 		return
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2626: space before tab in indent.
++ 	}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2628: space before tab in indent.
++ 				return nil
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2629: space before tab in indent.
++ 			}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2630: space before tab in indent.
++ 		}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2792: space before tab in indent.
++ 	}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2793: space before tab in indent.
++ 	type x struct{}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2794: space before tab in indent.
++ 	out := protoimpl.TypeBuilder{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2795: space before tab in indent.
++ 		File: protoimpl.DescBuilder{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2796: space before tab in indent.
++ 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2797: space before tab in indent.
++ 			RawDescriptor: file_contracts_proto_calcify_proto_rawDesc,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2802: space before tab in indent.
++ 			NumExtensions: 0,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2803: space before tab in indent.
++ 			NumServices:   0,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2804: space before tab in indent.
++ 		},
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2805: space before tab in indent.
++ 		GoTypes:           file_contracts_proto_calcify_proto_goTypes,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2806: space before tab in indent.
++ 		DependencyIndexes: file_contracts_proto_calcify_proto_depIdxs,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2808: space before tab in indent.
++ 		MessageInfos:      file_contracts_proto_calcify_proto_msgTypes,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2809: space before tab in indent.
++ 	}.Build()
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2810: space before tab in indent.
++ 	File_contracts_proto_calcify_proto = out.File
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review1-target/kotlin-owned.patch:2884: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:702: space before tab in indent.
++ 	_ = protoimpl.EnforceVersion(protoimpl.MaxVersion - 20)
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:704: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:913: space before tab in indent.
++ 	state         protoimpl.MessageState
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:915: space before tab in indent.
++ 	return nil
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:917: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:923: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:1085: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:1104: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:1142: trailing whitespace.
++ 
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3069: space before tab in indent.
++ 	if File_contracts_proto_calcify_proto != nil {
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3070: space before tab in indent.
++ 		return
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3071: space before tab in indent.
++ 	}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3073: space before tab in indent.
++ 				return nil
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3074: space before tab in indent.
++ 			}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3075: space before tab in indent.
++ 		}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3237: space before tab in indent.
++ 	}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3238: space before tab in indent.
++ 	type x struct{}
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3239: space before tab in indent.
++ 	out := protoimpl.TypeBuilder{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3240: space before tab in indent.
++ 		File: protoimpl.DescBuilder{
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3241: space before tab in indent.
++ 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3242: space before tab in indent.
++ 			RawDescriptor: file_contracts_proto_calcify_proto_rawDesc,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3247: space before tab in indent.
++ 			NumExtensions: 0,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3248: space before tab in indent.
++ 			NumServices:   0,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3249: space before tab in indent.
++ 		},
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3250: space before tab in indent.
++ 		GoTypes:           file_contracts_proto_calcify_proto_goTypes,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3251: space before tab in indent.
++ 		DependencyIndexes: file_contracts_proto_calcify_proto_depIdxs,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3253: space before tab in indent.
++ 		MessageInfos:      file_contracts_proto_calcify_proto_msgTypes,
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3254: space before tab in indent.
++ 	}.Build()
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3255: space before tab in indent.
++ 	File_contracts_proto_calcify_proto = out.File
+records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-proof/o1/review2-target/owned.patch:3329: trailing whitespace.
++ 

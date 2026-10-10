@@ -1,0 +1,77 @@
+{
+  "reviewInstance": "2 of 3",
+  "head": "45211653d2f5b59dd25f4a4db42883881b4d6eb1",
+  "branch": "codex/calcify-p3-overnight-2026-10-09",
+  "sourceFreezePaths": 56,
+  "sourceMismatches": [],
+  "logs": {
+    "review-2-gradle.log": {
+      "sha256": "29ead19a22200f14d99085c59a29685aeffcd927150ecec8fb9b065e543cbc86",
+      "bytes": 662
+    },
+    "review-2-gradle-retry.log": {
+      "sha256": "2cb2956662362fe41a95aa3e44f389bc67e3002e4226deccbc6e29398821f410",
+      "bytes": 958
+    },
+    "review-2-go.log": {
+      "sha256": "e381e47ef43619fe6198fadcc8ae592b8fa6951273cb84ade71b441e97e195a3",
+      "bytes": 159
+    },
+    "review-2-probe.log": {
+      "sha256": "e1d495bc3388e67b4eb649dd7eaa87f7b94701c09952ab0fa2a32600cf529225",
+      "bytes": 1786
+    },
+    "review-2-probe-final.log": {
+      "sha256": "4d9e9d06c62dc187db037264a6ba07c647532de507259c6ab75dabd92a9273dc",
+      "bytes": 2321
+    }
+  },
+  "commands": [
+    {
+      "command": "JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home ./services/platform-runtime/gradlew --no-daemon -p services/platform-runtime test --tests 'com.reef.platform.calcify.FiniteLifecycle*'",
+      "cwd": "/Users/dsteele/.codex/worktrees/fa2b-0041/reef",
+      "firstExit": 1,
+      "firstFailure": "existing Gradle wrapper .zip.lck sandbox permission",
+      "authorizedRetryExit": 0,
+      "tests": 31,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "lease": "exclusive Java21, released after completion"
+    },
+    {
+      "command": "GOCACHE=/private/tmp/reef-o1-review2-gocache go test ./internal/app ./internal/streamdirect",
+      "cwd": "/Users/dsteele/.codex/worktrees/fa2b-0041/reef/services/matching-engine",
+      "exit": 0,
+      "output": "both packages green; shell startup emitted (eval):5: parse error near end separately"
+    },
+    {
+      "command": "git diff --check",
+      "exit": 0
+    }
+  ],
+  "probeReceipts": [
+    "review-2-probe-command.json",
+    "review-2-probe-final-command.json"
+  ],
+  "environmentLimitations": [
+    "Serena only Svelte LSP, Kotlin source reads required",
+    "reef-main graph indexed2026-09-30 different checkout; finite symbols missing; coverage checked current source fallback",
+    "One repeated mixed source-read command blocked by PreToolUse counter; smaller bounded read/hash check succeeded after reset"
+  ],
+  "authorFullCalcifyReceipt": {
+    "path": "kotlin/review1-correction-calcify-final-results.json",
+    "tests": 213,
+    "failures": 0,
+    "errors": 0,
+    "skips": 0,
+    "seconds": 4048.535,
+    "rerun": false
+  },
+  "codeMutation": false,
+  "gitMutation": false,
+  "brokerContainersStarted": false,
+  "initialProbeSourceRetained": "Review2Probe-initial.java, exact initial hash matched",
+  "review1CorrectionPaths": 5,
+  "finalProbe": "seven invalid replay IDs accepted and subsequent reduction closed; five semantic mutations refused; seven trailing values refused, whitespace/managed controls green"
+}

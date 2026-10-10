@@ -1,0 +1,35 @@
+# O1 capture author explanation — review 2 of 3
+
+Author testimony only; manager dispatches combined fresh review. Neutral scope separate in `neutral-bootstrap-review2.md`.
+
+## Intent and plan
+
+O0 source-prefix policy unchanged. One complete actual matching source record creates one bounded ordered capture envelope, including zero-trade outcomes and exact typed attempts/results/trades/executions. Commands update current revisions/effects without changing original acceptance; rejection has zero order/financial mutation. Restore must enforce same semantic facts as fresh capture, with exact dependency/effect reconstruction and binding/history model gates. Live run remains refused until O2.
+
+Review1 independently disproved claimed semantic restore completeness and full source-value JSON closure despite prior205 green tests. Both findings accepted; bounded read-only research independently reproduced reviewer probe, mapped source/restore validation differences and evaluated narrow shared-validation correction. Details in `review1-research-spike.md` and `finding-response-1.md`. No architecture pivot or new workstream.
+
+## Correction walkthrough and flow
+
+FiniteLifecycleContract now requires one object root and EOF after optional whitespace, using strict duplicate detection plus FAIL_ON_TRAILING_TOKENS before checksum/legacy adapter calls. Typed validateResult shared across source and restored command receipts checks exclusive accepted/rejected result shape, required text/timestamps and command order/time. validateAcceptance checks complete immutable submit facts/source/accepted engine/command consistency. validateTrade shared across source and restore checks required trade identities, exact command/run/instrument/currency/time/source provenance, bounded positive economics/notional and complete distinct execution pair with exact buy/sell suffix, economics/time/instrument and canonical MAKER/TAKER source roles.
+
+FiniteLifecycleReducer appliedOrder shared between fresh reduction and receipt reconstruction enforces submit/new-order bounds, modify/cancel existing open order and exact engine identity, amended quantity above filled, price/qty/notional and immutable acceptance. validateCurrentTrade shares original MatchContextResolver scope/side/dependency checks, terminal/self-trade/current limits and execution reuse rules. fillTrade shares checked conservation/effect/terminal updates. Certified receipt order groups additionally require trade command/payload hash/status/source to equal accepted non-cancel parent, without command result/revision/acceptance fields; command receipts cannot carry trade facts. Schema/ordinal/replay coverage counts also retain fresh builder semantics. Original replay facts/provenance remain unchanged; only new physical replay member identity/disposition/replay link differ.
+
+Rejected attempted economics remain existing bounded decoded-string shape, not accepted state. No numeric JSON coercion or normalization; source producer preserves +03 and leading-zero strings. Rejected0/negative/noninteger/out-of-cap attempted strings remain recorded without positive profile checks, trades, order mutation or indexing attempted acceptedOrder metadata. Accepted state/trades require valid positive bounded numerics. Decoder raw mandatory field checks remain separate because protobuf defaults cannot prove original JSON field presence.
+
+## Evidence and tests
+
+First correction finite29tests green, exact original reviewer probe refused all five restored variants and trailing root. Additional adversarial acceptance/replay/current-buy-limit tests produced final31 finite tests green. Final Calcify regression213tests/0failures/0errors/0skips, exit0, on frozen46 source files; compiled43 recorded paths unchanged through final probes. Every changed receipt test recomputes envelope digest, first-batch certificate and capture-byte counters; no stale hash excuse for refusal. New matrix covers accepted/rejected result order/engine/time/text, trade profile/current limits/scope/full nested source, complete execution fields/pairs/roles, parent command/status/hash, extra result fields, immutable acceptance and replay counts. Source parser/reducer/topology cases cover second object/scalar/garbage and legal whitespace, exact raw suffix/barrier with no successful frontier/resume/order/execution/counter changes. Multi-fill later execution fault tested after restored prefix. Existing fixture/gap/replay/abort/reopen controls stay green and actual fixture/wire bytes unchanged.
+
+Final exact original reviewer probe exits0 and reports REFUSED for all five variants plus REFUSED_TRAILING_JSON. State encoded boundary probe still accepts6307840 and refuses6307841 before restore returns, original checkpoint unchanged, no topology/output invoked. Final fixture checkpoint65419 bytes, source value sum24797 excluding12JSONL newlines, envelope sum29930; observed small payload only. No maximum-fit or physical-memory inference.
+
+Frozen source aggregate `0d01e5fa0b4f8efc0f2a21a1a7bab906951701286b04cf642ce538ed373ea26c`; patch `27900babf75aedd8946df58a45ddee6884a91e0f52df058a438a7c3ef3f103c7`. Full commands/hashes/logs in verification-review2.md. Final Gradle unexpectedly reports1h07m35s: XML aggregate4048.535s dominated unchanged financial tests FinancialKernelTest2948.568s and FinancialRateReferenceTest1067.989s. This is observed duration; no diagnosis or throughput claim, no broad rerun. Earlier successful/failing receipts retained; earlier205-test result does not establish corrected target.
+
+## Decisions, cost and boundaries
+
+Shared typed gates selected instead of further duplicated restore checks. Reconstruct bounded receipts directly rather than synthesizing JSON or storing raw successful source history; no proto/state-format changes, new caches or canonical-history scans. Logical reconstruction remains bounded by16records and per-record9members plus explicit state count/byte guards. Recomputed digest is internal consistency, not authentication or proof of original durable source correspondence; O2 owns that distinction.
+
+O2 must configure live full-state changelog producer/restore fetch/topic/broker limits: current model producer max.request.size=captureBytes+1024 is sized to output, while state guard allows6307840bytes. O2 owns valid maximum producer/fanout fit and physical/native resource proof; modelProps not production activation. No live durable ingress/activation, broker crash/recovery, financial adoption or throughput proof. Retirement/archive no-op for active new evidence; retention checker520 passed, final manager delivery/records publication remains separate.
+
+## Reviewer challenge points
+
+Inspect shared fresh/restore parity, rejected attempt versus accepted caps, replay original nested source semantics, recomputed-mutation tests and whole-value fault checkpoint accounting. Assess entire combined O1 contract/producer/capture plan, not just prior findings. Author requests fresh combined review2of3; no author readiness verdict.

@@ -1,0 +1,18 @@
+{
+  "sourceAggregateSha256": "6cbbd03874336027f3b887f64499f555431cc1d82887c209745a93612ffd449a",
+  "sourceFiles": 46,
+  "ownedPatchSha256": "4b254e46a29fe846dc41c969dad23bcc214736cbcda85559d5b5a7980e1c18db",
+  "ownedPatchBytes": 1106489,
+  "compiledIdentityRows": 43,
+  "compiledIdentityAllUnchanged": true,
+  "tests": 205,
+  "failures": 0,
+  "newTests": 23,
+  "probeSourceSha256": "ef8d51503b07c7dde9162f1e65469cc901efa94e492ddfd6e8f00ac409b74795",
+  "head": "45211653d2f5b59dd25f4a4db42883881b4d6eb1",
+  "branch": "codex/calcify-p3-overnight-2026-10-09",
+  "sourceBytesValuesOnly": 24797,
+  "captureBytesSum": 29930,
+  "finalFixtureCheckpointBytes": 65419,
+  "configuredStateByteCap": 6307840
+}

@@ -1,0 +1,81 @@
+{
+  "cwd": "/private/tmp/reef-ocr-config-20261010",
+  "toolchain": {
+    "node": "v22.23.3",
+    "bun": "1.3.14",
+    "actionlint": "1.7.12"
+  },
+  "source": {
+    "root": "/private/tmp/reef-ocr-config-20261010",
+    "base": "e69e62ada42c633b81f90ccf178680973b398b0c",
+    "head": "e69e62ada42c633b81f90ccf178680973b398b0c",
+    "branch": "codex/ocr-calcify-review-budget",
+    "combinedReviewInstancesConsumed": 0,
+    "maxReviewInstances": 3,
+    "files": {
+      ".github/workflows/open-code-review-pilot.yml": "8776f22bf88671bd81b59738c9a00aeccdaefc57af7ab274ea4153767fba8c76",
+      ".opencodereview/rule.json": "121276b786a9f75e1c0a5f766358cbf38e08859c9d91b7541a882dd2caacd0eb",
+      "scripts/dev/ci-workflow-hardening.test.mjs": "0ee3d60a173507385b38ae2f1befd1ad96505bd14d6d6f3abd34f3c87eeaa79c",
+      "docs/CI_OPERATIONS.md": "cd960c3a074c9247aa47102008da89abce99b7a252ef07b4623a6fd0d3a0280b"
+    },
+    "patchSha256": "3e721f170b1d32034e7683202a60a5c4a59b2935461532fbc61cabc6321ab786",
+    "dirtyState": " M .github/workflows/open-code-review-pilot.yml\n M .opencodereview/rule.json\n M docs/CI_OPERATIONS.md\n M scripts/dev/ci-workflow-hardening.test.mjs\n?? .planning/\n"
+  },
+  "commands": [
+    {
+      "command": "node scripts/dev/ci-workflow-hardening.test.mjs",
+      "exit": 1,
+      "log": "old-guard-red.log",
+      "scope": "Expected old deepEqual guard after approved config before test fix; two observed red runs, final repeat retained.",
+      "logSha256": "0058bf501a27744e9328bf787d7f81ac5c6d0642f290f2c499a0c1b868fafd5d"
+    },
+    {
+      "command": "node scripts/dev/ci-workflow-hardening.test.mjs",
+      "exit": 0,
+      "log": "ci-hardening-green.log",
+      "logSha256": "8a4af3c7efa4dad22bd2622d250ce9012d8122da8d6a677ebcdd6c51b3c9b790"
+    },
+    {
+      "command": "node scripts/dev/script-surface-check.mjs",
+      "exit": 0,
+      "log": "script-surface.log",
+      "scope": "280 scripts; 268 Node/11 shell checks; one existing Deno TS syntax skip.",
+      "logSha256": "b2ca8c6b19bf4566453a91d00a4df1c2a87e5c7ed11012bcc5f06abbd132dc49"
+    },
+    {
+      "command": "node --test scripts/ci/check-required-results.test.mjs scripts/ci/build-container.test.mjs",
+      "exit": 0,
+      "log": "required-results-build-container.log",
+      "tests": 12,
+      "failures": 0,
+      "skips": 0,
+      "logSha256": "216c0bf4a2343bbb78158c768e25148353dea79997d5344c951d1c30a49470c5"
+    },
+    {
+      "command": "bun .planning/ocr-config-delivery/focused-coverage-check.mjs",
+      "exit": 0,
+      "log": "focused-coverage.log",
+      "scope": "All 48 original hosted paths; 17 retained/31 generated excluded/7 test includes; exact workflow comparison permits only budget change.",
+      "logSha256": "d5b1b2917fdb54544a0b21236599fec6977c23bf74e85d6dce5e55756d2a67ea"
+    },
+    {
+      "command": "actionlint .github/workflows/open-code-review-pilot.yml",
+      "exit": 0,
+      "log": "actionlint.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "git diff --check",
+      "exit": 0
+    }
+  ],
+  "actualHostedReviewRun": false,
+  "noProviderOrSecretAccess": true,
+  "graph": {
+    "project": "reef-main",
+    "indexedAt": "2026-09-30T21:14:17Z",
+    "differentCheckout": true,
+    "guardPathMetadataChanged": true,
+    "currentSourceFallback": true
+  }
+}

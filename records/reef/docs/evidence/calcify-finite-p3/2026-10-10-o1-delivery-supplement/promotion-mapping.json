@@ -1,0 +1,1378 @@
+{
+  "schema_version": 1,
+  "state": "FROZEN_FINAL_SELECTION_NOT_PUBLICATION",
+  "source_delivery_head": "dcb106c4ddd5ccda60df7c8e6411fca88ef5be14",
+  "reef_pull_request": "https://github.com/dills122/reef/pull/485",
+  "original_archive_commit": "cbf2413db33dc7cb65c339cbc51e0eb98c2633f3",
+  "original_manifest": "manifests/2026-10-10-calcify-finite-p3-o1-proof.json",
+  "supplement_source_namespace": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement",
+  "supplement_archive_namespace": "records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement",
+  "proposed_manifest": "manifests/2026-10-10-calcify-finite-p3-o1-delivery-supplement.json",
+  "publication_commit": null,
+  "files": [
+    {
+      "original_path": ".planning/calcify-p3-overnight/integration/author-explanation-1.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/integration/author-explanation-1.md",
+      "bytes": 3189,
+      "sha256": "afc38f6110df483e63510b99f50b5bfc5a30e2d7def9729d7e1a24f77268f269",
+      "reason": "Separate final integration/delivery review neutral bootstrap, author, frozen target, blind preliminary, verdict, verification and manager response; O1 cap not reset"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/integration/finding-response-1.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/integration/finding-response-1.md",
+      "bytes": 240,
+      "sha256": "c50284b815a4a76224e327c15cdc73f09f2c79bb301a95d5afafdfb4d8702e21",
+      "reason": "Separate final integration/delivery review neutral bootstrap, author, frozen target, blind preliminary, verdict, verification and manager response; O1 cap not reset"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/integration/neutral-bootstrap-1.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/integration/neutral-bootstrap-1.md",
+      "bytes": 3990,
+      "sha256": "c565cb9c0684de87793917820c852ea14467385af3f373a098c85841a8571d2a",
+      "reason": "Separate final integration/delivery review neutral bootstrap, author, frozen target, blind preliminary, verdict, verification and manager response; O1 cap not reset"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/integration/preliminary-1.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/integration/preliminary-1.md",
+      "bytes": 3529,
+      "sha256": "f9cdeb4c4adfb396c77be0a7c66251de9ee06953e2c8e7e15f4a08f896ad01b5",
+      "reason": "Separate final integration/delivery review neutral bootstrap, author, frozen target, blind preliminary, verdict, verification and manager response; O1 cap not reset"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/integration/review-1.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/integration/review-1.md",
+      "bytes": 12436,
+      "sha256": "72bae52dbe0f4cefa953b828f80466030868aee68b890fbc9cda249995f506c2",
+      "reason": "Separate final integration/delivery review neutral bootstrap, author, frozen target, blind preliminary, verdict, verification and manager response; O1 cap not reset"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/integration/target-1.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/integration/target-1.json",
+      "bytes": 11317,
+      "sha256": "01cc1743c53680b2555f84ed2ca8cc8df73f9a9164b706b49dc5466d0daaad61",
+      "reason": "Separate final integration/delivery review neutral bootstrap, author, frozen target, blind preliminary, verdict, verification and manager response; O1 cap not reset"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/integration/verification-1.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/integration/verification-1.json",
+      "bytes": 802,
+      "sha256": "403735b115517e7954b33e12f62987de7b3dbefbe18517027ac0c67897bf41fb",
+      "reason": "Separate final integration/delivery review neutral bootstrap, author, frozen target, blind preliminary, verdict, verification and manager response; O1 cap not reset"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/diagnostic-receipt.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/diagnostic-receipt.json",
+      "bytes": 774,
+      "sha256": "81719f40d52c650f2116c4bce7ee9804ea782ba6b61729f10fae76ef502dcab0",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/docs-final/checks.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/docs-final/checks.json",
+      "bytes": 1737,
+      "sha256": "8661f857bfbced0022dbba9fb365739c7ddd7f54638497f3ad68d43676a64ff2",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/docs-final/retention-command.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/docs-final/retention-command.json",
+      "bytes": 153,
+      "sha256": "da7fe4d599d9010ea45600737fb70940164945801ed425bae4057a6462328d3e",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/docs-final/retention.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/docs-final/retention.log",
+      "bytes": 117,
+      "sha256": "d005dcb4ef850a44ced0e63e05133b86ff953046f68b3d3dd6c66bac93de8815",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/records-append-only.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/records-append-only.json",
+      "bytes": 31719,
+      "sha256": "2df3a3383ef33df3be4603675b58a998095a371c507932149d2840bb1707835f",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/records-commit.txt",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/records-commit.txt",
+      "bytes": 41,
+      "sha256": "5edac02ed27f827d45056144a6920ca8430682efcfdd31183c2d9cb5287e2a14",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/records-hosted-checks.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/records-hosted-checks.json",
+      "bytes": 22598,
+      "sha256": "f9e624b87e17b5acfa80ce6b8f0bbcf04c8d143178ccf9f85a41fd05d6f58412",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/records-original-patch-whitespace.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/records-original-patch-whitespace.log",
+      "bytes": 69431,
+      "sha256": "f6c79afa8c98d836354b8209e6954815f80fdab2ee97121fb143fa4f3c066683",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/records-pr-body.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/records-pr-body.md",
+      "bytes": 1451,
+      "sha256": "a56a2f8dd8f727101b994cc6d969608a1dcdadca079a395882d287572f562f00",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/records-remote-verification-spike.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/records-remote-verification-spike.md",
+      "bytes": 1178,
+      "sha256": "c46698765b0246ebf0aaeb5c3597bd44c7f6cb7e1a737e6ed4412580614aeadb",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/records-whitespace-research-spike.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/records-whitespace-research-spike.md",
+      "bytes": 1388,
+      "sha256": "6ebc99ef787dd92fea1fd0a5ac4e84313a06d334fd8dc065a229a180bdb8f835",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/remote-verification.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/remote-verification.json",
+      "bytes": 26030,
+      "sha256": "1f578fbf57ab52131b3ed9a00e6b5f6e1ce5ddc8d13b6ef5b09687211e15bb2e",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/verify-records-remote.py",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/verify-records-remote.py",
+      "bytes": 2962,
+      "sha256": "62ad95d14bcb7b85797e9d4983a1a6588d7a8fb1cd0754c6548fd4a4f034666d",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/proof-source-commit.txt",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/proof-source-commit.txt",
+      "bytes": 41,
+      "sha256": "a2aa220401e218771a84a126bc2b9d1cbc709a15fcabf0b154f02bf43c40ead8",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/resumed-scope.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/resumed-scope.md",
+      "bytes": 1366,
+      "sha256": "08cba54e477570e4cfc57a6bc12ae15e88702add1e837b7943ce4f706b6d6bbd",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/reef-pr-body.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/reef-pr-body.md",
+      "bytes": 2989,
+      "sha256": "f869ca7bf6f29155e0973fc7199953cb4f9af02b37a34652c64bb7a51300ab5f",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/reef-hosted-checks-initial.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/reef-hosted-checks-initial.json",
+      "bytes": 15136,
+      "sha256": "82080ccffab592b67d24b58f719158b567c03f4216498f550ea151e5d93e8468",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-hosted-failure-1.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-hosted-failure-1.json",
+      "bytes": 127389,
+      "sha256": "fac9bcafa0a00a484b0d850320c7936adf75a978ecb1d30e976fef20ff3c9907",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/commit-delivery-docs.py",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/commit-delivery-docs.py",
+      "bytes": 1082,
+      "sha256": "a6286ed4276d8a4397db9f31bea3949ff2ea37bf023971011359ed6d6cc90369",
+      "reason": "Exact delivery/archive diagnostic, publication/provenance, remote byte verification, hosted Records CI, PR or observed initial hosted receipt; original failure bytes retained"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/reef-hosted-checks-source-final.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/reef-hosted-checks-source-final.json",
+      "bytes": 15765,
+      "sha256": "d7a1e1948c0fa2bab7b80f166263863a4de521a77535be553c4b1e12e3656e98",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/reef-calcify-hosted-source-final.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/reef-calcify-hosted-source-final.json",
+      "bytes": 83259,
+      "sha256": "0f035cf9d5215c388f45412444c91c3f8be2c4ce6fb28c9c41953a799db60a8f",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/reef-kotlin-hosted-source-final.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/reef-kotlin-hosted-source-final.json",
+      "bytes": 59163,
+      "sha256": "aba9d41edd5b18e98fe611df2cf3da06deeb41838ce65de9941673b50404b838",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/reef-pr-head-parity.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/reef-pr-head-parity.json",
+      "bytes": 24468,
+      "sha256": "71c57fe74c6b544e10ac427ea6aa5722ab4d2a77beb43edb5da560782ffd33ab",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/reef-pr-publication-state.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/reef-pr-publication-state.json",
+      "bytes": 173,
+      "sha256": "9950a13c18a0f39857fc7901ee5aa38e39bd5f711ce5ae8fcf43227f189ddf44",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/publication-head.txt",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/publication-head.txt",
+      "bytes": 41,
+      "sha256": "fb1492757a9520a51b843cb90b899b0b524aaa64f863f5b096fe3428bbfa507e",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/reef-pr-body-hosted.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/reef-pr-body-hosted.md",
+      "bytes": 3450,
+      "sha256": "cbac935ed2580b85255c1dcaa6348df86cab8553e7be95b4d97aee99408f990e",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/reef-pr-body-hosted-v2.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/reef-pr-body-hosted-v2.md",
+      "bytes": 3944,
+      "sha256": "73ac08f845a1fd024d0ce50ab744a22dc837fe2a3c74780e74ad6bec4d76275a",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/hosted-diagnostic-events.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/hosted-diagnostic-events.json",
+      "bytes": 385,
+      "sha256": "da2eba77d16fecc52cd308b151dd5b437c4f2b92b395a55b87b3ebdad2217ed9",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/docs-publication/checks.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/docs-publication/checks.json",
+      "bytes": 1775,
+      "sha256": "ebed1b04df8aa9960ebb533735f93ca268a06338b05494b22c5c1cb5d4ab24b7",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/docs-publication/checks-v2.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/docs-publication/checks-v2.json",
+      "bytes": 1630,
+      "sha256": "4a69f1b4569ce29cf600d30d84645481ed59052f4f8a3e46ce5b89c50742c47d",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/docs-publication/checks-v3.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/docs-publication/checks-v3.json",
+      "bytes": 1369,
+      "sha256": "462a86f9346bbd1b325387becafe43e2af5f8f69dc264a0991dad05542b6c25f",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/docs-publication/retention-command.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/docs-publication/retention-command.json",
+      "bytes": 153,
+      "sha256": "da7fe4d599d9010ea45600737fb70940164945801ed425bae4057a6462328d3e",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/docs-publication/retention-command-v2.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/docs-publication/retention-command-v2.json",
+      "bytes": 169,
+      "sha256": "cd34cb56f7c7305f84b18a87398b98fb428bfd86cfde321039be509cbfbf299e",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/docs-publication/retention-command-v3.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/docs-publication/retention-command-v3.json",
+      "bytes": 169,
+      "sha256": "b47b2a7266f1e7fa00e313a52b2569f5eecd95bdc8517af378fb35d009cbe6eb",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/docs-publication/retention.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/docs-publication/retention.log",
+      "bytes": 117,
+      "sha256": "d005dcb4ef850a44ced0e63e05133b86ff953046f68b3d3dd6c66bac93de8815",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/docs-publication/retention-v2.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/docs-publication/retention-v2.log",
+      "bytes": 117,
+      "sha256": "d005dcb4ef850a44ced0e63e05133b86ff953046f68b3d3dd6c66bac93de8815",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/docs-publication/retention-v3.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/docs-publication/retention-v3.log",
+      "bytes": 117,
+      "sha256": "d005dcb4ef850a44ced0e63e05133b86ff953046f68b3d3dd6c66bac93de8815",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-spike/research.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-spike/research.md",
+      "bytes": 9443,
+      "sha256": "8e999cba8ff100515ed085e286e24c9eb1eb2b4206a81fdc2c0885bfdbeaba8d",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-spike/proposed-trusted-base.patch",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-spike/proposed-trusted-base.patch",
+      "bytes": 775,
+      "sha256": "420022f3d6ff397c22b5a999fd5eff5bf182422e9f39ab7fd6798260aeeb23ba",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-spike/artifact-manifest.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-spike/artifact-manifest.json",
+      "bytes": 2887,
+      "sha256": "e41a91dfd490eb970e3ebdc1699d6ae6be118a38005544e614055316d75662f1",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-spike/coverage-cost-witness.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-spike/coverage-cost-witness.json",
+      "bytes": 19092,
+      "sha256": "ccd4c8244b73c6a1755af1aa62a8a9260ab73eec4712f25be2d58206fd3e61a5",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-spike/coverage-before-after.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-spike/coverage-before-after.json",
+      "bytes": 9906,
+      "sha256": "f83c985673b246e5c6991645bc9c0667dcf7b0797615a21339ba9c90371e3323",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-spike/failed-result.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-spike/failed-result.json",
+      "bytes": 43279,
+      "sha256": "5c7b6135acb9bd2e06ccd0082397ab38ba76fc2f45e5ee2e5c21f4c48235f128",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-spike/trusted-pins.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-spike/trusted-pins.json",
+      "bytes": 367,
+      "sha256": "bf90441b9e6e4aa49c190bdec92be74d06e3623d25fa1093cdd35e8f262e677c",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/actionlint.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/actionlint.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/author-explanation.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/author-explanation.md",
+      "bytes": 3513,
+      "sha256": "8a4e66f844d82f44ed969e2437924b8dc3da3d0dd55bc5e9d8680e9ac580141c",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/ci-hardening-green.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/ci-hardening-green.log",
+      "bytes": 42,
+      "sha256": "8a4af3c7efa4dad22bd2622d250ce9012d8122da8d6a677ebcdd6c51b3c9b790",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/commit.txt",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/commit.txt",
+      "bytes": 41,
+      "sha256": "650f6becf589f8378e823157a116a360cdd1af98febdfd31b7ce8573bf72b8f1",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/finding-response-1.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/finding-response-1.md",
+      "bytes": 1951,
+      "sha256": "5b86fffff0bb7841910be5b10b908bc6b6b6b16a50babff4ee64e23351f02b3f",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/focused-coverage-check.mjs",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/focused-coverage-check.mjs",
+      "bytes": 2446,
+      "sha256": "d274ec60777523bc3202ce7e3149f61714d746a9a3e73361c7a6ef8147694855",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/focused-coverage-result.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/focused-coverage-result.json",
+      "bytes": 4864,
+      "sha256": "249fab2a4b59fe84efd2b681eba4a18ff05d3078294b786ea2c110f68bbbfd54",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/focused-coverage.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/focused-coverage.log",
+      "bytes": 102,
+      "sha256": "d5b1b2917fdb54544a0b21236599fec6977c23bf74e85d6dce5e55756d2a67ea",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/hosted-selection-fixture.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/hosted-selection-fixture.json",
+      "bytes": 9906,
+      "sha256": "f83c985673b246e5c6991645bc9c0667dcf7b0797615a21339ba9c90371e3323",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/manager-response-1.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/manager-response-1.md",
+      "bytes": 325,
+      "sha256": "3b26bd0129eec54d6c2acc4e5c84900341883ffb9c3b7d9d4c5689ff65366357",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/neutral-bootstrap.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/neutral-bootstrap.md",
+      "bytes": 2114,
+      "sha256": "4dc5fd192709a88315368ac3c448b78b09c8b8f4c01a86b2c6ccab1758fe88e3",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/old-guard-red.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/old-guard-red.log",
+      "bytes": 1011,
+      "sha256": "0058bf501a27744e9328bf787d7f81ac5c6d0642f290f2c499a0c1b868fafd5d",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/owned-files.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/owned-files.json",
+      "bytes": 1001,
+      "sha256": "7eaf6652d3ea6cfb8ff75f04856ef0d1df8c542aec4a31e555f0e6cdc5ed9c21",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/owned.patch",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/owned.patch",
+      "bytes": 6284,
+      "sha256": "3e721f170b1d32034e7683202a60a5c4a59b2935461532fbc61cabc6321ab786",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/pr-body.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/pr-body.md",
+      "bytes": 1524,
+      "sha256": "0b3d0ce34184a181d3c266b6924f3bd9fd991c07768cccfad41409264fdc6525",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/pr-publication-state.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/pr-publication-state.json",
+      "bytes": 173,
+      "sha256": "45d2ed0a9a27a9a8dba5802f443b7e8779e03b4b70461ec28412826602584c77",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/required-results-build-container.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/required-results-build-container.log",
+      "bytes": 2343,
+      "sha256": "216c0bf4a2343bbb78158c768e25148353dea79997d5344c951d1c30a49470c5",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/script-surface.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/script-surface.log",
+      "bytes": 871,
+      "sha256": "b2ca8c6b19bf4566453a91d00a4df1c2a87e5c7ed11012bcc5f06abbd132dc49",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/verification.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/verification.json",
+      "bytes": 3362,
+      "sha256": "bfee81b7be47f5f16fb731944a58c9c5e7d4c37c65bc7b88d91c65d0b6d0ba9b",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/actionlint.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/review1/actionlint.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/ci-hardening.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/review1/ci-hardening.log",
+      "bytes": 42,
+      "sha256": "8a4af3c7efa4dad22bd2622d250ce9012d8122da8d6a677ebcdd6c51b3c9b790",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/diff-check.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/review1/diff-check.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/focused-coverage-check.mjs",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/review1/focused-coverage-check.mjs",
+      "bytes": 4334,
+      "sha256": "6bd00fa9f0de7151d73901b9435039e63d64d745031e172b3cdccab6ce7baf4e",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/focused-coverage-result.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/review1/focused-coverage-result.json",
+      "bytes": 5342,
+      "sha256": "ec19a8413775f63ae0f7002fd70650c5fc2c445b70514f954d39e9b3c47c67a6",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/focused-coverage.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/review1/focused-coverage.log",
+      "bytes": 5007,
+      "sha256": "14f59ad6eb8f99a3a7805a4f66fd0e29a11036ee21bc16c2c8318e3771c05183",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/preliminary.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/review1/preliminary.md",
+      "bytes": 2293,
+      "sha256": "75c0a9ab7398fb610b6f0730e0bea170ea6a18a2c8481d28666c1a849558ed53",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/report.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/review1/report.md",
+      "bytes": 7900,
+      "sha256": "acd118069b126b9e590b4eb6c22be7414a3e9fc5a1515d51338c89ca1bbac43d",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/required-results-build-container.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/review1/required-results-build-container.log",
+      "bytes": 2345,
+      "sha256": "b2b136810dbe292b627810318b4905f2726b187e383ac5105fa5811b0f1aaf6c",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/script-surface.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/review1/script-surface.log",
+      "bytes": 871,
+      "sha256": "b2ca8c6b19bf4566453a91d00a4df1c2a87e5c7ed11012bcc5f06abbd132dc49",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/source-after.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/review1/source-after.json",
+      "bytes": 876,
+      "sha256": "88bc93d3d98206711924bab700d8326974cf3d526731b6d987aaf619ed8acec2",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/source-before.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/review1/source-before.json",
+      "bytes": 593,
+      "sha256": "ae853748b1818413292d3fa4e28a506780d3076201283a020e2c4f92ac942562",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/upstream-provenance.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/review1/upstream-provenance.json",
+      "bytes": 2631,
+      "sha256": "965b7e9f73f76cf7b545e32e077e5b1519d429c2df15da052a7d18a486a91ad1",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/verification.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/review1/verification.json",
+      "bytes": 3212,
+      "sha256": "ef7b7e2663cc99c260771436012ee1795b2291ab9252269fc4986edc14e15483",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/scoped-user-authorization-snapshot.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/scoped-user-authorization-snapshot.json",
+      "bytes": 778,
+      "sha256": "3a7fcf005ae131f78e7b5821a54a6ce59fdd1870da18044b3feb1c157670925c",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/copy-provenance.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/copy-provenance.json",
+      "bytes": 13615,
+      "sha256": "0809a45aa9bfe5b3b74857fbd2fbbfbe6db8c581b292438c6bd3ce7da6579a93",
+      "reason": "Explicit v2 observed delivery/source-CI or scoped OCR configuration research/redgreen/review/provenance proof; no final configuration merge/retry result inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/reef-hosted-checks-publication-final.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/reef-hosted-checks-publication-final.json",
+      "bytes": 15765,
+      "sha256": "477a5ae704ee2e76bbc50ae11e2562fcad5619af5e127ee2b2aaa1a633d930a5",
+      "reason": "Actual exact dcb publication-head final CI snapshot or untruncated Calcify/Kotlin successful job log; held OCR remains skipped, no substantive review or performance qualification claim"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/reef-calcify-hosted-publication-final.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/reef-calcify-hosted-publication-final.json",
+      "bytes": 84423,
+      "sha256": "1a4b710f7670cfc26bf0c5fa2cd6d317ef5edce081a9f3c555bedcb2976a5f0c",
+      "reason": "Actual exact dcb publication-head final CI snapshot or untruncated Calcify/Kotlin successful job log; held OCR remains skipped, no substantive review or performance qualification claim"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/reef-kotlin-hosted-publication-final.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/reef-kotlin-hosted-publication-final.json",
+      "bytes": 59164,
+      "sha256": "fee8473e4171e89ed1433929673194837cdf2e8ef3bda557960e6a28379afb30",
+      "reason": "Actual exact dcb publication-head final CI snapshot or untruncated Calcify/Kotlin successful job log; held OCR remains skipped, no substantive review or performance qualification claim"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config-merged.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config-merged.json",
+      "bytes": 243,
+      "sha256": "fb91539c844f574931612cd66ac25c6129bb17bb04b9a5220ed9bb4a2dfb1f04",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config-hosted-final.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config-hosted-final.json",
+      "bytes": 15326,
+      "sha256": "f5aaf7c1c8ca1772c627460f73925bc14a29d650bd08ccfe04ccfe50162aeb81",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-trusted-base-parity.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-trusted-base-parity.json",
+      "bytes": 972,
+      "sha256": "a08642be5774bee3b652d84434617cb5095ba112bbb38d681516316fa0074bfc",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-hosted-retry-1.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-hosted-retry-1.json",
+      "bytes": 63908,
+      "sha256": "fc99277b0fcf24c3b3135b23d7c2eee7ca0cbcf4323290b66aab1890d48d6a0a",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/reef-pr-body-hosted-v3.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/reef-pr-body-hosted-v3.md",
+      "bytes": 4479,
+      "sha256": "dbde337da37b8e05400cf8de63c0bd134c8694c742073621e3cc87ce537f3427",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-install-spike/research.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-install-spike/research.md",
+      "bytes": 4284,
+      "sha256": "fa030c78e9ad55c5fa1b17729726a18e6de058300ad3f06ada448b2dd9d9dfc1",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-install-spike/proposed-trusted-base.patch",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-install-spike/proposed-trusted-base.patch",
+      "bytes": 392,
+      "sha256": "947a3b0254c3cdcbbc3487076aa31be2f78959525ebc62c8cd39317a92e38192",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-install-spike/artifact-manifest.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-install-spike/artifact-manifest.json",
+      "bytes": 2325,
+      "sha256": "473f1e0f7a5bffa6a464f7ba03846977190f423317c660ffadb2b23d17915a4e",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-install-spike/harness-correction.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-install-spike/harness-correction.md",
+      "bytes": 814,
+      "sha256": "4399dd343e30fa455f5169cde7cfde6a83a86a7fa7d153d12ef13256b143931e",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-install-spike/offline-launcher-proof.cjs",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-install-spike/offline-launcher-proof.cjs",
+      "bytes": 2180,
+      "sha256": "d3127df814afcc998c2b5dbe039cf17855915050eaef0fff00c36bf96492a95d",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-install-spike/failure-excerpt.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-install-spike/failure-excerpt.log",
+      "bytes": 2604,
+      "sha256": "9bdcd10ac45e1e77af55a8ca8c886a9aab0c3db42bc6a4f507bcd834572728a9",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-install-spike/npm-files.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-install-spike/npm-files.json",
+      "bytes": 671,
+      "sha256": "506862733f892ba49db5c01b6df1e0d9b795b71b3e193b5228ccf3edf8ab0592",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/script-surface.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/script-surface.log",
+      "bytes": 871,
+      "sha256": "b2ca8c6b19bf4566453a91d00a4df1c2a87e5c7ed11012bcc5f06abbd132dc49",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/actionlint.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/actionlint.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/no-update-guard-red.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/no-update-guard-red.log",
+      "bytes": 2552,
+      "sha256": "7c1196cfef5532385641c82d0063b1a17743df11e0b6023aa25be6ec02f4b71f",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/verification.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/verification.json",
+      "bytes": 3803,
+      "sha256": "6f3a46d373e49f93fa302e682cad989423295aeb9070454b901cebeff3bcee0b",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/focused-coverage.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/focused-coverage.log",
+      "bytes": 102,
+      "sha256": "d5b1b2917fdb54544a0b21236599fec6977c23bf74e85d6dce5e55756d2a67ea",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/author-explanation.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/author-explanation.md",
+      "bytes": 2309,
+      "sha256": "3c0b896888e1329ac6ba89e281871ba61f593d5ddf5dc2c74a6b1ae5ee0ee77c",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/neutral-bootstrap.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/neutral-bootstrap.md",
+      "bytes": 2233,
+      "sha256": "a4cd87788ff628a2bd861cff01fd792224b71dd3a2f1050825639f21bb2d5fe9",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/focused-coverage-check.mjs",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/focused-coverage-check.mjs",
+      "bytes": 3196,
+      "sha256": "0ded6224ceaec55748a8c1eec72ddaf7991b22271b6a234f06a842b1309d8334",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/new-delta.patch",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/new-delta.patch",
+      "bytes": 4337,
+      "sha256": "cb30366b9624477c880b749a56772df80aef4c10b4da99cc4e148c1e9771fccf",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/required-results-build-container.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/required-results-build-container.log",
+      "bytes": 2344,
+      "sha256": "b7312d46b3de82248d2615e11c91966ace6fd43451f4f4c1280c09422ae13534",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/owned-files.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/owned-files.json",
+      "bytes": 1296,
+      "sha256": "9d20c0e0281a327e856e6351aaa4343da035652d3cba5056314e97ece454532f",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/focused-coverage-result.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/focused-coverage-result.json",
+      "bytes": 4951,
+      "sha256": "c7033c959e539f7807d7f63eaa42c7ce27a2073bd4a6063ee607ad49db4b6423",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/ci-hardening.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/ci-hardening.log",
+      "bytes": 42,
+      "sha256": "8a4af3c7efa4dad22bd2622d250ce9012d8122da8d6a677ebcdd6c51b3c9b790",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/combined.patch",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/combined.patch",
+      "bytes": 7254,
+      "sha256": "c5d1d34957fe53bdb8abf650dad4886bf818798ea71200710255932206e21fdb",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/copy-provenance.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/copy-provenance.json",
+      "bytes": 6256,
+      "sha256": "ae9eacf10e32ff123197ea47f3f2291920fe2a4380054357dddffdded822e338",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/installation-pinned-provenance.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/installation-pinned-provenance.json",
+      "bytes": 1993,
+      "sha256": "fc939f24344e2e474f163a87ba24d779c216ebce176bd8a7d998dfeb7ddb2b5f",
+      "reason": "Exact late historical config merge/CI/parity, OCR install failure/research or followup2 developer freeze before review2 verdict; no hosted substantive success inferred"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/review2/actionlint.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/review2/actionlint.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/review2/upstream-provenance.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/review2/upstream-provenance.json",
+      "bytes": 369,
+      "sha256": "d93d540d3834febedbfbbc05c69cc0370c861747ade095f1ba1c78e19c3628f8",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/review2/focused-coverage.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/review2/focused-coverage.log",
+      "bytes": 102,
+      "sha256": "d5b1b2917fdb54544a0b21236599fec6977c23bf74e85d6dce5e55756d2a67ea",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/review2/offline-launcher.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/review2/offline-launcher.log",
+      "bytes": 124,
+      "sha256": "18ad34cdf137dee7797948a32dfc36d5dacef6a793835b16d8eb3ee0dd6f94bf",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/review2/focused-coverage-check.mjs",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/review2/focused-coverage-check.mjs",
+      "bytes": 3204,
+      "sha256": "c0a4a74a5335c727a6b202465bdaa7ad500b4b73b285f7c31189d5b761bb0c89",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/review2/preliminary-ledger.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/review2/preliminary-ledger.md",
+      "bytes": 2436,
+      "sha256": "ef9c2c29f576a4a39155d80bf5438cd3b7d5a2c87288ae7f8b439c07dcb1342c",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/review2/reconciliation-checks.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/review2/reconciliation-checks.json",
+      "bytes": 537,
+      "sha256": "009cd019309b8f5631cf46c3b69fd7bc412ba8ccc77aea7faba24db842fe6f41",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/review2/new-delta.patch",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/review2/new-delta.patch",
+      "bytes": 4337,
+      "sha256": "cb30366b9624477c880b749a56772df80aef4c10b4da99cc4e148c1e9771fccf",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/review2/scope-check.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/review2/scope-check.json",
+      "bytes": 224,
+      "sha256": "ccb20d29693a3cb61d524f223f86a9792e7620557e9b0c5309f53c3601de3b96",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/review2/report.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/review2/report.md",
+      "bytes": 11893,
+      "sha256": "d0f4809811f4c1498af4e346fe0c3200990ddb6a9f87dc02f327da255b992fa7",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/review2/focused-coverage-result.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/review2/focused-coverage-result.json",
+      "bytes": 4951,
+      "sha256": "c7033c959e539f7807d7f63eaa42c7ce27a2073bd4a6063ee607ad49db4b6423",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/review2/ci-hardening.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/review2/ci-hardening.log",
+      "bytes": 42,
+      "sha256": "8a4af3c7efa4dad22bd2622d250ce9012d8122da8d6a677ebcdd6c51b3c9b790",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/review2/combined.patch",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/review2/combined.patch",
+      "bytes": 7254,
+      "sha256": "c5d1d34957fe53bdb8abf650dad4886bf818798ea71200710255932206e21fdb",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/review2/assertion-sensitivity.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/review2/assertion-sensitivity.log",
+      "bytes": 127,
+      "sha256": "e10ea7861b2f8f379f0b9b8aae225351bdc7171ce58866eea30d5535ad234150",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/finding-response-2.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/finding-response-2.md",
+      "bytes": 2425,
+      "sha256": "929459f9897196254cdb49d1eeb24c00fc2a21ee0ce7559ae6c01c5e1c5e85cb",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/manager-response-2.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/manager-response-2.md",
+      "bytes": 793,
+      "sha256": "4bc9d8041bf275c440145d99a8e5918a5383b88ab71623ddffa8b394aaeba022",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/pr-body.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/pr-body.md",
+      "bytes": 1768,
+      "sha256": "7d9eb1652f4c6abb1dc6e351c4d23292f8ea27962c14ccf2fb167ccc0cdfed6d",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/review2-copy-provenance.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config/followup2/review2-copy-provenance.json",
+      "bytes": 7690,
+      "sha256": "748a374f5e475cb78862b81ad32a5be817fc031c98211f0939544d220544f985",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config-followup2-publication.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config-followup2-publication.json",
+      "bytes": 674,
+      "sha256": "f8c9a37ffb67908d77da45b45e0ba78ff57092cfacbfe7c75cdfa278d265e0f7",
+      "reason": "Exact accepted config review2 source/provenance/check receipts, author/manager responses or committed PR487 publication snapshot; later actual CI/merge/OCR pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config-followup2-hosted-final.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config-followup2-hosted-final.json",
+      "bytes": 15326,
+      "sha256": "3ce255857070bfa6c5c26b28e2783b423464a6f6dfcb03d16ae5e9f7596f4cb0",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config-followup2-calcify-hosted.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config-followup2-calcify-hosted.json",
+      "bytes": 83436,
+      "sha256": "d130bbd6dc6277e18c99ebc29c63b7de409a2f906b325d07178200253e9986a1",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config-followup2-kotlin-hosted.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config-followup2-kotlin-hosted.json",
+      "bytes": 58919,
+      "sha256": "7ea2ac4385b72a3c77f050846300a77f518f27f3940ec817dc33ae70c12fcc3b",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-config-followup2-merged-parity.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-config-followup2-merged-parity.json",
+      "bytes": 960,
+      "sha256": "73628ba9df17034e02e777ab4ac24cf368fec98f8a7cb295a2c877b7fc9c78db",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/reef-pr-body-hosted-v4.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/reef-pr-body-hosted-v4.md",
+      "bytes": 4663,
+      "sha256": "bb6dff1d8c8d18c726fec6194137b30d0b225fa2dacc2a4631336d62f289e516",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/reef-pr-body-hosted-v5.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/reef-pr-body-hosted-v5.md",
+      "bytes": 7265,
+      "sha256": "019866a15b833020a8044ec5922d6fac9e0d6910acd06da30c45bb08f7c4ff42",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-hosted-retry-1-later-success.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-hosted-retry-1-later-success.json",
+      "bytes": 111868,
+      "sha256": "935845647e8aa99d47b82e2cec32481144c760b3b381a711d0512a0ea5ec7bb2",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-hosted-retry-1-later-annotations.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-hosted-retry-1-later-annotations.json",
+      "bytes": 1466,
+      "sha256": "abc3e1779165774318a8cdea8bad9f93737ab0cf4931d3b6a8de5c7ed0edd2f8",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-hosted-retry-1-later-success-result.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-hosted-retry-1-later-success-result.json",
+      "bytes": 17927,
+      "sha256": "223f831010945e4ca22d50e16083ebc3c6a3fe19cc828824993304768f233a3f",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-hosted-retry-2.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-hosted-retry-2.json",
+      "bytes": 88843,
+      "sha256": "f7760f2b0ebb4b50d14e8f855e0ad15451b4424ce01293ba756a329a655fa1cf",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-hosted-retry-2-result.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-hosted-retry-2-result.json",
+      "bytes": 1784,
+      "sha256": "0bd11d3a728264a230b0dc782210cf854c37f203f8e52b4f6151e21320cdf1e6",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-hosted-full-pinned.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-hosted-full-pinned.json",
+      "bytes": 118355,
+      "sha256": "518056dc4428999c4069ffec58ce96ab4f3a18119b7983f3aba7e7d751583eb2",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-hosted-full-pinned-result.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-hosted-full-pinned-result.json",
+      "bytes": 22079,
+      "sha256": "977e5fb5eb7213383aa3cbc7094d8b4d979865d68845fe9e098b1891ef9f64ae",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-hosted-comments-observed-v1.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-hosted-comments-observed-v1.json",
+      "bytes": 16446,
+      "sha256": "560c68e1754e529d541de6c6f94d52ad30a1fac49ece91380cc34cb977bf1f25",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-hosted-comments-observed-v2.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-hosted-comments-observed-v2.json",
+      "bytes": 61801,
+      "sha256": "8def33c2c808ca8f66a8949750f35f84920ddb8e779a19c4cabd96c66f72a779",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-pinned-coverage-verification.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-pinned-coverage-verification.json",
+      "bytes": 2980,
+      "sha256": "183a75bfe4726703769b9f486c47fe07771d8457b7a1f568fe5cb709697b8f2b",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-findings-manager-response.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-findings-manager-response.md",
+      "bytes": 3372,
+      "sha256": "4d431aedd987ed2b289c3dfb1672578959dacecef19167cd447d59f86d9d2015",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-manager-acceptance.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-manager-acceptance.json",
+      "bytes": 4025,
+      "sha256": "e47d4efc25a5ad0479428222af87bdaf5b04edef27186f4b0d6da3b686758d0c",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-review-threads-before.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-review-threads-before.json",
+      "bytes": 8241,
+      "sha256": "8367dd5330ae6ac1a8d7a33abac2a92b2ad009b3736fc4e2e86a1906181f0c07",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-review-threads-resolved.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-review-threads-resolved.json",
+      "bytes": 400,
+      "sha256": "76c80e584be10e5b1664e31ffd7d1f7bf320c54fdd01de1bbb10d76025e5376f",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/reef-dcb-hosted-after-ocr.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/reef-dcb-hosted-after-ocr.json",
+      "bytes": 17082,
+      "sha256": "9bec3c0b4ec90eb6292635c2b769dc141060ab9d3a0417ff532cd60391663004",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-findings-spike/research.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-findings-spike/research.md",
+      "bytes": 2517,
+      "sha256": "167b677049214ecd3d6a72cb75e9cbc8fb9346d73eb5ce162c1270c8ebd42a99",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-findings-spike/research-v2.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-findings-spike/research-v2.md",
+      "bytes": 2462,
+      "sha256": "a5a3362fe2bc8439e286325da59aee1ade713ad73f4f794342ae6af9f0724554",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-findings-spike/verification.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-findings-spike/verification.json",
+      "bytes": 2045,
+      "sha256": "765da465093dc6e67756db38bb9c40e3af7dbea35e299f434e3c486e358aaf18",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-findings-spike/verification-v2.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-findings-spike/verification-v2.json",
+      "bytes": 2023,
+      "sha256": "fda2dab119ba3767e33a42d7464482ec30ed4935d21411882766208a3a1045c0",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-findings-spike/finding-1.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-findings-spike/finding-1.md",
+      "bytes": 2615,
+      "sha256": "7428e4f8641f869aa9d668b6d1c0d57910a2a19a2be8074d14e7d5054a98b625",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-findings-spike/finding-2.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-findings-spike/finding-2.md",
+      "bytes": 2842,
+      "sha256": "3e807b7bec483acf96dad90e1ae86bb1c5adcba29d6537c9e8cda299a650ab84",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-findings-spike/finding-3.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-findings-spike/finding-3.md",
+      "bytes": 2905,
+      "sha256": "f1dd6552eb9bbb945c0ec8a3de0d25c6324f09bcddbf6ae80d41c7765604818a",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-findings-spike/focused-go-tests.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-findings-spike/focused-go-tests.log",
+      "bytes": 115,
+      "sha256": "65effc32283ada9764df2170f04c48351f3571a27b65a8ab3224388440495e31",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-findings-spike/focused-go-tests-direct.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-findings-spike/focused-go-tests-direct.log",
+      "bytes": 214,
+      "sha256": "1dfe4eaca33eed50586f27b7c009c83c4dab9b9090435a3236f48e609fdde141",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-findings-spike/focused-go-tests-aligned.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-findings-spike/focused-go-tests-aligned.log",
+      "bytes": 1539,
+      "sha256": "13cb7a4a7fa0eab79c2401dbfd55bc984e3147feb804e083d818b553c791e8bc",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-findings-spike/identity-probe.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-findings-spike/identity-probe.json",
+      "bytes": 336,
+      "sha256": "caaf4014d619efd21dd1dc19088d948e4ff135be71db64550c664865e9164cbe",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-findings-spike/runner-probe-v2.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-findings-spike/runner-probe-v2.json",
+      "bytes": 591,
+      "sha256": "d0252b00a9799a1be609e422a6371859d5c3e525361765a443141ab14c2e733c",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-findings-spike/test-environment-alignment.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-findings-spike/test-environment-alignment.md",
+      "bytes": 822,
+      "sha256": "cdffe97ee164aeb540ab63d7caf5568485a0bb87411482a5dbcb8b3d811ffb22",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-findings-spike/go-freeze-check.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-findings-spike/go-freeze-check.json",
+      "bytes": 1444,
+      "sha256": "70840db50cff7f8b4d3973b89d6b4459e8195fd5955abc877f10d0683d64c560",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-kotlin-findings-spike/REPORT.md",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-kotlin-findings-spike/REPORT.md",
+      "bytes": 9396,
+      "sha256": "1fee418eeed7674926297a51752ce76a348b24a3c190c0496442317d51d7280f",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-kotlin-findings-spike/OcrKotlinProbe.java",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-kotlin-findings-spike/OcrKotlinProbe.java",
+      "bytes": 6648,
+      "sha256": "aebb73f7e314160137f01f4674cdc3dc87c2be6cd5403d78f6e476f7bb991433",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-kotlin-findings-spike/probe-command.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-kotlin-findings-spike/probe-command.json",
+      "bytes": 3496,
+      "sha256": "c7fd4102cc0e7330fc4f5ed6b96b39314017406536119103cd46daeb5f592c6e",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-kotlin-findings-spike/probe.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-kotlin-findings-spike/probe.log",
+      "bytes": 1109,
+      "sha256": "e033de1023dd7ebaf46185ed921b8677d3a01f0653f76cac52b8010fe7c60754",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-kotlin-findings-spike/probe-attempt1-command.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-kotlin-findings-spike/probe-attempt1-command.json",
+      "bytes": 3617,
+      "sha256": "c7d3e79e8be94389d7fda7dde264b6a105451183c842744932bce802ae0e3ecc",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-kotlin-findings-spike/probe-attempt1.log",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-kotlin-findings-spike/probe-attempt1.log",
+      "bytes": 1670,
+      "sha256": "df488c80e2238a16a573e1f72e648527041f0a2964af5bc21fae44b7ee2b3a08",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-kotlin-findings-spike/source-scope.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-kotlin-findings-spike/source-scope.json",
+      "bytes": 2021,
+      "sha256": "4b1f5f5527d9fcfeb3b5d86a2e01feab69c5a0af426cbf43424c33f9d62a9ea3",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-kotlin-findings-spike/bytecode-commands.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-kotlin-findings-spike/bytecode-commands.json",
+      "bytes": 13357,
+      "sha256": "b302fd918204416656f41d1df8ba859c7908282f10a1beb056fa1b7ea54955fd",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-kotlin-findings-spike/FiniteLifecycleBudget-javap.txt",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-kotlin-findings-spike/FiniteLifecycleBudget-javap.txt",
+      "bytes": 49102,
+      "sha256": "caa682cb24d53cd563cf5f9f1d7e857418a7307caf353b4223d6c2f0cd83ef9f",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-kotlin-findings-spike/FiniteLifecycleCaptureRuntime-javap.txt",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-kotlin-findings-spike/FiniteLifecycleCaptureRuntime-javap.txt",
+      "bytes": 22315,
+      "sha256": "83871d0b2599fbe4c05670475a251456c2ff4d50ae18e782e1672d5998700810",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-kotlin-findings-spike/FiniteLifecycleCaptureProcessor-javap.txt",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-kotlin-findings-spike/FiniteLifecycleCaptureProcessor-javap.txt",
+      "bytes": 30240,
+      "sha256": "30fa5006ec5c34a5f73e8745d512e9fe2be2803ee76c9857c2b3c4a0dbe590bb",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/ocr-kotlin-findings-spike/FiniteLifecycleReducer-javap.txt",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-kotlin-findings-spike/FiniteLifecycleReducer-javap.txt",
+      "bytes": 224501,
+      "sha256": "ed7e40d8dceb25f64c6a9838ed24be3c865231bfdc1ac6bdb724467952cc53a2",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    },
+    {
+      "original_path": ".planning/calcify-p3-overnight/delivery/supplement-preparation/selection-history-metadata.json",
+      "promoted_path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/supplement-preparation/selection-history-metadata.json",
+      "bytes": 5041,
+      "sha256": "ab8f587bb6200bd77978c8dd204f3b4a6162d65db99e2a3ce4f3bbf728b0200c",
+      "reason": "Exact late accepted hosted OCR/config/CI/finding-reconciliation evidence including all failed/setup/drift/no-op attempts, or finite prior snapshot metadata; Records supplement publication pending"
+    }
+  ],
+  "file_count": 184,
+  "bytes": 2109070,
+  "later_slots": [
+    {
+      "slot": "Supplement local-only source checkpoint and append-only Records import/commit/PR",
+      "state": "Pending actual publication/verification; not achieved by selection freeze"
+    },
+    {
+      "slot": "Supplement remote exactbytes verification, integrity/hygiene/append-only/hosted checks",
+      "state": "Pending actual publication/verification; not achieved by selection freeze"
+    },
+    {
+      "slot": "Owner currentstatus/retention links and any later final publication-head CI",
+      "state": "Pending actual publication/verification; not achieved by selection freeze"
+    }
+  ],
+  "active_exclusions": [
+    "Original230-record namespace/manifests unchanged",
+    "O1 frozen source/proto/fixtures and review packets unchanged",
+    "Active O2/preflight/O3/session planning remains local",
+    "Compiled classes/caches/dependencies/credentials/live state",
+    "Initial proof selection/README/prepare scripts not duplicated as evidence",
+    "OCR config downloaded third-party upstream-selection.go bytecopy excluded; exact pinned blob provenance retained",
+    "OCR spike downloaded Alibaba action/Go/docs/tree source caches excluded; owned research/patch/exact artifact manifest and cost proxy retained",
+    "Mutable full session excluded; only explicit scoped user approval snapshot selected",
+    "OCR install spike raw downloaded upstream/npm source and npm tarball excluded; pinned integrity/source URLs and owned metadata retained",
+    "Only explicit17 reviewer/response/body artifacts; no new source cache or recursive sweep; independent patches retained to bind reviewer scope",
+    "Go findings go-cache/ and Kotlin driver-state/; no classes/jars/caches/tarballs or active session/O2 data",
+    "Previous selection/check/README snapshot contents remain local; exact finite hashes retained in selected history metadata, avoiding recursive mappings"
+  ],
+  "scope": "Append-only exact O1 final integration/config recovery/hosted delivery/findings reconciliation proof; all prior failures retained; no internalreview cap reset, liveO2 or financial/capacity qualification",
+  "privacy_check": "Recognizable credential-pattern scan passed; names/bytes/hashes only emitted, raw credentials never read from secret files; content privacy review remains required",
+  "version": "final",
+  "configuration_commit": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+  "configuration_pull_request": "https://github.com/dills122/reef/pull/486",
+  "configuration_trusted_base": "e69e62ada42c633b81f90ccf178680973b398b0c",
+  "configuration_status": "PR487 be706 exactCI28success/3skips then trusted-base merge3c230521e3b3694f02e609579deaf63d361eb941; all4hashes/pins verified; no product changes, configcap2of3 unchanged",
+  "source_status": "O1 source0a7 unchanged at publicationheaddcb; current exactdcb31success/4skips, no failure/active. Full pinned OCR17selected/17completed/0reused/0failed/0waived,v1.12.9;5findings plus older constructor reconciled Dispute with canonical/source/test/probe evidence and managerAccept;6threads resolved. Records final supplement publication/owner update/laterfinalheadCI still pending",
+  "v1_files_preserved": 26,
+  "copied_configuration_raw_files": 33,
+  "copy_provenance": ".planning/calcify-p3-overnight/delivery/ocr-config/copy-provenance.json",
+  "authorization_snapshot": ".planning/calcify-p3-overnight/delivery/ocr-config/scoped-user-authorization-snapshot.json",
+  "prior_selection_snapshot": {
+    "path": ".planning/calcify-p3-overnight/delivery/supplement-preparation/selection-v4.json",
+    "sha256": "83354bf09d0a81da15e0e16d772a6ee673d81c00a4c385274174a5ae68593474",
+    "file_count": 136,
+    "bytes": 1066849,
+    "all_prior_rows_preserved": true
+  },
+  "review_counters": {
+    "config_consumed_accepted_reviews": 2,
+    "config_remaining_instances": 1,
+    "config_maximum": 3,
+    "config_review2_verdict": "Ready/no findings;author/managerAccept",
+    "o1_consumed": 3,
+    "o1_maximum": 3,
+    "o1_reset": false,
+    "separate_delivery_integration_review": 1
+  },
+  "configuration_followup_head": "be706614678b11439f8df851467da3ae455cdbc9",
+  "configuration_followup_pull_request": "https://github.com/dills122/reef/pull/487",
+  "hosted_ocr_acceptance_receipt": ".planning/calcify-p3-overnight/delivery/ocr-manager-acceptance.json",
+  "full_pinned_ocr": {
+    "run": 38070877163,
+    "job": 114267851324,
+    "version": "1.12.9",
+    "selected": 17,
+    "completed": 17,
+    "reused": 0,
+    "failed": 0,
+    "waived": 0,
+    "findings": 5,
+    "generated_java_excluded": 31,
+    "findings_manager_disposition": "Dispute with evidence; all current5 plus earlier constructor accepted; no confirmed O1 defect",
+    "model_scope_only": true
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "master": "ed76dd6b196731c454c0868f966424c491f33954",
+  "reviewedConfigHead": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+  "all4ReviewHashesMatch": true,
+  "files": [
+    {
+      "path": ".github/workflows/open-code-review-pilot.yml",
+      "sha256": "8776f22bf88671bd81b59738c9a00aeccdaefc57af7ab274ea4153767fba8c76"
+    },
+    {
+      "path": ".opencodereview/rule.json",
+      "sha256": "121276b786a9f75e1c0a5f766358cbf38e08859c9d91b7541a882dd2caacd0eb"
+    },
+    {
+      "path": "scripts/dev/ci-workflow-hardening.test.mjs",
+      "sha256": "0ee3d60a173507385b38ae2f1befd1ad96505bd14d6d6f3abd34f3c87eeaa79c"
+    },
+    {
+      "path": "docs/CI_OPERATIONS.md",
+      "sha256": "cd960c3a074c9247aa47102008da89abce99b7a252ef07b4623a6fd0d3a0280b"
+    }
+  ],
+  "ocrFrozenPRHead": "dcb106c4ddd5ccda60df7c8e6411fca88ef5be14",
+  "actionPin": "bccbc15f785269400735d5255540c231e6c02b6d",
+  "softBudget": 1500000,
+  "retainedSelection": 17,
+  "generatedJavaExcluded": 31
+}

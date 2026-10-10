@@ -1,0 +1,40 @@
+{
+  "content": [],
+  "structuredContent": {
+    "headRevision": "dcb106c4ddd5ccda60df7c8e6411fca88ef5be14",
+    "checks": [
+      {
+        "id": 114263196094,
+        "name": "review",
+        "head_sha": "dcb106c4ddd5ccda60df7c8e6411fca88ef5be14",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38068796768/job/114263196094",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      }
+    ],
+    "statuses": [],
+    "annotations": [
+      {
+        "path": ".github",
+        "start_line": 1,
+        "end_line": 1,
+        "annotation_level": "notice",
+        "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+        "title": "",
+        "raw_details": ""
+      }
+    ],
+    "hasMore": false,
+    "job": null,
+    "jobs": [],
+    "log": null,
+    "logTruncated": false,
+    "providerGuidance": "GitHub guidance for this response only: use checkRunId for output and annotations, runId from a GitHub Actions /runs/<id> link to list jobs, or jobId from a /jobs/<id> link for logs. page paginates checks, jobs or annotations. Keep the supplied account and returned headRevision on follow-up reads. Third-party CI exposes only the output reported to GitHub."
+  }
+}

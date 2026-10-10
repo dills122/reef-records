@@ -1,0 +1,12 @@
+CANONICAL bytes=260 base=6d49b6dd66e9cfa099e7b1c3cd02c9c275a9bf401d92069aace9634b5b4feee3 reordered=6d49b6dd66e9cfa099e7b1c3cd02c9c275a9bf401d92069aace9634b5b4feee3 sideSwapped=b931a7df9e03444d868b4c9821856537240188d5b0c266015c3d7df6a9044ecf
+RESTORE coveredSuffix exact=true successfulResume=12 suffixResume=13
+REFUSED partially-covered-suffix reason=required source history unavailable
+REFUSED missing-fault-barrier reason=pending fault suffix lacks lane barrier
+REFUSED invalid-checkpoint-version reason=state binding/version mismatch
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+NULL_SOURCE fault=invalid/duplicate/trailing source JSON suffixCount=1 offset=0 suffixResume=1 payloadBytes=0 successfulResume=0 completed=0 output=0 blocked=true
+NULL_SOURCE subsequentValidRecord suffixCount=2 offset=1 exactPayload=true successfulResume=0 completed=0 output=0
+EXISTING_FOCUSED_TESTS canonicalGolden+restoreFaultSuffix+managedFaultSuffix=PASS
+ALL_PROBE_ASSERTIONS=PASS

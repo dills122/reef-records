@@ -1,0 +1,2 @@
+PASS exact encoded state=6307840 bytes; one-over=6307841 bytes refused before initialize returns; original checkpoint unchanged; no topology/output invoked
+Fixture checkpoint=65419 bytes; padding diagnostic-only, no source/capture facts replaced; live recovery not claimed

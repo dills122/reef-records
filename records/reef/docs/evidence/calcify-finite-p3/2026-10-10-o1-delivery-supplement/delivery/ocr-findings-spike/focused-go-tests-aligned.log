@@ -1,0 +1,22 @@
+=== RUN   TestCalcifyLifecycleConfigurationDefaultsOff
+--- PASS: TestCalcifyLifecycleConfigurationDefaultsOff (0.00s)
+=== RUN   TestCalcifyLifecycleInvalidConfigStopsBeforeFetch
+=== RUN   TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/missing_profile
+=== RUN   TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/missing_binding
+=== RUN   TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/short_binding
+=== RUN   TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/nonhex_binding
+=== RUN   TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/uppercase_binding
+=== RUN   TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/large_batch
+--- PASS: TestCalcifyLifecycleInvalidConfigStopsBeforeFetch (0.00s)
+    --- PASS: TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/missing_profile (0.00s)
+    --- PASS: TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/missing_binding (0.00s)
+    --- PASS: TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/short_binding (0.00s)
+    --- PASS: TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/nonhex_binding (0.00s)
+    --- PASS: TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/uppercase_binding (0.00s)
+    --- PASS: TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/large_batch (0.00s)
+=== RUN   TestCalcifyLifecycleLiveAndCommittedReplayRemainGated
+--- PASS: TestCalcifyLifecycleLiveAndCommittedReplayRemainGated (0.00s)
+=== RUN   TestCalcifyLifecycleTypedFixture
+--- PASS: TestCalcifyLifecycleTypedFixture (0.00s)
+PASS
+ok  	github.com/dills122/reef/services/matching-engine/internal/streamdirect	0.277s

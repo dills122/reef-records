@@ -1,0 +1,457 @@
+{
+  "content": [],
+  "structuredContent": {
+    "headRevision": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+    "checks": [
+      {
+        "id": 114261409656,
+        "name": "ci-required",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114261409656",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259271298,
+        "name": "scenario-replay",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "skipped",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259271298",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 0
+        }
+      },
+      {
+        "id": 114259270698,
+        "name": "container-builds (stock-data, services/stock-data, services/stock-data/Dockerfile)",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270698",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259270367,
+        "name": "container-builds (deploy-receiver, infra/hetzner-core/server/deploy-receiver, infra/hetzner-core/...",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270367",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259270189,
+        "name": "container-builds (arena-platform-runtime, ., services/arena-control-plane/Dockerfile)",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270189",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259270179,
+        "name": "container-builds (simulator, services/simulator, services/simulator/Dockerfile)",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270179",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259270176,
+        "name": "container-builds (platform-runtime, ., services/platform-runtime/Dockerfile)",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270176",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259270164,
+        "name": "go-vulnerability-scan (matching-engine, services/matching-engine)",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270164",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259270151,
+        "name": "docs-site",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270151",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259270145,
+        "name": "container-builds (matching-engine, services/matching-engine, services/matching-engine/Dockerfile)",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270145",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259270132,
+        "name": "go-vulnerability-scan (simulator, services/simulator)",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270132",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259270128,
+        "name": "node-dev-tooling",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270128",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259270107,
+        "name": "calcify-tests",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270107",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259270092,
+        "name": "reef-arena-separation",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270092",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259270091,
+        "name": "go-simulator",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270091",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259270081,
+        "name": "arena-admin",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270081",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259270080,
+        "name": "infrastructure-config",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270080",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259270069,
+        "name": "postgres-schema-placement",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270069",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259270062,
+        "name": "bot-sdk",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270062",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259270044,
+        "name": "go-matching-engine",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270044",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259270040,
+        "name": "proto-governance",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259270040",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259269997,
+        "name": "kotlin-stock-data",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259269997",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259269981,
+        "name": "kotlin-platform-runtime",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259269981",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259269963,
+        "name": "dependency-alignment",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259269963",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259267917,
+        "name": "scan-and-sandbox-test",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "skipped",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067914974/job/114259267917",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 0
+        }
+      },
+      {
+        "id": 114259267358,
+        "name": "validate-manifest",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "skipped",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067914974/job/114259267358",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 0
+        }
+      },
+      {
+        "id": 114259266231,
+        "name": "warn-unconventional-bot-changes",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067914974/job/114259266231",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259235269,
+        "name": "mark-non-bot",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915253/job/114259235269",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259234391,
+        "name": "change-scope",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915177/job/114259234391",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259233805,
+        "name": "Records retention",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067915133/job/114259233805",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      },
+      {
+        "id": 114259232959,
+        "name": "detect-flow",
+        "head_sha": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+        "status": "completed",
+        "conclusion": "success",
+        "details_url": "https://github.com/dills122/reef/actions/runs/38067914974/job/114259232959",
+        "output": {
+          "title": null,
+          "summary": null,
+          "text": null,
+          "annotations_count": 1
+        }
+      }
+    ],
+    "statuses": [
+      {
+        "context": "registry-diff-and-provision",
+        "state": "success",
+        "description": "Not a bot submission",
+        "target_url": "https://github.com/dills122/reef/actions/runs/38067915253"
+      }
+    ],
+    "annotations": [],
+    "hasMore": false,
+    "job": null,
+    "jobs": [],
+    "log": null,
+    "logTruncated": false,
+    "providerGuidance": "GitHub guidance for this response only: use checkRunId for output and annotations, runId from a GitHub Actions /runs/<id> link to list jobs, or jobId from a /jobs/<id> link for logs. page paginates checks, jobs or annotations. Keep the supplied account and returned headRevision on follow-up reads. Third-party CI exposes only the output reported to GitHub."
+  }
+}

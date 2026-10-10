@@ -1,0 +1,4 @@
+# ./internal/streamdirect
+open /Users/dsteele/Library/Caches/go-build/1b/1bd899cf3f1d0e09f654f762c0baada1a4c8ca3a0ebdcf2dc29879f507aa9fe2-d: operation not permitted
+FAIL	./internal/streamdirect [setup failed]
+FAIL

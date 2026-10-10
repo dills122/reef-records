@@ -1,0 +1,340 @@
+diff --git a/docs/README.md b/docs/README.md
+index 2f2fad073..e3f22e046 100644
+--- a/docs/README.md
++++ b/docs/README.md
+@@ -28,7 +28,7 @@ have separate runbooks under [`infra/`](../infra/README.md).
+ | 2 | [Phase 1/2 overview](CALCIFY_PHASES_OVERVIEW.md) | Implemented production flow and source map |
+ | 3 | [System RFC](work/CALCIFY_SYSTEM_ARCHITECTURE_RFC.md#101-first-experiment-sprint) | Proposed financial authority, experiment acceptance and owner decisions |
+ | 4 | [Financial checkpoint](evidence/calcify-financial-sprint1/README.md) and [handoff](work/handoffs/2026-10-04-calcify-financial-sprint1-recovery.md) | Test-only proof, exact software scope, resources and continuation |
+-| 5 | [Throughput ledger](THROUGHPUT_BASELINES.md#calcify-direct-path-d7-sustained-qualification-october-2-2026) | Scoped D7 pass; financial capacity remains unmeasured |
++| 5 | [Throughput ledger](THROUGHPUT_BASELINES.md#calcify-direct-path-d7-sustained-qualification-october-2-2026) and [financial diagnostic](evidence/calcify-financial-sprint1/README.md#latest-empirical-checkpoint--october6-utc) | Scoped D7 pass; measured financial deadline target miss; production/full-path capacity unqualified |
+ 
+ Detailed reviews and raw financial proof remain linked from checkpoint to immutable
+ Records commits. Execution status stays in `WORK_PLAN.md`; RFC remains proposed.
+diff --git a/docs/RECORDS_RETENTION.md b/docs/RECORDS_RETENTION.md
+index 5fe33ef75..012990d6b 100644
+--- a/docs/RECORDS_RETENTION.md
++++ b/docs/RECORDS_RETENTION.md
+@@ -88,5 +88,7 @@ conservative capacity qualification follows.
+ Source checkpoints remain local-only, not pushed to Reef. RocksDB/build/deps and
+ retained broker output-topic volumes excluded; complete raw output replay is not
+ claimed. No tracked Reef original removed; [Records PR10](https://github.com/dills122/reef-records/pull/10)
+-remains draft. Raw local session retained until archive landing. Guidance and
++was draft at October6 checkpoint; merged October7 at `1419b7e0`.
++Archive landing supersedes original local-retention-until-landing tasking; no
++local cleanup performed by this documentation correction. Guidance and
+ overviews unchanged for test-only resource permission; affected owners updated.
+diff --git a/docs/evidence/calcify-financial-sprint1/README.md b/docs/evidence/calcify-financial-sprint1/README.md
+index ccd1c3b7a..b7ae79796 100644
+--- a/docs/evidence/calcify-financial-sprint1/README.md
++++ b/docs/evidence/calcify-financial-sprint1/README.md
+@@ -1,6 +1,6 @@
+ # Calcify financial sprint1 — bounded correctness pass
+ 
+-October5 UTC / October4 local. Branch `codex/calcify-sprint1-experiments`;
++Historical bounded checkpoint: October5 UTC / October4 local. Branch `codex/calcify-sprint1-experiments`;
+ Broker/Kotlin/profile proof remains from `f75b5d61` / `f56b30b1`; JavaScript
+ checkpoint and metric fixes postdate round7.
+ Test-only experiments. [Focused results](verification.json),
+@@ -24,10 +24,20 @@ Historical draft/pending wording below
+ predates merged Reef473/474/475/477 and Records6–9. Complete [closed session proof](https://github.com/dills122/reef-records/tree/2331d97d9f9e6af8638d6ed335adbfac743d2c03/records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-2026-10-06-1c143125049d) and [delivery review](https://github.com/dills122/reef-records/blob/2331d97d9f9e6af8638d6ed335adbfac743d2c03/records/reef/docs/evidence/calcify-financial-sprint1/sprint1-exit-review-2026-10-06-1c143125049d/reviews/delivery1/report.md)
+ published at Records `2331d97d9f9e6af8638d6ed335adbfac743d2c03`:7628files/1144093245B verified; all three
+ journal chunk reassemblies pass. [Records PR10](https://github.com/dills122/reef-records/pull/10)
+-draft, not merged. Broker topic volumes retained locally, not exported; archive
++merged October7 at `1419b7e0`; original proof remains pinned above. Broker topic volumes retained locally, not exported; archive
+ contains input journals and executed probe receipts, not independently replayable
+ raw output topics. No tracked Reef originals removed.
+ 
++### Current source continuation — October9, 2026
++
++[Current finite P0 checkpoint](../../WORK_PLAN.md#calcify-finite-p0-source-gate--october-7-2026)
++and [source contract](../../../contracts/calcify/README.md#finite-p0-matching-source-profile-2026-10-07)
++route next work after merged PR479: lifecycle/coverage membership, durable finite
++command/history/closure budgets and restore. Matching profile/snapshot identity
++gate partially closes source prerequisites; durable broker profile/budget binding,
++financial admission, SQL/read and funding/repair/restart remain separate gates.
++No production financial authority or full-path capacity qualification.
++
+ ### PR478 policy review follow-up — October7, 2026
+ 
+ Config identity remains `capability.configSha256`; frozen policy needs no top-level
+@@ -53,7 +63,7 @@ source scope. Retention no-op: prior raw proof remains pinned above; no new bulk
+ evidence or standalone superseded records. Guidance/architecture/contracts unchanged
+ because shared digest calculation preserves existing v1 bytes and runtime behavior.
+ 
+-## Current E4 continuation
++## Historical October5 E4 continuation
+ 
+ October5 branch `codex/calcify-e4-readiness`, base `29a8926d`.
+ [Focused verification](e4-verification-2026-10-05.json) and
+@@ -95,7 +105,7 @@ model and isolated prototype retain original scope; integrated compact actual
+ proof above supersedes readiness status, with retained floor still over gate.
+ Earlier scopes below unchanged.
+ 
+-## Current heap protection component
++## Historical October5 heap protection component
+ 
+ October5, 2026 UTC; branch `codex/calcify-heap-protection`, base `3ce2bdf2`.
+ [Focused verification](heap-verification-2026-10-05.json) and
+@@ -110,7 +120,7 @@ Proof published at Records `132dae9d`; [Records PR8](https://github.com/dills122
+ 
+ Hosted first Node227/229 failed missing macOS-only lock parent on Linux. Shared fixed platform lock preserves Darwin path and exclusivity; final local230/230, independent Attempt1 cycle3 Ready. Kotlin source/build unchanged; original64-test receipt retained. Supplemental correction proof published at Records `2a2abf9e`:63 remote blobs/700,463 bytes verified; combined279/4,332,894. [Final independent review](https://github.com/dills122/reef-records/blob/2a2abf9ea130636daecc2d35dc6c961b08c182f9/records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/report.md); Records PR8 draft, landing pending; actual hosted status follows [Reef PR475](https://github.com/dills122/reef/pull/475), stacked above E3 PR474.
+ 
+-## Current E3 continuation
++## Historical October5 E3 continuation
+ 
+ October5 session on `codex/calcify-planning-readiness`, base `a6ddafbb`.
+ [Current work plan](../../WORK_PLAN.md#calcify-e3-continuation--october-5-2026)
+@@ -160,7 +170,7 @@ Cap 7 exhausted; no automatic reset or further review round.
+   E2 finite 156 + seeded 128 pass; symbolic bounds only. Rate selfcheck 40 prefixes
+   and one-leg mutant rejection; E4 count/byte counterexamples rejected.
+ 
+-## Resource scope and open gates
++## Historical resource scope and open gates
+ 
+ Full matrix elapsed 474.917 seconds; correctness timing, no throughput claim.
+ Conservative pilot forecast 8,280,440,832 bytes (7.71 GiB); sampled active maximum
+@@ -175,10 +185,11 @@ preallocation reclamation. Historical failure remains immutable. Original 16 MiB
+ proposal never applied. Initial metadata and assessment errors preserved with corrections.
+ 
+ At original checkpoint, full E3 majority/stale-owner/producer-failure/committed-before-controller-ACK and
+-A10B27 certified activation remained open; current continuation above closes bounded E3.
+-Applied heap component passes separately; E4 reviewed costs/ACK membership/physical-byte/
+-calibration/supervision gates, reservation acceptance and matcher identity integration remain.
+-No full sprint, capacity, production or cutover sign-off.
++A10B27 certified activation remained open; subsequent bounded E3 proof closed those
++scoped gates. At October5 checkpoint, E4 reviewed costs/ACK membership/physical-byte/
++calibration/supervision, reservation acceptance and matcher identity integration
++remained open. Current continuation and latest empirical checkpoint above supersede
++that tasking; no production, full-path capacity or cutover sign-off.
+ 
+ ## Records and continuation
+ 
+@@ -187,5 +198,5 @@ No full sprint, capacity, production or cutover sign-off.
+ Bulk only in Records, local-only Reef provenance; no local source removal.
+ [Earlier rounds4–6 and failed default-segment run](https://github.com/dills122/reef-records/tree/ad7b60e9512907865785b3ab3723642c9d56dd86/records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-f56b30b1),
+ [original recovery/startup proof](https://github.com/dills122/reef-records/tree/cfa4217708ff0694a966e3d87acce9585010a65a/records/reef/docs/evidence/calcify-financial-sprint1/verification-2026-10-04-908c3e54).
+-[Recovery hashes](recovery.json), [active handoff](../../work/handoffs/2026-10-04-calcify-financial-sprint1-recovery.md).
++[Recovery hashes](recovery.json), [current routing and historical handoff](../../work/handoffs/2026-10-04-calcify-financial-sprint1-recovery.md).
+ October3 original raw proof lost; subsequent reruns are fresh evidence.
+diff --git a/docs/records/retained-evidence.json b/docs/records/retained-evidence.json
+index 96cc94527..b5bdf4bdb 100644
+--- a/docs/records/retained-evidence.json
++++ b/docs/records/retained-evidence.json
+@@ -1,7 +1,7 @@
+ {
+   "schema_version": 1,
+-  "updated_date": "2026-10-07",
+-  "selection_reason": "Unrelated selections/order unchanged. Historical round7 imports immutable. Bounded E3 code/live independent Ready; complete new proof published at Records ed6faadf with1358 remote blobs/53,415,268 bytes verified. Focused current summary/fixtures/profile/owners retained. Archive PR7 landing pending; no tracked source removal. Heap component independently Ready; separate216-file proof published at Records132dae9d, remote bytes verified; PR8 landing pending. Current heap summary retained. Supplemental Linux failure/correction and review cycle3 published at Records2a2abf9e; combined279 remote blobs verified, original manifest unchanged. E4 current bounded baseline/compact actual proof independently Ready; main24719-file proof published at Records87242fe0,843777692 remote bytes independently verified; PR9 draft, no tracked bulk removal. Focused current E4 summary retained; ordinary upper/capacity remain blocked. Pure Reference allocation research and independent review published at Recordsb9b0e17c; all31 supplemental blobs/5956080 bytes remotely verified, original872 namespace unchanged. October6 dated correction: financial README current scope/hash refreshed; new empirical E4 summary retained. Exact7628-file/1144093245B proof+review published/verified at Records2331d97d9f9e6af8638d6ed335adbfac743d2c03; all3journal reassemblies pass. Fresh8GiB full-cohort parity/result-only replay passes but deadline1051.73/s misses2500/s target. CPU scope wording corrected to timed load through coverage/drain, excluding later owner digest/replay. Prior unrelated rows/order unchanged; original scoped E3/768MiB/bootstrap archives remain distinct. PR10 draft; no tracked original removed. Focused independent final publication/retention receipt retained as exact copy; no inventory self-hash/circular proof. October7 PR478 follow-up: financial README adds config/digest review verification (focused53/53, exact hosted Node280/280) and explicit retention no-op; only its bytes/hash refreshed. Prior scoped measurements, pinned raw proof and unrelated selections remain unchanged. Follow-up v1 key-order rejection/rebinding regression recorded in same summary; README hash refreshed again, prior proof unchanged.",
++  "updated_date": "2026-10-09",
++  "selection_reason": "Unrelated selections/order unchanged. Historical round7 imports immutable. Bounded E3 code/live independent Ready; complete new proof published at Records ed6faadf with1358 remote blobs/53,415,268 bytes verified. Focused current summary/fixtures/profile/owners retained. Archive PR7 landing pending; no tracked source removal. Heap component independently Ready; separate216-file proof published at Records132dae9d, remote bytes verified; PR8 landing pending. Current heap summary retained. Supplemental Linux failure/correction and review cycle3 published at Records2a2abf9e; combined279 remote blobs verified, original manifest unchanged. E4 current bounded baseline/compact actual proof independently Ready; main24719-file proof published at Records87242fe0,843777692 remote bytes independently verified; PR9 draft, no tracked bulk removal. Focused current E4 summary retained; ordinary upper/capacity remain blocked. Pure Reference allocation research and independent review published at Recordsb9b0e17c; all31 supplemental blobs/5956080 bytes remotely verified, original872 namespace unchanged. October6 dated correction: financial README current scope/hash refreshed; new empirical E4 summary retained. Exact7628-file/1144093245B proof+review published/verified at Records2331d97d9f9e6af8638d6ed335adbfac743d2c03; all3journal reassemblies pass. Fresh8GiB full-cohort parity/result-only replay passes but deadline1051.73/s misses2500/s target. CPU scope wording corrected to timed load through coverage/drain, excluding later owner digest/replay. Prior unrelated rows/order unchanged; original scoped E3/768MiB/bootstrap archives remain distinct. PR10 draft; no tracked original removed. Focused independent final publication/retention receipt retained as exact copy; no inventory self-hash/circular proof. October7 PR478 follow-up: financial README adds config/digest review verification (focused53/53, exact hosted Node280/280) and explicit retention no-op; only its bytes/hash refreshed. Prior scoped measurements, pinned raw proof and unrelated selections remain unchanged. Follow-up v1 key-order rejection/rebinding regression recorded in same summary; README hash refreshed again, prior proof unchanged. October9 overnight O0D reconciliation: active financial README routes continuation to merged PR479 lifecycle/coverage work and records Records PR10 merge October7 at1419b7e0; prior dated diagnostic/proof bytes unchanged. Only this retained README bytes/hash refreshed; existing archive facts preserved. No bulk removal or standalone superseded record deletion.",
+   "files": [
+     {
+       "path": "docs/evidence/calcify-phase2-implementation/.gitattributes",
+@@ -1665,8 +1665,8 @@
+     },
+     {
+       "path": "docs/evidence/calcify-financial-sprint1/README.md",
+-      "bytes": 15844,
+-      "sha256": "b12a1d948b64eaeeffbec00f22a1701966be08e27ee4fa332877a420fc9c6bd0"
++      "bytes": 16718,
++      "sha256": "80d15595645686334b1a6c25fd9ab4b103146f7ea0ed1fc329588f61bca5a563"
+     },
+     {
+       "path": "docs/evidence/calcify-financial-sprint1/broker.compose.yml",
+diff --git a/docs/work/CALCIFY_PHASE2_IMPLEMENTATION.md b/docs/work/CALCIFY_PHASE2_IMPLEMENTATION.md
+index 020ac1141..5d98c80da 100644
+--- a/docs/work/CALCIFY_PHASE2_IMPLEMENTATION.md
++++ b/docs/work/CALCIFY_PHASE2_IMPLEMENTATION.md
+@@ -32,11 +32,33 @@ Broker acknowledgement basis: [Redpanda topic write caching](https://docs.redpan
+ Recovery diagnostic objective:1m full accepted rows, cold local-state loss, same application/changelog, observed RUNNING within120s and exact next-wave reconciliation. One corrected implementation cohort passed19.97s at767MB local state. This objective is a local diagnostic gate, not a production percentile SLO. See evidence ledger for exact cohort and excluded boundaries.
+ 
+ 
+-## Nightly qualification limits (2026-09-30)
+-
+-Current source-generation/source-UUID checks do not bind verified/output UUIDs. Review found expired verified checkpoints may reset to earliest, and verified/output recreation may reuse restored checkpoints/completed identities against different history. Both require fail-closed fixes before merge. Planned remedy: explicit verified checkpoint retention validation with reset disabled and pinned classic consumer protocol; persist generation plus names/UUIDs of source, verified and output topics; reject missing output before creation when application changelog exists; extend existing periodic identity check. Existing source-only checkpoints need explicit repair, since prior input/output UUIDs cannot be inferred. These changes are pending, not current guarantees. Simultaneous destruction of changelog and namespace, and atomic malicious cross-topic replacement, remain outside this guard's proof.
+-
+-Final local platform regression/coverage passes. Earlier actual HTTP smoke, nine-boundary RF3 fault matrix and1m-row recovery precede final candidate changes. Latest sustained hot cohort has exact3.15m outputs and10,160.50/s active covering rate but fails actual source-delivery duration310.730s versus301s maximum; remaining profiles unrun. Draft cannot merge until review defects and unchanged-candidate qualification close. [Continuation handoff](https://github.com/dills122/reef-records/blob/6b838e5287c5428c914f6577ff176c1cd03c44ec/records/reef/docs/work/handoffs/2026-09-30-calcify-phase2.md).
++## Current safety guards and qualification boundary (2026-10-09)
++
++Phase 2 merged in [PR #433](https://github.com/dills122/reef/pull/433), commit
++`1e77575a9`. Current [resolver startup](../../services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/CalcifyResolverRuntime.kt)
++pins `auto.offset.reset=none` and classic consumer protocol. Verified consumer
++retention gate rejects committed offsets outside retained bounds; missing group
++checkpoint explicitly starts at retained beginning. Startup binds or checks verified
++and output names/UUIDs against generation-scoped SQL registration and refuses
++missing output when application changelog survives. Periodic source-reader checks
++cover source UUID; these checks do not provide continuous verified/output identity
++monitoring or atomic cross-topic replacement protection. First-sight registration
++does not reconstruct earlier unregistered topic identity. Simultaneous destruction
++of namespace/changelog remains outside this guard's proof. See [current work](../WORK_PLAN.md)
++for next scope; no new broker qualification accompanies this documentation check.
++
++### Historical nightly qualification (2026-09-30)
++
++At September30 checkpoint, verified retention and verified/output identity fixes
++were pending and draft merge blocked. Those pending claims are superseded by
++merged guards above; historical test and measurement scope stays unchanged.
++Final local platform regression/coverage passed. Earlier actual HTTP smoke,
++nine-boundary RF3 fault matrix and1m-row recovery preceded final candidate changes.
++Sustained hot cohort had exact3.15m outputs and10,160.50/s active covering rate but
++failed actual source-delivery duration310.730s versus301s maximum; remaining
++profiles unrun at that checkpoint. [Original continuation handoff](https://github.com/dills122/reef-records/blob/6b838e5287c5428c914f6577ff176c1cd03c44ec/records/reef/docs/work/handoffs/2026-09-30-calcify-phase2.md).
++Merged safety fixes do not upgrade failed capacity result or transfer old RF3/
++recovery proof to later candidates.
+ 
+ ## Run namespace upgrade and coordinated replay (2026-10-02)
+ 
+diff --git a/docs/work/CALCIFY_SYSTEM_ARCHITECTURE_RFC.md b/docs/work/CALCIFY_SYSTEM_ARCHITECTURE_RFC.md
+index a96ffc01d..86c9308d8 100644
+--- a/docs/work/CALCIFY_SYSTEM_ARCHITECTURE_RFC.md
++++ b/docs/work/CALCIFY_SYSTEM_ARCHITECTURE_RFC.md
+@@ -4,6 +4,12 @@ Date: October 2, 2026. Status: **proposed, awaiting proofs and owner decisions**
+ Source baseline: `16e15340919bc9330afbbfec0f9b089115f3e57f` (master after #461).
+ No runtime implementation or accepted ADR change accompanies this RFC.
+ 
++October9 source alignment: bounded test-only E1/E3 proofs and empirical E4 now
++recorded in [financial checkpoint](../evidence/calcify-financial-sprint1/README.md).
++Finite source identity/profile gate merged in PR479; production financial
++integration, lifecycle/coverage and durable budgets remain open. RFC remains
++proposed; [current work](../WORK_PLAN.md) owns execution status.
++
+ Companions: [research / review reconciliation](../research/CALCIFY_SYSTEM_ARCHITECTURE_RESEARCH_2026-10-02.md),
+ [supplied proposals](../research/calcify-system-architecture-inputs/README.md),
+ [current Phase1/2 wiring](../CALCIFY_PHASES_OVERVIEW.md),
+@@ -121,9 +127,12 @@ settlement consumes only obligation's remaining quantity/amount. New action ID,
+ attempt ordinal or policy version cannot discharge an already settled obligation
+ again. Corrections/reversals are distinct authorized actions with explicit semantics.
+ 
+-PR #461 already supplies authoritative run to resolver lookups. Remaining first
+-slice recommendation: prohibit internal order reuse during run, enforce upstream
+-before engine acceptance, and test restore/terminal eviction. If owner needs same-
++PR #461 supplies authoritative run to resolver lookups. PR #479 implements
++opt-in finite source profile with retention0, upstream scope/amount/identity guards,
++same-run accepted-ID no-reuse and profile-bound restore. [Finite source contract](../../contracts/calcify/README.md#finite-p0-matching-source-profile-2026-10-07)
++defines exact limits; command/history/closure budgets and durable broker binding
++remain open. This partially closes P0 identity prerequisite; full lifecycle and
++financial integration proof remain required. If owner needs same-
+ run reuse, introduce explicit acceptance incarnation in authoritative outcomes and
+ trade references, with temporal/sequential resolution. No guessing from latest row.
+ 
+@@ -621,8 +630,12 @@ history. [DTCC CNS](https://www.dtcc.com/products-and-services/clearing-settleme
+ 
+ ## 10. Proof plan and stop conditions
+ 
+-Proofs below are **unrun** for new financial kernel. Earlier resolver tests are
+-prerequisite evidence, not substitute. Each proof is a small reviewable delivery;
++Production financial integration proofs below remain **unrun**. Bounded test-only
++E1 kernel/oracle/reconstruction and E3 RF3/EOS recovery proofs passed; empirical
++E4 measured deadline target miss. [Focused checkpoint](../evidence/calcify-financial-sprint1/README.md)
++owns exact scope and immutable originals. These and earlier resolver tests are
++prerequisite evidence, not production adoption or full P0–P4 qualification.
++Each proof is a small reviewable delivery;
+ agree its fixtures/bounds before implementing, retain failed attempts, then decide
+ next slice. Pure kernel work can use complete fixtures while source contracts close.
+ 
+@@ -690,8 +703,11 @@ Choose required headroom from outage/SLO, not arbitrary linear partition scaling
+ Use existing throughput ledger and harnesses where possible. Source-injected tests
+ can isolate financial bottleneck; paired orders need roughly20k commands/s for10k
+ trades/s but actual fanout varies. A producer that misses target duration does not
+-qualify by draining later. Historical10.16k resolver run failed frozen gate; no new
+-financial rate measured. [Research baseline](../research/CALCIFY_SYSTEM_ARCHITECTURE_RESEARCH_2026-10-02.md#4-honest-capacity-baseline).
++qualify by draining later. Historical10.16k resolver run failed frozen gate.
++October6 test-only E4 measured63104/60s=1051.73settled/s versus2500/s target;
++eventual150000 settlement parity does not pass deadline target. Production/full-
++path financial capacity remains unqualified. [Financial diagnostic](../evidence/calcify-financial-sprint1/README.md#latest-empirical-checkpoint--october6-utc),
++[research baseline](../research/CALCIFY_SYSTEM_ARCHITECTURE_RESEARCH_2026-10-02.md#4-honest-capacity-baseline).
+ 
+ If diagnosed financial commit/state/recovery or total operational cost warrants
+ authority comparison, compare same P1 semantics/ordered inputs with Postgres transaction
+@@ -703,7 +719,7 @@ Temporal require a measured fit gap; none is automatic next dependency.
+ ### 10.1 First experiment sprint
+ 
+ **Proposed timebox:** ten working days; sequence estimate, not a delivery guarantee.
+-**Status:** [Current work checkpoint](../WORK_PLAN.md#calcify-e4-continuation--october-5-2026)
++**Status:** [Current work checkpoint](../WORK_PLAN.md#calcify-finite-p0-source-gate--october-7-2026)
+ and [focused verification](../evidence/calcify-financial-sprint1/README.md) own execution status;
+ E0 preparation history remains linked from evidence. Acceptance gates below unchanged.
+ Decision owner: Reef project owner. Planning checkpoint:
+diff --git a/docs/work/handoffs/2026-10-04-calcify-financial-sprint1-recovery.md b/docs/work/handoffs/2026-10-04-calcify-financial-sprint1-recovery.md
+index bdb7189ac..3a17acab3 100644
+--- a/docs/work/handoffs/2026-10-04-calcify-financial-sprint1-recovery.md
++++ b/docs/work/handoffs/2026-10-04-calcify-financial-sprint1-recovery.md
+@@ -1,13 +1,35 @@
+ # Handoff: Calcify sprint1 bounded proof and remaining qualification
+ 
+-October5 UTC / October4 local, 2026. Review7 closes guard P1; implemented
+-correctness scope passes. Historical E3/E4 gates were open; current continuation below
+-owns new bounded E3 acceptance. E4 remains open. [Product PR473](https://github.com/dills122/reef/pull/473) merged at
++## Current continuation — October9, 2026
++
++[Current work](../../WORK_PLAN.md#calcify-finite-p0-source-gate--october-7-2026)
++owns execution status. Reef473/474/475/477/478/479 and Records6–10 merged;
++Records10 landed October7 at `1419b7e0`. Bounded E1/E3 correctness and recovery
++proofs remain test-only. October6 empirical E4 completed150000 settlements and
++result replay but missed deadline target:63104/60s=1051.73/s versus2500/s.
++[Latest verification](../../evidence/calcify-financial-sprint1/e4-verification-2026-10-06.json)
++retains failed4GiB attempts and exact scope; no new managed-restart, SQL/API or
++production capacity qualification follows.
++
++PR479 supplies finite matching identity/profile/snapshot gate. Next task:
++versioned lifecycle/coverage with execution and zero-trade membership, then durable
++finite command/history/closure budgets and restore. [Source contract](../../../contracts/calcify/README.md#finite-p0-matching-source-profile-2026-10-07)
++defines implemented slice and remaining durable binding limits. Admission/runtime,
++atomic SQL/read and funding/repair/restart follow reviewed source gates.
++Reservation policy and financial authority remain proposed. Historical review
++counts below stay closed; new session does not reopen exhausted proof reviews.
++
++## Historical checkpoint — October5 UTC / October4 local
++
++Review7 closes guard P1; implemented
++correctness scope passes. E3/E4 gates were open at original checkpoint;
++October5 continuations below record later bounded acceptance. E4 was still open.
++[Product PR473](https://github.com/dills122/reef/pull/473) merged at
+ `a6ddafbbae750693e227985f054be2d26716ae84`; originating branch
+ `codex/calcify-sprint1-experiments`, base `97924e15642826a687db935a219d7927ae649ac8`.
+-Required CI passed. Records PR6 remains open; pinned proof commits remain published.
++Required CI passed. Records PR6 was open at this checkpoint; pinned proof commits remain published.
+ 
+-## October5 E4 continuation
++## Historical October5 E4 continuation
+ 
+ Branch `codex/calcify-e4-readiness`, base `29a8926d`. [Current work](../../WORK_PLAN.md#calcify-e4-continuation--october-5-2026)
+ owns latest status. Attempt1 bounded diagnostic code: financial97/97, NodeCI274/274,
+@@ -49,7 +71,7 @@ retained shape and complete verification/recovery have new supported admission
+ model. Compact observer prototype passed independent bounded review and12212 checks;
+ now integrated with whole-code acceptance; current compact actual bounded qualification Ready. No production financial authority or reservation decision.
+ 
+-## October5 heap protection continuation
++## Historical October5 heap protection continuation
+ 
+ Branch `codex/calcify-heap-protection`, base E3 checkpoint `3ce2bdf2`.
+ Applied test-harness heap component: financial64/64, exact NodeCI230/230;
+@@ -63,7 +85,7 @@ producer/observer/resource supervision through restore. No capacity/production c
+ 
+ Hosted first Node227/229 failed missing macOS-only lock parent on Linux. Shared fixed platform lock preserves Darwin path and exclusivity; final local230/230, independent Attempt1 cycle3 Ready. Kotlin source/build unchanged; original64-test receipt retained. Supplemental correction proof published at Records `2a2abf9e`:63 remote blobs/700,463 bytes verified; combined279/4,332,894. [Final independent review](https://github.com/dills122/reef-records/blob/2a2abf9ea130636daecc2d35dc6c961b08c182f9/records/reef/docs/evidence/calcify-financial-sprint1/heap-ci-correction-2026-10-05-3bf45160ebfa/review/cycle3/report.md); Records PR8 draft, landing pending; actual hosted status follows [Reef PR475](https://github.com/dills122/reef/pull/475), stacked above E3 PR474.
+ 
+-## October5 E3 continuation
++## Historical October5 E3 continuation
+ 
+ Active clean-baseline worktree `/Users/dsteele/.codex/worktrees/8c6f/reef`, branch
+ `codex/calcify-planning-readiness`, base `a6ddafbb`; primary checkout preserved.
+@@ -133,7 +155,7 @@ no DB integration claim. Frozen20cases/52inputs;300seeded traces/19,200prefixes.
+ Symbolic E2finite156+seeded128 pass. Earlier timeout/count/byte/bounds/identity/
+ staging fixes retained; original budget-abort never relabeled passing.
+ 
+-## Next qualification work
++## Historical qualification tasking — superseded by current continuation
+ 
+ 1. Land reviewed E3 delivery and bounded heap component; proof/source scopes above
+    stay separate. E3 broker-majority/fencing/producer/crash/cut acceptance passes.
+@@ -143,7 +165,8 @@ staging fixes retained; original budget-abort never relabeled passing.
+ 3. Resolve reservation-policy acceptance and matcher identity integration. No production
+    behavior, authority, accepted ADR or API/schema change currently shipped.
+ 
+-Use [work plan](../../WORK_PLAN.md), RFC sections6/8/10.1, focused source/tests.
++Task list above records October5 gaps, not current developer dispatch. Use
++[work plan](../../WORK_PLAN.md), RFC sections6/8/10.1, focused source/tests.
+ Supervised proof helpers and all commands archived; `.planning/sprint1-proof-bounded`
+ retained locally. Java21 `/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home`.
+ Historical cap7 stays exhausted; current session separately authorizes bounded

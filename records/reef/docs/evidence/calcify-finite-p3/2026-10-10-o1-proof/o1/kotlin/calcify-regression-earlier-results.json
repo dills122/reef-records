@@ -1,0 +1,182 @@
+[
+  {
+    "name": "com.reef.platform.calcify.ResolverConsumerGateTest",
+    "tests": "6",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyVerifiedVisibilityObserverTest",
+    "tests": "6",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialBrokerProbeTest",
+    "tests": "4",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyReceiptBatchTest",
+    "tests": "3",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialKernelTest",
+    "tests": "14",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyExtractorPollBatchTest",
+    "tests": "4",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.FiniteLifecycleCaptureRuntimeTest",
+    "tests": "4",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialBootstrapProbeTest",
+    "tests": "10",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest",
+    "tests": "11",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialPartitionCutTest",
+    "tests": "13",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialOracleTest",
+    "tests": "12",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialHeapGuardTest",
+    "tests": "27",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyContractTest",
+    "tests": "3",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialCanonicalLeafOwnerTest",
+    "tests": "4",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.FiniteLifecycleCaptureProcessorTest",
+    "tests": "12",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyReceiptStoreTest",
+    "tests": "2",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.FiniteLifecycleContractTest",
+    "tests": "5",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyVerifierBatchTest",
+    "tests": "3",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialAckJournalTest",
+    "tests": "8",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifySourceRegistrationTest",
+    "tests": "2",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyRunNamespaceTest",
+    "tests": "8",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.BoundedSourceAcknowledgementsTest",
+    "tests": "4",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyResolverProcessorTest",
+    "tests": "10",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialCommittedCutTest",
+    "tests": "3",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.ResolverTopicDurabilityTest",
+    "tests": "4",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyPipelineConfigTest",
+    "tests": "3",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.ActualMeasureCompletionTest",
+    "tests": "2",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.MatchContextResolverTest",
+    "tests": "5",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.CalcifyActualFullFactObserverTest",
+    "tests": "5",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "com.reef.platform.calcify.financial.FinancialRateReferenceTest",
+    "tests": "6",
+    "failures": "0",
+    "errors": "0"
+  }
+]

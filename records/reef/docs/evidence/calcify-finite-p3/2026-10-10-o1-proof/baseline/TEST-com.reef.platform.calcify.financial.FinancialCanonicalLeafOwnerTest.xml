@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialCanonicalLeafOwnerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-10T03:00:37.189Z" hostname="Dylans-MacBook-Pro.local" time="0.017">
+  <properties/>
+  <testcase name="constructorWriteReadAndMaterializedCopiesCannotAliasRetainedFacts()" classname="com.reef.platform.calcify.financial.FinancialCanonicalLeafOwnerTest" time="0.003"/>
+  <testcase name="leafNullDeletesRootNullRemainsAndClearDropsEveryRetainedLeaf()" classname="com.reef.platform.calcify.financial.FinancialCanonicalLeafOwnerTest" time="0.003"/>
+  <testcase name="escapedKeysNestedNullsAndInsertionOrdersMatchCanonicalLegacyBytes()" classname="com.reef.platform.calcify.financial.FinancialCanonicalLeafOwnerTest" time="0.004"/>
+  <testcase name="canonicalDigestPreservesGenesisEmptyCategoriesAndExactRootTypes()" classname="com.reef.platform.calcify.financial.FinancialCanonicalLeafOwnerTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

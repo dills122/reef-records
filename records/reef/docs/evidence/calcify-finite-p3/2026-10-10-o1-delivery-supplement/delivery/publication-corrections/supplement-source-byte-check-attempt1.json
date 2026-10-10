@@ -1,0 +1,15 @@
+{
+  "attempt1SourceCommit": "19ebc643c53e89ff85bb0d497a5b3406b97194db",
+  "byteMismatchCount": 1,
+  "mismatches": [
+    {
+      "path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/records-original-patch-whitespace.log",
+      "rawBytes": 69431,
+      "committedBytes": 69421,
+      "rawSHA256": "f6c79afa8c98d836354b8209e6954815f80fdab2ee97121fb143fa4f3c066683",
+      "committedSHA256": "a4c1d889af7649ccb64e859cdd5910bef1a6ea4efc25574415ca159a0e8c479d"
+    }
+  ],
+  "cause": "Git text normalization on add; exact raw source bytes must be committed via no-filter plumbing before archive",
+  "archiveImported": false
+}

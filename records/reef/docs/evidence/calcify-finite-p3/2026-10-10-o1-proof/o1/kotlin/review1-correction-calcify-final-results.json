@@ -1,0 +1,283 @@
+{
+  "tests": 213,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "reports": [
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.ActualMeasureCompletionTest.xml",
+      "sha256": "6ad2a8030cccd7ed2b97457cf58702592344340fb5de061ea0920422f2f7e8b1",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.098
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.BoundedSourceAcknowledgementsTest.xml",
+      "sha256": "198b65d0b66cf23932c8eab12d246ce952abb1b435e7d079e0910b87970080d6",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.077
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyActualFullFactObserverTest.xml",
+      "sha256": "e8d857155828e16124a466d524d9522b7ae1a82659c009fda516eadc25c6f87e",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.373
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyContractTest.xml",
+      "sha256": "32f6e827c995d0b63b8bb8e9492f9da123260871947289516878b1bc4a970e62",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.014
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyExtractorPollBatchTest.xml",
+      "sha256": "4793bb4ee317c6753e7432cd28d367b7f3ed0de1b2eda2202ba08398d6d6fdd4",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.079
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyPipelineConfigTest.xml",
+      "sha256": "57f8dea4288711b6fbee57335790a4540a06f1a75835598e480c817c8e002fd5",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.003
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyReceiptBatchTest.xml",
+      "sha256": "09cf4cd84746a06892fc2513a7e7849699eb895405b30d72bcc7f7c2b2a99219",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.007
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyReceiptStoreTest.xml",
+      "sha256": "5b993322ba419d6fb389379015f1e17f2c3d51299285f5ad10dcd6720a1edda9",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.002
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyResolverProcessorTest.xml",
+      "sha256": "e2ab2aaf710a4809942bbf1e06ec0a3170c8bcc728e386b50000d0b24cf5b741",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 1.879
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyRunNamespaceTest.xml",
+      "sha256": "0ed3841059521a8e6144875e49a1c2c7b3331c2ca266b92b93daa453a54bcf9c",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.794
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifySourceRegistrationTest.xml",
+      "sha256": "94c7c731e8091e5b7ee8302fd4eaec37eb947579faec3c244986c5bae2c02c50",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.002
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyVerifiedVisibilityObserverTest.xml",
+      "sha256": "c224cf29a40154d9ffa220a01dfcfe5ce83cf1f2baa70293ecd14c62ffc1c972",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.003
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.CalcifyVerifierBatchTest.xml",
+      "sha256": "e90f50ac4ff824b04017ec24f96d3552c891be7096bcb408abe57e75245f677f",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.005
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.FiniteLifecycleCaptureProcessorTest.xml",
+      "sha256": "6a3d9b7f72651c073e215736703442f5eff8631a32815483c880a4341776a7d0",
+      "tests": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 1.271
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.FiniteLifecycleCaptureRuntimeTest.xml",
+      "sha256": "13986bcb02f69c81a0f02ae4a54d0701ff7f88d9008c7c427e589012d030593e",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.183
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.FiniteLifecycleContractTest.xml",
+      "sha256": "8d3b7819ff49ab284f4ebbe53e3df42e47d1e62288207ae892e9272e2c39944a",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.129
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.MatchContextResolverTest.xml",
+      "sha256": "e6ba336a3186b3c1dc77c22144de4fff34b6556aa90250f017975c277f0fd1d7",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.045
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.ResolverConsumerGateTest.xml",
+      "sha256": "1bb9d03fbd727b6425bae9f70ffb0a40f5dcb4b38a85b7b990688fed651e310d",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.006
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.ResolverTopicDurabilityTest.xml",
+      "sha256": "8345045fa931965962f0f24fab5395365d5f8c65c27c3718e84074fa1fd330da",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.002
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialAckJournalTest.xml",
+      "sha256": "90f64ce499fdb1cb78f0a56da0db8f6d7e2489ecbd8d4693e14bd16f79c0c32c",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 2.91
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialBootstrapProbeTest.xml",
+      "sha256": "4fd112810d4205c8ed18c984275cc46463a3cf96c603b2792e04b2df625a75cb",
+      "tests": 10,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.056
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialBrokerProbeTest.xml",
+      "sha256": "110c282ee59ccc10c5d11fe6bbd4eddf36b443ebcf8c5e59e59aece44e62b35f",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.099
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialCanonicalLeafOwnerTest.xml",
+      "sha256": "ca72c33bfe7f21aa46a54c24dd404c2f5bdd94a6c9fb2408f5fecd6378152123",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.013
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialCommittedCutTest.xml",
+      "sha256": "53657333e41ff1e7ef2c8b2e2e92bb8949e086ca143fcfe1d8775f9ef8e5d4e4",
+      "tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.082
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialHeapGuardTest.xml",
+      "sha256": "a2bf12875e997121e11607da55fcc9ecd8e21c45dbeb05c5d1e5e1bc2c904f50",
+      "tests": 27,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.097
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialKernelTest.xml",
+      "sha256": "287c49a0d696c00f66382688e53ea9fe30def58cc040703706a1235e79f149c8",
+      "tests": 14,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 2948.568
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialOracleTest.xml",
+      "sha256": "523678cc7314efe4d18a70cada533e6c84f6ff7173817554bd73101d6a0f30a0",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 22.248
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialPartitionCutTest.xml",
+      "sha256": "ce8524032dab3bf2c30ece860f6962da6a5e8a28ef6fd0523e4102636fdbd22c",
+      "tests": 13,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.052
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialPhysicalInventoryTest.xml",
+      "sha256": "6176270c0adb1bcdc241756c343f064f5cff21c6ac884e12e4138479b5723a68",
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 1.449
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.financial.FinancialRateReferenceTest.xml",
+      "sha256": "cd5513d88e5a4b55c4ce822affee64a3ae6dc7c3a1ae1f46494540978aa73b5f",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 1067.989
+    }
+  ],
+  "reportTotalSeconds": 4048.5350000000003,
+  "exit": 0,
+  "log": "gradle-review1-correction-calcify-final.log",
+  "sourceAggregateSha256": "0d01e5fa0b4f8efc0f2a21a1a7bab906951701286b04cf642ce538ed373ea26c",
+  "elapsedReportedByGradle": "1h 7m 35s"
+}

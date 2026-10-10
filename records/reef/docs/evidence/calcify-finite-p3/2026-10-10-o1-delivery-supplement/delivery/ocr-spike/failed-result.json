@@ -1,0 +1,723 @@
+{
+  "status": "failed",
+  "llm": {
+    "model": "openai/gpt-5.4-mini"
+  },
+  "message": "Review failed: 0 finding(s); 48 of 48 selected item(s) failed.",
+  "summary": {
+    "files_reviewed": 48,
+    "comments": 0,
+    "total_tokens": 1863,
+    "input_tokens": 1721,
+    "output_tokens": 142,
+    "elapsed": "2s",
+    "budget_exceeded": true
+  },
+  "tool_calls": {
+    "total": 0,
+    "by_tool": {},
+    "failure": 0,
+    "failure_by_tool": {},
+    "failure_details": []
+  },
+  "comments": [],
+  "groups": [
+    {
+      "label": "calcify contract schema and generated runtime types",
+      "files": [
+        "contracts/calcify/finite-lifecycle-source-v1-manifest.json",
+        "contracts/proto/calcify.proto",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/Calcify.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleBatchStateV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleBatchStateV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleCaptureV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleCaptureV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleOrderStateV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleOrderStateV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleStateV1.java"
+      ]
+    },
+    {
+      "label": "calcify contract schema and generated runtime types",
+      "files": [
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleStateV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleSuffixV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleSuffixV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCancelV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCancelV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCommandKindV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDependencyV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDependencyV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDispositionV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberIdV1.java"
+      ]
+    },
+    {
+      "label": "calcify contract schema and generated runtime types",
+      "files": [
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberIdV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberKindV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleModifyV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleModifyV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleOrderTerminalV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleRevisionIdV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleRevisionIdV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleSubmitV1.java"
+      ]
+    },
+    {
+      "label": "calcify contract schema and generated runtime types",
+      "files": [
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleSubmitV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/OrderLifecycleCommandV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/OrderLifecycleCommandV1OrBuilder.java"
+      ]
+    },
+    {
+      "label": "matching-engine calcify lifecycle handling",
+      "files": [
+        "services/matching-engine/internal/app/calcify_source_identity_test.go",
+        "services/matching-engine/internal/app/calcify_source_profile.go",
+        "services/matching-engine/internal/domain/calcify_lifecycle.go",
+        "services/matching-engine/internal/streamdirect/calcify_lifecycle_checksum_test.go",
+        "services/matching-engine/internal/streamdirect/calcify_lifecycle_config_test.go",
+        "services/matching-engine/internal/streamdirect/calcify_lifecycle_test.go",
+        "services/matching-engine/internal/streamdirect/config.go",
+        "services/matching-engine/internal/streamdirect/processor.go",
+        "services/matching-engine/internal/streamdirect/runner.go"
+      ]
+    },
+    {
+      "label": "platform-runtime calcify capture implementation and tests",
+      "files": [
+        "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessor.kt",
+        "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntime.kt",
+        "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleContract.kt",
+        "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessorTest.kt",
+        "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntimeTest.kt",
+        "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleContractTest.kt"
+      ]
+    }
+  ],
+  "warnings": [
+    {
+      "file": "contracts/calcify/finite-lifecycle-source-v1-manifest.json",
+      "message": "stopped dispatch: used 1863 tokens + group estimate 896928 = projected 898791 exceeds budget 500000",
+      "type": "token_budget_reached"
+    }
+  ],
+  "session_id": "c6938d84-e1ee-49e5-a906-fcb7aa75614c",
+  "manifest": {
+    "schema_version": "ocr.run-manifest/v1",
+    "run_id": "c6938d84-e1ee-49e5-a906-fcb7aa75614c",
+    "operation": "review",
+    "terminal_state": "failed",
+    "repository": {
+      "identity_sha256": "6e5979b54b60528d938f9d635f985c416544a3028ef163789f6a5ba2e1fdb2cd"
+    },
+    "input": {
+      "mode": "range",
+      "requested_from": "51cd90eee43d257bad4f973fc9bd81f273bb4ef7",
+      "requested_head": "1dee92a64cc86e58ae5fcff98f9f6118533e2bfd",
+      "resolved_base": "51cd90eee43d257bad4f973fc9bd81f273bb4ef7",
+      "resolved_head": "1dee92a64cc86e58ae5fcff98f9f6118533e2bfd",
+      "exact_range": "51cd90eee43d257bad4f973fc9bd81f273bb4ef7..1dee92a64cc86e58ae5fcff98f9f6118533e2bfd",
+      "source_artifact_sha256": "15a757c5474777b4c05d0478445132bbb804e97358c25a2d8cbf6671334c086b"
+    },
+    "execution": {
+      "ocr_version": "v1.12.13",
+      "model": "openai/gpt-5.4-mini",
+      "configured_concurrency": 2,
+      "rule_config_sha256": "3785fd2143d13af9c26dc2f9c4ba52be846b7c980a9442cff45aafc0d1bd81ab",
+      "runtime_config_sha256": "711ed844a7806665cde917e814eb50238536bdd6879aa1e60a996c5f410d7608"
+    },
+    "coverage": {
+      "selected": [
+        {
+          "item_id": "02a099ceae2d3571742c75fc74fa5e895d4ee92ae0710a52831acaed19c64e04",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleSubmitV1.java",
+          "fingerprint": "1c8ccefef9a2fc30c1f2b622876bc1c55f4daf5eea71b115da1b5d4c9b44abf4"
+        },
+        {
+          "item_id": "073da0cea55affb59dd0638bb4addefa832da88b82b5d93221d54edea3951f11",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDependencyV1.java",
+          "fingerprint": "063e9672ad4edbccd4780a29393fcf2704d9033be2d7da8b33f7a22b844b7236"
+        },
+        {
+          "item_id": "09eeea48071c79866b15313616e6fbd0c7d3b3885873bfbcce15ee243cb84063",
+          "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntimeTest.kt",
+          "fingerprint": "6a60636f78bfbb91861470365851df20723c0159bb810fc54b56359a1d4e4ade"
+        },
+        {
+          "item_id": "11412aa4e4aecc3ecc2ed364a56bc1544f35198b1c5aef4d335d5e5ba39f08b2",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberKindV1.java",
+          "fingerprint": "8f0c8ade9e0377c8b50bbcf3f208f4e742a146809f13bcfe0c4d0eadea155076"
+        },
+        {
+          "item_id": "12d8810c85cc7745b3eb1c36be367db0d0a2f277024d97c38bf1e86df013aadd",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleCaptureV1.java",
+          "fingerprint": "5e43c352f3d630b51d292b23e0d30208490b7fa2bbaff3af502ff785236fa024"
+        },
+        {
+          "item_id": "158694784a9f6ea475e625c8ecc1b0d45c8a0648f541bc4b03d660840cf2637a",
+          "path": "services/matching-engine/internal/app/calcify_source_profile.go",
+          "fingerprint": "3f2d92e08e58128f50463b3e69ca183b8df3aa5e3eb82f0a79f7e394f3aa9ff5"
+        },
+        {
+          "item_id": "17e877928d0cd99beb2d9bb84969a0a64f2daa62ec92583b3e3c93f78fcfc7ac",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/OrderLifecycleCommandV1OrBuilder.java",
+          "fingerprint": "83f8546405d1f7ef77b29f9d34a4ebdf1c3194d07b7989766d862b99924bc67e"
+        },
+        {
+          "item_id": "1b5a60d0a364257323adcfa7f173e4f565a94d97455e4069a871a9253b51b33a",
+          "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleContractTest.kt",
+          "fingerprint": "5226d107321c5b807cbff61951d9a681ab2fc3d22b663f28e10d9e42cab54a75"
+        },
+        {
+          "item_id": "1c1bc2b39d9552c5dab6a097dfa3b3892acbe1a25fff2726c67b582309d6d30c",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/Calcify.java",
+          "fingerprint": "26a5e3a61fcf2239337c0e9a7cb85f89c5cb983d29b7ac47219066c69a34115d"
+        },
+        {
+          "item_id": "22b7fcba88c09e7bee04eabdc7ccbbe039269051c6e67a7c268366a4a29014c8",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleOrderStateV1OrBuilder.java",
+          "fingerprint": "b10be6c07490542b485f97e08714f75dc43928daf74c48118fb354173a51f02b"
+        },
+        {
+          "item_id": "28c92f6b5ec7dbbf850be239f63268de24304f02fc6025043b82d59b0cf33511",
+          "path": "services/matching-engine/internal/streamdirect/calcify_lifecycle_checksum_test.go",
+          "fingerprint": "e70745813557a726c31242de7d46a07283c6030e533a10202ed0f63eae324445"
+        },
+        {
+          "item_id": "2a0fca85215f73954cd5c2453218aaeccf66caea5da72d8e91d318a073e936c5",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleRevisionIdV1OrBuilder.java",
+          "fingerprint": "ef7bb9e7d17ecb905b32a9fc2d51f82794a8815d97ff7d2066c4b976835e133c"
+        },
+        {
+          "item_id": "31435b726173ee2f2601b3e0c7f6ea9c7f545e2bd049182c6dfc987e1d09e6ad",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberV1OrBuilder.java",
+          "fingerprint": "adb2ba18fb8b55c949a447ae78bb7918b1e9e8c96374ed2f933ff29d0609379b"
+        },
+        {
+          "item_id": "528acbc3e4db4a3af5d67a9b6737867829b959d084972c8a5de68218545e8fa3",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleSuffixV1.java",
+          "fingerprint": "a531ba11188d8cf98f632eab4d6bfdd4fdbaa415c46a4a3cafdf94a9816aec7c"
+        },
+        {
+          "item_id": "5417ce959ac7f2d4ae34560d33cec0552e45c90177f5adac9e7aa92c74d9b563",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberIdV1.java",
+          "fingerprint": "c1b884bc29a0bbe23301da7ebeee4a843f40976fefdabdfb8c76ff9b1a8e1ce9"
+        },
+        {
+          "item_id": "5783083ae5af354999f8f6b26b5fe848d9304b7d941248a2651cd96df3b2da29",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCommandKindV1.java",
+          "fingerprint": "4f0947153dcac779831a8a481f1a66f935e56f89ba8d0dec3790f7709bb975b1"
+        },
+        {
+          "item_id": "57dc59e7a7876f321291eb86c55b9585813d52536236686e835cb8c288a242f2",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleStateV1.java",
+          "fingerprint": "b33443a17cafb295be2c9a69b4adb8f801599292258fc7d0cf0af0e29505bee3"
+        },
+        {
+          "item_id": "5c4de0d0ca55da0826c2909488582c90d73540b554f350b4c8588de8047762e8",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleBatchStateV1.java",
+          "fingerprint": "d6b40857c445bdabc0f0e2fb4a7fae65863650ef79ec2ef7938301b1d612a49b"
+        },
+        {
+          "item_id": "62c175dbb41c8e25383eb102cf7d2d27fd9b5747eee7b09f7998ee0e90037f76",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleOrderStateV1.java",
+          "fingerprint": "af1a3fad59dd29277e7e8053785e6d58dcdac3569e024dc8922cf3f03524f003"
+        },
+        {
+          "item_id": "67be1f72bb2934b4abef1ef8941677fa8b2a1c8d45965ecf8c89dfbc418967e4",
+          "path": "services/matching-engine/internal/streamdirect/calcify_lifecycle_config_test.go",
+          "fingerprint": "cfd72d50cba905ce0517380b14256e349f27f88028453dc1902336da5d84ee39"
+        },
+        {
+          "item_id": "6d51c41a05c65820495209dd6b2dd9a56ef6cd519aab06cf159026f639acebdd",
+          "path": "services/matching-engine/internal/streamdirect/processor.go",
+          "fingerprint": "b6b10eae01fb735c61e27288a763bf59db53a6bb522dec99adac1543aef2ec26"
+        },
+        {
+          "item_id": "6d79705a63c9949d8674793d8cdaaa1d52959860a75b08d4c0519f8083fc3e1a",
+          "path": "services/matching-engine/internal/streamdirect/calcify_lifecycle_test.go",
+          "fingerprint": "aa3a93a263d2df3e212f8dc97549bb38a0ffcca68560133f96eb2aa6d94840b1"
+        },
+        {
+          "item_id": "781a878841b3750190a049fef10c49ddeeaabc38b0b173518280190c6f4e2b59",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleSuffixV1OrBuilder.java",
+          "fingerprint": "ea157ae836f631ed05819bb12032a48f6b9b691decac7fcde4215fe76b908dd0"
+        },
+        {
+          "item_id": "7b798ee3c6916eb31c44882a20a1a267d876f5d383af547f48a0908a7b9f7f01",
+          "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessorTest.kt",
+          "fingerprint": "f6f79bb04338768830673a7691f746241e8dc1ae62656c38e0b7b7b7f2bdd73a"
+        },
+        {
+          "item_id": "7d2e16c41baf133ce34cb6b2390928817a2ff71dba73d78aa1300eb34fb17ca0",
+          "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleContract.kt",
+          "fingerprint": "2300411e946e872c12b9a62c4eb9d983b937dd9c3183991624d26637eac198d2"
+        },
+        {
+          "item_id": "80cb09f32899565b6ad8de69e9e1de08e9916edab03b5c507dc2f8a824a40fa3",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleModifyV1OrBuilder.java",
+          "fingerprint": "6cbb132937b77cf5c37d7eed15035f790bd8515094a4b4702e7bc7becfafbac2"
+        },
+        {
+          "item_id": "813da8a2d6ee9144d812f17ded9a2290b0f5f797727bee33a17fcfeb2f906564",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleRevisionIdV1.java",
+          "fingerprint": "854a5348314f6b49edfd9b7a79c3c543d11fa2f0baa934ba59ad524e83a4db3f"
+        },
+        {
+          "item_id": "8781c17639acf0f3620d9eb861db50ab08d6a35b64ee8847c5de3c48f2fbaaf0",
+          "path": "services/matching-engine/internal/app/calcify_source_identity_test.go",
+          "fingerprint": "7d84b496dd4970e1f66aa070b94502fbe558fc483af3e9e44bc37fde34b5c1fb"
+        },
+        {
+          "item_id": "920a42ee30043cc78db65d7b08a1edf1c49d88cd79a9365a363064a9d5f49f7b",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/OrderLifecycleCommandV1.java",
+          "fingerprint": "85f914eab799e8674e21ec1fa385da743f6e131dec807f16b0931a093b14d321"
+        },
+        {
+          "item_id": "94d4999d71b7498aa366dde86c2e980f042c88b5cbff8b24aa803cbe676392bb",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleStateV1OrBuilder.java",
+          "fingerprint": "25f0b36be82ea2a90d7f35a7807159f043e73255da54ecb9ab0fc5ab5b737043"
+        },
+        {
+          "item_id": "9a35cbc4a66be9eb0baab6ef6ceacbbec185be585f426f6f2ffb5693315d68f5",
+          "path": "services/matching-engine/internal/streamdirect/config.go",
+          "fingerprint": "2e639bf04607eed4d57364dae148e053a53472d54f54f97e591d47348f7164b8"
+        },
+        {
+          "item_id": "a3920a630917b145863f0a7073eac8429087ddab73d656b1f943df0a62b53c47",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCancelV1OrBuilder.java",
+          "fingerprint": "173a15272129eea6c2500f70285d51be4bb02e680c0383618291867bc153c2de"
+        },
+        {
+          "item_id": "ab80f188827659883622c05fb3eb34db047bf8f9892448e2a10459f06fb748cb",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCancelV1.java",
+          "fingerprint": "e138589c4c3ae50dbc84e54d18185ea540bd602d9535ad5f8ac889e9caf21a04"
+        },
+        {
+          "item_id": "b44d9cfe515cc1741c3d597d4ab8dd59c61fa0b41e7df3065f070c1327255f54",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleModifyV1.java",
+          "fingerprint": "6812317d21ddf7fb09990d6efa60a0e3a30a1f9671e64d5975e7a0b4489e05c4"
+        },
+        {
+          "item_id": "b4ae382a6b07eda2377b8a42f78d5c7076a218beebe59bbc75edce0953eac4bb",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDispositionV1.java",
+          "fingerprint": "f5a40ba0b6251d99be2c81a5a2e6cf3aebe2b4b98f7d579d9ff93c8c8ecd8d45"
+        },
+        {
+          "item_id": "b7223734c6d0bd3ad4731149ba924116ce4ec7e092ce8c3877ecdae80b2140a2",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleCaptureV1OrBuilder.java",
+          "fingerprint": "ae90581e101ec3ff3125cae691dce5844a15374b6ded39d6bbeb7f61e1ad82ae"
+        },
+        {
+          "item_id": "c1c50b6dca0ec424d8933946feabc246bfad535c4d97b7c287edaf8e6e963dcb",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberIdV1OrBuilder.java",
+          "fingerprint": "259338ea285120896eb531da629712c00eec55ad1adb60420ef21945867df323"
+        },
+        {
+          "item_id": "c6effffc93ebbf66f3474a68f5051ef5b8522454c4fad285f535e5c9d595438f",
+          "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessor.kt",
+          "fingerprint": "e5adffbe531609928c0244a8c0146bb550726837476a6a3d32b479eea29c754e"
+        },
+        {
+          "item_id": "cdd2cf6a2be03d82ef2ac1af4b75294645ecf7bbf2a02054886384db9d48390a",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleSubmitV1OrBuilder.java",
+          "fingerprint": "c731628f941522d66d0d54140ec20467e49631e9ee6a8369c40f8180d18efdee"
+        },
+        {
+          "item_id": "cf1e69dcedb6452e010bc13ec23bfc5d528a87abad5f228bb88c1ec353d201b2",
+          "path": "services/matching-engine/internal/domain/calcify_lifecycle.go",
+          "fingerprint": "05ea61ffc3908981c294dfb8db59235ea5d5c33efdf27b9c8f664cf4fbbdbeb2"
+        },
+        {
+          "item_id": "d8a5abdfcfb64009167010b38cba7c6530a1d3e24d364df343f1cdd3fae21ac1",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberV1.java",
+          "fingerprint": "34ea99e2f114385f5200843127d694c5a68eeef4b3a1207db76ac1b1410aae5f"
+        },
+        {
+          "item_id": "dc30e34884b44006b318be9d65a607d82680e42d287b132f57dea35019d8f40c",
+          "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntime.kt",
+          "fingerprint": "8fb71b51652ebf7653bf05020eb675a1ae872d9de5f7dfcf4f91314fd24f83e5"
+        },
+        {
+          "item_id": "dd9235b74472192e867cbba2beb8e4ec3aaa93bccaa151425cfc5d966fdd6392",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleOrderTerminalV1.java",
+          "fingerprint": "1954af486c6fbcd0f57abd0886d7281d642443bbda857c17863921aea6e5268b"
+        },
+        {
+          "item_id": "e342d2c9caf90c1a23161b974a7c72a1db656828371d728fc5f431f3f4f1c24d",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleBatchStateV1OrBuilder.java",
+          "fingerprint": "a7cdeff3676bc70bbece3ec3ac8c915f6a8a3b89facac4111eeb24880efb250f"
+        },
+        {
+          "item_id": "e5a459d13ffd1afa7fde89eb0a7e7231cd5741d4d2d2b7afeaa401ef0e76bc08",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDependencyV1OrBuilder.java",
+          "fingerprint": "401273bbb9086ec899227427573623e831b1d5609a8faab78bf61f795b89b9cd"
+        },
+        {
+          "item_id": "e69c33a108f474011202cb336fc75b021a36eb56347f8a4ffe75ef27b59134e4",
+          "path": "services/matching-engine/internal/streamdirect/runner.go",
+          "fingerprint": "06006712c473789524310f2ff9468faf8af40a3765dd556349e5a9c6f56a8c0d"
+        },
+        {
+          "item_id": "edac7b2b8bb729e92bb845044494cbc358abe2f8d6e7c2b41720e6932fb2ddec",
+          "path": "contracts/calcify/finite-lifecycle-source-v1-manifest.json",
+          "fingerprint": "eb8a03779c389a444aee7d28da21c9531327f2274b37cc65cb5a36a030eb0378"
+        },
+        {
+          "item_id": "f12528d4cd075f302824d1f3f1f31a9bf04492d12f1e34c0acaaa33548111d48",
+          "path": "contracts/proto/calcify.proto",
+          "fingerprint": "e8aed55c0726625a87399fade3091d6f3f6eb712a75d8c662304ccd07aa485dd"
+        }
+      ],
+      "completed": [],
+      "reused": [],
+      "failed": [
+        {
+          "item_id": "02a099ceae2d3571742c75fc74fa5e895d4ee92ae0710a52831acaed19c64e04",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleSubmitV1.java",
+          "fingerprint": "1c8ccefef9a2fc30c1f2b622876bc1c55f4daf5eea71b115da1b5d4c9b44abf4",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "073da0cea55affb59dd0638bb4addefa832da88b82b5d93221d54edea3951f11",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDependencyV1.java",
+          "fingerprint": "063e9672ad4edbccd4780a29393fcf2704d9033be2d7da8b33f7a22b844b7236",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "09eeea48071c79866b15313616e6fbd0c7d3b3885873bfbcce15ee243cb84063",
+          "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntimeTest.kt",
+          "fingerprint": "6a60636f78bfbb91861470365851df20723c0159bb810fc54b56359a1d4e4ade",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "11412aa4e4aecc3ecc2ed364a56bc1544f35198b1c5aef4d335d5e5ba39f08b2",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberKindV1.java",
+          "fingerprint": "8f0c8ade9e0377c8b50bbcf3f208f4e742a146809f13bcfe0c4d0eadea155076",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "12d8810c85cc7745b3eb1c36be367db0d0a2f277024d97c38bf1e86df013aadd",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleCaptureV1.java",
+          "fingerprint": "5e43c352f3d630b51d292b23e0d30208490b7fa2bbaff3af502ff785236fa024",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "158694784a9f6ea475e625c8ecc1b0d45c8a0648f541bc4b03d660840cf2637a",
+          "path": "services/matching-engine/internal/app/calcify_source_profile.go",
+          "fingerprint": "3f2d92e08e58128f50463b3e69ca183b8df3aa5e3eb82f0a79f7e394f3aa9ff5",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "17e877928d0cd99beb2d9bb84969a0a64f2daa62ec92583b3e3c93f78fcfc7ac",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/OrderLifecycleCommandV1OrBuilder.java",
+          "fingerprint": "83f8546405d1f7ef77b29f9d34a4ebdf1c3194d07b7989766d862b99924bc67e",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "1b5a60d0a364257323adcfa7f173e4f565a94d97455e4069a871a9253b51b33a",
+          "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleContractTest.kt",
+          "fingerprint": "5226d107321c5b807cbff61951d9a681ab2fc3d22b663f28e10d9e42cab54a75",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "1c1bc2b39d9552c5dab6a097dfa3b3892acbe1a25fff2726c67b582309d6d30c",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/Calcify.java",
+          "fingerprint": "26a5e3a61fcf2239337c0e9a7cb85f89c5cb983d29b7ac47219066c69a34115d",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "22b7fcba88c09e7bee04eabdc7ccbbe039269051c6e67a7c268366a4a29014c8",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleOrderStateV1OrBuilder.java",
+          "fingerprint": "b10be6c07490542b485f97e08714f75dc43928daf74c48118fb354173a51f02b",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "28c92f6b5ec7dbbf850be239f63268de24304f02fc6025043b82d59b0cf33511",
+          "path": "services/matching-engine/internal/streamdirect/calcify_lifecycle_checksum_test.go",
+          "fingerprint": "e70745813557a726c31242de7d46a07283c6030e533a10202ed0f63eae324445",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "2a0fca85215f73954cd5c2453218aaeccf66caea5da72d8e91d318a073e936c5",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleRevisionIdV1OrBuilder.java",
+          "fingerprint": "ef7bb9e7d17ecb905b32a9fc2d51f82794a8815d97ff7d2066c4b976835e133c",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "31435b726173ee2f2601b3e0c7f6ea9c7f545e2bd049182c6dfc987e1d09e6ad",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberV1OrBuilder.java",
+          "fingerprint": "adb2ba18fb8b55c949a447ae78bb7918b1e9e8c96374ed2f933ff29d0609379b",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "528acbc3e4db4a3af5d67a9b6737867829b959d084972c8a5de68218545e8fa3",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleSuffixV1.java",
+          "fingerprint": "a531ba11188d8cf98f632eab4d6bfdd4fdbaa415c46a4a3cafdf94a9816aec7c",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "5417ce959ac7f2d4ae34560d33cec0552e45c90177f5adac9e7aa92c74d9b563",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberIdV1.java",
+          "fingerprint": "c1b884bc29a0bbe23301da7ebeee4a843f40976fefdabdfb8c76ff9b1a8e1ce9",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "5783083ae5af354999f8f6b26b5fe848d9304b7d941248a2651cd96df3b2da29",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCommandKindV1.java",
+          "fingerprint": "4f0947153dcac779831a8a481f1a66f935e56f89ba8d0dec3790f7709bb975b1",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "57dc59e7a7876f321291eb86c55b9585813d52536236686e835cb8c288a242f2",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleStateV1.java",
+          "fingerprint": "b33443a17cafb295be2c9a69b4adb8f801599292258fc7d0cf0af0e29505bee3",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "5c4de0d0ca55da0826c2909488582c90d73540b554f350b4c8588de8047762e8",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleBatchStateV1.java",
+          "fingerprint": "d6b40857c445bdabc0f0e2fb4a7fae65863650ef79ec2ef7938301b1d612a49b",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "62c175dbb41c8e25383eb102cf7d2d27fd9b5747eee7b09f7998ee0e90037f76",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleOrderStateV1.java",
+          "fingerprint": "af1a3fad59dd29277e7e8053785e6d58dcdac3569e024dc8922cf3f03524f003",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "67be1f72bb2934b4abef1ef8941677fa8b2a1c8d45965ecf8c89dfbc418967e4",
+          "path": "services/matching-engine/internal/streamdirect/calcify_lifecycle_config_test.go",
+          "fingerprint": "cfd72d50cba905ce0517380b14256e349f27f88028453dc1902336da5d84ee39",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "6d51c41a05c65820495209dd6b2dd9a56ef6cd519aab06cf159026f639acebdd",
+          "path": "services/matching-engine/internal/streamdirect/processor.go",
+          "fingerprint": "b6b10eae01fb735c61e27288a763bf59db53a6bb522dec99adac1543aef2ec26",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "6d79705a63c9949d8674793d8cdaaa1d52959860a75b08d4c0519f8083fc3e1a",
+          "path": "services/matching-engine/internal/streamdirect/calcify_lifecycle_test.go",
+          "fingerprint": "aa3a93a263d2df3e212f8dc97549bb38a0ffcca68560133f96eb2aa6d94840b1",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "781a878841b3750190a049fef10c49ddeeaabc38b0b173518280190c6f4e2b59",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleSuffixV1OrBuilder.java",
+          "fingerprint": "ea157ae836f631ed05819bb12032a48f6b9b691decac7fcde4215fe76b908dd0",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "7b798ee3c6916eb31c44882a20a1a267d876f5d383af547f48a0908a7b9f7f01",
+          "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessorTest.kt",
+          "fingerprint": "f6f79bb04338768830673a7691f746241e8dc1ae62656c38e0b7b7b7f2bdd73a",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "7d2e16c41baf133ce34cb6b2390928817a2ff71dba73d78aa1300eb34fb17ca0",
+          "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleContract.kt",
+          "fingerprint": "2300411e946e872c12b9a62c4eb9d983b937dd9c3183991624d26637eac198d2",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "80cb09f32899565b6ad8de69e9e1de08e9916edab03b5c507dc2f8a824a40fa3",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleModifyV1OrBuilder.java",
+          "fingerprint": "6cbb132937b77cf5c37d7eed15035f790bd8515094a4b4702e7bc7becfafbac2",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "813da8a2d6ee9144d812f17ded9a2290b0f5f797727bee33a17fcfeb2f906564",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleRevisionIdV1.java",
+          "fingerprint": "854a5348314f6b49edfd9b7a79c3c543d11fa2f0baa934ba59ad524e83a4db3f",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "8781c17639acf0f3620d9eb861db50ab08d6a35b64ee8847c5de3c48f2fbaaf0",
+          "path": "services/matching-engine/internal/app/calcify_source_identity_test.go",
+          "fingerprint": "7d84b496dd4970e1f66aa070b94502fbe558fc483af3e9e44bc37fde34b5c1fb",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "920a42ee30043cc78db65d7b08a1edf1c49d88cd79a9365a363064a9d5f49f7b",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/OrderLifecycleCommandV1.java",
+          "fingerprint": "85f914eab799e8674e21ec1fa385da743f6e131dec807f16b0931a093b14d321",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "94d4999d71b7498aa366dde86c2e980f042c88b5cbff8b24aa803cbe676392bb",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleStateV1OrBuilder.java",
+          "fingerprint": "25f0b36be82ea2a90d7f35a7807159f043e73255da54ecb9ab0fc5ab5b737043",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "9a35cbc4a66be9eb0baab6ef6ceacbbec185be585f426f6f2ffb5693315d68f5",
+          "path": "services/matching-engine/internal/streamdirect/config.go",
+          "fingerprint": "2e639bf04607eed4d57364dae148e053a53472d54f54f97e591d47348f7164b8",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "a3920a630917b145863f0a7073eac8429087ddab73d656b1f943df0a62b53c47",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCancelV1OrBuilder.java",
+          "fingerprint": "173a15272129eea6c2500f70285d51be4bb02e680c0383618291867bc153c2de",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "ab80f188827659883622c05fb3eb34db047bf8f9892448e2a10459f06fb748cb",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCancelV1.java",
+          "fingerprint": "e138589c4c3ae50dbc84e54d18185ea540bd602d9535ad5f8ac889e9caf21a04",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "b44d9cfe515cc1741c3d597d4ab8dd59c61fa0b41e7df3065f070c1327255f54",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleModifyV1.java",
+          "fingerprint": "6812317d21ddf7fb09990d6efa60a0e3a30a1f9671e64d5975e7a0b4489e05c4",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "b4ae382a6b07eda2377b8a42f78d5c7076a218beebe59bbc75edce0953eac4bb",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDispositionV1.java",
+          "fingerprint": "f5a40ba0b6251d99be2c81a5a2e6cf3aebe2b4b98f7d579d9ff93c8c8ecd8d45",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "b7223734c6d0bd3ad4731149ba924116ce4ec7e092ce8c3877ecdae80b2140a2",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleCaptureV1OrBuilder.java",
+          "fingerprint": "ae90581e101ec3ff3125cae691dce5844a15374b6ded39d6bbeb7f61e1ad82ae",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "c1c50b6dca0ec424d8933946feabc246bfad535c4d97b7c287edaf8e6e963dcb",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberIdV1OrBuilder.java",
+          "fingerprint": "259338ea285120896eb531da629712c00eec55ad1adb60420ef21945867df323",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "c6effffc93ebbf66f3474a68f5051ef5b8522454c4fad285f535e5c9d595438f",
+          "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessor.kt",
+          "fingerprint": "e5adffbe531609928c0244a8c0146bb550726837476a6a3d32b479eea29c754e",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "cdd2cf6a2be03d82ef2ac1af4b75294645ecf7bbf2a02054886384db9d48390a",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleSubmitV1OrBuilder.java",
+          "fingerprint": "c731628f941522d66d0d54140ec20467e49631e9ee6a8369c40f8180d18efdee",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "cf1e69dcedb6452e010bc13ec23bfc5d528a87abad5f228bb88c1ec353d201b2",
+          "path": "services/matching-engine/internal/domain/calcify_lifecycle.go",
+          "fingerprint": "05ea61ffc3908981c294dfb8db59235ea5d5c33efdf27b9c8f664cf4fbbdbeb2",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "d8a5abdfcfb64009167010b38cba7c6530a1d3e24d364df343f1cdd3fae21ac1",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberV1.java",
+          "fingerprint": "34ea99e2f114385f5200843127d694c5a68eeef4b3a1207db76ac1b1410aae5f",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "dc30e34884b44006b318be9d65a607d82680e42d287b132f57dea35019d8f40c",
+          "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntime.kt",
+          "fingerprint": "8fb71b51652ebf7653bf05020eb675a1ae872d9de5f7dfcf4f91314fd24f83e5",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "dd9235b74472192e867cbba2beb8e4ec3aaa93bccaa151425cfc5d966fdd6392",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleOrderTerminalV1.java",
+          "fingerprint": "1954af486c6fbcd0f57abd0886d7281d642443bbda857c17863921aea6e5268b",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "e342d2c9caf90c1a23161b974a7c72a1db656828371d728fc5f431f3f4f1c24d",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleBatchStateV1OrBuilder.java",
+          "fingerprint": "a7cdeff3676bc70bbece3ec3ac8c915f6a8a3b89facac4111eeb24880efb250f",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "e5a459d13ffd1afa7fde89eb0a7e7231cd5741d4d2d2b7afeaa401ef0e76bc08",
+          "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDependencyV1OrBuilder.java",
+          "fingerprint": "401273bbb9086ec899227427573623e831b1d5609a8faab78bf61f795b89b9cd",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "e69c33a108f474011202cb336fc75b021a36eb56347f8a4ffe75ef27b59134e4",
+          "path": "services/matching-engine/internal/streamdirect/runner.go",
+          "fingerprint": "06006712c473789524310f2ff9468faf8af40a3765dd556349e5a9c6f56a8c0d",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "edac7b2b8bb729e92bb845044494cbc358abe2f8d6e7c2b41720e6932fb2ddec",
+          "path": "contracts/calcify/finite-lifecycle-source-v1-manifest.json",
+          "fingerprint": "eb8a03779c389a444aee7d28da21c9531327f2274b37cc65cb5a36a030eb0378",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        },
+        {
+          "item_id": "f12528d4cd075f302824d1f3f1f31a9bf04492d12f1e34c0acaaa33548111d48",
+          "path": "contracts/proto/calcify.proto",
+          "fingerprint": "e8aed55c0726625a87399fade3091d6f3f6eb712a75d8c662304ccd07aa485dd",
+          "classification": "budget",
+          "reason": "aggregate token budget reached before dispatch completed"
+        }
+      ],
+      "waived": []
+    },
+    "elapsed_ms": 2260
+  }
+}

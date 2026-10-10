@@ -1,0 +1,43 @@
+{
+  "reviewInstance": "1 of 3",
+  "logs": [
+    {
+      "path": "/private/tmp/reef-o1-review1-gradle.log",
+      "sha256": "29ead19a22200f14d99085c59a29685aeffcd927150ecec8fb9b065e543cbc86",
+      "text": "Exception in thread \"main\" java.io.FileNotFoundException: /Users/dsteele/.gradle/wrapper/dists/gradle-9.8.0-bin/3m7h6ceboy5k31n8kzwzuxssm/gradle-9.8.0-bin.zip.lck (Operation not permitted)\n\tat java.base/java.io.RandomAccessFile.open0(Native Method)\n\tat java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:356)\n\tat java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:273)\n\tat java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:223)\n\tat org.gradle.wrapper.Install.createDist(SourceFile:24)\n\tat org.gradle.wrapper.GradleWrapperMain.lambda$prepareWrapper$0(SourceFile:2)\n\tat org.gradle.wrapper.GradleWrapperMain.main(SourceFile:2)\n"
+    },
+    {
+      "path": "/private/tmp/reef-o1-review1-gradle-retry.log",
+      "sha256": "5db5face2ff2c1b7facb25f0d8237896f3d80c6c0c361f16964cc2b30ab056bb",
+      "text": "To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.\nDaemon will be stopped at the end of the build \n> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED\n> Task :compileKotlin UP-TO-DATE\n> Task :compileJava UP-TO-DATE\n> Task :verifyRuntimeOrderIdentityMigration\n> Task :processResources UP-TO-DATE\n> Task :classes UP-TO-DATE\n> Task :jar UP-TO-DATE\n> Task :compileTestKotlin UP-TO-DATE\n> Task :compileTestJava NO-SOURCE\n> Task :processTestResources UP-TO-DATE\n> Task :testClasses UP-TO-DATE\n> Task :verifyNoTestSourceExclusions\n> Task :test\n> Task :jacocoTestReport\n\nBUILD SUCCESSFUL in 9s\n10 actionable tasks: 4 executed, 6 up-to-date\nConsider enabling configuration cache to speed up this build: https://docs.gradle.org/9.8.0/userguide/configuration_cache_enabling.html\n"
+    },
+    {
+      "path": "/private/tmp/reef-o1-review1-go.log",
+      "sha256": "056689238a80ddeb20ddfa30fe475e5757955dd943d7febefdf1f81a0bb7e453",
+      "text": "ok  \tgithub.com/dills122/reef/services/matching-engine/internal/app\t0.484s\nok  \tgithub.com/dills122/reef/services/matching-engine/internal/streamdirect\t3.464s\n"
+    },
+    {
+      "path": "/private/tmp/reef-o1-review1-probe.log",
+      "sha256": "a635726e579a28011507239d36ba3c56d1f49392778ff2ce29b7140e27dbb2c2",
+      "text": "ACCEPTED_INVALID trade-price-outside-profile\nACCEPTED_INVALID trade-foreign-run\nACCEPTED_INVALID trade-foreign-source\nACCEPTED_INVALID duplicate-blank-execution-facts\nACCEPTED_INVALID cancel-wrong-engine-and-order\nACCEPTED_TRAILING_JSON\n"
+    },
+    {
+      "path": "/private/tmp/reef-o1-review1-probe-final.log",
+      "sha256": "6143ca41872a649721f3fd869211e1152abeb60815b750d22f3f9a5ed9a82d1e",
+      "text": "ACCEPTED_INVALID trade-price-outside-profile\nACCEPTED_INVALID trade-foreign-run\nACCEPTED_INVALID trade-foreign-source\nACCEPTED_INVALID duplicate-blank-execution-facts\nACCEPTED_INVALID cancel-wrong-engine-and-order\nACCEPTED_TRAILING_JSON\nTRAILING_JSON_CAPTURE prefixClosed=true outcomeCount=1 resume=1\n"
+    }
+  ],
+  "probe": {
+    "argv": [
+      "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/java",
+      "-Xmx192m",
+      "--class-path",
+      "/Users/dsteele/.codex/worktrees/fa2b-0041/reef/services/platform-runtime/build/classes/java/main:/Users/dsteele/.codex/worktrees/fa2b-0041/reef/services/platform-runtime/build/classes/kotlin/main:/Users/dsteele/.codex/worktrees/fa2b-0041/reef/services/platform-runtime/build/classes/kotlin/test:/Users/dsteele/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.20/94c1451890d164aed65d43b3db0b7ecef7c183e7/kotlin-stdlib-2.4.20.jar:/Users/dsteele/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.22.3/8695aab38355c65b60e242ec62edf13c52916d88/jackson-core-2.22.3.jar:/Users/dsteele/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.22.3/d0d4b2cdb0a1440ac02178fc2ff01dfb05cd06a8/jackson-databind-2.22.3.jar:/Users/dsteele/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.22/15c67f9498d6934cff9510fc70c5a12e52290457/jackson-annotations-2.22.jar:/Users/dsteele/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/4.36.2/dbc5fbfc3936fb569a910679e971842a556a4d3d/protobuf-java-4.36.2.jar",
+      "/private/tmp/RestoreProbe.java"
+    ],
+    "cwd": "/Users/dsteele/.codex/worktrees/fa2b-0041/reef/services/platform-runtime",
+    "exit": 0
+  },
+  "probeSourceSha256": "8c55c775c94406348f1d803f1f1c8ca541dcbe82b8b85f1a850d97613e4b13b2",
+  "probeSource": "import com.reef.platform.calcify.*;\nimport reef.contracts.calcify.v1.*;\nimport java.nio.file.*;\nimport java.util.*;\nclass RestoreProbe {\n static FiniteLifecycleBinding binding;\n static FiniteLifecycleStateV1 original;\n static FiniteLifecycleStateV1 replace(int i, FiniteLifecycleCaptureV1 raw) {\n   var changed=raw.toBuilder().setContentDigest(FiniteLifecycleContract.INSTANCE.digest(raw)).build();\n   var b=original.toBuilder().setCompletedRecords(i,changed);\n   for(int n=0;n<b.getBatchesCount();n++) if(b.getBatches(n).getBatchId().equals(changed.getSource().getBatchId()))\n     b.setBatches(n,b.getBatches(n).toBuilder().setFirstCapture(changed));\n   long size=0; for(var r:b.getCompletedRecordsList()) size+=r.getSerializedSize();\n   return b.setCaptureBytes(size).build();\n }\n static void probe(String name,int index,FiniteLifecycleCaptureV1 raw) {\n   var state=replace(index,raw);\n   try { FiniteLifecycleCaptureRuntime.INSTANCE.initializeModel(binding,new FiniteLifecycleStartCut.Restore(state,0,12),null);\n     System.out.println(\"ACCEPTED_INVALID \"+name);\n   } catch(IllegalArgumentException ex) {System.out.println(\"REFUSED \"+name+\" \"+ex.getMessage());}\n }\n public static void main(String[] args) throws Exception {\n   Class<?> fixtures=Class.forName(\"com.reef.platform.calcify.FiniteLifecycleFixtures\"); Object fixture=fixtures.getField(\"INSTANCE\").get(null);\n   binding=(FiniteLifecycleBinding)fixtures.getMethod(\"binding$default\",fixtures,FiniteLifecycleBudget.class,int.class,Object.class).invoke(null,fixture,null,1,null);\n   original=(FiniteLifecycleStateV1)fixtures.getMethod(\"sequence$default\",fixtures,List.class,int.class,Object.class).invoke(null,fixture,null,1,null);\n   var record=original.getCompletedRecords(2); var member=record.getMembers(1); var trade=member.getTrade();\n   probe(\"trade-price-outside-profile\",2,record.toBuilder().setMembers(1,member.toBuilder().setTrade(trade.toBuilder().setFact(trade.getFact().toBuilder().setPrice(trade.getFact().getPrice().toBuilder().setNanos(\"999999999999\"))))).build());\n   probe(\"trade-foreign-run\",2,record.toBuilder().setMembers(1,member.toBuilder().setTrade(trade.toBuilder().setRunId(\"foreign-run\"))).build());\n   probe(\"trade-foreign-source\",2,record.toBuilder().setMembers(1,member.toBuilder().setTrade(trade.toBuilder().setSource(trade.getSource().toBuilder().setSourceOffset(999)))).build());\n   probe(\"duplicate-blank-execution-facts\",2,record.toBuilder().setMembers(1,member.toBuilder().clearExecutions().addExecutions(reef.contracts.orderexecution.v1.ExecutionCreated.getDefaultInstance()).addExecutions(reef.contracts.orderexecution.v1.ExecutionCreated.getDefaultInstance())).build());\n   var cancel=original.getCompletedRecords(4); var command=cancel.getMembers(0);\n   probe(\"cancel-wrong-engine-and-order\",4,cancel.toBuilder().setMembers(0,command.toBuilder().setAccepted(command.getAccepted().toBuilder().setOrderId(\"wrong-order\").setEngineOrderId(\"wrong-engine\").setOccurredAt(\"wrong-time\"))).build());\n   var first=Files.readAllLines(Path.of(\"../../contracts/calcify/finite-lifecycle-source-v1.jsonl\")).get(0);\n   try {FiniteLifecycleContract.INSTANCE.parse((first+\" {} \").getBytes(java.nio.charset.StandardCharsets.UTF_8),binding,0);System.out.println(\"ACCEPTED_TRAILING_JSON\"); var reduction=FiniteLifecycleReducer.INSTANCE.reduce(FiniteLifecycleContract.INSTANCE.genesis(binding),(first+\" {} \").getBytes(java.nio.charset.StandardCharsets.UTF_8),0,1,binding); System.out.println(\"TRAILING_JSON_CAPTURE prefixClosed=\"+reduction.getEnvelope().getPrefixClosed()+\" outcomeCount=\"+reduction.getEnvelope().getOutcomeCount()+\" resume=\"+reduction.getState().getResumeOffset());}\n   catch(Exception ex) {System.out.println(\"REFUSED_TRAILING_JSON \"+ex.getMessage());}\n }\n}\n"
+}
