@@ -1,0 +1,8 @@
+{
+  "argv": [
+    "bun",
+    "scripts/ci/check-records-retention.mjs"
+  ],
+  "exit_code": 0,
+  "cwd": "/Users/dsteele/.codex/worktrees/fa2b-0041/reef"
+}

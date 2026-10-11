@@ -1,0 +1,10 @@
+ M docs/README.md
+ M docs/RECORDS_RETENTION.md
+ M docs/WORK_PLAN.md
+ M docs/evidence/calcify-financial-sprint1/README.md
+ M docs/records/retained-evidence.json
+ M docs/work/CALCIFY_PHASE2_IMPLEMENTATION.md
+ M docs/work/CALCIFY_SYSTEM_ARCHITECTURE_RFC.md
+ M docs/work/handoffs/2026-10-04-calcify-financial-sprint1-recovery.md
+?? .planning/
+?? docs/work/CALCIFY_OVERNIGHT_SESSION_PLAN.md

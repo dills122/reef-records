@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/bin/java",
+    "-Xmx192m",
+    "--class-path",
+    "/Users/dsteele/.codex/worktrees/fa2b-0041/reef/services/platform-runtime/build/classes/java/main:/Users/dsteele/.codex/worktrees/fa2b-0041/reef/services/platform-runtime/build/classes/kotlin/main:/Users/dsteele/.codex/worktrees/fa2b-0041/reef/services/platform-runtime/build/classes/kotlin/test:/Users/dsteele/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.20/94c1451890d164aed65d43b3db0b7ecef7c183e7/kotlin-stdlib-2.4.20.jar:/Users/dsteele/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.22.3/8695aab38355c65b60e242ec62edf13c52916d88/jackson-core-2.22.3.jar:/Users/dsteele/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.22.3/d0d4b2cdb0a1440ac02178fc2ff01dfb05cd06a8/jackson-databind-2.22.3.jar:/Users/dsteele/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.22/15c67f9498d6934cff9510fc70c5a12e52290457/jackson-annotations-2.22.jar:/Users/dsteele/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/4.36.2/dbc5fbfc3936fb569a910679e971842a556a4d3d/protobuf-java-4.36.2.jar",
+    "/Users/dsteele/.codex/worktrees/fa2b-0041/reef/.planning/calcify-p3-overnight/o1/kotlin/Review1RestoreProbe.java"
+  ],
+  "cwd": "/Users/dsteele/.codex/worktrees/fa2b-0041/reef/services/platform-runtime",
+  "exit": 0,
+  "sourceSha256": "8c55c775c94406348f1d803f1f1c8ca541dcbe82b8b85f1a850d97613e4b13b2",
+  "reviewerSourceSha256": "8c55c775c94406348f1d803f1f1c8ca541dcbe82b8b85f1a850d97613e4b13b2",
+  "log": "/Users/dsteele/.codex/worktrees/fa2b-0041/reef/.planning/calcify-p3-overnight/o1/kotlin/review1-reproduction.log",
+  "logSha256": "6143ca41872a649721f3fd869211e1152abeb60815b750d22f3f9a5ed9a82d1e"
+}

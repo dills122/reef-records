@@ -1,0 +1,489 @@
+{
+  "schema": "calcify-manager-session-v1",
+  "status": "O1_DELIVERY_RESUMED",
+  "startedAt": "2026-10-10T02:55:41Z",
+  "featureStopAt": "2026-10-10T10:10:41Z",
+  "deadlineAt": "2026-10-10T10:55:41Z",
+  "timezone": "America/Toronto",
+  "baseline": "51cd90eee43d257bad4f973fc9bd81f273bb4ef7",
+  "branch": "codex/calcify-p3-overnight-2026-10-09",
+  "plan": "docs/work/CALCIFY_OVERNIGHT_SESSION_PLAN.md",
+  "heartbeatId": "calcify-eight-hour-p3-manager",
+  "goal": "Finite P3 source-to-read chain; report largest reviewed dependency prefix if eight-hour budget expires.",
+  "maxAgentsIncludingManager": 4,
+  "managerOwnedPaths": [
+    "docs/WORK_PLAN.md",
+    "docs/work/CALCIFY_OVERNIGHT_SESSION_PLAN.md",
+    ".planning/calcify-p3-overnight/session.json"
+  ],
+  "resourceLease": {
+    "owner": "manager",
+    "brokerMutationAllowed": false,
+    "sharedStackResetAllowed": false,
+    "liveAuthorityAdoptionAllowed": false,
+    "containersAtStart": [],
+    "ownedProcesses": [],
+    "java21": "/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home",
+    "goToolchain": "go1.26.9",
+    "protoc": "33.2",
+    "bun": "1.3.14",
+    "node": "22.22.1",
+    "diagnosticProposal": {
+      "redpanda": "RF1,max2CPU/2GiB",
+      "postgres": "max1CPU/1GiB",
+      "java21ProbeHeap": "768MiB",
+      "totalOwnedAllocationTarget": "4GiB",
+      "scope": "tiny isolated correctness fixtures; no capacity or conservative cost claim"
+    },
+    "buildOwner": "manager",
+    "buildScope": "No active build lease"
+  },
+  "units": [
+    {
+      "id": "O0",
+      "state": "INTEGRATED",
+      "owner": "/root/p3_alignment",
+      "dependencies": [],
+      "reviewInstances": 2,
+      "spikes": 1,
+      "leases": [
+        "docs/work/CALCIFY_FINITE_P3_SOURCE_CONTRACT.md",
+        ".planning/calcify-p3-overnight/o0/"
+      ],
+      "nextAction": "Closed; producer activation/live ingress remains O2.",
+      "lastEvidenceAt": "2026-10-10T03:28:40.077210+00:00",
+      "blocker": null,
+      "evidence": [
+        {
+          "bootstrap": ".planning/calcify-p3-overnight/o0/neutral-bootstrap.md",
+          "specSha256": "41a96468b8a9dd700934432587e1095d5b8bfd11adb727f9f367bc460e104d2a",
+          "patchSha256": "733fccc1ed815996f41b3e860359fe235fee02d7d7af4e7ec763bb199bd65a7a"
+        },
+        {
+          "review": ".planning/calcify-p3-overnight/o0/review-1.md",
+          "verdict": "Not ready",
+          "finding": "P2 canonical TIF policy mismatch",
+          "instance": "1of3"
+        },
+        {
+          "spike": ".planning/calcify-p3-overnight/o0/policy-spike-1.md",
+          "result": "DAY/Open finite same-day fixture; app/stream focused tests passed; initial cache permission failure retained"
+        },
+        {
+          "bootstrap": ".planning/calcify-p3-overnight/o0/neutral-bootstrap.md",
+          "specSha256": "eec721aa60c1b64a7bada0a973b7b5d4e77510454e9e853fcd8a6a6f8f7c6739",
+          "patchSha256": "a5da8d8937c1f31948d6867b0389bbf2442a5f25de0122ef53425ebe01ff500f"
+        },
+        {
+          "handoff": ".planning/calcify-p3-overnight/o0/o1-team-handoff.md",
+          "ownership": "Go producer excludes generated outputs; Kotlin owns proto/generated/capture; combined O1 cap3"
+        },
+        {
+          "review": ".planning/calcify-p3-overnight/o0/review-2.md",
+          "verdict": "Ready",
+          "developerResponse": ".planning/calcify-p3-overnight/o0/finding-response-2.md",
+          "instance": "2of3"
+        }
+      ],
+      "reviewer": "/root/p3_o0_review_2",
+      "commit": "45211653"
+    },
+    {
+      "id": "O0D",
+      "state": "INTEGRATED",
+      "owner": "/root/p3_docs",
+      "dependencies": [],
+      "reviewInstances": 1,
+      "spikes": 0,
+      "leases": [
+        "docs/work/CALCIFY_PHASE2_IMPLEMENTATION.md",
+        "docs/work/handoffs/2026-10-04-calcify-financial-sprint1-recovery.md",
+        "docs/evidence/calcify-financial-sprint1/README.md",
+        "docs/README.md",
+        "docs/work/CALCIFY_SYSTEM_ARCHITECTURE_RFC.md",
+        ".planning/calcify-p3-overnight/o0d/",
+        "docs/RECORDS_RETENTION.md"
+      ],
+      "nextAction": "Closed; reviewed bytes integrated.",
+      "lastEvidenceAt": "2026-10-10T03:11:51.786520+00:00",
+      "blocker": null,
+      "evidence": [
+        {
+          "check": "Financial README retained inventory refreshed",
+          "bytes": 16718,
+          "sha256": "80d15595645686334b1a6c25fd9ab4b103146f7ea0ed1fc329588f61bca5a563"
+        },
+        {
+          "packet": ".planning/calcify-p3-overnight/o0d/bootstrap.md",
+          "checks": "retention520,91local links,whitespace passed"
+        },
+        {
+          "review": ".planning/calcify-p3-overnight/o0d/review-1.md",
+          "verdict": "Ready",
+          "instance": "1of3"
+        }
+      ],
+      "reviewer": "/root/p3_docs_review_1",
+      "commit": "7aba4d0a"
+    },
+    {
+      "id": "O1",
+      "state": "INTEGRATED",
+      "owner": [
+        "/root/p3_alignment",
+        "/root/p3_capture"
+      ],
+      "dependencies": [
+        "O0"
+      ],
+      "reviewInstances": 3,
+      "spikes": 6,
+      "leases": [
+        "Go producer ownership per o0/o1-team-handoff.md",
+        "Kotlin/proto ownership per o0/o1-team-handoff.md",
+        ".planning/calcify-p3-overnight/o1/go/",
+        ".planning/calcify-p3-overnight/o1/kotlin/"
+      ],
+      "nextAction": "Frozen O1 accepted/committed; manager delivery/retention/integration and hosted OCR remain.",
+      "startedAt": "2026-10-10T03:29:32.177438+00:00",
+      "ownershipPacket": ".planning/calcify-p3-overnight/o0/o1-team-handoff.md",
+      "jsonCoordination": ".planning/calcify-p3-overnight/o0/o1-json-coordination.md",
+      "lastEvidenceAt": "2026-10-10T15:22:52.238932+00:00",
+      "evidence": [
+        {
+          "check": "JSON shape agreement",
+          "result": "Go/Kotlin owners agreed typed JSON; submit currency decoded, other asset context binding-derived; DTO ownership decoded."
+        },
+        {
+          "check": "O1 startup boundary",
+          "result": "Go StartRunner and capture live activation explicitly refuse until O2 durable binding/restore integration; no attestation boolean."
+        },
+        {
+          "check": "Capture architecture",
+          "result": "Full source records, managed bounded protobuf state/envelope; no decoded cache; old resolver/pipeline excluded."
+        },
+        {
+          "owner": "/root/p3_alignment",
+          "check": "Real processor fixture",
+          "result": "12outcomes/8accepted/4rejected/3trades/6units/5retainedIDs; typed fixturegreen, modelonly",
+          "path": ".planning/calcify-p3-overnight/o1/go/finite-lifecycle-source-v1.jsonl"
+        },
+        {
+          "owner": "/root/p3_alignment",
+          "check": "Legacy bytecompatibility",
+          "result": "modeOFF fixture matches prechangeSHA256bdd4df11\u2026/16647bytes; exactreceipt developer packet"
+        },
+        {
+          "spike": ".planning/calcify-p3-overnight/o1/go/fixture-harness-spike-1.md",
+          "reason": "Two fixture-helper assumptions failed; source alignment before correction; no matchingbehavior change"
+        },
+        {
+          "owner": "/root/p3_capture",
+          "check": "Capture milestone",
+          "result": "Additive proto generated; Go fixture promoted unchanged; contract/budget/binding/reducer/model topology/refusal implemented; 14 focused tests authored, not yet passed; exclusive Java21 Gradle begun."
+        },
+        {
+          "owner": "/root/p3_alignment",
+          "check": "Whole matching module",
+          "result": "go test ./... exit0 after sandbox loopback test restriction diagnosed and safe escalation retry; no brokers/containers",
+          "failure": ".planning/calcify-p3-overnight/o1/go/all-tests-sandbox-red.log"
+        },
+        {
+          "owner": "/root/p3_capture",
+          "check": "Initial focused Kotlin",
+          "result": "Gradle exit0,14tests; initial cache-lock sandbox failure and approved repeat retained; self-audit changes invalidate finality pending rerun."
+        },
+        {
+          "owner": "/root/p3_alignment",
+          "check": "Go final self-audit freeze",
+          "result": "focused/full module and race/vet pass; final regenerated contract full go test -count=1 and vet pass; tenownedfiles frozen",
+          "packet": ".planning/calcify-p3-overnight/o1/go/neutral-bootstrap.md",
+          "patchSha256": "d729c4f7d509f97231d32063406e453e689aa3b80c5e41fcb76867a9d1330963",
+          "receipt": ".planning/calcify-p3-overnight/o1/go/verification.json"
+        },
+        {
+          "owner": "/root/p3_capture",
+          "check": "Expanded focused Kotlin",
+          "result": "19focusedtests exit0 in21s; golden command/multifill captures; final acceptance/engine-ID self-audit changes require final rerun; regression running, not final yet."
+        },
+        {
+          "check": "Manager protobuf governance",
+          "result": "descriptor additive compatibility and generated-source drift exit0; no worktree generation",
+          "log": ".planning/calcify-p3-overnight/o1/proto-governance.log",
+          "sha256": "5ecf82871f187c92f0251abcdc0bd6e78a825cc75a86a37c086dcfccf94304c6"
+        },
+        {
+          "owner": "/root/p3_capture",
+          "check": "Earlier full Calcify regression",
+          "result": "203tests exit0/0failures; later source changed, final receipt pending"
+        },
+        {
+          "owner": "/root/p3_capture",
+          "check": "Self-audit historical replay fault",
+          "result": "Kotlin freeze thawed for explicit persisted lane barrier on changed historical physical record; no Go/proto change; reopened conflict regression and final rerun planned."
+        },
+        {
+          "check": "Manager final Kotlin receipt sum",
+          "result": "205 tests,30reports,0 failures/errors/skips; exact source freeze verification below"
+        },
+        {
+          "spike": ".planning/calcify-p3-overnight/o1/kotlin/handoff-spike-1.md",
+          "reason": "~30min without new handoff evidence; interrupted and resumed bounded alignment, no new features"
+        },
+        {
+          "review": ".planning/calcify-p3-overnight/o1/review-1.md",
+          "instance": "1of3",
+          "state": "DISPATCHED",
+          "bootstrap": ".planning/calcify-p3-overnight/o1/neutral-bootstrap.md",
+          "scope": ".planning/calcify-p3-overnight/o1/combined-files.json"
+        },
+        {
+          "owner": "/root/p3_o1_review_1",
+          "check": "Independent focused checks/probe preliminary",
+          "result": "Go app/stream pass; Java23finite tests pass; external probe exposes restore identity/economics/execution/cancel validation and trailing JSON defects. Formal report pending, not accepted."
+        },
+        {
+          "spike": ".planning/calcify-p3-overnight/o1/kotlin/handoff-spike-1.md",
+          "state": "COMPLETE",
+          "sourceChanged": false,
+          "result": "Final packet refreshed, no author readiness verdict; independent review1 dispatched."
+        },
+        {
+          "review": ".planning/calcify-p3-overnight/o1/review-1.md",
+          "verdict": "Not ready",
+          "instance": "1of3",
+          "sha256": "fc66ba75f06eb7779eec9e7371177557d8b3b393b89df258be12eda1ed7664c5",
+          "findings": [
+            "P1 restored receipts bypass source semantic validation",
+            "P2 trailing JSON omitted from closed source coverage"
+          ]
+        },
+        {
+          "spike": ".planning/calcify-p3-overnight/o1/kotlin/review1-research-spike.md",
+          "state": "COMPLETE",
+          "result": "Reviewer probe reproduced exactly; narrow shared-validation/EOF fix accepted, no pivot."
+        },
+        {
+          "developerResponses": [
+            ".planning/calcify-p3-overnight/o1/kotlin/finding-response-1.md",
+            ".planning/calcify-p3-overnight/o1/go/finding-response-1.md"
+          ],
+          "result": "Both Accept, none disputed/deferred."
+        },
+        {
+          "review": ".planning/calcify-p3-overnight/o1/review-2.md",
+          "verdict": "Not ready",
+          "instance": "2of3",
+          "finding": "P2 seven invalid/duplicate replay member IDs accepted"
+        },
+        {
+          "spike": ".planning/calcify-p3-overnight/o1/kotlin/review2-research-spike.md",
+          "result": "Accepted bounded exact deterministic replay member equality fix; seven invalid IDs independently reproduced; source unchanged during spike"
+        },
+        {
+          "freeze": ".planning/calcify-p3-overnight/o1/combined-files-review3.json",
+          "kotlinAggregateSha256": "7bbc9c22c7e4c14d8173c76b06bb64bae411083b963c7b365cfc3cd3af63e8c8",
+          "tests": "36finite+70surrounding,zero failures/errors/skips; exact probe seven invalid IDs refuse; prior213 earlier source"
+        },
+        {
+          "review": ".planning/calcify-p3-overnight/o1/review-3.md",
+          "verdict": "Ready",
+          "instance": "3of3",
+          "limits": "O1 model only; O2livephysical/history gates and manager delivery retention remain"
+        }
+      ],
+      "halfStates": {
+        "Go": "FROZEN",
+        "Kotlin": "FROZEN"
+      },
+      "reviewer": "/root/p3_o1_review_3",
+      "blocker": null,
+      "commit": "0a7df6f85c1f8636fdb74177afc49fa3eb14d8bd"
+    },
+    {
+      "id": "O2",
+      "state": "NOT_STARTED_DEADLINE",
+      "owner": null,
+      "dependencies": [
+        "O1"
+      ],
+      "reviewInstances": 0,
+      "spikes": 0,
+      "leases": [],
+      "nextAction": "Canonical finite ingress budget, source-prefix closure and restore."
+    },
+    {
+      "id": "O3",
+      "state": "NOT_STARTED_DEADLINE",
+      "owner": null,
+      "dependencies": [
+        "O2"
+      ],
+      "reviewInstances": 0,
+      "spikes": 0,
+      "leases": [],
+      "nextAction": "Runtime financial admission/kernel integration."
+    },
+    {
+      "id": "O4",
+      "state": "NOT_STARTED_DEADLINE",
+      "owner": null,
+      "dependencies": [
+        "O3"
+      ],
+      "reviewInstances": 0,
+      "spikes": 0,
+      "leases": [],
+      "nextAction": "Atomic SQL bundle and scoped common-snapshot read seam."
+    },
+    {
+      "id": "O5",
+      "state": "NOT_STARTED_DEADLINE",
+      "owner": null,
+      "dependencies": [
+        "O4"
+      ],
+      "reviewInstances": 0,
+      "spikes": 0,
+      "leases": [],
+      "nextAction": "Funding/new-attempt repair and exact source/admission/owner/SQL restart acceptance."
+    },
+    {
+      "id": "INTEGRATION",
+      "state": "NOT_STARTED_DEADLINE",
+      "owner": "manager",
+      "dependencies": [],
+      "reviewInstances": 0,
+      "spikes": 0,
+      "leases": [],
+      "nextAction": "Review combined scoped behavior, delivery/retention and morning handoff."
+    }
+  ],
+  "checks": [
+    {
+      "check": "Git baseline",
+      "result": "51cd90eee; only preexisting untracked approved session plan"
+    },
+    {
+      "check": "Native toolchain",
+      "result": "Java21 installed, Go1.26.9 cached; default Go1.26.5 must not be used for matching qualification"
+    },
+    {
+      "check": "Docker",
+      "result": "Engine29.7.2 available; no running containers; socket requires sandbox escalation"
+    },
+    {
+      "check": "Disk",
+      "result": "344GiB available at start; no resource capacity claim"
+    },
+    {
+      "check": "Baseline gate-model",
+      "result": "node --test scripts/dev/calcify-financial/gate-model.test.mjs:23/23 passed"
+    },
+    {
+      "check": "Archive readiness",
+      "result": "Isolated sparse Records checkout /private/tmp/reef-records-calcify-p3-20261010; archive policy read; no remote mutation."
+    },
+    {
+      "check": "Baseline Kotlin Calcify",
+      "result": "182tests/27reports,0failures/errors/skips; Gradle exit0 in4m23s",
+      "receipt": ".planning/calcify-p3-overnight/baseline/receipt.json"
+    },
+    {
+      "check": "Baseline Go app/streamdirect",
+      "result": "GOTOOLCHAIN=go1.26.9 go test ./internal/app ./internal/streamdirect: passed; app0.310s streamdirect3.422s"
+    }
+  ],
+  "failureLedger": [
+    {
+      "unit": "O0",
+      "reviewInstance": 1,
+      "reason": "GTC scope failed canonical-path alignment",
+      "spike": 1,
+      "owner": "/root/p3_alignment",
+      "state": "CLOSED",
+      "resolution": "DAY/Open same-day correction passed fresh O0review2; no enum expansion."
+    },
+    {
+      "unit": "O1",
+      "owner": "/root/p3_alignment",
+      "reason": "Fixture-helper count/flag assumptions failed twice",
+      "spike": 1,
+      "state": "CLOSED",
+      "resolution": "Bounded source spike plus corrected helper; fixture tests green; preserved original failures."
+    },
+    {
+      "unit": "O1",
+      "owner": "/root/p3_alignment",
+      "reason": "Adverse harness compile/publish-observation assumptions",
+      "spike": 2,
+      "state": "CLOSED",
+      "resolution": "Focused source alignment; corrected helper; red2/red3 retained; focused tests green."
+    },
+    {
+      "unit": "O1",
+      "owner": "/root/p3_alignment",
+      "reason": "Whole matching sandbox loopback-bind restriction",
+      "spike": 3,
+      "state": "CLOSED",
+      "resolution": "Bounded test-environment spike; authorized escalation retry passes; no brokers/containers."
+    },
+    {
+      "unit": "O1",
+      "owner": "p3_capture",
+      "reason": "Handoff stalled ~30min after final receipts",
+      "state": "CLOSED",
+      "spike": ".planning/calcify-p3-overnight/o1/kotlin/handoff-spike-1.md",
+      "resolution": "Bounded handoff spike reconciled205tests,statecap probe,46-file freeze; no code changes."
+    },
+    {
+      "unit": "O1",
+      "owner": "p3_capture",
+      "reason": "Independent review1 reproduced missing semantic validation/EOF checks",
+      "state": "REPLANNED",
+      "spike": ".planning/calcify-p3-overnight/o1/kotlin/review1-research-spike.md",
+      "reviewInstancesConsumed": 1,
+      "resolution": "Read-only spike complete, exact probe reproduced; bounded correction authorized."
+    },
+    {
+      "unit": "O1",
+      "reason": "Review2 replay identity P2",
+      "state": "CORRECTION_AUTHORIZED",
+      "spike": ".planning/calcify-p3-overnight/o1/kotlin/review2-research-spike.md",
+      "reviewInstancesConsumed": 2,
+      "resolution": "Shared deterministic fresh replay construction plus full equality and negative matrix; final fresh pass remains"
+    }
+  ],
+  "morningHandoff": null,
+  "updatedAt": "2026-10-10T15:43:49.753979+00:00",
+  "preflightResearch": {
+    "owner": "/root/p3_docs",
+    "state": "COMPLETE",
+    "output": ".planning/calcify-p3-overnight/preflight/broker-isolation.md",
+    "scope": "Read-only existing patterns and ACL/containment feasibility; no broker mutation",
+    "reviewClaim": false,
+    "sha256": "6a3d8ae3bf1817eadbf1de230fed8c2c5b28d21307b00219cb0149fd3681ad14",
+    "result": "RF1 SASL/ACL negative matrix proposed; existing clients need auth wiring; process caps3840MiB incl probes; no live proof"
+  },
+  "o2Preparation": {
+    "state": "COMPLETE",
+    "owner": "/root/p3_alignment",
+    "scope": "Read-only durable producer binding/snapshot/replay seams; no O2 code before O1 acceptance",
+    "output": ".planning/calcify-p3-overnight/o2/go-binding-research.md",
+    "failureSpike": false,
+    "sha256": "1d61d1bea5e47eace0e0e7e803d9990fe07087f29b9aa8df7a23ed0c7bfe0e72",
+    "result": "Kotlin actual JDBC/Admin startup verifier route + Go independent UUID metadata proposed; no new registry topic/SQL driver; pre-listener fences; canonical binding self-digest excluded."
+  },
+  "o2NontransactionalResearch": {
+    "state": "COMPLETE",
+    "path": ".planning/calcify-p3-overnight/o2/nontransactional-fence-research.md",
+    "sha256": "a1ac0347a1e2e89cf690f1de68dac238b9d38e7b7807dff334c793975464a677"
+  },
+  "o2ActivationResearch": {
+    "state": "COMPLETE",
+    "path": ".planning/calcify-p3-overnight/o2/activation-protocol-research.md",
+    "sha256": "e0d76fd170c9f76a9d0c83db03b86c1ad13343118571233e8d17416b39f00f58"
+  },
+  "endedReason": "Eight-hour window expired; no new feature/review dispatch; handoff preserves tested but unaccepted O1 candidate.",
+  "resumedAuthorization": "User requests O1 fresh review2, fix findings, commit/openPR, add ocr-pilot and address its review."
+}

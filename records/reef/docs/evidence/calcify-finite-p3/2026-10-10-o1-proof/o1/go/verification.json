@@ -1,0 +1,120 @@
+{
+  "schema": "calcify-o1-go-verification-v1",
+  "base": "45211653d2f5b59dd25f4a4db42883881b4d6eb1",
+  "toolchain": "go1.26.9 darwin/arm64",
+  "ownedPatchSha256": "d729c4f7d509f97231d32063406e453e689aa3b80c5e41fcb76867a9d1330963",
+  "ownedSourceHashes": {
+    "services/matching-engine/internal/domain/calcify_lifecycle.go": "9fe7396f3101aecc405318aaebb20b75495bb079936b5294fc0b998a7c85920d",
+    "services/matching-engine/internal/app/calcify_source_profile.go": "f47b63e16b0f2e9ddaf0ef17dd893a3eef063f3d92d2aba3311385e56fef778e",
+    "services/matching-engine/internal/app/calcify_source_identity_test.go": "e6fc8f0c129baa97386bc77f77f849da3f0da50cdca2e04a8d415c2b4d7950f3",
+    "services/matching-engine/internal/streamdirect/config.go": "8f4d038c9bcce67fef0043b1ff12d8259fe1704a4f6dadfb111930b70bdc6221",
+    "services/matching-engine/internal/streamdirect/processor.go": "89957b962a685f0bc2d82ee657f0393ad86624d6b6da5ed974b277c1b44bd17e",
+    "services/matching-engine/internal/streamdirect/runner.go": "8151da32b3a5c1b0d1bb59ac807ac0084cfff0cc548683c15e9c008f1cb07f24",
+    "services/matching-engine/internal/streamdirect/calcify_lifecycle_test.go": "d5ee8f158c19c4b93bb873e35192bb96e294f6f5314481f80ed919f7b804f092",
+    "services/matching-engine/internal/streamdirect/calcify_lifecycle_config_test.go": "9b35ec34ac99dbcc06754c6fc021d82fa1e22d16e6b4ee9cedb5fd1c4135a77a",
+    "services/matching-engine/internal/streamdirect/calcify_lifecycle_checksum_test.go": "59549564b9c8101b3a4659f736045ba2823c568a1ab74d52d6522fe7f4ab2633",
+    "services/matching-engine/README.md": "94328a2a090974722be7ac35a54c41cbdeb0f3d61977bf7db09f6f741254c31f"
+  },
+  "baselineTrackedSourceHashes": {
+    "services/matching-engine/internal/app/calcify_source_profile.go": "cbeb8822d4e8367ab260c36edab59686fa7178fc9470525b29af104ba943ff44",
+    "services/matching-engine/internal/streamdirect/config.go": "00003d1af26610ed9c634fd76cb3fe61cdd7b0f87117b788220d73bd1d657ad8",
+    "services/matching-engine/internal/streamdirect/processor.go": "ee7a6f284a6b5d38b66d8e6b6214711ad41f436a894fb231a0d6e9c4265ba000",
+    "services/matching-engine/internal/streamdirect/runner.go": "ceae64a1f4638feeffd2e41d3e5633694e1805cd0aa6da6853d972d1dedda529",
+    "services/matching-engine/README.md": "da6fba044fbc496adf5b70b1da27d3b23880aea554f0a562f1acac30b3896296"
+  },
+  "fixtures": {
+    "legacy-source-v1.jsonl": {
+      "bytes": 16647,
+      "sha256": "bdd4df11f562ba2f4dd217168a3e81e60f96fa4c3fa4a25c01e75830dda26506"
+    },
+    "finite-lifecycle-source-v1.jsonl": {
+      "bytes": 24809,
+      "sha256": "1a8cf1c8c769e3e2bf32fa80792f36da206f07e6e27ab4bbbc9511c925fb1811"
+    }
+  },
+  "logHashes": {
+    "focused-tests.log": "37829f60f1192d6a20beb8ed0c49de1d8c08a66a754c3dc72d185d85fb1461b5",
+    "vet.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "all-tests-final.log": "f2d64a1b68c9ccf7f7f5bafaeddd031027d6be39264d20b6f87230f23859fb6d",
+    "all-tests.log": "a748567050ab980e4400f873da28d382691df696f958616dea4b2df9cb5477bf",
+    "race-tests.log": "9a4c7a073a802cc4f88251ab0611b2738a8bd914759dae92c6ae877525540fcc",
+    "all-tests-sandbox-red.log": "fa0c1cc56d748fc7f9f14cb3ae0326b317ea9e9fe1ac53013fea71d9bc112325",
+    "focused-tests-red-3.log": "63f709562702dacb73580836fbeb968f5a033d533475978ec02783ef665553ad",
+    "focused-tests-red-2.log": "db336c02b8851db9f809e5c7d3f8f47387fe0e635ffa55e713b0c8974c49c485",
+    "vet-final.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "fixture-tests-red-1.log": "b2d651a9d6f61d3128fd17ce994ccdca3a9308231cd463ead50b7eb6bd2c353c"
+  },
+  "sourceContractSha256": "eec721aa60c1b64a7bada0a973b7b5d4e77510454e9e853fcd8a6a6f8f7c6739",
+  "spikeCount": 3,
+  "combinedReviewInstancesConsumed": 0,
+  "retention": "no-op active new context; manager integration owns overall pass",
+  "liveRuntimeReady": false,
+  "commands": [
+    {
+      "command": "GOCACHE=/private/tmp/calcify-p3-o1-gocache GOTOOLCHAIN=go1.26.9 CALCIFY_LIFECYCLE_FIXTURE_DIR=/Users/dsteele/.codex/worktrees/fa2b-0041/reef/.planning/calcify-p3-overnight/o1/go go test ./internal/streamdirect -run '^TestCalcifyLifecycleLegacyFixture$' -count=1 -v",
+      "exit": 0,
+      "scope": "before producer code edits; legacy baseline captured after repaired harness",
+      "bytes": 16647,
+      "sha256": "bdd4df11f562ba2f4dd217168a3e81e60f96fa4c3fa4a25c01e75830dda26506"
+    },
+    {
+      "command": "GOCACHE=/private/tmp/calcify-p3-o1-gocache GOTOOLCHAIN=go1.26.9 go test ./internal/streamdirect -run '^TestCalcifyLifecycleTypedFixture$' -count=1",
+      "exit": 1,
+      "scope": "expected TDD compile red: missing new config/fact fields"
+    },
+    {
+      "command": "GOCACHE=/private/tmp/calcify-p3-o1-gocache GOTOOLCHAIN=go1.26.9 go test ./internal/app ./internal/streamdirect -run '^TestCalcify(Lifecycle|SourcePublicIdentity)' -count=1 -v",
+      "exit": 0,
+      "log": "focused-tests.log"
+    },
+    {
+      "command": "GOCACHE=/private/tmp/calcify-p3-o1-gocache GOTOOLCHAIN=go1.26.9 go test ./...",
+      "exit": 1,
+      "log": "all-tests-sandbox-red.log",
+      "scope": "sandbox ephemeral loopback bind refusal"
+    },
+    {
+      "command": "GOCACHE=/private/tmp/calcify-p3-o1-gocache GOTOOLCHAIN=go1.26.9 go test ./...",
+      "exit": 0,
+      "log": "all-tests.log",
+      "scope": "approved sandbox escalation for existing local test listeners"
+    },
+    {
+      "command": "GOCACHE=/private/tmp/calcify-p3-o1-gocache GOTOOLCHAIN=go1.26.9 go test -race ./internal/app ./internal/streamdirect",
+      "exit": 0,
+      "log": "race-tests.log"
+    },
+    {
+      "command": "GOCACHE=/private/tmp/calcify-p3-o1-gocache GOTOOLCHAIN=go1.26.9 go vet ./...",
+      "exit": 0,
+      "log": "vet.log"
+    },
+    {
+      "command": "GOCACHE=/private/tmp/calcify-p3-o1-gocache GOTOOLCHAIN=go1.26.9 go test -count=1 ./...",
+      "exit": 0,
+      "log": "all-tests-final.log",
+      "scope": "final regenerated additive contracts; approved local-listener test escalation"
+    },
+    {
+      "command": "GOCACHE=/private/tmp/calcify-p3-o1-gocache GOTOOLCHAIN=go1.26.9 go vet ./...",
+      "exit": 0,
+      "log": "vet-final.log",
+      "scope": "final generated contracts"
+    },
+    {
+      "command": "git diff --check",
+      "exit": 0,
+      "scope": "current whole worktree"
+    }
+  ],
+  "failurePackets": [
+    "fixture-harness-spike-1.md",
+    "poison-harness-spike-2.md",
+    "test-environment-spike-3.md",
+    "focused-tests-red-2.log",
+    "focused-tests-red-3.log",
+    "all-tests-sandbox-red.log",
+    "fixture-tests-red-1.log"
+  ],
+  "workingDirectory": "/Users/dsteele/.codex/worktrees/fa2b-0041/reef/services/matching-engine"
+}

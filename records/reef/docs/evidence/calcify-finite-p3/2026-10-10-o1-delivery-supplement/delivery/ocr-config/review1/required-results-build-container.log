@@ -1,0 +1,84 @@
+TAP version 13
+# Subtest: recognizes observed Maven request throttling and plugin-portal equivalent
+ok 1 - recognizes observed Maven request throttling and plugin-portal equivalent
+  ---
+  duration_ms: 0.612291
+  type: 'test'
+  ...
+# Subtest: successful first build runs once without waiting
+ok 2 - successful first build runs once without waiting
+  ---
+  duration_ms: 0.307166
+  type: 'test'
+  ...
+# Subtest: throttled builds retry with bounded backoff and require actual success
+ok 3 - throttled builds retry with bounded backoff and require actual success
+  ---
+  duration_ms: 1.340541
+  type: 'test'
+  ...
+# Subtest: persistent throttling stays red after three attempts
+ok 4 - persistent throttling stays red after three attempts
+  ---
+  duration_ms: 0.140458
+  type: 'test'
+  ...
+# Subtest: compile errors, interrupted builds and spawn errors do not retry
+ok 5 - compile errors, interrupted builds and spawn errors do not retry
+  ---
+  duration_ms: 0.458875
+  type: 'test'
+  ...
+# build output
+# dependency error
+# Subtest: subprocess runner captures both streams and preserves exit code
+ok 6 - subprocess runner captures both streams and preserves exit code
+  ---
+  duration_ms: 128.83225
+  type: 'test'
+  ...
+# Subtest: accepts a successful full CI run
+ok 7 - accepts a successful full CI run
+  ---
+  duration_ms: 0.681625
+  type: 'test'
+  ...
+# Subtest: accepts intentionally skipped full jobs for a bot-only pull request
+ok 8 - accepts intentionally skipped full jobs for a bot-only pull request
+  ---
+  duration_ms: 0.16675
+  type: 'test'
+  ...
+# Subtest: accepts an intentionally skipped replay on a human pull request
+ok 9 - accepts an intentionally skipped replay on a human pull request
+  ---
+  duration_ms: 1.172
+  type: 'test'
+  ...
+# Subtest: rejects any failed full-CI job
+ok 10 - rejects any failed full-CI job
+  ---
+  duration_ms: 1.382584
+  type: 'test'
+  ...
+# Subtest: rejects a replay skip when replay is required
+ok 11 - rejects a replay skip when replay is required
+  ---
+  duration_ms: 0.412208
+  type: 'test'
+  ...
+# Subtest: rejects a failed scope classifier even when full CI is skipped
+ok 12 - rejects a failed scope classifier even when full CI is skipped
+  ---
+  duration_ms: 0.099041
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 12
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 224.52075

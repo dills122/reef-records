@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "scope": "Config followup2 developer proof frozen before independent review2 verdict; original config review1 consumed, next2 of3; O1cap3of3 exhausted",
+  "source_root": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/followup2",
+  "files": [
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/followup2/script-surface.log",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/script-surface.log",
+      "bytes": 871,
+      "sha256": "b2ca8c6b19bf4566453a91d00a4df1c2a87e5c7ed11012bcc5f06abbd132dc49",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/followup2/actionlint.log",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/actionlint.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/followup2/no-update-guard-red.log",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/no-update-guard-red.log",
+      "bytes": 2552,
+      "sha256": "7c1196cfef5532385641c82d0063b1a17743df11e0b6023aa25be6ec02f4b71f",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/followup2/verification.json",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/verification.json",
+      "bytes": 3803,
+      "sha256": "6f3a46d373e49f93fa302e682cad989423295aeb9070454b901cebeff3bcee0b",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/followup2/focused-coverage.log",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/focused-coverage.log",
+      "bytes": 102,
+      "sha256": "d5b1b2917fdb54544a0b21236599fec6977c23bf74e85d6dce5e55756d2a67ea",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/followup2/author-explanation.md",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/author-explanation.md",
+      "bytes": 2309,
+      "sha256": "3c0b896888e1329ac6ba89e281871ba61f593d5ddf5dc2c74a6b1ae5ee0ee77c",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/followup2/neutral-bootstrap.md",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/neutral-bootstrap.md",
+      "bytes": 2233,
+      "sha256": "a4cd87788ff628a2bd861cff01fd792224b71dd3a2f1050825639f21bb2d5fe9",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/followup2/focused-coverage-check.mjs",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/focused-coverage-check.mjs",
+      "bytes": 3196,
+      "sha256": "0ded6224ceaec55748a8c1eec72ddaf7991b22271b6a234f06a842b1309d8334",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/followup2/new-delta.patch",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/new-delta.patch",
+      "bytes": 4337,
+      "sha256": "cb30366b9624477c880b749a56772df80aef4c10b4da99cc4e148c1e9771fccf",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/followup2/required-results-build-container.log",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/required-results-build-container.log",
+      "bytes": 2344,
+      "sha256": "b7312d46b3de82248d2615e11c91966ace6fd43451f4f4c1280c09422ae13534",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/followup2/owned-files.json",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/owned-files.json",
+      "bytes": 1296,
+      "sha256": "9d20c0e0281a327e856e6351aaa4343da035652d3cba5056314e97ece454532f",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/followup2/focused-coverage-result.json",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/focused-coverage-result.json",
+      "bytes": 4951,
+      "sha256": "c7033c959e539f7807d7f63eaa42c7ce27a2073bd4a6063ee607ad49db4b6423",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/followup2/ci-hardening.log",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/ci-hardening.log",
+      "bytes": 42,
+      "sha256": "8a4af3c7efa4dad22bd2622d250ce9012d8122da8d6a677ebcdd6c51b3c9b790",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/followup2/combined.patch",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/followup2/combined.patch",
+      "bytes": 7254,
+      "sha256": "c5d1d34957fe53bdb8abf650dad4886bf818798ea71200710255932206e21fdb",
+      "copy": "Exact source bytes; no normalization"
+    }
+  ],
+  "exclusions": [
+    "No review2 output selected while pending",
+    "No downloaded third-party source/npm tarball byte copies"
+  ],
+  "original_config_merge": "ed76dd6b196731c454c0868f966424c491f33954"
+}

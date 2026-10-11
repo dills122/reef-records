@@ -1,0 +1,26 @@
+[
+  {
+    "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.FiniteLifecycleCaptureRuntimeTest.xml",
+    "name": "com.reef.platform.calcify.FiniteLifecycleCaptureRuntimeTest",
+    "tests": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.FiniteLifecycleCaptureProcessorTest.xml",
+    "name": "com.reef.platform.calcify.FiniteLifecycleCaptureProcessorTest",
+    "tests": 18,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  {
+    "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.FiniteLifecycleContractTest.xml",
+    "name": "com.reef.platform.calcify.FiniteLifecycleContractTest",
+    "tests": 5,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+]

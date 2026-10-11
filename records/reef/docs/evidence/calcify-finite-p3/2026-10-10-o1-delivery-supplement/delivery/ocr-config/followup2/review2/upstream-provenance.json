@@ -1,0 +1,13 @@
+{
+  "action.yml": true,
+  "internal/agent/agent.go": true,
+  "internal/config/rules/system_rules.go": true,
+  "npm integrity": true,
+  "npm gitHead": true,
+  "bin/ocr.js": true,
+  "bin/ocr.js pinned git blob": true,
+  "scripts/update.js": true,
+  "scripts/update.js pinned git blob": true,
+  "scripts/platform.js": true,
+  "scripts/platform.js pinned git blob": true
+}

@@ -1,0 +1,23 @@
+{
+  "sourceAggregateSha256": "7bbc9c22c7e4c14d8173c76b06bb64bae411083b963c7b365cfc3cd3af63e8c8",
+  "sourceFiles": 46,
+  "ownedPatchSha256": "a987f55cbd92b22021a29e9c1f0d2194c9d7ffe550041f38d4dfb8b2f4c37e98",
+  "ownedPatchBytes": 1144527,
+  "changedVersusReview2": [
+    "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessor.kt",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessorTest.kt",
+    "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntimeTest.kt"
+  ],
+  "head": "45211653d2f5b59dd25f4a4db42883881b4d6eb1",
+  "tests": "pending",
+  "finiteTests": 36,
+  "surroundingTests": 70,
+  "failures": 0,
+  "errors": 0,
+  "skips": 0,
+  "compiledIdentityRows": 43,
+  "sourceAndCompiledUnchanged": true,
+  "earlierFullRegressionTests": 213,
+  "fullRegressionRerun": false,
+  "buildLease": "released"
+}

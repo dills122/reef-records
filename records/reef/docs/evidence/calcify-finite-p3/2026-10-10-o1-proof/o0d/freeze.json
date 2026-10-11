@@ -1,0 +1,46 @@
+{
+  "unit": "O0D",
+  "reviewInstance": 1,
+  "reviewMax": 3,
+  "base": "51cd90eee43d257bad4f973fc9bd81f273bb4ef7",
+  "head": "51cd90eee43d257bad4f973fc9bd81f273bb4ef7",
+  "branch": "codex/calcify-p3-overnight-2026-10-09",
+  "frozenAtUtc": "2026-10-10T03:03:09.988171+00:00",
+  "paths": [
+    {
+      "path": "docs/README.md",
+      "bytes": 5773,
+      "sha256": "191ed2a75bf4c463bf5829bc03c2c9ff3d8a4c3c017411512a12fcc6583708de"
+    },
+    {
+      "path": "docs/RECORDS_RETENTION.md",
+      "bytes": 11854,
+      "sha256": "c9e7cb0281a3d323ddf0f5e929faa848e3aabe16cc15b6c12044502d97a221af"
+    },
+    {
+      "path": "docs/work/CALCIFY_PHASE2_IMPLEMENTATION.md",
+      "bytes": 13505,
+      "sha256": "7a047daddc74f5599ae2696aca82192508e970f24f60ffe09df683744e57cdc6"
+    },
+    {
+      "path": "docs/work/CALCIFY_SYSTEM_ARCHITECTURE_RFC.md",
+      "bytes": 70297,
+      "sha256": "dcf201187dd026c2afe4eef349be96a49d4ada145c84283d812973e238039e3a"
+    },
+    {
+      "path": "docs/evidence/calcify-financial-sprint1/README.md",
+      "bytes": 16718,
+      "sha256": "80d15595645686334b1a6c25fd9ab4b103146f7ea0ed1fc329588f61bca5a563"
+    },
+    {
+      "path": "docs/work/handoffs/2026-10-04-calcify-financial-sprint1-recovery.md",
+      "bytes": 13701,
+      "sha256": "3071ff5ac09861bb4f028d2c301564e2631065a86131d00c439e2a84a5eb328b"
+    },
+    {
+      "path": "docs/records/retained-evidence.json",
+      "bytes": 73818,
+      "sha256": "c5a09528f7f5c7306b3734d4d1f10160a21868889ef8c540b915baf80259fb47"
+    }
+  ]
+}

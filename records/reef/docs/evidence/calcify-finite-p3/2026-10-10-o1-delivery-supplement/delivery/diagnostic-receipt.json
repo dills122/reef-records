@@ -1,0 +1,20 @@
+{
+  "recordsOriginalWhitespaceCheck": {
+    "exit": 2,
+    "scope": "whole archived original patches/protobuf; preserved byte-exact",
+    "spike": "records-whitespace-research-spike.md"
+  },
+  "diagnosticDecode": {
+    "error": "UnicodeDecodeError while text-decoding Git whitespace output; raw-byte capture correction accepted"
+  },
+  "recordsSigning": {
+    "firstExit": 128,
+    "error": "Sandbox GPG temporary-file/agent permission",
+    "retry": "authorized configured GPG signing succeeded; signing not disabled"
+  },
+  "remoteTree": {
+    "firstError": "Repository-wide recursive tree truncated; verification safely refused",
+    "spike": "records-remote-verification-spike.md",
+    "retry": "untruncated exact imported subtree and every decoded blob verified"
+  }
+}

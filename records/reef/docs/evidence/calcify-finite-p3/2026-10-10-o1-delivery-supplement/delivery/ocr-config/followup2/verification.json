@@ -1,0 +1,92 @@
+{
+  "toolchain": {
+    "node": "v22.23.3",
+    "bun": "1.3.14",
+    "actionlint": "1.7.12"
+  },
+  "source": {
+    "cwd": "/private/tmp/reef-ocr-config-20261010",
+    "originalTrustedBase": "e69e62ada42c633b81f90ccf178680973b398b0c",
+    "mergedFirstFix": "ed76dd6b196731c454c0868f966424c491f33954",
+    "head": "ed76dd6b196731c454c0868f966424c491f33954",
+    "branch": "codex/ocr-pin-disable-auto-update",
+    "files": {
+      ".github/workflows/open-code-review-pilot.yml": "2448b8e666e1fab7acefcc4eb22e7236a81aa374f41446d6dfc7958aaf981b33",
+      ".opencodereview/rule.json": "121276b786a9f75e1c0a5f766358cbf38e08859c9d91b7541a882dd2caacd0eb",
+      "scripts/dev/ci-workflow-hardening.test.mjs": "96cbe9a7473a2a05a4f9d29c9c3e7a6b9abb4e36b04d332c4096c246e8dd7ecf",
+      "docs/CI_OPERATIONS.md": "78c6181665c251144966b28e1f9dd8b6c320a85f67f5c5dcd2e0c4b2c14b4b17"
+    },
+    "combinedPatchSha256": "c5d1d34957fe53bdb8abf650dad4886bf818798ea71200710255932206e21fdb",
+    "newDeltaPatchSha256": "cb30366b9624477c880b749a56772df80aef4c10b4da99cc4e148c1e9771fccf",
+    "newDeltaFiles": [
+      ".github/workflows/open-code-review-pilot.yml",
+      "scripts/dev/ci-workflow-hardening.test.mjs",
+      "docs/CI_OPERATIONS.md"
+    ],
+    "ruleUnchangedFromMergedFirstFix": true,
+    "configReviewInstancesConsumed": 1,
+    "nextReviewInstance": 2,
+    "maximumConfigReviewInstances": 3,
+    "o1ReviewInstancesConsumed": 3,
+    "maximumO1ReviewInstances": 3
+  },
+  "commands": [
+    {
+      "command": "node scripts/dev/ci-workflow-hardening.test.mjs",
+      "exit": 1,
+      "log": "no-update-guard-red.log",
+      "scope": "New updater-disable regression fails before approved workflow change.",
+      "logSha256": "7c1196cfef5532385641c82d0063b1a17743df11e0b6023aa25be6ec02f4b71f"
+    },
+    {
+      "command": "node scripts/dev/ci-workflow-hardening.test.mjs",
+      "exit": 0,
+      "log": "ci-hardening.log",
+      "logSha256": "8a4af3c7efa4dad22bd2622d250ce9012d8122da8d6a677ebcdd6c51b3c9b790"
+    },
+    {
+      "command": "node scripts/dev/script-surface-check.mjs",
+      "exit": 0,
+      "log": "script-surface.log",
+      "scope": "280 scripts;268 Node/11 shell; existing Deno TS syntax skip.",
+      "logSha256": "b2ca8c6b19bf4566453a91d00a4df1c2a87e5c7ed11012bcc5f06abbd132dc49"
+    },
+    {
+      "command": "node --test scripts/ci/check-required-results.test.mjs scripts/ci/build-container.test.mjs",
+      "exit": 0,
+      "log": "required-results-build-container.log",
+      "tests": 12,
+      "failures": 0,
+      "skips": 0,
+      "logSha256": "b7312d46b3de82248d2615e11c91966ace6fd43451f4f4c1280c09422ae13534"
+    },
+    {
+      "command": "actionlint .github/workflows/open-code-review-pilot.yml",
+      "exit": 0,
+      "log": "actionlint.log",
+      "logSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "bun .planning/ocr-config-delivery/followup2/focused-coverage-check.mjs",
+      "exit": 0,
+      "log": "focused-coverage.log",
+      "scope": "48 original paths;17 handwritten retained/31 generated Java excluded/7 test includes; exact combined and merged-delta workflow bytes.",
+      "logSha256": "d5b1b2917fdb54544a0b21236599fec6977c23bf74e85d6dce5e55756d2a67ea"
+    },
+    {
+      "command": "git diff --check",
+      "exit": 0
+    }
+  ],
+  "actualHostedOcrReview": false,
+  "noProviderOrSecretAccess": true,
+  "selfAudit": {
+    "actionAndVersionPinsUnchanged": true,
+    "allPriorBudgetSelectionTestTrustGuardsRetained": true,
+    "sourceChangesOnlyApprovedThreePaths": true,
+    "ruleReadOnly": true,
+    "productSourceUntouched": true,
+    "fullCombinedTargetFourPathsFrozen": true
+  },
+  "researchDirectory": "/Users/dsteele/.codex/worktrees/fa2b-0041/reef/.planning/calcify-p3-overnight/delivery/ocr-install-spike"
+}

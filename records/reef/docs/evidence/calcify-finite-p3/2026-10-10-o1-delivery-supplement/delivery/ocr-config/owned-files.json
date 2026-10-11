@@ -1,0 +1,16 @@
+{
+  "root": "/private/tmp/reef-ocr-config-20261010",
+  "base": "e69e62ada42c633b81f90ccf178680973b398b0c",
+  "head": "e69e62ada42c633b81f90ccf178680973b398b0c",
+  "branch": "codex/ocr-calcify-review-budget",
+  "combinedReviewInstancesConsumed": 0,
+  "maxReviewInstances": 3,
+  "files": {
+    ".github/workflows/open-code-review-pilot.yml": "8776f22bf88671bd81b59738c9a00aeccdaefc57af7ab274ea4153767fba8c76",
+    ".opencodereview/rule.json": "121276b786a9f75e1c0a5f766358cbf38e08859c9d91b7541a882dd2caacd0eb",
+    "scripts/dev/ci-workflow-hardening.test.mjs": "0ee3d60a173507385b38ae2f1befd1ad96505bd14d6d6f3abd34f3c87eeaa79c",
+    "docs/CI_OPERATIONS.md": "cd960c3a074c9247aa47102008da89abce99b7a252ef07b4623a6fd0d3a0280b"
+  },
+  "patchSha256": "3e721f170b1d32034e7683202a60a5c4a59b2935461532fbc61cabc6321ab786",
+  "dirtyState": " M .github/workflows/open-code-review-pilot.yml\n M .opencodereview/rule.json\n M docs/CI_OPERATIONS.md\n M scripts/dev/ci-workflow-hardening.test.mjs\n?? .planning/\n"
+}

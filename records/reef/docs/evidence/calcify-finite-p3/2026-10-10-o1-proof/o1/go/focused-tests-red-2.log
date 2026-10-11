@@ -1,0 +1,8 @@
+# github.com/dills122/reef/services/matching-engine/internal/streamdirect [github.com/dills122/reef/services/matching-engine/internal/streamdirect.test]
+internal/streamdirect/calcify_lifecycle_test.go:258:69: cannot use map[string]any{…} (value of type map[string]any) as map[string]string value in argument to newFakeDelivery
+=== RUN   TestCalcifySourcePublicIdentityPreservesV1Bytes
+--- PASS: TestCalcifySourcePublicIdentityPreservesV1Bytes (0.00s)
+PASS
+ok  	github.com/dills122/reef/services/matching-engine/internal/app	0.342s
+FAIL	github.com/dills122/reef/services/matching-engine/internal/streamdirect [build failed]
+FAIL

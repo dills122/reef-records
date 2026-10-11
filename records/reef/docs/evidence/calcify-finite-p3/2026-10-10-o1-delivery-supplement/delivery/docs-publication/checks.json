@@ -1,0 +1,47 @@
+{
+  "scope": "Five owned current publication prose/inventory docs only; no source/plan/generic guidance/Git/network writes",
+  "delta": [
+    "Separate integration1of3 Ready/managerAccept and docs1dee/readyReefPR485 recorded",
+    "OCR48of48 budget refusal beforedispatch; no substantive pass, partiallog and scoped trustedrule retry gate",
+    "CI24success/3running at1dee; final outcome pending",
+    "Summary row bytes/hash refreshed in bothinventories; unrelated rows/archive230 metadata preserved"
+  ],
+  "local_links_checked": 49,
+  "whitespace": "PASS",
+  "inventory_hashes": "PASS",
+  "original_archive_identity_and_counts": "unchanged",
+  "issues": [],
+  "files": [
+    {
+      "path": "docs/WORK_PLAN.md",
+      "bytes": 56638,
+      "sha256": "9a577d4b31508b8dcbe982601c04b91d0c9cb1b9de5404a647e151dd4d56150c"
+    },
+    {
+      "path": "docs/evidence/calcify-finite-p3/README.md",
+      "bytes": 9218,
+      "sha256": "078fa7e8447b426e2807fb144832a5f4dceaf2c560416507a3072ccbddd4d528"
+    },
+    {
+      "path": "docs/work/handoffs/2026-10-10-calcify-finite-p3-overnight.md",
+      "bytes": 6486,
+      "sha256": "da6d9b739450c23c4b2ef4417c0e923207360a26968d7487736fd3f0bad34efc"
+    },
+    {
+      "path": "docs/records/2026-10-10-calcify-finite-p3-retention.json",
+      "bytes": 8058,
+      "sha256": "0cdf102da5e2a7badb55983e2888eab813957266b71a7c5caf81be756ffceb23"
+    },
+    {
+      "path": "docs/records/retained-evidence.json",
+      "bytes": 75418,
+      "sha256": "152a597b629772ea8777781c6599fdb3c44122711963e0b37cd7593bf81382bb"
+    }
+  ],
+  "source_runtime_tests": "Not rerun; prose-only scope",
+  "pending": [
+    "Final Reef CI",
+    "Approved OCR scoped rule change/retry and substantive outcome",
+    "Supplement publication/verification"
+  ]
+}

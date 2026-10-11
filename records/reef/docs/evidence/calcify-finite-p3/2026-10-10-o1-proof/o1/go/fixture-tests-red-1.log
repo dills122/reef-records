@@ -1,0 +1,24 @@
+Transcription of retained tool output; not a rerun or complete shell log.
+Command: GOCACHE=/private/tmp/calcify-p3-o1-gocache GOTOOLCHAIN=go1.26.9 CALCIFY_LIFECYCLE_FIXTURE_DIR=/Users/dsteele/.codex/worktrees/fa2b-0041/reef/.planning/calcify-p3-overnight/o1/go go test ./internal/streamdirect -run '^TestCalcifyLifecycleLegacyFixture$' -count=1 -v
+Exit: 1
+=== RUN   TestCalcifyLifecycleLegacyFixture
+    calcify_lifecycle_test.go:91: command1: processed=12 err=<nil>
+--- FAIL: TestCalcifyLifecycleLegacyFixture (0.00s)
+FAIL
+FAIL github.com/dills122/reef/services/matching-engine/internal/streamdirect 0.302s
+FAIL
+
+Same command after attempted source helper correction.
+Exit: 1
+# github.com/dills122/reef/services/matching-engine/internal/streamdirect [github.com/dills122/reef/services/matching-engine/internal/streamdirect.test]
+internal/streamdirect/calcify_lifecycle_test.go:74:10: source.fetched undefined (type *fakeSource has no field or method fetched)
+FAIL github.com/dills122/reef/services/matching-engine/internal/streamdirect [build failed]
+FAIL
+
+Same command after bounded source spike and final harness correction.
+Exit: 0
+=== RUN   TestCalcifyLifecycleLegacyFixture
+    calcify_lifecycle_test.go:104: legacy fixture SHA256=bdd4df11f562ba2f4dd217168a3e81e60f96fa4c3fa4a25c01e75830dda26506 bytes=16647
+--- PASS: TestCalcifyLifecycleLegacyFixture (0.00s)
+PASS
+ok github.com/dills122/reef/services/matching-engine/internal/streamdirect 0.273s

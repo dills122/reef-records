@@ -1,0 +1,12 @@
+{
+  "scope": "Read-only publication alignment spike; no product/previous archive edits",
+  "path": "docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/records-original-patch-whitespace.log",
+  "attributes": "",
+  "rawBlobOID": "8c94f08834606cd11d8eaf3f58e82d0bd1718801",
+  "filteredBlobOID": "fe885ede4acb9acbb691462c553e0d78e373c162",
+  "attempt1CommittedOID": "fe885ede4acb9acbb691462c553e0d78e373c162",
+  "hypothesis": "text filter normalized10 CR bytes",
+  "confirmation": true,
+  "correction": "hash-object --no-filters and update-index --cacheinfo for proof/Records raw import; signed temp-index checkpoint; exact byte verification before archive",
+  "priorAttemptPreserved": true
+}

@@ -1,0 +1,7 @@
+ACCEPTED_INVALID trade-price-outside-profile
+ACCEPTED_INVALID trade-foreign-run
+ACCEPTED_INVALID trade-foreign-source
+ACCEPTED_INVALID duplicate-blank-execution-facts
+ACCEPTED_INVALID cancel-wrong-engine-and-order
+ACCEPTED_TRAILING_JSON
+TRAILING_JSON_CAPTURE prefixClosed=true outcomeCount=1 resume=1

@@ -1,0 +1,26 @@
+ACCEPTED valid-prefix equal=true
+ACCEPTED valid-certified-replay equal=true
+REFUSED replay-kind certified replay member contradiction
+REFUSED replay-within-ordinal certified replay member contradiction
+REFUSED replay-flat-ordinal certified replay member contradiction
+REFUSED replay-outcome-ordinal certified replay member contradiction
+REFUSED replay-command-id certified replay member contradiction
+REFUSED replay-kind-unspecified certified replay member contradiction
+REFUSED replay-duplicate-command-member-id certified replay member contradiction
+REFUSED trade-foreign-run trade command/scope/provenance mismatch
+REFUSED trade-foreign-source trade command/scope/provenance mismatch
+REFUSED trade-blank-executions execution party/role contradiction
+REFUSED cancel-wrong-order accepted result command mismatch
+REFUSED trade-price-cap-with-consistent-pairs economics outside finite profile
+FULL_VALUE suffix={} parseAccepted=false reduceAccepted=false
+FULL_VALUE suffix=[] parseAccepted=false reduceAccepted=false
+FULL_VALUE suffix=true parseAccepted=false reduceAccepted=false
+FULL_VALUE suffix=null parseAccepted=false reduceAccepted=false
+FULL_VALUE suffix=42 parseAccepted=false reduceAccepted=false
+FULL_VALUE suffix=trailing-garbage parseAccepted=false reduceAccepted=false
+FULL_VALUE suffix="text" parseAccepted=false reduceAccepted=false
+FULL_VALUE legal-whitespace closed=true bytes=2007 sourceHashExact=true
+MANAGED_FULL_VALUE original-suffix-and-frontier-assertions=PASS
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.

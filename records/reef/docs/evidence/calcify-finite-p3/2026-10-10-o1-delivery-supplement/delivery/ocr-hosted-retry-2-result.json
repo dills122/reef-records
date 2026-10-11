@@ -1,0 +1,57 @@
+{
+  "status": "skipped",
+  "llm": {
+    "model": "openai/gpt-5.4-mini"
+  },
+  "message": "Review skipped: no items were selected.",
+  "summary": {
+    "files_reviewed": 0,
+    "comments": 0,
+    "total_tokens": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "elapsed": "0s"
+  },
+  "tool_calls": {
+    "total": 0,
+    "by_tool": {},
+    "failure": 0,
+    "failure_by_tool": {},
+    "failure_details": []
+  },
+  "comments": [],
+  "session_id": "f42fc9bd-befa-4221-b1e0-a1e9522a9deb",
+  "manifest": {
+    "schema_version": "ocr.run-manifest/v1",
+    "run_id": "f42fc9bd-befa-4221-b1e0-a1e9522a9deb",
+    "operation": "review",
+    "terminal_state": "skipped",
+    "repository": {
+      "identity_sha256": "6e5979b54b60528d938f9d635f985c416544a3028ef163789f6a5ba2e1fdb2cd"
+    },
+    "input": {
+      "mode": "range",
+      "requested_from": "dcb106c4ddd5ccda60df7c8e6411fca88ef5be14",
+      "requested_head": "dcb106c4ddd5ccda60df7c8e6411fca88ef5be14",
+      "resolved_base": "dcb106c4ddd5ccda60df7c8e6411fca88ef5be14",
+      "resolved_head": "dcb106c4ddd5ccda60df7c8e6411fca88ef5be14",
+      "exact_range": "dcb106c4ddd5ccda60df7c8e6411fca88ef5be14..dcb106c4ddd5ccda60df7c8e6411fca88ef5be14",
+      "source_artifact_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "execution": {
+      "ocr_version": "v1.12.9",
+      "model": "openai/gpt-5.4-mini",
+      "configured_concurrency": 2,
+      "rule_config_sha256": "cf61f0e5b7da16eb8a3f092bc7bbd65086837fb855ecea08ba14544c5fa54d76",
+      "runtime_config_sha256": "78c2c3121b35c043d8d4c562a502778ca4516858bd912771383ac9c8a65a8605"
+    },
+    "coverage": {
+      "selected": [],
+      "completed": [],
+      "reused": [],
+      "failed": [],
+      "waived": []
+    },
+    "elapsed_ms": 6
+  }
+}

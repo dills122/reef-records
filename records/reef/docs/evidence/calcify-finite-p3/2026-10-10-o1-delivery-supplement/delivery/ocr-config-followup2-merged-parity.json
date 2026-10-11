@@ -1,0 +1,20 @@
+{
+  "configPR": 487,
+  "review": "Ready2of3;author/managerAccept",
+  "reviewHead": "be706614678b11439f8df851467da3ae455cdbc9",
+  "requiredCI": "28success/3conditional skips;ci-required success",
+  "mergeCommit": "3c230521e3b3694f02e609579deaf63d361eb941",
+  "mergedAt": "2026-10-10T17:10:47Z",
+  "all4ReviewedHashesMatchTrustedMaster": true,
+  "files": {
+    ".github/workflows/open-code-review-pilot.yml": "2448b8e666e1fab7acefcc4eb22e7236a81aa374f41446d6dfc7958aaf981b33",
+    ".opencodereview/rule.json": "121276b786a9f75e1c0a5f766358cbf38e08859c9d91b7541a882dd2caacd0eb",
+    "scripts/dev/ci-workflow-hardening.test.mjs": "96cbe9a7473a2a05a4f9d29c9c3e7a6b9abb4e36b04d332c4096c246e8dd7ecf",
+    "docs/CI_OPERATIONS.md": "78c6181665c251144966b28e1f9dd8b6c320a85f67f5c5dcd2e0c4b2c14b4b17"
+  },
+  "actionPin": "bccbc15f785269400735d5255540c231e6c02b6d",
+  "cliPin": "1.12.9",
+  "OCR_NO_UPDATE": "1",
+  "softBudget": 1500000,
+  "CalcifySourceUnchanged": true
+}

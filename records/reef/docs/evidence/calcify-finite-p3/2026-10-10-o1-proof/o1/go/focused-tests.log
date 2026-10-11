@@ -1,0 +1,55 @@
+=== RUN   TestCalcifySourcePublicIdentityPreservesV1Bytes
+--- PASS: TestCalcifySourcePublicIdentityPreservesV1Bytes (0.00s)
+PASS
+ok  	github.com/dills122/reef/services/matching-engine/internal/app	0.211s
+=== RUN   TestCalcifyLifecycleChecksumCoversTypedCommand
+=== RUN   TestCalcifyLifecycleChecksumCoversTypedCommand/metadata
+=== RUN   TestCalcifyLifecycleChecksumCoversTypedCommand/time
+=== RUN   TestCalcifyLifecycleChecksumCoversTypedCommand/quantity
+=== RUN   TestCalcifyLifecycleChecksumCoversTypedCommand/schema
+=== RUN   TestCalcifyLifecycleChecksumCoversTypedCommand/profile
+=== RUN   TestCalcifyLifecycleChecksumCoversTypedCommand/binding
+=== RUN   TestCalcifyLifecycleChecksumCoversTypedCommand/routing
+=== RUN   TestCalcifyLifecycleChecksumCoversTypedCommand/ownership
+--- PASS: TestCalcifyLifecycleChecksumCoversTypedCommand (0.00s)
+    --- PASS: TestCalcifyLifecycleChecksumCoversTypedCommand/metadata (0.00s)
+    --- PASS: TestCalcifyLifecycleChecksumCoversTypedCommand/time (0.00s)
+    --- PASS: TestCalcifyLifecycleChecksumCoversTypedCommand/quantity (0.00s)
+    --- PASS: TestCalcifyLifecycleChecksumCoversTypedCommand/schema (0.00s)
+    --- PASS: TestCalcifyLifecycleChecksumCoversTypedCommand/profile (0.00s)
+    --- PASS: TestCalcifyLifecycleChecksumCoversTypedCommand/binding (0.00s)
+    --- PASS: TestCalcifyLifecycleChecksumCoversTypedCommand/routing (0.00s)
+    --- PASS: TestCalcifyLifecycleChecksumCoversTypedCommand/ownership (0.00s)
+=== RUN   TestCalcifyLifecycleAbsentFieldRetainsLegacyChecksumAndBytes
+--- PASS: TestCalcifyLifecycleAbsentFieldRetainsLegacyChecksumAndBytes (0.00s)
+=== RUN   TestCalcifyLifecycleConfigurationDefaultsOff
+--- PASS: TestCalcifyLifecycleConfigurationDefaultsOff (0.00s)
+=== RUN   TestCalcifyLifecycleInvalidConfigStopsBeforeFetch
+=== RUN   TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/missing_profile
+=== RUN   TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/missing_binding
+=== RUN   TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/short_binding
+=== RUN   TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/nonhex_binding
+=== RUN   TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/uppercase_binding
+=== RUN   TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/large_batch
+--- PASS: TestCalcifyLifecycleInvalidConfigStopsBeforeFetch (0.00s)
+    --- PASS: TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/missing_profile (0.00s)
+    --- PASS: TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/missing_binding (0.00s)
+    --- PASS: TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/short_binding (0.00s)
+    --- PASS: TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/nonhex_binding (0.00s)
+    --- PASS: TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/uppercase_binding (0.00s)
+    --- PASS: TestCalcifyLifecycleInvalidConfigStopsBeforeFetch/large_batch (0.00s)
+=== RUN   TestCalcifyLifecycleLiveAndCommittedReplayRemainGated
+--- PASS: TestCalcifyLifecycleLiveAndCommittedReplayRemainGated (0.00s)
+=== RUN   TestCalcifyLifecycleLegacyFixture
+    calcify_lifecycle_test.go:129: legacy fixture SHA256=bdd4df11f562ba2f4dd217168a3e81e60f96fa4c3fa4a25c01e75830dda26506 bytes=16647
+--- PASS: TestCalcifyLifecycleLegacyFixture (0.00s)
+=== RUN   TestCalcifyLifecycleTypedFixture
+--- PASS: TestCalcifyLifecycleTypedFixture (0.00s)
+=== RUN   TestCalcifyLifecycleRoutingAndAttemptedPayloadArePreserved
+--- PASS: TestCalcifyLifecycleRoutingAndAttemptedPayloadArePreserved (0.00s)
+=== RUN   TestCalcifyLifecyclePoisonHasNoInventedTypedCommand
+--- PASS: TestCalcifyLifecyclePoisonHasNoInventedTypedCommand (0.00s)
+=== RUN   TestCalcifyLifecycleFailedPublishRollbackAndRetryPreserveFact
+--- PASS: TestCalcifyLifecycleFailedPublishRollbackAndRetryPreserveFact (0.00s)
+PASS
+ok  	github.com/dills122/reef/services/matching-engine/internal/streamdirect	0.280s

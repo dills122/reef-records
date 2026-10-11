@@ -1,0 +1,8 @@
+{
+  "commit": "e69e62ada42c633b81f90ccf178680973b398b0c",
+  "sha256": {
+    ".opencodereview/rule.json": "785998777cf12314f6f44786f90fc069273894e318d36ddc4473230836d0a6f4",
+    ".github/workflows/open-code-review-pilot.yml": "71424cf125ae696f67f5f56a4552ce78d4e547c81d53c54e107b2d2aaf4c4345"
+  },
+  "pinnedAlibabaCommit": "bccbc15f785269400735d5255540c231e6c02b6d"
+}

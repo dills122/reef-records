@@ -1,0 +1,38 @@
+{
+  "unit": "O0",
+  "kind": "planning-only",
+  "spec_sha256": "eec721aa60c1b64a7bada0a973b7b5d4e77510454e9e853fcd8a6a6f8f7c6739",
+  "patch_sha256": "a5da8d8937c1f31948d6867b0389bbf2442a5f25de0122ef53425ebe01ff500f",
+  "local_links_missing": [],
+  "git_diff_check_exit": 0,
+  "retention": {
+    "command": "bun scripts/ci/check-records-retention.mjs",
+    "exit": 0,
+    "archived_files_checked": 520
+  },
+  "runtime_tests_by_author": [
+    {
+      "scope": "Existing DAY lifecycle and canonical stream replay, not new P3 implementation",
+      "command": "GOCACHE=/private/tmp/calcify-p3-o0-policy-gocache GOTOOLCHAIN=go1.26.9 go test ./internal/app ./internal/streamdirect -run 'TestCalcify(SourceLifecycleAndTerminalIdentitySurviveRestore|P0CanonicalCommandPathAndReplay)$' -count=1",
+      "exit": 0,
+      "app_seconds": 0.261,
+      "stream_seconds": 0.294
+    }
+  ],
+  "archive_pass": "no-op: new active planning contract, no superseded record removed",
+  "graph_project": "reef-main",
+  "graph_generation": "2026-09-30T21:14:17Z",
+  "graph_limitations": "Different checkout and stale/changed/not-tracked evidence paths; current-source fallback used; no exhaustive claim",
+  "search_graph_pages": "22 rows complete; offsets0,20",
+  "serena_limitations": "Only Svelte language server, Go symbol extraction unavailable; bounded source fallback",
+  "review_target_instance": 2,
+  "recovery_spikes": 1,
+  "failed_checks": [
+    {
+      "scope": "Same focused Go tests with default Go cache/login shell",
+      "exit": 1,
+      "reason": "Go build cache sandbox access denied; login shell eval parse error",
+      "retained_at": "policy-spike-1.md"
+    }
+  ]
+}

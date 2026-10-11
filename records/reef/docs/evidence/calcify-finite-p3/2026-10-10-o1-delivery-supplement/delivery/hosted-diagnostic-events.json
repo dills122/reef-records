@@ -1,0 +1,14 @@
+[
+  {
+    "scope": "CI live-log fetch",
+    "job": 114254945375,
+    "result": "Backend GitHub HTTP502 twice; discovery remains available; no CLI fallback",
+    "status": "pending final job"
+  },
+  {
+    "scope": "CI live-log fetch",
+    "job": 114254945235,
+    "result": "Backend GitHub HTTP502; discovery remains available; no CLI fallback",
+    "status": "pending final job"
+  }
+]

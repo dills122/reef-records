@@ -1,0 +1,47 @@
+{
+  "status": "Go read-only triage complete; combined five-finding reconciliation pending Kotlin owner/manager",
+  "actualPinnedHostedRun": {
+    "runId": 38070877163,
+    "jobId": 114267851324,
+    "actualVersion": "v1.12.9",
+    "exactRange": "51cd90eee43d257bad4f973fc9bd81f273bb4ef7..dcb106c4ddd5ccda60df7c8e6411fca88ef5be14",
+    "terminalState": "complete",
+    "selected": 17,
+    "coverageCounts": {
+      "selected": 17,
+      "completed": 17,
+      "reused": 0,
+      "failed": 0,
+      "waived": 0
+    },
+    "findingCount": 5,
+    "runnerCommentId": 4238498600,
+    "runnerSuggestionByteIdenticalExistingCode": true,
+    "all10GoHashesUnchanged": true,
+    "priorFocusedTestLogSha256": "13cb7a4a7fa0eab79c2401dbfd55bc984e3147feb804e083d818b553c791e8bc"
+  },
+  "dispositions": {
+    "currentRepeatedConfig": "Dispute/false positive equality; underlying durable association knownO2gate",
+    "oldConstructor": "Dispute/false positive bug; optionalAPIpreference",
+    "currentRunner4238498600": "Dispute/O1defect; intentionalO2liveactivationrefusal"
+  },
+  "ownedSourceFilesEdited": 0,
+  "freshTestsRunInThisUpdate": 0,
+  "previousFocusedTestsPassAndSourceUnchanged": true,
+  "o1ReviewInstancesConsumed": 3,
+  "o1Maximum": 3,
+  "configReviewInstancesConsumed": 2,
+  "configMaximum": 3,
+  "newEngineeringReviewInstances": 0,
+  "artifacts": {
+    "finding-3.md": "f1dd6552eb9bbb945c0ec8a3de0d25c6324f09bcddbf6ae80d41c7765604818a",
+    "research-v2.md": "a5a3362fe2bc8439e286325da59aee1ade713ad73f4f794342ae6af9f0724554",
+    "runner-probe-v2.json": "d0252b00a9799a1be609e422a6371859d5c3e525361765a443141ab14c2e733c"
+  },
+  "historicalPacketsPreserved": {
+    "research.md": "167b677049214ecd3d6a72cb75e9cbc8fb9346d73eb5ce162c1270c8ebd42a99",
+    "finding-1.md": "7428e4f8641f869aa9d668b6d1c0d57910a2a19a2be8074d14e7d5054a98b625",
+    "finding-2.md": "3e807b7bec483acf96dad90e1ae86bb1c5adcba29d6537c9e8cda299a650ab84",
+    "verification.json": "765da465093dc6e67756db38bb9c40e3af7dbea35e299f434e3c486e358aaf18"
+  }
+}

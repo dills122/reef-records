@@ -1,0 +1,368 @@
+Compiled from "FiniteLifecycleCaptureRuntime.kt"
+public final class com.reef.platform.calcify.FiniteLifecycleCaptureRuntime {
+  public static final com.reef.platform.calcify.FiniteLifecycleCaptureRuntime INSTANCE;
+
+  private com.reef.platform.calcify.FiniteLifecycleCaptureRuntime();
+    Code:
+       0: aload_0
+       1: invokespecial #8                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public final reef.contracts.calcify.v1.FiniteLifecycleStateV1 initializeModel(com.reef.platform.calcify.FiniteLifecycleBinding, com.reef.platform.calcify.FiniteLifecycleStartCut, reef.contracts.calcify.v1.FiniteLifecycleStateV1);
+    Code:
+       0: aload_1
+       1: ldc           #16                 // String binding
+       3: invokestatic  #22                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_2
+       7: ldc           #24                 // String cut
+       9: invokestatic  #22                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+      12: aload_2
+      13: iconst_0
+      14: invokedynamic #38,  0             // InvokeDynamic #0:typeSwitch:(Ljava/lang/Object;I)I
+      19: tableswitch   { // 0 to 1
+                     0: 40
+                     1: 155
+               default: 435
+          }
+      40: aload_3
+      41: ifnonnull     48
+      44: iconst_1
+      45: goto          49
+      48: iconst_0
+      49: ifne          72
+      52: iconst_0
+      53: istore        6
+      55: ldc           #40                 // String genesis cannot reset existing managed history
+      57: astore        6
+      59: new           #42                 // class java/lang/IllegalArgumentException
+      62: dup
+      63: aload         6
+      65: invokevirtual #46                 // Method java/lang/Object.toString:()Ljava/lang/String;
+      68: invokespecial #49                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+      71: athrow
+      72: aload_2
+      73: checkcast     #26                 // class com/reef/platform/calcify/FiniteLifecycleStartCut$Genesis
+      76: invokevirtual #53                 // Method com/reef/platform/calcify/FiniteLifecycleStartCut$Genesis.getRegisteredOffset:()J
+      79: aload_1
+      80: invokevirtual #58                 // Method com/reef/platform/calcify/FiniteLifecycleBinding.getGenesisOffset:()J
+      83: lcmp
+      84: ifne          121
+      87: aload_2
+      88: checkcast     #26                 // class com/reef/platform/calcify/FiniteLifecycleStartCut$Genesis
+      91: invokevirtual #61                 // Method com/reef/platform/calcify/FiniteLifecycleStartCut$Genesis.getAvailableBeginning:()J
+      94: aload_1
+      95: invokevirtual #58                 // Method com/reef/platform/calcify/FiniteLifecycleBinding.getGenesisOffset:()J
+      98: lcmp
+      99: ifgt          121
+     102: aload_2
+     103: checkcast     #26                 // class com/reef/platform/calcify/FiniteLifecycleStartCut$Genesis
+     106: invokevirtual #64                 // Method com/reef/platform/calcify/FiniteLifecycleStartCut$Genesis.getAvailableEnd:()J
+     109: aload_1
+     110: invokevirtual #58                 // Method com/reef/platform/calcify/FiniteLifecycleBinding.getGenesisOffset:()J
+     113: lcmp
+     114: iflt          121
+     117: iconst_1
+     118: goto          122
+     121: iconst_0
+     122: ifne          145
+     125: iconst_0
+     126: istore        6
+     128: ldc           #66                 // String registered genesis/history unavailable
+     130: astore        6
+     132: new           #42                 // class java/lang/IllegalArgumentException
+     135: dup
+     136: aload         6
+     138: invokevirtual #46                 // Method java/lang/Object.toString:()Ljava/lang/String;
+     141: invokespecial #49                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+     144: athrow
+     145: getstatic     #72                 // Field com/reef/platform/calcify/FiniteLifecycleContract.INSTANCE:Lcom/reef/platform/calcify/FiniteLifecycleContract;
+     148: aload_1
+     149: invokevirtual #76                 // Method com/reef/platform/calcify/FiniteLifecycleContract.genesis:(Lcom/reef/platform/calcify/FiniteLifecycleBinding;)Lreef/contracts/calcify/v1/FiniteLifecycleStateV1;
+     152: goto          443
+     155: aload_3
+     156: ifnull        173
+     159: aload_3
+     160: aload_2
+     161: checkcast     #28                 // class com/reef/platform/calcify/FiniteLifecycleStartCut$Restore
+     164: invokevirtual #80                 // Method com/reef/platform/calcify/FiniteLifecycleStartCut$Restore.getCheckpoint:()Lreef/contracts/calcify/v1/FiniteLifecycleStateV1;
+     167: invokestatic  #84                 // Method kotlin/jvm/internal/Intrinsics.areEqual:(Ljava/lang/Object;Ljava/lang/Object;)Z
+     170: ifeq          177
+     173: iconst_1
+     174: goto          178
+     177: iconst_0
+     178: ifne          201
+     181: iconst_0
+     182: istore        6
+     184: ldc           #86                 // String managed/certified checkpoint mismatch
+     186: astore        6
+     188: new           #42                 // class java/lang/IllegalArgumentException
+     191: dup
+     192: aload         6
+     194: invokevirtual #46                 // Method java/lang/Object.toString:()Ljava/lang/String;
+     197: invokespecial #49                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+     200: athrow
+     201: aload_2
+     202: checkcast     #28                 // class com/reef/platform/calcify/FiniteLifecycleStartCut$Restore
+     205: invokevirtual #80                 // Method com/reef/platform/calcify/FiniteLifecycleStartCut$Restore.getCheckpoint:()Lreef/contracts/calcify/v1/FiniteLifecycleStateV1;
+     208: invokevirtual #91                 // Method reef/contracts/calcify/v1/FiniteLifecycleStateV1.getResumeOffset:()J
+     211: lstore        7
+     213: aload_2
+     214: checkcast     #28                 // class com/reef/platform/calcify/FiniteLifecycleStartCut$Restore
+     217: invokevirtual #80                 // Method com/reef/platform/calcify/FiniteLifecycleStartCut$Restore.getCheckpoint:()Lreef/contracts/calcify/v1/FiniteLifecycleStateV1;
+     220: invokevirtual #95                 // Method reef/contracts/calcify/v1/FiniteLifecycleStateV1.getRetainedSuffixList:()Ljava/util/List;
+     223: dup
+     224: ldc           #97                 // String getRetainedSuffixList(...)
+     226: invokestatic  #100                // Method kotlin/jvm/internal/Intrinsics.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V
+     229: checkcast     #102                // class java/lang/Iterable
+     232: invokeinterface #106,  1          // InterfaceMethod java/lang/Iterable.iterator:()Ljava/util/Iterator;
+     237: astore        11
+     239: aload         11
+     241: invokeinterface #112,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     246: ifne          253
+     249: aconst_null
+     250: goto          340
+     253: aload         11
+     255: invokeinterface #116,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     260: checkcast     #118                // class reef/contracts/calcify/v1/FiniteLifecycleSuffixV1
+     263: astore        12
+     265: iconst_0
+     266: istore        13
+     268: aload         12
+     270: invokevirtual #119                // Method reef/contracts/calcify/v1/FiniteLifecycleSuffixV1.getResumeOffset:()J
+     273: invokestatic  #125                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+     276: checkcast     #127                // class java/lang/Comparable
+     279: astore        12
+     281: aload         11
+     283: invokeinterface #112,  1          // InterfaceMethod java/util/Iterator.hasNext:()Z
+     288: ifeq          338
+     291: aload         11
+     293: invokeinterface #116,  1          // InterfaceMethod java/util/Iterator.next:()Ljava/lang/Object;
+     298: checkcast     #118                // class reef/contracts/calcify/v1/FiniteLifecycleSuffixV1
+     301: astore        13
+     303: iconst_0
+     304: istore        14
+     306: aload         13
+     308: invokevirtual #119                // Method reef/contracts/calcify/v1/FiniteLifecycleSuffixV1.getResumeOffset:()J
+     311: invokestatic  #125                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+     314: checkcast     #127                // class java/lang/Comparable
+     317: astore        13
+     319: aload         12
+     321: aload         13
+     323: invokeinterface #131,  2          // InterfaceMethod java/lang/Comparable.compareTo:(Ljava/lang/Object;)I
+     328: ifge          281
+     331: aload         13
+     333: astore        12
+     335: goto          281
+     338: aload         12
+     340: checkcast     #121                // class java/lang/Long
+     343: dup
+     344: ifnull        353
+     347: invokevirtual #134                // Method java/lang/Long.longValue:()J
+     350: goto          358
+     353: pop
+     354: aload_1
+     355: invokevirtual #58                 // Method com/reef/platform/calcify/FiniteLifecycleBinding.getGenesisOffset:()J
+     358: lstore        9
+     360: lload         7
+     362: lload         9
+     364: invokestatic  #140                // Method java/lang/Math.max:(JJ)J
+     367: lstore        5
+     369: aload_2
+     370: checkcast     #28                 // class com/reef/platform/calcify/FiniteLifecycleStartCut$Restore
+     373: invokevirtual #141                // Method com/reef/platform/calcify/FiniteLifecycleStartCut$Restore.getAvailableBeginning:()J
+     376: aload_1
+     377: invokevirtual #58                 // Method com/reef/platform/calcify/FiniteLifecycleBinding.getGenesisOffset:()J
+     380: lcmp
+     381: ifgt          401
+     384: aload_2
+     385: checkcast     #28                 // class com/reef/platform/calcify/FiniteLifecycleStartCut$Restore
+     388: invokevirtual #142                // Method com/reef/platform/calcify/FiniteLifecycleStartCut$Restore.getAvailableEnd:()J
+     391: lload         5
+     393: lcmp
+     394: iflt          401
+     397: iconst_1
+     398: goto          402
+     401: iconst_0
+     402: ifne          425
+     405: iconst_0
+     406: istore        8
+     408: ldc           #144                // String required source history unavailable
+     410: astore        8
+     412: new           #42                 // class java/lang/IllegalArgumentException
+     415: dup
+     416: aload         8
+     418: invokevirtual #46                 // Method java/lang/Object.toString:()Ljava/lang/String;
+     421: invokespecial #49                 // Method java/lang/IllegalArgumentException."<init>":(Ljava/lang/String;)V
+     424: athrow
+     425: aload_2
+     426: checkcast     #28                 // class com/reef/platform/calcify/FiniteLifecycleStartCut$Restore
+     429: invokevirtual #80                 // Method com/reef/platform/calcify/FiniteLifecycleStartCut$Restore.getCheckpoint:()Lreef/contracts/calcify/v1/FiniteLifecycleStateV1;
+     432: goto          443
+     435: new           #146                // class kotlin/NoWhenBranchMatchedException
+     438: dup
+     439: invokespecial #147                // Method kotlin/NoWhenBranchMatchedException."<init>":()V
+     442: athrow
+     443: astore        4
+     445: getstatic     #152                // Field com/reef/platform/calcify/FiniteLifecycleReducer.INSTANCE:Lcom/reef/platform/calcify/FiniteLifecycleReducer;
+     448: aload         4
+     450: aload_1
+     451: invokevirtual #156                // Method com/reef/platform/calcify/FiniteLifecycleReducer.validateState:(Lreef/contracts/calcify/v1/FiniteLifecycleStateV1;Lcom/reef/platform/calcify/FiniteLifecycleBinding;)V
+     454: aload         4
+     456: areturn
+
+  public static reef.contracts.calcify.v1.FiniteLifecycleStateV1 initializeModel$default(com.reef.platform.calcify.FiniteLifecycleCaptureRuntime, com.reef.platform.calcify.FiniteLifecycleBinding, com.reef.platform.calcify.FiniteLifecycleStartCut, reef.contracts.calcify.v1.FiniteLifecycleStateV1, int, java.lang.Object);
+    Code:
+       0: iload         4
+       2: iconst_4
+       3: iand
+       4: ifeq          9
+       7: aconst_null
+       8: astore_3
+       9: aload_0
+      10: aload_1
+      11: aload_2
+      12: aload_3
+      13: invokevirtual #177                // Method initializeModel:(Lcom/reef/platform/calcify/FiniteLifecycleBinding;Lcom/reef/platform/calcify/FiniteLifecycleStartCut;Lreef/contracts/calcify/v1/FiniteLifecycleStateV1;)Lreef/contracts/calcify/v1/FiniteLifecycleStateV1;
+      16: areturn
+
+  public final java.util.Properties modelProperties(com.reef.platform.calcify.FiniteLifecycleBinding, java.lang.String);
+    Code:
+       0: aload_1
+       1: ldc           #16                 // String binding
+       3: invokestatic  #22                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+       6: aload_2
+       7: ldc           #181                // String bootstrap
+       9: invokestatic  #22                 // Method kotlin/jvm/internal/Intrinsics.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V
+      12: new           #183                // class java/util/Properties
+      15: dup
+      16: invokespecial #184                // Method java/util/Properties."<init>":()V
+      19: astore_3
+      20: aload_3
+      21: astore        4
+      23: iconst_0
+      24: istore        5
+      26: aload         4
+      28: ldc           #186                // String application.id
+      30: aload_1
+      31: invokevirtual #189                // Method com/reef/platform/calcify/FiniteLifecycleBinding.getApplicationId:()Ljava/lang/String;
+      34: invokevirtual #193                // Method java/util/Properties.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      37: pop
+      38: aload         4
+      40: ldc           #195                // String bootstrap.servers
+      42: aload_2
+      43: invokevirtual #193                // Method java/util/Properties.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      46: pop
+      47: aload         4
+      49: ldc           #197                // String processing.guarantee
+      51: ldc           #199                // String exactly_once_v2
+      53: invokevirtual #193                // Method java/util/Properties.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      56: pop
+      57: aload         4
+      59: ldc           #201                // String num.stream.threads
+      61: iconst_1
+      62: invokestatic  #206                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+      65: invokevirtual #193                // Method java/util/Properties.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      68: pop
+      69: aload         4
+      71: ldc           #208                // String statestore.cache.max.bytes
+      73: lconst_0
+      74: invokestatic  #125                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+      77: invokevirtual #193                // Method java/util/Properties.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      80: pop
+      81: aload         4
+      83: ldc           #210                // String isolation.level
+      85: invokestatic  #216                // Method org/apache/kafka/streams/StreamsConfig.consumerPrefix:(Ljava/lang/String;)Ljava/lang/String;
+      88: ldc           #218                // String read_committed
+      90: invokevirtual #193                // Method java/util/Properties.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+      93: pop
+      94: aload         4
+      96: ldc           #220                // String auto.offset.reset
+      98: invokestatic  #216                // Method org/apache/kafka/streams/StreamsConfig.consumerPrefix:(Ljava/lang/String;)Ljava/lang/String;
+     101: ldc           #222                // String none
+     103: invokevirtual #193                // Method java/util/Properties.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     106: pop
+     107: aload         4
+     109: ldc           #224                // String allow.auto.create.topics
+     111: invokestatic  #216                // Method org/apache/kafka/streams/StreamsConfig.consumerPrefix:(Ljava/lang/String;)Ljava/lang/String;
+     114: iconst_0
+     115: invokestatic  #229                // Method java/lang/Boolean.valueOf:(Z)Ljava/lang/Boolean;
+     118: invokevirtual #193                // Method java/util/Properties.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     121: pop
+     122: aload         4
+     124: ldc           #231                // String max.poll.records
+     126: invokestatic  #216                // Method org/apache/kafka/streams/StreamsConfig.consumerPrefix:(Ljava/lang/String;)Ljava/lang/String;
+     129: aload_1
+     130: invokevirtual #235                // Method com/reef/platform/calcify/FiniteLifecycleBinding.getBudget:()Lcom/reef/platform/calcify/FiniteLifecycleBudget;
+     133: invokevirtual #241                // Method com/reef/platform/calcify/FiniteLifecycleBudget.getPublications:()I
+     136: invokestatic  #206                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     139: invokevirtual #193                // Method java/util/Properties.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     142: pop
+     143: aload         4
+     145: ldc           #243                // String max.partition.fetch.bytes
+     147: invokestatic  #216                // Method org/apache/kafka/streams/StreamsConfig.consumerPrefix:(Ljava/lang/String;)Ljava/lang/String;
+     150: aload_1
+     151: invokevirtual #235                // Method com/reef/platform/calcify/FiniteLifecycleBinding.getBudget:()Lcom/reef/platform/calcify/FiniteLifecycleBudget;
+     154: invokevirtual #246                // Method com/reef/platform/calcify/FiniteLifecycleBudget.getSourceTotalBytes:()J
+     157: l2i
+     158: invokestatic  #206                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     161: invokevirtual #193                // Method java/util/Properties.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     164: pop
+     165: aload         4
+     167: ldc           #248                // String fetch.max.bytes
+     169: invokestatic  #216                // Method org/apache/kafka/streams/StreamsConfig.consumerPrefix:(Ljava/lang/String;)Ljava/lang/String;
+     172: aload_1
+     173: invokevirtual #235                // Method com/reef/platform/calcify/FiniteLifecycleBinding.getBudget:()Lcom/reef/platform/calcify/FiniteLifecycleBudget;
+     176: invokevirtual #246                // Method com/reef/platform/calcify/FiniteLifecycleBudget.getSourceTotalBytes:()J
+     179: l2i
+     180: invokestatic  #206                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     183: invokevirtual #193                // Method java/util/Properties.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     186: pop
+     187: aload         4
+     189: ldc           #250                // String compression.type
+     191: invokestatic  #253                // Method org/apache/kafka/streams/StreamsConfig.producerPrefix:(Ljava/lang/String;)Ljava/lang/String;
+     194: ldc           #222                // String none
+     196: invokevirtual #193                // Method java/util/Properties.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     199: pop
+     200: aload         4
+     202: ldc           #255                // String max.request.size
+     204: invokestatic  #253                // Method org/apache/kafka/streams/StreamsConfig.producerPrefix:(Ljava/lang/String;)Ljava/lang/String;
+     207: aload_1
+     208: invokevirtual #235                // Method com/reef/platform/calcify/FiniteLifecycleBinding.getBudget:()Lcom/reef/platform/calcify/FiniteLifecycleBudget;
+     211: invokevirtual #258                // Method com/reef/platform/calcify/FiniteLifecycleBudget.getCaptureBytes:()I
+     214: sipush        1024
+     217: iadd
+     218: invokestatic  #206                // Method java/lang/Integer.valueOf:(I)Ljava/lang/Integer;
+     221: invokevirtual #193                // Method java/util/Properties.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     224: pop
+     225: aload         4
+     227: ldc_w         #260                // String max.message.bytes
+     230: invokestatic  #263                // Method org/apache/kafka/streams/StreamsConfig.topicPrefix:(Ljava/lang/String;)Ljava/lang/String;
+     233: aload_1
+     234: invokevirtual #235                // Method com/reef/platform/calcify/FiniteLifecycleBinding.getBudget:()Lcom/reef/platform/calcify/FiniteLifecycleBudget;
+     237: invokevirtual #266                // Method com/reef/platform/calcify/FiniteLifecycleBudget.getStateBytes:()J
+     240: sipush        1024
+     243: i2l
+     244: ladd
+     245: invokestatic  #125                // Method java/lang/Long.valueOf:(J)Ljava/lang/Long;
+     248: invokevirtual #193                // Method java/util/Properties.put:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+     251: pop
+     252: nop
+     253: aload_3
+     254: areturn
+
+  public final java.lang.Void run();
+    Code:
+       0: new           #274                // class java/lang/IllegalStateException
+       3: dup
+       4: ldc_w         #276                // String finite lifecycle live activation unavailable: O2 durable binding, canonical ingress, writer isolation and history/restore verification required
+       7: invokespecial #277                // Method java/lang/IllegalStateException."<init>":(Ljava/lang/String;)V
+      10: athrow
+
+  static {};
+    Code:
+       0: new           #2                  // class com/reef/platform/calcify/FiniteLifecycleCaptureRuntime
+       3: dup
+       4: invokespecial #279                // Method "<init>":()V
+       7: putstatic     #281                // Field INSTANCE:Lcom/reef/platform/calcify/FiniteLifecycleCaptureRuntime;
+      10: return
+}

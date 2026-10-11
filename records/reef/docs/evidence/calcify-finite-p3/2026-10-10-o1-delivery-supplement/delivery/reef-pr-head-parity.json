@@ -1,0 +1,444 @@
+{
+  "checkedAt": "2026-10-10T16:25:10.159362+00:00",
+  "sourceCommit": "0a7df6f85c1f8636fdb74177afc49fa3eb14d8bd",
+  "sourcePaths": 56,
+  "sourceUnchanged": true,
+  "integrationVerdict": "Ready1of3",
+  "integrationOriginalHead": "0a7df6f85c1f8636fdb74177afc49fa3eb14d8bd",
+  "deliveryDocsCommit": "1dee92a64cc86e58ae5fcff98f9f6118533e2bfd",
+  "publicationHead": "dcb106c4ddd5ccda60df7c8e6411fca88ef5be14",
+  "statusOnlyDeltaPaths": [
+    "docs/WORK_PLAN.md",
+    "docs/evidence/calcify-finite-p3/README.md",
+    "docs/records/2026-10-10-calcify-finite-p3-retention.json",
+    "docs/records/retained-evidence.json",
+    "docs/work/handoffs/2026-10-10-calcify-finite-p3-overnight.md"
+  ],
+  "normalIndexEmpty": true,
+  "proofSourceRefNotPushed": true,
+  "files": [
+    {
+      "path": "contracts/calcify/README.md",
+      "originalIntegrationSha256": "f4e14baff0e6b4cda16fc2d342649009089c369b8558786ec055fde4a16f4a59",
+      "publicationSha256": "f4e14baff0e6b4cda16fc2d342649009089c369b8558786ec055fde4a16f4a59",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "contracts/calcify/finite-lifecycle-budget-v1.hex",
+      "originalIntegrationSha256": "456b572606dbaa87871f015a10adcf33159416f38c416373e8899898cca9cd6d",
+      "publicationSha256": "456b572606dbaa87871f015a10adcf33159416f38c416373e8899898cca9cd6d",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "contracts/calcify/finite-lifecycle-capture-command-v1.hex",
+      "originalIntegrationSha256": "eb74049160112564440a91043b78f68310307f67e4923235b91b88b6b87d4b78",
+      "publicationSha256": "eb74049160112564440a91043b78f68310307f67e4923235b91b88b6b87d4b78",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "contracts/calcify/finite-lifecycle-capture-multi-fill-v1.hex",
+      "originalIntegrationSha256": "bf78e8425013fc9b03062b54fd5eea5315ea2c221990564620b7d3d4993a1275",
+      "publicationSha256": "bf78e8425013fc9b03062b54fd5eea5315ea2c221990564620b7d3d4993a1275",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "contracts/calcify/finite-lifecycle-legacy-source-v1.jsonl",
+      "originalIntegrationSha256": "bdd4df11f562ba2f4dd217168a3e81e60f96fa4c3fa4a25c01e75830dda26506",
+      "publicationSha256": "bdd4df11f562ba2f4dd217168a3e81e60f96fa4c3fa4a25c01e75830dda26506",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "contracts/calcify/finite-lifecycle-source-v1-manifest.json",
+      "originalIntegrationSha256": "900aed28cb4cf950157e84a0e7662729e951b7fe11cb68cc376a9d1e5850876a",
+      "publicationSha256": "900aed28cb4cf950157e84a0e7662729e951b7fe11cb68cc376a9d1e5850876a",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "contracts/calcify/finite-lifecycle-source-v1.jsonl",
+      "originalIntegrationSha256": "1a8cf1c8c769e3e2bf32fa80792f36da206f07e6e27ab4bbbc9511c925fb1811",
+      "publicationSha256": "1a8cf1c8c769e3e2bf32fa80792f36da206f07e6e27ab4bbbc9511c925fb1811",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "contracts/proto/calcify.proto",
+      "originalIntegrationSha256": "8523e083c760bd4722a3b4875913f51690a54d9999185bf356d3a7433d45537f",
+      "publicationSha256": "8523e083c760bd4722a3b4875913f51690a54d9999185bf356d3a7433d45537f",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "docs/CALCIFY_PHASES_OVERVIEW.md",
+      "originalIntegrationSha256": "cc0adeb79b0ca65375285917645991aa6b9ba110dd51687440ed255c44b9327f",
+      "publicationSha256": "cc0adeb79b0ca65375285917645991aa6b9ba110dd51687440ed255c44b9327f",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "docs/README.md",
+      "originalIntegrationSha256": "1f83c7d6e22532ad52820e730f4458c4152ac4a1bdc0ea1cc7729391b78b5fbf",
+      "publicationSha256": "1f83c7d6e22532ad52820e730f4458c4152ac4a1bdc0ea1cc7729391b78b5fbf",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "docs/RECORDS_RETENTION.md",
+      "originalIntegrationSha256": "e999f3f0abc95cfe85b5bdcc2853dfa99ec78bfa9c22f397c50f80b013ec6b1d",
+      "publicationSha256": "e999f3f0abc95cfe85b5bdcc2853dfa99ec78bfa9c22f397c50f80b013ec6b1d",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "docs/WORK_PLAN.md",
+      "originalIntegrationSha256": "8d652c557ea4ba8f70677ba76948c5c7760d3450b05a94c1dcafd5b9fc6df3ff",
+      "publicationSha256": "0346b38938545b25c99439c222de5a2a8f4d0d4c72cc12ad9cc72d2d591e0756",
+      "statusOnlyDelta": true
+    },
+    {
+      "path": "docs/evidence/calcify-financial-sprint1/README.md",
+      "originalIntegrationSha256": "80d15595645686334b1a6c25fd9ab4b103146f7ea0ed1fc329588f61bca5a563",
+      "publicationSha256": "80d15595645686334b1a6c25fd9ab4b103146f7ea0ed1fc329588f61bca5a563",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "docs/evidence/calcify-finite-p3/README.md",
+      "originalIntegrationSha256": "403924bc33aa56b76e237b6e150de351646a66c6e11ecce4ccaba26cc9251556",
+      "publicationSha256": "cb65be654ec5e63f2166338fe34161d89d5b34ba5ce895e770c3b27f3ef38c69",
+      "statusOnlyDelta": true
+    },
+    {
+      "path": "docs/records/2026-10-10-calcify-finite-p3-retention.json",
+      "originalIntegrationSha256": "19b714d4acbe95906bca045ff554bb8cbeacb913f6b84c9a7cea86214e1610f5",
+      "publicationSha256": "4f6f782c50886954cb1dce99b228c78c1bb68bd3403f62f61d3e694378f1aa62",
+      "statusOnlyDelta": true
+    },
+    {
+      "path": "docs/records/retained-evidence.json",
+      "originalIntegrationSha256": "fe67461abd671ae91150b7d30e508f3673a814f74c7d389a0d17167c93c7b0ca",
+      "publicationSha256": "961ba27b7fb69e1ff28072592086d48f363f1d523040a29cb745b376b15b0cac",
+      "statusOnlyDelta": true
+    },
+    {
+      "path": "docs/work/CALCIFY_FINITE_P3_SOURCE_CONTRACT.md",
+      "originalIntegrationSha256": "eec721aa60c1b64a7bada0a973b7b5d4e77510454e9e853fcd8a6a6f8f7c6739",
+      "publicationSha256": "eec721aa60c1b64a7bada0a973b7b5d4e77510454e9e853fcd8a6a6f8f7c6739",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "docs/work/CALCIFY_OVERNIGHT_SESSION_PLAN.md",
+      "originalIntegrationSha256": "e0c4024be1309f6e363665385b2d57198b9d0959608ecae055f61979708fe12b",
+      "publicationSha256": "e0c4024be1309f6e363665385b2d57198b9d0959608ecae055f61979708fe12b",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "docs/work/CALCIFY_PHASE2_IMPLEMENTATION.md",
+      "originalIntegrationSha256": "7a047daddc74f5599ae2696aca82192508e970f24f60ffe09df683744e57cdc6",
+      "publicationSha256": "7a047daddc74f5599ae2696aca82192508e970f24f60ffe09df683744e57cdc6",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "docs/work/CALCIFY_SYSTEM_ARCHITECTURE_RFC.md",
+      "originalIntegrationSha256": "dcf201187dd026c2afe4eef349be96a49d4ada145c84283d812973e238039e3a",
+      "publicationSha256": "dcf201187dd026c2afe4eef349be96a49d4ada145c84283d812973e238039e3a",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "docs/work/handoffs/2026-10-04-calcify-financial-sprint1-recovery.md",
+      "originalIntegrationSha256": "3071ff5ac09861bb4f028d2c301564e2631065a86131d00c439e2a84a5eb328b",
+      "publicationSha256": "3071ff5ac09861bb4f028d2c301564e2631065a86131d00c439e2a84a5eb328b",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "docs/work/handoffs/2026-10-10-calcify-finite-p3-overnight.md",
+      "originalIntegrationSha256": "af8a6d13092adca6ad7484fe0c70e339689d6f2a7124a7e70351e7a7ff849af7",
+      "publicationSha256": "64687b52e533abea4c5e9f576d18fe17cb9aefb0322e9511cea1b66843e1c200",
+      "statusOnlyDelta": true
+    },
+    {
+      "path": "services/matching-engine/README.md",
+      "originalIntegrationSha256": "94328a2a090974722be7ac35a54c41cbdeb0f3d61977bf7db09f6f741254c31f",
+      "publicationSha256": "94328a2a090974722be7ac35a54c41cbdeb0f3d61977bf7db09f6f741254c31f",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/matching-engine/internal/app/calcify_source_identity_test.go",
+      "originalIntegrationSha256": "e6fc8f0c129baa97386bc77f77f849da3f0da50cdca2e04a8d415c2b4d7950f3",
+      "publicationSha256": "e6fc8f0c129baa97386bc77f77f849da3f0da50cdca2e04a8d415c2b4d7950f3",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/matching-engine/internal/app/calcify_source_profile.go",
+      "originalIntegrationSha256": "f47b63e16b0f2e9ddaf0ef17dd893a3eef063f3d92d2aba3311385e56fef778e",
+      "publicationSha256": "f47b63e16b0f2e9ddaf0ef17dd893a3eef063f3d92d2aba3311385e56fef778e",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/matching-engine/internal/domain/calcify_lifecycle.go",
+      "originalIntegrationSha256": "9fe7396f3101aecc405318aaebb20b75495bb079936b5294fc0b998a7c85920d",
+      "publicationSha256": "9fe7396f3101aecc405318aaebb20b75495bb079936b5294fc0b998a7c85920d",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/matching-engine/internal/streamdirect/calcify_lifecycle_checksum_test.go",
+      "originalIntegrationSha256": "59549564b9c8101b3a4659f736045ba2823c568a1ab74d52d6522fe7f4ab2633",
+      "publicationSha256": "59549564b9c8101b3a4659f736045ba2823c568a1ab74d52d6522fe7f4ab2633",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/matching-engine/internal/streamdirect/calcify_lifecycle_config_test.go",
+      "originalIntegrationSha256": "9b35ec34ac99dbcc06754c6fc021d82fa1e22d16e6b4ee9cedb5fd1c4135a77a",
+      "publicationSha256": "9b35ec34ac99dbcc06754c6fc021d82fa1e22d16e6b4ee9cedb5fd1c4135a77a",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/matching-engine/internal/streamdirect/calcify_lifecycle_test.go",
+      "originalIntegrationSha256": "d5ee8f158c19c4b93bb873e35192bb96e294f6f5314481f80ed919f7b804f092",
+      "publicationSha256": "d5ee8f158c19c4b93bb873e35192bb96e294f6f5314481f80ed919f7b804f092",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/matching-engine/internal/streamdirect/config.go",
+      "originalIntegrationSha256": "8f4d038c9bcce67fef0043b1ff12d8259fe1704a4f6dadfb111930b70bdc6221",
+      "publicationSha256": "8f4d038c9bcce67fef0043b1ff12d8259fe1704a4f6dadfb111930b70bdc6221",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/matching-engine/internal/streamdirect/processor.go",
+      "originalIntegrationSha256": "89957b962a685f0bc2d82ee657f0393ad86624d6b6da5ed974b277c1b44bd17e",
+      "publicationSha256": "89957b962a685f0bc2d82ee657f0393ad86624d6b6da5ed974b277c1b44bd17e",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/matching-engine/internal/streamdirect/runner.go",
+      "originalIntegrationSha256": "8151da32b3a5c1b0d1bb59ac807ac0084cfff0cc548683c15e9c008f1cb07f24",
+      "publicationSha256": "8151da32b3a5c1b0d1bb59ac807ac0084cfff0cc548683c15e9c008f1cb07f24",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/matching-engine/internal/transport/grpc/pb/contracts/proto/calcify.pb.go",
+      "originalIntegrationSha256": "e7f288502937374d7cc6498212c7e30aadb72b2c4f85522447e4121ac60b53cc",
+      "publicationSha256": "e7f288502937374d7cc6498212c7e30aadb72b2c4f85522447e4121ac60b53cc",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/Calcify.java",
+      "originalIntegrationSha256": "7969a2728f04a4b4789cd796786d977245eecfaf09d2a84bc542aed64da956ee",
+      "publicationSha256": "7969a2728f04a4b4789cd796786d977245eecfaf09d2a84bc542aed64da956ee",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleBatchStateV1.java",
+      "originalIntegrationSha256": "b26481edfc06296c81b5d3998dd0c72c257bea22c4e20afb27dff33a514491bd",
+      "publicationSha256": "b26481edfc06296c81b5d3998dd0c72c257bea22c4e20afb27dff33a514491bd",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleBatchStateV1OrBuilder.java",
+      "originalIntegrationSha256": "679bf9efff6116b807229a45c21b2c9554c94179f4ef58374983b47400f41826",
+      "publicationSha256": "679bf9efff6116b807229a45c21b2c9554c94179f4ef58374983b47400f41826",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleCaptureV1.java",
+      "originalIntegrationSha256": "5f60fef9008a69f1daaecd4587d10e1d96b731efc9ce0a2a26a0e90d62e63f61",
+      "publicationSha256": "5f60fef9008a69f1daaecd4587d10e1d96b731efc9ce0a2a26a0e90d62e63f61",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleCaptureV1OrBuilder.java",
+      "originalIntegrationSha256": "66adbf09ed6efe17bd699b5b04588b15dbe901ca938f2e89b562bb22dee5123c",
+      "publicationSha256": "66adbf09ed6efe17bd699b5b04588b15dbe901ca938f2e89b562bb22dee5123c",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleOrderStateV1.java",
+      "originalIntegrationSha256": "91dfc324e9f9232c299e50051ae6577132749de9e789079215849b11c411b5c4",
+      "publicationSha256": "91dfc324e9f9232c299e50051ae6577132749de9e789079215849b11c411b5c4",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleOrderStateV1OrBuilder.java",
+      "originalIntegrationSha256": "43bf726de7b93d8bb4ce7218fcd6cc1d58cc8f8017c7dfbd840c17b97ad0d7d9",
+      "publicationSha256": "43bf726de7b93d8bb4ce7218fcd6cc1d58cc8f8017c7dfbd840c17b97ad0d7d9",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleStateV1.java",
+      "originalIntegrationSha256": "b57e02eb3572a7af71d72e7f8d2cf41e6b63d91c4c776631e2d81c706ec60a2d",
+      "publicationSha256": "b57e02eb3572a7af71d72e7f8d2cf41e6b63d91c4c776631e2d81c706ec60a2d",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleStateV1OrBuilder.java",
+      "originalIntegrationSha256": "ee4736968e306f2e6bf22a865f59e9b291a09a2489c9001c8633e395ca3440ff",
+      "publicationSha256": "ee4736968e306f2e6bf22a865f59e9b291a09a2489c9001c8633e395ca3440ff",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleSuffixV1.java",
+      "originalIntegrationSha256": "09f5c0c51471b78e47dab23970c51ee7899c1c56ee968702e5d6022bc4094011",
+      "publicationSha256": "09f5c0c51471b78e47dab23970c51ee7899c1c56ee968702e5d6022bc4094011",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleSuffixV1OrBuilder.java",
+      "originalIntegrationSha256": "d0e10436a9d9d6618ab7732ae362e9336dca85ff8d0aa9370686bcd2ab9ef9c4",
+      "publicationSha256": "d0e10436a9d9d6618ab7732ae362e9336dca85ff8d0aa9370686bcd2ab9ef9c4",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCancelV1.java",
+      "originalIntegrationSha256": "8d9305eaaff26656b7724cffaaef48d3afff1910a75a50772ff61b6b912ad01b",
+      "publicationSha256": "8d9305eaaff26656b7724cffaaef48d3afff1910a75a50772ff61b6b912ad01b",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCancelV1OrBuilder.java",
+      "originalIntegrationSha256": "4ce399ba322458fc7c5c81e9f0036aa8e922fd8f12d43202818392375511c102",
+      "publicationSha256": "4ce399ba322458fc7c5c81e9f0036aa8e922fd8f12d43202818392375511c102",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCommandKindV1.java",
+      "originalIntegrationSha256": "20a20886e3ab1eef4ab6887a8ac34987b86811247142ff16777840871eaa4e7f",
+      "publicationSha256": "20a20886e3ab1eef4ab6887a8ac34987b86811247142ff16777840871eaa4e7f",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDependencyV1.java",
+      "originalIntegrationSha256": "e7b50bd6c1df09f27d6b1444961360a88bd2675845a27e33cc6296ba45cd5df1",
+      "publicationSha256": "e7b50bd6c1df09f27d6b1444961360a88bd2675845a27e33cc6296ba45cd5df1",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDependencyV1OrBuilder.java",
+      "originalIntegrationSha256": "96d502cca32410de80fa91b760391bf75bacb2825e093b940fc18319ada3488c",
+      "publicationSha256": "96d502cca32410de80fa91b760391bf75bacb2825e093b940fc18319ada3488c",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDispositionV1.java",
+      "originalIntegrationSha256": "506c64ebe3abc93bce602c65bfa4315b19045fbe7962216922316eb3379dc9ef",
+      "publicationSha256": "506c64ebe3abc93bce602c65bfa4315b19045fbe7962216922316eb3379dc9ef",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberIdV1.java",
+      "originalIntegrationSha256": "ffa4a639eaadd1766f5e921bb30e7a0b7a0ec59378c65dac3ba98c156401fd5b",
+      "publicationSha256": "ffa4a639eaadd1766f5e921bb30e7a0b7a0ec59378c65dac3ba98c156401fd5b",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberIdV1OrBuilder.java",
+      "originalIntegrationSha256": "b941a9348b3ba8effd17c45b926beb572400d3b4e82ffa23ad6981e550fde6ef",
+      "publicationSha256": "b941a9348b3ba8effd17c45b926beb572400d3b4e82ffa23ad6981e550fde6ef",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberKindV1.java",
+      "originalIntegrationSha256": "2a1de9537bcf72462a2998ee033008c223a2ea59b8119647c3b104b31ca649ab",
+      "publicationSha256": "2a1de9537bcf72462a2998ee033008c223a2ea59b8119647c3b104b31ca649ab",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberV1.java",
+      "originalIntegrationSha256": "31959ade247967c2a34e477920d8862c0bf2bf8308e137d5ed10a61a04c115a1",
+      "publicationSha256": "31959ade247967c2a34e477920d8862c0bf2bf8308e137d5ed10a61a04c115a1",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberV1OrBuilder.java",
+      "originalIntegrationSha256": "fd4d2279b24f3a8a75774e152f15d39677f75f7821e7fc32db120431a169fcfe",
+      "publicationSha256": "fd4d2279b24f3a8a75774e152f15d39677f75f7821e7fc32db120431a169fcfe",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleModifyV1.java",
+      "originalIntegrationSha256": "b1121c124372bbce9aa4c586af0657d22cf97526bc927eabecefc801efcc6d5f",
+      "publicationSha256": "b1121c124372bbce9aa4c586af0657d22cf97526bc927eabecefc801efcc6d5f",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleModifyV1OrBuilder.java",
+      "originalIntegrationSha256": "198fca816ad2161915ac5a17e7ad8c93e7ca7f7aaa48b0356f453792d81df4b5",
+      "publicationSha256": "198fca816ad2161915ac5a17e7ad8c93e7ca7f7aaa48b0356f453792d81df4b5",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleOrderTerminalV1.java",
+      "originalIntegrationSha256": "e4b19802948cdb51a5ede49b59478a13d9ec54d5ccb40378152e274f46a387b5",
+      "publicationSha256": "e4b19802948cdb51a5ede49b59478a13d9ec54d5ccb40378152e274f46a387b5",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleRevisionIdV1.java",
+      "originalIntegrationSha256": "233252aac9bc742e639adb6a21a4a53cda8438e659ce279992f02bf8d26b8b84",
+      "publicationSha256": "233252aac9bc742e639adb6a21a4a53cda8438e659ce279992f02bf8d26b8b84",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleRevisionIdV1OrBuilder.java",
+      "originalIntegrationSha256": "8edc82d3a748b0c5ecfa20a6adf9244428885706a5ea4b2314727bb5cf456dfe",
+      "publicationSha256": "8edc82d3a748b0c5ecfa20a6adf9244428885706a5ea4b2314727bb5cf456dfe",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleSubmitV1.java",
+      "originalIntegrationSha256": "f6980e2ef24051a0fa7d8c7beea81f2a6e9142a029f0f5a77dc54f82f4d7b8db",
+      "publicationSha256": "f6980e2ef24051a0fa7d8c7beea81f2a6e9142a029f0f5a77dc54f82f4d7b8db",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleSubmitV1OrBuilder.java",
+      "originalIntegrationSha256": "3eec1874a6e113b958d7f87f9cc3c1e67479c8d1e919a350f8a13ae4fc519c13",
+      "publicationSha256": "3eec1874a6e113b958d7f87f9cc3c1e67479c8d1e919a350f8a13ae4fc519c13",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/OrderLifecycleCommandV1.java",
+      "originalIntegrationSha256": "fb8c28dc1aca7d62dcf6021bda2c56b2c92c18c32dae4ba243cb17d8240433ca",
+      "publicationSha256": "fb8c28dc1aca7d62dcf6021bda2c56b2c92c18c32dae4ba243cb17d8240433ca",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/OrderLifecycleCommandV1OrBuilder.java",
+      "originalIntegrationSha256": "9e5c3f0753fa07979d4b2106add6ba7383d1ebd276809f5890517ad419eb4359",
+      "publicationSha256": "9e5c3f0753fa07979d4b2106add6ba7383d1ebd276809f5890517ad419eb4359",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessor.kt",
+      "originalIntegrationSha256": "cc9864a8a3f4e674fa39fbd0a3e8bfd1e2fd6edbc2f26609a78c63e7e9edb210",
+      "publicationSha256": "cc9864a8a3f4e674fa39fbd0a3e8bfd1e2fd6edbc2f26609a78c63e7e9edb210",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntime.kt",
+      "originalIntegrationSha256": "f4bd66365de3c4995e65e0e3322a7a3e5845dcbb5a9e2051cf996ff2c8d7b494",
+      "publicationSha256": "f4bd66365de3c4995e65e0e3322a7a3e5845dcbb5a9e2051cf996ff2c8d7b494",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleContract.kt",
+      "originalIntegrationSha256": "b555a5323611093dac3dcfa1ab46d593c3d0f57d924ebb475fa1700f61ac1fc5",
+      "publicationSha256": "b555a5323611093dac3dcfa1ab46d593c3d0f57d924ebb475fa1700f61ac1fc5",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessorTest.kt",
+      "originalIntegrationSha256": "b6fea6cbb6183e49a5d6e8bdc334ea06a2e646d6b364c88e08479719101a325b",
+      "publicationSha256": "b6fea6cbb6183e49a5d6e8bdc334ea06a2e646d6b364c88e08479719101a325b",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntimeTest.kt",
+      "originalIntegrationSha256": "30ff36ad8084de32707e2f304fa980267c343aca67fae68b747601df9b6972ab",
+      "publicationSha256": "30ff36ad8084de32707e2f304fa980267c343aca67fae68b747601df9b6972ab",
+      "statusOnlyDelta": false
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleContractTest.kt",
+      "originalIntegrationSha256": "d5b64afaa2aa41aecf73edc4622c1211295048f945c40cc60d29151dcbc23dd5",
+      "publicationSha256": "d5b64afaa2aa41aecf73edc4622c1211295048f945c40cc60d29151dcbc23dd5",
+      "statusOnlyDelta": false
+    }
+  ],
+  "latestHeadCI": "running; original1dee normalCI pass/OCR failure",
+  "OCR": "label held until approved independentlyreviewed trustedbase config merge, then fresh fullrange retry",
+  "cap": "O1 remains3of3; status prose nonmaterial; distinct configunit humanapproved"
+}

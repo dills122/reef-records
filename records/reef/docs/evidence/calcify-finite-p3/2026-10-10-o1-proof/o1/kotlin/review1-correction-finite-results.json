@@ -1,0 +1,34 @@
+{
+  "tests": 29,
+  "failures": 0,
+  "errors": 0,
+  "reports": [
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.FiniteLifecycleCaptureProcessorTest.xml",
+      "sha256": "83bfb654bdd037e7275fc7d2a38663596cbe7b9610eb43e8b43cf22fa39b5c6a",
+      "tests": 17,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.FiniteLifecycleCaptureRuntimeTest.xml",
+      "sha256": "b685efe3ff4fcf725f065049faac02dcf7c5a972a6adb28d8b3eeb4531eb1941",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.FiniteLifecycleContractTest.xml",
+      "sha256": "60821bd86cc5bd7f10641475f0c5402832a74f3e010384477554859c10af0d39",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "exit": 0,
+  "command": "JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home ./services/platform-runtime/gradlew --no-daemon -p services/platform-runtime test --tests com.reef.platform.calcify.FiniteLifecycle*",
+  "log": "gradle-review1-correction-finite.log"
+}
