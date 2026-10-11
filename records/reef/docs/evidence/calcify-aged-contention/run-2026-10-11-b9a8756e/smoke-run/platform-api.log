@@ -1,0 +1,1 @@
+platform-runtime adapter=netty-hot-path listening on :8080

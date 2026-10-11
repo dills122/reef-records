@@ -1,0 +1,24 @@
+ Network reef-calcify-contention-20261011_default Creating 
+ Network reef-calcify-contention-20261011_default Creating 
+ Volume reef-calcify-contention-20261011_reef-redpanda-data Creating 
+ Volume reef-calcify-contention-20261011_reef-redpanda-data Creating 
+ Volume reef-calcify-contention-20261011_reef-postgres-data Creating 
+ Volume reef-calcify-contention-20261011_reef-postgres-data Creating 
+ Network reef-calcify-contention-20261011_default Error Error response from daemon: all predefined address pools have been fully subnetted
+ network:default failed to create network reef-calcify-contention-20261011_default: Error response from daemon: all predefined address pools have been fully subnetted 
+ Volume reef-calcify-contention-20261011_reef-redpanda-data Error error during connect: Post "http://%2FUsers%2Fdsteele%2F.docker%2Frun%2Fdocker.sock/v1.55/volumes/create": failed to create network reef-calcify-contention-20261011_default: Error response from daemon: all predefined address pools have been fully subnetted
+ Volume reef-calcify-contention-20261011_reef-postgres-data Error error during connect: Post "http://%2FUsers%2Fdsteele%2F.docker%2Frun%2Fdocker.sock/v1.55/volumes/create": failed to create network reef-calcify-contention-20261011_default: Error response from daemon: all predefined address pools have been fully subnetted
+failed to create network reef-calcify-contention-20261011_default: Error response from daemon: all predefined address pools have been fully subnetted
+27 |   }
+28 | }
+29 | if(process.env.CALCIFY_DIRECT_BROKER_IMAGE) overlay.services.redpanda={...overlay.services.redpanda,image:process.env.CALCIFY_DIRECT_BROKER_IMAGE};
+30 | const config=resolve(out,'compose-profile.json');writeFileSync(config,JSON.stringify(overlay,null,2));
+31 | const files=['-f','compose.base.yml','-f','compose.local.yml','-f','compose.calcify.yml','-f',config];
+32 | function run(args,input){const result=spawnSync('docker',args,{cwd:root,env,encoding:'utf8',input,stdio:input===undefined?'inherit':['pipe','inherit','inherit']});if(result.status!==0)throw Error(`docker exit ${result.status}: ${args.join(' ')}`);}
+                                                                                                                                                                                                   ^
+error: docker exit 1: compose -f compose.base.yml -f compose.local.yml -f compose.calcify.yml -f /private/tmp/calcify-contention-20261011/smoke-setup/compose-profile.json up -d --no-deps --wait postgres redpanda
+      at run (/Users/dsteele/.codex/worktrees/69c4/reef/scripts/dev/calcify-direct-bootstrap.mjs:32:191)
+      at compose (/Users/dsteele/.codex/worktrees/69c4/reef/scripts/dev/calcify-direct-bootstrap.mjs:33:30)
+      at /Users/dsteele/.codex/worktrees/69c4/reef/scripts/dev/calcify-direct-bootstrap.mjs:34:1
+
+Bun v1.3.14 (macOS arm64)

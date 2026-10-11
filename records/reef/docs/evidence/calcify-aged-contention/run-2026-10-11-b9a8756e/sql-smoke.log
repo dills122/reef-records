@@ -1,0 +1,6 @@
+{"ready":true,"nextTrade":0,"restoreMs":0,"domain":-1}
+{"progress":true,"committedTrades":125,"elapsedMs":1032,"domain":0}
+{"progress":true,"committedTrades":250,"elapsedMs":2268,"domain":0}
+{"progress":true,"committedTrades":350,"elapsedMs":3277,"domain":0}
+{"progress":true,"committedTrades":450,"elapsedMs":4284,"domain":0}
+{"finished":true,"committedTrades":500}

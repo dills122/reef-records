@@ -1,0 +1,722 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/dills122/reef",
+  "source_commit": "42bc04487d6fe284e83327c9b5aca66d16537596",
+  "selection_policy": "Explicit 102-file proof bundle, locally Git-tracked in isolated source checkpoint. Product baseline b9a8756e plus frozen research overlay. Includes both attempts, smoke, setup/build failures, allowlisted actual settings, hashes, exact sources and audits. Excludes binaries, caches, dependencies and unexported live broker/SQL/resolver volumes. No existing import or Reef tracked source removed.",
+  "files": [
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/README.md",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/README.md",
+      "bytes": 1790,
+      "sha256": "0f1e4386f29432d9469a82ba943a684c1a7d343402ed66a6881f938fcbf08d98",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/actual-profile-02.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/actual-profile-02.json",
+      "bytes": 37596,
+      "sha256": "fc83762357762205cb3c69c40f29c4a986cd0f500bd56b4c81304892f4b7a67b",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/actual-profile.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/actual-profile.json",
+      "bytes": 43183,
+      "sha256": "5818f57c8d8c83b9f4e7925bd7f7528efbc84000bb592f80d831f9876df6e3d6",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-bootstrap-02.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-bootstrap-02.log",
+      "bytes": 3043,
+      "sha256": "22677bf5a6fb33c413127669a229593707df0c9618cd5584760c8a10cb3ff4db",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-bootstrap.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-bootstrap.log",
+      "bytes": 3040,
+      "sha256": "115fe24c615516c0b00a872ee4c935995edaa875759627cca03d21ce2828fcad",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/calcify-extractor.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/calcify-extractor.log",
+      "bytes": 258,
+      "sha256": "e4ff1d369e48ab70668a40cdc144c8c98b567879d2396968c22ccc352505d784",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/calcify-resolver.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/calcify-resolver.log",
+      "bytes": 231718,
+      "sha256": "4d5b2ef1c1bcedf3fed81b0afda07e1f2ac5e22d1f9d98fed01b08ea79d863f7",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/calcify-verifier.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/calcify-verifier.log",
+      "bytes": 258,
+      "sha256": "e4ff1d369e48ab70668a40cdc144c8c98b567879d2396968c22ccc352505d784",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/capture/frozen-policy.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/capture/frozen-policy.json",
+      "bytes": 3475,
+      "sha256": "5f56b4dfb2c0243ad5d55a0bb1791cbaea719fb57c9288a032a232fbc1268a56",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/capture/load.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/capture/load.log",
+      "bytes": 8664,
+      "sha256": "74cead8c08a8293682db74b00f98455beaaa9d9f2ecbe9df0811df2bc1493d02",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/capture/resolved.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/capture/resolved.log",
+      "bytes": 13417,
+      "sha256": "4114b5cce249afd2f225135269144c93b4a07433bd6b997605e3b3998bd50539",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/capture/verified.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/capture/verified.log",
+      "bytes": 18750,
+      "sha256": "ecf46808d26cfe9aef33ca780fa4db8fdea53339ea25eba4cb24df95a189f0f8",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/capture-runner.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/capture-runner.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/cold-compose.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/cold-compose.json",
+      "bytes": 7577,
+      "sha256": "041c8fbe0b12874c75cd0d2fe6719e693386d874a86be2a5a36fe7cfcf6401b8",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/disk.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/disk.jsonl",
+      "bytes": 2970,
+      "sha256": "9a13e49b98062c5676a074a007db5ca47726be8cbeaaa80120543e6d7282198c",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/events.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/events.jsonl",
+      "bytes": 800,
+      "sha256": "879c79b27bce356def77cb6fd3986221b749b44dc879f8bbb9d18215ff55cbbf",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/financial-before-crash.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/financial-before-crash.log",
+      "bytes": 5836,
+      "sha256": "001301ccfe35134d42d02f6392b0d0c64be3fbb00f33272e7160ac68ed8644b0",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/manifest.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/manifest.json",
+      "bytes": 5184,
+      "sha256": "81ce19483764097802c64b248051fcc07001b3ea9c09da59e8566ec2219a3151",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/matching-engine.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/matching-engine.log",
+      "bytes": 1722,
+      "sha256": "8f08ad5309eec8fcaff4cf913e16499c5f1dd12863b947633f1ef3c9ac2d21bb",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/platform-api.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/platform-api.log",
+      "bytes": 319,
+      "sha256": "971e38752522aacddb0b8d58a357fb1b1ae81aa23c2ec721ef0de63040d104df",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/reef-calcify-contention-20261011-financial-contention-aged-01-1.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/reef-calcify-contention-20261011-financial-contention-aged-01-1.log",
+      "bytes": 5836,
+      "sha256": "001301ccfe35134d42d02f6392b0d0c64be3fbb00f33272e7160ac68ed8644b0",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/reef-calcify-contention-20261011-financial-contention-aged-01-2.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/reef-calcify-contention-20261011-financial-contention-aged-01-2.log",
+      "bytes": 1830,
+      "sha256": "5a4b893661d4605b5c2fc67dcfa0b81613b0b68fe609c292919513417f0f32c7",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/resources.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/resources.jsonl",
+      "bytes": 115858,
+      "sha256": "78e938bc81929d01a34677cbc6620fc917c9d321b9fe33d0fddd34bfdb21ad66",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/sql-audit.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/sql-audit.log",
+      "bytes": 104,
+      "sha256": "85a786b0af8e9f44e05df8a132f05eda3d7fcfbeb7318a99109054b3651f90eb",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/supervisor.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-01/supervisor.json",
+      "bytes": 1265,
+      "sha256": "6722f4f2b6e08a837c1dc49c22ae1d4f18857db69ade0be6ee3da26f44816cb4",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/calcify-extractor.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/calcify-extractor.log",
+      "bytes": 258,
+      "sha256": "e4ff1d369e48ab70668a40cdc144c8c98b567879d2396968c22ccc352505d784",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/calcify-resolver.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/calcify-resolver.log",
+      "bytes": 293177,
+      "sha256": "5a8477d96cdda631e6c020416b3119c78a04a45e092b60f09c8c12130cf52b16",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/calcify-verifier.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/calcify-verifier.log",
+      "bytes": 258,
+      "sha256": "e4ff1d369e48ab70668a40cdc144c8c98b567879d2396968c22ccc352505d784",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/capture/frozen-policy.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/capture/frozen-policy.json",
+      "bytes": 3477,
+      "sha256": "56a4c38d263f22183f89233816432ac03825c2d6fd49806c5be10a331fede1b4",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/capture/full-facts.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/capture/full-facts.log",
+      "bytes": 2195,
+      "sha256": "d874fd454cd5fff874221ce1544386cf7624f2a9e24bf6bf07789566d7316e23",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/capture/load.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/capture/load.json",
+      "bytes": 9987,
+      "sha256": "774d6874cffe77538e9ec969891aaa1d962bdb39730f54b3478298210326ea61",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/capture/load.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/capture/load.log",
+      "bytes": 24105,
+      "sha256": "79e513c43ca6620468d4028a24200cc1002d6dc9963bed3e4dec393f7525b9b7",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/capture/resolved.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/capture/resolved.log",
+      "bytes": 43820,
+      "sha256": "ad3762cc56789794dc88fa45b68b002ead6de8460524e652887ef825dacb7ad3",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/capture/results.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/capture/results.json",
+      "bytes": 207513,
+      "sha256": "69619014f967ce0d94b3e9bf926de86f08925651b11842a034977d93aded28f8",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/capture/verified.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/capture/verified.log",
+      "bytes": 33696,
+      "sha256": "bb74336ccbb899679b790175d4240b578ca10077a3d921c9da6c6951e4c35232",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/capture-runner.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/capture-runner.log",
+      "bytes": 597,
+      "sha256": "57899ba0fb4c8dc4a5dfcf07fc0bdcb18c9f8349cbb514e5484fea3cb299eca1",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/cold-compose.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/cold-compose.json",
+      "bytes": 7577,
+      "sha256": "a68039dce81846a94523fc3ee8c9b7682eadf18859b8a577acb1ede4a9953653",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/disk.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/disk.jsonl",
+      "bytes": 8030,
+      "sha256": "0984b5b2557441a49aa92d643ee5376fd4cb684d8dc7738b122bd86c1a4bead0",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/events.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/events.jsonl",
+      "bytes": 719,
+      "sha256": "2664cb7abe3905af7714b0daba0f9fe3de0c6abd34e4a24749fed03dafecfd31",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/final-resolver-state.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/final-resolver-state.json",
+      "bytes": 998,
+      "sha256": "d2f130257ba5b67ca553fcd685e9cef6323187b4c930902a6f52c0024e924494",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/financial-1-timestamped.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/financial-1-timestamped.log",
+      "bytes": 8723,
+      "sha256": "a3f9c06c05d851252c23dfc8efc89b8f1f2d554be6ef58fa55b30bc0ed127860",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/financial-2-timestamped.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/financial-2-timestamped.log",
+      "bytes": 33165,
+      "sha256": "b32dcd3b84d2b5a76f2930343255d07933f03aa2606a76d6ef386dd6a25e1a79",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/financial-before-crash.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/financial-before-crash.log",
+      "bytes": 6057,
+      "sha256": "6c3ba8c3b56b8eaa029986b3031095598cb8df981dc85591e08f96f2ed89c2c9",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/live-health.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/live-health.jsonl",
+      "bytes": 224168,
+      "sha256": "2a80b913c2743687ef039754501797847ad445e68ea81baee145b2d8513a0ad9",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/manifest.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/manifest.json",
+      "bytes": 5245,
+      "sha256": "6e56ae804a505eee50f179b926be2504ad35b24a5869dd0f26c78741b8a875f1",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/matching-engine.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/matching-engine.log",
+      "bytes": 1722,
+      "sha256": "eb2beeb55fb407e629a2a28f9a369c2556d4e9d7f53133ed29a675bcd47f630c",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/platform-api.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/platform-api.log",
+      "bytes": 319,
+      "sha256": "971e38752522aacddb0b8d58a357fb1b1ae81aa23c2ec721ef0de63040d104df",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/reef-calcify-contention-20261011-financial-contention-aged-02-1.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/reef-calcify-contention-20261011-financial-contention-aged-02-1.log",
+      "bytes": 6057,
+      "sha256": "6c3ba8c3b56b8eaa029986b3031095598cb8df981dc85591e08f96f2ed89c2c9",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/reef-calcify-contention-20261011-financial-contention-aged-02-2.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/reef-calcify-contention-20261011-financial-contention-aged-02-2.log",
+      "bytes": 23276,
+      "sha256": "1742f6a44aa0c12bb36b7d475e5e10931dd3bd88601037d30e845046441f4a53",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/resource-summary.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/resource-summary.json",
+      "bytes": 3053,
+      "sha256": "1fcc961107d549bf1915f8102496f492e1f8ef2076703f5c3bffc98cd7f4d481",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/resources.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/resources.jsonl",
+      "bytes": 323701,
+      "sha256": "5b5c25dd137bea020d89c8d2cdb39201e4a77199ab6b838e45e3bbecafc4a4e1",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/retained-state-sizes.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/retained-state-sizes.json",
+      "bytes": 378,
+      "sha256": "b750dff908e0c1ecc668cd2def9a9d5ced15bbf4b9f27a14dfb76ca3c01d7d64",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/sql-audit.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/sql-audit.log",
+      "bytes": 106,
+      "sha256": "bb51404a3df72ad95bdb781a98008ab266ea3d80c7f910ea4314f85c5da6dd93",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/summary.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/summary.json",
+      "bytes": 7421,
+      "sha256": "adaf934984ad66f55adaa983fead84bbf5a5e2a39e83757a1713beada5aa6972",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/supervisor.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-run-02/supervisor.json",
+      "bytes": 1088,
+      "sha256": "dda27f78edcaf530cf312e32dd94f1e7b9405e02ba7dfba0076a0339ecf7b8bb",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-setup/compose-profile.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-setup/compose-profile.json",
+      "bytes": 7501,
+      "sha256": "eb9ec723f8947769f5012dd57c47d4aec19cdd68adebcdfd17e59f8aff939b94",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-setup/setup.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-setup/setup.json",
+      "bytes": 2488,
+      "sha256": "f25067af3804413f92213f7f7ead5b9946e26b03efba11d957a7e0f245ee0387",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-setup-02/compose-profile.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-setup-02/compose-profile.json",
+      "bytes": 7501,
+      "sha256": "f2264d4a8f21301791aa71ffba9e050db60f765eb27f79a55b34dc2e3f055104",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-setup-02/setup.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-setup-02/setup.json",
+      "bytes": 2493,
+      "sha256": "7642f942104825f67dcc8aa6f9e3ebf2e45ed930c698a0d37dc4af604fde8774",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-supervisor-02.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-supervisor-02.log",
+      "bytes": 808,
+      "sha256": "60683dfb056f5fb8a17cbc96cb9eaf185ac0546ef40c4bd2d19ce6f0339ec7b7",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-supervisor.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/aged-supervisor.log",
+      "bytes": 976,
+      "sha256": "32af7133e0e5c77e1c461c88f52b60677e5f302924f34e87ebcb15560cb02635",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/attempt-01-correction.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/attempt-01-correction.json",
+      "bytes": 528,
+      "sha256": "ba3baabd7c51f54e0560a61c68a8ff06fcf744a40430d410ce58e6493e94b028",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/calcify-contention-build.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/calcify-contention-build.log",
+      "bytes": 10845,
+      "sha256": "ed7001e8b4d1cb4e8dbdd34869d35d1c3f395a14c5e519005184f5c276fb20b6",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/calcify-contention-probe-build.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/calcify-contention-probe-build.log",
+      "bytes": 2021,
+      "sha256": "8dc11b276b5d5a96f85d1b638cddae456939450f84ec14a90ba01d0bbf0bbcbe",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/closure.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/closure.json",
+      "bytes": 11155,
+      "sha256": "6a84b1c35be004f17c95d003f0354443fd3341e2b188921df20c95d778afd011",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/compact-verification.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/compact-verification.json",
+      "bytes": 14537,
+      "sha256": "3ae052b0dd8c0b490a283756d84066c805dcc17cf394d89b6738a48c84b752c8",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/matcher-image.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/matcher-image.log",
+      "bytes": 929,
+      "sha256": "11d81009f2239697c8a9deb2a3832874543d70ad202915274cbe7b4e9d5e30ac",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/plan.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/plan.json",
+      "bytes": 1832,
+      "sha256": "d42a97b97280dc026552c0a52a0ce3de0989a79b9070d66109b5f33640f293da",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/runtime-image-02.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/runtime-image-02.log",
+      "bytes": 996,
+      "sha256": "4aeee1fa7dbfaf96c6b18f46f60421b871c8cfd358112202a4c83c47a444179e",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/runtime-image.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/runtime-image.log",
+      "bytes": 1816,
+      "sha256": "d26a887c2d150103e4979a0c2c13bb613d41891817306627a000b3aac4eb88fe",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-bootstrap-02.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-bootstrap-02.log",
+      "bytes": 4527,
+      "sha256": "719f2d19116a69847cbf9303bfc56824813cc5a14b31b2f1e39bf84ffe5f8cbd",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-bootstrap.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-bootstrap.log",
+      "bytes": 2888,
+      "sha256": "78037528891f54272b690007b271906192a41d919b1e84a37cf179fd4468ffd0",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/calcify-extractor.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/calcify-extractor.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/calcify-resolver.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/calcify-resolver.log",
+      "bytes": 169236,
+      "sha256": "85c88bebafd0623986e71ef5be9e3e7b9a71526098363203c2e6061fa29ca251",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/calcify-verifier.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/calcify-verifier.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/capture/frozen-policy.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/capture/frozen-policy.json",
+      "bytes": 3536,
+      "sha256": "dfd0543442a212409c792276f1b01f4b6e37a8e391f394c50dda7c91c64d5d0b",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/capture/full-facts.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/capture/full-facts.log",
+      "bytes": 2139,
+      "sha256": "2b7bf4ef0a75a04ce84523cef2593720eb79f942e1b3d95229f3d0de64087ddd",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/capture/load.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/capture/load.json",
+      "bytes": 3744,
+      "sha256": "a97edb2c3dba64ca8ed068534c2df5b630575f019ff9d768dbd29180dfa6e8ed",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/capture/load.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/capture/load.log",
+      "bytes": 4452,
+      "sha256": "3a74dbf9362f1090f7eac26cdace142d9b2c8682f9139d6fd982e2057131d2c1",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/capture/resolved.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/capture/resolved.log",
+      "bytes": 2713,
+      "sha256": "7394a444f9e1999f89da387758a20b0c7ab9306d5731bbdbe3336704fa84598c",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/capture/results.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/capture/results.json",
+      "bytes": 32496,
+      "sha256": "6611bb2996605293b77bbe884956241a685e0ffd995c3b8021007e3871a1bb80",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/capture/verified.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/capture/verified.log",
+      "bytes": 6033,
+      "sha256": "c5917112010b8586353941815b8686e2a78a6d7538d3f16a3c883cfcdd71ecae",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/capture-runner.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/capture-runner.log",
+      "bytes": 633,
+      "sha256": "d20da6e013454caac9eb5c24e9baf5be3c3ffb37e43a23ff8d10a1d82433769f",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/events.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/events.jsonl",
+      "bytes": 162,
+      "sha256": "1429873658204dcf0f898bc48a5319a46bb373fe7d187db6e30330071527c286",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/manifest.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/manifest.json",
+      "bytes": 5253,
+      "sha256": "91e560f36357f75df5417ebd4ea321e83ad624f538180956147412c453d46b31",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/matching-engine.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/matching-engine.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/platform-api.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/platform-api.log",
+      "bytes": 59,
+      "sha256": "c8f4ba7a7bd31d626f010495eb375afcbfe4210f15e3999a2dd83b5c7b160980",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/resources.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/resources.jsonl",
+      "bytes": 25543,
+      "sha256": "d358935c76754477254a052f3f536297f6a9b3989e2a6f77d8542985207ec707",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/supervisor.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-run/supervisor.json",
+      "bytes": 348,
+      "sha256": "27c0a884e63aa291a632a97b32fa2277059e0d7f8e9fa22316e3e86b142ef1e3",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-setup/compose-profile.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-setup/compose-profile.json",
+      "bytes": 7518,
+      "sha256": "f519f06b25af8c62e943a6f9b91bb0f1dd3a778684c4d6f76fa7ac673d47fad9",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-setup/setup.json",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-setup/setup.json",
+      "bytes": 2557,
+      "sha256": "ace1e6f21ab1627d23a8bfc0671af684346643a31c0eb0d6b310f13e5faa28d9",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-supervisor.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/smoke-supervisor.log",
+      "bytes": 249,
+      "sha256": "5dc2fa51b07762409465ab731a0a1a938dcbbc7f19ce0de45c9f8b886e21cdf7",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/source/ContentionSqlProbe.kt",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/source/ContentionSqlProbe.kt",
+      "bytes": 8606,
+      "sha256": "e65fdbfce8c53912f9144c9f928e198d0ddb4fd9726db58f72070b84e295458d",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/source/FinancialKernel.kt",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/source/FinancialKernel.kt",
+      "bytes": 30486,
+      "sha256": "9f76e87940d7600dac11bb26aba9ad40e39e7fbf41ec28dc8ab990790f0e637e",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/source/calcify-direct-bootstrap.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/source/calcify-direct-bootstrap.mjs",
+      "bytes": 10649,
+      "sha256": "133c9f6dedd905c66ca0a15215a95f4fea847da3a503655d6f3ed21fe591b80a",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/source/calcify-direct-capacity.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/source/calcify-direct-capacity.mjs",
+      "bytes": 15188,
+      "sha256": "5ee5217d9ebc7ed913a812837515fa133d5884a68ce475b1f452296e5aa1373c",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/source/run-contention-attempt01.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/source/run-contention-attempt01.mjs",
+      "bytes": 7789,
+      "sha256": "5d2e8f1f6cd55291c9bd321332c20721c0b8ce9067d2b69cbf9c51d92f207f3b",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/source/run-contention-attempt02.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/source/run-contention-attempt02.mjs",
+      "bytes": 7934,
+      "sha256": "3468748bb291778eae165a638844bf09550f8df8af1e4fc16f80a10f8a4962d7",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/source/summarize-contention.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/source/summarize-contention.mjs",
+      "bytes": 3412,
+      "sha256": "9b2f68a69dcdcc627e98857a3558eccd6b47984f6bab0006e777ec4fbf9c5150",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/source/summarize-contention.test.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/source/summarize-contention.test.mjs",
+      "bytes": 1573,
+      "sha256": "bb20061ea5275f03aabea9d0ecdddeb51b9e3bb2ba889c82902f70036ada7926",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/sql-smoke-audit.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/sql-smoke-audit.log",
+      "bytes": 102,
+      "sha256": "b6fc9191a68fea964bd91aeafc64f1d6f167940d71305370f44147f64548f760",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    },
+    {
+      "source_path": "docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/sql-smoke.log",
+      "archive_path": "records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/sql-smoke.log",
+      "bytes": 367,
+      "sha256": "406a9ab967d9d7acdfc5d9f42b94b1b8f5f2382b9839a052666e546d73f3242d",
+      "reason": "Complete scoped aged capture, synthetic financial/SQL, recovery proof; preserve success, target miss, incomplete attempt and setup corrections"
+    }
+  ]
+}

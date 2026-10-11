@@ -1,0 +1,22 @@
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+OBSERVER_READY
+{"window":{"elapsedMs":1012,"records":0,"rate":0.0}}
+{"window":{"elapsedMs":2065,"records":853,"rate":809.7096815838036}}
+{"window":{"elapsedMs":3081,"records":1791,"rate":923.7054648765926}}
+{"window":{"elapsedMs":4124,"records":2988,"rate":1147.3919810465338}}
+{"window":{"elapsedMs":5124,"records":3916,"rate":927.6252004587562}}
+{"window":{"elapsedMs":6145,"records":5055,"rate":1115.9160665111997}}
+{"window":{"elapsedMs":7236,"records":6006,"rate":872.0335135738577}}
+{"window":{"elapsedMs":8298,"records":7169,"rate":1094.8665024425281}}
+{"window":{"elapsedMs":9314,"records":8084,"rate":900.5370002520234}}
+{"window":{"elapsedMs":10401,"records":9251,"rate":1073.4738574634844}}
+{"window":{"elapsedMs":11491,"records":10345,"rate":1003.6376516419086}}
+{"window":{"elapsedMs":12535,"records":11432,"rate":1041.2344484031821}}
+{"window":{"elapsedMs":13568,"records":12489,"rate":1023.4321084486679}}
+{"window":{"elapsedMs":14627,"records":13512,"rate":966.1287882993497}}
+{"window":{"elapsedMs":15671,"records":14484,"rate":931.026418321934}}
+{"finish":{"records":14738,"expected":15000,"elapsedMs":15765}}
+{"window":{"elapsedMs":16676,"records":14913,"rate":426.9275689176237}}
+{"result":{"startedEpochMs":1791739496388,"expected":15000,"offeredExpected":15000,"records":15000,"unique":15000,"duplicates":0,"identityChecks":true,"outputBytes":29962077,"elapsedMs":17271,"activeMs":15894,"durableRate":943.7491971026179,"finishReceived":true,"finishError":null,"finishElapsedMs":15765,"drainAfterFinishMs":1505,"drainAfterMarkMs":null,"pass":true,"windows":[{"elapsedMs":1012,"records":0,"rate":0.0},{"elapsedMs":2065,"records":853,"rate":809.7096815838036},{"elapsedMs":3081,"records":1791,"rate":923.7054648765926},{"elapsedMs":4124,"records":2988,"rate":1147.3919810465338},{"elapsedMs":5124,"records":3916,"rate":927.6252004587562},{"elapsedMs":6145,"records":5055,"rate":1115.9160665111997},{"elapsedMs":7236,"records":6006,"rate":872.0335135738577},{"elapsedMs":8298,"records":7169,"rate":1094.8665024425281},{"elapsedMs":9314,"records":8084,"rate":900.5370002520234},{"elapsedMs":10401,"records":9251,"rate":1073.4738574634844},{"elapsedMs":11491,"records":10345,"rate":1003.6376516419086},{"elapsedMs":12535,"records":11432,"rate":1041.2344484031821},{"elapsedMs":13568,"records":12489,"rate":1023.4321084486679},{"elapsedMs":14627,"records":13512,"rate":966.1287882993497},{"elapsedMs":15671,"records":14484,"rate":931.026418321934},{"elapsedMs":16676,"records":14913,"rate":426.9275689176237}]}}

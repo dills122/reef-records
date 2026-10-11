@@ -1,0 +1,1628 @@
+{
+  "schema": "calcify-contention-actual-profile-v1",
+  "attempt": "aged-run-02",
+  "topics": [
+    {
+      "summary": {
+        "name": "REEF_CONTENTION-AGED-02_COMMANDS",
+        "internal": false,
+        "partitions": 16,
+        "replicas": 1,
+        "error": ""
+      },
+      "configs": [
+        {
+          "key": "cleanup.policy",
+          "value": "delete",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "compression.type",
+          "value": "producer",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "delete.retention.ms",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "flush.bytes",
+          "value": "262144",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "flush.ms",
+          "value": "100",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "initial.retention.local.target.bytes",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "initial.retention.local.target.ms",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "max.compaction.lag.ms",
+          "value": "9223372036854",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "max.message.bytes",
+          "value": "1048576",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "message.timestamp.after.max.ms",
+          "value": "3600000",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "message.timestamp.before.max.ms",
+          "value": "9223372036854",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "message.timestamp.type",
+          "value": "CreateTime",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "min.cleanable.dirty.ratio",
+          "value": "0.5",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "min.compaction.lag.ms",
+          "value": "0",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.iceberg.mode",
+          "value": "disabled",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.leaders.preference",
+          "value": "none",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.allowgaps",
+          "value": "false",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.delete",
+          "value": "true",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.read",
+          "value": "false",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.write",
+          "value": "false",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.schema.registry.context",
+          "value": ".",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.storage.mode",
+          "value": "unset",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.storage.mode.impl",
+          "value": "unset",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.bytes",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.local.target.bytes",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.local.target.ms",
+          "value": "86400000",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.ms",
+          "value": "604800000",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "segment.bytes",
+          "value": "134217728",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "segment.ms",
+          "value": "1209600000",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "write.caching",
+          "value": "false",
+          "source": "DYNAMIC_TOPIC_CONFIG"
+        }
+      ],
+      "partitions": [
+        {
+          "partition": 0,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 4
+        },
+        {
+          "partition": 1,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 4
+        },
+        {
+          "partition": 2,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 4
+        },
+        {
+          "partition": 3,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 4
+        },
+        {
+          "partition": 4,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 4
+        },
+        {
+          "partition": 5,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 4
+        },
+        {
+          "partition": 6,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 4
+        },
+        {
+          "partition": 7,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 4
+        },
+        {
+          "partition": 8,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 4
+        },
+        {
+          "partition": 9,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 4
+        },
+        {
+          "partition": 10,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 4
+        },
+        {
+          "partition": 11,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 4
+        },
+        {
+          "partition": 12,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 4
+        },
+        {
+          "partition": 13,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 4
+        },
+        {
+          "partition": 14,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 4
+        },
+        {
+          "partition": 15,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 4
+        }
+      ]
+    },
+    {
+      "summary": {
+        "name": "REEF_CONTENTION-AGED-02_EVENTS",
+        "internal": false,
+        "partitions": 16,
+        "replicas": 1,
+        "error": ""
+      },
+      "configs": [
+        {
+          "key": "cleanup.policy",
+          "value": "delete",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "compression.type",
+          "value": "producer",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "delete.retention.ms",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "flush.bytes",
+          "value": "262144",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "flush.ms",
+          "value": "100",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "initial.retention.local.target.bytes",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "initial.retention.local.target.ms",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "max.compaction.lag.ms",
+          "value": "9223372036854",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "max.message.bytes",
+          "value": "4194304",
+          "source": "DYNAMIC_TOPIC_CONFIG"
+        },
+        {
+          "key": "message.timestamp.after.max.ms",
+          "value": "3600000",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "message.timestamp.before.max.ms",
+          "value": "9223372036854",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "message.timestamp.type",
+          "value": "CreateTime",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "min.cleanable.dirty.ratio",
+          "value": "0.5",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "min.compaction.lag.ms",
+          "value": "0",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.iceberg.mode",
+          "value": "disabled",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.leaders.preference",
+          "value": "none",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.allowgaps",
+          "value": "false",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.delete",
+          "value": "true",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.read",
+          "value": "false",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.write",
+          "value": "false",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.schema.registry.context",
+          "value": ".",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.storage.mode",
+          "value": "unset",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.storage.mode.impl",
+          "value": "unset",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.bytes",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.local.target.bytes",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.local.target.ms",
+          "value": "86400000",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.ms",
+          "value": "604800000",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "segment.bytes",
+          "value": "134217728",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "segment.ms",
+          "value": "1209600000",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "write.caching",
+          "value": "false",
+          "source": "DYNAMIC_TOPIC_CONFIG"
+        }
+      ],
+      "partitions": [
+        {
+          "partition": 0,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 9
+        },
+        {
+          "partition": 1,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 3
+        },
+        {
+          "partition": 2,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 6
+        },
+        {
+          "partition": 3,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 6
+        },
+        {
+          "partition": 4,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 9
+        },
+        {
+          "partition": 5,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 6
+        },
+        {
+          "partition": 6,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 6
+        },
+        {
+          "partition": 7,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 6
+        },
+        {
+          "partition": 8,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 6
+        },
+        {
+          "partition": 9,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 3
+        },
+        {
+          "partition": 10,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 9
+        },
+        {
+          "partition": 11,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 6
+        },
+        {
+          "partition": 12,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 9
+        },
+        {
+          "partition": 13,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 3
+        },
+        {
+          "partition": 14,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 9
+        },
+        {
+          "partition": 15,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 6
+        }
+      ]
+    },
+    {
+      "summary": {
+        "name": "REEF_CONTENTION-AGED-02_COMMITMENTS",
+        "internal": false,
+        "partitions": 16,
+        "replicas": 1,
+        "error": ""
+      },
+      "configs": [
+        {
+          "key": "cleanup.policy",
+          "value": "delete",
+          "source": "DYNAMIC_TOPIC_CONFIG"
+        },
+        {
+          "key": "compression.type",
+          "value": "producer",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "delete.retention.ms",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "flush.bytes",
+          "value": "262144",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "flush.ms",
+          "value": "100",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "initial.retention.local.target.bytes",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "initial.retention.local.target.ms",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "max.compaction.lag.ms",
+          "value": "9223372036854",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "max.message.bytes",
+          "value": "1048576",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "message.timestamp.after.max.ms",
+          "value": "3600000",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "message.timestamp.before.max.ms",
+          "value": "9223372036854",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "message.timestamp.type",
+          "value": "CreateTime",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "min.cleanable.dirty.ratio",
+          "value": "0.5",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "min.compaction.lag.ms",
+          "value": "0",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.iceberg.mode",
+          "value": "disabled",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.leaders.preference",
+          "value": "none",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.allowgaps",
+          "value": "false",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.delete",
+          "value": "true",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.read",
+          "value": "false",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.write",
+          "value": "false",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.schema.registry.context",
+          "value": ".",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.storage.mode",
+          "value": "unset",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.storage.mode.impl",
+          "value": "unset",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.bytes",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.local.target.bytes",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.local.target.ms",
+          "value": "86400000",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.ms",
+          "value": "604800000",
+          "source": "DYNAMIC_TOPIC_CONFIG"
+        },
+        {
+          "key": "segment.bytes",
+          "value": "134217728",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "segment.ms",
+          "value": "1209600000",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "write.caching",
+          "value": "false",
+          "source": "DYNAMIC_TOPIC_CONFIG"
+        }
+      ],
+      "partitions": [
+        {
+          "partition": 0,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 1,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 2,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 3,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 4,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 5,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 6,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 7,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 8,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 9,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 10,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 11,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 12,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 13,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 14,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 15,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        }
+      ]
+    },
+    {
+      "summary": {
+        "name": "REEF_CONTENTION-AGED-02_VERIFIED",
+        "internal": false,
+        "partitions": 16,
+        "replicas": 1,
+        "error": ""
+      },
+      "configs": [
+        {
+          "key": "cleanup.policy",
+          "value": "delete",
+          "source": "DYNAMIC_TOPIC_CONFIG"
+        },
+        {
+          "key": "compression.type",
+          "value": "producer",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "delete.retention.ms",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "flush.bytes",
+          "value": "262144",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "flush.ms",
+          "value": "100",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "initial.retention.local.target.bytes",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "initial.retention.local.target.ms",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "max.compaction.lag.ms",
+          "value": "9223372036854",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "max.message.bytes",
+          "value": "1048576",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "message.timestamp.after.max.ms",
+          "value": "3600000",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "message.timestamp.before.max.ms",
+          "value": "9223372036854",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "message.timestamp.type",
+          "value": "CreateTime",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "min.cleanable.dirty.ratio",
+          "value": "0.5",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "min.compaction.lag.ms",
+          "value": "0",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.iceberg.mode",
+          "value": "disabled",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.leaders.preference",
+          "value": "none",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.allowgaps",
+          "value": "false",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.delete",
+          "value": "true",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.read",
+          "value": "false",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.write",
+          "value": "false",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.schema.registry.context",
+          "value": ".",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.storage.mode",
+          "value": "unset",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.storage.mode.impl",
+          "value": "unset",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.bytes",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.local.target.bytes",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.local.target.ms",
+          "value": "86400000",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.ms",
+          "value": "604800000",
+          "source": "DYNAMIC_TOPIC_CONFIG"
+        },
+        {
+          "key": "segment.bytes",
+          "value": "134217728",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "segment.ms",
+          "value": "1209600000",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "write.caching",
+          "value": "false",
+          "source": "DYNAMIC_TOPIC_CONFIG"
+        }
+      ],
+      "partitions": [
+        {
+          "partition": 0,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 1,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 2,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 3,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 4,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 5,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 6,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 7,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 8,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 9,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 10,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 11,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 12,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 13,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 14,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 15,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        }
+      ]
+    },
+    {
+      "summary": {
+        "name": "REEF_CONTENTION-AGED-02_RESOLVED",
+        "internal": false,
+        "partitions": 16,
+        "replicas": 1,
+        "error": ""
+      },
+      "configs": [
+        {
+          "key": "cleanup.policy",
+          "value": "delete",
+          "source": "DYNAMIC_TOPIC_CONFIG"
+        },
+        {
+          "key": "compression.type",
+          "value": "producer",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "delete.retention.ms",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "flush.bytes",
+          "value": "262144",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "flush.ms",
+          "value": "100",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "initial.retention.local.target.bytes",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "initial.retention.local.target.ms",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "max.compaction.lag.ms",
+          "value": "9223372036854",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "max.message.bytes",
+          "value": "16778240",
+          "source": "DYNAMIC_TOPIC_CONFIG"
+        },
+        {
+          "key": "message.timestamp.after.max.ms",
+          "value": "3600000",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "message.timestamp.before.max.ms",
+          "value": "9223372036854",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "message.timestamp.type",
+          "value": "CreateTime",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "min.cleanable.dirty.ratio",
+          "value": "0.5",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "min.compaction.lag.ms",
+          "value": "0",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.iceberg.mode",
+          "value": "disabled",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.leaders.preference",
+          "value": "none",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.allowgaps",
+          "value": "false",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.delete",
+          "value": "true",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.read",
+          "value": "false",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.remote.write",
+          "value": "false",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.schema.registry.context",
+          "value": ".",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.storage.mode",
+          "value": "unset",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "redpanda.storage.mode.impl",
+          "value": "unset",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.bytes",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.local.target.bytes",
+          "value": "-1",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.local.target.ms",
+          "value": "86400000",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "retention.ms",
+          "value": "604800000",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "segment.bytes",
+          "value": "134217728",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "segment.ms",
+          "value": "1209600000",
+          "source": "DEFAULT_CONFIG"
+        },
+        {
+          "key": "write.caching",
+          "value": "false",
+          "source": "DYNAMIC_TOPIC_CONFIG"
+        }
+      ],
+      "partitions": [
+        {
+          "partition": 0,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 1,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 2,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 3,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 4,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 5,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 6,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 7,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 8,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 9,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 10,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 11,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 12,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 13,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 14,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        },
+        {
+          "partition": 15,
+          "leader": 0,
+          "epoch": 1,
+          "replicas": [
+            0
+          ],
+          "log_start_offset": 0,
+          "high_watermark": 0
+        }
+      ]
+    }
+  ],
+  "sameImageAndResourceSettingsAs": "actual-profile.json",
+  "sourceGeneration": 4,
+  "terminalRetention": 0,
+  "finiteLifecycleProfileActive": false,
+  "newFinancialSchema": "calcify_contention_contention_aged_02",
+  "harnessSha256": "3468748bb291778eae165a638844bf09550f8df8af1e4fc16f80a10f8a4962d7",
+  "priorAttemptCorrection": "attempt-01-correction.json"
+}

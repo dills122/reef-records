@@ -1,0 +1,932 @@
+{
+  "runId": "d32d86bc",
+  "config": {
+    "smokeId": "contention-smoke-01",
+    "mode": "aggressor",
+    "ordersPerTrade": 1,
+    "preflightOrders": 64,
+    "generation": 2,
+    "seconds": 15,
+    "pace": 1000,
+    "workers": 1024,
+    "preflightContexts": 0,
+    "out": "/private/tmp/calcify-contention-20261011/smoke-run/capture",
+    "image": "reef-platform-runtime:calcify-contention-20261011",
+    "network": "reef-calcify-contention-20261011_default",
+    "binary": "/private/tmp/calcify-contention-20261011/calcify-load",
+    "scope": "Research: retention0; local RF1 v26.2.3; aged capture with independent gross financial/SQL workload and cold resolver restore; finite lifecycle profile off",
+    "bootstrap": "redpanda:9092",
+    "baseUrl": "http://127.0.0.1:8080",
+    "instruments": "I0-contention-smoke-01,I1-contention-smoke-01,I2-contention-smoke-01,I3-contention-smoke-01,I4-contention-smoke-01,I5-contention-smoke-01,I6-contention-smoke-01,I7-contention-smoke-01,I8-contention-smoke-01,I9-contention-smoke-01,I10-contention-smoke-01,I11-contention-smoke-01,I12-contention-smoke-01,I13-contention-smoke-01,I14-contention-smoke-01,I15-contention-smoke-01,I16-contention-smoke-01,I17-contention-smoke-01,I18-contention-smoke-01,I19-contention-smoke-01,I20-contention-smoke-01,I21-contention-smoke-01,I22-contention-smoke-01,I23-contention-smoke-01,I24-contention-smoke-01,I25-contention-smoke-01,I26-contention-smoke-01,I27-contention-smoke-01,I28-contention-smoke-01,I29-contention-smoke-01,I31-contention-smoke-01,I32-contention-smoke-01,I33-contention-smoke-01,I34-contention-smoke-01,I35-contention-smoke-01,I37-contention-smoke-01,I38-contention-smoke-01,I39-contention-smoke-01,I40-contention-smoke-01,I41-contention-smoke-01,I42-contention-smoke-01,I43-contention-smoke-01,I44-contention-smoke-01,I45-contention-smoke-01,I46-contention-smoke-01,I48-contention-smoke-01,I50-contention-smoke-01,I53-contention-smoke-01,I55-contention-smoke-01,I56-contention-smoke-01,I57-contention-smoke-01,I61-contention-smoke-01,I62-contention-smoke-01,I65-contention-smoke-01,I66-contention-smoke-01,I67-contention-smoke-01,I70-contention-smoke-01,I71-contention-smoke-01,I74-contention-smoke-01,I77-contention-smoke-01,I88-contention-smoke-01,I102-contention-smoke-01,I103-contention-smoke-01,I111-contention-smoke-01",
+    "source": "REEF_CONTENTION-SMOKE-01_EVENTS",
+    "verified": "REEF_CONTENTION-SMOKE-01_VERIFIED",
+    "resolved": "REEF_CONTENTION-SMOKE-01_RESOLVED"
+  },
+  "policy": {
+    "seconds": 15,
+    "targetContextsPerSecond": 10000,
+    "workloadMode": "aggressor",
+    "ordersPerTrade": 1,
+    "offeredTradesPerSecond": 1000,
+    "offeredOrdersPerSecond": 1000,
+    "preflightContexts": 0,
+    "preflightOrders": 64,
+    "maxLoadOverrunMs": 1000,
+    "maxDrainMs": 5000,
+    "units": "one timed SELL = one trade = one verified commitment = one resolved context; seeded BUY makers excluded from timed rates",
+    "deadlineMeasurement": "read_committed counts received before parent monotonic spawn+duration, minus preflight; conservative lower bound",
+    "drainMeasurement": "last observed full count minus parent spawn+Go HTTP elapsed; conservative upper bound, not per-trade latency",
+    "fullFactParityRequired": true,
+    "receiptSqlEnabled": false
+  },
+  "harnessSha256": "5ee5217d9ebc7ed913a812837515fa133d5884a68ce475b1f452296e5aa1373c",
+  "loaderSha256": "a0d69293ff42cd1d8c9ae5b8cfbda06c53832e2f4017f012576e506850a6968a",
+  "commands": [
+    {
+      "name": "verified",
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--name",
+        "calcify-direct-d32d86bc-verified",
+        "--label",
+        "reef.test=calcify-direct",
+        "--network",
+        "reef-calcify-contention-20261011_default",
+        "-v",
+        "/Users/dsteele/.codex/worktrees/69c4/reef/services/platform-runtime/build/classes/kotlin/test:/tmp/calcify-test-classes:ro",
+        "--entrypoint",
+        "java",
+        "reef-platform-runtime:calcify-contention-20261011",
+        "-Xms128m",
+        "-Xmx2g",
+        "-cp",
+        "/tmp/calcify-test-classes:/app/platform-runtime/lib/*",
+        "com.reef.platform.calcify.CalcifyVerifiedVisibilityObserver",
+        "redpanda:9092",
+        "REEF_CONTENTION-SMOKE-01_EVENTS",
+        "REEF_CONTENTION-SMOKE-01_VERIFIED",
+        "REEF_CONTENTION-SMOKE-01_RESOLVED",
+        "2",
+        "0",
+        "135000",
+        "1000",
+        "64"
+      ]
+    },
+    {
+      "name": "resolved",
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--name",
+        "calcify-direct-d32d86bc-resolved",
+        "--label",
+        "reef.test=calcify-direct",
+        "--network",
+        "reef-calcify-contention-20261011_default",
+        "-v",
+        "/Users/dsteele/.codex/worktrees/69c4/reef/services/platform-runtime/build/classes/kotlin/test:/tmp/calcify-test-classes:ro",
+        "--entrypoint",
+        "java",
+        "reef-platform-runtime:calcify-contention-20261011",
+        "-Xms128m",
+        "-Xmx2g",
+        "-cp",
+        "/tmp/calcify-test-classes:/app/platform-runtime/lib/*",
+        "com.reef.platform.calcify.CalcifyResolverBrokerProbe",
+        "actual-measure",
+        "redpanda:9092",
+        "REEF_CONTENTION-SMOKE-01_RESOLVED",
+        "15000",
+        "135000",
+        "false",
+        "1000",
+        "2"
+      ]
+    },
+    {
+      "name": "load",
+      "command": "/private/tmp/calcify-contention-20261011/calcify-load",
+      "args": [
+        "--base-url",
+        "http://127.0.0.1:8080",
+        "--smoke-id",
+        "contention-smoke-01",
+        "--receipt-generation",
+        "0",
+        "--workload-mode",
+        "aggressor",
+        "--instrument-ids",
+        "I0-contention-smoke-01,I1-contention-smoke-01,I2-contention-smoke-01,I3-contention-smoke-01,I4-contention-smoke-01,I5-contention-smoke-01,I6-contention-smoke-01,I7-contention-smoke-01,I8-contention-smoke-01,I9-contention-smoke-01,I10-contention-smoke-01,I11-contention-smoke-01,I12-contention-smoke-01,I13-contention-smoke-01,I14-contention-smoke-01,I15-contention-smoke-01,I16-contention-smoke-01,I17-contention-smoke-01,I18-contention-smoke-01,I19-contention-smoke-01,I20-contention-smoke-01,I21-contention-smoke-01,I22-contention-smoke-01,I23-contention-smoke-01,I24-contention-smoke-01,I25-contention-smoke-01,I26-contention-smoke-01,I27-contention-smoke-01,I28-contention-smoke-01,I29-contention-smoke-01,I31-contention-smoke-01,I32-contention-smoke-01,I33-contention-smoke-01,I34-contention-smoke-01,I35-contention-smoke-01,I37-contention-smoke-01,I38-contention-smoke-01,I39-contention-smoke-01,I40-contention-smoke-01,I41-contention-smoke-01,I42-contention-smoke-01,I43-contention-smoke-01,I44-contention-smoke-01,I45-contention-smoke-01,I46-contention-smoke-01,I48-contention-smoke-01,I50-contention-smoke-01,I53-contention-smoke-01,I55-contention-smoke-01,I56-contention-smoke-01,I57-contention-smoke-01,I61-contention-smoke-01,I62-contention-smoke-01,I65-contention-smoke-01,I66-contention-smoke-01,I67-contention-smoke-01,I70-contention-smoke-01,I71-contention-smoke-01,I74-contention-smoke-01,I77-contention-smoke-01,I88-contention-smoke-01,I102-contention-smoke-01,I103-contention-smoke-01,I111-contention-smoke-01",
+        "--duration",
+        "15s",
+        "--pairs-per-second",
+        "1000",
+        "--workers",
+        "1024",
+        "--report-out",
+        "/private/tmp/calcify-contention-20261011/smoke-run/capture/load.json"
+      ]
+    },
+    {
+      "name": "full-facts",
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--name",
+        "calcify-direct-d32d86bc-full-facts",
+        "--label",
+        "reef.test=calcify-direct",
+        "--network",
+        "reef-calcify-contention-20261011_default",
+        "-v",
+        "/Users/dsteele/.codex/worktrees/69c4/reef/services/platform-runtime/build/classes/kotlin/test:/tmp/calcify-test-classes:ro",
+        "--entrypoint",
+        "java",
+        "reef-platform-runtime:calcify-contention-20261011",
+        "-Xms128m",
+        "-Xmx2g",
+        "-cp",
+        "/tmp/calcify-test-classes:/app/platform-runtime/lib/*",
+        "com.reef.platform.calcify.CalcifyActualFullFactObserver",
+        "redpanda:9092",
+        "REEF_CONTENTION-SMOKE-01_EVENTS",
+        "REEF_CONTENTION-SMOKE-01_RESOLVED",
+        "2",
+        "15000",
+        "900"
+      ]
+    }
+  ],
+  "streams": {
+    "verified": {
+      "windows": [
+        {
+          "records": 0,
+          "verifiedRecords": 0,
+          "elapsedMs": 1344,
+          "rate": 0,
+          "receivedEpochMs": 1791739496902,
+          "receivedMonotonicMs": 1655.028583
+        },
+        {
+          "records": 524,
+          "verifiedRecords": 524,
+          "elapsedMs": 2356,
+          "rate": 517.8399699079636,
+          "receivedEpochMs": 1791739497915,
+          "receivedMonotonicMs": 2667.481208
+        },
+        {
+          "records": 1408,
+          "verifiedRecords": 1408,
+          "elapsedMs": 3375,
+          "rate": 867.5532499523194,
+          "receivedEpochMs": 1791739498933,
+          "receivedMonotonicMs": 3685.501708
+        },
+        {
+          "records": 2685,
+          "verifiedRecords": 2685,
+          "elapsedMs": 4419,
+          "rate": 1223.3155611702684,
+          "receivedEpochMs": 1791739499975,
+          "receivedMonotonicMs": 4728.250167
+        },
+        {
+          "records": 3731,
+          "verifiedRecords": 3731,
+          "elapsedMs": 5506,
+          "rate": 962.7009735840965,
+          "receivedEpochMs": 1791739501062,
+          "receivedMonotonicMs": 5815.130292
+        },
+        {
+          "records": 4709,
+          "verifiedRecords": 4709,
+          "elapsedMs": 6563,
+          "rate": 924.5361176897496,
+          "receivedEpochMs": 1791739502120,
+          "receivedMonotonicMs": 6872.704333
+        },
+        {
+          "records": 5719,
+          "verifiedRecords": 5719,
+          "elapsedMs": 7565,
+          "rate": 1008.2935468603033,
+          "receivedEpochMs": 1791739503121,
+          "receivedMonotonicMs": 7874.258583
+        },
+        {
+          "records": 6725,
+          "verifiedRecords": 6725,
+          "elapsedMs": 8596,
+          "rate": 976.2278172279537,
+          "receivedEpochMs": 1791739504152,
+          "receivedMonotonicMs": 8904.752958
+        },
+        {
+          "records": 7853,
+          "verifiedRecords": 7853,
+          "elapsedMs": 9679,
+          "rate": 1040.9553558250766,
+          "receivedEpochMs": 1791739505238,
+          "receivedMonotonicMs": 9990.470625
+        },
+        {
+          "records": 8949,
+          "verifiedRecords": 8949,
+          "elapsedMs": 10680,
+          "rate": 1094.7612776143794,
+          "receivedEpochMs": 1791739506237,
+          "receivedMonotonicMs": 10989.635542
+        },
+        {
+          "records": 10044,
+          "verifiedRecords": 10044,
+          "elapsedMs": 11761,
+          "rate": 1013.6531901194242,
+          "receivedEpochMs": 1791739507317,
+          "receivedMonotonicMs": 12070.233083
+        },
+        {
+          "records": 10981,
+          "verifiedRecords": 10981,
+          "elapsedMs": 12784,
+          "rate": 915.4270086658463,
+          "receivedEpochMs": 1791739508341,
+          "receivedMonotonicMs": 13093.504708
+        },
+        {
+          "records": 11947,
+          "verifiedRecords": 11947,
+          "elapsedMs": 13856,
+          "rate": 901.4051913147371,
+          "receivedEpochMs": 1791739509412,
+          "receivedMonotonicMs": 14164.942708
+        },
+        {
+          "records": 13155,
+          "verifiedRecords": 13155,
+          "elapsedMs": 14953,
+          "rate": 1100.8318195976935,
+          "receivedEpochMs": 1791739510510,
+          "receivedMonotonicMs": 15262.517667
+        },
+        {
+          "records": 14255,
+          "verifiedRecords": 14255,
+          "elapsedMs": 16041,
+          "rate": 1010.9926294740394,
+          "receivedEpochMs": 1791739511598,
+          "receivedMonotonicMs": 16350.924458
+        },
+        {
+          "records": 14870,
+          "verifiedRecords": 14870,
+          "elapsedMs": 17141,
+          "rate": 559.2101860817359,
+          "receivedEpochMs": 1791739512697,
+          "receivedMonotonicMs": 17450.270458
+        }
+      ],
+      "ready": {
+        "verifiedRecords": 0,
+        "resolvedRecords": 0,
+        "sourceTrades": 0,
+        "sourceAcceptedOrders": 64,
+        "sourceCommands": 64,
+        "preflightAcceptedOrders": 64,
+        "preflightContexts": 0,
+        "sourceTopicId": "kQyR_b6LR-qS72-pmqMTqQ",
+        "verifiedTopicId": "LrBW3tWhS8epI_HfNgb-2w",
+        "resolvedTopicId": "PcocSdJmSOm1n6LzSrVMhQ",
+        "sourceCommittedEnds": {
+          "0": 6,
+          "1": 6,
+          "2": 6,
+          "3": 9,
+          "4": 9,
+          "5": 6,
+          "6": 3,
+          "7": 6,
+          "8": 6,
+          "9": 6,
+          "10": 6,
+          "11": 6,
+          "12": 9,
+          "13": 6,
+          "14": 6,
+          "15": 6
+        },
+        "verifiedCommittedEnds": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 0,
+          "15": 0
+        },
+        "resolvedCommittedEnds": {
+          "0": 0,
+          "1": 0,
+          "2": 0,
+          "3": 0,
+          "4": 0,
+          "5": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 0,
+          "13": 0,
+          "14": 0,
+          "15": 0
+        }
+      },
+      "result": {
+        "pass": true,
+        "records": 15000,
+        "verifiedRecords": 15000,
+        "expected": 15000,
+        "unique": 15000,
+        "duplicates": 0,
+        "orderedExactSourceLinks": true,
+        "initialVerifiedRecords": 0,
+        "initialResolvedRecords": 0,
+        "sourceTrades": 15000,
+        "sourceBatches": 2248,
+        "sourceAcceptedOrders": 15064,
+        "sourceCommands": 15064,
+        "initialSourceAcceptedOrders": 64,
+        "sourceCommittedEnds": {
+          "0": 417,
+          "1": 426,
+          "2": 423,
+          "3": 420,
+          "4": 426,
+          "5": 417,
+          "6": 417,
+          "7": 423,
+          "8": 420,
+          "9": 423,
+          "10": 426,
+          "11": 420,
+          "12": 426,
+          "13": 420,
+          "14": 420,
+          "15": 420
+        },
+        "verifiedCommittedEnds": {
+          "0": 1209,
+          "1": 1217,
+          "2": 1214,
+          "3": 1210,
+          "4": 1213,
+          "5": 1210,
+          "6": 1212,
+          "7": 1213,
+          "8": 1210,
+          "9": 1212,
+          "10": 1218,
+          "11": 1212,
+          "12": 1217,
+          "13": 1213,
+          "14": 1213,
+          "15": 1211
+        },
+        "latency": {
+          "samples": 15000,
+          "p50MsUpper": 126,
+          "p95MsUpper": 252,
+          "p99MsUpper": 424,
+          "maxMs": 1038.485958,
+          "histogramCeilingMs": 600000,
+          "overflowSamples": 0,
+          "resolution": "1ms ceiling buckets; overflow percentile upper is observed maximum"
+        },
+        "batchEntryTiming": {
+          "matchingWork": {
+            "samples": 15000,
+            "p50MsUpper": 1,
+            "p95MsUpper": 1,
+            "p99MsUpper": 2,
+            "maxMs": 5.425834,
+            "histogramCeilingMs": 600000,
+            "overflowSamples": 0,
+            "resolution": "1ms ceiling buckets; overflow percentile upper is observed maximum"
+          },
+          "entryToVerifiedVisibilityUpper": {
+            "samples": 15000,
+            "p50MsUpper": 126,
+            "p95MsUpper": 252,
+            "p99MsUpper": 424,
+            "maxMs": 1038.638708,
+            "histogramCeilingMs": 600000,
+            "overflowSamples": 0,
+            "resolution": "1ms ceiling buckets; overflow percentile upper is observed maximum"
+          },
+          "semantics": "trade-weighted batch createdAt before matching execution to workFinishedAt, and createdAt to read_committed verified poll-return visibility upper bound; conservative whole-batch path bound, not individual command matching acceptance latency; createdAt is metadata excluded from payload and timing checksums; workFinishedAt timing integrity checked"
+        },
+        "timestampDiagnostics": {
+          "producerCreateTimeMinusWorkFinished": {
+            "samples": 15000,
+            "p50MsUpper": 80,
+            "p95MsUpper": 180,
+            "p99MsUpper": 229,
+            "maxMs": 930.189248,
+            "histogramCeilingMs": 600000,
+            "overflowSamples": 0,
+            "resolution": "1ms ceiling buckets; overflow percentile upper is observed maximum"
+          },
+          "visibilityMinusProducerCreateTime": {
+            "samples": 15000,
+            "p50MsUpper": 20,
+            "p95MsUpper": 185,
+            "p99MsUpper": 281,
+            "maxMs": 511.296877,
+            "histogramCeilingMs": 600000,
+            "overflowSamples": 0,
+            "resolution": "1ms ceiling buckets; overflow percentile upper is observed maximum"
+          },
+          "applicableCreateTimeSamples": 15000,
+          "producerMillisecondRoundingAdjustedSamples": 0,
+          "unknownOrLogAppendTimeOmittedSamples": 0,
+          "semantics": "CreateTime only: producer creation minus matching work is processing/publication diagnostic, not durable latency; visibility minus producer creation includes transaction commit and observer delivery/processing, not pure observer lag; producer timestamp truncation permits negative work delta up to999999ns, clamped0 and counted"
+        },
+        "observerCost": "all verified records plus full source checksum validation once per source batch; four bounded source readers; live CPU/fetch overhead included",
+        "latencySemantics": "batch matching workFinishedAt to observer poll-return read_committed verified visibility upper bound; includes checksum/source publication/extractor/verifier transaction/fetch/scheduling; not semantic acceptedAt, individual matching acceptance or producer timestamp",
+        "recordTimestampTypes": [
+          "CreateTime"
+        ],
+        "recordTimestampsUsedForLatency": false,
+        "clockAssumption": "matching and observer wall clocks share local host; negative intervals fail; wall steps reported",
+        "maxObservedWallStepMs": 0.146598,
+        "windowStartEpochMs": 1791739496800,
+        "windowDurationMs": 15000,
+        "verifiedObservedWithinFixedWindow": 14478,
+        "observationsBeforeStartCommand": 0,
+        "elapsedMs": 18078,
+        "activeMs": 15743,
+        "finishElapsedMs": 16599,
+        "drainAfterFinishMs": 964,
+        "drainAfterMarkMs": null
+      },
+      "resultReceivedMonotonicMs": 18393.144083,
+      "resultReceivedEpochMs": 1791739513640,
+      "exitCode": 0
+    },
+    "resolved": {
+      "windows": [
+        {
+          "elapsedMs": 1012,
+          "records": 0,
+          "rate": 0,
+          "receivedEpochMs": 1791739497437,
+          "receivedMonotonicMs": 2189.679542
+        },
+        {
+          "elapsedMs": 2065,
+          "records": 853,
+          "rate": 809.7096815838036,
+          "receivedEpochMs": 1791739498457,
+          "receivedMonotonicMs": 3209.795917
+        },
+        {
+          "elapsedMs": 3081,
+          "records": 1791,
+          "rate": 923.7054648765926,
+          "receivedEpochMs": 1791739499471,
+          "receivedMonotonicMs": 4223.374333
+        },
+        {
+          "elapsedMs": 4124,
+          "records": 2988,
+          "rate": 1147.3919810465338,
+          "receivedEpochMs": 1791739500514,
+          "receivedMonotonicMs": 5266.679375
+        },
+        {
+          "elapsedMs": 5124,
+          "records": 3916,
+          "rate": 927.6252004587562,
+          "receivedEpochMs": 1791739501514,
+          "receivedMonotonicMs": 6267.113208
+        },
+        {
+          "elapsedMs": 6145,
+          "records": 5055,
+          "rate": 1115.9160665111997,
+          "receivedEpochMs": 1791739502535,
+          "receivedMonotonicMs": 7287.797917
+        },
+        {
+          "elapsedMs": 7236,
+          "records": 6006,
+          "rate": 872.0335135738577,
+          "receivedEpochMs": 1791739503628,
+          "receivedMonotonicMs": 8381.102083
+        },
+        {
+          "elapsedMs": 8298,
+          "records": 7169,
+          "rate": 1094.8665024425281,
+          "receivedEpochMs": 1791739504689,
+          "receivedMonotonicMs": 9441.604333
+        },
+        {
+          "elapsedMs": 9314,
+          "records": 8084,
+          "rate": 900.5370002520234,
+          "receivedEpochMs": 1791739505704,
+          "receivedMonotonicMs": 10456.589583
+        },
+        {
+          "elapsedMs": 10401,
+          "records": 9251,
+          "rate": 1073.4738574634844,
+          "receivedEpochMs": 1791739506791,
+          "receivedMonotonicMs": 11543.970125
+        },
+        {
+          "elapsedMs": 11491,
+          "records": 10345,
+          "rate": 1003.6376516419086,
+          "receivedEpochMs": 1791739507881,
+          "receivedMonotonicMs": 12633.790917
+        },
+        {
+          "elapsedMs": 12535,
+          "records": 11432,
+          "rate": 1041.2344484031821,
+          "receivedEpochMs": 1791739508925,
+          "receivedMonotonicMs": 13677.751958
+        },
+        {
+          "elapsedMs": 13568,
+          "records": 12489,
+          "rate": 1023.4321084486679,
+          "receivedEpochMs": 1791739509958,
+          "receivedMonotonicMs": 14710.852958
+        },
+        {
+          "elapsedMs": 14627,
+          "records": 13512,
+          "rate": 966.1287882993497,
+          "receivedEpochMs": 1791739511017,
+          "receivedMonotonicMs": 15769.803792
+        },
+        {
+          "elapsedMs": 15671,
+          "records": 14484,
+          "rate": 931.026418321934,
+          "receivedEpochMs": 1791739512060,
+          "receivedMonotonicMs": 16813.532417
+        },
+        {
+          "elapsedMs": 16676,
+          "records": 14913,
+          "rate": 426.9275689176237,
+          "receivedEpochMs": 1791739513067,
+          "receivedMonotonicMs": 17820.053292
+        }
+      ],
+      "result": {
+        "startedEpochMs": 1791739496388,
+        "expected": 15000,
+        "offeredExpected": 15000,
+        "records": 15000,
+        "unique": 15000,
+        "duplicates": 0,
+        "identityChecks": true,
+        "outputBytes": 29962077,
+        "elapsedMs": 17271,
+        "activeMs": 15894,
+        "durableRate": 943.7491971026179,
+        "finishReceived": true,
+        "finishError": null,
+        "finishElapsedMs": 15765,
+        "drainAfterFinishMs": 1505,
+        "drainAfterMarkMs": null,
+        "pass": true,
+        "windows": [
+          {
+            "elapsedMs": 1012,
+            "records": 0,
+            "rate": 0
+          },
+          {
+            "elapsedMs": 2065,
+            "records": 853,
+            "rate": 809.7096815838036
+          },
+          {
+            "elapsedMs": 3081,
+            "records": 1791,
+            "rate": 923.7054648765926
+          },
+          {
+            "elapsedMs": 4124,
+            "records": 2988,
+            "rate": 1147.3919810465338
+          },
+          {
+            "elapsedMs": 5124,
+            "records": 3916,
+            "rate": 927.6252004587562
+          },
+          {
+            "elapsedMs": 6145,
+            "records": 5055,
+            "rate": 1115.9160665111997
+          },
+          {
+            "elapsedMs": 7236,
+            "records": 6006,
+            "rate": 872.0335135738577
+          },
+          {
+            "elapsedMs": 8298,
+            "records": 7169,
+            "rate": 1094.8665024425281
+          },
+          {
+            "elapsedMs": 9314,
+            "records": 8084,
+            "rate": 900.5370002520234
+          },
+          {
+            "elapsedMs": 10401,
+            "records": 9251,
+            "rate": 1073.4738574634844
+          },
+          {
+            "elapsedMs": 11491,
+            "records": 10345,
+            "rate": 1003.6376516419086
+          },
+          {
+            "elapsedMs": 12535,
+            "records": 11432,
+            "rate": 1041.2344484031821
+          },
+          {
+            "elapsedMs": 13568,
+            "records": 12489,
+            "rate": 1023.4321084486679
+          },
+          {
+            "elapsedMs": 14627,
+            "records": 13512,
+            "rate": 966.1287882993497
+          },
+          {
+            "elapsedMs": 15671,
+            "records": 14484,
+            "rate": 931.026418321934
+          },
+          {
+            "elapsedMs": 16676,
+            "records": 14913,
+            "rate": 426.9275689176237
+          }
+        ]
+      },
+      "resultReceivedMonotonicMs": 18417.989375,
+      "resultReceivedEpochMs": 1791739513665,
+      "exitCode": 0
+    }
+  },
+  "pass": false,
+  "capacityClaim": false,
+  "baselinePass": true,
+  "observationStartEpochMs": 1791739496800,
+  "loadSpawnEpochMs": 1791739496800,
+  "loadSpawnMonotonicMs": 1553.153167,
+  "loadExitCode": 0,
+  "load": {
+    "workloadMode": "aggressor",
+    "ordersPerTrade": 1,
+    "completedTrades": 15000,
+    "jobAccounting": "completedTrades and legacy completedPairs count fully acknowledged trade jobs; pairs fields are legacy job counters; actual completed trades require canonical source/verified/resolved reconciliation; aggressor maker seeding occurs before load window",
+    "instrumentIds": [
+      "I0-contention-smoke-01",
+      "I1-contention-smoke-01",
+      "I2-contention-smoke-01",
+      "I3-contention-smoke-01",
+      "I4-contention-smoke-01",
+      "I5-contention-smoke-01",
+      "I6-contention-smoke-01",
+      "I7-contention-smoke-01",
+      "I8-contention-smoke-01",
+      "I9-contention-smoke-01",
+      "I10-contention-smoke-01",
+      "I11-contention-smoke-01",
+      "I12-contention-smoke-01",
+      "I13-contention-smoke-01",
+      "I14-contention-smoke-01",
+      "I15-contention-smoke-01",
+      "I16-contention-smoke-01",
+      "I17-contention-smoke-01",
+      "I18-contention-smoke-01",
+      "I19-contention-smoke-01",
+      "I20-contention-smoke-01",
+      "I21-contention-smoke-01",
+      "I22-contention-smoke-01",
+      "I23-contention-smoke-01",
+      "I24-contention-smoke-01",
+      "I25-contention-smoke-01",
+      "I26-contention-smoke-01",
+      "I27-contention-smoke-01",
+      "I28-contention-smoke-01",
+      "I29-contention-smoke-01",
+      "I31-contention-smoke-01",
+      "I32-contention-smoke-01",
+      "I33-contention-smoke-01",
+      "I34-contention-smoke-01",
+      "I35-contention-smoke-01",
+      "I37-contention-smoke-01",
+      "I38-contention-smoke-01",
+      "I39-contention-smoke-01",
+      "I40-contention-smoke-01",
+      "I41-contention-smoke-01",
+      "I42-contention-smoke-01",
+      "I43-contention-smoke-01",
+      "I44-contention-smoke-01",
+      "I45-contention-smoke-01",
+      "I46-contention-smoke-01",
+      "I48-contention-smoke-01",
+      "I50-contention-smoke-01",
+      "I53-contention-smoke-01",
+      "I55-contention-smoke-01",
+      "I56-contention-smoke-01",
+      "I57-contention-smoke-01",
+      "I61-contention-smoke-01",
+      "I62-contention-smoke-01",
+      "I65-contention-smoke-01",
+      "I66-contention-smoke-01",
+      "I67-contention-smoke-01",
+      "I70-contention-smoke-01",
+      "I71-contention-smoke-01",
+      "I74-contention-smoke-01",
+      "I77-contention-smoke-01",
+      "I88-contention-smoke-01",
+      "I102-contention-smoke-01",
+      "I103-contention-smoke-01",
+      "I111-contention-smoke-01"
+    ],
+    "smokeId": "contention-smoke-01",
+    "targetPairs": 15000,
+    "startIndex": 0,
+    "targetPairsPerSecond": 1000,
+    "scheduledPairs": 15000,
+    "dispatchedPairs": 15000,
+    "droppedPairs": 0,
+    "completedPairs": 15000,
+    "acceptedOrders": 15000,
+    "acceptedOrdersAtDeadline": 14995,
+    "deadlineAccounting": "validated durable HTTP acknowledgement observed strictly before fixed monotonic load-start plus requested duration; late/equal acknowledgements count only in acceptedOrders; epoch fields expose wall time from those same Go instants",
+    "loadStartedEpochMs": 1791739497145,
+    "scheduledDeadlineEpochMs": 1791739512145,
+    "acceptedAllEpochMs": 1791739512149,
+    "receiptDrainAccounting": "drainMs runs from HTTP worker completion before stopping the progress observer through successful receipt reconciliation; includes any outstanding observer query wait; acceptedAllEpochMs records worker completion even if requests failed",
+    "acceptedOrdersPerSecond": 999.7339985089529,
+    "elapsedMs": 15003,
+    "retries": 0,
+    "failures": 0,
+    "samples": [
+      {
+        "elapsedMs": 5000,
+        "completedPairsBefore": 4991,
+        "completedPairs": 4991
+      },
+      {
+        "elapsedMs": 10000,
+        "completedPairsBefore": 9997,
+        "completedPairs": 9997
+      },
+      {
+        "elapsedMs": 15000,
+        "completedPairsBefore": 14998,
+        "completedPairs": 14998
+      }
+    ],
+    "gatePassed": true
+  },
+  "oracle": {
+    "sourceTopic": "REEF_CONTENTION-SMOKE-01_EVENTS",
+    "resolvedTopic": "REEF_CONTENTION-SMOKE-01_RESOLVED",
+    "sourceTopicId": "kQyR_b6LR-qS72-pmqMTqQ",
+    "generation": 2,
+    "policyVersion": 1,
+    "sourceBatches": 2248,
+    "sourceBytes": 39370043,
+    "maxSourceRecordBytes": 41024,
+    "acceptedOrders": 15064,
+    "records": 15000,
+    "expected": 15000,
+    "fullFactParity": true,
+    "orderedUnique": true,
+    "independentFactDecoder": true,
+    "checksumValidator": "shared CalcifySourceBatch.checked",
+    "sourceCommittedEnds": {
+      "0": 417,
+      "1": 426,
+      "2": 423,
+      "3": 420,
+      "4": 426,
+      "5": 417,
+      "6": 417,
+      "7": 423,
+      "8": 420,
+      "9": 423,
+      "10": 426,
+      "11": 420,
+      "12": 426,
+      "13": 420,
+      "14": 420,
+      "15": 420
+    },
+    "resolvedCommittedEnds": {
+      "0": 1117,
+      "1": 1115,
+      "2": 1110,
+      "3": 1118,
+      "4": 1119,
+      "5": 1118,
+      "6": 1112,
+      "7": 1109,
+      "8": 1110,
+      "9": 1112,
+      "10": 1112,
+      "11": 1116,
+      "12": 1117,
+      "13": 1117,
+      "14": 1121,
+      "15": 1113
+    },
+    "partitionSha256": {
+      "0": "0d2291618302527f1758f814f25dac9b47912cf07d79939c1d3cd98be52cde8b",
+      "1": "967d8dc817703c3b39aa8947c286083c4e987d1057a17d5046f126db020f125c",
+      "2": "93f1d277307e20c4fa0432af75eb00497e626d6250b227fcf2d7c645a46d3e05",
+      "3": "4238e3797c98c2a46969143b5f266c66ca0bf3c58f5769cde59805adc3192fa1",
+      "4": "1b3737e0971db382ec621fe8b89bce2726159d127dd5f089f776a650aae77dc7",
+      "5": "fa25a22a3fe3f96cffb978e03ccd93eab94a83eacb6606d449cbf494ce741b90",
+      "6": "9dd7e48bd3bcb7ba6e0f8d6f9c31c0387128ebbb8efbd3e14265725f70c25f55",
+      "7": "e732012390b013d1be0ab44212883ea36a1d44a265d10bb57cb528cfe3d5fac2",
+      "8": "93f9c625c4732467ee115a479621dc88f68807eb50f2887530fdd529cb4fa1c0",
+      "9": "2a98381b50f9fcef1e702559e129aa60d3456adc9726eb02218cc750e0f2b632",
+      "10": "9932a0d5d7d139c60d836863e2115ce80d44bfd0848b794f7186f826a88e2cb9",
+      "11": "8c7a4b1fc418dc7d9a88aca427081e20f0b754f0e1fdad115ae8aa1d7ef84f35",
+      "12": "8f32b36a611dba17bd3736a07810e4279963c1f549e3c5b23083eb2f579a32d4",
+      "13": "68159e4b850010e6d80fa9c9cc73a91d2e09271edfa5ba5ece31a1ab9dc5a57d",
+      "14": "fcaa220a04615fa78e3eb9d30b46d22c7d0c8384fcb7968bea43b9b70a41e516",
+      "15": "12f637a35601bd82a8dc26f902507c604a74f7012a332aa198606ab2533c29c8"
+    },
+    "pass": true
+  },
+  "oracleExitCode": 0,
+  "reasons": [
+    "diagnostic duration below 300 seconds",
+    "verified below target contexts/s",
+    "resolved below target contexts/s"
+  ],
+  "expectedContexts": 15000,
+  "rates": {
+    "verified": {
+      "coveredBeforeConservativeDeadline": 14255,
+      "contextsPerSecond": 950.3333333333334,
+      "endGapUpperContexts": 745,
+      "drainUpperMs": 1836.9909159999988,
+      "scheduledDeadlineDrainUpperMs": 1839.9909159999988
+    },
+    "resolved": {
+      "coveredBeforeConservativeDeadline": 13512,
+      "contextsPerSecond": 900.8,
+      "endGapUpperContexts": 1488,
+      "drainUpperMs": 1861.8362080000006,
+      "scheduledDeadlineDrainUpperMs": 1864.8362080000006
+    }
+  },
+  "acceptedOrdersAtDeadlinePerSecond": 999.6666666666666,
+  "completedTradesPerSecondIncludingHttpDrain": 999.8000399920016
+}

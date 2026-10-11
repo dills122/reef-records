@@ -1,0 +1,110 @@
+{
+  "peaks": {
+    "reef-calcify-contention-20261011-calcify-resolver": {
+      "sampledMaxMemoryBytes": 1508607262.72,
+      "sampledMaxCpuPercent": 254.3
+    },
+    "reef-calcify-contention-20261011-calcify-verifier": {
+      "sampledMaxMemoryBytes": 195978854.4,
+      "sampledMaxCpuPercent": 44.05
+    },
+    "reef-calcify-contention-20261011-calcify-extractor": {
+      "sampledMaxMemoryBytes": 307127910.4,
+      "sampledMaxCpuPercent": 74.81
+    },
+    "reef-calcify-contention-20261011-platform-api": {
+      "sampledMaxMemoryBytes": 724461158.4,
+      "sampledMaxCpuPercent": 297.55
+    },
+    "reef-calcify-contention-20261011-matching-engine": {
+      "sampledMaxMemoryBytes": 4515084369.92,
+      "sampledMaxCpuPercent": 485.32
+    },
+    "reef-calcify-contention-20261011-postgres": {
+      "sampledMaxMemoryBytes": 350329241.6,
+      "sampledMaxCpuPercent": 54.67
+    },
+    "reef-calcify-contention-20261011-redpanda": {
+      "sampledMaxMemoryBytes": 2230161768.448,
+      "sampledMaxCpuPercent": 119.61
+    },
+    "reef-calcify-contention-20261011-financial-contention-aged-02-1": {
+      "sampledMaxMemoryBytes": 715862835.2,
+      "sampledMaxCpuPercent": 173.57
+    },
+    "reef-calcify-contention-20261011-financial-contention-aged-02-2": {
+      "sampledMaxMemoryBytes": 1127428915.2,
+      "sampledMaxCpuPercent": 115.59
+    }
+  },
+  "sampleCount": 146,
+  "samplingScope": "Named service and financial containers only; capture observers and host load driver excluded; sampled Docker stats, not heap or continuous RSS bounds",
+  "minFreeBytes": 34705408000,
+  "deadlineBounds": {
+    "verified": {
+      "deadlineCountLower": 3051648,
+      "deadlineCountUpper": 3063383,
+      "rateLower": 10172.16,
+      "rateUpper": 10211.276666666667
+    },
+    "resolved": {
+      "deadlineCountLower": 2432098,
+      "deadlineCountUpper": 2443533,
+      "rateLower": 8106.993333333333,
+      "rateUpper": 8145.11
+    }
+  },
+  "financial": [
+    {
+      "file": "financial-before-crash.log",
+      "ready": [
+        {
+          "ready": true,
+          "nextTrade": 0,
+          "restoreMs": 0,
+          "domain": -1
+        }
+      ],
+      "last": {
+        "progress": true,
+        "committedTrades": 40925,
+        "elapsedMs": 87739,
+        "domain": 4
+      }
+    },
+    {
+      "file": "reef-calcify-contention-20261011-financial-contention-aged-02-1.log",
+      "ready": [
+        {
+          "ready": true,
+          "nextTrade": 0,
+          "restoreMs": 0,
+          "domain": -1
+        }
+      ],
+      "last": {
+        "progress": true,
+        "committedTrades": 40925,
+        "elapsedMs": 87739,
+        "domain": 4
+      }
+    },
+    {
+      "file": "reef-calcify-contention-20261011-financial-contention-aged-02-2.log",
+      "ready": [
+        {
+          "ready": true,
+          "nextTrade": 41200,
+          "restoreMs": 1289,
+          "domain": 4
+        }
+      ],
+      "last": {
+        "progress": true,
+        "committedTrades": 366100,
+        "elapsedMs": 324890,
+        "domain": 36
+      }
+    }
+  ]
+}

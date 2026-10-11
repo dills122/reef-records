@@ -1,0 +1,38 @@
+{
+  "schema": "calcify-contention-plan-v1",
+  "sourceHead": "b9a8756e8d0efc5e8b665a5c62da1ab064d01539",
+  "phases": [
+    {
+      "name": "smoke",
+      "seconds": 15,
+      "offerPerSecond": 1000
+    },
+    {
+      "name": "aged-contention",
+      "seconds": 300,
+      "offerPerSecond": 10500,
+      "events": {
+        "60": "start synthetic financial decisions and atomic SQL journal",
+        "150": "kill financial/SQL process and recover its journal/checkpoint",
+        "180": "cold restore capture resolver in a fresh state directory"
+      }
+    }
+  ],
+  "capture": "Current Phase1/2 source, retention0 (no terminal eviction), 64 standing makers; finite P0/O1 lifecycle profile NOT active",
+  "financial": "Existing gross FinancialKernel in independent synthetic domains of 10000 trades, 25-trade atomic SQL batches; 1000/s cap; no capture-to-financial mapping",
+  "host": "All service workers and broker/PostgreSQL in same 10 CPU / 16745824256B Docker VM; HTTP load driver on same physical 64GiB macOS host",
+  "broker": "cached Redpanda v26.2.3 RF1, actual write.caching=false required; differs from checkout compose v26.2.4",
+  "limits": {
+    "stopOnOomOrWorkerFailure": true,
+    "minGuestFreeBytes": 8000000000,
+    "totalRunTimeoutSeconds": 900
+  },
+  "gates": [
+    "Count only read_committed capture observations within fixed deadline",
+    "Original full source-to-context oracle required before any capture claim",
+    "Financial SQL full-history replay and exact balanced legs after recovery",
+    "Report pre/post-age windows separately; overall mean is not aged-window proof",
+    "Recovery and downstream progress must be observed; dead competitor cannot yield contention pass"
+  ],
+  "permissionScope": "Fresh owned containers/topics/volumes only; no existing proof state deletion or cloud provisioning"
+}
