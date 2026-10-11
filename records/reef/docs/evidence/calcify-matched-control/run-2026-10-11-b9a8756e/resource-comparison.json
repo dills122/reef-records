@@ -1,0 +1,631 @@
+{
+  "treatment": {
+    "phases": [
+      {
+        "startSeconds": 0,
+        "endSeconds": 60,
+        "samples": 19,
+        "namedCpuPercentSampleMean": 657.2473684210527,
+        "namedCpuPercentSampleMax": 791.17,
+        "roles": {
+          "calcify-resolver": {
+            "cpuPercentSampleMean": 135.98368421052632,
+            "cpuPercentSampleMax": 189.07,
+            "memoryBytesSampleMax": 959761612.8
+          },
+          "calcify-verifier": {
+            "cpuPercentSampleMean": 17.074210526315788,
+            "cpuPercentSampleMax": 44.05,
+            "memoryBytesSampleMax": 190421401.6
+          },
+          "calcify-extractor": {
+            "cpuPercentSampleMean": 40.275263157894734,
+            "cpuPercentSampleMax": 74.81,
+            "memoryBytesSampleMax": 274097766.4
+          },
+          "platform-api": {
+            "cpuPercentSampleMean": 205.53315789473683,
+            "cpuPercentSampleMax": 297.55,
+            "memoryBytesSampleMax": 692689305.6
+          },
+          "matching-engine": {
+            "cpuPercentSampleMean": 155.5421052631579,
+            "cpuPercentSampleMax": 200.25,
+            "memoryBytesSampleMax": 1214402002.944
+          },
+          "postgres": {
+            "cpuPercentSampleMean": 0.5126315789473684,
+            "cpuPercentSampleMax": 3.3,
+            "memoryBytesSampleMax": 231420723.2
+          },
+          "redpanda": {
+            "cpuPercentSampleMean": 102.32631578947368,
+            "cpuPercentSampleMax": 119.61,
+            "memoryBytesSampleMax": 2152852357.12
+          }
+        }
+      },
+      {
+        "startSeconds": 60,
+        "endSeconds": 150,
+        "samples": 26,
+        "namedCpuPercentSampleMean": 737.7388461538461,
+        "namedCpuPercentSampleMax": 827.2900000000001,
+        "roles": {
+          "calcify-resolver": {
+            "cpuPercentSampleMean": 128.98884615384617,
+            "cpuPercentSampleMax": 155.68,
+            "memoryBytesSampleMax": 1002333798.4
+          },
+          "calcify-verifier": {
+            "cpuPercentSampleMean": 9.32,
+            "cpuPercentSampleMax": 26.2,
+            "memoryBytesSampleMax": 194091417.6
+          },
+          "calcify-extractor": {
+            "cpuPercentSampleMean": 29.601153846153846,
+            "cpuPercentSampleMax": 41.91,
+            "memoryBytesSampleMax": 277243494.4
+          },
+          "platform-api": {
+            "cpuPercentSampleMean": 181.5526923076923,
+            "cpuPercentSampleMax": 208.31,
+            "memoryBytesSampleMax": 722049433.6
+          },
+          "matching-engine": {
+            "cpuPercentSampleMean": 205.27307692307693,
+            "cpuPercentSampleMax": 294.04,
+            "memoryBytesSampleMax": 2458868776.96
+          },
+          "postgres": {
+            "cpuPercentSampleMean": 18.063846153846153,
+            "cpuPercentSampleMax": 25.43,
+            "memoryBytesSampleMax": 242116198.4
+          },
+          "redpanda": {
+            "cpuPercentSampleMean": 99.90461538461538,
+            "cpuPercentSampleMax": 111.66,
+            "memoryBytesSampleMax": 2166811000.832
+          },
+          "financial": {
+            "cpuPercentSampleMean": 70.45416666666667,
+            "cpuPercentSampleMax": 173.57,
+            "memoryBytesSampleMax": 715757977.6
+          }
+        }
+      },
+      {
+        "startSeconds": 150,
+        "endSeconds": 180,
+        "samples": 9,
+        "namedCpuPercentSampleMean": 767.3277777777778,
+        "namedCpuPercentSampleMax": 891.41,
+        "roles": {
+          "financial": {
+            "cpuPercentSampleMean": 80.16,
+            "cpuPercentSampleMax": 115.59,
+            "memoryBytesSampleMax": 715862835.2
+          },
+          "calcify-resolver": {
+            "cpuPercentSampleMean": 124.34777777777778,
+            "cpuPercentSampleMax": 144.49,
+            "memoryBytesSampleMax": 1113470271.488
+          },
+          "calcify-verifier": {
+            "cpuPercentSampleMean": 7.408888888888889,
+            "cpuPercentSampleMax": 10.04,
+            "memoryBytesSampleMax": 193986560.0
+          },
+          "calcify-extractor": {
+            "cpuPercentSampleMean": 33.08,
+            "cpuPercentSampleMax": 45.49,
+            "memoryBytesSampleMax": 285841817.6
+          },
+          "platform-api": {
+            "cpuPercentSampleMean": 193.41333333333333,
+            "cpuPercentSampleMax": 217.55,
+            "memoryBytesSampleMax": 721944576.0
+          },
+          "matching-engine": {
+            "cpuPercentSampleMean": 213.9011111111111,
+            "cpuPercentSampleMax": 360.69,
+            "memoryBytesSampleMax": 3195455668.224
+          },
+          "postgres": {
+            "cpuPercentSampleMean": 21.509999999999998,
+            "cpuPercentSampleMax": 49.19,
+            "memoryBytesSampleMax": 244003635.2
+          },
+          "redpanda": {
+            "cpuPercentSampleMean": 93.50666666666666,
+            "cpuPercentSampleMax": 108.46,
+            "memoryBytesSampleMax": 2178622160.896
+          }
+        }
+      },
+      {
+        "startSeconds": 180,
+        "endSeconds": 300,
+        "samples": 33,
+        "namedCpuPercentSampleMean": 758.6384848484848,
+        "namedCpuPercentSampleMax": 988.51,
+        "roles": {
+          "financial": {
+            "cpuPercentSampleMean": 56.917272727272724,
+            "cpuPercentSampleMax": 83.39,
+            "memoryBytesSampleMax": 1127428915.2
+          },
+          "calcify-resolver": {
+            "cpuPercentSampleMean": 145.27333333333334,
+            "cpuPercentSampleMax": 231.28,
+            "memoryBytesSampleMax": 1468878815.232
+          },
+          "calcify-verifier": {
+            "cpuPercentSampleMean": 7.617272727272727,
+            "cpuPercentSampleMax": 13.38,
+            "memoryBytesSampleMax": 194720563.2
+          },
+          "calcify-extractor": {
+            "cpuPercentSampleMean": 31.9669696969697,
+            "cpuPercentSampleMax": 47.13,
+            "memoryBytesSampleMax": 307023052.8
+          },
+          "platform-api": {
+            "cpuPercentSampleMean": 173.95909090909092,
+            "cpuPercentSampleMax": 215.3,
+            "memoryBytesSampleMax": 724461158.4
+          },
+          "matching-engine": {
+            "cpuPercentSampleMean": 227.40878787878788,
+            "cpuPercentSampleMax": 485.32,
+            "memoryBytesSampleMax": 4511863144.448
+          },
+          "postgres": {
+            "cpuPercentSampleMean": 22.21848484848485,
+            "cpuPercentSampleMax": 54.67,
+            "memoryBytesSampleMax": 253755392.0
+          },
+          "redpanda": {
+            "cpuPercentSampleMean": 93.27727272727273,
+            "cpuPercentSampleMax": 118.3,
+            "memoryBytesSampleMax": 2230161768.448
+          }
+        }
+      },
+      {
+        "startSeconds": 0,
+        "endSeconds": 300,
+        "samples": 87,
+        "namedCpuPercentSampleMean": 731.1486206896552,
+        "namedCpuPercentSampleMax": 988.51,
+        "roles": {
+          "calcify-resolver": {
+            "cpuPercentSampleMean": 136.2132183908046,
+            "cpuPercentSampleMax": 231.28,
+            "memoryBytesSampleMax": 1468878815.232
+          },
+          "calcify-verifier": {
+            "cpuPercentSampleMean": 10.169885057471264,
+            "cpuPercentSampleMax": 44.05,
+            "memoryBytesSampleMax": 194720563.2
+          },
+          "calcify-extractor": {
+            "cpuPercentSampleMean": 33.18954022988506,
+            "cpuPercentSampleMax": 74.81,
+            "memoryBytesSampleMax": 307023052.8
+          },
+          "platform-api": {
+            "cpuPercentSampleMean": 185.1364367816092,
+            "cpuPercentSampleMax": 297.55,
+            "memoryBytesSampleMax": 724461158.4
+          },
+          "matching-engine": {
+            "cpuPercentSampleMean": 203.70114942528735,
+            "cpuPercentSampleMax": 485.32,
+            "memoryBytesSampleMax": 4511863144.448
+          },
+          "postgres": {
+            "cpuPercentSampleMean": 16.163218390804598,
+            "cpuPercentSampleMax": 54.67,
+            "memoryBytesSampleMax": 253755392.0
+          },
+          "redpanda": {
+            "cpuPercentSampleMean": 97.25781609195403,
+            "cpuPercentSampleMax": 119.61,
+            "memoryBytesSampleMax": 2230161768.448
+          },
+          "financial": {
+            "cpuPercentSampleMean": 65.00924242424243,
+            "cpuPercentSampleMax": 173.57,
+            "memoryBytesSampleMax": 1127428915.2
+          }
+        }
+      }
+    ],
+    "minGuestFreeBytes": 34705408000,
+    "resourceSampleCount": 146,
+    "healthTransitions": [
+      {
+        "epochMs": 1791740119024,
+        "relativeSeconds": 116.075,
+        "startedAt": "2026-10-11T17:31:58.857290135Z",
+        "state": "RUNNING"
+      },
+      {
+        "epochMs": 1791740194054,
+        "relativeSeconds": 191.105,
+        "startedAt": "2026-10-11T17:36:32.152324595Z",
+        "state": null
+      },
+      {
+        "epochMs": 1791740199055,
+        "relativeSeconds": 196.106,
+        "startedAt": "2026-10-11T17:36:32.152324595Z",
+        "state": "REBALANCING"
+      },
+      {
+        "epochMs": 1791740214062,
+        "relativeSeconds": 211.113,
+        "startedAt": "2026-10-11T17:36:32.152324595Z",
+        "state": "RUNNING"
+      }
+    ],
+    "resolverStartedAtValues": [
+      "2026-10-11T17:31:58.857290135Z",
+      "2026-10-11T17:36:32.152324595Z"
+    ],
+    "financialWallClockCoverageBounds": [
+      {
+        "second": 60,
+        "countLower": 0,
+        "countUpper": 0,
+        "lowerSampleSeconds": null,
+        "upperSampleSeconds": 68.83107397460938
+      },
+      {
+        "second": 150,
+        "countLower": 37600,
+        "countUpper": 38050,
+        "lowerSampleSeconds": 149.26479711914064,
+        "upperSampleSeconds": 150.3308330078125
+      },
+      {
+        "second": 180,
+        "countLower": 48025,
+        "countUpper": 48450,
+        "lowerSampleSeconds": 179.42961303710936,
+        "upperSampleSeconds": 180.48386499023437
+      },
+      {
+        "second": 300,
+        "countLower": 118850,
+        "countUpper": 119675,
+        "lowerSampleSeconds": 299.14717797851563,
+        "upperSampleSeconds": 300.15284497070314
+      }
+    ],
+    "financialRestore": [
+      {
+        "epochMs": 1791740071780.074,
+        "relativeSeconds": 68.83107397460938,
+        "count": 0,
+        "kind": "ready",
+        "restoreMs": 0
+      },
+      {
+        "epochMs": 1791740164535.2322,
+        "relativeSeconds": 161.5862321777344,
+        "count": 41200,
+        "kind": "ready",
+        "restoreMs": 1289
+      }
+    ],
+    "resourceScope": "Rounded sampled named-container Docker stats; excludes observers/host load driver; not CPU time, continuous peaks or whole-host utilization",
+    "financialTimingScope": "Docker wall-clock log receipt versus host epoch; no synchronized-clock error bound; diagnostic committed-count brackets, not monotonic throughput qualification"
+  },
+  "control": {
+    "phases": [
+      {
+        "startSeconds": 0,
+        "endSeconds": 60,
+        "samples": 19,
+        "namedCpuPercentSampleMean": 595.6842105263158,
+        "namedCpuPercentSampleMax": 688.71,
+        "roles": {
+          "calcify-resolver": {
+            "cpuPercentSampleMean": 124.16368421052631,
+            "cpuPercentSampleMax": 185.18,
+            "memoryBytesSampleMax": 951792435.2
+          },
+          "calcify-extractor": {
+            "cpuPercentSampleMean": 37.52263157894737,
+            "cpuPercentSampleMax": 57.08,
+            "memoryBytesSampleMax": 261934284.8
+          },
+          "calcify-verifier": {
+            "cpuPercentSampleMean": 14.58421052631579,
+            "cpuPercentSampleMax": 40.75,
+            "memoryBytesSampleMax": 192623411.2
+          },
+          "platform-api": {
+            "cpuPercentSampleMean": 183.4021052631579,
+            "cpuPercentSampleMax": 277.12,
+            "memoryBytesSampleMax": 778357964.8
+          },
+          "matching-engine": {
+            "cpuPercentSampleMean": 148.25421052631577,
+            "cpuPercentSampleMax": 187.67,
+            "memoryBytesSampleMax": 1220844453.888
+          },
+          "postgres": {
+            "cpuPercentSampleMean": 0.3252631578947368,
+            "cpuPercentSampleMax": 2.3,
+            "memoryBytesSampleMax": 59454259.2
+          },
+          "redpanda": {
+            "cpuPercentSampleMean": 87.4321052631579,
+            "cpuPercentSampleMax": 102.3,
+            "memoryBytesSampleMax": 2253784088.576
+          }
+        }
+      },
+      {
+        "startSeconds": 60,
+        "endSeconds": 150,
+        "samples": 27,
+        "namedCpuPercentSampleMean": 650.8251851851852,
+        "namedCpuPercentSampleMax": 691.23,
+        "roles": {
+          "calcify-resolver": {
+            "cpuPercentSampleMean": 112.82962962962964,
+            "cpuPercentSampleMax": 140.76,
+            "memoryBytesSampleMax": 1120986464.256
+          },
+          "calcify-extractor": {
+            "cpuPercentSampleMean": 28.608888888888888,
+            "cpuPercentSampleMax": 35.66,
+            "memoryBytesSampleMax": 265499443.2
+          },
+          "calcify-verifier": {
+            "cpuPercentSampleMean": 7.441481481481482,
+            "cpuPercentSampleMax": 16.81,
+            "memoryBytesSampleMax": 196712857.6
+          },
+          "platform-api": {
+            "cpuPercentSampleMean": 156.39111111111112,
+            "cpuPercentSampleMax": 177.67,
+            "memoryBytesSampleMax": 795449753.6
+          },
+          "matching-engine": {
+            "cpuPercentSampleMean": 184.03851851851852,
+            "cpuPercentSampleMax": 245.68,
+            "memoryBytesSampleMax": 2727304232.96
+          },
+          "postgres": {
+            "cpuPercentSampleMean": 18.133703703703702,
+            "cpuPercentSampleMax": 41.21,
+            "memoryBytesSampleMax": 204052889.6
+          },
+          "redpanda": {
+            "cpuPercentSampleMean": 84.89481481481481,
+            "cpuPercentSampleMax": 110.8,
+            "memoryBytesSampleMax": 2252710346.752
+          },
+          "financial": {
+            "cpuPercentSampleMean": 63.166,
+            "cpuPercentSampleMax": 150.8,
+            "memoryBytesSampleMax": 941621248.0
+          }
+        }
+      },
+      {
+        "startSeconds": 150,
+        "endSeconds": 180,
+        "samples": 9,
+        "namedCpuPercentSampleMean": 667.0877777777778,
+        "namedCpuPercentSampleMax": 790.01,
+        "roles": {
+          "financial": {
+            "cpuPercentSampleMean": 82.73555555555556,
+            "cpuPercentSampleMax": 157.58,
+            "memoryBytesSampleMax": 941935820.8
+          },
+          "calcify-resolver": {
+            "cpuPercentSampleMean": 112.06111111111112,
+            "cpuPercentSampleMax": 133.01,
+            "memoryBytesSampleMax": 1083405500.416
+          },
+          "calcify-extractor": {
+            "cpuPercentSampleMean": 30.031111111111112,
+            "cpuPercentSampleMax": 37.32,
+            "memoryBytesSampleMax": 270008320.0
+          },
+          "calcify-verifier": {
+            "cpuPercentSampleMean": 5.265555555555555,
+            "cpuPercentSampleMax": 6.67,
+            "memoryBytesSampleMax": 196503142.4
+          },
+          "platform-api": {
+            "cpuPercentSampleMean": 145.24333333333334,
+            "cpuPercentSampleMax": 166.63,
+            "memoryBytesSampleMax": 795554611.2
+          },
+          "matching-engine": {
+            "cpuPercentSampleMean": 193.51777777777778,
+            "cpuPercentSampleMax": 276.02,
+            "memoryBytesSampleMax": 2972117368.832
+          },
+          "postgres": {
+            "cpuPercentSampleMean": 18.064444444444444,
+            "cpuPercentSampleMax": 29.43,
+            "memoryBytesSampleMax": 272420044.8
+          },
+          "redpanda": {
+            "cpuPercentSampleMean": 80.16888888888889,
+            "cpuPercentSampleMax": 93.96,
+            "memoryBytesSampleMax": 2253784088.576
+          }
+        }
+      },
+      {
+        "startSeconds": 180,
+        "endSeconds": 300,
+        "samples": 36,
+        "namedCpuPercentSampleMean": 636.8638888888889,
+        "namedCpuPercentSampleMax": 848.4399999999999,
+        "roles": {
+          "financial": {
+            "cpuPercentSampleMean": 54.59388888888889,
+            "cpuPercentSampleMax": 61.9,
+            "memoryBytesSampleMax": 985556582.4
+          },
+          "calcify-resolver": {
+            "cpuPercentSampleMean": 120.47138888888888,
+            "cpuPercentSampleMax": 152.59,
+            "memoryBytesSampleMax": 1287416446.976
+          },
+          "calcify-extractor": {
+            "cpuPercentSampleMean": 27.4675,
+            "cpuPercentSampleMax": 42.69,
+            "memoryBytesSampleMax": 308386201.6
+          },
+          "calcify-verifier": {
+            "cpuPercentSampleMean": 5.258611111111111,
+            "cpuPercentSampleMax": 8.4,
+            "memoryBytesSampleMax": 197237145.6
+          },
+          "platform-api": {
+            "cpuPercentSampleMean": 145.30916666666667,
+            "cpuPercentSampleMax": 174.43,
+            "memoryBytesSampleMax": 801007206.4
+          },
+          "matching-engine": {
+            "cpuPercentSampleMean": 185.47444444444443,
+            "cpuPercentSampleMax": 396.71,
+            "memoryBytesSampleMax": 5054102765.568
+          },
+          "postgres": {
+            "cpuPercentSampleMean": 19.200555555555557,
+            "cpuPercentSampleMax": 32.45,
+            "memoryBytesSampleMax": 282276659.2
+          },
+          "redpanda": {
+            "cpuPercentSampleMean": 79.08833333333334,
+            "cpuPercentSampleMax": 99.18,
+            "memoryBytesSampleMax": 2257005314.048
+          }
+        }
+      },
+      {
+        "startSeconds": 0,
+        "endSeconds": 300,
+        "samples": 91,
+        "namedCpuPercentSampleMean": 635.3974725274725,
+        "namedCpuPercentSampleMax": 848.4399999999999,
+        "roles": {
+          "calcify-resolver": {
+            "cpuPercentSampleMean": 118.14318681318682,
+            "cpuPercentSampleMax": 185.18,
+            "memoryBytesSampleMax": 1287416446.976
+          },
+          "calcify-extractor": {
+            "cpuPercentSampleMean": 30.15912087912088,
+            "cpuPercentSampleMax": 57.08,
+            "memoryBytesSampleMax": 308386201.6
+          },
+          "calcify-verifier": {
+            "cpuPercentSampleMean": 7.854065934065934,
+            "cpuPercentSampleMax": 40.75,
+            "memoryBytesSampleMax": 197237145.6
+          },
+          "platform-api": {
+            "cpuPercentSampleMean": 156.54417582417582,
+            "cpuPercentSampleMax": 277.12,
+            "memoryBytesSampleMax": 801007206.4
+          },
+          "matching-engine": {
+            "cpuPercentSampleMean": 178.07263736263735,
+            "cpuPercentSampleMax": 396.71,
+            "memoryBytesSampleMax": 5054102765.568
+          },
+          "postgres": {
+            "cpuPercentSampleMean": 14.830659340659341,
+            "cpuPercentSampleMax": 41.21,
+            "memoryBytesSampleMax": 282276659.2
+          },
+          "redpanda": {
+            "cpuPercentSampleMean": 82.6601098901099,
+            "cpuPercentSampleMax": 110.8,
+            "memoryBytesSampleMax": 2257005314.048
+          },
+          "financial": {
+            "cpuPercentSampleMean": 61.27357142857143,
+            "cpuPercentSampleMax": 157.58,
+            "memoryBytesSampleMax": 985556582.4
+          }
+        }
+      }
+    ],
+    "minGuestFreeBytes": 15879954432,
+    "resourceSampleCount": 144,
+    "healthTransitions": [
+      {
+        "epochMs": 1791742158256,
+        "relativeSeconds": 2.613,
+        "startedAt": "2026-10-11T18:07:57.719586542Z",
+        "state": "RUNNING"
+      }
+    ],
+    "resolverStartedAtValues": [
+      "2026-10-11T18:07:57.719586542Z"
+    ],
+    "financialWallClockCoverageBounds": [
+      {
+        "second": 60,
+        "countLower": 0,
+        "countUpper": 0,
+        "lowerSampleSeconds": null,
+        "upperSampleSeconds": 67.144087890625
+      },
+      {
+        "second": 150,
+        "countLower": 47775,
+        "countUpper": 48375,
+        "lowerSampleSeconds": 149.39357104492188,
+        "upperSampleSeconds": 150.40805712890625
+      },
+      {
+        "second": 180,
+        "countLower": 63425,
+        "countUpper": 64100,
+        "lowerSampleSeconds": 179.02356201171875,
+        "upperSampleSeconds": 180.05251611328126
+      },
+      {
+        "second": 300,
+        "countLower": 137950,
+        "countUpper": 139150,
+        "lowerSampleSeconds": 299.82300390625,
+        "upperSampleSeconds": 300.8336130371094
+      }
+    ],
+    "financialRestore": [
+      {
+        "epochMs": 1791742222787.088,
+        "relativeSeconds": 67.144087890625,
+        "count": 0,
+        "kind": "ready",
+        "restoreMs": 0
+      },
+      {
+        "epochMs": 1791742312937.745,
+        "relativeSeconds": 157.2947451171875,
+        "count": 50650,
+        "kind": "ready",
+        "restoreMs": 967
+      }
+    ],
+    "resourceScope": "Rounded sampled named-container Docker stats; excludes observers/host load driver; not CPU time, continuous peaks or whole-host utilization",
+    "financialTimingScope": "Docker wall-clock log receipt versus host epoch; no synchronized-clock error bound; diagnostic committed-count brackets, not monotonic throughput qualification"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "recordedUtc": "2026-10-11T18:14:36.426969+00:00",
+  "knownAdditionalDifferences": [
+    "Docker broker/Postgres processes restarted for control after prior closure; treatment reused their running processes from earlier attempt. Same image/command/resource settings and retained volumes.",
+    "Health observer starts near control onset; prior treatment observer begins about116s. Same5s read-only health sampling once active.",
+    "Local Node script-surface and22-test harness validation completed during control timed window around190\u2013220s; no runtime rebuild. Small unmeasured host overhead is a comparison limitation."
+  ],
+  "sourceQuery": "Graph clean metadata for resolver runtime/processor; scripts excluded and probe untracked, verified source directly. No runtime source modification."
+}

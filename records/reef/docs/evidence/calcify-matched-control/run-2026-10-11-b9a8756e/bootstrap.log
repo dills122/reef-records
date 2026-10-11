@@ -1,0 +1,53 @@
+ Container reef-calcify-contention-20261011-postgres Starting 
+ Container reef-calcify-contention-20261011-redpanda Starting 
+ Container reef-calcify-contention-20261011-redpanda Started 
+ Container reef-calcify-contention-20261011-postgres Started 
+ Container reef-calcify-contention-20261011-redpanda Waiting 
+ Container reef-calcify-contention-20261011-postgres Waiting 
+ Container reef-calcify-contention-20261011-postgres Healthy 
+ Container reef-calcify-contention-20261011-redpanda Healthy 
+Successfully updated configuration. New configuration version is 3.
+CREATE TABLE
+NOTICE:  relation "calcify_source_generations" already exists, skipping
+INSERT 0 0
+CREATE TABLE
+NOTICE:  relation "calcify_commitment_receipts" already exists, skipping
+NOTICE:  column "source_topic_id" of relation "calcify_source_generations" already exists, skipping
+ALTER TABLE
+NOTICE:  relation "calcify_topic_identities" already exists, skipping
+CREATE TABLE
+INSERT 0 1
+TOPIC                             STATUS
+REEF_CONTENTION-CTRL-01_COMMANDS  OK
+REEF_CONTENTION-CTRL-01_EVENTS    OK
+TOPIC                           STATUS
+REEF_CONTENTION-CTRL-01_EVENTS  OK
+ Container reef-calcify-contention-20261011-matching-engine Recreate 
+ Container reef-calcify-contention-20261011-matching-engine Recreated 
+ Container reef-calcify-contention-20261011-platform-api Recreate 
+ Container reef-calcify-contention-20261011-platform-api Recreated 
+ Container reef-calcify-contention-20261011-matching-engine Starting 
+ Container reef-calcify-contention-20261011-matching-engine Started 
+ Container reef-calcify-contention-20261011-matching-engine Waiting 
+ Container reef-calcify-contention-20261011-matching-engine Healthy 
+ Container reef-calcify-contention-20261011-platform-api Starting 
+ Container reef-calcify-contention-20261011-platform-api Started 
+ Container reef-calcify-contention-20261011-matching-engine Waiting 
+ Container reef-calcify-contention-20261011-platform-api Waiting 
+ Container reef-calcify-contention-20261011-matching-engine Healthy 
+ Container reef-calcify-contention-20261011-platform-api Healthy 
+ Container reef-calcify-contention-20261011-calcify-verifier Recreate 
+ Container reef-calcify-contention-20261011-calcify-extractor Recreate 
+ Container reef-calcify-contention-20261011-calcify-verifier Recreated 
+ Container reef-calcify-contention-20261011-calcify-extractor Recreated 
+ Container reef-calcify-contention-20261011-calcify-verifier Starting 
+ Container reef-calcify-contention-20261011-calcify-extractor Starting 
+ Container reef-calcify-contention-20261011-calcify-extractor Started 
+ Container reef-calcify-contention-20261011-calcify-verifier Started 
+ Container reef-calcify-contention-20261011-calcify-resolver Recreate 
+ Container reef-calcify-contention-20261011-calcify-resolver Recreated 
+ Container reef-calcify-contention-20261011-calcify-resolver Starting 
+ Container reef-calcify-contention-20261011-calcify-resolver Started 
+ Container reef-calcify-contention-20261011-calcify-resolver Waiting 
+ Container reef-calcify-contention-20261011-calcify-resolver Healthy 
+DIRECT_SETUP_READY /private/tmp/calcify-control-20261011/setup

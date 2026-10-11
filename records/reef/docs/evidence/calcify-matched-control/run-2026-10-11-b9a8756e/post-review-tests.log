@@ -1,0 +1,76 @@
+TAP version 13
+# Subtest: interior lower and exterior upper contain every monotone interval count
+ok 1 - interior lower and exterior upper contain every monotone interval count
+  ---
+  duration_ms: 1.109042
+  type: 'test'
+  ...
+# Subtest: subtracting only lower bounds cannot establish an improvement
+ok 2 - subtracting only lower bounds cannot establish an improvement
+  ---
+  duration_ms: 0.147875
+  type: 'test'
+  ...
+# Subtest: unknown exterior sample leaves comparison unproven
+ok 3 - unknown exterior sample leaves comparison unproven
+  ---
+  duration_ms: 0.074291
+  type: 'test'
+  ...
+# Subtest: large identical aged population cannot change interval throughput
+ok 4 - large identical aged population cannot change interval throughput
+  ---
+  duration_ms: 0.086875
+  type: 'test'
+  ...
+# Subtest: known zero baseline and exact boundary observations collapse uncertainty
+ok 5 - known zero baseline and exact boundary observations collapse uncertainty
+  ---
+  duration_ms: 0.156292
+  type: 'test'
+  ...
+# Subtest: uses upper start and lower end counts, never interpolated rate
+ok 6 - uses upper start and lower end counts, never interpolated rate
+  ---
+  duration_ms: 0.557792
+  type: 'test'
+  ...
+# Subtest: late completion cannot improve deadline coverage
+ok 7 - late completion cannot improve deadline coverage
+  ---
+  duration_ms: 0.102083
+  type: 'test'
+  ...
+# Subtest: aged population is excluded from measured interval
+ok 8 - aged population is excluded from measured interval
+  ---
+  duration_ms: 0.204084
+  type: 'test'
+  ...
+# Subtest: missing bracketing observations stays unproven
+ok 9 - missing bracketing observations stays unproven
+  ---
+  duration_ms: 0.13775
+  type: 'test'
+  ...
+# Subtest: regressing counters or clocks fail closed
+ok 10 - regressing counters or clocks fail closed
+  ---
+  duration_ms: 0.156416
+  type: 'test'
+  ...
+# Subtest: known initial baseline gives conservative fresh interval count
+ok 11 - known initial baseline gives conservative fresh interval count
+  ---
+  duration_ms: 0.056084
+  type: 'test'
+  ...
+1..11
+# tests 11
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 55.861708

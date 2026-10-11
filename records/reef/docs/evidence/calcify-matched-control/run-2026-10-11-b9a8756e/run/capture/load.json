@@ -1,0 +1,394 @@
+{
+  "workloadMode": "aggressor",
+  "ordersPerTrade": 1,
+  "completedTrades": 3131951,
+  "jobAccounting": "completedTrades and legacy completedPairs count fully acknowledged trade jobs; pairs fields are legacy job counters; actual completed trades require canonical source/verified/resolved reconciliation; aggressor maker seeding occurs before load window",
+  "instrumentIds": [
+    "I0-contention-ctrl-01",
+    "I1-contention-ctrl-01",
+    "I2-contention-ctrl-01",
+    "I3-contention-ctrl-01",
+    "I4-contention-ctrl-01",
+    "I5-contention-ctrl-01",
+    "I6-contention-ctrl-01",
+    "I7-contention-ctrl-01",
+    "I8-contention-ctrl-01",
+    "I9-contention-ctrl-01",
+    "I10-contention-ctrl-01",
+    "I11-contention-ctrl-01",
+    "I12-contention-ctrl-01",
+    "I13-contention-ctrl-01",
+    "I14-contention-ctrl-01",
+    "I15-contention-ctrl-01",
+    "I16-contention-ctrl-01",
+    "I17-contention-ctrl-01",
+    "I18-contention-ctrl-01",
+    "I19-contention-ctrl-01",
+    "I20-contention-ctrl-01",
+    "I21-contention-ctrl-01",
+    "I22-contention-ctrl-01",
+    "I23-contention-ctrl-01",
+    "I24-contention-ctrl-01",
+    "I25-contention-ctrl-01",
+    "I26-contention-ctrl-01",
+    "I27-contention-ctrl-01",
+    "I28-contention-ctrl-01",
+    "I29-contention-ctrl-01",
+    "I30-contention-ctrl-01",
+    "I31-contention-ctrl-01",
+    "I32-contention-ctrl-01",
+    "I33-contention-ctrl-01",
+    "I34-contention-ctrl-01",
+    "I35-contention-ctrl-01",
+    "I36-contention-ctrl-01",
+    "I37-contention-ctrl-01",
+    "I39-contention-ctrl-01",
+    "I40-contention-ctrl-01",
+    "I41-contention-ctrl-01",
+    "I42-contention-ctrl-01",
+    "I43-contention-ctrl-01",
+    "I44-contention-ctrl-01",
+    "I45-contention-ctrl-01",
+    "I46-contention-ctrl-01",
+    "I47-contention-ctrl-01",
+    "I49-contention-ctrl-01",
+    "I51-contention-ctrl-01",
+    "I52-contention-ctrl-01",
+    "I54-contention-ctrl-01",
+    "I55-contention-ctrl-01",
+    "I61-contention-ctrl-01",
+    "I65-contention-ctrl-01",
+    "I66-contention-ctrl-01",
+    "I68-contention-ctrl-01",
+    "I71-contention-ctrl-01",
+    "I75-contention-ctrl-01",
+    "I78-contention-ctrl-01",
+    "I79-contention-ctrl-01",
+    "I80-contention-ctrl-01",
+    "I83-contention-ctrl-01",
+    "I85-contention-ctrl-01",
+    "I87-contention-ctrl-01"
+  ],
+  "smokeId": "contention-ctrl-01",
+  "targetPairs": 3150000,
+  "startIndex": 0,
+  "targetPairsPerSecond": 10500,
+  "scheduledPairs": 3150000,
+  "dispatchedPairs": 3131951,
+  "droppedPairs": 18049,
+  "completedPairs": 3131951,
+  "acceptedOrders": 3131951,
+  "acceptedOrdersAtDeadline": 3130847,
+  "deadlineAccounting": "validated durable HTTP acknowledgement observed strictly before fixed monotonic load-start plus requested duration; late/equal acknowledgements count only in acceptedOrders; epoch fields expose wall time from those same Go instants",
+  "loadStartedEpochMs": 1791742155650,
+  "scheduledDeadlineEpochMs": 1791742455650,
+  "acceptedAllEpochMs": 1791742455746,
+  "receiptDrainAccounting": "drainMs runs from HTTP worker completion before stopping the progress observer through successful receipt reconciliation; includes any outstanding observer query wait; acceptedAllEpochMs records worker completion even if requests failed",
+  "acceptedOrdersPerSecond": 10436.648130046498,
+  "elapsedMs": 300091,
+  "retries": 0,
+  "failures": 0,
+  "samples": [
+    {
+      "elapsedMs": 5000,
+      "completedPairsBefore": 43775,
+      "completedPairs": 43775
+    },
+    {
+      "elapsedMs": 10001,
+      "completedPairsBefore": 99378,
+      "completedPairs": 99378
+    },
+    {
+      "elapsedMs": 15000,
+      "completedPairsBefore": 152303,
+      "completedPairs": 152303
+    },
+    {
+      "elapsedMs": 20000,
+      "completedPairsBefore": 204815,
+      "completedPairs": 204815
+    },
+    {
+      "elapsedMs": 25000,
+      "completedPairsBefore": 257259,
+      "completedPairs": 257259
+    },
+    {
+      "elapsedMs": 30000,
+      "completedPairsBefore": 309988,
+      "completedPairs": 309988
+    },
+    {
+      "elapsedMs": 35000,
+      "completedPairsBefore": 362533,
+      "completedPairs": 362533
+    },
+    {
+      "elapsedMs": 40000,
+      "completedPairsBefore": 415027,
+      "completedPairs": 415027
+    },
+    {
+      "elapsedMs": 45000,
+      "completedPairsBefore": 467395,
+      "completedPairs": 467395
+    },
+    {
+      "elapsedMs": 50000,
+      "completedPairsBefore": 519822,
+      "completedPairs": 519822
+    },
+    {
+      "elapsedMs": 55000,
+      "completedPairsBefore": 572489,
+      "completedPairs": 572489
+    },
+    {
+      "elapsedMs": 60000,
+      "completedPairsBefore": 624423,
+      "completedPairs": 624423
+    },
+    {
+      "elapsedMs": 65001,
+      "completedPairsBefore": 676155,
+      "completedPairs": 676155
+    },
+    {
+      "elapsedMs": 70001,
+      "completedPairsBefore": 729273,
+      "completedPairs": 729273
+    },
+    {
+      "elapsedMs": 75000,
+      "completedPairsBefore": 782238,
+      "completedPairs": 782238
+    },
+    {
+      "elapsedMs": 80000,
+      "completedPairsBefore": 834183,
+      "completedPairs": 834183
+    },
+    {
+      "elapsedMs": 85000,
+      "completedPairsBefore": 887159,
+      "completedPairs": 887159
+    },
+    {
+      "elapsedMs": 90000,
+      "completedPairsBefore": 939695,
+      "completedPairs": 939695
+    },
+    {
+      "elapsedMs": 95000,
+      "completedPairsBefore": 991830,
+      "completedPairs": 991830
+    },
+    {
+      "elapsedMs": 100000,
+      "completedPairsBefore": 1043961,
+      "completedPairs": 1043961
+    },
+    {
+      "elapsedMs": 105000,
+      "completedPairsBefore": 1097082,
+      "completedPairs": 1097082
+    },
+    {
+      "elapsedMs": 110000,
+      "completedPairsBefore": 1149892,
+      "completedPairs": 1149892
+    },
+    {
+      "elapsedMs": 115001,
+      "completedPairsBefore": 1202301,
+      "completedPairs": 1202301
+    },
+    {
+      "elapsedMs": 120001,
+      "completedPairsBefore": 1254909,
+      "completedPairs": 1254909
+    },
+    {
+      "elapsedMs": 125000,
+      "completedPairsBefore": 1307475,
+      "completedPairs": 1307475
+    },
+    {
+      "elapsedMs": 130001,
+      "completedPairsBefore": 1359895,
+      "completedPairs": 1359895
+    },
+    {
+      "elapsedMs": 135000,
+      "completedPairsBefore": 1412346,
+      "completedPairs": 1412346
+    },
+    {
+      "elapsedMs": 140000,
+      "completedPairsBefore": 1463911,
+      "completedPairs": 1463911
+    },
+    {
+      "elapsedMs": 145000,
+      "completedPairsBefore": 1517480,
+      "completedPairs": 1517480
+    },
+    {
+      "elapsedMs": 150000,
+      "completedPairsBefore": 1569377,
+      "completedPairs": 1569377
+    },
+    {
+      "elapsedMs": 155000,
+      "completedPairsBefore": 1621397,
+      "completedPairs": 1621397
+    },
+    {
+      "elapsedMs": 160000,
+      "completedPairsBefore": 1674813,
+      "completedPairs": 1674813
+    },
+    {
+      "elapsedMs": 165000,
+      "completedPairsBefore": 1727486,
+      "completedPairs": 1727486
+    },
+    {
+      "elapsedMs": 170000,
+      "completedPairsBefore": 1779671,
+      "completedPairs": 1779671
+    },
+    {
+      "elapsedMs": 175000,
+      "completedPairsBefore": 1832388,
+      "completedPairs": 1832388
+    },
+    {
+      "elapsedMs": 180000,
+      "completedPairsBefore": 1884860,
+      "completedPairs": 1884860
+    },
+    {
+      "elapsedMs": 185000,
+      "completedPairsBefore": 1923155,
+      "completedPairs": 1923155
+    },
+    {
+      "elapsedMs": 190000,
+      "completedPairsBefore": 1976365,
+      "completedPairs": 1976365
+    },
+    {
+      "elapsedMs": 195000,
+      "completedPairsBefore": 2027608,
+      "completedPairs": 2027608
+    },
+    {
+      "elapsedMs": 200004,
+      "completedPairsBefore": 2079574,
+      "completedPairs": 2079574
+    },
+    {
+      "elapsedMs": 205000,
+      "completedPairsBefore": 2134166,
+      "completedPairs": 2134166
+    },
+    {
+      "elapsedMs": 210000,
+      "completedPairsBefore": 2186801,
+      "completedPairs": 2186801
+    },
+    {
+      "elapsedMs": 215000,
+      "completedPairsBefore": 2238991,
+      "completedPairs": 2238991
+    },
+    {
+      "elapsedMs": 220000,
+      "completedPairsBefore": 2291727,
+      "completedPairs": 2291727
+    },
+    {
+      "elapsedMs": 225000,
+      "completedPairsBefore": 2344213,
+      "completedPairs": 2344213
+    },
+    {
+      "elapsedMs": 230000,
+      "completedPairsBefore": 2396270,
+      "completedPairs": 2396270
+    },
+    {
+      "elapsedMs": 235000,
+      "completedPairsBefore": 2447285,
+      "completedPairs": 2447285
+    },
+    {
+      "elapsedMs": 240000,
+      "completedPairsBefore": 2501592,
+      "completedPairs": 2501592
+    },
+    {
+      "elapsedMs": 245000,
+      "completedPairsBefore": 2553247,
+      "completedPairs": 2553247
+    },
+    {
+      "elapsedMs": 250000,
+      "completedPairsBefore": 2606775,
+      "completedPairs": 2606775
+    },
+    {
+      "elapsedMs": 255000,
+      "completedPairsBefore": 2657471,
+      "completedPairs": 2657471
+    },
+    {
+      "elapsedMs": 260000,
+      "completedPairsBefore": 2711727,
+      "completedPairs": 2711727
+    },
+    {
+      "elapsedMs": 265000,
+      "completedPairsBefore": 2762483,
+      "completedPairs": 2762483
+    },
+    {
+      "elapsedMs": 270000,
+      "completedPairsBefore": 2816558,
+      "completedPairs": 2816558
+    },
+    {
+      "elapsedMs": 275000,
+      "completedPairsBefore": 2869229,
+      "completedPairs": 2869229
+    },
+    {
+      "elapsedMs": 280000,
+      "completedPairsBefore": 2921697,
+      "completedPairs": 2921697
+    },
+    {
+      "elapsedMs": 285000,
+      "completedPairsBefore": 2973935,
+      "completedPairs": 2973935
+    },
+    {
+      "elapsedMs": 290000,
+      "completedPairsBefore": 3026525,
+      "completedPairs": 3026525
+    },
+    {
+      "elapsedMs": 295000,
+      "completedPairsBefore": 3079301,
+      "completedPairs": 3079301
+    },
+    {
+      "elapsedMs": 300000,
+      "completedPairsBefore": 3130847,
+      "completedPairs": 3130847
+    }
+  ],
+  "gatePassed": true
+}

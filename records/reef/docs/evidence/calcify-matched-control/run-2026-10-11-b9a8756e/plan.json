@@ -1,0 +1,48 @@
+{
+  "schema": "calcify-matched-control-plan-v1",
+  "sourceHead": "b9a8756e8d0efc5e8b665a5c62da1ab064d01539",
+  "phases": [
+    {
+      "name": "matched-control",
+      "seconds": 300,
+      "offerPerSecond": 10500,
+      "events": {
+        "60": "start same independent financial/atomic SQL contender",
+        "150": "kill financial/SQL process and recover journal/checkpoint",
+        "180": "record omitted resolver restart; no mutation"
+      }
+    }
+  ],
+  "capture": "Current Phase1/2 source, retention0 (no terminal eviction), 64 standing makers; finite P0/O1 lifecycle profile NOT active",
+  "financial": "Existing gross FinancialKernel in independent synthetic domains of 10000 trades, 25-trade atomic SQL batches; 1000/s cap; no capture-to-financial mapping",
+  "host": "All service workers and broker/PostgreSQL in same 10 CPU / 16745824256B Docker VM; HTTP load driver on same physical 64GiB macOS host",
+  "broker": "cached Redpanda v26.2.3 RF1, actual write.caching=false required; differs from checkout compose v26.2.4",
+  "limits": {
+    "stopOnOomOrWorkerFailure": true,
+    "minGuestFreeBytes": 8000000000,
+    "totalRunTimeoutSeconds": 900
+  },
+  "gates": [
+    "Count only read_committed capture observations within fixed deadline",
+    "Original full source-to-context oracle required before any capture claim",
+    "Financial SQL full-history replay and exact balanced legs after recovery",
+    "Report pre/post-age windows separately; overall mean is not aged-window proof",
+    "Recovery and downstream progress must be observed; dead competitor cannot yield contention pass"
+  ],
+  "permissionScope": "Reuse stopped containers owned by reef-calcify-contention-20261011 with fresh topics/schema/state directory; preserve all prior volumes and proofs; no cloud provisioning",
+  "frozenAtUtc": "2026-10-11T18:07:27.687043+00:00",
+  "comparison": {
+    "treatment": "contention-aged-02",
+    "archiveCommit": "8fedbbe309a75a72a0bd58ba2640cd9c9aa9fb51",
+    "onlyIntendedTreatmentDifference": "no cold resolver restart; same planned financial start/kill/restart remains",
+    "control": "contention-ctrl-01",
+    "stateAging": "fresh source cohort with same300s growth schedule,64 standing makers,retention0; old cohort is not control baseline",
+    "knownDifferences": [
+      "fresh source/topic/application identities and generation5 instead of4",
+      "retained earlier proof increases idle broker/SQL/disk occupancy",
+      "sequential runs, scheduler and cache state not randomized; achieved financial count may differ",
+      "fault commands follow same planned offsets; actual timestamps must be compared"
+    ],
+    "interpretation": "Compare conservative whole/aged/post180 coverage bounds, pre180 performance and actual financial progress. No assertion of isolated pure restore CPU cost from one pair."
+  }
+}

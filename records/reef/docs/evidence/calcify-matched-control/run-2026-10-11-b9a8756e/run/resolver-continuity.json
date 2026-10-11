@@ -1,0 +1,55 @@
+{
+  "sameContainerId": true,
+  "sameStartedAt": true,
+  "restartCount": 0,
+  "id": "962a9b40e8780e181a74c93c751647303c2c7975824b39fc77cd5e78861e693d",
+  "state": {
+    "Status": "running",
+    "Running": true,
+    "Paused": false,
+    "Restarting": false,
+    "OOMKilled": false,
+    "Dead": false,
+    "Pid": 4107,
+    "ExitCode": 0,
+    "Error": "",
+    "StartedAt": "2026-10-11T18:07:57.719586542Z",
+    "FinishedAt": "0001-01-01T00:00:00Z",
+    "Health": {
+      "Status": "healthy",
+      "FailingStreak": 0,
+      "Log": [
+        {
+          "Start": "2026-10-11T18:17:22.53639772Z",
+          "End": "2026-10-11T18:17:22.576470637Z",
+          "ExitCode": 0,
+          "Output": "{\"alive\":true,\"state\":\"RUNNING\"}"
+        },
+        {
+          "Start": "2026-10-11T18:17:27.580433292Z",
+          "End": "2026-10-11T18:17:27.61576975Z",
+          "ExitCode": 0,
+          "Output": "{\"alive\":true,\"state\":\"RUNNING\"}"
+        },
+        {
+          "Start": "2026-10-11T18:17:32.616083628Z",
+          "End": "2026-10-11T18:17:32.660543294Z",
+          "ExitCode": 0,
+          "Output": "{\"alive\":true,\"state\":\"RUNNING\"}"
+        },
+        {
+          "Start": "2026-10-11T18:17:37.662721505Z",
+          "End": "2026-10-11T18:17:37.689031797Z",
+          "ExitCode": 0,
+          "Output": "{\"alive\":true,\"state\":\"RUNNING\"}"
+        },
+        {
+          "Start": "2026-10-11T18:17:42.689299132Z",
+          "End": "2026-10-11T18:17:42.714103632Z",
+          "ExitCode": 0,
+          "Output": "{\"alive\":true,\"state\":\"RUNNING\"}"
+        }
+      ]
+    }
+  }
+}

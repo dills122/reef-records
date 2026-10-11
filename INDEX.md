@@ -1,5 +1,15 @@
 # Archive index
 
+## October 11 — Matched control without cold resolver restart
+
+[Proof](records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/README.md), [manifest](manifests/2026-10-11-calcify-matched-control.json), [provenance](docs/imports/2026-10-11-calcify-matched-control-provenance.md).
+59 exact records/2040363bytes; local-only source `754b24889abfe2f00b2b24a3a7bdf6f6fc05e1ff`.
+Same aged capture and synthetic financial/SQL policy, no cold resolver restart:
+10,321.21–10,349.52contexts/s **PASS**,3,131,951 final exact contexts and361,075
+financial/SQL audit pass. Prior treatment failure unchanged; sequential-run
+limits prohibit exact causal estimate. All owned services stopped, volumes retained.
+
+
 ## October 11 — Calcify aged state, SQL contention and recovery
 
 [Proof](records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/README.md), [manifest](manifests/2026-10-11-calcify-aged-contention.json), [provenance](docs/imports/2026-10-11-calcify-aged-contention-provenance.md).
