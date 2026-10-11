@@ -1,0 +1,20 @@
+2026/10/11 17:26:31 matching-engine gRPC scaffold listening on :9081
+2026/10/11 17:26:31 matching-engine direct redpanda recovery complete partitions=[0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15] books=0 orders=0 checksum=5df9bca3ae946be5d588b826ad757c0a8c1e81dd0ad5395da38459d4a1ce03c7
+2026/10/11 17:26:31 matching-engine direct stream enabled shard=engine-0 commandStream=REEF_CONTENTION-AGED-01_COMMANDS eventStream=REEF_CONTENTION-AGED-01_EVENTS partitions=[0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15] batchSize=500
+2026/10/11 17:26:31 matching-engine listening on :8081
+2026/10/11 17:26:31 matching-engine direct redpanda partition=7 started
+2026/10/11 17:26:31 matching-engine direct redpanda partition=9 started
+2026/10/11 17:26:31 matching-engine direct redpanda partition=12 started
+2026/10/11 17:26:31 matching-engine direct redpanda partition=13 started
+2026/10/11 17:26:31 matching-engine direct redpanda partition=1 started
+2026/10/11 17:26:31 matching-engine direct redpanda partition=4 started
+2026/10/11 17:26:31 matching-engine direct redpanda partition=14 started
+2026/10/11 17:26:31 matching-engine direct redpanda partition=5 started
+2026/10/11 17:26:31 matching-engine direct redpanda partition=11 started
+2026/10/11 17:26:31 matching-engine direct redpanda partition=10 started
+2026/10/11 17:26:31 matching-engine direct redpanda partition=2 started
+2026/10/11 17:26:31 matching-engine direct redpanda partition=6 started
+2026/10/11 17:26:31 matching-engine direct redpanda partition=3 started
+2026/10/11 17:26:31 matching-engine direct redpanda partition=0 started
+2026/10/11 17:26:31 matching-engine direct redpanda partition=8 started
+2026/10/11 17:26:31 matching-engine direct redpanda partition=15 started

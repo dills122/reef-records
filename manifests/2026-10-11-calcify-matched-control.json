@@ -1,0 +1,421 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/dills122/reef",
+  "source_commit": "754b24889abfe2f00b2b24a3a7bdf6f6fc05e1ff",
+  "selection_policy": "Explicit59-file matched-control bundle, locally Git-tracked with source overlay in isolated checkpoint. Append to prior treatment commit8fedbbe3; prior proofs/manifests unchanged. No source removal. Excludes raw broker/SQL/state volumes, binaries, caches and full environment dumps. Comparison includes sequential-run limits and independent synthetic financial scope.",
+  "files": [
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/README.md",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/README.md",
+      "bytes": 2033,
+      "sha256": "0904b5cf080e0b6e511f14bfb3c4e0dc5fbaaad3b93c456033f5c80e226c0779",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/actual-profile.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/actual-profile.json",
+      "bytes": 51844,
+      "sha256": "7d0bd61d12b06672b8e0a94c80986afef0ed611ff1f992b783906f631518ca33",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/analyze-resources.py",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/analyze-resources.py",
+      "bytes": 4237,
+      "sha256": "949d1e72e897e6a472b4b67adc0ac971777fcb84f72db8d129e984ef53874ece",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/bootstrap.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/bootstrap.log",
+      "bytes": 3158,
+      "sha256": "f6160d5830e4ac90af67ea2241f80d91dbee4c51b8dfe271338f19a96e5deacf",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/closure.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/closure.json",
+      "bytes": 10501,
+      "sha256": "cffc992245c10c8dce59c138318c4b13c6f48ecca1bc3bad0c1c870a5e455c5d",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/compact-comparison.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/compact-comparison.json",
+      "bytes": 24409,
+      "sha256": "60ac58eb1e91acde7d20313485064d13fb483e2f7696acfe110e4eff0e52c6a4",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/compare-pending.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/compare-pending.mjs",
+      "bytes": 803,
+      "sha256": "b57bde0a7929979eaeed88da6ac303a8ef85f07ec62e102f8795e13cb5061e89",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/comparison-limitations.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/comparison-limitations.json",
+      "bytes": 808,
+      "sha256": "8a955fa7bffdbf60759f95e97686758b7e606d2db9ac63ee67a09e8c813ca51d",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/comparison-verification.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/comparison-verification.log",
+      "bytes": 742,
+      "sha256": "30da8de6a32a875334ff97c7d5b3deaeda663ea73f4f05bc1d22842b13aba3d2",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/comparison-verified.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/comparison-verified.json",
+      "bytes": 23033,
+      "sha256": "68cc84d600685371926c4dde763b01d3bcb7e17dbcb0302a3b83f61200ea37a7",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/comparison.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/comparison.json",
+      "bytes": 23033,
+      "sha256": "68cc84d600685371926c4dde763b01d3bcb7e17dbcb0302a3b83f61200ea37a7",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/node-tests.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/node-tests.log",
+      "bytes": 4261,
+      "sha256": "3a0bf9862d9369afb667b2b80d9c1545116f88f3119543ed7210d17b1e849ade",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/observe-health.py",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/observe-health.py",
+      "bytes": 623,
+      "sha256": "009e366b66678feb40173ac9cd471e52f885991fd094bbd42f562fd09aa42e75",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/plan.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/plan.json",
+      "bytes": 2842,
+      "sha256": "329eceda6ec129795e8a325f0174ea8197dd6116beeb3927ba1b180dd295c699",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/post-review-tests.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/post-review-tests.log",
+      "bytes": 2159,
+      "sha256": "76512d2cedf34b1183b8b6cbfce819c996402bcc4048a79bfe6ea3762dc44a55",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/resource-analysis.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/resource-analysis.log",
+      "bytes": 1830,
+      "sha256": "3726686e7b9a6cbc73984e7c327bb3c89ac364113e2e9defd793f4d7897dcb24",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/resource-comparison.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/resource-comparison.json",
+      "bytes": 21328,
+      "sha256": "1ca19589d97c252b9e10aa491fe16ecb413d887732e996ede62641ad4dd9bccd",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/calcify-extractor.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/calcify-extractor.log",
+      "bytes": 258,
+      "sha256": "e4ff1d369e48ab70668a40cdc144c8c98b567879d2396968c22ccc352505d784",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/calcify-resolver.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/calcify-resolver.log",
+      "bytes": 562034,
+      "sha256": "696e96e5a706cea50f50d61991cf4b25a3f4853349f1de7cefee01cb569a15fb",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/calcify-verifier.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/calcify-verifier.log",
+      "bytes": 258,
+      "sha256": "e4ff1d369e48ab70668a40cdc144c8c98b567879d2396968c22ccc352505d784",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/capture/frozen-policy.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/capture/frozen-policy.json",
+      "bytes": 3461,
+      "sha256": "b156d838b5f760005600b55823f42aec8b751811f276e9da2914151c0d66c658",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/capture/full-facts.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/capture/full-facts.log",
+      "bytes": 2195,
+      "sha256": "35e85ace2b1e4a7e1118fb4d0b6e6fc600c1c5319d8be615d392830844514c1e",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/capture/load.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/capture/load.json",
+      "bytes": 9982,
+      "sha256": "ef545ba551ddb41251d62dd4ad8221668ec1f22a49e234e48a7ad5695d0c313a",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/capture/load.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/capture/load.log",
+      "bytes": 24100,
+      "sha256": "994854c8d22327cdb196bf9d867a806e76427a9cd7eee412b52a18dee11838ed",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/capture/resolved.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/capture/resolved.log",
+      "bytes": 40901,
+      "sha256": "e02b7f747cf32179be9bb1e43d9332b48d5ae35f3f25f94dc5280cc75ab6ee8e",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/capture/results.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/capture/results.json",
+      "bytes": 200128,
+      "sha256": "afe0f0077807087bda029a536f087edbb7495a2f19bcf8903947e96422d74e23",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/capture/verified.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/capture/verified.log",
+      "bytes": 33900,
+      "sha256": "5cb697f8106c319094f56c3e3de845355272ceb3e54e41d78a77a0733f69f77e",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/capture-runner.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/capture-runner.log",
+      "bytes": 522,
+      "sha256": "db78eab82d378c59bd2ef6cdd2ca95aa75409ad2cd6ee700db12501fe9daee58",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/disk.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/disk.jsonl",
+      "bytes": 7920,
+      "sha256": "0579ce99f968da20e71079a734f2c971396011fe2cac9f730aadc204f0186adb",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/events.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/events.jsonl",
+      "bytes": 686,
+      "sha256": "211762a5a9f2ce71879b6934541ca78d9c281b862b8d881f904c5a227896edf7",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/financial-1-timestamped.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/financial-1-timestamped.log",
+      "bytes": 8625,
+      "sha256": "5843ed5de4a2a8ae69b30221c195c51a0212247e0bafd011600f1359010434fb",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/financial-2-timestamped.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/financial-2-timestamped.log",
+      "bytes": 31745,
+      "sha256": "42f0332ca3310e2e439c45d9296156c4ddc3b67b5cfa4aa58da77ce374500a48",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/financial-before-crash.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/financial-before-crash.log",
+      "bytes": 5990,
+      "sha256": "2201dc13b890c8d16e66ddc601344ca14241a064f59e846de5ba9984e54bdde5",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/live-health.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/live-health.jsonl",
+      "bytes": 459274,
+      "sha256": "b2952d7ac19f35cd218f25c3d3ee1b19dd82d90ffa6a57d199869ea056bce05a",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/manifest.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/manifest.json",
+      "bytes": 6262,
+      "sha256": "cc31afd46ec7936c678beaa373e121fd4122bec9da8ae0c0040856195db92062",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/matching-engine.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/matching-engine.log",
+      "bytes": 1722,
+      "sha256": "2754cd6f8ca414cb6033ec16161eec3b4f5e9c081e595c291c94bcb5c1ede9eb",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/platform-api.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/platform-api.log",
+      "bytes": 319,
+      "sha256": "971e38752522aacddb0b8d58a357fb1b1ae81aa23c2ec721ef0de63040d104df",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/reef-calcify-contention-20261011-financial-contention-ctrl-01-1.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/reef-calcify-contention-20261011-financial-contention-ctrl-01-1.log",
+      "bytes": 5990,
+      "sha256": "2201dc13b890c8d16e66ddc601344ca14241a064f59e846de5ba9984e54bdde5",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/reef-calcify-contention-20261011-financial-contention-ctrl-01-2.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/reef-calcify-contention-20261011-financial-contention-ctrl-01-2.log",
+      "bytes": 22290,
+      "sha256": "5a6802115b3bf8a2eb1a42ef4a178c6021751ebc5979c277fe35288d2922e623",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/resolver-continuity.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/resolver-continuity.json",
+      "bytes": 1601,
+      "sha256": "d4ea9a6af24c449c92266a4cf683ee2bf6ec212ecb8cb3ec22ba79233d541f92",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/resources.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/resources.jsonl",
+      "bytes": 321489,
+      "sha256": "6076c131fdb4ff81595c0ac10fa6e2458e14c83efa57e07651d45b80e6c95f51",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/retained-state-sizes.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/retained-state-sizes.json",
+      "bytes": 280,
+      "sha256": "c87237c8b6fe110304080d5ea83acd730a088ae99ec08962b2b459203c3d1304",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/sql-audit.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/sql-audit.log",
+      "bytes": 106,
+      "sha256": "ea0c7921b5a3245e1fc7221d0ca09a9d4a4c19d92bcf50c428fe2e9bc579cb90",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/summary.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/summary.json",
+      "bytes": 7340,
+      "sha256": "72028201ab3a6473d5d4a900068eefcae9073d8e6b2c288335e794d48091bd76",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/supervisor.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/run/supervisor.json",
+      "bytes": 1030,
+      "sha256": "9b8fca9b64661b2565d1e437f39364802c2a56130cee88ca7107de8da63716de",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/script-surface.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/script-surface.log",
+      "bytes": 871,
+      "sha256": "75db8fda0196f3fedaab3f1a7fd8d03a199513977d00099496a52b0467988c3d",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/setup/compose-profile.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/setup/compose-profile.json",
+      "bytes": 7501,
+      "sha256": "ba3ed7c985eb821d95d003d8dfa17cbefdbaec16a91df1fc73290c34fe1290d0",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/setup/setup.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/setup/setup.json",
+      "bytes": 2477,
+      "sha256": "cd8f8a13346d5e6ad0f3480e7909fc3b99b506013c528048b7174343fe563e87",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/source/ContentionSqlProbe.kt",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/source/ContentionSqlProbe.kt",
+      "bytes": 8606,
+      "sha256": "e65fdbfce8c53912f9144c9f928e198d0ddb4fd9726db58f72070b84e295458d",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/source/FinancialKernel.kt",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/source/FinancialKernel.kt",
+      "bytes": 30486,
+      "sha256": "9f76e87940d7600dac11bb26aba9ad40e39e7fbf41ec28dc8ab990790f0e637e",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/source/calcify-direct-bootstrap.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/source/calcify-direct-bootstrap.mjs",
+      "bytes": 10649,
+      "sha256": "133c9f6dedd905c66ca0a15215a95f4fea847da3a503655d6f3ed21fe591b80a",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/source/calcify-direct-capacity.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/source/calcify-direct-capacity.mjs",
+      "bytes": 15188,
+      "sha256": "5ee5217d9ebc7ed913a812837515fa133d5884a68ce475b1f452296e5aa1373c",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/source/compare-contention.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/source/compare-contention.mjs",
+      "bytes": 4399,
+      "sha256": "b042dc14a8397e84dc757ee7d978ebeda84701afcd13f91379fcc718c15c49b6",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/source/compare-contention.test.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/source/compare-contention.test.mjs",
+      "bytes": 1665,
+      "sha256": "a3dd00cc2b5fbc1e1b68233f349632f3cf4efbfd53b7bb816b29ff2136a798f1",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/source/run-contention.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/source/run-contention.mjs",
+      "bytes": 8289,
+      "sha256": "cdcdb6112b95af9b59aa22c553f153f27536719e1f4064a90afbf14bc7a64eaa",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/source/summarize-contention.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/source/summarize-contention.mjs",
+      "bytes": 3376,
+      "sha256": "21e4dbc3fef7b8f541101a0c60a72f43ae41f27966125928b807001e9c2cc29e",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/summarize.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/summarize.log",
+      "bytes": 7340,
+      "sha256": "72028201ab3a6473d5d4a900068eefcae9073d8e6b2c288335e794d48091bd76",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/supervisor.log",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/supervisor.log",
+      "bytes": 764,
+      "sha256": "60b054377a592425ee6060028d545b8d7d99e8a5d55928c73a496a8e113c84b4",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    },
+    {
+      "source_path": "docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/unchanged-source-check.json",
+      "archive_path": "records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/unchanged-source-check.json",
+      "bytes": 700,
+      "sha256": "baae14e2565cfee58e6956164a8ebba4023b677f5867301b7e9a810e2f0e6fe4",
+      "reason": "Complete matched no-cold-restart control and bounded comparison, preserving actual source/configuration, timing limits, capture/SQL audits and closure"
+    }
+  ]
+}

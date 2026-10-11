@@ -1,0 +1,38 @@
+{
+  "exitCode": 0,
+  "error": null,
+  "startedFinancial": true,
+  "restartedFinancial": true,
+  "restartedResolver": false,
+  "events": [
+    {
+      "kind": "load-detected",
+      "epochMs": 1791742157392,
+      "elapsedMs": 3254.1986669999997,
+      "timing": "file creation observed; fault scheduling only, not throughput deadline"
+    },
+    {
+      "kind": "financial-start",
+      "epochMs": 1791742221329,
+      "elapsedMs": 67190.174125,
+      "name": "reef-calcify-contention-20261011-financial-contention-ctrl-01-1"
+    },
+    {
+      "kind": "financial-killed",
+      "epochMs": 1791742310217,
+      "elapsedMs": 156076.0965
+    },
+    {
+      "kind": "financial-start",
+      "epochMs": 1791742310649,
+      "elapsedMs": 156508.53983400002,
+      "name": "reef-calcify-contention-20261011-financial-contention-ctrl-01-2"
+    },
+    {
+      "kind": "resolver-cold-restart-omitted",
+      "epochMs": 1791742340606,
+      "elapsedMs": 186465.162417,
+      "reason": "matched control; resolver remains running"
+    }
+  ]
+}

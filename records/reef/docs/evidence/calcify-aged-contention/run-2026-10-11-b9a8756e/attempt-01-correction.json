@@ -1,0 +1,8 @@
+{
+  "attempt": "aged-run-01",
+  "qualification": false,
+  "failure": "Harness Compose cold restart omitted profiles; failed before restart. Supervisor terminated own process group and observers.",
+  "correction": "Explicit redpanda/calcify profiles supplied; fresh capture cohort and unique financial SQL schema for attempt02.",
+  "sourceStateAge": "Approximately1.7m contexts observed; partial attempt, no full source/load reconciliation",
+  "preservation": "All original logs unchanged; owned broker/state volumes retained"
+}

@@ -1,0 +1,13 @@
+{
+  "status": 0,
+  "signal": null,
+  "error": null,
+  "args": [
+    "-Xms128m",
+    "-Xmx768m",
+    "-cp",
+    "/private/tmp/calcify-architecture-kernel-03/classes:/Users/dsteele/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/2.4.20/94c1451890d164aed65d43b3db0b7ecef7c183e7/kotlin-stdlib-2.4.20.jar:/Users/dsteele/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/dsteele/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.22.3/d0d4b2cdb0a1440ac02178fc2ff01dfb05cd06a8/jackson-databind-2.22.3.jar:/Users/dsteele/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.22.3/8695aab38355c65b60e242ec62edf13c52916d88/jackson-core-2.22.3.jar:/Users/dsteele/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.22/15c67f9498d6934cff9510fc70c5a12e52290457/jackson-annotations-2.22.jar",
+    "com.reef.platform.calcify.financial.KernelProbe",
+    "10000"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-11",
+  "baseline": "b9a8756e8d0efc5e8b665a5c62da1ab064d01539",
+  "runtime": "v22.22.1",
+  "host": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "attempts": [
+    {
+      "id": "attempt01",
+      "tests": 29,
+      "passed": 29,
+      "failed": 0,
+      "scope": "16 process SIGKILL cases plus 676 ordered schedules and policy checks",
+      "source_snapshot": "not captured before follow-up edits; original TAP/input/journals retained",
+      "known_differences": "repair reset eligibleAt; replay lacked optional committed-head comparison; no failure-transition crash cutpoints or price-improvement check"
+    },
+    {
+      "id": "attempt02",
+      "tests": 34,
+      "passed": 34,
+      "failed": 0,
+      "scope": "20 process SIGKILL cases, 676 ordered schedules; preserve repair age, expected committed head, price improvement and failed-state replay",
+      "source_snapshot": "attempt02/source"
+    }
+  ],
+  "corrections": "No failed TAP assertions hidden. Added regressions after design inspection. Red witnesses are deliberate unsafe alternatives. Single serialized owner, process crash only; no throughput or runtime adoption."
+}

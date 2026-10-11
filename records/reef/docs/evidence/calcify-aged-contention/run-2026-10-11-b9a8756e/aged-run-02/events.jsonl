@@ -1,0 +1,6 @@
+{"kind":"load-detected","epochMs":1791740004764,"elapsedMs":3234.885167,"timing":"file creation observed; fault scheduling only, not throughput deadline"}
+{"kind":"financial-start","epochMs":1791740069937,"elapsedMs":68406.992,"name":"reef-calcify-contention-20261011-financial-contention-aged-02-1"}
+{"kind":"financial-killed","epochMs":1791740160597,"elapsedMs":159065.35995900002}
+{"kind":"financial-start","epochMs":1791740161248,"elapsedMs":159716.318667,"name":"reef-calcify-contention-20261011-financial-contention-aged-02-2"}
+{"kind":"resolver-cold-restart-start","epochMs":1791740188388,"elapsedMs":186856.2985}
+{"kind":"resolver-cold-restart-submitted","epochMs":1791740192492,"elapsedMs":190960.22745900002}

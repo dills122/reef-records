@@ -1,0 +1,7 @@
+{
+  "scripts/dev/calcify-direct-bootstrap.mjs": "133c9f6dedd905c66ca0a15215a95f4fea847da3a503655d6f3ed21fe591b80a",
+  "scripts/dev/calcify-direct-capacity.mjs": "5ee5217d9ebc7ed913a812837515fa133d5884a68ce475b1f452296e5aa1373c",
+  "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/ContentionSqlProbe.kt": "e65fdbfce8c53912f9144c9f928e198d0ddb4fd9726db58f72070b84e295458d",
+  "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/financial/FinancialKernel.kt": "9f76e87940d7600dac11bb26aba9ad40e39e7fbf41ec28dc8ab990790f0e637e",
+  "/private/tmp/calcify-contention-20261011/calcify-load": "a0d69293ff42cd1d8c9ae5b8cfbda06c53832e2f4017f012576e506850a6968a"
+}

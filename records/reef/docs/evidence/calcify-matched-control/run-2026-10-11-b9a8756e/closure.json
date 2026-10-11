@@ -1,0 +1,321 @@
+{
+  "utc": "2026-10-11T18:20:21.390697+00:00",
+  "ownedOnly": true,
+  "volumesPreserved": true,
+  "remainingRunningOwned": "",
+  "containersBeforeStop": [
+    {
+      "name": "/reef-calcify-contention-20261011-postgres",
+      "id": "3f3a44b2fc206b435e7b07b376b27e45cfe16cbc2f8a94b5c119221a7eb50f50",
+      "image": "sha256:c05eced0bdb41ea9b95a656472a6aa4d50cad0d8a2e33d14eb1c53fd6204f2ae",
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 3100,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-11T18:07:32.672967003Z",
+        "FinishedAt": "2026-10-11T17:44:37.643406541Z",
+        "Health": {
+          "Status": "healthy",
+          "FailingStreak": 0,
+          "Log": [
+            {
+              "Start": "2026-10-11T18:19:48.574501343Z",
+              "End": "2026-10-11T18:19:48.612561343Z",
+              "ExitCode": 0,
+              "Output": "/var/run/postgresql:5432 - accepting connections\n"
+            },
+            {
+              "Start": "2026-10-11T18:19:53.613239679Z",
+              "End": "2026-10-11T18:19:53.649811013Z",
+              "ExitCode": 0,
+              "Output": "/var/run/postgresql:5432 - accepting connections\n"
+            },
+            {
+              "Start": "2026-10-11T18:19:58.651401917Z",
+              "End": "2026-10-11T18:19:58.683830292Z",
+              "ExitCode": 0,
+              "Output": "/var/run/postgresql:5432 - accepting connections\n"
+            },
+            {
+              "Start": "2026-10-11T18:20:03.685377045Z",
+              "End": "2026-10-11T18:20:03.724725378Z",
+              "ExitCode": 0,
+              "Output": "/var/run/postgresql:5432 - accepting connections\n"
+            },
+            {
+              "Start": "2026-10-11T18:20:08.729242214Z",
+              "End": "2026-10-11T18:20:08.761222839Z",
+              "ExitCode": 0,
+              "Output": "/var/run/postgresql:5432 - accepting connections\n"
+            }
+          ]
+        }
+      },
+      "restartCount": 0
+    },
+    {
+      "name": "/reef-calcify-contention-20261011-redpanda",
+      "id": "39cae9aad5f013c5b5d412d94260ba7212d928fa9cf0bd84e60aeab34bf8d58d",
+      "image": "sha256:0ceda3e98968e814705a75569063c7dc64ce74c1345681624f47bd8d6a6eb3c6",
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 3096,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-11T18:07:32.670913544Z",
+        "FinishedAt": "2026-10-11T17:44:37.705002041Z",
+        "Health": {
+          "Status": "healthy",
+          "FailingStreak": 0,
+          "Log": [
+            {
+              "Start": "2026-10-11T18:19:47.440839468Z",
+              "End": "2026-10-11T18:19:47.50457926Z",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-11T18:19:52.505785262Z",
+              "End": "2026-10-11T18:19:52.544811804Z",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-11T18:19:57.546408833Z",
+              "End": "2026-10-11T18:19:57.6088615Z",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-11T18:20:02.614513294Z",
+              "End": "2026-10-11T18:20:02.678179044Z",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-11T18:20:07.67910013Z",
+              "End": "2026-10-11T18:20:07.717627088Z",
+              "ExitCode": 0,
+              "Output": ""
+            }
+          ]
+        }
+      },
+      "restartCount": 0
+    },
+    {
+      "name": "/reef-calcify-contention-20261011-platform-api",
+      "id": "a7739eac8576262a599f2df93533f3f4201ab3ddb5c22adabdb3b5f919e032c1",
+      "image": "sha256:91e07d9990107e4cf3cc235cfad541618782826771502236aecc6cff60d8906c",
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 3628,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-11T18:07:45.290739634Z",
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "Health": {
+          "Status": "healthy",
+          "FailingStreak": 0,
+          "Log": [
+            {
+              "Start": "2026-10-11T18:19:48.579632718Z",
+              "End": "2026-10-11T18:19:48.614221343Z",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-11T18:19:53.615010554Z",
+              "End": "2026-10-11T18:19:53.654613096Z",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-11T18:19:58.655451084Z",
+              "End": "2026-10-11T18:19:58.686322126Z",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-11T18:20:03.687106086Z",
+              "End": "2026-10-11T18:20:03.72826467Z",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-11T18:20:08.728783464Z",
+              "End": "2026-10-11T18:20:08.764947797Z",
+              "ExitCode": 0,
+              "Output": ""
+            }
+          ]
+        }
+      },
+      "restartCount": 0
+    },
+    {
+      "name": "/reef-calcify-contention-20261011-matching-engine",
+      "id": "f54ff3be3337a58c5d5b7f5ca9464b2aa6908f673776548637314bb25bff13ae",
+      "image": "sha256:03d307b05d9ddef81297c3de6187d05f2b74ef3a7b9f5ddd909ec7333fc176a8",
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 3470,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-11T18:07:39.684456631Z",
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "Health": {
+          "Status": "healthy",
+          "FailingStreak": 0,
+          "Log": [
+            {
+              "Start": "2026-10-11T18:19:50.602085553Z",
+              "End": "2026-10-11T18:19:50.637777969Z",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-11T18:19:55.638476264Z",
+              "End": "2026-10-11T18:19:55.663054097Z",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-11T18:20:00.663998085Z",
+              "End": "2026-10-11T18:20:00.695784918Z",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-11T18:20:05.697080087Z",
+              "End": "2026-10-11T18:20:05.730007712Z",
+              "ExitCode": 0,
+              "Output": ""
+            },
+            {
+              "Start": "2026-10-11T18:20:10.730412548Z",
+              "End": "2026-10-11T18:20:10.75239109Z",
+              "ExitCode": 0,
+              "Output": ""
+            }
+          ]
+        }
+      },
+      "restartCount": 0
+    },
+    {
+      "name": "/reef-calcify-contention-20261011-calcify-extractor",
+      "id": "db8874839ae468004aa88bf0f936b508e0756bea2109a8fd86cd79e60ad417e4",
+      "image": "sha256:91e07d9990107e4cf3cc235cfad541618782826771502236aecc6cff60d8906c",
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 3867,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-11T18:07:51.29500372Z",
+        "FinishedAt": "0001-01-01T00:00:00Z"
+      },
+      "restartCount": 0
+    },
+    {
+      "name": "/reef-calcify-contention-20261011-calcify-verifier",
+      "id": "c1201a6ffb29ba9d40e6d7152dda7969538e0bed8118b8441a57b5eaae5e3128",
+      "image": "sha256:91e07d9990107e4cf3cc235cfad541618782826771502236aecc6cff60d8906c",
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 3868,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-11T18:07:51.294117386Z",
+        "FinishedAt": "0001-01-01T00:00:00Z"
+      },
+      "restartCount": 0
+    },
+    {
+      "name": "/reef-calcify-contention-20261011-calcify-resolver",
+      "id": "962a9b40e8780e181a74c93c751647303c2c7975824b39fc77cd5e78861e693d",
+      "image": "sha256:91e07d9990107e4cf3cc235cfad541618782826771502236aecc6cff60d8906c",
+      "state": {
+        "Status": "running",
+        "Running": true,
+        "Paused": false,
+        "Restarting": false,
+        "OOMKilled": false,
+        "Dead": false,
+        "Pid": 4107,
+        "ExitCode": 0,
+        "Error": "",
+        "StartedAt": "2026-10-11T18:07:57.719586542Z",
+        "FinishedAt": "0001-01-01T00:00:00Z",
+        "Health": {
+          "Status": "healthy",
+          "FailingStreak": 0,
+          "Log": [
+            {
+              "Start": "2026-10-11T18:19:48.57496901Z",
+              "End": "2026-10-11T18:19:48.613598427Z",
+              "ExitCode": 0,
+              "Output": "{\"alive\":true,\"state\":\"RUNNING\"}"
+            },
+            {
+              "Start": "2026-10-11T18:19:53.614419138Z",
+              "End": "2026-10-11T18:19:53.652991679Z",
+              "ExitCode": 0,
+              "Output": "{\"alive\":true,\"state\":\"RUNNING\"}"
+            },
+            {
+              "Start": "2026-10-11T18:19:58.653655917Z",
+              "End": "2026-10-11T18:19:58.686432334Z",
+              "ExitCode": 0,
+              "Output": "{\"alive\":true,\"state\":\"RUNNING\"}"
+            },
+            {
+              "Start": "2026-10-11T18:20:03.687008753Z",
+              "End": "2026-10-11T18:20:03.72641292Z",
+              "ExitCode": 0,
+              "Output": "{\"alive\":true,\"state\":\"RUNNING\"}"
+            },
+            {
+              "Start": "2026-10-11T18:20:08.728041297Z",
+              "End": "2026-10-11T18:20:08.764636297Z",
+              "ExitCode": 0,
+              "Output": "{\"alive\":true,\"state\":\"RUNNING\"}"
+            }
+          ]
+        }
+      },
+      "restartCount": 0
+    }
+  ]
+}

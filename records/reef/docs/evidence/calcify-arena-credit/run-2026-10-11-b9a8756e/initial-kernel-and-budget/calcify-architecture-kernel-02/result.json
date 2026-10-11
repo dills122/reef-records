@@ -1,0 +1,110 @@
+{
+  "schema": "calcify-kernel-research-v1",
+  "checks": {
+    "fullyFunded": true,
+    "duplicateNoHistory": true,
+    "replayExact": true,
+    "checkpointRestoreExact": true,
+    "insufficientCashZeroLegs": true,
+    "changedRetryConflict": true,
+    "corruptHistoryRejected": true
+  },
+  "java": "21",
+  "maxHeapBytes": 805306368,
+  "scope": "selected test kernel including action construction; no broker/SQL; sampled heap shared JVM, no attribution or hard bound; sequential ABBA diagnostic, not controlled benchmark",
+  "warmupTrades": 2000,
+  "results": [
+    {
+      "encodeResult": false,
+      "trades": 10000,
+      "actions": 20000,
+      "elapsedMs": 2832.301875,
+      "tradesPerSecond": 3530.6970942142243,
+      "each1000TradesMs": [
+        301.474709,
+        291.864583,
+        278.987833,
+        278.679959,
+        275.626125,
+        285.59875,
+        283.933875,
+        279.918083,
+        278.879292,
+        277.323416
+      ],
+      "encodedHistoryBytesExcludingGenesis": 0,
+      "sampledHeapBytes": 244872408,
+      "finalEconomicsChecked": true,
+      "finalHistoryChecksum": "c8b44d6f98c4a8c1574d0c5e9e4047214aff3824f0fe81eadee5e2bbb08de7b0"
+    },
+    {
+      "encodeResult": true,
+      "trades": 10000,
+      "actions": 20000,
+      "elapsedMs": 3069.748167,
+      "tradesPerSecond": 3257.5962118002626,
+      "each1000TradesMs": [
+        325.03,
+        343.95,
+        348.885292,
+        329.073333,
+        282.702209,
+        285.358708,
+        289.261292,
+        283.643625,
+        288.428708,
+        293.399958
+      ],
+      "encodedHistoryBytesExcludingGenesis": 53532284,
+      "sampledHeapBytes": 315567408,
+      "finalEconomicsChecked": true,
+      "finalHistoryChecksum": "c8b44d6f98c4a8c1574d0c5e9e4047214aff3824f0fe81eadee5e2bbb08de7b0"
+    },
+    {
+      "encodeResult": true,
+      "trades": 10000,
+      "actions": 20000,
+      "elapsedMs": 2964.199458,
+      "tradesPerSecond": 3373.5921423948926,
+      "each1000TradesMs": [
+        294.579292,
+        301.625083,
+        299.387375,
+        300.333167,
+        293.593791,
+        291.597125,
+        298.4975,
+        295.451375,
+        292.5275,
+        296.59
+      ],
+      "encodedHistoryBytesExcludingGenesis": 53532284,
+      "sampledHeapBytes": 481913600,
+      "finalEconomicsChecked": true,
+      "finalHistoryChecksum": "c8b44d6f98c4a8c1574d0c5e9e4047214aff3824f0fe81eadee5e2bbb08de7b0"
+    },
+    {
+      "encodeResult": false,
+      "trades": 10000,
+      "actions": 20000,
+      "elapsedMs": 2799.656167,
+      "tradesPerSecond": 3571.867187789564,
+      "each1000TradesMs": [
+        297.696167,
+        291.806833,
+        290.485125,
+        275.919417,
+        269.944083,
+        275.530625,
+        274.455792,
+        275.0275,
+        275.44325,
+        273.325291
+      ],
+      "encodedHistoryBytesExcludingGenesis": 0,
+      "sampledHeapBytes": 525160960,
+      "finalEconomicsChecked": true,
+      "finalHistoryChecksum": "c8b44d6f98c4a8c1574d0c5e9e4047214aff3824f0fe81eadee5e2bbb08de7b0"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+ Network reef-calcify-contention-20261011_default Creating 
+ Network reef-calcify-contention-20261011_default Creating 
+ Network reef-calcify-contention-20261011_default Created 
+ Network reef-calcify-contention-20261011_default Created 
+ Container reef-calcify-contention-20261011-redpanda Creating 
+ Container reef-calcify-contention-20261011-postgres Creating 
+ Container reef-calcify-contention-20261011-redpanda Created 
+ Container reef-calcify-contention-20261011-postgres Created 
+ Container reef-calcify-contention-20261011-redpanda Starting 
+ Container reef-calcify-contention-20261011-postgres Starting 
+ Container reef-calcify-contention-20261011-redpanda Started 
+ Container reef-calcify-contention-20261011-postgres Started 
+ Container reef-calcify-contention-20261011-postgres Waiting 
+ Container reef-calcify-contention-20261011-redpanda Waiting 
+ Container reef-calcify-contention-20261011-postgres Healthy 
+ Container reef-calcify-contention-20261011-redpanda Healthy 
+Successfully updated configuration. New configuration version is 3.
+CREATE TABLE
+INSERT 0 1
+CREATE TABLE
+ALTER TABLE
+CREATE TABLE
+INSERT 0 1
+TOPIC                              STATUS
+REEF_CONTENTION-SMOKE-01_COMMANDS  OK
+REEF_CONTENTION-SMOKE-01_EVENTS    OK
+TOPIC                            STATUS
+REEF_CONTENTION-SMOKE-01_EVENTS  OK
+ Volume reef-calcify-contention-20261011_reef-boundary-postgres-data Creating 
+ Container reef-calcify-contention-20261011-matching-engine Creating 
+ Volume reef-calcify-contention-20261011_reef-nats-data Creating 
+ Volume reef-calcify-contention-20261011_reef-nats-data Creating 
+ Volume reef-calcify-contention-20261011_reef-boundary-postgres-data Creating 
+ Volume reef-calcify-contention-20261011_reef-projection-postgres-data Creating 
+ Volume reef-calcify-contention-20261011_reef-projection-postgres-data Creating 
+ Volume reef-calcify-contention-20261011_reef-boundary-postgres-data Created 
+ Volume reef-calcify-contention-20261011_reef-boundary-postgres-data Created 
+ Volume reef-calcify-contention-20261011_reef-projection-postgres-data Created 
+ Volume reef-calcify-contention-20261011_reef-projection-postgres-data Created 
+ Volume reef-calcify-contention-20261011_reef-nats-data Created 
+ Volume reef-calcify-contention-20261011_reef-nats-data Created 
+ Container reef-calcify-contention-20261011-matching-engine Created 
+ Container reef-calcify-contention-20261011-platform-api Creating 
+ Container reef-calcify-contention-20261011-platform-api Created 
+ Container reef-calcify-contention-20261011-matching-engine Starting 
+ Container reef-calcify-contention-20261011-matching-engine Started 
+ Container reef-calcify-contention-20261011-matching-engine Waiting 
+ Container reef-calcify-contention-20261011-matching-engine Healthy 
+ Container reef-calcify-contention-20261011-platform-api Starting 
+ Container reef-calcify-contention-20261011-platform-api Started 
+ Container reef-calcify-contention-20261011-matching-engine Waiting 
+ Container reef-calcify-contention-20261011-platform-api Waiting 
+ Container reef-calcify-contention-20261011-matching-engine Healthy 
+ Container reef-calcify-contention-20261011-platform-api Healthy 
+ Container reef-calcify-contention-20261011-calcify-verifier Creating 
+ Container reef-calcify-contention-20261011-calcify-extractor Creating 
+ Container reef-calcify-contention-20261011-calcify-extractor Created 
+ Container reef-calcify-contention-20261011-calcify-verifier Created 
+ Container reef-calcify-contention-20261011-calcify-verifier Starting 
+ Container reef-calcify-contention-20261011-calcify-extractor Starting 
+ Container reef-calcify-contention-20261011-calcify-verifier Started 
+ Container reef-calcify-contention-20261011-calcify-extractor Started 
+ Volume reef-calcify-contention-20261011_calcify-resolver-state Creating 
+ Volume reef-calcify-contention-20261011_calcify-resolver-state Creating 
+ Volume reef-calcify-contention-20261011_calcify-resolver-state Created 
+ Volume reef-calcify-contention-20261011_calcify-resolver-state Created 
+ Container reef-calcify-contention-20261011-calcify-resolver Creating 
+ Container reef-calcify-contention-20261011-calcify-resolver Created 
+ Container reef-calcify-contention-20261011-calcify-resolver Starting 
+ Container reef-calcify-contention-20261011-calcify-resolver Started 
+ Container reef-calcify-contention-20261011-calcify-resolver Waiting 
+ Container reef-calcify-contention-20261011-calcify-resolver Healthy 
+DIRECT_SETUP_READY /private/tmp/calcify-contention-20261011/smoke-setup

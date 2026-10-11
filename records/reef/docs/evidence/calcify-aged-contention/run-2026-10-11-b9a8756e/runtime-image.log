@@ -1,0 +1,36 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Runtime.Dockerfile
+#1 transferring dockerfile: 203B done
+#1 WARN: CopyIgnoredFile: Attempting to Copy file "services/platform-runtime/build/install/platform-runtime" that is excluded by .dockerignore (line 2)
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/reef-platform-runtime:calcify-direct-pollbatch
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 101B done
+#3 DONE 0.0s
+
+#4 [1/2] FROM docker.io/library/reef-platform-runtime:calcify-direct-pollbatch
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [2/2] COPY --chown=10001:10001 services/platform-runtime/build/install/platform-runtime /app/platform-runtime
+#6 ERROR: failed to calculate checksum of ref 2950183e-ce45-40d5-ab40-fef83000890f::oc49jkgb8s7fmaahj5tkyky4v: "/services/platform-runtime/build/install/platform-runtime": not found
+------
+ > [2/2] COPY --chown=10001:10001 services/platform-runtime/build/install/platform-runtime /app/platform-runtime:
+------
+
+ [33m1 warning found (use docker --debug to expand):
+[0m - CopyIgnoredFile: Attempting to Copy file "services/platform-runtime/build/install/platform-runtime" that is excluded by .dockerignore (line 2)
+Runtime.Dockerfile:2
+--------------------
+   1 |     FROM reef-platform-runtime:calcify-direct-pollbatch
+   2 | >>> COPY --chown=10001:10001 services/platform-runtime/build/install/platform-runtime /app/platform-runtime
+   3 |     
+--------------------
+ERROR: failed to build: failed to solve: failed to compute cache key: failed to calculate checksum of ref 2950183e-ce45-40d5-ab40-fef83000890f::oc49jkgb8s7fmaahj5tkyky4v: "/services/platform-runtime/build/install/platform-runtime": not found

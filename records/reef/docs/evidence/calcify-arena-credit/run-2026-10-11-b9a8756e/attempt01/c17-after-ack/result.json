@@ -1,0 +1,1 @@
+{"acknowledgement":"{\"acknowledged\":\"BOOKED\",\"digest\":\"22f3f3f5326544c5c29175dfed9786ed9545f372d5c0b4758ebcabc403dd73dd\"}","command":{"buy":"reuseBuy","id":"c17","price":"1","quantity":"25","sell":"reuseSell","trade":"reuse","type":"book"},"cut":"after-ack","outcome":"REPLAY_RETRY_PARITY","signal":"SIGKILL"}

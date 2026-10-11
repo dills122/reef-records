@@ -1,0 +1,1 @@
+{"command":{"id":"c18","trade":"reuse","type":"settle"},"config":{"accounts":[{"cash":"100","id":"A","shares":"1000"},{"cash":"100","id":"B","shares":"1000"},{"cash":"100","id":"C","shares":"1000"},{"cash":"100","id":"D","shares":"1000"},{"cash":"1000","id":"house","shares":"10000"}],"house":"house","policy":"arena-receivable-credit-research-v1"}}

@@ -1,0 +1,7 @@
+{"kind":"load-detected","epochMs":1791739659295,"elapsedMs":3314.1204580000003,"timing":"file creation observed; fault scheduling only, not throughput deadline"}
+{"kind":"financial-start","epochMs":1791739724658,"elapsedMs":68676.130458,"name":"reef-calcify-contention-20261011-financial-contention-aged-01-1"}
+{"kind":"financial-killed","epochMs":1791739812513,"elapsedMs":156530.1765}
+{"kind":"financial-start","epochMs":1791739813125,"elapsedMs":157141.647833,"name":"reef-calcify-contention-20261011-financial-contention-aged-01-2"}
+{"kind":"resolver-cold-restart-start","epochMs":1791739843787,"elapsedMs":187803.880292}
+{"kind":"supervisor-failure","epochMs":1791739844022,"elapsedMs":188038.741,"error":"Error: docker compose -p reef-calcify-contention-20261011: no such service: redpanda\n"}
+{"out":"/private/tmp/calcify-contention-20261011/aged-run-01","exitCode":null,"error":"Error: docker compose -p reef-calcify-contention-20261011: no such service: redpanda\n"}

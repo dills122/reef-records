@@ -1,0 +1,1 @@
+{"acknowledgement":null,"command":{"id":"c18","trade":"reuse","type":"settle"},"cut":"after-sync","outcome":"REPLAY_RETRY_PARITY","signal":"SIGKILL"}

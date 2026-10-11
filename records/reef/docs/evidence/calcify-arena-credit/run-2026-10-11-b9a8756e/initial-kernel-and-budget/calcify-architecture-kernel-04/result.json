@@ -1,0 +1,112 @@
+{
+  "schema": "calcify-kernel-research-v1",
+  "checks": {
+    "fullyFunded": true,
+    "duplicateNoHistory": true,
+    "replayExact": true,
+    "checkpointRestoreExact": true,
+    "insufficientCashZeroLegs": true,
+    "changedRetryConflict": true,
+    "corruptHistoryRejected": true
+  },
+  "canonicalCorpusCases": 1000,
+  "canonicalCorpusSha256": "76d17b8bb83cfb0bb083c5fd7b62c1ccdc220000925d083310902920d194750c",
+  "java": "21",
+  "maxHeapBytes": 805306368,
+  "scope": "selected test kernel including action construction; no broker/SQL; sampled heap shared JVM, no attribution or hard bound; sequential ABBA diagnostic, not controlled benchmark",
+  "warmupTrades": 2000,
+  "results": [
+    {
+      "encodeResult": false,
+      "trades": 10000,
+      "actions": 20000,
+      "elapsedMs": 1668.664083,
+      "tradesPerSecond": 5992.817908576031,
+      "each1000TradesMs": [
+        198.553417,
+        176.699333,
+        166.076792,
+        163.859666,
+        162.293125,
+        156.651375,
+        164.26375,
+        160.533584,
+        160.771375,
+        158.940291
+      ],
+      "encodedHistoryBytesExcludingGenesis": 0,
+      "sampledHeapBytes": 229496608,
+      "finalEconomicsChecked": true,
+      "finalHistoryChecksum": "c8b44d6f98c4a8c1574d0c5e9e4047214aff3824f0fe81eadee5e2bbb08de7b0"
+    },
+    {
+      "encodeResult": true,
+      "trades": 10000,
+      "actions": 20000,
+      "elapsedMs": 1819.166208,
+      "tradesPerSecond": 5497.023832140136,
+      "each1000TradesMs": [
+        197.956958,
+        177.881834,
+        185.193958,
+        180.863167,
+        179.578208,
+        179.060542,
+        181.866458,
+        178.015708,
+        176.561334,
+        182.173916
+      ],
+      "encodedHistoryBytesExcludingGenesis": 53532284,
+      "sampledHeapBytes": 262983272,
+      "finalEconomicsChecked": true,
+      "finalHistoryChecksum": "c8b44d6f98c4a8c1574d0c5e9e4047214aff3824f0fe81eadee5e2bbb08de7b0"
+    },
+    {
+      "encodeResult": true,
+      "trades": 10000,
+      "actions": 20000,
+      "elapsedMs": 1807.357167,
+      "tradesPerSecond": 5532.940684103311,
+      "each1000TradesMs": [
+        193.042917,
+        190.94525,
+        181.543541,
+        177.98425,
+        177.050334,
+        175.491708,
+        177.367917,
+        179.345125,
+        176.249,
+        178.321541
+      ],
+      "encodedHistoryBytesExcludingGenesis": 53532284,
+      "sampledHeapBytes": 233133368,
+      "finalEconomicsChecked": true,
+      "finalHistoryChecksum": "c8b44d6f98c4a8c1574d0c5e9e4047214aff3824f0fe81eadee5e2bbb08de7b0"
+    },
+    {
+      "encodeResult": false,
+      "trades": 10000,
+      "actions": 20000,
+      "elapsedMs": 1623.169,
+      "tradesPerSecond": 6160.787940134391,
+      "each1000TradesMs": [
+        164.49625,
+        162.255667,
+        163.432083,
+        157.759709,
+        159.851458,
+        162.639458,
+        160.781125,
+        164.552042,
+        158.529667,
+        168.856291
+      ],
+      "encodedHistoryBytesExcludingGenesis": 0,
+      "sampledHeapBytes": 382816304,
+      "finalEconomicsChecked": true,
+      "finalHistoryChecksum": "c8b44d6f98c4a8c1574d0c5e9e4047214aff3824f0fe81eadee5e2bbb08de7b0"
+    }
+  ]
+}

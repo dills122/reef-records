@@ -1,0 +1,105 @@
+{
+  "schema": "calcify-architecture-budget-v1",
+  "scope": "arithmetic and finite toy model only",
+  "checks": {
+    "queueRecurrenceCases": 5239,
+    "readCommittedHeadOfLine": true,
+    "separatePartitionControl": true
+  },
+  "scenarios": [
+    {
+      "arrivalPerSecond": 10000,
+      "servicePerSecond": 0,
+      "seconds": 600,
+      "bytesPerQueuedTrade": 2048,
+      "backlog": 6000000,
+      "logicalBacklogBytes": 12288000000,
+      "drainSecondsAfterStop": null,
+      "sustainableDutyFraction": 0
+    },
+    {
+      "arrivalPerSecond": 10000,
+      "servicePerSecond": 1051.7333333333333,
+      "seconds": 600,
+      "bytesPerQueuedTrade": 2048,
+      "backlog": 5368960,
+      "logicalBacklogBytes": 10995630080,
+      "drainSecondsAfterStop": 5104.868154158215,
+      "sustainableDutyFraction": 0.10517333333333334
+    },
+    {
+      "arrivalPerSecond": 10000,
+      "servicePerSecond": 3500,
+      "seconds": 600,
+      "bytesPerQueuedTrade": 2048,
+      "backlog": 3900000,
+      "logicalBacklogBytes": 7987200000,
+      "drainSecondsAfterStop": 1114.2857142857142,
+      "sustainableDutyFraction": 0.35
+    },
+    {
+      "arrivalPerSecond": 10000,
+      "servicePerSecond": 7500,
+      "seconds": 600,
+      "bytesPerQueuedTrade": 2048,
+      "backlog": 1500000,
+      "logicalBacklogBytes": 3072000000,
+      "drainSecondsAfterStop": 200,
+      "sustainableDutyFraction": 0.75
+    },
+    {
+      "arrivalPerSecond": 10000,
+      "servicePerSecond": 10000,
+      "seconds": 600,
+      "bytesPerQueuedTrade": 2048,
+      "backlog": 0,
+      "logicalBacklogBytes": 0,
+      "drainSecondsAfterStop": 0,
+      "sustainableDutyFraction": 1
+    },
+    {
+      "arrivalPerSecond": 10000,
+      "servicePerSecond": 12000,
+      "seconds": 600,
+      "bytesPerQueuedTrade": 2048,
+      "backlog": 0,
+      "logicalBacklogBytes": 0,
+      "drainSecondsAfterStop": 0,
+      "sustainableDutyFraction": 1
+    }
+  ],
+  "historicE4": {
+    "resultBytesPerTrade": 5893.01222,
+    "inputBytesPerTrade": 747.8148666666667,
+    "stateWritesPerTrade": 37.00011333333333,
+    "resultBytesAtSixMillionTrades": 35358073320,
+    "forceSeconds": 60.525331066,
+    "producerSeconds": 132.04,
+    "note": "Arithmetic from archived test adapter measurement; excludes additional source, context, changelog, SQL/WAL, replication, indexes and compaction."
+  },
+  "finiteO1": {
+    "fixtureCommands": 12,
+    "fixtureTrades": 3,
+    "fixtureSourceBytes": 24797,
+    "fixtureModeOffSourceBytes": 16647,
+    "fixtureCaptureBytes": 29930,
+    "sourceExpansionRatio": 1.4895777016879919,
+    "allPayloadBytesPerFixtureTrade": 18242.333333333332,
+    "maxPublicationTradeAllowance": 128,
+    "maximumSecondsAt10kIgnoringOtherLimits": 0.0128,
+    "note": "Actual tiny fixture mix; not a throughput or representative bytes/trade estimate."
+  },
+  "recovery": {
+    "arrivalPerSecond": 10000,
+    "outageSeconds": 60,
+    "requiredDrainSeconds": 300,
+    "requiredServicePerSecond": 12000
+  },
+  "snapshotIllustration": {
+    "records": 6000000,
+    "bytesAddedPerRecord": 128,
+    "fullImageLogicalBytes": 2304000384000000,
+    "keyedDeltaLogicalBytes": 768000000,
+    "note": "Hypothetical append-growing state; demonstrates quadratic rewrite cost, not measured finite reducer cost."
+  }
+}

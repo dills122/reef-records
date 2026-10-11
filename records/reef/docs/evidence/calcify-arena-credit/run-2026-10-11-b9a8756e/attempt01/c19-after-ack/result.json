@@ -1,0 +1,1 @@
+{"acknowledgement":"{\"acknowledged\":\"SETTLED\",\"digest\":\"2a2127fb5c4310297479a8f8d0cabfdf86c5d6b8617fe3a9e5fb42c2fc3f1209\"}","command":{"id":"c19","trade":"sourceA","type":"settle"},"cut":"after-ack","outcome":"REPLAY_RETRY_PARITY","signal":"SIGKILL"}

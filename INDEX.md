@@ -1,5 +1,31 @@
 # Archive index
 
+## October 11 — Calcify arena credit and initial kernel research
+
+[Proof](records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/README.md), [manifest](manifests/2026-10-11-calcify-arena-credit.json), [provenance](docs/imports/2026-10-11-calcify-arena-credit-provenance.md).
+202 exact records/780789 bytes. Credit34/34,676 ordered schedules,20 process SIGKILL cases; five initial kernel probes and queue-model companions. Single-owner research only. JFR stays local under archive exclusion; initial source gaps documented. Prior treatment/control immutable.
+
+
+## October 11 — Matched control without cold resolver restart
+
+[Proof](records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/README.md), [manifest](manifests/2026-10-11-calcify-matched-control.json), [provenance](docs/imports/2026-10-11-calcify-matched-control-provenance.md).
+59 exact records/2040363bytes; local-only source `754b24889abfe2f00b2b24a3a7bdf6f6fc05e1ff`.
+Same aged capture and synthetic financial/SQL policy, no cold resolver restart:
+10,321.21–10,349.52contexts/s **PASS**,3,131,951 final exact contexts and361,075
+financial/SQL audit pass. Prior treatment failure unchanged; sequential-run
+limits prohibit exact causal estimate. All owned services stopped, volumes retained.
+
+
+## October 11 — Calcify aged state, SQL contention and recovery
+
+[Proof](records/reef/docs/evidence/calcify-aged-contention/run-2026-10-11-b9a8756e/README.md), [manifest](manifests/2026-10-11-calcify-aged-contention.json), [provenance](docs/imports/2026-10-11-calcify-aged-contention-provenance.md).
+102 exact files/2221997 bytes; local-only source
+`42bc04487d6fe284e83327c9b5aca66d16537596`, product baseline `b9a8756e`.
+10k full-context gate **fails** at8,106.99–8,145.11/s; eventual3,063,383 exact
+contexts and366,625 independent synthetic financial/SQL trades pass audits.
+Both attempts and corrections preserved; raw state volumes not exported.
+
+
 ## October 5 — OCR checkpoint and metric fixes
 
 [Proof](records/reef/docs/evidence/calcify-financial-sprint1/ocr-followup-2026-10-05-0a64c482/README.md), [manifest](manifests/2026-10-05-calcify-sprint1-ocr-followup.json). Product `0a64c4823a00ec5133e331bcfbbc94e542c4d8d3`; local-only source `245a91ba49db43788eb3fe948a522a92f70f287c`. 13 exact files. Focused47/47, Node158/158; initial sandbox failure retained. Review extension required. Prior imports unchanged.

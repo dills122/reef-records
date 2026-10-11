@@ -1,0 +1,1422 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/dills122/reef",
+  "source_commit": "966584dd3181896c863d9bcb6465aecc1c28faed",
+  "selection_policy": "Explicit synthetic credit proof attempts01/02 plus five initial kernel runs and queue-model companions. Local-only tracked source checkpoint. Preserve all outcomes and corrections; no source removal. Exclude compiled output, dependencies, database volumes and .jfr per archive hygiene; exclusion hash recorded. Initial intermediate source gaps explicitly recorded.",
+  "files": [
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/README.md",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/README.md",
+      "bytes": 1081,
+      "sha256": "8f87d9a21c5bafe290ea1b7cd708795b338ef55c62999d533199bc088fff14c1",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-after-ack/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-after-ack/input.json",
+      "bytes": 406,
+      "sha256": "0b0b5e7239e20b803ae0beb6f26bb181b6da02cc7104da3964415b68a3f2604d",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-after-ack/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-after-ack/journal-at-crash.jsonl",
+      "bytes": 6697,
+      "sha256": "b173ba0f8442250f011213011e0f2cf7ade2ac710b0cc5d5ec772b6f8f7bbdd5",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-after-ack/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-after-ack/journal.jsonl",
+      "bytes": 7148,
+      "sha256": "4e02dd01981837188cd41004050af8805604821d041cbdb5bca81b3a0a7313e8",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-after-ack/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-after-ack/result.json",
+      "bytes": 315,
+      "sha256": "9b59adebbce9941307e007b79a9e125ad98b59c3eb4a0f1adcca6c13673ffbe6",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-after-sync/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-after-sync/input.json",
+      "bytes": 406,
+      "sha256": "0b0b5e7239e20b803ae0beb6f26bb181b6da02cc7104da3964415b68a3f2604d",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-after-sync/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-after-sync/journal-at-crash.jsonl",
+      "bytes": 6697,
+      "sha256": "b173ba0f8442250f011213011e0f2cf7ade2ac710b0cc5d5ec772b6f8f7bbdd5",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-after-sync/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-after-sync/journal.jsonl",
+      "bytes": 7148,
+      "sha256": "4e02dd01981837188cd41004050af8805604821d041cbdb5bca81b3a0a7313e8",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-after-sync/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-after-sync/result.json",
+      "bytes": 207,
+      "sha256": "30f27e7afe8f105432dcd6e6d5f7195b354e2a2b0e0df35c8d4eebeb4581c25f",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-before-write/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-before-write/input.json",
+      "bytes": 406,
+      "sha256": "0b0b5e7239e20b803ae0beb6f26bb181b6da02cc7104da3964415b68a3f2604d",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-before-write/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-before-write/journal-at-crash.jsonl",
+      "bytes": 6246,
+      "sha256": "00eaa901e7ad5ac133c7b116a1fd8a32cf4f717bfc1cb0f8f7bcd76d928c1252",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-before-write/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-before-write/journal.jsonl",
+      "bytes": 6697,
+      "sha256": "b173ba0f8442250f011213011e0f2cf7ade2ac710b0cc5d5ec772b6f8f7bbdd5",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-before-write/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-before-write/result.json",
+      "bytes": 209,
+      "sha256": "3ee370067304b9c182e787c9800fe9fc9f7da5a75d6ed808a511000af3e3a1a9",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-torn-write/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-torn-write/input.json",
+      "bytes": 406,
+      "sha256": "0b0b5e7239e20b803ae0beb6f26bb181b6da02cc7104da3964415b68a3f2604d",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-torn-write/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-torn-write/journal-at-crash.jsonl",
+      "bytes": 6471,
+      "sha256": "59ff3c7a8107ec20265853eb34cbbc81e11c30bdf118d4e5fcf99a4c6d57fb8e",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-torn-write/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-torn-write/journal.jsonl",
+      "bytes": 6471,
+      "sha256": "59ff3c7a8107ec20265853eb34cbbc81e11c30bdf118d4e5fcf99a4c6d57fb8e",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-torn-write/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c15-torn-write/result.json",
+      "bytes": 199,
+      "sha256": "921433b2a05d34faff29c0f1e0c2b43a875e905fe0c86481a4d41f1f7e84528e",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-after-ack/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-after-ack/input.json",
+      "bytes": 411,
+      "sha256": "39c67c40662f483bac0c5cd238bed23480f3117f844bae0ffc001cc931ab5707",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-after-ack/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-after-ack/journal-at-crash.jsonl",
+      "bytes": 7608,
+      "sha256": "c078f42b39bc4ffc3e91765336de54eb8c28e5eec1ac3010df20e78c1d45a668",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-after-ack/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-after-ack/journal.jsonl",
+      "bytes": 8062,
+      "sha256": "60548a9704e3a6597585b416629dedc708c672ec658b1d8e934afca0dcec3446",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-after-ack/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-after-ack/result.json",
+      "bytes": 318,
+      "sha256": "51e60dbcae9377e7cbd38e95bea001c7af48a2abfc518bf76c53d934a4b0248b",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-after-sync/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-after-sync/input.json",
+      "bytes": 411,
+      "sha256": "39c67c40662f483bac0c5cd238bed23480f3117f844bae0ffc001cc931ab5707",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-after-sync/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-after-sync/journal-at-crash.jsonl",
+      "bytes": 7608,
+      "sha256": "c078f42b39bc4ffc3e91765336de54eb8c28e5eec1ac3010df20e78c1d45a668",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-after-sync/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-after-sync/journal.jsonl",
+      "bytes": 8062,
+      "sha256": "60548a9704e3a6597585b416629dedc708c672ec658b1d8e934afca0dcec3446",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-after-sync/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-after-sync/result.json",
+      "bytes": 212,
+      "sha256": "9a5ae54bbb97d81ebd7aa6cde9bc6c7ab26895a9b84b8a96311059531c610100",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-before-write/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-before-write/input.json",
+      "bytes": 411,
+      "sha256": "39c67c40662f483bac0c5cd238bed23480f3117f844bae0ffc001cc931ab5707",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-before-write/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-before-write/journal-at-crash.jsonl",
+      "bytes": 7154,
+      "sha256": "dd28b63b4b55ae99bf97fd6d341d732cc73300192649c54f22258deeef3127c3",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-before-write/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-before-write/journal.jsonl",
+      "bytes": 7608,
+      "sha256": "c078f42b39bc4ffc3e91765336de54eb8c28e5eec1ac3010df20e78c1d45a668",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-before-write/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-before-write/result.json",
+      "bytes": 214,
+      "sha256": "1f78cc685e0afbadb812e622cb8daf1b2e111ff97385af8eeee8f54743243fac",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-torn-write/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-torn-write/input.json",
+      "bytes": 411,
+      "sha256": "39c67c40662f483bac0c5cd238bed23480f3117f844bae0ffc001cc931ab5707",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-torn-write/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-torn-write/journal-at-crash.jsonl",
+      "bytes": 7381,
+      "sha256": "c89aed136e90c2b1cd2d89f82149913001717d5d8128887ff9d2286f6b837f60",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-torn-write/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-torn-write/journal.jsonl",
+      "bytes": 7381,
+      "sha256": "c89aed136e90c2b1cd2d89f82149913001717d5d8128887ff9d2286f6b837f60",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-torn-write/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c17-torn-write/result.json",
+      "bytes": 204,
+      "sha256": "97518136e670fb6d2c50995b3b0279b7705b62222bcf25173d8985c78ead1e15",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-after-ack/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-after-ack/input.json",
+      "bytes": 349,
+      "sha256": "ecb0e1eab0ed4938b52a20ad708feb9b5f67592edc96ca3ead50b91eed1feea4",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-after-ack/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-after-ack/journal-at-crash.jsonl",
+      "bytes": 8001,
+      "sha256": "5e7ec047980e281b0af2fee04445be224f5a8e5d4e92a60d90ee03e3cecab266",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-after-ack/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-after-ack/journal.jsonl",
+      "bytes": 8394,
+      "sha256": "d46caaa1cfaf78da1f8e1fae270bfeb9a3009d51a8e371cf1817515c956eb162",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-after-ack/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-after-ack/result.json",
+      "bytes": 257,
+      "sha256": "3b21f7bf919fdd9ee69359da6f60c99953e9d42abd16228a66c7a1021af8516c",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-after-sync/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-after-sync/input.json",
+      "bytes": 349,
+      "sha256": "ecb0e1eab0ed4938b52a20ad708feb9b5f67592edc96ca3ead50b91eed1feea4",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-after-sync/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-after-sync/journal-at-crash.jsonl",
+      "bytes": 8001,
+      "sha256": "5e7ec047980e281b0af2fee04445be224f5a8e5d4e92a60d90ee03e3cecab266",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-after-sync/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-after-sync/journal.jsonl",
+      "bytes": 8394,
+      "sha256": "d46caaa1cfaf78da1f8e1fae270bfeb9a3009d51a8e371cf1817515c956eb162",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-after-sync/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-after-sync/result.json",
+      "bytes": 150,
+      "sha256": "2a12e35aa8f5851b5d9be4d3d2dd55e1e7eb52fb8fa560c3ad298f6c86fd7b4d",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-before-write/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-before-write/input.json",
+      "bytes": 349,
+      "sha256": "ecb0e1eab0ed4938b52a20ad708feb9b5f67592edc96ca3ead50b91eed1feea4",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-before-write/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-before-write/journal-at-crash.jsonl",
+      "bytes": 7608,
+      "sha256": "c078f42b39bc4ffc3e91765336de54eb8c28e5eec1ac3010df20e78c1d45a668",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-before-write/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-before-write/journal.jsonl",
+      "bytes": 8001,
+      "sha256": "5e7ec047980e281b0af2fee04445be224f5a8e5d4e92a60d90ee03e3cecab266",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-before-write/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-before-write/result.json",
+      "bytes": 152,
+      "sha256": "929acead5468491bde6aba614e3d4b042bc3a4b25f88c49a1b69e76651a0b482",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-torn-write/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-torn-write/input.json",
+      "bytes": 349,
+      "sha256": "ecb0e1eab0ed4938b52a20ad708feb9b5f67592edc96ca3ead50b91eed1feea4",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-torn-write/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-torn-write/journal-at-crash.jsonl",
+      "bytes": 7804,
+      "sha256": "f0c7ece41b15f58b29b5fa655da20e3082ad15e0fabdb16d13f685c3585dc4ad",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-torn-write/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-torn-write/journal.jsonl",
+      "bytes": 7804,
+      "sha256": "f0c7ece41b15f58b29b5fa655da20e3082ad15e0fabdb16d13f685c3585dc4ad",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-torn-write/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c18-torn-write/result.json",
+      "bytes": 142,
+      "sha256": "b7bd07709ccb42c424360a859ab624db7e436154039fca862f0cbacbbec8dcd3",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-after-ack/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-after-ack/input.json",
+      "bytes": 351,
+      "sha256": "199d24ca92bc18e23ca11af85ce5919bc609e9f7f4b5db5682b6c1c561802d35",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-after-ack/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-after-ack/journal-at-crash.jsonl",
+      "bytes": 8396,
+      "sha256": "0849367bce98ce8a7717dd990309b64136a222df879d41fb7fc5ffb20e285508",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-after-ack/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-after-ack/journal.jsonl",
+      "bytes": 8791,
+      "sha256": "50019045f3eb8abf9d7295ac4ca274bd277d803a51b9d8d9b88a822457121184",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-after-ack/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-after-ack/result.json",
+      "bytes": 259,
+      "sha256": "a9e3ed1a2e96eb505afdd4e686bab8b88b1009ff4636233441f1360aae3ce0a2",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-after-sync/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-after-sync/input.json",
+      "bytes": 351,
+      "sha256": "199d24ca92bc18e23ca11af85ce5919bc609e9f7f4b5db5682b6c1c561802d35",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-after-sync/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-after-sync/journal-at-crash.jsonl",
+      "bytes": 8396,
+      "sha256": "0849367bce98ce8a7717dd990309b64136a222df879d41fb7fc5ffb20e285508",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-after-sync/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-after-sync/journal.jsonl",
+      "bytes": 8791,
+      "sha256": "50019045f3eb8abf9d7295ac4ca274bd277d803a51b9d8d9b88a822457121184",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-after-sync/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-after-sync/result.json",
+      "bytes": 152,
+      "sha256": "c40dbb16855e2942ee59521a820c1df31a2a051856b16cfede6dddf3870f3d2f",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-before-write/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-before-write/input.json",
+      "bytes": 351,
+      "sha256": "199d24ca92bc18e23ca11af85ce5919bc609e9f7f4b5db5682b6c1c561802d35",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-before-write/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-before-write/journal-at-crash.jsonl",
+      "bytes": 8001,
+      "sha256": "5e7ec047980e281b0af2fee04445be224f5a8e5d4e92a60d90ee03e3cecab266",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-before-write/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-before-write/journal.jsonl",
+      "bytes": 8396,
+      "sha256": "0849367bce98ce8a7717dd990309b64136a222df879d41fb7fc5ffb20e285508",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-before-write/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-before-write/result.json",
+      "bytes": 154,
+      "sha256": "6b2c0e28e47d2422ffac0b5cc583fe05916c18170d7461eb191075f38de97cc3",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-torn-write/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-torn-write/input.json",
+      "bytes": 351,
+      "sha256": "199d24ca92bc18e23ca11af85ce5919bc609e9f7f4b5db5682b6c1c561802d35",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-torn-write/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-torn-write/journal-at-crash.jsonl",
+      "bytes": 8198,
+      "sha256": "e04cab3699e40bd22aaa9425deb4f040833e19b28f9f5db809e4622e0ada50c0",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-torn-write/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-torn-write/journal.jsonl",
+      "bytes": 8198,
+      "sha256": "e04cab3699e40bd22aaa9425deb4f040833e19b28f9f5db809e4622e0ada50c0",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-torn-write/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/c19-torn-write/result.json",
+      "bytes": 144,
+      "sha256": "b32f79e46df694962c3e9a0190fac5162f6059818a11b97cccfe0a59b87e06b7",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/tamper.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/tamper.jsonl",
+      "bytes": 8396,
+      "sha256": "0849367bce98ce8a7717dd990309b64136a222df879d41fb7fc5ffb20e285508",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/tests.tap",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt01/tests.tap",
+      "bytes": 5583,
+      "sha256": "d876e4b9f76adc03b2e4b69a80c23ab4aaa20c8dd300859585cdeee833346470",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-after-ack/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-after-ack/input.json",
+      "bytes": 406,
+      "sha256": "0b0b5e7239e20b803ae0beb6f26bb181b6da02cc7104da3964415b68a3f2604d",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-after-ack/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-after-ack/journal-at-crash.jsonl",
+      "bytes": 6697,
+      "sha256": "b173ba0f8442250f011213011e0f2cf7ade2ac710b0cc5d5ec772b6f8f7bbdd5",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-after-ack/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-after-ack/journal.jsonl",
+      "bytes": 7148,
+      "sha256": "4e02dd01981837188cd41004050af8805604821d041cbdb5bca81b3a0a7313e8",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-after-ack/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-after-ack/result.json",
+      "bytes": 315,
+      "sha256": "9b59adebbce9941307e007b79a9e125ad98b59c3eb4a0f1adcca6c13673ffbe6",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-after-sync/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-after-sync/input.json",
+      "bytes": 406,
+      "sha256": "0b0b5e7239e20b803ae0beb6f26bb181b6da02cc7104da3964415b68a3f2604d",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-after-sync/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-after-sync/journal-at-crash.jsonl",
+      "bytes": 6697,
+      "sha256": "b173ba0f8442250f011213011e0f2cf7ade2ac710b0cc5d5ec772b6f8f7bbdd5",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-after-sync/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-after-sync/journal.jsonl",
+      "bytes": 7148,
+      "sha256": "4e02dd01981837188cd41004050af8805604821d041cbdb5bca81b3a0a7313e8",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-after-sync/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-after-sync/result.json",
+      "bytes": 207,
+      "sha256": "30f27e7afe8f105432dcd6e6d5f7195b354e2a2b0e0df35c8d4eebeb4581c25f",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-before-write/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-before-write/input.json",
+      "bytes": 406,
+      "sha256": "0b0b5e7239e20b803ae0beb6f26bb181b6da02cc7104da3964415b68a3f2604d",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-before-write/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-before-write/journal-at-crash.jsonl",
+      "bytes": 6246,
+      "sha256": "00eaa901e7ad5ac133c7b116a1fd8a32cf4f717bfc1cb0f8f7bcd76d928c1252",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-before-write/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-before-write/journal.jsonl",
+      "bytes": 6697,
+      "sha256": "b173ba0f8442250f011213011e0f2cf7ade2ac710b0cc5d5ec772b6f8f7bbdd5",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-before-write/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-before-write/result.json",
+      "bytes": 209,
+      "sha256": "3ee370067304b9c182e787c9800fe9fc9f7da5a75d6ed808a511000af3e3a1a9",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-torn-write/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-torn-write/input.json",
+      "bytes": 406,
+      "sha256": "0b0b5e7239e20b803ae0beb6f26bb181b6da02cc7104da3964415b68a3f2604d",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-torn-write/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-torn-write/journal-at-crash.jsonl",
+      "bytes": 6471,
+      "sha256": "59ff3c7a8107ec20265853eb34cbbc81e11c30bdf118d4e5fcf99a4c6d57fb8e",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-torn-write/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-torn-write/journal.jsonl",
+      "bytes": 6471,
+      "sha256": "59ff3c7a8107ec20265853eb34cbbc81e11c30bdf118d4e5fcf99a4c6d57fb8e",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-torn-write/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c15-torn-write/result.json",
+      "bytes": 199,
+      "sha256": "921433b2a05d34faff29c0f1e0c2b43a875e905fe0c86481a4d41f1f7e84528e",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-after-ack/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-after-ack/input.json",
+      "bytes": 411,
+      "sha256": "39c67c40662f483bac0c5cd238bed23480f3117f844bae0ffc001cc931ab5707",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-after-ack/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-after-ack/journal-at-crash.jsonl",
+      "bytes": 7608,
+      "sha256": "c078f42b39bc4ffc3e91765336de54eb8c28e5eec1ac3010df20e78c1d45a668",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-after-ack/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-after-ack/journal.jsonl",
+      "bytes": 8062,
+      "sha256": "60548a9704e3a6597585b416629dedc708c672ec658b1d8e934afca0dcec3446",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-after-ack/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-after-ack/result.json",
+      "bytes": 318,
+      "sha256": "51e60dbcae9377e7cbd38e95bea001c7af48a2abfc518bf76c53d934a4b0248b",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-after-sync/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-after-sync/input.json",
+      "bytes": 411,
+      "sha256": "39c67c40662f483bac0c5cd238bed23480f3117f844bae0ffc001cc931ab5707",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-after-sync/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-after-sync/journal-at-crash.jsonl",
+      "bytes": 7608,
+      "sha256": "c078f42b39bc4ffc3e91765336de54eb8c28e5eec1ac3010df20e78c1d45a668",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-after-sync/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-after-sync/journal.jsonl",
+      "bytes": 8062,
+      "sha256": "60548a9704e3a6597585b416629dedc708c672ec658b1d8e934afca0dcec3446",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-after-sync/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-after-sync/result.json",
+      "bytes": 212,
+      "sha256": "9a5ae54bbb97d81ebd7aa6cde9bc6c7ab26895a9b84b8a96311059531c610100",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-before-write/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-before-write/input.json",
+      "bytes": 411,
+      "sha256": "39c67c40662f483bac0c5cd238bed23480f3117f844bae0ffc001cc931ab5707",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-before-write/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-before-write/journal-at-crash.jsonl",
+      "bytes": 7154,
+      "sha256": "dd28b63b4b55ae99bf97fd6d341d732cc73300192649c54f22258deeef3127c3",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-before-write/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-before-write/journal.jsonl",
+      "bytes": 7608,
+      "sha256": "c078f42b39bc4ffc3e91765336de54eb8c28e5eec1ac3010df20e78c1d45a668",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-before-write/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-before-write/result.json",
+      "bytes": 214,
+      "sha256": "1f78cc685e0afbadb812e622cb8daf1b2e111ff97385af8eeee8f54743243fac",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-torn-write/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-torn-write/input.json",
+      "bytes": 411,
+      "sha256": "39c67c40662f483bac0c5cd238bed23480f3117f844bae0ffc001cc931ab5707",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-torn-write/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-torn-write/journal-at-crash.jsonl",
+      "bytes": 7381,
+      "sha256": "c89aed136e90c2b1cd2d89f82149913001717d5d8128887ff9d2286f6b837f60",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-torn-write/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-torn-write/journal.jsonl",
+      "bytes": 7381,
+      "sha256": "c89aed136e90c2b1cd2d89f82149913001717d5d8128887ff9d2286f6b837f60",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-torn-write/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c17-torn-write/result.json",
+      "bytes": 204,
+      "sha256": "97518136e670fb6d2c50995b3b0279b7705b62222bcf25173d8985c78ead1e15",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-after-ack/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-after-ack/input.json",
+      "bytes": 349,
+      "sha256": "ecb0e1eab0ed4938b52a20ad708feb9b5f67592edc96ca3ead50b91eed1feea4",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-after-ack/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-after-ack/journal-at-crash.jsonl",
+      "bytes": 8001,
+      "sha256": "5e7ec047980e281b0af2fee04445be224f5a8e5d4e92a60d90ee03e3cecab266",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-after-ack/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-after-ack/journal.jsonl",
+      "bytes": 8394,
+      "sha256": "d46caaa1cfaf78da1f8e1fae270bfeb9a3009d51a8e371cf1817515c956eb162",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-after-ack/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-after-ack/result.json",
+      "bytes": 257,
+      "sha256": "3b21f7bf919fdd9ee69359da6f60c99953e9d42abd16228a66c7a1021af8516c",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-after-sync/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-after-sync/input.json",
+      "bytes": 349,
+      "sha256": "ecb0e1eab0ed4938b52a20ad708feb9b5f67592edc96ca3ead50b91eed1feea4",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-after-sync/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-after-sync/journal-at-crash.jsonl",
+      "bytes": 8001,
+      "sha256": "5e7ec047980e281b0af2fee04445be224f5a8e5d4e92a60d90ee03e3cecab266",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-after-sync/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-after-sync/journal.jsonl",
+      "bytes": 8394,
+      "sha256": "d46caaa1cfaf78da1f8e1fae270bfeb9a3009d51a8e371cf1817515c956eb162",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-after-sync/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-after-sync/result.json",
+      "bytes": 150,
+      "sha256": "2a12e35aa8f5851b5d9be4d3d2dd55e1e7eb52fb8fa560c3ad298f6c86fd7b4d",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-before-write/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-before-write/input.json",
+      "bytes": 349,
+      "sha256": "ecb0e1eab0ed4938b52a20ad708feb9b5f67592edc96ca3ead50b91eed1feea4",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-before-write/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-before-write/journal-at-crash.jsonl",
+      "bytes": 7608,
+      "sha256": "c078f42b39bc4ffc3e91765336de54eb8c28e5eec1ac3010df20e78c1d45a668",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-before-write/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-before-write/journal.jsonl",
+      "bytes": 8001,
+      "sha256": "5e7ec047980e281b0af2fee04445be224f5a8e5d4e92a60d90ee03e3cecab266",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-before-write/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-before-write/result.json",
+      "bytes": 152,
+      "sha256": "929acead5468491bde6aba614e3d4b042bc3a4b25f88c49a1b69e76651a0b482",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-torn-write/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-torn-write/input.json",
+      "bytes": 349,
+      "sha256": "ecb0e1eab0ed4938b52a20ad708feb9b5f67592edc96ca3ead50b91eed1feea4",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-torn-write/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-torn-write/journal-at-crash.jsonl",
+      "bytes": 7804,
+      "sha256": "f0c7ece41b15f58b29b5fa655da20e3082ad15e0fabdb16d13f685c3585dc4ad",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-torn-write/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-torn-write/journal.jsonl",
+      "bytes": 7804,
+      "sha256": "f0c7ece41b15f58b29b5fa655da20e3082ad15e0fabdb16d13f685c3585dc4ad",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-torn-write/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c18-torn-write/result.json",
+      "bytes": 142,
+      "sha256": "b7bd07709ccb42c424360a859ab624db7e436154039fca862f0cbacbbec8dcd3",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-after-ack/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-after-ack/input.json",
+      "bytes": 351,
+      "sha256": "199d24ca92bc18e23ca11af85ce5919bc609e9f7f4b5db5682b6c1c561802d35",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-after-ack/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-after-ack/journal-at-crash.jsonl",
+      "bytes": 8396,
+      "sha256": "0849367bce98ce8a7717dd990309b64136a222df879d41fb7fc5ffb20e285508",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-after-ack/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-after-ack/journal.jsonl",
+      "bytes": 8791,
+      "sha256": "50019045f3eb8abf9d7295ac4ca274bd277d803a51b9d8d9b88a822457121184",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-after-ack/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-after-ack/result.json",
+      "bytes": 259,
+      "sha256": "a9e3ed1a2e96eb505afdd4e686bab8b88b1009ff4636233441f1360aae3ce0a2",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-after-sync/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-after-sync/input.json",
+      "bytes": 351,
+      "sha256": "199d24ca92bc18e23ca11af85ce5919bc609e9f7f4b5db5682b6c1c561802d35",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-after-sync/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-after-sync/journal-at-crash.jsonl",
+      "bytes": 8396,
+      "sha256": "0849367bce98ce8a7717dd990309b64136a222df879d41fb7fc5ffb20e285508",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-after-sync/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-after-sync/journal.jsonl",
+      "bytes": 8791,
+      "sha256": "50019045f3eb8abf9d7295ac4ca274bd277d803a51b9d8d9b88a822457121184",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-after-sync/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-after-sync/result.json",
+      "bytes": 152,
+      "sha256": "c40dbb16855e2942ee59521a820c1df31a2a051856b16cfede6dddf3870f3d2f",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-before-write/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-before-write/input.json",
+      "bytes": 351,
+      "sha256": "199d24ca92bc18e23ca11af85ce5919bc609e9f7f4b5db5682b6c1c561802d35",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-before-write/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-before-write/journal-at-crash.jsonl",
+      "bytes": 8001,
+      "sha256": "5e7ec047980e281b0af2fee04445be224f5a8e5d4e92a60d90ee03e3cecab266",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-before-write/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-before-write/journal.jsonl",
+      "bytes": 8396,
+      "sha256": "0849367bce98ce8a7717dd990309b64136a222df879d41fb7fc5ffb20e285508",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-before-write/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-before-write/result.json",
+      "bytes": 154,
+      "sha256": "6b2c0e28e47d2422ffac0b5cc583fe05916c18170d7461eb191075f38de97cc3",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-torn-write/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-torn-write/input.json",
+      "bytes": 351,
+      "sha256": "199d24ca92bc18e23ca11af85ce5919bc609e9f7f4b5db5682b6c1c561802d35",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-torn-write/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-torn-write/journal-at-crash.jsonl",
+      "bytes": 8198,
+      "sha256": "e04cab3699e40bd22aaa9425deb4f040833e19b28f9f5db809e4622e0ada50c0",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-torn-write/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-torn-write/journal.jsonl",
+      "bytes": 8198,
+      "sha256": "e04cab3699e40bd22aaa9425deb4f040833e19b28f9f5db809e4622e0ada50c0",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-torn-write/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c19-torn-write/result.json",
+      "bytes": 144,
+      "sha256": "b32f79e46df694962c3e9a0190fac5162f6059818a11b97cccfe0a59b87e06b7",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-after-ack/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-after-ack/input.json",
+      "bytes": 349,
+      "sha256": "b7816114996541007202b79cb8d8947874f4f45c78a2aedd905ad3ec1509b33f",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-after-ack/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-after-ack/journal-at-crash.jsonl",
+      "bytes": 8800,
+      "sha256": "2efaa8a80ac50e8ad250fee384e62108e251ec23712df5f98cec4a5c268490fe",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-after-ack/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-after-ack/journal.jsonl",
+      "bytes": 9204,
+      "sha256": "b1f6887d84ee1b70a585c2f02452b8adbefbd8a47643eff9652ec0300fca9fc9",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-after-ack/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-after-ack/result.json",
+      "bytes": 268,
+      "sha256": "5d13e8357e30c37eb8e569fda3df6e8e7fe709170647714aa3db763777b6f352",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-after-sync/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-after-sync/input.json",
+      "bytes": 349,
+      "sha256": "b7816114996541007202b79cb8d8947874f4f45c78a2aedd905ad3ec1509b33f",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-after-sync/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-after-sync/journal-at-crash.jsonl",
+      "bytes": 8800,
+      "sha256": "2efaa8a80ac50e8ad250fee384e62108e251ec23712df5f98cec4a5c268490fe",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-after-sync/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-after-sync/journal.jsonl",
+      "bytes": 9204,
+      "sha256": "b1f6887d84ee1b70a585c2f02452b8adbefbd8a47643eff9652ec0300fca9fc9",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-after-sync/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-after-sync/result.json",
+      "bytes": 150,
+      "sha256": "72c08a1846a1aa9b39117f60a8b69777554e078a9071ea8c35fdfa2cc9e61fd2",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-before-write/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-before-write/input.json",
+      "bytes": 349,
+      "sha256": "b7816114996541007202b79cb8d8947874f4f45c78a2aedd905ad3ec1509b33f",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-before-write/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-before-write/journal-at-crash.jsonl",
+      "bytes": 8396,
+      "sha256": "0849367bce98ce8a7717dd990309b64136a222df879d41fb7fc5ffb20e285508",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-before-write/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-before-write/journal.jsonl",
+      "bytes": 8800,
+      "sha256": "2efaa8a80ac50e8ad250fee384e62108e251ec23712df5f98cec4a5c268490fe",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-before-write/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-before-write/result.json",
+      "bytes": 152,
+      "sha256": "0f56f78f62430414e70e875b79b9705192ceaf1ae48b69d4bf5b2abadd447407",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-torn-write/input.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-torn-write/input.json",
+      "bytes": 349,
+      "sha256": "b7816114996541007202b79cb8d8947874f4f45c78a2aedd905ad3ec1509b33f",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-torn-write/journal-at-crash.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-torn-write/journal-at-crash.jsonl",
+      "bytes": 8598,
+      "sha256": "628f5ee6dc7d9d46264ca4e9f79fddc453bf4fba85914d1c5892881b178bdbb1",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-torn-write/journal.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-torn-write/journal.jsonl",
+      "bytes": 8598,
+      "sha256": "628f5ee6dc7d9d46264ca4e9f79fddc453bf4fba85914d1c5892881b178bdbb1",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-torn-write/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/c20-torn-write/result.json",
+      "bytes": 142,
+      "sha256": "be6b74442ed3c807728204c5bba45ebcdbcd7e1bc138c6260169a1700d0ffd68",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/source/arena-credit-journal.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/source/arena-credit-journal.mjs",
+      "bytes": 2686,
+      "sha256": "d624ada5be4e2cb78b8a10147c5a32de582a6b09f47010743d938e55e3369e57",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/source/arena-credit-model.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/source/arena-credit-model.mjs",
+      "bytes": 9682,
+      "sha256": "59ae94ff04461c4070a3b32cf4c0cf40ea1fc3cbad3a7ba8d52ed1283fc28b40",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/source/arena-credit-model.test.mjs",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/source/arena-credit-model.test.mjs",
+      "bytes": 13931,
+      "sha256": "612a4b675ebac20d4d43c41de9a684d69c5a137d89233493751e19c255e20104",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/tamper.jsonl",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/tamper.jsonl",
+      "bytes": 8800,
+      "sha256": "2efaa8a80ac50e8ad250fee384e62108e251ec23712df5f98cec4a5c268490fe",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/tests.tap",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/attempt02/tests.tap",
+      "bytes": 6449,
+      "sha256": "6a86b3f39e760dc30e70396e75520a881d0b485b144299ce845191c5b8ff8d8e",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/budget-final.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/budget-final.json",
+      "bytes": 3269,
+      "sha256": "e8dbaeef45a4d20a625122f1d1bc3ed0031a91091ef29b5a196051e75e33357a",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/compile.status.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/compile.status.json",
+      "bytes": 2726,
+      "sha256": "60aa82cf41005db5d47460782c5521da01a8565a740c0d0ec3ba97a13ba1eed3",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/compile.stderr",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/compile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/compile.stdout",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/compile.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/inputs.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/inputs.json",
+      "bytes": 3714,
+      "sha256": "c9612fe1524d57ad8edfa8c71dfb742a3177f9b682a651f0687d0ca98bc4a797",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/probe.status.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/probe.status.json",
+      "bytes": 1043,
+      "sha256": "54dec301b56f57d4ebb90a56d1f75c23e9e0b4166ec0dfb13b212e790a772234",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/probe.stderr",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/probe.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/probe.stdout",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/probe.stdout",
+      "bytes": 1868,
+      "sha256": "c08b2116995ce028d07764736f5097fba6cb64cf14b4046bf81d6f8da632e8ed",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/profile-summary.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/profile-summary.json",
+      "bytes": 2079,
+      "sha256": "6ba52468e1cca1224b03741d6d00d5c333d77606082e4b0dd4c3813ad214883b",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/profile.status.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/profile.status.json",
+      "bytes": 1123,
+      "sha256": "d5810187a27b4ae66e2301c0dfc703e54569e67f457cf721ea85cbc9f96dc983",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/profile.stderr",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/profile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/profile.stdout",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/profile.stdout",
+      "bytes": 2042,
+      "sha256": "df205b0a57b79b31bd1e577e6a964d70bd3b0b4c0a8d1fe96180090e654de01d",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-01/result.json",
+      "bytes": 2660,
+      "sha256": "f27079eb21b1bc68048a1ff33b42133ddda764bbbc7166bd26e2afbf8bfeea20",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-02/compile.status.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-02/compile.status.json",
+      "bytes": 2726,
+      "sha256": "2bebeca12e069a0c0fd356bf6234028631e05f715520350cf11bba8bf12b9785",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-02/compile.stderr",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-02/compile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-02/compile.stdout",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-02/compile.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-02/inputs.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-02/inputs.json",
+      "bytes": 3995,
+      "sha256": "281cc03146a9bb0a7326dcb0285c27cd608ed3ceaa7a5e9af5a3c04e56bbd665",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-02/probe.status.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-02/probe.status.json",
+      "bytes": 1043,
+      "sha256": "a81fb67da4bc34841f9fa14b6095b4552e210b6bb9bc35c8dd0eaec33bd9f3b1",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-02/probe.stderr",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-02/probe.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-02/probe.stdout",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-02/probe.stdout",
+      "bytes": 2216,
+      "sha256": "6de9725f9d0fe4b652aac6805eeff0f363ce9a6187f3c432407ac12048d8c7c9",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-02/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-02/result.json",
+      "bytes": 3040,
+      "sha256": "b888427b56bc8567cecd8c2eed80099aefe0022759ce8451ef0fff67b1bc4d25",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-03/FinancialKernel.kt",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-03/FinancialKernel.kt",
+      "bytes": 31468,
+      "sha256": "544fdc7224afec4ad75e8c3209e075418d216396bd38a13470a4d30f194c15d0",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-03/compile.status.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-03/compile.status.json",
+      "bytes": 2650,
+      "sha256": "73049e2d0f46d6eb5ae3e09652ccaee5d09f3c8d976ded22cc0044d958f4071f",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-03/compile.stderr",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-03/compile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-03/compile.stdout",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-03/compile.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-03/inputs.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-03/inputs.json",
+      "bytes": 3920,
+      "sha256": "94370574c97041a703d5ae9e24ed0eb8322b55ef3e0a148dcbbae8927bba9b68",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-03/probe.status.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-03/probe.status.json",
+      "bytes": 1043,
+      "sha256": "2b45a58a2538321d68ebce89b415820e7aae3392554c3ebe410841e7c4ba6a9a",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-03/probe.stderr",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-03/probe.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-03/probe.stdout",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-03/probe.stdout",
+      "bytes": 2223,
+      "sha256": "113582253e4cc3a6519b36570cf0ebc2085ab30b5ae9cc11af232ac90f5eecaa",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-03/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-03/result.json",
+      "bytes": 3047,
+      "sha256": "a9015c08d9c9c47b9564ea1214fb51d01b8355940ec604de82a76341e3bf2b86",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-04/FinancialKernel.kt",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-04/FinancialKernel.kt",
+      "bytes": 31468,
+      "sha256": "544fdc7224afec4ad75e8c3209e075418d216396bd38a13470a4d30f194c15d0",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-04/compile.status.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-04/compile.status.json",
+      "bytes": 2650,
+      "sha256": "d6c7df81caa0bfd23126794e97d641f341959b9d0ab69dad6adf1c4c54eee82e",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-04/compile.stderr",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-04/compile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-04/compile.stdout",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-04/compile.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-04/inputs.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-04/inputs.json",
+      "bytes": 3920,
+      "sha256": "adbcac366a24d895ae406db7a2b2e12c0799b4e714a09eb01e5d35a37e3dffb4",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-04/probe.status.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-04/probe.status.json",
+      "bytes": 1043,
+      "sha256": "da7c145c4492c88e9a7264f70af7b9b75f7d3b790b62517bd62b253dde307eee",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-04/probe.stderr",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-04/probe.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-04/probe.stdout",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-04/probe.stdout",
+      "bytes": 2342,
+      "sha256": "f946f1f59fdebc3624e18525ee814d4841b303b6e6d22c98783e9f7d6c19ba8c",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-04/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-04/result.json",
+      "bytes": 3174,
+      "sha256": "e2ba8708eb1188fc840c116f8e8b78790867ad6073b32f2e310ce4ae55bbb143",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-05/compile.status.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-05/compile.status.json",
+      "bytes": 2726,
+      "sha256": "0d1f623b233a426aed53fb8a24a025cd12103f06ff58ed0d2afb7dbab61892ec",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-05/compile.stderr",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-05/compile.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-05/compile.stdout",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-05/compile.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-05/inputs.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-05/inputs.json",
+      "bytes": 3995,
+      "sha256": "ee95e8427e9bd619afce0fee01254beb312bf728add84b1e349d7c350abefa02",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-05/probe.status.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-05/probe.status.json",
+      "bytes": 1043,
+      "sha256": "cec905c22d2d7b0e9cd4f69a4e9849d0415eeb3a0d3815be63eb8a0131925711",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-05/probe.stderr",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-05/probe.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-05/probe.stdout",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-05/probe.stdout",
+      "bytes": 2343,
+      "sha256": "39e5dc0f7a7b6dbe574fe030db0cae82d19b224406d4486d770d684f7217b48e",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-05/result.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/calcify-architecture-kernel-05/result.json",
+      "bytes": 3175,
+      "sha256": "32c5c670a8a2908b314f27e7aa451b3e90ff43cbbcbb695fa37d1a6d80d8078f",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/exclusions.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/initial-kernel-and-budget/exclusions.json",
+      "bytes": 525,
+      "sha256": "d50acbe4c13ca061e9af21599cefb9f1251a4938cb2ebb78ccb9d4214f535d90",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/provenance.json",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/provenance.json",
+      "bytes": 1178,
+      "sha256": "e11dd9c7040461c3a00805469a91e739cad9bcc08fd79470f6057dea5e6fd093",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    },
+    {
+      "source_path": "docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/session-focused-tests.tap",
+      "archive_path": "records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/session-focused-tests.tap",
+      "bytes": 4258,
+      "sha256": "76bf8eeb6f86b7cdf754d4d1aec3c96116a7e7a0b7663c66b9c244d96b325399",
+      "reason": "Arena credit limits, reuse/double-spend/process-replay proof and initial kernel/queue research companions"
+    }
+  ]
+}
