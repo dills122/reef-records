@@ -1,0 +1,1 @@
+{"acknowledgement":null,"command":{"id":"c20","trade":"sourceB","type":"fail"},"cut":"before-write","outcome":"REPLAY_RETRY_PARITY","signal":"SIGKILL"}

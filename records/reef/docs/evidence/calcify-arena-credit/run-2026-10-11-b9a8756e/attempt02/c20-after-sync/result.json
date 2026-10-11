@@ -1,0 +1,1 @@
+{"acknowledgement":null,"command":{"id":"c20","trade":"sourceB","type":"fail"},"cut":"after-sync","outcome":"REPLAY_RETRY_PARITY","signal":"SIGKILL"}

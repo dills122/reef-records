@@ -1,0 +1,214 @@
+TAP version 13
+# Subtest: genesis transfers pool funding; caps cannot grow with profit or be minted
+ok 1 - genesis transfers pool funding; caps cannot grow with profit or be minted
+  ---
+  duration_ms: 1.301125
+  type: 'test'
+  ...
+# Subtest: unsettled sale finances purchase, reserved pool pays first, proceeds repay debt
+ok 2 - unsettled sale finances purchase, reserved pool pays first, proceeds repay debt
+  ---
+  duration_ms: 1.204958
+  type: 'test'
+  ...
+# Subtest: both settlement orders produce same financial state
+ok 3 - both settlement orders produce same financial state
+  ---
+  duration_ms: 2.13775
+  type: 'test'
+  ...
+# Subtest: account and shared pool holds stop double spending before cash is drawn
+ok 4 - account and shared pool holds stop double spending before cash is drawn
+  ---
+  duration_ms: 1.016542
+  type: 'test'
+  ...
+# Subtest: partial fill converts hold; only confirmed cancellation releases remainder
+ok 5 - partial fill converts hold; only confirmed cancellation releases remainder
+  ---
+  duration_ms: 1.138166
+  type: 'test'
+  ...
+# Subtest: settled securities reserved once; unsettled purchases cannot be resold
+ok 6 - settled securities reserved once; unsettled purchases cannot be resold
+  ---
+  duration_ms: 0.371667
+  type: 'test'
+  ...
+# Subtest: failed source freezes risk, retains commitments and allows funded downstream settlement
+ok 7 - failed source freezes risk, retains commitments and allows funded downstream settlement
+  ---
+  duration_ms: 1.303542
+  type: 'test'
+  ...
+# Subtest: ordered 30s age fence freezes admission without blocking late settlement
+ok 8 - ordered 30s age fence freezes admission without blocking late settlement
+  ---
+  duration_ms: 1.042917
+  type: 'test'
+  ...
+# Subtest: price improvement releases excess hold and out-of-hold fill changes no assets
+ok 9 - price improvement releases excess hold and out-of-hold fill changes no assets
+  ---
+  duration_ms: 0.545958
+  type: 'test'
+  ...
+# Subtest: stable command/trade identities prevent replayed economic effects and payload substitution
+ok 10 - stable command/trade identities prevent replayed economic effects and payload substitution
+  ---
+  duration_ms: 1.151
+  type: 'test'
+  ...
+# Subtest: close needs confirmed cancels and complete settlement/debt reconciliation
+ok 11 - close needs confirmed cancels and complete settlement/debt reconciliation
+  ---
+  duration_ms: 0.923333
+  type: 'test'
+  ...
+# Subtest: 676 sequential competing-order schedules satisfy exact account/pool admission oracle
+ok 12 - 676 sequential competing-order schedules satisfy exact account/pool admission oracle
+  ---
+  duration_ms: 69.007542
+  type: 'test'
+  ...
+# Subtest: deliberate naive counterexamples: unreserved credit, duplicate proceeds, unfunded settlement
+ok 13 - deliberate naive counterexamples: unreserved credit, duplicate proceeds, unfunded settlement
+  ---
+  duration_ms: 0.108583
+  type: 'test'
+  ...
+# Subtest: process SIGKILL admit/reuseBuy at before-write
+ok 14 - process SIGKILL admit/reuseBuy at before-write
+  ---
+  duration_ms: 135.913334
+  type: 'test'
+  ...
+# Subtest: process SIGKILL admit/reuseBuy at torn-write
+ok 15 - process SIGKILL admit/reuseBuy at torn-write
+  ---
+  duration_ms: 112.796958
+  type: 'test'
+  ...
+# Subtest: process SIGKILL admit/reuseBuy at after-sync
+ok 16 - process SIGKILL admit/reuseBuy at after-sync
+  ---
+  duration_ms: 129.645166
+  type: 'test'
+  ...
+# Subtest: process SIGKILL admit/reuseBuy at after-ack
+ok 17 - process SIGKILL admit/reuseBuy at after-ack
+  ---
+  duration_ms: 126.828042
+  type: 'test'
+  ...
+# Subtest: process SIGKILL book/reuse at before-write
+ok 18 - process SIGKILL book/reuse at before-write
+  ---
+  duration_ms: 136.513958
+  type: 'test'
+  ...
+# Subtest: process SIGKILL book/reuse at torn-write
+ok 19 - process SIGKILL book/reuse at torn-write
+  ---
+  duration_ms: 130.580584
+  type: 'test'
+  ...
+# Subtest: process SIGKILL book/reuse at after-sync
+ok 20 - process SIGKILL book/reuse at after-sync
+  ---
+  duration_ms: 141.350083
+  type: 'test'
+  ...
+# Subtest: process SIGKILL book/reuse at after-ack
+ok 21 - process SIGKILL book/reuse at after-ack
+  ---
+  duration_ms: 143.706792
+  type: 'test'
+  ...
+# Subtest: process SIGKILL settle/reuse at before-write
+ok 22 - process SIGKILL settle/reuse at before-write
+  ---
+  duration_ms: 140.738083
+  type: 'test'
+  ...
+# Subtest: process SIGKILL settle/reuse at torn-write
+ok 23 - process SIGKILL settle/reuse at torn-write
+  ---
+  duration_ms: 132.964833
+  type: 'test'
+  ...
+# Subtest: process SIGKILL settle/reuse at after-sync
+ok 24 - process SIGKILL settle/reuse at after-sync
+  ---
+  duration_ms: 145.436125
+  type: 'test'
+  ...
+# Subtest: process SIGKILL settle/reuse at after-ack
+ok 25 - process SIGKILL settle/reuse at after-ack
+  ---
+  duration_ms: 153.201959
+  type: 'test'
+  ...
+# Subtest: process SIGKILL settle/sourceA at before-write
+ok 26 - process SIGKILL settle/sourceA at before-write
+  ---
+  duration_ms: 153.774916
+  type: 'test'
+  ...
+# Subtest: process SIGKILL settle/sourceA at torn-write
+ok 27 - process SIGKILL settle/sourceA at torn-write
+  ---
+  duration_ms: 142.296291
+  type: 'test'
+  ...
+# Subtest: process SIGKILL settle/sourceA at after-sync
+ok 28 - process SIGKILL settle/sourceA at after-sync
+  ---
+  duration_ms: 160.594292
+  type: 'test'
+  ...
+# Subtest: process SIGKILL settle/sourceA at after-ack
+ok 29 - process SIGKILL settle/sourceA at after-ack
+  ---
+  duration_ms: 158.776583
+  type: 'test'
+  ...
+# Subtest: process SIGKILL fail/sourceB at before-write
+ok 30 - process SIGKILL fail/sourceB at before-write
+  ---
+  duration_ms: 165.325708
+  type: 'test'
+  ...
+# Subtest: process SIGKILL fail/sourceB at torn-write
+ok 31 - process SIGKILL fail/sourceB at torn-write
+  ---
+  duration_ms: 146.322334
+  type: 'test'
+  ...
+# Subtest: process SIGKILL fail/sourceB at after-sync
+ok 32 - process SIGKILL fail/sourceB at after-sync
+  ---
+  duration_ms: 161.648958
+  type: 'test'
+  ...
+# Subtest: process SIGKILL fail/sourceB at after-ack
+ok 33 - process SIGKILL fail/sourceB at after-ack
+  ---
+  duration_ms: 163.988417
+  type: 'test'
+  ...
+# Subtest: journal corruption, missing frame, policy change and forged result fail closed
+ok 34 - journal corruption, missing frame, policy change and forged result fail closed
+  ---
+  duration_ms: 114.317541
+  type: 'test'
+  ...
+1..34
+# tests 34
+# suites 0
+# pass 34
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3140.452375

@@ -1,0 +1,11 @@
+{
+  "excluded": [
+    {
+      "path": "/private/tmp/calcify-architecture-kernel-01/kernel-profile.jfr",
+      "bytes": 5566128,
+      "sha256": "2cc6cf956411f60c95593db58b79b4d99b2f5649687f8ef22a72fbde39677447",
+      "reason": "Records hygiene explicitly excludes .jfr recordings; retained locally. Profile summary/status/stdout archived instead."
+    }
+  ],
+  "other_exclusions": "Compiled classes/dependencies/build caches. Initial evolving probe source not fully snapshotted; per-attempt input source hashes retained."
+}

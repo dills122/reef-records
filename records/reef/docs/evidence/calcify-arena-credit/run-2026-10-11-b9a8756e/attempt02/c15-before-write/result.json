@@ -1,0 +1,1 @@
+{"acknowledgement":null,"command":{"account":"A","id":"c15","order":"reuseBuy","price":"1","quantity":"25","side":"BUY","type":"admit"},"cut":"before-write","outcome":"REPLAY_RETRY_PARITY","signal":"SIGKILL"}

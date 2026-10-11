@@ -1,5 +1,11 @@
 # Archive index
 
+## October 11 — Calcify arena credit and initial kernel research
+
+[Proof](records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/README.md), [manifest](manifests/2026-10-11-calcify-arena-credit.json), [provenance](docs/imports/2026-10-11-calcify-arena-credit-provenance.md).
+202 exact records/780789 bytes. Credit34/34,676 ordered schedules,20 process SIGKILL cases; five initial kernel probes and queue-model companions. Single-owner research only. JFR stays local under archive exclusion; initial source gaps documented. Prior treatment/control immutable.
+
+
 ## October 11 — Matched control without cold resolver restart
 
 [Proof](records/reef/docs/evidence/calcify-matched-control/run-2026-10-11-b9a8756e/README.md), [manifest](manifests/2026-10-11-calcify-matched-control.json), [provenance](docs/imports/2026-10-11-calcify-matched-control-provenance.md).

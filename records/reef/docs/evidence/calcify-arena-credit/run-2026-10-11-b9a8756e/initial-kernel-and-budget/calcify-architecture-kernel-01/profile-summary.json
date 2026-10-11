@@ -1,0 +1,89 @@
+{
+  "scope": "14s JFR profile of separate same-code probe; stack sampling and weighted allocations, not causal or exact per-operation CPU costs",
+  "executionSamples": 770,
+  "nearestKernelFrames": [
+    [
+      "<no FinancialKernel frame>",
+      421
+    ],
+    [
+      "com.reef.platform.calcify.financial.FinancialKernel$Companion.canonical",
+      202
+    ],
+    [
+      "com.reef.platform.calcify.financial.FinancialKernel$Companion.canonical$lambda$1",
+      72
+    ],
+    [
+      "com.reef.platform.calcify.financial.FinancialKernel.evolve",
+      19
+    ],
+    [
+      "com.reef.platform.calcify.financial.FinancialKernel$Companion.obj",
+      11
+    ],
+    [
+      "com.reef.platform.calcify.financial.FinancialKernel$Companion.at",
+      8
+    ],
+    [
+      "com.reef.platform.calcify.financial.FinancialKernel$Changes.put",
+      4
+    ],
+    [
+      "com.reef.platform.calcify.financial.FinancialKernel$Companion.semantic",
+      4
+    ],
+    [
+      "com.reef.platform.calcify.financial.FinancialKernel.process",
+      3
+    ],
+    [
+      "com.reef.platform.calcify.financial.FinancialKernel$Changes.encoded",
+      3
+    ],
+    [
+      "com.reef.platform.calcify.financial.FinancialKernel$Companion.normalizePayload",
+      3
+    ],
+    [
+      "com.reef.platform.calcify.financial.FinancialKernel$Companion$canonical$$inlined$sortedBy$1.compare",
+      3
+    ]
+  ],
+  "weightedAllocationBytesByClass": [
+    [
+      "[B",
+      16995737824
+    ],
+    [
+      "com/fasterxml/jackson/core/json/WriterBasedJsonGenerator",
+      4968808952
+    ],
+    [
+      "com/fasterxml/jackson/databind/ser/DefaultSerializerProvider$Impl",
+      4311252688
+    ],
+    [
+      "java/lang/String",
+      3977968088
+    ],
+    [
+      "com/fasterxml/jackson/core/io/IOContext",
+      3194023472
+    ],
+    [
+      "com/fasterxml/jackson/core/json/JsonWriteContext",
+      2865299520
+    ],
+    [
+      "com/fasterxml/jackson/core/util/TextBuffer",
+      2502597496
+    ],
+    [
+      "com/fasterxml/jackson/core/io/ContentReference",
+      2374266784
+    ]
+  ],
+  "gcEvents": 268
+}

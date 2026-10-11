@@ -1,0 +1,1 @@
+{"acknowledgement":null,"command":{"id":"c19","trade":"sourceA","type":"settle"},"cut":"torn-write","outcome":"FAIL_CLOSED","signal":"SIGKILL"}

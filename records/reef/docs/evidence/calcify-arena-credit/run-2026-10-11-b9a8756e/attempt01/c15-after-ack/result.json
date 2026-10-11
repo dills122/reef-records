@@ -1,0 +1,1 @@
+{"acknowledgement":"{\"acknowledged\":\"RESERVED\",\"digest\":\"21a4107a08bbc25810fd493878c90b98e04dc6a64f6c556857a1566d5315f13c\"}","command":{"account":"A","id":"c15","order":"reuseBuy","price":"1","quantity":"25","side":"BUY","type":"admit"},"cut":"after-ack","outcome":"REPLAY_RETRY_PARITY","signal":"SIGKILL"}

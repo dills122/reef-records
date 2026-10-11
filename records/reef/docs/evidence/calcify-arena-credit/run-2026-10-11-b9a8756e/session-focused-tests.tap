@@ -1,0 +1,142 @@
+TAP version 13
+# Subtest: qualifies trade contexts/s and reports distinct order units
+ok 1 - qualifies trade contexts/s and reports distinct order units
+  ---
+  duration_ms: 0.78325
+  type: 'test'
+  ...
+# Subtest: after-deadline observation cannot rescue failed sustained throughput
+ok 2 - after-deadline observation cannot rescue failed sustained throughput
+  ---
+  duration_ms: 0.193083
+  type: 'test'
+  ...
+# Subtest: preflight does not contribute to measured throughput
+ok 3 - preflight does not contribute to measured throughput
+  ---
+  duration_ms: 0.111
+  type: 'test'
+  ...
+# Subtest: missing baseline, verified count, or full-fact proof fails closed
+ok 4 - missing baseline, verified count, or full-fact proof fails closed
+  ---
+  duration_ms: 0.320125
+  type: 'test'
+  ...
+# Subtest: drain bound starts from HTTP completion, not later report receipt
+ok 5 - drain bound starts from HTTP completion, not later report receipt
+  ---
+  duration_ms: 0.070709
+  type: 'test'
+  ...
+# Subtest: short diagnostic cannot qualify
+ok 6 - short diagnostic cannot qualify
+  ---
+  duration_ms: 0.057042
+  type: 'test'
+  ...
+# Subtest: Go omits the disabled receipt-generation field
+ok 7 - Go omits the disabled receipt-generation field
+  ---
+  duration_ms: 0.05425
+  type: 'test'
+  ...
+# Subtest: direct config defaults to no preflight and distinct path units
+ok 8 - direct config defaults to no preflight and distinct path units
+  ---
+  duration_ms: 0.891166
+  type: 'test'
+  ...
+# Subtest: aggressor counts one timed order per trade and excludes 64 seeded makers
+ok 9 - aggressor counts one timed order per trade and excludes 64 seeded makers
+  ---
+  duration_ms: 0.355292
+  type: 'test'
+  ...
+# Subtest: aggressor report must agree with configured mode and trade aliases
+ok 10 - aggressor report must agree with configured mode and trade aliases
+  ---
+  duration_ms: 0.358
+  type: 'test'
+  ...
+# Subtest: zero-trade maker baseline requires exactly the configured accepted orders
+ok 11 - zero-trade maker baseline requires exactly the configured accepted orders
+  ---
+  duration_ms: 0.137917
+  type: 'test'
+  ...
+# Subtest: interior lower and exterior upper contain every monotone interval count
+ok 12 - interior lower and exterior upper contain every monotone interval count
+  ---
+  duration_ms: 0.981042
+  type: 'test'
+  ...
+# Subtest: subtracting only lower bounds cannot establish an improvement
+ok 13 - subtracting only lower bounds cannot establish an improvement
+  ---
+  duration_ms: 0.132291
+  type: 'test'
+  ...
+# Subtest: unknown exterior sample leaves comparison unproven
+ok 14 - unknown exterior sample leaves comparison unproven
+  ---
+  duration_ms: 0.07075
+  type: 'test'
+  ...
+# Subtest: large identical aged population cannot change interval throughput
+ok 15 - large identical aged population cannot change interval throughput
+  ---
+  duration_ms: 0.081791
+  type: 'test'
+  ...
+# Subtest: known zero baseline and exact boundary observations collapse uncertainty
+ok 16 - known zero baseline and exact boundary observations collapse uncertainty
+  ---
+  duration_ms: 0.161709
+  type: 'test'
+  ...
+# Subtest: uses upper start and lower end counts, never interpolated rate
+ok 17 - uses upper start and lower end counts, never interpolated rate
+  ---
+  duration_ms: 0.605875
+  type: 'test'
+  ...
+# Subtest: late completion cannot improve deadline coverage
+ok 18 - late completion cannot improve deadline coverage
+  ---
+  duration_ms: 0.067917
+  type: 'test'
+  ...
+# Subtest: aged population is excluded from measured interval
+ok 19 - aged population is excluded from measured interval
+  ---
+  duration_ms: 0.169791
+  type: 'test'
+  ...
+# Subtest: missing bracketing observations stays unproven
+ok 20 - missing bracketing observations stays unproven
+  ---
+  duration_ms: 0.139542
+  type: 'test'
+  ...
+# Subtest: regressing counters or clocks fail closed
+ok 21 - regressing counters or clocks fail closed
+  ---
+  duration_ms: 0.176
+  type: 'test'
+  ...
+# Subtest: known initial baseline gives conservative fresh interval count
+ok 22 - known initial baseline gives conservative fresh interval count
+  ---
+  duration_ms: 0.058417
+  type: 'test'
+  ...
+1..22
+# tests 22
+# suites 0
+# pass 22
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 56.425083

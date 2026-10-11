@@ -1,0 +1,1 @@
+{"acknowledgement":"{\"acknowledged\":\"EXCEPTION_RETAINED\",\"digest\":\"861dc0f8720d517f77f519d282d7fa152fb8f66e30c07157b449102314ae7dc1\"}","command":{"id":"c20","trade":"sourceB","type":"fail"},"cut":"after-ack","outcome":"REPLAY_RETRY_PARITY","signal":"SIGKILL"}
