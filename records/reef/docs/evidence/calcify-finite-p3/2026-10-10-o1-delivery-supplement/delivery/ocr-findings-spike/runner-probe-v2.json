@@ -1,0 +1,20 @@
+{
+  "runId": 38070877163,
+  "jobId": 114267851324,
+  "actualVersion": "v1.12.9",
+  "exactRange": "51cd90eee43d257bad4f973fc9bd81f273bb4ef7..dcb106c4ddd5ccda60df7c8e6411fca88ef5be14",
+  "terminalState": "complete",
+  "selected": 17,
+  "coverageCounts": {
+    "selected": 17,
+    "completed": 17,
+    "reused": 0,
+    "failed": 0,
+    "waived": 0
+  },
+  "findingCount": 5,
+  "runnerCommentId": 4238498600,
+  "runnerSuggestionByteIdenticalExistingCode": true,
+  "all10GoHashesUnchanged": true,
+  "priorFocusedTestLogSha256": "13cb7a4a7fa0eab79c2401dbfd55bc984e3147feb804e083d818b553c791e8bc"
+}

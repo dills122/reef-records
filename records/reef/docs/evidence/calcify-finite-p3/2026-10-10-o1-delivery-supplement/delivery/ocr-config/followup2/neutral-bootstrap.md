@@ -1,0 +1,11 @@
+# Config follow-up independent review bootstrap
+
+Review instance 2 of 3, same approved OCR recovery unit. Instance1 Ready and PR486 trusted-base merge retained; no reset. O1 independent cap3 of3 exhausted, separate unit untouched.
+
+Checkout /private/tmp/reef-ocr-config-20261010; branch codex/ocr-pin-disable-auto-update; HEAD ed76dd6b196731c454c0868f966424c491f33954. Full target: original trusted base e69e62ada42c633b81f90ccf178680973b398b0c through committed first correction ed76dd6b196731c454c0868f966424c491f33954 plus current three-path working delta. Four target paths and hashes: owned-files.json. Combined patch SHA256 c5d1d34957fe53bdb8abf650dad4886bf818798ea71200710255932206e21fdb; new delta SHA256 cb30366b9624477c880b749a56772df80aef4c10b4da99cc4e148c1e9771fccf. Rule unchanged from first accepted merge.
+
+Review workflow, rule, existing OCR hardening test block and pilot owner paragraph. User approved bounded config recovery, independent review and merge after actual CI; manager sole Git writer. New correction seeks pinned CLI consistency during composite action subprocesses.
+
+Read neutral packet and frozen source first. Record blind candidate ledger before author-explanation.md. Compare complete four-path combined target and isolate new three-path delta. Check trusted-base behavior, supported upstream control, environment propagation before first CLI call, exact pin preservation, test coverage and remaining coverage/cost limits. Relevant docs AGENTS.md, docs/AI_CONTEXT.md, docs/README.md, docs/ENGINEERING_DELIVERY_POLICY.md, docs/steering/repository.md. Known graph indexes stale/different checkout; current-source fallback required for structural claims.
+
+Read-only source. Reviewer may write only followup2/review2/. No provider/secret access, package installs, OCR execution, Git mutation, network writes, rerun, additional reviewer or review-cap reset. Safe focused local tests permitted. Primary pinned source/npm copies and untruncated hosted failure log available in original checkout research directory; author explanation withheld until blind ledger. Return actionable findings or Ready/Not ready scoped verdict with exact source/verification limits. No actual hosted review success assumed.

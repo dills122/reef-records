@@ -1,0 +1,26 @@
+{
+  "cwd": "/private/tmp/reef-ocr-config-20261010",
+  "originalTrustedBase": "e69e62ada42c633b81f90ccf178680973b398b0c",
+  "mergedFirstFix": "ed76dd6b196731c454c0868f966424c491f33954",
+  "head": "ed76dd6b196731c454c0868f966424c491f33954",
+  "branch": "codex/ocr-pin-disable-auto-update",
+  "files": {
+    ".github/workflows/open-code-review-pilot.yml": "2448b8e666e1fab7acefcc4eb22e7236a81aa374f41446d6dfc7958aaf981b33",
+    ".opencodereview/rule.json": "121276b786a9f75e1c0a5f766358cbf38e08859c9d91b7541a882dd2caacd0eb",
+    "scripts/dev/ci-workflow-hardening.test.mjs": "96cbe9a7473a2a05a4f9d29c9c3e7a6b9abb4e36b04d332c4096c246e8dd7ecf",
+    "docs/CI_OPERATIONS.md": "78c6181665c251144966b28e1f9dd8b6c320a85f67f5c5dcd2e0c4b2c14b4b17"
+  },
+  "combinedPatchSha256": "c5d1d34957fe53bdb8abf650dad4886bf818798ea71200710255932206e21fdb",
+  "newDeltaPatchSha256": "cb30366b9624477c880b749a56772df80aef4c10b4da99cc4e148c1e9771fccf",
+  "newDeltaFiles": [
+    ".github/workflows/open-code-review-pilot.yml",
+    "scripts/dev/ci-workflow-hardening.test.mjs",
+    "docs/CI_OPERATIONS.md"
+  ],
+  "ruleUnchangedFromMergedFirstFix": true,
+  "configReviewInstancesConsumed": 1,
+  "nextReviewInstance": 2,
+  "maximumConfigReviewInstances": 3,
+  "o1ReviewInstancesConsumed": 3,
+  "maximumO1ReviewInstances": 3
+}

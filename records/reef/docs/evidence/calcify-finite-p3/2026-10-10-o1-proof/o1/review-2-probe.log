@@ -1,0 +1,31 @@
+ACCEPTED valid-prefix equal=true
+ACCEPTED valid-certified-replay equal=true
+ACCEPTED replay-kind equal=true
+UNEXPECTED_RESULT replay-kind expectedRefused=true
+ACCEPTED replay-within-ordinal equal=true
+UNEXPECTED_RESULT replay-within-ordinal expectedRefused=true
+ACCEPTED replay-flat-ordinal equal=true
+UNEXPECTED_RESULT replay-flat-ordinal expectedRefused=true
+ACCEPTED replay-outcome-ordinal equal=true
+UNEXPECTED_RESULT replay-outcome-ordinal expectedRefused=true
+ACCEPTED replay-command-id equal=true
+UNEXPECTED_RESULT replay-command-id expectedRefused=true
+ACCEPTED replay-kind-unspecified equal=true
+UNEXPECTED_RESULT replay-kind-unspecified expectedRefused=true
+REFUSED trade-foreign-run trade command/scope/provenance mismatch
+REFUSED trade-foreign-source trade command/scope/provenance mismatch
+REFUSED trade-blank-executions execution party/role contradiction
+REFUSED cancel-wrong-order accepted result command mismatch
+REFUSED trade-price-cap-with-consistent-pairs economics outside finite profile
+FULL_VALUE suffix={} parseAccepted=false reduceAccepted=false
+FULL_VALUE suffix=[] parseAccepted=false reduceAccepted=false
+FULL_VALUE suffix=true parseAccepted=false reduceAccepted=false
+FULL_VALUE suffix=null parseAccepted=false reduceAccepted=false
+FULL_VALUE suffix=42 parseAccepted=false reduceAccepted=false
+FULL_VALUE suffix=trailing-garbage parseAccepted=false reduceAccepted=false
+FULL_VALUE suffix="text" parseAccepted=false reduceAccepted=false
+FULL_VALUE legal-whitespace closed=true bytes=2007 sourceHashExact=true
+MANAGED_FULL_VALUE original-suffix-and-frontier-assertions=PASS
+SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.

@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "source_root": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery",
+  "configuration_commit": "b03c3b30bf54d2d49e78c96e50e0454669e1ec3f",
+  "trusted_base": "e69e62ada42c633b81f90ccf178680973b398b0c",
+  "files": [
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/actionlint.log",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/actionlint.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/author-explanation.md",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/author-explanation.md",
+      "bytes": 3513,
+      "sha256": "8a4e66f844d82f44ed969e2437924b8dc3da3d0dd55bc5e9d8680e9ac580141c",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/ci-hardening-green.log",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/ci-hardening-green.log",
+      "bytes": 42,
+      "sha256": "8a4af3c7efa4dad22bd2622d250ce9012d8122da8d6a677ebcdd6c51b3c9b790",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/commit.txt",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/commit.txt",
+      "bytes": 41,
+      "sha256": "650f6becf589f8378e823157a116a360cdd1af98febdfd31b7ce8573bf72b8f1",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/finding-response-1.md",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/finding-response-1.md",
+      "bytes": 1951,
+      "sha256": "5b86fffff0bb7841910be5b10b908bc6b6b6b16a50babff4ee64e23351f02b3f",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/focused-coverage-check.mjs",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/focused-coverage-check.mjs",
+      "bytes": 2446,
+      "sha256": "d274ec60777523bc3202ce7e3149f61714d746a9a3e73361c7a6ef8147694855",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/focused-coverage-result.json",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/focused-coverage-result.json",
+      "bytes": 4864,
+      "sha256": "249fab2a4b59fe84efd2b681eba4a18ff05d3078294b786ea2c110f68bbbfd54",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/focused-coverage.log",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/focused-coverage.log",
+      "bytes": 102,
+      "sha256": "d5b1b2917fdb54544a0b21236599fec6977c23bf74e85d6dce5e55756d2a67ea",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/hosted-selection-fixture.json",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/hosted-selection-fixture.json",
+      "bytes": 9906,
+      "sha256": "f83c985673b246e5c6991645bc9c0667dcf7b0797615a21339ba9c90371e3323",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/manager-response-1.md",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/manager-response-1.md",
+      "bytes": 325,
+      "sha256": "3b26bd0129eec54d6c2acc4e5c84900341883ffb9c3b7d9d4c5689ff65366357",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/neutral-bootstrap.md",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/neutral-bootstrap.md",
+      "bytes": 2114,
+      "sha256": "4dc5fd192709a88315368ac3c448b78b09c8b8f4c01a86b2c6ccab1758fe88e3",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/old-guard-red.log",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/old-guard-red.log",
+      "bytes": 1011,
+      "sha256": "0058bf501a27744e9328bf787d7f81ac5c6d0642f290f2c499a0c1b868fafd5d",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/owned-files.json",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/owned-files.json",
+      "bytes": 1001,
+      "sha256": "7eaf6652d3ea6cfb8ff75f04856ef0d1df8c542aec4a31e555f0e6cdc5ed9c21",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/owned.patch",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/owned.patch",
+      "bytes": 6284,
+      "sha256": "3e721f170b1d32034e7683202a60a5c4a59b2935461532fbc61cabc6321ab786",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/pr-body.md",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/pr-body.md",
+      "bytes": 1524,
+      "sha256": "0b3d0ce34184a181d3c266b6924f3bd9fd991c07768cccfad41409264fdc6525",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/pr-publication-state.json",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/pr-publication-state.json",
+      "bytes": 173,
+      "sha256": "45d2ed0a9a27a9a8dba5802f443b7e8779e03b4b70461ec28412826602584c77",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/required-results-build-container.log",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/required-results-build-container.log",
+      "bytes": 2343,
+      "sha256": "216c0bf4a2343bbb78158c768e25148353dea79997d5344c951d1c30a49470c5",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/script-surface.log",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/script-surface.log",
+      "bytes": 871,
+      "sha256": "b2ca8c6b19bf4566453a91d00a4df1c2a87e5c7ed11012bcc5f06abbd132dc49",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/verification.json",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/verification.json",
+      "bytes": 3362,
+      "sha256": "bfee81b7be47f5f16fb731944a58c9c5e7d4c37c65bc7b88d91c65d0b6d0ba9b",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/review1/actionlint.log",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/actionlint.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/review1/ci-hardening.log",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/ci-hardening.log",
+      "bytes": 42,
+      "sha256": "8a4af3c7efa4dad22bd2622d250ce9012d8122da8d6a677ebcdd6c51b3c9b790",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/review1/diff-check.log",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/diff-check.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/review1/focused-coverage-check.mjs",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/focused-coverage-check.mjs",
+      "bytes": 4334,
+      "sha256": "6bd00fa9f0de7151d73901b9435039e63d64d745031e172b3cdccab6ce7baf4e",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/review1/focused-coverage-result.json",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/focused-coverage-result.json",
+      "bytes": 5342,
+      "sha256": "ec19a8413775f63ae0f7002fd70650c5fc2c445b70514f954d39e9b3c47c67a6",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/review1/focused-coverage.log",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/focused-coverage.log",
+      "bytes": 5007,
+      "sha256": "14f59ad6eb8f99a3a7805a4f66fd0e29a11036ee21bc16c2c8318e3771c05183",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/review1/preliminary.md",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/preliminary.md",
+      "bytes": 2293,
+      "sha256": "75c0a9ab7398fb610b6f0730e0bea170ea6a18a2c8481d28666c1a849558ed53",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/review1/report.md",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/report.md",
+      "bytes": 7900,
+      "sha256": "acd118069b126b9e590b4eb6c22be7414a3e9fc5a1515d51338c89ca1bbac43d",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/review1/required-results-build-container.log",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/required-results-build-container.log",
+      "bytes": 2345,
+      "sha256": "b2b136810dbe292b627810318b4905f2726b187e383ac5105fa5811b0f1aaf6c",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/review1/script-surface.log",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/script-surface.log",
+      "bytes": 871,
+      "sha256": "b2ca8c6b19bf4566453a91d00a4df1c2a87e5c7ed11012bcc5f06abbd132dc49",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/review1/source-after.json",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/source-after.json",
+      "bytes": 876,
+      "sha256": "88bc93d3d98206711924bab700d8326974cf3d526731b6d987aaf619ed8acec2",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/review1/source-before.json",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/source-before.json",
+      "bytes": 593,
+      "sha256": "ae853748b1818413292d3fa4e28a506780d3076201283a020e2c4f92ac942562",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/review1/upstream-provenance.json",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/upstream-provenance.json",
+      "bytes": 2631,
+      "sha256": "965b7e9f73f76cf7b545e32e077e5b1519d429c2df15da052a7d18a486a91ad1",
+      "copy": "Exact source bytes; no normalization"
+    },
+    {
+      "external_original_path": "/private/tmp/reef-ocr-config-20261010/.planning/ocr-config-delivery/review1/verification.json",
+      "copied_path": ".planning/calcify-p3-overnight/delivery/ocr-config/review1/verification.json",
+      "bytes": 3212,
+      "sha256": "ef7b7e2663cc99c260771436012ee1795b2291ab9252269fc4986edc14e15483",
+      "copy": "Exact source bytes; no normalization"
+    }
+  ],
+  "excluded": [
+    "review1/upstream-selection.go: downloaded third-party primary-source bytes; pinned commit/blob/SHA/URL preserved in upstream-provenance.json"
+  ],
+  "authorization_snapshot": "Explicit selected derived field, full active session excluded"
+}

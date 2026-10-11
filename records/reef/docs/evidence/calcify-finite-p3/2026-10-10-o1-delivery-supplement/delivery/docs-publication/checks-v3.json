@@ -1,0 +1,38 @@
+{
+  "version": 3,
+  "scope": "Current label state correction only in five owned publication prose/inventory docs",
+  "delta": "OCR initially applied/failed; label temporarily removed, reapply/retry held until approved trusted config merges; sourceCI/O1/proof unchanged",
+  "files": [
+    {
+      "path": "docs/WORK_PLAN.md",
+      "bytes": 57135,
+      "sha256": "0346b38938545b25c99439c222de5a2a8f4d0d4c72cc12ad9cc72d2d591e0756"
+    },
+    {
+      "path": "docs/evidence/calcify-finite-p3/README.md",
+      "bytes": 10112,
+      "sha256": "cb65be654ec5e63f2166338fe34161d89d5b34ba5ce895e770c3b27f3ef38c69"
+    },
+    {
+      "path": "docs/work/handoffs/2026-10-10-calcify-finite-p3-overnight.md",
+      "bytes": 6901,
+      "sha256": "64687b52e533abea4c5e9f576d18fe17cb9aefb0322e9511cea1b66843e1c200"
+    },
+    {
+      "path": "docs/records/2026-10-10-calcify-finite-p3-retention.json",
+      "bytes": 9742,
+      "sha256": "4f6f782c50886954cb1dce99b228c78c1bb68bd3403f62f61d3e694378f1aa62"
+    },
+    {
+      "path": "docs/records/retained-evidence.json",
+      "bytes": 76203,
+      "sha256": "961ba27b7fb69e1ff28072592086d48f363f1d523040a29cb745b376b15b0cac"
+    }
+  ],
+  "links": 49,
+  "whitespace": "PASS",
+  "inventory_hashes": "PASS",
+  "issues": [],
+  "prior_v1_v2_receipts": "Unchanged",
+  "frozen": "Ready for manager commit; no further outcomes awaited"
+}

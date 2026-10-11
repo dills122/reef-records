@@ -1,0 +1,1096 @@
+diff --git a/services/matching-engine/internal/domain/calcify_lifecycle.go b/services/matching-engine/internal/domain/calcify_lifecycle.go
+new file mode 100644
+index 000000000..c9dc099f8
+--- /dev/null
++++ b/services/matching-engine/internal/domain/calcify_lifecycle.go
+@@ -0,0 +1,48 @@
++package domain
++
++const OrderLifecycleCommandSchemaV1 = "calcify-order-lifecycle-command-v1"
++
++// OrderLifecycleCommandV1 preserves the decoded, routed attempted command.
++// It is source evidence, not acceptance or financial authority. The separate
++// finite binding identifies immutable configuration; activation is gated elsewhere.
++type OrderLifecycleCommandV1 struct {
++	Schema              string                  `json:"schema"`
++	SourceProfileHash   string                  `json:"sourceProfileHash"`
++	FiniteBindingDigest string                  `json:"finiteBindingDigest"`
++	CommandType         string                  `json:"commandType"`
++	CommandID           string                  `json:"commandId"`
++	RunID               string                  `json:"runId"`
++	VenueSessionID      string                  `json:"venueSessionId"`
++	InstrumentID        string                  `json:"instrumentId"`
++	OrderID             string                  `json:"orderId"`
++	ParticipantID       string                  `json:"participantId"`
++	AccountID           string                  `json:"accountId"`
++	TraceID             string                  `json:"traceId"`
++	CausationID         string                  `json:"causationId"`
++	CorrelationID       string                  `json:"correlationId"`
++	ActorID             string                  `json:"actorId"`
++	OccurredAt          string                  `json:"occurredAt"`
++	Submit              *OrderLifecycleSubmitV1 `json:"submit,omitempty"`
++	Modify              *OrderLifecycleModifyV1 `json:"modify,omitempty"`
++	Cancel              *OrderLifecycleCancelV1 `json:"cancel,omitempty"`
++}
++
++type OrderLifecycleSubmitV1 struct {
++	ClientOrderID string `json:"clientOrderId"`
++	Side          Side   `json:"side"`
++	OrderType     string `json:"orderType"`
++	QuantityUnits string `json:"quantityUnits"`
++	LimitPrice    string `json:"limitPrice"`
++	Currency      string `json:"currency"`
++	TimeInForce   string `json:"timeInForce"`
++}
++
++// QuantityUnits is amended total quantity, including previously filled units.
++type OrderLifecycleModifyV1 struct {
++	QuantityUnits string `json:"quantityUnits"`
++	LimitPrice    string `json:"limitPrice"`
++}
++
++type OrderLifecycleCancelV1 struct {
++	Reason string `json:"reason"`
++}
+diff --git a/services/matching-engine/internal/app/calcify_source_profile.go b/services/matching-engine/internal/app/calcify_source_profile.go
+index e33f0b914..37bacfde9 100644
+--- a/services/matching-engine/internal/app/calcify_source_profile.go
++++ b/services/matching-engine/internal/app/calcify_source_profile.go
+@@ -92,6 +92,12 @@ func (s *Service) calcifySourceProfileHash() string {
+ 	return hex.EncodeToString(digest[:])
+ }
+ 
++// CalcifySourceProfileHash exposes existing immutable v1 identity without
++// exporting mutable profile data or changing canonical bytes.
++func (s *Service) CalcifySourceProfileHash() string {
++	return s.calcifySourceProfileHash()
++}
++
+ func (s *Service) calcifySourceScope(run, session, instrument string) bool {
+ 	p := s.calcifySourceProfile
+ 	if p == nil {
+diff --git a/services/matching-engine/internal/app/calcify_source_identity_test.go b/services/matching-engine/internal/app/calcify_source_identity_test.go
+new file mode 100644
+index 000000000..8ea8f53c1
+--- /dev/null
++++ b/services/matching-engine/internal/app/calcify_source_identity_test.go
+@@ -0,0 +1,24 @@
++package app
++
++import (
++	"crypto/sha256"
++	"encoding/hex"
++	"testing"
++)
++
++func TestCalcifySourcePublicIdentityPreservesV1Bytes(t *testing.T) {
++	// Exact pre-existing v1 field order and sorted run IDs; no lifecycle fields.
++	canonical := `{"schema":"calcify-finite-source-v1","runIds":["p0-other","p0-run"],"venueSessionId":"p0-session","instrumentId":"AAPL","currency":"USD","maxOrderIds":8,"maxQuantityUnits":10,"maxLimitPrice":1000}`
++	digest := sha256.Sum256([]byte(canonical))
++	service := finiteSourceService(t)
++	before := service.Snapshot().Checksum
++	if service.CalcifySourceProfileHash() != hex.EncodeToString(digest[:]) || service.CalcifySourceProfileHash() != service.Snapshot().Metadata.CalcifySourceProfileHash {
++		t.Fatal("public identity changed v1 profile hash")
++	}
++	if service.Snapshot().Checksum != before {
++		t.Fatal("identity accessor mutated state")
++	}
++	if NewService().CalcifySourceProfileHash() != "" {
++		t.Fatal("disabled source profile fabricated identity")
++	}
++}
+diff --git a/services/matching-engine/internal/streamdirect/config.go b/services/matching-engine/internal/streamdirect/config.go
+index eeb16b9db..a7ee59ea4 100644
+--- a/services/matching-engine/internal/streamdirect/config.go
++++ b/services/matching-engine/internal/streamdirect/config.go
+@@ -1,69 +1,99 @@
+ package streamdirect
+ 
+ import (
++	"encoding/hex"
++	"fmt"
+ 	"os"
+ 	"strconv"
+ 	"strings"
+ 	"time"
++
++	"github.com/dills122/reef/services/matching-engine/internal/app"
+ )
+ 
+ type RuntimeConfig struct {
+-	Enabled                  bool
+-	LogProvider              string
+-	ShardID                  string
+-	NatsURL                  string
+-	KafkaBootstrap           string
+-	CommandStream            string
+-	CommandSubjectPrefix     string
+-	EventStream              string
+-	EventSubjectPrefix       string
+-	OwnershipTopic           string
+-	OwnershipGroup           string
+-	PartitionCount           int
+-	Partitions               []int
+-	DurablePrefix            string
+-	BatchSize                int
+-	ConnectTimeout           time.Duration
+-	RecoveryTimeout          time.Duration
+-	FetchTimeout             time.Duration
+-	PollInterval             time.Duration
+-	AckWait                  time.Duration
+-	MaxAckPending            int
+-	TestFailAckOnce          bool
+-	TestStopAfterAckFail     bool
+-	TestFailPublishOnce      bool
+-	TestStopAfterPublishFail bool
++	Enabled                    bool
++	LogProvider                string
++	ShardID                    string
++	NatsURL                    string
++	KafkaBootstrap             string
++	CommandStream              string
++	CommandSubjectPrefix       string
++	EventStream                string
++	EventSubjectPrefix         string
++	OwnershipTopic             string
++	OwnershipGroup             string
++	PartitionCount             int
++	Partitions                 []int
++	DurablePrefix              string
++	BatchSize                  int
++	ConnectTimeout             time.Duration
++	RecoveryTimeout            time.Duration
++	FetchTimeout               time.Duration
++	PollInterval               time.Duration
++	AckWait                    time.Duration
++	MaxAckPending              int
++	TestFailAckOnce            bool
++	TestStopAfterAckFail       bool
++	TestFailPublishOnce        bool
++	TestStopAfterPublishFail   bool
++	CalcifyLifecycleEnabled    bool
++	CalcifyFiniteBindingDigest string
+ }
+ 
+ func RuntimeConfigFromEnv() RuntimeConfig {
+ 	partitionCount := envInt("STREAM_ACK_PARTITION_COUNT", 64)
+ 	return RuntimeConfig{
+-		Enabled:                  envBool("MATCHING_ENGINE_DIRECT_STREAM_ENABLED", false),
+-		LogProvider:              streamLogProvider(),
+-		ShardID:                  envString("MATCHING_ENGINE_SHARD_ID", "engine-0"),
+-		NatsURL:                  envString("STREAM_ACK_NATS_URL", "nats://localhost:4222"),
+-		KafkaBootstrap:           envString("STREAM_ACK_KAFKA_BOOTSTRAP_SERVERS", "localhost:9092"),
+-		CommandStream:            envString("STREAM_ACK_COMMAND_STREAM", "REEF_COMMANDS"),
+-		CommandSubjectPrefix:     envString("STREAM_ACK_SUBJECT_PREFIX", "reef.cmd.v1"),
+-		EventStream:              envString("MATCHING_ENGINE_EVENT_STREAM", "REEF_VENUE_EVENTS"),
+-		EventSubjectPrefix:       envString("MATCHING_ENGINE_EVENT_SUBJECT_PREFIX", "reef.venue.events.v1"),
+-		OwnershipTopic:           envString("MATCHING_ENGINE_OWNERSHIP_TOPIC", "REEF_ENGINE_OWNERSHIP"),
+-		OwnershipGroup:           envString("MATCHING_ENGINE_OWNERSHIP_GROUP", "reef-matching-engine-ownership-v1"),
+-		PartitionCount:           partitionCount,
+-		Partitions:               envPartitions("MATCHING_ENGINE_DIRECT_STREAM_PARTITIONS", partitionCount),
+-		DurablePrefix:            envString("MATCHING_ENGINE_DIRECT_STREAM_DURABLE_PREFIX", "reef-engine-direct"),
+-		BatchSize:                envInt("MATCHING_ENGINE_DIRECT_STREAM_BATCH_SIZE", 500),
+-		ConnectTimeout:           time.Duration(envInt("MATCHING_ENGINE_DIRECT_STREAM_CONNECT_TIMEOUT_MS", 60000)) * time.Millisecond,
+-		RecoveryTimeout:          time.Duration(envInt("MATCHING_ENGINE_KAFKA_RECOVERY_TIMEOUT_MS", 900000)) * time.Millisecond,
+-		FetchTimeout:             time.Duration(envInt("MATCHING_ENGINE_DIRECT_STREAM_FETCH_TIMEOUT_MS", 200)) * time.Millisecond,
+-		PollInterval:             time.Duration(envInt("MATCHING_ENGINE_DIRECT_STREAM_POLL_MS", 5)) * time.Millisecond,
+-		AckWait:                  time.Duration(envInt("MATCHING_ENGINE_DIRECT_STREAM_ACK_WAIT_MS", 60000)) * time.Millisecond,
+-		MaxAckPending:            envInt("MATCHING_ENGINE_DIRECT_STREAM_MAX_ACK_PENDING", 4000),
+-		TestFailAckOnce:          envBool("MATCHING_ENGINE_DIRECT_TEST_FAIL_ACK_ONCE", false),
+-		TestStopAfterAckFail:     envBool("MATCHING_ENGINE_DIRECT_TEST_STOP_AFTER_ACK_FAILURE", false),
+-		TestFailPublishOnce:      envBool("MATCHING_ENGINE_DIRECT_TEST_FAIL_PUBLISH_ONCE", false),
+-		TestStopAfterPublishFail: envBool("MATCHING_ENGINE_DIRECT_TEST_STOP_AFTER_PUBLISH_FAILURE", false),
++		Enabled:                    envBool("MATCHING_ENGINE_DIRECT_STREAM_ENABLED", false),
++		LogProvider:                streamLogProvider(),
++		ShardID:                    envString("MATCHING_ENGINE_SHARD_ID", "engine-0"),
++		NatsURL:                    envString("STREAM_ACK_NATS_URL", "nats://localhost:4222"),
++		KafkaBootstrap:             envString("STREAM_ACK_KAFKA_BOOTSTRAP_SERVERS", "localhost:9092"),
++		CommandStream:              envString("STREAM_ACK_COMMAND_STREAM", "REEF_COMMANDS"),
++		CommandSubjectPrefix:       envString("STREAM_ACK_SUBJECT_PREFIX", "reef.cmd.v1"),
++		EventStream:                envString("MATCHING_ENGINE_EVENT_STREAM", "REEF_VENUE_EVENTS"),
++		EventSubjectPrefix:         envString("MATCHING_ENGINE_EVENT_SUBJECT_PREFIX", "reef.venue.events.v1"),
++		OwnershipTopic:             envString("MATCHING_ENGINE_OWNERSHIP_TOPIC", "REEF_ENGINE_OWNERSHIP"),
++		OwnershipGroup:             envString("MATCHING_ENGINE_OWNERSHIP_GROUP", "reef-matching-engine-ownership-v1"),
++		PartitionCount:             partitionCount,
++		Partitions:                 envPartitions("MATCHING_ENGINE_DIRECT_STREAM_PARTITIONS", partitionCount),
++		DurablePrefix:              envString("MATCHING_ENGINE_DIRECT_STREAM_DURABLE_PREFIX", "reef-engine-direct"),
++		BatchSize:                  envInt("MATCHING_ENGINE_DIRECT_STREAM_BATCH_SIZE", 500),
++		ConnectTimeout:             time.Duration(envInt("MATCHING_ENGINE_DIRECT_STREAM_CONNECT_TIMEOUT_MS", 60000)) * time.Millisecond,
++		RecoveryTimeout:            time.Duration(envInt("MATCHING_ENGINE_KAFKA_RECOVERY_TIMEOUT_MS", 900000)) * time.Millisecond,
++		FetchTimeout:               time.Duration(envInt("MATCHING_ENGINE_DIRECT_STREAM_FETCH_TIMEOUT_MS", 200)) * time.Millisecond,
++		PollInterval:               time.Duration(envInt("MATCHING_ENGINE_DIRECT_STREAM_POLL_MS", 5)) * time.Millisecond,
++		AckWait:                    time.Duration(envInt("MATCHING_ENGINE_DIRECT_STREAM_ACK_WAIT_MS", 60000)) * time.Millisecond,
++		MaxAckPending:              envInt("MATCHING_ENGINE_DIRECT_STREAM_MAX_ACK_PENDING", 4000),
++		TestFailAckOnce:            envBool("MATCHING_ENGINE_DIRECT_TEST_FAIL_ACK_ONCE", false),
++		TestStopAfterAckFail:       envBool("MATCHING_ENGINE_DIRECT_TEST_STOP_AFTER_ACK_FAILURE", false),
++		TestFailPublishOnce:        envBool("MATCHING_ENGINE_DIRECT_TEST_FAIL_PUBLISH_ONCE", false),
++		TestStopAfterPublishFail:   envBool("MATCHING_ENGINE_DIRECT_TEST_STOP_AFTER_PUBLISH_FAILURE", false),
++		CalcifyLifecycleEnabled:    envBool("MATCHING_ENGINE_CALCIFY_LIFECYCLE_ENABLED", false),
++		CalcifyFiniteBindingDigest: envString("MATCHING_ENGINE_CALCIFY_FINITE_BINDING_DIGEST", ""),
++	}
++}
++
++// Lifecycle facts require explicit finite model identity. This validates format
++// only; O2 must verify durable registration and bound recovery before live use.
++func validateCalcifyLifecycle(service *app.Service, enabled bool, binding string, batchSize int) error {
++	if !enabled {
++		return nil
++	}
++	decoded, err := hex.DecodeString(binding)
++	if err != nil || len(decoded) != 32 || len(binding) != 64 || binding != strings.ToLower(binding) {
++		return fmt.Errorf("Calcify lifecycle requires lowercase SHA256 finite binding digest")
++	}
++	if service == nil || service.CalcifySourceProfileHash() == "" {
++		return fmt.Errorf("Calcify lifecycle requires finite source profile")
++	}
++	if err := service.ValidateCalcifySourceProfile(); err != nil {
++		return err
++	}
++	if batchSize != 1 {
++		return fmt.Errorf("Calcify lifecycle requires batch size 1")
+ 	}
++	return nil
+ }
+ 
+ func streamLogProvider() string {
+diff --git a/services/matching-engine/internal/streamdirect/processor.go b/services/matching-engine/internal/streamdirect/processor.go
+index f980fcbc7..03fd982f1 100644
+--- a/services/matching-engine/internal/streamdirect/processor.go
++++ b/services/matching-engine/internal/streamdirect/processor.go
+@@ -64,25 +64,29 @@ func (e *fatalProcessorError) Error() string { return e.cause.Error() }
+ func (e *fatalProcessorError) Unwrap() error { return e.cause }
+ 
+ type Processor struct {
+-	service   *app.Service
+-	source    CommandSource
+-	publisher EventBatchPublisher
+-	config    ProcessorConfig
+-	stats     *Stats
+-	now       func() time.Time
++	service              *app.Service
++	source               CommandSource
++	publisher            EventBatchPublisher
++	config               ProcessorConfig
++	stats                *Stats
++	now                  func() time.Time
++	lifecycleError       error
++	lifecycleProfileHash string
+ }
+ 
+ type ProcessorConfig struct {
+-	ShardID              string
+-	Partition            int
+-	BatchSize            int
+-	FetchTimeout         time.Duration
+-	PollInterval         time.Duration
+-	CommandStream        string
+-	EventStreamName      string
+-	Source               string
+-	StopAfterAckFail     bool
+-	StopAfterPublishFail bool
++	ShardID                    string
++	Partition                  int
++	BatchSize                  int
++	FetchTimeout               time.Duration
++	PollInterval               time.Duration
++	CommandStream              string
++	EventStreamName            string
++	Source                     string
++	StopAfterAckFail           bool
++	StopAfterPublishFail       bool
++	CalcifyLifecycleEnabled    bool
++	CalcifyFiniteBindingDigest string
+ }
+ 
+ type Stats struct {
+@@ -143,16 +147,17 @@ type VenueEventBatch struct {
+ }
+ 
+ type CommandOutcomeFact struct {
+-	RunID          string                   `json:"runId,omitempty"`
+-	CommandID      string                   `json:"commandId"`
+-	CommandType    string                   `json:"commandType"`
+-	StreamSequence uint64                   `json:"streamSequence"`
+-	DeliveredCount uint64                   `json:"deliveredCount"`
+-	PayloadHash    string                   `json:"payloadHash"`
+-	InstrumentID   string                   `json:"instrumentId"`
+-	OrderID        string                   `json:"orderId"`
+-	Status         string                   `json:"status"`
+-	Result         domain.SubmitOrderResult `json:"result"`
++	RunID            string                          `json:"runId,omitempty"`
++	CommandID        string                          `json:"commandId"`
++	CommandType      string                          `json:"commandType"`
++	StreamSequence   uint64                          `json:"streamSequence"`
++	DeliveredCount   uint64                          `json:"deliveredCount"`
++	PayloadHash      string                          `json:"payloadHash"`
++	InstrumentID     string                          `json:"instrumentId"`
++	OrderID          string                          `json:"orderId"`
++	Status           string                          `json:"status"`
++	Result           domain.SubmitOrderResult        `json:"result"`
++	LifecycleCommand *domain.OrderLifecycleCommandV1 `json:"lifecycleCommand,omitempty"`
+ }
+ 
+ func NewProcessor(service *app.Service, source CommandSource, publisher EventBatchPublisher, config ProcessorConfig) *Processor {
+@@ -176,7 +181,7 @@ func NewProcessor(service *app.Service, source CommandSource, publisher EventBat
+ 	stats.LastFetchedAt.Store("")
+ 	stats.LastAckedAt.Store("")
+ 	stats.LastBatchID.Store("")
+-	return &Processor{
++	processor := &Processor{
+ 		service:   service,
+ 		source:    source,
+ 		publisher: publisher,
+@@ -184,6 +189,11 @@ func NewProcessor(service *app.Service, source CommandSource, publisher EventBat
+ 		stats:     stats,
+ 		now:       time.Now,
+ 	}
++	processor.lifecycleError = validateCalcifyLifecycle(service, config.CalcifyLifecycleEnabled, config.CalcifyFiniteBindingDigest, config.BatchSize)
++	if config.CalcifyLifecycleEnabled && processor.lifecycleError == nil {
++		processor.lifecycleProfileHash = service.CalcifySourceProfileHash()
++	}
++	return processor
+ }
+ 
+ func (p *Processor) Stats() Snapshot {
+@@ -245,6 +255,9 @@ func (p *Processor) Run(ctx context.Context) error {
+ }
+ 
+ func (p *Processor) ProcessOnce(ctx context.Context) (int, error) {
++	if p.lifecycleError != nil {
++		return 0, &fatalProcessorError{cause: p.lifecycleError}
++	}
+ 	deliveries, err := p.source.Fetch(ctx, p.config.BatchSize, p.config.FetchTimeout)
+ 	if err != nil {
+ 		return 0, err
+@@ -305,6 +318,9 @@ func (p *Processor) ProcessOnce(ctx context.Context) (int, error) {
+ // not publish historical event batches: those were made visible atomically
+ // with the offsets that define the replay boundary.
+ func (p *Processor) RestoreCommitted(ctx context.Context, replayer CommittedCommandReplayer) (int, error) {
++	if p.config.CalcifyLifecycleEnabled {
++		return 0, fmt.Errorf("Calcify lifecycle committed replay requires durable bound recovery (O2)")
++	}
+ 	return replayer.ReplayCommitted(ctx, p.config.BatchSize, func(deliveries []CommandDelivery) error {
+ 		_, _, rollback, err := p.buildBatchMode(
+ 			deliveries,
+@@ -395,16 +411,17 @@ func (p *Processor) buildBatchMode(deliveries []CommandDelivery, createdAt strin
+ 				status = "accepted"
+ 			}
+ 			fact = CommandOutcomeFact{
+-				RunID:          outcome.RunID,
+-				CommandID:      outcome.CommandID,
+-				CommandType:    commandType,
+-				StreamSequence: delivery.StreamSequence(),
+-				DeliveredCount: delivery.DeliveredCount(),
+-				PayloadHash:    sha256Hex(delivery.Data()),
+-				InstrumentID:   outcome.InstrumentID,
+-				OrderID:        outcome.OrderID,
+-				Status:         status,
+-				Result:         outcome.Result,
++				RunID:            outcome.RunID,
++				CommandID:        outcome.CommandID,
++				CommandType:      commandType,
++				StreamSequence:   delivery.StreamSequence(),
++				DeliveredCount:   delivery.DeliveredCount(),
++				PayloadHash:      sha256Hex(delivery.Data()),
++				InstrumentID:     outcome.InstrumentID,
++				OrderID:          outcome.OrderID,
++				Status:           status,
++				Result:           outcome.Result,
++				LifecycleCommand: outcome.LifecycleCommand,
+ 			}
+ 		}
+ 
+@@ -482,13 +499,14 @@ func bestEffortCommandID(data []byte) string {
+ }
+ 
+ type processedOutcome struct {
+-	RunID          string
+-	CommandID      string
+-	VenueSessionID string
+-	InstrumentID   string
+-	OrderID        string
+-	Result         domain.SubmitOrderResult
+-	DecodeError    string
++	RunID            string
++	CommandID        string
++	VenueSessionID   string
++	InstrumentID     string
++	OrderID          string
++	Result           domain.SubmitOrderResult
++	DecodeError      string
++	LifecycleCommand *domain.OrderLifecycleCommandV1
+ }
+ 
+ // decodeCommand unmarshals data into a T, returning the zero value and a
+@@ -519,12 +537,13 @@ func (p *Processor) processDelivery(rollback *app.BatchRollback, delivery Comman
+ 		result := p.service.SubmitOrderInBatch(rollback, command)
+ 		result.AcceptedOrder = acceptedOrderFact(command, result)
+ 		return processedOutcome{
+-			RunID:          command.RunID,
+-			CommandID:      command.CommandID,
+-			VenueSessionID: command.VenueSessionID,
+-			InstrumentID:   command.InstrumentID,
+-			OrderID:        command.OrderID,
+-			Result:         result,
++			RunID:            command.RunID,
++			CommandID:        command.CommandID,
++			VenueSessionID:   command.VenueSessionID,
++			InstrumentID:     command.InstrumentID,
++			OrderID:          command.OrderID,
++			Result:           result,
++			LifecycleCommand: p.submitLifecycle(command),
+ 		}, true
+ 	case "ModifyOrder":
+ 		command, decodeErr := decodeCommand[domain.ModifyOrder](delivery.Data(), "modify")
+@@ -541,12 +560,13 @@ func (p *Processor) processDelivery(rollback *app.BatchRollback, delivery Comman
+ 		command.VenueSessionID = venueSessionID
+ 		command.InstrumentID = instrumentID
+ 		return processedOutcome{
+-			RunID:          command.RunID,
+-			CommandID:      command.CommandID,
+-			VenueSessionID: venueSessionID,
+-			InstrumentID:   instrumentID,
+-			OrderID:        command.OrderID,
+-			Result:         p.service.ModifyOrderInBatch(rollback, command),
++			RunID:            command.RunID,
++			CommandID:        command.CommandID,
++			VenueSessionID:   venueSessionID,
++			InstrumentID:     instrumentID,
++			OrderID:          command.OrderID,
++			Result:           p.service.ModifyOrderInBatch(rollback, command),
++			LifecycleCommand: p.modifyLifecycle(command),
+ 		}, true
+ 	case "CancelOrder":
+ 		command, decodeErr := decodeCommand[domain.CancelOrder](delivery.Data(), "cancel")
+@@ -559,12 +579,13 @@ func (p *Processor) processDelivery(rollback *app.BatchRollback, delivery Comman
+ 		command.VenueSessionID = venueSessionID
+ 		command.InstrumentID = instrumentID
+ 		return processedOutcome{
+-			RunID:          command.RunID,
+-			CommandID:      command.CommandID,
+-			VenueSessionID: venueSessionID,
+-			InstrumentID:   instrumentID,
+-			OrderID:        command.OrderID,
+-			Result:         p.service.CancelOrderInBatch(rollback, command),
++			RunID:            command.RunID,
++			CommandID:        command.CommandID,
++			VenueSessionID:   venueSessionID,
++			InstrumentID:     instrumentID,
++			OrderID:          command.OrderID,
++			Result:           p.service.CancelOrderInBatch(rollback, command),
++			LifecycleCommand: p.cancelLifecycle(command),
+ 		}, true
+ 	default:
+ 		return processedOutcome{CommandID: bestEffortCommandID(delivery.Data())}, false
+@@ -607,6 +628,51 @@ func acceptedOrderFact(command domain.SubmitOrder, result domain.SubmitOrderResu
+ 	}
+ }
+ 
++func (p *Processor) submitLifecycle(command domain.SubmitOrder) *domain.OrderLifecycleCommandV1 {
++	if !p.config.CalcifyLifecycleEnabled {
++		return nil
++	}
++	return &domain.OrderLifecycleCommandV1{
++		Schema: domain.OrderLifecycleCommandSchemaV1, SourceProfileHash: p.lifecycleProfileHash,
++		FiniteBindingDigest: p.config.CalcifyFiniteBindingDigest, CommandType: "SubmitOrder",
++		CommandID: command.CommandID, RunID: command.RunID, VenueSessionID: command.VenueSessionID, InstrumentID: command.InstrumentID,
++		OrderID: command.OrderID, ParticipantID: command.ParticipantID, AccountID: command.AccountID,
++		TraceID: command.TraceID, CausationID: command.CausationID, CorrelationID: command.CorrelationID, ActorID: command.ActorID, OccurredAt: command.OccurredAt,
++		Submit: &domain.OrderLifecycleSubmitV1{
++			ClientOrderID: command.ClientOrderID, Side: command.Side, OrderType: command.OrderType,
++			QuantityUnits: command.QuantityUnits, LimitPrice: command.LimitPrice, Currency: command.Currency, TimeInForce: command.TimeInForce,
++		},
++	}
++}
++
++func (p *Processor) modifyLifecycle(command domain.ModifyOrder) *domain.OrderLifecycleCommandV1 {
++	if !p.config.CalcifyLifecycleEnabled {
++		return nil
++	}
++	return &domain.OrderLifecycleCommandV1{
++		Schema: domain.OrderLifecycleCommandSchemaV1, SourceProfileHash: p.lifecycleProfileHash,
++		FiniteBindingDigest: p.config.CalcifyFiniteBindingDigest, CommandType: "ModifyOrder",
++		CommandID: command.CommandID, RunID: command.RunID, VenueSessionID: command.VenueSessionID, InstrumentID: command.InstrumentID,
++		OrderID: command.OrderID, ParticipantID: command.ParticipantID, AccountID: command.AccountID,
++		TraceID: command.TraceID, CausationID: command.CausationID, CorrelationID: command.CorrelationID, ActorID: command.ActorID, OccurredAt: command.OccurredAt,
++		Modify: &domain.OrderLifecycleModifyV1{QuantityUnits: command.QuantityUnits, LimitPrice: command.LimitPrice},
++	}
++}
++
++func (p *Processor) cancelLifecycle(command domain.CancelOrder) *domain.OrderLifecycleCommandV1 {
++	if !p.config.CalcifyLifecycleEnabled {
++		return nil
++	}
++	return &domain.OrderLifecycleCommandV1{
++		Schema: domain.OrderLifecycleCommandSchemaV1, SourceProfileHash: p.lifecycleProfileHash,
++		FiniteBindingDigest: p.config.CalcifyFiniteBindingDigest, CommandType: "CancelOrder",
++		CommandID: command.CommandID, RunID: command.RunID, VenueSessionID: command.VenueSessionID, InstrumentID: command.InstrumentID,
++		OrderID: command.OrderID, ParticipantID: command.ParticipantID, AccountID: command.AccountID,
++		TraceID: command.TraceID, CausationID: command.CausationID, CorrelationID: command.CorrelationID, ActorID: command.ActorID, OccurredAt: command.OccurredAt,
++		Cancel: &domain.OrderLifecycleCancelV1{Reason: command.Reason},
++	}
++}
++
+ func (p *Processor) nakAll(deliveries []CommandDelivery) {
+ 	for _, delivery := range deliveries {
+ 		if err := delivery.Nak(); err != nil {
+diff --git a/services/matching-engine/internal/streamdirect/runner.go b/services/matching-engine/internal/streamdirect/runner.go
+index fb9a69103..8c7e5c360 100644
+--- a/services/matching-engine/internal/streamdirect/runner.go
++++ b/services/matching-engine/internal/streamdirect/runner.go
+@@ -31,6 +31,17 @@ type kafkaRunnerLane struct {
+ }
+ 
+ func StartRunner(parent context.Context, service *app.Service, config RuntimeConfig) (*Runner, error) {
++	if config.CalcifyLifecycleEnabled {
++		if err := validateCalcifyLifecycle(service, true, config.CalcifyFiniteBindingDigest, config.BatchSize); err != nil {
++			return nil, err
++		}
++		if config.LogProvider != "redpanda" {
++			return nil, fmt.Errorf("Calcify lifecycle requires transactional redpanda source")
++		}
++		// Model fact/capture proof cannot authorize replay under a new mode.
++		// O2 replaces this gate only after durable registration and bound restore.
++		return nil, fmt.Errorf("Calcify lifecycle live activation requires durable binding and restore (O2)")
++	}
+ 	if len(config.Partitions) == 0 {
+ 		return nil, fmt.Errorf("matching-engine direct stream requires at least one partition")
+ 	}
+@@ -199,16 +210,18 @@ func startKafkaRunner(parent context.Context, service *app.Service, config Runti
+ 		commandSource := CommandSource(source)
+ 		eventPublisher := wrapEventBatchPublisherWithLocalFaultHooks(publisher, config)
+ 		processor := NewProcessor(service, commandSource, eventPublisher, ProcessorConfig{
+-			ShardID:              config.ShardID,
+-			Partition:            partition,
+-			BatchSize:            config.BatchSize,
+-			FetchTimeout:         config.FetchTimeout,
+-			PollInterval:         config.PollInterval,
+-			CommandStream:        config.CommandStream,
+-			EventStreamName:      config.EventStream,
+-			Source:               "redpanda",
+-			StopAfterAckFail:     config.TestStopAfterAckFail,
+-			StopAfterPublishFail: config.TestStopAfterPublishFail,
++			ShardID:                    config.ShardID,
++			Partition:                  partition,
++			BatchSize:                  config.BatchSize,
++			FetchTimeout:               config.FetchTimeout,
++			PollInterval:               config.PollInterval,
++			CommandStream:              config.CommandStream,
++			EventStreamName:            config.EventStream,
++			Source:                     "redpanda",
++			CalcifyLifecycleEnabled:    config.CalcifyLifecycleEnabled,
++			CalcifyFiniteBindingDigest: config.CalcifyFiniteBindingDigest,
++			StopAfterAckFail:           config.TestStopAfterAckFail,
++			StopAfterPublishFail:       config.TestStopAfterPublishFail,
+ 		})
+ 		runner.processors = append(runner.processors, processor)
+ 		lanes = append(lanes, kafkaRunnerLane{
+diff --git a/services/matching-engine/internal/streamdirect/calcify_lifecycle_test.go b/services/matching-engine/internal/streamdirect/calcify_lifecycle_test.go
+new file mode 100644
+index 000000000..fa8a2d52e
+--- /dev/null
++++ b/services/matching-engine/internal/streamdirect/calcify_lifecycle_test.go
+@@ -0,0 +1,299 @@
++package streamdirect
++
++import (
++	"bytes"
++	"context"
++	"encoding/json"
++	"errors"
++	"fmt"
++	"os"
++	"path/filepath"
++	"testing"
++	"time"
++
++	"github.com/dills122/reef/services/matching-engine/internal/app"
++)
++
++const lifecycleFixtureProfile = `{"schema":"calcify-finite-source-v1","runIds":["p3-run"],"venueSessionId":"p3-session","instrumentId":"AAPL","currency":"USD","maxOrderIds":8,"maxQuantityUnits":10,"maxLimitPrice":100000000000}`
++
++func lifecycleFixtureService(t *testing.T) *app.Service {
++	t.Helper()
++	option, err := app.CalcifySourceProfileFromJSON(lifecycleFixtureProfile, "0")
++	if err != nil {
++		t.Fatal(err)
++	}
++	return app.NewService(app.WithTerminalOrderRetentionLimit(0), option)
++}
++
++func lifecycleFixtureDeliveries() []CommandDelivery {
++	type step struct{ kind, id, side, quantity, price, owner string }
++	steps := []step{
++		{"SubmitOrder", "p0-1", "SELL", "3", "100000000000", "seller"},
++		{"SubmitOrder", "p0-2", "SELL", "2", "100000000000", "seller"},
++		{"SubmitOrder", "p0-3", "BUY", "4", "100000000000", "buyer"},
++		{"ModifyOrder", "p0-2", "", "4", "99000000000", "seller"},
++		{"CancelOrder", "p0-2", "", "", "", "seller"},
++		{"SubmitOrder", "p0-4", "BUY", "2", "98000000000", "buyer"},
++		{"ModifyOrder", "p0-4", "", "2", "100000000000", "buyer"},
++		{"SubmitOrder", "p0-5", "SELL", "2", "100000000000", "seller"},
++		{"CancelOrder", "p0-1", "", "", "", "seller"},
++		{"SubmitOrder", "p0-1", "SELL", "3", "100000000000", "seller"},
++		{"ModifyOrder", "p0-8", "", "2", "100000000000", "buyer"},
++		{"CancelOrder", "p0-8", "", "", "", "buyer"},
++	}
++	deliveries := make([]CommandDelivery, 0, len(steps))
++	for i, step := range steps {
++		payload := map[string]string{
++			"commandId": fmt.Sprintf("p3-cmd-%02d", i+1), "runId": "p3-run",
++			"venueSessionId": "p3-session", "instrumentId": "AAPL", "orderId": step.id,
++			"participantId": step.owner, "accountId": step.owner + "-account",
++			"traceId": fmt.Sprintf("p3-trace-%02d", i+1), "causationId": "p3-fixture",
++			"correlationId": "p3-fixture", "actorId": step.owner + "-actor",
++			"occurredAt": fmt.Sprintf("2026-10-10T03:00:%02dZ", i),
++		}
++		if step.kind != "CancelOrder" {
++			payload["quantityUnits"], payload["limitPrice"] = step.quantity, step.price
++		}
++		if step.kind == "SubmitOrder" {
++			payload["clientOrderId"], payload["side"], payload["orderType"] = "client-"+step.id, step.side, "LIMIT"
++			payload["currency"], payload["timeInForce"] = "USD", "DAY"
++		}
++		if step.kind == "CancelOrder" {
++			payload["reason"] = "finite fixture cancel"
++		}
++		deliveries = append(deliveries, newFakeDelivery("reef.cmd.v1.p00.p3-session.AAPL."+step.kind, uint64(i+1), payload))
++	}
++	return deliveries
++}
++
++func lifecycleFixtureBatches(t *testing.T, config ProcessorConfig) ([]VenueEventBatch, *app.Service) {
++	t.Helper()
++	service := lifecycleFixtureService(t)
++	publisher := &fakePublisher{}
++	config.ShardID, config.Partition, config.BatchSize = "p3-engine", 0, 1
++	config.CommandStream, config.EventStreamName = "CALCIFY_P3_COMMANDS", "CALCIFY_P3_SOURCE"
++	source := &fakeSource{}
++	p := NewProcessor(service, source, publisher, config)
++	clock := time.Date(2026, 10, 10, 3, 0, 0, 0, time.UTC)
++	p.now = func() time.Time { return clock }
++	for i, delivery := range lifecycleFixtureDeliveries() {
++		source.deliveries = []CommandDelivery{delivery}
++		clock = clock.Add(time.Second * time.Duration(i))
++		if n, err := p.ProcessOnce(context.Background()); err != nil || n != 1 {
++			t.Fatalf("command%d: processed=%d err=%v", i+1, n, err)
++		}
++		clock = time.Date(2026, 10, 10, 3, 0, 0, 0, time.UTC)
++	}
++	return publisher.batches, service
++}
++
++func lifecycleJSONL(t *testing.T, batches []VenueEventBatch) []byte {
++	t.Helper()
++	var buffer bytes.Buffer
++	for _, batch := range batches {
++		raw, err := json.Marshal(batch)
++		if err != nil {
++			t.Fatal(err)
++		}
++		buffer.Write(raw)
++		buffer.WriteByte('\n')
++	}
++	return buffer.Bytes()
++}
++
++func TestCalcifyLifecycleLegacyFixture(t *testing.T) {
++	batches, service := lifecycleFixtureBatches(t, ProcessorConfig{})
++	accepted, rejected, trades, units := 0, 0, 0, 0
++	for _, batch := range batches {
++		outcome := batch.Outcomes[0]
++		if outcome.Status == "accepted" {
++			accepted++
++		} else {
++			rejected++
++		}
++		for _, trade := range outcome.Result.Trades {
++			trades++
++			var quantity int
++			fmt.Sscan(trade.QuantityUnits, &quantity)
++			units += quantity
++		}
++	}
++	if accepted != 8 || rejected != 4 || trades != 3 || units != 6 || len(service.Snapshot().Orders) != 5 {
++		t.Fatalf("fixture drift accepted=%d rejected=%d trades=%d units=%d identities=%d", accepted, rejected, trades, units, len(service.Snapshot().Orders))
++	}
++	raw := lifecycleJSONL(t, batches)
++	const legacySHA256 = "bdd4df11f562ba2f4dd217168a3e81e60f96fa4c3fa4a25c01e75830dda26506"
++	if sha256Hex(raw) != legacySHA256 || len(raw) != 16647 {
++		t.Fatal("mode-off fixture changed from pre-implementation bytes")
++	}
++	t.Logf("legacy fixture SHA256=%s bytes=%d", sha256Hex(raw), len(raw))
++	if dir := os.Getenv("CALCIFY_LIFECYCLE_FIXTURE_DIR"); dir != "" {
++		if err := os.MkdirAll(dir, 0755); err != nil {
++			t.Fatal(err)
++		}
++		if err := os.WriteFile(filepath.Join(dir, "legacy-source-v1.jsonl"), raw, 0644); err != nil {
++			t.Fatal(err)
++		}
++	}
++}
++
++func TestCalcifyLifecycleTypedFixture(t *testing.T) {
++	batches, service := lifecycleFixtureBatches(t, ProcessorConfig{CalcifyLifecycleEnabled: true, CalcifyFiniteBindingDigest: lifecycleFixtureBinding})
++	for i, batch := range batches {
++		fact := batch.Outcomes[0].LifecycleCommand
++		if fact == nil || fact.CommandID != fmt.Sprintf("p3-cmd-%02d", i+1) || fact.FiniteBindingDigest != lifecycleFixtureBinding {
++			t.Fatalf("typed fact%d missing or unbound: %+v", i, fact)
++		}
++		if fact.Schema != "calcify-order-lifecycle-command-v1" || fact.SourceProfileHash != service.CalcifySourceProfileHash() || fact.RunID != "p3-run" || fact.VenueSessionID != "p3-session" || fact.InstrumentID != "AAPL" || fact.AccountID != fact.ParticipantID+"-account" || fact.TraceID != fmt.Sprintf("p3-trace-%02d", i+1) || fact.CausationID != "p3-fixture" || fact.CorrelationID != "p3-fixture" || fact.ActorID != fact.ParticipantID+"-actor" || fact.OccurredAt != fmt.Sprintf("2026-10-10T03:00:%02dZ", i) {
++			t.Fatalf("decoded metadata drift%d: %+v", i, fact)
++		}
++		if fact.CommandType != batch.Outcomes[0].CommandType || fact.OrderID != batch.Outcomes[0].OrderID {
++			t.Fatal("typed outer identity drift")
++		}
++		switch fact.CommandType {
++		case "SubmitOrder":
++			if fact.Submit == nil || fact.Modify != nil || fact.Cancel != nil || fact.Submit.TimeInForce != "DAY" || fact.Submit.Currency != "USD" {
++				t.Fatalf("submit payload%d: %+v", i, fact)
++			}
++		case "ModifyOrder":
++			if fact.Modify == nil || fact.Submit != nil || fact.Cancel != nil {
++				t.Fatalf("modify payload%d: %+v", i, fact)
++			}
++		case "CancelOrder":
++			if fact.Cancel == nil || fact.Submit != nil || fact.Modify != nil || fact.Cancel.Reason != "finite fixture cancel" {
++				t.Fatalf("cancel payload%d: %+v", i, fact)
++			}
++		}
++	}
++	if batches[3].Outcomes[0].LifecycleCommand.Modify.QuantityUnits != "4" || batches[3].Outcomes[0].LifecycleCommand.Modify.LimitPrice != "99000000000" {
++		t.Fatal("amendment lost total economics")
++	}
++	if batches[9].Outcomes[0].Result.AcceptedOrder == nil || batches[9].Outcomes[0].Result.Accepted != nil || batches[9].Outcomes[0].Result.Rejected == nil {
++		t.Fatal("rejected submit attempted facts changed")
++	}
++	if dir := os.Getenv("CALCIFY_LIFECYCLE_FIXTURE_DIR"); dir != "" {
++		writeLifecycleFixture(t, dir, batches, service)
++	}
++}
++
++func writeLifecycleFixture(t *testing.T, dir string, batches []VenueEventBatch, service *app.Service) {
++	t.Helper()
++	if err := os.MkdirAll(dir, 0755); err != nil {
++		t.Fatal(err)
++	}
++	raw := lifecycleJSONL(t, batches)
++	if err := os.WriteFile(filepath.Join(dir, "finite-lifecycle-source-v1.jsonl"), raw, 0644); err != nil {
++		t.Fatal(err)
++	}
++	var lines []map[string]any
++	for _, batch := range batches {
++		line, err := json.Marshal(batch)
++		if err != nil {
++			t.Fatal(err)
++		}
++		lines = append(lines, map[string]any{"batchId": batch.BatchID, "payloadChecksum": batch.PayloadChecksum, "bytes": len(line), "sha256": sha256Hex(line)})
++	}
++	var commands []json.RawMessage
++	for _, delivery := range lifecycleFixtureDeliveries() {
++		commands = append(commands, json.RawMessage(delivery.Data()))
++	}
++	manifest := map[string]any{
++		"schema": "calcify-finite-lifecycle-fixture-v1", "profile": json.RawMessage(lifecycleFixtureProfile),
++		"sourceProfileHash": service.CalcifySourceProfileHash(), "finiteBindingDigest": lifecycleFixtureBinding,
++		"bindingModelOnly": true, "lifecycleCommandSchema": "calcify-order-lifecycle-command-v1",
++		"sourcePolicy": "calcify-limit-day-v1", "commandTopic": "CALCIFY_P3_COMMANDS", "sourceTopic": "CALCIFY_P3_SOURCE",
++		"partition": 0, "sourceGeneration": 1, "batchSize": 1, "sourceOffsetVector": []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11},
++		"gapTestOffsetVector": []int{0, 2, 5, 6, 9, 12, 14, 17, 20, 21, 25, 28}, "commands": commands,
++		"accounts": []map[string]string{{"participantId": "buyer", "accountId": "buyer-account", "side": "BUY"}, {"participantId": "seller", "accountId": "seller-account", "side": "SELL"}},
++		"expected": map[string]int{"outcomes": 12, "applied": 8, "rejected": 4, "trades": 3, "executedUnits": 6, "members": 15, "retainedIdentities": 5},
++		"bytes":    len(raw), "sha256": sha256Hex(raw), "lines": lines,
++		"legacySha256": "bdd4df11f562ba2f4dd217168a3e81e60f96fa4c3fa4a25c01e75830dda26506", "legacyBytes": 16647,
++	}
++	encoded, err := json.MarshalIndent(manifest, "", "  ")
++	if err != nil {
++		t.Fatal(err)
++	}
++	if err := os.WriteFile(filepath.Join(dir, "finite-lifecycle-source-v1-manifest.json"), append(encoded, '\n'), 0644); err != nil {
++		t.Fatal(err)
++	}
++}
++
++const lifecycleFixtureBinding = "37ecf149ea1c94e9613b5e23941da3b1ff7fa131d57a77b1875b5b8a1bce7a61"
++
++func TestCalcifyLifecycleRoutingAndAttemptedPayloadArePreserved(t *testing.T) {
++	service := lifecycleFixtureService(t)
++	seed := lifecycleFixtureDeliveries()[0]
++	publisher := &fakePublisher{}
++	source := &fakeSource{deliveries: []CommandDelivery{seed}}
++	p := NewProcessor(service, source, publisher, ProcessorConfig{BatchSize: 1, CalcifyLifecycleEnabled: true, CalcifyFiniteBindingDigest: lifecycleFixtureBinding})
++	if _, err := p.ProcessOnce(context.Background()); err != nil {
++		t.Fatal(err)
++	}
++	for i, kind := range []string{"ModifyOrder", "CancelOrder"} {
++		payload := map[string]string{"commandId": fmt.Sprintf("route-%d", i), "runId": "p3-run", "venueSessionId": "claimed-other", "instrumentId": "claimed-other", "orderId": "p0-1", "participantId": "seller", "accountId": "seller-account", "occurredAt": "2026-10-10T03:00:12Z", "quantityUnits": "+03", "limitPrice": "0100000000000", "reason": ""}
++		delivery := newFakeDelivery("reef.cmd.v1.p00.p3-session.AAPL."+kind, uint64(i+20), payload)
++		source.deliveries = []CommandDelivery{delivery}
++		if _, err := p.ProcessOnce(context.Background()); err != nil {
++			t.Fatal(err)
++		}
++		outcome := publisher.batches[len(publisher.batches)-1].Outcomes[0]
++		fact := outcome.LifecycleCommand
++		if fact == nil || fact.VenueSessionID != "p3-session" || fact.InstrumentID != "AAPL" || fact.ParticipantID != "seller" || fact.AccountID != "seller-account" || fact.ActorID != "" || fact.TraceID != "" {
++			t.Fatal("routed context drift")
++		}
++		if outcome.PayloadHash != sha256Hex(delivery.Data()) {
++			t.Fatal("original request hash lost")
++		}
++		if kind == "ModifyOrder" && (fact.Modify.QuantityUnits != "+03" || fact.Modify.LimitPrice != "0100000000000") {
++			t.Fatal("attempted numeric spelling normalized")
++		}
++		if kind == "CancelOrder" && fact.Cancel.Reason != "" {
++			t.Fatal("empty canonical reason invented")
++		}
++	}
++}
++
++func TestCalcifyLifecyclePoisonHasNoInventedTypedCommand(t *testing.T) {
++	for _, delivery := range []CommandDelivery{
++		&fakeDelivery{subject: "reef.cmd.v1.p00.p3-session.AAPL.SubmitOrder", seq: 1, data: []byte(`{"commandId":"poison","quantityUnits":[1]}`)},
++		newFakeDelivery("reef.cmd.v1.p00.p3-session.AAPL.Unknown", 2, map[string]string{"commandId": "unsupported"}),
++	} {
++		publisher := &fakePublisher{}
++		p := NewProcessor(lifecycleFixtureService(t), &fakeSource{deliveries: []CommandDelivery{delivery}}, publisher, ProcessorConfig{BatchSize: 1, CalcifyLifecycleEnabled: true, CalcifyFiniteBindingDigest: lifecycleFixtureBinding})
++		if _, err := p.ProcessOnce(context.Background()); err != nil {
++			t.Fatal(err)
++		}
++		outcome := publisher.batches[0].Outcomes[0]
++		if outcome.LifecycleCommand != nil || outcome.Status != "failed" || outcome.Result.Rejected == nil {
++			t.Fatal("poison fabricated typed source evidence")
++		}
++	}
++}
++
++func TestCalcifyLifecycleFailedPublishRollbackAndRetryPreserveFact(t *testing.T) {
++	service := lifecycleFixtureService(t)
++	publisher := &fakeAtomicPublisher{err: errors.New("injected publish failure")}
++	source := &fakeSource{deliveries: lifecycleFixtureDeliveries()[:1]}
++	p := NewProcessor(service, source, publisher, ProcessorConfig{BatchSize: 1, CalcifyLifecycleEnabled: true, CalcifyFiniteBindingDigest: lifecycleFixtureBinding})
++	fixed := time.Date(2026, 10, 10, 3, 0, 0, 0, time.UTC)
++	p.now = func() time.Time { return fixed }
++	if _, err := p.ProcessOnce(context.Background()); err == nil {
++		t.Fatal("failed publish accepted")
++	}
++	if len(service.Snapshot().Orders) != 0 {
++		t.Fatal("failed publish retained identity")
++	}
++	publisher.err = nil
++	source.deliveries = lifecycleFixtureDeliveries()[:1]
++	if _, err := p.ProcessOnce(context.Background()); err != nil {
++		t.Fatal(err)
++	}
++	if len(publisher.batches) != 2 || len(service.Snapshot().Orders) != 1 {
++		t.Fatal("retry did not rebuild state")
++	}
++	first, _ := json.Marshal(publisher.batches[0])
++	second, _ := json.Marshal(publisher.batches[1])
++	if !bytes.Equal(first, second) {
++		t.Fatal("retry changed typed facts/checksum")
++	}
++}
+diff --git a/services/matching-engine/internal/streamdirect/calcify_lifecycle_config_test.go b/services/matching-engine/internal/streamdirect/calcify_lifecycle_config_test.go
+new file mode 100644
+index 000000000..464cea1a9
+--- /dev/null
++++ b/services/matching-engine/internal/streamdirect/calcify_lifecycle_config_test.go
+@@ -0,0 +1,73 @@
++package streamdirect
++
++import (
++	"context"
++	"strings"
++	"testing"
++
++	"github.com/dills122/reef/services/matching-engine/internal/app"
++)
++
++func TestCalcifyLifecycleConfigurationDefaultsOff(t *testing.T) {
++	t.Setenv("MATCHING_ENGINE_CALCIFY_LIFECYCLE_ENABLED", "")
++	t.Setenv("MATCHING_ENGINE_CALCIFY_FINITE_BINDING_DIGEST", "")
++	config := RuntimeConfigFromEnv()
++	if config.CalcifyLifecycleEnabled || config.CalcifyFiniteBindingDigest != "" {
++		t.Fatal("lifecycle enabled by default")
++	}
++	t.Setenv("MATCHING_ENGINE_CALCIFY_LIFECYCLE_ENABLED", "true")
++	t.Setenv("MATCHING_ENGINE_CALCIFY_FINITE_BINDING_DIGEST", lifecycleFixtureBinding)
++	config = RuntimeConfigFromEnv()
++	if !config.CalcifyLifecycleEnabled || config.CalcifyFiniteBindingDigest != lifecycleFixtureBinding {
++		t.Fatal("explicit lifecycle config lost")
++	}
++}
++
++func TestCalcifyLifecycleInvalidConfigStopsBeforeFetch(t *testing.T) {
++	for _, c := range []struct {
++		name      string
++		service   *app.Service
++		digest    string
++		batchSize int
++	}{
++		{"missing profile", app.NewService(), lifecycleFixtureBinding, 1},
++		{"missing binding", lifecycleFixtureService(t), "", 1},
++		{"short binding", lifecycleFixtureService(t), "abcd", 1},
++		{"nonhex binding", lifecycleFixtureService(t), strings.Repeat("g", 64), 1},
++		{"uppercase binding", lifecycleFixtureService(t), strings.ToUpper(lifecycleFixtureBinding), 1},
++		{"large batch", lifecycleFixtureService(t), lifecycleFixtureBinding, 2},
++	} {
++		t.Run(c.name, func(t *testing.T) {
++			source := &fakeSource{deliveries: lifecycleFixtureDeliveries()[:1]}
++			publisher := &fakePublisher{}
++			before := c.service.Snapshot().Checksum
++			p := NewProcessor(c.service, source, publisher, ProcessorConfig{BatchSize: c.batchSize, CalcifyLifecycleEnabled: true, CalcifyFiniteBindingDigest: c.digest})
++			if n, err := p.ProcessOnce(context.Background()); err == nil || n != 0 {
++				t.Fatal("invalid lifecycle config accepted")
++			}
++			if source.fetchCalls != 0 || len(publisher.batches) != 0 || before != c.service.Snapshot().Checksum {
++				t.Fatal("invalid config reached source/matching/publisher")
++			}
++		})
++	}
++}
++
++func TestCalcifyLifecycleLiveAndCommittedReplayRemainGated(t *testing.T) {
++	service := lifecycleFixtureService(t)
++	config := RuntimeConfig{LogProvider: "redpanda", BatchSize: 1, Partitions: []int{0}, CalcifyLifecycleEnabled: true, CalcifyFiniteBindingDigest: lifecycleFixtureBinding}
++	if runner, err := StartRunner(context.Background(), service, config); runner != nil || err == nil || !strings.Contains(err.Error(), "durable binding and restore") {
++		t.Fatalf("live gate=%v %v", runner, err)
++	}
++	config.LogProvider = "jetstream"
++	if _, err := StartRunner(context.Background(), service, config); err == nil || !strings.Contains(err.Error(), "transactional redpanda") {
++		t.Fatal("nontransactional provider accepted")
++	}
++	p := NewProcessor(service, &fakeSource{}, &fakePublisher{}, ProcessorConfig{BatchSize: 1, CalcifyLifecycleEnabled: true, CalcifyFiniteBindingDigest: lifecycleFixtureBinding})
++	before := service.Snapshot().Checksum
++	if count, err := p.RestoreCommitted(context.Background(), &fakeCommittedReplayer{deliveries: lifecycleFixtureDeliveries()}); count != 0 || err == nil || !strings.Contains(err.Error(), "durable bound recovery") {
++		t.Fatalf("unbound replay accepted count=%d err=%v", count, err)
++	}
++	if before != service.Snapshot().Checksum {
++		t.Fatal("gated replay mutated state")
++	}
++}
+diff --git a/services/matching-engine/internal/streamdirect/calcify_lifecycle_checksum_test.go b/services/matching-engine/internal/streamdirect/calcify_lifecycle_checksum_test.go
+new file mode 100644
+index 000000000..95de2859f
+--- /dev/null
++++ b/services/matching-engine/internal/streamdirect/calcify_lifecycle_checksum_test.go
+@@ -0,0 +1,79 @@
++package streamdirect
++
++import (
++	"encoding/json"
++	"testing"
++
++	"github.com/dills122/reef/services/matching-engine/internal/domain"
++)
++
++func TestCalcifyLifecycleChecksumCoversTypedCommand(t *testing.T) {
++	batches, _ := lifecycleFixtureBatches(t, ProcessorConfig{CalcifyLifecycleEnabled: true, CalcifyFiniteBindingDigest: lifecycleFixtureBinding})
++	for name, mutate := range map[string]func(*domain.OrderLifecycleCommandV1){
++		"schema":    func(f *domain.OrderLifecycleCommandV1) { f.Schema = "different" },
++		"profile":   func(f *domain.OrderLifecycleCommandV1) { f.SourceProfileHash = lifecycleFixtureBinding },
++		"binding":   func(f *domain.OrderLifecycleCommandV1) { f.FiniteBindingDigest = f.SourceProfileHash },
++		"routing":   func(f *domain.OrderLifecycleCommandV1) { f.InstrumentID = "foreign" },
++		"ownership": func(f *domain.OrderLifecycleCommandV1) { f.AccountID = "foreign" },
++		"metadata":  func(f *domain.OrderLifecycleCommandV1) { f.ActorID = "foreign" },
++		"time":      func(f *domain.OrderLifecycleCommandV1) { f.OccurredAt = "2026-10-10T03:00:01Z" },
++		"quantity":  func(f *domain.OrderLifecycleCommandV1) { f.Submit.QuantityUnits = "4" },
++	} {
++		t.Run(name, func(t *testing.T) {
++			raw, err := json.Marshal(batches[0])
++			if err != nil {
++				t.Fatal(err)
++			}
++			var changed VenueEventBatch
++			if err := json.Unmarshal(raw, &changed); err != nil {
++				t.Fatal(err)
++			}
++			mutate(changed.Outcomes[0].LifecycleCommand)
++			checksum, err := venueEventBatchChecksum(changed)
++			if err != nil {
++				t.Fatal(err)
++			}
++			if checksum == batches[0].PayloadChecksum {
++				t.Fatal("typed mutation escaped semantic checksum")
++			}
++		})
++	}
++	for _, i := range []int{3, 4} {
++		before := batches[i].PayloadChecksum
++		if i == 3 {
++			batches[i].Outcomes[0].LifecycleCommand.Modify.LimitPrice = "98000000000"
++		} else {
++			batches[i].Outcomes[0].LifecycleCommand.Cancel.Reason = "different"
++		}
++		checksum, err := venueEventBatchChecksum(batches[i])
++		if err != nil {
++			t.Fatal(err)
++		}
++		if checksum == before {
++			t.Fatal("zero-trade lifecycle economics escaped checksum")
++		}
++	}
++}
++
++func TestCalcifyLifecycleAbsentFieldRetainsLegacyChecksumAndBytes(t *testing.T) {
++	legacy, _ := lifecycleFixtureBatches(t, ProcessorConfig{})
++	typed, _ := lifecycleFixtureBatches(t, ProcessorConfig{CalcifyLifecycleEnabled: true, CalcifyFiniteBindingDigest: lifecycleFixtureBinding})
++	for i := range typed {
++		if typed[i].PayloadChecksum == legacy[i].PayloadChecksum {
++			t.Fatal("new fact did not change semantic checksum")
++		}
++		typed[i].Outcomes[0].LifecycleCommand = nil
++		checksum, err := venueEventBatchChecksum(typed[i])
++		if err != nil {
++			t.Fatal(err)
++		}
++		typed[i].PayloadChecksum = checksum
++		typed[i].TimingChecksum = venueEventBatchTimingChecksum(typed[i])
++		if checksum != legacy[i].PayloadChecksum {
++			t.Fatal("absent fact changed legacy semantic checksum")
++		}
++	}
++	if string(lifecycleJSONL(t, typed)) != string(lifecycleJSONL(t, legacy)) {
++		t.Fatal("absent fact changed complete legacy source bytes")
++	}
++}
+diff --git a/services/matching-engine/README.md b/services/matching-engine/README.md
+index 707499ad6..3fee44e7a 100644
+--- a/services/matching-engine/README.md
++++ b/services/matching-engine/README.md
+@@ -121,6 +121,35 @@ extensions/v2 refuse; changed limits remain covered by existing restore tests.
+ Runtime semantics/digests unchanged; no new bulk evidence or superseded standalone
+ record. Earlier independent review remains scoped to original implementation.
+ 
++### Finite Calcify lifecycle source facts (O1)
++
++Optional `lifecycleCommand` in each decoded Submit/Modify/Cancel outcome preserves
++typed attempted economics, routed scope, decoded ownership and command metadata.
++Schema `calcify-order-lifecycle-command-v1` binds existing immutable P0 profile
++hash and separate lowercase SHA256 finite-binding identity. Successful amendments
++carry new total quantity (including filled units) and price; cancel preserves reason.
++Business rejection still includes attempted command evidence, never implied success.
++Submit carries decoded currency; Modify/Cancel have no currency field. Downstream
++capture checks retained acceptance plus immutable instrument/account binding.
++
++`MATCHING_ENGINE_CALCIFY_LIFECYCLE_ENABLED` defaults false; optional digest input is
++`MATCHING_ENGINE_CALCIFY_FINITE_BINDING_DIGEST`. Mode off omits field and preserves
++exact legacy JSON bytes/checksums and source-profile-v1 canonical identity. Model
++processor requires valid P0 profile, binding digest and batch1. Live `StartRunner`
++and committed replay explicitly refuse lifecycle mode until O2 durable registration,
++admission fencing and bound producer recovery replace gate; setting env alone
++cannot activate live mode. No default/bootstrap enablement added.
++
++Focused tests run actual processor through fixed12-command DAY/Open fixture:
++8 accepted outcomes,4 explicit rejections,3 trades/6 units,5 retained identities;
++new capture path expects15 members. Tests cover full mode-off bytes pinned before
++producer changes, complete typed checksum coverage, routed amendment/cancel,
++raw attempted decimal spelling, poison facts, publication rollback/retry and
++startup/replay refusal. Fixture identities parameterize frozen O0 run/session;
++exact values/profile hash/model-only binding published in tiny fixture manifest.
++No durable activation, live broker/restart, financial adoption or capacity proof.
++Retention no-op: new active contract/producer context; no superseded record removed.
++
+ ## Terminal retention and recovery compatibility
+ 
+ `MATCHING_ENGINE_TERMINAL_ORDER_RETENTION_LIMIT=0` preserves all terminal

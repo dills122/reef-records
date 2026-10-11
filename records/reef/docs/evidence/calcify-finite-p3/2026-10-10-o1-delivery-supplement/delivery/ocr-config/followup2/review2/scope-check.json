@@ -1,0 +1,8 @@
+{
+  ".github/workflows/open-code-review-pilot.yml": true,
+  ".opencodereview/rule.json": true,
+  "scripts/dev/ci-workflow-hardening.test.mjs": true,
+  "docs/CI_OPERATIONS.md": true,
+  "combined": true,
+  "new-delta": true
+}

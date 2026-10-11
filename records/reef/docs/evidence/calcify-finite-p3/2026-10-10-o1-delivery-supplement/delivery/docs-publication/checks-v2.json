@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "scope": "Five owned publication prose/inventory docs only; prior selected v1 receipts unchanged",
+  "delta": [
+    "Exact1dee source CI28success/3conditional skips/onlyOCRfailure; actual untruncated Calcify/Kotlin successful logs no invented testcounts",
+    "User-approved separate generatedJavaexclusion/budget500000to1500000 config recovery, isolated4path implementation/review/merge/retry pending",
+    "CurrentPR485 owns laterpublicationhead/outcomes, no recoveryfinalclaim",
+    "Summary hash refreshed in bothinventories, original230cbf metadata/source history unchanged"
+  ],
+  "local_links": 49,
+  "whitespace": "PASS",
+  "inventory_hashes": "PASS",
+  "issues": [],
+  "files": [
+    {
+      "path": "docs/WORK_PLAN.md",
+      "bytes": 56961,
+      "sha256": "4efef6decd80bbbd678bdeebc1460b3c036d12a9a415c977f1b2acd7fbf4a7b2"
+    },
+    {
+      "path": "docs/evidence/calcify-finite-p3/README.md",
+      "bytes": 9945,
+      "sha256": "4881683578882259dcd2690f245cf8f6d3a648b79c356f74745d0e887d7308b8"
+    },
+    {
+      "path": "docs/work/handoffs/2026-10-10-calcify-finite-p3-overnight.md",
+      "bytes": 6728,
+      "sha256": "b17a1072bb382c10add29b62fcf09eab8e05e00749b0f686775170d88ae3b54d"
+    },
+    {
+      "path": "docs/records/2026-10-10-calcify-finite-p3-retention.json",
+      "bytes": 9342,
+      "sha256": "b7eb8115865cba1bec60f6a928b8fe8871f99f6ba1f5117e6163296c54049956"
+    },
+    {
+      "path": "docs/records/retained-evidence.json",
+      "bytes": 75906,
+      "sha256": "8193ed7fdc431fbdb63168d17f1e589bdfbee16d93ba20d9d72d08ac771dca69"
+    }
+  ],
+  "noGitNetworkWrites": true
+}

@@ -1,0 +1,446 @@
+{
+  "range": "51cd90eee43d257bad4f973fc9bd81f273bb4ef7..1dee92a64cc86e58ae5fcff98f9f6118533e2bfd",
+  "method": "Pinned estimate =21300+8*cl100kDiffTokens; this proxy uses floor(fullGitDiffBytes/4), includes git headers, not exact actual dispatch/BPE or billing estimate. Exact firstgroup896928 from preserved hosted receipt.",
+  "selected": 48,
+  "generatedJava": 31,
+  "remainingHandwritten": 17,
+  "fullProxy": 3003280,
+  "generatedJavaProxy": 2253964,
+  "remainingProxy": 749316,
+  "rows": [
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleSubmitV1.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 47580,
+      "bytesQuarterProxyTokens": 11895,
+      "estimatorProxy": 116460
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDependencyV1.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 53859,
+      "bytesQuarterProxyTokens": 13464,
+      "estimatorProxy": 129012
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntimeTest.kt",
+      "generatedJava": false,
+      "diffBytesIncludingGitHeaders": 29357,
+      "bytesQuarterProxyTokens": 7339,
+      "estimatorProxy": 80012
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberKindV1.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 4559,
+      "bytesQuarterProxyTokens": 1139,
+      "estimatorProxy": 30412
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleCaptureV1.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 72964,
+      "bytesQuarterProxyTokens": 18241,
+      "estimatorProxy": 167228
+    },
+    {
+      "path": "services/matching-engine/internal/app/calcify_source_profile.go",
+      "generatedJava": false,
+      "diffBytesIncludingGitHeaders": 796,
+      "bytesQuarterProxyTokens": 199,
+      "estimatorProxy": 22892
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/OrderLifecycleCommandV1OrBuilder.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 7203,
+      "bytesQuarterProxyTokens": 1800,
+      "estimatorProxy": 35700
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleContractTest.kt",
+      "generatedJava": false,
+      "diffBytesIncludingGitHeaders": 8545,
+      "bytesQuarterProxyTokens": 2136,
+      "estimatorProxy": 38388
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/Calcify.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 21080,
+      "bytesQuarterProxyTokens": 5270,
+      "estimatorProxy": 63460
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleOrderStateV1OrBuilder.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 3840,
+      "bytesQuarterProxyTokens": 960,
+      "estimatorProxy": 28980
+    },
+    {
+      "path": "services/matching-engine/internal/streamdirect/calcify_lifecycle_checksum_test.go",
+      "generatedJava": false,
+      "diffBytesIncludingGitHeaders": 3432,
+      "bytesQuarterProxyTokens": 858,
+      "estimatorProxy": 28164
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleRevisionIdV1OrBuilder.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 1485,
+      "bytesQuarterProxyTokens": 371,
+      "estimatorProxy": 24268
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberV1OrBuilder.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 8777,
+      "bytesQuarterProxyTokens": 2194,
+      "estimatorProxy": 38852
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleSuffixV1.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 20080,
+      "bytesQuarterProxyTokens": 5020,
+      "estimatorProxy": 61460
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberIdV1.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 29027,
+      "bytesQuarterProxyTokens": 7256,
+      "estimatorProxy": 79348
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCommandKindV1.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 4964,
+      "bytesQuarterProxyTokens": 1241,
+      "estimatorProxy": 31228
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleStateV1.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 111629,
+      "bytesQuarterProxyTokens": 27907,
+      "estimatorProxy": 244556
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleBatchStateV1.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 31153,
+      "bytesQuarterProxyTokens": 7788,
+      "estimatorProxy": 83604
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleOrderStateV1.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 53629,
+      "bytesQuarterProxyTokens": 13407,
+      "estimatorProxy": 128556
+    },
+    {
+      "path": "services/matching-engine/internal/streamdirect/calcify_lifecycle_config_test.go",
+      "generatedJava": false,
+      "diffBytesIncludingGitHeaders": 3819,
+      "bytesQuarterProxyTokens": 954,
+      "estimatorProxy": 28932
+    },
+    {
+      "path": "services/matching-engine/internal/streamdirect/processor.go",
+      "generatedJava": false,
+      "diffBytesIncludingGitHeaders": 12570,
+      "bytesQuarterProxyTokens": 3142,
+      "estimatorProxy": 46436
+    },
+    {
+      "path": "services/matching-engine/internal/streamdirect/calcify_lifecycle_test.go",
+      "generatedJava": false,
+      "diffBytesIncludingGitHeaders": 14374,
+      "bytesQuarterProxyTokens": 3593,
+      "estimatorProxy": 50044
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleSuffixV1OrBuilder.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 1212,
+      "bytesQuarterProxyTokens": 303,
+      "estimatorProxy": 23724
+    },
+    {
+      "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessorTest.kt",
+      "generatedJava": false,
+      "diffBytesIncludingGitHeaders": 28715,
+      "bytesQuarterProxyTokens": 7178,
+      "estimatorProxy": 78724
+    },
+    {
+      "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleContract.kt",
+      "generatedJava": false,
+      "diffBytesIncludingGitHeaders": 27191,
+      "bytesQuarterProxyTokens": 6797,
+      "estimatorProxy": 75676
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleModifyV1OrBuilder.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 1424,
+      "bytesQuarterProxyTokens": 356,
+      "estimatorProxy": 24148
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleRevisionIdV1.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 23094,
+      "bytesQuarterProxyTokens": 5773,
+      "estimatorProxy": 67484
+    },
+    {
+      "path": "services/matching-engine/internal/app/calcify_source_identity_test.go",
+      "generatedJava": false,
+      "diffBytesIncludingGitHeaders": 1312,
+      "bytesQuarterProxyTokens": 328,
+      "estimatorProxy": 23924
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/OrderLifecycleCommandV1.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 108836,
+      "bytesQuarterProxyTokens": 27209,
+      "estimatorProxy": 238972
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleStateV1OrBuilder.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 8184,
+      "bytesQuarterProxyTokens": 2046,
+      "estimatorProxy": 37668
+    },
+    {
+      "path": "services/matching-engine/internal/streamdirect/config.go",
+      "generatedJava": false,
+      "diffBytesIncludingGitHeaders": 8492,
+      "bytesQuarterProxyTokens": 2123,
+      "estimatorProxy": 38284
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCancelV1OrBuilder.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 1094,
+      "bytesQuarterProxyTokens": 273,
+      "estimatorProxy": 23484
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCancelV1.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 18062,
+      "bytesQuarterProxyTokens": 4515,
+      "estimatorProxy": 57420
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleModifyV1.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 22823,
+      "bytesQuarterProxyTokens": 5705,
+      "estimatorProxy": 66940
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDispositionV1.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 5049,
+      "bytesQuarterProxyTokens": 1262,
+      "estimatorProxy": 31396
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleCaptureV1OrBuilder.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 4959,
+      "bytesQuarterProxyTokens": 1239,
+      "estimatorProxy": 31212
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberIdV1OrBuilder.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 2017,
+      "bytesQuarterProxyTokens": 504,
+      "estimatorProxy": 25332
+    },
+    {
+      "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessor.kt",
+      "generatedJava": false,
+      "diffBytesIncludingGitHeaders": 28776,
+      "bytesQuarterProxyTokens": 7194,
+      "estimatorProxy": 78852
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleSubmitV1OrBuilder.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 3612,
+      "bytesQuarterProxyTokens": 903,
+      "estimatorProxy": 28524
+    },
+    {
+      "path": "services/matching-engine/internal/domain/calcify_lifecycle.go",
+      "generatedJava": false,
+      "diffBytesIncludingGitHeaders": 2577,
+      "bytesQuarterProxyTokens": 644,
+      "estimatorProxy": 26452
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberV1.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 114361,
+      "bytesQuarterProxyTokens": 28590,
+      "estimatorProxy": 250020
+    },
+    {
+      "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntime.kt",
+      "generatedJava": false,
+      "diffBytesIncludingGitHeaders": 3796,
+      "bytesQuarterProxyTokens": 949,
+      "estimatorProxy": 28892
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleOrderTerminalV1.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 4575,
+      "bytesQuarterProxyTokens": 1143,
+      "estimatorProxy": 30444
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleBatchStateV1OrBuilder.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 2049,
+      "bytesQuarterProxyTokens": 512,
+      "estimatorProxy": 25396
+    },
+    {
+      "path": "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDependencyV1OrBuilder.java",
+      "generatedJava": true,
+      "diffBytesIncludingGitHeaders": 3691,
+      "bytesQuarterProxyTokens": 922,
+      "estimatorProxy": 28676
+    },
+    {
+      "path": "services/matching-engine/internal/streamdirect/runner.go",
+      "generatedJava": false,
+      "diffBytesIncludingGitHeaders": 2694,
+      "bytesQuarterProxyTokens": 673,
+      "estimatorProxy": 26684
+    },
+    {
+      "path": "contracts/calcify/finite-lifecycle-source-v1-manifest.json",
+      "generatedJava": false,
+      "diffBytesIncludingGitHeaders": 11762,
+      "bytesQuarterProxyTokens": 2940,
+      "estimatorProxy": 44820
+    },
+    {
+      "path": "contracts/proto/calcify.proto",
+      "generatedJava": false,
+      "diffBytesIncludingGitHeaders": 5422,
+      "bytesQuarterProxyTokens": 1355,
+      "estimatorProxy": 32140
+    }
+  ],
+  "hostedGroups": [
+    {
+      "label": "calcify contract schema and generated runtime types",
+      "paths": [
+        "contracts/calcify/finite-lifecycle-source-v1-manifest.json",
+        "contracts/proto/calcify.proto",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/Calcify.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleBatchStateV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleBatchStateV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleCaptureV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleCaptureV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleOrderStateV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleOrderStateV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleStateV1.java"
+      ],
+      "files": 10,
+      "proxyCost": 849952,
+      "handwrittenOnlyProxyCost": 76960
+    },
+    {
+      "label": "calcify contract schema and generated runtime types",
+      "paths": [
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleStateV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleSuffixV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/FiniteLifecycleSuffixV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCancelV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCancelV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleCommandKindV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDependencyV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDependencyV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleDispositionV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberIdV1.java"
+      ],
+      "files": 10,
+      "proxyCost": 503416,
+      "handwrittenOnlyProxyCost": 0
+    },
+    {
+      "label": "calcify contract schema and generated runtime types",
+      "paths": [
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberIdV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberKindV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleMemberV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleModifyV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleModifyV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleOrderTerminalV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleRevisionIdV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleRevisionIdV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleSubmitV1.java"
+      ],
+      "files": 10,
+      "proxyCost": 674360,
+      "handwrittenOnlyProxyCost": 0
+    },
+    {
+      "label": "calcify contract schema and generated runtime types",
+      "paths": [
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/LifecycleSubmitV1OrBuilder.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/OrderLifecycleCommandV1.java",
+        "services/platform-runtime/src/main/java/reef/contracts/calcify/v1/OrderLifecycleCommandV1OrBuilder.java"
+      ],
+      "files": 3,
+      "proxyCost": 303196,
+      "handwrittenOnlyProxyCost": 0
+    },
+    {
+      "label": "matching-engine calcify lifecycle handling",
+      "paths": [
+        "services/matching-engine/internal/app/calcify_source_identity_test.go",
+        "services/matching-engine/internal/app/calcify_source_profile.go",
+        "services/matching-engine/internal/domain/calcify_lifecycle.go",
+        "services/matching-engine/internal/streamdirect/calcify_lifecycle_checksum_test.go",
+        "services/matching-engine/internal/streamdirect/calcify_lifecycle_config_test.go",
+        "services/matching-engine/internal/streamdirect/calcify_lifecycle_test.go",
+        "services/matching-engine/internal/streamdirect/config.go",
+        "services/matching-engine/internal/streamdirect/processor.go",
+        "services/matching-engine/internal/streamdirect/runner.go"
+      ],
+      "files": 9,
+      "proxyCost": 291812,
+      "handwrittenOnlyProxyCost": 291812
+    },
+    {
+      "label": "platform-runtime calcify capture implementation and tests",
+      "paths": [
+        "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessor.kt",
+        "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntime.kt",
+        "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleContract.kt",
+        "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessorTest.kt",
+        "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntimeTest.kt",
+        "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleContractTest.kt"
+      ],
+      "files": 6,
+      "proxyCost": 380544,
+      "handwrittenOnlyProxyCost": 380544
+    }
+  ]
+}

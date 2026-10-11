@@ -1,0 +1,14 @@
+{
+  "selectorPinnedGitBlob": "771c616f9c21f475eb9895aec49fa6d0b1924f13",
+  "selectorSha256": "55359ece4199fa42fc5af3f435c7e8750ac66be6b0112be643a2b040b7134d1b",
+  "all31ExcludedHaveGeneratedMarkerAtOriginalReviewHead": true,
+  "originalReviewHead": "1dee92a64cc86e58ae5fcff98f9f6118533e2bfd",
+  "authorLogHashesMatch": {
+    "no-update-guard-red.log": true,
+    "ci-hardening.log": true,
+    "script-surface.log": true,
+    "required-results-build-container.log": true,
+    "actionlint.log": true,
+    "focused-coverage.log": true
+  }
+}

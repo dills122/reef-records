@@ -1,0 +1,36 @@
+{
+  "sourceHead": "dcb106c4ddd5ccda60df7c8e6411fca88ef5be14",
+  "commentIds": [
+    4238407553,
+    4238407558
+  ],
+  "dispositions": {
+    "4238407553": "false positive proposed equality; known O2 durable verification deferral",
+    "4238407558": "false positive bug; optional constructor API preference"
+  },
+  "toolchain": "Go1.26.9 cached installed direct binary",
+  "focusedCommand": "env CALCIFY_LIFECYCLE_FIXTURE_DIR= GOTOOLCHAIN=local GOPROXY=off GOSUMDB=off GOCACHE=/Users/dsteele/.codex/worktrees/fa2b-0041/reef/.planning/calcify-p3-overnight/delivery/ocr-findings-spike/go-cache /Users/dsteele/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.26.9.darwin-arm64/bin/go test ./internal/streamdirect -run '^TestCalcifyLifecycle(ConfigurationDefaultsOff|InvalidConfigStopsBeforeFetch|LiveAndCommittedReplayRemainGated|TypedFixture)$' -count=1 -v",
+  "focusedExit": 0,
+  "topLevelTests": 4,
+  "invalidConfigSubcases": 6,
+  "originalTwoSetupFailureExits": [
+    1,
+    1
+  ],
+  "all10GoHashesUnchanged": true,
+  "noNetworkProviderSecretGitProductMutations": true,
+  "o1ReviewCapConsumed": 3,
+  "o1ReviewCapMaximum": 3,
+  "newIndependentReviewInstances": 0,
+  "artifactSha256": {
+    "finding-1.md": "7428e4f8641f869aa9d668b6d1c0d57910a2a19a2be8074d14e7d5054a98b625",
+    "identity-probe.json": "caaf4014d619efd21dd1dc19088d948e4ff135be71db64550c664865e9164cbe",
+    "focused-go-tests.log": "65effc32283ada9764df2170f04c48351f3571a27b65a8ab3224388440495e31",
+    "focused-go-tests-aligned.log": "13cb7a4a7fa0eab79c2401dbfd55bc984e3147feb804e083d818b553c791e8bc",
+    "research.md": "167b677049214ecd3d6a72cb75e9cbc8fb9346d73eb5ce162c1270c8ebd42a99",
+    "focused-go-tests-direct.log": "1dfe4eaca33eed50586f27b7c009c83c4dab9b9090435a3236f48e609fdde141",
+    "finding-2.md": "3e807b7bec483acf96dad90e1ae86bb1c5adcba29d6537c9e8cda299a650ab84",
+    "go-freeze-check.json": "70840db50cff7f8b4d3973b89d6b4459e8195fd5955abc877f10d0683d64c560",
+    "test-environment-alignment.md": "cdffe97ee164aeb540ab63d7caf5568485a0bb87411482a5dbcb8b3d811ffb22"
+  }
+}

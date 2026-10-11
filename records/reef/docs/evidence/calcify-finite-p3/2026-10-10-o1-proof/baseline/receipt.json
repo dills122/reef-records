@@ -1,0 +1,13 @@
+{
+  "sourceCommit": "51cd90eee43d257bad4f973fc9bd81f273bb4ef7",
+  "command": "JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home ./services/platform-runtime/gradlew --no-daemon -p services/platform-runtime test --tests 'com.reef.platform.calcify.*'",
+  "exitCode": 0,
+  "reports": 27,
+  "tests": 182,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "gradleReportedWallTime": "4m23s",
+  "scope": "Baseline Calcify unit/regression suite; no real broker/load/restart qualification",
+  "recordedAt": "2026-10-10T03:05:08.918965+00:00"
+}

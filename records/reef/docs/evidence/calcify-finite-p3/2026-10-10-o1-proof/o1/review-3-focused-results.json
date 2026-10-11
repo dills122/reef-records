@@ -1,0 +1,32 @@
+{
+  "reports": [
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.FiniteLifecycleCaptureProcessorTest.xml",
+      "sha256": "08ebc884a41f38b8c02e4bcbbf7ccc32ad395e2afe6a5e0914ac1314746b84f0",
+      "tests": 19,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.FiniteLifecycleCaptureRuntimeTest.xml",
+      "sha256": "9ba6631834cd83b82086278e3b84b54d61814c14bb0959c74c4da351f4eb4c7a",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.FiniteLifecycleContractTest.xml",
+      "sha256": "ff56c7b5badbf430f9f5e60d2b628702726a702f154d88345bfc5629a8857ff7",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "tests": 36,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0
+}

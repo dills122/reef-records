@@ -1,0 +1,33 @@
+{
+  "head": "dcb106c4ddd5ccda60df7c8e6411fca88ef5be14",
+  "trackedDiff": "",
+  "sources": [
+    {
+      "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessor.kt",
+      "sha256": "cc9864a8a3f4e674fa39fbd0a3e8bfd1e2fd6edbc2f26609a78c63e7e9edb210",
+      "sourceMtime": "2026-10-10T15:29:24.158624+00:00",
+      "cachedClassPath": "/Users/dsteele/.codex/worktrees/fa2b-0041/reef/services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleCaptureProcessor.class",
+      "cachedClassSha256": "27d1d4d1edb7f1671a4de2ce743f86f117fc6e13e63cf92c1696a6b158dd5a9f",
+      "cachedClassMtime": "2026-10-10T15:31:42.674832+00:00",
+      "matchesHead": true
+    },
+    {
+      "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntime.kt",
+      "sha256": "f4bd66365de3c4995e65e0e3322a7a3e5845dcbb5a9e2051cf996ff2c8d7b494",
+      "sourceMtime": "2026-10-10T03:41:49.470884+00:00",
+      "cachedClassPath": "/Users/dsteele/.codex/worktrees/fa2b-0041/reef/services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleCaptureRuntime.class",
+      "cachedClassSha256": "906cd110e888c1c14ac5bf60cb371f601a20b335287ebf1d228bda9bf80d724b",
+      "cachedClassMtime": "2026-10-10T03:43:34.027580+00:00",
+      "matchesHead": true
+    },
+    {
+      "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleContract.kt",
+      "sha256": "b555a5323611093dac3dcfa1ab46d593c3d0f57d924ebb475fa1700f61ac1fc5",
+      "sourceMtime": "2026-10-10T04:44:15.505046+00:00",
+      "cachedClassPath": "/Users/dsteele/.codex/worktrees/fa2b-0041/reef/services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleContract.class",
+      "cachedClassSha256": "b3580f13e771e50b3f32d66ee5e6411801342e8ae30be85cd513752422dff877",
+      "cachedClassMtime": "2026-10-10T04:47:50.646374+00:00",
+      "matchesHead": true
+    }
+  ]
+}

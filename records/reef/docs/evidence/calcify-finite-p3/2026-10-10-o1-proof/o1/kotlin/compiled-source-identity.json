@@ -1,0 +1,174 @@
+[
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleContract$WhenMappings.class",
+    "sha256": "c150a23f9cb258c1e2ad01cea55b54600945c7d40911aaee72ee45ad0e3def99"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleContract.class",
+    "sha256": "b3580f13e771e50b3f32d66ee5e6411801342e8ae30be85cd513752422dff877"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleContractKt.class",
+    "sha256": "324027dc041610abac5534acaea8216084d03ca5cbbf7a962a1957d9888f3f6a"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleBudget$WhenMappings.class",
+    "sha256": "0171f6ed621bd205aeb2ee5ba93920fe90fb40e9d1a8426306b3d31e429a0683"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleStartCut.class",
+    "sha256": "38d827372c5df273d291192df1d8be591d2d4a3103ad49dab6d9d623852fea69"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleBudget.class",
+    "sha256": "e4f60119370fbb90983afd09bdfe9138e09176bedae36e393a7a891fa62a6d52"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleContract$Batch.class",
+    "sha256": "170e89575c739b38df5cffd8d5cd6432308b3775dd58062b544b97008187a1c8"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleCaptureProcessor.class",
+    "sha256": "f79cf1d5f90788a1d01f82a63dc49154a4d7636b980750474931f73990d89f12"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleReducer$Reduction.class",
+    "sha256": "9cd129e8e9ac1e139d35143b8cceee01c8c044a95743a5ca91454f6a2c7fc406"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleReducer$WhenMappings.class",
+    "sha256": "30cc85a94956abe121ad56920123fa0425ebacb3e9d240e8baa9ca1c021d065a"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleBudget$canonical$lambda$0$$inlined$compareBy$1.class",
+    "sha256": "65f00d5df828bdd9bc5ccb80a012de2633087dad4f38a5c6087ae8800bac91b4"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleCaptureRuntime.class",
+    "sha256": "906cd110e888c1c14ac5bf60cb371f601a20b335287ebf1d228bda9bf80d724b"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleStartCut$Restore.class",
+    "sha256": "372f19ecd420d1f294deeac6dcc64681ccdd597b3109d85cc3a93cbd95cdc36d"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleReducer.class",
+    "sha256": "188b16962a469ddac8ac0e0d538260e094e069eb474609f26c6479bdb6e958ed"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleBinding.class",
+    "sha256": "fa9f2a506f74bbd8086faecbd85ae5da38664938182da0f0c49016dff72e060f"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleBudget$canonical$lambda$0$$inlined$thenBy$1.class",
+    "sha256": "1a07f378de3ef0a24fec37480c2ffb1989627d5491d911fbc3c5fd105022e529"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleStartCut$Genesis.class",
+    "sha256": "26f15ce484d394057069694a15ed704ce2c3894ebf163878308d51c48ef8d3e9"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleContract$Outcome.class",
+    "sha256": "744ffeca1b337b0c3913e2f94c6752e10c1c151122d5420e9f2be6b2ffe1b59c"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/main/com/reef/platform/calcify/FiniteLifecycleCaptureProcessor$Companion.class",
+    "sha256": "8bfc9b56de8c7ba1995723cad3cd11cd13d536478cb2f8bc421ab6a166054339"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/FiniteLifecycleCaptureRuntimeTest.class",
+    "sha256": "cd9a167b8200ac99511663204fffe40c26728667ebf4409038c1b6d6d9be2b52"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/FiniteLifecycleCaptureProcessorTest.class",
+    "sha256": "f8e4af8a6672113d13bb8d93dfe60fe480b88cb13458777fdf49761e3925e0b3"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/FiniteLifecycleFixtures.class",
+    "sha256": "81e0344e89dbf0463f084b3f04b3d8517b37ae9fdbaaaebd24e82615965a46aa"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/kotlin/test/com/reef/platform/calcify/FiniteLifecycleContractTest.class",
+    "sha256": "c8faf0b6316f1b747438dcb45662dc4f3ff2a24342bf619246f74b7a6b667215"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleBatchStateV1OrBuilder.class",
+    "sha256": "67676eda2337a0260f094385ef90b13e21ccbbcafc081aede2c9ec0e8c458e81"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleCaptureV1OrBuilder.class",
+    "sha256": "d340d22885324449df9db4b0f1d44e8740047d22f6f6b02670c40d8cc70fae0c"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleBatchStateV1$1.class",
+    "sha256": "633e8b5f32c5854dc2d63f65d239494bcd986ea0ca44a54b3378aea535b82262"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleSuffixV1.class",
+    "sha256": "65a4d980b03585df83a7dd5386d98a9a46756f7b128105d8f6d86db1395d1f6c"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleCaptureV1$Builder.class",
+    "sha256": "554a9db7aa680e0f427e905cb3622e5b45716daee25ff7bcf7b92535e893448e"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleSuffixV1OrBuilder.class",
+    "sha256": "e2986fc8b6e14ebe7515ccea55754edb69c1e7618067d265df207b451341955e"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleStateV1$1.class",
+    "sha256": "7e41a032c413659a97e20a2527b13f4ccc38bac7cd137912ef516b2c1fc3cc02"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleOrderStateV1$1.class",
+    "sha256": "d7fda480e25c16b855080a1f63424a629ea4151e70dde3457c1018a11603a49e"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleStateV1OrBuilder.class",
+    "sha256": "46797fc039f8c56c7f7ba7fd501cf1c694f8d03e1e32b3166bed846e53395240"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleStateV1$Builder.class",
+    "sha256": "f2dcea556a2c41f7dfc71064edb2e97f1e377b4a1449755bcec77a422fa96cd4"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleSuffixV1$1.class",
+    "sha256": "472d0ba2eda6bb7a673dcf25b34beace20f65a930e7c1b44d4a3eafd0c25f9bf"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleOrderStateV1OrBuilder.class",
+    "sha256": "6147d7505e84c604ce5814957fb0eb7be5d82d2d8732f45cbc7f84df4ae88171"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleBatchStateV1.class",
+    "sha256": "0578bc488ccfe1f3e91b221256d5250853cde12bcc71268bac8b89f74ea46534"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleCaptureV1$1.class",
+    "sha256": "d2c347a7000b8599ac1ff0227cc3ea57d7080022d75d2cefd4138c12f9490922"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleOrderStateV1$Builder.class",
+    "sha256": "d4325c0e5980c09a5d40a9763987d5c47b24469ad11beb808b19d4d5d7a5fecd"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleOrderStateV1.class",
+    "sha256": "4b1c3c27a74fb06265042fb5cff034cc1a97d6816187de2cb912ac6770d8bc75"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleStateV1.class",
+    "sha256": "81fd8dce634ae4b9e1a53b09cb9789ad9cf7a8e60ec8f59e6adaf2c5ced66652"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleCaptureV1.class",
+    "sha256": "9791af0b83c50a54884b2c2d893b47388c6ef997d94a9aeab325c704995bf1cb"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleBatchStateV1$Builder.class",
+    "sha256": "5c7dc0f75e9a1e41e1901cf4a3bcc590988bf21488f81f91f9caedc79fc399e0"
+  },
+  {
+    "path": "services/platform-runtime/build/classes/java/main/reef/contracts/calcify/v1/FiniteLifecycleSuffixV1$Builder.class",
+    "sha256": "ae923aa0a37c6806440c2b35a3b4306efd765098a75ef92901fac7c3e72c4f77"
+  }
+]

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.reef.platform.calcify.financial.FinancialAckJournalTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-10T03:00:34.105Z" hostname="Dylans-MacBook-Pro.local" time="2.926">
+  <properties/>
+  <testcase name="actualRateProviderAndTopologyUseRecoveredDiskMembershipBeforeFinancialWork()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.244"/>
+  <testcase name="queueBoundFailureIsStickyAndPreventsLaterPublication()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.032"/>
+  <testcase name="oldPrefixLookupAfterRestartDoesNotDependOnLiveSuffixAndNewClockScopeAppends()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.191"/>
+  <testcase name="everyPublishedFileMutationTornMarkerMissingFileAndGenerationMismatchRefuseActivation()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.681"/>
+  <testcase name="duplicateOrdinalPhysicalMutationAndByteEnvelopeBoundsFailSticky()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.281"/>
+  <testcase name="notificationsAreAfterPublicationForceAndRecoveredNotificationsAreNeverReplayed()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.08"/>
+  <testcase name="actualProcessCrashesDistinguishUnpublishedForcedAndPublishedBeforeNotification()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="1.296"/>
+  <testcase name="callbackVisibilityPrecedesForcedPublicationAndRecoveryRetainsPhysicalHoles()" classname="com.reef.platform.calcify.financial.FinancialAckJournalTest" time="0.118"/>
+  <system-out><![CDATA[{"certifiedCatchupDomains":0,"partitionCut":null}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

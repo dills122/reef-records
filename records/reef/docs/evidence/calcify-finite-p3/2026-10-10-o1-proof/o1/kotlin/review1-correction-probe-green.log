@@ -1,0 +1,6 @@
+REFUSED trade-price-outside-profile economics outside finite profile
+REFUSED trade-foreign-run trade command/scope/provenance mismatch
+REFUSED trade-foreign-source trade command/scope/provenance mismatch
+REFUSED duplicate-blank-execution-facts execution party/role contradiction
+REFUSED cancel-wrong-engine-and-order invalid finite fact timestamp
+REFUSED_TRAILING_JSON invalid/duplicate/trailing source JSON

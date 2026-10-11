@@ -1,0 +1,35 @@
+{
+  "tests": 31,
+  "failures": 0,
+  "errors": 0,
+  "reports": [
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.FiniteLifecycleCaptureProcessorTest.xml",
+      "sha256": "30a70bc1835423068e10f6096721d700b5fd43da687b28968b1f9487d8e7cb87",
+      "tests": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.FiniteLifecycleCaptureRuntimeTest.xml",
+      "sha256": "3bc117665f4cc2f60b4bdaf985f0b8a6ad40f421a3e7959e538df98f3278e246",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "path": "services/platform-runtime/build/test-results/test/TEST-com.reef.platform.calcify.FiniteLifecycleContractTest.xml",
+      "sha256": "4b63b6d9b348920519597f399e7c49186c17a898f93fc07ec3cffa54c51278e3",
+      "tests": 5,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "exit": 0,
+  "log": "gradle-review1-correction-finite-final.log",
+  "sourceAggregateSha256": "0d01e5fa0b4f8efc0f2a21a1a7bab906951701286b04cf642ce538ed373ea26c",
+  "compiledIdentityRows": 43
+}

@@ -1,0 +1,11 @@
+# Author explanation
+
+Problem: npm 1.12.9 launcher starts detached updater on first ocr version/config invocation unless OCR_NO_UPDATE is nonempty. Pinned updater globally installs registry latest, replacing package used by later configure subprocesses. Hosted retry installed1.12.9 then failed MODULE_NOT_FOUND ../scripts/platform while orphan npm installer remained; earlier manifest1.12.13 is consistent. Source verifies concurrency hazard; exact filesystem interleaving remains inferred.
+
+Change: action step env OCR_NO_UPDATE='1' inherited by composite run steps before installer version check/config/review. Existing action SHA/npm version retained. Existing regression now requires opt-out on exact pinned step and one declaration; owner paragraph explains scope. Rule untouched; all original budget/exclusion/includes/trust safeguards remain.
+
+Evidence: official pinned upstream launcher/updater/action plus published npm1.12.9 tarball integrity and byte equality for launcher/updater/platform. Offline VM proof with process/fs/child_process mocks shows default updater+native versus opt-out native only, no network/provider/real process; two initial harness syntax errors and CommonJS alignment correction preserved. New workflow regression first red, then green. Full focused checks retained in verification.json, exact48→17 selector witness preserves31generated exclusions and7testincludes. Whole target and new delta separately frozen.
+
+Self-audit: no product edits, no provider/credential/package installation/hosted rerun/Git mutations. Changes limited to three approved paths; rule exact prior accepted hash. Scope protects installed pin; no guarantee of provider budget/success. Future actual CI, trusted-base merge and fresh PR485 OCR must establish selected17 completed17 failed0, pinned executed version and no unexplained skipped paths before delivery acceptance. Existing independent review1/merge remains accepted, review2of3 next, one instance remains after this review. O1cap3of3 untouched.
+
+Retention: active latest pilot behavior retained in existing CI_OPERATIONS owner paragraph; dated evidence remains scoped historical, research/task packets local active delivery artifacts. No superseded repository-owned records introduced by this three-path delta; no Records move required.

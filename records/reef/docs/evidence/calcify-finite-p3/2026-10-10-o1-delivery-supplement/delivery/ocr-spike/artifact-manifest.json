@@ -1,0 +1,33 @@
+{
+  "readOnly": true,
+  "productAndTrustedConfigMutated": false,
+  "scope": "ocr-spike only",
+  "files": {
+    "pages__src__content__docs__en__cli-reference.md": "fb5dbcb46ae7af25194f95591c5661666f9b15902aaf1c0b2d15bb63c6446241",
+    "internal__agent__agent.go": "d3ecccbe748402413b7641ecad0d0a17201d63eeb0ba52a84a28bf730d24c623",
+    "internal__config__allowlist__default_exclude_patterns.json": "2946e9e6e608af4fe4cb4e43f4744f9827cead0a69350488b31f1777961e9879",
+    "internal__config__rules__system_rules.go": "e0e5e751a8e250b9796a3be3e173955d555b78da685d7523313730973a7e9852",
+    "github__workflows__open-code-review-pilot.yml": "71424cf125ae696f67f5f56a4552ce78d4e547c81d53c54e107b2d2aaf4c4345",
+    "internal__agent__estimate.go": "84cf22584064648130a76626a44aa039d337278eb3d6d04a53e79a88d75149e9",
+    "coverage-before-after.json": "f83c985673b246e5c6991645bc9c0667dcf7b0797615a21339ba9c90371e3323",
+    "upstream-tree.json": "4f512d6920333ff320613c6f3947e96c75b14255bad7b91ac0f336bb9f36ce2d",
+    "internal__config__template__task_template.json": "3d88cc8e50a4624f1f4d2fd5518898e4eac4e827eb63b16270167b0fbddf6a32",
+    "internal__llm__client.go": "94d3cd6052fd484d19948ff4e7c28b44274c6e7cc9f977a0352170af4377da03",
+    "internal__config__template__effort.go": "696b38e99ae01f99d68e8dc2408381e7b2343aecd1602d4fceea923d103fb303",
+    "trusted-pins.json": "bf90441b9e6e4aa49c190bdec92be74d06e3623d25fa1093cdd35e8f262e677c",
+    "opencodereview__rule.json": "785998777cf12314f6f44786f90fc069273894e318d36ddc4473230836d0a6f4",
+    "internal__llm__embedded_loader.go": "7bbd59cc7a0efe10876d5548c624d9662368357891fa444e0c5792ecd6df96e8",
+    "internal__model__diff.go": "122f8c8c9ec8aa7e34b735177ff47e5dc3ac8f62ab807874354484aa23868918",
+    "cmd__opencodereview__version.go": "808ea0bc1a00115dfefe8531ff32aaa80e53dffaff958d86a0681470e2184505",
+    "research.md": "8e999cba8ff100515ed085e286e24c9eb1eb2b4206a81fdc2c0885bfdbeaba8d",
+    "proposed-trusted-base.patch": "420022f3d6ff397c22b5a999fd5eff5bf182422e9f39ab7fd6798260aeeb23ba",
+    "internal__config__template__template.go": "a762882b25093cfe7e5193dcae784d684fbaf5987127beda17098457230fa666",
+    "cmd__opencodereview__review_cmd.go": "b044ce5bce1068556b8a389b7a663b7b8d5f043569c04301492479a446f0e646",
+    "internal__agent__grouping.go": "2f55ebd1728aee8bd210055b978464fb84e75406074836bf3dbba547b9f7f7ff",
+    "coverage-cost-witness.json": "ccd4c8244b73c6a1755af1aa62a8a9260ab73eec4712f25be2d58206fd3e61a5",
+    "failed-result.json": "5c7b6135acb9bd2e06ccd0082397ab38ba76fc2f45e5ee2e5c21f4c48235f128",
+    "pages__src__content__docs__en__review-rules.md": "d982b92234909f775c0c798ba9de121ba8059ac2b85af9b7941e5e4c61423339",
+    "cmd__opencodereview__shared_flags.go": "fe289f3bf4e4e0f035f7fb3050455fb49bc109dbc7e7fa6bb295c62df3b99be6",
+    "action.yml": "8294d0b74478032330d54714c129ea39093dd74894e91e59a3f60388931f71e5"
+  }
+}

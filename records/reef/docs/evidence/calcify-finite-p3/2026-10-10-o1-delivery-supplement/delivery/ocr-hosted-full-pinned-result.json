@@ -1,0 +1,320 @@
+{
+  "status": "complete",
+  "llm": {
+    "model": "openai/gpt-5.4-mini"
+  },
+  "message": "Review complete: 5 finding(s) across 17 selected item(s).",
+  "summary": {
+    "files_reviewed": 17,
+    "comments": 5,
+    "total_tokens": 568676,
+    "input_tokens": 564164,
+    "output_tokens": 4512,
+    "cache_read_tokens": 362496,
+    "elapsed": "20s"
+  },
+  "tool_calls": {
+    "total": 24,
+    "by_tool": {
+      "code_comment": 4,
+      "code_search": 11,
+      "file_read": 7,
+      "file_read_diff": 2
+    },
+    "failure": 0,
+    "failure_by_tool": {},
+    "failure_details": []
+  },
+  "comments": [
+    {
+      "path": "services/matching-engine/internal/streamdirect/runner.go",
+      "content": "This branch makes `StartRunner` unconditionally fail whenever `MATCHING_ENGINE_CALCIFY_LIFECYCLE_ENABLED=true`, even after validation succeeds. That means the feature can never actually be activated through the runtime entrypoint, so any deployment using the new config will see a hard startup failure rather than the intended gated mode. If this is only meant as a temporary block, it should be guarded more narrowly or moved behind an explicit migration flag.",
+      "suggestion_code": "\t\t// Model fact/capture proof cannot authorize replay under a new mode.\n\t\t// O2 replaces this gate only after durable registration and bound restore.\n\t\treturn nil, fmt.Errorf(\"Calcify lifecycle live activation requires durable binding and restore (O2)\")",
+      "existing_code": "\t\t// Model fact/capture proof cannot authorize replay under a new mode.\n\t\t// O2 replaces this gate only after durable registration and bound restore.\n\t\treturn nil, fmt.Errorf(\"Calcify lifecycle live activation requires durable binding and restore (O2)\")",
+      "start_line": 41,
+      "end_line": 43,
+      "category": "bug",
+      "severity": "medium"
+    },
+    {
+      "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessor.kt",
+      "content": "`record.value()` can be null for tombstone messages, but this path converts it to an empty byte array and then attempts to parse it as a payload. That will fail later as an `IllegalArgumentException`, but it also means a tombstone is treated like malformed input rather than a recoverable no-op. If this topic can carry tombstones, we should handle them explicitly (for example, retain/skip according to the intended contract) instead of silently coercing to `byteArrayOf()`.",
+      "suggestion_code": "        val payload = record.value()\n        if (payload == null) {\n            retain(state, byteArrayOf(), offset, resume, \"null source record\")\n            return\n        }",
+      "existing_code": "        val payload = record.value() ?: byteArrayOf()",
+      "start_line": 301,
+      "end_line": 301,
+      "category": "bug",
+      "severity": "high"
+    },
+    {
+      "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntime.kt",
+      "content": "`validateState()` allows `retainedSuffixCount > 0` only when `fault` is non-empty, but `initializeModel()` accepts a restored checkpoint without revalidating that the retained suffix history fits the available source window for the new cut. If the checkpoint is only partially covered by the new `availableEnd`, the processor can start from a state that cannot be safely replayed and later fail inconsistently. Consider tightening the restore preconditions against the retained suffix tail before returning the checkpoint.",
+      "suggestion_code": "            is FiniteLifecycleStartCut.Restore -> {\n                require(managed == null || managed == cut.checkpoint) { \"managed/certified checkpoint mismatch\" }\n                val requiredEnd = maxOf(\n                    cut.checkpoint.resumeOffset,\n                    cut.checkpoint.retainedSuffixList.maxOfOrNull { it.resumeOffset } ?: binding.genesisOffset,\n                )\n                require(cut.availableBeginning <= binding.genesisOffset && cut.availableEnd >= requiredEnd) {\n                    \"required source history unavailable\"\n                }\n                FiniteLifecycleReducer.validateState(cut.checkpoint, binding)\n                cut.checkpoint\n            }",
+      "existing_code": "is FiniteLifecycleStartCut.Restore -> {\n                require(managed == null || managed == cut.checkpoint) { \"managed/certified checkpoint mismatch\" }\n                val requiredEnd = maxOf(cut.checkpoint.resumeOffset,cut.checkpoint.retainedSuffixList.maxOfOrNull { it.resumeOffset } ?: binding.genesisOffset)\n                require(cut.availableBeginning <= binding.genesisOffset && cut.availableEnd >= requiredEnd) { \"required source history unavailable\" }\n                cut.checkpoint\n            }",
+      "start_line": 23,
+      "end_line": 28,
+      "category": "bug",
+      "severity": "medium"
+    },
+    {
+      "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleContract.kt",
+      "content": "`canonical()` sorts the two parties before serializing them, which makes the budget digest independent of the buy/sell ordering in the binding. That means two bindings with the same participant/account pairs but opposite sides will produce the same canonical bytes even though `FiniteLifecycleBinding` treats the side assignment as semantically significant. If this digest is used as an identity input, it can collapse distinct bindings into the same hash.",
+      "suggestion_code": "val ordered = parties.sortedWith(compareBy<FiniteParty> { it.participant }.thenBy { it.account })\n            require(ordered.size == 2 && ordered.map { it.participant to it.account }.distinct().size == 2)\n            out.writeInt(ordered.size)\n            parties.forEach { out.frame(it.participant); out.frame(it.account); out.writeByte(when(it.side) {",
+      "existing_code": "val ordered = parties.sortedWith(compareBy<FiniteParty> { it.participant }.thenBy { it.account })\n            require(ordered.size == 2 && ordered.map { it.participant to it.account }.distinct().size == 2)\n            out.writeInt(ordered.size)\n            ordered.forEach { out.frame(it.participant); out.frame(it.account); out.writeByte(when(it.side) {",
+      "start_line": 45,
+      "end_line": 48,
+      "category": "bug",
+      "severity": "medium"
+    },
+    {
+      "path": "services/matching-engine/internal/streamdirect/config.go",
+      "content": "`validateCalcifyLifecycle` only checks that a profile hash exists, but not that the supplied finite binding digest matches the service's current source profile. As written, any lowercase 64-hex string will pass as long as a profile is loaded and `BatchSize==1`, so the lifecycle mode can start against the wrong binding and emit facts stamped with an unrelated digest.",
+      "suggestion_code": "func validateCalcifyLifecycle(service *app.Service, enabled bool, binding string, batchSize int) error {\n\tif !enabled {\n\t\treturn nil\n\t}\n\tdecoded, err := hex.DecodeString(binding)\n\tif err != nil || len(decoded) != 32 || len(binding) != 64 || binding != strings.ToLower(binding) {\n\t\treturn fmt.Errorf(\"Calcify lifecycle requires lowercase SHA256 finite binding digest\")\n\t}\n\tif service == nil || service.CalcifySourceProfileHash() == \"\" {\n\t\treturn fmt.Errorf(\"Calcify lifecycle requires finite source profile\")\n\t}\n\tif err := service.ValidateCalcifySourceProfile(); err != nil {\n\t\treturn err\n\t}\n\tif binding != service.CalcifySourceProfileHash() {\n\t\treturn fmt.Errorf(\"Calcify lifecycle requires binding digest to match source profile hash\")\n\t}\n\tif batchSize != 1 {\n\t\treturn fmt.Errorf(\"Calcify lifecycle requires batch size 1\")\n\t}\n\treturn nil\n}",
+      "existing_code": "func validateCalcifyLifecycle(service *app.Service, enabled bool, binding string, batchSize int) error {\n\tif !enabled {\n\t\treturn nil\n\t}\n\tdecoded, err := hex.DecodeString(binding)\n\tif err != nil || len(decoded) != 32 || len(binding) != 64 || binding != strings.ToLower(binding) {\n\t\treturn fmt.Errorf(\"Calcify lifecycle requires lowercase SHA256 finite binding digest\")\n\t}\n\tif service == nil || service.CalcifySourceProfileHash() == \"\" {\n\t\treturn fmt.Errorf(\"Calcify lifecycle requires finite source profile\")\n\t}\n\tif err := service.ValidateCalcifySourceProfile(); err != nil {\n\t\treturn err\n\t}\n\tif batchSize != 1 {\n\t\treturn fmt.Errorf(\"Calcify lifecycle requires batch size 1\")\n\t}\n\treturn nil\n}",
+      "start_line": 79,
+      "end_line": 97,
+      "category": "bug",
+      "severity": "high"
+    }
+  ],
+  "groups": [
+    {
+      "label": "calcify contract and proto definition",
+      "files": [
+        "contracts/calcify/finite-lifecycle-source-v1-manifest.json",
+        "contracts/proto/calcify.proto"
+      ]
+    },
+    {
+      "label": "matching-engine calcify lifecycle domain and streamdirect implementation",
+      "files": [
+        "services/matching-engine/internal/app/calcify_source_identity_test.go",
+        "services/matching-engine/internal/app/calcify_source_profile.go",
+        "services/matching-engine/internal/domain/calcify_lifecycle.go",
+        "services/matching-engine/internal/streamdirect/calcify_lifecycle_checksum_test.go",
+        "services/matching-engine/internal/streamdirect/calcify_lifecycle_config_test.go",
+        "services/matching-engine/internal/streamdirect/calcify_lifecycle_test.go",
+        "services/matching-engine/internal/streamdirect/config.go",
+        "services/matching-engine/internal/streamdirect/processor.go",
+        "services/matching-engine/internal/streamdirect/runner.go"
+      ]
+    },
+    {
+      "label": "platform-runtime finite lifecycle capture/contract implementation and tests",
+      "files": [
+        "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessor.kt",
+        "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntime.kt",
+        "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleContract.kt",
+        "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessorTest.kt",
+        "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntimeTest.kt",
+        "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleContractTest.kt"
+      ]
+    }
+  ],
+  "session_id": "2346209b-6359-46cb-95e0-ef00d70799aa",
+  "manifest": {
+    "schema_version": "ocr.run-manifest/v1",
+    "run_id": "2346209b-6359-46cb-95e0-ef00d70799aa",
+    "operation": "review",
+    "terminal_state": "complete",
+    "repository": {
+      "identity_sha256": "6e5979b54b60528d938f9d635f985c416544a3028ef163789f6a5ba2e1fdb2cd"
+    },
+    "input": {
+      "mode": "range",
+      "requested_from": "51cd90eee43d257bad4f973fc9bd81f273bb4ef7",
+      "requested_head": "dcb106c4ddd5ccda60df7c8e6411fca88ef5be14",
+      "resolved_base": "51cd90eee43d257bad4f973fc9bd81f273bb4ef7",
+      "resolved_head": "dcb106c4ddd5ccda60df7c8e6411fca88ef5be14",
+      "exact_range": "51cd90eee43d257bad4f973fc9bd81f273bb4ef7..dcb106c4ddd5ccda60df7c8e6411fca88ef5be14",
+      "source_artifact_sha256": "8a945c74570ad3e76ef7b6fb6b720929eec2d02edef536635b8921a4f8261efc"
+    },
+    "execution": {
+      "ocr_version": "v1.12.9",
+      "model": "openai/gpt-5.4-mini",
+      "configured_concurrency": 2,
+      "rule_config_sha256": "cf61f0e5b7da16eb8a3f092bc7bbd65086837fb855ecea08ba14544c5fa54d76",
+      "runtime_config_sha256": "78c2c3121b35c043d8d4c562a502778ca4516858bd912771383ac9c8a65a8605"
+    },
+    "coverage": {
+      "selected": [
+        {
+          "item_id": "09eeea48071c79866b15313616e6fbd0c7d3b3885873bfbcce15ee243cb84063",
+          "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntimeTest.kt",
+          "fingerprint": "6a60636f78bfbb91861470365851df20723c0159bb810fc54b56359a1d4e4ade"
+        },
+        {
+          "item_id": "158694784a9f6ea475e625c8ecc1b0d45c8a0648f541bc4b03d660840cf2637a",
+          "path": "services/matching-engine/internal/app/calcify_source_profile.go",
+          "fingerprint": "3f2d92e08e58128f50463b3e69ca183b8df3aa5e3eb82f0a79f7e394f3aa9ff5"
+        },
+        {
+          "item_id": "1b5a60d0a364257323adcfa7f173e4f565a94d97455e4069a871a9253b51b33a",
+          "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleContractTest.kt",
+          "fingerprint": "5226d107321c5b807cbff61951d9a681ab2fc3d22b663f28e10d9e42cab54a75"
+        },
+        {
+          "item_id": "28c92f6b5ec7dbbf850be239f63268de24304f02fc6025043b82d59b0cf33511",
+          "path": "services/matching-engine/internal/streamdirect/calcify_lifecycle_checksum_test.go",
+          "fingerprint": "e70745813557a726c31242de7d46a07283c6030e533a10202ed0f63eae324445"
+        },
+        {
+          "item_id": "67be1f72bb2934b4abef1ef8941677fa8b2a1c8d45965ecf8c89dfbc418967e4",
+          "path": "services/matching-engine/internal/streamdirect/calcify_lifecycle_config_test.go",
+          "fingerprint": "cfd72d50cba905ce0517380b14256e349f27f88028453dc1902336da5d84ee39"
+        },
+        {
+          "item_id": "6d51c41a05c65820495209dd6b2dd9a56ef6cd519aab06cf159026f639acebdd",
+          "path": "services/matching-engine/internal/streamdirect/processor.go",
+          "fingerprint": "b6b10eae01fb735c61e27288a763bf59db53a6bb522dec99adac1543aef2ec26"
+        },
+        {
+          "item_id": "6d79705a63c9949d8674793d8cdaaa1d52959860a75b08d4c0519f8083fc3e1a",
+          "path": "services/matching-engine/internal/streamdirect/calcify_lifecycle_test.go",
+          "fingerprint": "aa3a93a263d2df3e212f8dc97549bb38a0ffcca68560133f96eb2aa6d94840b1"
+        },
+        {
+          "item_id": "7b798ee3c6916eb31c44882a20a1a267d876f5d383af547f48a0908a7b9f7f01",
+          "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessorTest.kt",
+          "fingerprint": "f6f79bb04338768830673a7691f746241e8dc1ae62656c38e0b7b7b7f2bdd73a"
+        },
+        {
+          "item_id": "7d2e16c41baf133ce34cb6b2390928817a2ff71dba73d78aa1300eb34fb17ca0",
+          "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleContract.kt",
+          "fingerprint": "2300411e946e872c12b9a62c4eb9d983b937dd9c3183991624d26637eac198d2"
+        },
+        {
+          "item_id": "8781c17639acf0f3620d9eb861db50ab08d6a35b64ee8847c5de3c48f2fbaaf0",
+          "path": "services/matching-engine/internal/app/calcify_source_identity_test.go",
+          "fingerprint": "7d84b496dd4970e1f66aa070b94502fbe558fc483af3e9e44bc37fde34b5c1fb"
+        },
+        {
+          "item_id": "9a35cbc4a66be9eb0baab6ef6ceacbbec185be585f426f6f2ffb5693315d68f5",
+          "path": "services/matching-engine/internal/streamdirect/config.go",
+          "fingerprint": "2e639bf04607eed4d57364dae148e053a53472d54f54f97e591d47348f7164b8"
+        },
+        {
+          "item_id": "c6effffc93ebbf66f3474a68f5051ef5b8522454c4fad285f535e5c9d595438f",
+          "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessor.kt",
+          "fingerprint": "e5adffbe531609928c0244a8c0146bb550726837476a6a3d32b479eea29c754e"
+        },
+        {
+          "item_id": "cf1e69dcedb6452e010bc13ec23bfc5d528a87abad5f228bb88c1ec353d201b2",
+          "path": "services/matching-engine/internal/domain/calcify_lifecycle.go",
+          "fingerprint": "05ea61ffc3908981c294dfb8db59235ea5d5c33efdf27b9c8f664cf4fbbdbeb2"
+        },
+        {
+          "item_id": "dc30e34884b44006b318be9d65a607d82680e42d287b132f57dea35019d8f40c",
+          "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntime.kt",
+          "fingerprint": "8fb71b51652ebf7653bf05020eb675a1ae872d9de5f7dfcf4f91314fd24f83e5"
+        },
+        {
+          "item_id": "e69c33a108f474011202cb336fc75b021a36eb56347f8a4ffe75ef27b59134e4",
+          "path": "services/matching-engine/internal/streamdirect/runner.go",
+          "fingerprint": "06006712c473789524310f2ff9468faf8af40a3765dd556349e5a9c6f56a8c0d"
+        },
+        {
+          "item_id": "edac7b2b8bb729e92bb845044494cbc358abe2f8d6e7c2b41720e6932fb2ddec",
+          "path": "contracts/calcify/finite-lifecycle-source-v1-manifest.json",
+          "fingerprint": "eb8a03779c389a444aee7d28da21c9531327f2274b37cc65cb5a36a030eb0378"
+        },
+        {
+          "item_id": "f12528d4cd075f302824d1f3f1f31a9bf04492d12f1e34c0acaaa33548111d48",
+          "path": "contracts/proto/calcify.proto",
+          "fingerprint": "e8aed55c0726625a87399fade3091d6f3f6eb712a75d8c662304ccd07aa485dd"
+        }
+      ],
+      "completed": [
+        {
+          "item_id": "09eeea48071c79866b15313616e6fbd0c7d3b3885873bfbcce15ee243cb84063",
+          "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntimeTest.kt",
+          "fingerprint": "6a60636f78bfbb91861470365851df20723c0159bb810fc54b56359a1d4e4ade"
+        },
+        {
+          "item_id": "158694784a9f6ea475e625c8ecc1b0d45c8a0648f541bc4b03d660840cf2637a",
+          "path": "services/matching-engine/internal/app/calcify_source_profile.go",
+          "fingerprint": "3f2d92e08e58128f50463b3e69ca183b8df3aa5e3eb82f0a79f7e394f3aa9ff5"
+        },
+        {
+          "item_id": "1b5a60d0a364257323adcfa7f173e4f565a94d97455e4069a871a9253b51b33a",
+          "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleContractTest.kt",
+          "fingerprint": "5226d107321c5b807cbff61951d9a681ab2fc3d22b663f28e10d9e42cab54a75"
+        },
+        {
+          "item_id": "28c92f6b5ec7dbbf850be239f63268de24304f02fc6025043b82d59b0cf33511",
+          "path": "services/matching-engine/internal/streamdirect/calcify_lifecycle_checksum_test.go",
+          "fingerprint": "e70745813557a726c31242de7d46a07283c6030e533a10202ed0f63eae324445"
+        },
+        {
+          "item_id": "67be1f72bb2934b4abef1ef8941677fa8b2a1c8d45965ecf8c89dfbc418967e4",
+          "path": "services/matching-engine/internal/streamdirect/calcify_lifecycle_config_test.go",
+          "fingerprint": "cfd72d50cba905ce0517380b14256e349f27f88028453dc1902336da5d84ee39"
+        },
+        {
+          "item_id": "6d51c41a05c65820495209dd6b2dd9a56ef6cd519aab06cf159026f639acebdd",
+          "path": "services/matching-engine/internal/streamdirect/processor.go",
+          "fingerprint": "b6b10eae01fb735c61e27288a763bf59db53a6bb522dec99adac1543aef2ec26"
+        },
+        {
+          "item_id": "6d79705a63c9949d8674793d8cdaaa1d52959860a75b08d4c0519f8083fc3e1a",
+          "path": "services/matching-engine/internal/streamdirect/calcify_lifecycle_test.go",
+          "fingerprint": "aa3a93a263d2df3e212f8dc97549bb38a0ffcca68560133f96eb2aa6d94840b1"
+        },
+        {
+          "item_id": "7b798ee3c6916eb31c44882a20a1a267d876f5d383af547f48a0908a7b9f7f01",
+          "path": "services/platform-runtime/src/test/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessorTest.kt",
+          "fingerprint": "f6f79bb04338768830673a7691f746241e8dc1ae62656c38e0b7b7b7f2bdd73a"
+        },
+        {
+          "item_id": "7d2e16c41baf133ce34cb6b2390928817a2ff71dba73d78aa1300eb34fb17ca0",
+          "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleContract.kt",
+          "fingerprint": "2300411e946e872c12b9a62c4eb9d983b937dd9c3183991624d26637eac198d2"
+        },
+        {
+          "item_id": "8781c17639acf0f3620d9eb861db50ab08d6a35b64ee8847c5de3c48f2fbaaf0",
+          "path": "services/matching-engine/internal/app/calcify_source_identity_test.go",
+          "fingerprint": "7d84b496dd4970e1f66aa070b94502fbe558fc483af3e9e44bc37fde34b5c1fb"
+        },
+        {
+          "item_id": "9a35cbc4a66be9eb0baab6ef6ceacbbec185be585f426f6f2ffb5693315d68f5",
+          "path": "services/matching-engine/internal/streamdirect/config.go",
+          "fingerprint": "2e639bf04607eed4d57364dae148e053a53472d54f54f97e591d47348f7164b8"
+        },
+        {
+          "item_id": "c6effffc93ebbf66f3474a68f5051ef5b8522454c4fad285f535e5c9d595438f",
+          "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureProcessor.kt",
+          "fingerprint": "e5adffbe531609928c0244a8c0146bb550726837476a6a3d32b479eea29c754e"
+        },
+        {
+          "item_id": "cf1e69dcedb6452e010bc13ec23bfc5d528a87abad5f228bb88c1ec353d201b2",
+          "path": "services/matching-engine/internal/domain/calcify_lifecycle.go",
+          "fingerprint": "05ea61ffc3908981c294dfb8db59235ea5d5c33efdf27b9c8f664cf4fbbdbeb2"
+        },
+        {
+          "item_id": "dc30e34884b44006b318be9d65a607d82680e42d287b132f57dea35019d8f40c",
+          "path": "services/platform-runtime/src/main/kotlin/com/reef/platform/calcify/FiniteLifecycleCaptureRuntime.kt",
+          "fingerprint": "8fb71b51652ebf7653bf05020eb675a1ae872d9de5f7dfcf4f91314fd24f83e5"
+        },
+        {
+          "item_id": "e69c33a108f474011202cb336fc75b021a36eb56347f8a4ffe75ef27b59134e4",
+          "path": "services/matching-engine/internal/streamdirect/runner.go",
+          "fingerprint": "06006712c473789524310f2ff9468faf8af40a3765dd556349e5a9c6f56a8c0d"
+        },
+        {
+          "item_id": "edac7b2b8bb729e92bb845044494cbc358abe2f8d6e7c2b41720e6932fb2ddec",
+          "path": "contracts/calcify/finite-lifecycle-source-v1-manifest.json",
+          "fingerprint": "eb8a03779c389a444aee7d28da21c9531327f2274b37cc65cb5a36a030eb0378"
+        },
+        {
+          "item_id": "f12528d4cd075f302824d1f3f1f31a9bf04492d12f1e34c0acaaa33548111d48",
+          "path": "contracts/proto/calcify.proto",
+          "fingerprint": "e8aed55c0726625a87399fade3091d6f3f6eb712a75d8c662304ccd07aa485dd"
+        }
+      ],
+      "reused": [],
+      "failed": [],
+      "waived": []
+    },
+    "elapsed_ms": 20447
+  }
+}

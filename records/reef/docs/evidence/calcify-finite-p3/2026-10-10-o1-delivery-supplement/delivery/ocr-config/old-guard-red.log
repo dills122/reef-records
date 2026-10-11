@@ -1,0 +1,40 @@
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
++ actual - expected
+
+  {
+    exclude: [
+      'docs/**',
+      'reports/**',
++     'services/platform-runtime/src/main/java/reef/contracts/calcify/v1/**'
+    ],
+    include: [
+      'services/**/*_test.go',
+      'services/**/src/test/**/*.kt'
+    ],
+
+    at file:///private/tmp/reef-ocr-config-20261010/scripts/dev/ci-workflow-hardening.test.mjs:181:8 {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: {
+    include: [ 'services/**/*_test.go', 'services/**/src/test/**/*.kt' ],
+    exclude: [
+      'docs/**',
+      'reports/**',
+      'services/platform-runtime/src/main/java/reef/contracts/calcify/v1/**'
+    ],
+    rules: []
+  },
+  expected: {
+    include: [ 'services/**/*_test.go', 'services/**/src/test/**/*.kt' ],
+    exclude: [ 'docs/**', 'reports/**' ],
+    rules: []
+  },
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
+
+Node.js v22.23.3

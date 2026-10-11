@@ -1,0 +1,35 @@
+2026-10-10T16:43:23.7202640Z added 2 packages in 2s
+2026-10-10T16:43:23.7706609Z OpenCodeReview installed:
+2026-10-10T16:43:23.8195690Z open-code-review v1.12.9 (bccbc15) linux/amd64
+2026-10-10T16:43:23.8196092Z built at: 2026-09-22T11:04:08Z
+2026-10-10T16:43:23.8196647Z https://github.com/alibaba/open-code-review
+2026-10-10T16:43:23.8214285Z ##[end-action id=__alibaba_open-code-review.__run_6;outcome=success;conclusion=success;duration_ms=2259]
+2026-10-10T16:43:23.8220204Z ##[start-action display=Configure OCR;id=__alibaba_open-code-review.__run_7]
+2026-10-10T16:43:23.8344722Z   STREAM_PROGRESS: false
+2026-10-10T16:43:23.8344954Z   RESOLVE_OUTDATED: false
+2026-10-10T16:43:23.8345316Z   OCR_VERSION_ACTUAL: open-code-review v1.12.9 (bccbc15) linux/amd64
+2026-10-10T16:43:23.8345752Z   OCR_LLM_URL: https://openrouter.ai/api/v1
+2026-10-10T16:43:23.8346111Z   OCR_LLM_MODEL: openai/gpt-5.4-mini
+2026-10-10T16:43:23.8346388Z   OCR_USE_ANTHROPIC: false
+2026-10-10T16:43:23.8346640Z   OCR_LLM_PROTOCOL_INPUT: openai
+2026-10-10T16:43:24.3363320Z   ^
+2026-10-10T16:43:24.3382696Z 
+2026-10-10T16:43:24.3383327Z Error: Cannot find module '../scripts/platform'
+2026-10-10T16:43:24.3384215Z Require stack:
+2026-10-10T16:43:24.3393272Z - /usr/local/lib/node_modules/@alibaba-group/open-code-review/bin/ocr.js
+2026-10-10T16:43:24.3394469Z     at Function._resolveFilename (node:internal/modules/cjs/loader:1430:15)
+2026-10-10T16:43:24.3395334Z     at defaultResolveImpl (node:internal/modules/cjs/loader:1040:19)
+2026-10-10T16:43:24.3399861Z     at Module._compile (node:internal/modules/cjs/loader:1781:14)
+2026-10-10T16:43:24.3400303Z     at Object..js (node:internal/modules/cjs/loader:1913:10) {
+2026-10-10T16:43:24.3400666Z   code: 'MODULE_NOT_FOUND',
+2026-10-10T16:43:24.3400929Z   requireStack: [
+2026-10-10T16:43:24.3401282Z     '/usr/local/lib/node_modules/@alibaba-group/open-code-review/bin/ocr.js'
+2026-10-10T16:43:24.3401679Z   ]
+2026-10-10T16:43:24.3401875Z }
+2026-10-10T16:43:24.3401977Z 
+2026-10-10T16:43:24.3402075Z Node.js v22.23.3
+2026-10-10T16:43:24.3413050Z ##[error]Process completed with exit code 1.
+2026-10-10T16:43:24.3420797Z ##[end-action id=__alibaba_open-code-review.__run_7;outcome=failure;conclusion=failure;duration_ms=519]
+2026-10-10T16:43:24.3437047Z ##[start-action display=Resolve review range;id=__alibaba_open-code-review.range]
+2026-10-10T16:43:24.3440239Z ##[end-action id=__alibaba_open-code-review.range;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-10T16:43:24.3444930Z ##[start-action display=Run OpenCodeReview;id=__alibaba_open-code-review.__run_8]
