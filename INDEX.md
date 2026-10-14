@@ -1,5 +1,9 @@
 # Archive index
 
+## October 13 — Raw Phase 2, direct and joined campaign retention
+
+[Import scope](docs/imports/2026-10-13-raw-campaign-retention.md), [manifest](manifests/2026-10-13-raw-campaign-retention.json). 296 exact files/11794694 bytes from Reef `150c6d6f20fd53341a29eee5d8ee1a79a98fce1c`; all selected failures/corrections preserved. Active fixtures remain in Reef. No new capacity claim.
+
 ## October 11 — Calcify arena credit and initial kernel research
 
 [Proof](records/reef/docs/evidence/calcify-arena-credit/run-2026-10-11-b9a8756e/README.md), [manifest](manifests/2026-10-11-calcify-arena-credit.json), [provenance](docs/imports/2026-10-11-calcify-arena-credit-provenance.md).
