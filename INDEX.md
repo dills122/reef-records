@@ -534,3 +534,7 @@ Source: [Reef `76872e9db249152e0329393d73c4a2f850ea2b93`](https://github.com/dil
 ## Calcify O1 hosted review delivery supplement — 2026-10-10
 
 [Manifest](manifests/2026-10-10-calcify-finite-p3-o1-delivery-supplement.json), [provenance](docs/imports/2026-10-10-calcify-finite-p3-o1-delivery-supplement-provenance.md), [mapping](records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/promotion-mapping.json), [checksums](records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/SHA256SUMS), [manager acceptance](records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-manager-acceptance.json). New190records/2259259bytes; original230records unchanged. Full pinned17-file OCR and five evidence-backed dispositions, config review2of3 and all failed/recovery attempts retained. Local-only raw proof source575c52b02939ff9600bd461cab0c56e83cb369e1; normal parentdcb. No live/financial/resource qualification or Reef removal.
+
+## Calcify footprint proof — October 15, 2026
+
+[Manifest](manifests/2026-10-15-calcify-footprint-proof.json); [raw records](records/reef/docs/evidence/calcify-footprint-2026-10-15/raw); [source at 8b3a637d9](https://github.com/dills122/reef/tree/8b3a637d967fbfffb7dbd3a5812a1edce0bde9a6/docs/evidence/calcify-footprint-2026-10-15). Complete successes, failures and corrections; current owner notes remain in Reef.
