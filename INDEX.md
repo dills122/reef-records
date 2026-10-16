@@ -534,3 +534,8 @@ Source: [Reef `76872e9db249152e0329393d73c4a2f850ea2b93`](https://github.com/dil
 ## Calcify O1 hosted review delivery supplement — 2026-10-10
 
 [Manifest](manifests/2026-10-10-calcify-finite-p3-o1-delivery-supplement.json), [provenance](docs/imports/2026-10-10-calcify-finite-p3-o1-delivery-supplement-provenance.md), [mapping](records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/promotion-mapping.json), [checksums](records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/SHA256SUMS), [manager acceptance](records/reef/docs/evidence/calcify-finite-p3/2026-10-10-o1-delivery-supplement/delivery/ocr-manager-acceptance.json). New190records/2259259bytes; original230records unchanged. Full pinned17-file OCR and five evidence-backed dispositions, config review2of3 and all failed/recovery attempts retained. Local-only raw proof source575c52b02939ff9600bd461cab0c56e83cb369e1; normal parentdcb. No live/financial/resource qualification or Reef removal.
+
+## Superseded Calcify throughput harnesses and research spikes — 2026-10-16
+
+[Import scope](docs/imports/2026-10-16-reef-script-cleanup.md), [manifest](manifests/2026-10-16-reef-script-cleanup.json). 19 exact files/214895 bytes from Reef `df8695dc29354f5b8d0e1924864797bbd2f3445e`: the generic full-path smoke (wrong ingress profile for 10k), the October 2 joined-capacity driver and helper, the October 1 resolver proof runners and 12 Kotlin research spikes. The supported path stays in Reef. No new capacity claim.
+
