@@ -539,3 +539,7 @@ Source: [Reef `76872e9db249152e0329393d73c4a2f850ea2b93`](https://github.com/dil
 
 [Import scope](docs/imports/2026-10-16-reef-script-cleanup.md), [manifest](manifests/2026-10-16-reef-script-cleanup.json). 19 exact files/214895 bytes from Reef `df8695dc29354f5b8d0e1924864797bbd2f3445e`: the generic full-path smoke (wrong ingress profile for 10k), the October 2 joined-capacity driver and helper, the October 1 resolver proof runners and 12 Kotlin research spikes. The supported path stays in Reef. No new capacity claim.
 
+
+## Reef repository retention audit — 2026-10-16
+
+[Import scope](docs/imports/2026-10-16-reef-repository-retention-audit.md), [manifest](manifests/2026-10-16-reef-repository-retention-audit.json). 23 exact files/129760 bytes from Reef `cab570aa518530dada1f7b9a5e5f07f33880129d`; isolated Phase 2 prototype and closed handoffs. Current code, fixtures and focused evidence remain in Reef.
