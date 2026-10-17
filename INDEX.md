@@ -547,3 +547,7 @@ Source: [Reef `76872e9db249152e0329393d73c4a2f850ea2b93`](https://github.com/dil
 ## Reef repository retention audit, expanded pass — 2026-10-16
 
 [Import scope](docs/imports/2026-10-16-reef-repository-retention-audit-broad.md), [manifest](manifests/2026-10-16-reef-repository-retention-audit-broad.json). 78 exact files/871026 bytes from Reef `cab570aa518530dada1f7b9a5e5f07f33880129d`; closed planning, dated research, prior proof bundles and isolated probes.
+
+## Reef script-use audit — 2026-10-16
+
+[Import scope](docs/imports/2026-10-16-reef-script-use-audit.md), [manifest](manifests/2026-10-16-reef-script-use-audit.json). 16 exact files/150104 bytes from Reef `9bbec61aafef55b05c1250b747e56fef92094f31`; closed campaign, projection and contention research tools.
