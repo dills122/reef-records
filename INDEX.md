@@ -551,3 +551,7 @@ Source: [Reef `76872e9db249152e0329393d73c4a2f850ea2b93`](https://github.com/dil
 ## Reef script-use audit — 2026-10-16
 
 [Import scope](docs/imports/2026-10-16-reef-script-use-audit.md), [manifest](manifests/2026-10-16-reef-script-use-audit.json). 16 exact files/150104 bytes from Reef `9bbec61aafef55b05c1250b747e56fef92094f31`; closed campaign, projection and contention research tools.
+
+## Reef cleanup follow-up passes — 2026-10-16
+
+[Import scope](docs/imports/2026-10-16-reef-cleanup-followup-passes.md), [manifest](manifests/2026-10-16-reef-cleanup-followup-passes.json). Three exact Make-only wrappers/9919 bytes from Reef `494c0bba7`; component checks and current gate tooling remain.
