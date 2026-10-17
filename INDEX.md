@@ -555,3 +555,7 @@ Source: [Reef `76872e9db249152e0329393d73c4a2f850ea2b93`](https://github.com/dil
 ## Reef cleanup follow-up passes — 2026-10-16
 
 [Import scope](docs/imports/2026-10-16-reef-cleanup-followup-passes.md), [manifest](manifests/2026-10-16-reef-cleanup-followup-passes.json). Three exact Make-only wrappers/9919 bytes from Reef `494c0bba7`; component checks and current gate tooling remain.
+
+## Reef Arena runner prototype retirement — 2026-10-16
+
+[Import scope](docs/imports/2026-10-16-reef-arena-runner-prototype.md), [manifest](manifests/2026-10-16-reef-arena-runner-prototype.json). Five exact files/41184 bytes from Reef `5272fdb68`; synthetic Deno/Node and real-world prototype benchmarks plus old Bun container wrapper. Current runner pool, tick and hardening checks remain.
